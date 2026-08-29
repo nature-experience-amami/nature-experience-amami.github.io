@@ -3,20 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nature Experience Amami</title>
+
+  <title>Nature Experience Amami｜奄美の夜の森へ</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #000;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-image: url("images/image.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 4.5rem);
+      margin-bottom: 20px;
+      letter-spacing: 0.08em;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background: rgba(255,255,255,0.9);
+      color: #222;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: white;
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>Nature Experience Amami</h1>
+  <section class="hero">
 
-  <p>奄美大島の自然を楽しむネイチャーツアー</p>
+    <div class="hero-content">
 
-  <h2>ようこそ</h2>
+      <h1>奄美の夜の森へ</h1>
 
-  <p>
-    奄美大島の豊かな自然を一緒に探検しませんか？
-  </p>
+      <p>
+        生き物たちの時間が、はじまります。
+      </p>
+
+      <a href="#tour" class="button">
+        🌙 ナイトツアーを見る
+      </a>
+
+    </div>
+
+  </section>
+
+  <section id="tour" style="padding: 80px 20px; background: white; text-align: center;">
+
+    <h2>Nature Experience Amami</h2>
+
+    <p style="margin-top: 20px;">
+      奄美大島の豊かな自然を、一緒に探検しませんか？
+    </p>
+
+  </section>
 
 </body>
 </html>
