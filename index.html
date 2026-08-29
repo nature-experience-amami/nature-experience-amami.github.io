@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Nature Experience Amami｜奄美の夜の森へ</title>
+  <title>Nature Experience Amami｜奄美の森へ</title>
 
   <style>
     * {
@@ -30,8 +30,10 @@
       justify-content: center;
       text-align: center;
       color: white;
+      overflow: hidden;
     }
 
+    /* 写真を少し暗くして文字を見やすくする */
     .hero::before {
       content: "";
       position: absolute;
@@ -45,29 +47,76 @@
       padding: 20px;
     }
 
+    /* 最初は透明・少し下に配置 */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 2s ease forwards;
+    }
+
+    /* 順番に登場 */
+    .welcome {
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      letter-spacing: 0.15em;
+      margin-bottom: 15px;
+      animation-delay: 0.5s;
+    }
+
     .hero h1 {
-      font-size: clamp(2rem, 6vw, 4.5rem);
-      margin-bottom: 20px;
-      letter-spacing: 0.08em;
+      font-size: clamp(2.5rem, 8vw, 5.5rem);
+      letter-spacing: 0.12em;
+      margin-bottom: 25px;
+      animation-delay: 1.2s;
     }
 
     .hero p {
-      font-size: clamp(1rem, 2.5vw, 1.5rem);
-      margin-bottom: 35px;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      letter-spacing: 0.08em;
+      margin-bottom: 40px;
+      animation-delay: 2s;
     }
 
     .button {
       display: inline-block;
-      padding: 15px 30px;
-      background: rgba(255,255,255,0.9);
+      padding: 15px 32px;
+      background: rgba(255, 255, 255, 0.9);
       color: #222;
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 2s ease forwards;
+      animation-delay: 2.8s;
     }
 
     .button:hover {
       background: white;
+      transform: scale(1.05);
+    }
+
+    /* 浮かび上がるアニメーション */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* スマホでは少し文字を小さく */
+    @media (max-width: 600px) {
+      .hero {
+        background-position: center;
+      }
+
+      .hero-content {
+        padding: 25px;
+      }
     }
   </style>
 </head>
@@ -78,10 +127,16 @@
 
     <div class="hero-content">
 
-      <h1>奄美の夜の森へ</h1>
+      <div class="fade-in welcome">
+        ようこそ
+      </div>
 
-      <p>
-        生き物たちの時間が、はじまります。
+      <h1 class="fade-in">
+        奄美の森へ
+      </h1>
+
+      <p class="fade-in">
+        生き物たちの時間が始まります。
       </p>
 
       <a href="#tour" class="button">
