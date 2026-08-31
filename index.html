@@ -17,12 +17,12 @@
 <style>
 
   :root{
-    --night: #0A1613;
-    --canopy: #16302A;
-    --moonlight: #EAF2E9;
-    --amber: #E8A33D;
-    --moss: #6B8F71;
-    --bark: #2A211A;
+    --night:#0A1613;
+    --canopy:#16302A;
+    --moonlight:#EAF2E9;
+    --amber:#E8A33D;
+    --moss:#6B8F71;
+    --bark:#2A211A;
   }
 
   *{
@@ -36,7 +36,7 @@
   }
 
   body{
-    font-family:'Zen Kaku Gothic New', sans-serif;
+    font-family:'Zen Kaku Gothic New',sans-serif;
     background:var(--night);
     color:var(--moonlight);
   }
@@ -60,7 +60,6 @@
     background:#000;
   }
 
-  .hero picture,
   .hero img{
     position:absolute;
     inset:0;
@@ -70,45 +69,86 @@
   }
 
 
-  /* ----------------------------------------
-     完全な暗闇の下地
-     最初は本当に真っ黒
-     ---------------------------------------- */
+  /* ========================================
+     背景
+     最初は完全な黒
+     ======================================== */
 
   .hero-bg{
+    z-index:0;
+
     filter:
       brightness(0)
-      saturate(0.7);
+      saturate(0.8);
+
+    animation:
+      background-night 7s ease-out forwards;
   }
 
 
-  /* ----------------------------------------
-     懐中電灯で照らされた部分だけ
-     カエルが浮かび上がる
-     ---------------------------------------- */
+  @keyframes background-night{
+
+    0%{
+      filter:
+        brightness(0)
+        saturate(0.8);
+    }
+
+    20%{
+      filter:
+        brightness(0)
+        saturate(0.8);
+    }
+
+    45%{
+      filter:
+        brightness(0.12)
+        saturate(0.8);
+    }
+
+    70%{
+      filter:
+        brightness(0.22)
+        saturate(0.85);
+    }
+
+    100%{
+      filter:
+        brightness(0.30)
+        saturate(0.85);
+    }
+  }
+
+
+  /* ========================================
+     懐中電灯で照らされるカエル
+     円形マスクだけを拡大する
+     ======================================== */
 
   .hero-reveal{
+    z-index:1;
+
     filter:
       brightness(1.15)
       saturate(1.1);
 
     -webkit-mask-image:
       radial-gradient(
-        circle,
-        white 0%,
-        white 42%,
-        rgba(255,255,255,0.92) 60%,
-        rgba(255,255,255,0.45) 78%,
+        circle at center,
+        black 0%,
+        black 45%,
+        rgba(0,0,0,0.85) 58%,
+        rgba(0,0,0,0.35) 75%,
         transparent 100%
       );
 
     mask-image:
       radial-gradient(
-        circle,
-        white 0%,
-        white 42%,
-        rgba(255,255,255,0.92) 60%,
-        rgba(255,255,255,0.45) 78%,
+        circle at center,
+        black 0%,
+        black 45%,
+        rgba(0,0,0,0.85) 58%,
+        rgba(0,0,0,0.35) 75%,
         transparent 100%
       );
 
@@ -121,149 +161,195 @@
     -webkit-mask-size:1px 1px;
     mask-size:1px 1px;
 
-    animation:search-reveal 7s ease-out forwards;
+    animation:reveal-circle 7s ease-out forwards;
   }
 
 
-  @keyframes search-reveal{
+  @keyframes reveal-circle{
 
     0%{
       -webkit-mask-size:1px 1px;
       mask-size:1px 1px;
-
-      filter:
-        brightness(0)
-        saturate(0.7);
+      opacity:0;
     }
 
     8%{
-      -webkit-mask-size:35px 35px;
-      mask-size:35px 35px;
-
-      filter:
-        brightness(0.35)
-        saturate(0.8);
-    }
-
-    18%{
-      -webkit-mask-size:100px 100px;
-      mask-size:100px 100px;
-
-      filter:
-        brightness(0.65)
-        saturate(0.9);
-    }
-
-    32%{
-      -webkit-mask-size:220px 220px;
-      mask-size:220px 220px;
-
-      filter:
-        brightness(0.9)
-        saturate(1);
-    }
-
-    48%{
-      -webkit-mask-size:450px 450px;
-      mask-size:450px 450px;
-
-      filter:
-        brightness(1.05)
-        saturate(1.05);
-    }
-
-    65%{
-      -webkit-mask-size:800px 800px;
-      mask-size:800px 800px;
-
-      filter:
-        brightness(1.12)
-        saturate(1.08);
-    }
-
-    82%{
-      -webkit-mask-size:1400px 1400px;
-      mask-size:1400px 1400px;
-
-      filter:
-        brightness(1.15)
-        saturate(1.1);
-    }
-
-    100%{
-      -webkit-mask-size:5000px 5000px;
-      mask-size:5000px 5000px;
-
-      filter:
-        brightness(1.15)
-        saturate(1.1);
-    }
-  }
-
-
-  /* ----------------------------------------
-     最初の完全な黒を確実に作る
-     ---------------------------------------- */
-
-  .hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    z-index:0;
-
-    background:#000;
-
-    pointer-events:none;
-
-    animation:black-fade 7s ease-out forwards;
-  }
-
-
-  @keyframes black-fade{
-
-    0%{
+      -webkit-mask-size:30px 30px;
+      mask-size:30px 30px;
       opacity:1;
     }
 
-    8%{
-      opacity:0.92;
-    }
-
     18%{
-      opacity:0.72;
+      -webkit-mask-size:90px 90px;
+      mask-size:90px 90px;
     }
 
-    32%{
-      opacity:0.48;
+    30%{
+      -webkit-mask-size:180px 180px;
+      mask-size:180px 180px;
     }
 
-    48%{
-      opacity:0.25;
+    45%{
+      -webkit-mask-size:350px 350px;
+      mask-size:350px 350px;
     }
 
-    65%{
-      opacity:0.10;
+    60%{
+      -webkit-mask-size:600px 600px;
+      mask-size:600px 600px;
     }
 
-    82%{
-      opacity:0.03;
+    75%{
+      -webkit-mask-size:1000px 1000px;
+      mask-size:1000px 1000px;
+    }
+
+    90%{
+      -webkit-mask-size:1600px 1600px;
+      mask-size:1600px 1600px;
     }
 
     100%{
-      opacity:0;
+      -webkit-mask-size:4000px 4000px;
+      mask-size:4000px 4000px;
+      opacity:1;
     }
   }
 
 
-  /* ----------------------------------------
-     下部の文字を読みやすくする暗幕
-     ---------------------------------------- */
+  /* ========================================
+     懐中電灯の丸い光
+     四角い背景を使わない
+     ======================================== */
+
+  .flashlight{
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    width:24px;
+    height:24px;
+
+    z-index:2;
+
+    transform:
+      translate(-50%,-50%)
+      scale(0.01);
+
+    border-radius:50%;
+
+    background:
+      radial-gradient(
+        circle,
+        rgba(255,255,255,1) 0%,
+        rgba(255,250,230,0.98) 8%,
+        rgba(255,235,190,0.88) 20%,
+        rgba(255,210,130,0.60) 38%,
+        rgba(232,163,61,0.28) 58%,
+        rgba(232,163,61,0.08) 78%,
+        transparent 100%
+      );
+
+    box-shadow:
+      0 0 12px 4px rgba(255,235,190,0.55),
+      0 0 35px 12px rgba(255,205,125,0.28);
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    animation:flashlight-expand 7s ease-out forwards;
+  }
+
+
+  @keyframes flashlight-expand{
+
+    0%{
+      transform:
+        translate(-50%,-50%)
+        scale(0.01);
+
+      opacity:0;
+    }
+
+    6%{
+      transform:
+        translate(-50%,-50%)
+        scale(0.25);
+
+      opacity:1;
+    }
+
+    12%{
+      transform:
+        translate(-50%,-50%)
+        scale(0.7);
+
+      opacity:1;
+    }
+
+    22%{
+      transform:
+        translate(-50%,-50%)
+        scale(2.5);
+
+      opacity:1;
+    }
+
+    35%{
+      transform:
+        translate(-50%,-50%)
+        scale(6);
+
+      opacity:0.95;
+    }
+
+    50%{
+      transform:
+        translate(-50%,-50%)
+        scale(12);
+
+      opacity:0.80;
+    }
+
+    65%{
+      transform:
+        translate(-50%,-50%)
+        scale(20);
+
+      opacity:0.62;
+    }
+
+    80%{
+      transform:
+        translate(-50%,-50%)
+        scale(32);
+
+      opacity:0.43;
+    }
+
+    100%{
+      transform:
+        translate(-50%,-50%)
+        scale(55);
+
+      opacity:0.20;
+    }
+  }
+
+
+  /* ========================================
+     HERO 下部の暗幕
+     ======================================== */
 
   .hero::after{
     content:"";
+
     position:absolute;
     inset:0;
-    z-index:1;
+
+    z-index:3;
 
     background:
       linear-gradient(
@@ -278,92 +364,13 @@
   }
 
 
-  /* ----------------------------------------
-     懐中電灯そのものの光
-     丸い光が小さく現れて広がる
-     ---------------------------------------- */
-
-  .flashlight{
-    position:absolute;
-    inset:0;
-    z-index:2;
-
-    background-image:
-      radial-gradient(
-        circle at center,
-        rgba(255,255,255,0.98) 0%,
-        rgba(255,248,225,0.95) 5%,
-        rgba(255,235,185,0.78) 15%,
-        rgba(255,210,125,0.45) 32%,
-        rgba(232,163,61,0.20) 52%,
-        rgba(232,163,61,0.06) 68%,
-        transparent 76%
-      );
-
-    background-repeat:no-repeat;
-    background-position:center center;
-
-    background-size:1px 1px;
-
-    mix-blend-mode:screen;
-
-    pointer-events:none;
-
-    animation:search-glow 7s ease-out forwards;
-  }
-
-
-  @keyframes search-glow{
-
-    0%{
-      background-size:1px 1px;
-      opacity:1;
-    }
-
-    8%{
-      background-size:35px 35px;
-      opacity:1;
-    }
-
-    18%{
-      background-size:100px 100px;
-      opacity:1;
-    }
-
-    32%{
-      background-size:220px 220px;
-      opacity:0.98;
-    }
-
-    48%{
-      background-size:450px 450px;
-      opacity:0.92;
-    }
-
-    65%{
-      background-size:800px 800px;
-      opacity:0.78;
-    }
-
-    82%{
-      background-size:1400px 1400px;
-      opacity:0.55;
-    }
-
-    100%{
-      background-size:5000px 5000px;
-      opacity:0.18;
-    }
-  }
-
-
   /* ========================================
      HERO CONTENT
      ======================================== */
 
   .hero-content{
     position:relative;
-    z-index:3;
+    z-index:4;
 
     padding:0 6vw 8vh;
 
@@ -372,7 +379,7 @@
 
 
   .eyebrow{
-    font-family:'Space Mono', monospace;
+    font-family:'Space Mono',monospace;
 
     font-size:0.85rem;
 
@@ -392,18 +399,19 @@
 
     opacity:0;
 
-    animation:rise 1s ease forwards;
+    animation:
+      rise 1s ease forwards;
 
     animation-delay:7.2s;
   }
 
 
   .hero h1{
-    font-family:'Shippori Mincho', serif;
+    font-family:'Shippori Mincho',serif;
 
     font-weight:700;
 
-    font-size:clamp(2.2rem, 6vw, 4.4rem);
+    font-size:clamp(2.2rem,6vw,4.4rem);
 
     line-height:1.25;
 
@@ -413,7 +421,8 @@
 
     opacity:0;
 
-    animation:rise 1s ease forwards;
+    animation:
+      rise 1s ease forwards;
 
     animation-delay:7.5s;
   }
@@ -426,7 +435,7 @@
 
 
   .hero p{
-    font-size:clamp(1rem, 2vw, 1.2rem);
+    font-size:clamp(1rem,2vw,1.2rem);
 
     color:rgba(234,242,233,0.85);
 
@@ -436,7 +445,8 @@
 
     opacity:0;
 
-    animation:rise 1s ease forwards;
+    animation:
+      rise 1s ease forwards;
 
     animation-delay:7.8s;
   }
@@ -483,7 +493,8 @@
 
     opacity:0;
 
-    animation:rise 1s ease forwards;
+    animation:
+      rise 1s ease forwards;
 
     animation-delay:8.1s;
 
@@ -516,7 +527,7 @@
     left:0;
     right:0;
 
-    z-index:4;
+    z-index:5;
 
     display:flex;
 
@@ -526,18 +537,19 @@
 
     opacity:0;
 
-    animation:rise 1s ease forwards;
+    animation:
+      rise 1s ease forwards;
 
     animation-delay:7.2s;
   }
 
 
   .brand-bar .mark{
-    font-family:'Shippori Mincho', serif;
+    font-family:'Shippori Mincho',serif;
 
     font-weight:700;
 
-    font-size:clamp(1.1rem, 2vw, 1.5rem);
+    font-size:clamp(1.1rem,2vw,1.5rem);
 
     letter-spacing:0.14em;
 
@@ -589,7 +601,7 @@
 
 
   .field-note .label{
-    font-family:'Space Mono', monospace;
+    font-family:'Space Mono',monospace;
 
     font-size:0.8rem;
 
@@ -602,9 +614,9 @@
 
 
   .field-note h2{
-    font-family:'Shippori Mincho', serif;
+    font-family:'Shippori Mincho',serif;
 
-    font-size:clamp(1.5rem, 3vw, 2.2rem);
+    font-size:clamp(1.5rem,3vw,2.2rem);
 
     margin-bottom:1rem;
   }
@@ -627,7 +639,7 @@
     display:grid;
 
     grid-template-columns:
-      repeat(auto-fit, minmax(200px, 1fr));
+      repeat(auto-fit,minmax(200px,1fr));
 
     gap:1.2rem;
 
@@ -654,7 +666,7 @@
 
 
   .creature-card .months{
-    font-family:'Space Mono', monospace;
+    font-family:'Space Mono',monospace;
 
     font-size:0.78rem;
 
@@ -703,7 +715,7 @@
 
 
   .flow-num{
-    font-family:'Space Mono', monospace;
+    font-family:'Space Mono',monospace;
 
     color:var(--amber);
 
@@ -712,7 +724,7 @@
 
 
   .flow-item h3{
-    font-family:'Shippori Mincho', serif;
+    font-family:'Shippori Mincho',serif;
 
     font-size:1.15rem;
 
@@ -751,17 +763,14 @@
      REDUCED MOTION
      ======================================== */
 
-  @media (prefers-reduced-motion: reduce){
+  @media (prefers-reduced-motion:reduce){
 
-    .hero::before{
+    .hero-bg{
       animation:none;
-      opacity:0;
-    }
 
-    .flashlight{
-      animation:none;
-      background-size:5000px 5000px;
-      opacity:0.18;
+      filter:
+        brightness(0.30)
+        saturate(0.85);
     }
 
     .hero-reveal{
@@ -773,6 +782,16 @@
       filter:
         brightness(0.75)
         saturate(0.9);
+    }
+
+    .flashlight{
+      animation:none;
+
+      transform:
+        translate(-50%,-50%)
+        scale(55);
+
+      opacity:0.20;
     }
 
     .eyebrow,
@@ -800,7 +819,7 @@
 
 <header class="hero">
 
-  <!-- 完全な暗闇から始まる背景 -->
+  <!-- 夜の森の背景 -->
 
 <img
 class="hero-bg"
@@ -809,7 +828,7 @@ alt="奄美大島の夜の森で観察できるカエル(種名は確認中・�
 
 >
 
-  <!-- 懐中電灯で照らされていくカエル -->
+  <!-- 懐中電灯で照らされるカエル -->
 
 <img
 class="hero-reveal"
@@ -819,7 +838,7 @@ aria-hidden="true"
 
 >
 
-  <!-- 懐中電灯の丸い光 -->
+  <!-- 完全な円形の懐中電灯 -->
 
   <div
     class="flashlight"
@@ -955,8 +974,8 @@ aria-hidden="true"
 
   <h2
     style="
-      font-family:'Shippori Mincho', serif;
-      font-size:clamp(1.5rem, 3vw, 2.2rem);
+      font-family:'Shippori Mincho',serif;
+      font-size:clamp(1.5rem,3vw,2.2rem);
       margin-bottom:1rem;
     "
   >
