@@ -1,0 +1,55 @@
+// Cloudflare Worker: 旅行時期の質問に、実際の観察データ(creatures.json)だけを根拠に答える
+// 環境変数(Secrets): GEMINI_API_KEY, ALLOWED_ORIGIN(例: https://tetsu5686.github.io)
+
+const CREATURES_URL = "https://tetsu5686.github.io/nature-experience-amami/data/creatures.json";
+const MODEL = "gemini-3.5-flash"; // モデル名は変更される可能性があるので、時々公式ドキュメントで確認してください
+
+export default {
+  async fetch(request, env) {
+    const cors = {
+      "Access-Control-Allow-Origin": env.ALLOWED_ORIGIN,
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    };
+
+    if (request.method === "OPTIONS") return new Response(null, { headers: cors });
+    if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: cors });
+
+    const { message } = await request.json();
+    if (!message || message.length > 200) {
+      return json({ reply: "質問を200文字以内で入力してください。" }, cors);
+    }
+
+    const creatures = await (await fetch(CREATURES_URL)).json();
+
+    const prompt = `あなたは奄美大島のナイトツアーガイドです。
+以下のデータだけを根拠に、お客さんの質問に日本語で100〜150字程度で答えてください。
+データに無い情報は絶対に作らないでください。
+
+[生き物データ]
+${JSON.stringify(creatures)}
+
+[お客さんの質問]
+${message}`;
+
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+      }
+    );
+    const data = await res.json();
+    const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text
+      ?? "うまく答えられませんでした。もう一度試してください。";
+
+    return json({ reply }, cors);
+  },
+};
+
+function json(body, cors) {
+  return new Response(JSON.stringify(body), {
+    headers: { "Content-Type": "application/json", ...cors },
+  });
+}
