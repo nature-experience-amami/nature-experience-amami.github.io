@@ -18,14 +18,12 @@
   body{ font-family:'Zen Kaku Gothic New', sans-serif; background:var(--night); color:var(--moonlight); }
   a{ color:inherit; }
 
-  /* ===== HERO ===== */
   .hero{
     position:relative; width:100%; min-height:100svh;
     display:flex; align-items:flex-end; overflow:hidden; background:#000;
   }
   .hero picture, .hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 
-  /* 暗闇の下地: 0-3秒は暗いまま保持、3-7秒で丸が広がるのに合わせて明るくなる */
   .hero-bg{ z-index:0; filter:brightness(0); animation:bgFade 7s ease-out forwards; }
   @keyframes bgFade{
     0%, 42.9%{ filter:brightness(0); }
@@ -33,9 +31,6 @@
     100%{ filter:brightness(.30); }
   }
 
-  /* 懐中電灯で照らされた場所からカエルが浮かび上がる。
-     clip-path: circle() を使用(mask-sizeを0から動かす書き方はブラウザにより描画が壊れるため不採用)。
-     0-3秒: 懐中電灯サイズの丸のまま保持 / 3-7秒: 一気に広がる。78%あればアスペクト比に関わらず四隅まで届く。 */
   .hero-reveal{
     z-index:1; filter:brightness(1) saturate(1);
     clip-path:circle(3% at 50% 50%);
@@ -51,13 +46,11 @@
     100%{ clip-path:circle(78% at 50% 50%); -webkit-clip-path:circle(78% at 50% 50%); }
   }
 
-  /* 下部の文字を読みやすくする暗幕 */
   .hero::after{
     content:""; position:absolute; inset:0; z-index:4; pointer-events:none;
     background:linear-gradient(180deg, transparent 0%, transparent 38%, rgba(10,22,19,.55) 75%, rgba(10,22,19,.88) 100%);
   }
 
-  /* 懐中電灯そのものの光(黒い〇は作らない)。revealCircleと同じく0-3秒保持→3-7秒で広がる */
   .flashlight{
     position:absolute; left:50%; top:50%; width:28px; height:28px; border-radius:50%;
     transform:translate(-50%,-50%) scale(.01);
@@ -76,7 +69,6 @@
     100%{ transform:translate(-50%,-50%) scale(24); opacity:.18; }
   }
 
-  /* ===== HERO CONTENT ===== */
   .hero-content{ position:relative; z-index:6; padding:0 6vw 8vh; max-width:900px; }
 
   .eyebrow{
@@ -100,7 +92,6 @@
     to{ opacity:1; transform:translateY(0); }
   }
 
-  /* ===== BUTTON ===== */
   .btn{
     display:inline-flex; align-items:center; gap:.6rem; padding:.95rem 1.9rem;
     background:var(--amber); color:var(--bark); text-decoration:none; font-weight:700;
@@ -111,7 +102,6 @@
   .btn:hover{ background:#f4b95a; transform:translateY(-2px); }
   .btn:focus-visible{ outline:2px solid var(--moonlight); outline-offset:3px; }
 
-  /* ===== BRAND MARK ===== */
   .brand-bar{
     position:absolute; top:0; left:0; right:0; z-index:6;
     display:flex; align-items:center; padding:2rem 6vw 0;
@@ -127,20 +117,31 @@
   }
   .brand-bar .mark .dash{ color:var(--amber); font-weight:400; }
 
-  /* ===== SECTIONS ===== */
   section{ padding:5.5rem 6vw; }
   .field-note{ background:var(--canopy); }
   .field-note .label{ font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.12em; color:var(--moss); margin-bottom:.8rem; }
   .field-note h2{ font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem; }
   .field-note p{ max-width:60ch; color:rgba(234,242,233,.8); line-height:1.9; }
 
-  /* ===== CREATURE CARDS ===== */
   .creature-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.2rem; margin-top:2.5rem; }
   .creature-card{ background:rgba(234,242,233,.04); border:1px solid rgba(234,242,233,.1); border-radius:4px; padding:1.2rem; }
   .creature-card .name{ font-weight:700; margin-bottom:.3rem; }
   .creature-card .months{ font-family:'Space Mono', monospace; font-size:.78rem; color:var(--amber); }
 
-  /* ===== TOUR FLOW ===== */
+  /* ===== AI ASK(新規追加分) ===== */
+  .ai-ask{ background:var(--canopy); }
+  .ask-box{ display:flex; flex-wrap:wrap; gap:.8rem; margin-bottom:1.5rem; }
+  .ask-box input{
+    flex:1; min-width:220px; padding:.9rem 1.1rem; border-radius:2px;
+    border:1px solid rgba(234,242,233,.25); background:rgba(234,242,233,.05);
+    color:var(--moonlight); font-family:'Zen Kaku Gothic New', sans-serif; font-size:1rem;
+  }
+  .ask-box input::placeholder{ color:rgba(234,242,233,.45); }
+  .ask-box input:focus-visible{ outline:2px solid var(--amber); outline-offset:2px; }
+  .ask-reply{ min-height:1.5rem; color:rgba(234,242,233,.9); line-height:1.8; }
+  .ask-reply .ask-photos{ display:flex; gap:.8rem; margin-top:1rem; flex-wrap:wrap; }
+  .ask-reply .ask-photos img{ width:140px; height:140px; object-fit:cover; border-radius:4px; }
+
   .flow{ background:var(--night); }
   .flow-list{ margin-top:2.5rem; display:flex; flex-direction:column; }
   .flow-item{
@@ -152,13 +153,11 @@
   .flow-item h3{ font-family:'Shippori Mincho', serif; font-size:1.15rem; margin-bottom:.4rem; }
   .flow-item p{ color:rgba(234,242,233,.75); font-size:.95rem; line-height:1.7; }
 
-  /* ===== FOOTER ===== */
   footer{
     text-align:center; padding:2.5rem 6vw; font-size:.8rem;
     color:rgba(234,242,233,.5); border-top:1px solid rgba(234,242,233,.1);
   }
 
-  /* ===== REDUCED MOTION ===== */
   @media (prefers-reduced-motion:reduce){
     .flashlight{ animation:none; opacity:.18; }
     .hero-reveal{ animation:none; clip-path:none; -webkit-clip-path:none; filter:brightness(.75) saturate(.9); }
@@ -170,13 +169,8 @@
 <body>
 
 <header class="hero">
-  <!-- 元のカエル写真。最初は完全な暗闇 -->
   <img class="hero-bg" src="images/ishikawa-hero.jpg" alt="奄美大島の夜の森で観察できるカエル(種名は確認中・奄美固有種)">
-
-  <!-- 懐中電灯が当たった場所から浮かび上がる写真。0-3秒保持→3-7秒で広がる -->
   <img class="hero-reveal" src="images/ishikawa-hero.jpg" alt="" aria-hidden="true">
-
-  <!-- 丸い懐中電灯の光(黒い〇は使わない) -->
   <div class="flashlight" aria-hidden="true"></div>
 
   <div class="brand-bar">
@@ -211,6 +205,20 @@
   </div>
 </section>
 
+<!-- ===== AI ASK: 今回新規追加したセクション ===== -->
+<section class="ai-ask" aria-label="生き物についてAIに質問する">
+  <p class="field-note label" style="color:var(--moss);">ASK THE GUIDE / AI</p>
+  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">気になる時期の生き物を聞いてみる</h2>
+  <p style="max-width:60ch; color:rgba(234,242,233,0.8); line-height:1.9; margin-bottom:1.5rem;">
+    「9月に見られる生き物は?」のように、気軽に聞いてみてください。実際に撮影した記録をもとに答えます。
+  </p>
+  <div class="ask-box">
+    <input id="ask-input" type="text" placeholder="例:9月に見られる生き物は?" maxlength="200">
+    <button id="ask-btn" class="btn" type="button" style="position:static; opacity:1; animation:none;">🔦 聞いてみる</button>
+  </div>
+  <div id="ask-reply" class="ask-reply" aria-live="polite"></div>
+</section>
+
 <section id="tour" class="flow">
   <p class="field-note label" style="color:var(--moss);">HOW IT WORKS</p>
   <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">ナイトツアーの流れ</h2>
@@ -240,6 +248,62 @@
 </section>
 
 <footer>&copy; 2026 Nature-Experience Amami. 画像の無断転載・複製・改変を禁じます。</footer>
+
+<!-- ===== AI ASK: 今回新規追加したスクリプト ===== -->
+<script>
+  const WORKER_URL = "https://YOUR-WORKER-NAME.workers.dev/";
+  const CREATURES_JSON = "data/creatures.json";
+
+  document.getElementById('ask-btn').addEventListener('click', askGuide);
+  document.getElementById('ask-input').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') askGuide();
+  });
+
+  async function askGuide() {
+    const input = document.getElementById('ask-input');
+    const replyEl = document.getElementById('ask-reply');
+    const message = input.value.trim();
+    if (!message) return;
+
+    replyEl.textContent = '考え中…';
+
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: message })
+      });
+      const data = await res.json();
+      replyEl.textContent = data.reply || 'うまく答えられませんでした。';
+
+      if (Array.isArray(data.creature_ids) && data.creature_ids.length) {
+        await showPhotos(data.creature_ids, replyEl);
+      }
+    } catch (err) {
+      replyEl.textContent = '通信エラーが発生しました。しばらくしてからお試しください。';
+    }
+  }
+
+  async function showPhotos(ids, replyEl) {
+    try {
+      const creatures = await (await fetch(CREATURES_JSON)).json();
+      const wrap = document.createElement('div');
+      wrap.className = 'ask-photos';
+      ids.forEach(function (id) {
+        const creature = creatures.find(function (c) { return c.id === id; });
+        if (creature && creature.photos && creature.photos[0]) {
+          const img = document.createElement('img');
+          img.src = creature.photos[0];
+          img.alt = id;
+          wrap.appendChild(img);
+        }
+      });
+      if (wrap.children.length) replyEl.appendChild(wrap);
+    } catch (err) {
+      /* 写真が取得できなくても回答文はすでに表示済みなので何もしない */
+    }
+  }
+</script>
 
 </body>
 </html>
