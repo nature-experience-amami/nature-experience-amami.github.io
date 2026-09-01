@@ -56,6 +56,7 @@
 
   .hero{
     position:relative;
+
     width:100%;
     min-height:100svh;
 
@@ -69,9 +70,10 @@
 
 
   /* ========================================
-     元のカエル写真
+     背景写真
      
-     写真自体の色・明るさは変更しない
+     最初はほぼ完全な暗闇。
+     写真そのものの色は変えない。
      ======================================== */
 
   .hero-bg{
@@ -87,16 +89,16 @@
     z-index:0;
 
     filter:
-      brightness(1)
+      brightness(0.18)
       saturate(1);
   }
 
 
   /* ========================================
-     完全な暗闇を作る暗幕
+     真っ黒な暗闇
      
-     黒い〇は表示しない。
-     中央だけ透明になり、そこから写真が見える。
+     黒い〇を表示するのではなく、
+     懐中電灯の位置だけ透明にしていく。
      ======================================== */
 
   .darkness{
@@ -110,93 +112,88 @@
 
     pointer-events:none;
 
-    -webkit-mask-image:
-      radial-gradient(
-        circle at center,
-        transparent 0,
-        transparent 0,
-        #000 0
+    clip-path:
+      circle(
+        0px at 50% 50%
       );
-
-    mask-image:
-      radial-gradient(
-        circle at center,
-        transparent 0,
-        transparent 0,
-        #000 0
-      );
-
-    -webkit-mask-repeat:no-repeat;
-    mask-repeat:no-repeat;
-
-    -webkit-mask-position:center;
-    mask-position:center;
-
-    -webkit-mask-size:0 0;
-    mask-size:0 0;
 
     animation:
-      darkness-open 7s ease-out forwards;
+      darkness-reveal 7s ease-out forwards;
   }
 
 
-  /* ========================================
-     暗幕の穴が懐中電灯と一緒に広がる
-     ======================================== */
-
-  @keyframes darkness-open{
+  @keyframes darkness-reveal{
 
     0%{
-      -webkit-mask-size:0 0;
-      mask-size:0 0;
+      clip-path:
+        circle(
+          0px at 50% 50%
+        );
     }
 
     7%{
-      -webkit-mask-size:28px 28px;
-      mask-size:28px 28px;
+      clip-path:
+        circle(
+          20px at 50% 50%
+        );
     }
 
     15%{
-      -webkit-mask-size:70px 70px;
-      mask-size:70px 70px;
+      clip-path:
+        circle(
+          48px at 50% 50%
+        );
     }
 
     25%{
-      -webkit-mask-size:130px 130px;
-      mask-size:130px 130px;
+      clip-path:
+        circle(
+          90px at 50% 50%
+        );
     }
 
     40%{
-      -webkit-mask-size:250px 250px;
-      mask-size:250px 250px;
+      clip-path:
+        circle(
+          170px at 50% 50%
+        );
     }
 
     55%{
-      -webkit-mask-size:420px 420px;
-      mask-size:420px 420px;
+      clip-path:
+        circle(
+          280px at 50% 50%
+        );
     }
 
     70%{
-      -webkit-mask-size:700px 700px;
-      mask-size:700px 700px;
+      clip-path:
+        circle(
+          450px at 50% 50%
+        );
     }
 
     85%{
-      -webkit-mask-size:1100px 1100px;
-      mask-size:1100px 1100px;
+      clip-path:
+        circle(
+          700px at 50% 50%
+        );
     }
 
     100%{
-      -webkit-mask-size:4000px 4000px;
-      mask-size:4000px 4000px;
+      clip-path:
+        circle(
+          160vmax at 50% 50%
+        );
     }
   }
 
 
   /* ========================================
-     カエルが光と一緒に浮かび上がる
+     カエル写真
      
-     元画像の色合いをそのまま使用。
+     懐中電灯の光とほぼ完全に同期。
+     元画像の色合い・明るさを使用。
      ======================================== */
 
   .frog-reveal{
@@ -216,59 +213,97 @@
       saturate(1);
 
     clip-path:
-      circle(0 at 50% 50%);
+      circle(
+        0px at 50% 50%
+      );
 
     opacity:0;
 
     animation:
-      frog-emerge 7s ease-out forwards;
+      frog-reveal 7s ease-out forwards;
   }
 
 
-  @keyframes frog-emerge{
+  @keyframes frog-reveal{
 
     0%{
-      clip-path:circle(0 at 50% 50%);
+      clip-path:
+        circle(
+          0px at 50% 50%
+        );
+
       opacity:0;
     }
 
     7%{
-      clip-path:circle(14px at 50% 50%);
-      opacity:0.12;
+      clip-path:
+        circle(
+          18px at 50% 50%
+        );
+
+      opacity:0.15;
     }
 
     15%{
-      clip-path:circle(35px at 50% 50%);
-      opacity:0.22;
+      clip-path:
+        circle(
+          45px at 50% 50%
+        );
+
+      opacity:0.28;
     }
 
     25%{
-      clip-path:circle(65px at 50% 50%);
-      opacity:0.36;
+      clip-path:
+        circle(
+          85px at 50% 50%
+        );
+
+      opacity:0.42;
     }
 
     40%{
-      clip-path:circle(125px at 50% 50%);
-      opacity:0.52;
+      clip-path:
+        circle(
+          160px at 50% 50%
+        );
+
+      opacity:0.58;
     }
 
     55%{
-      clip-path:circle(210px at 50% 50%);
-      opacity:0.68;
+      clip-path:
+        circle(
+          270px at 50% 50%
+        );
+
+      opacity:0.72;
     }
 
     70%{
-      clip-path:circle(350px at 50% 50%);
-      opacity:0.82;
+      clip-path:
+        circle(
+          440px at 50% 50%
+        );
+
+      opacity:0.84;
     }
 
     85%{
-      clip-path:circle(600px at 50% 50%);
+      clip-path:
+        circle(
+          700px at 50% 50%
+        );
+
       opacity:0.94;
     }
 
     100%{
-      clip-path:circle(160vmax at 50% 50%);
+      clip-path:
+        circle(
+          160vmax at 50% 50%
+        );
+
       opacity:1;
     }
   }
@@ -277,8 +312,8 @@
   /* ========================================
      懐中電灯の光
      
-     黒い円は表示しない。
-     この丸い光だけが見える。
+     これだけが「〇」として見える。
+     黒い〇は存在しない。
      ======================================== */
 
   .flashlight{
@@ -294,13 +329,13 @@
 
     border-radius:50%;
 
+    pointer-events:none;
+
     transform:
       translate(-50%,-50%)
       scale(0.01);
 
     opacity:0;
-
-    pointer-events:none;
 
     background:
       radial-gradient(
@@ -308,22 +343,25 @@
 
         rgba(255,255,255,0.98) 0%,
 
-        rgba(255,248,220,0.94) 9%,
+        rgba(255,248,220,0.95) 9%,
 
-        rgba(255,230,175,0.78) 22%,
+        rgba(255,232,180,0.78) 20%,
 
-        rgba(255,210,135,0.52) 38%,
+        rgba(255,215,145,0.55) 35%,
 
-        rgba(232,163,61,0.26) 57%,
+        rgba(255,195,110,0.32) 52%,
 
-        rgba(232,163,61,0.09) 75%,
+        rgba(232,163,61,0.14) 70%,
 
         transparent 100%
       );
 
     box-shadow:
-      0 0 18px rgba(255,240,200,0.55),
-      0 0 45px rgba(255,215,145,0.25);
+      0 0 18px
+      rgba(255,235,185,0.55),
+
+      0 0 45px
+      rgba(255,215,145,0.22);
 
     animation:
       flashlight-grow 7s ease-out forwards;
@@ -343,65 +381,65 @@
     7%{
       transform:
         translate(-50%,-50%)
-        scale(0.32);
+        scale(0.30);
 
-      opacity:0.92;
+      opacity:0.95;
     }
 
     15%{
       transform:
         translate(-50%,-50%)
-        scale(0.78);
+        scale(0.72);
 
-      opacity:0.90;
+      opacity:0.92;
     }
 
     25%{
       transform:
         translate(-50%,-50%)
-        scale(1.45);
+        scale(1.35);
 
-      opacity:0.86;
+      opacity:0.88;
     }
 
     40%{
       transform:
         translate(-50%,-50%)
-        scale(2.75);
+        scale(2.55);
 
-      opacity:0.78;
+      opacity:0.80;
     }
 
     55%{
       transform:
         translate(-50%,-50%)
-        scale(4.65);
+        scale(4.35);
 
-      opacity:0.67;
+      opacity:0.68;
     }
 
     70%{
       transform:
         translate(-50%,-50%)
-        scale(7.8);
+        scale(7.0);
 
-      opacity:0.54;
+      opacity:0.53;
     }
 
     85%{
       transform:
         translate(-50%,-50%)
-        scale(12.5);
+        scale(11.5);
 
-      opacity:0.38;
+      opacity:0.37;
     }
 
     100%{
       transform:
         translate(-50%,-50%)
-        scale(22);
+        scale(20);
 
-      opacity:0.18;
+      opacity:0.16;
     }
   }
 
@@ -422,9 +460,13 @@
     background:
       linear-gradient(
         180deg,
+
         transparent 0%,
+
         transparent 38%,
+
         rgba(10,22,19,0.55) 75%,
+
         rgba(10,22,19,0.88) 100%
       );
 
@@ -903,7 +945,7 @@
 
     .hero-bg{
       filter:
-        brightness(1)
+        brightness(0.18)
         saturate(1);
     }
 
@@ -935,6 +977,7 @@
 
       transform:none;
     }
+
   }
 
 </style>
@@ -950,21 +993,21 @@
 <header class="hero">
 
   <!--
-    元のカエル写真。
-    写真自体は明るさ・色を変更しない。
+    夜の森の元写真。
+    最初は暗幕で完全に隠れている。
   -->
 
 <img
 class="hero-bg"
-src="images/ishikawa-hero.jpg"
+src="images/frog-hero.png"
 alt="奄美大島の夜の森で観察できるカエル(種名は確認中・奄美固有種)"
 
 >
 
   <!--
     真っ黒な暗幕。
-    黒い〇は表示されず、
-    中央だけが懐中電灯と一緒に開いていく。
+    「黒い〇」そのものではなく、
+    懐中電灯の場所だけが開いていく。
   -->
 
   <div
@@ -973,21 +1016,22 @@ alt="奄美大島の夜の森で観察できるカエル(種名は確認中・�
   ></div>
 
   <!--
-    懐中電灯が当たった場所から
-    カエルが浮かび上がる。
+    カエルの写真。
+    懐中電灯の光と同じ場所・同じタイミングで
+    徐々に浮かび上がる。
   -->
 
 <img
 class="frog-reveal"
-src="images/frog-hero.png"
+src="images/ishikawa-hero.jpg"
 alt=""
 aria-hidden="true"
 
 >
 
   <!--
-    丸い懐中電灯の光。
-    黒い〇は使わない。
+    懐中電灯の光。
+    これだけが丸い光として見える。
   -->
 
   <div
@@ -1046,7 +1090,7 @@ aria-hidden="true"
 
 <p>
 
-  アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩く2時間のナイトツアー。
+  アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩くナイトツアー。
 
 </p>
 
@@ -1101,16 +1145,11 @@ FIELD NOTE — 今の時期に観察しやすい生き物
 <div class="creature-card">
 
   <div class="name">
-
     ハブ
-
   </div>
 
-
   <div class="months">
-
     6月-10月に観察しやすい
-
   </div>
 
 </div>
@@ -1119,16 +1158,11 @@ FIELD NOTE — 今の時期に観察しやすい生き物
 <div class="creature-card">
 
   <div class="name">
-
     アマミノコギリクワガタ
-
   </div>
 
-
   <div class="months">
-
     梅雨明けから活動開始
-
   </div>
 
 </div>
@@ -1137,16 +1171,11 @@ FIELD NOTE — 今の時期に観察しやすい生き物
 <div class="creature-card">
 
   <div class="name">
-
     オキナワスジゲンゴロウ
-
   </div>
 
-
   <div class="months">
-
     春から秋によく見られる
-
   </div>
 
 </div>
@@ -1245,7 +1274,7 @@ HOW IT WORKS
 
     <p>
 
-      約2時間、専属ガイドと一緒に固有種を探しながら歩きます。
+      専属ガイドと一緒に固有種を探しながら歩きます。
 
     </p>
 
