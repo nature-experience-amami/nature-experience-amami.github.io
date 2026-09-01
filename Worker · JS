@@ -17,14 +17,19 @@ export default {
 
     const { message } = await request.json();
     if (!message || message.length > 200) {
-      return json({ reply: "質問を200文字以内で入力してください。" }, cors);
+      return json({ reply: "質問を200文字以内で入力してください。", creature_ids: [] }, cors);
     }
 
     const creatures = await (await fetch(CREATURES_URL)).json();
 
+    // Geminiには「回答文」と「該当する生き物のID」だけをJSONで返させる。
+    // 写真パスそのものは作らせない(捏造防止)。パスは必ずcreatures.jsonから実データを引く。
     const prompt = `あなたは奄美大島のナイトツアーガイドです。
-以下のデータだけを根拠に、お客さんの質問に日本語で100〜150字程度で答えてください。
+以下の[生き物データ]だけを根拠に、お客さんの質問に答えてください。
 データに無い情報は絶対に作らないでください。
+
+出力は必ず次のJSON形式のみで、説明文やコードブロックは付けないでください。
+{"reply": "日本語で100〜150字程度の回答文", "creature_ids": ["該当するidのみ。無ければ空配列"]}
 
 [生き物データ]
 ${JSON.stringify(creatures)}
@@ -41,12 +46,26 @@ ${message}`;
       }
     );
     const data = await res.json();
-    const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text
-      ?? "うまく答えられませんでした。もう一度試してください。";
+    const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
 
-    return json({ reply }, cors);
+    const parsed = safeParse(rawText, creatures);
+    return json(parsed, cors);
   },
 };
+
+// Geminiがコードブロック(```json ... ```)を付けてしまった場合も剥がしてから解析する。
+// 解析に失敗した場合は、生成文をそのままreplyとして返し、creature_idsは空にする(壊れない設計)。
+function safeParse(rawText, creatures) {
+  const cleaned = rawText.replace(/```json|```/g, "").trim();
+  try {
+    const obj = JSON.parse(cleaned);
+    const validIds = new Set(creatures.map((c) => c.id));
+    const ids = Array.isArray(obj.creature_ids) ? obj.creature_ids.filter((id) => validIds.has(id)) : [];
+    return { reply: obj.reply ?? "うまく答えられませんでした。もう一度試してください。", creature_ids: ids };
+  } catch {
+    return { reply: rawText || "うまく答えられませんでした。もう一度試してください。", creature_ids: [] };
+  }
+}
 
 function json(body, cors) {
   return new Response(JSON.stringify(body), {
