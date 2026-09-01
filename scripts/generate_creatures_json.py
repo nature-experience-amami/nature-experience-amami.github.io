@@ -10,7 +10,7 @@ from pathlib import Path
 
 IMAGES_DIR = Path("images/creatures")
 OUTPUT = Path("data/creatures.json")
-DATE_RE = re.compile(r"^(\d{4})(\d{2})(\d{2})")
+DATE_RE = re.compile(r"^.+_\d{6}_(\d{4})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])_([01]\d|2[0-3])$")
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 
