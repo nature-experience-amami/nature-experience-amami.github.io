@@ -25,21 +25,25 @@
     --bark:#2A211A;
   }
 
+
   *{
     margin:0;
     padding:0;
     box-sizing:border-box;
   }
 
+
   html{
     scroll-behavior:smooth;
   }
+
 
   body{
     font-family:'Zen Kaku Gothic New',sans-serif;
     background:var(--night);
     color:var(--moonlight);
   }
+
 
   a{
     color:inherit;
@@ -54,20 +58,25 @@
     position:relative;
     width:100%;
     min-height:100svh;
+
     display:flex;
     align-items:flex-end;
+
     overflow:hidden;
+
     background:#000;
   }
 
 
   /* ========================================
-     背景写真
-     最初は完全な黒
+     元のカエル写真
+     
+     写真自体の色・明るさは変更しない
      ======================================== */
 
   .hero-bg{
     position:absolute;
+
     inset:0;
 
     width:100%;
@@ -77,44 +86,122 @@
 
     z-index:0;
 
-    filter:brightness(0);
-
-    animation:
-      night-background 7s ease-out forwards;
+    filter:
+      brightness(1)
+      saturate(1);
   }
 
 
-  @keyframes night-background{
+  /* ========================================
+     完全な暗闇を作る暗幕
+     
+     黒い〇は表示しない。
+     中央だけ透明になり、そこから写真が見える。
+     ======================================== */
+
+  .darkness{
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    background:#000;
+
+    pointer-events:none;
+
+    -webkit-mask-image:
+      radial-gradient(
+        circle at center,
+        transparent 0,
+        transparent 0,
+        #000 0
+      );
+
+    mask-image:
+      radial-gradient(
+        circle at center,
+        transparent 0,
+        transparent 0,
+        #000 0
+      );
+
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+
+    -webkit-mask-position:center;
+    mask-position:center;
+
+    -webkit-mask-size:0 0;
+    mask-size:0 0;
+
+    animation:
+      darkness-open 7s ease-out forwards;
+  }
+
+
+  /* ========================================
+     暗幕の穴が懐中電灯と一緒に広がる
+     ======================================== */
+
+  @keyframes darkness-open{
 
     0%{
-      filter:brightness(0);
+      -webkit-mask-size:0 0;
+      mask-size:0 0;
     }
 
-    20%{
-      filter:brightness(0);
+    7%{
+      -webkit-mask-size:28px 28px;
+      mask-size:28px 28px;
     }
 
-    45%{
-      filter:brightness(0.08);
+    15%{
+      -webkit-mask-size:70px 70px;
+      mask-size:70px 70px;
+    }
+
+    25%{
+      -webkit-mask-size:130px 130px;
+      mask-size:130px 130px;
+    }
+
+    40%{
+      -webkit-mask-size:250px 250px;
+      mask-size:250px 250px;
+    }
+
+    55%{
+      -webkit-mask-size:420px 420px;
+      mask-size:420px 420px;
     }
 
     70%{
-      filter:brightness(0.18);
+      -webkit-mask-size:700px 700px;
+      mask-size:700px 700px;
+    }
+
+    85%{
+      -webkit-mask-size:1100px 1100px;
+      mask-size:1100px 1100px;
     }
 
     100%{
-      filter:brightness(0.30);
+      -webkit-mask-size:4000px 4000px;
+      mask-size:4000px 4000px;
     }
   }
 
 
   /* ========================================
-     カエル写真
-     元画像の色合いを維持
+     カエルが光と一緒に浮かび上がる
+     
+     元画像の色合いをそのまま使用。
      ======================================== */
 
-  .hero-reveal{
+  .frog-reveal{
     position:absolute;
+
     inset:0;
 
     width:100%;
@@ -122,96 +209,66 @@
 
     object-fit:cover;
 
-    z-index:1;
+    z-index:2;
 
     filter:
       brightness(1)
       saturate(1);
 
-    -webkit-mask-image:
-      radial-gradient(
-        circle at center,
-        #000 0%,
-        #000 45%,
-        rgba(0,0,0,0.85) 58%,
-        rgba(0,0,0,0.45) 72%,
-        transparent 100%
-      );
+    clip-path:
+      circle(0 at 50% 50%);
 
-    mask-image:
-      radial-gradient(
-        circle at center,
-        #000 0%,
-        #000 45%,
-        rgba(0,0,0,0.85) 58%,
-        rgba(0,0,0,0.45) 72%,
-        transparent 100%
-      );
-
-    -webkit-mask-repeat:no-repeat;
-    mask-repeat:no-repeat;
-
-    -webkit-mask-position:center center;
-    mask-position:center center;
-
-    -webkit-mask-size:1px 1px;
-    mask-size:1px 1px;
+    opacity:0;
 
     animation:
-      frog-reveal 7s ease-out forwards;
+      frog-emerge 7s ease-out forwards;
   }
 
 
-  @keyframes frog-reveal{
+  @keyframes frog-emerge{
 
     0%{
-      -webkit-mask-size:1px 1px;
-      mask-size:1px 1px;
-
+      clip-path:circle(0 at 50% 50%);
       opacity:0;
     }
 
-    8%{
-      -webkit-mask-size:35px 35px;
-      mask-size:35px 35px;
-
-      opacity:1;
+    7%{
+      clip-path:circle(14px at 50% 50%);
+      opacity:0.12;
     }
 
-    18%{
-      -webkit-mask-size:90px 90px;
-      mask-size:90px 90px;
+    15%{
+      clip-path:circle(35px at 50% 50%);
+      opacity:0.22;
     }
 
-    30%{
-      -webkit-mask-size:180px 180px;
-      mask-size:180px 180px;
+    25%{
+      clip-path:circle(65px at 50% 50%);
+      opacity:0.36;
     }
 
-    45%{
-      -webkit-mask-size:350px 350px;
-      mask-size:350px 350px;
+    40%{
+      clip-path:circle(125px at 50% 50%);
+      opacity:0.52;
     }
 
-    60%{
-      -webkit-mask-size:600px 600px;
-      mask-size:600px 600px;
+    55%{
+      clip-path:circle(210px at 50% 50%);
+      opacity:0.68;
     }
 
-    75%{
-      -webkit-mask-size:1000px 1000px;
-      mask-size:1000px 1000px;
+    70%{
+      clip-path:circle(350px at 50% 50%);
+      opacity:0.82;
     }
 
-    90%{
-      -webkit-mask-size:1700px 1700px;
-      mask-size:1700px 1700px;
+    85%{
+      clip-path:circle(600px at 50% 50%);
+      opacity:0.94;
     }
 
     100%{
-      -webkit-mask-size:4500px 4500px;
-      mask-size:4500px 4500px;
-
+      clip-path:circle(160vmax at 50% 50%);
       opacity:1;
     }
   }
@@ -219,7 +276,9 @@
 
   /* ========================================
      懐中電灯の光
-     四角い背景レイヤーを使用しない
+     
+     黒い円は表示しない。
+     この丸い光だけが見える。
      ======================================== */
 
   .flashlight{
@@ -228,14 +287,12 @@
     left:50%;
     top:50%;
 
-    width:30px;
-    height:30px;
+    width:34px;
+    height:34px;
 
-    z-index:2;
+    z-index:3;
 
     border-radius:50%;
-
-    pointer-events:none;
 
     transform:
       translate(-50%,-50%)
@@ -243,21 +300,30 @@
 
     opacity:0;
 
+    pointer-events:none;
+
     background:
       radial-gradient(
         circle at center,
-        rgba(255,255,255,1) 0%,
-        rgba(255,250,230,0.98) 10%,
-        rgba(255,235,195,0.88) 22%,
-        rgba(255,215,150,0.62) 38%,
-        rgba(255,190,100,0.32) 56%,
-        rgba(232,163,61,0.12) 75%,
+
+        rgba(255,255,255,0.98) 0%,
+
+        rgba(255,248,220,0.94) 9%,
+
+        rgba(255,230,175,0.78) 22%,
+
+        rgba(255,210,135,0.52) 38%,
+
+        rgba(232,163,61,0.26) 57%,
+
+        rgba(232,163,61,0.09) 75%,
+
         transparent 100%
       );
 
     box-shadow:
-      0 0 15px 5px rgba(255,240,200,0.55),
-      0 0 45px 15px rgba(255,210,130,0.25);
+      0 0 18px rgba(255,240,200,0.55),
+      0 0 45px rgba(255,215,145,0.25);
 
     animation:
       flashlight-grow 7s ease-out forwards;
@@ -266,7 +332,6 @@
 
   @keyframes flashlight-grow{
 
-    /* 完全な暗闇 */
     0%{
       transform:
         translate(-50%,-50%)
@@ -275,68 +340,66 @@
       opacity:0;
     }
 
-    /* 小さな丸い光が出現 */
-    8%{
+    7%{
       transform:
         translate(-50%,-50%)
-        scale(0.35);
+        scale(0.32);
 
-      opacity:1;
+      opacity:0.92;
     }
 
-    /* 光が少しずつ広がる */
-    18%{
+    15%{
       transform:
         translate(-50%,-50%)
-        scale(1.2);
-
-      opacity:1;
-    }
-
-    30%{
-      transform:
-        translate(-50%,-50%)
-        scale(3.5);
-
-      opacity:0.98;
-    }
-
-    45%{
-      transform:
-        translate(-50%,-50%)
-        scale(8);
+        scale(0.78);
 
       opacity:0.90;
     }
 
-    60%{
+    25%{
       transform:
         translate(-50%,-50%)
-        scale(15);
+        scale(1.45);
 
-      opacity:0.72;
+      opacity:0.86;
     }
 
-    75%{
+    40%{
       transform:
         translate(-50%,-50%)
-        scale(25);
+        scale(2.75);
 
-      opacity:0.52;
+      opacity:0.78;
     }
 
-    90%{
+    55%{
       transform:
         translate(-50%,-50%)
-        scale(40);
+        scale(4.65);
 
-      opacity:0.32;
+      opacity:0.67;
+    }
+
+    70%{
+      transform:
+        translate(-50%,-50%)
+        scale(7.8);
+
+      opacity:0.54;
+    }
+
+    85%{
+      transform:
+        translate(-50%,-50%)
+        scale(12.5);
+
+      opacity:0.38;
     }
 
     100%{
       transform:
         translate(-50%,-50%)
-        scale(60);
+        scale(22);
 
       opacity:0.18;
     }
@@ -344,16 +407,17 @@
 
 
   /* ========================================
-     下部を少し暗くする
+     下部の文字を読みやすくする暗幕
      ======================================== */
 
   .hero::after{
     content:"";
 
     position:absolute;
+
     inset:0;
 
-    z-index:3;
+    z-index:4;
 
     background:
       linear-gradient(
@@ -375,9 +439,12 @@
   .hero-content{
     position:relative;
 
-    z-index:4;
+    z-index:5;
 
-    padding:0 6vw 8vh;
+    padding:
+      0
+      6vw
+      8vh;
 
     max-width:900px;
   }
@@ -396,9 +463,13 @@
 
     margin-bottom:1.2rem;
 
-    border:1px solid rgba(232,163,61,0.5);
+    border:
+      1px solid
+      rgba(232,163,61,0.5);
 
-    padding:0.3rem 0.8rem;
+    padding:
+      0.3rem
+      0.8rem;
 
     border-radius:2px;
 
@@ -416,7 +487,12 @@
 
     font-weight:700;
 
-    font-size:clamp(2.2rem,6vw,4.4rem);
+    font-size:
+      clamp(
+        2.2rem,
+        6vw,
+        4.4rem
+      );
 
     line-height:1.25;
 
@@ -435,14 +511,21 @@
 
   .hero h1 em{
     font-style:normal;
+
     color:var(--amber);
   }
 
 
   .hero p{
-    font-size:clamp(1rem,2vw,1.2rem);
+    font-size:
+      clamp(
+        1rem,
+        2vw,
+        1.2rem
+      );
 
-    color:rgba(234,242,233,0.85);
+    color:
+      rgba(234,242,233,0.85);
 
     max-width:44ch;
 
@@ -461,12 +544,16 @@
 
     from{
       opacity:0;
-      transform:translateY(16px);
+
+      transform:
+        translateY(16px);
     }
 
     to{
       opacity:1;
-      transform:translateY(0);
+
+      transform:
+        translateY(0);
     }
   }
 
@@ -482,7 +569,9 @@
 
     gap:0.6rem;
 
-    padding:0.95rem 1.9rem;
+    padding:
+      0.95rem
+      1.9rem;
 
     background:var(--amber);
 
@@ -512,12 +601,15 @@
   .btn:hover{
     background:#f4b95a;
 
-    transform:translateY(-2px);
+    transform:
+      translateY(-2px);
   }
 
 
   .btn:focus-visible{
-    outline:2px solid var(--moonlight);
+    outline:
+      2px solid
+      var(--moonlight);
 
     outline-offset:3px;
   }
@@ -534,13 +626,16 @@
     left:0;
     right:0;
 
-    z-index:5;
+    z-index:6;
 
     display:flex;
 
     align-items:center;
 
-    padding:2rem 6vw 0;
+    padding:
+      2rem
+      6vw
+      0;
 
     opacity:0;
 
@@ -556,7 +651,12 @@
 
     font-weight:700;
 
-    font-size:clamp(1.1rem,2vw,1.5rem);
+    font-size:
+      clamp(
+        1.1rem,
+        2vw,
+        1.5rem
+      );
 
     letter-spacing:0.14em;
 
@@ -581,7 +681,8 @@
     background:var(--amber);
 
     box-shadow:
-      0 0 10px 2px rgba(232,163,61,0.7);
+      0 0 10px 2px
+      rgba(232,163,61,0.7);
 
     flex-shrink:0;
   }
@@ -599,7 +700,9 @@
      ======================================== */
 
   section{
-    padding:5.5rem 6vw;
+    padding:
+      5.5rem
+      6vw;
   }
 
 
@@ -624,7 +727,12 @@
   .field-note h2{
     font-family:'Shippori Mincho',serif;
 
-    font-size:clamp(1.5rem,3vw,2.2rem);
+    font-size:
+      clamp(
+        1.5rem,
+        3vw,
+        2.2rem
+      );
 
     margin-bottom:1rem;
   }
@@ -633,7 +741,8 @@
   .field-note p{
     max-width:60ch;
 
-    color:rgba(234,242,233,0.8);
+    color:
+      rgba(234,242,233,0.8);
 
     line-height:1.9;
   }
@@ -647,7 +756,10 @@
     display:grid;
 
     grid-template-columns:
-      repeat(auto-fit,minmax(200px,1fr));
+      repeat(
+        auto-fit,
+        minmax(200px,1fr)
+      );
 
     gap:1.2rem;
 
@@ -656,10 +768,12 @@
 
 
   .creature-card{
-    background:rgba(234,242,233,0.04);
+    background:
+      rgba(234,242,233,0.04);
 
     border:
-      1px solid rgba(234,242,233,0.1);
+      1px solid
+      rgba(234,242,233,0.1);
 
     border-radius:4px;
 
@@ -706,20 +820,23 @@
   .flow-item{
     display:grid;
 
-    grid-template-columns:64px 1fr;
+    grid-template-columns:
+      64px 1fr;
 
     gap:1.5rem;
 
     padding:1.6rem 0;
 
     border-bottom:
-      1px solid rgba(234,242,233,0.12);
+      1px solid
+      rgba(234,242,233,0.12);
   }
 
 
   .flow-item:first-child{
     border-top:
-      1px solid rgba(234,242,233,0.12);
+      1px solid
+      rgba(234,242,233,0.12);
   }
 
 
@@ -742,7 +859,8 @@
 
 
   .flow-item p{
-    color:rgba(234,242,233,0.75);
+    color:
+      rgba(234,242,233,0.75);
 
     font-size:0.95rem;
 
@@ -757,14 +875,18 @@
   footer{
     text-align:center;
 
-    padding:2.5rem 6vw;
+    padding:
+      2.5rem
+      6vw;
 
     font-size:0.8rem;
 
-    color:rgba(234,242,233,0.5);
+    color:
+      rgba(234,242,233,0.5);
 
     border-top:
-      1px solid rgba(234,242,233,0.1);
+      1px solid
+      rgba(234,242,233,0.1);
   }
 
 
@@ -774,32 +896,33 @@
 
   @media (prefers-reduced-motion:reduce){
 
-    .hero-bg{
-      animation:none;
-
-      filter:brightness(0.30);
+    .darkness{
+      display:none;
     }
 
-    .hero-reveal{
-      animation:none;
 
-      -webkit-mask-image:none;
-      mask-image:none;
+    .hero-bg{
+      filter:
+        brightness(1)
+        saturate(1);
+    }
+
+
+    .frog-reveal{
+      clip-path:none;
+
+      opacity:1;
 
       filter:
         brightness(1)
         saturate(1);
     }
 
+
     .flashlight{
-      animation:none;
-
-      transform:
-        translate(-50%,-50%)
-        scale(60);
-
-      opacity:0.18;
+      display:none;
     }
+
 
     .eyebrow,
     .hero h1,
@@ -826,8 +949,10 @@
 
 <header class="hero">
 
-  <!-- 元の写真。
-       最初は真っ黒から始まる -->
+  <!--
+    元のカエル写真。
+    写真自体は明るさ・色を変更しない。
+  -->
 
 <img
 class="hero-bg"
@@ -836,55 +961,93 @@ alt="奄美大島の夜の森で観察できるカエル(種名は確認中・�
 
 >
 
-  <!-- 懐中電灯で照らされた部分だけ見える写真 -->
+  <!--
+    真っ黒な暗幕。
+    黒い〇は表示されず、
+    中央だけが懐中電灯と一緒に開いていく。
+  -->
+
+  <div
+    class="darkness"
+    aria-hidden="true"
+  ></div>
+
+  <!--
+    懐中電灯が当たった場所から
+    カエルが浮かび上がる。
+  -->
 
 <img
-class="hero-reveal"
-src="images/ishikawa-hero.png"
+class="frog-reveal"
+src="images/frog-hero.png"
 alt=""
 aria-hidden="true"
 
 >
 
-  <!-- 丸い懐中電灯の光 -->
+  <!--
+    丸い懐中電灯の光。
+    黒い〇は使わない。
+  -->
 
   <div
     class="flashlight"
     aria-hidden="true"
   ></div>
 
-  <!-- ブランド -->
+  <!-- ========================================
+       BRAND
+       ======================================== -->
 
   <div class="brand-bar">
 
 ```
 <span class="mark">
+
   Nature
-  <span class="dash">–</span>
+
+  <span class="dash">
+    –
+  </span>
+
   Experience
+
 </span>
 ```
 
   </div>
 
-  <!-- ヒーロー文字 -->
+  <!-- ========================================
+       HERO CONTENT
+       ======================================== -->
 
   <div class="hero-content">
 
 ```
 <span class="eyebrow">
+
   AMAMI OSHIMA / NIGHT FIELD TOUR
+
 </span>
 
 
 <h1>
+
   懐中電灯の先に、<br>
-  <em>奄美だけの夜</em>が広がる。
+
+  <em>
+    奄美だけの夜
+  </em>
+
+  が広がる。
+
 </h1>
 
 
 <p>
-  アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩くナイトツアー。
+
+  アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩く2時間のナイトツアー。
+
 </p>
 
 
@@ -892,7 +1055,9 @@ aria-hidden="true"
   href="#tour"
   class="btn"
 >
+
   🔦 ナイトツアーを見る
+
 </a>
 ```
 
@@ -907,15 +1072,27 @@ aria-hidden="true"
 <section class="field-note">
 
   <p class="label">
-    FIELD NOTE — 今の時期に観察しやすい生き物
+
+```
+FIELD NOTE — 今の時期に観察しやすい生き物
+```
+
   </p>
 
   <h2>
-    8月、森はこんな顔をしている
+
+```
+8月、森はこんな顔をしている
+```
+
   </h2>
 
   <p>
-    季節ごとに出会える生き物は変わります。このセクションはAIが観察データをもとに毎月自動更新する予定です(実装中)。
+
+```
+季節ごとに出会える生き物は変わります。このセクションはAIが観察データをもとに毎月自動更新する予定です(実装中)。
+```
+
   </p>
 
   <div class="creature-grid">
@@ -924,11 +1101,16 @@ aria-hidden="true"
 <div class="creature-card">
 
   <div class="name">
+
     ハブ
+
   </div>
 
+
   <div class="months">
+
     6月-10月に観察しやすい
+
   </div>
 
 </div>
@@ -937,11 +1119,16 @@ aria-hidden="true"
 <div class="creature-card">
 
   <div class="name">
+
     アマミノコギリクワガタ
+
   </div>
 
+
   <div class="months">
+
     梅雨明けから活動開始
+
   </div>
 
 </div>
@@ -950,11 +1137,16 @@ aria-hidden="true"
 <div class="creature-card">
 
   <div class="name">
+
     オキナワスジゲンゴロウ
+
   </div>
 
+
   <div class="months">
+
     春から秋によく見られる
+
   </div>
 
 </div>
@@ -977,7 +1169,11 @@ aria-hidden="true"
     class="field-note label"
     style="color:var(--moss);"
   >
-    HOW IT WORKS
+
+```
+HOW IT WORKS
+```
+
   </p>
 
   <h2
@@ -987,7 +1183,11 @@ aria-hidden="true"
       margin-bottom:1rem;
     "
   >
-    ナイトツアーの流れ
+
+```
+ナイトツアーの流れ
+```
+
   </h2>
 
   <div class="flow-list">
@@ -995,18 +1195,27 @@ aria-hidden="true"
 ```
 <div class="flow-item">
 
+
   <div class="flow-num">
+
     01
+
   </div>
+
 
   <div>
 
     <h3>
+
       19時頃、指定の場所に集合
+
     </h3>
 
+
     <p>
+
       ビッグ2駐車場、朝戸トンネル駐車場など。名瀬近辺の宿なら送迎相談可。
+
     </p>
 
   </div>
@@ -1014,20 +1223,30 @@ aria-hidden="true"
 </div>
 
 
+
 <div class="flow-item">
 
+
   <div class="flow-num">
+
     02
+
   </div>
+
 
   <div>
 
     <h3>
+
       ガイドの車で夜の森へ
+
     </h3>
 
+
     <p>
-      専属ガイドと一緒に固有種を探しながら歩きます。
+
+      約2時間、専属ガイドと一緒に固有種を探しながら歩きます。
+
     </p>
 
   </div>
@@ -1035,20 +1254,30 @@ aria-hidden="true"
 </div>
 
 
+
 <div class="flow-item">
 
+
   <div class="flow-num">
+
     03
+
   </div>
+
 
   <div>
 
     <h3>
+
       集合場所で解散
+
     </h3>
 
+
     <p>
+
       採集目的のガイドはお断りしています。観察・撮影を楽しみましょう。
+
     </p>
 
   </div>
@@ -1067,6 +1296,7 @@ aria-hidden="true"
 <footer>
 
 © 2026 Nature-Experience Amami.
+
 画像の無断転載・複製・改変を禁じます。
 
 </footer>
