@@ -1,5 +1,6 @@
 """
-images/creatures/カテゴリ/生き物ID/YYYYMMDD_連番.jpg というフォルダ構成から、
+images/creatures/カテゴリ/生き物ID/生き物名_6桁の写真番号_YYYYMMDD_HH.jpg
+というファイル構成から、
 生き物ごとの「実際に観察できた月」を自動集計して data/creatures.json を作る。
 
 実行方法: python scripts/generate_creatures_json.py
