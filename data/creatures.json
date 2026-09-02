@@ -1,7 +1,9 @@
 [
   {
     "id": "akamata",
+    "name": "アカマタ",
     "category": "hebi",
+    "category_name": "ヘビ",
     "months": [
       3,
       4,
