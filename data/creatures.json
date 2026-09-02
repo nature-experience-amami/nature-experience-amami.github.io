@@ -56,5 +56,20 @@
       "images/creatures/hebi/akamata/akamata_000038_20251208_21.jpg",
       "images/creatures/hebi/akamata/akamata_000039_20251225_00.jpg"
     ]
+  },
+  {
+    "id": "habu",
+    "name": "ハブ",
+    "category": "hebi",
+    "category_name": "ヘビ",
+    "months": [
+      2,
+      12
+    ],
+    "photos": [
+      "images/creatures/hebi/habu/habu_000001_20241218_22.jpg",
+      "images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
+      "images/creatures/hebi/habu/habu_000003_20250228_00.jpg"
+    ]
   }
 ]
