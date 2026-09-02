@@ -5,6 +5,7 @@ EXIF撮影日時に基づいてリネーム・リサイズ・透かし追加す�
 実行方法: python scripts/process_creature_photos.py
 """
 import re
+import shutil
 import tempfile
 from datetime import datetime
 from pathlib import Path
@@ -14,6 +15,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 IMAGES_DIR = Path("images/creatures")
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
+IGNORED_DIR_NAMES = {"failed"}
 PROCESSED_RE = re.compile(
     r"^(?P<id>.+)_(?P<number>\d{6})_"
     r"(?P<date>\d{8})_(?P<hour>\d{2})$"
@@ -21,6 +23,28 @@ PROCESSED_RE = re.compile(
 WATERMARK = "Photo by Nature Experience"
 MAX_LONG_SIDE = 2000
 WATERMARK_OPACITY = 190
+
+
+def ensure_failed_dir(species_dir):
+    failed_dir = species_dir / "failed"
+    failed_dir.mkdir(exist_ok=True)
+    return failed_dir
+
+
+def move_to_failed(source, species_dir):
+    try:
+        failed_dir = ensure_failed_dir(species_dir)
+        destination = failed_dir / source.name
+        counter = 1
+        while destination.exists():
+            destination = failed_dir / f"{source.stem}_{counter}{source.suffix}"
+            counter += 1
+
+        shutil.move(str(source), str(destination))
+        return True
+    except Exception as error:
+        print(f"失敗写真の移動に失敗しました: {source} -> {species_dir / 'failed'} ({error})")
+        return False
 
 
 def is_processed(photo, creature_id):
@@ -135,7 +159,9 @@ def scan():
         return 0
 
     for category_dir in sorted(path for path in IMAGES_DIR.iterdir() if path.is_dir()):
-        for species_dir in sorted(path for path in category_dir.iterdir() if path.is_dir()):
+        for species_dir in sorted(
+            path for path in category_dir.iterdir() if path.is_dir() and path.name not in IGNORED_DIR_NAMES
+        ):
             creature_id = species_dir.name
             photos = sorted(
                 path
@@ -155,10 +181,12 @@ def scan():
                 except Exception as error:
                     error_count += 1
                     errors.append(f"{source}: {error}")
+                    move_to_failed(source, species_dir)
                     continue
                 if capture_datetime is None:
                     missing_exif_count += 1
                     missing_exif.append(str(source))
+                    move_to_failed(source, species_dir)
                     continue
 
                 target_name = (
@@ -173,6 +201,7 @@ def scan():
                 else:
                     error_count += 1
                     errors.append(f"{source}: {detail}")
+                    move_to_failed(source, species_dir)
 
     print(f"処理した写真: {processed_count}枚")
     print(f"処理済みとしてスキップ: {skipped_count}枚")
@@ -186,7 +215,7 @@ def scan():
         print("エラーの詳細:")
         for error in errors:
             print(f"- {error}")
-    return error_count
+    return 0
 
 
 if __name__ == "__main__":

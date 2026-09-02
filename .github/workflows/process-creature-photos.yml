@@ -1,0 +1,53 @@
+name: process-creature-photos
+
+on:
+  push:
+    paths:
+      - 'images/creatures/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  process-photos:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Pillow
+        shell: bash
+        run: |
+          python -m pip install Pillow
+
+      - name: Process creature photos
+        shell: bash
+        run: |
+          python scripts/process_creature_photos.py
+
+      - name: Regenerate creatures JSON
+        shell: bash
+        run: |
+          python scripts/generate_creatures_json.py
+
+      - name: Commit processed results
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/creatures data/creatures.json
+          if git diff --cached --quiet; then
+            echo "No files changed; nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: process creature photos [skip photo-processing]"
+          git push

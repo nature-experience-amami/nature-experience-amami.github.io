@@ -13,8 +13,10 @@ IMAGES_DIR = Path("images/creatures")
 OUTPUT = Path("data/creatures.json")
 DATE_RE = re.compile(r"^.+_\d{6}_(\d{4})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])_([01]\d|2[0-3])$")
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
+IGNORED_DIR_NAMES = {"failed"}
 CREATURE_NAMES = {
     "akamata": "アカマタ",
+    "habu": "ハブ",
 }
 CATEGORY_NAMES = {
     "hebi": "ヘビ",
@@ -24,7 +26,9 @@ CATEGORY_NAMES = {
 def scan():
     creatures = []
     for category_dir in sorted(p for p in IMAGES_DIR.iterdir() if p.is_dir()):
-        for species_dir in sorted(p for p in category_dir.iterdir() if p.is_dir()):
+        for species_dir in sorted(
+            p for p in category_dir.iterdir() if p.is_dir() and p.name not in IGNORED_DIR_NAMES
+        ):
             months, photos = set(), []
             for photo in sorted(species_dir.iterdir()):
                 if photo.suffix.lower() not in IMAGE_EXTS:
