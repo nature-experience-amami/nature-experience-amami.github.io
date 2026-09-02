@@ -3,7 +3,7 @@ name: process-creature-photos
 on:
   push:
     paths:
-      - 'images/creatures/**'
+      - "images/creatures/**"
   workflow_dispatch:
 
 permissions:
@@ -13,41 +13,41 @@ jobs:
   process-photos:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
+
+      - name: Setup Arial-compatible font
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-liberation
+          mkdir -p "C:/Windows/Fonts"
+          cp /usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf \
+            "C:/Windows/Fonts/arial.ttf"
 
       - name: Install Pillow
-        shell: bash
-        run: |
-          python -m pip install Pillow
+        run: python -m pip install Pillow
 
       - name: Process creature photos
-        shell: bash
-        run: |
-          python scripts/process_creature_photos.py
+        run: python scripts/process_creature_photos.py
 
-      - name: Regenerate creatures JSON
-        shell: bash
-        run: |
-          python scripts/generate_creatures_json.py
-
-      - name: Commit processed results
-        shell: bash
+      - name: Commit and push processed photos
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/creatures data/creatures.json
+
+          git add images/creatures
+
           if git diff --cached --quiet; then
             echo "No files changed; nothing to commit."
             exit 0
           fi
-          git commit -m "chore: process creature photos [skip photo-processing]"
+
+          git commit -m "chore: process creature photos"
           git push
