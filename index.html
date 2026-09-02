@@ -291,11 +291,13 @@
       wrap.className = 'ask-photos';
       ids.forEach(function (id) {
         const creature = creatures.find(function (c) { return c.id === id; });
-        if (creature && creature.photos && creature.photos[0]) {
-          const img = document.createElement('img');
-          img.src = creature.photos[0];
-          img.alt = id;
-          wrap.appendChild(img);
+        if (creature && Array.isArray(creature.photos)) {
+          creature.photos.slice(0, 4).forEach(function (photo) {
+            const img = document.createElement('img');
+            img.src = photo;
+            img.alt = id;
+            wrap.appendChild(img);
+          });
         }
       });
       if (wrap.children.length) replyEl.appendChild(wrap);
