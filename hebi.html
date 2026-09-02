@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>奄美大島のヘビ｜Nature Experience Amami</title>
+
+  <meta name="description" content="奄美大島の夜の森で出会うヘビたち。ハブをはじめ、アカマタ、ヒメハブ、ガラスヒバァなど、奄美に暮らすヘビの特徴や観察時の注意点を紹介します。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --night:#0A1613;
+      --canopy:#16302A;
+      --moonlight:#EAF2E9;
+      --amber:#E8A33D;
+      --moss:#6B8F71;
+      --bark:#2A211A;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:var(--night);
+      color:var(--moonlight);
+      font-family:"Zen Kaku Gothic New", sans-serif;
+      line-height:1.9;
+    }
+
+    img{
+      display:block;
+      width:100%;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(10,22,19,.94);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(234,242,233,.1);
+    }
+
+    .header-inner{
+      max-width:1200px;
+      margin:0 auto;
+      padding:18px 28px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:30px;
+    }
+
+    .logo{
+      font-family:"Shippori Mincho", serif;
+      font-size:20px;
+      font-weight:600;
+      letter-spacing:.08em;
+      white-space:nowrap;
+    }
+
+    .logo span{
+      display:block;
+      font-family:"Space Mono", monospace;
+      font-size:9px;
+      letter-spacing:.18em;
+      color:var(--amber);
+      margin-top:2px;
+    }
+
+    nav{
+      display:flex;
+      align-items:center;
+      gap:28px;
+    }
+
+    nav a{
+      font-family:"Space Mono", monospace;
+      font-size:11px;
+      letter-spacing:.08em;
+      opacity:.82;
+      transition:.25s;
+    }
+
+    nav a:hover{
+      color:var(--amber);
+      opacity:1;
+    }
+
+    /* =========================
+       CREATURE NAV
+    ========================= */
+
+    .creature-nav{
+      background:#0C1C18;
+      border-bottom:1px solid rgba(234,242,233,.08);
+      position:sticky;
+      top:69px;
+      z-index:900;
+    }
+
+    .creature-nav-inner{
+      max-width:1200px;
+      margin:0 auto;
+      padding:0 28px;
+      display:flex;
+      align-items:center;
+      gap:0;
+      overflow-x:auto;
+      scrollbar-width:none;
+    }
+
+    .creature-nav-inner::-webkit-scrollbar{
+      display:none;
+    }
+
+    .creature-nav a{
+      flex:0 0 auto;
+      padding:14px 20px;
+      font-size:12px;
+      color:rgba(234,242,233,.65);
+      border-right:1px solid rgba(234,242,233,.08);
+      transition:.25s;
+      white-space:nowrap;
+    }
+
+    .creature-nav a:first-child{
+      border-left:1px solid rgba(234,242,233,.08);
+    }
+
+    .creature-nav a:hover,
+    .creature-nav a.active{
+      color:var(--amber);
+      background:rgba(232,163,61,.05);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero{
+      min-height:55vh;
+      display:flex;
+      align-items:flex-end;
+      position:relative;
+      overflow:hidden;
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(10,22,19,.2),
+          rgba(10,22,19,.95)
+        ),
+        radial-gradient(
+          circle at 70% 35%,
+          rgba(107,143,113,.18),
+          transparent 35%
+        );
+    }
+
+    .hero-inner{
+      width:100%;
+      max-width:1200px;
+      margin:0 auto;
+      padding:100px 28px 75px;
+    }
+
+    .eyebrow{
+      font-family:"Space Mono", monospace;
+      font-size:11px;
+      letter-spacing:.18em;
+      color:var(--amber);
+      margin-bottom:18px;
+    }
+
+    .hero h1{
+      font-family:"Shippori Mincho", serif;
+      font-size:clamp(48px,8vw,88px);
+      line-height:1.15;
+      font-weight:600;
+      letter-spacing:.04em;
+    }
+
+    .hero-lead{
+      max-width:720px;
+      margin-top:25px;
+      font-size:16px;
+      line-height:2;
+      color:rgba(234,242,233,.82);
+    }
+
+    /* =========================
+       COMMON
+    ========================= */
+
+    section{
+      padding:100px 28px;
+    }
+
+    .section-inner{
+      max-width:1200px;
+      margin:0 auto;
+    }
+
+    .section-label{
+      font-family:"Space Mono", monospace;
+      font-size:10px;
+      letter-spacing:.18em;
+      color:var(--amber);
+      margin-bottom:12px;
+    }
+
+    .section-title{
+      font-family:"Shippori Mincho", serif;
+      font-size:clamp(30px,5vw,48px);
+      line-height:1.4;
+      font-weight:600;
+      margin-bottom:30px;
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro{
+      background:var(--canopy);
+    }
+
+    .intro-grid{
+      display:grid;
+      grid-template-columns:1fr 1.5fr;
+      gap:80px;
+      align-items:start;
+    }
+
+    .intro-text{
+      max-width:720px;
+      font-size:15px;
+      color:rgba(234,242,233,.85);
+    }
+
+    .intro-text p + p{
+      margin-top:20px;
+    }
+
+    .safety-note{
+      margin-top:35px;
+      padding:24px 26px;
+      border-left:2px solid var(--amber);
+      background:rgba(10,22,19,.35);
+    }
+
+    .safety-note strong{
+      display:block;
+      color:var(--amber);
+      font-size:14px;
+      margin-bottom:7px;
+    }
+
+    .safety-note p{
+      font-size:13px;
+      line-height:1.8;
+    }
+
+    /* =========================
+       CREATURES
+    ========================= */
+
+    .creatures{
+      background:var(--night);
+    }
+
+    .creatures-intro{
+      max-width:720px;
+      margin-bottom:55px;
+      color:rgba(234,242,233,.72);
+      font-size:14px;
+    }
+
+    .creature-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:55px 38px;
+    }
+
+    .creature-card{
+      border-top:1px solid rgba(234,242,233,.14);
+      padding-top:18px;
+    }
+
+    .creature-image{
+      aspect-ratio:16 / 9;
+      overflow:hidden;
+      background:var(--canopy);
+    }
+
+    .creature-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .5s ease;
+    }
+
+    .creature-card:hover .creature-image img{
+      transform:scale(1.03);
+    }
+
+    .creature-info{
+      padding-top:22px;
+    }
+
+    .creature-meta{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:8px;
+      font-family:"Space Mono", monospace;
+      font-size:10px;
+      color:var(--moss);
+      letter-spacing:.05em;
+    }
+
+    .creature-name{
+      display:inline-block;
+      font-family:"Shippori Mincho", serif;
+      font-size:30px;
+      font-weight:600;
+      margin-bottom:12px;
+      border-bottom:1px solid transparent;
+      transition:.25s;
+    }
+
+    .creature-card:hover .creature-name{
+      color:var(--amber);
+      border-bottom-color:rgba(232,163,61,.5);
+    }
+
+    .creature-description{
+      font-size:14px;
+      color:rgba(234,242,233,.72);
+      line-height:1.9;
+      margin-bottom:18px;
+    }
+
+    .creature-link{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      font-family:"Space Mono", monospace;
+      font-size:10px;
+      letter-spacing:.1em;
+      color:var(--amber);
+      padding-bottom:4px;
+      border-bottom:1px solid rgba(232,163,61,.45);
+      transition:.25s;
+    }
+
+    .creature-link:hover{
+      border-color:var(--amber);
+    }
+
+    .danger{
+      color:var(--amber);
+    }
+
+    /* =========================
+       OTHER CREATURES NAV
+    ========================= */
+
+    .other-creatures{
+      margin-top:85px;
+      padding-top:45px;
+      border-top:1px solid rgba(234,242,233,.12);
+    }
+
+    .other-creatures-title{
+      font-family:"Shippori Mincho", serif;
+      font-size:24px;
+      margin-bottom:25px;
+    }
+
+    .other-creatures-buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .category-button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 22px;
+      border:1px solid rgba(234,242,233,.2);
+      font-size:12px;
+      color:rgba(234,242,233,.75);
+      transition:.25s;
+    }
+
+    .category-button:hover{
+      border-color:var(--amber);
+      color:var(--amber);
+      background:rgba(232,163,61,.04);
+    }
+
+    /* =========================
+       OBSERVATION
+    ========================= */
+
+    .observation{
+      background:var(--canopy);
+    }
+
+    .observation-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:start;
+    }
+
+    .observation-text{
+      font-size:15px;
+      color:rgba(234,242,233,.82);
+    }
+
+    .observation-text p + p{
+      margin-top:20px;
+    }
+
+    .attention-list{
+      border-top:1px solid rgba(234,242,233,.15);
+    }
+
+    .attention-item{
+      padding:22px 0;
+      border-bottom:1px solid rgba(234,242,233,.15);
+      display:grid;
+      grid-template-columns:50px 1fr;
+      gap:18px;
+    }
+
+    .attention-number{
+      font-family:"Space Mono", monospace;
+      color:var(--amber);
+      font-size:12px;
+      padding-top:4px;
+    }
+
+    .attention-item h3{
+      font-family:"Shippori Mincho", serif;
+      font-size:18px;
+      margin-bottom:5px;
+    }
+
+    .attention-item p{
+      font-size:13px;
+      color:rgba(234,242,233,.7);
+      line-height:1.8;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta{
+      text-align:center;
+      background:
+        linear-gradient(
+          rgba(10,22,19,.86),
+          rgba(10,22,19,.96)
+        );
+      padding:110px 28px;
+    }
+
+    .cta h2{
+      font-family:"Shippori Mincho", serif;
+      font-size:clamp(30px,5vw,46px);
+      line-height:1.5;
+      margin-bottom:20px;
+    }
+
+    .cta p{
+      max-width:600px;
+      margin:0 auto 35px;
+      color:rgba(234,242,233,.7);
+      font-size:14px;
+    }
+
+    .cta-button{
+      display:inline-block;
+      padding:16px 34px;
+      border:1px solid var(--amber);
+      color:var(--amber);
+      font-family:"Space Mono", monospace;
+      font-size:11px;
+      letter-spacing:.12em;
+      transition:.25s;
+    }
+
+    .cta-button:hover{
+      background:var(--amber);
+      color:var(--night);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer{
+      background:#07100E;
+      padding:55px 28px 30px;
+    }
+
+    .footer-inner{
+      max-width:1200px;
+      margin:0 auto;
+      display:flex;
+      justify-content:space-between;
+      gap:30px;
+      padding-bottom:35px;
+      border-bottom:1px solid rgba(234,242,233,.1);
+    }
+
+    .footer-logo{
+      font-family:"Shippori Mincho", serif;
+      font-size:20px;
+    }
+
+    .footer-copy{
+      margin-top:8px;
+      font-size:11px;
+      color:rgba(234,242,233,.5);
+    }
+
+    .footer-nav{
+      display:flex;
+      gap:25px;
+      align-items:flex-start;
+    }
+
+    .footer-nav a{
+      font-family:"Space Mono", monospace;
+      font-size:10px;
+      color:rgba(234,242,233,.6);
+    }
+
+    .copyright{
+      max-width:1200px;
+      margin:25px auto 0;
+      font-family:"Space Mono", monospace;
+      font-size:9px;
+      color:rgba(234,242,233,.35);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media(max-width:760px){
+
+      .header-inner{
+        padding:15px 18px;
+      }
+
+      .logo{
+        font-size:17px;
+      }
+
+      nav{
+        gap:13px;
+      }
+
+      nav a{
+        font-size:9px;
+      }
+
+      .creature-nav{
+        top:60px;
+      }
+
+      .creature-nav-inner{
+        padding:0 12px;
+      }
+
+      .creature-nav a{
+        padding:12px 16px;
+        font-size:11px;
+      }
+
+      .hero{
+        min-height:48vh;
+      }
+
+      .hero-inner{
+        padding:80px 20px 55px;
+      }
+
+      .hero h1{
+        font-size:48px;
+      }
+
+      .hero-lead{
+        font-size:14px;
+      }
+
+      section{
+        padding:75px 20px;
+      }
+
+      .intro-grid,
+      .observation-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+      }
+
+      .creature-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+      }
+
+      .creature-name{
+        font-size:27px;
+      }
+
+      .creature-description{
+        font-size:13px;
+      }
+
+      .other-creatures{
+        margin-top:65px;
+      }
+
+      .other-creatures-buttons{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+      }
+
+      .category-button{
+        padding:12px 10px;
+        text-align:center;
+      }
+
+      .attention-item{
+        grid-template-columns:38px 1fr;
+        gap:12px;
+      }
+
+      .footer-inner{
+        flex-direction:column;
+      }
+
+      .footer-nav{
+        flex-wrap:wrap;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+```
+<div class="header-inner">
+
+  <a href="index.html" class="logo">
+    Nature Experience Amami
+    <span>AMAMI NIGHT FOREST</span>
+  </a>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="tour.html">TOUR</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+</div>
+```
+
+  </header>
+
+  <!-- CREATURE CATEGORY NAV -->
+
+  <div class="creature-nav">
+
+```
+<div class="creature-nav-inner">
+
+  <a href="hebi.html" class="active">ヘビ</a>
+  <a href="kaeru.html">カエル</a>
+  <a href="kuwagata.html">クワガタ</a>
+  <a href="honyu.html">哺乳類</a>
+  <a href="tori.html">鳥</a>
+  <a href="tokage-imori.html">トカゲ・イモリ</a>
+  <a href="konchu.html">昆虫その他</a>
+  <a href="kai.html">貝</a>
+  <a href="sonota.html">その他</a>
+
+</div>
+```
+
+  </div>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+```
+<div class="hero-inner">
+
+  <div class="eyebrow">
+    CREATURES / HEBI
+  </div>
+
+  <h1>ヘビ</h1>
+
+  <p class="hero-lead">
+    奄美大島の夜の森で出会うヘビたち。<br>
+    毒を持つもの、持たないもの、<br>
+    森や水辺を好むものなど、それぞれ異なる環境で暮らしています。
+  </p>
+
+</div>
+```
+
+  </section>
+
+  <!-- INTRO -->
+
+  <section class="intro">
+
+```
+<div class="section-inner">
+
+  <div class="intro-grid">
+
+    <div>
+
+      <div class="section-label">
+        ABOUT
+      </div>
+
+      <h2 class="section-title">
+        奄美大島の<br>
+        ヘビ
+      </h2>
+
+    </div>
+
+
+    <div class="intro-text">
+
+      <p>
+        奄美大島には、ハブをはじめとするさまざまなヘビが暮らしています。
+        夜行性の種類が多く、日が暮れて森が静かになると、
+        少しずつ活動を始めます。
+      </p>
+
+      <p>
+        同じヘビの仲間でも、暮らしている場所や活動する時間、
+        食べるものなどはそれぞれ異なります。
+        森の中だけでなく、水辺や草むらなどで見つかる種類もいます。
+      </p>
+
+      <p>
+        奄美の夜の森を歩いていると、
+        そんなヘビたちの姿に出会うことがあります。
+        見つけたときには、まず距離をとって、
+        その姿や動きを静かに観察してみてください。
+      </p>
+
+
+      <div class="safety-note">
+
+        <strong>
+          毒蛇への注意
+        </strong>
+
+        <p>
+          奄美大島では、ハブやヒメハブなどの毒蛇に出会う可能性があります。
+          夜間の森では足元や草むらに注意し、
+          ヘビを見つけても決して近づいたり、触ったりしないでください。
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- CREATURES -->
+
+  <section class="creatures">
+
+```
+<div class="section-inner">
+
+  <div class="section-label">
+    SNAKES OF AMAMI
+  </div>
+
+  <h2 class="section-title">
+    奄美で出会えるヘビ
+  </h2>
+
+  <p class="creatures-intro">
+    奄美大島で確認されているヘビの中から、
+    夜の森で出会うことのある種類を紹介します。
+    写真や名前をクリックすると、
+    それぞれのヘビの詳しいページを見ることができます。
+  </p>
+
+
+  <div class="creature-grid">
+
+
+    <!-- リュウキュウアオヘビ -->
+    <article class="creature-card">
+
+      <a href="creatures/hebi/ryukyu-ao-hebi.html">
+
+        <div class="creature-image">
+
+          <img
+            src="images/creatures/hebi/ryuukyuu-aohebi/_3262743.JPG"
+            alt="リュウキュウアオヘビ">
+
+        </div>
+
+        <div class="creature-info">
+
+          <div class="creature-meta">
+            <span>HEBI</span>
+            <span>NON-VENOMOUS</span>
+          </div>
+
+          <span class="creature-name">
+            リュウキュウアオヘビ
+          </span>
+
+          <p class="creature-description">
+            緑色の美しい体をしたヘビ。
+            樹上や植物の多い場所などで見られることがあります。
+          </p>
+
+          <span class="creature-link">
+            VIEW CREATURE →
+          </span>
+
+        </div>
+
+      </a>
+
+    </article>
+
+
+    <!-- アカマタ -->
+    <article class="creature-card">
+
+      <a href="creatures/hebi/akamata.html">
+
+        <div class="creature-image">
+
+          <img
+            src="images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg"
+            alt="アカマタ">
+
+        </div>
+
+        <div class="creature-info">
+
+          <div class="creature-meta">
+            <span>HEBI</span>
+            <span>NON-VENOMOUS</span>
+          </div>
+
+          <span class="creature-name">
+            アカマタ
+          </span>
+
+          <p class="creature-description">
+            奄美大島を代表する大型のヘビ。
+            夜間に活動し、さまざまな生き物を捕食します。
+          </p>
+
+          <span class="creature-link">
+            VIEW CREATURE →
+          </span>
+
+        </div>
+
+      </a>
+
+    </article>
+
+
+    <!-- ガラスヒバァ -->
+    <article class="creature-card">
+
+      <a href="creatures/hebi/garasu-hibaa.html">
+
+        <div class="creature-image">
+
+          <img
+            src="images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg"
+            alt="ガラスヒバァ">
+
+        </div>
+
+        <div class="creature-info">
+
+          <div class="creature-meta">
+            <span>HEBI</span>
+            <span>VENOMOUS</span>
+          </div>
+
+          <span class="creature-name">
+            ガラスヒバァ
+          </span>
+
+          <p class="creature-description">
+            樹上や草木の上などでも見られることがあるヘビ。
+            細長い体と特徴的な模様をしています。
+          </p>
+
+          <span class="creature-link">
+            VIEW CREATURE →
+          </span>
+
+        </div>
+
+      </a>
+
+    </article>
+
+
+    <!-- ヒメハブ -->
+    <article class="creature-card">
+
+      <a href="creatures/hebi/hime-habu.html">
+
+        <div class="creature-image">
+
+          <img
+            src="images/creatures/hebi/hime-habu/hime-habu_000001_20250428_19.jpg"
+            alt="ヒメハブ">
+
+        </div>
+
+        <div class="creature-info">
+
+          <div class="creature-meta">
+            <span>HEBI</span>
+            <span class="danger">VENOMOUS</span>
+          </div>
+
+          <span class="creature-name">
+            ヒメハブ
+          </span>
+
+          <p class="creature-description">
+            水辺や湿った場所を好む毒蛇。
+            雨の夜などには水辺で見つかることがあります。
+          </p>
+
+          <span class="creature-link">
+            VIEW CREATURE →
+          </span>
+
+        </div>
+
+      </a>
+
+    </article>
+
+
+    <!-- ハブ -->
+    <article class="creature-card">
+
+      <a href="creatures/hebi/habu.html">
+
+        <div class="creature-image">
+
+          <img
+            src="images/creatures/hebi/habu/habu_000001_20241218_22.jpg"
+            alt="ハブ">
+
+        </div>
+
+        <div class="creature-info">
+
+          <div class="creature-meta">
+            <span>HEBI</span>
+            <span class="danger">VENOMOUS</span>
+          </div>
+
+          <span class="creature-name">
+            ハブ
+          </span>
+
+          <p class="creature-description">
+            奄美大島を代表する毒蛇。
+            夜間に活動し、草むらや森の中などさまざまな場所で見られます。
+          </p>
+
+          <span class="creature-link">
+            VIEW CREATURE →
+          </span>
+
+        </div>
+
+      </a>
+
+    </article>
+
+
+    <!-- ヒャン -->
+    <article class="creature-card">
+
+      <a href="creatures/hebi/hyan.html">
+
+        <div class="creature-image">
+
+          <img
+            src="images/creatures/hebi/hyan/hyan_000001_20250515_20.jpg"
+            alt="ヒャン">
+
+        </div>
+
+        <div class="creature-info">
+
+          <div class="creature-meta">
+            <span>HEBI</span>
+            <span class="danger">VENOMOUS</span>
+          </div>
+
+          <span class="creature-name">
+            ヒャン
+          </span>
+
+          <p class="creature-description">
+            奄美に生息する小型の毒蛇。
+            落ち葉の中や林床などで見つかることがあります。
+          </p>
+
+          <span class="creature-link">
+            VIEW CREATURE →
+          </span>
+
+        </div>
+
+      </a>
+
+    </article>
+
+
+    <!-- アマミタカチホヘビ -->
+    <article class="creature-card">
+
+      <a href="creatures/hebi/amami-takachiho-hebi.html">
+
+        <div class="creature-image">
+
+          <img
+            src="images/creatures/hebi/takachiho-hebi/takachiho-hebi_000001_20260401_08.jpg"
+            alt="アマミタカチホヘビ">
+
+        </div>
+
+        <div class="creature-info">
+
+          <div class="creature-meta">
+            <span>HEBI</span>
+            <span>NON-VENOMOUS</span>
+          </div>
+
+          <span class="creature-name">
+            アマミタカチホヘビ
+          </span>
+
+          <p class="creature-description">
+            夜行性で、落ち葉や土の中などに潜むことが多いヘビ。
+            静かな森の中でひっそりと暮らしています。
+          </p>
+
+          <span class="creature-link">
+            VIEW CREATURE →
+          </span>
+
+        </div>
+
+      </a>
+
+    </article>
+
+
+  </div>
+
+
+  <!-- OTHER CREATURES -->
+  <div class="other-creatures">
+
+    <div class="section-label">
+      EXPLORE MORE
+    </div>
+
+    <h3 class="other-creatures-title">
+      他の生き物を見る
+    </h3>
+
+    <div class="other-creatures-buttons">
+
+      <a href="kaeru.html" class="category-button">
+        カエル →
+      </a>
+
+      <a href="kuwagata.html" class="category-button">
+        クワガタ →
+      </a>
+
+      <a href="honyu.html" class="category-button">
+        哺乳類 →
+      </a>
+
+      <a href="tori.html" class="category-button">
+        鳥 →
+      </a>
+
+      <a href="tokage-imori.html" class="category-button">
+        トカゲ・イモリ →
+      </a>
+
+      <a href="konchu.html" class="category-button">
+        昆虫その他 →
+      </a>
+
+      <a href="kai.html" class="category-button">
+        貝 →
+      </a>
+
+      <a href="sonota.html" class="category-button">
+        その他 →
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- OBSERVATION -->
+
+  <section class="observation">
+
+```
+<div class="section-inner">
+
+  <div class="observation-grid">
+
+    <div>
+
+      <div class="section-label">
+        OBSERVATION
+      </div>
+
+      <h2 class="section-title">
+        ヘビを観察するときは
+      </h2>
+
+      <div class="observation-text">
+
+        <p>
+          夜の森でヘビを見つけたら、
+          まずはその場で立ち止まり、距離をとって観察しましょう。
+        </p>
+
+        <p>
+          特に毒蛇の場合は、驚かせたり追いかけたりせず、
+          ヘビがどちらへ向かおうとしているのかを確認しながら、
+          安全な距離を保つことが大切です。
+        </p>
+
+        <p>
+          「見つけること」だけではなく、
+          その生き物がどんな場所で、どんなふうに暮らしているのかを
+          知ることも、夜の森を楽しむ方法のひとつです。
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="attention-list">
+
+
+      <div class="attention-item">
+
+        <div class="attention-number">
+          01
+        </div>
+
+        <div>
+
+          <h3>
+            近づかない
+          </h3>
+
+          <p>
+            特に毒蛇には十分な距離をとり、
+            捕まえたり触ったりしないでください。
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="attention-item">
+
+        <div class="attention-number">
+          02
+        </div>
+
+        <div>
+
+          <h3>
+            足元に注意する
+          </h3>
+
+          <p>
+            夜間は足元が見えにくいため、
+            懐中電灯などで進行方向を確認しながら歩きます。
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="attention-item">
+
+        <div class="attention-number">
+          03
+        </div>
+
+        <div>
+
+          <h3>
+            追いかけない
+          </h3>
+
+          <p>
+            ヘビを見つけても追いかけたり、
+            棒などで刺激したりしないことが大切です。
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="attention-item">
+
+        <div class="attention-number">
+          04
+        </div>
+
+        <div>
+
+          <h3>
+            安全を最優先に
+          </h3>
+
+          <p>
+            野生動物の観察では、生き物との距離を保つこと。
+            無理をせず、安全第一で楽しみましょう。
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+```
+<div class="section-inner">
+
+  <div class="section-label">
+    NIGHT TOUR
+  </div>
+
+  <h2>
+    夜の森で、<br>
+    奄美の生き物に出会う。
+  </h2>
+
+  <p>
+    暗い森の中では、昼間とは違った生き物たちの姿を見ることができます。
+    奄美大島の自然を、ガイドと一緒にゆっくり観察してみませんか。
+  </p>
+
+  <a href="tour.html" class="cta-button">
+    NIGHT TOUR →
+  </a>
+
+</div>
+```
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+```
+<div class="footer-inner">
+
+  <div>
+
+    <div class="footer-logo">
+      Nature Experience Amami
+    </div>
+
+    <div class="footer-copy">
+      奄美大島の夜の森を歩くネイチャーガイド
+    </div>
+
+  </div>
+
+
+  <div class="footer-nav">
+
+    <a href="index.html">
+      HOME
+    </a>
+
+    <a href="tour.html">
+      TOUR
+    </a>
+
+    <a href="contact.html">
+      CONTACT
+    </a>
+
+  </div>
+
+</div>
+
+
+<div class="copyright">
+  © Nature Experience Amami
+</div>
+```
+
+  </footer>
+
+</body>
+</html>
