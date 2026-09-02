@@ -1,7 +1,10 @@
 """
-images/creatures/カテゴリ/生き物ID/生き物名_6桁の写真番号_YYYYMMDD_HH.jpg
-というファイル構成から、
-生き物ごとの「実際に観察できた月」を自動集計して data/creatures.json を作る。
+images/creatures/カテゴリ/生き物ID/生き物ID_連番6桁_YYYYMMDD_HH.jpg
+というファイル構成から、生き物ごとの「実際に観察できた月」を自動集計して
+data/creatures.json を作る。
+
+表示名(name)は content/creatures/カテゴリ/生き物ID.md のfrontmatterから読む。
+(スクリプトに名前を直書きしない → 生き物が増えてもこのファイルは触らなくてよい)
 
 実行方法: python scripts/generate_creatures_json.py
 """
@@ -10,20 +13,31 @@ import json
 from pathlib import Path
 
 IMAGES_DIR = Path("images/creatures")
+CONTENT_DIR = Path("content/creatures")
+CATEGORY_NAMES_FILE = Path("content/categories.json")
 OUTPUT = Path("data/creatures.json")
 DATE_RE = re.compile(r"^.+_\d{6}_(\d{4})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])_([01]\d|2[0-3])$")
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 IGNORED_DIR_NAMES = {"failed"}
-CREATURE_NAMES = {
-    "akamata": "アカマタ",
-    "habu": "ハブ",
-}
-CATEGORY_NAMES = {
-    "hebi": "ヘビ",
-}
+
+
+def read_frontmatter_name(md_path: Path):
+    """content/creatures/カテゴリ/生き物ID.md の frontmatter から name: を読む"""
+    if not md_path.exists():
+        return None
+    text = md_path.read_text(encoding="utf-8")
+    m = re.search(r"^name:\s*(.+)$", text, re.MULTILINE)
+    return m.group(1).strip() if m else None
+
+
+def load_category_names():
+    if CATEGORY_NAMES_FILE.exists():
+        return json.loads(CATEGORY_NAMES_FILE.read_text(encoding="utf-8"))
+    return {}
 
 
 def scan():
+    category_names = load_category_names()
     creatures = []
     for category_dir in sorted(p for p in IMAGES_DIR.iterdir() if p.is_dir()):
         for species_dir in sorted(
@@ -38,15 +52,10 @@ def scan():
                     months.add(int(m.group(2)))
                 photos.append(str(photo.relative_to(".")).replace("\\", "/"))
             if photos:
-                name = CREATURE_NAMES.get(species_dir.name)
-                category_name = CATEGORY_NAMES.get(category_dir.name)
-                if name is None or category_name is None:
-                    missing = []
-                    if name is None:
-                        missing.append(f"生き物ID: {species_dir.name}")
-                    if category_name is None:
-                        missing.append(f"カテゴリ: {category_dir.name}")
-                    raise ValueError(f"表示名が未登録です（{', '.join(missing)}）")
+                md_path = CONTENT_DIR / category_dir.name / f"{species_dir.name}.md"
+                # 説明文(.md)がまだ無くてもビルドは止めない。名前が無ければIDをそのまま表示名にする。
+                name = read_frontmatter_name(md_path) or species_dir.name
+                category_name = category_names.get(category_dir.name, category_dir.name)
                 creatures.append({
                     "id": species_dir.name,
                     "name": name,
