@@ -253,11 +253,21 @@
 <script>
   const WORKER_URL = "https://nature-experience-ai.aegusaegus.workers.dev/";
   const CREATURES_JSON = "data/creatures.json";
+  let creaturesData = null;
 
   document.getElementById('ask-btn').addEventListener('click', askGuide);
   document.getElementById('ask-input').addEventListener('keydown', function (e) {
     if (e.key === 'Enter') askGuide();
   });
+
+  // creatures.json を事前に読み込む
+  (async function () {
+    try {
+      creaturesData = await (await fetch(CREATURES_JSON)).json();
+    } catch (err) {
+      console.error('creatures.json の読み込みに失敗しました:', err);
+    }
+  })();
 
   async function askGuide() {
     const input = document.getElementById('ask-input');
@@ -271,7 +281,10 @@
       const res = await fetch(WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: message })
+        body: JSON.stringify({ 
+          message: message,
+          creatures: creaturesData || []
+        })
       });
       const data = await res.json();
       replyEl.textContent = data.reply || 'うまく答えられませんでした。';
@@ -286,7 +299,7 @@
 
   async function showPhotos(ids, replyEl) {
     try {
-      const creatures = await (await fetch(CREATURES_JSON)).json();
+      const creatures = creaturesData || await (await fetch(CREATURES_JSON)).json();
       const wrap = document.createElement('div');
       wrap.className = 'ask-photos';
       ids.forEach(function (id) {
