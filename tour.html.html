@@ -1,0 +1,772 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ツアーについて｜Nature Experience Amami</title>
+<meta name="description" content="奄美大島の夜の森を歩きながら、生き物を探して観察するナイトツアー。料金、時間、当日の流れをご案内します。">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --night:#0A1613;
+    --canopy:#16302A;
+    --moonlight:#EAF2E9;
+    --amber:#E8A33D;
+    --moss:#6B8F71;
+    --bark:#2A211A;
+  }
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
+
+  body{
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    background:var(--night);
+    color:var(--moonlight);
+    line-height:1.8;
+  }
+
+  a{
+    color:inherit;
+  }
+
+  /* HEADER */
+
+  header{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:rgba(10,22,19,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+
+  .header-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:1.2rem 6vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:2rem;
+  }
+
+  .logo{
+    text-decoration:none;
+    font-family:'Shippori Mincho',serif;
+    font-weight:700;
+    font-size:1.25rem;
+    letter-spacing:.14em;
+    display:flex;
+    align-items:center;
+    gap:.55rem;
+    white-space:nowrap;
+  }
+
+  .logo::before{
+    content:"";
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--amber);
+    box-shadow:0 0 10px 2px rgba(232,163,61,.7);
+  }
+
+  nav{
+    display:flex;
+    align-items:center;
+    gap:1.4rem;
+    font-size:.9rem;
+  }
+
+  nav a{
+    text-decoration:none;
+    color:rgba(234,242,233,.75);
+  }
+
+  nav a:hover{
+    color:var(--amber);
+  }
+
+  /* HERO */
+
+  .hero{
+    max-width:1200px;
+    margin:0 auto;
+    padding:7rem 6vw 5rem;
+  }
+
+  .label{
+    font-family:'Space Mono',monospace;
+    font-size:.78rem;
+    letter-spacing:.15em;
+    color:var(--amber);
+    margin-bottom:1rem;
+  }
+
+  h1{
+    font-family:'Shippori Mincho',serif;
+    font-size:clamp(2.2rem,5vw,4rem);
+    line-height:1.3;
+    letter-spacing:.04em;
+    margin-bottom:1.5rem;
+  }
+
+  .hero-lead{
+    max-width:680px;
+    color:rgba(234,242,233,.78);
+    font-size:1.05rem;
+    line-height:2;
+  }
+
+  /* COMMON */
+
+  section{
+    padding:5.5rem 6vw;
+  }
+
+  .inner{
+    max-width:1000px;
+    margin:0 auto;
+  }
+
+  .section-label{
+    font-family:'Space Mono',monospace;
+    font-size:.78rem;
+    letter-spacing:.12em;
+    color:var(--moss);
+    margin-bottom:.7rem;
+  }
+
+  h2{
+    font-family:'Shippori Mincho',serif;
+    font-size:clamp(1.6rem,3vw,2.3rem);
+    line-height:1.4;
+    margin-bottom:1.2rem;
+  }
+
+  /* PRICE */
+
+  .price-section{
+    background:var(--canopy);
+  }
+
+  .price-card{
+    margin-top:2.5rem;
+    background:var(--night);
+    border:1px solid rgba(234,242,233,.12);
+    border-radius:4px;
+    padding:2.5rem;
+  }
+
+  .price-main{
+    display:flex;
+    align-items:baseline;
+    gap:.7rem;
+    flex-wrap:wrap;
+    margin-bottom:1.5rem;
+  }
+
+  .price-main .number{
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-size:clamp(2.2rem,5vw,3.5rem);
+    color:var(--amber);
+    font-weight:700;
+  }
+
+  .price-main .unit{
+    font-size:1rem;
+  }
+
+  .price-main .per{
+    color:rgba(234,242,233,.6);
+    font-size:.9rem;
+  }
+
+  .price-note{
+    color:rgba(234,242,233,.75);
+    line-height:1.8;
+    margin-bottom:2rem;
+  }
+
+  /* PRICE OPTIONS */
+
+  .price-options{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+    padding:1.5rem 0;
+    border-top:1px solid rgba(234,242,233,.12);
+    border-bottom:1px solid rgba(234,242,233,.12);
+  }
+
+  .price-option{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    padding:1rem;
+    background:rgba(234,242,233,.035);
+    border:1px solid rgba(234,242,233,.08);
+  }
+
+  .option-label{
+    color:rgba(234,242,233,.75);
+  }
+
+  .price-option strong{
+    color:var(--amber);
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-weight:700;
+    white-space:nowrap;
+  }
+
+  /* EXTENSION */
+
+  .extension{
+    padding-top:1.6rem;
+  }
+
+  .extension-title{
+    color:var(--moss);
+    font-family:'Space Mono',monospace;
+    font-size:.75rem;
+    letter-spacing:.1em;
+    margin-bottom:.4rem;
+  }
+
+  .extension-price{
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-size:1.4rem;
+    font-weight:700;
+    margin-bottom:.5rem;
+  }
+
+  .extension p{
+    color:rgba(234,242,233,.72);
+    font-size:.92rem;
+  }
+
+  /* TIME */
+
+  .time-section{
+    background:var(--night);
+  }
+
+  .time-text{
+    max-width:720px;
+    color:rgba(234,242,233,.8);
+    margin-bottom:2rem;
+  }
+
+  .time-message{
+    border-left:2px solid var(--amber);
+    padding:1.2rem 1.5rem;
+    background:rgba(234,242,233,.035);
+    margin-top:2rem;
+  }
+
+  .time-message p{
+    color:rgba(234,242,233,.85);
+    line-height:1.9;
+  }
+
+  .recommend{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1rem;
+    margin-top:2rem;
+  }
+
+  .recommend-card{
+    border:1px solid rgba(234,242,233,.1);
+    padding:1.4rem;
+    border-radius:4px;
+  }
+
+  .recommend-card .hours{
+    font-family:'Space Mono',monospace;
+    color:var(--amber);
+    font-size:1.15rem;
+    margin-bottom:.4rem;
+  }
+
+  .recommend-card h3{
+    font-family:'Shippori Mincho',serif;
+    font-size:1.1rem;
+    margin-bottom:.4rem;
+  }
+
+  .recommend-card p{
+    color:rgba(234,242,233,.68);
+    font-size:.88rem;
+    line-height:1.7;
+  }
+
+  /* FLOW */
+
+  .flow-section{
+    background:var(--canopy);
+  }
+
+  .flow-list{
+    margin-top:2.5rem;
+  }
+
+  .flow-item{
+    display:grid;
+    grid-template-columns:70px 1fr;
+    gap:1.5rem;
+    padding:1.5rem 0;
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+
+  .flow-item:first-child{
+    border-top:1px solid rgba(234,242,233,.1);
+  }
+
+  .flow-number{
+    font-family:'Space Mono',monospace;
+    color:var(--amber);
+    font-size:1.3rem;
+  }
+
+  .flow-item h3{
+    font-family:'Shippori Mincho',serif;
+    font-size:1.15rem;
+    margin-bottom:.35rem;
+  }
+
+  .flow-item p{
+    color:rgba(234,242,233,.72);
+    font-size:.92rem;
+    line-height:1.7;
+  }
+
+  /* NOTE */
+
+  .note-section{
+    background:var(--night);
+  }
+
+  .note{
+    max-width:760px;
+    color:rgba(234,242,233,.72);
+    line-height:1.9;
+  }
+
+  /* CTA */
+
+  .cta-section{
+    background:var(--canopy);
+    text-align:center;
+  }
+
+  .cta-section p{
+    color:rgba(234,242,233,.75);
+    margin-bottom:1.8rem;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:.95rem 2rem;
+    background:var(--amber);
+    color:var(--bark);
+    text-decoration:none;
+    font-weight:700;
+    border-radius:2px;
+    letter-spacing:.04em;
+  }
+
+  .btn:hover{
+    background:#f4b95a;
+  }
+
+  /* FOOTER */
+
+  footer{
+    text-align:center;
+    padding:3rem 6vw;
+    color:rgba(234,242,233,.5);
+    font-size:.8rem;
+    border-top:1px solid rgba(234,242,233,.1);
+  }
+
+  .footer-logo{
+    font-family:'Shippori Mincho',serif;
+    color:rgba(234,242,233,.8);
+    margin-bottom:.5rem;
+  }
+
+  /* MOBILE */
+
+  @media(max-width:700px){
+
+    .header-inner{
+      padding:1rem 5vw;
+    }
+
+    nav{
+      gap:.8rem;
+      font-size:.78rem;
+    }
+
+    nav a:not(:last-child){
+      display:none;
+    }
+
+    .hero{
+      padding:5rem 6vw 4rem;
+    }
+
+    section{
+      padding:4rem 6vw;
+    }
+
+    .price-card{
+      padding:1.6rem;
+    }
+
+    .price-options{
+      grid-template-columns:1fr;
+    }
+
+    .recommend{
+      grid-template-columns:1fr;
+    }
+
+    .flow-item{
+      grid-template-columns:48px 1fr;
+      gap:1rem;
+    }
+
+    .btn{
+      width:100%;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <a class="logo" href="index.html">
+      Nature Experience Amami
+    </a>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="creatures.html">生き物</a>
+      <a href="guide.html">ガイド</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="label">TOUR</div>
+
+    <h1>奄美の夜の森へ</h1>
+
+    <p class="hero-lead">
+      夜の森を歩きながら、奄美に暮らす生き物たちを探します。
+      その日の森の様子や生き物の動きを見ながら、
+      ゆっくりと観察を楽しむナイトツアーです。
+    </p>
+
+  </section>
+
+  <!-- PRICE -->
+
+  <section class="price-section">
+
+    <div class="inner">
+
+      <div class="section-label">PRICE</div>
+
+      <h2>料金</h2>
+
+      <div class="price-card">
+
+        <div class="price-main">
+          <span class="number">6,000</span>
+          <span class="unit">円</span>
+          <span class="per">／1名</span>
+        </div>
+
+        <p class="price-note">
+          基本のツアー料金です。
+        </p>
+
+        <div class="price-options">
+
+          <div class="price-option">
+            <span class="option-label">おひとり様</span>
+            <strong>＋1,000円</strong>
+          </div>
+
+          <div class="price-option">
+            <span class="option-label">小学生以下</span>
+            <strong>3,000円</strong>
+          </div>
+
+        </div>
+
+        <div class="extension">
+
+          <div class="extension-title">
+            EXTENSION
+          </div>
+
+          <div class="extension-price">
+            延長　1時間 2,000円
+          </div>
+
+          <p>
+            延長料金は1名ごとではなく、1グループにつき1時間2,000円です。
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TIME -->
+
+  <section class="time-section">
+
+    <div class="inner">
+
+      <div class="section-label">TIME</div>
+
+      <h2>ツアー時間について</h2>
+
+      <p class="time-text">
+        基本のツアー時間は約2時間です。
+      </p>
+
+      <div class="time-message">
+
+        <p>
+          生き物を探していると、時間はあっという間に過ぎてしまいます。
+          もう少しじっくり観察したい方は、延長も含めてご検討ください。
+        </p>
+
+      </div>
+
+      <div class="recommend">
+
+        <div class="recommend-card">
+
+          <div class="hours">2 HOURS</div>
+
+          <h3>まずは2時間</h3>
+
+          <p>
+            気軽に夜の森を楽しみたい方に。
+          </p>
+
+        </div>
+
+        <div class="recommend-card">
+
+          <div class="hours">3 HOURS</div>
+
+          <h3>おすすめ</h3>
+
+          <p>
+            3時間ほどあれば、程よく観察を楽しむことができます。
+          </p>
+
+        </div>
+
+        <div class="recommend-card">
+
+          <div class="hours">4 HOURS</div>
+
+          <h3>じっくり観察</h3>
+
+          <p>
+            時間に余裕がある方は、4時間程度のご案内も可能です。
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FLOW -->
+
+  <section class="flow-section">
+
+    <div class="inner">
+
+      <div class="section-label">FLOW</div>
+
+      <h2>当日の流れ</h2>
+
+      <div class="flow-list">
+
+        <div class="flow-item">
+
+          <div class="flow-number">01</div>
+
+          <div>
+            <h3>集合・お迎え</h3>
+            <p>
+              集合場所、または送迎について事前にご案内します。
+            </p>
+          </div>
+
+        </div>
+
+        <div class="flow-item">
+
+          <div class="flow-number">02</div>
+
+          <div>
+            <h3>夜の森へ</h3>
+            <p>
+              その日の天候や森の状況を見ながら観察場所へ向かいます。
+            </p>
+          </div>
+
+        </div>
+
+        <div class="flow-item">
+
+          <div class="flow-number">03</div>
+
+          <div>
+            <h3>生き物を探す</h3>
+            <p>
+              森を歩きながら、夜に活動する生き物たちを探します。
+            </p>
+          </div>
+
+        </div>
+
+        <div class="flow-item">
+
+          <div class="flow-number">04</div>
+
+          <div>
+            <h3>観察・撮影</h3>
+            <p>
+              生き物の様子を観察しながら、必要に応じて解説します。
+              写真撮影もお楽しみいただけます。
+            </p>
+          </div>
+
+        </div>
+
+        <div class="flow-item">
+
+          <div class="flow-number">05</div>
+
+          <div>
+            <h3>終了</h3>
+            <p>
+              観察を終えて終了となります。
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- NOTE -->
+
+  <section class="note-section">
+
+    <div class="inner">
+
+      <div class="section-label">NATURE</div>
+
+      <h2>野生の生き物との出会い</h2>
+
+      <p class="note">
+        野生の生き物を探すツアーのため、
+        ご希望の生き物が必ず見られるとは限りません。
+        その日の天候や季節、森の状況によって出会える生き物は変わります。
+        その時、その場所で出会える生き物との時間をお楽しみください。
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta-section">
+
+    <div class="inner">
+
+      <div class="section-label">CONTACT</div>
+
+      <h2>ツアーについてお気軽にご相談ください</h2>
+
+      <p>
+        見てみたい生き物や希望する時間など、
+        事前のご相談もお気軽にどうぞ。
+      </p>
+
+      <a class="btn" href="contact.html">
+        お問い合わせ
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="footer-logo">
+    Nature Experience Amami
+  </div>
+
+  <div>
+    奄美大島の夜の森を、自然のままに。
+  </div>
+
+</footer>
+
+</body>
+</html>
+```

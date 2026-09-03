@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>お問い合わせ｜Nature Experience Amami</title>
+<meta name="description" content="Nature Experience Amamiへのお問い合わせ。奄美大島のナイトツアー、生き物の観察、撮影、自然体験についてお気軽にご相談ください。">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --night:#0A1613;
+    --canopy:#16302A;
+    --moonlight:#EAF2E9;
+    --amber:#E8A33D;
+    --moss:#6B8F71;
+    --bark:#2A211A;
+  }
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
+
+  body{
+    font-family:'Zen Kaku Gothic New', sans-serif;
+    background:var(--night);
+    color:var(--moonlight);
+    line-height:1.8;
+  }
+
+  a{
+    color:inherit;
+  }
+
+  /* HEADER */
+
+  header{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:rgba(10,22,19,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+
+  .header-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:1.2rem 6vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:2rem;
+  }
+
+  .logo{
+    text-decoration:none;
+    font-family:'Shippori Mincho',serif;
+    font-weight:700;
+    font-size:1.25rem;
+    letter-spacing:.14em;
+    display:flex;
+    align-items:center;
+    gap:.55rem;
+    white-space:nowrap;
+  }
+
+  .logo::before{
+    content:"";
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--amber);
+    box-shadow:0 0 10px 2px rgba(232,163,61,.7);
+  }
+
+  nav{
+    display:flex;
+    align-items:center;
+    gap:1.4rem;
+    font-size:.9rem;
+  }
+
+  nav a{
+    text-decoration:none;
+    color:rgba(234,242,233,.75);
+    transition:color .2s ease;
+  }
+
+  nav a:hover{
+    color:var(--amber);
+  }
+
+  nav .contact-link{
+    color:var(--amber);
+  }
+
+  /* HERO */
+
+  .hero{
+    max-width:1200px;
+    margin:0 auto;
+    padding:7rem 6vw 5rem;
+  }
+
+  .label{
+    font-family:'Space Mono',monospace;
+    font-size:.78rem;
+    letter-spacing:.15em;
+    color:var(--amber);
+    margin-bottom:1rem;
+  }
+
+  h1{
+    font-family:'Shippori Mincho',serif;
+    font-size:clamp(2.2rem,5vw,4rem);
+    line-height:1.3;
+    letter-spacing:.04em;
+    margin-bottom:1.5rem;
+  }
+
+  .hero-lead{
+    max-width:650px;
+    color:rgba(234,242,233,.78);
+    font-size:1.05rem;
+    line-height:2;
+  }
+
+  /* CONTACT */
+
+  .contact-section{
+    background:var(--canopy);
+    padding:5.5rem 6vw;
+  }
+
+  .contact-inner{
+    max-width:1000px;
+    margin:0 auto;
+  }
+
+  .section-label{
+    font-family:'Space Mono',monospace;
+    font-size:.78rem;
+    letter-spacing:.12em;
+    color:var(--moss);
+    margin-bottom:.7rem;
+  }
+
+  h2{
+    font-family:'Shippori Mincho',serif;
+    font-size:clamp(1.6rem,3vw,2.3rem);
+    margin-bottom:1.2rem;
+  }
+
+  .intro{
+    color:rgba(234,242,233,.8);
+    max-width:700px;
+    margin-bottom:3rem;
+  }
+
+  /* POINTS */
+
+  .points{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+    margin-bottom:4rem;
+  }
+
+  .point{
+    padding:1.5rem;
+    border:1px solid rgba(234,242,233,.12);
+    background:rgba(10,22,19,.35);
+    border-radius:4px;
+  }
+
+  .point-number{
+    font-family:'Space Mono',monospace;
+    color:var(--amber);
+    font-size:.8rem;
+    margin-bottom:.5rem;
+  }
+
+  .point h3{
+    font-family:'Shippori Mincho',serif;
+    font-size:1.15rem;
+    margin-bottom:.45rem;
+  }
+
+  .point p{
+    color:rgba(234,242,233,.72);
+    font-size:.92rem;
+    line-height:1.7;
+  }
+
+  /* FORM */
+
+  .form-box{
+    background:var(--night);
+    padding:2.5rem;
+    border:1px solid rgba(234,242,233,.1);
+    border-radius:4px;
+  }
+
+  .form-box h2{
+    margin-bottom:.6rem;
+  }
+
+  .form-note{
+    color:rgba(234,242,233,.62);
+    font-size:.9rem;
+    margin-bottom:2rem;
+  }
+
+  .form-group{
+    margin-bottom:1.4rem;
+  }
+
+  label{
+    display:block;
+    font-size:.9rem;
+    font-weight:700;
+    margin-bottom:.5rem;
+  }
+
+  .required{
+    color:var(--amber);
+    font-size:.75rem;
+    margin-left:.4rem;
+  }
+
+  input,
+  textarea{
+    width:100%;
+    padding:.9rem 1rem;
+    border:1px solid rgba(234,242,233,.2);
+    border-radius:2px;
+    background:rgba(234,242,233,.04);
+    color:var(--moonlight);
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-size:1rem;
+  }
+
+  input:focus,
+  textarea:focus{
+    outline:2px solid var(--amber);
+    outline-offset:2px;
+    border-color:var(--amber);
+  }
+
+  textarea{
+    min-height:180px;
+    resize:vertical;
+  }
+
+  .submit-area{
+    margin-top:2rem;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:.95rem 2.2rem;
+    background:var(--amber);
+    color:var(--bark);
+    border:none;
+    border-radius:2px;
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-size:1rem;
+    font-weight:700;
+    letter-spacing:.04em;
+    cursor:pointer;
+  }
+
+  .btn:hover{
+    background:#f4b95a;
+  }
+
+  .form-disabled{
+    color:rgba(234,242,233,.45);
+    font-size:.78rem;
+    margin-top:.8rem;
+  }
+
+  /* FOOTER */
+
+  footer{
+    text-align:center;
+    padding:3rem 6vw;
+    color:rgba(234,242,233,.5);
+    font-size:.8rem;
+    border-top:1px solid rgba(234,242,233,.1);
+  }
+
+  footer .footer-logo{
+    font-family:'Shippori Mincho',serif;
+    font-size:1rem;
+    color:rgba(234,242,233,.8);
+    margin-bottom:.5rem;
+  }
+
+  /* MOBILE */
+
+  @media(max-width:700px){
+
+    .header-inner{
+      padding:1rem 5vw;
+    }
+
+    nav{
+      gap:.8rem;
+      font-size:.78rem;
+    }
+
+    nav a:not(.contact-link){
+      display:none;
+    }
+
+    .hero{
+      padding:5rem 6vw 4rem;
+    }
+
+    .contact-section{
+      padding:4rem 6vw;
+    }
+
+    .points{
+      grid-template-columns:1fr;
+    }
+
+    .form-box{
+      padding:1.5rem;
+    }
+
+    .btn{
+      width:100%;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+```
+<a class="logo" href="index.html">
+  Nature Experience Amami
+</a>
+
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="index.html#creatures">生き物</a>
+  <a class="contact-link" href="contact.html">お問い合わせ</a>
+</nav>
+```
+
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+
+```
+<div class="label">CONTACT</div>
+
+<h1>お問い合わせ</h1>
+
+<p class="hero-lead">
+  奄美大島のナイトツアーや、生き物の観察について、
+  ご質問やご相談がありましたらお気軽にお問い合わせください。
+</p>
+```
+
+  </section>
+
+  <section class="contact-section">
+
+```
+<div class="contact-inner">
+
+  <div class="section-label">BEFORE YOUR TOUR</div>
+
+  <h2>こんなご相談もお気軽に</h2>
+
+  <p class="intro">
+    「ヘビが見たい」「カエルを探してみたい」
+    「アマミノクロウサギを見てみたい」など、
+    見てみたい生き物があれば事前にご相談ください。
+  </p>
+
+
+  <div class="points">
+
+    <div class="point">
+      <div class="point-number">01</div>
+      <h3>見てみたい生き物</h3>
+      <p>
+        希望する生き物があれば、できる限り観察できるよう
+        ご案内します。
+      </p>
+    </div>
+
+    <div class="point">
+      <div class="point-number">02</div>
+      <h3>おひとり様・ご家族</h3>
+      <p>
+        おひとりでの参加や、お子様連れでのご参加も
+        お気軽にご相談ください。
+      </p>
+    </div>
+
+    <div class="point">
+      <div class="point-number">03</div>
+      <h3>写真撮影</h3>
+      <p>
+        生き物の撮影をされる方も歓迎しています。
+        撮影のペースに合わせてご案内します。
+      </p>
+    </div>
+
+    <div class="point">
+      <div class="point-number">04</div>
+      <h3>自然・生物調査</h3>
+      <p>
+        昆虫などの観察や、生物調査の助手・同行についても
+        ご相談ください。
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="form-box">
+
+    <div class="section-label">MESSAGE</div>
+
+    <h2>お問い合わせフォーム</h2>
+
+    <p class="form-note">
+      下記に必要事項をご入力ください。
+    </p>
+
+    <form>
+
+      <div class="form-group">
+        <label for="name">
+          お名前
+          <span class="required">必須</span>
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="お名前"
+          required
+        >
+      </div>
+
+
+      <div class="form-group">
+        <label for="email">
+          メールアドレス
+          <span class="required">必須</span>
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+          required
+        >
+      </div>
+
+
+      <div class="form-group">
+        <label for="subject">
+          件名
+        </label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="ナイトツアーについて"
+        >
+      </div>
+
+
+      <div class="form-group">
+        <label for="message">
+          メッセージ
+          <span class="required">必須</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="お問い合わせ内容をご入力ください。"
+          required
+        ></textarea>
+      </div>
+
+
+      <div class="submit-area">
+
+        <button class="btn" type="submit">
+          お問い合わせを送る
+        </button>
+
+        <p class="form-disabled">
+          ※現在はデザイン確認用です。送信機能は後から設定します。
+        </p>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="footer-logo">
+    Nature Experience Amami
+  </div>
+
+  <div>
+    奄美大島の夜の森を、自然のままに。
+  </div>
+
+</footer>
+
+</body>
+</html>
