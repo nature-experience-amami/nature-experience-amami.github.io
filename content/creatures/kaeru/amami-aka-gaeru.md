@@ -3,6 +3,7 @@ id: amami-aka-gaeru
 name: アマミアカガエル
 category: kaeru
 danger: 無毒
+months: [11, 12, 1]
 ---
 アカガエル科アカガエル属 *Rana kobai*
 
