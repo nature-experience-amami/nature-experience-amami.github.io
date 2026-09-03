@@ -93,6 +93,7 @@
 
   .creature-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.2rem; margin-top:2.5rem; }
   .creature-card{ background:rgba(234,242,233,.04); border:1px solid rgba(234,242,233,.1); border-radius:4px; padding:1.2rem; }
+  .creature-card img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; margin:-1.2rem -1.2rem 1rem; width:calc(100% + 2.4rem); }
   .creature-card .name{ font-weight:700; margin-bottom:.3rem; }
   .creature-card .months{ font-family:'Space Mono', monospace; font-size:.78rem; color:var(--amber); }
 
@@ -152,23 +153,10 @@
 </header>
 
 <section class="field-note">
-  <p class="label">FIELD NOTE — 今の時期に観察しやすい生き物</p>
-  <h2>8月、森はこんな顔をしている</h2>
-  <p>季節ごとに出会える生き物は変わります。このセクションはAIが観察データをもとに毎月自動更新する予定です(実装中)。</p>
-  <div class="creature-grid">
-    <div class="creature-card">
-      <div class="name">ハブ</div>
-      <div class="months">6月-10月に観察しやすい</div>
-    </div>
-    <div class="creature-card">
-      <div class="name">アマミノコギリクワガタ</div>
-      <div class="months">梅雨明けから活動開始</div>
-    </div>
-    <div class="creature-card">
-      <div class="name">オキナワスジゲンゴロウ</div>
-      <div class="months">春から秋によく見られる</div>
-    </div>
-  </div>
+  <p class="label">FIELD NOTE — <span id="field-note-month">今月</span>に観察しやすい生き物</p>
+  <h2 id="field-note-title">今月、森はこんな顔をしている</h2>
+  <p>季節ごとに出会える生き物は変わります。ガイドが入力した観察時期をもとに、今月の生き物を紹介します。</p>
+  <div id="field-note-creatures" class="creature-grid"></div>
 </section>
 
 <!-- ===== AI ASK: 今回新規追加したセクション ===== -->
@@ -232,6 +220,7 @@
       if (!response.ok) throw new Error('HTTP ' + response.status);
       creaturesData = await response.json();
       initHeroSlideshow(creaturesData);
+      renderFieldNote(creaturesData);
     } catch (err) {
       console.error('creatures.json の読み込みに失敗しました:', err);
     }
@@ -268,6 +257,7 @@
         heroLink.href = '#tour';
         heroLink.setAttribute('aria-label', 'ナイトツアーの詳細を見る');
       }
+
     }
 
     function choosePhoto() {
@@ -299,6 +289,33 @@
     }
 
     window.setInterval(showNextPhoto, 8000);
+  }
+
+  function renderFieldNote(creatures) {
+    const month = new Date().getMonth() + 1;
+    const monthEl = document.getElementById('field-note-month');
+    const titleEl = document.getElementById('field-note-title');
+    const gridEl = document.getElementById('field-note-creatures');
+    monthEl.textContent = month + '月';
+    titleEl.textContent = month + '月、森はこんな顔をしている';
+    const matches = creatures.filter(function (creature) {
+      return Array.isArray(creature.months) && creature.months.includes(month);
+    });
+    if (!matches.length) {
+      gridEl.innerHTML = '<p>この月の観察データを準備中です。</p>';
+      return;
+    }
+    const generatedPages = ['hebi/habu', 'hebi/akamata', 'kaeru/amami-aka-gaeru'];
+    gridEl.innerHTML = matches.slice(0, 6).map(function (creature) {
+      const key = creature.category + '/' + creature.id;
+      const href = generatedPages.includes(key) ? 'generated-creatures/' + key + '.html' : '#tour';
+      const photo = creature.photos && creature.photos.length
+        ? '<img src="' + creature.photos[0] + '" alt="' + creature.name + '">'
+        : '';
+      return '<a class="creature-card" href="' + href + '">' + photo +
+        '<div class="name">' + creature.name + '</div>' +
+        '<div class="months">' + month + '月に観察しやすい</div></a>';
+    }).join('');
   }
 
   async function askGuide() {
