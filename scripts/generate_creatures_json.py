@@ -19,6 +19,9 @@ OUTPUT = Path("data/creatures.json")
 DATE_RE = re.compile(r"^.+_\d{6}_(\d{4})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])_([01]\d|2[0-3])$")
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 IGNORED_DIR_NAMES = {"failed"}
+MARKDOWN_ID_ALIASES = {
+    ("hebi", "ryuukyuu-aohebi"): "ryukyu-ao-hebi",
+}
 
 
 def read_creature_content(md_path: Path):
@@ -68,7 +71,10 @@ def scan():
                     months.add(int(m.group(2)))
                 photos.append(str(photo.relative_to(".")).replace("\\", "/"))
             if photos:
-                md_path = CONTENT_DIR / category_dir.name / f"{species_dir.name}.md"
+                markdown_id = MARKDOWN_ID_ALIASES.get(
+                    (category_dir.name, species_dir.name), species_dir.name
+                )
+                md_path = CONTENT_DIR / category_dir.name / f"{markdown_id}.md"
                 # 説明文(.md)がまだ無くてもビルドは止めない。名前が無ければIDをそのまま表示名にする。
                 frontmatter, description = read_creature_content(md_path)
                 name = frontmatter.get("name") or species_dir.name

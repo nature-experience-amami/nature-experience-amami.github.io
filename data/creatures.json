@@ -141,7 +141,7 @@
   },
   {
     "id": "ryuukyuu-aohebi",
-    "name": "ryuukyuu-aohebi",
+    "name": "リュウキュウアオヘビ",
     "category": "hebi",
     "category_name": "ヘビ",
     "months": [
@@ -149,7 +149,7 @@
       5,
       6
     ],
-    "description": "",
+    "description": "ナミヘビ科アオヘビ属 *Cycophuops semicarinatus*\n\n全長〜100cm。5月から11月頃によく観察できる。昼行性だが夜間活動する個体も多い。頭部は小さく食性は主にミミズ、カエルも食べる。奄美大島では1番個体数が多く、昼間の林内や夜間林道でも見られる。大きくなると威嚇してくる個体もいるが、逃げるのはとても早く斜面を滑り降りていく。",
     "photos": [
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg",
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000002_20250521_11.jpg",
