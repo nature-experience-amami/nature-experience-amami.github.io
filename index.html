@@ -354,12 +354,13 @@
       ids.forEach(function (id) {
         const creature = creatures.find(function (c) { return c.id === id; });
         if (creature && Array.isArray(creature.photos)) {
-          creature.photos.slice(0, 4).forEach(function (photo) {
+          if (creature.photos.length) {
+            const photo = creature.photos[Math.floor(Math.random() * creature.photos.length)];
             const img = document.createElement('img');
             img.src = photo;
-            img.alt = id;
+            img.alt = creature.name;
             wrap.appendChild(img);
-          });
+          }
         }
       });
       if (wrap.children.length) replyEl.appendChild(wrap);
