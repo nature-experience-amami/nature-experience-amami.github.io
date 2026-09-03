@@ -109,7 +109,11 @@
   .ask-box input:focus-visible{ outline:2px solid var(--amber); outline-offset:2px; }
   .ask-reply{ min-height:1.5rem; color:rgba(234,242,233,.9); line-height:1.8; }
   .ask-reply .ask-photos{ display:flex; gap:.8rem; margin-top:1rem; flex-wrap:wrap; }
-  .ask-reply .ask-photos img{ width:140px; height:140px; object-fit:cover; border-radius:4px; }
+  .ask-reply .ask-photo-card{ width:140px; color:var(--moonlight); text-decoration:none; }
+  .ask-reply .ask-photo-card img{ display:block; width:140px; height:140px; object-fit:cover; border-radius:4px; }
+  .ask-reply .ask-photo-card .name{ display:block; margin-top:.35rem; font-size:.9rem; line-height:1.4; }
+  .ask-reply .ask-photo-card:hover .name,
+  .ask-reply .ask-photo-card:focus-visible .name{ color:var(--amber); }
 
   .flow{ background:var(--night); }
   .flow-list{ margin-top:2.5rem; display:flex; flex-direction:column; }
@@ -351,15 +355,29 @@
       const creatures = creaturesData || await (await fetch(CREATURES_JSON)).json();
       const wrap = document.createElement('div');
       wrap.className = 'ask-photos';
+      const creaturePagePaths = {
+        habu: 'creatures/hebi/habu.html',
+        akamata: 'generated-creatures/hebi/akamata.html',
+        'amami-aka-gaeru': 'generated-creatures/kaeru/amami-aka-gaeru.html'
+      };
       Array.from(new Set(ids)).forEach(function (id) {
         const creature = creatures.find(function (c) { return c.id === id; });
         if (creature && Array.isArray(creature.photos)) {
           if (creature.photos.length) {
             const photo = creature.photos[Math.floor(Math.random() * creature.photos.length)];
+            const card = document.createElement('a');
+            card.className = 'ask-photo-card';
+            card.href = creaturePagePaths[creature.id] || '#tour';
+            card.setAttribute('aria-label', creature.name + 'の紹介ページを見る');
             const img = document.createElement('img');
             img.src = photo;
             img.alt = creature.name;
-            wrap.appendChild(img);
+            const name = document.createElement('span');
+            name.className = 'name';
+            name.textContent = creature.name;
+            card.appendChild(img);
+            card.appendChild(name);
+            wrap.appendChild(card);
           }
         }
       });
