@@ -84,10 +84,6 @@
     box-shadow:0 0 10px 2px rgba(232,163,61,.7); flex-shrink:0;
   }
   .brand-bar .mark .dash{ color:var(--amber); font-weight:400; }
-  .language-switcher{ margin-left:auto; display:flex; gap:.35rem; flex-wrap:wrap; justify-content:flex-end; }
-  .language-switcher button{ border:1px solid rgba(234,242,233,.35); background:rgba(10,22,19,.45); color:var(--moonlight); padding:.35rem .55rem; cursor:pointer; border-radius:2px; font:inherit; font-size:.78rem; }
-  .language-switcher button[aria-pressed="true"]{ border-color:var(--amber); color:var(--amber); }
-  .language-status{ position:absolute; top:5.2rem; right:6vw; z-index:7; color:var(--amber); font-size:.8rem; }
 
   section{ padding:5.5rem 6vw; }
   .field-note{ background:var(--canopy); }
@@ -145,28 +141,20 @@
 
   <div class="brand-bar">
     <span class="mark">Nature <span class="dash">–</span> Experience</span>
-    <div class="language-switcher" aria-label="言語を選択">
-      <button type="button" data-language="ja" aria-pressed="true">日本語</button>
-      <button type="button" data-language="en" aria-pressed="false">English</button>
-      <button type="button" data-language="zh-TW" aria-pressed="false">繁體中文</button>
-      <button type="button" data-language="ko" aria-pressed="false">한국어</button>
-      <button type="button" data-language="es" aria-pressed="false">Español</button>
-    </div>
   </div>
-  <p id="language-status" class="language-status" aria-live="polite"></p>
 
   <div class="hero-content">
-    <span class="eyebrow" data-i18n>AMAMI OSHIMA / NIGHT FIELD TOUR</span>
-    <h1><span data-i18n>奄美の夜の森を、</span><br><em data-i18n>ガイドと歩く。</em></h1>
-    <p data-i18n>アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩くナイトツアー。</p>
-    <a href="#tour" class="btn" data-i18n>🔦 ナイトツアーを見る</a>
+    <span class="eyebrow">AMAMI OSHIMA / NIGHT FIELD TOUR</span>
+    <h1>奄美の夜の森を、<br><em>ガイドと歩く。</em></h1>
+    <p>アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩くナイトツアー。</p>
+    <a href="#tour" class="btn">🔦 ナイトツアーを見る</a>
   </div>
 </header>
 
 <section class="field-note">
-  <p class="label" data-i18n>FIELD NOTE — 今の時期に観察しやすい生き物</p>
-  <h2 data-i18n>8月、森はこんな顔をしている</h2>
-  <p data-i18n>季節ごとに出会える生き物は変わります。このセクションはAIが観察データをもとに毎月自動更新する予定です(実装中)。</p>
+  <p class="label">FIELD NOTE — 今の時期に観察しやすい生き物</p>
+  <h2>8月、森はこんな顔をしている</h2>
+  <p>季節ごとに出会える生き物は変わります。このセクションはAIが観察データをもとに毎月自動更新する予定です(実装中)。</p>
   <div class="creature-grid">
     <div class="creature-card">
       <div class="name">ハブ</div>
@@ -185,9 +173,9 @@
 
 <!-- ===== AI ASK: 今回新規追加したセクション ===== -->
 <section class="ai-ask" aria-label="生き物についてAIに質問する">
-  <p class="field-note label" style="color:var(--moss);" data-i18n>ASK THE GUIDE / AI</p>
-  <h2 data-i18n style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">気になる時期の生き物を聞いてみる</h2>
-  <p data-i18n style="max-width:60ch; color:rgba(234,242,233,0.8); line-height:1.9; margin-bottom:1.5rem;">
+  <p class="field-note label" style="color:var(--moss);">ASK THE GUIDE / AI</p>
+  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">気になる時期の生き物を聞いてみる</h2>
+  <p style="max-width:60ch; color:rgba(234,242,233,0.8); line-height:1.9; margin-bottom:1.5rem;">
     「9月に見られる生き物は?」のように、気軽に聞いてみてください。実際に撮影した記録をもとに答えます。
   </p>
   <div class="ask-box">
@@ -198,28 +186,28 @@
 </section>
 
 <section id="tour" class="flow">
-  <p class="field-note label" style="color:var(--moss);" data-i18n>HOW IT WORKS</p>
-  <h2 data-i18n style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">ナイトツアーの流れ</h2>
+  <p class="field-note label" style="color:var(--moss);">HOW IT WORKS</p>
+  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">ナイトツアーの流れ</h2>
   <div class="flow-list">
     <div class="flow-item">
       <div class="flow-num">01</div>
       <div>
-        <h3 data-i18n>19時頃、指定の場所に集合</h3>
-        <p data-i18n>ビッグ2駐車場、朝戸トンネル駐車場など。名瀬近辺の宿なら送迎相談可。</p>
+        <h3>19時頃、指定の場所に集合</h3>
+        <p>ビッグ2駐車場、朝戸トンネル駐車場など。名瀬近辺の宿なら送迎相談可。</p>
       </div>
     </div>
     <div class="flow-item">
       <div class="flow-num">02</div>
       <div>
-        <h3 data-i18n>ガイドの車で夜の森へ</h3>
-        <p data-i18n>専属ガイドと一緒に固有種を探しながら歩きます。</p>
+        <h3>ガイドの車で夜の森へ</h3>
+        <p>専属ガイドと一緒に固有種を探しながら歩きます。</p>
       </div>
     </div>
     <div class="flow-item">
       <div class="flow-num">03</div>
       <div>
-        <h3 data-i18n>集合場所で解散</h3>
-        <p data-i18n>採集目的のガイドはお断りしています。観察・撮影を楽しみましょう。</p>
+        <h3>集合場所で解散</h3>
+        <p>採集目的のガイドはお断りしています。観察・撮影を楽しみましょう。</p>
       </div>
     </div>
   </div>
@@ -232,59 +220,11 @@
   const WORKER_URL = "https://nature-experience-ai.aegusaegus.workers.dev/";
   const CREATURES_JSON = "data/creatures.json";
   let creaturesData = null;
-  const translationElements = Array.from(document.querySelectorAll('[data-i18n]'));
-  const originalTranslations = translationElements.map(function (element) {
-    return element.textContent;
-  });
 
   document.getElementById('ask-btn').addEventListener('click', askGuide);
   document.getElementById('ask-input').addEventListener('keydown', function (e) {
     if (e.key === 'Enter') askGuide();
   });
-  document.querySelectorAll('[data-language]').forEach(function (button) {
-    button.addEventListener('click', function () {
-      translatePage(button.dataset.language);
-    });
-  });
-
-  async function translatePage(language) {
-    const status = document.getElementById('language-status');
-    document.querySelectorAll('[data-language]').forEach(function (button) {
-      button.setAttribute('aria-pressed', button.dataset.language === language ? 'true' : 'false');
-    });
-    if (language === 'ja') {
-      translationElements.forEach(function (element, index) {
-        element.textContent = originalTranslations[index];
-      });
-      status.textContent = '';
-      return;
-    }
-    status.textContent = '翻訳しています…';
-    try {
-      const response = await fetch(WORKER_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          action: 'translate',
-          language: language,
-          texts: originalTranslations
-        })
-      });
-      if (!response.ok) throw new Error('HTTP ' + response.status);
-      const data = await response.json();
-      if (!Array.isArray(data.translations) || data.translations.length !== translationElements.length) {
-        throw new Error('翻訳結果の形式が不正です');
-      }
-      translationElements.forEach(function (element, index) {
-        element.textContent = data.translations[index];
-      });
-      status.textContent = '';
-    } catch (err) {
-      console.error('翻訳に失敗しました:', err);
-      status.textContent = '翻訳できませんでした。日本語表示を続けます。';
-    }
-  }
-
   // creatures.json を事前に読み込む
   (async function () {
     try {
