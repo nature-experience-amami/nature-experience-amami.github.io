@@ -1,239 +1,418 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ハブ｜奄美大島の夜の森 | Nature Experience Amami</title>
-  <meta name="description" content="奄美大島の夜の森で出会えるハブ。生態や観察時期、安全に観察するためのポイントを写真とともに紹介します。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --night:#0A1613;
-      --canopy:#16302A;
-      --moonlight:#EAF2E9;
-      --amber:#E8A33D;
-      --moss:#6B8F71;
-      --bark:#2A211A;
-      --line:rgba(234,242,233,.12);
-      --soft:rgba(234,242,233,.72);
-    }
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:"Zen Kaku Gothic New",sans-serif;background:var(--night);color:var(--moonlight);line-height:1.9}
-    img{display:block;width:100%}
-    a{color:inherit}
-    .site-header{position:sticky;top:0;z-index:20;background:rgba(10,22,19,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    .header-inner{max-width:1200px;margin:auto;padding:1.3rem 6vw;display:flex;align-items:center;justify-content:space-between;gap:2rem}
-    .logo{font-family:"Shippori Mincho",serif;font-weight:700;font-size:1.15rem;letter-spacing:.12em;text-decoration:none;display:flex;align-items:center;gap:.55rem}
-    .logo::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px 2px rgba(232,163,61,.7)}
-    nav{display:flex;gap:1.8rem;font-size:.82rem}
-    nav a{text-decoration:none;color:rgba(234,242,233,.75)}
-    nav a:hover{color:var(--moonlight)}
-    main{max-width:1200px;margin:auto}
-    .creature-hero{padding:4rem 6vw 5rem}
-    .hero-photo{overflow:hidden;border-radius:4px;background:#000}
-    .hero-photo img{aspect-ratio:16 / 9;object-fit:cover}
-    .creature-heading{padding:2.5rem 0 0;max-width:850px}
-    .category,.section-label{font-family:"Space Mono",monospace;font-size:.78rem;letter-spacing:.13em;color:var(--moss)}
-    .category{margin-bottom:.8rem}
-    .creature-heading h1{font-family:"Shippori Mincho",serif;font-size:clamp(3rem,7vw,5rem);line-height:1.15;font-weight:700;letter-spacing:.04em}
-    .creature-meta{margin-top:1rem;display:flex;flex-wrap:wrap;gap:.6rem;font-family:"Space Mono",monospace;font-size:.75rem;color:var(--amber)}
-    .gallery-section{padding:0 6vw 5rem}
-    .section-label{margin-bottom:.7rem}
-    .gallery-title{font-family:"Shippori Mincho",serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:500;margin-bottom:1.5rem}
-    .gallery{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:.8rem}
-    .gallery figure{margin:0;overflow:hidden;border-radius:4px;background:#050907}
-    .gallery figure:first-child{grid-row:span 2}
-    .gallery figure:first-child img{height:100%;min-height:480px}
-    .gallery figure:first-child img{object-fit:contain}
-    .gallery figure:not(:first-child) img{height:232px}
-    .gallery img{object-fit:cover;transition:transform .45s ease}
-    .gallery figure:hover img{transform:scale(1.025)}
-    .content{background:var(--canopy)}
-    .content-inner{max-width:900px;margin:auto;padding:0 6vw}
-    .section{padding:5rem 0;border-top:1px solid var(--line)}
-    .section h2{font-family:"Shippori Mincho",serif;font-size:clamp(1.6rem,3vw,2.25rem);font-weight:500;line-height:1.4;margin-bottom:1.5rem}
-    .section p{max-width:65ch;color:var(--soft);font-size:.98rem;margin-bottom:1.1rem}
-    .observation-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:2rem;background:var(--line);border:1px solid var(--line)}
-    .observation-item{padding:1.5rem;background:rgba(10,22,19,.35)}
-    .observation-item span{display:block;font-family:"Space Mono",monospace;color:var(--moss);font-size:.68rem;letter-spacing:.08em;margin-bottom:.35rem}
-    .observation-item strong{font-family:"Shippori Mincho",serif;font-size:1.05rem;font-weight:500}
-    .safety{padding:2rem 2.2rem;border-left:3px solid var(--amber);background:rgba(232,163,61,.06)}
-    .safety h2{font-size:1.5rem}
-    .safety p{font-size:.9rem}
-    .other{padding:5rem 6vw;background:var(--night)}
-    .other-inner{max-width:1080px;margin:auto}
-    .other-heading{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:1.8rem}
-    .other-heading h2{font-family:"Shippori Mincho",serif;font-size:clamp(1.5rem,3vw,2.1rem);font-weight:500}
-    .other-heading a{font-size:.8rem;text-decoration:none;color:var(--amber)}
-    .other-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-    .other-card{background:var(--canopy);border:1px solid var(--line);border-radius:4px;overflow:hidden;text-decoration:none}
-    .other-card img,.other-placeholder{aspect-ratio:4 / 3;object-fit:cover}
-    .other-placeholder{display:flex;align-items:center;justify-content:center;background:#101c18;color:rgba(234,242,233,.45);font-size:.8rem}
-    .other-card-body{padding:1rem 1.1rem}
-    .other-card-body span{display:block;font-family:"Space Mono",monospace;color:var(--moss);font-size:.65rem;letter-spacing:.08em}
-    .other-card-body h3{font-family:"Shippori Mincho",serif;font-size:1.1rem;font-weight:500;margin-top:.15rem}
-    .tour{margin:0 6vw 6rem;padding:4.5rem 2rem;border:1px solid rgba(232,163,61,.25);background:linear-gradient(135deg,#16302A,#0A1613);text-align:center}
-    .tour-label{font-family:"Space Mono",monospace;color:var(--amber);font-size:.7rem;letter-spacing:.15em;margin-bottom:.8rem}
-    .tour h2{font-family:"Shippori Mincho",serif;font-size:clamp(1.7rem,3vw,2.5rem);font-weight:500;margin-bottom:1rem}
-    .tour p{max-width:620px;margin:0 auto 1.8rem;color:var(--soft);font-size:.9rem}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.8rem;background:var(--amber);color:var(--bark);text-decoration:none;font-weight:700;border-radius:2px;font-size:.85rem;transition:transform .2s ease,background .2s ease}
-    .btn:hover{background:#f4b95a;transform:translateY(-2px)}
-    footer{padding:2.5rem 6vw;border-top:1px solid var(--line);text-align:center;color:rgba(234,242,233,.45);font-size:.72rem}
-    @media(max-width:700px){
-      .header-inner{padding:1rem 5vw}
-      nav{display:none}
-      .creature-hero{padding:1.8rem 5vw 3.5rem}
-      .hero-photo img{aspect-ratio:4 / 3}
-      .creature-heading{padding-top:1.8rem}
-      .creature-heading h1{font-size:3.2rem}
-      .gallery-section{padding:0 5vw 3.5rem}
-      .gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px;gap:.5rem}
-      .gallery figure:first-child img{min-height:365px}
-      .gallery figure:not(:first-child) img{height:180px}
-      .content-inner{padding:0 5vw}
-      .section{padding:3.8rem 0}
-      .section p{font-size:.9rem}
-      .observation-grid{grid-template-columns:1fr}
-      .safety{padding:1.5rem}
-      .other{padding:3.8rem 5vw}
-      .other-heading{display:block}
-      .other-heading a{display:inline-block;margin-top:.5rem}
-      .other-grid{grid-template-columns:1fr}
-      .tour{margin:0 5vw 4rem;padding:3.5rem 1.5rem}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ハブ｜奄美大島の夜の森 | Nature Experience Amami</title>
+<meta name="description" content="奄美大島の夜の森で出会えるハブ。生態や観察時期、安全に観察するためのポイントを写真とともに紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --night:#0A1613;
+  --canopy:#16302A;
+  --moonlight:#EAF2E9;
+  --amber:#E8A33D;
+  --moss:#6B8F71;
+  --bark:#2A211A;
+  --line:rgba(234,242,233,.12);
+  --soft:rgba(234,242,233,.72);
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  background:var(--night);
+  color:var(--moonlight);
+  line-height:1.9;
+}
+img{ display:block; width:100%; height:100%; object-fit:cover; }
+a{ color:inherit; }
+
+/* ===== HEADER ===== */
+.site-header{
+  position:sticky; top:0; z-index:20;
+  background:rgba(10,22,19,.94); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1200px; margin:auto; padding:1.3rem 6vw;
+  display:flex; align-items:center; justify-content:space-between; gap:2rem;
+}
+.logo{
+  font-family:'Shippori Mincho',serif; font-weight:700; font-size:1.15rem;
+  letter-spacing:.12em; text-decoration:none; display:flex; align-items:center; gap:.55rem;
+}
+.logo::before{
+  content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--amber); box-shadow:0 0 10px 2px rgba(232,163,61,.7);
+}
+nav{ display:flex; gap:1.8rem; font-size:.82rem; }
+nav a{ text-decoration:none; color:rgba(234,242,233,.75); }
+nav a:hover{ color:var(--moonlight); }
+
+main{ max-width:1200px; margin:auto; }
+
+/* ===== HERO：分割レイアウト ===== */
+.creature-hero{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:0;
+  margin:4rem 6vw 0;
+  min-height:min(70vh, 600px);
+  border-radius:4px;
+  overflow:hidden;
+  border:1px solid var(--line);
+}
+
+.hero-photo{
+  position:relative;
+  overflow:hidden;
+  background:#050907;
+  min-height:340px;
+}
+.hero-photo::after{
+  content:"";
+  position:absolute; inset:0;
+  background:radial-gradient(circle at 38% 42%, transparent 22%, rgba(10,22,19,.35) 55%, rgba(10,22,19,.85) 100%);
+  pointer-events:none;
+}
+
+.hero-info{
+  background:var(--canopy);
+  padding:2.6rem 2.4rem;
+  display:flex; flex-direction:column; justify-content:center;
+  gap:1.4rem;
+}
+.category{
+  font-family:'Space Mono',monospace; font-size:.78rem; letter-spacing:.13em; color:var(--moss);
+}
+.hero-info h1{
+  font-family:'Shippori Mincho',serif; font-size:clamp(2.4rem,4vw,3.4rem);
+  line-height:1.15; font-weight:700; letter-spacing:.03em;
+}
+.latin{ font-size:.85rem; color:rgba(234,242,233,.6); }
+.latin em{ font-style:italic; }
+
+.badge-row{ display:flex; flex-wrap:wrap; gap:.5rem; }
+.badge{
+  font-family:'Space Mono',monospace; font-size:.72rem; letter-spacing:.06em;
+  padding:.35rem .7rem; border:1px solid rgba(234,242,233,.2); border-radius:2px;
+  color:rgba(234,242,233,.8);
+}
+.badge.danger{ border-color:rgba(232,163,61,.5); color:var(--amber); }
+
+/* 危険度メーター */
+.meter-block{ margin-top:.2rem; }
+.meter-label{
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-family:'Space Mono',monospace; font-size:.68rem; letter-spacing:.08em; color:var(--moss);
+  margin-bottom:.4rem;
+}
+.meter-label strong{ color:var(--amber); font-size:.72rem; }
+.meter-track{
+  height:6px; background:rgba(234,242,233,.1); border-radius:3px; overflow:hidden;
+}
+.meter-fill{
+  height:100%; background:var(--amber); border-radius:3px;
+}
+
+/* 観察時期タイムライン */
+.season-block{ margin-top:.2rem; }
+.season-label{
+  font-family:'Space Mono',monospace; font-size:.68rem; letter-spacing:.08em; color:var(--moss);
+  margin-bottom:.5rem;
+}
+.season-track{
+  display:grid; grid-template-columns:repeat(12,1fr); gap:3px;
+}
+.season-tick{
+  height:20px; background:rgba(234,242,233,.08); border-radius:2px;
+}
+.season-tick.active{ background:var(--amber); }
+
+.hero-teaser{ color:var(--soft); font-size:.92rem; max-width:46ch; }
+
+/* ===== GALLERY ===== */
+.gallery-section{ padding:5.5rem 6vw 5rem; }
+.section-label{
+  font-family:'Space Mono',monospace; font-size:.78rem; letter-spacing:.13em; color:var(--moss);
+  margin-bottom:.7rem;
+}
+.gallery-title{
+  font-family:'Shippori Mincho',serif; font-size:clamp(1.5rem,3vw,2.2rem); font-weight:500; margin-bottom:1.5rem;
+}
+.gallery{
+  display:grid; grid-template-columns:2fr 1fr; grid-template-rows:1fr 1fr; gap:.8rem;
+}
+.gallery figure{
+  margin:0; overflow:hidden; border-radius:4px; cursor:pointer;
+  background:#050907;
+  transition:transform .45s ease;
+}
+.gallery figure:hover img{ transform:scale(1.025); }
+.gallery figure:first-child{ grid-row:span 2; min-height:480px; }
+.gallery figure:first-child img{ object-fit:contain; }
+.gallery figure:not(:first-child){ height:232px; }
+.gallery img{ transition:transform .45s ease; }
+
+/* ライトボックス */
+.lightbox{
+  position:fixed; inset:0; z-index:50; display:none;
+  align-items:center; justify-content:center;
+  background:rgba(10,22,19,.92);
+  padding:5vh 5vw;
+}
+.lightbox.open{ display:flex; }
+.lightbox-inner{
+  width:min(85vw,1000px); max-height:88vh;
+  position:relative;
+}
+.lightbox-inner img{
+  width:100%; height:auto; max-height:88vh; object-fit:contain; border-radius:4px;
+}
+.lightbox-close{
+  position:absolute; top:-2.6rem; right:0;
+  color:var(--moonlight); font-family:'Space Mono',monospace; font-size:.8rem;
+  background:none; border:1px solid rgba(234,242,233,.3); padding:.4rem .8rem; cursor:pointer;
+}
+.lightbox-close:hover{ border-color:var(--amber); color:var(--amber); }
+
+/* ===== CONTENT ===== */
+.content{ background:var(--canopy); }
+.content-inner{ max-width:900px; margin:auto; padding:0 6vw; }
+.section{ padding:5rem 0; border-top:1px solid var(--line); }
+.section h2{
+  font-family:'Shippori Mincho',serif; font-size:clamp(1.6rem,3vw,2.25rem); font-weight:500; line-height:1.4; margin-bottom:1.5rem;
+}
+.section p{ max-width:65ch; color:var(--soft); font-size:.98rem; margin-bottom:1.1rem; }
+
+.observation-grid{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
+  margin-top:2rem; background:var(--line); border:1px solid var(--line);
+}
+.observation-item{ padding:1.5rem; background:rgba(10,22,19,.35); }
+.observation-item span{
+  display:block; font-family:'Space Mono',monospace; color:var(--moss); font-size:.68rem; letter-spacing:.08em; margin-bottom:.35rem;
+}
+.observation-item strong{ font-family:'Shippori Mincho',serif; font-size:1.05rem; font-weight:500; }
+
+.safety{ padding:2rem 2.2rem; border-left:3px solid var(--amber); background:rgba(232,163,61,.06); }
+.safety h2{ font-size:1.5rem; }
+.safety p{ font-size:.9rem; }
+
+/* ===== CTA ===== */
+.tour{
+  margin:5rem 6vw 6rem;
+  padding:4.5rem 2rem;
+  border:1px solid rgba(232,163,61,.25);
+  background:linear-gradient(135deg, #16302A, #0A1613);
+  text-align:center;
+}
+.tour-label{
+  font-family:'Space Mono',monospace; color:var(--amber); font-size:.7rem; letter-spacing:.15em; margin-bottom:.8rem;
+}
+.tour h2{
+  font-family:'Shippori Mincho',serif; font-size:clamp(1.7rem,3vw,2.5rem); font-weight:500; margin-bottom:1rem;
+}
+.tour p{ max-width:620px; margin:0 auto 1.8rem; color:var(--soft); font-size:.9rem; }
+.btn{
+  display:inline-flex; align-items:center; gap:.5rem; padding:.9rem 1.8rem;
+  background:var(--amber); color:var(--bark); text-decoration:none; font-weight:700;
+  border-radius:2px; font-size:.85rem; transition:transform .2s ease,background .2s ease;
+}
+.btn:hover{ background:#f4b95a; transform:translateY(-2px); }
+
+footer{
+  padding:2.5rem 6vw; border-top:1px solid var(--line); text-align:center;
+  color:rgba(234,242,233,.45); font-size:.72rem;
+}
+
+@media(max-width:800px){
+  .creature-hero{ grid-template-columns:1fr; margin:1.5rem 5vw 0; min-height:auto; }
+  .hero-photo{ min-height:260px; }
+  .hero-info{ padding:1.8rem; }
+  .gallery{ grid-template-columns:1fr 1fr; grid-template-rows:180px 180px; }
+  .gallery figure:first-child{ min-height:365px; }
+  .gallery figure:not(:first-child){ height:180px; }
+  .tour{ margin:3rem 5vw 4rem; padding:3.5rem 1.5rem; }
+}
+
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="../../index.html" class="logo">Nature Experience Amami</a>
-      <nav>
-        <a href="../../index.html">HOME</a>
-        <a href="../../hebi.html">HEBI</a>
-        <a href="../../tour.html.html">TOUR</a>
-        <a href="../../contact.html">CONTACT</a>
-      </nav>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../../index.html" class="logo">Nature – Experience</a>
+    <nav>
+      <a href="../../index.html">ホーム</a>
+      <a href="../../hebi.html">ヘビ一覧</a>
+      <a href="../../contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="creature-hero">
+    <div class="hero-photo">
+      <img id="hero-photo" src="" alt="奄美大島のハブ">
     </div>
-  </header>
-
-  <main>
-    <section class="creature-hero">
-      <div class="hero-photo">
-        <img id="hero-photo" src="../../images/creatures/hebi/habu/habu_000001_20241218_22.jpg" alt="奄美大島のハブ">
+    <div class="hero-info">
+      <p class="category">HEBI / ヘビ</p>
+      <h1>ハブ</h1>
+      <p class="latin">クサリヘビ科ハブ属　<em>Protobothrops flavoviridis</em></p>
+      <div class="badge-row">
+        <span class="badge">夜行性</span>
+        <span class="badge">全長約226cm</span>
+        <span class="badge danger">毒蛇</span>
       </div>
-      <div class="creature-heading">
-        <p class="category">HEBI / ヘビ</p>
-        <h1>ハブ</h1>
-        <div class="creature-meta">
-          <span>5月 — 11月</span>
-          <span>｜</span>
-          <span>夜行性</span>
-          <span>｜</span>
-          <span>猛毒・要最大限の注意</span>
+
+      <div class="meter-block">
+        <div class="meter-label"><span>危険度</span><strong>高</strong></div>
+        <div class="meter-track"><div class="meter-fill" style="width:88%"></div></div>
+      </div>
+
+      <div class="season-block">
+        <p class="season-label">観察時期　5月 — 11月</p>
+        <div class="season-track">
+          <div class="season-tick"></div>
+          <div class="season-tick"></div>
+          <div class="season-tick"></div>
+          <div class="season-tick"></div>
+          <div class="season-tick active"></div>
+          <div class="season-tick active"></div>
+          <div class="season-tick active"></div>
+          <div class="season-tick active"></div>
+          <div class="season-tick active"></div>
+          <div class="season-tick active"></div>
+          <div class="season-tick active"></div>
+          <div class="season-tick"></div>
         </div>
       </div>
-    </section>
 
-    <section class="gallery-section">
-      <p class="section-label">PHOTOGRAPHS</p>
-      <h2 class="gallery-title">奄美の夜で出会うハブ</h2>
-      <div class="gallery">
-        <figure><img class="gallery-photo" src="../../images/creatures/hebi/habu/habu_000001_20241218_22.jpg" alt="ハブ"></figure>
-        <figure><img class="gallery-photo" src="../../images/creatures/hebi/habu/habu_000002_20250228_00.jpg" alt="ハブ"></figure>
-        <figure><img class="gallery-photo" src="../../images/creatures/hebi/habu/habu_000003_20250228_00.jpg" alt="ハブ"></figure>
-      </div>
-    </section>
-
-    <div class="content">
-      <div class="content-inner">
-        <section class="section">
-          <p class="section-label">ABOUT</p>
-          <h2>奄美の夜を代表するハブ</h2>
-          <p>クサリヘビ科ハブ属 <em>Protobothrops flavoviridis</em></p>
-          <p>全長〜226cmの大型のヘビ。5月から11月頃が良く観察でき、冬でも暖かい日には活動します。夜行性で昼間は穴の中などで休みます。</p>
-          <p>平地から山地の森林、草原、水辺、農地や樹上にも生息し、ネズミを追って人家周辺にも入り込みます。主食はネズミのほか、爬虫類、カエル、哺乳類、鳥類です。</p>
-          <p>模様は自然に溶け込んでかなり見つけにくく、見えていないだけでいろいろな場所に潜んでいます。</p>
-        </section>
-
-        <section class="section">
-          <p class="section-label">OBSERVATION</p>
-          <h2>いつ、どこで見られる？</h2>
-          <p>夜行性のため、日が暮れた後の林道や森を歩くと出会う可能性があります。</p>
-          <div class="observation-grid">
-            <div class="observation-item"><span>SEASON</span><strong>5月〜11月頃<br>暖かい冬の日にも活動</strong></div>
-            <div class="observation-item"><span>TIME</span><strong>夜間</strong></div>
-            <div class="observation-item"><span>LOCATION</span><strong>森林・草原・水辺・農地・樹上・人家周辺</strong></div>
-            <div class="observation-item"><span>POINT</span><strong>2〜3m以上の距離を保ち、足元や道の脇を確認</strong></div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="safety">
-            <p class="section-label">SAFETY</p>
-            <h2>安全に観察するために</h2>
-            <p>ハブは毒がある上にかなり攻撃的です。近づくと逃げずにすぐ攻撃体制に入り、体長の3分の2近く飛びかかることができます。</p>
-            <p>見つけても決して近づいたり、触ったりしないでください。2〜3mは必ず離れて観察・撮影し、夜間の森では足元や草むらに十分注意してください。</p>
-            <p>電波の通じない山奥で噛まれると大変なことになるため、注意しすぎるくらい注意して観察してください。</p>
-          </div>
-        </section>
-      </div>
+      <p class="hero-teaser">
+        奄美大島の夜の森を代表する毒蛇。暖かい冬の日にも活動することがあります。
+      </p>
     </div>
+  </section>
 
-    <section class="other">
-      <div class="other-inner">
-        <div class="other-heading">
-          <div>
-            <p class="section-label">SNAKES OF AMAMI</p>
-            <h2>ヘビ一覧へ戻る</h2>
-          </div>
-          <a href="../../hebi.html">ヘビの種類をすべて見る →</a>
+  <section class="gallery-section">
+    <p class="section-label">PHOTOGRAPHS</p>
+    <h2 class="gallery-title">奄美の夜で出会うハブ</h2>
+    <div class="gallery">
+      <figure onclick="openLightbox(this)"><img class="gallery-photo" src="" alt="ハブ"></figure>
+      <figure onclick="openLightbox(this)"><img class="gallery-photo" src="" alt="ハブ"></figure>
+      <figure onclick="openLightbox(this)"><img class="gallery-photo" src="" alt="ハブ"></figure>
+    </div>
+  </section>
+
+  <div class="content">
+    <div class="content-inner">
+
+      <section class="section">
+        <p class="section-label">ABOUT</p>
+        <h2>奄美の夜を代表する生き物</h2>
+        <p>ハブは、奄美大島の夜の森で出会うことのできる代表的な毒ヘビです。全長は約226cmにもなり、島に生息するヘビの中でも特に大きく、存在感があります。</p>
+        <p>日中は木の下や草むらなどに潜んでいますが、日が暮れると活動が活発になります。夏場だけでなく、暖かい冬の日にも姿を見せることがあり、一年を通して油断のできない生き物です。</p>
+        <p>暗闇の中でライトに照らされたその姿を見つけた瞬間は、奄美の夜の森ならではの緊張感を感じる瞬間でもあります。</p>
+      </section>
+
+      <section class="section">
+        <p class="section-label">ECOLOGY</p>
+        <h2>暮らしている場所と食べているもの</h2>
+        <p>ハブは環境への適応力が高く、森林や草原だけでなく、水辺、農地、樹上、さらには人家の周辺まで、驚くほど幅広い場所で見られます。</p>
+        <p>ネズミなどの小型哺乳類を中心に、鳥やカエル、他の爬虫類まで食べる肉食性で、獲物を待ち伏せして捕らえる姿が見られることもあります。</p>
+        <p>毒蛇であるため、驚いたり刺激を受けたりすると攻撃的になることがあります。観察の際は、こちらから近づかず、静かに距離を保つことが大切です。</p>
+      </section>
+
+      <section class="section">
+        <p class="section-label">OBSERVATION</p>
+        <h2>いつ、どこで見られる？</h2>
+        <div class="observation-grid">
+          <div class="observation-item"><span>SEASON</span><strong>5月〜11月</strong></div>
+          <div class="observation-item"><span>TIME</span><strong>日没後〜夜間</strong></div>
+          <div class="observation-item"><span>LOCATION</span><strong>草むら・石の周辺・林道など</strong></div>
+          <div class="observation-item"><span>POINT</span><strong>足元や道の脇をゆっくり確認</strong></div>
         </div>
-        <div class="other-grid">
-          <a href="../../hebi.html" class="other-card">
-            <img src="../../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg" alt="アカマタ">
-            <div class="other-card-body"><span>HEBI / ヘビ</span><h3>アカマタ</h3></div>
-          </a>
-          <a href="../../hebi.html" class="other-card">
-            <div class="other-placeholder">ヘビ一覧</div>
-            <div class="other-card-body"><span>HEBI / ヘビ</span><h3>他のヘビを見る</h3></div>
-          </a>
+      </section>
+
+      <section class="section">
+        <div class="safety">
+          <p class="section-label">SAFETY</p>
+          <h2>安全に観察するために</h2>
+          <p>ハブは危険な毒ヘビです。見つけても近づいたり、触ったりしないでください。</p>
+          <p>2〜3m以上の距離を保ち、夜間は足元を照らしながら歩き、草むらなどに不用意に手を入れないことが大切です。</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="tour">
-      <p class="tour-label">NATURE EXPERIENCE AMAMI</p>
-      <h2>奄美の夜の森を歩いてみませんか？</h2>
-      <p>写真で見るだけではなく、実際の夜の森で生き物を探してみる。奄美大島の自然をガイドと一緒に観察してみませんか。</p>
-      <a href="../../contact.html" class="btn">ナイトツアーについて →</a>
-    </section>
-  </main>
+    </div>
+  </div>
 
-  <footer>&copy; 2026 Nature Experience Amami. 画像の無断転載・複製・改変を禁じます。</footer>
-  <script>
-    const habuPhotos = [
-      "../../images/creatures/hebi/habu/habu_000001_20241218_22.jpg",
-      "../../images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
-      "../../images/creatures/hebi/habu/habu_000003_20250228_00.jpg",
-      "../../images/creatures/hebi/habu/habu_000004_20260214_22.jpg",
-      "../../images/creatures/hebi/habu/habu_000005_20260221_22.jpg"
-    ];
+  <section class="tour">
+    <p class="tour-label">NATURE EXPERIENCE AMAMI</p>
+    <h2>奄美の夜の森を歩いてみませんか？</h2>
+    <p>写真で見るだけではなく、実際の夜の森で生き物を探してみる。奄美大島の自然をガイドと一緒に観察してみませんか。</p>
+    <a href="../../contact.html" class="btn">🔦 ナイトツアーについて</a>
+  </section>
 
-    for (let index = habuPhotos.length - 1; index > 0; index -= 1) {
-      const randomIndex = Math.floor(Math.random() * (index + 1));
-      [habuPhotos[index], habuPhotos[randomIndex]] = [
-        habuPhotos[randomIndex],
-        habuPhotos[index]
-      ];
+</main>
+
+<footer>&copy; 2026 Nature-Experience Amami. 画像の無断転載・複製・改変を禁じます。</footer>
+
+<div class="lightbox" id="lightbox" onclick="if(event.target===this) closeLightbox()">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()">閉じる ×</button>
+    <img id="lightbox-img" src="" alt="ハブ">
+  </div>
+</div>
+
+<script>
+(function(){
+
+  var basePath = "../../images/creatures/hebi/habu/";
+  var photos = [
+    "habu_000001_20241218_22.jpg",
+    "habu_000002_20250228_00.jpg",
+    "habu_000003_20250228_00.jpg",
+    "habu_000004_20260214_22.jpg",
+    "habu_000005_20260221_22.jpg"
+  ];
+
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
     }
+    return a;
+  }
 
-    document.getElementById("hero-photo").src = habuPhotos[0];
-    document.querySelectorAll(".gallery-photo").forEach((photo, index) => {
-      photo.src = habuPhotos[index + 1];
-    });
-  </script>
+  var shuffled = shuffle(photos);
+
+  document.getElementById("hero-photo").src = basePath + shuffled[0];
+
+  var galleryImgs = document.querySelectorAll(".gallery-photo");
+  galleryImgs.forEach(function(img, i){
+    img.src = basePath + shuffled[i + 1];
+  });
+
+  window.openLightbox = function(figure){
+    var src = figure.querySelector("img").src;
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").classList.add("open");
+  };
+
+  window.closeLightbox = function(){
+    document.getElementById("lightbox").classList.remove("open");
+  };
+
+})();
+</script>
+
 </body>
 </html>

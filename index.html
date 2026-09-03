@@ -24,49 +24,16 @@
   }
   .hero picture, .hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 
-  .hero-bg{ z-index:0; filter:brightness(0); animation:bgFade 7s ease-out forwards; }
-  @keyframes bgFade{
-    0%, 42.9%{ filter:brightness(0); }
-    65%{ filter:brightness(.14); }
-    100%{ filter:brightness(.30); }
+  .hero-photo-link{ position:absolute; inset:0; z-index:0; display:block; }
+  .hero-photo{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+    filter:brightness(.45); transition:opacity 1s ease;
   }
-
-  .hero-reveal{
-    z-index:1; filter:brightness(1) saturate(1);
-    clip-path:circle(3% at 50% 50%);
-    -webkit-clip-path:circle(3% at 50% 50%);
-    animation:revealCircle 7s forwards;
-  }
-  @keyframes revealCircle{
-    0%{ clip-path:circle(3% at 50% 50%); -webkit-clip-path:circle(3% at 50% 50%); }
-    42.9%{
-      clip-path:circle(3% at 50% 50%); -webkit-clip-path:circle(3% at 50% 50%);
-      animation-timing-function:cubic-bezier(.22,.61,.36,1);
-    }
-    100%{ clip-path:circle(78% at 50% 50%); -webkit-clip-path:circle(78% at 50% 50%); }
-  }
+  .hero-photo.is-changing{ opacity:.2; }
 
   .hero::after{
     content:""; position:absolute; inset:0; z-index:4; pointer-events:none;
     background:linear-gradient(180deg, transparent 0%, transparent 38%, rgba(10,22,19,.55) 75%, rgba(10,22,19,.88) 100%);
-  }
-
-  .flashlight{
-    position:absolute; left:50%; top:50%; width:28px; height:28px; border-radius:50%;
-    transform:translate(-50%,-50%) scale(.01);
-    background:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,245,210,.96) 12%, rgba(255,220,150,.65) 35%, rgba(232,163,61,.22) 60%, transparent 100%);
-    box-shadow:0 0 18px rgba(255,235,180,.6);
-    pointer-events:none; z-index:5;
-    animation:torch 7s forwards;
-  }
-  @keyframes torch{
-    0%{ transform:translate(-50%,-50%) scale(.01); opacity:0; }
-    6%{ transform:translate(-50%,-50%) scale(.4); opacity:1; }
-    42.9%{
-      transform:translate(-50%,-50%) scale(.4); opacity:1;
-      animation-timing-function:cubic-bezier(.22,.61,.36,1);
-    }
-    100%{ transform:translate(-50%,-50%) scale(24); opacity:.18; }
   }
 
   .hero-content{ position:relative; z-index:6; padding:0 6vw 8vh; max-width:900px; }
@@ -116,6 +83,10 @@
     box-shadow:0 0 10px 2px rgba(232,163,61,.7); flex-shrink:0;
   }
   .brand-bar .mark .dash{ color:var(--amber); font-weight:400; }
+  .language-switcher{ margin-left:auto; display:flex; gap:.35rem; flex-wrap:wrap; justify-content:flex-end; }
+  .language-switcher button{ border:1px solid rgba(234,242,233,.35); background:rgba(10,22,19,.45); color:var(--moonlight); padding:.35rem .55rem; cursor:pointer; border-radius:2px; font:inherit; font-size:.78rem; }
+  .language-switcher button[aria-pressed="true"]{ border-color:var(--amber); color:var(--amber); }
+  .language-status{ position:absolute; top:5.2rem; right:6vw; z-index:7; color:var(--amber); font-size:.8rem; }
 
   section{ padding:5.5rem 6vw; }
   .field-note{ background:var(--canopy); }
@@ -159,9 +130,7 @@
   }
 
   @media (prefers-reduced-motion:reduce){
-    .flashlight{ animation:none; opacity:.18; }
-    .hero-reveal{ animation:none; clip-path:none; -webkit-clip-path:none; filter:brightness(.75) saturate(.9); }
-    .hero-bg{ animation:none; filter:brightness(.30); }
+    .hero-photo{ transition:none; }
     .eyebrow, .hero h1, .hero p, .btn{ animation:none; opacity:1; transform:none; }
   }
 </style>
@@ -169,26 +138,34 @@
 <body>
 
 <header class="hero">
-  <img class="hero-bg" src="images/ishikawa-hero.jpg" alt="奄美大島の夜の森で観察できるカエル(種名は確認中・奄美固有種)">
-  <img class="hero-reveal" src="images/ishikawa-hero.jpg" alt="" aria-hidden="true">
-  <div class="flashlight" aria-hidden="true"></div>
+  <a id="hero-photo-link" class="hero-photo-link" href="#tour" aria-label="ナイトツアーの詳細を見る">
+    <img id="hero-photo" class="hero-photo" src="images/ishikawa-hero.jpg" alt="奄美大島の夜の森">
+  </a>
 
   <div class="brand-bar">
     <span class="mark">Nature <span class="dash">–</span> Experience</span>
+    <div class="language-switcher" aria-label="言語を選択">
+      <button type="button" data-language="ja" aria-pressed="true">日本語</button>
+      <button type="button" data-language="en" aria-pressed="false">English</button>
+      <button type="button" data-language="zh-TW" aria-pressed="false">繁體中文</button>
+      <button type="button" data-language="ko" aria-pressed="false">한국어</button>
+      <button type="button" data-language="es" aria-pressed="false">Español</button>
+    </div>
   </div>
+  <p id="language-status" class="language-status" aria-live="polite"></p>
 
   <div class="hero-content">
-    <span class="eyebrow">AMAMI OSHIMA / NIGHT FIELD TOUR</span>
-    <h1>懐中電灯の先に、<br><em>奄美だけの夜</em>が広がる。</h1>
-    <p>アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩くナイトツアー。</p>
-    <a href="#tour" class="btn">🔦 ナイトツアーを見る</a>
+    <span class="eyebrow" data-i18n>AMAMI OSHIMA / NIGHT FIELD TOUR</span>
+    <h1><span data-i18n>奄美の夜の森を、</span><br><em data-i18n>ガイドと歩く。</em></h1>
+    <p data-i18n>アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩くナイトツアー。</p>
+    <a href="#tour" class="btn" data-i18n>🔦 ナイトツアーを見る</a>
   </div>
 </header>
 
 <section class="field-note">
-  <p class="label">FIELD NOTE — 今の時期に観察しやすい生き物</p>
-  <h2>8月、森はこんな顔をしている</h2>
-  <p>季節ごとに出会える生き物は変わります。このセクションはAIが観察データをもとに毎月自動更新する予定です(実装中)。</p>
+  <p class="label" data-i18n>FIELD NOTE — 今の時期に観察しやすい生き物</p>
+  <h2 data-i18n>8月、森はこんな顔をしている</h2>
+  <p data-i18n>季節ごとに出会える生き物は変わります。このセクションはAIが観察データをもとに毎月自動更新する予定です(実装中)。</p>
   <div class="creature-grid">
     <div class="creature-card">
       <div class="name">ハブ</div>
@@ -207,9 +184,9 @@
 
 <!-- ===== AI ASK: 今回新規追加したセクション ===== -->
 <section class="ai-ask" aria-label="生き物についてAIに質問する">
-  <p class="field-note label" style="color:var(--moss);">ASK THE GUIDE / AI</p>
-  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">気になる時期の生き物を聞いてみる</h2>
-  <p style="max-width:60ch; color:rgba(234,242,233,0.8); line-height:1.9; margin-bottom:1.5rem;">
+  <p class="field-note label" style="color:var(--moss);" data-i18n>ASK THE GUIDE / AI</p>
+  <h2 data-i18n style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">気になる時期の生き物を聞いてみる</h2>
+  <p data-i18n style="max-width:60ch; color:rgba(234,242,233,0.8); line-height:1.9; margin-bottom:1.5rem;">
     「9月に見られる生き物は?」のように、気軽に聞いてみてください。実際に撮影した記録をもとに答えます。
   </p>
   <div class="ask-box">
@@ -220,28 +197,28 @@
 </section>
 
 <section id="tour" class="flow">
-  <p class="field-note label" style="color:var(--moss);">HOW IT WORKS</p>
-  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">ナイトツアーの流れ</h2>
+  <p class="field-note label" style="color:var(--moss);" data-i18n>HOW IT WORKS</p>
+  <h2 data-i18n style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">ナイトツアーの流れ</h2>
   <div class="flow-list">
     <div class="flow-item">
       <div class="flow-num">01</div>
       <div>
-        <h3>19時頃、指定の場所に集合</h3>
-        <p>ビッグ2駐車場、朝戸トンネル駐車場など。名瀬近辺の宿なら送迎相談可。</p>
+        <h3 data-i18n>19時頃、指定の場所に集合</h3>
+        <p data-i18n>ビッグ2駐車場、朝戸トンネル駐車場など。名瀬近辺の宿なら送迎相談可。</p>
       </div>
     </div>
     <div class="flow-item">
       <div class="flow-num">02</div>
       <div>
-        <h3>ガイドの車で夜の森へ</h3>
-        <p>専属ガイドと一緒に固有種を探しながら歩きます。</p>
+        <h3 data-i18n>ガイドの車で夜の森へ</h3>
+        <p data-i18n>専属ガイドと一緒に固有種を探しながら歩きます。</p>
       </div>
     </div>
     <div class="flow-item">
       <div class="flow-num">03</div>
       <div>
-        <h3>集合場所で解散</h3>
-        <p>採集目的のガイドはお断りしています。観察・撮影を楽しみましょう。</p>
+        <h3 data-i18n>集合場所で解散</h3>
+        <p data-i18n>採集目的のガイドはお断りしています。観察・撮影を楽しみましょう。</p>
       </div>
     </div>
   </div>
@@ -254,20 +231,124 @@
   const WORKER_URL = "https://nature-experience-ai.aegusaegus.workers.dev/";
   const CREATURES_JSON = "data/creatures.json";
   let creaturesData = null;
+  const translationElements = Array.from(document.querySelectorAll('[data-i18n]'));
+  const originalTranslations = translationElements.map(function (element) {
+    return element.textContent;
+  });
 
   document.getElementById('ask-btn').addEventListener('click', askGuide);
   document.getElementById('ask-input').addEventListener('keydown', function (e) {
     if (e.key === 'Enter') askGuide();
   });
+  document.querySelectorAll('[data-language]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      translatePage(button.dataset.language);
+    });
+  });
+
+  async function translatePage(language) {
+    const status = document.getElementById('language-status');
+    document.querySelectorAll('[data-language]').forEach(function (button) {
+      button.setAttribute('aria-pressed', button.dataset.language === language ? 'true' : 'false');
+    });
+    if (language === 'ja') {
+      translationElements.forEach(function (element, index) {
+        element.textContent = originalTranslations[index];
+      });
+      status.textContent = '';
+      return;
+    }
+    status.textContent = '翻訳しています…';
+    try {
+      const response = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'translate',
+          language: language,
+          texts: originalTranslations
+        })
+      });
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      const data = await response.json();
+      if (!Array.isArray(data.translations) || data.translations.length !== translationElements.length) {
+        throw new Error('翻訳結果の形式が不正です');
+      }
+      translationElements.forEach(function (element, index) {
+        element.textContent = data.translations[index];
+      });
+      status.textContent = '';
+    } catch (err) {
+      console.error('翻訳に失敗しました:', err);
+      status.textContent = '翻訳できませんでした。日本語表示を続けます。';
+    }
+  }
 
   // creatures.json を事前に読み込む
   (async function () {
     try {
-      creaturesData = await (await fetch(CREATURES_JSON)).json();
+      const response = await fetch(CREATURES_JSON + '?v=20260904', { cache: 'no-store' });
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      creaturesData = await response.json();
+      initHeroSlideshow(creaturesData);
     } catch (err) {
       console.error('creatures.json の読み込みに失敗しました:', err);
     }
   })();
+
+  function initHeroSlideshow(creatures) {
+    const heroPhoto = document.getElementById('hero-photo');
+    const heroLink = document.getElementById('hero-photo-link');
+    const candidates = creatures.filter(function (creature) {
+      return Array.isArray(creature.photos) && creature.photos.length;
+    });
+    if (!candidates.length) return;
+
+    let currentPhoto = '';
+    const generatedPages = ['hebi/habu', 'hebi/akamata', 'kaeru/amami-aka-gaeru'];
+    function updatePhoto(photoData) {
+      heroPhoto.src = photoData.photo;
+      heroPhoto.alt = '奄美大島の' + photoData.creature.name;
+      currentPhoto = photoData.photo;
+      const key = photoData.creature.category + '/' + photoData.creature.id;
+      if (generatedPages.includes(key)) {
+        heroLink.href = 'generated-creatures/' + key + '.html';
+        heroLink.setAttribute('aria-label', photoData.creature.name + 'のページを見る');
+      } else {
+        heroLink.href = '#tour';
+        heroLink.setAttribute('aria-label', 'ナイトツアーの詳細を見る');
+      }
+    }
+
+    function choosePhoto() {
+      const creature = candidates[Math.floor(Math.random() * candidates.length)];
+      const photo = creature.photos[Math.floor(Math.random() * creature.photos.length)];
+      return { creature: creature, photo: photo };
+    }
+
+    updatePhoto(choosePhoto());
+
+    function showNextPhoto() {
+      let next = choosePhoto();
+      while (candidates.length > 1 && next.photo === currentPhoto) {
+        next = choosePhoto();
+      }
+      const nextImage = new Image();
+      nextImage.onload = function () {
+        heroPhoto.classList.add('is-changing');
+        window.setTimeout(function () {
+          updatePhoto(next);
+          heroPhoto.classList.remove('is-changing');
+        }, 500);
+      };
+      nextImage.onerror = function () {
+        console.error('ヒーロー写真の読み込みに失敗しました:', next.photo);
+      };
+      nextImage.src = next.photo;
+    }
+
+    window.setInterval(showNextPhoto, 8000);
+  }
 
   async function askGuide() {
     const input = document.getElementById('ask-input');

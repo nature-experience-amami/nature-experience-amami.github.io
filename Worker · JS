@@ -15,7 +15,11 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { headers: cors });
     if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: cors });
 
-    const { message } = await request.json();
+    const requestBody = await request.json();
+    if (requestBody.action === "translate") {
+      return translate(requestBody, env, cors);
+    }
+    const { message } = requestBody;
     if (!message || message.length > 200) {
       return json({ reply: "質問を200文字以内で入力してください。", creature_ids: [] }, cors);
     }
@@ -56,6 +60,42 @@ ${message}`;
   },
 };
 
+async function translate(body, env, cors) {
+  const texts = Array.isArray(body.texts) ? body.texts : [];
+  const language = typeof body.language === "string" ? body.language : "";
+  const allowedLanguages = new Set(["en", "zh-TW", "ko", "es"]);
+  if (!allowedLanguages.has(language) || texts.length > 40 || texts.some((text) => typeof text !== "string" || text.length > 500)) {
+    return json({ translations: [] }, cors, 400);
+  }
+
+  const languageNames = { en: "英語", "zh-TW": "繁体字中国語", ko: "韓国語", es: "スペイン語" };
+  const prompt = `あなたは観光サイトの翻訳者です。
+次の日本語テキスト配列を${languageNames[language]}へ翻訳してください。
+配列の順番と要素数を必ず維持し、JSON配列のみを返してください。
+固有名詞やサービス名は自然な表記にし、説明を追加しないでください。
+
+${JSON.stringify(texts)}`;
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+    }
+  );
+  const data = await res.json();
+  const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
+  try {
+    const translations = JSON.parse(rawText.replace(/```json|```/g, "").trim());
+    if (!Array.isArray(translations) || translations.length !== texts.length) {
+      return json({ translations: [] }, cors, 502);
+    }
+    return json({ translations }, cors);
+  } catch {
+    return json({ translations: [] }, cors, 502);
+  }
+}
+
 // Geminiがコードブロック(```json ... ```)を付けてしまった場合も剥がしてから解析する。
 // 解析に失敗した場合は、生成文をそのままreplyとして返し、creature_idsは空にする(壊れない設計)。
 function safeParse(rawText, creatures) {
@@ -70,8 +110,9 @@ function safeParse(rawText, creatures) {
   }
 }
 
-function json(body, cors) {
+function json(body, cors, status = 200) {
   return new Response(JSON.stringify(body), {
+    status,
     headers: { "Content-Type": "application/json", ...cors },
   });
 }

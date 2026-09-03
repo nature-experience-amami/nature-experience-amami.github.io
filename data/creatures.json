@@ -58,6 +58,22 @@
     ]
   },
   {
+    "id": "garasu-hibaa",
+    "name": "ガラスヒバァ",
+    "category": "hebi",
+    "category_name": "ヘビ",
+    "months": [
+      5,
+      6
+    ],
+    "photos": [
+      "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
+      "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000002_20250522_21.jpg",
+      "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000003_20250601_15.jpg",
+      "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000004_20250604_23.jpg"
+    ]
+  },
+  {
     "id": "habu",
     "name": "ハブ",
     "category": "hebi",
@@ -67,13 +83,87 @@
       12
     ],
     "photos": [
-      "images/creatures/hebi/habu/_2140459.JPG",
-      "images/creatures/hebi/habu/_2210493.JPG",
       "images/creatures/hebi/habu/habu_000001_20241218_22.jpg",
       "images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
       "images/creatures/hebi/habu/habu_000003_20250228_00.jpg",
       "images/creatures/hebi/habu/habu_000004_20260214_22.jpg",
       "images/creatures/hebi/habu/habu_000005_20260221_22.jpg"
+    ]
+  },
+  {
+    "id": "hime-habu",
+    "name": "ヒメハブ",
+    "category": "hebi",
+    "category_name": "ヘビ",
+    "months": [
+      4
+    ],
+    "photos": [
+      "images/creatures/hebi/hime-habu/hime-habu_000001_20250428_19.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000002_20250429_20.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000003_20250429_20.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000004_20250430_20.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000005_20250430_20.jpg"
+    ]
+  },
+  {
+    "id": "hyan",
+    "name": "ヒャン",
+    "category": "hebi",
+    "category_name": "ヘビ",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "photos": [
+      "images/creatures/hebi/hyan/hyan_000001_20250515_20.jpg",
+      "images/creatures/hebi/hyan/hyan_000002_20250515_20.jpg",
+      "images/creatures/hebi/hyan/hyan_000003_20250515_21.jpg",
+      "images/creatures/hebi/hyan/hyan_000004_20250517_23.jpg",
+      "images/creatures/hebi/hyan/hyan_000005_20250517_23.jpg",
+      "images/creatures/hebi/hyan/hyan_000006_20250517_23.jpg",
+      "images/creatures/hebi/hyan/hyan_000007_20250523_22.jpg",
+      "images/creatures/hebi/hyan/hyan_000008_20250527_23.jpg",
+      "images/creatures/hebi/hyan/hyan_000009_20250606_20.jpg",
+      "images/creatures/hebi/hyan/hyan_000010_20250606_20.jpg",
+      "images/creatures/hebi/hyan/hyan_000011_20250620_22.jpg",
+      "images/creatures/hebi/hyan/hyan_000012_20250717_22.jpg"
+    ]
+  },
+  {
+    "id": "ryuukyuu-aohebi",
+    "name": "ryuukyuu-aohebi",
+    "category": "hebi",
+    "category_name": "ヘビ",
+    "months": [
+      3,
+      5,
+      6
+    ],
+    "photos": [
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000002_20250521_11.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000003_20250521_13.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000004_20250523_12.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000005_20250527_01.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000006_20250527_01.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000007_20250610_13.jpg"
+    ]
+  },
+  {
+    "id": "takachiho-hebi",
+    "name": "アマミタカチホヘビ",
+    "category": "hebi",
+    "category_name": "ヘビ",
+    "months": [
+      4
+    ],
+    "photos": [
+      "images/creatures/hebi/takachiho-hebi/takachiho-hebi_000001_20260401_08.jpg",
+      "images/creatures/hebi/takachiho-hebi/takachiho-hebi_000002_20260401_22.jpg",
+      "images/creatures/hebi/takachiho-hebi/takachiho-hebi_000003_20260401_22.jpg",
+      "images/creatures/hebi/takachiho-hebi/takachiho-hebi_000004_20260401_22.jpg"
     ]
   }
 ]
