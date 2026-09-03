@@ -1,6 +1,6 @@
 # Nature Experience Amami - Project Status
 
-最終更新: 2026-09-03（日本時間）
+最終更新: 2026-09-04（日本時間）
 
 このファイルは、Nature Experience Amami の作業状況と判断事項を、ChatGPT（ちゃっぴー）、Claude（くろちゃん）、Copilotなど、誰でも引き継げるように記録するためのメモです。
 
@@ -261,3 +261,24 @@ tour.html.html
 - このコードは、ユーザーが手動でリポジトリの `creatures/hebi/habu.html` に貼り付ける予定。この記録作成時点で、実際の反映・commit・pushは未確認。
 - 未完了事項: 新デザイン版habu.htmlのブラウザ確認、commit・push、残り6ページへの展開。
 - Commit SHA: なし（未commit）。Push: 未確認。
+
+### 2026-09-04
+
+- AIチャットの回答写真を、生き物ごとにランダム1枚だけ表示する仕様へ修正。
+- AIが同じ生き物IDを複数返した場合も、フロント側とWorker側で重複排除するように変更。
+- 回答写真の下に、生き物の日本語名（種名）を表示するように変更。
+- 回答写真と種名をクリックすると、対応する個別生き物紹介ページへ移動するように変更。
+- 現在リンクを設定しているページ:
+  - `creatures/hebi/habu.html`
+  - `generated-creatures/hebi/akamata.html`
+  - `generated-creatures/kaeru/amami-aka-gaeru.html`
+- 個別ページが未作成の生き物は、写真表示を維持しつつ `#tour`（ナイトツアー案内）へリンクする。
+- リュウキュウアオヘビの写真フォルダIDとMarkdown IDの不一致に対応し、日本語名と解説をJSONへ正しく取り込めるようにした。
+- `data/creatures.json` を再生成し、リュウキュウアオヘビが `リュウキュウアオヘビ` と表示されることを確認。
+- 今回のコミット:
+  - `1064d9a Resolve Ryukyu green snake content ID`
+  - `b25daf3 Deduplicate AI creature photos`
+  - `838895a Link AI creature photos to introductions`
+- Push: 未確認（GitHubへ反映するには別途pushが必要）。
+
+（担当: Copilot）
