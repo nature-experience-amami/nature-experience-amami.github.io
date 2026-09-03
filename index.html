@@ -310,7 +310,7 @@
       const key = creature.category + '/' + creature.id;
       const href = generatedPages.includes(key) ? 'generated-creatures/' + key + '.html' : '#tour';
       const photo = creature.photos && creature.photos.length
-        ? '<img src="' + creature.photos[0] + '" alt="' + creature.name + '">'
+        ? '<img src="' + creature.photos[Math.floor(Math.random() * creature.photos.length)] + '" alt="' + creature.name + '">'
         : '';
       return '<a class="creature-card" href="' + href + '">' + photo +
         '<div class="name">' + creature.name + '</div>' +
