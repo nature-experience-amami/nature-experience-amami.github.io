@@ -65,7 +65,9 @@ function safeParse(rawText, creatures) {
   try {
     const obj = JSON.parse(cleaned);
     const validIds = new Set(creatures.map((c) => c.id));
-    const ids = Array.isArray(obj.creature_ids) ? obj.creature_ids.filter((id) => validIds.has(id)) : [];
+    const ids = Array.isArray(obj.creature_ids)
+      ? [...new Set(obj.creature_ids.filter((id) => validIds.has(id)))]
+      : [];
     return { reply: obj.reply ?? "うまく答えられませんでした。もう一度試してください。", creature_ids: ids };
   } catch {
     return { reply: rawText || "うまく答えられませんでした。もう一度試してください。", creature_ids: [] };
