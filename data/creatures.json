@@ -5,16 +5,15 @@
     "category": "hebi",
     "category_name": "ヘビ",
     "months": [
-      3,
-      4,
       5,
       6,
       7,
       8,
       9,
       10,
-      12
+      11
     ],
+    "description": "ナミヘビ科マダラヘビ属 *Dinodon semicarinatum*\n\n全長〜200cm。5月から11月頃に良く観察できる。黄褐色の体に赤と黒の楕円形の横じまが入る。毒は無いが攻撃的でテリトリーに入れば威嚇して攻撃してくる。食性は哺乳類、鳥類、爬虫類、両生類、魚類やウミガメの卵も食べ、天敵のハブを食べることもある。夜行性で林道や水辺周りから海岸付近まで観察できる。小型の個体は赤みが強くとても美しいが、小さくても噛まれると痛いので注意。",
     "photos": [
       "images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg",
       "images/creatures/hebi/akamata/akamata_000002_20250829_23.jpg",
@@ -66,6 +65,7 @@
       5,
       6
     ],
+    "description": "ナミヘビ科ヒバカリ属 *Hebius pryeri*\n\n全長〜110cm。5月から11月頃に良く観察できる。体型は細長く体色は黒や黒褐色で、胴に黄色や褐色の帯模様が入る。水辺を好み水田や小型のカエルが多い場所で良く見られる。毒はあるが毒を分泌する牙が小さく、噛まれただけでは体内に浸透しないと言われるが毒性は強いので注意。食性はカエル、魚、ヤモリ、小型のトカゲ。動きは俊敏だが危険を察知すると威嚇してくる。",
     "photos": [
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000002_20250522_21.jpg",
@@ -79,9 +79,15 @@
     "category": "hebi",
     "category_name": "ヘビ",
     "months": [
-      2,
-      12
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
     ],
+    "description": "クサリヘビ科ハブ属 *Protobothrops flavoviridis*\n\n全長〜226cm、大型のヘビ。5月から11月頃が良く観察できる(冬でも暖かい日には活動)。夜行性で昼間は穴の中などで休む。平地から山地の森林、草原、水辺、農地や樹上にも生息し、ネズミを追って人家周辺にも入り込む。主食はネズミの他、爬虫類、カエル、哺乳類、鳥類。天敵はアカマタとハブ取り。毒がある上にかなり攻撃的。2〜3mは必ず離れて観察・撮影する。近づくと逃げずにすぐ攻撃体制に入り、体長の3分の2近く飛びかかることが可能。電波の通じない山奥で噛まれると大変なことになる。模様は自然に溶け込んでかなり見つけにくく、見えていないだけでいろんな所に潜んでいる。注意しすぎるくらい注意。",
     "photos": [
       "images/creatures/hebi/habu/habu_000001_20241218_22.jpg",
       "images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
@@ -98,6 +104,7 @@
     "months": [
       4
     ],
+    "description": "クサリヘビ科ヤマハブ属 *Ovophis okinavensis*\n\n全長〜80cm。寒さに強く奄美大島では年中観察できる。梅雨を過ぎて暑くなると標高の高い場所でよく観察できる。食性は小型から中型のカエル、小型哺乳類、鳥類。水田や流れの緩やかな沢などカエルが多く棲む場所でよく観察できる。トグロを巻いている個体は殆ど動かないがテリトリーに入ると威嚇してくる。毒ヘビなので噛まれた場合は直ぐに病院へ。踏んづけないように気をつける。",
     "photos": [
       "images/creatures/hebi/hime-habu/hime-habu_000001_20250428_19.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000002_20250429_20.jpg",
@@ -116,6 +123,7 @@
       6,
       7
     ],
+    "description": "コブラ科ワモンベニヘビ属(別名:リュウキュウベニヘビ) *Sinomicrurus japonicus*\n\n全長〜50cm。5月頃と9月頃に良く観察できる。背面は赤褐色や橙色で5本の暗褐色の縦縞が入る。「特定動物」に指定され、人に危害を与える可能性のある動物とされる。毒性は神経毒でハブよりも強いが、頭は小さく大人しい。手に取ると骨のように硬い尾で突き刺してくる。夜行性で数が少なく見かけるのは稀。ヒャンを見るために奄美大島へ訪れる人もいるくらい人気がある。",
     "photos": [
       "images/creatures/hebi/hyan/hyan_000001_20250515_20.jpg",
       "images/creatures/hebi/hyan/hyan_000002_20250515_20.jpg",
@@ -141,6 +149,7 @@
       5,
       6
     ],
+    "description": "",
     "photos": [
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg",
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000002_20250521_11.jpg",
@@ -159,6 +168,7 @@
     "months": [
       4
     ],
+    "description": "タカチホヘビ科タカチホヘビ族 *Achalinus werneri*\n\n全長〜55cm。背面は黒褐色や暗褐色で正中線に沿って黒い縦縞が入る。腹面は黄色。奄美ではよっぽど条件の良い日にしか出会えない幻のヘビ。大雨の日に地表に出てくることがある。夜行性で森林や水辺の草原、農耕地などに生息し地中性。食性はミミズ類。他の島のアマミタカチホヘビよりも個体数が少なく見つけにくい。とても細長く小さいので車で流していては認識できないかもしれない。",
     "photos": [
       "images/creatures/hebi/takachiho-hebi/takachiho-hebi_000001_20260401_08.jpg",
       "images/creatures/hebi/takachiho-hebi/takachiho-hebi_000002_20260401_22.jpg",

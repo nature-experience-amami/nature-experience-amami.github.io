@@ -21,13 +21,29 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 IGNORED_DIR_NAMES = {"failed"}
 
 
-def read_frontmatter_name(md_path: Path):
-    """content/creatures/カテゴリ/生き物ID.md の frontmatter から name: を読む"""
+def read_creature_content(md_path: Path):
     if not md_path.exists():
-        return None
+        return {}, ""
     text = md_path.read_text(encoding="utf-8")
-    m = re.search(r"^name:\s*(.+)$", text, re.MULTILINE)
-    return m.group(1).strip() if m else None
+    body = text
+    if text.startswith("---"):
+        parts = text.split("---", 2)
+        if len(parts) == 3:
+            body = parts[2]
+    values = {}
+    for key in ("name", "months"):
+        m = re.search(rf"^{key}:\s*(.+)$", text, re.MULTILINE)
+        if not m:
+            continue
+        value = m.group(1).strip()
+        if key == "months" and value.startswith("[") and value.endswith("]"):
+            try:
+                values[key] = [int(item.strip()) for item in value[1:-1].split(",") if item.strip()]
+            except ValueError:
+                continue
+        else:
+            values[key] = value
+    return values, body.strip()
 
 
 def load_category_names():
@@ -54,14 +70,16 @@ def scan():
             if photos:
                 md_path = CONTENT_DIR / category_dir.name / f"{species_dir.name}.md"
                 # 説明文(.md)がまだ無くてもビルドは止めない。名前が無ければIDをそのまま表示名にする。
-                name = read_frontmatter_name(md_path) or species_dir.name
+                frontmatter, description = read_creature_content(md_path)
+                name = frontmatter.get("name") or species_dir.name
                 category_name = category_names.get(category_dir.name, category_dir.name)
                 creatures.append({
                     "id": species_dir.name,
                     "name": name,
                     "category": category_dir.name,
                     "category_name": category_name,
-                    "months": sorted(months),
+                    "months": frontmatter.get("months", sorted(months)),
+                    "description": description,
                     "photos": photos,
                 })
     return creatures
