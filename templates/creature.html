@@ -12,11 +12,12 @@
 <body>
 <header><nav><a href="../../index.html">Nature – Experience</a><a href="../../index.html">ホーム</a><a href="{category_link}">{category}一覧</a><a href="../../contact.html">お問い合わせ</a></nav></header>
 <main>
-<section class="hero"><div class="hero-photo">{hero}</div><div class="hero-info"><p class="label">{category} / NIGHT FIELD NOTE</p><h1>{title}</h1><div><span class="badge danger">{danger}</span><span class="badge">写真 {photo_count}枚</span></div><div class="season"><p class="label">観察時期　{months}</p><div class="season-track">{ticks}</div></div></div></section>
-<section class="section"><p class="label">PHOTOGRAPHS</p><h2>{title}の記録</h2><div class="gallery">{gallery}</div></section>
+<section class="hero"><div class="hero-photo" id="hero-photo">{hero}</div><div class="hero-info"><p class="label">{category} / NIGHT FIELD NOTE</p><h1>{title}</h1><div><span class="badge danger">{danger}</span><span class="badge">写真 {photo_count}枚</span></div><div class="season"><p class="label">観察時期　{months}</p><div class="season-track">{ticks}</div></div></div></section>
+<section class="section"><p class="label">PHOTOGRAPHS</p><h2>{title}の記録</h2><div class="gallery" id="gallery">{gallery}</div></section>
 <section class="section"><p class="label">ABOUT / ECOLOGY</p><h2>{title}について</h2>{body}</section>
 {related}
 <section class="cta"><p class="label">NATURE EXPERIENCE AMAMI</p><h2>奄美の夜の森を歩いてみませんか？</h2><p>ガイドと一緒に、生き物を探しながら夜の森を観察できます。</p><a class="btn" href="../../contact.html">ナイトツアーについて</a></section>
 </main><footer>© 2026 Nature Experience Amami</footer>
+<script>{photo_script}</script>
 </body>
 </html>

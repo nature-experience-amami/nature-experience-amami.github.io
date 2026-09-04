@@ -176,6 +176,26 @@ def render(item, creatures):
     else:
         hero = '<div class="placeholder hero-placeholder">写真準備中</div>'
         gallery = '<div class="gallery-empty">写真は準備中です。生き物の情報はご覧いただけます。</div>'
+    photo_script = ""
+    if photos:
+        photo_urls = json.dumps([f"../../{photo}" for photo in photos], ensure_ascii=False)
+        photo_script = f"""
+(function () {{
+  const photos = {photo_urls};
+  const hero = document.getElementById('hero-photo');
+  const gallery = document.getElementById('gallery');
+  const shuffled = photos.slice().sort(() => Math.random() - 0.5);
+  const alt = {json.dumps(item["name"], ensure_ascii=False)};
+  if (hero) {{
+    hero.innerHTML = '<img src="' + shuffled[0] + '" alt="奄美大島の' + alt + '">';
+  }}
+  if (gallery) {{
+    gallery.innerHTML = shuffled.slice(0, 3).map(function (photo) {{
+      return '<figure><img src="' + photo + '" alt="' + alt + '"></figure>';
+    }}).join('');
+  }}
+}})();
+""".strip()
     related = related_cards(item, creatures)
     cards = "".join(render_card(candidate, item) for candidate in related)
     related_html = (
@@ -195,6 +215,7 @@ def render(item, creatures):
         body=markdown_paragraphs(item["body"]),
         related=related_html,
         category_link=f"../../{item['category']}.html",
+        photo_script=photo_script,
     )
 
 
