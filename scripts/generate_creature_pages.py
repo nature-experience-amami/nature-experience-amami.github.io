@@ -171,7 +171,7 @@ def render(item, creatures):
         hero = f'<img src="../../{photos[0]}" alt="奄美大島の{escape(item["name"])}">'
         gallery = "".join(
             f'<figure><img src="../../{photo}" alt="{escape(item["name"])}"></figure>'
-            for photo in photos[:3]
+            for photo in photos[1:4]
         )
     else:
         hero = '<div class="placeholder hero-placeholder">写真準備中</div>'
@@ -190,7 +190,7 @@ def render(item, creatures):
     hero.innerHTML = '<img src="' + shuffled[0] + '" alt="奄美大島の' + alt + '">';
   }}
   if (gallery) {{
-    gallery.innerHTML = shuffled.slice(0, 3).map(function (photo) {{
+    gallery.innerHTML = shuffled.slice(1, 4).map(function (photo) {{
       return '<figure><img src="' + photo + '" alt="' + alt + '"></figure>';
     }}).join('');
   }}

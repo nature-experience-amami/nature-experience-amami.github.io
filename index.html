@@ -97,8 +97,26 @@
   .creature-card .name{ font-weight:700; margin-bottom:.3rem; }
   .creature-card .months{ font-family:'Space Mono', monospace; font-size:.78rem; color:var(--amber); }
 
+  .tour-teaser{ background:var(--night); text-align:center; }
+  .tour-teaser .inner{ max-width:640px; margin:0 auto; }
+  .tour-teaser .label{
+    font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.15em;
+    color:var(--amber); margin-bottom:1rem;
+  }
+  .tour-teaser h2{
+    font-family:'Shippori Mincho', serif; font-size:clamp(1.7rem, 4vw, 2.4rem);
+    line-height:1.5; letter-spacing:.03em; margin-bottom:1.6rem;
+  }
+  .tour-teaser .teaser-link{
+    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+    padding:.95rem 2rem; background:var(--amber); color:var(--bark);
+    text-decoration:none; font-weight:700; border-radius:2px; letter-spacing:.04em;
+    transition:background .2s ease, gap .2s ease;
+  }
+  .tour-teaser .teaser-link:hover{ background:#f4b95a; gap:.8rem; }
+
   /* ===== AI ASK(新規追加分) ===== */
-  .ai-ask{ background:var(--canopy); }
+  .ai-ask{ background:var(--night); }
   .ask-box{ display:flex; flex-wrap:wrap; gap:.8rem; margin-bottom:1.5rem; }
   .ask-box input{
     flex:1; min-width:220px; padding:.9rem 1.1rem; border-radius:2px;
@@ -115,7 +133,7 @@
   .ask-reply .ask-photo-card:hover .name,
   .ask-reply .ask-photo-card:focus-visible .name{ color:var(--amber); }
 
-  .flow{ background:var(--night); }
+  .flow{ background:var(--canopy); }
   .flow-list{ margin-top:2.5rem; display:flex; flex-direction:column; }
   .flow-item{
     display:grid; grid-template-columns:64px 1fr; gap:1.5rem; padding:1.6rem 0;
@@ -152,7 +170,7 @@
     <span class="eyebrow">AMAMI OSHIMA / NIGHT FIELD TOUR</span>
     <h1>奄美の夜の森を、<br><em>ガイドと歩く。</em></h1>
     <p>アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩くナイトツアー。</p>
-    <a href="#tour" class="btn">🔦 ナイトツアーを見る</a>
+    <a href="tour.html" class="btn">🔦 ナイトツアーを見る</a>
   </div>
 </header>
 
@@ -202,6 +220,17 @@
         <p>採集目的のガイドはお断りしています。観察・撮影を楽しみましょう。</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="tour-teaser" aria-label="ナイトツアーの案内">
+  <div class="inner">
+    <p class="label">NIGHT FIELD TOUR</p>
+    <h2>奄美の夜の森へ</h2>
+    <a class="teaser-link" href="tour.html">
+      ナイトツアーの内容や料金はこちら
+      <span aria-hidden="true">→</span>
+    </a>
   </div>
 </section>
 

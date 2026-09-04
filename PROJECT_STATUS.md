@@ -28,7 +28,7 @@
 ├─ hebi.html
 ├─ test-creature-v2.html
 ├─ contact.html
-├─ tour.html.html
+├─ tour.html
 └─ Worker · JS
 ```
 
@@ -205,7 +205,7 @@ bef5f4d feat: update snake overview page
 contact.html
 creatures/hebi/habu.html
 test-creature-v2.html
-tour.html.html
+tour.html
 ```
 
 これらには既存作業が含まれる可能性があるため、勝手に削除・まとめてcommitしない。
@@ -298,5 +298,27 @@ tour.html.html
   - スマートフォンでのヒーロー、本文、関連カードの表示
   - 写真フォルダIDとMarkdown IDが異なる生き物の名前・解説解決
   - AIチャット、Topページ、一覧ページからのリンク整合性
+
+（担当: Copilot）
+
+### 2026-09-04 ツアーページ正式名称
+
+- `tour.html.html` を `tour.html` へ変更。
+- トップページ上段の「ナイトツアーを見る」ボタンを `tour.html` への直接リンクへ変更。
+- `hebi.html` など既存の `tour.html` 参照と正式ファイル名を統一。
+- 今後追加するツアー導線も `tour.html` を使用する。
+- Commit・Push: 未実施。
+
+（担当: Copilot）
+
+### 2026-09-04 トップページのツアー導線
+
+- FIELD NOTEの直後に、短い「NIGHT FIELD TOUR」案内セクションを追加。
+- 「奄美の夜の森へ」と表示し、詳細・料金ページ `tour.html` へリンクするボタンを配置。
+- トップページにツアー詳細や料金を重複掲載せず、詳しい内容は `tour.html` に集約する方針を反映。
+- 上段の「ナイトツアーを見る」ボタンと、中段のツアー案内ボタンを同じ `tour.html` へ統一。
+- ツアー案内セクションをAIチャットの直後から移動し、「ナイトツアーの流れ」の直後に配置。
+- セクションの背景色を、ヒーローから順に黒・緑・黒・緑・黒となるよう調整。
+- Commit・Push: 未実施。
 
 （担当: Copilot）
