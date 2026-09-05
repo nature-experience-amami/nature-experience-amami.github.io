@@ -180,6 +180,10 @@ creatures/hebi/amami-takachiho-hebi.html
 
 カエル、クワガタなどの一覧ページ・個別ページの実装は、今後構成を確認してから着手する。ヘビの新デザインをブラウザ確認し、問題点を確定してから他カテゴリーへ展開する。
 
+### data/creatures.json へのクワガタ等の未反映（2026-09-04 くろちゃんが発見）
+
+`content/creatures/kuwagata/` にはクワガタ複数種のMarkdownが用意済みだが、`scripts/generate_creatures_json.py` がクワガタ分について実行されておらず、`data/creatures.json` には現在ヘビ7種類のデータしか入っていない。そのため、AIチャットにクワガタについて聞いても「情報がありません」としか答えられない（Workerがデータに無い情報を作らない設計のため、これはバグではなく想定通りの安全な挙動）。次回、`scripts/generate_creatures_json.py` を実行して他カテゴリーのデータも反映する必要がある。
+
 ## 現在のGit状態
 
 このメモ作成前に確認した状態:
@@ -310,6 +314,21 @@ tour.html
 - Commit・Push: 未実施。
 
 （担当: Copilot）
+
+### 2026-09-04 GitHubユーザー名・公開URLの移行
+
+- 最終的な公開URLを `https://tetsu5686.github.io/nature-experience-amami/` から `https://nature-experience-amami.github.io/`（ルートURL）にするため、以下を実施し完了した。
+  1. GitHubユーザー名を `tetsu5686` → `nature-experience-amami` に変更（希望名が一時的に他者使用中に見えたが、結局空いていたためそのまま確定）。
+  2. リポジトリ名を `nature-experience-amami` → `nature-experience-amami.github.io` にリネーム。新規リポジトリを作らず既存リポジトリのリネームのみで、写真・GitHub Actions・Pages設定・コミット履歴はすべてそのまま引き継がれた。
+  3. Cloudflare Worker（ワーカーズ.txt）内の `CREATURES_URL` を `https://nature-experience-amami.github.io/data/creatures.json` に変更し、デプロイ。
+  4. Worker環境変数 `ALLOWED_ORIGIN` を `https://nature-experience-amami.github.io` に変更し、デプロイ。
+  5. GitHub Desktopのリモート・ログインを新ユーザー名に更新（一度サインインが `x-github-desktop-auth://` のリダイレクトで止まったが、リンクを再クリックして解消）。
+- HTML/CSS/JSは全て相対パスで書かれていたため、上記以外のコード修正は不要だった。
+- 動作確認済み: 新URLでトップページ・写真・ヘビ一覧・個別ページ・お問い合わせ・AIチャットすべて正常。旧URLは想定通り404（GitHub Pagesはユーザー名/リポジトリ名変更時にリダイレクトされない仕様のため）。
+- 移行の過程で、AIチャットにクワガタについて質問しても回答が出ないことに気づき、原因が `data/creatures.json` への未反映であることを特定（詳細は「未完了の作業」参照）。
+- Commit・Push: 今回の変更はGitHubのユーザー名・リポジトリ名設定とCloudflare Worker側の変更のみで、リポジトリ内のファイル変更・commitは無し。
+
+（担当: Claude／くろちゃん）
 
 ### 2026-09-04 トップページのツアー導線
 
