@@ -19,8 +19,19 @@ OUTPUT = Path("data/creatures.json")
 DATE_RE = re.compile(r"^.+_\d{6}_(\d{4})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])_([01]\d|2[0-3])$")
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 IGNORED_DIR_NAMES = {"failed"}
+# 正式名称ではない・使っていない写真フォルダ（(カテゴリ, フォルダ名)）
+IGNORED_SPECIES_DIRS = {
+    ("kaeru", "ishikawa-gaeru"),
+}
 MARKDOWN_ID_ALIASES = {
     ("hebi", "ryuukyuu-aohebi"): "ryukyu-ao-hebi",
+    ("hebi", "amami-takachiho-hebi"): "takachiho-hebi",
+    ("kaeru", "amami-hanasaki-gaeru"): "hanasaki-gaeru",
+    ("kaeru", "amami-ishikawa-gaeru"): "ishikawa-gaeru",
+    ("kuwagata", "amami-marubane-kuwagata"): "marubane-kuwagata",
+    ("kuwagata", "amami-nebuto-kuwagata"): "nebuto-kuwagata",
+    ("kuwagata", "amami-nokogiri-kuwagata"): "nokogiri-kuwagata",
+    ("kuwagata", "amami-shika-kuwagata"): "shika-kuwagata",
 }
 
 
@@ -60,7 +71,10 @@ def scan():
     creatures = []
     for category_dir in sorted(p for p in IMAGES_DIR.iterdir() if p.is_dir()):
         for species_dir in sorted(
-            p for p in category_dir.iterdir() if p.is_dir() and p.name not in IGNORED_DIR_NAMES
+            p for p in category_dir.iterdir()
+            if p.is_dir()
+            and p.name not in IGNORED_DIR_NAMES
+            and (category_dir.name, p.name) not in IGNORED_SPECIES_DIRS
         ):
             months, photos = set(), []
             for photo in sorted(species_dir.iterdir()):
