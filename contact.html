@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -137,6 +136,66 @@
     line-height:2;
   }
 
+  /* CONTACT METHODS */
+
+  .methods-section{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 6vw 5rem;
+  }
+
+  .methods-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1rem;
+  }
+
+  .method-card{
+    display:flex;
+    flex-direction:column;
+    gap:.6rem;
+    padding:1.8rem 1.6rem;
+    border:1px solid rgba(234,242,233,.14);
+    background:var(--canopy);
+    border-radius:4px;
+    text-decoration:none;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+
+  .method-card:hover{
+    border-color:var(--amber);
+    transform:translateY(-2px);
+  }
+
+  .method-icon{
+    font-size:1.6rem;
+  }
+
+  .method-card h3{
+    font-family:'Shippori Mincho',serif;
+    font-size:1.15rem;
+  }
+
+  .method-card p{
+    color:rgba(234,242,233,.68);
+    font-size:.85rem;
+    line-height:1.7;
+  }
+
+  .method-card .method-value{
+    margin-top:.2rem;
+    font-family:'Space Mono',monospace;
+    font-size:.85rem;
+    color:var(--amber);
+  }
+
+  .method-note{
+    margin-top:.3rem;
+    color:rgba(234,242,233,.55);
+    font-size:.78rem;
+    line-height:1.6;
+  }
+
   /* CONTACT */
 
   .contact-section{
@@ -227,6 +286,29 @@
     margin-bottom:1.4rem;
   }
 
+  .field-hint{
+    color:rgba(234,242,233,.6);
+    font-size:.82rem;
+    margin-bottom:.7rem;
+  }
+
+  .field-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+  }
+
+  .field-row.three{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .sub-label{
+    font-size:.8rem;
+    font-weight:400;
+    color:rgba(234,242,233,.65);
+    margin-bottom:.4rem;
+  }
+
   label{
     display:block;
     font-size:.9rem;
@@ -264,6 +346,15 @@
     resize:vertical;
   }
 
+  /* ハニーポット（人間には見せない、bot対策） */
+  .hp-field{
+    position:absolute;
+    left:-9999px;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+  }
+
   .submit-area{
     margin-top:2rem;
   }
@@ -288,10 +379,32 @@
     background:#f4b95a;
   }
 
-  .form-disabled{
-    color:rgba(234,242,233,.45);
+  .btn:disabled{
+    opacity:.6;
+    cursor:default;
+  }
+
+  .form-status{
+    margin-top:1rem;
+    font-size:.9rem;
+    display:none;
+  }
+
+  .form-status.success{
+    display:block;
+    color:#8fd19e;
+  }
+
+  .form-status.error{
+    display:block;
+    color:#e8836b;
+  }
+
+  .submit-note{
+    margin-top:1rem;
+    color:rgba(234,242,233,.55);
     font-size:.78rem;
-    margin-top:.8rem;
+    line-height:1.7;
   }
 
   /* FOOTER */
@@ -332,11 +445,24 @@
       padding:5rem 6vw 4rem;
     }
 
+    .methods-section{
+      padding:0 6vw 4rem;
+    }
+
+    .methods-grid{
+      grid-template-columns:1fr;
+    }
+
     .contact-section{
       padding:4rem 6vw;
     }
 
     .points{
+      grid-template-columns:1fr;
+    }
+
+    .field-row,
+    .field-row.three{
       grid-template-columns:1fr;
     }
 
@@ -357,17 +483,15 @@
 <header>
   <div class="header-inner">
 
-```
-<a class="logo" href="index.html">
-  Nature Experience Amami
-</a>
+    <a class="logo" href="index.html">
+      Nature Experience Amami
+    </a>
 
-<nav>
-  <a href="index.html">HOME</a>
-  <a href="index.html#creatures">生き物</a>
-  <a class="contact-link" href="contact.html">お問い合わせ</a>
-</nav>
-```
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="index.html#creatures">生き物</a>
+      <a class="contact-link" href="contact.html">お問い合わせ</a>
+    </nav>
 
   </div>
 </header>
@@ -376,163 +500,269 @@
 
   <section class="hero">
 
-```
-<div class="label">CONTACT</div>
+    <div class="label">CONTACT</div>
 
-<h1>お問い合わせ</h1>
+    <h1>お問い合わせ</h1>
 
-<p class="hero-lead">
-  奄美大島のナイトツアーや、生き物の観察について、
-  ご質問やご相談がありましたらお気軽にお問い合わせください。
-</p>
-```
+    <p class="hero-lead">
+      奄美大島のナイトツアーや、生き物の観察について、
+      ご質問やご相談がありましたらお気軽にお問い合わせください。
+    </p>
+
+  </section>
+
+  <section class="methods-section">
+
+    <div class="methods-grid">
+
+      <a class="method-card" href="tel:08040584466">
+        <span class="method-icon">📞</span>
+        <h3>電話で問い合わせる</h3>
+        <p>お急ぎの方はお電話が確実です。</p>
+        <span class="method-value">080-4058-4466</span>
+        <p class="method-note">
+          山中など圏外にいることが多く、出られない場合があります。
+          その際は公式LINE、またはお問い合わせフォームからご連絡ください。
+        </p>
+      </a>
+
+      <a class="method-card" href="https://lin.ee/5SFJGNt" target="_blank" rel="noopener">
+        <span class="method-icon">💬</span>
+        <h3>LINEで問い合わせる</h3>
+        <p>気軽に質問したい方はこちら。</p>
+        <span class="method-value">公式LINEを開く →</span>
+      </a>
+
+      <a class="method-card" href="#form">
+        <span class="method-icon">✉️</span>
+        <h3>フォームで相談する</h3>
+        <p>内容をじっくりまとめて送りたい方に。</p>
+        <span class="method-value">フォームへ移動 ↓</span>
+      </a>
+
+    </div>
 
   </section>
 
   <section class="contact-section">
 
-```
-<div class="contact-inner">
+    <div class="contact-inner">
 
-  <div class="section-label">BEFORE YOUR TOUR</div>
+      <div class="section-label">BEFORE YOUR TOUR</div>
 
-  <h2>こんなご相談もお気軽に</h2>
+      <h2>こんなご相談もお気軽に</h2>
 
-  <p class="intro">
-    「ヘビが見たい」「カエルを探してみたい」
-    「アマミノクロウサギを見てみたい」など、
-    見てみたい生き物があれば事前にご相談ください。
-  </p>
-
-
-  <div class="points">
-
-    <div class="point">
-      <div class="point-number">01</div>
-      <h3>見てみたい生き物</h3>
-      <p>
-        希望する生き物があれば、できる限り観察できるよう
-        ご案内します。
+      <p class="intro">
+        「ヘビが見たい」「カエルを探してみたい」
+        「アマミノクロウサギを見てみたい」など、
+        見てみたい生き物があれば事前にご相談ください。
       </p>
-    </div>
-
-    <div class="point">
-      <div class="point-number">02</div>
-      <h3>おひとり様・ご家族</h3>
-      <p>
-        おひとりでの参加や、お子様連れでのご参加も
-        お気軽にご相談ください。
-      </p>
-    </div>
-
-    <div class="point">
-      <div class="point-number">03</div>
-      <h3>写真撮影</h3>
-      <p>
-        生き物の撮影をされる方も歓迎しています。
-        撮影のペースに合わせてご案内します。
-      </p>
-    </div>
-
-    <div class="point">
-      <div class="point-number">04</div>
-      <h3>自然・生物調査</h3>
-      <p>
-        昆虫などの観察や、生物調査の助手・同行についても
-        ご相談ください。
-      </p>
-    </div>
-
-  </div>
 
 
-  <div class="form-box">
+      <div class="points">
 
-    <div class="section-label">MESSAGE</div>
+        <div class="point">
+          <div class="point-number">01</div>
+          <h3>見てみたい生き物</h3>
+          <p>
+            希望する生き物があれば、できる限り観察できるよう
+            ご案内します。
+          </p>
+        </div>
 
-    <h2>お問い合わせフォーム</h2>
+        <div class="point">
+          <div class="point-number">02</div>
+          <h3>おひとり様・ご家族</h3>
+          <p>
+            おひとりでの参加や、お子様連れでのご参加も
+            お気軽にご相談ください。
+          </p>
+        </div>
 
-    <p class="form-note">
-      下記に必要事項をご入力ください。
-    </p>
+        <div class="point">
+          <div class="point-number">03</div>
+          <h3>写真撮影</h3>
+          <p>
+            生き物の撮影をされる方も歓迎しています。
+            撮影のペースに合わせてご案内します。
+          </p>
+        </div>
 
-    <form>
+        <div class="point">
+          <div class="point-number">04</div>
+          <h3>自然・生物調査</h3>
+          <p>
+            昆虫などの観察や、生物調査の助手・同行についても
+            ご相談ください。
+          </p>
+        </div>
 
-      <div class="form-group">
-        <label for="name">
-          お名前
-          <span class="required">必須</span>
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="お名前"
-          required
-        >
       </div>
 
 
-      <div class="form-group">
-        <label for="email">
-          メールアドレス
-          <span class="required">必須</span>
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@example.com"
-          required
-        >
-      </div>
+      <div class="form-box" id="form">
 
+        <div class="section-label">MESSAGE</div>
 
-      <div class="form-group">
-        <label for="subject">
-          件名
-        </label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="ナイトツアーについて"
-        >
-      </div>
+        <h2>お問い合わせフォーム</h2>
 
-
-      <div class="form-group">
-        <label for="message">
-          メッセージ
-          <span class="required">必須</span>
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="お問い合わせ内容をご入力ください。"
-          required
-        ></textarea>
-      </div>
-
-
-      <div class="submit-area">
-
-        <button class="btn" type="submit">
-          お問い合わせを送る
-        </button>
-
-        <p class="form-disabled">
-          ※現在はデザイン確認用です。送信機能は後から設定します。
+        <p class="form-note">
+          下記に必要事項をご入力ください。通常2日以内に返信します。
+          山中にいる際は、返信までお時間をいただく場合があります。
         </p>
 
+        <form id="contact-form">
+
+          <!-- ハニーポット: botだけが埋めるダミー項目 -->
+          <div class="form-group hp-field" aria-hidden="true">
+            <label for="_gotcha">これは入力しないでください</label>
+            <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-group">
+            <label for="name">
+              お名前
+              <span class="required">必須</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="お名前"
+              required
+            >
+          </div>
+
+
+          <div class="form-group">
+            <label for="email">
+              メールアドレス
+              <span class="required">必須</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@example.com"
+              required
+            >
+          </div>
+
+
+          <div class="form-group">
+            <label>
+              参加人数
+              <span class="required">必須</span>
+            </label>
+            <div class="field-row">
+              <div>
+                <label for="adults" class="sub-label">大人</label>
+                <input
+                  type="number"
+                  id="adults"
+                  name="adults"
+                  min="1"
+                  placeholder="1"
+                  required
+                >
+              </div>
+              <div>
+                <label for="children" class="sub-label">子供（小学生以下）</label>
+                <input
+                  type="number"
+                  id="children"
+                  name="children"
+                  min="0"
+                  placeholder="0"
+                >
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="date1">
+              ご希望の日にち
+              <span class="required">必須</span>
+            </label>
+            <p class="field-hint">
+              予約が入っている可能性がございますので、できれば複数日ご記入ください。
+            </p>
+            <div class="field-row three">
+              <div>
+                <label for="date1" class="sub-label">第1希望</label>
+                <input type="date" id="date1" name="date_1" required>
+              </div>
+              <div>
+                <label for="date2" class="sub-label">第2希望</label>
+                <input type="date" id="date2" name="date_2">
+              </div>
+              <div>
+                <label for="date3" class="sub-label">第3希望</label>
+                <input type="date" id="date3" name="date_3">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="hotel">
+              滞在予定ホテル
+            </label>
+            <input
+              type="text"
+              id="hotel"
+              name="hotel"
+              placeholder="ホテル名（未定の場合は空欄で構いません）"
+            >
+          </div>
+
+
+          <div class="form-group">
+            <label for="creature">
+              特に見てみたい生き物
+            </label>
+            <input
+              type="text"
+              id="creature"
+              name="creature"
+              placeholder="例：ハブ、アマミノクロウサギ など"
+            >
+          </div>
+
+
+          <div class="form-group">
+            <label for="message">
+              メッセージ
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="その他ご要望やご質問があればご記入ください。"
+            ></textarea>
+          </div>
+
+
+          <div class="submit-area">
+
+            <button class="btn" type="submit" id="submit-btn">
+              お問い合わせを送る
+            </button>
+
+            <p class="submit-note">
+              ※送信時点では予約は確定しません。空き状況を確認後、折り返しご連絡します。<br>
+              ご入力いただいた情報は、お問い合わせへの返信およびツアー調整以外には使用しません。
+            </p>
+
+          </div>
+
+        </form>
+
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+
       </div>
 
-    </form>
-
-  </div>
-
-</div>
-```
+    </div>
 
   </section>
 
@@ -549,6 +779,47 @@
   </div>
 
 </footer>
+
+<script>
+(function () {
+  var form = document.getElementById("contact-form");
+  var submitBtn = document.getElementById("submit-btn");
+  var status = document.getElementById("form-status");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "送信中...";
+    status.className = "form-status";
+    status.textContent = "";
+
+    fetch("https://formspree.io/f/xbgjawew", {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: new FormData(form)
+    })
+      .then(function (response) {
+        if (response.ok) {
+          form.reset();
+          form.style.display = "none";
+          status.className = "form-status success";
+          status.textContent = "お問い合わせを受け付けました。ありがとうございます。折り返しご連絡いたします。";
+        } else {
+          return response.json().then(function (data) {
+            throw new Error((data && data.error) || "送信に失敗しました");
+          });
+        }
+      })
+      .catch(function () {
+        status.className = "form-status error";
+        status.textContent = "送信に失敗しました。お手数ですが、お電話またはLINEでお問い合わせください。";
+        submitBtn.disabled = false;
+        submitBtn.textContent = "お問い合わせを送る";
+      });
+  });
+})();
+</script>
 
 </body>
 </html>
