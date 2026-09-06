@@ -241,11 +241,11 @@ def render_safety(danger_text, prohibited):
     return "".join(parts), (" warning" if prohibited else "")
 
 
-def category_navigation(current_category, categories):
+def category_navigation(categories):
     links = []
     for category_id, name in categories.items():
         category_page = ROOT / "content" / "category-pages" / f"{category_id}.md"
-        if category_id != current_category and category_page.exists():
+        if category_page.exists():
             links.append(
                 f'<a href="../../generated-categories/{category_id}.html">{escape(name)}一覧</a>'
             )
@@ -316,7 +316,7 @@ def render(item, creatures, generated_keys, categories):
         safety_html=safety_html,
         safety_class=safety_class,
         related=related_html,
-        category_navigation=category_navigation(item["category"], categories),
+        category_navigation=category_navigation(categories),
         photo_script=photo_script,
     )
 
