@@ -54,6 +54,7 @@ a{{ color:inherit; }}
 nav{{ display:flex; gap:1.8rem; font-size:.82rem; }}
 nav a{{ text-decoration:none; color:rgba(234,242,233,.75); }}
 nav a:hover{{ color:var(--moonlight); }}
+.mobile-contact, .mobile-category-nav{{ display:none; }}
 
 main{{ max-width:1200px; margin:auto; }}
 
@@ -246,6 +247,18 @@ footer{{
 }}
 
 @media(max-width:800px){{
+  .header-inner{{ padding:.85rem 5vw .65rem; gap:1rem; }}
+  .logo{{ font-size:.95rem; letter-spacing:.08em; }}
+  .desktop-nav{{ display:none; }}
+  .mobile-contact{{
+    display:inline-flex; align-items:center; font-size:.78rem;
+    text-decoration:none; color:rgba(234,242,233,.75); white-space:nowrap;
+  }}
+  .mobile-category-nav{{
+    display:flex; gap:1.2rem; overflow-x:auto; padding:0 5vw .75rem;
+    font-size:.78rem; white-space:nowrap; -webkit-overflow-scrolling:touch;
+  }}
+  .mobile-category-nav a{{ flex:0 0 auto; }}
   .creature-hero{{ grid-template-columns:1fr; margin:1.5rem 5vw 0; min-height:auto; }}
   .hero-photo{{ min-height:260px; }}
   .hero-info{{ padding:1.8rem; }}
@@ -262,12 +275,16 @@ footer{{
 <header class="site-header">
   <div class="header-inner">
     <a href="../../index.html" class="logo">Nature – Experience</a>
-    <nav>
+    <nav class="desktop-nav">
       <a href="../../index.html">ホーム</a>
       {category_navigation}
       <a href="../../contact.html">お問い合わせ</a>
     </nav>
+    <a href="../../contact.html" class="mobile-contact">お問い合わせ</a>
   </div>
+  <nav class="mobile-category-nav" aria-label="生き物カテゴリー">
+    {category_navigation}
+  </nav>
 </header>
 
 <main>

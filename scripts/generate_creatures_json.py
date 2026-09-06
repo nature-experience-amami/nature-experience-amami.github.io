@@ -96,13 +96,18 @@ def scan():
                 name = frontmatter.get("name") or species_dir.name
                 category_name = category_names.get(category_dir.name, category_dir.name)
                 creatures.append({
-                    "id": species_dir.name,
+                    "id": markdown_id,
                     "name": name,
                     "category": category_dir.name,
                     "category_name": category_name,
                     "months": frontmatter.get("months", sorted(months)),
                     "description": description,
                     "photos": photos,
+                    "page_path": (
+                        f"generated-creatures/{category_dir.name}/{markdown_id}.html"
+                        if md_path.exists()
+                        else None
+                    ),
                 })
     return creatures
 

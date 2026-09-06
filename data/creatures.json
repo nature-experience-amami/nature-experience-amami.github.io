@@ -64,10 +64,11 @@
       "images/creatures/hebi/akamata/akamata_000043_20260607_23.jpg",
       "images/creatures/hebi/akamata/akamata_000043_20260830_21.jpg",
       "images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/hebi/akamata.html"
   },
   {
-    "id": "amami-takachiho-hebi",
+    "id": "takachiho-hebi",
     "name": "アマミタカチホヘビ",
     "category": "hebi",
     "category_name": "ヘビ",
@@ -80,7 +81,8 @@
       "images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000002_20260401_22.jpg",
       "images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000003_20260401_22.jpg",
       "images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000004_20260401_22.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/hebi/takachiho-hebi.html"
   },
   {
     "id": "garasu-hibaa",
@@ -113,7 +115,8 @@
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000015_20250614_09.jpg",
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260411_21.jpg",
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260608_00.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/hebi/garasu-hibaa.html"
   },
   {
     "id": "habu",
@@ -213,7 +216,8 @@
       "images/creatures/hebi/habu/habu_000067_20251012_00.jpg",
       "images/creatures/hebi/habu/habu_000068_20251012_00.jpg",
       "images/creatures/hebi/habu/habu_000069_20260703_00.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/hebi/habu.html"
   },
   {
     "id": "hime-habu",
@@ -259,7 +263,8 @@
       "images/creatures/hebi/hime-habu/hime-habu_000023_20260404_21.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000023_20260404_22.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000023_20260629_22.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/hebi/hime-habu.html"
   },
   {
     "id": "hyan",
@@ -293,10 +298,11 @@
       "images/creatures/hebi/hyan/hyan_000016_20250620_22.jpg",
       "images/creatures/hebi/hyan/hyan_000016_20260608_00.jpg",
       "images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/hebi/hyan.html"
   },
   {
-    "id": "ryuukyuu-aohebi",
+    "id": "ryukyu-ao-hebi",
     "name": "リュウキュウアオヘビ",
     "category": "hebi",
     "category_name": "ヘビ",
@@ -332,7 +338,8 @@
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260729_23.jpg",
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000010_20260413_23.jpg",
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000011_20251019_22.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/hebi/ryukyu-ao-hebi.html"
   },
   {
     "id": "amami-aka-gaeru",
@@ -355,7 +362,8 @@
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251007_00.jpg",
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000006_20250312_22.jpg",
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000007_20260905_11.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kaeru/amami-aka-gaeru.html"
   },
   {
     "id": "amami-ao-gaeru",
@@ -402,10 +410,11 @@
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000019_20250427_20.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000020_20250427_20.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000021_20250506_20.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kaeru/amami-ao-gaeru.html"
   },
   {
-    "id": "amami-hanasaki-gaeru",
+    "id": "hanasaki-gaeru",
     "name": "アマミハナサキガエル",
     "category": "kaeru",
     "category_name": "カエル",
@@ -437,10 +446,11 @@
       "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20251002_00.jpg",
       "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000006_20250506_20.jpg",
       "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000007_20250926_00.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kaeru/hanasaki-gaeru.html"
   },
   {
-    "id": "amami-ishikawa-gaeru",
+    "id": "ishikawa-gaeru",
     "name": "アマミイシカワガエル",
     "category": "kaeru",
     "category_name": "カエル",
@@ -485,7 +495,8 @@
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250716_22.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260404_00.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kaeru/ishikawa-gaeru.html"
   },
   {
     "id": "haroweru-amagaeru",
@@ -512,7 +523,8 @@
       "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000003_20250516_22.jpg",
       "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000004_20250516_22.jpg",
       "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000005_20250516_22.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kaeru/haroweru-amagaeru.html"
   },
   {
     "id": "hime-amagaeru",
@@ -528,7 +540,8 @@
       "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
       "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg",
       "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000003_20250516_22.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kaeru/hime-amagaeru.html"
   },
   {
     "id": "numa-gaeru",
@@ -545,7 +558,8 @@
       "images/creatures/kaeru/numa-gaeru/numa-gaeru_000003_20250324_11.jpg",
       "images/creatures/kaeru/numa-gaeru/numa-gaeru_000004_20250324_11.jpg",
       "images/creatures/kaeru/numa-gaeru/numa-gaeru_000005_20250324_11.jpg"
-    ]
+    ],
+    "page_path": null
   },
   {
     "id": "otton-gaeru",
@@ -574,7 +588,8 @@
       "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250727_13.jpg",
       "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250812_15.jpg",
       "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20251009_23.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kaeru/otton-gaeru.html"
   },
   {
     "id": "ryukyu-kajika-gaeru",
@@ -596,7 +611,8 @@
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250503_22.jpg",
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20260608_00.jpg",
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kaeru/ryukyu-kajika-gaeru.html"
   },
   {
     "id": "amami-hirata-kuwagata",
@@ -622,10 +638,11 @@
       "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260717_20.jpg",
       "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000004_20250812_15.jpg",
       "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000005_20260607_20.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/amami-hirata-kuwagata.html"
   },
   {
-    "id": "amami-ko-kuwagata",
+    "id": "ko-kuwagata",
     "name": "アマミコクワガタ",
     "category": "kuwagata",
     "category_name": "クワガタ",
@@ -642,10 +659,11 @@
       "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_22.jpg",
       "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260720_22.jpg",
       "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260801_01.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/ko-kuwagata.html"
   },
   {
-    "id": "amami-marubane-kuwagata",
+    "id": "marubane-kuwagata",
     "name": "アマミマルバネクワガタ",
     "category": "kuwagata",
     "category_name": "クワガタ",
@@ -666,10 +684,11 @@
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000004_20250915_09.jpg",
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000005_20250920_01.jpg",
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/marubane-kuwagata.html"
   },
   {
-    "id": "amami-miyama-kuwagata",
+    "id": "miyama-kuwagata",
     "name": "アマミミヤマクワガタ",
     "category": "kuwagata",
     "category_name": "クワガタ",
@@ -688,10 +707,11 @@
       "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000003_20250827_02.jpg",
       "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000004_20250827_02.jpg",
       "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000005_20250902_01.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/miyama-kuwagata.html"
   },
   {
-    "id": "amami-nebuto-kuwagata",
+    "id": "nebuto-kuwagata",
     "name": "アマミネブトクワガタ",
     "category": "kuwagata",
     "category_name": "クワガタ",
@@ -708,10 +728,11 @@
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260422_23.jpg",
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260427_22.jpg",
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/nebuto-kuwagata.html"
   },
   {
-    "id": "amami-nokogiri-kuwagata",
+    "id": "nokogiri-kuwagata",
     "name": "アマミノコギリクワガタ",
     "category": "kuwagata",
     "category_name": "クワガタ",
@@ -742,10 +763,11 @@
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260706_00.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260712_21.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/nokogiri-kuwagata.html"
   },
   {
-    "id": "amami-shika-kuwagata",
+    "id": "shika-kuwagata",
     "name": "アマミシカクワガタ",
     "category": "kuwagata",
     "category_name": "クワガタ",
@@ -772,7 +794,8 @@
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260712_21.jpg",
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260713_22.jpg",
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000012_20250728_21.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/shika-kuwagata.html"
   },
   {
     "id": "ruisu-tsuno-hyotan-kuwagata",
@@ -788,7 +811,8 @@
       "images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
       "images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250907_03.jpg",
       "images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20260823_22.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata.html"
   },
   {
     "id": "sujibuto-hirata-kuwagata",
@@ -819,7 +843,8 @@
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250813_10.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250928_02.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20251002_00.jpg"
-    ]
+    ],
+    "page_path": "generated-creatures/kuwagata/sujibuto-hirata-kuwagata.html"
   },
   {
     "id": "amami-hime-tokage",
@@ -835,7 +860,8 @@
       "images/creatures/tokage-imori/amami-hime-tokage/amami-hime-tokage_000002_20250602_22.jpg",
       "images/creatures/tokage-imori/amami-hime-tokage/amami-hime-tokage_000003_20250602_22.jpg",
       "images/creatures/tokage-imori/amami-hime-tokage/amami-hime-tokage_000004_20250602_22.jpg"
-    ]
+    ],
+    "page_path": null
   },
   {
     "id": "amami-iboimori",
@@ -876,7 +902,8 @@
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000012_20250119_20.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000013_20241212_20.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000014_20260415_22.jpg"
-    ]
+    ],
+    "page_path": null
   },
   {
     "id": "amami-shiriken-imori",
@@ -892,7 +919,8 @@
       "images/creatures/tokage-imori/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
       "images/creatures/tokage-imori/amami-shiriken-imori/amami-shiriken-imori_000002_20250128_22.jpg",
       "images/creatures/tokage-imori/amami-shiriken-imori/amami-shiriken-imori_000003_20260329_22.jpg"
-    ]
+    ],
+    "page_path": null
   },
   {
     "id": "okinawa-kinobori-tokage",
@@ -912,6 +940,7 @@
       "images/creatures/tokage-imori/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000003_20250828_12.jpg",
       "images/creatures/tokage-imori/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000004_20250828_13.jpg",
       "images/creatures/tokage-imori/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000005_20241218_19.jpg"
-    ]
+    ],
+    "page_path": null
   }
 ]
