@@ -139,6 +139,11 @@
   /* ===== AI ASK(新規追加分) ===== */
   .ai-ask{ background:var(--night); }
   .ask-box{ display:flex; flex-wrap:wrap; gap:.8rem; margin-bottom:1.5rem; }
+  .ask-disclaimer{
+    max-width:60ch; margin:-.4rem 0 1.4rem; padding-left:.9rem;
+    border-left:2px solid rgba(107,143,113,.7); color:rgba(234,242,233,.68);
+    font-size:.82rem; line-height:1.8;
+  }
   .ask-box input{
     flex:1; min-width:220px; padding:.9rem 1.1rem; border-radius:2px;
     border:1px solid rgba(234,242,233,.25); background:rgba(234,242,233,.05);
@@ -212,6 +217,9 @@
   <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">気になる時期の生き物を聞いてみる</h2>
   <p style="max-width:60ch; color:rgba(234,242,233,0.8); line-height:1.9; margin-bottom:1.5rem;">
     「9月に見られる生き物は?」のように、気軽に聞いてみてください。実際に撮影した記録をもとに答えます。
+  </p>
+  <p class="ask-disclaimer">
+    観察時期は過去の記録をもとにした目安です。天候・気温・季節の進み方・年によって出会える生き物は変わるため、必ず見られることを保証するものではありません。回答が表示されるまで、少し時間がかかる場合があります。
   </p>
   <div class="ask-box">
     <input id="ask-input" type="text" placeholder="例:9月に見られる生き物は?" maxlength="200">
