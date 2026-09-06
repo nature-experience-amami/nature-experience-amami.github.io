@@ -274,7 +274,7 @@ def render(item, creatures, generated_keys, categories):
         hero = '<div class="placeholder">写真準備中</div>'
         gallery = '<div class="gallery-empty">写真は準備中です。生き物の情報はご覧いただけます。</div>'
 
-    if item["category"] == "kaeru" and len(photos) > 1:
+    if item["category"] in {"kaeru", "kuwagata"} and len(photos) > 1:
         photo_script = (
             f"var heroPhotos = {json.dumps(photos)};"
             'var heroImage = document.querySelector(".hero-photo img");'

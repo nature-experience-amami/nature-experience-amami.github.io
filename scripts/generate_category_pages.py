@@ -58,6 +58,12 @@ def card_description(body):
     return source[:86].rstrip("。") + ("。" if source else "情報を準備中です。")
 
 
+def card_status(category, danger):
+    if category == "kuwagata":
+        return "採集禁止" if "禁止" in danger else "観察して楽しもう"
+    return danger or "観察情報準備中"
+
+
 def card_html(category, creature, generated_creature_keys):
     name = html.escape(creature["name"])
     if creature["photos"]:
@@ -81,13 +87,17 @@ def card_html(category, creature, generated_creature_keys):
         link = "PAGE PREPARING"
         card_class = " card-disabled"
 
-    danger = creature["danger"]
-    danger_class = " danger" if "猛毒" in danger or ("毒" in danger and "無毒" not in danger) else ""
+    status = card_status(category, creature["danger"])
+    danger_class = (
+        " danger"
+        if "猛毒" in status or ("毒" in status and "無毒" not in status) or "採集禁止" in status
+        else ""
+    )
     return (
         f'<article class="creature-card{card_class}">{opening}'
         f'<div class="creature-info">'
         f'<div class="creature-meta"><span>{html.escape(category.upper())}</span>'
-        f'<span class="{danger_class.strip()}">{html.escape(danger or "観察情報準備中")}</span></div>'
+        f'<span class="{danger_class.strip()}">{html.escape(status)}</span></div>'
         f'<span class="creature-name">{name}</span>'
         f'<p class="creature-description">{html.escape(card_description(creature["body"]))}</p></div>'
         f'{image}<span class="creature-link">{link}</span>{closing}</article>'
