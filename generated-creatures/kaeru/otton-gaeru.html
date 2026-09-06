@@ -348,7 +348,7 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+  var heroPhotos = ["images/creatures/kaeru/otton-gaeru/otton-gaeru_000001_20250228_22.jpg", "images/creatures/kaeru/otton-gaeru/otton-gaeru_000002_20250228_22.jpg", "images/creatures/kaeru/otton-gaeru/otton-gaeru_000003_20250722_20.jpg", "images/creatures/kaeru/otton-gaeru/otton-gaeru_000004_20241204_22.jpg"];var heroImage = document.querySelector(".hero-photo img");heroImage.src = "../../" + heroPhotos[Math.floor(Math.random() * heroPhotos.length)];
 })();
 </script>
 

@@ -348,7 +348,7 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+  var heroPhotos = ["images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000002_20250123_21.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000004_20250201_22.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000005_20250201_23.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000006_20250206_21.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000007_20250206_21.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000008_20250304_20.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000009_20250722_21.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000010_20241209_20.jpg", "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000011_20241209_22.jpg"];var heroImage = document.querySelector(".hero-photo img");heroImage.src = "../../" + heroPhotos[Math.floor(Math.random() * heroPhotos.length)];
 })();
 </script>
 

@@ -348,7 +348,7 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+  var heroPhotos = ["images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg", "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg"];var heroImage = document.querySelector(".hero-photo img");heroImage.src = "../../" + heroPhotos[Math.floor(Math.random() * heroPhotos.length)];
 })();
 </script>
 

@@ -348,7 +348,7 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+  var heroPhotos = ["images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg", "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000002_20250228_21.jpg", "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000003_20241210_20.jpg", "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000004_20241211_20.jpg"];var heroImage = document.querySelector(".hero-photo img");heroImage.src = "../../" + heroPhotos[Math.floor(Math.random() * heroPhotos.length)];
 })();
 </script>
 

@@ -348,7 +348,7 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+  var heroPhotos = ["images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg", "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000003_20250129_20.jpg", "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg"];var heroImage = document.querySelector(".hero-photo img");heroImage.src = "../../" + heroPhotos[Math.floor(Math.random() * heroPhotos.length)];
 })();
 </script>
 

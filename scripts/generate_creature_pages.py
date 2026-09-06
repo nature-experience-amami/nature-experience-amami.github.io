@@ -263,6 +263,15 @@ def render(item, creatures, generated_keys):
         hero = '<div class="placeholder">写真準備中</div>'
         gallery = '<div class="gallery-empty">写真は準備中です。生き物の情報はご覧いただけます。</div>'
 
+    if item["category"] == "kaeru" and len(photos) > 1:
+        photo_script = (
+            f"var heroPhotos = {json.dumps(photos)};"
+            'var heroImage = document.querySelector(".hero-photo img");'
+            'heroImage.src = "../../" + heroPhotos[Math.floor(Math.random() * heroPhotos.length)];'
+        )
+    else:
+        photo_script = ""
+
     paragraphs = split_paragraphs(item["body"])
     if paragraphs and "*" in paragraphs[0]:
         latin_line = f'<p class="latin">{render_latin_inline(paragraphs[0])}</p>'
@@ -298,7 +307,7 @@ def render(item, creatures, generated_keys):
         safety_class=safety_class,
         related=related_html,
         category_link=f"../../{item['category']}.html",
-        photo_script="",
+        photo_script=photo_script,
     )
 
 
