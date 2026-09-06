@@ -186,15 +186,15 @@
       min-height:0; display:block; padding-top:75vw;
       background:var(--night);
     }
-    .hero-photo-link{ inset:0 0 auto; height:75vw; }
+    .hero-photo-link{ inset:0 0 auto; height:calc(75vw + 4.2rem); }
     .hero-photo{ height:100%; }
     .hero::after{
-      inset:0 0 auto; height:75vw;
+      inset:0 0 auto; height:calc(75vw + 4.2rem);
       background:linear-gradient(180deg, transparent 20%, rgba(10,22,19,.58) 100%);
     }
     .hero-content{
       padding:2rem 6vw 3rem; max-width:none;
-      background:var(--night);
+      background:linear-gradient(180deg, transparent 0, transparent 4.2rem, var(--night) 4.2rem);
     }
     .hero h1{ font-size:clamp(2rem, 9vw, 2.6rem); }
     .hero p{ margin-bottom:1.6rem; }
