@@ -1,31 +1,362 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>アマミアカガエル｜奄美大島の夜の森 | Nature Experience Amami</title>
-<meta name="description" content="奄美大島の夜の森で出会えるアマミアカガエル。生態や観察時期を紹介します。">
+<meta name="description" content="奄美大島の夜の森で出会えるアマミアカガエル。生態や観察時期を写真とともに紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
 <style>
-:root{--night:#0A1613;--canopy:#16302A;--moonlight:#EAF2E9;--amber:#E8A33D;--moss:#6B8F71;--line:rgba(234,242,233,.14);--soft:rgba(234,242,233,.75)}*{box-sizing:border-box}body{margin:0;background:var(--night);color:var(--moonlight);font-family:system-ui,sans-serif;line-height:1.8}a{color:inherit;text-decoration:none}main{max-width:1100px;margin:auto}header{padding:1.2rem 6vw;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,22,19,.95);z-index:2}nav{display:flex;gap:1rem;flex-wrap:wrap;font-size:.9rem}.hero{display:grid;grid-template-columns:1.35fr 1fr;margin:3rem 6vw 0;border:1px solid var(--line);border-radius:5px;overflow:hidden}.hero-photo{min-height:360px;background:#050907}.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}.hero-info{padding:2.5rem;background:var(--canopy)}.label,.related-category{font-size:.75rem;letter-spacing:.12em;color:var(--moss)}h1,h2{font-family:Georgia,serif;line-height:1.25}h1{font-size:clamp(2.4rem,6vw,4rem);margin:.4rem 0 1rem}h2{font-size:clamp(1.6rem,3vw,2.4rem)}.badge{display:inline-block;border:1px solid rgba(234,242,233,.25);padding:.25rem .6rem;margin:.2rem;border-radius:3px;font-size:.8rem}.danger{border-color:rgba(232,163,61,.6);color:var(--amber)}.season{margin-top:1.5rem}.season-track{display:grid;grid-template-columns:repeat(12,1fr);gap:3px}.season-tick{height:18px;background:rgba(234,242,233,.1);border-radius:2px}.season-tick.active{background:var(--amber)}.section{padding:4rem 6vw;border-top:1px solid var(--line)}.section p{max-width:70ch;color:var(--soft)}.gallery{display:grid;grid-template-columns:2fr 1fr;gap:.8rem}.gallery figure{margin:0;min-height:180px;background:#050907;border-radius:4px;overflow:hidden}.gallery figure:first-child{grid-row:span 2;min-height:380px}.gallery img{width:100%;height:100%;object-fit:cover}.placeholder,.gallery-empty{height:100%;min-height:180px;display:grid;place-items:center;color:var(--soft);background:rgba(234,242,233,.06)}.hero-placeholder{min-height:360px}.related{padding:4rem 6vw;background:var(--canopy)}.related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem}.related-card{display:flex;flex-direction:column;gap:.3rem;padding:.8rem;background:rgba(234,242,233,.05);border:1px solid var(--line);border-radius:4px}.related-card-disabled{opacity:.78}.related-card img,.related-card .placeholder{width:100%;height:130px;min-height:0;object-fit:cover}.related-link{font-size:.8rem;color:var(--amber);margin-top:auto}.cta{margin:3rem 6vw 5rem;padding:3rem;text-align:center;border:1px solid rgba(232,163,61,.3)}.btn{display:inline-block;padding:.8rem 1.4rem;background:var(--amber);color:#2A211A;font-weight:bold}footer{padding:2rem 6vw;text-align:center;border-top:1px solid var(--line);color:rgba(234,242,233,.5)}@media(max-width:760px){.hero{grid-template-columns:1fr;margin:1.5rem 5vw 0}.hero-info{padding:1.7rem}.gallery{grid-template-columns:1fr 1fr}.gallery figure:first-child{min-height:300px}.section,.related{padding:3rem 5vw}.cta{margin:2rem 5vw 3rem;padding:2rem 1rem}}
-</style>
-<style>
-@media(max-width:760px) {
-  .gallery { grid-template-columns: 1fr; }
-  .gallery figure,
-  .gallery figure:first-child { min-height: 0; }
-  .gallery img { height: auto; object-fit: contain; }
+
+:root{
+  --night:#0A1613;
+  --canopy:#16302A;
+  --moonlight:#EAF2E9;
+  --amber:#E8A33D;
+  --moss:#6B8F71;
+  --bark:#2A211A;
+  --line:rgba(234,242,233,.12);
+  --soft:rgba(234,242,233,.72);
+  --warn:#E86B3D;
 }
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  background:var(--night);
+  color:var(--moonlight);
+  line-height:1.9;
+}
+img{ display:block; width:100%; height:100%; object-fit:cover; }
+a{ color:inherit; }
+
+/* ===== HEADER ===== */
+.site-header{
+  position:sticky; top:0; z-index:20;
+  background:rgba(10,22,19,.94); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1200px; margin:auto; padding:1.3rem 6vw;
+  display:flex; align-items:center; justify-content:space-between; gap:2rem;
+}
+.logo{
+  font-family:'Shippori Mincho',serif; font-weight:700; font-size:1.15rem;
+  letter-spacing:.12em; text-decoration:none; display:flex; align-items:center; gap:.55rem;
+}
+.logo::before{
+  content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--amber); box-shadow:0 0 10px 2px rgba(232,163,61,.7);
+}
+nav{ display:flex; gap:1.8rem; font-size:.82rem; }
+nav a{ text-decoration:none; color:rgba(234,242,233,.75); }
+nav a:hover{ color:var(--moonlight); }
+
+main{ max-width:1200px; margin:auto; }
+
+/* ===== HERO ===== */
+.creature-hero{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:0;
+  margin:4rem 6vw 0;
+  min-height:min(70vh, 600px);
+  border-radius:4px;
+  overflow:hidden;
+  border:1px solid var(--line);
+}
+
+.hero-photo{
+  position:relative;
+  overflow:hidden;
+  background:#050907;
+  min-height:340px;
+}
+.hero-photo::after{
+  content:"";
+  position:absolute; inset:0;
+  background:radial-gradient(circle at 38% 42%, transparent 22%, rgba(10,22,19,.35) 55%, rgba(10,22,19,.85) 100%);
+  pointer-events:none;
+}
+.placeholder{
+  display:flex; align-items:center; justify-content:center;
+  width:100%; height:100%; min-height:inherit;
+  color:rgba(234,242,233,.4); font-family:'Space Mono',monospace; font-size:.8rem; letter-spacing:.08em;
+  background:repeating-linear-gradient(135deg, rgba(234,242,233,.03) 0 12px, transparent 12px 24px);
+}
+
+.hero-info{
+  background:var(--canopy);
+  padding:2.6rem 2.4rem;
+  display:flex; flex-direction:column; justify-content:center;
+  gap:1.4rem;
+}
+.category{
+  font-family:'Space Mono',monospace; font-size:.78rem; letter-spacing:.13em; color:var(--moss);
+}
+.hero-info h1{
+  font-family:'Shippori Mincho',serif; font-size:clamp(2.4rem,4vw,3.4rem);
+  line-height:1.15; font-weight:700; letter-spacing:.03em;
+}
+.latin{ font-size:.85rem; color:rgba(234,242,233,.6); }
+.latin em{ font-style:italic; }
+
+/* 危険度メーター（ヘビ用） */
+.meter-block{ margin-top:.2rem; }
+.meter-label{
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-family:'Space Mono',monospace; font-size:.68rem; letter-spacing:.08em; color:var(--moss);
+  margin-bottom:.4rem;
+}
+.meter-label strong{ color:var(--amber); font-size:.72rem; }
+.meter-track{
+  height:6px; background:rgba(234,242,233,.1); border-radius:3px; overflow:hidden;
+}
+.meter-fill{
+  height:100%; background:var(--amber); border-radius:3px;
+}
+
+/* 保護・採集バッジ（ヘビ以外） */
+.status-badge{
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.55rem .9rem; border-radius:2px; font-size:.82rem;
+  border:1px solid rgba(234,242,233,.2);
+}
+.status-badge.safe{ border-color:rgba(107,143,113,.5); color:var(--moss); }
+.status-badge.warning{ border-color:rgba(232,107,61,.6); color:var(--warn); background:rgba(232,107,61,.08); }
+.status-badge.neutral{ border-color:rgba(234,242,233,.25); color:var(--soft); }
+
+/* 観察時期タイムライン */
+.season-block{ margin-top:.2rem; }
+.season-label{
+  font-family:'Space Mono',monospace; font-size:.68rem; letter-spacing:.08em; color:var(--moss);
+  margin-bottom:.5rem;
+}
+.season-track{
+  display:grid; grid-template-columns:repeat(12,1fr); gap:3px;
+}
+.season-tick{
+  height:20px; background:rgba(234,242,233,.08); border-radius:2px;
+}
+.season-tick.active{ background:var(--amber); }
+
+/* ===== GALLERY ===== */
+.gallery-section{ padding:5.5rem 6vw 5rem; }
+.section-label{
+  font-family:'Space Mono',monospace; font-size:.78rem; letter-spacing:.13em; color:var(--moss);
+  margin-bottom:.7rem;
+}
+.gallery-title{
+  font-family:'Shippori Mincho',serif; font-size:clamp(1.5rem,3vw,2.2rem); font-weight:500; margin-bottom:1.5rem;
+}
+.gallery{
+  display:grid; grid-template-columns:2fr 1fr; grid-template-rows:1fr 1fr; gap:.8rem;
+}
+.gallery figure{
+  margin:0; overflow:hidden; border-radius:4px; cursor:pointer;
+  background:#050907;
+  transition:transform .45s ease;
+}
+.gallery figure:hover img{ transform:scale(1.025); }
+.gallery figure:first-child{ grid-row:span 2; min-height:480px; }
+.gallery figure:first-child img{ object-fit:contain; }
+.gallery figure:not(:first-child){ height:232px; }
+.gallery img{ transition:transform .45s ease; }
+.gallery-empty{
+  padding:2.5rem; text-align:center; color:rgba(234,242,233,.4);
+  font-family:'Space Mono',monospace; font-size:.85rem; letter-spacing:.06em;
+  border:1px dashed rgba(234,242,233,.15); border-radius:4px;
+}
+
+/* ライトボックス */
+.lightbox{
+  position:fixed; inset:0; z-index:50; display:none;
+  align-items:center; justify-content:center;
+  background:rgba(10,22,19,.92);
+  padding:5vh 5vw;
+}
+.lightbox.open{ display:flex; }
+.lightbox-inner{
+  width:min(85vw,1000px); max-height:88vh;
+  position:relative;
+}
+.lightbox-inner img{
+  width:100%; height:auto; max-height:88vh; object-fit:contain; border-radius:4px;
+}
+.lightbox-close{
+  position:absolute; top:-2.6rem; right:0;
+  color:var(--moonlight); font-family:'Space Mono',monospace; font-size:.8rem;
+  background:none; border:1px solid rgba(234,242,233,.3); padding:.4rem .8rem; cursor:pointer;
+}
+.lightbox-close:hover{ border-color:var(--amber); color:var(--amber); }
+
+/* ===== CONTENT ===== */
+.content{ background:var(--canopy); }
+.content-inner{ max-width:900px; margin:auto; padding:0 6vw; }
+.section{ padding:5rem 0; border-top:1px solid var(--line); }
+.section h2{
+  font-family:'Shippori Mincho',serif; font-size:clamp(1.6rem,3vw,2.25rem); font-weight:500; line-height:1.4; margin-bottom:1.5rem;
+}
+.section p{ max-width:65ch; color:var(--soft); font-size:.98rem; margin-bottom:1.1rem; }
+
+.safety{ padding:2rem 2.2rem; border-left:3px solid var(--amber); background:rgba(232,163,61,.06); }
+.safety h2{ font-size:1.5rem; }
+.safety p{ font-size:.9rem; }
+.safety.warning{ border-left-color:var(--warn); background:rgba(232,107,61,.08); }
+.safety .warning-line{ color:var(--warn); font-weight:700; }
+
+/* ===== 関連生き物 ===== */
+.related{ padding:5.5rem 6vw 1rem; }
+.related h2{
+  font-family:'Shippori Mincho',serif; font-size:clamp(1.5rem,3vw,2rem); font-weight:500; margin-bottom:1.8rem;
+}
+.related-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1.2rem; }
+.related-card{
+  display:flex; flex-direction:column; gap:.5rem; text-decoration:none;
+  border:1px solid var(--line); border-radius:4px; overflow:hidden; background:rgba(10,22,19,.35);
+}
+.related-card img, .related-card .placeholder{ height:130px; }
+.related-card-disabled{ opacity:.55; }
+.related-category{ font-family:'Space Mono',monospace; font-size:.65rem; color:var(--moss); padding:.6rem .8rem 0; }
+.related-card strong{ font-family:'Shippori Mincho',serif; font-size:1rem; padding:0 .8rem; }
+.related-link{ font-size:.75rem; color:var(--soft); padding:0 .8rem .8rem; }
+
+/* ===== CTA ===== */
+.tour{
+  margin:5rem 6vw 6rem;
+  padding:4.5rem 2rem;
+  border:1px solid rgba(232,163,61,.25);
+  background:linear-gradient(135deg, #16302A, #0A1613);
+  text-align:center;
+}
+.tour-label{
+  font-family:'Space Mono',monospace; color:var(--amber); font-size:.7rem; letter-spacing:.15em; margin-bottom:.8rem;
+}
+.tour h2{
+  font-family:'Shippori Mincho',serif; font-size:clamp(1.7rem,3vw,2.5rem); font-weight:500; margin-bottom:1rem;
+}
+.tour p{ max-width:620px; margin:0 auto 1.8rem; color:var(--soft); font-size:.9rem; }
+.btn{
+  display:inline-flex; align-items:center; gap:.5rem; padding:.9rem 1.8rem;
+  background:var(--amber); color:var(--bark); text-decoration:none; font-weight:700;
+  border-radius:2px; font-size:.85rem; transition:transform .2s ease,background .2s ease;
+}
+.btn:hover{ background:#f4b95a; transform:translateY(-2px); }
+
+footer{
+  padding:2.5rem 6vw; border-top:1px solid var(--line); text-align:center;
+  color:rgba(234,242,233,.45); font-size:.72rem;
+}
+
+@media(max-width:800px){
+  .creature-hero{ grid-template-columns:1fr; margin:1.5rem 5vw 0; min-height:auto; }
+  .hero-photo{ min-height:260px; }
+  .hero-info{ padding:1.8rem; }
+  .gallery{ grid-template-columns:1fr; grid-template-rows:none; }
+  .gallery figure:first-child{ grid-row:auto; min-height:260px; }
+  .gallery figure:not(:first-child){ height:260px; }
+  .tour{ margin:3rem 5vw 4rem; padding:3.5rem 1.5rem; }
+}
+
 </style>
 </head>
 <body>
-<header><nav><a href="../../index.html">Nature – Experience</a><a href="../../index.html">ホーム</a><a href="../../kaeru.html">カエル一覧</a><a href="../../contact.html">お問い合わせ</a></nav></header>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../../index.html" class="logo">Nature – Experience</a>
+    <nav>
+      <a href="../../index.html">ホーム</a>
+      <a href="../../kaeru.html">カエル一覧</a>
+      <a href="../../contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div class="hero-photo" id="hero-photo"><div class="placeholder hero-placeholder">写真準備中</div></div><div class="hero-info"><p class="label">カエル / NIGHT FIELD NOTE</p><h1>アマミアカガエル</h1><div><span class="badge danger">無毒</span><span class="badge">写真 0枚</span></div><div class="season"><p class="label">観察時期　1月・11月・12月</p><div class="season-track"><span class="season-tick active"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick active"></span><span class="season-tick active"></span></div></div></div></section>
-<section class="section"><p class="label">PHOTOGRAPHS</p><h2>アマミアカガエルの記録</h2><div class="gallery" id="gallery"><div class="gallery-empty">写真は準備中です。生き物の情報はご覧いただけます。</div></div></section>
-<section class="section"><p class="label">ABOUT / ECOLOGY</p><h2>アマミアカガエルについて</h2><p>アカガエル科アカガエル属 *Rana kobai*</p><p>大きさ3.2〜4.6cm 繁殖時期11月から1月。平地から山地までの森林、河川周辺に生息。繁殖時期になると小さな池や湧水の溜まり場などに集まる。林道にも出てくる個体が見られる。赤褐色でスマート、キョッキョッと鳴く。</p></section>
-<section class="related"><p class="section-label">DISCOVER MORE</p><h2>この生き物に興味がある方へ</h2><div class="related-grid"><div class="related-card related-card-disabled"><div class="placeholder">写真準備中</div><span class="related-category">カエル</span><strong>アマミアオガエル</strong><span class="related-link">ページ準備中</span></div><div class="related-card related-card-disabled"><div class="placeholder">写真準備中</div><span class="related-category">カエル</span><strong>アマミハナサキガエル</strong><span class="related-link">ページ準備中</span></div><div class="related-card related-card-disabled"><div class="placeholder">写真準備中</div><span class="related-category">カエル</span><strong>ハロウェルアマガエル</strong><span class="related-link">ページ準備中</span></div><div class="related-card related-card-disabled"><div class="placeholder">写真準備中</div><span class="related-category">カエル</span><strong>ヒメアマガエル</strong><span class="related-link">ページ準備中</span></div><div class="related-card related-card-disabled"><div class="placeholder">写真準備中</div><span class="related-category">カエル</span><strong>アマミイシカワガエル</strong><span class="related-link">ページ準備中</span></div><div class="related-card related-card-disabled"><div class="placeholder">写真準備中</div><span class="related-category">カエル</span><strong>オットンガエル</strong><span class="related-link">ページ準備中</span></div><div class="related-card related-card-disabled"><div class="placeholder">写真準備中</div><span class="related-category">カエル</span><strong>リュウキュウカジカガエル</strong><span class="related-link">ページ準備中</span></div><a class="related-card" href="../hebi/akamata.html"><img src="../../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg" alt="アカマタ"><span class="related-category">ヘビ</span><strong>アカマタ</strong><span class="related-link">詳しく見る →</span></a><div class="related-card related-card-disabled"><img src="../../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg" alt="ガラスヒバァ"><span class="related-category">ヘビ</span><strong>ガラスヒバァ</strong><span class="related-link">ページ準備中</span></div><a class="related-card" href="../hebi/habu.html"><img src="../../images/creatures/hebi/habu/habu_000001_20241218_22.jpg" alt="ハブ"><span class="related-category">ヘビ</span><strong>ハブ</strong><span class="related-link">詳しく見る →</span></a></div></section>
-<section class="cta"><p class="label">NATURE EXPERIENCE AMAMI</p><h2>奄美の夜の森を歩いてみませんか？</h2><p>ガイドと一緒に、生き物を探しながら夜の森を観察できます。</p><a class="btn" href="../../contact.html">ナイトツアーについて</a></section>
-</main><footer>© 2026 Nature Experience Amami</footer>
-<script></script>
+
+  <section class="creature-hero">
+    <div class="hero-photo">
+      <img src="../../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg" alt="奄美大島のアマミアカガエル">
+    </div>
+    <div class="hero-info">
+      <p class="category">KAERU / カエル</p>
+      <h1>アマミアカガエル</h1>
+      <p class="latin">アカガエル科アカガエル属 <em>Rana kobai</em></p>
+      <span class="status-badge safe">無毒</span>
+      <div class="season-block">
+        <p class="season-label">観察時期　11月・12月・1月</p>
+        <div class="season-track">
+          <span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <p class="section-label">PHOTOGRAPHS</p>
+    <h2 class="gallery-title">奄美の森で出会うアマミアカガエル</h2>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000003_20250129_20.jpg" alt="アマミアカガエル"></figure><figure><img class="gallery-photo" src="../../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg" alt="アマミアカガエル"></figure></div>
+  </section>
+
+  <div class="content">
+    <div class="content-inner">
+
+      <section class="section">
+        <p class="section-label">ABOUT</p>
+        <h2>アマミアカガエルについて</h2>
+        <p>大きさ3.2〜4.6cm 繁殖時期11月から1月。平地から山地までの森林、河川周辺に生息。繁殖時期になると小さな池や湧水の溜まり場などに集まる。林道にも出てくる個体が見られる。赤褐色でスマート、キョッキョッと鳴く。</p>
+      </section>
+
+      <section class="section">
+        <div class="safety">
+          <p class="section-label">SAFETY</p>
+          <h2>観察するときの注意</h2>
+          <p>奄美の生き物は、写真におさめて楽しみましょう。生き物によっては、法律や条例で捕獲・採集・持ち出しが禁止されています。国立公園内の特別保護区では、採集そのものが禁止されているエリアもあります。それぞれの生き物のページで注意事項を確認し、訪れる場所のルールも事前に確認してから観察してください。</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <section class="related"><p class="section-label">DISCOVER MORE</p><h2>この生き物に興味がある方へ</h2><div class="related-grid"><a class="related-card" href="amami-ao-gaeru.html"><img src="../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg" alt="アマミアオガエル"><span class="related-category">カエル</span><strong>アマミアオガエル</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="hanasaki-gaeru.html"><img src="../../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg" alt="アマミハナサキガエル"><span class="related-category">カエル</span><strong>アマミハナサキガエル</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="haroweru-amagaeru.html"><div class="placeholder">写真準備中</div><span class="related-category">カエル</span><strong>ハロウェルアマガエル</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="hime-amagaeru.html"><img src="../../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg" alt="ヒメアマガエル"><span class="related-category">カエル</span><strong>ヒメアマガエル</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="ishikawa-gaeru.html"><img src="../../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg" alt="アマミイシカワガエル"><span class="related-category">カエル</span><strong>アマミイシカワガエル</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="otton-gaeru.html"><img src="../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000001_20250228_22.jpg" alt="オットンガエル"><span class="related-category">カエル</span><strong>オットンガエル</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="ryukyu-kajika-gaeru.html"><img src="../../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg" alt="リュウキュウカジカガエル"><span class="related-category">カエル</span><strong>リュウキュウカジカガエル</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/akamata.html"><img src="../../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg" alt="アカマタ"><span class="related-category">ヘビ</span><strong>アカマタ</strong><span class="related-link">詳しく見る →</span></a></div></section>
+
+  <section class="tour">
+    <p class="tour-label">NATURE EXPERIENCE AMAMI</p>
+    <h2>奄美の夜の森を歩いてみませんか？</h2>
+    <p>写真で見るだけではなく、実際の夜の森で生き物を探してみる。奄美大島の自然をガイドと一緒に観察してみませんか。</p>
+    <a href="../../contact.html" class="btn">🔦 ナイトツアーについて</a>
+  </section>
+
+</main>
+
+<footer>&copy; 2026 Nature-Experience Amami. 画像の無断転載・複製・改変を禁じます。</footer>
+
+<div class="lightbox" id="lightbox" onclick="if(event.target===this) closeLightbox()">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()">閉じる ×</button>
+    <img id="lightbox-img" src="" alt="アマミアカガエル">
+  </div>
+</div>
+
+<script>
+(function(){
+  var galleryImgs = document.querySelectorAll(".gallery-photo");
+  galleryImgs.forEach(function(img){
+    img.addEventListener("click", function(){
+      document.getElementById("lightbox-img").src = img.src;
+      document.getElementById("lightbox").classList.add("open");
+    });
+  });
+  window.closeLightbox = function(){
+    document.getElementById("lightbox").classList.remove("open");
+  };
+  
+})();
+</script>
+
 </body>
 </html>

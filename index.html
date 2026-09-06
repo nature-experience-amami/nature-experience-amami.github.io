@@ -115,6 +115,24 @@
   }
   .tour-teaser .teaser-link:hover{ background:#f4b95a; gap:.8rem; }
 
+  .creature-guide{ background:var(--canopy); text-align:center; }
+  .creature-guide .inner{ max-width:640px; margin:0 auto; }
+  .creature-guide .label{
+    font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.15em;
+    color:var(--moss); margin-bottom:1rem;
+  }
+  .creature-guide h2{
+    font-family:'Shippori Mincho', serif; font-size:clamp(1.7rem, 4vw, 2.4rem);
+    line-height:1.5; letter-spacing:.03em; margin-bottom:1.6rem;
+  }
+  .creature-guide .guide-link{
+    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+    padding:.95rem 2rem; background:var(--amber); color:var(--bark);
+    text-decoration:none; font-weight:700; border-radius:2px; letter-spacing:.04em;
+    transition:background .2s ease, gap .2s ease;
+  }
+  .creature-guide .guide-link:hover{ background:#f4b95a; gap:.8rem; }
+
   /* ===== AI ASK(新規追加分) ===== */
   .ai-ask{ background:var(--night); }
   .ask-box{ display:flex; flex-wrap:wrap; gap:.8rem; margin-bottom:1.5rem; }
@@ -229,6 +247,17 @@
     <h2>奄美の夜の森へ</h2>
     <a class="teaser-link" href="tour.html">
       ナイトツアーの内容や料金はこちら
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<section class="creature-guide" aria-label="生き物図鑑の案内">
+  <div class="inner">
+    <p class="label">CREATURE GUIDE</p>
+    <h2>奄美の生き物を知る</h2>
+    <a class="guide-link" href="hebi.html">
+      ヘビを見る
       <span aria-hidden="true">→</span>
     </a>
   </div>

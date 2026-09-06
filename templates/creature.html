@@ -255,9 +255,9 @@ footer{{
   .creature-hero{{ grid-template-columns:1fr; margin:1.5rem 5vw 0; min-height:auto; }}
   .hero-photo{{ min-height:260px; }}
   .hero-info{{ padding:1.8rem; }}
-  .gallery{{ grid-template-columns:1fr 1fr; grid-template-rows:180px 180px; }}
-  .gallery figure:first-child{{ min-height:365px; }}
-  .gallery figure:not(:first-child){{ height:180px; }}
+  .gallery{{ grid-template-columns:1fr; grid-template-rows:none; }}
+  .gallery figure:first-child{{ grid-row:auto; min-height:260px; }}
+  .gallery figure:not(:first-child){{ height:260px; }}
   .tour{{ margin:3rem 5vw 4rem; padding:3.5rem 1.5rem; }}
 }}
 
