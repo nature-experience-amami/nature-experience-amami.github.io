@@ -54,8 +54,16 @@
       "images/creatures/hebi/akamata/akamata_000038_20251208_21.jpg",
       "images/creatures/hebi/akamata/akamata_000039_20251225_00.jpg",
       "images/creatures/hebi/akamata/akamata_000040_20250326_20.jpg",
-      "images/creatures/hebi/akamata/akamata_000041_20250326_20.jpg",
-      "images/creatures/hebi/akamata/akamata_000042_20250829_23.jpg"
+      "images/creatures/hebi/akamata/akamata_000042_20250829_23.jpg",
+      "images/creatures/hebi/akamata/akamata_000043_20260409_21.jpg",
+      "images/creatures/hebi/akamata/akamata_000043_20260414_00.jpg",
+      "images/creatures/hebi/akamata/akamata_000043_20260422_22.jpg",
+      "images/creatures/hebi/akamata/akamata_000043_20260423_22.jpg",
+      "images/creatures/hebi/akamata/akamata_000043_20260425_22.jpg",
+      "images/creatures/hebi/akamata/akamata_000043_20260504_21.jpg",
+      "images/creatures/hebi/akamata/akamata_000043_20260607_23.jpg",
+      "images/creatures/hebi/akamata/akamata_000043_20260830_21.jpg",
+      "images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg"
     ]
   },
   {
@@ -82,6 +90,7 @@
     "months": [
       2,
       3,
+      4,
       5,
       6
     ],
@@ -101,7 +110,9 @@
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000012_20250312_21.jpg",
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000013_20250312_21.jpg",
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000014_20250312_21.jpg",
-      "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000015_20250614_09.jpg"
+      "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000015_20250614_09.jpg",
+      "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260411_21.jpg",
+      "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260608_00.jpg"
     ]
   },
   {
@@ -120,7 +131,6 @@
     ],
     "description": "クサリヘビ科ハブ属 *Protobothrops flavoviridis*\n\n全長〜226cm、大型のヘビ。5月から11月頃が良く観察できる(冬でも暖かい日には活動)。夜行性で昼間は穴の中などで休む。平地から山地の森林、草原、水辺、農地や樹上にも生息し、ネズミを追って人家周辺にも入り込む。主食はネズミの他、爬虫類、カエル、哺乳類、鳥類。天敵はアカマタとハブ取り。毒がある上にかなり攻撃的。2〜3mは必ず離れて観察・撮影する。近づくと逃げずにすぐ攻撃体制に入り、体長の3分の2近く飛びかかることが可能。電波の通じない山奥で噛まれると大変なことになる。模様は自然に溶け込んでかなり見つけにくく、見えていないだけでいろんな所に潜んでいる。注意しすぎるくらい注意。",
     "photos": [
-      "images/creatures/hebi/habu/habu_000001_20241218_22.jpg",
       "images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
       "images/creatures/hebi/habu/habu_000003_20250228_00.jpg",
       "images/creatures/hebi/habu/habu_000004_20260214_22.jpg",
@@ -184,7 +194,25 @@
       "images/creatures/hebi/habu/habu_000062_20250725_21.jpg",
       "images/creatures/hebi/habu/habu_000063_20250727_00.jpg",
       "images/creatures/hebi/habu/habu_000064_20250727_00.jpg",
-      "images/creatures/hebi/habu/habu_000065_20250728_21.jpg"
+      "images/creatures/hebi/habu/habu_000065_20250728_21.jpg",
+      "images/creatures/hebi/habu/habu_000066_20250927_19.jpg",
+      "images/creatures/hebi/habu/habu_000066_20251004_22.jpg",
+      "images/creatures/hebi/habu/habu_000066_20251012_00.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260403_20.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260404_20.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260404_22.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260411_02.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260607_23.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260614_20.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260617_19.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260629_20.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260703_00.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260705_22.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260719_22.jpg",
+      "images/creatures/hebi/habu/habu_000066_20260720_22.jpg",
+      "images/creatures/hebi/habu/habu_000067_20251012_00.jpg",
+      "images/creatures/hebi/habu/habu_000068_20251012_00.jpg",
+      "images/creatures/hebi/habu/habu_000069_20260703_00.jpg"
     ]
   },
   {
@@ -197,12 +225,13 @@
       3,
       4,
       5,
+      6,
       7,
+      9,
       11
     ],
     "description": "クサリヘビ科ヤマハブ属 *Ovophis okinavensis*\n\n全長〜80cm。寒さに強く奄美大島では年中観察できる。梅雨を過ぎて暑くなると標高の高い場所でよく観察できる。食性は小型から中型のカエル、小型哺乳類、鳥類。水田や流れの緩やかな沢などカエルが多く棲む場所でよく観察できる。トグロを巻いている個体は殆ど動かないがテリトリーに入ると威嚇してくる。毒ヘビなので噛まれた場合は直ぐに病院へ。踏んづけないように気をつける。",
     "photos": [
-      "images/creatures/hebi/hime-habu/hime-habu_000001_20250428_19.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000002_20250429_20.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000003_20250429_20.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000004_20250430_20.jpg",
@@ -223,7 +252,13 @@
       "images/creatures/hebi/hime-habu/hime-habu_000019_20260328_22.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000020_20250527_20.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000021_20250726_09.jpg",
-      "images/creatures/hebi/hime-habu/hime-habu_000022_20251122_22.jpg"
+      "images/creatures/hebi/hime-habu/hime-habu_000022_20251122_22.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000023_20250925_00.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000023_20260403_21.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000023_20260404_20.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000023_20260404_21.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000023_20260404_22.jpg",
+      "images/creatures/hebi/hime-habu/hime-habu_000023_20260629_22.jpg"
     ]
   },
   {
@@ -245,14 +280,19 @@
       "images/creatures/hebi/hyan/hyan_000005_20250517_23.jpg",
       "images/creatures/hebi/hyan/hyan_000006_20250517_23.jpg",
       "images/creatures/hebi/hyan/hyan_000007_20250523_22.jpg",
-      "images/creatures/hebi/hyan/hyan_000008_20250527_23.jpg",
       "images/creatures/hebi/hyan/hyan_000009_20250606_20.jpg",
       "images/creatures/hebi/hyan/hyan_000010_20250606_20.jpg",
       "images/creatures/hebi/hyan/hyan_000011_20250620_22.jpg",
       "images/creatures/hebi/hyan/hyan_000012_20250717_22.jpg",
       "images/creatures/hebi/hyan/hyan_000013_20250722_22.jpg",
       "images/creatures/hebi/hyan/hyan_000014_20250722_22.jpg",
-      "images/creatures/hebi/hyan/hyan_000015_20250722_22.jpg"
+      "images/creatures/hebi/hyan/hyan_000015_20250722_22.jpg",
+      "images/creatures/hebi/hyan/hyan_000016_20250517_23.jpg",
+      "images/creatures/hebi/hyan/hyan_000016_20250526_23.jpg",
+      "images/creatures/hebi/hyan/hyan_000016_20250527_23.jpg",
+      "images/creatures/hebi/hyan/hyan_000016_20250620_22.jpg",
+      "images/creatures/hebi/hyan/hyan_000016_20260608_00.jpg",
+      "images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg"
     ]
   },
   {
@@ -262,8 +302,13 @@
     "category_name": "ヘビ",
     "months": [
       3,
+      4,
       5,
-      6
+      6,
+      7,
+      8,
+      9,
+      10
     ],
     "description": "ナミヘビ科アオヘビ属 *Cycophuops semicarinatus*\n\n全長〜100cm。5月から11月頃によく観察できる。昼行性だが夜間活動する個体も多い。頭部は小さく食性は主にミミズ、カエルも食べる。奄美大島では1番個体数が多く、昼間の林内や夜間林道でも見られる。大きくなると威嚇してくる個体もいるが、逃げるのはとても早く斜面を滑り降りていく。",
     "photos": [
@@ -274,7 +319,19 @@
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000005_20250527_01.jpg",
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000006_20250527_01.jpg",
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000007_20250610_13.jpg",
-      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000008_20250628_14.jpg"
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000008_20250628_14.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250828_12.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250830_00.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250915_23.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20251007_00.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20251019_22.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260411_00.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260413_23.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260427_20.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260629_22.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260729_23.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000010_20260413_23.jpg",
+      "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000011_20251019_22.jpg"
     ]
   },
   {
@@ -291,7 +348,13 @@
     "photos": [
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000003_20250129_20.jpg",
-      "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg"
+      "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg",
+      "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20250312_22.jpg",
+      "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20250602_21.jpg",
+      "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251006_22.jpg",
+      "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251007_00.jpg",
+      "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000006_20250312_22.jpg",
+      "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000007_20260905_11.jpg"
     ]
   },
   {
@@ -303,6 +366,8 @@
       1,
       2,
       3,
+      4,
+      5,
       12
     ],
     "description": "アオガエル科アオガエル属 *Rhacophorus viridis amamiensis*\n\n大きさ4.5〜7.7cm 繁殖時期12月下旬から5月頃。低地から山地まで分布し、池や水田などの止水域周辺の森に生息。樹上の枝の上や岸辺の草などに白い泡状の卵塊を産み付ける。沢山鳴いていても見つけるのがとても難しいカエル。ハロウェルアマガエルより大きく見分けはつきやすい。",
@@ -312,7 +377,6 @@
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000003_20250221_19.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000004_20250221_22.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000005_20250227_19.jpg",
-      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000006_20250227_19.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000007_20250228_20.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000008_20250228_20.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000009_20250228_20.jpg",
@@ -321,7 +385,23 @@
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000012_20250302_19.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000013_20250302_19.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000014_20250302_19.jpg",
-      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000015_20241210_21.jpg"
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000015_20241210_21.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250119_19.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250228_20.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250314_23.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250414_23.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250427_20.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250506_20.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250509_20.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250516_21.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250520_21.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260409_23.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260502_21.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000017_20250314_23.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000018_20250314_23.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000019_20250427_20.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000020_20250427_20.jpg",
+      "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000021_20250506_20.jpg"
     ]
   },
   {
@@ -332,6 +412,11 @@
     "months": [
       1,
       2,
+      5,
+      6,
+      7,
+      9,
+      10,
       12
     ],
     "description": "アカガエル科ニオイガエル属 *Odorrana amamiensis*\n\n大きさ5.6〜10.1cm 繁殖時期10月から5月。山地にある渓流の周辺に生息。スマートで姿勢がよく、慣れてくると遠目からでも判別できるようになる。色彩も豊かでバリエーションがある。鹿児島県で天然記念物に指定され、卵を含め捕獲、譲渡は禁止。雨が降ると林道にたくさん出てくるので運転には気をつける。",
@@ -339,7 +424,19 @@
       "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg",
       "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000002_20250228_21.jpg",
       "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000003_20241210_20.jpg",
-      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000004_20241211_20.jpg"
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000004_20241211_20.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20241206_23.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250506_20.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250521_22.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250525_22.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250525_23.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250628_15.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250704_22.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250911_00.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250926_00.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20251002_00.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000006_20250506_20.jpg",
+      "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000007_20250926_00.jpg"
     ]
   },
   {
@@ -351,7 +448,11 @@
       1,
       2,
       3,
+      4,
+      5,
+      6,
       7,
+      8,
       12
     ],
     "description": "アカガエル科ニオイガエル属 *Odorrana splendida*\n\n大きさ7.4〜13.7cm 繁殖時期2月末から6月頃。山地の源流の穏やかな流れの沢に生息。日本一美しいカエルと言われ、鹿児島県の天然記念物・国内希少野生動物種に指定。卵を含め捕獲、譲渡が禁止。標高が高めの沢の近くで暗くなると鳴き声が聞こえる場所もある。",
@@ -366,7 +467,51 @@
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000008_20250304_20.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000009_20250722_21.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000010_20241209_20.jpg",
-      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000011_20241209_22.jpg"
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000011_20241209_22.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250314_21.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250314_22.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250506_23.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250516_21.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250520_20.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250529_21.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250602_23.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250603_22.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250615_22.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250625_21.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250627_11.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250709_23.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_20.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_22.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250716_22.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260404_00.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg"
+    ]
+  },
+  {
+    "id": "haroweru-amagaeru",
+    "name": "ハロウェルアマガエル",
+    "category": "kaeru",
+    "category_name": "カエル",
+    "months": [
+      3,
+      4,
+      5
+    ],
+    "description": "アマガエル科アマガエル属 *Hyla hallowellii*\n\n大きさ3〜4cm 繁殖時期3月から6月。平地の森林、藪、畑に生息し水田などの止水域に産卵。産卵時期になると水田近くで大合唱する。木の枝先など少し高い所にいて、たくさん鳴いていてもなかなか見つけられない。緑一色でとても美しい。鳴き声はニホンアマガエルに似る。",
+    "photos": [
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_21.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_22.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250510_00.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250516_22.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250517_23.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250529_22.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260303_13.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260330_21.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000002_20250510_00.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000003_20250516_22.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000004_20250516_22.jpg",
+      "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000005_20250516_22.jpg"
     ]
   },
   {
@@ -375,12 +520,31 @@
     "category": "kaeru",
     "category_name": "カエル",
     "months": [
-      2
+      2,
+      5
     ],
     "description": "ヒメアマガエル科ヒメアマガエル属 *Microhyla okinavensis*\n\n大きさ2.2〜3.2cm 周年繁殖(主に3月から7月)。海岸近くの低地から山地、林縁部や草地、人家周辺など幅広く生息。頭が小さく足が太いので上から見ると三角形。日本で1番小さなカエルだがとても大きな声で鳴く。",
     "photos": [
       "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
-      "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg"
+      "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg",
+      "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000003_20250516_22.jpg"
+    ]
+  },
+  {
+    "id": "numa-gaeru",
+    "name": "numa-gaeru",
+    "category": "kaeru",
+    "category_name": "カエル",
+    "months": [
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/kaeru/numa-gaeru/numa-gaeru_000001_20250324_11.jpg",
+      "images/creatures/kaeru/numa-gaeru/numa-gaeru_000002_20250324_11.jpg",
+      "images/creatures/kaeru/numa-gaeru/numa-gaeru_000003_20250324_11.jpg",
+      "images/creatures/kaeru/numa-gaeru/numa-gaeru_000004_20250324_11.jpg",
+      "images/creatures/kaeru/numa-gaeru/numa-gaeru_000005_20250324_11.jpg"
     ]
   },
   {
@@ -390,7 +554,11 @@
     "category_name": "カエル",
     "months": [
       2,
+      5,
+      6,
       7,
+      8,
+      10,
       12
     ],
     "description": "アカガエル科バビナ属 *Babina subaspera*\n\n大きさ8〜12.4cm 繁殖時期4月から10月。主に山地に生息するが、農地や公園などで見られることもある。オスの方が大きくなり、国内に移入されたウシガエルを除けば日本で1番大きなカエル。5本の指があり親指が鋭く、オス同士の喧嘩や包接の際に用いると考えられる。鹿児島県の天然記念物、国内希少野生動物種に指定され、卵を含め捕獲、譲渡が禁止。とても大きく迫力があり、道に出て来ていれば見つけやすい。名前は鳴き声から付けられたそう。",
@@ -398,7 +566,14 @@
       "images/creatures/kaeru/otton-gaeru/otton-gaeru_000001_20250228_22.jpg",
       "images/creatures/kaeru/otton-gaeru/otton-gaeru_000002_20250228_22.jpg",
       "images/creatures/kaeru/otton-gaeru/otton-gaeru_000003_20250722_20.jpg",
-      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000004_20241204_22.jpg"
+      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000004_20241204_22.jpg",
+      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250516_21.jpg",
+      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250517_21.jpg",
+      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250520_21.jpg",
+      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250602_21.jpg",
+      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250727_13.jpg",
+      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250812_15.jpg",
+      "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20251009_23.jpg"
     ]
   },
   {
@@ -407,12 +582,20 @@
     "category": "kaeru",
     "category_name": "カエル",
     "months": [
-      3
+      3,
+      4,
+      5,
+      6
     ],
     "description": "アオガエル科カジカガエル属 *Buergeria japonica*\n\n大きさ2.5〜4cm 繁殖時期4月から10月。渓流から市街地の水たまりでも適応し、奄美大島では1番見かけるカエル。オスはとても美しい黄色で鳴き声も美しい。",
     "photos": [
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
-      "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg"
+      "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg",
+      "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250417_20.jpg",
+      "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250425_22.jpg",
+      "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250503_22.jpg",
+      "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20260608_00.jpg",
+      "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg"
     ]
   },
   {
@@ -421,12 +604,90 @@
     "category": "kuwagata",
     "category_name": "クワガタ",
     "months": [
-      8
+      6,
+      7,
+      8,
+      9
     ],
     "description": "クワガタムシ科オオクワガタ属ヒラタクワガタ亜種 *Dorcus titanusu elegans*\n\n奄美諸島に生息するヒラタクワガタの亜種。奄美大島では一番生息数が多いクワガタ。飼育するとかなり大型になる人気種。みかんの木、タブ、シイ、アカメガシワの樹液に集まる。野外では50mm以下が多く、65mm超えるとかなり大きい。目指せ70mm UP。",
     "photos": [
       "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg",
-      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000002_20250821_20.jpg"
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000002_20250821_20.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250615_21.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250812_15.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250822_01.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250901_00.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260607_20.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260706_00.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260717_20.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000004_20250812_15.jpg",
+      "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000005_20260607_20.jpg"
+    ]
+  },
+  {
+    "id": "amami-ko-kuwagata",
+    "name": "amami-ko-kuwagata",
+    "category": "kuwagata",
+    "category_name": "クワガタ",
+    "months": [
+      7,
+      8
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
+      "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250813_10.jpg",
+      "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250814_01.jpg",
+      "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_21.jpg",
+      "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_22.jpg",
+      "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260720_22.jpg",
+      "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260801_01.jpg"
+    ]
+  },
+  {
+    "id": "amami-marubane-kuwagata",
+    "name": "アマミマルバネクワガタ",
+    "category": "kuwagata",
+    "category_name": "クワガタ",
+    "months": [
+      9
+    ],
+    "description": "クワガタムシ科マルバネクワガタ属 *Neolucanus protogenetivus*\n\n発生時期9月から10月頃、スダジイの巨木が密集する深い森の中で観察できる。奄美大島（付属島含む）5市町村・徳之島3町の希少野生動植物保護条例により採集禁止。密猟防止のため山中にカメラが仕掛けられ、シーズン時には昆虫パトロールが見回っている。※写真を撮るだけなら問題ないが、許可が必要な場所に入る場合はしっかり申請すること。",
+    "photos": [
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250906_21.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250907_03.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250914_21.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250915_09.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250918_23.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250919_22.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250920_01.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000002_20250906_21.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000003_20250914_21.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000004_20250915_09.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000005_20250920_01.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg"
+    ]
+  },
+  {
+    "id": "amami-miyama-kuwagata",
+    "name": "amami-miyama-kuwagata",
+    "category": "kuwagata",
+    "category_name": "クワガタ",
+    "months": [
+      8,
+      9
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_02.jpg",
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250902_01.jpg",
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250905_23.jpg",
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20260823_22.jpg",
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000002_20250827_02.jpg",
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000003_20250827_02.jpg",
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000004_20250827_02.jpg",
+      "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000005_20250902_01.jpg"
     ]
   },
   {
@@ -435,6 +696,7 @@
     "category": "kuwagata",
     "category_name": "クワガタ",
     "months": [
+      4,
       5,
       6
     ],
@@ -442,7 +704,10 @@
     "photos": [
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000002_20250521_22.jpg",
-      "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000003_20250620_22.jpg"
+      "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000003_20250620_22.jpg",
+      "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260422_23.jpg",
+      "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260427_22.jpg",
+      "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg"
     ]
   },
   {
@@ -453,7 +718,8 @@
     "months": [
       6,
       7,
-      8
+      8,
+      9
     ],
     "description": "クワガタムシ科ノコギリクワガタ属の奄美亜種 *Prosopocoilus dissimilis*\n\n発生時期6月中旬から9月上旬。日本のノコギリクワガタの中では奄美大島産のものが特に大型で、大顎が長く太く立派。みかんの木、アカメガシワ、タブ、シイ、熟したアダンの実やバナナトラップ、街灯にもよく飛来する。60mm前後が多く、75mmを超えると大きい。目指せ80mm。",
     "photos": [
@@ -461,7 +727,6 @@
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000002_20250622_23.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000003_20250622_23.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000004_20250622_23.jpg",
-      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000005_20250627_21.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000006_20250628_22.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000007_20250630_21.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000008_20250630_21.jpg",
@@ -470,7 +735,13 @@
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000011_20250704_21.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000012_20250704_21.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000013_20250720_22.jpg",
-      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000014_20250821_20.jpg"
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000014_20250821_20.jpg",
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250624_23.jpg",
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250629_21.jpg",
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250813_10.jpg",
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260706_00.jpg",
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260712_21.jpg",
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg"
     ]
   },
   {
@@ -480,7 +751,8 @@
     "category_name": "クワガタ",
     "months": [
       6,
-      7
+      7,
+      8
     ],
     "description": "クワガタムシ科シカクワガタ属 *Rhaetulus recticrnis*\n\n5月から9月頃活動、8月頃が一番よく見られる。条例により採集禁止。比較的標高が高い地域の方が可能性は高い。スダジイやみかんの木の細枝についていることが多い。大型個体は大あごがシカのように強く湾曲する。コクワガタやノコギリクワガタの小型個体と間違えて持ち帰らないよう注意(自分で種類を判別できない個体は持ち帰らない)。",
     "photos": [
@@ -490,10 +762,32 @@
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000004_20250704_21.jpg",
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000005_20250720_22.jpg",
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000006_20250720_23.jpg",
-      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000007_20250720_23.jpg",
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000008_20250728_21.jpg",
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000009_20250728_21.jpg",
-      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000010_20250728_21.jpg"
+      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000010_20250728_21.jpg",
+      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250728_21.jpg",
+      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250813_10.jpg",
+      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260703_00.jpg",
+      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260706_00.jpg",
+      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260712_21.jpg",
+      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260713_22.jpg",
+      "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000012_20250728_21.jpg"
+    ]
+  },
+  {
+    "id": "ruisu-tsuno-hyotan-kuwagata",
+    "name": "ルイスツノヒョウタンクワガタ",
+    "category": "kuwagata",
+    "category_name": "クワガタ",
+    "months": [
+      8,
+      9
+    ],
+    "description": "クワガタムシ科チビクワガタ亜科ツノヒョウタンクワガタ属 *Nigidius lewisi*\n\n全身つやがあり独特の大あごを持ち、一年中朽木の中で過ごす。カシ・シイ類の倒木、落ち葉の下から通年見つかる。雌雄判別が難しい。奄美では局所的に分布し、ほとんど樹液に来ないので見つけるのは難しい。",
+    "photos": [
+      "images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
+      "images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250907_03.jpg",
+      "images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20260823_22.jpg"
     ]
   },
   {
@@ -504,14 +798,15 @@
     "months": [
       6,
       7,
+      8,
+      9,
+      10,
       12
     ],
     "description": "クワガタムシ科オオクワガタ属ヒラタクワガタ亜属 *Dorcus metacostatus*\n\n発生時期4月下旬から10月頃、ピークは7月。上翅に明確なスジが8本ある珍しい日本固有種で奄美諸島にしか生息していない。みかんの木やタブ、アカメガシワ、シイ、バナナトラップや街灯にもよく飛来する。60mmを超えると大きい、目指せ70mm UP。",
     "photos": [
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000002_20250624_23.jpg",
-      "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000003_20250624_23.jpg",
-      "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000004_20250625_22.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000005_20250625_22.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000006_20250630_23.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000007_20250702_21.jpg",
@@ -519,7 +814,11 @@
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000009_20250704_21.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000010_20250704_21.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000011_20250704_21.jpg",
-      "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000012_20250704_21.jpg"
+      "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000012_20250704_21.jpg",
+      "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250625_22.jpg",
+      "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250813_10.jpg",
+      "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250928_02.jpg",
+      "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20251002_00.jpg"
     ]
   },
   {
@@ -547,23 +846,36 @@
       1,
       2,
       3,
+      4,
       12
     ],
     "description": "",
     "photos": [
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000001_20250119_20.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000001_20250123_22.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000002_20250123_22.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000003_20250123_22.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000003_20250201_22.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000004_20250201_22.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000004_20250201_23.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000005_20250201_23.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000005_20260205_21.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000006_20260205_21.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000007_20260205_21.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000007_20260205_22.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000008_20260205_22.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000008_20260221_22.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000009_20260221_22.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000009_20260225_20.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000010_20260225_20.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000010_20260329_22.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000011_20241211_21.jpg",
       "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000011_20241212_20.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000012_20250119_20.jpg"
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000011_20260329_22.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000012_20241211_21.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000012_20250119_20.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000013_20241212_20.jpg",
+      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000014_20260415_22.jpg"
     ]
   },
   {

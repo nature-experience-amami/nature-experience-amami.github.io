@@ -274,7 +274,7 @@ footer{
 
   <section class="creature-hero">
     <div class="hero-photo">
-      <div class="placeholder">写真準備中</div>
+      <img src="../../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg" alt="奄美大島のハロウェルアマガエル">
     </div>
     <div class="hero-info">
       <p class="category">KAERU / カエル</p>
@@ -293,7 +293,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">奄美の森で出会うハロウェルアマガエル</h2>
-    <div class="gallery-empty">写真は準備中です。生き物の情報はご覧いただけます。</div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_21.jpg" alt="ハロウェルアマガエル"></figure><figure><img class="gallery-photo" src="../../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_22.jpg" alt="ハロウェルアマガエル"></figure><figure><img class="gallery-photo" src="../../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250510_00.jpg" alt="ハロウェルアマガエル"></figure></div>
   </section>
 
   <div class="content">
@@ -348,7 +348,7 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+  var heroPhotos = ["images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_21.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_22.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250510_00.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250516_22.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250517_23.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250529_22.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260303_13.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260330_21.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000002_20250510_00.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000003_20250516_22.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000004_20250516_22.jpg", "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000005_20250516_22.jpg"];var heroImage = document.querySelector(".hero-photo img");heroImage.src = "../../" + heroPhotos[Math.floor(Math.random() * heroPhotos.length)];
 })();
 </script>
 
