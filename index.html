@@ -183,13 +183,13 @@
 
   @media (max-width:760px){
     .hero{
-      min-height:0; display:block; padding-top:75vw;
+      min-height:0; display:block; padding-top:calc(75vw + 1.5rem);
       background:var(--night);
     }
-    .hero-photo-link{ inset:4.2rem 0 auto; height:75vw; }
+    .hero-photo-link{ inset:5.7rem 0 auto; height:75vw; }
     .hero-photo{ height:100%; }
     .hero::after{
-      inset:4.2rem 0 auto; height:75vw;
+      inset:5.7rem 0 auto; height:75vw;
       background:linear-gradient(180deg, transparent 20%, rgba(10,22,19,.58) 100%);
     }
     .hero-content{
