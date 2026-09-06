@@ -291,6 +291,12 @@ def render(item, creatures, generated_keys):
         f'<h2>この生き物に興味がある方へ</h2><div class="related-grid">{cards}</div></section>'
         if cards else ""
     )
+    category_page = ROOT / "content" / "category-pages" / f'{item["category"]}.md'
+    category_link = (
+        f'../../generated-categories/{item["category"]}.html'
+        if category_page.exists()
+        else f'../../{item["category"]}.html'
+    )
 
     return TEMPLATE.read_text(encoding="utf-8").format(
         title=escape(item["name"]),
@@ -306,7 +312,7 @@ def render(item, creatures, generated_keys):
         safety_html=safety_html,
         safety_class=safety_class,
         related=related_html,
-        category_link=f"../../{item['category']}.html",
+        category_link=category_link,
         photo_script=photo_script,
     )
 
