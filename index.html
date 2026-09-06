@@ -125,6 +125,9 @@
     font-family:'Shippori Mincho', serif; font-size:clamp(1.7rem, 4vw, 2.4rem);
     line-height:1.5; letter-spacing:.03em; margin-bottom:1.6rem;
   }
+  .creature-guide .guide-links{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:.8rem;
+  }
   .creature-guide .guide-link{
     display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
     padding:.95rem 2rem; background:var(--amber); color:var(--bark);
@@ -260,10 +263,16 @@
   <div class="inner">
     <p class="label">CREATURE GUIDE</p>
     <h2>奄美の生き物を知る</h2>
-    <a class="guide-link" href="generated-categories/hebi.html">
-      ヘビを見る
-      <span aria-hidden="true">→</span>
-    </a>
+    <div class="guide-links">
+      <a class="guide-link" href="generated-categories/hebi.html">
+        ヘビを見る
+        <span aria-hidden="true">→</span>
+      </a>
+      <a class="guide-link" href="generated-categories/kaeru.html">
+        カエルを見る
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
   </div>
 </section>
 
