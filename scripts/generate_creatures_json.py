@@ -29,6 +29,8 @@ MARKDOWN_ID_ALIASES = {
     ("kaeru", "amami-hanasaki-gaeru"): "hanasaki-gaeru",
     ("kaeru", "amami-ishikawa-gaeru"): "ishikawa-gaeru",
     ("kuwagata", "amami-marubane-kuwagata"): "marubane-kuwagata",
+    ("kuwagata", "amami-ko-kuwagata"): "ko-kuwagata",
+    ("kuwagata", "amami-miyama-kuwagata"): "miyama-kuwagata",
     ("kuwagata", "amami-nebuto-kuwagata"): "nebuto-kuwagata",
     ("kuwagata", "amami-nokogiri-kuwagata"): "nokogiri-kuwagata",
     ("kuwagata", "amami-shika-kuwagata"): "shika-kuwagata",

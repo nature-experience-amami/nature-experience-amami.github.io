@@ -626,14 +626,14 @@
   },
   {
     "id": "amami-ko-kuwagata",
-    "name": "amami-ko-kuwagata",
+    "name": "アマミコクワガタ",
     "category": "kuwagata",
     "category_name": "クワガタ",
     "months": [
       7,
       8
     ],
-    "description": "",
+    "description": "クワガタムシ科オオクワガタ属コクワガタ亜属 *Dorcus amamianus*\n\nコクワガタの名が付くがヒメオオクワガタに似ている点が多い。大あごは短く強く湾曲し、足やフセツは長い。発生時期5月下旬から10月。本土のコクワガタほど個体数は多くない。",
     "photos": [
       "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
       "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250813_10.jpg",
@@ -670,14 +670,14 @@
   },
   {
     "id": "amami-miyama-kuwagata",
-    "name": "amami-miyama-kuwagata",
+    "name": "アマミミヤマクワガタ",
     "category": "kuwagata",
     "category_name": "クワガタ",
     "months": [
       8,
       9
     ],
-    "description": "",
+    "description": "クワガタムシ科ミヤマクワガタ属 *Lucanus ferriei*\n\n発生時期7月から9月頃。奄美大島のみに分布する希少種。条例により採集禁止。標高300m以上の原生林に生息。夜行性で木の上部でメスを待つオスが見られるが目視では確認しづらい。しばしば電柱の上部で見かけることも。樹液や果実トラップ、ライトにも来るが採集は禁止。",
     "photos": [
       "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
       "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_02.jpg",
