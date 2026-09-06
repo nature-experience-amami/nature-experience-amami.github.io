@@ -76,14 +76,14 @@
     opacity:0; animation:rise 1s ease forwards;
   }
   .brand-bar .mark{
-    font-family:'Shippori Mincho', serif; font-weight:700; font-size:clamp(1.1rem, 2vw, 1.5rem);
-    letter-spacing:.14em; color:var(--moonlight); display:flex; align-items:center; gap:.55rem;
+    font-family:'Shippori Mincho', serif; font-weight:700; font-size:clamp(1.8rem, 4.2vw, 3.08rem);
+    letter-spacing:.03em; color:var(--moonlight); display:flex; align-items:center; gap:.55rem;
   }
   .brand-bar .mark::before{
     content:""; width:7px; height:7px; border-radius:50%; background:var(--amber);
     box-shadow:0 0 10px 2px rgba(232,163,61,.7); flex-shrink:0;
   }
-  .brand-bar .mark .dash{ color:var(--amber); font-weight:400; }
+  .brand-bar .mark .dash{ color:inherit; font-weight:400; }
 
   section{ padding:5.5rem 6vw; }
   .field-note{ background:var(--canopy); }
@@ -165,6 +165,10 @@
   footer{
     text-align:center; padding:2.5rem 6vw; font-size:.8rem;
     color:rgba(234,242,233,.5); border-top:1px solid rgba(234,242,233,.1);
+  }
+
+  @media (max-width:760px){
+    .brand-bar .mark{ font-size:1.7rem; }
   }
 
   @media (prefers-reduced-motion:reduce){
