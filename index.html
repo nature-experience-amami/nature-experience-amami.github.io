@@ -72,7 +72,7 @@
 
   .brand-bar{
     position:absolute; top:0; left:0; right:0; z-index:6;
-    display:flex; align-items:center; padding:2rem 6vw 0;
+    display:flex; align-items:center; justify-content:space-between; gap:2rem; padding:2rem 6vw 0;
     opacity:0; animation:rise 1s ease forwards;
   }
   .brand-bar .mark{
@@ -84,6 +84,12 @@
     box-shadow:0 0 10px 2px rgba(232,163,61,.7); flex-shrink:0;
   }
   .brand-bar .mark .dash{ color:inherit; font-weight:400; }
+  .top-category-nav{ display:flex; gap:1.4rem; }
+  .top-category-nav a{
+    color:rgba(234,242,233,.78); font-family:'Space Mono', monospace; font-size:.75rem;
+    letter-spacing:.08em; text-decoration:none; white-space:nowrap;
+  }
+  .top-category-nav a:hover{ color:var(--amber); }
 
   section{ padding:5.5rem 6vw; }
   .field-note{ background:var(--canopy); }
@@ -176,7 +182,13 @@
   }
 
   @media (max-width:760px){
+    .brand-bar{ align-items:flex-start; flex-wrap:wrap; gap:.7rem; padding-top:1.2rem; }
     .brand-bar .mark{ font-size:1.7rem; }
+    .top-category-nav{
+      width:100%; gap:1.2rem; overflow-x:auto; padding-bottom:.25rem;
+      -webkit-overflow-scrolling:touch;
+    }
+    .top-category-nav a{ flex:0 0 auto; font-size:.72rem; }
   }
 
   @media (prefers-reduced-motion:reduce){
@@ -194,6 +206,11 @@
 
   <div class="brand-bar">
     <span class="mark">Nature <span class="dash">–</span> Experience</span>
+    <nav class="top-category-nav" aria-label="生き物カテゴリー">
+      <a href="generated-categories/hebi.html">ヘビ一覧</a>
+      <a href="generated-categories/kaeru.html">カエル一覧</a>
+      <a href="generated-categories/kuwagata.html">クワガタ一覧</a>
+    </nav>
   </div>
 
   <div class="hero-content">

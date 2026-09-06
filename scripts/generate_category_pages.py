@@ -139,6 +139,20 @@ def category_buttons(category, available_categories):
     return "".join(buttons)
 
 
+def header_category_navigation(category, available_categories):
+    categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
+    links = []
+    for category_id, name in categories.items():
+        if category_id not in available_categories:
+            continue
+        escaped_name = html.escape(name)
+        if category_id == category:
+            links.append(f'<span class="category-nav-current">{escaped_name}一覧</span>')
+        else:
+            links.append(f'<a href="{category_id}.html">{escaped_name}一覧</a>')
+    return "".join(links)
+
+
 def main():
     generated_creature_keys = {
         (path.parent.name, path.stem)
@@ -168,6 +182,7 @@ def main():
             list_lead=html.escape(metadata["list_lead"]),
             cards="".join(card_html(category, creature, generated_creature_keys) for creature in creatures),
             category_buttons=category_buttons(category, available_categories),
+            header_category_navigation=header_category_navigation(category, available_categories),
         )
         OUTPUT_DIR.mkdir(exist_ok=True)
         output_path = OUTPUT_DIR / f"{category}.html"
