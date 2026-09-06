@@ -241,7 +241,18 @@ def render_safety(danger_text, prohibited):
     return "".join(parts), (" warning" if prohibited else "")
 
 
-def render(item, creatures, generated_keys):
+def category_navigation(current_category, categories):
+    links = []
+    for category_id, name in categories.items():
+        category_page = ROOT / "content" / "category-pages" / f"{category_id}.md"
+        if category_id != current_category and category_page.exists():
+            links.append(
+                f'<a href="../../generated-categories/{category_id}.html">{escape(name)}一覧</a>'
+            )
+    return "".join(links)
+
+
+def render(item, creatures, generated_keys, categories):
     active = set(item["months"])
     ticks = "".join(
         f'<span class="season-tick{" active" if month in active else ""}"></span>'
@@ -291,13 +302,6 @@ def render(item, creatures, generated_keys):
         f'<h2>この生き物に興味がある方へ</h2><div class="related-grid">{cards}</div></section>'
         if cards else ""
     )
-    category_page = ROOT / "content" / "category-pages" / f'{item["category"]}.md'
-    category_link = (
-        f'../../generated-categories/{item["category"]}.html'
-        if category_page.exists()
-        else f'../../{item["category"]}.html'
-    )
-
     return TEMPLATE.read_text(encoding="utf-8").format(
         title=escape(item["name"]),
         category=escape(item["category_name"]),
@@ -312,7 +316,7 @@ def render(item, creatures, generated_keys):
         safety_html=safety_html,
         safety_class=safety_class,
         related=related_html,
-        category_link=category_link,
+        category_navigation=category_navigation(item["category"], categories),
         photo_script=photo_script,
     )
 
@@ -333,7 +337,7 @@ def main():
             continue
         output = OUTPUT_DIR / category / f"{creature_id}.html"
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(render(item, creatures, generated_keys), encoding="utf-8")
+        output.write_text(render(item, creatures, generated_keys, categories), encoding="utf-8")
         print(output.relative_to(ROOT))
 
 
