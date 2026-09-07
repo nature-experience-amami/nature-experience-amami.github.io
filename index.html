@@ -7,7 +7,7 @@
 <meta name="description" content="奄美大島の夜の森でアマミノクロウサギ、ハブ、奄美固有のカエルたちを観察するナイトツアー。名瀬近辺ホテル送迎あり、おひとり様歓迎。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
 <style>
   :root{
     --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
@@ -187,18 +187,17 @@
     color:rgba(234,242,233,.5); border-top:1px solid rgba(234,242,233,.1);
   }
 
-  /* ===== スマホ向けレスポンシブ ===== */
-  @media (max-width:760px){
+  /* ===== スマホ縦画面（縦持ち）向けレスポンシブ ===== */
+  @media (max-width:760px) and (orientation:portrait){
     .hero{
       height: auto;
       min-height: 0;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding-top: 5.8rem; /* メニュー下の余白を広げて写真を少し下に配置 */
+      padding-top: 5.8rem;
     }
 
-    /* 写真と種名を表示する親エリア */
     .hero-photo-link{
       position: relative;
       width: 100%;
@@ -217,7 +216,6 @@
       object-fit: cover;
     }
 
-    /* 生き物の名前（写真の右下にバッチリ表示） */
     .hero-photo-name{
       position: absolute;
       right: 0.8rem;
@@ -262,6 +260,7 @@
     }
   }
 
+  /* ===== PC向け ===== */
   @media (min-width:901px){
     .hero{
       --desktop-photo-top:7.5rem;
@@ -287,39 +286,105 @@
     }
   }
 
+  /* ===== スマホ横画面（横持ち）向けレスポンシブ ===== */
   @media (max-width:900px) and (orientation:landscape){
     .hero{
-      --landscape-photo-top:5.5rem;
-      --landscape-photo-height:min(calc(100svh - var(--landscape-photo-top) - 2.25rem), 56.25vw);
-      --landscape-photo-width:calc(var(--landscape-photo-height) / 9 * 16);
-      height:100svh; min-height:0; display:flex; padding-top:0;
+      height: 100svh;
+      min-height: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding-top: 0;
+      position: relative;
+      background: #000;
     }
-    .hero-photo-link, .hero::after{
-      top:var(--landscape-photo-top); bottom:auto;
-      left:50%; transform:translateX(-50%);
-      width:var(--landscape-photo-width);
-      height:var(--landscape-photo-height);
-      aspect-ratio:16/9;
+    
+    /* 写真を縦いっぱいに配置＆画面中央 */
+    .hero-photo-link{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100svh;
+      display: block;
     }
-    .hero-content{
-      position:absolute; left:0; right:0;
-      bottom:max(1rem, calc(100svh - var(--landscape-photo-top) - var(--landscape-photo-height) + 1rem));
-      padding:0 4vw 1rem; max-width:720px; background:none;
-    }
-    .hero-photo-name{
-      top:calc(var(--landscape-photo-top) + var(--landscape-photo-height) + .45rem);
-      right:calc(50% - var(--landscape-photo-width) / 2);
-    }
-    .hero h1{ font-size:clamp(1.65rem, 4vw, 2.4rem); margin-bottom:.6rem; }
-    .hero p{ font-size:.9rem; margin-bottom:.9rem; }
-    .brand-bar{ padding:1rem 4vw 0; }
-    .top-category-nav{ width:auto; overflow:visible; padding-bottom:0; }
-  }
 
-  @media (max-width:900px) and (max-height:430px) and (orientation:landscape){
-    .eyebrow{ margin-bottom:.4rem; }
-    .hero p{ display:none; }
-    .btn{ padding:.65rem 1.2rem; }
+    .hero-photo{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 文字エリア：左下にコンパクトに配置 */
+    .hero-content{
+      position: absolute;
+      left: 4vw;
+      bottom: 2vh;
+      z-index: 6;
+      padding: 0;
+      max-width: 60vw;
+      background: none;
+    }
+
+    /* アイブロウ（英字ラベル）を小さく */
+    .eyebrow{
+      font-size: .55rem;
+      padding: .15rem .4rem;
+      margin-bottom: .4rem;
+    }
+
+    /* 見出しテキストを現在の約半分の大きさに縮小 */
+    .hero h1{
+      font-size: clamp(0.95rem, 3.2vw, 1.25rem);
+      margin-bottom: .5rem;
+      line-height: 1.2;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    }
+
+    /* 説明文は非表示にしてスッキリ配置 */
+    .hero p{
+      display: none;
+    }
+
+    /* ボタンを現在の約半分のコンパクトサイズに縮小 */
+    .btn{
+      padding: .4rem .8rem;
+      font-size: .7rem;
+      gap: .3rem;
+    }
+
+    /* 種名を右下に配置 */
+    .hero-photo-name{
+      position: absolute;
+      right: 4vw;
+      bottom: 2vh;
+      top: auto;
+      z-index: 7;
+      font-size: .7rem;
+      background: rgba(10, 22, 19, 0.8);
+      padding: .2rem .5rem;
+      border-radius: 3px;
+    }
+
+    .brand-bar{
+      padding: .8rem 4vw 0;
+      z-index: 8;
+    }
+    .brand-bar .mark{ font-size: 1.3rem; }
+    .top-category-nav{ width:auto; overflow:visible; padding-bottom:0; gap: .8rem; }
+    .top-category-nav a{ font-size: .65rem; }
+
+    /* 写真の上にグラデーションを薄く敷いて文字の視認性を確保 */
+    .hero::after{
+      display: block;
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, transparent 40%, rgba(10,22,19,0.7) 100%);
+    }
   }
 
   @media (prefers-reduced-motion:reduce){
