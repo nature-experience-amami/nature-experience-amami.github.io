@@ -7,7 +7,7 @@
 <meta name="description" content="奄美大島の夜の森でアマミノクロウサギ、ハブ、奄美固有のカエルたちを観察するナイトツアー。名瀬近辺ホテル送迎あり、おひとり様歓迎。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
 <style>
   :root{
     --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
@@ -195,15 +195,18 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding-top: 5rem;
+      padding-top: 5.8rem; /* メニュー下の余白を広げて写真を少し下に配置 */
     }
 
+    /* 写真と種名を表示する親エリア */
     .hero-photo-link{
       position: relative;
       width: 100%;
       height: auto;
       aspect-ratio: 4 / 3;
       order: 1;
+      display: block;
+      overflow: hidden;
     }
 
     .hero-photo{
@@ -214,15 +217,17 @@
       object-fit: cover;
     }
 
+    /* 生き物の名前（写真の右下にバッチリ表示） */
     .hero-photo-name{
       position: absolute;
-      right: 4vw;
+      right: 0.8rem;
       bottom: 0.8rem;
-      z-index: 7;
-      background: rgba(10, 22, 19, 0.75);
-      padding: 0.25rem 0.6rem;
-      border-radius: 3px;
+      z-index: 10;
+      background: rgba(10, 22, 19, 0.82);
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
       backdrop-filter: blur(4px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
 
     .brand-bar{
@@ -328,8 +333,8 @@
 <header class="hero">
   <a id="hero-photo-link" class="hero-photo-link" href="#tour" aria-label="ナイトツアーの詳細を見る">
     <img id="hero-photo" class="hero-photo" alt="奄美大島の夜の森">
+    <span id="hero-photo-name" class="hero-photo-name" aria-live="polite"></span>
   </a>
-  <span id="hero-photo-name" class="hero-photo-name" aria-live="polite"></span>
 
   <div class="brand-bar">
     <span class="mark">Nature <span class="dash">–</span> Experience</span>
