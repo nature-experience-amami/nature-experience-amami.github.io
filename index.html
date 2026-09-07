@@ -187,7 +187,7 @@
     color:rgba(234,242,233,.5); border-top:1px solid rgba(234,242,233,.1);
   }
 
-  /* ===== スマホ向けレスポンシブ（写真重ね配置調整） ===== */
+  /* ===== スマホ向けレスポンシブ ===== */
   @media (max-width:760px){
     .hero{
       height:auto; min-height:0; display:block; padding-top:calc(75vw + 1.5rem);
@@ -200,34 +200,29 @@
     .hero-photo-name{
       top: calc(5.7rem + 75vw - 2.2rem);
       right: 4vw;
-      background: rgba(10, 22, 19, 0.7);
+      background: rgba(10, 22, 19, 0.75);
       padding: 0.25rem 0.6rem;
       border-radius: 3px;
       backdrop-filter: blur(4px);
     }
 
-    /* 上下グラデーションで文字の見やすさを向上 */
     .hero::after{
       inset:5.7rem 0 auto; height:75vw;
-      background:linear-gradient(180deg, rgba(10,22,19,.4) 0%, transparent 40%, rgba(10,22,19,.7) 100%);
+      background:linear-gradient(180deg, transparent 20%, rgba(10,22,19,.58) 100%);
     }
 
-    /* 写真の左上位置に AMAMI OSHIMA... ラベルを重ね配置 */
+    /* ラベルを通常の流れに戻し、見出しの上に自然に配置 */
     .eyebrow{
-      position: absolute;
-      top: 6.7rem;
-      left: 5vw;
-      z-index: 6;
-      background: rgba(10, 22, 19, 0.65);
-      backdrop-filter: blur(4px);
-      margin-bottom: 0;
+      position: static;
+      display: inline-block;
+      margin-bottom: 0.8rem;
     }
 
     .hero-content{
       padding:1.5rem 6vw 3rem; max-width:none;
       background:var(--night);
     }
-    .hero h1{ font-size:clamp(2rem, 9vw, 2.6rem); margin-top: 0.5rem; }
+    .hero h1{ font-size:clamp(2rem, 9vw, 2.6rem); margin-top: 0; }
     .hero p{ margin-bottom:1.6rem; }
     .brand-bar{ align-items:flex-start; flex-wrap:wrap; gap:.7rem; padding-top:1.2rem; }
     .brand-bar .mark{ font-size:1.7rem; }
