@@ -31,6 +31,11 @@
   }
   .hero-photo.is-visible{ opacity:1; }
   .hero-photo.is-changing{ opacity:.2; }
+  .hero-photo-name{
+    position:absolute; z-index:7; color:var(--moonlight);
+    font-family:'Space Mono', monospace; font-size:clamp(.7rem, 1.1vw, .85rem);
+    letter-spacing:.06em; line-height:1.4; white-space:nowrap;
+  }
 
   .hero::after{
     content:""; position:absolute; inset:0; z-index:4; pointer-events:none;
@@ -188,6 +193,7 @@
     }
     .hero-photo-link{ inset:5.7rem 0 auto; height:75vw; }
     .hero-photo{ height:100%; }
+    .hero-photo-name{ top:calc(5.7rem + 75vw + .45rem); right:5vw; }
     .hero::after{
       inset:5.7rem 0 auto; height:75vw;
       background:linear-gradient(180deg, transparent 20%, rgba(10,22,19,.58) 100%);
@@ -210,7 +216,8 @@
   @media (min-width:901px){
     .hero{
       --desktop-photo-top:7.5rem;
-      --desktop-photo-height:min(calc(100svh - var(--desktop-photo-top)), 620px, 56.25vw);
+      --desktop-photo-height:min(calc(100svh - var(--desktop-photo-top) - 2.5rem), 620px, 56.25vw);
+      --desktop-photo-width:calc(var(--desktop-photo-height) / 9 * 16);
       height:100svh;
     }
     .hero-content{
@@ -223,14 +230,37 @@
       left:50%; transform:translateX(-50%);
       height:var(--desktop-photo-height);
       aspect-ratio:16/9;
-      width:calc(var(--desktop-photo-height) / 9 * 16);
+      width:var(--desktop-photo-width);
+    }
+    .hero-photo-name{
+      top:calc(var(--desktop-photo-top) + var(--desktop-photo-height) + .6rem);
+      right:calc(50% - var(--desktop-photo-width) / 2);
     }
   }
 
   @media (max-width:900px) and (orientation:landscape){
-    .hero{ height:100svh; min-height:0; display:flex; padding-top:0; }
-    .hero-photo-link, .hero::after{ inset:5.5rem 0 0; height:auto; }
-    .hero-content{ padding:0 4vw 1rem; max-width:720px; background:none; }
+    .hero{
+      --landscape-photo-top:5.5rem;
+      --landscape-photo-height:min(calc(100svh - var(--landscape-photo-top) - 2.25rem), 56.25vw);
+      --landscape-photo-width:calc(var(--landscape-photo-height) / 9 * 16);
+      height:100svh; min-height:0; display:flex; padding-top:0;
+    }
+    .hero-photo-link, .hero::after{
+      top:var(--landscape-photo-top); bottom:auto;
+      left:50%; transform:translateX(-50%);
+      width:var(--landscape-photo-width);
+      height:var(--landscape-photo-height);
+      aspect-ratio:16/9;
+    }
+    .hero-content{
+      position:absolute; left:0; right:0;
+      bottom:max(1rem, calc(100svh - var(--landscape-photo-top) - var(--landscape-photo-height) + 1rem));
+      padding:0 4vw 1rem; max-width:720px; background:none;
+    }
+    .hero-photo-name{
+      top:calc(var(--landscape-photo-top) + var(--landscape-photo-height) + .45rem);
+      right:calc(50% - var(--landscape-photo-width) / 2);
+    }
     .hero h1{ font-size:clamp(1.65rem, 4vw, 2.4rem); margin-bottom:.6rem; }
     .hero p{ font-size:.9rem; margin-bottom:.9rem; }
     .brand-bar{ padding:1rem 4vw 0; }
@@ -255,6 +285,7 @@
   <a id="hero-photo-link" class="hero-photo-link" href="#tour" aria-label="ナイトツアーの詳細を見る">
     <img id="hero-photo" class="hero-photo" alt="奄美大島の夜の森">
   </a>
+  <span id="hero-photo-name" class="hero-photo-name" aria-live="polite"></span>
 
   <div class="brand-bar">
     <span class="mark">Nature <span class="dash">–</span> Experience</span>
@@ -385,6 +416,7 @@
   function initHeroSlideshow(creatures) {
     const heroPhoto = document.getElementById('hero-photo');
     const heroLink = document.getElementById('hero-photo-link');
+    const heroPhotoName = document.getElementById('hero-photo-name');
     const candidates = creatures.filter(function (creature) {
       return Array.isArray(creature.photos) && creature.photos.length;
     });
@@ -396,6 +428,7 @@
       image.onload = function () {
         heroPhoto.src = photoData.photo;
         heroPhoto.alt = '奄美大島の' + photoData.creature.name;
+        heroPhotoName.textContent = photoData.creature.name;
         heroPhoto.classList.add('is-visible');
         currentPhoto = photoData.photo;
         if (onLoaded) onLoaded();
