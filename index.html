@@ -148,7 +148,7 @@
   }
   .creature-guide .guide-link:hover{ background:#f4b95a; gap:.8rem; }
 
-  /* ===== AI ASK(新規追加分) ===== */
+  /* ===== AI ASK ===== */
   .ai-ask{ background:var(--night); }
   .ask-box{ display:flex; flex-wrap:wrap; gap:.8rem; margin-bottom:1.5rem; }
   .ask-disclaimer{
@@ -187,6 +187,7 @@
     color:rgba(234,242,233,.5); border-top:1px solid rgba(234,242,233,.1);
   }
 
+  /* ===== スマホ向けレスポンシブ（写真重ね配置調整） ===== */
   @media (max-width:760px){
     .hero{
       height:auto; min-height:0; display:block; padding-top:calc(75vw + 1.5rem);
@@ -194,16 +195,39 @@
     }
     .hero-photo-link{ inset:5.7rem 0 auto; height:75vw; }
     .hero-photo{ height:100%; }
-    .hero-photo-name{ top:calc(5.7rem + 75vw + .45rem); right:5vw; }
+
+    /* 写真の右下に生き物の名前を表示 */
+    .hero-photo-name{
+      top: calc(5.7rem + 75vw - 2.2rem);
+      right: 4vw;
+      background: rgba(10, 22, 19, 0.7);
+      padding: 0.25rem 0.6rem;
+      border-radius: 3px;
+      backdrop-filter: blur(4px);
+    }
+
+    /* 上下グラデーションで文字の見やすさを向上 */
     .hero::after{
       inset:5.7rem 0 auto; height:75vw;
-      background:linear-gradient(180deg, transparent 20%, rgba(10,22,19,.58) 100%);
+      background:linear-gradient(180deg, rgba(10,22,19,.4) 0%, transparent 40%, rgba(10,22,19,.7) 100%);
     }
+
+    /* 写真の左上位置に AMAMI OSHIMA... ラベルを重ね配置 */
+    .eyebrow{
+      position: absolute;
+      top: 6.7rem;
+      left: 5vw;
+      z-index: 6;
+      background: rgba(10, 22, 19, 0.65);
+      backdrop-filter: blur(4px);
+      margin-bottom: 0;
+    }
+
     .hero-content{
-      padding:2rem 6vw 3rem; max-width:none;
-      background:linear-gradient(180deg, transparent 0, transparent 4.2rem, var(--night) 4.2rem);
+      padding:1.5rem 6vw 3rem; max-width:none;
+      background:var(--night);
     }
-    .hero h1{ font-size:clamp(2rem, 9vw, 2.6rem); }
+    .hero h1{ font-size:clamp(2rem, 9vw, 2.6rem); margin-top: 0.5rem; }
     .hero p{ margin-bottom:1.6rem; }
     .brand-bar{ align-items:flex-start; flex-wrap:wrap; gap:.7rem; padding-top:1.2rem; }
     .brand-bar .mark{ font-size:1.7rem; }
@@ -312,7 +336,6 @@
   <div id="field-note-creatures" class="creature-grid"></div>
 </section>
 
-<!-- ===== AI ASK: 今回新規追加したセクション ===== -->
 <section class="ai-ask" aria-label="生き物についてAIに質問する">
   <p class="field-note label" style="color:var(--moss);">ASK THE GUIDE / AI</p>
   <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">気になる時期の生き物を聞いてみる</h2>
@@ -391,7 +414,6 @@
 
 <footer>&copy; 2026 Nature-Experience Amami. 画像の無断転載・複製・改変を禁じます。</footer>
 
-<!-- ===== AI ASK: 今回新規追加したスクリプト ===== -->
 <script>
   const WORKER_URL = "https://nature-experience-ai.aegusaegus.workers.dev/";
   const CREATURES_JSON = "data/creatures.json";
@@ -401,7 +423,7 @@
   document.getElementById('ask-input').addEventListener('keydown', function (e) {
     if (e.key === 'Enter') askGuide();
   });
-  // creatures.json を事前に読み込む
+
   (async function () {
     try {
       const response = await fetch(CREATURES_JSON + '?v=20260904', { cache: 'no-store' });
@@ -455,7 +477,6 @@
           ? photoData.creature.name + 'のページを見る'
           : 'ナイトツアーの詳細を見る'
       );
-
     }
 
     function choosePhoto() {
@@ -570,7 +591,7 @@
       });
       if (wrap.children.length) replyEl.appendChild(wrap);
     } catch (err) {
-      /* 写真が取得できなくても回答文はすでに表示済みなので何もしない */
+      /* 写真が取得できなくても回答文はすでに表示済み */
     }
   }
 </script>
