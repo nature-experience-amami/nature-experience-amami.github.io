@@ -599,6 +599,15 @@
     window.setInterval(showNextPhoto, 8000);
   }
 
+  function shuffleArray(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
   function renderFieldNote(creatures) {
     const month = new Date().getMonth() + 1;
     const monthEl = document.getElementById('field-note-month');
@@ -613,7 +622,7 @@
       gridEl.innerHTML = '<p>この月の観察データを準備中です。</p>';
       return;
     }
-    gridEl.innerHTML = matches.slice(0, 6).map(function (creature) {
+    gridEl.innerHTML = shuffleArray(matches).slice(0, 6).map(function (creature) {
       const href = creature.page_path || '#tour';
       const photo = creature.photos && creature.photos.length
         ? '<img src="' + creature.photos[Math.floor(Math.random() * creature.photos.length)] + '" alt="' + creature.name + '">'
