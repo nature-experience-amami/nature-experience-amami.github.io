@@ -220,6 +220,7 @@
       position: absolute;
       right: 0.8rem;
       bottom: 0.8rem;
+      top: auto;
       z-index: 10;
       background: rgba(10, 22, 19, 0.82);
       padding: 0.3rem 0.7rem;
@@ -260,7 +261,7 @@
     }
   }
 
-  /* ===== PC向け ===== */
+  /* ===== PC向け（修正箇所） ===== */
   @media (min-width:901px){
     .hero{
       --desktop-photo-top:7.5rem;
@@ -281,8 +282,15 @@
       width:var(--desktop-photo-width);
     }
     .hero-photo-name{
-      top:calc(var(--desktop-photo-top) + var(--desktop-photo-height) + .6rem);
-      right:calc(50% - var(--desktop-photo-width) / 2);
+      position: absolute;
+      bottom: calc(100svh - var(--desktop-photo-top) - var(--desktop-photo-height) + 1rem);
+      right: calc(50% - var(--desktop-photo-width) / 2 + 1rem);
+      top: auto;
+      z-index: 10;
+      background: rgba(10, 22, 19, 0.85);
+      padding: .4rem .8rem;
+      border-radius: 4px;
+      backdrop-filter: blur(4px);
     }
   }
 
@@ -299,7 +307,6 @@
       background: #000;
     }
     
-    /* 写真を縦いっぱいに配置＆画面中央 */
     .hero-photo-link{
       position: absolute;
       top: 0;
@@ -316,7 +323,6 @@
       object-fit: cover;
     }
 
-    /* 文字エリア：左下にコンパクトに配置 */
     .hero-content{
       position: absolute;
       left: 4vw;
@@ -327,14 +333,12 @@
       background: none;
     }
 
-    /* アイブロウ（英字ラベル）を小さく */
     .eyebrow{
       font-size: .55rem;
       padding: .15rem .4rem;
       margin-bottom: .4rem;
     }
 
-    /* 見出しテキストを現在の約半分の大きさに縮小 */
     .hero h1{
       font-size: clamp(0.95rem, 3.2vw, 1.25rem);
       margin-bottom: .5rem;
@@ -342,19 +346,16 @@
       text-shadow: 0 2px 6px rgba(0,0,0,0.8);
     }
 
-    /* 説明文は非表示にしてスッキリ配置 */
     .hero p{
       display: none;
     }
 
-    /* ボタンを現在の約半分のコンパクトサイズに縮小 */
     .btn{
       padding: .4rem .8rem;
       font-size: .7rem;
       gap: .3rem;
     }
 
-    /* 種名を右下に配置 */
     .hero-photo-name{
       position: absolute;
       right: 4vw;
@@ -375,7 +376,6 @@
     .top-category-nav{ width:auto; overflow:visible; padding-bottom:0; gap: .8rem; }
     .top-category-nav a{ font-size: .65rem; }
 
-    /* 写真の上にグラデーションを薄く敷いて文字の視認性を確保 */
     .hero::after{
       display: block;
       content: "";
