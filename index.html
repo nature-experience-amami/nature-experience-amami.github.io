@@ -208,7 +208,20 @@
   }
 
   @media (min-width:901px){
-    .hero-photo-link, .hero::after{ inset:7.5rem 0 0; }
+    .hero{
+      --desktop-photo-top:7.5rem;
+      --desktop-photo-height:min(calc(100svh - var(--desktop-photo-top)), 620px);
+      height:100svh;
+    }
+    .hero-content{
+      position:absolute; left:0; right:0;
+      bottom:max(2rem, calc(100svh - var(--desktop-photo-top) - var(--desktop-photo-height) + 2rem));
+      padding:0 6vw 2rem;
+    }
+    .hero-photo-link, .hero::after{
+      inset:var(--desktop-photo-top) 0 auto;
+      height:var(--desktop-photo-height);
+    }
   }
 
   @media (max-width:900px) and (orientation:landscape){
