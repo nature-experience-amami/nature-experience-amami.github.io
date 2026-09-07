@@ -189,41 +189,10 @@
 
   /* ===== スマホ向けレスポンシブ ===== */
   @media (max-width:760px){
-    .hero{
-      height:auto; min-height:0; display:block; padding-top:calc(75vw + 1.5rem);
-      background:var(--night);
-    }
-    .hero-photo-link{ inset:5.7rem 0 auto; height:75vw; }
-    .hero-photo{ height:100%; }
-
-    /* 写真の右下に生き物の名前を表示 */
-    .hero-photo-name{
-      top: calc(5.7rem + 75vw - 2.2rem);
-      right: 4vw;
-      background: rgba(10, 22, 19, 0.75);
-      padding: 0.25rem 0.6rem;
-      border-radius: 3px;
-      backdrop-filter: blur(4px);
-    }
-
-    .hero::after{
-      inset:5.7rem 0 auto; height:75vw;
-      background:linear-gradient(180deg, transparent 20%, rgba(10,22,19,.58) 100%);
-    }
-
-    /* ラベルを通常の流れに戻し、見出しの上に自然に配置 */
-    .eyebrow{
-      position: static;
-      display: inline-block;
-      margin-bottom: 0.8rem;
-    }
-
-    .hero-content{
-      padding:1.5rem 6vw 3rem; max-width:none;
-      background:var(--night);
-    }
-    .hero h1{ font-size:clamp(2rem, 9vw, 2.6rem); margin-top: 0; }
-    .hero p{ margin-bottom:1.6rem; }
+    .hero{ height:100svh; min-height:560px; }
+    .hero-content{ padding:0 6vw 6vh; }
+    .hero h1{ font-size:clamp(1.9rem, 8vw, 2.6rem); margin-bottom:1rem; }
+    .hero p{ font-size:.95rem; margin-bottom:1.6rem; }
     .brand-bar{ align-items:flex-start; flex-wrap:wrap; gap:.7rem; padding-top:1.2rem; }
     .brand-bar .mark{ font-size:1.7rem; }
     .top-category-nav{
@@ -231,6 +200,7 @@
       -webkit-overflow-scrolling:touch;
     }
     .top-category-nav a{ flex:0 0 auto; font-size:.72rem; }
+    .hero-photo-name{ right:6vw; bottom:2vh; }
   }
 
   @media (min-width:901px){
