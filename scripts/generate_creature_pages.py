@@ -2,6 +2,7 @@ import html
 import json
 import re
 from pathlib import Path
+from string import Template
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "creatures"
@@ -10,7 +11,6 @@ OUTPUT_DIR = ROOT / "generated-creatures"
 TEMPLATE = ROOT / "templates" / "creature.html"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
-# 写真フォルダ名がMarkdownのidと違う生き物の対応表（(カテゴリ, Markdownのid): 実際の写真フォルダ名）
 PHOTO_DIR_ALIASES = {
     ("hebi", "ryukyu-ao-hebi"): "ryuukyuu-aohebi",
     ("hebi", "takachiho-hebi"): "amami-takachiho-hebi",
@@ -24,8 +24,7 @@ PHOTO_DIR_ALIASES = {
     ("kuwagata", "ko-kuwagata"): "amami-ko-kuwagata",
 }
 
-# 生成対象。カテゴリ全種類を作りたい場合は all_creatures() の結果をそのまま使う。
-TARGETS = None  # None = 見つかった生き物すべて
+TARGETS = None
 
 COMMON_SAFETY_MESSAGE = (
     "奄美の生き物は、写真におさめて楽しみましょう。生き物によっては、法律や条例で捕獲・採集・"
@@ -64,7 +63,6 @@ def split_paragraphs(body):
 
 
 def render_latin_inline(paragraph):
-    # "*学名*" のイタリック表記だけ<em>に変換し、それ以外はエスケープする
     parts = re.split(r"\*(.+?)\*", paragraph)
     rendered = []
     for i, part in enumerate(parts):
@@ -195,7 +193,6 @@ def render_card(item, current, generated_keys):
 
 
 def danger_block_and_flag(category, danger_text, danger_level=None):
-    """危険度メーター(ヘビ)または保護・採集バッジ(それ以外)のHTMLを返す。"""
     text = (danger_text or "").strip()
     prohibited = "禁止" in text
 
@@ -283,14 +280,11 @@ def render(item, creatures, generated_keys, categories):
         hero = '<div class="placeholder">写真準備中</div>'
         gallery = '<div class="gallery-empty">写真は準備中です。生き物の情報はご覧いただけます。</div>'
 
-    if item["category"] in {"kaeru", "kuwagata"} and len(photos) > 1:
-        photo_script = (
-            f"var heroPhotos = {json.dumps(photos)};"
-            'var heroImage = document.querySelector(".hero-photo img");'
-            'heroImage.src = "../../" + heroPhotos[Math.floor(Math.random() * heroPhotos.length)];'
-        )
+    if photos:
+        relative_photos = [f"../../{p}" for p in photos]
+        photo_script = f"var photos = {json.dumps(relative_photos)};"
     else:
-        photo_script = ""
+        photo_script = "var photos = [];"
 
     paragraphs = split_paragraphs(item["body"])
     if paragraphs and "*" in paragraphs[0]:
@@ -313,7 +307,31 @@ def render(item, creatures, generated_keys, categories):
         f'<h2>この生き物に興味がある方へ</h2><div class="related-grid">{cards}</div></section>'
         if cards else ""
     )
-    return TEMPLATE.read_text(encoding="utf-8").format(
+
+    template_text = TEMPLATE.read_text(encoding="utf-8")
+    
+    # Template を使用して $変数名 の形式で置換するように変換
+    # テンプレート内の {title} などを $title に置き換えて評価
+    t = Template(
+        template_text
+        .replace("{title}", "$title")
+        .replace("{category}", "$category")
+        .replace("{category_slug}", "$category_slug")
+        .replace("{latin_line}", "$latin_line")
+        .replace("{danger_block}", "$danger_block")
+        .replace("{months}", "$months")
+        .replace("{ticks}", "$ticks")
+        .replace("{hero}", "$hero")
+        .replace("{gallery}", "$gallery")
+        .replace("{body}", "$body")
+        .replace("{safety_html}", "$safety_html")
+        .replace("{safety_class}", "$safety_class")
+        .replace("{related}", "$related")
+        .replace("{category_navigation}", "$category_navigation")
+        .replace("{photo_script}", "$photo_script")
+    )
+
+    return t.safe_substitute(
         title=escape(item["name"]),
         category=escape(item["category_name"]),
         category_slug=item["category"].upper(),

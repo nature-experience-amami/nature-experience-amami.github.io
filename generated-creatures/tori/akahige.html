@@ -291,7 +291,7 @@ footer{
 
   <section class="creature-hero">
     <div class="hero-photo">
-      <div class="placeholder">写真準備中</div>
+      <img src="../../images/creatures/tori/akahige/P1207645.JPG" alt="奄美大島のアカヒゲ">
     </div>
     <div class="hero-info">
       <p class="category">TORI / 鳥</p>
@@ -299,7 +299,7 @@ footer{
       <p class="latin">スズメ目ヒタキ科 <em>Larvivora komadori komadori</em></p>
       <span class="status-badge neutral">天然記念物</span>
       <div class="season-block">
-        <p class="season-label">観察しやすい時期　観察しやすい時期の情報を準備中</p>
+        <p class="season-label">観察しやすい時期 観察しやすい時期の情報を準備中</p>
         <div class="season-track">
           <span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span>
         </div>
@@ -310,7 +310,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">奄美の森で出会うアカヒゲ</h2>
-    <div class="gallery-empty">写真は準備中です。生き物の情報はご覧いただけます。</div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../images/creatures/tori/akahige/_1238099.JPG" alt="アカヒゲ"></figure><figure><img class="gallery-photo" src="../../images/creatures/tori/akahige/_1238119.JPG" alt="アカヒゲ"></figure><figure><img class="gallery-photo" src="../../images/creatures/tori/akahige/_1238123.JPG" alt="アカヒゲ"></figure></div>
   </section>
 
   <div class="content">
@@ -333,7 +333,7 @@ footer{
     </div>
   </div>
 
-  <section class="related"><p class="section-label">DISCOVER MORE</p><h2>この生き物に興味がある方へ</h2><div class="related-grid"><a class="related-card" href="ootora-tsugumi.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>オオトラツグミ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="rurikakesu.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>ルリカケス</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="yama-shigi.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>アマミヤマシギ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/akamata.html"><img src="../../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg" alt="アカマタ"><span class="related-category">ヘビ</span><strong>アカマタ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/garasu-hibaa.html"><img src="../../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg" alt="ガラスヒバァ"><span class="related-category">ヘビ</span><strong>ガラスヒバァ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/habu.html"><img src="../../images/creatures/hebi/habu/habu_000002_20250228_00.jpg" alt="ハブ"><span class="related-category">ヘビ</span><strong>ハブ</strong><span class="related-link">詳しく見る →</span></a></div></section>
+  <section class="related"><p class="section-label">DISCOVER MORE</p><h2>この生き物に興味がある方へ</h2><div class="related-grid"><a class="related-card" href="ootora-tsugumi.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>オオトラツグミ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="rurikakesu.html"><img src="../../images/creatures/tori/rurikakesu/_3212270.JPG" alt="ルリカケス"><span class="related-category">鳥</span><strong>ルリカケス</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="yama-shigi.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>アマミヤマシギ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/akamata.html"><img src="../../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg" alt="アカマタ"><span class="related-category">ヘビ</span><strong>アカマタ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/garasu-hibaa.html"><img src="../../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg" alt="ガラスヒバァ"><span class="related-category">ヘビ</span><strong>ガラスヒバァ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/habu.html"><img src="../../images/creatures/hebi/habu/habu_000002_20250228_00.jpg" alt="ハブ"><span class="related-category">ヘビ</span><strong>ハブ</strong><span class="related-link">詳しく見る →</span></a></div></section>
 
   <section class="tour">
     <p class="tour-label">NATURE EXPERIENCE AMAMI</p>
@@ -355,6 +355,7 @@ footer{
 
 <script>
 (function(){
+  // ライトボックス処理
   var galleryImgs = document.querySelectorAll(".gallery-photo");
   galleryImgs.forEach(function(img){
     img.addEventListener("click", function(){
@@ -365,7 +366,26 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  // 写真の全ランダムシャッフル処理
+  var photos = ["../../images/creatures/tori/akahige/P1207645.JPG", "../../images/creatures/tori/akahige/_1238099.JPG", "../../images/creatures/tori/akahige/_1238119.JPG", "../../images/creatures/tori/akahige/_1238123.JPG", "../../images/creatures/tori/akahige/_1238126.JPG", "../../images/creatures/tori/akahige/_1238129.JPG", "../../images/creatures/tori/akahige/_C034674.JPG"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    // 1. 配列を複製してシャッフル
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    
+    // 2. ヒーロー画像とギャラリー画像をまとめて取得
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    
+    // 3. シャッフルした写真を順番に割り当て
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        // 写真の枚数より画像枠が多い場合は巡回して割り当て
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 </script>
 

@@ -299,7 +299,7 @@ footer{
       <p class="latin">シギ科ヤマシギ属 <em>Scolopax mira</em></p>
       <span class="status-badge neutral">日本固有種</span>
       <div class="season-block">
-        <p class="season-label">観察しやすい時期　3月・4月・5月</p>
+        <p class="season-label">観察しやすい時期 3月・4月・5月</p>
         <div class="season-track">
           <span class="season-tick"></span><span class="season-tick"></span><span class="season-tick active"></span><span class="season-tick active"></span><span class="season-tick active"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span>
         </div>
@@ -333,7 +333,7 @@ footer{
     </div>
   </div>
 
-  <section class="related"><p class="section-label">DISCOVER MORE</p><h2>この生き物に興味がある方へ</h2><div class="related-grid"><a class="related-card" href="akahige.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>アカヒゲ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="ootora-tsugumi.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>オオトラツグミ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="rurikakesu.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>ルリカケス</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/ryukyu-ao-hebi.html"><img src="../../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg" alt="リュウキュウアオヘビ"><span class="related-category">ヘビ</span><strong>リュウキュウアオヘビ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/takachiho-hebi.html"><img src="../../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg" alt="アマミタカチホヘビ"><span class="related-category">ヘビ</span><strong>アマミタカチホヘビ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../kaeru/haroweru-amagaeru.html"><img src="../../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg" alt="ハロウェルアマガエル"><span class="related-category">カエル</span><strong>ハロウェルアマガエル</strong><span class="related-link">詳しく見る →</span></a></div></section>
+  <section class="related"><p class="section-label">DISCOVER MORE</p><h2>この生き物に興味がある方へ</h2><div class="related-grid"><a class="related-card" href="akahige.html"><img src="../../images/creatures/tori/akahige/P1207645.JPG" alt="アカヒゲ"><span class="related-category">鳥</span><strong>アカヒゲ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="ootora-tsugumi.html"><div class="placeholder">写真準備中</div><span class="related-category">鳥</span><strong>オオトラツグミ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="rurikakesu.html"><img src="../../images/creatures/tori/rurikakesu/_3212270.JPG" alt="ルリカケス"><span class="related-category">鳥</span><strong>ルリカケス</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/ryukyu-ao-hebi.html"><img src="../../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg" alt="リュウキュウアオヘビ"><span class="related-category">ヘビ</span><strong>リュウキュウアオヘビ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../hebi/takachiho-hebi.html"><img src="../../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg" alt="アマミタカチホヘビ"><span class="related-category">ヘビ</span><strong>アマミタカチホヘビ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../kaeru/haroweru-amagaeru.html"><img src="../../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg" alt="ハロウェルアマガエル"><span class="related-category">カエル</span><strong>ハロウェルアマガエル</strong><span class="related-link">詳しく見る →</span></a></div></section>
 
   <section class="tour">
     <p class="tour-label">NATURE EXPERIENCE AMAMI</p>
@@ -355,6 +355,7 @@ footer{
 
 <script>
 (function(){
+  // ライトボックス処理
   var galleryImgs = document.querySelectorAll(".gallery-photo");
   galleryImgs.forEach(function(img){
     img.addEventListener("click", function(){
@@ -365,7 +366,26 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  // 写真の全ランダムシャッフル処理
+  var photos = [];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    // 1. 配列を複製してシャッフル
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    
+    // 2. ヒーロー画像とギャラリー画像をまとめて取得
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    
+    // 3. シャッフルした写真を順番に割り当て
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        // 写真の枚数より画像枠が多い場合は巡回して割り当て
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 </script>
 

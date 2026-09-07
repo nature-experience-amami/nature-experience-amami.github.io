@@ -299,7 +299,7 @@ footer{
       <p class="latin">ネズミ科ケナガネズミ属 <em>Diplothrix legata</em></p>
       <span class="status-badge neutral">国内希少野生動物種</span>
       <div class="season-block">
-        <p class="season-label">観察しやすい時期　観察しやすい時期の情報を準備中</p>
+        <p class="season-label">観察しやすい時期 観察しやすい時期の情報を準備中</p>
         <div class="season-track">
           <span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span>
         </div>
@@ -355,6 +355,7 @@ footer{
 
 <script>
 (function(){
+  // ライトボックス処理
   var galleryImgs = document.querySelectorAll(".gallery-photo");
   galleryImgs.forEach(function(img){
     img.addEventListener("click", function(){
@@ -365,7 +366,26 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  // 写真の全ランダムシャッフル処理
+  var photos = [];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    // 1. 配列を複製してシャッフル
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    
+    // 2. ヒーロー画像とギャラリー画像をまとめて取得
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    
+    // 3. シャッフルした写真を順番に割り当て
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        // 写真の枚数より画像枠が多い場合は巡回して割り当て
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 </script>
 

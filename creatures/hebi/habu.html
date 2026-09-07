@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ハブ｜奄美大島の夜の森 | Nature Experience Amami</title>
-<meta name="description" content="奄美大島の夜の森で出会えるハブ。生態や観察時期、安全に観察するためのポイントを写真とともに紹介します。">
+<meta name="description" content="奄美大島の夜の森で出会えるハブ。生態や観察しやすい時期を写真とともに紹介します。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
@@ -19,6 +19,7 @@
   --bark:#2A211A;
   --line:rgba(234,242,233,.12);
   --soft:rgba(234,242,233,.72);
+  --warn:#E86B3D;
 }
 
 *{ margin:0; padding:0; box-sizing:border-box; }
@@ -53,10 +54,11 @@ a{ color:inherit; }
 nav{ display:flex; gap:1.8rem; font-size:.82rem; }
 nav a{ text-decoration:none; color:rgba(234,242,233,.75); }
 nav a:hover{ color:var(--moonlight); }
+.mobile-contact, .mobile-category-nav{ display:none; }
 
 main{ max-width:1200px; margin:auto; }
 
-/* ===== HERO：分割レイアウト ===== */
+/* ===== HERO ===== */
 .creature-hero{
   display:grid;
   grid-template-columns:1.4fr 1fr;
@@ -74,11 +76,11 @@ main{ max-width:1200px; margin:auto; }
   background:#050907;
   min-height:340px;
 }
-.hero-photo::after{
-  content:"";
-  position:absolute; inset:0;
-  background:radial-gradient(circle at 38% 42%, transparent 22%, rgba(10,22,19,.35) 55%, rgba(10,22,19,.85) 100%);
-  pointer-events:none;
+.placeholder{
+  display:flex; align-items:center; justify-content:center;
+  width:100%; height:100%; min-height:inherit;
+  color:rgba(234,242,233,.4); font-family:'Space Mono',monospace; font-size:.8rem; letter-spacing:.08em;
+  background:repeating-linear-gradient(135deg, rgba(234,242,233,.03) 0 12px, transparent 12px 24px);
 }
 
 .hero-info{
@@ -97,15 +99,7 @@ main{ max-width:1200px; margin:auto; }
 .latin{ font-size:.85rem; color:rgba(234,242,233,.6); }
 .latin em{ font-style:italic; }
 
-.badge-row{ display:flex; flex-wrap:wrap; gap:.5rem; }
-.badge{
-  font-family:'Space Mono',monospace; font-size:.72rem; letter-spacing:.06em;
-  padding:.35rem .7rem; border:1px solid rgba(234,242,233,.2); border-radius:2px;
-  color:rgba(234,242,233,.8);
-}
-.badge.danger{ border-color:rgba(232,163,61,.5); color:var(--amber); }
-
-/* 危険度メーター */
+/* 危険度メーター（ヘビ用） */
 .meter-block{ margin-top:.2rem; }
 .meter-label{
   display:flex; justify-content:space-between; align-items:baseline;
@@ -120,7 +114,17 @@ main{ max-width:1200px; margin:auto; }
   height:100%; background:var(--amber); border-radius:3px;
 }
 
-/* 観察時期タイムライン */
+/* 保護・採集バッジ（ヘビ以外） */
+.status-badge{
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.55rem .9rem; border-radius:2px; font-size:.82rem;
+  border:1px solid rgba(234,242,233,.2);
+}
+.status-badge.safe{ border-color:rgba(107,143,113,.5); color:var(--moss); }
+.status-badge.warning{ border-color:rgba(232,107,61,.6); color:var(--warn); background:rgba(232,107,61,.08); }
+.status-badge.neutral{ border-color:rgba(234,242,233,.25); color:var(--soft); }
+
+/* 観察しやすい時期タイムライン */
 .season-block{ margin-top:.2rem; }
 .season-label{
   font-family:'Space Mono',monospace; font-size:.68rem; letter-spacing:.08em; color:var(--moss);
@@ -133,8 +137,6 @@ main{ max-width:1200px; margin:auto; }
   height:20px; background:rgba(234,242,233,.08); border-radius:2px;
 }
 .season-tick.active{ background:var(--amber); }
-
-.hero-teaser{ color:var(--soft); font-size:.92rem; max-width:46ch; }
 
 /* ===== GALLERY ===== */
 .gallery-section{ padding:5.5rem 6vw 5rem; }
@@ -158,6 +160,11 @@ main{ max-width:1200px; margin:auto; }
 .gallery figure:first-child img{ object-fit:contain; }
 .gallery figure:not(:first-child){ height:232px; }
 .gallery img{ transition:transform .45s ease; }
+.gallery-empty{
+  padding:2.5rem; text-align:center; color:rgba(234,242,233,.4);
+  font-family:'Space Mono',monospace; font-size:.85rem; letter-spacing:.06em;
+  border:1px dashed rgba(234,242,233,.15); border-radius:4px;
+}
 
 /* ライトボックス */
 .lightbox{
@@ -190,19 +197,27 @@ main{ max-width:1200px; margin:auto; }
 }
 .section p{ max-width:65ch; color:var(--soft); font-size:.98rem; margin-bottom:1.1rem; }
 
-.observation-grid{
-  display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
-  margin-top:2rem; background:var(--line); border:1px solid var(--line);
-}
-.observation-item{ padding:1.5rem; background:rgba(10,22,19,.35); }
-.observation-item span{
-  display:block; font-family:'Space Mono',monospace; color:var(--moss); font-size:.68rem; letter-spacing:.08em; margin-bottom:.35rem;
-}
-.observation-item strong{ font-family:'Shippori Mincho',serif; font-size:1.05rem; font-weight:500; }
-
 .safety{ padding:2rem 2.2rem; border-left:3px solid var(--amber); background:rgba(232,163,61,.06); }
 .safety h2{ font-size:1.5rem; }
 .safety p{ font-size:.9rem; }
+.safety.warning{ border-left-color:var(--warn); background:rgba(232,107,61,.08); }
+.safety .warning-line{ color:var(--warn); font-weight:700; }
+
+/* ===== 関連生き物 ===== */
+.related{ padding:5.5rem 6vw 1rem; }
+.related h2{
+  font-family:'Shippori Mincho',serif; font-size:clamp(1.5rem,3vw,2rem); font-weight:500; margin-bottom:1.8rem;
+}
+.related-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1.2rem; }
+.related-card{
+  display:flex; flex-direction:column; gap:.5rem; text-decoration:none;
+  border:1px solid var(--line); border-radius:4px; overflow:hidden; background:rgba(10,22,19,.35);
+}
+.related-card img, .related-card .placeholder{ height:130px; }
+.related-card-disabled{ opacity:.55; }
+.related-category{ font-family:'Space Mono',monospace; font-size:.65rem; color:var(--moss); padding:.6rem .8rem 0; }
+.related-card strong{ font-family:'Shippori Mincho',serif; font-size:1rem; padding:0 .8rem; }
+.related-link{ font-size:.75rem; color:var(--soft); padding:0 .8rem .8rem; }
 
 /* ===== CTA ===== */
 .tour{
@@ -232,12 +247,24 @@ footer{
 }
 
 @media(max-width:800px){
+  .header-inner{ padding:.85rem 5vw .65rem; gap:1rem; }
+  .logo{ font-size:.95rem; letter-spacing:.08em; }
+  .desktop-nav{ display:none; }
+  .mobile-contact{
+    display:inline-flex; align-items:center; font-size:.78rem;
+    text-decoration:none; color:rgba(234,242,233,.75); white-space:nowrap;
+  }
+  .mobile-category-nav{
+    display:flex; gap:1.2rem; overflow-x:auto; padding:0 5vw .75rem;
+    font-size:.78rem; white-space:nowrap; -webkit-overflow-scrolling:touch;
+  }
+  .mobile-category-nav a{ flex:0 0 auto; }
   .creature-hero{ grid-template-columns:1fr; margin:1.5rem 5vw 0; min-height:auto; }
   .hero-photo{ min-height:260px; }
   .hero-info{ padding:1.8rem; }
-  .gallery{ grid-template-columns:1fr 1fr; grid-template-rows:180px 180px; }
-  .gallery figure:first-child{ min-height:365px; }
-  .gallery figure:not(:first-child){ height:180px; }
+  .gallery{ grid-template-columns:1fr; grid-template-rows:none; }
+  .gallery figure:first-child{ grid-row:auto; min-height:260px; }
+  .gallery figure:not(:first-child){ height:260px; }
   .tour{ margin:3rem 5vw 4rem; padding:3.5rem 1.5rem; }
 }
 
@@ -248,67 +275,42 @@ footer{
 <header class="site-header">
   <div class="header-inner">
     <a href="../../index.html" class="logo">Nature – Experience</a>
-    <nav>
+    <nav class="desktop-nav">
       <a href="../../index.html">ホーム</a>
-      <a href="../../hebi.html">ヘビ一覧</a>
+      <a href="../../generated-categories/hebi.html">ヘビ一覧</a><a href="../../generated-categories/kaeru.html">カエル一覧</a><a href="../../generated-categories/kuwagata.html">クワガタ一覧</a>
       <a href="../../contact.html">お問い合わせ</a>
     </nav>
+    <a href="../../contact.html" class="mobile-contact">お問い合わせ</a>
   </div>
+  <nav class="mobile-category-nav" aria-label="生き物カテゴリー">
+    <a href="../../generated-categories/hebi.html">ヘビ一覧</a><a href="../../generated-categories/kaeru.html">カエル一覧</a><a href="../../generated-categories/kuwagata.html">クワガタ一覧</a>
+  </nav>
 </header>
 
 <main>
 
   <section class="creature-hero">
     <div class="hero-photo">
-      <img id="hero-photo" src="" alt="奄美大島のハブ">
+      <img src="../../images/creatures/hebi/habu/habu_000002_20250228_00.jpg" alt="奄美大島のハブ">
     </div>
     <div class="hero-info">
       <p class="category">HEBI / ヘビ</p>
       <h1>ハブ</h1>
-      <p class="latin">クサリヘビ科ハブ属　<em>Protobothrops flavoviridis</em></p>
-      <div class="badge-row">
-        <span class="badge">夜行性</span>
-        <span class="badge">全長約226cm</span>
-        <span class="badge danger">毒蛇</span>
-      </div>
-
-      <div class="meter-block">
-        <div class="meter-label"><span>危険度</span><strong>高</strong></div>
-        <div class="meter-track"><div class="meter-fill" style="width:88%"></div></div>
-      </div>
-
+      <p class="latin">クサリヘビ科ハブ属 <em>Protobothrops flavoviridis</em></p>
+      <div class="meter-block"><div class="meter-label"><span>危険度</span><strong>猛毒</strong></div><div class="meter-track"><div class="meter-fill" style="width:90%"></div></div></div>
       <div class="season-block">
-        <p class="season-label">観察時期　5月 — 11月</p>
+        <p class="season-label">観察しやすい時期 5月・6月・7月・8月・9月・10月・11月</p>
         <div class="season-track">
-          <div class="season-tick"></div>
-          <div class="season-tick"></div>
-          <div class="season-tick"></div>
-          <div class="season-tick"></div>
-          <div class="season-tick active"></div>
-          <div class="season-tick active"></div>
-          <div class="season-tick active"></div>
-          <div class="season-tick active"></div>
-          <div class="season-tick active"></div>
-          <div class="season-tick active"></div>
-          <div class="season-tick active"></div>
-          <div class="season-tick"></div>
+          <span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick"></span><span class="season-tick active"></span><span class="season-tick active"></span><span class="season-tick active"></span><span class="season-tick active"></span><span class="season-tick active"></span><span class="season-tick active"></span><span class="season-tick active"></span><span class="season-tick"></span>
         </div>
       </div>
-
-      <p class="hero-teaser">
-        奄美大島の夜の森を代表する毒蛇。暖かい冬の日にも活動することがあります。
-      </p>
     </div>
   </section>
 
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
-    <h2 class="gallery-title">奄美の夜で出会うハブ</h2>
-    <div class="gallery">
-      <figure onclick="openLightbox(this)"><img class="gallery-photo" src="" alt="ハブ"></figure>
-      <figure onclick="openLightbox(this)"><img class="gallery-photo" src="" alt="ハブ"></figure>
-      <figure onclick="openLightbox(this)"><img class="gallery-photo" src="" alt="ハブ"></figure>
-    </div>
+    <h2 class="gallery-title">奄美の森で出会うハブ</h2>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../images/creatures/hebi/habu/habu_000003_20250228_00.jpg" alt="ハブ"></figure><figure><img class="gallery-photo" src="../../images/creatures/hebi/habu/habu_000004_20260214_22.jpg" alt="ハブ"></figure><figure><img class="gallery-photo" src="../../images/creatures/hebi/habu/habu_000005_20260221_22.jpg" alt="ハブ"></figure></div>
   </section>
 
   <div class="content">
@@ -316,42 +318,22 @@ footer{
 
       <section class="section">
         <p class="section-label">ABOUT</p>
-        <h2>奄美の夜を代表する生き物</h2>
-        <p>ハブは、奄美大島の夜の森で出会うことのできる代表的な毒ヘビです。全長は約226cmにもなり、島に生息するヘビの中でも特に大きく、存在感があります。</p>
-        <p>日中は木の下や草むらなどに潜んでいますが、日が暮れると活動が活発になります。夏場だけでなく、暖かい冬の日にも姿を見せることがあり、一年を通して油断のできない生き物です。</p>
-        <p>暗闇の中でライトに照らされたその姿を見つけた瞬間は、奄美の夜の森ならではの緊張感を感じる瞬間でもあります。</p>
-      </section>
-
-      <section class="section">
-        <p class="section-label">ECOLOGY</p>
-        <h2>暮らしている場所と食べているもの</h2>
-        <p>ハブは環境への適応力が高く、森林や草原だけでなく、水辺、農地、樹上、さらには人家の周辺まで、驚くほど幅広い場所で見られます。</p>
-        <p>ネズミなどの小型哺乳類を中心に、鳥やカエル、他の爬虫類まで食べる肉食性で、獲物を待ち伏せして捕らえる姿が見られることもあります。</p>
-        <p>毒蛇であるため、驚いたり刺激を受けたりすると攻撃的になることがあります。観察の際は、こちらから近づかず、静かに距離を保つことが大切です。</p>
-      </section>
-
-      <section class="section">
-        <p class="section-label">OBSERVATION</p>
-        <h2>いつ、どこで見られる？</h2>
-        <div class="observation-grid">
-          <div class="observation-item"><span>SEASON</span><strong>5月〜11月</strong></div>
-          <div class="observation-item"><span>TIME</span><strong>日没後〜夜間</strong></div>
-          <div class="observation-item"><span>LOCATION</span><strong>草むら・石の周辺・林道など</strong></div>
-          <div class="observation-item"><span>POINT</span><strong>足元や道の脇をゆっくり確認</strong></div>
-        </div>
+        <h2>ハブについて</h2>
+        <p>全長〜226cm、大型のヘビ。5月から11月頃が良く観察できる(冬でも暖かい日には活動)。夜行性で昼間は穴の中などで休む。平地から山地の森林、草原、水辺、農地や樹上にも生息し、ネズミを追って人家周辺にも入り込む。主食はネズミの他、爬虫類、カエル、哺乳類、鳥類。天敵はアカマタとハブ取り。毒がある上にかなり攻撃的。2〜3mは必ず離れて観察・撮影する。近づくと逃げずにすぐ攻撃体制に入り、体長の3分の2近く飛びかかることが可能。電波の通じない山奥で噛まれると大変なことになる。模様は自然に溶け込んでかなり見つけにくく、見えていないだけでいろんな所に潜んでいる。注意しすぎるくらい注意。</p>
       </section>
 
       <section class="section">
         <div class="safety">
           <p class="section-label">SAFETY</p>
-          <h2>安全に観察するために</h2>
-          <p>ハブは危険な毒ヘビです。見つけても近づいたり、触ったりしないでください。</p>
-          <p>2〜3m以上の距離を保ち、夜間は足元を照らしながら歩き、草むらなどに不用意に手を入れないことが大切です。</p>
+          <h2>観察するときの注意</h2>
+          <p>奄美の生き物は、写真におさめて楽しみましょう。生き物によっては、法律や条例で捕獲・採集・持ち出しが禁止されています。国立公園内の特別保護区では、採集そのものが禁止されているエリアもあります。それぞれの生き物のページで注意事項を確認し、訪れる場所のルールも事前に確認してから観察してください。</p>
         </div>
       </section>
 
     </div>
   </div>
+
+  <section class="related"><p class="section-label">DISCOVER MORE</p><h2>この生き物に興味がある方へ</h2><div class="related-grid"><a class="related-card" href="akamata.html"><img src="../../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg" alt="アカマタ"><span class="related-category">ヘビ</span><strong>アカマタ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="garasu-hibaa.html"><img src="../../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg" alt="ガラスヒバァ"><span class="related-category">ヘビ</span><strong>ガラスヒバァ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="hime-habu.html"><img src="../../images/creatures/hebi/hime-habu/hime-habu_000002_20250429_20.jpg" alt="ヒメハブ"><span class="related-category">ヘビ</span><strong>ヒメハブ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="hyan.html"><img src="../../images/creatures/hebi/hyan/hyan_000001_20250515_20.jpg" alt="ヒャン"><span class="related-category">ヘビ</span><strong>ヒャン</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="ryukyu-ao-hebi.html"><img src="../../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg" alt="リュウキュウアオヘビ"><span class="related-category">ヘビ</span><strong>リュウキュウアオヘビ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="takachiho-hebi.html"><img src="../../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg" alt="アマミタカチホヘビ"><span class="related-category">ヘビ</span><strong>アマミタカチホヘビ</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../kaeru/amami-aka-gaeru.html"><img src="../../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg" alt="アマミアカガエル"><span class="related-category">カエル</span><strong>アマミアカガエル</strong><span class="related-link">詳しく見る →</span></a><a class="related-card" href="../kaeru/hanasaki-gaeru.html"><img src="../../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg" alt="アマミハナサキガエル"><span class="related-category">カエル</span><strong>アマミハナサキガエル</strong><span class="related-link">詳しく見る →</span></a></div></section>
 
   <section class="tour">
     <p class="tour-label">NATURE EXPERIENCE AMAMI</p>
@@ -373,44 +355,37 @@ footer{
 
 <script>
 (function(){
-
-  var basePath = "../../images/creatures/hebi/habu/";
-  var photos = [
-    "habu_000001_20241218_22.jpg",
-    "habu_000002_20250228_00.jpg",
-    "habu_000003_20250228_00.jpg",
-    "habu_000004_20260214_22.jpg",
-    "habu_000005_20260221_22.jpg"
-  ];
-
-  function shuffle(arr){
-    var a = arr.slice();
-    for (var i = a.length - 1; i > 0; i--){
-      var j = Math.floor(Math.random() * (i + 1));
-      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
-    }
-    return a;
-  }
-
-  var shuffled = shuffle(photos);
-
-  document.getElementById("hero-photo").src = basePath + shuffled[0];
-
+  // ライトボックス処理
   var galleryImgs = document.querySelectorAll(".gallery-photo");
-  galleryImgs.forEach(function(img, i){
-    img.src = basePath + shuffled[i + 1];
+  galleryImgs.forEach(function(img){
+    img.addEventListener("click", function(){
+      document.getElementById("lightbox-img").src = img.src;
+      document.getElementById("lightbox").classList.add("open");
+    });
   });
-
-  window.openLightbox = function(figure){
-    var src = figure.querySelector("img").src;
-    document.getElementById("lightbox-img").src = src;
-    document.getElementById("lightbox").classList.add("open");
-  };
-
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
 
+  // 写真の全ランダムシャッフル処理
+  var photos = ["../../images/creatures/hebi/habu/habu_000002_20250228_00.jpg", "../../images/creatures/hebi/habu/habu_000003_20250228_00.jpg", "../../images/creatures/hebi/habu/habu_000004_20260214_22.jpg", "../../images/creatures/hebi/habu/habu_000005_20260221_22.jpg", "../../images/creatures/hebi/habu/habu_000006_20260214_22.jpg", "../../images/creatures/hebi/habu/habu_000007_20260214_22.jpg", "../../images/creatures/hebi/habu/habu_000008_20260214_22.jpg", "../../images/creatures/hebi/habu/habu_000009_20260221_22.jpg", "../../images/creatures/hebi/habu/habu_000010_20260306_21.jpg", "../../images/creatures/hebi/habu/habu_000011_20260306_21.jpg", "../../images/creatures/hebi/habu/habu_000012_20260329_00.jpg", "../../images/creatures/hebi/habu/habu_000013_20260330_21.jpg", "../../images/creatures/hebi/habu/habu_000014_20250428_23.jpg", "../../images/creatures/hebi/habu/habu_000015_20250506_01.jpg", "../../images/creatures/hebi/habu/habu_000016_20250506_01.jpg", "../../images/creatures/hebi/habu/habu_000017_20250506_01.jpg", "../../images/creatures/hebi/habu/habu_000018_20250506_01.jpg", "../../images/creatures/hebi/habu/habu_000019_20250506_01.jpg", "../../images/creatures/hebi/habu/habu_000020_20250506_02.jpg", "../../images/creatures/hebi/habu/habu_000021_20250506_02.jpg", "../../images/creatures/hebi/habu/habu_000022_20250515_21.jpg", "../../images/creatures/hebi/habu/habu_000023_20250515_21.jpg", "../../images/creatures/hebi/habu/habu_000024_20250516_21.jpg", "../../images/creatures/hebi/habu/habu_000025_20250516_21.jpg", "../../images/creatures/hebi/habu/habu_000026_20250521_21.jpg", "../../images/creatures/hebi/habu/habu_000027_20250525_23.jpg", "../../images/creatures/hebi/habu/habu_000028_20250525_23.jpg", "../../images/creatures/hebi/habu/habu_000029_20250526_00.jpg", "../../images/creatures/hebi/habu/habu_000030_20250605_22.jpg", "../../images/creatures/hebi/habu/habu_000031_20250615_22.jpg", "../../images/creatures/hebi/habu/habu_000032_20250621_13.jpg", "../../images/creatures/hebi/habu/habu_000033_20250625_22.jpg", "../../images/creatures/hebi/habu/habu_000034_20250628_14.jpg", "../../images/creatures/hebi/habu/habu_000035_20250628_15.jpg", "../../images/creatures/hebi/habu/habu_000036_20250516_21.jpg", "../../images/creatures/hebi/habu/habu_000037_20250628_15.jpg", "../../images/creatures/hebi/habu/habu_000038_20250628_21.jpg", "../../images/creatures/hebi/habu/habu_000039_20250628_21.jpg", "../../images/creatures/hebi/habu/habu_000040_20250628_21.jpg", "../../images/creatures/hebi/habu/habu_000041_20250628_22.jpg", "../../images/creatures/hebi/habu/habu_000042_20250628_22.jpg", "../../images/creatures/hebi/habu/habu_000043_20250628_22.jpg", "../../images/creatures/hebi/habu/habu_000044_20250704_01.jpg", "../../images/creatures/hebi/habu/habu_000045_20250704_21.jpg", "../../images/creatures/hebi/habu/habu_000046_20250704_22.jpg", "../../images/creatures/hebi/habu/habu_000047_20250704_22.jpg", "../../images/creatures/hebi/habu/habu_000048_20250705_21.jpg", "../../images/creatures/hebi/habu/habu_000049_20250705_21.jpg", "../../images/creatures/hebi/habu/habu_000050_20250705_21.jpg", "../../images/creatures/hebi/habu/habu_000051_20250705_22.jpg", "../../images/creatures/hebi/habu/habu_000052_20250713_00.jpg", "../../images/creatures/hebi/habu/habu_000053_20250714_21.jpg", "../../images/creatures/hebi/habu/habu_000054_20250714_21.jpg", "../../images/creatures/hebi/habu/habu_000055_20250717_22.jpg", "../../images/creatures/hebi/habu/habu_000056_20250717_22.jpg", "../../images/creatures/hebi/habu/habu_000057_20250720_21.jpg", "../../images/creatures/hebi/habu/habu_000058_20250723_20.jpg", "../../images/creatures/hebi/habu/habu_000059_20250723_20.jpg", "../../images/creatures/hebi/habu/habu_000060_20250723_21.jpg", "../../images/creatures/hebi/habu/habu_000061_20250725_21.jpg", "../../images/creatures/hebi/habu/habu_000062_20250725_21.jpg", "../../images/creatures/hebi/habu/habu_000063_20250727_00.jpg", "../../images/creatures/hebi/habu/habu_000064_20250727_00.jpg", "../../images/creatures/hebi/habu/habu_000065_20250728_21.jpg", "../../images/creatures/hebi/habu/habu_000066_20250927_19.jpg", "../../images/creatures/hebi/habu/habu_000066_20251004_22.jpg", "../../images/creatures/hebi/habu/habu_000066_20251012_00.jpg", "../../images/creatures/hebi/habu/habu_000066_20260403_20.jpg", "../../images/creatures/hebi/habu/habu_000066_20260404_20.jpg", "../../images/creatures/hebi/habu/habu_000066_20260404_22.jpg", "../../images/creatures/hebi/habu/habu_000066_20260411_02.jpg", "../../images/creatures/hebi/habu/habu_000066_20260607_23.jpg", "../../images/creatures/hebi/habu/habu_000066_20260614_20.jpg", "../../images/creatures/hebi/habu/habu_000066_20260617_19.jpg", "../../images/creatures/hebi/habu/habu_000066_20260629_20.jpg", "../../images/creatures/hebi/habu/habu_000066_20260703_00.jpg", "../../images/creatures/hebi/habu/habu_000066_20260705_22.jpg", "../../images/creatures/hebi/habu/habu_000066_20260719_22.jpg", "../../images/creatures/hebi/habu/habu_000066_20260720_22.jpg", "../../images/creatures/hebi/habu/habu_000067_20251012_00.jpg", "../../images/creatures/hebi/habu/habu_000068_20251012_00.jpg", "../../images/creatures/hebi/habu/habu_000069_20260703_00.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    // 1. 配列を複製してシャッフル
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    
+    // 2. ヒーロー画像とギャラリー画像をまとめて取得
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    
+    // 3. シャッフルした写真を順番に割り当て
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        // 写真の枚数より画像枠が多い場合は巡回して割り当て
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 </script>
 
