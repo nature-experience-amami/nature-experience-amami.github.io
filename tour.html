@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ツアーについて｜Nature Experience Amami</title>
-<meta name="description" content="奄美大島の夜の森を歩きながら、生き物を探して観察するナイトツアー。料金、時間、当日の流れをご案内します。">
+<meta name="description" content="奄美大島の夜の森を歩きながら、生き物を探して観察するナイトツアー。料金、集合場所、時間、当日の流れをご案内します。">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -356,10 +356,40 @@
     line-height:1.7;
   }
 
+  /* MEETING PLACE */
+
+  .meeting-section{
+    background:var(--night);
+  }
+
+  .meeting-card{
+    max-width:760px;
+    margin-top:2rem;
+    padding:2rem;
+    border:1px solid rgba(234,242,233,.12);
+    border-radius:4px;
+    background:rgba(234,242,233,.035);
+  }
+
+  .meeting-card h3{
+    font-family:'Shippori Mincho',serif;
+    font-size:1.2rem;
+    margin-bottom:.8rem;
+  }
+
+  .meeting-card p{
+    color:rgba(234,242,233,.78);
+    line-height:1.9;
+  }
+
+  .meeting-card p + p{
+    margin-top:1rem;
+  }
+
   /* NOTE */
 
   .note-section{
-    background:var(--night);
+    background:var(--canopy);
   }
 
   .note{
@@ -371,7 +401,7 @@
   /* CTA */
 
   .cta-section{
-    background:var(--canopy);
+    background:var(--night);
     text-align:center;
   }
 
@@ -440,6 +470,10 @@
 
     .price-card{
       padding:1.6rem;
+    }
+
+    .meeting-card{
+      padding:1.5rem;
     }
 
     .price-options{
@@ -702,6 +736,34 @@
           </div>
 
         </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MEETING PLACE -->
+
+  <section class="meeting-section">
+
+    <div class="inner">
+
+      <div class="section-label">MEETING PLACE</div>
+
+      <h2>集合場所について</h2>
+
+      <div class="meeting-card">
+
+        <h3>集合・送迎のご案内</h3>
+
+        <p>
+          ビッグ2駐車場、または名瀬から向かって朝戸トンネルを越えた右側にある駐車場に集合します。
+        </p>
+
+        <p>
+          名瀬・龍郷近辺のホテルであれば送迎もできます。車がない方や夜間の運転が不安な方は、お気軽にご相談ください。
+        </p>
 
       </div>
 
