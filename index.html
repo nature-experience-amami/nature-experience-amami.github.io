@@ -210,7 +210,7 @@
   @media (min-width:901px){
     .hero{
       --desktop-photo-top:7.5rem;
-      --desktop-photo-height:min(calc(100svh - var(--desktop-photo-top)), 620px);
+      --desktop-photo-height:min(calc(100svh - var(--desktop-photo-top)), 620px, 56.25vw);
       height:100svh;
     }
     .hero-content{
@@ -219,8 +219,11 @@
       padding:0 6vw 2rem;
     }
     .hero-photo-link, .hero::after{
-      inset:var(--desktop-photo-top) 0 auto;
+      top:var(--desktop-photo-top); bottom:auto;
+      left:50%; transform:translateX(-50%);
       height:var(--desktop-photo-height);
+      aspect-ratio:16/9;
+      width:calc(var(--desktop-photo-height) / 9 * 16);
     }
   }
 
