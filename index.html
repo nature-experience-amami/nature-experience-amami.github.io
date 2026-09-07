@@ -33,9 +33,10 @@
   .hero-photo.is-changing{ opacity:.2; }
   .hero-photo-name{
     position:absolute; z-index:7; color:var(--moonlight);
-    font-family:'Space Mono', monospace; font-size:clamp(.7rem, 1.1vw, .85rem);
-    letter-spacing:.06em; line-height:1.4; white-space:nowrap;
+    display:flex; align-items:baseline; gap:.6rem; font-size:clamp(.7rem, 1.1vw, .85rem);
+    font-weight:700; letter-spacing:.06em; line-height:1.4; white-space:nowrap;
   }
+  .hero-photo-scientific{ font-family:'Space Mono', monospace; font-size:.9em; font-style:italic; font-weight:400; letter-spacing:.02em; }
 
   .hero::after{
     content:""; position:absolute; inset:0; z-index:4; pointer-events:none;
@@ -428,7 +429,17 @@
       image.onload = function () {
         heroPhoto.src = photoData.photo;
         heroPhoto.alt = '奄美大島の' + photoData.creature.name;
-        heroPhotoName.textContent = photoData.creature.name;
+        heroPhotoName.replaceChildren();
+        const commonName = document.createElement('span');
+        commonName.textContent = photoData.creature.name;
+        heroPhotoName.append(commonName);
+        const scientificName = (photoData.creature.description || '').match(/\*([A-Za-z][^*]*)\*/);
+        if (scientificName) {
+          const scientificNameEl = document.createElement('em');
+          scientificNameEl.className = 'hero-photo-scientific';
+          scientificNameEl.textContent = scientificName[1];
+          heroPhotoName.append(scientificNameEl);
+        }
         heroPhoto.classList.add('is-visible');
         currentPhoto = photoData.photo;
         if (onLoaded) onLoaded();
