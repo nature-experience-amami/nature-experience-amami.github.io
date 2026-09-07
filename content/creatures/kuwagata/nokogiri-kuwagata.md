@@ -3,6 +3,7 @@ id: nokogiri-kuwagata
 name: アマミノコギリクワガタ
 category: kuwagata
 danger: 採集可
+months: [7, 8, 9]
 ---
 クワガタムシ科ノコギリクワガタ属の奄美亜種 *Prosopocoilus dissimilis*
 

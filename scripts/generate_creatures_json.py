@@ -68,6 +68,20 @@ def load_category_names():
     return {}
 
 
+def months_from_text(body):
+    found = set()
+    for match in re.finditer(r"(\d{1,2})月から(\d{1,2})月", body):
+        start, end = int(match.group(1)), int(match.group(2))
+        if start <= end:
+            found.update(range(start, end + 1))
+        else:
+            found.update(range(start, 13))
+            found.update(range(1, end + 1))
+    for match in re.finditer(r"(\d{1,2})月(?:頃|が|に|まで)", body):
+        found.add(int(match.group(1)))
+    return sorted(month for month in found if 1 <= month <= 12)
+
+
 def scan():
     category_names = load_category_names()
     creatures = []
@@ -100,7 +114,7 @@ def scan():
                     "name": name,
                     "category": category_dir.name,
                     "category_name": category_name,
-                    "months": frontmatter.get("months", sorted(months)),
+                    "months": frontmatter.get("months") or months_from_text(description) or sorted(months),
                     "description": description,
                     "photos": photos,
                     "page_path": (

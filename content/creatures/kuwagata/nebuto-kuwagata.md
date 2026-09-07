@@ -3,6 +3,7 @@ id: nebuto-kuwagata
 name: アマミネブトクワガタ
 category: kuwagata
 danger: 採集可
+months: [5, 6, 7, 10, 11]
 ---
 クワガタムシ科ネブトクワガタ属 *Aegus laevicolis subnitidus*
 

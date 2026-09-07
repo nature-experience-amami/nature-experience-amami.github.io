@@ -3,6 +3,7 @@ id: amami-hirata-kuwagata
 name: アマミヒラタクワガタ
 category: kuwagata
 danger: 採集可
+months: [7, 8, 9]
 ---
 クワガタムシ科オオクワガタ属ヒラタクワガタ亜種 *Dorcus titanusu elegans*
 

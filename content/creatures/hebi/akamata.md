@@ -3,7 +3,8 @@ id: akamata
 name: アカマタ
 category: hebi
 danger: 無毒だが攻撃的
-months: [5, 6, 7, 8, 9, 10, 11]
+danger_level: 50
+months: [3, 4, 5, 6, 7, 9, 10]
 ---
 ナミヘビ科マダラヘビ属 *Dinodon semicarinatum*
 

@@ -3,6 +3,7 @@ id: garasu-hibaa
 name: ガラスヒバァ
 category: hebi
 danger: 毒あり
+months: [1, 2, 3, 4, 5, 6]
 ---
 ナミヘビ科ヒバカリ属 *Hebius pryeri*
 

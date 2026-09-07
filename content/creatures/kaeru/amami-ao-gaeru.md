@@ -3,6 +3,7 @@ id: amami-ao-gaeru
 name: アマミアオガエル
 category: kaeru
 danger: 無毒
+months: [2, 3, 4]
 ---
 アオガエル科アオガエル属 *Rhacophorus viridis amamiensis*
 

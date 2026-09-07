@@ -128,6 +128,7 @@ def all_creatures(categories):
                 "category": category_dir.name,
                 "category_name": categories.get(category_dir.name, category_dir.name),
                 "danger": data.get("danger", ""),
+                "danger_level": data.get("danger_level"),
                 "months": data.get("months") or months_from_text(body) or months_from_photos(photos),
                 "photos": photos,
                 "body": body,
@@ -193,21 +194,29 @@ def render_card(item, current, generated_keys):
     )
 
 
-def danger_block_and_flag(category, danger_text):
+def danger_block_and_flag(category, danger_text, danger_level=None):
     """危険度メーター(ヘビ)または保護・採集バッジ(それ以外)のHTMLを返す。"""
     text = (danger_text or "").strip()
     prohibited = "禁止" in text
 
     if category == "hebi":
-        if not text:
-            level, label = 0, "情報準備中"
-        elif "無毒" in text:
-            level, label = 15, "無毒"
-        elif "猛毒" in text:
-            level, label = 90, "猛毒"
-        elif "毒" in text:
-            level, label = 60, "毒あり"
+        if danger_level is not None:
+            try:
+                level = max(0, min(100, int(danger_level)))
+            except (TypeError, ValueError):
+                level = None
+            label = text or "情報準備中"
         else:
+            level = None
+        if level is None and not text:
+            level, label = 0, "情報準備中"
+        elif level is None and "無毒" in text:
+            level, label = 15, "無毒"
+        elif level is None and "猛毒" in text:
+            level, label = 90, "猛毒"
+        elif level is None and "毒" in text:
+            level, label = 60, "毒あり"
+        elif level is None:
             level, label = 30, "情報準備中"
         block = (
             '<div class="meter-block">'
@@ -253,7 +262,7 @@ def category_navigation(categories):
 
 
 def render(item, creatures, generated_keys, categories):
-    active = set(item["months"])
+    active = {int(month) for month in item["months"]}
     ticks = "".join(
         f'<span class="season-tick{" active" if month in active else ""}"></span>'
         for month in range(1, 13)
@@ -292,7 +301,9 @@ def render(item, creatures, generated_keys, categories):
         body_paragraphs = paragraphs
     body_html = "".join(f"<p>{escape(p)}</p>" for p in body_paragraphs)
 
-    danger_block, prohibited = danger_block_and_flag(item["category"], item["danger"])
+    danger_block, prohibited = danger_block_and_flag(
+        item["category"], item["danger"], item["danger_level"]
+    )
     safety_html, safety_class = render_safety(item["danger"], prohibited)
 
     related = related_cards(item, creatures)
@@ -308,7 +319,7 @@ def render(item, creatures, generated_keys, categories):
         category_slug=item["category"].upper(),
         latin_line=latin_line,
         danger_block=danger_block,
-        months="・".join(f"{month}月" for month in item["months"]) if item["months"] else "観察時期情報を準備中",
+        months="・".join(f"{month}月" for month in item["months"]) if item["months"] else "観察しやすい時期の情報を準備中",
         ticks=ticks,
         hero=hero,
         gallery=gallery,
