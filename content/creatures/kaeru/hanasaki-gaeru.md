@@ -3,7 +3,7 @@ id: hanasaki-gaeru
 name: アマミハナサキガエル
 category: kaeru
 danger: 捕獲・譲渡禁止(天然記念物)
-months: [3, 4, 5, 6, 9, 10, 11]
+months: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
 ---
 アカガエル科ニオイガエル属 *Odorrana amamiensis*
 
