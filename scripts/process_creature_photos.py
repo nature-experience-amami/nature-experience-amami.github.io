@@ -1,12 +1,15 @@
 """
 images/creatures/カテゴリ/生き物ID/ にコピーされた未処理写真を、
-EXIF撮影日時に基づいてリネーム・リサイズ・透かし追加する。
+EXIF撮影日時に基づいてリネーム・リサイズ・透かし追加し、
+完了後に自動でJSONおよびカテゴリページHTMLを再生成する。
 
 実行方法: python scripts/process_creature_photos.py
 """
 import argparse
 import re
 import shutil
+import subprocess
+import sys
 import tempfile
 from datetime import datetime
 from pathlib import Path
@@ -144,6 +147,30 @@ def process_photo(source, target):
         return "error", str(error)
 
 
+def update_site_data():
+    """写真処理完了後にJSONおよびHTML生成スクリプトを連続実行する"""
+    print("\n--- サイトデータの更新を開始します ---")
+    python_cmd = sys.executable  # 現在使用中のPython実行環境を取得
+
+    scripts = [
+        "scripts/generate_creatures_json.py",
+        "scripts/generate_category_pages.py"
+    ]
+
+    for script in scripts:
+        if Path(script).is_file():
+            print(f"実行中: {script}")
+            try:
+                subprocess.run([python_cmd, script], check=True)
+            except subprocess.CalledProcessError as error:
+                print(f"エラー: {script} の実行に失敗しました ({error})")
+                return
+        else:
+            print(f"警告: スクリプトが見つかりません: {script}")
+
+    print("--- サイトデータの更新がすべて完了しました！ ---")
+
+
 def scan(category_names=None, limit=None):
     processed_count = 0
     skipped_count = 0
@@ -215,6 +242,10 @@ def scan(category_names=None, limit=None):
         print("エラーの詳細:")
         for error in errors:
             print(f"- {error}")
+
+    # === 写真処理が終わったら自動でHTML/JSONを再生成 ===
+    update_site_data()
+
     return 0
 
 
