@@ -17,6 +17,8 @@ PHOTO_DIR_ALIASES = {
     ("hebi", "takachiho-hebi"): "amami-takachiho-hebi",
     ("kaeru", "hanasaki-gaeru"): "amami-hanasaki-gaeru",
     ("kaeru", "ishikawa-gaeru"): "amami-ishikawa-gaeru",
+    ("kaeru", "iboimori"): "amami-ibo-imori",
+    ("kaeru", "shiriken-imori"): "amami-shiriken-imori",
     ("kuwagata", "marubane-kuwagata"): "amami-marubane-kuwagata",
     ("kuwagata", "nebuto-kuwagata"): "amami-nebuto-kuwagata",
     ("kuwagata", "nokogiri-kuwagata"): "amami-nokogiri-kuwagata",
@@ -62,6 +64,24 @@ def card_status(category, danger):
     if category == "kuwagata":
         return "採集禁止" if "禁止" in danger else "観察して楽しもう"
     return danger or "観察情報準備中"
+
+
+GROUP_LABELS = {
+    "newt": "―― イモリの仲間 ――",
+}
+
+
+def cards_html(category, creatures, generated_creature_keys):
+    parts = []
+    last_group = None
+    for creature in creatures:
+        group = creature.get("group") or ""
+        if group != last_group and group in GROUP_LABELS:
+            label = html.escape(GROUP_LABELS[group])
+            parts.append(f'<div class="group-divider">{label}</div>')
+        parts.append(card_html(category, creature, generated_creature_keys))
+        last_group = group
+    return "".join(parts)
 
 
 def card_html(category, creature, generated_creature_keys):
@@ -114,6 +134,7 @@ def creatures_in_category(category):
             "id": creature_id,
             "name": metadata.get("name", creature_id),
             "danger": metadata.get("danger", ""),
+            "group": metadata.get("group", ""),
             "body": body,
             "photos": photo_files(category, creature_id),
         })
@@ -180,7 +201,7 @@ def main():
             list_label=html.escape(metadata["list_label"]),
             list_title=html.escape(metadata["list_title"]),
             list_lead=html.escape(metadata["list_lead"]),
-            cards="".join(card_html(category, creature, generated_creature_keys) for creature in creatures),
+            cards=cards_html(category, creatures, generated_creature_keys),
             category_buttons=category_buttons(category, available_categories),
             header_category_navigation=header_category_navigation(category, available_categories),
         )
