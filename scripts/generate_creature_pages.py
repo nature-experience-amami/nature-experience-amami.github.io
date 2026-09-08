@@ -16,6 +16,8 @@ PHOTO_DIR_ALIASES = {
     ("hebi", "takachiho-hebi"): "amami-takachiho-hebi",
     ("kaeru", "hanasaki-gaeru"): "amami-hanasaki-gaeru",
     ("kaeru", "ishikawa-gaeru"): "amami-ishikawa-gaeru",
+    ("kaeru", "iboimori"): "amami-ibo-imori",
+    ("kaeru", "shiriken-imori"): "amami-shiriken-imori",
     ("kuwagata", "marubane-kuwagata"): "amami-marubane-kuwagata",
     ("kuwagata", "nebuto-kuwagata"): "amami-nebuto-kuwagata",
     ("kuwagata", "nokogiri-kuwagata"): "amami-nokogiri-kuwagata",

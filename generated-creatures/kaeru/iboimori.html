@@ -291,7 +291,7 @@ footer{
 
   <section class="creature-hero">
     <div class="hero-photo">
-      <div class="placeholder">写真準備中</div>
+      <img src="../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000001_20250119_20.jpg" alt="奄美大島のイボイモリ">
     </div>
     <div class="hero-info">
       <p class="category">KAERU / カエル</p>
@@ -310,7 +310,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">奄美の森で出会うイボイモリ</h2>
-    <div class="gallery-empty">写真は準備中です。生き物の情報はご覧いただけます。</div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000001_20250123_22.jpg" alt="イボイモリ"></figure><figure><img class="gallery-photo" src="../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000002_20250123_22.jpg" alt="イボイモリ"></figure><figure><img class="gallery-photo" src="../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000003_20250123_22.jpg" alt="イボイモリ"></figure></div>
   </section>
 
   <div class="content">
@@ -368,7 +368,7 @@ footer{
   };
 
   // 写真の全ランダムシャッフル処理
-  var photos = [];
+  var photos = ["../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000001_20250119_20.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000001_20250123_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000002_20250123_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000003_20250123_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000003_20250201_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000004_20250201_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000004_20250201_23.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000005_20250201_23.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000005_20260205_21.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000006_20260205_21.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000007_20260205_21.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000007_20260205_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000008_20260205_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000008_20260221_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000009_20260221_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000009_20260225_20.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000010_20260225_20.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000010_20260329_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000011_20241211_21.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000011_20241212_20.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000011_20260329_22.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000012_20241211_21.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000012_20250119_20.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000013_20241212_20.jpg", "../../images/creatures/kaeru/amami-ibo-imori/amami-iboimori_000014_20260415_22.jpg"];
   if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
     // 1. 配列を複製してシャッフル
     var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
