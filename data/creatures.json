@@ -302,6 +302,23 @@
     "page_path": "generated-creatures/hebi/hyan.html"
   },
   {
+    "id": "mekura-hebi",
+    "name": "mekura-hebi",
+    "category": "hebi",
+    "category_name": "ヘビ",
+    "months": [
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/hebi/mekura-hebi/mekura-hebi_000001_20260301_15.jpg",
+      "images/creatures/hebi/mekura-hebi/mekura-hebi_000002_20260301_15.jpg",
+      "images/creatures/hebi/mekura-hebi/mekura-hebi_000003_20260301_15.jpg",
+      "images/creatures/hebi/mekura-hebi/mekura-hebi_000004_20260301_15.jpg"
+    ],
+    "page_path": null
+  },
+  {
     "id": "ryukyu-ao-hebi",
     "name": "リュウキュウアオヘビ",
     "category": "hebi",
@@ -339,6 +356,56 @@
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000011_20251019_22.jpg"
     ],
     "page_path": "generated-creatures/hebi/ryukyu-ao-hebi.html"
+  },
+  {
+    "id": "kenaga-nezumi",
+    "name": "kenaga-nezumi",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      2,
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000002_20260206_20.jpg",
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000003_20260319_21.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "kurousagi",
+    "name": "kurousagi",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      2,
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/honyuurui/kurousagi/kurousagi_000001_20260221_21.jpg",
+      "images/creatures/honyuurui/kurousagi/kurousagi_000002_20250301_20.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "watase-jinezumi",
+    "name": "watase-jinezumi",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      12
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
+      "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000002_20241218_18.jpg",
+      "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000003_20241218_18.jpg",
+      "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000004_20241218_19.jpg"
+    ],
+    "page_path": null
   },
   {
     "id": "amami-aka-gaeru",
@@ -445,6 +512,44 @@
     "page_path": "generated-creatures/kaeru/hanasaki-gaeru.html"
   },
   {
+    "id": "amami-ibo-imori",
+    "name": "amami-ibo-imori",
+    "category": "kaeru",
+    "category_name": "カエル",
+    "months": [
+      9
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000002_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000004_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000005_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000006_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000007_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000008_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000009_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000010_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000011_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000012_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000013_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000014_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000015_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000016_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000017_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000018_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000019_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000020_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000021_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000022_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000023_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000024_20260907_19.jpg",
+      "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000025_20260907_19.jpg"
+    ],
+    "page_path": null
+  },
+  {
     "id": "ishikawa-gaeru",
     "name": "アマミイシカワガエル",
     "category": "kaeru",
@@ -490,6 +595,23 @@
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg"
     ],
     "page_path": "generated-creatures/kaeru/ishikawa-gaeru.html"
+  },
+  {
+    "id": "amami-shiriken-imori",
+    "name": "amami-shiriken-imori",
+    "category": "kaeru",
+    "category_name": "カエル",
+    "months": [
+      1,
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
+      "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000002_20250128_22.jpg",
+      "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000003_20260329_22.jpg"
+    ],
+    "page_path": null
   },
   {
     "id": "haroweru-amagaeru",
@@ -609,6 +731,178 @@
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg"
     ],
     "page_path": "generated-creatures/kaeru/ryukyu-kajika-gaeru.html"
+  },
+  {
+    "id": "ao-uba-tamamushi",
+    "name": "ao-uba-tamamushi",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      6
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "ferie-beniboshi-kamikiri",
+    "name": "ferie-beniboshi-kamikiri",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      6,
+      7
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000003_20250628_15.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000004_20250628_15.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000005_20250628_15.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000006_20250628_15.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000007_20250705_13.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000008_20250705_13.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000009_20250705_13.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg",
+      "images/creatures/konchu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "marudaikoku-kogane",
+    "name": "marudaikoku-kogane",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      11
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
+      "images/creatures/konchu/marudaikoku-kogane/marudaikoku-kogane_000002_20251126_22.jpg",
+      "images/creatures/konchu/marudaikoku-kogane/marudaikoku-kogane_000003_20251126_22.jpg",
+      "images/creatures/konchu/marudaikoku-kogane/marudaikoku-kogane_000004_20251126_22.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "midori-nakaboso-tamamushi",
+    "name": "midori-nakaboso-tamamushi",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      6
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
+      "images/creatures/konchu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg",
+      "images/creatures/konchu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "okinawa-suji-gengoro",
+    "name": "okinawa-suji-gengoro",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      4,
+      12
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
+      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000002_20250406_23.jpg",
+      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000003_20250406_23.jpg",
+      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000004_20250406_23.jpg",
+      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000005_20250406_23.jpg",
+      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000006_20241218_16.jpg",
+      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000007_20241219_21.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "oshima-senchi-kogane",
+    "name": "oshima-senchi-kogane",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      11
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "oshima-torafu-hanamuguri",
+    "name": "oshima-torafu-hanamuguri",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      5
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
+      "images/creatures/konchu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg",
+      "images/creatures/konchu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000003_20250515_10.jpg",
+      "images/creatures/konchu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg",
+      "images/creatures/konchu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "ruri-nakaboso-tamamushi",
+    "name": "ruri-nakaboso-tamamushi",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      4
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
+      "images/creatures/konchu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg",
+      "images/creatures/konchu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg",
+      "images/creatures/konchu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "taiwan-kutsuwamushi",
+    "name": "taiwan-kutsuwamushi",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "tobiiro-gengoro",
+    "name": "tobiiro-gengoro",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [
+      4
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/tobiiro-gengoro/tobiiro-gengoro_000001_20250403_23.jpg",
+      "images/creatures/konchu/tobiiro-gengoro/tobiiro-gengoro_000002_20250403_23.jpg",
+      "images/creatures/konchu/tobiiro-gengoro/tobiiro-gengoro_000003_20250406_23.jpg"
+    ],
+    "page_path": null
   },
   {
     "id": "amami-hirata-kuwagata",
@@ -736,7 +1030,6 @@
     "category": "kuwagata",
     "category_name": "クワガタ",
     "months": [
-      6,
       7,
       8,
       9
@@ -845,84 +1138,25 @@
   {
     "id": "amami-hime-tokage",
     "name": "amami-hime-tokage",
-    "category": "tokage-imori",
-    "category_name": "トカゲ・イモリ",
+    "category": "tokage",
+    "category_name": "tokage",
     "months": [
       6
     ],
     "description": "",
     "photos": [
-      "images/creatures/tokage-imori/amami-hime-tokage/amami-hime-tokage_000001_20250602_22.jpg",
-      "images/creatures/tokage-imori/amami-hime-tokage/amami-hime-tokage_000002_20250602_22.jpg",
-      "images/creatures/tokage-imori/amami-hime-tokage/amami-hime-tokage_000003_20250602_22.jpg",
-      "images/creatures/tokage-imori/amami-hime-tokage/amami-hime-tokage_000004_20250602_22.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "amami-iboimori",
-    "name": "amami-iboimori",
-    "category": "tokage-imori",
-    "category_name": "トカゲ・イモリ",
-    "months": [
-      1,
-      2,
-      3,
-      4,
-      12
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000001_20250119_20.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000001_20250123_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000002_20250123_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000003_20250123_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000003_20250201_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000004_20250201_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000004_20250201_23.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000005_20250201_23.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000005_20260205_21.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000006_20260205_21.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000007_20260205_21.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000007_20260205_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000008_20260205_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000008_20260221_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000009_20260221_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000009_20260225_20.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000010_20260225_20.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000010_20260329_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000011_20241211_21.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000011_20241212_20.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000011_20260329_22.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000012_20241211_21.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000012_20250119_20.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000013_20241212_20.jpg",
-      "images/creatures/tokage-imori/amami-iboimori/amami-iboimori_000014_20260415_22.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "amami-shiriken-imori",
-    "name": "amami-shiriken-imori",
-    "category": "tokage-imori",
-    "category_name": "トカゲ・イモリ",
-    "months": [
-      1,
-      3
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/tokage-imori/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
-      "images/creatures/tokage-imori/amami-shiriken-imori/amami-shiriken-imori_000002_20250128_22.jpg",
-      "images/creatures/tokage-imori/amami-shiriken-imori/amami-shiriken-imori_000003_20260329_22.jpg"
+      "images/creatures/tokage/amami-hime-tokage/amami-hime-tokage_000001_20250602_22.jpg",
+      "images/creatures/tokage/amami-hime-tokage/amami-hime-tokage_000002_20250602_22.jpg",
+      "images/creatures/tokage/amami-hime-tokage/amami-hime-tokage_000003_20250602_22.jpg",
+      "images/creatures/tokage/amami-hime-tokage/amami-hime-tokage_000004_20250602_22.jpg"
     ],
     "page_path": null
   },
   {
     "id": "okinawa-kinobori-tokage",
     "name": "okinawa-kinobori-tokage",
-    "category": "tokage-imori",
-    "category_name": "トカゲ・イモリ",
+    "category": "tokage",
+    "category_name": "tokage",
     "months": [
       1,
       4,
@@ -931,11 +1165,141 @@
     ],
     "description": "",
     "photos": [
-      "images/creatures/tokage-imori/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
-      "images/creatures/tokage-imori/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000002_20250424_13.jpg",
-      "images/creatures/tokage-imori/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000003_20250828_12.jpg",
-      "images/creatures/tokage-imori/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000004_20250828_13.jpg",
-      "images/creatures/tokage-imori/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000005_20241218_19.jpg"
+      "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
+      "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000002_20250424_13.jpg",
+      "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000003_20250828_12.jpg",
+      "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000004_20250828_13.jpg",
+      "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000005_20241218_19.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "akahige",
+    "name": "アカヒゲ",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      1,
+      12
+    ],
+    "description": "スズメ目ヒタキ科 *Larvivora komadori komadori*\n\n夏季に奄美大島、徳之島、男女群島、トカラ列島で繁殖。冬期は先島諸島へ移動(奄美大島や徳之島では周年生息する個体も)。1970年に国の天然記念物に指定。さえずりはとても美しい。",
+    "photos": [
+      "images/creatures/tori/akahige/akahige_000001_20250120_14.jpg",
+      "images/creatures/tori/akahige/akahige_000002_20250123_12.jpg",
+      "images/creatures/tori/akahige/akahige_000003_20250123_12.jpg",
+      "images/creatures/tori/akahige/akahige_000004_20250123_12.jpg",
+      "images/creatures/tori/akahige/akahige_000005_20250123_12.jpg",
+      "images/creatures/tori/akahige/akahige_000006_20250123_12.jpg",
+      "images/creatures/tori/akahige/akahige_000007_20241203_13.jpg"
+    ],
+    "page_path": "generated-creatures/tori/akahige.html"
+  },
+  {
+    "id": "kawasemi",
+    "name": "kawasemi",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      2,
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/kawasemi/kawasemi_000001_20250207_10.jpg",
+      "images/creatures/tori/kawasemi/kawasemi_000002_20250208_10.jpg",
+      "images/creatures/tori/kawasemi/kawasemi_000003_20250215_10.jpg",
+      "images/creatures/tori/kawasemi/kawasemi_000004_20250217_11.jpg",
+      "images/creatures/tori/kawasemi/kawasemi_000005_20250314_10.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "o-sutonn-ooakagera",
+    "name": "o-sutonn-ooakagera",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      3,
+      7
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/o-sutonn-ooakagera/o-sutonn-ooakagera_000001_20260325_10.jpg",
+      "images/creatures/tori/o-sutonn-ooakagera/o-sutonn-ooakagera_000002_20250726_09.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "rurikakesu",
+    "name": "ルリカケス",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "description": "スズメ目カラス科カケス属 *Garrulus lidthi*\n\n奄美大島、加計呂麻島、請島に分布し1921年に国の天然記念物に指定。瑠璃色に赤褐色の羽根、くちばしと羽先は白い。山の木の中腹の樹洞に巣を作り、2月から5月頃に3〜7個の卵を産む。人家の軒下を利用することも。夜は林道の電線や枝先で休んでいるところを観察できる。",
+    "photos": [
+      "images/creatures/tori/rurikakesu/rurikakesu_000001_20250321_12.jpg",
+      "images/creatures/tori/rurikakesu/rurikakesu_000002_20250726_08.jpg",
+      "images/creatures/tori/rurikakesu/rurikakesu_000003_20250726_09.jpg",
+      "images/creatures/tori/rurikakesu/rurikakesu_000004_20250726_09.jpg",
+      "images/creatures/tori/rurikakesu/rurikakesu_000005_20250726_09.jpg"
+    ],
+    "page_path": "generated-creatures/tori/rurikakesu.html"
+  },
+  {
+    "id": "ryuukyuu-konohazuku",
+    "name": "ryuukyuu-konohazuku",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "sasiba",
+    "name": "sasiba",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      1,
+      3
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/sasiba/sasiba_000001_20240119_16.jpg",
+      "images/creatures/tori/sasiba/sasiba_000002_20250120_12.jpg",
+      "images/creatures/tori/sasiba/sasiba_000003_20250120_12.jpg",
+      "images/creatures/tori/sasiba/sasiba_000004_20250121_10.jpg",
+      "images/creatures/tori/sasiba/sasiba_000005_20250123_10.jpg",
+      "images/creatures/tori/sasiba/sasiba_000006_20250123_13.jpg",
+      "images/creatures/tori/sasiba/sasiba_000007_20250320_10.jpg",
+      "images/creatures/tori/sasiba/sasiba_000008_20250331_11.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "tageri",
+    "name": "tageri",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      12
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/tageri/tageri_000001_20251221_15.jpg",
+      "images/creatures/tori/tageri/tageri_000002_20251221_15.jpg",
+      "images/creatures/tori/tageri/tageri_000003_20251221_15.jpg",
+      "images/creatures/tori/tageri/tageri_000004_20251221_15.jpg"
     ],
     "page_path": null
   }
