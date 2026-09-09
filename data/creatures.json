@@ -63,7 +63,8 @@
       "images/creatures/hebi/akamata/akamata_000043_20260504_21.jpg",
       "images/creatures/hebi/akamata/akamata_000043_20260607_23.jpg",
       "images/creatures/hebi/akamata/akamata_000043_20260830_21.jpg",
-      "images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg"
+      "images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg",
+      "images/creatures/hebi/akamata/IMG_0470.JPG"
     ],
     "page_path": "generated-creatures/hebi/akamata.html"
   },
@@ -216,7 +217,13 @@
       "images/creatures/hebi/habu/habu_000066_20260720_22.jpg",
       "images/creatures/hebi/habu/habu_000067_20251012_00.jpg",
       "images/creatures/hebi/habu/habu_000068_20251012_00.jpg",
-      "images/creatures/hebi/habu/habu_000069_20260703_00.jpg"
+      "images/creatures/hebi/habu/habu_000069_20260703_00.jpg",
+      "images/creatures/hebi/habu/IMG_0001.JPG",
+      "images/creatures/hebi/habu/IMG_0211.JPG",
+      "images/creatures/hebi/habu/IMG_0466.JPG",
+      "images/creatures/hebi/habu/IMG_0479.JPG",
+      "images/creatures/hebi/habu/IMG_9375.JPG",
+      "images/creatures/hebi/habu/IMG_9610.JPG"
     ],
     "page_path": "generated-creatures/hebi/habu.html"
   },
@@ -297,7 +304,8 @@
       "images/creatures/hebi/hyan/hyan_000016_20250527_23.jpg",
       "images/creatures/hebi/hyan/hyan_000016_20250620_22.jpg",
       "images/creatures/hebi/hyan/hyan_000016_20260608_00.jpg",
-      "images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg"
+      "images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg",
+      "images/creatures/hebi/hyan/IMG_9569.JPG"
     ],
     "page_path": "generated-creatures/hebi/hyan.html"
   },
@@ -417,7 +425,7 @@
       12,
       1
     ],
-    "description": "アカガエル科アカガエル属 *Rana kobai*\n\n大きさ3.2〜4.6cm 繁殖時期11月から1月。平地から山地までの森林、河川周辺に生息。繁殖時期になると小さな池や湧水の溜まり場などに集まる。林道にも出てくる個体が見られる。赤褐色でスマート、キョッキョッと鳴く。",
+    "description": "アカガエル科アカガエル属 *Rana kobai*\n\n大きさ3.2〜4.6cm 繁殖時期11月から1月。平地から山地までの森林、河川周辺に生息。湿度の高い日や雨が降ると活発になり、繁殖時期になると小さな池や湧水の溜まり場などに集まる。林道にも出てくる個体が見られる。赤褐色でスマート、キョッキョッと鳴く。",
     "photos": [
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000003_20250129_20.jpg",
@@ -641,7 +649,7 @@
       5,
       6
     ],
-    "description": "アマガエル科アマガエル属 *Hyla hallowellii*\n\n大きさ3〜4cm 繁殖時期3月から6月。平地の森林、藪、畑に生息し水田などの止水域に産卵。産卵時期になると水田近くで大合唱する。木の枝先など少し高い所にいて、たくさん鳴いていてもなかなか見つけられない。緑一色でとても美しい。鳴き声はニホンアマガエルに似る。",
+    "description": "アマガエル科アマガエル属 *Hyla hallowellii*\n\n大きさ3〜4cm 繁殖時期3月から6月。平地の森林、藪、畑に生息し水田などの止水域に産卵。湿度の高い日や雨の降る夜に活発になり、産卵時期になると水田近くで大合唱する。木の枝先など少し高い所にいて、たくさん鳴いていてもなかなか見つけられない。緑一色でとても美しい。鳴き声はニホンアマガエルに似る。",
     "photos": [
       "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
       "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_21.jpg",
@@ -671,7 +679,7 @@
       6,
       7
     ],
-    "description": "ヒメアマガエル科ヒメアマガエル属 *Microhyla okinavensis*\n\n大きさ2.2〜3.2cm 周年繁殖(主に3月から7月)。海岸近くの低地から山地、林縁部や草地、人家周辺など幅広く生息。頭が小さく足が太いので上から見ると三角形。日本で1番小さなカエルだがとても大きな声で鳴く。",
+    "description": "ヒメアマガエル科ヒメアマガエル属 *Microhyla okinavensis*\n\n大きさ2.2〜3.2cm 周年繁殖(主に3月から7月)。海岸近くの低地から山地、林縁部や草地、人家周辺など幅広く生息。湿度の高い日や雨が降ると活発になる。頭が小さく足が太いので上から見ると三角形。日本で1番小さなカエルだがとても大きな声で鳴く。",
     "photos": [
       "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
       "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg",
@@ -737,7 +745,7 @@
       9,
       10
     ],
-    "description": "アオガエル科カジカガエル属 *Buergeria japonica*\n\n大きさ2.5〜4cm 繁殖時期4月から10月。渓流から市街地の水たまりでも適応し、奄美大島では1番見かけるカエル。オスはとても美しい黄色で鳴き声も美しい。",
+    "description": "アオガエル科カジカガエル属 *Buergeria japonica*\n\n大きさ2.5〜4cm 繁殖時期4月から10月。渓流から市街地の水たまりでも適応し、奄美大島では1番見かけるカエル。湿度の高い日や雨が降ると特に活発に鳴く。オスはとても美しい黄色で鳴き声も美しい。",
     "photos": [
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg",
@@ -1071,7 +1079,8 @@
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250813_10.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260706_00.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260712_21.jpg",
-      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg"
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg",
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/IMG_0499.JPG"
     ],
     "page_path": "generated-creatures/kuwagata/nokogiri-kuwagata.html"
   },
@@ -1212,6 +1221,18 @@
     "page_path": "generated-creatures/tori/akahige.html"
   },
   {
+    "id": "amami-yamashigi",
+    "name": "amami-yamashigi",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/amami-yamashigi/IMG_9567.JPG"
+    ],
+    "page_path": null
+  },
+  {
     "id": "kawasemi",
     "name": "kawasemi",
     "category": "tori",
@@ -1266,6 +1287,32 @@
       "images/creatures/tori/rurikakesu/rurikakesu_000005_20250726_09.jpg"
     ],
     "page_path": "generated-creatures/tori/rurikakesu.html"
+  },
+  {
+    "id": "ryukyu-akashobin",
+    "name": "ryukyu-akashobin",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/ryukyu-akashobin/IMG_9307.JPG",
+      "images/creatures/tori/ryukyu-akashobin/IMG_9311.JPG",
+      "images/creatures/tori/ryukyu-akashobin/IMG_9561.JPG"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "ryukyu-zuaka-aobato",
+    "name": "ryukyu-zuaka-aobato",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/ryukyu-zuaka-aobato/IMG_8748.JPG"
+    ],
+    "page_path": null
   },
   {
     "id": "ryuukyuu-konohazuku",

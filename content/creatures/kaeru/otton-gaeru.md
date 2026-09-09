@@ -3,6 +3,7 @@ id: otton-gaeru
 name: オットンガエル
 category: kaeru
 danger: 捕獲・譲渡禁止(天然記念物)
+group: frog
 months: [5, 6, 7]
 ---
 アカガエル科バビナ属 *Babina subaspera*

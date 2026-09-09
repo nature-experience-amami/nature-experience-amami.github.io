@@ -3,6 +3,7 @@ id: ishikawa-gaeru
 name: アマミイシカワガエル
 category: kaeru
 danger: 捕獲・譲渡禁止(天然記念物)
+group: frog
 months: [12, 1, 2, 3, 4, 5, 6]
 ---
 アカガエル科ニオイガエル属 *Odorrana splendida*

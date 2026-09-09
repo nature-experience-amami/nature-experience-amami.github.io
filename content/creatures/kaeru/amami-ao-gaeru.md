@@ -3,6 +3,7 @@ id: amami-ao-gaeru
 name: アマミアオガエル
 category: kaeru
 danger: 無毒
+group: frog
 months: [12, 1, 2, 3, 4]
 ---
 アオガエル科アオガエル属 *Zhangixalus amamiensis*

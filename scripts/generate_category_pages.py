@@ -67,14 +67,25 @@ def card_status(category, danger):
 
 
 GROUP_LABELS = {
+    "frog": "―― カエルの仲間 ――",
     "newt": "―― イモリの仲間 ――",
+}
+# 表示順（未指定のグループは0番扱いで先頭に来る）
+GROUP_ORDER = {
+    "frog": 0,
+    "newt": 1,
 }
 
 
 def cards_html(category, creatures, generated_creature_keys):
+    # グループごとにまとめて並べる（同じグループ内は元の並び順を保つ）
+    ordered = sorted(
+        creatures,
+        key=lambda creature: GROUP_ORDER.get(creature.get("group") or "", 0),
+    )
     parts = []
     last_group = None
-    for creature in creatures:
+    for creature in ordered:
         group = creature.get("group") or ""
         if group != last_group and group in GROUP_LABELS:
             label = html.escape(GROUP_LABELS[group])
