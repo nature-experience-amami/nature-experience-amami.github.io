@@ -28,6 +28,8 @@ MARKDOWN_ID_ALIASES = {
     ("hebi", "amami-takachiho-hebi"): "takachiho-hebi",
     ("kaeru", "amami-hanasaki-gaeru"): "hanasaki-gaeru",
     ("kaeru", "amami-ishikawa-gaeru"): "ishikawa-gaeru",
+    ("kaeru", "amami-ibo-imori"): "iboimori",
+    ("kaeru", "amami-shiriken-imori"): "shiriken-imori",
     ("kuwagata", "amami-marubane-kuwagata"): "marubane-kuwagata",
     ("kuwagata", "amami-ko-kuwagata"): "ko-kuwagata",
     ("kuwagata", "amami-miyama-kuwagata"): "miyama-kuwagata",

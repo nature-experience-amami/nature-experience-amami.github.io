@@ -411,7 +411,7 @@
     "id": "amami-aka-gaeru",
     "name": "アマミアカガエル",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       11,
       12,
@@ -435,7 +435,7 @@
     "id": "amami-ao-gaeru",
     "name": "アマミアオガエル",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       12,
       1,
@@ -482,7 +482,7 @@
     "id": "hanasaki-gaeru",
     "name": "アマミハナサキガエル",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       1,
       2,
@@ -517,14 +517,18 @@
     "page_path": "generated-creatures/kaeru/hanasaki-gaeru.html"
   },
   {
-    "id": "amami-ibo-imori",
-    "name": "amami-ibo-imori",
+    "id": "iboimori",
+    "name": "アマミイボイモリ",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
-      9
+      12,
+      1,
+      2,
+      3,
+      4
     ],
-    "description": "",
+    "description": "イモリ科イボイモリ属 *Echinotriton raffaellii*\n\n全長14〜20cm 繁殖期1月から4月頃。奄美大島・請島・徳之島の固有種で、森林や畑の周辺に生息する。冬の暖かい日に活発になり、繁殖期には水場近くの落ち葉の下などに産卵する。黒褐色でごつごつした体つきをしており、肋骨の突起や四肢の先端が橙色を帯びる。",
     "photos": [
       "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
       "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000002_20260907_19.jpg",
@@ -552,13 +556,13 @@
       "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000024_20260907_19.jpg",
       "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000025_20260907_19.jpg"
     ],
-    "page_path": null
+    "page_path": "generated-creatures/kaeru/iboimori.html"
   },
   {
     "id": "ishikawa-gaeru",
     "name": "アマミイシカワガエル",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       12,
       1,
@@ -602,27 +606,35 @@
     "page_path": "generated-creatures/kaeru/ishikawa-gaeru.html"
   },
   {
-    "id": "amami-shiriken-imori",
-    "name": "amami-shiriken-imori",
+    "id": "shiriken-imori",
+    "name": "アマミシリケンイモリ",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
+      12,
       1,
-      3
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
     ],
-    "description": "",
+    "description": "イモリ科イモリ属 *Cynops ensicauda ensicauda*\n\n全長はオス14cm・メス18cmほど。奄美大島・請島・加計呂麻島・与路島に生息し、池や水田、渓流沿いの緩やかな流れなどで繁殖する。9月を過ぎるとほとんどの個体が水場を離れ、繁殖期の12月頃には水辺で数多く観察できる。黒色の体に黄色や橙色の斑点が入り、個体差が大きい。沖縄にはオキナワシリケンイモリが生息する。",
     "photos": [
       "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
       "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000002_20250128_22.jpg",
       "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000003_20260329_22.jpg"
     ],
-    "page_path": null
+    "page_path": "generated-creatures/kaeru/shiriken-imori.html"
   },
   {
     "id": "haroweru-amagaeru",
     "name": "ハロウェルアマガエル",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       3,
       4,
@@ -651,7 +663,7 @@
     "id": "hime-amagaeru",
     "name": "ヒメアマガエル",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       3,
       4,
@@ -671,7 +683,7 @@
     "id": "numa-gaeru",
     "name": "numa-gaeru",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       3
     ],
@@ -689,7 +701,7 @@
     "id": "otton-gaeru",
     "name": "オットンガエル",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       5,
       6,
@@ -715,7 +727,7 @@
     "id": "ryukyu-kajika-gaeru",
     "name": "リュウキュウカジカガエル",
     "category": "kaeru",
-    "category_name": "カエル",
+    "category_name": "両生類(カエル・イモリ)",
     "months": [
       4,
       5,
@@ -1144,7 +1156,7 @@
     "id": "amami-hime-tokage",
     "name": "amami-hime-tokage",
     "category": "tokage",
-    "category_name": "tokage",
+    "category_name": "トカゲ",
     "months": [
       6
     ],
@@ -1161,7 +1173,7 @@
     "id": "okinawa-kinobori-tokage",
     "name": "okinawa-kinobori-tokage",
     "category": "tokage",
-    "category_name": "tokage",
+    "category_name": "トカゲ",
     "months": [
       1,
       4,
