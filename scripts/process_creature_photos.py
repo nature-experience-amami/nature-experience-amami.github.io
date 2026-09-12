@@ -1,15 +1,11 @@
 """
 images/creatures/カテゴリ/生き物ID/ にコピーされた未処理写真を、
-EXIF撮影日時に基づいてリネーム・リサイズ・透かし追加し、
-完了後に自動でJSONおよびカテゴリページHTMLを再生成する。
+EXIF撮影日時に基づいてリネーム・リサイズ・透かし追加する。
 
 実行方法: python scripts/process_creature_photos.py
 """
-import argparse
 import re
 import shutil
-import subprocess
-import sys
 import tempfile
 from datetime import datetime
 from pathlib import Path
@@ -25,8 +21,7 @@ PROCESSED_RE = re.compile(
     r"(?P<date>\d{8})_(?P<hour>\d{2})$"
 )
 WATERMARK = "Photo by Nature Experience"
-MAX_LONG_SIDE = 1920
-JPEG_QUALITY = 82
+MAX_LONG_SIDE = 2000
 WATERMARK_OPACITY = 190
 
 
@@ -67,7 +62,7 @@ def get_next_number(photos, creature_id):
     return max(numbers, default=0) + 1
 
 
-def get_capture_datetime(image, source):
+def get_capture_datetime(image):
     exif = image.getexif()
     for tag in (36867, 36868, 306):
         value = exif.get(tag)
@@ -76,7 +71,7 @@ def get_capture_datetime(image, source):
                 return datetime.strptime(str(value), "%Y:%m:%d %H:%M:%S")
             except ValueError:
                 continue
-    return datetime.fromtimestamp(source.stat().st_mtime)
+    return None
 
 
 def load_font(size):
@@ -123,6 +118,10 @@ def process_photo(source, target):
     temp_name = None
     try:
         with Image.open(source) as original:
+            capture_datetime = get_capture_datetime(original)
+            if capture_datetime is None:
+                return "missing-exif", None
+
             image = add_watermark(resize_image(original))
             image = image.convert("RGB")
 
@@ -130,7 +129,7 @@ def process_photo(source, target):
             dir=source.parent, prefix=".processing-", suffix=".jpg", delete=False
         ) as temporary:
             temp_name = Path(temporary.name)
-        image.save(temp_name, format="JPEG", quality=JPEG_QUALITY, optimize=True)
+        image.save(temp_name, format="JPEG", quality=92, optimize=True)
 
         if target.exists():
             temp_name.unlink()
@@ -140,38 +139,30 @@ def process_photo(source, target):
         temp_name.replace(target)
         temp_name = None
         source.unlink()
-        return "processed", None
+        return "processed", capture_datetime
     except Exception as error:
         if temp_name and temp_name.exists():
             temp_name.unlink()
         return "error", str(error)
 
 
-def update_site_data():
-    """写真処理完了後にJSONおよびHTML生成スクリプトを連続実行する"""
-    print("\n--- サイトデータの更新を開始します ---")
-    python_cmd = sys.executable  # 現在使用中のPython実行環境を取得
-
-    scripts = [
-        "scripts/generate_creatures_json.py",
-        "scripts/generate_category_pages.py"
-    ]
-
-    for script in scripts:
-        if Path(script).is_file():
-            print(f"実行中: {script}")
-            try:
-                subprocess.run([python_cmd, script], check=True)
-            except subprocess.CalledProcessError as error:
-                print(f"エラー: {script} の実行に失敗しました ({error})")
-                return
-        else:
-            print(f"警告: スクリプトが見つかりません: {script}")
-
-    print("--- サイトデータの更新がすべて完了しました！ ---")
+def find_species_dirs():
+    """images/creatures/カテゴリー/生き物ID/ のような1階層構造でも、
+    images/creatures/カテゴリー/グループ名/生き物ID/ のような2階層以上の構造でも、
+    「これ以上サブフォルダを持たない、写真が直接入っているフォルダ」を生き物フォルダとして見つける。"""
+    species_dirs = []
+    for category_dir in sorted(path for path in IMAGES_DIR.iterdir() if path.is_dir()):
+        for path in sorted(category_dir.rglob("*")):
+            if not path.is_dir() or path.name in IGNORED_DIR_NAMES:
+                continue
+            subdirs = [c for c in path.iterdir() if c.is_dir() and c.name not in IGNORED_DIR_NAMES]
+            if subdirs:
+                continue  # まだ下の階層があるので、生き物フォルダそのものではない
+            species_dirs.append(path)
+    return species_dirs
 
 
-def scan(category_names=None, limit=None):
+def scan():
     processed_count = 0
     skipped_count = 0
     missing_exif_count = 0
@@ -183,12 +174,7 @@ def scan(category_names=None, limit=None):
         print(f"対象フォルダーがありません: {IMAGES_DIR}")
         return 0
 
-    for category_dir in sorted(path for path in IMAGES_DIR.iterdir() if path.is_dir()):
-        if category_names and category_dir.name not in category_names:
-            continue
-        for species_dir in sorted(
-            path for path in category_dir.iterdir() if path.is_dir() and path.name not in IGNORED_DIR_NAMES
-        ):
+    for species_dir in find_species_dirs():
             creature_id = species_dir.name
             photos = sorted(
                 path
@@ -198,20 +184,24 @@ def scan(category_names=None, limit=None):
             next_number = get_next_number(photos, creature_id)
 
             for source in photos:
-                if limit is not None and processed_count >= limit:
-                    break
                 if is_processed(source, creature_id):
                     skipped_count += 1
                     continue
 
                 try:
                     with Image.open(source) as image:
-                        capture_datetime = get_capture_datetime(image, source)
+                        capture_datetime = get_capture_datetime(image)
                 except Exception as error:
                     error_count += 1
                     errors.append(f"{source}: {error}")
                     move_to_failed(source, species_dir)
                     continue
+                if capture_datetime is None:
+                    missing_exif_count += 1
+                    missing_exif.append(str(source))
+                    move_to_failed(source, species_dir)
+                    continue
+
                 target_name = (
                     f"{creature_id}_{next_number:06d}_"
                     f"{capture_datetime:%Y%m%d}_{capture_datetime:%H}.jpg"
@@ -225,10 +215,6 @@ def scan(category_names=None, limit=None):
                     error_count += 1
                     errors.append(f"{source}: {detail}")
                     move_to_failed(source, species_dir)
-            if limit is not None and processed_count >= limit:
-                break
-        if limit is not None and processed_count >= limit:
-            break
 
     print(f"処理した写真: {processed_count}枚")
     print(f"処理済みとしてスキップ: {skipped_count}枚")
@@ -242,18 +228,8 @@ def scan(category_names=None, limit=None):
         print("エラーの詳細:")
         for error in errors:
             print(f"- {error}")
-
-    # === 写真処理が終わったら自動でHTML/JSONを再生成 ===
-    update_site_data()
-
     return 0
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--category", action="append", dest="categories")
-    parser.add_argument("--limit", type=int)
-    args = parser.parse_args()
-    if args.limit is not None and args.limit < 1:
-        parser.error("--limit must be at least 1")
-    raise SystemExit(scan(set(args.categories) if args.categories else None, args.limit))
+    raise SystemExit(scan())

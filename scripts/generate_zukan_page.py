@@ -28,24 +28,7 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 ZUKAN_CATEGORIES = ["suisei-konntyuu", "konchu", "kani"]
 
 # 写真フォルダ名がMarkdownのidと違う場合の対応表。(カテゴリ, Markdownのid): 実際の写真フォルダ名
-PHOTO_DIR_ALIASES = {
-    ("suisei-konntyuu", "okinawa-suji-gengoro"): "gengoro/okinawa-suji-gengoro",
-    ("suisei-konntyuu", "tobiiro-gengoro"): "gengoro/tobiiro-gengoro",
-    ("suisei-konntyuu", "usuiro-shima-gengoro"): "gengoro/usuiro-shima-gengoro",
-    ("suisei-konntyuu", "akahara-ashinaga-mizodoromushi"): "himedoromushi/akahara-ashinaga-mizodoromushi",
-    ("suisei-konntyuu", "amami-hababiro-doromusshi"): "himedoromushi/amami-hababiro-doromusshi",
-    ("suisei-konntyuu", "amami-mizo-doromushi"): "himedoromushi/amami-mizo-doromushi",
-    ("suisei-konntyuu", "amami-yokomizo-doromushi"): "himedoromushi/amami-yokomizo-doromushi",
-    ("suisei-konntyuu", "naga-tsuya-doromushi"): "himedoromushi/naga-tsuya-doromushi",
-    ("suisei-konntyuu", "nomura-himedoromushi"): "himedoromushi/nomura-himedoromushi",
-    ("suisei-konntyuu", "ryuukyuu-munabiro-tuyadoromushi"): "himedoromushi/ryuukyuu-munabiro-tuyadoromushi",
-    ("suisei-konntyuu", "satou-kara-himedoromushi"): "himedoromushi/satou-kara-himedoromushi",
-    ("suisei-konntyuu", "ueno-tsuya-doromushi"): "himedoromushi/ueno-tsuya-doromushi",
-    ("suisei-konntyuu", "kesi-katabiro-amennbo"): "katabiro-amennbo/kesi-katabiro-amennbo",
-    ("suisei-konntyuu", "chairo-kesi-katabiro-amennbo"): "katabiro-amennbo/chairo-kesi-katabiro-amennbo",
-    ("suisei-konntyuu", "iriomote-kesi-katabiro-amennbo"): "katabiro-amennbo/iriomote-kesi-katabiro-amennbo",
-    ("suisei-konntyuu", "tsutsui-nagare-katabiro-amennbo"): "katabiro-amennbo/tsutsui-nagare-katabiro-amennbo",
-}
+PHOTO_DIR_ALIASES = {}
 
 # カテゴリーごとの英語表記(ヒーローのラベル用)。無ければカテゴリーIDをそのまま大文字にする。
 ENGLISH_LABELS = {
@@ -142,9 +125,22 @@ def load_categories():
 
 def photo_files(category, creature_id):
     directory_name = PHOTO_DIR_ALIASES.get((category, creature_id), creature_id)
-    directory = IMAGES_DIR / category / directory_name
-    if not directory.is_dir():
+    category_dir = IMAGES_DIR / category
+    if not category_dir.is_dir():
         return []
+
+    # 1階層: images/creatures/カテゴリー/生き物ID/
+    directory = category_dir / directory_name
+    if not directory.is_dir():
+        # 2階層: images/creatures/カテゴリー/グループ名/生き物ID/
+        directory = None
+        for sub in category_dir.iterdir():
+            if sub.is_dir() and (sub / directory_name).is_dir():
+                directory = sub / directory_name
+                break
+        if directory is None:
+            return []
+
     return sorted(
         str(path.relative_to(ROOT)).replace("\\", "/")
         for path in directory.iterdir()
