@@ -88,7 +88,7 @@ CATEGORY_GROUPS = {
         "order": ["gengoro", "doromushi", "amenbo", "mizumushi", "other"],
         "labels": {
             "gengoro": "ゲンゴロウの仲間",
-            "doromushi": "ドロムシの仲間",
+            "doromushi": "ヒメドロムシの仲間",
             "amenbo": "アメンボの仲間",
             "mizumushi": "ミズムシの仲間",
             "other": "その他",
@@ -191,8 +191,16 @@ def load_creatures(category):
 
 
 def render_card(creature):
-    if creature["photos"]:
-        image = f'<img src="../{creature["photos"][0]}" alt="{escape(creature["name"])}">'
+    photos = creature["photos"]
+    if photos:
+        if len(photos) > 1:
+            photo_urls = json.dumps([f"../{p}" for p in photos], ensure_ascii=False)
+            image = (
+                f'<img src="../{photos[0]}" data-photos=\'{escape(photo_urls)}\' '
+                f'alt="{escape(creature["name"])}">'
+            )
+        else:
+            image = f'<img src="../{photos[0]}" alt="{escape(creature["name"])}">'
     else:
         image = '<div class="zukan-placeholder">写真準備中</div>'
     latin_html = f'<div class="zukan-latin">{creature["latin"]}</div>' if creature["latin"] else ""
