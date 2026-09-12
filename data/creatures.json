@@ -1578,11 +1578,13 @@
     "category": "suisei-konntyuu",
     "category_name": "水生昆虫",
     "months": [
-      2
+      2,
+      11
     ],
     "description": "カタビロアメンボ科ケシカタビロアメンボ属イリオモテケシカタビロアメンボ *Microvelia iriomotensis* Miyamoto, 1964\n\n体長1.7〜1.9mmほどの小型の水生昆虫。南西諸島(奄美群島〜八重山諸島)と台湾に分布する。山間の林道脇の染み出しでできた水たまりなどで見られ、オスがメスを長時間ガードする配偶行動が学術研究で報告されている。",
     "photos": [
-      "images/creatures/suisei-konntyuu/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
+      "images/creatures/suisei-konntyuu/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg",
+      "images/creatures/suisei-konntyuu/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000002_20241128_23.jpg"
     ],
     "page_path": "generated-creatures/suisei-konntyuu/iriomote-kesi-katabiro-amennbo.html"
   },
@@ -1675,7 +1677,7 @@
       8,
       9
     ],
-    "description": "ゲンゴロウ科シマゲンゴロウ属オキナワスジゲンゴロウ Hydaticus vittatus\n\n体長11〜14mm。屋久島以南の南西諸島に分布し、国外では台湾、中国、東南アジアにも生息する南方系のゲンゴロウ。水生植物の豊富な池沼や水田などの止水域に生息する。生息環境の減少に加え、ゲンゴロウ類は近年飼育目的とみられる販売が多く確認されていたことから、2023年1月に他のゲンゴロウ類とあわせて特定第二種国内希少野生動植物種に指定された。この区分は販売・頒布目的の捕獲・譲渡のみを規制するもので、観察目的の採集そのものは規制対象外。同属のスジゲンゴロウ(本州以西に分布)によく似るが、分布域が異なるため見分けやすい。",
+    "description": "ゲンゴロウ科シマゲンゴロウ属オキナワスジゲンゴロウ *Prodaticus vittatus*(*Hydaticus vittatus*として扱う文献もある)\n\n体長11〜14mm。屋久島以南の南西諸島に分布し、国外では台湾、中国、東南アジアにも生息する南方系のゲンゴロウ。水生植物の豊富な池沼や水田などの止水域に生息する。生息環境の減少に加え、ゲンゴロウ類は近年飼育目的とみられる販売が多く確認されていたことから、2023年1月に他のゲンゴロウ類とあわせて特定第二種国内希少野生動植物種に指定された。この区分は販売・頒布目的の捕獲・譲渡のみを規制するもので、観察目的の採集そのものは規制対象外。同属のスジゲンゴロウ(本州以西に分布)によく似るが、分布域が異なるため見分けやすい。",
     "photos": [
       "images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
       "images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000002_20250406_23.jpg",
