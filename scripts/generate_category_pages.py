@@ -154,7 +154,7 @@ def creatures_in_category(category):
 
 def category_buttons(category, available_categories):
     categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
-    buttons = []
+    buttons = ['<a class="category-button" href="../highlights.html">代表的な生き物 →</a>']
     for category_id, name in categories.items():
         escaped_name = html.escape(name)
         if category_id == category:
@@ -173,7 +173,7 @@ def category_buttons(category, available_categories):
 
 def header_category_navigation(category, available_categories):
     categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
-    links = []
+    links = ['<a href="../highlights.html">代表的な生き物</a>']
     for category_id, name in categories.items():
         if category_id not in available_categories:
             continue
