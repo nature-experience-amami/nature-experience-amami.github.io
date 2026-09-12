@@ -154,8 +154,13 @@ def creatures_in_category(category):
 
 def category_buttons(category, available_categories):
     categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
-    buttons = ['<a class="category-button" href="../highlights.html">代表的な生き物 →</a>']
+    buttons = [
+        '<a class="category-button" href="../highlights.html">代表的な生き物 →</a>',
+        '<a class="category-button" href="suisei-konntyuu.html">水生昆虫 →</a>',
+    ]
     for category_id, name in categories.items():
+        if category_id == "suisei-konntyuu":
+            continue
         escaped_name = html.escape(name)
         if category_id == category:
             buttons.append(f'<span class="category-button is-current">{escaped_name}</span>')
@@ -173,8 +178,13 @@ def category_buttons(category, available_categories):
 
 def header_category_navigation(category, available_categories):
     categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
-    links = ['<a href="../highlights.html">代表的な生き物</a>']
+    links = [
+        '<a href="../highlights.html">代表的な生き物</a>',
+        '<a href="suisei-konntyuu.html">水生昆虫</a>',
+    ]
     for category_id, name in categories.items():
+        if category_id == "suisei-konntyuu":
+            continue
         if category_id not in available_categories:
             continue
         escaped_name = html.escape(name)
