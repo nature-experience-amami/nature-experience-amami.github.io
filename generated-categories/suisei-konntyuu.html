@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>奄美のsuisei-konntyuu｜Nature Experience Amami</title>
+<meta name="description" content="奄美大島で見られるsuisei-konntyuuを紹介する図鑑ページ。">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
+    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ background:var(--night); color:var(--moonlight); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.9; }
+  img{ display:block; width:100%; }
+  a{ color:inherit; text-decoration:none; }
+
+  header{
+    position:sticky; top:0; z-index:1000;
+    background:rgba(10,22,19,.94); backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .header-inner{
+    max-width:1200px; margin:0 auto; padding:18px 28px;
+    display:flex; align-items:center; justify-content:space-between; gap:30px;
+  }
+  .logo{ font-family:"Shippori Mincho", serif; font-size:20px; font-weight:600; letter-spacing:.08em; white-space:nowrap; }
+  .logo span{ display:block; font-family:"Space Mono", monospace; font-size:9px; letter-spacing:.18em; color:var(--amber); margin-top:2px; }
+  nav{ display:flex; align-items:center; gap:28px; }
+  nav a{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; opacity:.82; transition:.25s; }
+  nav a:hover{ color:var(--amber); opacity:1; }
+
+  .creature-nav{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); position:sticky; top:69px; z-index:900; }
+  .creature-nav-inner{
+    max-width:1200px; margin:0 auto; padding:0 28px;
+    display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
+  }
+  .creature-nav-inner::-webkit-scrollbar{ display:none; }
+  .creature-nav a{
+    flex:0 0 auto; padding:14px 20px; font-size:12px; color:rgba(234,242,233,.65);
+    border-right:1px solid rgba(234,242,233,.08); transition:.25s; white-space:nowrap;
+  }
+  .creature-nav a:first-child{ border-left:1px solid rgba(234,242,233,.08); }
+  .creature-nav a:hover, .creature-nav a.active{ color:var(--amber); background:rgba(232,163,61,.05); }
+
+  .hero{
+    min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
+    background:
+      linear-gradient(to bottom, rgba(10,22,19,.2), rgba(10,22,19,.95)),
+      radial-gradient(circle at 70% 35%, rgba(107,143,113,.18), transparent 35%);
+  }
+  .hero-inner{ width:100%; max-width:1200px; margin:0 auto; padding:80px 28px 55px; }
+  .eyebrow{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.18em; color:var(--amber); margin-bottom:18px; }
+  .hero h1{ font-family:"Shippori Mincho", serif; font-size:clamp(38px,6vw,64px); line-height:1.2; font-weight:600; letter-spacing:.04em; }
+  .hero-lead{ max-width:680px; margin-top:22px; font-size:15px; line-height:2; color:rgba(234,242,233,.82); }
+
+  section{ padding:70px 28px; }
+  .section-inner{ max-width:1200px; margin:0 auto; }
+  .section-label{ font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.18em; color:var(--amber); margin-bottom:12px; }
+  .section-title{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin-bottom:24px; }
+
+  .intro{ background:var(--canopy); }
+  .intro-text{ max-width:720px; font-size:14px; color:rgba(234,242,233,.85); }
+  .intro-text p + p{ margin-top:16px; }
+  .note-box{
+    margin-top:28px; padding:20px 22px; border-left:2px solid var(--moss);
+    background:rgba(10,22,19,.35); font-size:12.5px; color:rgba(234,242,233,.75); line-height:1.8;
+  }
+
+  .creatures{ background:var(--night); }
+  .group{ margin-bottom:56px; }
+  .group:last-child{ margin-bottom:0; }
+  .group-title{
+    font-family:"Space Mono", monospace; font-size:12px; letter-spacing:.14em; color:var(--moss);
+    text-align:center; margin-bottom:26px;
+  }
+  .group-title::before, .group-title::after{ content:"――"; margin:0 .8em; color:rgba(107,143,113,.5); }
+
+  .zukan-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:20px; }
+  .zukan-card{ border-top:1px solid rgba(234,242,233,.14); padding-top:16px; }
+  .zukan-image{
+    aspect-ratio:4/3; overflow:hidden; background:var(--canopy);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .zukan-image img{ width:100%; height:100%; object-fit:cover; }
+  .zukan-placeholder{
+    width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    color:rgba(234,242,233,.35); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.06em;
+    background:repeating-linear-gradient(135deg, rgba(234,242,233,.03) 0 10px, transparent 10px 20px);
+  }
+  .zukan-info{ padding-top:14px; }
+  .zukan-name{ font-family:"Shippori Mincho", serif; font-size:19px; font-weight:600; margin-bottom:3px; }
+  .zukan-latin{ font-size:11px; font-style:italic; color:rgba(234,242,233,.5); margin-bottom:8px; }
+  .zukan-desc{ font-size:12.5px; color:rgba(234,242,233,.72); line-height:1.8; margin-bottom:10px; }
+  .zukan-tag{
+    display:inline-block; font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.04em;
+    padding:3px 8px; border:1px solid rgba(234,242,233,.2); border-radius:2px; color:rgba(234,242,233,.6);
+  }
+  .zukan-tag.rare{ border-color:rgba(232,163,61,.5); color:var(--amber); }
+
+  .other-creatures{ margin-top:70px; padding-top:40px; border-top:1px solid rgba(234,242,233,.12); }
+  .other-creatures-title{ font-family:"Shippori Mincho", serif; font-size:22px; margin-bottom:22px; }
+  .other-creatures-buttons{ display:flex; flex-wrap:wrap; gap:12px; }
+  .category-button{
+    display:inline-flex; align-items:center; justify-content:center; padding:12px 22px;
+    border:1px solid rgba(234,242,233,.2); font-size:12px; color:rgba(234,242,233,.75); transition:.25s;
+  }
+  .category-button:hover{ border-color:var(--amber); color:var(--amber); background:rgba(232,163,61,.04); }
+
+  footer{ background:#07100E; padding:45px 28px 25px; }
+  .footer-inner{
+    max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; gap:30px;
+    padding-bottom:30px; border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .footer-logo{ font-family:"Shippori Mincho", serif; font-size:18px; }
+  .footer-copy{ margin-top:8px; font-size:11px; color:rgba(234,242,233,.5); }
+  .copyright{ max-width:1200px; margin:20px auto 0; font-family:"Space Mono", monospace; font-size:9px; color:rgba(234,242,233,.35); }
+
+  @media(max-width:760px){
+    .header-inner{ padding:15px 18px; }
+    nav a:not(.contact-link){ display:none; }
+    .hero-inner{ padding:60px 20px 40px; }
+    section{ padding:50px 20px; }
+    .zukan-grid{ grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:14px; }
+    .other-creatures-buttons{ display:grid; grid-template-columns:1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
+    <nav>
+      <a href="../index.html">HOME</a>
+      <a href="../tour.html">TOUR</a>
+      <a href="../contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<div class="creature-nav">
+  <div class="creature-nav-inner">
+    <a href="hebi.html">ヘビ</a><a href="kaeru.html">両生類(カエル・イモリ)</a><a href="kuwagata.html">クワガタ</a><a href="honyuurui.html">哺乳類</a><a href="tori.html">鳥</a><a href="tokage.html">トカゲ</a><a href="konchu.html">昆虫その他</a><a href="kai.html">貝</a><a href="sonota.html">甲殻類・汽水域など</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">CREATURES / AQUATIC INSECTS</div>
+    <h1>suisei-konntyuu</h1>
+    <p class="hero-lead">田んぼや池、川のふちなど、奄美の水辺にひっそりと暮らす小さな生き物たち。ゲンゴロウ、ドロムシ、アメンボ――じっくり探すと出会える種類を紹介します。</p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="section-inner">
+    <div class="section-label">ABOUT</div>
+    <h2 class="section-title">図鑑ページについて</h2>
+    <div class="intro-text"><p>水生昆虫は、ヘビやカエルのように1種類ごとの詳しい紹介ページは作らず、このページの中でまとめて紹介する「図鑑形式」にしています。</p><p>種類がとても多く、専門的なグループも多いジャンルのため、写真や情報が集まった種類から少しずつ追加していきます。</p></div>
+    <div class="note-box">水生昆虫は繊細で、種類によっては生息数が少ないものもいます。観察は水辺からそっと行い、採集する場合も持ち帰る数は最小限にとどめましょう。</div>
+  </div>
+</section>
+
+<section class="creatures">
+  <div class="section-inner">
+    <div class="section-label">FIELD GUIDE</div>
+    <h2 class="section-title">奄美で出会えるsuisei-konntyuu</h2>
+
+    <div class="group"><p class="group-title">ゲンゴロウの仲間</p><div class="zukan-grid"><div class="zukan-card"><div class="zukan-image"><img src="../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg" alt="オキナワスジゲンゴロウ"></div><div class="zukan-info"><div class="zukan-name">オキナワスジゲンゴロウ</div><div class="zukan-latin">ゲンゴロウ科シマゲンゴロウ属 <em>Prodaticus vittatus</em>(旧学名 <em>Hydaticus vittatus</em>)</div><p class="zukan-desc">体長11〜14mm。屋久島・南西諸島に分布し、国外では台湾、中国、東南アジアにも生息する南方系のゲンゴロウ。水生植物の豊富な池沼や水田などの止水域に生息する。かつては比較的普通に見られたが、生息環境の減少により数を減らしており、環境省レッドリストで絶滅危惧II類に指定されている。同属のスジゲンゴロウ(本州以西に分布)によく似るが、分布域が異なるため見分けやすい。</p><span class="zukan-tag rare">採集自由(環境省レッドリスト:絶滅危惧II類)</span></div></div><div class="zukan-card"><div class="zukan-image"><img src="../images/creatures/suisei-konntyuu/gengoro/tobiiro-gengoro/tobiiro-gengoro_000001_20250403_23.jpg" alt="トビイロゲンゴロウ"></div><div class="zukan-info"><div class="zukan-name">トビイロゲンゴロウ</div><div class="zukan-latin">ゲンゴロウ科ゲンゴロウ属 <em>Cybister sugillatus</em></div><p class="zukan-desc">体長18〜25mm。日本国内では南西諸島に分布し、国外では台湾、中国、東南アジア、ネパール、インド、スリランカ、チベット、フィリピンにも生息する。クロゲンゴロウによく似るが、体形はやや細い卵型で、背面は光沢のある緑色から黒褐色。南西諸島に分布する近縁種(トビイロゲンゴロウ・フチトリゲンゴロウ・ヒメフチトリゲンゴロウ)の中では、比較的個体数が安定しているとされる。水生植物の豊富な浅いため池や放棄水田などに生息する。</p><span class="zukan-tag">採集自由</span></div></div><div class="zukan-card"><div class="zukan-image"><img src="../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/_4033046.JPG" alt="ウスイロシマゲンゴロウ"></div><div class="zukan-info"><div class="zukan-name">ウスイロシマゲンゴロウ</div><div class="zukan-latin">ゲンゴロウ科シマゲンゴロウ属 <em>Hydaticus rhantoides</em></div><p class="zukan-desc">体長10〜11mm程度の小型のゲンゴロウ。前翅は全体的に黄褐色で、目立つ縞模様は無い。本州以西では局所的にしか見られないが、南西諸島では普通に見られ、奄美大島でも記録がある。水田や池沼などの開けた止水域に生息する。南西諸島のゲンゴロウの中では、トビイロゲンゴロウ・コガタノゲンゴロウとともに比較的健在な種とされる。</p><span class="zukan-tag">採集自由</span></div></div></div></div>
+
+    <div class="other-creatures">
+      <div class="section-label">EXPLORE MORE</div>
+      <h3 class="other-creatures-title">他の生き物を見る</h3>
+      <div class="other-creatures-buttons">
+        <a href="hebi.html" class="category-button">ヘビ →</a><a href="kaeru.html" class="category-button">両生類(カエル・イモリ) →</a><a href="kuwagata.html" class="category-button">クワガタ →</a><a href="honyuurui.html" class="category-button">哺乳類 →</a><a href="tori.html" class="category-button">鳥 →</a><a href="tokage.html" class="category-button">トカゲ →</a><a href="konchu.html" class="category-button">昆虫その他 →</a><a href="kai.html" class="category-button">貝 →</a><a href="sonota.html" class="category-button">甲殻類・汽水域など →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Nature Experience Amami</div>
+      <div class="footer-copy">奄美大島の夜の森を歩くネイチャーガイド</div>
+    </div>
+  </div>
+  <div class="copyright">&copy; Nature Experience Amami</div>
+</footer>
+
+</body>
+</html>
