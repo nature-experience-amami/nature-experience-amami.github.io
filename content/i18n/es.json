@@ -1,0 +1,36 @@
+{
+  "lang_label": "ES",
+  "categories": {
+    "hebi": "Serpientes",
+    "kaeru": "Anfibios",
+    "kuwagata": "Escarabajos ciervo",
+    "honyu": "Mam\u00edferos",
+    "tori": "Aves",
+    "tokage": "Lagartos",
+    "suisei-konntyuu": "Insectos acu\u00e1ticos",
+    "konchu": "Insectos",
+    "kai": "Moluscos",
+    "sonota": "Crust\u00e1ceos y otros"
+  },
+  "strings": {
+    "home": "Inicio",
+    "contact": "Contacto",
+    "close": "Cerrar",
+    "about_heading": "Sobre {name}",
+    "safety_heading": "Notas de seguridad para la observaci\u00f3n",
+    "gallery_heading": "Descubra {name} en los bosques de Amami",
+    "season_label": "Mejor \u00e9poca para observar",
+    "danger_label": "Nivel de peligro",
+    "discover_heading": "Tambi\u00e9n te puede interesar",
+    "tour_heading": "Recorra el bosque nocturno de Amami con un gu\u00eda",
+    "tour_text": "Ver una foto es una cosa; buscarlo en el bosque de noche junto a un gu\u00eda local experimentado es otra muy distinta. \u00danase a un tour nocturno para descubrir la fauna de Amami Oshima de forma segura.",
+    "tour_cta": "\ud83d\udd26 Sobre los tours nocturnos",
+    "footer_text": "\u00a9 2026 Nature-Experience Amami. Todas las fotos est\u00e1n protegidas; prohibida su reproducci\u00f3n sin permiso.",
+    "photo_prep": "Foto pr\u00f3ximamente",
+    "gallery_more_prep": "M\u00e1s fotos pr\u00f3ximamente.",
+    "gallery_empty": "Las fotos estar\u00e1n disponibles pronto. Mientras tanto, puede leer sobre este animal a continuaci\u00f3n.",
+    "months_prep": "Informaci\u00f3n sobre la temporada de observaci\u00f3n pr\u00f3ximamente",
+    "safety_common": "Disfrute de la fauna de Amami solo a trav\u00e9s de fotograf\u00edas. Algunas especies est\u00e1n protegidas por ley o por ordenanza local, y su captura o extracci\u00f3n est\u00e1 prohibida. En las zonas de protecci\u00f3n especial dentro del parque nacional, la recolecci\u00f3n de cualquier fauna est\u00e1 totalmente prohibida. Consulte las notas de esta p\u00e1gina y confirme las normas locales antes de visitar cualquier lugar.",
+    "safety_warning_template": "Este animal est\u00e1 sujeto a: \u201c{danger}\u201d. Tocarlo o capturarlo est\u00e1 prohibido por ley u ordenanza."
+  }
+}

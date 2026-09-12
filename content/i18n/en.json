@@ -1,0 +1,36 @@
+{
+  "lang_label": "EN",
+  "categories": {
+    "hebi": "Snakes",
+    "kaeru": "Amphibians",
+    "kuwagata": "Beetles",
+    "honyu": "Mammals",
+    "tori": "Birds",
+    "tokage": "Lizards",
+    "suisei-konntyuu": "Aquatic Insects",
+    "konchu": "Insects",
+    "kai": "Shellfish",
+    "sonota": "Crustaceans & Others"
+  },
+  "strings": {
+    "home": "Home",
+    "contact": "Contact",
+    "close": "Close",
+    "about_heading": "About {name}",
+    "safety_heading": "Observation Safety Notes",
+    "gallery_heading": "Meet the {name} in Amami's Forests",
+    "season_label": "Best observed",
+    "danger_label": "Danger Level",
+    "discover_heading": "You might also like",
+    "tour_heading": "Walk Amami's Night Forest With a Guide",
+    "tour_text": "Seeing it in a photo is one thing \u2014 searching for it in the forest at night, with an experienced local guide, is another. Join a night tour to see Amami Oshima's wildlife for yourself, safely.",
+    "tour_cta": "\ud83d\udd26 About Night Tours",
+    "footer_text": "\u00a9 2026 Nature-Experience Amami. All photos protected; reproduction prohibited without permission.",
+    "photo_prep": "Photo coming soon",
+    "gallery_more_prep": "More photos coming soon.",
+    "gallery_empty": "Photos are coming soon. In the meantime, you can still read about this creature below.",
+    "months_prep": "Observation season information coming soon",
+    "safety_common": "Please enjoy Amami's wildlife through photographs. Some species are protected by law or local ordinance, and capturing or removing them is prohibited. In special protection zones within the national park, collecting any wildlife is prohibited entirely. Please check the notes on this page, and confirm local rules before visiting any site.",
+    "safety_warning_template": "This creature is subject to: \u201c{danger}\u201d. Touching or capturing it is prohibited by law or ordinance."
+  }
+}
