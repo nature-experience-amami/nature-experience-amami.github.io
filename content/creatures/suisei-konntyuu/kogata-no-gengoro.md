@@ -3,7 +3,7 @@ id: kogata-no-gengoro
 name: コガタノゲンゴロウ
 category: suisei-konntyuu
 group: gengoro
-danger: 採集自由(環境省レッドリスト:絶滅危惧II類)
+danger: 環境省レッドリスト:絶滅危惧II類
 months: [4, 5, 6, 7, 8, 9]
 source: 環境省 レッドデータブック(第4次)昆虫類 コガタノゲンゴロウ(https://ikilog.biodic.go.jp/rdbdata/files/envpdf/昆虫類_249.pdf)
 ---
