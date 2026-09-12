@@ -1,7 +1,7 @@
 ---
 id: amami-kuro-usagi
 name: アマミノクロウサギ
-category: honyu
+category: honyuurui
 danger: 捕獲・譲渡禁止(特別天然記念物)
 ---
 ウサギ目ウサギ科アマミノクロウサギ *Pentalagus furnessi*

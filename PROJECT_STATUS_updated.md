@@ -1,6 +1,6 @@
 # Nature Experience Amami - Project Status
 
-最終更新: 2026-09-06（日本時間）
+最終更新: 2026-09-12（日本時間）
 
 このファイルは、Nature Experience Amami の作業状況と判断事項を、ChatGPT（ちゃっぴー）、Claude（くろちゃん）、Copilotなど、誰でも引き継げるように記録するためのメモです。
 
@@ -240,7 +240,16 @@ Copy-Item generated-creatures\kuwagata\* creatures\kuwagata\ -Force
 
 ## 現在のGit状態
 
-2026-09-04時点の記録では、以下がローカルに未push状態だった（この記録作成時点で最新のGit状態は要確認）。
+（この節は書かれた時点のスナップショット。最新の状況は必ず`git status`で再確認すること。以下は2026-09-12総点検時点）
+
+- ブランチ`main`はリモート`origin/main`と同期済み（ahead/behind無し）。
+- 直近のコミット: `69207ee photos` → `b95a0d3 content` → `7f45dbd suisei-kontyu` → `a74409f Merge` → `a6526f9 categories`。
+- ワーキングツリーに**未commitの変更**あり（詳細は変更履歴「2026-09-12 全体棚卸し」参照）:
+  - 変更: `content/creatures/tori/ootora-tsugumi.md`, `index.html`
+  - 削除: `content/creatures/tori/oo-tora-tsugumi.md`, `images/creatures/tori/sasiba/sasiba_000005_20250123_10.jpg`
+  - 未追跡（新規）: `content/creatures/tori/amami-yamashigi.md`
+
+2026-09-04時点の記録（参考・履歴として残す）:
 
 ```text
 main...origin/main [ahead 3]
@@ -487,3 +496,56 @@ Pushする前にGitHub側の履歴と、未追跡ファイルを必ず確認す�
 - `b55bea0 Add contact form and inquiry options`
 
 （担当: Copilot）
+
+### 2026-09-12 全体棚卸し（フォルダ総点検・現状確認のみ、コード変更なし）
+
+今回はコードの変更は行わず、リポジトリ全体（`content/` `images/` `data/` `creatures/` `generated-*/` `scripts/` `templates/`）を確認し、どこまで進んでいるかを整理した。
+
+#### 09-07以降に起きていたこと
+
+前回の記録（09-06〜07）以降、`a6526f9`〜`69207ee`の5コミットで、ヘビ・カエル・クワガタ以外のカテゴリー（哺乳類・鳥・トカゲ・昆虫・水生昆虫・貝・甲殻類その他）向けの**生写真（未処理）の大量投入**が進んでいた。あわせて`content/creatures/honyu/watase-jinezumi.md`、`content/creatures/tori/oo-tora-tsugumi.md`など数件のcontent mdも追加されている。これは「サイトの対象カテゴリーを大きく広げる準備段階」であり、今回のような全体確認をしないと進捗が見えにくい状態だった。
+
+#### カテゴリー別パイプライン進捗（写真→自動処理→content md→data/creatures.json→個別ページ→一覧ページ→トップ導線）
+
+| カテゴリー | 写真処理 | content md | data/creatures.json | 個別ページ(本番`creatures/`) | 一覧ページ | トップ導線 |
+|---|---|---|---|---|---|---|
+| ヘビ | ほぼ完了（未処理1枚） | 7種 | 8件 | 7/7 | `generated-categories/hebi.html`（本番導線化済み） | ○ |
+| カエル・イモリ | ほぼ完了（未処理1枚） | 10種 | 11件 | **8/10**（イボイモリ・シリケンイモリの2種のみ本番未反映） | `generated-categories/kaeru.html` | ○ |
+| クワガタ | ほぼ完了（未処理2枚） | 9種 | 9件 | 9/9 | `generated-categories/kuwagata.html` | ○ |
+| 哺乳類 | 途中（未処理5枚、`toge-nezumi`は写真フォルダ自体が無い） | 4種 | 3件 | **0/4**（`generated-creatures/honyu/`に試作のみ、本番`creatures/honyu/`は未作成） | なし | なし |
+| 鳥 | 途中（未処理4枚） | 5種（うち重複・整理待ち2件、下記参照） | 10件（content未整備の7種も写真フォルダだけでJSONに機械的に列挙されている） | **0/5**（本番`creatures/tori/`は未作成） | なし | なし |
+| トカゲ | 初期（未処理3枚） | 0種（contentディレクトリ自体まだ無い） | 2件（フォルダのみ、名前・解説なし） | 0 | なし | なし |
+| 昆虫その他 | 初期（未処理56枚） | 0種 | 10件（同上） | 0 | なし | なし |
+| 水生昆虫・貝・甲殻類（kani/sonota/suisei-konntyuu） | 初期（未処理合計70枚、水生昆虫だけで65枚） | 0種 | 0件（未処理のため写真自体がまだ集計対象外） | 0 | なし | なし |
+
+「ほぼ完了」の3カテゴリー（ヘビ・カエル・クワガタ）は写真→公開ページまで一気通貫で回っている。哺乳類・鳥は「content mdと写真はあるが本番個別ページが無い」段階、それ以外（トカゲ・昆虫・水生昆虫・貝・甲殻類）は「生写真を集めている最中で、まだ名前も解説も無い」段階、という3段階の進み方になっている。
+
+#### 発見した要修正事項（今回は記録のみ、修正は未実施）
+
+1. **鳥カテゴリーに重複content mdが2組見つかった。**
+   - `content/creatures/tori/oo-tora-tsugumi.md`（id: oo-tora-tsugumi）と`content/creatures/tori/ootora-tsugumi.md`（id: ootora-tsugumi）が同じ「オオトラツグミ」を指す重複ファイルだった。**この統合作業は既に着手済み・未commit**（ワーキングツリーで`oo-tora-tsugumi.md`を削除し、`ootora-tsugumi.md`側に本文・`danger`・`months`を統合する形で修正中）。
+   - `content/creatures/tori/yama-shigi.md`（id: yama-shigi, name: アマミヤマシギ）と、今回新規追加された未追跡ファイル`content/creatures/tori/amami-yamashigi.md`（id: amami-yamashigi, name: アマミヤマシギ）も同種の重複。`yama-shigi.md`には対応する写真フォルダが無く（`images/creatures/tori/yama-shigi/`は存在しない）、`amami-yamashigi.md`側には写真が1枚ある。**こちらは未着手**。オオトラツグミと同じ要領で、`yama-shigi.md`を削除して`amami-yamashigi.md`に一本化するのが妥当と思われる。
+2. **オオトラツグミの写真フォルダ名がidと一致していない。** 統合後のid案は`oo-tora-tsugumi`（ハイフンあり）だが、実際の写真フォルダは`images/creatures/tori/oo-toratsugumi/`（`tora`の前にハイフンなし）。かつフォルダ内の写真`_8091848.JPG`は未処理（連番リネーム前）のため、現状は`data/creatures.json`にオオトラツグミが**一件も載っていない**。写真処理の実行に加え、`generate_creatures_json.py`の`MARKDOWN_ID_ALIASES`へのtori用エイリアス追加、またはフォルダ名の統一が必要。
+3. **`images/creatures/honyuurui/`というフォルダ名と、`content/categories.json`の哺乳類キー`honyu`が食い違っている。** そのため`data/creatures.json`内の哺乳類エントリの`category_name`が「哺乳類」ではなく生の値`honyuurui`のまま出力されている（`categories.json`にちゃんとした表示名を引けていない）。同様に、写真投入が始まっている`kani`（甲殻類）・`suisei-konntyuu`（水生昆虫）という画像フォルダ名は`content/categories.json`に対応するキーが無い（`categories.json`には`sonota`はあるが`kani`・`suisei-konntyuu`は無い）。写真処理が進んで反映され始める前に、`categories.json`側のキーをフォルダ名と合わせるか、フォルダ名を`categories.json`に合わせて統一しておく必要がある。
+4. **`index.html`の未commit変更が、まだ存在しないページへリンクしている。** ワーキングツリー上の`index.html`に、上部ナビと「CREATURE GUIDE」セクションへ「代表的な生き物」→`highlights.html`のリンクが追加されているが、`highlights.html`はリポジトリ内に存在しない（作成前にリンクだけ先に追加した状態）。commit・pushする前に`highlights.html`本体を用意するか、リンク追加を一旦保留する必要がある。
+5. **`generated-creatures/tokage/iboimori.html`・`generated-creatures/tokage/shiriken-imori.html`は古いカテゴリー分類の残骸。** イボイモリ・シリケンイモリは現在`content/creatures/kaeru/`配下（両生類カテゴリー）にcontentがあるが、`generated-creatures/`にはカテゴリー変更前の`tokage`（トカゲ）フォルダ配下にも生成物が残っている。実害は無いが紛らわしいので、次回`generate_creature_pages.py`を再実行する際に古い出力を掃除したほうがよい。
+6. **直近の生写真投入コミット（`7f45dbd` `69207ee`）以降、`chore: process creature photos`という自動処理コミットがまだ発生していない**（直近のbotコミットは`07342c2`でこれより古い）。GitHub Actionsのワークフロー自体は`images/creatures/**`へのpushで自動起動する設定なので、起動しているか・失敗していないかをGitHub側のActionsタブで確認したほうがよい（ローカルからは実行状況を確認できなかった）。
+
+#### 現在ワーキングツリーにある未commitの変更（今回の点検で発見・中身を確認したのみ）
+
+```text
+変更: content/creatures/tori/ootora-tsugumi.md
+変更: index.html
+削除: content/creatures/tori/oo-tora-tsugumi.md
+削除: images/creatures/tori/sasiba/sasiba_000005_20250123_10.jpg
+未追跡: content/creatures/tori/amami-yamashigi.md
+```
+
+上記1・4に対応する内容。まだ誰もcommitしていない状態なので、次にこのファイルを触るAI/担当者は、ユーザーの意図（オオトラツグミ統合は完了しているか、highlights.htmlは別途用意する予定か）を確認してからcommitすること。
+
+#### 今回は行わなかったこと（確認のみ）
+
+- ブラウザでの表示確認は行っていない（ローカルファイルの中身とGit状態の確認のみ）。
+- 上記5件の要修正事項の実際の修正（コード変更・写真処理・commit）は一切行っていない。
+
+（担当: Claude／Sonnet 5）

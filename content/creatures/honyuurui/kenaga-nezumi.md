@@ -1,7 +1,7 @@
 ---
 id: kenaga-nezumi
 name: ケナガネズミ
-category: honyu
+category: honyuurui
 danger: 捕獲・譲渡禁止(天然記念物)
 ---
 ネズミ科ケナガネズミ属ケナガネズミ *Diplothrix legata*

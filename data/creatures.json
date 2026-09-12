@@ -64,7 +64,7 @@
       "images/creatures/hebi/akamata/akamata_000043_20260607_23.jpg",
       "images/creatures/hebi/akamata/akamata_000043_20260830_21.jpg",
       "images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg",
-      "images/creatures/hebi/akamata/IMG_0470.JPG"
+      "images/creatures/hebi/akamata/akamata_000045_20260903_09.jpg"
     ],
     "page_path": "generated-creatures/hebi/akamata.html"
   },
@@ -136,6 +136,7 @@
     ],
     "description": "クサリヘビ科ハブ属 *Protobothrops flavoviridis*\n\n全長〜226cm、大型のヘビ。5月から11月頃が良く観察できる(冬でも暖かい日には活動)。夜行性で昼間は穴の中などで休む。平地から山地の森林、草原、水辺、農地や樹上にも生息し、ネズミを追って人家周辺にも入り込む。主食はネズミの他、爬虫類、カエル、哺乳類、鳥類。天敵はアカマタとハブ取り。毒がある上にかなり攻撃的。2〜3mは必ず離れて観察・撮影する。近づくと逃げずにすぐ攻撃体制に入り、体長の3分の2近く飛びかかることが可能。電波の通じない山奥で噛まれると大変なことになる。模様は自然に溶け込んでかなり見つけにくく、見えていないだけでいろんな所に潜んでいる。注意しすぎるくらい注意。",
     "photos": [
+      "images/creatures/hebi/habu/_7139660.JPG",
       "images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
       "images/creatures/hebi/habu/habu_000003_20250228_00.jpg",
       "images/creatures/hebi/habu/habu_000004_20260214_22.jpg",
@@ -218,12 +219,12 @@
       "images/creatures/hebi/habu/habu_000067_20251012_00.jpg",
       "images/creatures/hebi/habu/habu_000068_20251012_00.jpg",
       "images/creatures/hebi/habu/habu_000069_20260703_00.jpg",
-      "images/creatures/hebi/habu/IMG_0001.JPG",
-      "images/creatures/hebi/habu/IMG_0211.JPG",
-      "images/creatures/hebi/habu/IMG_0466.JPG",
-      "images/creatures/hebi/habu/IMG_0479.JPG",
-      "images/creatures/hebi/habu/IMG_9375.JPG",
-      "images/creatures/hebi/habu/IMG_9610.JPG"
+      "images/creatures/hebi/habu/habu_000070_20260721_12.jpg",
+      "images/creatures/hebi/habu/habu_000071_20260802_03.jpg",
+      "images/creatures/hebi/habu/habu_000072_20260903_09.jpg",
+      "images/creatures/hebi/habu/habu_000073_20260903_11.jpg",
+      "images/creatures/hebi/habu/habu_000074_20260618_00.jpg",
+      "images/creatures/hebi/habu/habu_000075_20260630_00.jpg"
     ],
     "page_path": "generated-creatures/hebi/habu.html"
   },
@@ -305,7 +306,7 @@
       "images/creatures/hebi/hyan/hyan_000016_20250620_22.jpg",
       "images/creatures/hebi/hyan/hyan_000016_20260608_00.jpg",
       "images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg",
-      "images/creatures/hebi/hyan/IMG_9569.JPG"
+      "images/creatures/hebi/hyan/hyan_000018_20260626_00.jpg"
     ],
     "page_path": "generated-creatures/hebi/hyan.html"
   },
@@ -366,54 +367,59 @@
     "page_path": "generated-creatures/hebi/ryukyu-ao-hebi.html"
   },
   {
-    "id": "kenaga-nezumi",
-    "name": "kenaga-nezumi",
+    "id": "amami-kuro-usagi",
+    "name": "アマミノクロウサギ",
     "category": "honyuurui",
-    "category_name": "honyuurui",
+    "category_name": "哺乳類",
     "months": [
       2,
       3
     ],
-    "description": "",
+    "description": "ウサギ目ウサギ科アマミノクロウサギ *Pentalagus furnessi*\n\n体長41〜51cm 体重1.3〜2.7kg。奄美大島と徳之島にのみ生息する日本固有種で、原始的な特徴を色濃く残すことから「生きた化石」とも呼ばれる。1921年に天然記念物、1963年に特別天然記念物に指定。夜行性で、岩穴や木の洞に掘った巣穴を拠点に行動し、シイの実や若芽などを食べる。繁殖期は春と秋頃で、1回に1頭を出産する。かつて野生化したネコやフイリマングースによる捕食で数を減らしたが、マングースの防除事業が進み、近年は生息数が回復傾向にある。ナイトツアーを象徴する生き物で、林道でひょいと跳ねる姿に出会えることも少なくない。",
     "photos": [
+      "images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
+      "images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg"
+    ],
+    "page_path": "generated-creatures/honyuurui/amami-kuro-usagi.html"
+  },
+  {
+    "id": "kenaga-nezumi",
+    "name": "ケナガネズミ",
+    "category": "honyuurui",
+    "category_name": "哺乳類",
+    "months": [
+      2,
+      3
+    ],
+    "description": "ネズミ科ケナガネズミ属ケナガネズミ *Diplothrix legata*\n\n体長22〜33cm 尾長25〜35cm。奄美大島・徳之島・沖縄島北部にのみ生息する日本最大のネズミで、背中には5〜6cmの長い剛毛が混じる。1972年に天然記念物、2016年に国内希少野生動植物種に指定。夜行性で樹上性が強く、昼間は樹洞に枯れ葉を運び込んだ巣で休む。シイの実や昆虫などを食べる雑食性。繁殖期は秋から初冬で、1回に2〜5頭を出産する。警戒心が薄く、懐中電灯の光を当ててもあまり逃げないため、林道でゆっくり観察できることもある。",
+    "photos": [
+      "images/creatures/honyuurui/kenaga-nezumi/_4132324.JPG",
+      "images/creatures/honyuurui/kenaga-nezumi/_4132326.JPG",
+      "images/creatures/honyuurui/kenaga-nezumi/_4132329.JPG",
+      "images/creatures/honyuurui/kenaga-nezumi/_4212721.JPG",
+      "images/creatures/honyuurui/kenaga-nezumi/_C027655.JPG",
       "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
       "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000002_20260206_20.jpg",
       "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000003_20260319_21.jpg"
     ],
-    "page_path": null
-  },
-  {
-    "id": "kurousagi",
-    "name": "kurousagi",
-    "category": "honyuurui",
-    "category_name": "honyuurui",
-    "months": [
-      2,
-      3
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/honyuurui/kurousagi/kurousagi_000001_20260221_21.jpg",
-      "images/creatures/honyuurui/kurousagi/kurousagi_000002_20250301_20.jpg"
-    ],
-    "page_path": null
+    "page_path": "generated-creatures/honyuurui/kenaga-nezumi.html"
   },
   {
     "id": "watase-jinezumi",
-    "name": "watase-jinezumi",
+    "name": "ワタセジネズミ",
     "category": "honyuurui",
-    "category_name": "honyuurui",
+    "category_name": "哺乳類",
     "months": [
       12
     ],
-    "description": "",
+    "description": "トガリネズミ科ジネズミ属ワタセジネズミ *Crocidura watasei*\n\n体長約5.5cm 体重5〜8gほどの、世界最小級の哺乳類の一つ。奄美群島(奄美大島、加計呂麻島、徳之島など)と沖縄諸島にのみ分布する日本固有種。草地や畑など開けた環境を好み、小型昆虫やクモなどを食べる。夜行性で、林道脇の草むらなどを素早く動き回る姿を見かけることがある。同属で森林性のオリイジネズミとは生息環境が異なり、混同されることもある。天然記念物のような法的な捕獲制限は無いが、環境省の準絶滅危惧に指定されている。",
     "photos": [
       "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
       "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000002_20241218_18.jpg",
       "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000003_20241218_18.jpg",
       "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000004_20241218_19.jpg"
     ],
-    "page_path": null
+    "page_path": "generated-creatures/honyuurui/watase-jinezumi.html"
   },
   {
     "id": "amami-aka-gaeru",
@@ -582,6 +588,7 @@
     ],
     "description": "アカガエル科ニオイガエル属 *Odorrana splendida*\n\n大きさ7.4〜13.7cm 繁殖時期2月末から6月頃。山地の源流の穏やかな流れの沢に生息。日本一美しいカエルと言われ、鹿児島県の天然記念物・国内希少野生動物種に指定。卵を含め捕獲、譲渡が禁止。標高が高めの沢の近くで暗くなると鳴き声が聞こえる場所もある。ポイントによっては、夏でも雨が降ると見られることがあります。",
     "photos": [
+      "images/creatures/kaeru/amami-ishikawa-gaeru/_4232849.JPG",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000002_20250123_21.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg",
@@ -758,6 +765,78 @@
     "page_path": "generated-creatures/kaeru/ryukyu-kajika-gaeru.html"
   },
   {
+    "id": "rurimadara-shiomaneki",
+    "name": "rurimadara-shiomaneki",
+    "category": "kani",
+    "category_name": "kani",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/kani/rurimadara-shiomaneki/_5053516.JPG",
+      "images/creatures/kani/rurimadara-shiomaneki/_5053552.JPG"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "amami-himekebuka-magusokogane",
+    "name": "amami-himekebuka-magusokogane",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/amami-himekebuka-magusokogane/_4273137.JPG",
+      "images/creatures/konchu/amami-himekebuka-magusokogane/_4273139.JPG",
+      "images/creatures/konchu/amami-himekebuka-magusokogane/_4273142.JPG",
+      "images/creatures/konchu/amami-himekebuka-magusokogane/_4273152.JPG"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "amami-ko-kabuto",
+    "name": "amami-ko-kabuto",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/amami-ko-kabuto/_3121982.JPG",
+      "images/creatures/konchu/amami-ko-kabuto/_4162595.JPG",
+      "images/creatures/konchu/amami-ko-kabuto/_B283943.JPG"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "amami-semadara-magusokogane",
+    "name": "amami-semadara-magusokogane",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/amami-semadara-magusokogane/_4273147.JPG",
+      "images/creatures/konchu/amami-semadara-magusokogane/_4273153.JPG",
+      "images/creatures/konchu/amami-semadara-magusokogane/_4273157.JPG",
+      "images/creatures/konchu/amami-semadara-magusokogane/_4273167.JPG",
+      "images/creatures/konchu/amami-semadara-magusokogane/_4273175.JPG",
+      "images/creatures/konchu/amami-semadara-magusokogane/_C027607.JPG"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "amenbo",
+    "name": "amenbo",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/amenbo/_4202679.JPG",
+      "images/creatures/konchu/amenbo/_4202683.JPG"
+    ],
+    "page_path": null
+  },
+  {
     "id": "ao-uba-tamamushi",
     "name": "ao-uba-tamamushi",
     "category": "konchu",
@@ -767,7 +846,22 @@
     ],
     "description": "",
     "photos": [
+      "images/creatures/konchu/ao-uba-tamamushi/_4252889.JPG",
+      "images/creatures/konchu/ao-uba-tamamushi/_4252893.JPG",
+      "images/creatures/konchu/ao-uba-tamamushi/_4252903.JPG",
       "images/creatures/konchu/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "be-tsu-hirata-kamikiri",
+    "name": "be-tsu-hirata-kamikiri",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/be-tsu-hirata-kamikiri/IMG_2185 2.JPG"
     ],
     "page_path": null
   },
@@ -826,27 +920,6 @@
       "images/creatures/konchu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
       "images/creatures/konchu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg",
       "images/creatures/konchu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "okinawa-suji-gengoro",
-    "name": "okinawa-suji-gengoro",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      4,
-      12
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
-      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000002_20250406_23.jpg",
-      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000003_20250406_23.jpg",
-      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000004_20250406_23.jpg",
-      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000005_20250406_23.jpg",
-      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000006_20241218_16.jpg",
-      "images/creatures/konchu/okinawa-suji-gengoro/okinawa-suji-gengoro_000007_20241219_21.jpg"
     ],
     "page_path": null
   },
@@ -914,18 +987,34 @@
     "page_path": null
   },
   {
-    "id": "tobiiro-gengoro",
-    "name": "tobiiro-gengoro",
+    "id": "taiwan-saikabuto",
+    "name": "taiwan-saikabuto",
     "category": "konchu",
     "category_name": "昆虫その他",
-    "months": [
-      4
-    ],
+    "months": [],
     "description": "",
     "photos": [
-      "images/creatures/konchu/tobiiro-gengoro/tobiiro-gengoro_000001_20250403_23.jpg",
-      "images/creatures/konchu/tobiiro-gengoro/tobiiro-gengoro_000002_20250403_23.jpg",
-      "images/creatures/konchu/tobiiro-gengoro/tobiiro-gengoro_000003_20250406_23.jpg"
+      "images/creatures/konchu/taiwan-saikabuto/_4173837.JPG",
+      "images/creatures/konchu/taiwan-saikabuto/_4173841.JPG"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "tokara-mannmaru-kogane",
+    "name": "tokara-mannmaru-kogane",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/tokara-mannmaru-kogane/_4152434.JPG",
+      "images/creatures/konchu/tokara-mannmaru-kogane/_4152457.JPG",
+      "images/creatures/konchu/tokara-mannmaru-kogane/_4152461.JPG",
+      "images/creatures/konchu/tokara-mannmaru-kogane/_4152468.JPG",
+      "images/creatures/konchu/tokara-mannmaru-kogane/_4152475.JPG",
+      "images/creatures/konchu/tokara-mannmaru-kogane/_4152478.JPG",
+      "images/creatures/konchu/tokara-mannmaru-kogane/_4152487.JPG",
+      "images/creatures/konchu/tokara-mannmaru-kogane/_4152491.JPG"
     ],
     "page_path": null
   },
@@ -998,7 +1087,8 @@
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000003_20250914_21.jpg",
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000004_20250915_09.jpg",
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000005_20250920_01.jpg",
-      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg"
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg",
+      "images/creatures/kuwagata/amami-marubane-kuwagata/IMG_2622.JPG"
     ],
     "page_path": "generated-creatures/kuwagata/marubane-kuwagata.html"
   },
@@ -1045,7 +1135,8 @@
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000003_20250620_22.jpg",
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260422_23.jpg",
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260427_22.jpg",
-      "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg"
+      "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg",
+      "images/creatures/kuwagata/amami-nebuto-kuwagata/IMG_7975.JPG"
     ],
     "page_path": "generated-creatures/kuwagata/nebuto-kuwagata.html"
   },
@@ -1080,7 +1171,7 @@
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260706_00.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260712_21.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg",
-      "images/creatures/kuwagata/amami-nokogiri-kuwagata/IMG_0499.JPG"
+      "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000016_20260903_11.jpg"
     ],
     "page_path": "generated-creatures/kuwagata/nokogiri-kuwagata.html"
   },
@@ -1162,6 +1253,20 @@
     "page_path": "generated-creatures/kuwagata/sujibuto-hirata-kuwagata.html"
   },
   {
+    "id": "amami-sasorimodoki",
+    "name": "amami-sasorimodoki",
+    "category": "sonota",
+    "category_name": "甲殻類・汽水域など",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/sonota/amami-sasorimodoki/_1199900.JPG",
+      "images/creatures/sonota/amami-sasorimodoki/_4162585.JPG",
+      "images/creatures/sonota/amami-sasorimodoki/_5023419.JPG"
+    ],
+    "page_path": null
+  },
+  {
     "id": "amami-hime-tokage",
     "name": "amami-hime-tokage",
     "category": "tokage",
@@ -1179,6 +1284,19 @@
     "page_path": null
   },
   {
+    "id": "ba-ba-tokage",
+    "name": "ba-ba-tokage",
+    "category": "tokage",
+    "category_name": "トカゲ",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/tokage/ba-ba-tokage/_4162569.JPG",
+      "images/creatures/tokage/ba-ba-tokage/IMG_2277 2.JPG"
+    ],
+    "page_path": null
+  },
+  {
     "id": "okinawa-kinobori-tokage",
     "name": "okinawa-kinobori-tokage",
     "category": "tokage",
@@ -1191,6 +1309,7 @@
     ],
     "description": "",
     "photos": [
+      "images/creatures/tokage/okinawa-kinobori-tokage/_B263737.JPG",
       "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
       "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000002_20250424_13.jpg",
       "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000003_20250828_12.jpg",
@@ -1208,7 +1327,7 @@
       1,
       12
     ],
-    "description": "スズメ目ヒタキ科 *Larvivora komadori komadori*\n\n夏季に奄美大島、徳之島、男女群島、トカラ列島で繁殖。冬期は先島諸島へ移動(奄美大島や徳之島では周年生息する個体も)。1970年に国の天然記念物に指定。さえずりはとても美しい。",
+    "description": "スズメ目ヒタキ科Larvivora属アカヒゲ *Larvivora komadori*\n\n全長約14cm 体重約18g。男女群島からトカラ列島、奄美大島とその周辺島、徳之島にかけて繁殖する日本固有種で、1970年に天然記念物に指定。オスは頭部・背・尾が鮮やかな橙赤色で、胸と脇の黒い部分が名前の由来である「ヒゲ」のように見える。メスは全体に地味な色合い。常緑広葉樹林の林床で昆虫などを採餌し、力強く美しいさえずりで縄張りを主張する。早朝、さえずりを頼りに探すと見つけやすい。沖縄島北部には別種のホントウアカヒゲが生息するが、分布域は重ならない。",
     "photos": [
       "images/creatures/tori/akahige/akahige_000001_20250120_14.jpg",
       "images/creatures/tori/akahige/akahige_000002_20250123_12.jpg",
@@ -1222,15 +1341,19 @@
   },
   {
     "id": "amami-yamashigi",
-    "name": "amami-yamashigi",
+    "name": "アマミヤマシギ",
     "category": "tori",
     "category_name": "鳥",
-    "months": [],
-    "description": "",
-    "photos": [
-      "images/creatures/tori/amami-yamashigi/IMG_9567.JPG"
+    "months": [
+      3,
+      4,
+      5
     ],
-    "page_path": null
+    "description": "チドリ目シギ科アマミヤマシギ *Scolopax mira*\n\n全長約35〜36cm。奄美群島と沖縄諸島にのみ生息する日本固有種で、奄美大島・加計呂麻島・請島・与路島・徳之島で繁殖が確認されている。近縁のヤマシギに似るが、脚が長く全体的に黒みがかり、他のシギ類よりずんぐりとした体つき。常緑広葉樹林の薄暗い林床を好み、日没から日の出にかけて活発に活動し、地面でミミズや昆虫を採る。朝夕の薄暗い時間帯や満月の夜に特に活発になる。林内の地上に営巣し、3月から5月頃に2〜4個の卵を産む。1993年に国内希少野生動植物種に指定。マングースやノネコによる捕食、森林伐採による生息地の減少が課題となっている。",
+    "photos": [
+      "images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
+    ],
+    "page_path": "generated-creatures/tori/amami-yamashigi.html"
   },
   {
     "id": "kawasemi",
@@ -1252,23 +1375,41 @@
     "page_path": null
   },
   {
-    "id": "o-sutonn-ooakagera",
-    "name": "o-sutonn-ooakagera",
+    "id": "oo-tora-tsugumi",
+    "name": "オオトラツグミ",
     "category": "tori",
     "category_name": "鳥",
     "months": [
+      2,
       3,
-      7
+      4
     ],
-    "description": "",
+    "description": "スズメ目ヒタキ科オオトラツグミ *Zoothera dauma major*\n\n全長約30cm。奄美大島にのみ生息する留鳥で、黄褐色の地に虎柄のような黒い斑紋が入る。国の天然記念物、国内希少野生動植物種に指定。林齢の高い広葉樹林の薄暗い林床を好み、ミミズなどを食べる。繁殖期の2月から4月初旬には、夜明け前や夕暮れどきの薄暗い時間帯に「キョローン、ツィーッ」という澄んだ美しい声でさえずる。かつては森林伐採や外来種の影響で「幻の鳥」と言われるほど数を減らしたが、近年は森林の回復とともに生息数が回復傾向にある。",
     "photos": [
-      "images/creatures/tori/o-sutonn-ooakagera/o-sutonn-ooakagera_000001_20260325_10.jpg",
-      "images/creatures/tori/o-sutonn-ooakagera/o-sutonn-ooakagera_000002_20250726_09.jpg"
+      "images/creatures/tori/oo-tora-tsugumi/_8091848.JPG"
     ],
-    "page_path": null
+    "page_path": "generated-creatures/tori/oo-tora-tsugumi.html"
   },
   {
-    "id": "rurikakesu",
+    "id": "oosuton-ooakagera",
+    "name": "オーストンオオアカゲラ",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "description": "キツツキ科アカゲラ属 *Dendrocopos leucotos owstoni*\n\n全長約28cm、キツツキの仲間では中型。奄美大島のみに分布する固有亜種で、体の上面はほぼ黒く白い斑が入り、他の亜種に比べて体下面の褐色味が強い。頭頂部はオスが赤く、メスは黒いので雌雄の見分けは簡単。成熟した照葉樹林を中心に生息し、広葉樹の大木の幹に穴を掘って営巣する。食性は朽木に潜むカミキリムシの幼虫など。冬頃から縄張りの主張や繁殖相手へのアピールが始まり、2月から5月頃はくちばしで幹を連続して叩く「ドラミング」や鳴き声が聞こえやすい時期。近年はマツ枯れなどの影響で分布が奄美大島の全域に拡大している。奄美大島に生息するキツツキはアマミコゲラのみなので、大きさで区別できる。1971年に国指定天然記念物、1993年に国内希少野生動植物種に指定され、捕獲・譲渡は禁止。",
+    "photos": [
+      "images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
+      "images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg"
+    ],
+    "page_path": "generated-creatures/tori/oosuton-ooakagera.html"
+  },
+  {
+    "id": "ruri-kakesu",
     "name": "ルリカケス",
     "category": "tori",
     "category_name": "鳥",
@@ -1278,27 +1419,30 @@
       4,
       5
     ],
-    "description": "スズメ目カラス科カケス属 *Garrulus lidthi*\n\n奄美大島、加計呂麻島、請島に分布し1921年に国の天然記念物に指定。瑠璃色に赤褐色の羽根、くちばしと羽先は白い。山の木の中腹の樹洞に巣を作り、2月から5月頃に3〜7個の卵を産む。人家の軒下を利用することも。夜は林道の電線や枝先で休んでいるところを観察できる。",
+    "description": "スズメ目カラス科カケス属ルリカケス *Garrulus lidthi*\n\n全長約38cm。奄美大島・加計呂麻島・請島にのみ生息する日本固有種で、瑠璃色の体に赤褐色の翼、白いくちばしと羽先が美しい。1921年に天然記念物に指定。常緑広葉樹林を好み、シイやカシの実を食べる雑食性。繁殖期は2月から5月頃で、樹洞などに3〜7個の卵を産む。かつてはノネコやフイリマングースの捕食で数を減らしたが、2024年にマングースの根絶が宣言されるなど保護の成果が実り、近年は生息数が回復している。日中は活発に飛び回るが、夜は林道沿いの電線や枝先で休む姿を観察できる。",
     "photos": [
-      "images/creatures/tori/rurikakesu/rurikakesu_000001_20250321_12.jpg",
-      "images/creatures/tori/rurikakesu/rurikakesu_000002_20250726_08.jpg",
-      "images/creatures/tori/rurikakesu/rurikakesu_000003_20250726_09.jpg",
-      "images/creatures/tori/rurikakesu/rurikakesu_000004_20250726_09.jpg",
-      "images/creatures/tori/rurikakesu/rurikakesu_000005_20250726_09.jpg"
+      "images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
+      "images/creatures/tori/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg",
+      "images/creatures/tori/ruri-kakesu/ruri-kakesu_000003_20250726_09.jpg",
+      "images/creatures/tori/ruri-kakesu/ruri-kakesu_000004_20250726_09.jpg",
+      "images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg"
     ],
-    "page_path": "generated-creatures/tori/rurikakesu.html"
+    "page_path": "generated-creatures/tori/ruri-kakesu.html"
   },
   {
     "id": "ryukyu-akashobin",
     "name": "ryukyu-akashobin",
     "category": "tori",
     "category_name": "鳥",
-    "months": [],
+    "months": [
+      6
+    ],
     "description": "",
     "photos": [
-      "images/creatures/tori/ryukyu-akashobin/IMG_9307.JPG",
-      "images/creatures/tori/ryukyu-akashobin/IMG_9311.JPG",
-      "images/creatures/tori/ryukyu-akashobin/IMG_9561.JPG"
+      "images/creatures/tori/ryukyu-akashobin/_8091871.JPG",
+      "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
+      "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000002_20260615_00.jpg",
+      "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000003_20260626_00.jpg"
     ],
     "page_path": null
   },
@@ -1307,10 +1451,13 @@
     "name": "ryukyu-zuaka-aobato",
     "category": "tori",
     "category_name": "鳥",
-    "months": [],
+    "months": [
+      5
+    ],
     "description": "",
     "photos": [
-      "images/creatures/tori/ryukyu-zuaka-aobato/IMG_8748.JPG"
+      "images/creatures/tori/ryukyu-zuaka-aobato/_7189908.JPG",
+      "images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg"
     ],
     "page_path": null
   },
@@ -1324,6 +1471,7 @@
     ],
     "description": "",
     "photos": [
+      "images/creatures/tori/ryuukyuu-konohazuku/_B222786.JPG",
       "images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg"
     ],
     "page_path": null
@@ -1343,7 +1491,6 @@
       "images/creatures/tori/sasiba/sasiba_000002_20250120_12.jpg",
       "images/creatures/tori/sasiba/sasiba_000003_20250120_12.jpg",
       "images/creatures/tori/sasiba/sasiba_000004_20250121_10.jpg",
-      "images/creatures/tori/sasiba/sasiba_000005_20250123_10.jpg",
       "images/creatures/tori/sasiba/sasiba_000006_20250123_13.jpg",
       "images/creatures/tori/sasiba/sasiba_000007_20250320_10.jpg",
       "images/creatures/tori/sasiba/sasiba_000008_20250331_11.jpg"

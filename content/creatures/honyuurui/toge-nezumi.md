@@ -1,7 +1,7 @@
 ---
 id: toge-nezumi
 name: アマミトゲネズミ
-category: honyu
+category: honyuurui
 danger: 天然記念物
 ---
 ネズミ科トゲネズミ属 *Tokudaia osimensis*

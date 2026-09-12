@@ -1,7 +1,7 @@
 ---
 id: watase-jinezumi
 name: ワタセジネズミ
-category: honyu
+category: honyuurui
 danger: 
 ---
 トガリネズミ科ジネズミ属ワタセジネズミ *Crocidura watasei*
