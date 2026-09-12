@@ -32,6 +32,15 @@ PHOTO_DIR_ALIASES = {
     ("suisei-konntyuu", "okinawa-suji-gengoro"): "gengoro/okinawa-suji-gengoro",
     ("suisei-konntyuu", "tobiiro-gengoro"): "gengoro/tobiiro-gengoro",
     ("suisei-konntyuu", "usuiro-shima-gengoro"): "gengoro/usuiro-shima-gengoro",
+    ("suisei-konntyuu", "akahara-ashinaga-mizodoromushi"): "himedoromushi/akahara-ashinaga-mizodoromushi",
+    ("suisei-konntyuu", "amami-hababiro-doromusshi"): "himedoromushi/amami-hababiro-doromusshi",
+    ("suisei-konntyuu", "amami-mizo-doromushi"): "himedoromushi/amami-mizo-doromushi",
+    ("suisei-konntyuu", "amami-yokomizo-doromushi"): "himedoromushi/amami-yokomizo-doromushi",
+    ("suisei-konntyuu", "naga-tsuya-doromushi"): "himedoromushi/naga-tsuya-doromushi",
+    ("suisei-konntyuu", "nomura-himedoromushi"): "himedoromushi/nomura-himedoromushi",
+    ("suisei-konntyuu", "ryuukyuu-munabiro-tuyadoromushi"): "himedoromushi/ryuukyuu-munabiro-tuyadoromushi",
+    ("suisei-konntyuu", "satou-kara-himedoromushi"): "himedoromushi/satou-kara-himedoromushi",
+    ("suisei-konntyuu", "ueno-tsuya-doromushi"): "himedoromushi/ueno-tsuya-doromushi",
 }
 
 # カテゴリーごとの英語表記(ヒーローのラベル用)。無ければカテゴリーIDをそのまま大文字にする。
