@@ -3,7 +3,6 @@ id: ryuukyuu-munabiro-tuyadoromushi
 name: リュウキュウムナビロツヤドロムシ
 category: suisei-konntyuu
 group: doromushi
-danger: 採集自由
 source: J-GLOBAL「日本産ムナビロツヤドロムシ属Elmomorphusの分子系統地理~沖永良部島からのリュウキュウムナビロツヤドロムシElmomorphus amamiensisの初記録~」(JGLOBAL_ID: 202302259205432349)
 ---
 ドロムシ科ムナビロツヤドロムシ属リュウキュウムナビロツヤドロムシ *Elmomorphus amamiensis*(本州以西に分布するムナビロツヤドロムシの亜種 *Elmomorphus brevicornis amamiensis* として扱う文献もあり、分類学的な位置づけは研究段階)

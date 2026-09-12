@@ -3,7 +3,6 @@ id: usuiro-shima-gengoro
 name: ウスイロシマゲンゴロウ
 category: suisei-konntyuu
 group: gengoro
-danger: 採集自由
 months: [4, 5, 6, 7, 8, 9]
 source: くろむし屋「日本の水生昆虫リスト」http://kuromushiya.com/mlist/dytiscidae/usuiroshima.html(2024年1月13日更新)
 ---

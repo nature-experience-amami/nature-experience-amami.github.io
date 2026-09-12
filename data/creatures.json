@@ -1321,19 +1321,19 @@
   },
   {
     "id": "ba-ba-tokage",
-    "name": "ba-ba-tokage",
+    "name": "バーバートカゲ",
     "category": "tokage",
     "category_name": "トカゲ",
     "months": [
       4,
       9
     ],
-    "description": "",
+    "description": "トカゲ科トカゲ属バーバートカゲ *Plestiodon barbouri*\n\n全長15.5〜20cm(頭胴長5.2〜7.3cm)。奄美大島・加計呂麻島・請島・与路島・徳之島と沖縄諸島に分布する日本固有種。幼体は黒褐色の体に5本の明るい縦縞が入り、尾は鮮やかな青色で尾全体の2/3以上を占める。成長すると青みは薄れ、オスは全体的に暗褐色〜褐色になる一方、メスは幼体に近い色彩を保つ個体が多い。常緑広葉樹の自然林や回復の進んだ二次林の林床・林縁部を好み、日光浴で体温を調節しながらクモ類や陸貝などを食べる。冬は動きが鈍くなるが冬眠はしない。森林伐採や下草刈りによる乾燥化、ノネコやフイリマングースによる捕食で数を減らし、環境省レッドリストで絶滅危惧II類、2019年には鹿児島県の希少野生動植物にも指定され、無許可の捕獲・採取は罰則の対象となっている。",
     "photos": [
       "images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
       "images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000002_20260416_12.jpg"
     ],
-    "page_path": null
+    "page_path": "generated-creatures/tokage/ba-ba-tokage.html"
   },
   {
     "id": "okinawa-kinobori-tokage",
@@ -1426,7 +1426,7 @@
     ],
     "description": "スズメ目ヒタキ科オオトラツグミ *Zoothera dauma major*\n\n全長約30cm。奄美大島にのみ生息する留鳥で、黄褐色の地に虎柄のような黒い斑紋が入る。国の天然記念物、国内希少野生動植物種に指定。林齢の高い広葉樹林の薄暗い林床を好み、ミミズなどを食べる。繁殖期の2月から4月初旬には、夜明け前や夕暮れどきの薄暗い時間帯に「キョローン、ツィーッ」という澄んだ美しい声でさえずる。かつては森林伐採や外来種の影響で「幻の鳥」と言われるほど数を減らしたが、近年は森林の回復とともに生息数が回復傾向にある。",
     "photos": [
-      "images/creatures/tori/oo-tora-tsugumi/_8091848.JPG"
+      "images/creatures/tori/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg"
     ],
     "page_path": "generated-creatures/tori/oo-tora-tsugumi.html"
   },

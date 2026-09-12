@@ -22,8 +22,8 @@
   img{{ display:block; width:100%; }}
   a{{ color:inherit; text-decoration:none; }}
 
+  .site-header-sticky{{ position:sticky; top:0; z-index:1000; }}
   header{{
-    position:sticky; top:0; z-index:1000;
     background:rgba(10,22,19,.94); backdrop-filter:blur(10px);
     border-bottom:1px solid rgba(234,242,233,.1);
   }}
@@ -37,7 +37,7 @@
   nav a{{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; opacity:.82; transition:.25s; }}
   nav a:hover{{ color:var(--amber); opacity:1; }}
 
-  .creature-nav{{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); position:sticky; top:69px; z-index:900; }}
+  .creature-nav{{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); }}
   .creature-nav-inner{{
     max-width:1200px; margin:0 auto; padding:0 28px;
     display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
@@ -105,7 +105,13 @@
   }}
   .zukan-tag.rare{{ border-color:rgba(232,163,61,.5); color:var(--amber); }}
 
-  .other-creatures{{ margin-top:70px; padding-top:40px; border-top:1px solid rgba(234,242,233,.12); }}
+  .tour{{ text-align:center; background:var(--canopy); }}
+  .tour h2{{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin:16px 0 18px; }}
+  .tour p{{ max-width:560px; margin:0 auto 28px; font-size:13.5px; color:rgba(234,242,233,.75); line-height:1.8; }}
+  .btn{{ display:inline-block; padding:15px 32px; background:var(--amber); color:var(--bark); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; }}
+  .btn:hover{{ background:#f4b95a; }}
+
+  .other-categories{{ background:var(--canopy); border-top:1px solid rgba(234,242,233,.12); }}
   .other-creatures-title{{ font-family:"Shippori Mincho", serif; font-size:22px; margin-bottom:22px; }}
   .other-creatures-buttons{{ display:flex; flex-wrap:wrap; gap:12px; }}
   .category-button{{
@@ -135,20 +141,22 @@
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <a class="logo" href="../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
-    <nav>
-      <a href="../index.html">HOME</a>
-      <a href="../tour.html">TOUR</a>
-      <a href="../contact.html">CONTACT</a>
-    </nav>
-  </div>
-</header>
+<div class="site-header-sticky">
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
+      <nav>
+        <a href="../index.html">HOME</a>
+        <a href="../tour.html">TOUR</a>
+        <a href="../contact.html">CONTACT</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="creature-nav">
-  <div class="creature-nav-inner">
-    {nav_links}
+  <div class="creature-nav">
+    <div class="creature-nav-inner">
+      {nav_links}
+    </div>
   </div>
 </div>
 
@@ -175,13 +183,22 @@
     <h2 class="section-title">奄美で出会える{title}</h2>
 
     {groups_html}
+  </div>
+</section>
 
-    <div class="other-creatures">
-      <div class="section-label">EXPLORE MORE</div>
-      <h3 class="other-creatures-title">他の生き物を見る</h3>
-      <div class="other-creatures-buttons">
-        {other_buttons}
-      </div>
+<section class="tour">
+  <p class="section-label">NIGHT FIELD TOUR</p>
+  <h2>奄美の夜の森を歩いてみませんか？</h2>
+  <p>ガイドと一緒に、生き物を探しながら夜の森を観察できます。</p>
+  <a class="btn" href="../tour.html">ナイトツアーの内容や料金はこちら →</a>
+</section>
+
+<section class="other-categories">
+  <div class="section-inner">
+    <div class="section-label">EXPLORE MORE</div>
+    <h3 class="other-creatures-title">他の生き物を見る</h3>
+    <div class="other-creatures-buttons">
+      {other_buttons}
     </div>
   </div>
 </section>
@@ -195,6 +212,19 @@
   </div>
   <div class="copyright">&copy; Nature Experience Amami</div>
 </footer>
+
+<script>
+(function () {{
+  document.querySelectorAll(".zukan-image img[data-photos]").forEach(function (img) {{
+    try {{
+      var photos = JSON.parse(img.dataset.photos);
+      if (photos.length > 1) {{
+        img.src = photos[Math.floor(Math.random() * photos.length)];
+      }}
+    }} catch (e) {{}}
+  }});
+}})();
+</script>
 
 </body>
 </html>

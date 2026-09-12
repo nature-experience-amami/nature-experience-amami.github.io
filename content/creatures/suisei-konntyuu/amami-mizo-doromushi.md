@@ -3,7 +3,6 @@ id: amami-mizo-doromushi
 name: アマミミゾドロムシ
 category: suisei-konntyuu
 group: doromushi
-danger: 採集自由
 source: 上手雄貴・中島淳・林成多・吉富博之(2018)「日本産ヒメドロムシ科の目録と分類学的な問題点」さやばねニューシリーズNo.29
 ---
 ヒメドロムシ科ミゾドロムシ属アマミミゾドロムシ *Ordobrevia amamiensis*

@@ -3,7 +3,6 @@ id: iriomote-kesi-katabiro-amennbo
 name: イリオモテケシカタビロアメンボ
 category: suisei-konntyuu
 group: amenbo
-danger: 採集自由
 source: くろむし屋「日本の水生昆虫リスト」http://kuromushiya.com/mlist/veliidae/iriomotekeshikatabiro.html(2020年12月26日更新)
 ---
 カタビロアメンボ科ケシカタビロアメンボ属イリオモテケシカタビロアメンボ *Microvelia iriomotensis* Miyamoto, 1964
