@@ -24,6 +24,22 @@ PHOTO_DIR_ALIASES = {
     ("kuwagata", "shika-kuwagata"): "amami-shika-kuwagata",
     ("kuwagata", "miyama-kuwagata"): "amami-miyama-kuwagata",
     ("kuwagata", "ko-kuwagata"): "amami-ko-kuwagata",
+    ("suisei-konntyuu", "okinawa-suji-gengoro"): "gengoro/okinawa-suji-gengoro",
+    ("suisei-konntyuu", "tobiiro-gengoro"): "gengoro/tobiiro-gengoro",
+    ("suisei-konntyuu", "usuiro-shima-gengoro"): "gengoro/usuiro-shima-gengoro",
+    ("suisei-konntyuu", "akahara-ashinaga-mizodoromushi"): "himedoromushi/akahara-ashinaga-mizodoromushi",
+    ("suisei-konntyuu", "amami-hababiro-doromusshi"): "himedoromushi/amami-hababiro-doromusshi",
+    ("suisei-konntyuu", "amami-mizo-doromushi"): "himedoromushi/amami-mizo-doromushi",
+    ("suisei-konntyuu", "amami-yokomizo-doromushi"): "himedoromushi/amami-yokomizo-doromushi",
+    ("suisei-konntyuu", "naga-tsuya-doromushi"): "himedoromushi/naga-tsuya-doromushi",
+    ("suisei-konntyuu", "nomura-himedoromushi"): "himedoromushi/nomura-himedoromushi",
+    ("suisei-konntyuu", "ryuukyuu-munabiro-tuyadoromushi"): "himedoromushi/ryuukyuu-munabiro-tuyadoromushi",
+    ("suisei-konntyuu", "satou-kara-himedoromushi"): "himedoromushi/satou-kara-himedoromushi",
+    ("suisei-konntyuu", "ueno-tsuya-doromushi"): "himedoromushi/ueno-tsuya-doromushi",
+    ("suisei-konntyuu", "kesi-katabiro-amennbo"): "katabiro-amennbo/kesi-katabiro-amennbo",
+    ("suisei-konntyuu", "chairo-kesi-katabiro-amennbo"): "katabiro-amennbo/chairo-kesi-katabiro-amennbo",
+    ("suisei-konntyuu", "iriomote-kesi-katabiro-amennbo"): "katabiro-amennbo/iriomote-kesi-katabiro-amennbo",
+    ("suisei-konntyuu", "tsutsui-nagare-katabiro-amennbo"): "katabiro-amennbo/tsutsui-nagare-katabiro-amennbo",
 }
 
 TARGETS = None
