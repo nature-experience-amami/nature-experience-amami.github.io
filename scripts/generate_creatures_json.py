@@ -84,15 +84,34 @@ def months_from_text(body):
     return sorted(month for month in found if 1 <= month <= 12)
 
 
+def species_dirs(category_dir):
+    """生き物の写真フォルダを列挙する。
+    通常は images/creatures/カテゴリ/生き物ID/ だが、水生昆虫のように
+    images/creatures/カテゴリ/グループ名/生き物ID/ と1階層深いこともあるため、
+    直下に画像が無くサブフォルダしか無い場合はその1階層下も見に行く。
+    """
+    for entry in sorted(category_dir.iterdir()):
+        if not entry.is_dir() or entry.name in IGNORED_DIR_NAMES:
+            continue
+        has_images = any(
+            p.is_file() and p.suffix.lower() in IMAGE_EXTS for p in entry.iterdir()
+        )
+        if has_images:
+            yield entry
+            continue
+        for sub in sorted(entry.iterdir()):
+            if sub.is_dir() and sub.name not in IGNORED_DIR_NAMES:
+                yield sub
+
+
 def scan():
     category_names = load_category_names()
     creatures = []
     for category_dir in sorted(p for p in IMAGES_DIR.iterdir() if p.is_dir()):
         for species_dir in sorted(
-            p for p in category_dir.iterdir()
-            if p.is_dir()
-            and p.name not in IGNORED_DIR_NAMES
-            and (category_dir.name, p.name) not in IGNORED_SPECIES_DIRS
+            (p for p in species_dirs(category_dir)
+             if (category_dir.name, p.name) not in IGNORED_SPECIES_DIRS),
+            key=lambda p: p.name,
         ):
             months, photos = set(), []
             for photo in sorted(species_dir.iterdir()):

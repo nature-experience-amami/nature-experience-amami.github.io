@@ -163,6 +163,8 @@ def load_creatures(category):
         return []
     creatures = []
     for md in sorted(category_dir.glob("*.md")):
+        if md.name.endswith((".en.md", ".es.md", ".zh.md")):
+            continue
         data, body = parse_markdown(md)
         creature_id = data.get("id", md.stem)
         photos = photo_files(category, creature_id)

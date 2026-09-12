@@ -25,7 +25,7 @@ PHOTO_DIR_ALIASES = {
     ("kuwagata", "miyama-kuwagata"): "amami-miyama-kuwagata",
     ("kuwagata", "ko-kuwagata"): "amami-ko-kuwagata",
     ("suisei-konntyuu", "okinawa-suji-gengoro"): "gengoro/okinawa-suji-gengoro",
-    ("suisei-konntyuu", "tobiiro-gengoro"): "gengoro/tobiiro-gengoro",
+    ("suisei-konntyuu", "kogata-no-gengoro"): "gengoro/kogata-no-gengoro",
     ("suisei-konntyuu", "usuiro-shima-gengoro"): "gengoro/usuiro-shima-gengoro",
     ("suisei-konntyuu", "akahara-ashinaga-mizodoromushi"): "himedoromushi/akahara-ashinaga-mizodoromushi",
     ("suisei-konntyuu", "amami-hababiro-doromusshi"): "himedoromushi/amami-hababiro-doromusshi",
@@ -131,10 +131,17 @@ def months_from_photos(photos):
     return sorted(months)
 
 
+TRANSLATION_SUFFIXES = (".en.md", ".es.md", ".zh.md")
+
+
 def all_creatures(categories):
     result = []
     for category_dir in sorted(path for path in CONTENT_DIR.iterdir() if path.is_dir()):
         for md in sorted(category_dir.glob("*.md")):
+            # habu.en.md のような翻訳版Markdownは日本語版と同じidを持つため、
+            # 素通しすると同じ生き物が言語の数だけ重複してしまう。ここではJA版だけを拾う。
+            if md.name.endswith(TRANSLATION_SUFFIXES):
+                continue
             data, body = parse_markdown(md)
             creature_id = data.get("id", md.stem)
             photos = photo_files(category_dir.name, creature_id)

@@ -135,10 +135,15 @@ def card_html(category, creature, generated_creature_keys):
     )
 
 
+TRANSLATION_SUFFIXES = (".en.md", ".es.md", ".zh.md")
+
+
 def creatures_in_category(category):
     result = []
     directory = CREATURE_CONTENT_DIR / category
     for path in sorted(directory.glob("*.md")):
+        if path.name.endswith(TRANSLATION_SUFFIXES):
+            continue
         metadata, body = parse_markdown(path)
         creature_id = metadata.get("id", path.stem)
         result.append({
