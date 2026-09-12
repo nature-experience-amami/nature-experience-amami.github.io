@@ -48,7 +48,13 @@
     border-right:1px solid rgba(234,242,233,.08); transition:.25s; white-space:nowrap;
   }
   .creature-nav a:first-child{ border-left:1px solid rgba(234,242,233,.08); }
-  .creature-nav a:hover, .creature-nav a.active{ color:var(--amber); background:rgba(232,163,61,.05); }
+  .creature-nav a:hover{ color:var(--amber); background:rgba(232,163,61,.05); }
+  .creature-nav span{
+    flex:0 0 auto; padding:14px 20px; font-size:12px;
+    border-right:1px solid rgba(234,242,233,.08); white-space:nowrap;
+  }
+  .creature-nav span.active{ color:var(--amber); background:rgba(232,163,61,.05); }
+  .creature-nav span.is-pending{ color:rgba(234,242,233,.32); cursor:default; }
 
   .hero{
     min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
@@ -119,6 +125,9 @@
     border:1px solid rgba(234,242,233,.2); font-size:12px; color:rgba(234,242,233,.75); transition:.25s;
   }
   .category-button:hover{ border-color:var(--amber); color:var(--amber); background:rgba(232,163,61,.04); }
+  .category-button.is-pending{ color:rgba(234,242,233,.4); border-color:rgba(234,242,233,.12); cursor:default; }
+  .category-button.is-pending:hover{ border-color:rgba(234,242,233,.12); color:rgba(234,242,233,.4); background:none; }
+  .category-button.is-pending small{ margin-left:8px; font-size:10px; }
 
   footer{ background:#07100E; padding:45px 28px 25px; }
   .footer-inner{
@@ -155,7 +164,7 @@
 
   <div class="creature-nav">
     <div class="creature-nav-inner">
-      <a href="hebi.html">ヘビ</a><a href="kaeru.html">両生類(カエル・イモリ)</a><a href="kuwagata.html">クワガタ</a><a href="honyuurui.html">哺乳類</a><a href="tori.html">鳥</a><a href="tokage.html">トカゲ</a><a href="suisei-konntyuu.html" class="active">水生昆虫</a><a href="konchu.html">昆虫その他</a><a href="kai.html">貝</a><a href="sonota.html">甲殻類・汽水域など</a>
+      <a href="hebi.html">ヘビ</a><a href="kaeru.html">両生類(カエル・イモリ)</a><a href="kuwagata.html">クワガタ</a><span class="is-pending">哺乳類</span><span class="is-pending">鳥</span><span class="is-pending">トカゲ</span><span class="active">水生昆虫</span><span class="is-pending">昆虫その他</span><span class="is-pending">貝</span><span class="is-pending">甲殻類・汽水域など</span>
     </div>
   </div>
 </div>
@@ -200,7 +209,7 @@
     <div class="section-label">EXPLORE MORE</div>
     <h3 class="other-creatures-title">他の生き物を見る</h3>
     <div class="other-creatures-buttons">
-      <a href="hebi.html" class="category-button">ヘビ →</a><a href="kaeru.html" class="category-button">両生類(カエル・イモリ) →</a><a href="kuwagata.html" class="category-button">クワガタ →</a><a href="honyuurui.html" class="category-button">哺乳類 →</a><a href="tori.html" class="category-button">鳥 →</a><a href="tokage.html" class="category-button">トカゲ →</a><a href="konchu.html" class="category-button">昆虫その他 →</a><a href="kai.html" class="category-button">貝 →</a><a href="sonota.html" class="category-button">甲殻類・汽水域など →</a>
+      <a href="hebi.html" class="category-button">ヘビ →</a><a href="kaeru.html" class="category-button">両生類(カエル・イモリ) →</a><a href="kuwagata.html" class="category-button">クワガタ →</a><span class="category-button is-pending">哺乳類<small>準備中</small></span><span class="category-button is-pending">鳥<small>準備中</small></span><span class="category-button is-pending">トカゲ<small>準備中</small></span><span class="category-button is-pending">昆虫その他<small>準備中</small></span><span class="category-button is-pending">貝<small>準備中</small></span><span class="category-button is-pending">甲殻類・汽水域など<small>準備中</small></span>
     </div>
   </div>
 </section>

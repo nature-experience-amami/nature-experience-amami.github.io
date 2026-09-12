@@ -48,7 +48,13 @@
     border-right:1px solid rgba(234,242,233,.08); transition:.25s; white-space:nowrap;
   }}
   .creature-nav a:first-child{{ border-left:1px solid rgba(234,242,233,.08); }}
-  .creature-nav a:hover, .creature-nav a.active{{ color:var(--amber); background:rgba(232,163,61,.05); }}
+  .creature-nav a:hover{{ color:var(--amber); background:rgba(232,163,61,.05); }}
+  .creature-nav span{{
+    flex:0 0 auto; padding:14px 20px; font-size:12px;
+    border-right:1px solid rgba(234,242,233,.08); white-space:nowrap;
+  }}
+  .creature-nav span.active{{ color:var(--amber); background:rgba(232,163,61,.05); }}
+  .creature-nav span.is-pending{{ color:rgba(234,242,233,.32); cursor:default; }}
 
   .hero{{
     min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
@@ -119,6 +125,9 @@
     border:1px solid rgba(234,242,233,.2); font-size:12px; color:rgba(234,242,233,.75); transition:.25s;
   }}
   .category-button:hover{{ border-color:var(--amber); color:var(--amber); background:rgba(232,163,61,.04); }}
+  .category-button.is-pending{{ color:rgba(234,242,233,.4); border-color:rgba(234,242,233,.12); cursor:default; }}
+  .category-button.is-pending:hover{{ border-color:rgba(234,242,233,.12); color:rgba(234,242,233,.4); background:none; }}
+  .category-button.is-pending small{{ margin-left:8px; font-size:10px; }}
 
   footer{{ background:#07100E; padding:45px 28px 25px; }}
   .footer-inner{{

@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "creatures"
 IMAGES_DIR = ROOT / "images" / "creatures"
 CATEGORIES_FILE = ROOT / "content" / "categories.json"
+CATEGORY_PAGES_DIR = ROOT / "content" / "category-pages"
 TEMPLATE = ROOT / "templates" / "zukan.html"
 OUTPUT_DIR = ROOT / "generated-categories"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
@@ -239,24 +240,33 @@ def render_groups(category, creatures):
     return "\n".join(sections)
 
 
-def render_nav(categories, current):
+def render_nav(categories, current, available_categories):
     links = []
     for key, label in categories.items():
-        cls = ' class="active"' if key == current else ""
-        links.append(f'<a href="{key}.html"{cls}>{escape(label)}</a>')
+        if key == current:
+            links.append(f'<span class="active">{escape(label)}</span>')
+        elif key in available_categories:
+            links.append(f'<a href="{key}.html">{escape(label)}</a>')
+        else:
+            links.append(f'<span class="is-pending">{escape(label)}</span>')
     return "".join(links)
 
 
-def render_other_buttons(categories, current):
+def render_other_buttons(categories, current, available_categories):
     buttons = []
     for key, label in categories.items():
         if key == current:
             continue
-        buttons.append(f'<a href="{key}.html" class="category-button">{escape(label)} →</a>')
+        if key in available_categories:
+            buttons.append(f'<a href="{key}.html" class="category-button">{escape(label)} →</a>')
+        else:
+            buttons.append(
+                f'<span class="category-button is-pending">{escape(label)}<small>準備中</small></span>'
+            )
     return "".join(buttons)
 
 
-def render_category(category, categories):
+def render_category(category, categories, available_categories):
     creatures = load_creatures(category)
     if not creatures:
         print(f"スキップ（{category}: Markdownが見つかりません）")
@@ -273,9 +283,9 @@ def render_category(category, categories):
         hero_lead=escape(content["hero_lead"]),
         about_paragraphs=about_html,
         note=escape(content["note"]),
-        nav_links=render_nav(categories, category),
+        nav_links=render_nav(categories, category, available_categories),
         groups_html=render_groups(category, creatures),
-        other_buttons=render_other_buttons(categories, category),
+        other_buttons=render_other_buttons(categories, category, available_categories),
     )
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -286,8 +296,15 @@ def render_category(category, categories):
 
 def main():
     categories = load_categories()
+    # ヘビ・カエル・クワガタのようなフルページ形式のカテゴリー(content/category-pages/*.md)と、
+    # 図鑑形式で実際にページが作られたカテゴリーだけをリンク可能とし、
+    # まだページの無いカテゴリーへのリンクで404が起きないようにする。
+    available_categories = {
+        parse_markdown(path)[0].get("id", path.stem)
+        for path in CATEGORY_PAGES_DIR.glob("*.md")
+    } | {category for category in ZUKAN_CATEGORIES if load_creatures(category)}
     for category in ZUKAN_CATEGORIES:
-        render_category(category, categories)
+        render_category(category, categories, available_categories)
 
 
 if __name__ == "__main__":
