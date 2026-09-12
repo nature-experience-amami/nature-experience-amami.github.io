@@ -49,12 +49,21 @@ jobs:
       - name: Process creature photos
         run: python scripts/process_creature_photos.py
 
+      - name: Regenerate site pages
+        run: |
+          python scripts/generate_creatures_json.py
+          rm -rf generated-creatures
+          python scripts/generate_creature_pages.py
+          python scripts/generate_category_pages.py
+          python scripts/generate_zukan_page.py
+          python scripts/generate_highlights_page.py
+
       - name: Commit and push processed photos
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add images/creatures
+          git add images/creatures data/creatures.json generated-creatures generated-categories highlights.html
 
           if git diff --cached --quiet; then
             echo "No files changed; nothing to commit."
