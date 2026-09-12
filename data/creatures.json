@@ -136,7 +136,6 @@
     ],
     "description": "クサリヘビ科ハブ属 *Protobothrops flavoviridis*\n\n全長〜226cm、大型のヘビ。5月から11月頃が良く観察できる(冬でも暖かい日には活動)。夜行性で昼間は穴の中などで休む。平地から山地の森林、草原、水辺、農地や樹上にも生息し、ネズミを追って人家周辺にも入り込む。主食はネズミの他、爬虫類、カエル、哺乳類、鳥類。天敵はアカマタとハブ取り。毒がある上にかなり攻撃的。2〜3mは必ず離れて観察・撮影する。近づくと逃げずにすぐ攻撃体制に入り、体長の3分の2近く飛びかかることが可能。電波の通じない山奥で噛まれると大変なことになる。模様は自然に溶け込んでかなり見つけにくく、見えていないだけでいろんな所に潜んでいる。注意しすぎるくらい注意。",
     "photos": [
-      "images/creatures/hebi/habu/_7139660.JPG",
       "images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
       "images/creatures/hebi/habu/habu_000003_20250228_00.jpg",
       "images/creatures/hebi/habu/habu_000004_20260214_22.jpg",
@@ -224,7 +223,8 @@
       "images/creatures/hebi/habu/habu_000072_20260903_09.jpg",
       "images/creatures/hebi/habu/habu_000073_20260903_11.jpg",
       "images/creatures/hebi/habu/habu_000074_20260618_00.jpg",
-      "images/creatures/hebi/habu/habu_000075_20260630_00.jpg"
+      "images/creatures/hebi/habu/habu_000075_20260630_00.jpg",
+      "images/creatures/hebi/habu/habu_000076_20250713_00.jpg"
     ],
     "page_path": "generated-creatures/hebi/habu.html"
   },
@@ -372,8 +372,18 @@
     "category": "honyuurui",
     "category_name": "哺乳類",
     "months": [
+      1,
       2,
-      3
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "ウサギ目ウサギ科アマミノクロウサギ *Pentalagus furnessi*\n\n体長41〜51cm 体重1.3〜2.7kg。奄美大島と徳之島にのみ生息する日本固有種で、原始的な特徴を色濃く残すことから「生きた化石」とも呼ばれる。1921年に天然記念物、1963年に特別天然記念物に指定。夜行性で、岩穴や木の洞に掘った巣穴を拠点に行動し、シイの実や若芽などを食べる。繁殖期は春と秋頃で、1回に1頭を出産する。かつて野生化したネコやフイリマングースによる捕食で数を減らしたが、マングースの防除事業が進み、近年は生息数が回復傾向にある。ナイトツアーを象徴する生き物で、林道でひょいと跳ねる姿に出会えることも少なくない。",
     "photos": [
@@ -389,18 +399,20 @@
     "category_name": "哺乳類",
     "months": [
       2,
-      3
+      3,
+      4,
+      12
     ],
     "description": "ネズミ科ケナガネズミ属ケナガネズミ *Diplothrix legata*\n\n体長22〜33cm 尾長25〜35cm。奄美大島・徳之島・沖縄島北部にのみ生息する日本最大のネズミで、背中には5〜6cmの長い剛毛が混じる。1972年に天然記念物、2016年に国内希少野生動植物種に指定。夜行性で樹上性が強く、昼間は樹洞に枯れ葉を運び込んだ巣で休む。シイの実や昆虫などを食べる雑食性。繁殖期は秋から初冬で、1回に2〜5頭を出産する。警戒心が薄く、懐中電灯の光を当ててもあまり逃げないため、林道でゆっくり観察できることもある。",
     "photos": [
-      "images/creatures/honyuurui/kenaga-nezumi/_4132324.JPG",
-      "images/creatures/honyuurui/kenaga-nezumi/_4132326.JPG",
-      "images/creatures/honyuurui/kenaga-nezumi/_4132329.JPG",
-      "images/creatures/honyuurui/kenaga-nezumi/_4212721.JPG",
-      "images/creatures/honyuurui/kenaga-nezumi/_C027655.JPG",
       "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
       "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000002_20260206_20.jpg",
-      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000003_20260319_21.jpg"
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000003_20260319_21.jpg",
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000004_20260413_23.jpg",
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000005_20260413_23.jpg",
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000006_20260413_23.jpg",
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000007_20260421_21.jpg",
+      "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000008_20251202_21.jpg"
     ],
     "page_path": "generated-creatures/honyuurui/kenaga-nezumi.html"
   },
@@ -588,7 +600,6 @@
     ],
     "description": "アカガエル科ニオイガエル属 *Odorrana splendida*\n\n大きさ7.4〜13.7cm 繁殖時期2月末から6月頃。山地の源流の穏やかな流れの沢に生息。日本一美しいカエルと言われ、鹿児島県の天然記念物・国内希少野生動物種に指定。卵を含め捕獲、譲渡が禁止。標高が高めの沢の近くで暗くなると鳴き声が聞こえる場所もある。ポイントによっては、夏でも雨が降ると見られることがあります。",
     "photos": [
-      "images/creatures/kaeru/amami-ishikawa-gaeru/_4232849.JPG",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000002_20250123_21.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg",
@@ -616,7 +627,8 @@
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_22.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250716_22.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260404_00.jpg",
-      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg"
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000013_20260423_21.jpg"
     ],
     "page_path": "generated-creatures/kaeru/ishikawa-gaeru.html"
   },
@@ -769,11 +781,13 @@
     "name": "rurimadara-shiomaneki",
     "category": "kani",
     "category_name": "kani",
-    "months": [],
+    "months": [
+      5
+    ],
     "description": "",
     "photos": [
-      "images/creatures/kani/rurimadara-shiomaneki/_5053516.JPG",
-      "images/creatures/kani/rurimadara-shiomaneki/_5053552.JPG"
+      "images/creatures/kani/rurimadara-shiomaneki/rurimadara-shiomaneki_000001_20260505_15.jpg",
+      "images/creatures/kani/rurimadara-shiomaneki/rurimadara-shiomaneki_000002_20260505_15.jpg"
     ],
     "page_path": null
   },
@@ -782,13 +796,15 @@
     "name": "amami-himekebuka-magusokogane",
     "category": "konchu",
     "category_name": "昆虫その他",
-    "months": [],
+    "months": [
+      4
+    ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/amami-himekebuka-magusokogane/_4273137.JPG",
-      "images/creatures/konchu/amami-himekebuka-magusokogane/_4273139.JPG",
-      "images/creatures/konchu/amami-himekebuka-magusokogane/_4273142.JPG",
-      "images/creatures/konchu/amami-himekebuka-magusokogane/_4273152.JPG"
+      "images/creatures/konchu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
+      "images/creatures/konchu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000002_20260427_12.jpg",
+      "images/creatures/konchu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000003_20260427_12.jpg",
+      "images/creatures/konchu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000004_20260427_12.jpg"
     ],
     "page_path": null
   },
@@ -797,12 +813,16 @@
     "name": "amami-ko-kabuto",
     "category": "konchu",
     "category_name": "昆虫その他",
-    "months": [],
+    "months": [
+      3,
+      4,
+      11
+    ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/amami-ko-kabuto/_3121982.JPG",
-      "images/creatures/konchu/amami-ko-kabuto/_4162595.JPG",
-      "images/creatures/konchu/amami-ko-kabuto/_B283943.JPG"
+      "images/creatures/konchu/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
+      "images/creatures/konchu/amami-ko-kabuto/amami-ko-kabuto_000002_20260416_22.jpg",
+      "images/creatures/konchu/amami-ko-kabuto/amami-ko-kabuto_000003_20241128_17.jpg"
     ],
     "page_path": null
   },
@@ -811,15 +831,18 @@
     "name": "amami-semadara-magusokogane",
     "category": "konchu",
     "category_name": "昆虫その他",
-    "months": [],
+    "months": [
+      4,
+      12
+    ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/amami-semadara-magusokogane/_4273147.JPG",
-      "images/creatures/konchu/amami-semadara-magusokogane/_4273153.JPG",
-      "images/creatures/konchu/amami-semadara-magusokogane/_4273157.JPG",
-      "images/creatures/konchu/amami-semadara-magusokogane/_4273167.JPG",
-      "images/creatures/konchu/amami-semadara-magusokogane/_4273175.JPG",
-      "images/creatures/konchu/amami-semadara-magusokogane/_C027607.JPG"
+      "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
+      "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000002_20260427_12.jpg",
+      "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000003_20260427_12.jpg",
+      "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg",
+      "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg",
+      "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg"
     ],
     "page_path": null
   },
@@ -828,11 +851,13 @@
     "name": "amenbo",
     "category": "konchu",
     "category_name": "昆虫その他",
-    "months": [],
+    "months": [
+      4
+    ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/amenbo/_4202679.JPG",
-      "images/creatures/konchu/amenbo/_4202683.JPG"
+      "images/creatures/konchu/amenbo/amenbo_000001_20260420_13.jpg",
+      "images/creatures/konchu/amenbo/amenbo_000002_20260420_13.jpg"
     ],
     "page_path": null
   },
@@ -842,14 +867,15 @@
     "category": "konchu",
     "category_name": "昆虫その他",
     "months": [
+      4,
       6
     ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/ao-uba-tamamushi/_4252889.JPG",
-      "images/creatures/konchu/ao-uba-tamamushi/_4252893.JPG",
-      "images/creatures/konchu/ao-uba-tamamushi/_4252903.JPG",
-      "images/creatures/konchu/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg"
+      "images/creatures/konchu/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
+      "images/creatures/konchu/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg",
+      "images/creatures/konchu/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg",
+      "images/creatures/konchu/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg"
     ],
     "page_path": null
   },
@@ -858,10 +884,12 @@
     "name": "be-tsu-hirata-kamikiri",
     "category": "konchu",
     "category_name": "昆虫その他",
-    "months": [],
+    "months": [
+      9
+    ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/be-tsu-hirata-kamikiri/IMG_2185 2.JPG"
+      "images/creatures/konchu/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"
     ],
     "page_path": null
   },
@@ -991,11 +1019,13 @@
     "name": "taiwan-saikabuto",
     "category": "konchu",
     "category_name": "昆虫その他",
-    "months": [],
+    "months": [
+      4
+    ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/taiwan-saikabuto/_4173837.JPG",
-      "images/creatures/konchu/taiwan-saikabuto/_4173841.JPG"
+      "images/creatures/konchu/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
+      "images/creatures/konchu/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg"
     ],
     "page_path": null
   },
@@ -1004,17 +1034,19 @@
     "name": "tokara-mannmaru-kogane",
     "category": "konchu",
     "category_name": "昆虫その他",
-    "months": [],
+    "months": [
+      4
+    ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/tokara-mannmaru-kogane/_4152434.JPG",
-      "images/creatures/konchu/tokara-mannmaru-kogane/_4152457.JPG",
-      "images/creatures/konchu/tokara-mannmaru-kogane/_4152461.JPG",
-      "images/creatures/konchu/tokara-mannmaru-kogane/_4152468.JPG",
-      "images/creatures/konchu/tokara-mannmaru-kogane/_4152475.JPG",
-      "images/creatures/konchu/tokara-mannmaru-kogane/_4152478.JPG",
-      "images/creatures/konchu/tokara-mannmaru-kogane/_4152487.JPG",
-      "images/creatures/konchu/tokara-mannmaru-kogane/_4152491.JPG"
+      "images/creatures/konchu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
+      "images/creatures/konchu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000002_20260415_21.jpg",
+      "images/creatures/konchu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000003_20260415_21.jpg",
+      "images/creatures/konchu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000004_20260415_21.jpg",
+      "images/creatures/konchu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000005_20260415_21.jpg",
+      "images/creatures/konchu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000006_20260415_21.jpg",
+      "images/creatures/konchu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000007_20260415_21.jpg",
+      "images/creatures/konchu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000008_20260415_21.jpg"
     ],
     "page_path": null
   },
@@ -1088,7 +1120,7 @@
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000004_20250915_09.jpg",
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000005_20250920_01.jpg",
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg",
-      "images/creatures/kuwagata/amami-marubane-kuwagata/IMG_2622.JPG"
+      "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000007_20250919_22.jpg"
     ],
     "page_path": "generated-creatures/kuwagata/marubane-kuwagata.html"
   },
@@ -1136,7 +1168,7 @@
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260422_23.jpg",
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260427_22.jpg",
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg",
-      "images/creatures/kuwagata/amami-nebuto-kuwagata/IMG_7975.JPG"
+      "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000005_20260910_16.jpg"
     ],
     "page_path": "generated-creatures/kuwagata/nebuto-kuwagata.html"
   },
@@ -1257,12 +1289,16 @@
     "name": "amami-sasorimodoki",
     "category": "sonota",
     "category_name": "甲殻類・汽水域など",
-    "months": [],
+    "months": [
+      1,
+      4,
+      5
+    ],
     "description": "",
     "photos": [
-      "images/creatures/sonota/amami-sasorimodoki/_1199900.JPG",
-      "images/creatures/sonota/amami-sasorimodoki/_4162585.JPG",
-      "images/creatures/sonota/amami-sasorimodoki/_5023419.JPG"
+      "images/creatures/sonota/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
+      "images/creatures/sonota/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
+      "images/creatures/sonota/amami-sasorimodoki/amami-sasorimodoki_000003_20260502_21.jpg"
     ],
     "page_path": null
   },
@@ -1288,11 +1324,14 @@
     "name": "ba-ba-tokage",
     "category": "tokage",
     "category_name": "トカゲ",
-    "months": [],
+    "months": [
+      4,
+      9
+    ],
     "description": "",
     "photos": [
-      "images/creatures/tokage/ba-ba-tokage/_4162569.JPG",
-      "images/creatures/tokage/ba-ba-tokage/IMG_2277 2.JPG"
+      "images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
+      "images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000002_20260416_12.jpg"
     ],
     "page_path": null
   },
@@ -1305,16 +1344,17 @@
       1,
       4,
       8,
+      11,
       12
     ],
     "description": "",
     "photos": [
-      "images/creatures/tokage/okinawa-kinobori-tokage/_B263737.JPG",
       "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
       "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000002_20250424_13.jpg",
       "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000003_20250828_12.jpg",
       "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000004_20250828_13.jpg",
-      "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000005_20241218_19.jpg"
+      "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000005_20241218_19.jpg",
+      "images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000006_20241126_21.jpg"
     ],
     "page_path": null
   },
@@ -1391,6 +1431,20 @@
     "page_path": "generated-creatures/tori/oo-tora-tsugumi.html"
   },
   {
+    "id": "oo-toratsugumi",
+    "name": "oo-toratsugumi",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [
+      8
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/oo-toratsugumi/oo-toratsugumi_000001_20250809_22.jpg"
+    ],
+    "page_path": null
+  },
+  {
     "id": "oosuton-ooakagera",
     "name": "オーストンオオアカゲラ",
     "category": "tori",
@@ -1435,14 +1489,15 @@
     "category": "tori",
     "category_name": "鳥",
     "months": [
-      6
+      6,
+      8
     ],
     "description": "",
     "photos": [
-      "images/creatures/tori/ryukyu-akashobin/_8091871.JPG",
       "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
       "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000002_20260615_00.jpg",
-      "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000003_20260626_00.jpg"
+      "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000003_20260626_00.jpg",
+      "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000004_20250809_23.jpg"
     ],
     "page_path": null
   },
@@ -1452,12 +1507,13 @@
     "category": "tori",
     "category_name": "鳥",
     "months": [
-      5
+      5,
+      7
     ],
     "description": "",
     "photos": [
-      "images/creatures/tori/ryukyu-zuaka-aobato/_7189908.JPG",
-      "images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg"
+      "images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg",
+      "images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000002_20250718_12.jpg"
     ],
     "page_path": null
   },
@@ -1467,12 +1523,13 @@
     "category": "tori",
     "category_name": "鳥",
     "months": [
-      3
+      3,
+      11
     ],
     "description": "",
     "photos": [
-      "images/creatures/tori/ryuukyuu-konohazuku/_B222786.JPG",
-      "images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg"
+      "images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg",
+      "images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000002_20241122_21.jpg"
     ],
     "page_path": null
   },
