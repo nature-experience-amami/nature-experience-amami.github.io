@@ -1,6 +1,6 @@
 # Nature Experience Amami - Project Status
 
-最終更新: 2026-09-13（日本時間）
+最終更新: 2026-09-14（日本時間）
 
 このファイルは、Nature Experience Amami の作業状況と判断事項を、ChatGPT（ちゃっぴー）、Claude（くろちゃん）、Copilotなど、誰でも引き継げるように記録するためのメモです。
 
@@ -618,5 +618,36 @@ Pushする前にGitHub側の履歴と、未追跡ファイルを必ず確認す�
 #### 結果
 
 commit `feef758`としてmainにpush済み(71ファイル変更、うち新規4ファイル)。
+
+（担当: Claude／Sonnet 5）
+
+### 2026-09-14 amami-tool.html(iPhoneから写真をアップロードする専用ツール)の不具合修正
+
+#### 背景
+
+くろちゃんが「iPhoneからGitHubに写真を送れるアプリ」として`amami-tool.html`(リポジトリ直下、GitHub Pagesで公開)を作成していた。ヘビカテゴリーを選んだあと、既存の写真フォルダ名を選んで入力できる「候補チップ」機能が動かないとユーザーから報告があり、原因調査から着手した。
+
+#### 症状①: フォルダ名の候補が出ない
+
+- くろちゃんの直前のコミット(`a415cdc`)で、変数(`categorySelect`等)の定義順序に起因する初期化エラー(保存済み設定がある状態でアプリを開くと、`showApp()`→`loadSpeciesOptions()`が未定義の変数を参照してエラーになり、以降の全処理が止まる)は既に修正済みだったが、症状は解消していなかった。
+- まず`loadSpeciesOptions()`のエラーハンドラを直し、失敗時に実際のHTTPステータス・エラーメッセージを画面に表示するようにした(commit `e7d72c7`)。
+- 表示されたのは`Load failed`(fetch自体が失敗する分かりやすい系エラー)。ユーザーへの確認で、「リポジトリ (owner/repo)」欄に**サイトの公開URL**(`https://nature-experience-amami.github.io/`)をそのまま入力していたことが判明。正しくは`nature-experience-amami/nature-experience-amami.github.io`という`所有者名/リポジトリ名`形式が必要で、これがAPIリクエストURLの組み立てを壊していた。
+- 修正後は`HTTP 401: Bad credentials`に変化。トークン自体の問題と判明。iOSでは`type="password"`の入力欄に対して🔑マークの「保存済みパスワードの自動入力」が提案されるため、ペーストのつもりが誤って別の認証情報を自動入力していた可能性が高いと判断。
+- 対策として、①いつでも設定画面(トークン再入力)に戻れる⚙ボタンをヘッダーに追加、②トークン欄の中身を目で確認できる👁表示切り替えボタンを追加(commit `a884dfa`)。
+
+#### 症状②: アップロードはできるがサイトに反映されない
+
+- トークンを直してアップロードは成功したが、GitHub Actionsの自動処理後の中身を確認すると、写真が`images/creatures/hebi/akamata/failed/`に入ってしまい、公開ページには反映されていなかった。
+- 原因: `amami-tool.html`はGitHubの容量制限に収まるよう、アップロード前にブラウザの`<canvas>`で写真を縮小・圧縮している。この処理は仕組み上、**EXIF(撮影日時などのメタデータ)を完全に消してしまう**。一方`process_creature_photos.py`はEXIFの撮影日時が読み取れない写真を「日時不明」として自動的に`failed/`へ避難させる仕様だった。つまりこのツールでアップロードした写真は、直すまで**必ず**failed行きになる状態だった。
+- 修正: `piexifjs`ライブラリを追加し、縮小処理の**前**に元写真からEXIFの撮影日時を読み取っておき、縮小・圧縮した後の写真にその日時を書き戻してからアップロードするようにした(commit `b5198b2`)。Node.js+Pillowで実際に「日時を書き込んだ画像を`process_creature_photos.py`と同じロジックで読み取れるか」を検証してから反映した。
+- 同じcommitで、ついでに「リポジトリ (owner/repo)」欄も廃止して`nature-experience-amami/nature-experience-amami.github.io`固定にした(このツールは他のリポジトリで使う予定がなく、今回の誤入力の原因にもなったため)。トークンだけ都度入力すればよい。
+
+#### 検証
+
+修正後、ユーザーが実際にアカマタの写真を再アップロードし、`images/creatures/hebi/akamata/`直下に(`failed/`ではなく)正しく処理された状態で反映され、`creatures/hebi/akamata.html`・`data/creatures.json`・`categories/hebi.html`まで自動更新されることを確認した(アップロードcommit`a89ade8` → 自動処理commit`69f58b7`)。
+
+#### 副次的なQ&A
+
+「パソコンを起動しておかないと写真をアップロードできないか」という質問があったため、amami-tool.htmlの処理(縮小・EXIF書き戻し・GitHubへの送信)はすべてiPhoneのブラウザ内で完結し、その後のGitHub Actions(透かし・リサイズ・ページ再生成)もGitHub側のサーバーで動く仕組みであることを説明した。パソコンが必要なのはコードそのものを変更する作業のときだけで、日常の写真アップロード運用にはパソコンは不要。
 
 （担当: Claude／Sonnet 5）
