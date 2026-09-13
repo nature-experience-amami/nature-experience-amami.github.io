@@ -139,7 +139,8 @@ select{ -webkit-appearance:none; appearance:none; }
       </select>
 
       <label for="species-id">生き物ID(写真フォルダ名)</label>
-      <input type="text" id="species-id" placeholder="例: habu, hanasaki-gaeru">
+      <input type="text" id="species-id" list="species-list" placeholder="例: habu, hanasaki-gaeru" autocomplete="off">
+      <datalist id="species-list"></datalist>
 
       <label>写真</label>
       <div class="file-drop" id="file-drop">
@@ -194,6 +195,7 @@ select{ -webkit-appearance:none; appearance:none; }
     tabs.style.display = "flex";
     document.getElementById("screen-upload").classList.add("active");
     loadProgress();
+    loadSpeciesOptions();
   }
 
   var existing = getSettings();
@@ -253,6 +255,40 @@ select{ -webkit-appearance:none; appearance:none; }
     }
   });
 
+  // カテゴリーを選んだら、そのカテゴリーに実在する生き物IDの候補を取得してdatalistに入れる
+  var categorySelect = document.getElementById("category");
+  var speciesList = document.getElementById("species-list");
+
+  function loadSpeciesOptions() {
+    var settings = getSettings();
+    if (!settings) return;
+    var repoParts = settings.repo.split("/");
+    var category = categorySelect.value;
+    var url = "https://api.github.com/repos/" + repoParts[0] + "/" + repoParts[1] +
+      "/contents/images/creatures/" + category;
+
+    speciesList.innerHTML = "";
+    fetch(url, {
+      headers: {
+        "Authorization": "Bearer " + settings.pat,
+        "Accept": "application/vnd.github+json"
+      }
+    })
+      .then(function (res) { return res.ok ? res.json() : []; })
+      .then(function (items) {
+        items
+          .filter(function (item) { return item.type === "dir"; })
+          .forEach(function (item) {
+            var opt = document.createElement("option");
+            opt.value = item.name;
+            speciesList.appendChild(opt);
+          });
+      })
+      .catch(function () { /* 読み込めなくても自由入力はできるので何もしない */ });
+  }
+
+  categorySelect.addEventListener("change", loadSpeciesOptions);
+
   function fileToBase64(file) {
     return new Promise(function (resolve, reject) {
       var reader = new FileReader();
@@ -261,6 +297,53 @@ select{ -webkit-appearance:none; appearance:none; }
       };
       reader.onerror = reject;
       reader.readAsDataURL(file);
+    });
+  }
+
+  // GitHubの1ファイル1MB制限に収まるよう、必要なら縮小・圧縮してからbase64化する
+  var MAX_BYTES = 950 * 1024; // 少し余裕を持たせて950KB
+  var MAX_LONG_SIDE = 2400;
+
+  function resizeAndCompress(file) {
+    return new Promise(function (resolve, reject) {
+      var img = new Image();
+      var url = URL.createObjectURL(file);
+      img.onload = function () {
+        URL.revokeObjectURL(url);
+        var w = img.width, h = img.height;
+        var longSide = Math.max(w, h);
+        if (longSide > MAX_LONG_SIDE) {
+          var scale = MAX_LONG_SIDE / longSide;
+          w = Math.round(w * scale);
+          h = Math.round(h * scale);
+        }
+        var canvas = document.createElement("canvas");
+        canvas.width = w; canvas.height = h;
+        canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+
+        function tryQuality(q) {
+          canvas.toBlob(function (blob) {
+            if (!blob) { reject(new Error("画像の変換に失敗しました")); return; }
+            if (blob.size > MAX_BYTES && q > 0.4) {
+              tryQuality(q - 0.15);
+            } else {
+              resolve(blob);
+            }
+          }, "image/jpeg", q);
+        }
+        tryQuality(0.88);
+      };
+      img.onerror = function () { reject(new Error("画像を読み込めませんでした")); };
+      img.src = url;
+    });
+  }
+
+  function blobToBase64(blob) {
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onload = function () { resolve(reader.result.split(",")[1]); };
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
     });
   }
 
@@ -296,8 +379,11 @@ select{ -webkit-appearance:none; appearance:none; }
     });
 
     Promise.all(files.map(function (file, i) {
-      var path = "images/creatures/" + category + "/" + speciesId + "/" + file.name;
-      return fileToBase64(file).then(function (base64) {
+      var jpgName = file.name.replace(/\.[^.]+$/, "") + ".jpg";
+      var path = "images/creatures/" + category + "/" + speciesId + "/" + jpgName;
+      return resizeAndCompress(file).then(function (blob) {
+        return blobToBase64(blob);
+      }).then(function (base64) {
         return fetch(
           "https://api.github.com/repos/" + owner + "/" + repoName + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/"),
           {
@@ -307,7 +393,7 @@ select{ -webkit-appearance:none; appearance:none; }
               "Accept": "application/vnd.github+json"
             },
             body: JSON.stringify({
-              message: speciesId + " の写真を追加 (" + file.name + ")",
+              message: speciesId + " の写真を追加 (" + jpgName + ")",
               content: base64
             })
           }
