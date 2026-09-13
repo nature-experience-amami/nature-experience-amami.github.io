@@ -57,13 +57,18 @@ jobs:
           python scripts/generate_category_pages.py
           python scripts/generate_zukan_page.py
           python scripts/generate_highlights_page.py
+          rm -rf en/creatures es/creatures zh/creatures
+          python scripts/generate_creature_pages_i18n.py
+          python scripts/generate_creatures_json_i18n.py
+          python scripts/generate_category_pages_i18n.py
+          python scripts/generate_zukan_page_i18n.py
 
       - name: Commit and push processed photos
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add images/creatures data/creatures.json creatures categories highlights.html
+          git add images/creatures data/creatures.json data/creatures.en.json data/creatures.es.json data/creatures.zh.json creatures categories highlights.html en/creatures en/categories es/creatures es/categories zh/creatures zh/categories
 
           if git diff --cached --quiet; then
             echo "No files changed; nothing to commit."
