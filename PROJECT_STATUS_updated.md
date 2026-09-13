@@ -1,6 +1,6 @@
 # Nature Experience Amami - Project Status
 
-最終更新: 2026-09-12（日本時間）
+最終更新: 2026-09-13（日本時間）
 
 このファイルは、Nature Experience Amami の作業状況と判断事項を、ChatGPT（ちゃっぴー）、Claude（くろちゃん）、Copilotなど、誰でも引き継げるように記録するためのメモです。
 
@@ -547,5 +547,40 @@ Pushする前にGitHub側の履歴と、未追跡ファイルを必ず確認す�
 
 - ブラウザでの表示確認は行っていない（ローカルファイルの中身とGit状態の確認のみ）。
 - 上記5件の要修正事項の実際の修正（コード変更・写真処理・commit）は一切行っていない。
+
+（担当: Claude／Sonnet 5）
+
+### 2026-09-13 「generated-」下書きフォルダを公開向けの名前にリネーム
+
+#### 発見の経緯
+
+ユーザーから「`hebi.html`等は今どのフォルダにあるか」「個別ページへのリンクが`creatures/`ではなく`generated-creatures/`を直接指しているのは意図的な変更か」という質問を受け、`git log`で調査。`scripts/generate_category_pages.py`の該当行(個別生き物ページへのリンクを`../generated-creatures/{category}/{id}.html`として組み立てている箇所)が、サイト立ち上げ当初の初回コミット(`77cb332`、2026-09-06)から存在する既存の仕様であり、最近何者かが変更したものではないと判明した。
+
+#### 原因
+
+このファイルの2026-09-12時点の記録(「現在の構成」「カテゴリー別パイプライン進捗」表)にもある通り、`generated-categories/` `generated-creatures/` は元々「自動生成の試作出力先(本番の`creatures/`とは別)」という位置づけで付けられた名前だった。しかし翻訳版(`en/es/zh/creatures/`)には正式名`creatures/`が採用された一方、日本語版だけは「試作」の名前のままGitHub Pagesで公開され続けてしまっていた。つまり「下書き」を示すはずの接頭辞`generated-`が、そのまま外部公開URLの一部になっていた。
+
+#### 対応
+
+影響範囲が広いため、オートモードを使わず、①棚卸し→②リネーム計画をユーザーに提示→ユーザーの明示的な承認を得てから③④実行、という段階を踏んで進めた。
+
+1. **①棚卸し**: `generated-categories/`(4ファイル)、`generated-creatures/`(7カテゴリー53ファイル)、`en/es/zh/generated-categories/`(各4ファイル)の存在と中身を確認。`en/es/zh/creatures/`は既に正しい名前になっており対象外であることも確認。
+2. **リネーム**: `git mv`で `generated-categories/`→`categories/`、`generated-creatures/`→`creatures/`、`en(es,zh)/generated-categories/`→`en(es,zh)/categories/`。
+3. **③参照箇所の洗い出しと修正**: リポジトリ全体を`generated-categories`/`generated-creatures`の文字列でgrepし、生成スクリプト8本(`generate_category_pages.py` `generate_category_pages_i18n.py` `generate_creature_pages.py` `generate_creature_pages_i18n.py` `generate_creatures_json.py` `generate_highlights_page.py` `generate_zukan_page.py` `generate_zukan_page_i18n.py`)、手打ちHTML5本(`index.html` `highlights.html` `en/es/zh/index.html`)、`data/creatures.json`、`.github/workflows/process-creature-photos.yml`を新しい名前に書き換え。
+4. **④再生成と検証**: 修正後のスクリプトで全ページ(JA/EN/ES/ZH計約230ファイル)を再生成。独自のリンクチェッカーで233ファイル・4297個のローカルhrefを検証し、破損リンク0件を確認(検出された4件はJS内の文字列連結コードへの誤検出で実リンクではないことを確認済み)。
+
+#### AIチャット機能への影響確認
+
+`./Worker · JS`(Cloudflare Worker)のコードには`generated-categories`/`generated-creatures`の文字列はハードコードされておらず、リンクURLの生成自体はフロントエンド(`index.html`のJS、`showPhotos()`関数)が`data/creatures.json`の`page_path`を直接参照して行っていることを確認した。そのため`data/creatures.json`の`page_path`を新しい`creatures/...`形式に更新するだけでチャット経由のリンクも問題なく動作し、Worker側のコード変更は不要だった。
+
+#### 今回は対応しなかったこと(別タスク)
+
+`Worker · JS`内の`CREATURES_URL`定数が、GitHubユーザー名移行前の旧ドメイン(`https://tetsu5686.github.io/...`)を指したままになっている問題を調査中に発見したが、これは今回のリネーム作業とは無関係のため、ユーザーの指示により今回は修正せず、後日別タスクとして対応予定。
+
+#### 結果
+
+- commit `a4d3dbc`としてmainにpush済み(246ファイル変更)。
+- 公開URLが `.../categories/hebi.html` `.../creatures/hebi/akamata.html` のように、JA/EN/ES/ZH全言語で一貫した命名になった。
+- 上記「現在の構成」および2026-09-12時点の「カテゴリー別パイプライン進捗」表にある`generated-categories/` `generated-creatures/`という表記は、本エントリの内容によって古い情報になっている(フォルダ名自体は変わったが、パイプラインの進捗段階そのものに変更はない)。
 
 （担当: Claude／Sonnet 5）
