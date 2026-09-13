@@ -584,3 +584,39 @@ Pushする前にGitHub側の履歴と、未追跡ファイルを必ず確認す�
 - 上記「現在の構成」および2026-09-12時点の「カテゴリー別パイプライン進捗」表にある`generated-categories/` `generated-creatures/`という表記は、本エントリの内容によって古い情報になっている(フォルダ名自体は変わったが、パイプラインの進捗段階そのものに変更はない)。
 
 （担当: Claude／Sonnet 5）
+
+### 2026-09-13 哺乳類・鳥のカテゴリー一覧ページを公開、水生昆虫図鑑カードをリンク化
+
+#### 背景
+
+前回の「意図せず公開状態になっているページ」調査(本ファイル参照)で、哺乳類(honyuurui)・鳥(tori)は個別ページ(`creatures/honyuurui/*.html` `creatures/tori/*.html`)がすでに生成済みで、トップページのローテーション・AIチャット・関連生き物カード経由で実質公開されているのに、正式な一覧ページが無い状態だと判明していた。ユーザーが個別ページの中身をファクトチェック済みと確認したうえで、正式に一覧ページを作る判断をした。
+
+#### 対応
+
+1. `content/category-pages/honyuurui.md` `tori.md` を新規作成(hebi.md/kaeru.mdと同じフォーマット。天然記念物・国内希少野生動植物種であることを踏まえた安全文言)。
+2. `generate_category_pages.py`は「`content/category-pages/*.md`の存在」から公開可能カテゴリーを自動判定する設計だったため、上記ファイルを置いて再実行するだけで`categories/honyuurui.html` `categories/tori.html`が生成され、既存の`hebi.html` `kaeru.html` `kuwagata.html`側のナビ・カテゴリーボタンにも自動的に哺乳類一覧・鳥一覧へのリンクが追加された(スクリプト自体の改修は不要だった)。
+3. `generate_creature_pages.py`(個別ページのカテゴリーナビ)・`generate_zukan_page.py`(水生昆虫図鑑ページの他カテゴリーボタン)・`generate_highlights_page.py`を再実行し、サイト全体のナビを同期。
+4. `index.html`・`en/es/zh/index.html`のトップナビ・ガイドリンクに「哺乳類/Mammals/Mamíferos/哺乳类」「鳥/Birds/Aves/鸟类」を追加。英語・スペイン語・中国語版には翻訳ページが無いため、`../categories/honyuurui.html`のように**日本語版ページへ直接リンク**する形にした(未対応事項として下記参照)。
+5. 副次効果として、これまで写真フォルダが無いため一覧・ローテーションに出ていなかった「アマミトゲネズミ」(`toge-nezumi`)も、`creatures_in_category()`がcontent mdを直接走査する設計のため、哺乳類一覧に正式カードとして表示されるようになった(プレースホルダー画像付き)。
+
+#### トカゲは保留
+
+トカゲ(tokage)はバーバートカゲ1種類しか個別ページが無いため、`content/category-pages/tokage.md`は作成せず、`categories/tokage.html`も生成していない。各所のカテゴリーナビ・ボタンでは引き続き「準備中」表示のまま。アマミヒメトカゲ・オキナワキノボリトカゲの個別ページができてから改めて対応する。
+
+#### 水生昆虫図鑑カードのリンク化
+
+`generate_zukan_page.py`(JA)と`generate_zukan_page_i18n.py`(EN/ES/ZH)の`render_card()`が、これまでリンクの無い`<div class="zukan-card">`のままだった問題を修正。`hebi.html`のカードと同じ「個別ページが実在すればリンク化、無ければdivのまま」というパターンに統一し、水生昆虫17種×JA/EN/ES/ZH計68カードすべてを個別ページへのリンクに変更した。
+
+#### 検証
+
+独自リンクチェッカーで全235ページ・7182件のhref/srcを再検証し、破損0件を確認(検出された8件は`index.html`系JS内の文字列連結コードへの誤検出)。
+
+#### 今回は対応しなかったこと(別タスク)
+
+英語・スペイン語・中国語版ナビの「Mammals」「Mamíferos」「哺乳类」(および鳥/Birds/Aves/鸟类)のリンクは日本語版ページへ直接飛ぶが、ラベル上は翻訳ページかのように見えてしまう。ユーザーから「ラベルに小さく『(JA)』を添えるなど分かりやすくする工夫を今後検討してほしい」との指摘があったが、今回のcommitには含めず後日対応とした。
+
+#### 結果
+
+commit `feef758`としてmainにpush済み(71ファイル変更、うち新規4ファイル)。
+
+（担当: Claude／Sonnet 5）
