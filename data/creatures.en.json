@@ -1,0 +1,1394 @@
+[
+  {
+    "id": "akamata",
+    "name": "Akamata Snake",
+    "category": "hebi",
+    "category_name": "Snakes",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "description": "Colubrid snake family, genus Dinodon. *Dinodon semicarinatum*\n\nGrows up to about 200 cm. Most easily observed from May through November. The body is\nyellowish brown with red-and-black oval crossbands. It has no venom but is aggressive,\nhissing and striking if you enter its territory. It feeds on mammals, birds, reptiles,\namphibians, and fish, and even eats sea turtle eggs; it sometimes preys on its natural\nenemy, the Habu pit viper. Nocturnal, it can be seen along forest roads and around water,\nall the way to the coast. Smaller individuals show stronger red coloring and are very\nbeautiful, but even a small one gives a painful bite, so take care.",
+    "photos": [
+      "../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000002_20250829_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000004_20251009_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000005_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000006_20250807_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000007_20250922_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000008_20250810_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000009_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000010_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000011_20250921_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000012_20251009_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000013_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000014_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000015_20260331_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000016_20260403_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000017_20260409_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000018_20250419_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000019_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000020_20250427_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000021_20250503_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000022_20250516_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000023_20250520_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000024_20250526_01.jpg",
+      "../images/creatures/hebi/akamata/akamata_000025_20250528_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000026_20250529_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000027_20250531_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000028_20250602_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000029_20250604_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000030_20250611_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000031_20250611_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000032_20250621_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000033_20250621_13.jpg",
+      "../images/creatures/hebi/akamata/akamata_000034_20250622_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000035_20250705_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000036_20250709_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000037_20250709_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000038_20251208_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000039_20251225_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000040_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000042_20250829_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260409_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260414_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260422_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260423_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260504_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260607_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260830_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000045_20260903_09.jpg"
+    ],
+    "page_path": "creatures/hebi/akamata.html"
+  },
+  {
+    "id": "takachiho-hebi",
+    "name": "Amami Odd-scaled Snake",
+    "category": "hebi",
+    "category_name": "Snakes",
+    "months": [
+      4
+    ],
+    "description": "Takachiho snake family, Takachiho tribe. *Achalinus werneri*\n\nGrows up to about 55 cm. The back is blackish brown or dark brown with a black stripe\nrunning along the midline; the belly is yellow. On Amami it is a legendary snake that you\nonly encounter under just the right conditions. It sometimes comes to the surface on days\nof heavy rain. Nocturnal and subterranean, it lives in forests, grassy areas near water,\nand farmland. It feeds on earthworms. It is scarcer and harder to find here than the\nAmami odd-scaled snakes on other islands. It is very slender and small, so you may not\nnotice it even if you drive right past.",
+    "photos": [
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000002_20260401_22.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000003_20260401_22.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000004_20260401_22.jpg"
+    ],
+    "page_path": "creatures/hebi/takachiho-hebi.html"
+  },
+  {
+    "id": "garasu-hibaa",
+    "name": "Pryer's Keelback",
+    "category": "hebi",
+    "category_name": "Snakes",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "Colubrid snake family, genus Hebius. *Hebius pryeri*\n\nGrows up to about 110 cm. Most easily observed from May through November. Slender-bodied,\nwith a black or blackish-brown color and yellow or brown banding along the body. It\nprefers watery habitats and is often found around rice paddies and other spots with\nplenty of small frogs. It is venomous, but its fangs for injecting venom are small, and a\nbite alone is said not to introduce much venom into the body — even so, the venom itself\nis quite potent, so caution is needed. It feeds on frogs, fish, geckos, and small lizards.\nIt moves quickly, but will threaten you if it senses danger.",
+    "photos": [
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000002_20250522_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000003_20250601_15.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000004_20250604_23.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000005_20250227_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000006_20250227_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000007_20250228_20.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000008_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000009_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000010_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000011_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000012_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000013_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000014_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000015_20250614_09.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260411_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260608_00.jpg"
+    ],
+    "page_path": "creatures/hebi/garasu-hibaa.html"
+  },
+  {
+    "id": "habu",
+    "name": "Habu Pit Viper",
+    "category": "hebi",
+    "category_name": "Snakes",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "Pit viper family, genus Protobothrops. *Protobothrops flavoviridis*\n\nGrows up to about 226 cm, one of the largest snakes on the island. Most active and easiest to\nobserve from May through November (it may also move on warm days even in winter). Nocturnal,\nresting in burrows and crevices during the day. Found from lowland forests to mountain forests,\ngrasslands, wetlands, farmland, and even trees, and it sometimes enters areas near houses while\nhunting rats. Feeds mainly on rats, as well as reptiles, frogs, mammals, and birds. Natural\nenemies include the Akamata snake and human hunters. Venomous and highly aggressive. Always\nkeep a distance of at least 2-3 meters when observing or photographing. If approached, it does\nnot flee — it immediately takes a striking posture and can lunge roughly two-thirds of its own\nbody length. A bite deep in the mountains, where there is no phone signal, can become a serious\nemergency. Its pattern blends into the forest floor and is very hard to spot; it may be hiding\nnearby even when you can't see it. You cannot be too careful.",
+    "photos": [
+      "../images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
+      "../images/creatures/hebi/habu/habu_000003_20250228_00.jpg",
+      "../images/creatures/hebi/habu/habu_000004_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000005_20260221_22.jpg",
+      "../images/creatures/hebi/habu/habu_000006_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000007_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000008_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000009_20260221_22.jpg",
+      "../images/creatures/hebi/habu/habu_000010_20260306_21.jpg",
+      "../images/creatures/hebi/habu/habu_000011_20260306_21.jpg",
+      "../images/creatures/hebi/habu/habu_000012_20260329_00.jpg",
+      "../images/creatures/hebi/habu/habu_000013_20260330_21.jpg",
+      "../images/creatures/hebi/habu/habu_000014_20250428_23.jpg",
+      "../images/creatures/hebi/habu/habu_000015_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000016_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000017_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000018_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000019_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000020_20250506_02.jpg",
+      "../images/creatures/hebi/habu/habu_000021_20250506_02.jpg",
+      "../images/creatures/hebi/habu/habu_000022_20250515_21.jpg",
+      "../images/creatures/hebi/habu/habu_000023_20250515_21.jpg",
+      "../images/creatures/hebi/habu/habu_000024_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000025_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000026_20250521_21.jpg",
+      "../images/creatures/hebi/habu/habu_000027_20250525_23.jpg",
+      "../images/creatures/hebi/habu/habu_000028_20250525_23.jpg",
+      "../images/creatures/hebi/habu/habu_000029_20250526_00.jpg",
+      "../images/creatures/hebi/habu/habu_000030_20250605_22.jpg",
+      "../images/creatures/hebi/habu/habu_000031_20250615_22.jpg",
+      "../images/creatures/hebi/habu/habu_000032_20250621_13.jpg",
+      "../images/creatures/hebi/habu/habu_000033_20250625_22.jpg",
+      "../images/creatures/hebi/habu/habu_000034_20250628_14.jpg",
+      "../images/creatures/hebi/habu/habu_000035_20250628_15.jpg",
+      "../images/creatures/hebi/habu/habu_000036_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000037_20250628_15.jpg",
+      "../images/creatures/hebi/habu/habu_000038_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000039_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000040_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000041_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000042_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000043_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000044_20250704_01.jpg",
+      "../images/creatures/hebi/habu/habu_000045_20250704_21.jpg",
+      "../images/creatures/hebi/habu/habu_000046_20250704_22.jpg",
+      "../images/creatures/hebi/habu/habu_000047_20250704_22.jpg",
+      "../images/creatures/hebi/habu/habu_000048_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000049_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000050_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000051_20250705_22.jpg",
+      "../images/creatures/hebi/habu/habu_000052_20250713_00.jpg",
+      "../images/creatures/hebi/habu/habu_000053_20250714_21.jpg",
+      "../images/creatures/hebi/habu/habu_000054_20250714_21.jpg",
+      "../images/creatures/hebi/habu/habu_000055_20250717_22.jpg",
+      "../images/creatures/hebi/habu/habu_000056_20250717_22.jpg",
+      "../images/creatures/hebi/habu/habu_000057_20250720_21.jpg",
+      "../images/creatures/hebi/habu/habu_000058_20250723_20.jpg",
+      "../images/creatures/hebi/habu/habu_000059_20250723_20.jpg",
+      "../images/creatures/hebi/habu/habu_000060_20250723_21.jpg",
+      "../images/creatures/hebi/habu/habu_000061_20250725_21.jpg",
+      "../images/creatures/hebi/habu/habu_000062_20250725_21.jpg",
+      "../images/creatures/hebi/habu/habu_000063_20250727_00.jpg",
+      "../images/creatures/hebi/habu/habu_000064_20250727_00.jpg",
+      "../images/creatures/hebi/habu/habu_000065_20250728_21.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20250927_19.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20251004_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260403_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260404_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260404_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260411_02.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260607_23.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260614_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260617_19.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260629_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260703_00.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260705_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260719_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260720_22.jpg",
+      "../images/creatures/hebi/habu/habu_000067_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000068_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000069_20260703_00.jpg",
+      "../images/creatures/hebi/habu/habu_000070_20260721_12.jpg",
+      "../images/creatures/hebi/habu/habu_000071_20260802_03.jpg",
+      "../images/creatures/hebi/habu/habu_000072_20260903_09.jpg",
+      "../images/creatures/hebi/habu/habu_000073_20260903_11.jpg",
+      "../images/creatures/hebi/habu/habu_000074_20260618_00.jpg",
+      "../images/creatures/hebi/habu/habu_000075_20260630_00.jpg",
+      "../images/creatures/hebi/habu/habu_000076_20250713_00.jpg",
+      "../images/creatures/hebi/habu/IMG_9736.JPG"
+    ],
+    "page_path": "creatures/hebi/habu.html"
+  },
+  {
+    "id": "hime-habu",
+    "name": "Okinawa Pit Viper",
+    "category": "hebi",
+    "category_name": "Snakes",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      12
+    ],
+    "description": "Pit viper family, genus Ovophis. *Ovophis okinavensis*\n\nGrows up to about 80 cm. Cold-tolerant, and on Amami Oshima it can be observed\nyear-round. Once the rainy season ends and the weather turns hot, it is often seen at\nhigher elevations. It feeds on small to medium-sized frogs, small mammals, and birds. It\nis commonly observed in places with plenty of frogs, such as rice paddies and\nslow-flowing streams. A coiled individual barely moves, but it will threaten you if you\nenter its territory. It is a venomous snake, so if bitten, go to a hospital immediately.\nBe careful not to step on it.",
+    "photos": [
+      "../images/creatures/hebi/hime-habu/hime-habu_000002_20250429_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000003_20250429_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000004_20250430_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000005_20250430_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000006_20260205_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000007_20250212_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000008_20260223_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000009_20260225_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000010_20250227_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000011_20250302_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000012_20250302_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000013_20260306_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000014_20260318_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000015_20260319_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000016_20260320_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000017_20260320_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000018_20250326_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000019_20260328_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000020_20250527_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000021_20250726_09.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000022_20251122_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20250925_00.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260403_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260629_22.jpg"
+    ],
+    "page_path": "creatures/hebi/hime-habu.html"
+  },
+  {
+    "id": "hyan",
+    "name": "Ryukyu Coral Snake",
+    "category": "hebi",
+    "category_name": "Snakes",
+    "months": [
+      5,
+      6,
+      11
+    ],
+    "description": "Cobra family, genus Sinomicrurus (also known as the Ryukyu coral snake). *Sinomicrurus\njaponicus*\n\nGrows up to about 50 cm. Most easily observed around May and around September. The back\nis reddish-brown or orange with five dark brown longitudinal stripes. It is designated a\n\"Specified Dangerous Animal,\" a legal category for species considered capable of harming\npeople. Its venom is neurotoxic and stronger than the Habu's, but its head is small and\nits temperament is docile. If picked up, it will jab you with its tail, which is as hard\nas bone. It is nocturnal and scarce, so sightings are rare. It is popular enough that some\npeople visit Amami Oshima specifically hoping to see one.",
+    "photos": [
+      "../images/creatures/hebi/hyan/hyan_000001_20250515_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000002_20250515_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000003_20250515_21.jpg",
+      "../images/creatures/hebi/hyan/hyan_000004_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000005_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000006_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000007_20250523_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000009_20250606_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000010_20250606_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000011_20250620_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000012_20250717_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000013_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000014_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000015_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250526_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250527_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250620_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20260608_00.jpg",
+      "../images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000018_20260626_00.jpg"
+    ],
+    "page_path": "creatures/hebi/hyan.html"
+  },
+  {
+    "id": "ryukyu-ao-hebi",
+    "name": "Ryukyu Green Snake",
+    "category": "hebi",
+    "category_name": "Snakes",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Colubrid snake family, genus Cycophuops. *Cycophuops semicarinatus*\n\nGrows up to about 100 cm. Most easily observed from May through November. Mainly\ndiurnal, though many individuals are also active at night. It has a small head and feeds\nmainly on earthworms, as well as frogs. It is the most numerous snake on Amami Oshima and\ncan be seen in forests during the day and along forest roads at night. Larger individuals\nwill sometimes threaten you, but they flee very quickly, sliding down slopes to escape.",
+    "photos": [
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000002_20250521_11.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000003_20250521_13.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000004_20250523_12.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000005_20250527_01.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000006_20250527_01.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000007_20250610_13.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000008_20250628_14.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250828_12.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250830_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250915_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20251007_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20251019_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260411_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260413_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260427_20.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260629_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260729_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000010_20260413_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000011_20251019_22.jpg"
+    ],
+    "page_path": "creatures/hebi/ryukyu-ao-hebi.html"
+  },
+  {
+    "id": "amami-kuro-usagi",
+    "name": "Amami Rabbit",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Rabbit family (Leporidae), genus Pentalagus. *Pentalagus furnessi*\n\nGrows to about 41-51 cm and weighs 1.3-2.7 kg. A species endemic to Japan,\nfound only on Amami Oshima and Tokunoshima, and often called a \"living\nfossil\" for retaining strongly primitive features. Designated a Natural\nMonument in 1921 and a Special Natural Monument in 1963. Nocturnal, it bases\nits activity around burrows dug in rock crevices or tree hollows, feeding on\nchinquapin nuts and young shoots. Breeding occurs mainly in spring and\nautumn, with one young born per litter. Its numbers once declined due to\npredation by feral cats and the introduced small Indian mongoose, but as\nmongoose eradication efforts have progressed, the population has been\nrecovering in recent years. It is the emblematic animal of night tours, and\nit is not uncommon to encounter one hopping along a forest road.",
+    "photos": [
+      "../images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
+      "../images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg"
+    ],
+    "page_path": "creatures/honyuurui/amami-kuro-usagi.html"
+  },
+  {
+    "id": "kenaga-nezumi",
+    "name": "Ryukyu Long-haired Rat",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      2,
+      3,
+      4,
+      12
+    ],
+    "description": "Rat family (Muridae), genus Diplothrix. *Diplothrix legata*\n\nBody length 22-33 cm, tail length 25-35 cm. Japan's largest rat, found only\non Amami Oshima, Tokunoshima, and the northern part of Okinawa Island, with\nlong bristle-like hairs of 5-6 cm mixed into its coat. Designated a Natural\nMonument in 1972 and a Nationally Rare Wild Species in 2016. Nocturnal and\nstrongly arboreal, it rests during the day in tree-hollow nests lined with\ndead leaves. Omnivorous, feeding on chinquapin nuts and insects among other\nthings. Breeds from autumn into early winter, giving birth to 2-5 young per\nlitter. It is not very wary, and since it does not flee much even when a\nflashlight is shone on it, it can sometimes be observed at leisure along\nforest roads.",
+    "photos": [
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000002_20260206_20.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000003_20260319_21.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000004_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000005_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000006_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000007_20260421_21.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000008_20251202_21.jpg"
+    ],
+    "page_path": "creatures/honyuurui/kenaga-nezumi.html"
+  },
+  {
+    "id": "watase-jinezumi",
+    "name": "Watase's Shrew",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      12
+    ],
+    "description": "Shrew family (Soricidae), genus Crocidura. *Crocidura watasei*\n\nOne of the world's smallest mammals, about 5.5 cm long and weighing just 5-8\ng. A species endemic to Japan, found only in the Amami island group (Amami\nOshima, Kakeromajima, Tokunoshima, and others) and the Okinawa Islands. It\nprefers open environments such as grassland and farmland, and feeds on small\ninsects and spiders. Nocturnal, it can sometimes be seen darting quickly\nthrough grassy patches beside forest roads. It differs in habitat from a\nforest-dwelling relative of the same genus, and the two are sometimes\nconfused. It carries no legal capture restriction like a Natural Monument\ndesignation, but it is listed as Near Threatened by the Ministry of the\nEnvironment.",
+    "photos": [
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000002_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000003_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000004_20241218_19.jpg"
+    ],
+    "page_path": "creatures/honyuurui/watase-jinezumi.html"
+  },
+  {
+    "id": "amami-aka-gaeru",
+    "name": "Amami Brown Frog",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      11,
+      12,
+      1
+    ],
+    "description": "Brown frog family, genus Rana. *Rana kobai*\n\nGrows to about 3.2-4.6 cm. Breeds from November through January. Lives in forests\nand along rivers from lowlands to mountains. Becomes active on humid or rainy days,\nand gathers around small ponds and spring-fed pools during the breeding season.\nIndividuals can also be seen along forest roads. Slender-bodied and reddish brown,\nit calls with a sharp \"kyok-kyok\" note.",
+    "photos": [
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000003_20250129_20.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20250312_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20250602_21.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251006_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251007_00.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000006_20250312_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000007_20260905_11.jpg"
+    ],
+    "page_path": "creatures/kaeru/amami-aka-gaeru.html"
+  },
+  {
+    "id": "amami-ao-gaeru",
+    "name": "Amami Green Tree Frog",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Tree frog family (Rhacophoridae), genus Zhangixalus. *Zhangixalus amamiensis*\n\nGrows to about 4.5-7.7 cm. Breeds from late December through around May. Found\nfrom lowlands to mountains, in forests around ponds, rice paddies, and other still\nwater. It calls vigorously on humid or rainy days and lays white, foam-covered egg\nmasses on branches overhead or in streamside vegetation. Even when calling loudly,\nit is very hard to spot. Larger than Hallowell's tree frog, which makes the two\neasier to tell apart.",
+    "photos": [
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000002_20250201_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000003_20250221_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000004_20250221_22.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000005_20250227_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000007_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000008_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000009_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000010_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000011_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000012_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000013_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000014_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000015_20241210_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250119_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250414_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250509_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250516_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250520_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260409_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260502_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000017_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000018_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000019_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000020_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000021_20250506_20.jpg"
+    ],
+    "page_path": "creatures/kaeru/amami-ao-gaeru.html"
+  },
+  {
+    "id": "hanasaki-gaeru",
+    "name": "Amami Tip-nosed Frog",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Brown frog family, genus Odorrana. *Odorrana amamiensis*\n\nGrows to about 5.6-10.1 cm. Breeds from October through May. Lives around\nmountain streams. Slender with good posture, and once you get an eye for it, it\ncan be recognized even from a distance. Its coloring is rich and varies between\nindividuals. Designated a Natural Monument in Kagoshima Prefecture, so capturing\nor transferring it — including its eggs — is prohibited. Many come out onto\nforest roads when it rains, so drive carefully.",
+    "photos": [
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000002_20250228_21.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000003_20241210_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000004_20241211_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20241206_23.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250521_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250525_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250525_23.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250628_15.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250704_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250911_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250926_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20251002_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000006_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000007_20250926_00.jpg"
+    ],
+    "page_path": "creatures/kaeru/hanasaki-gaeru.html"
+  },
+  {
+    "id": "iboimori",
+    "name": "Amami Spiny Newt",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Newt family (Salamandridae), genus Echinotriton. *Echinotriton raffaellii*\n\nGrows to about 14-20 cm in total length. Breeds from around January through\nApril. Endemic to Amami Oshima, Uke-jima, and Tokunoshima, it lives around\nforests and farmland. It becomes active on warm winter days, and during the\nbreeding season lays eggs under fallen leaves near water. It has a rugged,\nblackish-brown body, with orange tints on its rib-tip projections and the ends\nof its limbs.",
+    "photos": [
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000002_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000004_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000005_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000006_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000007_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000008_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000009_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000010_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000011_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000012_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000013_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000014_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000015_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000016_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000017_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000018_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000019_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000020_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000021_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000022_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000023_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000024_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000025_20260907_19.jpg"
+    ],
+    "page_path": "creatures/kaeru/iboimori.html"
+  },
+  {
+    "id": "ishikawa-gaeru",
+    "name": "Amami Ishikawa's Frog",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "Brown frog family, genus Odorrana. *Odorrana splendida*\n\nGrows to about 7.4-13.7 cm. Breeds from late February through around June. Lives\nalong the gentle headwater streams of mountain areas. Said to be Japan's most\nbeautiful frog, it is designated a Natural Monument and a Nationally Rare Wild\nSpecies in Kagoshima Prefecture, and capturing or transferring it — including\nits eggs — is prohibited. In some spots near higher-elevation streams, its call\ncan be heard after dark, and at certain locations it can even be seen in summer\nwhen it rains.",
+    "photos": [
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000002_20250123_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000004_20250201_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000005_20250201_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000006_20250206_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000007_20250206_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000008_20250304_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000009_20250722_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000010_20241209_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000011_20241209_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250314_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250314_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250506_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250516_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250520_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250529_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250602_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250603_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250615_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250625_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250627_11.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250709_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250716_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260404_00.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000013_20260423_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/IMG_9643.JPG"
+    ],
+    "page_path": "creatures/kaeru/ishikawa-gaeru.html"
+  },
+  {
+    "id": "shiriken-imori",
+    "name": "Amami Sword-tailed Newt",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Newt family, genus Cynops. *Cynops ensicauda ensicauda*\n\nMales reach about 14 cm and females about 18 cm in total length. Found on Amami\nOshima, Uke-jima, Kakeromajima, Yoro-jima, and other nearby islands, it breeds\nin ponds, rice paddies,\nand gentle stretches of streams. After September most individuals leave the\nwater, and around December, during the breeding season, large numbers can be\nobserved at the water's edge. It has a black body with yellow or orange spots,\nand individual variation is considerable. Okinawa is home to the related\nOkinawa sword-tailed newt.",
+    "photos": [
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000002_20250128_22.jpg",
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000003_20260329_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/shiriken-imori.html"
+  },
+  {
+    "id": "haroweru-amagaeru",
+    "name": "Hallowell's Tree Frog",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "Tree frog family, genus Hyla. *Hyla hallowellii*\n\nGrows to about 3-4 cm. Breeds from March through June. Lives in lowland forests,\nthickets, and farmland, and lays eggs in rice paddies and other still water. It\nbecomes active on humid days and rainy nights, and during the breeding season\nforms large chorus gatherings near rice paddies. It perches a little way up, such\nas on the tips of branches, and even when calling loudly is hard to spot. Solid\ngreen and very beautiful. Its call resembles that of the Japanese tree frog.",
+    "photos": [
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250510_00.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250517_23.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250529_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260303_13.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260330_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000002_20250510_00.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000003_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000004_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000005_20250516_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/haroweru-amagaeru.html"
+  },
+  {
+    "id": "hime-amagaeru",
+    "name": "Okinawa Rice Frog",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "description": "Narrow-mouthed frog family, genus Microhyla. *Microhyla okinavensis*\n\nGrows to about 2.2-3.2 cm. Breeds year-round (mainly March through July). Found\nin a wide range of habitats from coastal lowlands to mountains, including forest\nedges, grasslands, and around houses. Becomes active on humid or rainy days. Its\nhead is small and its legs are thick, giving it a triangular shape when viewed\nfrom above. Japan's smallest frog, but it calls with a surprisingly loud voice.",
+    "photos": [
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg",
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000003_20250516_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/hime-amagaeru.html"
+  },
+  {
+    "id": "otton-gaeru",
+    "name": "Otton Frog",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "description": "Brown frog family, genus Babina. *Babina subaspera*\n\nGrows to about 9-14 cm. Breeds from April through October. Lives mainly in\nmountainous areas, but can also be seen in farmland and parks. It becomes active\non humid or rainy days and often comes out onto roads. Males grow larger, making\nthis Japan's biggest frog aside from the introduced American bullfrog. It has\nfive toes with a sharp spur on what corresponds to the thumb, thought to be used\nby males when fighting each other or during amplexus. Designated a Natural\nMonument and a Nationally Rare Wild Species in Kagoshima Prefecture, capturing\nor transferring it — including its eggs — is prohibited. It is very large and\nimpressive, and easy to spot when it comes out onto a road. Its name is said to\ncome from its call.",
+    "photos": [
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000001_20250228_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000002_20250228_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000003_20250722_20.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000004_20241204_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250516_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250517_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250520_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250602_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250727_13.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250812_15.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20251009_23.jpg"
+    ],
+    "page_path": "creatures/kaeru/otton-gaeru.html"
+  },
+  {
+    "id": "ryukyu-kajika-gaeru",
+    "name": "Ryukyu Kajika Frog",
+    "category": "kaeru",
+    "category_name": "Amphibians",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Tree frog family, genus Buergeria. *Buergeria japonica*\n\nGrows to about 2.5-4 cm. Breeds from April through October. Adaptable to\nhabitats ranging from mountain streams to puddles in built-up areas, it is the\nmost commonly seen frog on Amami Oshima. It calls especially vigorously on\nhumid or rainy days. Males are a beautiful yellow, and their call is beautiful\ntoo.",
+    "photos": [
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250417_20.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250425_22.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250503_22.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20260608_00.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg"
+    ],
+    "page_path": "creatures/kaeru/ryukyu-kajika-gaeru.html"
+  },
+  {
+    "id": "amami-hirata-kuwagata",
+    "name": "Amami Flat Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "Stag beetle family, genus Dorcus (a subspecies of the flat stag beetle).\n*Dorcus titanusu elegans*\n\nA subspecies of the flat stag beetle found in the Amami Islands. It is the most\nnumerous stag beetle on Amami Oshima. A popular species that grows quite large\nin captivity. It gathers at the sap of citrus trees, machilus, chinquapin, and\nmallotus trees. In the wild most individuals are under 50mm, and anything over\n65mm is quite large. Aim for 70mm+.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000002_20250821_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250615_21.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250812_15.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250822_01.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250901_00.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260607_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260717_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000004_20250812_15.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000005_20260607_20.jpg"
+    ],
+    "page_path": "creatures/kuwagata/amami-hirata-kuwagata.html"
+  },
+  {
+    "id": "ko-kuwagata",
+    "name": "Amami Lesser Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      7,
+      8
+    ],
+    "description": "Stag beetle family, subgenus Dorcus (lesser stag beetles). *Dorcus amamianus*\n\nAlthough its name means \"lesser stag beetle,\" it resembles the Himeoo stag\nbeetle in many respects. Its mandibles are short and strongly curved, while its\nlegs and tarsi are long. Active from late May through October. Less numerous\nthan the lesser stag beetle found on mainland Japan.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250814_01.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_21.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_22.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260720_22.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260801_01.jpg"
+    ],
+    "page_path": "creatures/kuwagata/ko-kuwagata.html"
+  },
+  {
+    "id": "marubane-kuwagata",
+    "name": "Amami Roundwing Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      9,
+      10
+    ],
+    "description": "Stag beetle family, genus Neolucanus (roundwing stag beetles).\n*Neolucanus protogenetivus*\n\nActive from around September through October, it can be observed deep in\nforests dense with giant Castanopsis sieboldii trees. Collecting is prohibited\nunder the rare wildlife protection ordinances of five municipalities on Amami\nOshima (including its outlying islands) and three towns on Tokunoshima. To\nprevent poaching, cameras have been set up in the mountains, and insect patrols\nmake rounds during the season. Note: simply taking photographs is fine, but if\nyou need to enter an area that requires a permit, be sure to apply properly.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250906_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250907_03.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250914_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250915_09.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250918_23.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250919_22.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000002_20250906_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000003_20250914_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000004_20250915_09.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000005_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000007_20250919_22.jpg"
+    ],
+    "page_path": "creatures/kuwagata/marubane-kuwagata.html"
+  },
+  {
+    "id": "miyama-kuwagata",
+    "name": "Amami Mountain Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "Stag beetle family, genus Lucanus (true stag beetles). *Lucanus ferriei*\n\nActive from around July through September. A rare species found only on Amami\nOshima. Collecting is prohibited by ordinance. Lives in primeval forest above\nabout 300m elevation. Nocturnal; males can be seen waiting for females high in\ntrees, but they are hard to spot visually. They are also often seen near the\ntops of utility poles. They come to tree sap, fruit traps, and lights, but\ncollecting them is prohibited.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250902_01.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250905_23.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20260823_22.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000002_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000003_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000004_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000005_20250902_01.jpg"
+    ],
+    "page_path": "creatures/kuwagata/miyama-kuwagata.html"
+  },
+  {
+    "id": "nebuto-kuwagata",
+    "name": "Amami Root Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      5,
+      6,
+      7,
+      10,
+      11
+    ],
+    "description": "Stag beetle family, genus Aegus (root stag beetles). *Aegus laevicolis subnitidus*\n\nA subspecies of the root stag beetle found in the Amami Islands, and the\nlargest-growing of Japan's root stag beetle subspecies. Active from around May\nthrough October. It sometimes comes to the sap of machilus, chinquapin,\nmallotus, and Albizia trees. In the wild most individuals are around 20mm, and\n28mm is considered large. Aim for 30mm+.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000002_20250521_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000003_20250620_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260422_23.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260427_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000005_20260910_16.jpg"
+    ],
+    "page_path": "creatures/kuwagata/nebuto-kuwagata.html"
+  },
+  {
+    "id": "nokogiri-kuwagata",
+    "name": "Amami Sawtooth Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "Stag beetle family, genus Prosopocoilus (sawtooth stag beetles); Amami\nsubspecies. *Prosopocoilus dissimilis*\n\nActive from mid-June through early September. Among Japan's sawtooth stag\nbeetles, those from Amami Oshima are especially large, with long, thick,\nimposing mandibles. It frequently flies to citrus trees, mallotus, machilus,\nchinquapin, ripe Pandanus fruit and banana traps, and streetlights. Most\nindividuals are around 60mm, and anything over 75mm is large. Aim for 80mm.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000001_20250620_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000002_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000003_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000004_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000006_20250628_22.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000007_20250630_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000008_20250630_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000009_20250702_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000010_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000011_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000012_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000013_20250720_22.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000014_20250821_20.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250624_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250629_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260712_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000016_20260903_11.jpg"
+    ],
+    "page_path": "creatures/kuwagata/nokogiri-kuwagata.html"
+  },
+  {
+    "id": "shika-kuwagata",
+    "name": "Amami Deer Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Stag beetle family, genus Rhaetulus (deer stag beetles). *Rhaetulus recticrnis*\n\nActive from around May through September, most easily seen around August.\nCollecting is prohibited by ordinance. Areas of relatively higher elevation\noffer a better chance of finding it. It is often found on thin branches of\nCastanopsis sieboldii or citrus trees. In large individuals the mandibles curve\nstrongly, like a deer's antlers. Take care not to mistake it for a small\nindividual of the lesser stag beetle or sawtooth stag beetle and take it home\nby accident (never take home an individual you can't identify yourself).",
+    "photos": [
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000001_20250627_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000002_20250627_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000003_20250628_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000004_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000005_20250720_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000006_20250720_23.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000008_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000009_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000010_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260703_00.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260712_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260713_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000012_20250728_21.jpg"
+    ],
+    "page_path": "creatures/kuwagata/shika-kuwagata.html"
+  },
+  {
+    "id": "ruisu-tsuno-hyotan-kuwagata",
+    "name": "Lewis's Horned Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      8,
+      9
+    ],
+    "description": "Stag beetle family, subfamily Aesalinae (minute stag beetles), genus Nigidius\n(horned gourd stag beetles). *Nigidius lewisi*\n\nGlossy all over the body, with distinctively shaped mandibles, it spends the\nwhole year inside rotten wood. It can be found year-round in fallen oak and\nchinquapin logs and under leaf litter. Telling males and females apart is\ndifficult. On Amami it has a very localized distribution and rarely comes to\ntree sap, making it hard to find.",
+    "photos": [
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250907_03.jpg",
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20260823_22.jpg"
+    ],
+    "page_path": "creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata.html"
+  },
+  {
+    "id": "sujibuto-hirata-kuwagata",
+    "name": "Amami Ridged Flat Stag Beetle",
+    "category": "kuwagata",
+    "category_name": "Beetles",
+    "months": [
+      10
+    ],
+    "description": "Stag beetle family, subgenus Dorcus (flat stag beetles). *Dorcus metacostatus*\n\nActive from late April through around October, peaking in July. A rare species\nendemic to Japan, found only in the Amami Islands, with eight distinct ridges\non its elytra. It frequently flies to citrus trees, machilus, mallotus,\nchinquapin, banana traps, and streetlights. Anything over 60mm is large — aim\nfor 70mm+.",
+    "photos": [
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000002_20250624_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000005_20250625_22.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000006_20250630_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000007_20250702_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000008_20250702_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000009_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000010_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000011_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000012_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250625_22.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250813_10.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250928_02.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20251002_00.jpg"
+    ],
+    "page_path": "creatures/kuwagata/sujibuto-hirata-kuwagata.html"
+  },
+  {
+    "id": "akahara-ashinaga-mizodoromushi",
+    "name": "Red-bellied Long-legged Riffle Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      2,
+      5,
+      7
+    ],
+    "description": "Riffle beetle family, genus Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960\n\nA small aquatic beetle found in the Amami and Okinawa island groups and Guam.\nRiffle beetles live mainly in clean streams; both larvae and adults spend their\nlives in the water, growing to about 5mm at most, and the family is watched as\nan indicator of clean rivers. The detailed ecology of this species itself is\nstill largely unknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000003_20250706_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/akahara-ashinaga-mizodoromushi.html"
+  },
+  {
+    "id": "amami-hababiro-doromusshi",
+    "name": "Amami Broadbody Riffle Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      7,
+      8
+    ],
+    "description": "Riffle beetle family, genus Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\nAn endemic species found only on Amami Oshima, described in 2005. The genus\nDryopomorphus also includes a widespread relative found on Honshu, Shikoku,\nand Kyushu along with a smaller species, plus another species endemic to the\nOsumi Islands. Riffle beetles are mainly small aquatic beetles living in clean\nstreams, but the detailed ecology of this species itself is still largely\nunknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000002_20260801_18.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000003_20260801_18.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000004_20260801_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-hababiro-doromusshi.html"
+  },
+  {
+    "id": "amami-mizo-doromushi",
+    "name": "Amami Groove Riffle Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      7
+    ],
+    "description": "Riffle beetle family, genus Ordobrevia. *Ordobrevia amamiensis* (Nomura, 1957)\n\nA small aquatic beetle found in the Amami, Okinawa, and Yaeyama island groups\nand Guam. The population on Okinawa Island is distinguished as a separate\nsubspecies, the Okinawa groove riffle beetle. Riffle beetles mainly live in\nclean streams, but the detailed ecology of this species itself is still\nlargely unknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-mizo-doromushi.html"
+  },
+  {
+    "id": "amami-yokomizo-doromushi",
+    "name": "Amami Sidegroove Riffle Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      4,
+      5
+    ],
+    "description": "Riffle beetle family, genus Leptelmis. *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017\n\nEndemic to Amami Oshima, a species described as recently as 2017. Its form\ndiffers from other species in the same genus found on mainland Japan and\nTaiwan, while the shape of its genitalia, among other features, closely\nresembles a species distributed in southern China, indicating a close\nrelationship. It is regarded as an example of a relict endemic species: its\nancestral species is thought to have once been widespread across the Eurasian\ncontinent, and after Amami Oshima became isolated, related populations\nelsewhere died out, leaving only this species surviving. Riffle beetles are\nmainly small aquatic beetles living in clean streams, but the detailed ecology\nof this species itself is still largely unknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000001_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000002_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000003_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000004_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000005_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000006_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000007_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000008_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000009_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000010_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000011_20250501_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-yokomizo-doromushi.html"
+  },
+  {
+    "id": "chairo-kesi-katabiro-amennbo",
+    "name": "Brown Micro Water Strider",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      2,
+      12
+    ],
+    "description": "Broad-shouldered water strider family, genus Microvelia. *Microvelia japonica*\nEsaki & Miyamoto, 1955\n\nA small aquatic insect about 1.5-2.1mm long. Found on Honshu (west of\nFukushima Prefecture), Shikoku, and Kyushu, and in the Ryukyu Islands from\nKikaijima to Okinawa Island. Commonly seen in dim pools beside small streams\nand in the shade of rocks, where it preys on small insects that fall onto the\nwater's surface.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000002_20250214_13.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000003_20241203_14.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000004_20241204_10.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/chairo-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "iriomote-kesi-katabiro-amennbo",
+    "name": "Iriomote Micro Water Strider",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      2
+    ],
+    "description": "Broad-shouldered water strider family, genus Microvelia.\n*Microvelia iriomotensis* Miyamoto, 1964\n\nA small aquatic insect about 1.7-1.9mm long. Found in the Ryukyu Islands\n(from the Amami group to the Yaeyama Islands) and Taiwan. Seen in pools formed\nby seepage beside mountain forest roads; a mating behavior in which males\nguard females for extended periods has been reported in academic research.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/iriomote-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "kesi-katabiro-amennbo",
+    "name": "Common Micro Water Strider",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      3
+    ],
+    "description": "Broad-shouldered water strider family, genus Microvelia. *Microvelia douglasi*\nScott, 1874\n\nAbout 1.5-2mm long, one of the smallest of the broad-shouldered water\nstriders. Found on Honshu, Shikoku, Kyushu, Tsushima, the Ryukyu Islands, and\nthe Daito Islands (Minami Daito-jima), and more widely abroad from the Korean\nPeninsula through China, Southeast Asia, Taiwan, and Oceania. It prefers\nflowing water such as small rice paddies and streams, and preys on small\ninsects that fall onto the water's surface. The family includes both wingless\nforms that cannot fly and long-winged forms that can.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "kogata-no-gengoro",
+    "name": "Lesser Diving Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Diving beetle family, genus Cybister. *Cybister tripunctatus orientalis*\nGschwendtner, 1931\n\nGrows to about 24-29mm. Found on Honshu, Shikoku, Kyushu, the Ryukyu Islands,\nand the Ogasawara Islands, and abroad in China, the Korean Peninsula, and\nTaiwan. Elongate-oval and somewhat flattened, with a strongly glossy back\nranging from green to brownish black; a yellow rim along the edge of the\nelytra is the key point for telling it apart from the tawny diving beetle. It\nlives in ponds and marshes rich in aquatic plants, rice paddies and nearby\npuddles, fallow fields, and slow-moving channels. Since the 1960s it has\ndeclined sharply on Honshu and further south due to pesticide use and field\nconsolidation, and is listed as Vulnerable on the Ministry of the\nEnvironment's Red List, but it is still relatively commonly seen in the\nRyukyu Islands. It closely resembles the tawny diving beetle in shape and\ncoloring, making the two difficult to tell apart from photographs alone.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000002_20250403_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000003_20250406_23.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/kogata-no-gengoro.html"
+  },
+  {
+    "id": "naga-tsuya-doromushi",
+    "name": "Elongate Glossy Riffle Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      2,
+      5,
+      8
+    ],
+    "description": "Riffle beetle family, genus Zaitzevia. *Zaitzevia elongata* Nomura, 1962\n\nA small aquatic beetle found in the Amami and Okinawa island groups. Eight\nspecies of the genus Zaitzevia are known in Japan, with different species\ndistributed from Honshu to the Yaeyama Islands. Riffle beetles mainly live in\nclean streams, but the detailed ecology of this species itself is still\nlargely unknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000003_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000004_20250810_15.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/naga-tsuya-doromushi.html"
+  },
+  {
+    "id": "nomura-himedoromushi",
+    "name": "Nomura's Riffle Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      3,
+      4
+    ],
+    "description": "Riffle beetle family, genus Stenelmis. *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\nA small aquatic beetle found in the Amami and Okinawa island groups. It was\noriginally treated as the sole species of its own genus, but a 2021 molecular\nphylogenetic study (Kobayashi et al., 2021) placed it in the genus Stenelmis.\nThe genus name (Nomuraelmis) and the Japanese common name were coined in\n1964 by Dr. Masataka Satô, and are thought to honor Dr. Nomura, who helped\npioneer riffle beetle research in Japan during that same era.\nThe detailed ecology of this species itself is still largely unknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000002_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000003_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000004_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000005_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000006_20250416_16.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000007_20250416_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000008_20250416_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/nomura-himedoromushi.html"
+  },
+  {
+    "id": "okinawa-suji-gengoro",
+    "name": "Okinawa Striped Diving Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Diving beetle family, genus Hydaticus. *Hydaticus vittatus* (Fabricius, 1775)\n\nGrows to about 11-14mm. A southern-type diving beetle found in the Ryukyu\nIslands south of Yakushima, and abroad in Taiwan, China, and Southeast Asia.\nLives in still water such as ponds and rice paddies rich in aquatic plants.\nIn addition to habitat decline, many diving beetles, including this species,\nhave recently been found being sold for what appears to be the pet trade, so\nin January 2023 it was designated, along with other diving beetles, a\nSpecified Second-Class Nationally Rare Wild Species. This designation only\nregulates capture and transfer for the purpose of sale or distribution;\ncapturing it for observation is not restricted. It closely resembles a\nrelated species of the same genus distributed west of Honshu, but the two\nare easy to tell apart since their ranges do not overlap.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000002_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000003_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000004_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000005_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000006_20241218_16.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000007_20241219_21.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/okinawa-suji-gengoro.html"
+  },
+  {
+    "id": "ryuukyuu-munabiro-tuyadoromushi",
+    "name": "Ryukyu Broadchest Glossy Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      4
+    ],
+    "description": "Long-toed water beetle family (Dryopidae), genus Elmomorphus.\n*Elmomorphus amamiensis* Nomura, 1959\n\nA small aquatic beetle recorded on Amami Oshima and Okinoerabujima. It was\nformerly treated as a Ryukyu-island subspecies of a mainland species, but in\n2014 a study using COI gene sequencing and morphological comparison found a\nmajor genetic divergence at the species level between the two, and it was\nelevated to full species status. It is now generally accepted as a distinct\nspecies. The Dryopidae are a family closely related to the riffle beetles\n(Elmidae) and likewise live in clean streams. The detailed ecology of this\nspecies itself is still largely unknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000002_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000003_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000004_20250408_13.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000005_20260425_11.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/ryuukyuu-munabiro-tuyadoromushi.html"
+  },
+  {
+    "id": "satou-kara-himedoromushi",
+    "name": "Sato's Riffle Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      5
+    ],
+    "description": "Riffle beetle family, genus Sinonychus. *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\nA small aquatic beetle found in the Amami and Okinawa island groups (no record\nfrom Okinawa Island itself), described in 2007. Only two species of the genus\nSinonychus are known in Japan; the other is found in Kyushu. The detailed\necology of this species itself is still largely unknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000003_20250501_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/satou-kara-himedoromushi.html"
+  },
+  {
+    "id": "tsutsui-nagare-katabiro-amennbo",
+    "name": "Tsutsui's Stream Water Strider",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      3,
+      4
+    ],
+    "description": "Broad-shouldered water strider family, genus Pseudovelia (stream water\nstriders). *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\nFound in the Ryukyu Islands (from Takarajima to Okinawa Island). Several\nspecies of the genus Pseudovelia are known in Japan, a group that lives along\nthe banks of rivers and ponds. Sufficient information on the detailed ecology\nof this species itself has not yet been confirmed.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000002_20260328_21.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000003_20260328_21.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000004_20250403_22.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/tsutsui-nagare-katabiro-amennbo.html"
+  },
+  {
+    "id": "ueno-tsuya-doromushi",
+    "name": "Ueno's Glossy Riffle Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Riffle beetle family, genus Urumaelmis. *Urumaelmis uenoi* (Nomura, 1961)\n\nA small aquatic beetle found in the Osumi Islands, Tokara Islands, Amami\nisland group, and Okinawa island group. The genus Urumaelmis also includes a\nsecond species newly described from Kyushu in 2020, bringing the number of\nknown species in Japan to two. The population on Kuchinoshima in the Tokara\nIslands is distinguished as a separate subspecies. The detailed ecology of\nthis species itself is still largely unknown.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000002_20260204_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000003_20260318_20.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000004_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000005_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000006_20250404_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000007_20250405_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000008_20250411_23.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000009_20250416_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000010_20250424_23.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/ueno-tsuya-doromushi.html"
+  },
+  {
+    "id": "usuiro-shima-gengoro",
+    "name": "Pale Striped Diving Beetle",
+    "category": "suisei-konntyuu",
+    "category_name": "Aquatic Insects",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Diving beetle family, genus Hydaticus (striped diving beetles).\n*Hydaticus rhantoides* Sharp, 1882\n\nA small diving beetle about 10-11mm long. The elytra are overall yellowish\nbrown with no conspicuous striping. Found on Honshu (west of the Kanto\nregion), Shikoku, Kyushu, Tsushima, the Ryukyu Islands, and the Daito Islands,\nand abroad in China, Taiwan, and Southeast Asia. Lives in open still water\nsuch as rice paddies and ponds. Among the diving beetles of the Ryukyu\nIslands, it is considered, along with the tawny diving beetle and the lesser\ndiving beetle, to be relatively holding its own in numbers.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000002_20250403_00.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000003_20250403_00.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/usuiro-shima-gengoro.html"
+  },
+  {
+    "id": "ba-ba-tokage",
+    "name": "Barbour's Skink",
+    "category": "tokage",
+    "category_name": "Lizards",
+    "months": [
+      4,
+      9
+    ],
+    "description": "Skink family (Scincidae), genus Plestiodon. *Plestiodon barbouri*\n\nTotal length 15.5-20 cm (snout-vent length 5.2-7.3 cm). A species endemic to\nJapan, distributed on Amami Oshima, Kakeromajima, Uke-jima, Yoro-jima,\nTokunoshima, and the Okinawa Islands. Juveniles are blackish brown with five\nbright longitudinal stripes, and a vivid blue tail that makes up more than\ntwo-thirds of the total tail length. As they grow, the blue fades; males\nbecome overall dark brown to brown, while many females retain coloring\ncloser to that of juveniles. It prefers the forest floor and edges of\nnatural evergreen broadleaf forest or well-recovered secondary forest,\nbasking in the sun to regulate its body temperature while feeding on\nspiders and land snails. It becomes sluggish in winter but does not\nhibernate. Its numbers have declined due to drying of habitat from logging\nand undergrowth clearance, and predation by feral cats and the introduced\nsmall Indian mongoose. It is listed as Vulnerable on the Ministry of the\nEnvironment's Red List, and in 2019 was also designated a Kagoshima\nPrefecture Rare Wildlife Species, making unauthorized capture or collection\nsubject to penalties.",
+    "photos": [
+      "../images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
+      "../images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000002_20260416_12.jpg"
+    ],
+    "page_path": "creatures/tokage/ba-ba-tokage.html"
+  },
+  {
+    "id": "akahige",
+    "name": "Ryukyu Robin",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      1,
+      12
+    ],
+    "description": "Old World flycatcher family (Muscicapidae), genus Larvivora.\n*Larvivora komadori*\n\nAbout 14 cm long, weighing about 18 g. A species endemic to Japan that\nbreeds from the Danjo Islands through the Tokara Islands, Amami Oshima and\nits surrounding islets, to Tokunoshima; designated a Natural Monument in\n1970. Males have a vivid orange-red head, back, and tail, and the black\npatches on the breast and flanks look like a \"beard,\" which gives the\nspecies its Japanese name. Females are overall plainer in color. It forages\nfor insects on the forest floor of evergreen broadleaf forest, proclaiming\nits territory with a strong, beautiful song. It is easiest to find early in\nthe morning by following its song. A different species lives in northern\nOkinawa Island, but the two ranges do not overlap.",
+    "photos": [
+      "../images/creatures/tori/akahige/akahige_000001_20250120_14.jpg",
+      "../images/creatures/tori/akahige/akahige_000002_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000003_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000004_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000005_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000006_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000007_20241203_13.jpg"
+    ],
+    "page_path": "creatures/tori/akahige.html"
+  },
+  {
+    "id": "amami-yamashigi",
+    "name": "Amami Woodcock",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      6
+    ],
+    "description": "Sandpiper family (Scolopacidae), genus Scolopax. *Scolopax mira*\n\nAbout 35-36 cm long. A species endemic to Japan found only in the Amami and\nOkinawa island groups, with breeding confirmed on Amami Oshima, Kakeromajima,\nUke-jima, Yoro-jima, and Tokunoshima. It resembles the closely related\nEurasian woodcock but has longer legs, an overall blacker tone, and a\nstockier build than other sandpipers. It prefers the dim forest floor of\nevergreen broadleaf forest, is most active from dusk to dawn, and forages on\nthe ground for earthworms and insects. It becomes especially active in the\ndim light of early morning and evening, and on moonlit nights. It nests on\nthe ground within forests and lays 2-4 eggs from around March through May.\nDesignated a Nationally Rare Wild Species in 1993. Predation by mongooses\nand feral cats, along with habitat loss from logging, are ongoing concerns.",
+    "photos": [
+      "../images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
+    ],
+    "page_path": "creatures/tori/amami-yamashigi.html"
+  },
+  {
+    "id": "oo-tora-tsugumi",
+    "name": "Amami Thrush",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      2,
+      3,
+      4
+    ],
+    "description": "Old World flycatcher family (Muscicapidae), genus Zoothera.\n*Zoothera dauma major*\n\nAbout 30 cm long. A resident bird found only on Amami Oshima, with a\nyellowish-brown ground color marked with black, tiger-like blotches.\nDesignated a national Natural Monument and a Nationally Rare Wild Species.\nIt prefers the dim forest floor of mature broadleaf forest and feeds on\nearthworms and the like. During the breeding season from February to early\nApril, it sings a clear, beautiful \"kyoroon, tsi-i\" call in the dim light\nbefore dawn and at dusk. It once declined so sharply due to logging and the\nimpact of invasive species that it was called a \"phantom bird,\" but as the\nforest has recovered, its population has been on a recovering trend in\nrecent years.",
+    "photos": [
+      "../images/creatures/tori/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg"
+    ],
+    "page_path": "creatures/tori/oo-tora-tsugumi.html"
+  },
+  {
+    "id": "oosuton-ooakagera",
+    "name": "Owston's Woodpecker",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "description": "Woodpecker family (Picidae), genus Dendrocopos.\n*Dendrocopos leucotos owstoni*\n\nAbout 28 cm long, a medium-sized woodpecker. An endemic subspecies found\nonly on Amami Oshima; the upper body is almost entirely black with white\nspots, and the underside is a stronger brown than in other subspecies. The\ncrown is red in males and black in females, making the sexes easy to tell\napart. It lives mainly in mature laurel forest and excavates nest holes in\nthe trunks of large broadleaf trees. It feeds mainly on longhorn beetle\nlarvae hidden in rotten wood. Territorial proclamations and courtship\ndisplays begin around winter, and from February through May its\n\"drumming\" — rapid pecking at a trunk with its bill — and calls are easiest\nto hear. In recent years its range has expanded across the whole of Amami\nOshima, partly due to the effects of pine wilt disease. Since the only\nother woodpecker on Amami Oshima is the Amami pygmy woodpecker, the two can\nbe told apart by size alone. Designated a national Natural Monument in 1971\nand a Nationally Rare Wild Species in 1993; capture and transfer are\nprohibited.",
+    "photos": [
+      "../images/creatures/tori/oosuton-ooakagera/IMG_9894.JPG",
+      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
+      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg"
+    ],
+    "page_path": "creatures/tori/oosuton-ooakagera.html"
+  },
+  {
+    "id": "ruri-kakesu",
+    "name": "Lidth's Jay",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      3,
+      7
+    ],
+    "description": "Crow family (Corvidae), genus Garrulus. *Garrulus lidthi*\n\nAbout 38 cm long. A species endemic to Japan found only on Amami Oshima,\nKakeromajima, and Uke-jima, beautiful with its azure-blue body, reddish-brown\nwings, and white bill and wingtips. Designated a Natural Monument in 1921.\nIt prefers evergreen broadleaf forest and is omnivorous, feeding on\nchinquapin and oak acorns. Breeds from around February through May, laying\n3-7 eggs in a tree hollow or similar site. Its numbers once declined due to\npredation by feral cats and the introduced small Indian mongoose, but\nconservation efforts have paid off — including the 2024 declaration of\nmongoose eradication — and its population has been recovering in recent\nyears. It flies about actively during the day, but at night it can be\nobserved resting on power lines or branch tips along forest roads.",
+    "photos": [
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000003_20250726_09.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000004_20250726_09.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg"
+    ],
+    "page_path": "creatures/tori/ruri-kakesu.html"
+  }
+]

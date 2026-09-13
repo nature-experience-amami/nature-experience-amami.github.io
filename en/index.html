@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nature Experience Amami｜奄美大島の夜の森ナイトツアー</title>
-<meta name="description" content="奄美大島の夜の森でアマミノクロウサギ、ハブ、奄美固有のカエルたちを観察するナイトツアー。名瀬近辺ホテル送迎あり、おひとり様歓迎。">
+<title>Nature Experience Amami | Amami Oshima Night Forest Tour</title>
+<meta name="description" content="A night tour to observe the Amami rabbit, the Habu, and Amami's endemic frogs in Amami Oshima's night forest. Hotel pickup available near Naze; solo travelers welcome.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
@@ -23,6 +23,7 @@
   .lang-bar a, .lang-bar span{ text-decoration:none; color:rgba(234,242,233,.5); }
   .lang-bar a:hover{ color:var(--moonlight); }
   .lang-bar span.current{ color:var(--amber); }
+  .lang-bar span.disabled{ color:rgba(234,242,233,.25); }
 
   .hero{
     position:relative; width:100%; height:clamp(560px, 85svh, 820px);
@@ -193,81 +194,28 @@
     color:rgba(234,242,233,.5); border-top:1px solid rgba(234,242,233,.1);
   }
 
-  /* ===== スマホ縦画面（縦持ち）向けレスポンシブ ===== */
   @media (max-width:760px) and (orientation:portrait){
     .hero{
-      height: auto;
-      min-height: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      padding-top: 5.8rem;
+      height: auto; min-height: 0; display: flex; flex-direction: column;
+      justify-content: flex-start; padding-top: 5.8rem;
     }
-
-    .hero-photo-link{
-      position: relative;
-      width: 100%;
-      height: auto;
-      aspect-ratio: 4 / 3;
-      order: 1;
-      display: block;
-      overflow: hidden;
-    }
-
-    .hero-photo{
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
+    .hero-photo-link{ position: relative; width: 100%; height: auto; aspect-ratio: 4 / 3; order: 1; display: block; overflow: hidden; }
+    .hero-photo{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
     .hero-photo-name{
-      position: absolute;
-      right: 0.8rem;
-      bottom: 0.8rem;
-      top: auto;
-      z-index: 10;
-      background: rgba(10, 22, 19, 0.82);
-      padding: 0.3rem 0.7rem;
-      border-radius: 4px;
-      backdrop-filter: blur(4px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      position: absolute; right: 0.8rem; bottom: 0.8rem; top: auto; z-index: 10;
+      background: rgba(10, 22, 19, 0.82); padding: 0.3rem 0.7rem; border-radius: 4px;
+      backdrop-filter: blur(4px); box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
-
-    .brand-bar{
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: .7rem;
-      padding: 1rem 6vw 0;
-    }
+    .brand-bar{ position: absolute; top: 0; left: 0; right: 0; align-items: flex-start; flex-wrap: wrap; gap: .7rem; padding: 1rem 6vw 0; }
     .brand-bar .mark{ font-size:1.7rem; }
-    .top-category-nav{
-      width:100%; gap:1.2rem; overflow-x:auto; padding-bottom:.25rem;
-      -webkit-overflow-scrolling:touch;
-    }
+    .top-category-nav{ width:100%; gap:1.2rem; overflow-x:auto; padding-bottom:.25rem; -webkit-overflow-scrolling:touch; }
     .top-category-nav a{ flex:0 0 auto; font-size:.72rem; }
-
-    .hero-content{
-      position: relative;
-      order: 2;
-      padding: 1.5rem 6vw 3rem;
-      max-width: none;
-      background: var(--night);
-    }
+    .hero-content{ position: relative; order: 2; padding: 1.5rem 6vw 3rem; max-width: none; background: var(--night); }
     .hero h1{ font-size:clamp(1.8rem, 7vw, 2.4rem); margin-bottom:1rem; }
     .hero p{ font-size:.95rem; margin-bottom:1.6rem; }
-
-    .hero::after{
-      display: none;
-    }
+    .hero::after{ display: none; }
   }
 
-  /* ===== PC向け（修正箇所） ===== */
   @media (min-width:901px){
     .hero{
       --desktop-photo-top:7.5rem;
@@ -281,114 +229,34 @@
       padding:0 6vw 2rem;
     }
     .hero-photo-link, .hero::after{
-      top:var(--desktop-photo-top); bottom:auto;
-      left:50%; transform:translateX(-50%);
-      height:var(--desktop-photo-height);
-      aspect-ratio:16/9;
-      width:var(--desktop-photo-width);
+      top:var(--desktop-photo-top); bottom:auto; left:50%; transform:translateX(-50%);
+      height:var(--desktop-photo-height); aspect-ratio:16/9; width:var(--desktop-photo-width);
     }
     .hero-photo-name{
       position: absolute;
       bottom: calc(100svh - var(--desktop-photo-top) - var(--desktop-photo-height) + 1rem);
       right: calc(50% - var(--desktop-photo-width) / 2 + 1rem);
-      top: auto;
-      z-index: 10;
-      background: rgba(10, 22, 19, 0.85);
-      padding: .4rem .8rem;
-      border-radius: 4px;
-      backdrop-filter: blur(4px);
+      top: auto; z-index: 10; background: rgba(10, 22, 19, 0.85); padding: .4rem .8rem;
+      border-radius: 4px; backdrop-filter: blur(4px);
     }
   }
 
-  /* ===== スマホ横画面（横持ち）向けレスポンシブ ===== */
   @media (max-width:900px) and (orientation:landscape){
-    .hero{
-      height: 100svh;
-      min-height: 0;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
-      padding-top: 0;
-      position: relative;
-      background: #000;
-    }
-    
-    .hero-photo-link{
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 100svh;
-      display: block;
-    }
-
-    .hero-photo{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-content{
-      position: absolute;
-      left: 4vw;
-      bottom: 2vh;
-      z-index: 6;
-      padding: 0;
-      max-width: 60vw;
-      background: none;
-    }
-
-    .eyebrow{
-      font-size: .55rem;
-      padding: .15rem .4rem;
-      margin-bottom: .4rem;
-    }
-
-    .hero h1{
-      font-size: clamp(0.95rem, 3.2vw, 1.25rem);
-      margin-bottom: .5rem;
-      line-height: 1.2;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.8);
-    }
-
-    .hero p{
-      display: none;
-    }
-
-    .btn{
-      padding: .4rem .8rem;
-      font-size: .7rem;
-      gap: .3rem;
-    }
-
-    .hero-photo-name{
-      position: absolute;
-      right: 4vw;
-      bottom: 2vh;
-      top: auto;
-      z-index: 7;
-      font-size: .7rem;
-      background: rgba(10, 22, 19, 0.8);
-      padding: .2rem .5rem;
-      border-radius: 3px;
-    }
-
-    .brand-bar{
-      padding: .8rem 4vw 0;
-      z-index: 8;
-    }
+    .hero{ height: 100svh; min-height: 0; display: flex; align-items: flex-end; justify-content: flex-start; padding-top: 0; position: relative; background: #000; }
+    .hero-photo-link{ position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 100svh; display: block; }
+    .hero-photo{ width: 100%; height: 100%; object-fit: cover; }
+    .hero-content{ position: absolute; left: 4vw; bottom: 2vh; z-index: 6; padding: 0; max-width: 60vw; background: none; }
+    .eyebrow{ font-size: .55rem; padding: .15rem .4rem; margin-bottom: .4rem; }
+    .hero h1{ font-size: clamp(0.95rem, 3.2vw, 1.25rem); margin-bottom: .5rem; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8); }
+    .hero p{ display: none; }
+    .btn{ padding: .4rem .8rem; font-size: .7rem; gap: .3rem; }
+    .hero-photo-name{ position: absolute; right: 4vw; bottom: 2vh; top: auto; z-index: 7; font-size: .7rem; background: rgba(10, 22, 19, 0.8); padding: .2rem .5rem; border-radius: 3px; }
+    .brand-bar{ padding: .8rem 4vw 0; z-index: 8; }
     .brand-bar .mark{ font-size: 1.3rem; }
     .top-category-nav{ width:auto; overflow:visible; padding-bottom:0; gap: .8rem; }
     .top-category-nav a{ font-size: .65rem; }
-
     .hero::after{
-      display: block;
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 4;
-      pointer-events: none;
+      display: block; content: ""; position: absolute; inset: 0; z-index: 4; pointer-events: none;
       background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, transparent 40%, rgba(10,22,19,0.7) 100%);
     }
   }
@@ -402,130 +270,131 @@
 <body>
 
 <div class="lang-bar"><div class="lang-bar-inner">
-  <span class="current">JA</span><a href="en/index.html">EN</a><a href="es/index.html">ES</a><a href="zh/index.html">中文</a>
+  <a href="../index.html">JA</a><span class="current">EN</span><a href="../es/index.html">ES</a><a href="../zh/index.html">中文</a>
 </div></div>
 
 <header class="hero">
-  <a id="hero-photo-link" class="hero-photo-link" href="#tour" aria-label="ナイトツアーの詳細を見る">
-    <img id="hero-photo" class="hero-photo" alt="奄美大島の夜の森">
+  <a id="hero-photo-link" class="hero-photo-link" href="#tour" aria-label="See night tour details">
+    <img id="hero-photo" class="hero-photo" alt="Amami Oshima's night forest">
     <span id="hero-photo-name" class="hero-photo-name" aria-live="polite"></span>
   </a>
 
   <div class="brand-bar">
     <span class="mark">Nature <span class="dash">–</span> Experience</span>
-    <nav class="top-category-nav" aria-label="生き物カテゴリー">
-      <a href="highlights.html">代表的な生き物</a>
-      <a href="generated-categories/hebi.html">ヘビ一覧</a>
-      <a href="generated-categories/kaeru.html">両生類一覧</a>
-      <a href="generated-categories/kuwagata.html">クワガタ一覧</a>
-      <a href="generated-categories/suisei-konntyuu.html">水生昆虫一覧</a>
+    <nav class="top-category-nav" aria-label="Creature categories">
+      <a href="../highlights.html">Signature Wildlife</a>
+      <a href="generated-categories/hebi.html">Snakes</a>
+      <a href="generated-categories/kaeru.html">Amphibians</a>
+      <a href="generated-categories/kuwagata.html">Beetles</a>
+      <a href="generated-categories/suisei-konntyuu.html">Aquatic Insects</a>
     </nav>
   </div>
 
   <div class="hero-content">
     <span class="eyebrow">AMAMI OSHIMA / NIGHT FIELD TOUR</span>
-    <h1>奄美の夜の森を、<br><em>ガイドと歩く。</em></h1>
-    <p>アマミノクロウサギ、ハブ、奄美固有のカエルたち——天然記念物の宝庫、奄美大島の森を専属ガイドと歩くナイトツアー。</p>
-    <a href="tour.html" class="btn">🔦 ナイトツアーを見る</a>
+    <h1>Walk Amami's night forest,<br><em>with a guide.</em></h1>
+    <p>The Amami rabbit, the Habu, Amami's endemic frogs — a night tour through the forests of Amami Oshima, a treasure trove of natural monuments, with your own private guide.</p>
+    <a href="../tour.html" class="btn">🔦 See the Night Tour</a>
   </div>
 </header>
 
 <section class="field-note">
-  <p class="label">FIELD NOTE — <span id="field-note-month">今月</span>に観察しやすい生き物</p>
-  <h2 id="field-note-title">今月、森はこんな顔をしている</h2>
-  <p>季節ごとに出会える生き物は変わります。ガイドが入力した観察時期をもとに、今月の生き物を紹介します。</p>
+  <p class="label">FIELD NOTE — Wildlife easy to observe <span id="field-note-month">this month</span></p>
+  <h2 id="field-note-title">What the forest looks like this month</h2>
+  <p>The creatures you'll meet change with the seasons. Based on observation records our guides have logged, here's what's around this month.</p>
   <div id="field-note-creatures" class="creature-grid"></div>
 </section>
 
-<section class="ai-ask" aria-label="生き物についてAIに質問する">
+<section class="ai-ask" aria-label="Ask the AI guide about creatures">
   <p class="field-note label" style="color:var(--moss);">ASK THE GUIDE / AI</p>
-  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">気になる時期の生き物を聞いてみる</h2>
+  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">Ask about creatures active this time of year</h2>
   <p style="max-width:60ch; color:rgba(234,242,233,0.8); line-height:1.9; margin-bottom:1.5rem;">
-    「9月に見られる生き物は?」のように、気軽に聞いてみてください。実際に撮影した記録をもとに答えます。
+    Feel free to ask something like &ldquo;What can I see in September?&rdquo; — answers are based on our own photographed records.
   </p>
   <p class="ask-disclaimer">
-    観察時期は過去の記録をもとにした目安です。天候・気温・季節の進み方・年によって出会える生き物は変わるため、必ず見られることを保証するものではありません。回答が表示されるまで、少し時間がかかる場合があります。
+    Observation timing is only a guide based on past records. Weather, temperature, how the season is progressing, and the year itself all affect what you'll actually see, so a sighting is never guaranteed. It may take a moment for an answer to appear.
   </p>
   <div class="ask-box">
-    <input id="ask-input" type="text" placeholder="例:9月に見られる生き物は?" maxlength="200">
-    <button id="ask-btn" class="btn" type="button" style="position:static; opacity:1; animation:none;">🔦 聞いてみる</button>
+    <input id="ask-input" type="text" placeholder="e.g. What can I see in September?" maxlength="200">
+    <button id="ask-btn" class="btn" type="button" style="position:static; opacity:1; animation:none;">🔦 Ask</button>
   </div>
   <div id="ask-reply" class="ask-reply" aria-live="polite"></div>
 </section>
 
 <section id="tour" class="flow">
   <p class="field-note label" style="color:var(--moss);">HOW IT WORKS</p>
-  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">ナイトツアーの流れ</h2>
+  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">How the Night Tour Works</h2>
   <div class="flow-list">
     <div class="flow-item">
       <div class="flow-num">01</div>
       <div>
-        <h3>19時頃、指定の場所に集合</h3>
-        <p>ビッグ2駐車場、朝戸トンネル駐車場など。名瀬近辺の宿なら送迎相談可。</p>
+        <h3>Meet at the designated spot around 7 PM</h3>
+        <p>Big 2 parking lot, Asato Tunnel parking lot, and others. Pickup can be arranged for lodging near Naze.</p>
       </div>
     </div>
     <div class="flow-item">
       <div class="flow-num">02</div>
       <div>
-        <h3>ガイドの車で夜の森へ</h3>
-        <p>専属ガイドと一緒に固有種を探しながら歩きます。</p>
+        <h3>Head into the night forest in the guide's car</h3>
+        <p>Search for Amami's endemic species together with your private guide.</p>
       </div>
     </div>
     <div class="flow-item">
       <div class="flow-num">03</div>
       <div>
-        <h3>集合場所で解散</h3>
-        <p>採集目的のガイドはお断りしています。観察・撮影を楽しみましょう。</p>
+        <h3>Disperse at the meeting spot</h3>
+        <p>We decline guiding for collection purposes. Please enjoy observation and photography.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="tour-teaser" aria-label="ナイトツアーの案内">
+<section class="tour-teaser" aria-label="Night tour information">
   <div class="inner">
     <p class="label">NIGHT FIELD TOUR</p>
-    <h2>奄美の夜の森へ</h2>
-    <a class="teaser-link" href="tour.html">
-      ナイトツアーの内容や料金はこちら
+    <h2>Into Amami's Night Forest</h2>
+    <a class="teaser-link" href="../tour.html">
+      See night tour details and pricing
       <span aria-hidden="true">→</span>
     </a>
   </div>
 </section>
 
-<section class="creature-guide" aria-label="生き物図鑑の案内">
+<section class="creature-guide" aria-label="Creature field guide">
   <div class="inner">
     <p class="label">CREATURE GUIDE</p>
-    <h2>奄美の生き物を知る</h2>
+    <h2>Discover Amami's Wildlife</h2>
     <div class="guide-links">
-      <a class="guide-link" href="highlights.html">
-        代表的な生き物
+      <a class="guide-link" href="../highlights.html">
+        Signature Wildlife
         <span aria-hidden="true">→</span>
       </a>
       <a class="guide-link" href="generated-categories/hebi.html">
-        ヘビを見る
+        See the Snakes
         <span aria-hidden="true">→</span>
       </a>
       <a class="guide-link" href="generated-categories/kaeru.html">
-        両生類を見る
+        See the Amphibians
         <span aria-hidden="true">→</span>
       </a>
       <a class="guide-link" href="generated-categories/kuwagata.html">
-        クワガタを見る
+        See the Stag Beetles
         <span aria-hidden="true">→</span>
       </a>
       <a class="guide-link" href="generated-categories/suisei-konntyuu.html">
-        水生昆虫を見る
+        See the Aquatic Insects
         <span aria-hidden="true">→</span>
       </a>
     </div>
   </div>
 </section>
 
-<footer>&copy; 2026 Nature-Experience Amami. 画像の無断転載・複製・改変を禁じます。</footer>
+<footer>&copy; 2026 Nature-Experience Amami. All photos protected; reproduction, duplication, or alteration prohibited without permission.</footer>
 
 <script>
   const WORKER_URL = "https://nature-experience-ai.aegusaegus.workers.dev/";
-  const CREATURES_JSON = "data/creatures.json";
+  const CREATURES_JSON = "../data/creatures.en.json";
+  const MONTH_NAMES = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   let creaturesData = null;
 
   document.getElementById('ask-btn').addEventListener('click', askGuide);
@@ -541,7 +410,7 @@
       initHeroSlideshow(creaturesData);
       renderFieldNote(creaturesData);
     } catch (err) {
-      console.error('creatures.json の読み込みに失敗しました:', err);
+      console.error('Failed to load creatures.json:', err);
     }
   })();
 
@@ -559,7 +428,7 @@
       const image = new Image();
       image.onload = function () {
         heroPhoto.src = photoData.photo;
-        heroPhoto.alt = '奄美大島の' + photoData.creature.name;
+        heroPhoto.alt = "Amami Oshima's " + photoData.creature.name;
         heroPhotoName.replaceChildren();
         const commonName = document.createElement('span');
         commonName.textContent = photoData.creature.name;
@@ -576,15 +445,15 @@
         if (onLoaded) onLoaded();
       };
       image.onerror = function () {
-        console.error('ヒーロー写真の読み込みに失敗しました:', photoData.photo);
+        console.error('Failed to load hero photo:', photoData.photo);
       };
       image.src = photoData.photo;
       heroLink.href = photoData.creature.page_path || '#tour';
       heroLink.setAttribute(
         'aria-label',
         photoData.creature.page_path
-          ? photoData.creature.name + 'のページを見る'
-          : 'ナイトツアーの詳細を見る'
+          ? photoData.creature.name + "'s page"
+          : 'See night tour details'
       );
     }
 
@@ -611,7 +480,7 @@
         }, 500);
       };
       nextImage.onerror = function () {
-        console.error('ヒーロー写真の読み込みに失敗しました:', next.photo);
+        console.error('Failed to load hero photo:', next.photo);
       };
       nextImage.src = next.photo;
     }
@@ -630,16 +499,17 @@
 
   function renderFieldNote(creatures) {
     const month = new Date().getMonth() + 1;
+    const monthName = MONTH_NAMES[month - 1];
     const monthEl = document.getElementById('field-note-month');
     const titleEl = document.getElementById('field-note-title');
     const gridEl = document.getElementById('field-note-creatures');
-    monthEl.textContent = month + '月';
-    titleEl.textContent = month + '月、森はこんな顔をしている';
+    monthEl.textContent = 'in ' + monthName;
+    titleEl.textContent = monthName + ': here’s what the forest looks like';
     const matches = creatures.filter(function (creature) {
       return Array.isArray(creature.months) && creature.months.includes(month);
     });
     if (!matches.length) {
-      gridEl.innerHTML = '<p>この月の観察データを準備中です。</p>';
+      gridEl.innerHTML = '<p>Observation data for this month is coming soon.</p>';
       return;
     }
     gridEl.innerHTML = shuffleArray(matches).slice(0, 6).map(function (creature) {
@@ -649,7 +519,7 @@
         : '';
       return '<a class="creature-card" href="' + href + '">' + photo +
         '<div class="name">' + creature.name + '</div>' +
-        '<div class="months">' + month + '月に観察しやすい</div></a>';
+        '<div class="months">Best seen in ' + monthName + '</div></a>';
     }).join('');
   }
 
@@ -659,25 +529,25 @@
     const message = input.value.trim();
     if (!message) return;
 
-    replyEl.textContent = '考え中…';
+    replyEl.textContent = 'Thinking…';
 
     try {
       const res = await fetch(WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
+        body: JSON.stringify({
           message: message,
           creatures: creaturesData || []
         })
       });
       const data = await res.json();
-      replyEl.textContent = data.reply || 'うまく答えられませんでした。';
+      replyEl.textContent = data.reply || "Sorry, I couldn't come up with a good answer.";
 
       if (Array.isArray(data.creature_ids) && data.creature_ids.length) {
         await showPhotos(data.creature_ids, replyEl);
       }
     } catch (err) {
-      replyEl.textContent = '通信エラーが発生しました。しばらくしてからお試しください。';
+      replyEl.textContent = 'A connection error occurred. Please try again in a moment.';
     }
   }
 
@@ -694,7 +564,7 @@
             const card = document.createElement('a');
             card.className = 'ask-photo-card';
             card.href = creature.page_path || '#tour';
-            card.setAttribute('aria-label', creature.name + 'の紹介ページを見る');
+            card.setAttribute('aria-label', creature.name + "'s page");
             const img = document.createElement('img');
             img.src = photo;
             img.alt = creature.name;
@@ -709,7 +579,7 @@
       });
       if (wrap.children.length) replyEl.appendChild(wrap);
     } catch (err) {
-      /* 写真が取得できなくても回答文はすでに表示済み */
+      /* photos couldn't be fetched; the reply text is already shown */
     }
   }
 </script>

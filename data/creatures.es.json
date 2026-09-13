@@ -1,0 +1,1394 @@
+[
+  {
+    "id": "akamata",
+    "name": "Serpiente Akamata",
+    "category": "hebi",
+    "category_name": "Serpientes",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "description": "Familia de culebras, género Dinodon. *Dinodon semicarinatum*\n\nAlcanza hasta unos 200 cm. Se observa con más facilidad entre mayo y noviembre. Tiene el\ncuerpo pardo amarillento con bandas ovaladas rojas y negras. No es venenosa, pero es\nagresiva: si entras en su territorio, amenaza y ataca. Se alimenta de mamíferos, aves,\nreptiles, anfibios y peces, e incluso come huevos de tortuga marina; a veces se alimenta\nde su enemigo natural, la víbora Habu. Es nocturna y puede verse a lo largo de caminos\nforestales y zonas de agua, hasta cerca de la costa. Los ejemplares pequeños tienen un\ntono rojizo más intenso y son muy hermosos, pero aunque sean pequeños, su mordedura\nduele, así que hay que tener cuidado.",
+    "photos": [
+      "../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000002_20250829_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000004_20251009_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000005_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000006_20250807_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000007_20250922_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000008_20250810_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000009_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000010_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000011_20250921_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000012_20251009_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000013_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000014_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000015_20260331_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000016_20260403_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000017_20260409_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000018_20250419_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000019_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000020_20250427_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000021_20250503_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000022_20250516_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000023_20250520_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000024_20250526_01.jpg",
+      "../images/creatures/hebi/akamata/akamata_000025_20250528_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000026_20250529_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000027_20250531_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000028_20250602_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000029_20250604_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000030_20250611_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000031_20250611_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000032_20250621_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000033_20250621_13.jpg",
+      "../images/creatures/hebi/akamata/akamata_000034_20250622_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000035_20250705_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000036_20250709_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000037_20250709_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000038_20251208_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000039_20251225_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000040_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000042_20250829_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260409_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260414_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260422_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260423_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260504_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260607_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260830_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000045_20260903_09.jpg"
+    ],
+    "page_path": "creatures/hebi/akamata.html"
+  },
+  {
+    "id": "takachiho-hebi",
+    "name": "Culebra Amami de Escamas Impares",
+    "category": "hebi",
+    "category_name": "Serpientes",
+    "months": [
+      4
+    ],
+    "description": "Familia de las culebras Takachiho, tribu Takachiho. *Achalinus werneri*\n\nAlcanza hasta unos 55 cm. El dorso es de color pardo negruzco o pardo oscuro, con una\nfranja negra a lo largo de la línea media; el vientre es amarillo. En Amami es una\nserpiente legendaria que solo se encuentra en condiciones muy concretas. A veces sale a la\nsuperficie en días de lluvia intensa. Es nocturna y de hábitos subterráneos, y vive en\nbosques, praderas cerca del agua y tierras de cultivo. Se alimenta de lombrices. Es más\nescasa y difícil de encontrar aquí que en otras islas donde también habita esta especie.\nEs muy delgada y pequeña, así que puede que no la notes ni pasando en coche a su lado.",
+    "photos": [
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000002_20260401_22.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000003_20260401_22.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000004_20260401_22.jpg"
+    ],
+    "page_path": "creatures/hebi/takachiho-hebi.html"
+  },
+  {
+    "id": "garasu-hibaa",
+    "name": "Culebra de Pryer",
+    "category": "hebi",
+    "category_name": "Serpientes",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "Familia de culebras, género Hebius. *Hebius pryeri*\n\nAlcanza hasta unos 110 cm. Se observa con más facilidad entre mayo y noviembre. Tiene el\ncuerpo delgado y alargado, de color negro o marrón negruzco, con bandas amarillas o\nmarrones a lo largo del cuerpo. Prefiere ambientes acuáticos y se ve a menudo en\narrozales y otros lugares con muchas ranas pequeñas. Es venenosa, aunque sus colmillos\ninoculadores son pequeños y se dice que una simple mordedura no introduce mucho veneno en\nel cuerpo; aun así, su veneno es bastante potente, así que hay que tener cuidado. Se\nalimenta de ranas, peces, gecos y lagartijas pequeñas. Se mueve con rapidez, pero amenaza\nsi percibe peligro.",
+    "photos": [
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000002_20250522_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000003_20250601_15.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000004_20250604_23.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000005_20250227_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000006_20250227_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000007_20250228_20.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000008_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000009_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000010_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000011_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000012_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000013_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000014_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000015_20250614_09.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260411_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260608_00.jpg"
+    ],
+    "page_path": "creatures/hebi/garasu-hibaa.html"
+  },
+  {
+    "id": "habu",
+    "name": "Víbora Habu",
+    "category": "hebi",
+    "category_name": "Serpientes",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "Familia de víboras de foseta, género Protobothrops. *Protobothrops flavoviridis*\n\nAlcanza hasta unos 226 cm de longitud, una de las serpientes más grandes de la isla. Se observa\ncon más facilidad entre mayo y noviembre (aunque también puede activarse en días cálidos de\ninvierno). Es nocturna y descansa de día en madrigueras y grietas. Vive desde bosques de tierras\nbajas hasta bosques de montaña, praderas, zonas húmedas, tierras de cultivo e incluso árboles, y\na veces se acerca a viviendas siguiendo a los ratones. Se alimenta principalmente de ratones,\nademás de reptiles, ranas, mamíferos y aves. Sus depredadores naturales son la serpiente Akamata\ny los cazadores de habu. Es venenosa y muy agresiva. Mantenga siempre una distancia de al menos\n2 a 3 metros al observarla o fotografiarla. Si se acerca, no huye: adopta de inmediato una\npostura de ataque y puede lanzarse casi dos tercios de la longitud de su cuerpo. Una mordedura en\nzonas montañosas sin cobertura telefónica puede convertirse en una emergencia grave. Su diseño se\nmezcla con el entorno y es muy difícil de detectar, así que puede estar oculta cerca sin que se\nnote. Nunca está de más tener cuidado.",
+    "photos": [
+      "../images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
+      "../images/creatures/hebi/habu/habu_000003_20250228_00.jpg",
+      "../images/creatures/hebi/habu/habu_000004_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000005_20260221_22.jpg",
+      "../images/creatures/hebi/habu/habu_000006_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000007_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000008_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000009_20260221_22.jpg",
+      "../images/creatures/hebi/habu/habu_000010_20260306_21.jpg",
+      "../images/creatures/hebi/habu/habu_000011_20260306_21.jpg",
+      "../images/creatures/hebi/habu/habu_000012_20260329_00.jpg",
+      "../images/creatures/hebi/habu/habu_000013_20260330_21.jpg",
+      "../images/creatures/hebi/habu/habu_000014_20250428_23.jpg",
+      "../images/creatures/hebi/habu/habu_000015_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000016_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000017_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000018_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000019_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000020_20250506_02.jpg",
+      "../images/creatures/hebi/habu/habu_000021_20250506_02.jpg",
+      "../images/creatures/hebi/habu/habu_000022_20250515_21.jpg",
+      "../images/creatures/hebi/habu/habu_000023_20250515_21.jpg",
+      "../images/creatures/hebi/habu/habu_000024_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000025_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000026_20250521_21.jpg",
+      "../images/creatures/hebi/habu/habu_000027_20250525_23.jpg",
+      "../images/creatures/hebi/habu/habu_000028_20250525_23.jpg",
+      "../images/creatures/hebi/habu/habu_000029_20250526_00.jpg",
+      "../images/creatures/hebi/habu/habu_000030_20250605_22.jpg",
+      "../images/creatures/hebi/habu/habu_000031_20250615_22.jpg",
+      "../images/creatures/hebi/habu/habu_000032_20250621_13.jpg",
+      "../images/creatures/hebi/habu/habu_000033_20250625_22.jpg",
+      "../images/creatures/hebi/habu/habu_000034_20250628_14.jpg",
+      "../images/creatures/hebi/habu/habu_000035_20250628_15.jpg",
+      "../images/creatures/hebi/habu/habu_000036_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000037_20250628_15.jpg",
+      "../images/creatures/hebi/habu/habu_000038_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000039_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000040_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000041_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000042_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000043_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000044_20250704_01.jpg",
+      "../images/creatures/hebi/habu/habu_000045_20250704_21.jpg",
+      "../images/creatures/hebi/habu/habu_000046_20250704_22.jpg",
+      "../images/creatures/hebi/habu/habu_000047_20250704_22.jpg",
+      "../images/creatures/hebi/habu/habu_000048_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000049_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000050_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000051_20250705_22.jpg",
+      "../images/creatures/hebi/habu/habu_000052_20250713_00.jpg",
+      "../images/creatures/hebi/habu/habu_000053_20250714_21.jpg",
+      "../images/creatures/hebi/habu/habu_000054_20250714_21.jpg",
+      "../images/creatures/hebi/habu/habu_000055_20250717_22.jpg",
+      "../images/creatures/hebi/habu/habu_000056_20250717_22.jpg",
+      "../images/creatures/hebi/habu/habu_000057_20250720_21.jpg",
+      "../images/creatures/hebi/habu/habu_000058_20250723_20.jpg",
+      "../images/creatures/hebi/habu/habu_000059_20250723_20.jpg",
+      "../images/creatures/hebi/habu/habu_000060_20250723_21.jpg",
+      "../images/creatures/hebi/habu/habu_000061_20250725_21.jpg",
+      "../images/creatures/hebi/habu/habu_000062_20250725_21.jpg",
+      "../images/creatures/hebi/habu/habu_000063_20250727_00.jpg",
+      "../images/creatures/hebi/habu/habu_000064_20250727_00.jpg",
+      "../images/creatures/hebi/habu/habu_000065_20250728_21.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20250927_19.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20251004_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260403_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260404_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260404_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260411_02.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260607_23.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260614_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260617_19.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260629_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260703_00.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260705_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260719_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260720_22.jpg",
+      "../images/creatures/hebi/habu/habu_000067_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000068_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000069_20260703_00.jpg",
+      "../images/creatures/hebi/habu/habu_000070_20260721_12.jpg",
+      "../images/creatures/hebi/habu/habu_000071_20260802_03.jpg",
+      "../images/creatures/hebi/habu/habu_000072_20260903_09.jpg",
+      "../images/creatures/hebi/habu/habu_000073_20260903_11.jpg",
+      "../images/creatures/hebi/habu/habu_000074_20260618_00.jpg",
+      "../images/creatures/hebi/habu/habu_000075_20260630_00.jpg",
+      "../images/creatures/hebi/habu/habu_000076_20250713_00.jpg",
+      "../images/creatures/hebi/habu/IMG_9736.JPG"
+    ],
+    "page_path": "creatures/hebi/habu.html"
+  },
+  {
+    "id": "hime-habu",
+    "name": "Víbora de Okinawa",
+    "category": "hebi",
+    "category_name": "Serpientes",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      12
+    ],
+    "description": "Familia de víboras de foseta, género Ovophis. *Ovophis okinavensis*\n\nAlcanza hasta unos 80 cm. Resistente al frío, en Amami Oshima puede observarse durante\ntodo el año. Cuando termina la temporada de lluvias y sube la temperatura, se ve con\nfrecuencia en zonas de mayor altitud. Se alimenta de ranas pequeñas y medianas, pequeños\nmamíferos y aves. Se observa a menudo en lugares con muchas ranas, como arrozales y\narroyos de corriente suave. Un ejemplar enroscado apenas se mueve, pero amenazará si\nentras en su territorio. Es una serpiente venenosa, así que si te muerde, acude de\ninmediato a un hospital. Ten cuidado de no pisarla.",
+    "photos": [
+      "../images/creatures/hebi/hime-habu/hime-habu_000002_20250429_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000003_20250429_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000004_20250430_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000005_20250430_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000006_20260205_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000007_20250212_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000008_20260223_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000009_20260225_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000010_20250227_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000011_20250302_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000012_20250302_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000013_20260306_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000014_20260318_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000015_20260319_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000016_20260320_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000017_20260320_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000018_20250326_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000019_20260328_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000020_20250527_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000021_20250726_09.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000022_20251122_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20250925_00.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260403_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260629_22.jpg"
+    ],
+    "page_path": "creatures/hebi/hime-habu.html"
+  },
+  {
+    "id": "hyan",
+    "name": "Serpiente Coral de Ryukyu",
+    "category": "hebi",
+    "category_name": "Serpientes",
+    "months": [
+      5,
+      6,
+      11
+    ],
+    "description": "Familia de las cobras, género Sinomicrurus (también llamada serpiente coral de Ryukyu).\n*Sinomicrurus japonicus*\n\nAlcanza hasta unos 50 cm. Se observa con más facilidad hacia mayo y hacia septiembre. El\ndorso es de color pardo rojizo o anaranjado, con cinco franjas longitudinales de color\npardo oscuro. Está clasificada como \"animal peligroso designado\", una categoría legal\npara especies consideradas capaces de causar daño a las personas. Su veneno es\nneurotóxico y más potente que el de la víbora Habu, pero tiene la cabeza pequeña y un\ntemperamento dócil. Si se la coge en la mano, clava la cola, dura como un hueso. Es\nnocturna y escasa, por lo que verla es poco frecuente. Es tan popular que algunas personas\nvisitan Amami Oshima solo con la esperanza de verla.",
+    "photos": [
+      "../images/creatures/hebi/hyan/hyan_000001_20250515_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000002_20250515_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000003_20250515_21.jpg",
+      "../images/creatures/hebi/hyan/hyan_000004_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000005_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000006_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000007_20250523_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000009_20250606_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000010_20250606_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000011_20250620_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000012_20250717_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000013_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000014_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000015_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250526_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250527_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250620_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20260608_00.jpg",
+      "../images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000018_20260626_00.jpg"
+    ],
+    "page_path": "creatures/hebi/hyan.html"
+  },
+  {
+    "id": "ryukyu-ao-hebi",
+    "name": "Culebra Verde de Ryukyu",
+    "category": "hebi",
+    "category_name": "Serpientes",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Familia de culebras, género Cycophuops. *Cycophuops semicarinatus*\n\nAlcanza hasta unos 100 cm. Se observa con más facilidad entre mayo y noviembre. Es\nprincipalmente diurna, aunque muchos ejemplares también están activos de noche. Tiene la\ncabeza pequeña y se alimenta sobre todo de lombrices, además de ranas. Es la serpiente más\nnumerosa de Amami Oshima y puede verse en los bosques durante el día y en los caminos\nforestales por la noche. Los ejemplares más grandes a veces amenazan, pero huyen muy\nrápido, deslizándose por las pendientes.",
+    "photos": [
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000002_20250521_11.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000003_20250521_13.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000004_20250523_12.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000005_20250527_01.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000006_20250527_01.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000007_20250610_13.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000008_20250628_14.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250828_12.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250830_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250915_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20251007_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20251019_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260411_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260413_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260427_20.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260629_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260729_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000010_20260413_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000011_20251019_22.jpg"
+    ],
+    "page_path": "creatures/hebi/ryukyu-ao-hebi.html"
+  },
+  {
+    "id": "amami-kuro-usagi",
+    "name": "Conejo de Amami",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Familia de los conejos (Leporidae), género Pentalagus. *Pentalagus furnessi*\n\nAlcanza unos 41-51 cm y pesa entre 1.3 y 2.7 kg. Una especie endémica de\nJapón que solo se encuentra en Amami Oshima y Tokunoshima, a menudo llamada\n«fósil viviente» por conservar rasgos marcadamente primitivos. Fue declarada\nMonumento Natural en 1921 y Monumento Natural Especial en 1963. Es nocturno y\nbasa su actividad en madrigueras excavadas en grietas rocosas o huecos de\nárboles, alimentándose de bellotas de castaño de Japón y brotes tiernos. Se\nreproduce principalmente en primavera y otoño, con una cría por parto. Su\nnúmero disminuyó en su día por la depredación de gatos asilvestrados y la\nmangosta pequeña introducida, pero gracias a los esfuerzos de erradicación de\nla mangosta, la población se recupera en los últimos años. Es el animal\nemblemático de los tours nocturnos, y no es raro encontrarse con uno dando\nsaltos por un camino forestal.",
+    "photos": [
+      "../images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
+      "../images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg"
+    ],
+    "page_path": "creatures/honyuurui/amami-kuro-usagi.html"
+  },
+  {
+    "id": "kenaga-nezumi",
+    "name": "Rata de Pelo Largo de Ryukyu",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      2,
+      3,
+      4,
+      12
+    ],
+    "description": "Familia de las ratas (Muridae), género Diplothrix. *Diplothrix legata*\n\nLongitud del cuerpo 22-33 cm, cola 25-35 cm. La rata más grande de Japón, que\nsolo se encuentra en Amami Oshima, Tokunoshima y el norte de la isla de\nOkinawa, con largos pelos rígidos de 5-6 cm mezclados en su pelaje. Fue\ndeclarada Monumento Natural en 1972 y Especie Silvestre Nacional Rara en\n2016. Es nocturna y marcadamente arborícola, y descansa de día en nidos de\nhuecos de árboles forrados con hojas secas. Es omnívora, y se alimenta entre\notras cosas de bellotas de castaño de Japón e insectos. Se reproduce desde\notoño hasta principios de invierno, con 2 a 5 crías por parto. No es muy\nasustadiza, y como apenas huye aunque se le enfoque con una linterna, a veces\nse la puede observar con calma a lo largo de los caminos forestales.",
+    "photos": [
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000002_20260206_20.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000003_20260319_21.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000004_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000005_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000006_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000007_20260421_21.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000008_20251202_21.jpg"
+    ],
+    "page_path": "creatures/honyuurui/kenaga-nezumi.html"
+  },
+  {
+    "id": "watase-jinezumi",
+    "name": "Musaraña de Watase",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      12
+    ],
+    "description": "Familia de las musarañas (Soricidae), género Crocidura. *Crocidura watasei*\n\nUno de los mamíferos más pequeños del mundo, de unos 5.5 cm de longitud y\napenas 5-8 g de peso. Una especie endémica de Japón que solo se encuentra en\nel archipiélago de Amami (Amami Oshima, Kakeromajima, Tokunoshima y otras) y\nlas islas Okinawa. Prefiere ambientes abiertos como praderas y campos de\ncultivo, y se alimenta de pequeños insectos y arañas. Es nocturna, y a veces\nse la puede ver moviéndose rápidamente entre la hierba junto a los caminos\nforestales. Difiere en hábitat de una especie emparentada del mismo género\nque vive en el bosque, con la que a veces se la confunde. No tiene una\nrestricción legal de captura como la de un Monumento Natural, pero está\ncatalogada como Casi Amenazada por el Ministerio de Medio Ambiente.",
+    "photos": [
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000002_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000003_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000004_20241218_19.jpg"
+    ],
+    "page_path": "creatures/honyuurui/watase-jinezumi.html"
+  },
+  {
+    "id": "amami-aka-gaeru",
+    "name": "Rana Parda de Amami",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      11,
+      12,
+      1
+    ],
+    "description": "Familia de las ranas pardas, género Rana. *Rana kobai*\n\nAlcanza unos 3.2-4.6 cm. Se reproduce de noviembre a enero. Vive en bosques y a lo\nlargo de ríos, desde las tierras bajas hasta las montañas. Se activa en días\nhúmedos o lluviosos, y durante la época de reproducción se reúne en pequeños\nestanques y charcas de manantial. También se ven ejemplares a lo largo de caminos\nforestales. Es delgada y de color pardo rojizo, y emite un canto agudo, «kyok-kyok».",
+    "photos": [
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000003_20250129_20.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20250312_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20250602_21.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251006_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251007_00.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000006_20250312_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000007_20260905_11.jpg"
+    ],
+    "page_path": "creatures/kaeru/amami-aka-gaeru.html"
+  },
+  {
+    "id": "amami-ao-gaeru",
+    "name": "Rana Verde de Amami",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Familia de las ranas arborícolas (Rhacophoridae), género Zhangixalus.\n*Zhangixalus amamiensis*\n\nAlcanza unos 4.5-7.7 cm. Se reproduce desde finales de diciembre hasta mayo\naproximadamente. Se encuentra desde las tierras bajas hasta las montañas, en\nbosques alrededor de estanques, arrozales y otras aguas quietas. Canta con fuerza\nen días húmedos o lluviosos, y deposita masas de huevos blancas y espumosas sobre\nramas o entre la vegetación junto al agua. Aunque cante mucho, es muy difícil de\nlocalizar. Es más grande que la ranita de Hallowell, lo que facilita distinguir a\nambas especies.",
+    "photos": [
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000002_20250201_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000003_20250221_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000004_20250221_22.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000005_20250227_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000007_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000008_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000009_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000010_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000011_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000012_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000013_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000014_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000015_20241210_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250119_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250414_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250509_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250516_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250520_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260409_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260502_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000017_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000018_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000019_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000020_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000021_20250506_20.jpg"
+    ],
+    "page_path": "creatures/kaeru/amami-ao-gaeru.html"
+  },
+  {
+    "id": "hanasaki-gaeru",
+    "name": "Rana de Nariz Puntiaguda de Amami",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Familia de las ranas pardas, género Odorrana. *Odorrana amamiensis*\n\nAlcanza unos 5.6-10.1 cm. Se reproduce de octubre a mayo. Vive alrededor de\narroyos de montaña. Es esbelta y de buena postura, y una vez que aprendes a\nreconocerla, puedes distinguirla incluso de lejos. Su coloración es rica y varía\nentre individuos. Está declarada Monumento Natural en la prefectura de Kagoshima,\npor lo que está prohibido capturarla o trasladarla, incluidos sus huevos. Cuando\nllueve, salen muchas a los caminos forestales, así que hay que conducir con cuidado.",
+    "photos": [
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000002_20250228_21.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000003_20241210_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000004_20241211_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20241206_23.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250521_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250525_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250525_23.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250628_15.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250704_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250911_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250926_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20251002_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000006_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000007_20250926_00.jpg"
+    ],
+    "page_path": "creatures/kaeru/hanasaki-gaeru.html"
+  },
+  {
+    "id": "iboimori",
+    "name": "Tritón Espinoso de Amami",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Familia de los tritones (Salamandridae), género Echinotriton.\n*Echinotriton raffaellii*\n\nAlcanza unos 14-20 cm de longitud total. Se reproduce desde enero hasta abril\naproximadamente. Endémico de Amami Oshima, Uke-jima y Tokunoshima, vive alrededor\nde bosques y campos de cultivo. Se activa en los días cálidos de invierno, y\ndurante la época de reproducción pone sus huevos bajo las hojas caídas cerca del\nagua. Tiene un cuerpo robusto y de color pardo negruzco, con las puntas de las\ncostillas y los extremos de las extremidades teñidos de naranja.",
+    "photos": [
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000002_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000004_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000005_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000006_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000007_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000008_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000009_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000010_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000011_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000012_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000013_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000014_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000015_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000016_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000017_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000018_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000019_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000020_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000021_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000022_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000023_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000024_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000025_20260907_19.jpg"
+    ],
+    "page_path": "creatures/kaeru/iboimori.html"
+  },
+  {
+    "id": "ishikawa-gaeru",
+    "name": "Rana de Ishikawa de Amami",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "Familia de las ranas pardas, género Odorrana. *Odorrana splendida*\n\nAlcanza unos 7.4-13.7 cm. Se reproduce desde finales de febrero hasta junio\naproximadamente. Vive junto a los suaves arroyos de cabecera de las zonas\nmontañosas. Considerada la rana más hermosa de Japón, está declarada Monumento\nNatural y Especie Silvestre Rara Nacional en la prefectura de Kagoshima, por lo\nque está prohibido capturarla o trasladarla, incluidos sus huevos. En algunos\npuntos cerca de arroyos de mayor altitud se puede oír su canto al anochecer, e\nincluso en verano puede verse en ciertos lugares cuando llueve.",
+    "photos": [
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000002_20250123_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000004_20250201_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000005_20250201_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000006_20250206_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000007_20250206_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000008_20250304_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000009_20250722_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000010_20241209_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000011_20241209_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250314_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250314_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250506_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250516_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250520_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250529_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250602_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250603_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250615_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250625_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250627_11.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250709_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250716_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260404_00.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000013_20260423_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/IMG_9643.JPG"
+    ],
+    "page_path": "creatures/kaeru/ishikawa-gaeru.html"
+  },
+  {
+    "id": "shiriken-imori",
+    "name": "Tritón de Cola de Espada de Amami",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Familia de los tritones, género Cynops. *Cynops ensicauda ensicauda*\n\nLos machos alcanzan unos 14 cm y las hembras unos 18 cm de longitud total. Se\nencuentra en Amami Oshima, Uke-jima, Kakeromajima, Yoro-jima y otras islas\ncercanas, y se reproduce en\nestanques, arrozales y tramos de corriente suave de los arroyos. Después de\nseptiembre, la mayoría de los ejemplares abandonan el agua, y hacia diciembre,\ndurante la época de reproducción, se pueden observar muchos junto al agua. Tiene\nel cuerpo negro con manchas amarillas o anaranjadas, y la variación individual\nes considerable. En Okinawa vive el tritón de cola de espada de Okinawa, una\nforma emparentada.",
+    "photos": [
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000002_20250128_22.jpg",
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000003_20260329_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/shiriken-imori.html"
+  },
+  {
+    "id": "haroweru-amagaeru",
+    "name": "Ranita de Hallowell",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "Familia de las ranitas de árbol, género Hyla. *Hyla hallowellii*\n\nAlcanza unos 3-4 cm. Se reproduce de marzo a junio. Vive en bosques de tierras\nbajas, matorrales y campos de cultivo, y pone sus huevos en arrozales y otras\naguas quietas. Se activa en días húmedos y noches lluviosas, y durante la época\nde reproducción forma grandes coros cerca de los arrozales. Se posa un poco en\nalto, como en la punta de las ramas, y aunque cante mucho es difícil de localizar.\nEs de un verde uniforme y muy hermosa. Su canto se parece al de la ranita japonesa.",
+    "photos": [
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250510_00.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250517_23.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250529_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260303_13.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260330_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000002_20250510_00.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000003_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000004_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000005_20250516_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/haroweru-amagaeru.html"
+  },
+  {
+    "id": "hime-amagaeru",
+    "name": "Rana de Arroz de Okinawa",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "description": "Familia de las ranas de boca estrecha, género Microhyla. *Microhyla okinavensis*\n\nAlcanza unos 2.2-3.2 cm. Se reproduce todo el año (principalmente de marzo a\njulio). Se encuentra en una amplia variedad de hábitats, desde las tierras bajas\ncosteras hasta las montañas, incluyendo bordes de bosque, praderas y alrededores\nde viviendas. Se activa en días húmedos o lluviosos. Tiene la cabeza pequeña y\nlas patas gruesas, lo que le da una forma triangular vista desde arriba. Es la\nrana más pequeña de Japón, pero canta con una voz sorprendentemente fuerte.",
+    "photos": [
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg",
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000003_20250516_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/hime-amagaeru.html"
+  },
+  {
+    "id": "otton-gaeru",
+    "name": "Rana Otton",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "description": "Familia de las ranas pardas, género Babina. *Babina subaspera*\n\nAlcanza unos 9-14 cm. Se reproduce de abril a octubre. Vive principalmente en\nzonas montañosas, pero también puede verse en tierras de cultivo y parques. Se\nactiva en días húmedos o lluviosos y suele salir a los caminos. Los machos son\nmás grandes, lo que la convierte en la rana más grande de Japón, dejando aparte\nla rana toro americana introducida. Tiene cinco dedos, con una espina afilada en\nel que corresponde al pulgar, que se cree que los machos usan al pelear entre sí\no durante el amplexo. Declarada Monumento Natural y Especie Silvestre Rara\nNacional en la prefectura de Kagoshima, está prohibido capturarla o trasladarla,\nincluidos sus huevos. Es muy grande e impresionante, y fácil de localizar cuando\nsale a un camino. Se dice que su nombre proviene de su canto.",
+    "photos": [
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000001_20250228_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000002_20250228_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000003_20250722_20.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000004_20241204_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250516_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250517_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250520_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250602_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250727_13.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250812_15.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20251009_23.jpg"
+    ],
+    "page_path": "creatures/kaeru/otton-gaeru.html"
+  },
+  {
+    "id": "ryukyu-kajika-gaeru",
+    "name": "Rana Kajika de Ryukyu",
+    "category": "kaeru",
+    "category_name": "Anfibios",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Familia de las ranas arborícolas, género Buergeria. *Buergeria japonica*\n\nAlcanza unos 2.5-4 cm. Se reproduce de abril a octubre. Adaptable a hábitats que\nvan desde arroyos de montaña hasta charcos en zonas urbanizadas, es la rana que\nmás se ve en Amami Oshima. Canta con especial intensidad en días húmedos o\nlluviosos. Los machos son de un amarillo precioso, y su canto también es hermoso.",
+    "photos": [
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250417_20.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250425_22.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250503_22.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20260608_00.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg"
+    ],
+    "page_path": "creatures/kaeru/ryukyu-kajika-gaeru.html"
+  },
+  {
+    "id": "amami-hirata-kuwagata",
+    "name": "Ciervo Volante Plano de Amami",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "Familia de los ciervos volantes, género Dorcus (subespecie del ciervo volante\nplano). *Dorcus titanusu elegans*\n\nUna subespecie del ciervo volante plano que se encuentra en las islas Amami. Es\nel ciervo volante más numeroso de Amami Oshima. Una especie popular que alcanza\nun gran tamaño en cautividad. Se reúne en la savia de los cítricos, el machilus,\nel castaño de Japón y el mallotus. En estado silvestre, la mayoría de los\nejemplares miden menos de 50 mm, y a partir de 65 mm ya se considera grande. El\nobjetivo: superar los 70 mm.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000002_20250821_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250615_21.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250812_15.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250822_01.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250901_00.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260607_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260717_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000004_20250812_15.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000005_20260607_20.jpg"
+    ],
+    "page_path": "creatures/kuwagata/amami-hirata-kuwagata.html"
+  },
+  {
+    "id": "ko-kuwagata",
+    "name": "Ciervo Volante Menor de Amami",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      7,
+      8
+    ],
+    "description": "Familia de los ciervos volantes, subgénero Dorcus (ciervos volantes menores).\n*Dorcus amamianus*\n\nAunque su nombre significa \"ciervo volante menor\", se parece en muchos aspectos\nal ciervo volante Himeoo. Sus mandíbulas son cortas y muy curvadas, mientras que\nsus patas y tarsos son largos. Activo desde finales de mayo hasta octubre. Menos\nnumeroso que el ciervo volante menor de la isla principal de Japón.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250814_01.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_21.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_22.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260720_22.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260801_01.jpg"
+    ],
+    "page_path": "creatures/kuwagata/ko-kuwagata.html"
+  },
+  {
+    "id": "marubane-kuwagata",
+    "name": "Ciervo Volante de Ala Redonda de Amami",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      9,
+      10
+    ],
+    "description": "Familia de los ciervos volantes, género Neolucanus (ciervos volantes de ala\nredonda). *Neolucanus protogenetivus*\n\nActivo desde alrededor de septiembre hasta octubre, puede observarse en lo\nprofundo de bosques densos con grandes ejemplares de Castanopsis sieboldii. Su\nrecolección está prohibida por las ordenanzas de protección de vida silvestre\nrara de cinco municipios de Amami Oshima (incluidas sus islas periféricas) y\ntres localidades de Tokunoshima. Para prevenir la caza furtiva, se han\ninstalado cámaras en las montañas, y durante la temporada patrullas de\nvigilancia de insectos recorren la zona. Nota: solo tomar fotografías no supone\nningún problema, pero si es necesario entrar en una zona que requiere permiso,\nhay que solicitarlo debidamente.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250906_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250907_03.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250914_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250915_09.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250918_23.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250919_22.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000002_20250906_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000003_20250914_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000004_20250915_09.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000005_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000007_20250919_22.jpg"
+    ],
+    "page_path": "creatures/kuwagata/marubane-kuwagata.html"
+  },
+  {
+    "id": "miyama-kuwagata",
+    "name": "Ciervo Volante de Montaña de Amami",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "Familia de los ciervos volantes, género Lucanus (ciervos volantes verdaderos).\n*Lucanus ferriei*\n\nActivo desde alrededor de julio hasta septiembre. Especie rara que solo se\nencuentra en Amami Oshima. Su recolección está prohibida por ordenanza. Vive en\nbosque primario por encima de unos 300 m de altitud. Es nocturno; se pueden ver\nmachos esperando a las hembras en lo alto de los árboles, pero son difíciles de\nlocalizar a simple vista. También se los ve a menudo cerca de la parte superior\nde los postes eléctricos. Acuden a la savia de los árboles, a trampas de fruta\ny a las luces, pero está prohibido recolectarlos.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250902_01.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250905_23.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20260823_22.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000002_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000003_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000004_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000005_20250902_01.jpg"
+    ],
+    "page_path": "creatures/kuwagata/miyama-kuwagata.html"
+  },
+  {
+    "id": "nebuto-kuwagata",
+    "name": "Ciervo Volante de Raíz de Amami",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      5,
+      6,
+      7,
+      10,
+      11
+    ],
+    "description": "Familia de los ciervos volantes, género Aegus (ciervos volantes de raíz).\n*Aegus laevicolis subnitidus*\n\nUna subespecie del ciervo volante de raíz que se encuentra en las islas Amami,\ny la de mayor tamaño entre las subespecies japonesas de este ciervo volante.\nActivo desde alrededor de mayo hasta octubre. A veces acude a la savia del\nmachilus, el castaño de Japón, el mallotus y la albizia. En estado silvestre la\nmayoría de los ejemplares miden unos 20 mm, y 28 mm ya se considera grande. El\nobjetivo: superar los 30 mm.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000002_20250521_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000003_20250620_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260422_23.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260427_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000005_20260910_16.jpg"
+    ],
+    "page_path": "creatures/kuwagata/nebuto-kuwagata.html"
+  },
+  {
+    "id": "nokogiri-kuwagata",
+    "name": "Ciervo Volante Serrado de Amami",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "Familia de los ciervos volantes, género Prosopocoilus (ciervos volantes\nserrados); subespecie de Amami. *Prosopocoilus dissimilis*\n\nActivo desde mediados de junio hasta principios de septiembre. Entre los\nciervos volantes serrados de Japón, los de Amami Oshima son especialmente\ngrandes, con mandíbulas largas, gruesas e imponentes. Acude con frecuencia a\nlos cítricos, el mallotus, el machilus, el castaño de Japón, los frutos\nmaduros de pandano, trampas de plátano y las farolas. La mayoría de los\nejemplares miden unos 60 mm, y a partir de 75 mm ya se considera grande. El\nobjetivo: alcanzar los 80 mm.",
+    "photos": [
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000001_20250620_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000002_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000003_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000004_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000006_20250628_22.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000007_20250630_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000008_20250630_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000009_20250702_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000010_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000011_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000012_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000013_20250720_22.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000014_20250821_20.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250624_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250629_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260712_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000016_20260903_11.jpg"
+    ],
+    "page_path": "creatures/kuwagata/nokogiri-kuwagata.html"
+  },
+  {
+    "id": "shika-kuwagata",
+    "name": "Ciervo Volante Cérvido de Amami",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Familia de los ciervos volantes, género Rhaetulus (ciervos volantes cérvidos).\n*Rhaetulus recticrnis*\n\nActivo desde alrededor de mayo hasta septiembre, y se observa con más facilidad\nhacia agosto. Su recolección está prohibida por ordenanza. Las zonas de\naltitud relativamente mayor ofrecen más posibilidades de encontrarlo. Suele\nencontrarse en ramas delgadas de Castanopsis sieboldii o de cítricos. En los\nejemplares grandes, las mandíbulas se curvan fuertemente, como la cornamenta de\nun ciervo. Ten cuidado de no confundirlo con un ejemplar pequeño del ciervo\nvolante menor o del ciervo volante serrado y llevártelo por error (nunca te\nlleves un ejemplar que no puedas identificar tú mismo).",
+    "photos": [
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000001_20250627_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000002_20250627_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000003_20250628_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000004_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000005_20250720_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000006_20250720_23.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000008_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000009_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000010_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260703_00.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260712_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260713_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000012_20250728_21.jpg"
+    ],
+    "page_path": "creatures/kuwagata/shika-kuwagata.html"
+  },
+  {
+    "id": "ruisu-tsuno-hyotan-kuwagata",
+    "name": "Ciervo Volante Cornudo de Lewis",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      8,
+      9
+    ],
+    "description": "Familia de los ciervos volantes, subfamilia Aesalinae (ciervos volantes\ndiminutos), género Nigidius (ciervos volantes cornudos). *Nigidius lewisi*\n\nCon el cuerpo brillante por completo y unas mandíbulas de forma peculiar, pasa\ntodo el año dentro de madera podrida. Puede encontrarse durante todo el año en\ntroncos caídos de roble y castaño de Japón, y bajo la hojarasca. Distinguir\nmachos de hembras es difícil. En Amami tiene una distribución muy localizada y\nrara vez acude a la savia de los árboles, lo que lo hace difícil de encontrar.",
+    "photos": [
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250907_03.jpg",
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20260823_22.jpg"
+    ],
+    "page_path": "creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata.html"
+  },
+  {
+    "id": "sujibuto-hirata-kuwagata",
+    "name": "Ciervo Volante Plano Acanalado de Amami",
+    "category": "kuwagata",
+    "category_name": "Escarabajos ciervo",
+    "months": [
+      10
+    ],
+    "description": "Familia de los ciervos volantes, subgénero Dorcus (ciervos volantes planos).\n*Dorcus metacostatus*\n\nActivo desde finales de abril hasta alrededor de octubre, con un pico en julio.\nUna especie rara endémica de Japón, que solo se encuentra en las islas Amami,\ncon ocho surcos bien marcados en los élitros. Acude con frecuencia a los\ncítricos, el machilus, el mallotus, el castaño de Japón, trampas de plátano y\nlas farolas. A partir de 60 mm ya se considera grande: el objetivo es superar\nlos 70 mm.",
+    "photos": [
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000002_20250624_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000005_20250625_22.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000006_20250630_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000007_20250702_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000008_20250702_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000009_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000010_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000011_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000012_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250625_22.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250813_10.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250928_02.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20251002_00.jpg"
+    ],
+    "page_path": "creatures/kuwagata/sujibuto-hirata-kuwagata.html"
+  },
+  {
+    "id": "akahara-ashinaga-mizodoromushi",
+    "name": "Escarabajo de Rabión Patilargo de Vientre Rojo",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      2,
+      5,
+      7
+    ],
+    "description": "Familia de los escarabajos de rabión, género Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami y\nOkinawa y en Guam. Los escarabajos de rabión viven principalmente en corrientes\nlimpias; tanto las larvas como los adultos pasan su vida en el agua y alcanzan\ncomo máximo unos 5 mm, por lo que la familia se observa como indicador de ríos\nlimpios. La ecología detallada de esta especie en concreto sigue siendo, en\ngran parte, desconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000003_20250706_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/akahara-ashinaga-mizodoromushi.html"
+  },
+  {
+    "id": "amami-hababiro-doromusshi",
+    "name": "Escarabajo de Rabión Ancho de Amami",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      7,
+      8
+    ],
+    "description": "Familia de los escarabajos de rabión, género Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\nUna especie endémica que solo se encuentra en Amami Oshima, descrita en 2005.\nEl género Dryopomorphus también incluye una especie emparentada de amplia\ndistribución en Honshu, Shikoku y Kyushu junto con una especie más pequeña, así\ncomo otra especie endémica de las islas Osumi. Los escarabajos de rabión son\nen su mayoría pequeños escarabajos acuáticos que viven en corrientes limpias,\npero la ecología detallada de esta especie en concreto sigue siendo, en gran\nparte, desconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000002_20260801_18.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000003_20260801_18.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000004_20260801_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-hababiro-doromusshi.html"
+  },
+  {
+    "id": "amami-mizo-doromushi",
+    "name": "Escarabajo de Rabión Acanalado de Amami",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      7
+    ],
+    "description": "Familia de los escarabajos de rabión, género Ordobrevia. *Ordobrevia amamiensis* (Nomura, 1957)\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami,\nOkinawa y Yaeyama, y en Guam. La población de la isla de Okinawa se distingue\ncomo una subespecie separada. Los escarabajos de rabión viven principalmente\nen corrientes limpias, pero la ecología detallada de esta especie en concreto\nsigue siendo, en gran parte, desconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-mizo-doromushi.html"
+  },
+  {
+    "id": "amami-yokomizo-doromushi",
+    "name": "Escarabajo de Rabión de Surco Lateral de Amami",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      4,
+      5
+    ],
+    "description": "Familia de los escarabajos de rabión, género Leptelmis. *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017\n\nEndémica de Amami Oshima, una especie descrita tan recientemente como 2017. Su\nforma difiere de otras especies del mismo género que se encuentran en la isla\nprincipal de Japón y en Taiwán, mientras que la forma de sus genitales, entre\notros rasgos, se asemeja mucho a una especie distribuida en el sur de China,\nlo que indica un parentesco cercano. Se la considera un ejemplo de especie\nendémica relicta: se cree que su especie ancestral estuvo en su día\nampliamente distribuida por el continente eurasiático, y que tras el\naislamiento de Amami Oshima, las poblaciones emparentadas de otras regiones se\nextinguieron, quedando solo esta especie con vida. Los escarabajos de rabión\nson en su mayoría pequeños escarabajos acuáticos que viven en corrientes\nlimpias, pero la ecología detallada de esta especie en concreto sigue siendo,\nen gran parte, desconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000001_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000002_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000003_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000004_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000005_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000006_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000007_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000008_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000009_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000010_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000011_20250501_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-yokomizo-doromushi.html"
+  },
+  {
+    "id": "chairo-kesi-katabiro-amennbo",
+    "name": "Zapatero Diminuto Marrón",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      2,
+      12
+    ],
+    "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia japonica* Esaki & Miyamoto, 1955\n\nUn pequeño insecto acuático de unos 1.5-2.1 mm de longitud. Se encuentra en\nHonshu (al oeste de la prefectura de Fukushima), Shikoku y Kyushu, y en las\nislas Ryukyu desde Kikaijima hasta la isla de Okinawa. Se ve habitualmente en\ncharcas en penumbra junto a pequeños arroyos y a la sombra de las rocas, donde\ncaptura pequeños insectos que caen a la superficie del agua.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000002_20250214_13.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000003_20241203_14.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000004_20241204_10.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/chairo-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "iriomote-kesi-katabiro-amennbo",
+    "name": "Zapatero Diminuto de Iriomote",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      2
+    ],
+    "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia iriomotensis* Miyamoto, 1964\n\nUn pequeño insecto acuático de unos 1.7-1.9 mm de longitud. Se encuentra en\nlas islas Ryukyu (desde el archipiélago de Amami hasta las islas Yaeyama) y en\nTaiwán. Se ve en charcas formadas por filtraciones junto a caminos forestales\nde montaña; investigaciones académicas han descrito un comportamiento de\napareamiento en el que el macho custodia a la hembra durante un tiempo\nprolongado.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/iriomote-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "kesi-katabiro-amennbo",
+    "name": "Zapatero Diminuto Común",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      3
+    ],
+    "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia douglasi* Scott, 1874\n\nCon unos 1.5-2 mm de longitud, es uno de los zapateros de hombros anchos más\npequeños. Se encuentra en Honshu, Shikoku, Kyushu, Tsushima, las islas Ryukyu\ny las islas Daito (Minami Daito-jima), y de forma más amplia en el extranjero,\ndesde la península de Corea hasta China, el Sudeste Asiático, Taiwán y\nOceanía. Prefiere aguas en movimiento, como pequeños arrozales y arroyos, y\ncaptura pequeños insectos que caen a la superficie del agua. La familia\nincluye tanto formas sin alas que no pueden volar como formas de alas largas\nque sí pueden.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "kogata-no-gengoro",
+    "name": "Escarabajo Buceador Menor",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Familia de los escarabajos buceadores, género Cybister.\n*Cybister tripunctatus orientalis* Gschwendtner, 1931\n\nAlcanza unos 24-29 mm. Se encuentra en Honshu, Shikoku, Kyushu, las islas\nRyukyu y las islas Ogasawara, y en el extranjero en China, la península de\nCorea y Taiwán. De forma ovalada alargada y algo aplanada, con el dorso muy\nbrillante que va del verde al pardo negruzco; un reborde amarillo en el borde\nde los élitros es la clave para distinguirlo del escarabajo buceador leonado.\nVive en estanques y marismas ricos en plantas acuáticas y en arrozales\nabandonados, campos en barbecho y canales de corriente lenta. Desde la década\nde 1960 ha disminuido drásticamente en Honshu y más al sur debido al uso de\npesticidas y la consolidación de parcelas, y figura como Vulnerable en la\nLista Roja del Ministerio de Medio Ambiente, aunque todavía se ve con\nrelativa frecuencia en las islas Ryukyu. Se parece mucho al escarabajo\nbuceador leonado en forma y color, lo que dificulta distinguirlos solo con\nfotografías.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000002_20250403_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000003_20250406_23.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/kogata-no-gengoro.html"
+  },
+  {
+    "id": "naga-tsuya-doromushi",
+    "name": "Escarabajo de Rabión Brillante Alargado",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      2,
+      5,
+      8
+    ],
+    "description": "Familia de los escarabajos de rabión, género Zaitzevia. *Zaitzevia elongata* Nomura, 1962\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa. En Japón se conocen ocho especies del género Zaitzevia, cada una\ndistribuida en una zona distinta, desde Honshu hasta las islas Yaeyama. Los\nescarabajos de rabión viven principalmente en corrientes limpias, pero la\necología detallada de esta especie en concreto sigue siendo, en gran parte,\ndesconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000003_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000004_20250810_15.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/naga-tsuya-doromushi.html"
+  },
+  {
+    "id": "nomura-himedoromushi",
+    "name": "Escarabajo de Rabión de Nomura",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      3,
+      4
+    ],
+    "description": "Familia de los escarabajos de rabión, género Stenelmis.\n*Stenelmis amami* Yoshitomi et Hayashi, 2021\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa. Originalmente se consideraba la única especie de su propio género,\npero un estudio de filogenia molecular de 2021 (Kobayashi et al., 2021) la\nsituó en el género Stenelmis. El nombre del género (Nomuraelmis) y el nombre común japonés fueron acuñados\nen 1964 por el Dr. Masataka Satô, y se cree que honran al Dr. Nomura, quien\ncontribuyó a ser pionero en la investigación de los escarabajos de rabión en\nJapón durante esa misma época. La ecología\ndetallada de esta especie en concreto sigue siendo, en gran parte, desconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000002_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000003_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000004_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000005_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000006_20250416_16.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000007_20250416_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000008_20250416_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/nomura-himedoromushi.html"
+  },
+  {
+    "id": "okinawa-suji-gengoro",
+    "name": "Escarabajo Buceador Rayado de Okinawa",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Familia de los escarabajos buceadores, género Hydaticus. *Hydaticus vittatus* (Fabricius, 1775)\n\nAlcanza unos 11-14 mm. Un escarabajo buceador de tipo meridional que se\nencuentra en las islas Ryukyu al sur de Yakushima, y en el extranjero en\nTaiwán, China y el Sudeste Asiático. Vive en aguas quietas ricas en plantas\nacuáticas, como estanques y arrozales. Además del declive de su hábitat, en\nlos últimos años se ha detectado que muchos escarabajos buceadores, incluida\nesta especie, se venden aparentemente con fines de cría en cautividad, por lo\nque en enero de 2023 fue designada, junto con otros escarabajos buceadores,\nEspecie Silvestre Nacional Rara de Segunda Clase Especificada. Esta\ndesignación solo regula la captura y el traslado con fines de venta o\ndistribución; la captura con fines de observación no está restringida. Se\nparece mucho a una especie emparentada del mismo género distribuida al oeste\nde Honshu, pero como sus áreas de distribución no se solapan, resulta fácil\ndistinguirlas.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000002_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000003_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000004_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000005_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000006_20241218_16.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000007_20241219_21.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/okinawa-suji-gengoro.html"
+  },
+  {
+    "id": "ryuukyuu-munabiro-tuyadoromushi",
+    "name": "Escarabajo Lodoso Brillante de Pecho Ancho de Ryukyu",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      4
+    ],
+    "description": "Familia de los escarabajos acuáticos de dedos largos (Dryopidae), género\nElmomorphus. *Elmomorphus amamiensis* Nomura, 1959\n\nUn pequeño escarabajo acuático registrado en Amami Oshima y Okinoerabujima.\nAnteriormente se trataba como una subespecie de las islas Ryukyu de una\nespecie continental, pero en 2014 un estudio mediante secuenciación del gen\nCOI y comparación morfológica encontró una gran divergencia genética a nivel\nde especie entre ambas, por lo que fue elevada a especie plena. Actualmente\nse acepta de forma generalizada como una especie distinta. Los Dryopidae son\nuna familia emparentada con los escarabajos de rabión (Elmidae) y viven\nigualmente en corrientes limpias. La ecología detallada de esta especie en\nconcreto sigue siendo, en gran parte, desconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000002_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000003_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000004_20250408_13.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000005_20260425_11.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/ryuukyuu-munabiro-tuyadoromushi.html"
+  },
+  {
+    "id": "satou-kara-himedoromushi",
+    "name": "Escarabajo de Rabión de Sato",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      5
+    ],
+    "description": "Familia de los escarabajos de rabión, género Sinonychus. *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa (sin registros en la propia isla de Okinawa), descrito en 2007. En\nJapón solo se conocen dos especies del género Sinonychus; la otra se\nencuentra en Kyushu. La ecología detallada de esta especie en concreto sigue\nsiendo, en gran parte, desconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000003_20250501_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/satou-kara-himedoromushi.html"
+  },
+  {
+    "id": "tsutsui-nagare-katabiro-amennbo",
+    "name": "Zapatero de Corriente de Tsutsui",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      3,
+      4
+    ],
+    "description": "Familia de los zapateros de hombros anchos, género Pseudovelia (zapateros de\ncorriente). *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\nSe encuentra en las islas Ryukyu (desde Takarajima hasta la isla de Okinawa).\nEn Japón se conocen varias especies del género Pseudovelia, un grupo que vive\nen las orillas de ríos y estanques. Todavía no se ha confirmado información\nsuficiente sobre la ecología detallada de esta especie en concreto.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000002_20260328_21.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000003_20260328_21.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000004_20250403_22.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/tsutsui-nagare-katabiro-amennbo.html"
+  },
+  {
+    "id": "ueno-tsuya-doromushi",
+    "name": "Escarabajo de Rabión Brillante de Ueno",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Familia de los escarabajos de rabión, género Urumaelmis. *Urumaelmis uenoi* (Nomura, 1961)\n\nUn pequeño escarabajo acuático que se encuentra en las islas Osumi, las islas\nTokara, el archipiélago de Amami y el archipiélago de Okinawa. El género\nUrumaelmis también incluye una segunda especie descrita en Kyushu en 2020, con\nlo que en Japón se conocen dos especies de este género. La población de\nKuchinoshima, en las islas Tokara, se distingue como una subespecie separada.\nLa ecología detallada de esta especie en concreto sigue siendo, en gran parte,\ndesconocida.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000002_20260204_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000003_20260318_20.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000004_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000005_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000006_20250404_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000007_20250405_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000008_20250411_23.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000009_20250416_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000010_20250424_23.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/ueno-tsuya-doromushi.html"
+  },
+  {
+    "id": "usuiro-shima-gengoro",
+    "name": "Escarabajo Buceador Rayado Pálido",
+    "category": "suisei-konntyuu",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Familia de los escarabajos buceadores, género Hydaticus (escarabajos\nbuceadores rayados). *Hydaticus rhantoides* Sharp, 1882\n\nUn pequeño escarabajo buceador de unos 10-11 mm de longitud. Los élitros son\nde color pardo amarillento en general, sin rayas llamativas. Se encuentra en\nHonshu (al oeste de la región de Kanto), Shikoku, Kyushu, Tsushima, las islas\nRyukyu y las islas Daito, y en el extranjero en China, Taiwán y el Sudeste\nAsiático. Vive en aguas quietas abiertas, como arrozales y estanques. Entre\nlos escarabajos buceadores de las islas Ryukyu, se considera que, junto con el\nescarabajo buceador leonado y el escarabajo buceador menor, mantiene una\npoblación relativamente estable.",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000002_20250403_00.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000003_20250403_00.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/usuiro-shima-gengoro.html"
+  },
+  {
+    "id": "ba-ba-tokage",
+    "name": "Eslizón de Barbour",
+    "category": "tokage",
+    "category_name": "Lagartos",
+    "months": [
+      4,
+      9
+    ],
+    "description": "Familia de los eslizones (Scincidae), género Plestiodon. *Plestiodon barbouri*\n\nLongitud total 15.5-20 cm (longitud hocico-cloaca 5.2-7.3 cm). Una especie\nendémica de Japón distribuida en Amami Oshima, Kakeromajima, Uke-jima,\nYoro-jima, Tokunoshima y las islas Okinawa. Los juveniles son de color\npardo negruzco con cinco franjas longitudinales brillantes, y una cola de\nun azul intenso que ocupa más de dos tercios de su longitud total. Al\ncrecer, el azul se desvanece; los machos se vuelven de un pardo oscuro a\npardo en general, mientras que muchas hembras conservan una coloración más\ncercana a la de los juveniles. Prefiere el suelo y los bordes de bosque\nnatural de hoja perenne o de bosque secundario bien recuperado, tomando el\nsol para regular su temperatura corporal mientras se alimenta de arañas y\ncaracoles terrestres. Se vuelve lento en invierno pero no hiberna. Su\nnúmero ha disminuido por la desecación del hábitat debida a la tala y el\ndesbroce del sotobosque, y por la depredación de gatos asilvestrados y la\nmangosta pequeña introducida. Figura como Vulnerable en la Lista Roja del\nMinisterio de Medio Ambiente, y en 2019 fue también designada Especie\nSilvestre Rara de la Prefectura de Kagoshima, por lo que su captura o\nrecolección sin autorización está sujeta a sanciones.",
+    "photos": [
+      "../images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
+      "../images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000002_20260416_12.jpg"
+    ],
+    "page_path": "creatures/tokage/ba-ba-tokage.html"
+  },
+  {
+    "id": "akahige",
+    "name": "Petirrojo de Ryukyu",
+    "category": "tori",
+    "category_name": "Aves",
+    "months": [
+      1,
+      12
+    ],
+    "description": "Familia de los papamoscas del Viejo Mundo (Muscicapidae), género Larvivora.\n*Larvivora komadori*\n\nMide unos 14 cm y pesa unos 18 g. Una especie endémica de Japón que se\nreproduce desde las islas Danjo, pasando por las islas Tokara, Amami Oshima\ny sus islotes circundantes, hasta Tokunoshima; fue declarada Monumento\nNatural en 1970. Los machos tienen la cabeza, el dorso y la cola de un vivo\ncolor rojo anaranjado, y las manchas negras del pecho y los costados parecen\nuna «barba», de donde procede el nombre japonés de la especie. Las hembras\nson, en general, de colores más discretos. Busca insectos en el suelo del\nbosque de hoja perenne, proclamando su territorio con un canto potente y\nhermoso. Es más fácil de encontrar temprano por la mañana siguiendo su\ncanto. En el norte de la isla de Okinawa vive una especie distinta, pero sus\náreas de distribución no se solapan.",
+    "photos": [
+      "../images/creatures/tori/akahige/akahige_000001_20250120_14.jpg",
+      "../images/creatures/tori/akahige/akahige_000002_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000003_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000004_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000005_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000006_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000007_20241203_13.jpg"
+    ],
+    "page_path": "creatures/tori/akahige.html"
+  },
+  {
+    "id": "amami-yamashigi",
+    "name": "Chocha de Amami",
+    "category": "tori",
+    "category_name": "Aves",
+    "months": [
+      6
+    ],
+    "description": "Familia de los correlimos (Scolopacidae), género Scolopax. *Scolopax mira*\n\nMide unos 35-36 cm. Una especie endémica de Japón que solo se encuentra en\nlos archipiélagos de Amami y Okinawa, con reproducción confirmada en Amami\nOshima, Kakeromajima, Uke-jima, Yoro-jima y Tokunoshima. Se parece a la\nchocha perdiz, una especie emparentada, pero tiene las patas más largas, un\ntono general más negruzco y un cuerpo más rechoncho que otros correlimos.\nPrefiere el suelo en penumbra del bosque de hoja perenne, está más activa\ndesde el atardecer hasta el amanecer, y busca lombrices e insectos en el\nsuelo. Se vuelve especialmente activa en la penumbra de la madrugada y el\natardecer, y en las noches de luna llena. Anida en el suelo dentro del\nbosque y pone de 2 a 4 huevos desde marzo hasta mayo aproximadamente. Fue\ndeclarada Especie Silvestre Nacional Rara en 1993. La depredación por\nmangostas y gatos asilvestrados, junto con la pérdida de hábitat por la\ntala, son problemas persistentes.",
+    "photos": [
+      "../images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
+    ],
+    "page_path": "creatures/tori/amami-yamashigi.html"
+  },
+  {
+    "id": "oo-tora-tsugumi",
+    "name": "Zorzal de Amami",
+    "category": "tori",
+    "category_name": "Aves",
+    "months": [
+      2,
+      3,
+      4
+    ],
+    "description": "Familia de los papamoscas del Viejo Mundo (Muscicapidae), género Zoothera.\n*Zoothera dauma major*\n\nMide unos 30 cm. Un ave residente que solo se encuentra en Amami Oshima, con\nun color de fondo pardo amarillento marcado con manchas negras a modo de\nrayas de tigre. Declarada Monumento Natural nacional y Especie Silvestre\nNacional Rara. Prefiere el suelo en penumbra de bosques de frondosas\nmaduros y se alimenta de lombrices, entre otras cosas. Durante la época de\nreproducción, de febrero a principios de abril, canta con un claro y\nhermoso «kyoroon, tsi-i» en la penumbra previa al amanecer y al atardecer.\nEn su día disminuyó tan drásticamente por la tala y el impacto de especies\ninvasoras que se la llamaba «ave fantasma», pero a medida que el bosque se\nha recuperado, su población muestra una tendencia de recuperación en los\núltimos años.",
+    "photos": [
+      "../images/creatures/tori/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg"
+    ],
+    "page_path": "creatures/tori/oo-tora-tsugumi.html"
+  },
+  {
+    "id": "oosuton-ooakagera",
+    "name": "Pico Dorsiblanco de Owston",
+    "category": "tori",
+    "category_name": "Aves",
+    "months": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "description": "Familia de los pájaros carpinteros (Picidae), género Dendrocopos.\n*Dendrocopos leucotos owstoni*\n\nMide unos 28 cm, un pájaro carpintero de tamaño medio. Una subespecie\nendémica que solo se encuentra en Amami Oshima; la parte superior del\ncuerpo es casi toda negra con manchas blancas, y la parte inferior es de un\npardo más intenso que en otras subespecies. La coronilla es roja en los\nmachos y negra en las hembras, lo que facilita distinguir el sexo. Vive\nprincipalmente en bosques laurifolios maduros y excava agujeros de nido en\nlos troncos de grandes árboles de hoja ancha. Se alimenta sobre todo de\nlarvas de escarabajo longicornio ocultas en madera podrida. Las\nproclamaciones territoriales y los cortejos comienzan hacia el invierno, y\nde febrero a mayo es cuando más fácilmente se oye su «tamborileo»\n—golpeteo rápido del pico contra el tronco— y sus reclamos. En los\núltimos años su área de distribución se ha extendido por toda Amami\nOshima, en parte por los efectos de la marchitez del pino. Como el único\notro pájaro carpintero de Amami Oshima es el pico pigmeo de Amami, ambos se\ndistinguen fácilmente por el tamaño. Fue declarada Monumento Natural\nnacional en 1971 y Especie Silvestre Nacional Rara en 1993; su captura y\ntraslado están prohibidos.",
+    "photos": [
+      "../images/creatures/tori/oosuton-ooakagera/IMG_9894.JPG",
+      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
+      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg"
+    ],
+    "page_path": "creatures/tori/oosuton-ooakagera.html"
+  },
+  {
+    "id": "ruri-kakesu",
+    "name": "Arrendajo de Lidth",
+    "category": "tori",
+    "category_name": "Aves",
+    "months": [
+      3,
+      7
+    ],
+    "description": "Familia de los córvidos (Corvidae), género Garrulus. *Garrulus lidthi*\n\nMide unos 38 cm. Una especie endémica de Japón que solo se encuentra en\nAmami Oshima, Kakeromajima y Uke-jima, hermosa por su cuerpo azul intenso,\nalas de color pardo rojizo, y pico y puntas de las alas blancos. Fue\ndeclarada Monumento Natural en 1921. Prefiere el bosque de hoja perenne y\nes omnívora, alimentándose de bellotas de castaño de Japón y de roble. Se\nreproduce desde febrero hasta mayo aproximadamente, poniendo de 3 a 7\nhuevos en un hueco de árbol o lugar similar. Su número disminuyó en su día\npor la depredación de gatos asilvestrados y la mangosta pequeña\nintroducida, pero los esfuerzos de conservación han dado fruto —incluida\nla declaración de erradicación de la mangosta en 2024— y su población se\nrecupera en los últimos años. Vuela activamente durante el día, pero de\nnoche se la puede observar descansando en cables eléctricos o en las\npuntas de las ramas a lo largo de los caminos forestales.",
+    "photos": [
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000003_20250726_09.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000004_20250726_09.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg"
+    ],
+    "page_path": "creatures/tori/ruri-kakesu.html"
+  }
+]

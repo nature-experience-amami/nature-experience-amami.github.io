@@ -1,0 +1,1394 @@
+[
+  {
+    "id": "akamata",
+    "name": "赤楝蛇",
+    "category": "hebi",
+    "category_name": "蛇类",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "description": "游蛇科赤楝蛇属 *Dinodon semicarinatum*\n\n体长可达约200厘米。5月至11月是最容易观察到它的时期。体色为黄褐色，身上带有红黑相间的椭\n圆形横纹。虽然无毒，但性情好斗，一旦进入其领地就会发出威吓并主动攻击。食性广泛，捕食哺乳\n类、鸟类、爬行类、两栖类和鱼类，也会吃海龟蛋，甚至会捕食天敌波布蛇。夜行性，从林道、水边\n到海岸附近都能观察到它的踪迹。体型较小的个体红色更为鲜艳、十分美丽，但即使体型小，被咬到\n也会很疼，需多加注意。",
+    "photos": [
+      "../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000002_20250829_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000004_20251009_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000005_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000006_20250807_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000007_20250922_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000008_20250810_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000009_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000010_20250910_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000011_20250921_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000012_20251009_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000013_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000014_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000015_20260331_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000016_20260403_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000017_20260409_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000018_20250419_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000019_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000020_20250427_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000021_20250503_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000022_20250516_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000023_20250520_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000024_20250526_01.jpg",
+      "../images/creatures/hebi/akamata/akamata_000025_20250528_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000026_20250529_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000027_20250531_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000028_20250602_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000029_20250604_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000030_20250611_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000031_20250611_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000032_20250621_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000033_20250621_13.jpg",
+      "../images/creatures/hebi/akamata/akamata_000034_20250622_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000035_20250705_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000036_20250709_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000037_20250709_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000038_20251208_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000039_20251225_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000040_20250326_20.jpg",
+      "../images/creatures/hebi/akamata/akamata_000042_20250829_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260409_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260414_00.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260422_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260423_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260504_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260607_23.jpg",
+      "../images/creatures/hebi/akamata/akamata_000043_20260830_21.jpg",
+      "../images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg",
+      "../images/creatures/hebi/akamata/akamata_000045_20260903_09.jpg"
+    ],
+    "page_path": "creatures/hebi/akamata.html"
+  },
+  {
+    "id": "takachiho-hebi",
+    "name": "奄美脊蛇",
+    "category": "hebi",
+    "category_name": "蛇类",
+    "months": [
+      4
+    ],
+    "description": "脊蛇科脊蛇族 *Achalinus werneri*\n\n体长可达约55厘米。背部呈黑褐色或暗褐色，沿正中线有一条黑色纵纹，腹面为黄色。在奄美，只有\n在条件极为理想的日子里才能遇见它，堪称\"幻之蛇\"。大雨天有时会爬到地表活动。夜行性且营地下\n生活，栖息于森林、水边草地和农耕地。食性以蚯蚓为主。比其他岛屿上的奄美脊蛇数量更少，更难\n发现。由于体形极其细小，开车经过时可能根本无法察觉到它。",
+    "photos": [
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000002_20260401_22.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000003_20260401_22.jpg",
+      "../images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000004_20260401_22.jpg"
+    ],
+    "page_path": "creatures/hebi/takachiho-hebi.html"
+  },
+  {
+    "id": "garasu-hibaa",
+    "name": "普氏渔游蛇",
+    "category": "hebi",
+    "category_name": "蛇类",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "游蛇科渔游蛇属 *Hebius pryeri*\n\n体长可达约110厘米。5月至11月是最容易观察到它的时期。体形细长，体色为黑色或黑褐色，身体\n上带有黄色或褐色的条纹。喜欢栖息在水边，常见于水田等青蛙较多的场所。虽然有毒，但注入毒液\n的毒牙较小，据说仅被咬一下毒液难以渗入体内，不过其毒性本身较强，仍需注意。食性以青蛙、鱼\n类、壁虎和小型蜥蜴为主。动作敏捷，一旦察觉危险便会做出威吓姿态。",
+    "photos": [
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000002_20250522_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000003_20250601_15.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000004_20250604_23.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000005_20250227_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000006_20250227_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000007_20250228_20.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000008_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000009_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000010_20250302_19.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000011_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000012_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000013_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000014_20250312_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000015_20250614_09.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260411_21.jpg",
+      "../images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260608_00.jpg"
+    ],
+    "page_path": "creatures/hebi/garasu-hibaa.html"
+  },
+  {
+    "id": "habu",
+    "name": "波布蝮蛇",
+    "category": "hebi",
+    "category_name": "蛇类",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "蝮蛇科奄美烙铁头属 *Protobothrops flavoviridis*\n\n体长可达约226厘米，是岛上体型最大的蛇类之一。5月至11月是最容易观察到它的时期(即使在冬天，\n气温较高的日子里它也可能活动)。夜行性，白天多藏身于洞穴等处休息。栖息范围从低地森林到山地\n森林、草地、水边、农田乃至树上都有，有时会为了捕食老鼠而进入民宅周边。主要以老鼠为食，也捕\n食爬行类、青蛙、哺乳类和鸟类。天敌包括赤楝蛇以及猎捕波布蛇的人。有毒且性情相当好斗。观察或\n拍摄时务必保持2〜3米以上的距离。一旦靠近，它不会逃跑，而是立刻摆出攻击姿势，扑咬距离可达体\n长的三分之二左右。如果在手机没有信号的深山中被咬伤，后果会非常严重。它的花纹与周围环境融为\n一体，很难被发现，即使看不到，也可能就潜伏在附近。无论怎样小心都不为过。",
+    "photos": [
+      "../images/creatures/hebi/habu/habu_000002_20250228_00.jpg",
+      "../images/creatures/hebi/habu/habu_000003_20250228_00.jpg",
+      "../images/creatures/hebi/habu/habu_000004_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000005_20260221_22.jpg",
+      "../images/creatures/hebi/habu/habu_000006_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000007_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000008_20260214_22.jpg",
+      "../images/creatures/hebi/habu/habu_000009_20260221_22.jpg",
+      "../images/creatures/hebi/habu/habu_000010_20260306_21.jpg",
+      "../images/creatures/hebi/habu/habu_000011_20260306_21.jpg",
+      "../images/creatures/hebi/habu/habu_000012_20260329_00.jpg",
+      "../images/creatures/hebi/habu/habu_000013_20260330_21.jpg",
+      "../images/creatures/hebi/habu/habu_000014_20250428_23.jpg",
+      "../images/creatures/hebi/habu/habu_000015_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000016_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000017_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000018_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000019_20250506_01.jpg",
+      "../images/creatures/hebi/habu/habu_000020_20250506_02.jpg",
+      "../images/creatures/hebi/habu/habu_000021_20250506_02.jpg",
+      "../images/creatures/hebi/habu/habu_000022_20250515_21.jpg",
+      "../images/creatures/hebi/habu/habu_000023_20250515_21.jpg",
+      "../images/creatures/hebi/habu/habu_000024_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000025_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000026_20250521_21.jpg",
+      "../images/creatures/hebi/habu/habu_000027_20250525_23.jpg",
+      "../images/creatures/hebi/habu/habu_000028_20250525_23.jpg",
+      "../images/creatures/hebi/habu/habu_000029_20250526_00.jpg",
+      "../images/creatures/hebi/habu/habu_000030_20250605_22.jpg",
+      "../images/creatures/hebi/habu/habu_000031_20250615_22.jpg",
+      "../images/creatures/hebi/habu/habu_000032_20250621_13.jpg",
+      "../images/creatures/hebi/habu/habu_000033_20250625_22.jpg",
+      "../images/creatures/hebi/habu/habu_000034_20250628_14.jpg",
+      "../images/creatures/hebi/habu/habu_000035_20250628_15.jpg",
+      "../images/creatures/hebi/habu/habu_000036_20250516_21.jpg",
+      "../images/creatures/hebi/habu/habu_000037_20250628_15.jpg",
+      "../images/creatures/hebi/habu/habu_000038_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000039_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000040_20250628_21.jpg",
+      "../images/creatures/hebi/habu/habu_000041_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000042_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000043_20250628_22.jpg",
+      "../images/creatures/hebi/habu/habu_000044_20250704_01.jpg",
+      "../images/creatures/hebi/habu/habu_000045_20250704_21.jpg",
+      "../images/creatures/hebi/habu/habu_000046_20250704_22.jpg",
+      "../images/creatures/hebi/habu/habu_000047_20250704_22.jpg",
+      "../images/creatures/hebi/habu/habu_000048_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000049_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000050_20250705_21.jpg",
+      "../images/creatures/hebi/habu/habu_000051_20250705_22.jpg",
+      "../images/creatures/hebi/habu/habu_000052_20250713_00.jpg",
+      "../images/creatures/hebi/habu/habu_000053_20250714_21.jpg",
+      "../images/creatures/hebi/habu/habu_000054_20250714_21.jpg",
+      "../images/creatures/hebi/habu/habu_000055_20250717_22.jpg",
+      "../images/creatures/hebi/habu/habu_000056_20250717_22.jpg",
+      "../images/creatures/hebi/habu/habu_000057_20250720_21.jpg",
+      "../images/creatures/hebi/habu/habu_000058_20250723_20.jpg",
+      "../images/creatures/hebi/habu/habu_000059_20250723_20.jpg",
+      "../images/creatures/hebi/habu/habu_000060_20250723_21.jpg",
+      "../images/creatures/hebi/habu/habu_000061_20250725_21.jpg",
+      "../images/creatures/hebi/habu/habu_000062_20250725_21.jpg",
+      "../images/creatures/hebi/habu/habu_000063_20250727_00.jpg",
+      "../images/creatures/hebi/habu/habu_000064_20250727_00.jpg",
+      "../images/creatures/hebi/habu/habu_000065_20250728_21.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20250927_19.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20251004_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260403_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260404_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260404_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260411_02.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260607_23.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260614_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260617_19.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260629_20.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260703_00.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260705_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260719_22.jpg",
+      "../images/creatures/hebi/habu/habu_000066_20260720_22.jpg",
+      "../images/creatures/hebi/habu/habu_000067_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000068_20251012_00.jpg",
+      "../images/creatures/hebi/habu/habu_000069_20260703_00.jpg",
+      "../images/creatures/hebi/habu/habu_000070_20260721_12.jpg",
+      "../images/creatures/hebi/habu/habu_000071_20260802_03.jpg",
+      "../images/creatures/hebi/habu/habu_000072_20260903_09.jpg",
+      "../images/creatures/hebi/habu/habu_000073_20260903_11.jpg",
+      "../images/creatures/hebi/habu/habu_000074_20260618_00.jpg",
+      "../images/creatures/hebi/habu/habu_000075_20260630_00.jpg",
+      "../images/creatures/hebi/habu/habu_000076_20250713_00.jpg",
+      "../images/creatures/hebi/habu/IMG_9736.JPG"
+    ],
+    "page_path": "creatures/hebi/habu.html"
+  },
+  {
+    "id": "hime-habu",
+    "name": "冲绳烙铁头蛇",
+    "category": "hebi",
+    "category_name": "蛇类",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      12
+    ],
+    "description": "蝮蛇科山烙铁头属 *Ovophis okinavensis*\n\n体长可达约80厘米。耐寒性强，在奄美大岛可全年观察到。梅雨季节结束、天气转热后，常在海拔\n较高的地方观察到它。食性以中小型青蛙、小型哺乳类和鸟类为主。在水田和流速缓慢的溪流等青蛙\n较多的场所很容易观察到。盘卷不动时几乎一动不动，但一旦进入其领地就会发出威吓。由于是毒\n蛇，被咬后应立即就医。请注意避免踩到它。",
+    "photos": [
+      "../images/creatures/hebi/hime-habu/hime-habu_000002_20250429_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000003_20250429_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000004_20250430_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000005_20250430_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000006_20260205_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000007_20250212_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000008_20260223_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000009_20260225_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000010_20250227_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000011_20250302_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000012_20250302_19.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000013_20260306_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000014_20260318_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000015_20260319_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000016_20260320_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000017_20260320_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000018_20250326_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000019_20260328_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000020_20250527_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000021_20250726_09.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000022_20251122_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20250925_00.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260403_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_20.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_21.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_22.jpg",
+      "../images/creatures/hebi/hime-habu/hime-habu_000023_20260629_22.jpg"
+    ],
+    "page_path": "creatures/hebi/hime-habu.html"
+  },
+  {
+    "id": "hyan",
+    "name": "日本珊瑚蛇",
+    "category": "hebi",
+    "category_name": "蛇类",
+    "months": [
+      5,
+      6,
+      11
+    ],
+    "description": "眼镜蛇科华珊瑚蛇属(别名：琉球赤蛇) *Sinomicrurus japonicus*\n\n体长可达约50厘米。5月前后和9月前后是最容易观察到它的时期。背部呈红褐色或橙色，带有5条暗\n褐色纵纹。被指定为\"特定动物\"，属于被认为可能对人造成伤害的物种类别。其毒性为神经毒，比波\n布蛇更强，但头部较小，性情温顺。若被拿在手中，它会用如骨头般坚硬的尾巴刺人。夜行性且数量\n稀少，很难遇见。其人气之高，甚至有人专程为了一睹其风采而造访奄美大岛。",
+    "photos": [
+      "../images/creatures/hebi/hyan/hyan_000001_20250515_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000002_20250515_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000003_20250515_21.jpg",
+      "../images/creatures/hebi/hyan/hyan_000004_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000005_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000006_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000007_20250523_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000009_20250606_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000010_20250606_20.jpg",
+      "../images/creatures/hebi/hyan/hyan_000011_20250620_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000012_20250717_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000013_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000014_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000015_20250722_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250517_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250526_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250527_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20250620_22.jpg",
+      "../images/creatures/hebi/hyan/hyan_000016_20260608_00.jpg",
+      "../images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg",
+      "../images/creatures/hebi/hyan/hyan_000018_20260626_00.jpg"
+    ],
+    "page_path": "creatures/hebi/hyan.html"
+  },
+  {
+    "id": "ryukyu-ao-hebi",
+    "name": "琉球翠青蛇",
+    "category": "hebi",
+    "category_name": "蛇类",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "游蛇科翠青蛇属 *Cycophuops semicarinatus*\n\n体长可达约100厘米。5月至11月是最容易观察到它的时期。虽以昼行性为主，但也有不少个体在夜\n间活动。头部较小，食性以蚯蚓为主，也吃青蛙。它是奄美大岛数量最多的蛇类，白天可在林内、夜\n间可在林道见到它的身影。体型较大的个体有时会发出威吓，但它逃跑速度极快，会顺着斜坡迅速滑\n走。",
+    "photos": [
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000002_20250521_11.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000003_20250521_13.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000004_20250523_12.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000005_20250527_01.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000006_20250527_01.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000007_20250610_13.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000008_20250628_14.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250828_12.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250830_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20250915_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20251007_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20251019_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260411_00.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260413_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260427_20.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260629_22.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000009_20260729_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000010_20260413_23.jpg",
+      "../images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000011_20251019_22.jpg"
+    ],
+    "page_path": "creatures/hebi/ryukyu-ao-hebi.html"
+  },
+  {
+    "id": "amami-kuro-usagi",
+    "name": "奄美黑兔",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "兔科奄美兔属 *Pentalagus furnessi*\n\n体长约41〜51厘米，体重1.3〜2.7千克。仅分布于奄美大岛和德之岛的日本固有种，因保留\n了浓厚的原始特征而被称为\"活化石\"。1921年被指定为天然纪念物，1963年升格为特别天然\n纪念物。夜行性，以岩洞或树洞中挖掘的巢穴为据点活动，以椎树果实和嫩芽为食。繁殖期为春\n季和秋季前后，每胎产1只幼崽。曾因野化家猫及外来入侵种爪哇獴的捕食而数量减少，但随着\n灭獴工作的推进，近年来种群数量呈恢复趋势。它是夜间生态之旅的象征性动物，在林道上不时\n能与蹦跳而过的它不期而遇。",
+    "photos": [
+      "../images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
+      "../images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg"
+    ],
+    "page_path": "creatures/honyuurui/amami-kuro-usagi.html"
+  },
+  {
+    "id": "kenaga-nezumi",
+    "name": "琉球长毛鼠",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      2,
+      3,
+      4,
+      12
+    ],
+    "description": "鼠科长毛鼠属 *Diplothrix legata*\n\n体长22〜33厘米，尾长25〜35厘米。是日本体型最大的老鼠，仅分布于奄美大岛、德之岛及\n冲绳岛北部，毛发中混有5〜6厘米的长刚毛。1972年被指定为天然纪念物，2016年被指定为\n国内稀有野生动植物种。夜行性且树栖性极强，白天在树洞中铺满枯叶的巢里休息。食性为杂\n食，以椎树果实和昆虫等为食。繁殖期为秋季至初冬，每胎产2〜5只幼崽。警戒心较弱，即使\n用手电筒照射也不太会逃跑，因此有时能在林道上从容地观察到它。",
+    "photos": [
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000002_20260206_20.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000003_20260319_21.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000004_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000005_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000006_20260413_23.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000007_20260421_21.jpg",
+      "../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000008_20251202_21.jpg"
+    ],
+    "page_path": "creatures/honyuurui/kenaga-nezumi.html"
+  },
+  {
+    "id": "watase-jinezumi",
+    "name": "渡濑麝鼩",
+    "category": "honyuurui",
+    "category_name": "honyuurui",
+    "months": [
+      12
+    ],
+    "description": "鼩鼱科麝鼩属 *Crocidura watasei*\n\n体长约5.5厘米，体重仅5〜8克，是世界上体型最小的哺乳动物之一。仅分布于奄美群岛(奄\n美大岛、加计吕麻岛、德之岛等)和冲绳诸岛的日本固有种。喜欢草地、农田等开阔环境，以小\n型昆虫和蜘蛛等为食。夜行性，有时能看到它在林道旁的草丛中快速穿梭的身影。与同属栖息于\n森林的近缘种生活环境不同，有时会被混淆。虽然没有像天然纪念物那样的法律捕获限制，但已\n被环境省列为准绝灭危惧种。",
+    "photos": [
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000002_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000003_20241218_18.jpg",
+      "../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000004_20241218_19.jpg"
+    ],
+    "page_path": "creatures/honyuurui/watase-jinezumi.html"
+  },
+  {
+    "id": "amami-aka-gaeru",
+    "name": "奄美赤蛙",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      11,
+      12,
+      1
+    ],
+    "description": "赤蛙科赤蛙属 *Rana kobai*\n\n体长约3.2〜4.6厘米。11月至1月为繁殖期。栖息于平地到山地的森林及河流周边。湿度较高或\n下雨时会变得活跃，繁殖期会聚集在小池塘、涌泉水潭等处。林道上也能见到它的身影。体色为红\n褐色，体形纤细，鸣声为\"叩叩\"声。",
+    "photos": [
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000003_20250129_20.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20250312_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20250602_21.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251006_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000005_20251007_00.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000006_20250312_22.jpg",
+      "../images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000007_20260905_11.jpg"
+    ],
+    "page_path": "creatures/kaeru/amami-aka-gaeru.html"
+  },
+  {
+    "id": "amami-ao-gaeru",
+    "name": "奄美树蛙",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "树蛙科树蛙属 *Zhangixalus amamiensis*\n\n体长约4.5〜7.7厘米。12月下旬至5月左右为繁殖期。分布于低地至山地，栖息在池塘、水田等\n静水域周边的森林中。湿度较高或下雨时会活跃地鸣叫，并在树枝上或岸边的草丛中产下白色泡沫\n状卵块。即使叫声很响，也很难发现它的踪影。体型比哈氏雨蛙更大，因此比较容易区分。",
+    "photos": [
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000002_20250201_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000003_20250221_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000004_20250221_22.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000005_20250227_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000007_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000008_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000009_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000010_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000011_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000012_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000013_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000014_20250302_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000015_20241210_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250119_19.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250228_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250414_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250509_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250516_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250520_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260409_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260502_21.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000017_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000018_20250314_23.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000019_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000020_20250427_20.jpg",
+      "../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000021_20250506_20.jpg"
+    ],
+    "page_path": "creatures/kaeru/amami-ao-gaeru.html"
+  },
+  {
+    "id": "hanasaki-gaeru",
+    "name": "奄美臭蛙",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "赤蛙科臭蛙属 *Odorrana amamiensis*\n\n体长约5.6〜10.1厘米。10月至5月为繁殖期。栖息于山地溪流周边。体形纤细、姿态优美，熟\n悉之后即使远远望去也能辨认出来。体色丰富多样，个体间差异较大。已被鹿儿岛县指定为天然纪\n念物，包括卵在内均禁止捕获、转让。下雨天会大量出现在林道上，开车时需多加注意。",
+    "photos": [
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000002_20250228_21.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000003_20241210_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000004_20241211_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20241206_23.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250521_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250525_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250525_23.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250628_15.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250704_22.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250911_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20250926_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000005_20251002_00.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000006_20250506_20.jpg",
+      "../images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000007_20250926_00.jpg"
+    ],
+    "page_path": "creatures/kaeru/hanasaki-gaeru.html"
+  },
+  {
+    "id": "iboimori",
+    "name": "奄美棘螈",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "蝾螈科棘螈属 *Echinotriton raffaellii*\n\n全长约14〜20厘米。1月至4月左右为繁殖期。为奄美大岛、请岛、德之岛的特有种，栖息于森\n林及农田周边。冬季温暖的日子里会变得活跃，繁殖期会在水边的落叶下产卵。体色为黑褐色，体\n表粗糙不平，肋骨突起和四肢末端带有橙色。",
+    "photos": [
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000002_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000004_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000005_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000006_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000007_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000008_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000009_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000010_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000011_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000012_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000013_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000014_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000015_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000016_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000017_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000018_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000019_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000020_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000021_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000022_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000023_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000024_20260907_19.jpg",
+      "../images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000025_20260907_19.jpg"
+    ],
+    "page_path": "creatures/kaeru/iboimori.html"
+  },
+  {
+    "id": "ishikawa-gaeru",
+    "name": "奄美石川蛙",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "赤蛙科臭蛙属 *Odorrana splendida*\n\n体长约7.4〜13.7厘米。2月末至6月左右为繁殖期。栖息于山地源头水流平缓的溪谷。被誉为日\n本最美丽的蛙类，已被鹿儿岛县指定为天然纪念物及国内稀有野生动物种，包括卵在内均禁止捕\n获、转让。在海拔较高的溪流附近，天黑后有些地方能听到它的鸣叫声。在某些地点，即使是夏天\n下雨时也有可能见到它。",
+    "photos": [
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000002_20250123_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000004_20250201_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000005_20250201_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000006_20250206_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000007_20250206_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000008_20250304_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000009_20250722_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000010_20241209_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000011_20241209_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250314_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250314_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250506_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250516_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250520_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250529_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250602_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250603_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250615_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250625_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250627_11.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250709_23.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_20.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250714_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250716_22.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260404_00.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000013_20260423_21.jpg",
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/IMG_9643.JPG"
+    ],
+    "page_path": "creatures/kaeru/ishikawa-gaeru.html"
+  },
+  {
+    "id": "shiriken-imori",
+    "name": "奄美剑尾蝾螈",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "蝾螈科蝾螈属 *Cynops ensicauda ensicauda*\n\n雄性全长约14厘米，雌性约18厘米。分布于奄美大岛、请岛、加计吕麻岛、与路岛等岛屿，在池塘、水\n田及溪流缓流处繁殖。9月过后大多数个体会离开水域，到了12月左右的繁殖期，水边能观察到大\n量个体。体色为黑色，带有黄色或橙色斑点，个体差异较大。冲绳分布有近缘的冲绳剑尾蝾螈。",
+    "photos": [
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000002_20250128_22.jpg",
+      "../images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000003_20260329_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/shiriken-imori.html"
+  },
+  {
+    "id": "haroweru-amagaeru",
+    "name": "哈氏雨蛙",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "description": "雨蛙科雨蛙属 *Hyla hallowellii*\n\n体长约3〜4厘米。3月至6月为繁殖期。栖息于平地森林、灌木丛和农田，在水田等静水域产卵。\n湿度较高的白天和下雨的夜晚会变得活跃，产卵期会在水田附近大合唱。它常待在树枝顶端等稍高\n处，即使叫声很响也很难被发现。通体翠绿，非常美丽。鸣声与日本雨蛙相似。",
+    "photos": [
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250427_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250510_00.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250517_23.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20250529_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260303_13.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000001_20260330_21.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000002_20250510_00.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000003_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000004_20250516_22.jpg",
+      "../images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000005_20250516_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/haroweru-amagaeru.html"
+  },
+  {
+    "id": "hime-amagaeru",
+    "name": "冲绳姬蛙",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "description": "姬蛙科姬蛙属 *Microhyla okinavensis*\n\n体长约2.2〜3.2厘米。全年均可繁殖(主要集中在3月至7月)。栖息范围很广，从沿海低地到山\n地、林缘草地乃至民宅周边都能见到。湿度较高或下雨时会变得活跃。头部小而四肢粗壮，从上方\n看呈三角形。是日本体型最小的蛙类，但叫声却出奇地响亮。",
+    "photos": [
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg",
+      "../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000003_20250516_22.jpg"
+    ],
+    "page_path": "creatures/kaeru/hime-amagaeru.html"
+  },
+  {
+    "id": "otton-gaeru",
+    "name": "奥顿蛙",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "description": "赤蛙科棘蛙属 *Babina subaspera*\n\n体长约9〜14厘米。4月至10月为繁殖期。主要栖息于山地，但在农田和公园等地也能见到。湿\n度较高或下雨时会变得活跃，也常出现在道路上。雄性体型更大，除外来引入的牛蛙外，是日本体\n型最大的蛙类。它有5根脚趾，相当于拇指的部位有一根锋利的棘刺，据认为是雄性之间争斗或抱\n对时使用的。已被鹿儿岛县指定为天然纪念物及国内稀有野生动物种，包括卵在内均禁止捕获、转\n让。体型硕大、气势十足，一旦出现在路上很容易被发现。据说它的名字来源于它的叫声。",
+    "photos": [
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000001_20250228_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000002_20250228_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000003_20250722_20.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000004_20241204_22.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250516_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250517_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250520_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250602_21.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250727_13.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250812_15.jpg",
+      "../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20251009_23.jpg"
+    ],
+    "page_path": "creatures/kaeru/otton-gaeru.html"
+  },
+  {
+    "id": "ryukyu-kajika-gaeru",
+    "name": "琉球树蟾",
+    "category": "kaeru",
+    "category_name": "两栖类",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "树蟾科树蟾属 *Buergeria japonica*\n\n体长约2.5〜4厘米。4月至10月为繁殖期。从山间溪流到市区的积水都能适应，是奄美大岛最常\n见的蛙类。湿度较高或下雨时鸣叫尤为活跃。雄性呈美丽的黄色，叫声也十分动听。",
+    "photos": [
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250417_20.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250425_22.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250503_22.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20260608_00.jpg",
+      "../images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg"
+    ],
+    "page_path": "creatures/kaeru/ryukyu-kajika-gaeru.html"
+  },
+  {
+    "id": "amami-hirata-kuwagata",
+    "name": "奄美扁锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "锹甲科奥锹甲属扁锹甲亚种 *Dorcus titanusu elegans*\n\n分布于奄美群岛的扁锹甲亚种。是奄美大岛数量最多的锹形虫。人工饲养下能长得相当大，是很\n受欢迎的种类。常聚集在橘树、红楠、椎树、野桐等的树液上。野外个体多在50毫米以下，超过\n65毫米就算相当大了。目标是突破70毫米。",
+    "photos": [
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000002_20250821_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250615_21.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250812_15.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250822_01.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20250901_00.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260607_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000003_20260717_20.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000004_20250812_15.jpg",
+      "../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000005_20260607_20.jpg"
+    ],
+    "page_path": "creatures/kuwagata/amami-hirata-kuwagata.html"
+  },
+  {
+    "id": "ko-kuwagata",
+    "name": "奄美小锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      7,
+      8
+    ],
+    "description": "锹甲科奥锹甲属小锹甲亚属 *Dorcus amamianus*\n\n虽然名字带有\"小锹甲\"，但许多特征与姬大锹形虫相似。大颚短而弯曲有力，足和跗节较长。\n活动期为5月下旬至10月。数量不如日本本土的小锹甲多。",
+    "photos": [
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250814_01.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_21.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260717_22.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260720_22.jpg",
+      "../images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260801_01.jpg"
+    ],
+    "page_path": "creatures/kuwagata/ko-kuwagata.html"
+  },
+  {
+    "id": "marubane-kuwagata",
+    "name": "奄美圆翅锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      9,
+      10
+    ],
+    "description": "锹甲科圆翅锹甲属 *Neolucanus protogenetivus*\n\n活动期为9月至10月左右，可在长满高大椎树的深山密林中观察到。根据奄美大岛(含附属岛\n屿)5个市町村及德之岛3个町的稀有野生动植物保护条例，禁止采集。为防止盗猎，山中设有监\n控相机，季节期间还有昆虫巡逻队巡查。※仅拍照留念没有问题，但若需进入需要许可的区域，请\n务必依规申请。",
+    "photos": [
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250906_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250907_03.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250914_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250915_09.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250918_23.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250919_22.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000002_20250906_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000003_20250914_21.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000004_20250915_09.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000005_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg",
+      "../images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000007_20250919_22.jpg"
+    ],
+    "page_path": "creatures/kuwagata/marubane-kuwagata.html"
+  },
+  {
+    "id": "miyama-kuwagata",
+    "name": "奄美深山锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "锹甲科锹甲属 *Lucanus ferriei*\n\n活动期为7月至9月左右。是仅分布于奄美大岛的稀有种。根据条例禁止采集。栖息于海拔300米\n以上的原始森林。夜行性，可见雄虫在树木高处等待雌虫，但肉眼很难确认。也常在电线杆顶部一\n带见到它的身影。它会飞来树液、水果诱饵和灯光处，但禁止采集。",
+    "photos": [
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250902_01.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250905_23.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20260823_22.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000002_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000003_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000004_20250827_02.jpg",
+      "../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000005_20250902_01.jpg"
+    ],
+    "page_path": "creatures/kuwagata/miyama-kuwagata.html"
+  },
+  {
+    "id": "nebuto-kuwagata",
+    "name": "奄美肥角锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      5,
+      6,
+      7,
+      10,
+      11
+    ],
+    "description": "锹甲科肥角锹甲属 *Aegus laevicolis subnitidus*\n\n为肥角锹甲的奄美群岛亚种，是国产肥角锹甲各亚种中体型最大的。活动期为5月至10月左右。\n有时会飞到红楠、椎树、野桐、楹树等的树液上。野外个体多为20毫米左右，达到28毫米就算大\n型。目标是突破30毫米。",
+    "photos": [
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000002_20250521_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000003_20250620_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260422_23.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260427_22.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg",
+      "../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000005_20260910_16.jpg"
+    ],
+    "page_path": "creatures/kuwagata/nebuto-kuwagata.html"
+  },
+  {
+    "id": "nokogiri-kuwagata",
+    "name": "奄美锯锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "description": "锹甲科奥锹甲属锯锹甲奄美亚种 *Prosopocoilus dissimilis*\n\n活动期为6月中旬至9月上旬。在日本各地的锯锹甲中，奄美大岛产的个体体型尤其大，大颚长而\n粗壮、十分气派。常飞到橘树、野桐、红楠、椎树、成熟的露兜树果实、香蕉诱饵以及路灯处。个\n体多在60毫米左右，超过75毫米即为大型。目标是突破80毫米。",
+    "photos": [
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000001_20250620_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000002_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000003_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000004_20250622_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000006_20250628_22.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000007_20250630_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000008_20250630_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000009_20250702_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000010_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000011_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000012_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000013_20250720_22.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000014_20250821_20.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250624_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250629_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260712_21.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg",
+      "../images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000016_20260903_11.jpg"
+    ],
+    "page_path": "creatures/kuwagata/nokogiri-kuwagata.html"
+  },
+  {
+    "id": "shika-kuwagata",
+    "name": "奄美鹿角锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "锹甲科鹿角锹甲属 *Rhaetulus recticrnis*\n\n5月至9月左右活动，8月前后最容易见到。根据条例禁止采集。海拔相对较高的地区发现几率更\n高。多附着在椎树或橘树的细枝上。大型个体的大颚会像鹿角一样强烈弯曲。请注意不要将其误认\n为小型个体的小锹甲或锯锹甲而误带回家(无法自行判断种类的个体请勿带走)。",
+    "photos": [
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000001_20250627_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000002_20250627_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000003_20250628_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000004_20250704_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000005_20250720_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000006_20250720_23.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000008_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000009_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000010_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250728_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250813_10.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260703_00.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260706_00.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260712_21.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260713_22.jpg",
+      "../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000012_20250728_21.jpg"
+    ],
+    "page_path": "creatures/kuwagata/shika-kuwagata.html"
+  },
+  {
+    "id": "ruisu-tsuno-hyotan-kuwagata",
+    "name": "路易斯角葫芦锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      8,
+      9
+    ],
+    "description": "锹甲科锹甲亚科角葫芦锹甲属 *Nigidius lewisi*\n\n全身具光泽，拥有独特形状的大颚，全年都在朽木中度过。全年都能在栎树、椎树等的倒木及落\n叶下发现它的踪迹。雌雄难以区分。在奄美分布局限，且几乎不飞到树液上，因此很难被发现。",
+    "photos": [
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250907_03.jpg",
+      "../images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20260823_22.jpg"
+    ],
+    "page_path": "creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata.html"
+  },
+  {
+    "id": "sujibuto-hirata-kuwagata",
+    "name": "条纹扁锹甲",
+    "category": "kuwagata",
+    "category_name": "锅甲",
+    "months": [
+      10
+    ],
+    "description": "锹甲科奥锹甲属扁锹甲亚属 *Dorcus metacostatus*\n\n活动期为4月下旬至10月左右，7月为高峰期。是日本珍稀的固有种，仅分布于奄美群岛，鞘翅\n上有8条明显的纵纹。常飞到橘树、红楠、野桐、椎树、香蕉诱饵及路灯处。体长超过60毫米即\n为大型，目标是突破70毫米。",
+    "photos": [
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000002_20250624_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000005_20250625_22.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000006_20250630_23.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000007_20250702_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000008_20250702_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000009_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000010_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000011_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000012_20250704_21.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250625_22.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250813_10.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250928_02.jpg",
+      "../images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20251002_00.jpg"
+    ],
+    "page_path": "creatures/kuwagata/sujibuto-hirata-kuwagata.html"
+  },
+  {
+    "id": "akahara-ashinaga-mizodoromushi",
+    "name": "红腹长足沟泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      2,
+      5,
+      7
+    ],
+    "description": "长角泥甲科长足沟泥甲属 *Stenelmis hisamatsui* M. Satô, 1960\n\n分布于奄美群岛、冲绳诸岛及关岛的小型水生甲虫。长角泥甲科主要栖息于清澈溪流，幼虫和成\n虫都在水中生活，体长最大约5毫米，也因此作为清澈河流的指标而受到关注。本种自身的详细\n生态目前仍有许多未解之谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000003_20250706_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/akahara-ashinaga-mizodoromushi.html"
+  },
+  {
+    "id": "amami-hababiro-doromusshi",
+    "name": "奄美宽体长角泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      7,
+      8
+    ],
+    "description": "长角泥甲科宽体泥甲属 *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\n仅分布于奄美大岛的特有种，2005年被记载。同属(宽体泥甲属)还包括分布于本州、四国、九\n州的宽体泥甲及其近缘小型种，以及分布于大隅群岛的另一特有种。长角泥甲科主要是栖息于清\n澈溪流的小型水生甲虫，但本种自身的详细生态目前仍有许多未解之谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000002_20260801_18.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000003_20260801_18.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000004_20260801_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-hababiro-doromusshi.html"
+  },
+  {
+    "id": "amami-mizo-doromushi",
+    "name": "奄美沟泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      7
+    ],
+    "description": "长角泥甲科沟泥甲属 *Ordobrevia amamiensis* (Nomura, 1957)\n\n分布于奄美群岛、冲绳诸岛、八重山诸岛及关岛的小型水生甲虫。冲绳岛的种群被区分为独立亚\n种(冲绳沟泥甲)。长角泥甲科主要栖息于清澈溪流，但本种自身的详细生态目前仍有许多未解之\n谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-mizo-doromushi.html"
+  },
+  {
+    "id": "amami-yokomizo-doromushi",
+    "name": "奄美侧沟泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      4,
+      5
+    ],
+    "description": "长角泥甲科细跗泥甲属 *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017\n\n奄美大岛特有种，2017年才被记载的新种。其形态与分布于日本本土及台湾的同属其他种不\n同，而交尾器的形状等特征与分布于中国南部的一个种非常相似，表明两者关系密切。因此被视\n为\"遗存固有种\"的一个例子：其祖先种被认为曾广泛分布于欧亚大陆，奄美大岛孤立后，其他地\n区的近缘种群相继灭绝，唯独本种存活至今。长角泥甲科主要是栖息于清澈溪流的小型水生甲\n虫，但本种自身的详细生态目前仍有许多未解之谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000001_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000002_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000003_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000004_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000005_20260425_10.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000006_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000007_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000008_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000009_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000010_20260425_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000011_20250501_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/amami-yokomizo-doromushi.html"
+  },
+  {
+    "id": "chairo-kesi-katabiro-amennbo",
+    "name": "褐小宽肩蝽",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      2,
+      12
+    ],
+    "description": "宽肩蝽科宽肩蝽属 *Microvelia japonica* Esaki & Miyamoto, 1955\n\n体长约1.5〜2.1毫米的小型水生昆虫。分布于本州(福岛县以西)、四国、九州，在南西诸岛则\n分布于喜界岛至冲绳岛一带。常见于细流旁阴暗的水洼及岩石背阴处，捕食落在水面上的小型昆\n虫。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000002_20250214_13.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000003_20241203_14.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000004_20241204_10.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/chairo-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "iriomote-kesi-katabiro-amennbo",
+    "name": "西表小宽肩蝽",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      2
+    ],
+    "description": "宽肩蝽科宽肩蝽属 *Microvelia iriomotensis* Miyamoto, 1964\n\n体长约1.7〜1.9毫米的小型水生昆虫。分布于南西诸岛(奄美群岛至八重山诸岛)及台湾。常见\n于山间林道旁渗水形成的小水洼，学术研究曾报道其雄性长时间守护雌性的配偶行为。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/iriomote-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "kesi-katabiro-amennbo",
+    "name": "小宽肩蝽",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      3
+    ],
+    "description": "宽肩蝽科宽肩蝽属 *Microvelia douglasi* Scott, 1874\n\n体长约1.5〜2毫米，是宽肩蝽科中体型最小的一类。分布于本州、四国、九州、对马、南西诸\n岛及大东诸岛(南大东岛)，国外也广泛分布于朝鲜半岛、中国、东南亚、台湾乃至大洋洲。喜欢\n栖息在小水田、细流等有水流的水边，捕食落在水面上的小型昆虫。宽肩蝽科中既有不能飞的无\n翅型，也有能飞的长翅型。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "kogata-no-gengoro",
+    "name": "小龙虱",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "龙虱科真龙虱属 *Cybister tripunctatus orientalis* Gschwendtner, 1931\n\n体长约24〜29毫米。分布于本州、四国、九州、南西诸岛及小笠原诸岛，国外见于中国、朝鲜\n半岛及台湾。体形呈长卵形、略扁平，背面光泽强烈，呈绿色至带褐色的黑色，鞘翅边缘有一圈\n黄色镶边，是与褐色龙虱区分的要点。栖息于水生植物丰富的池沼、湿地，以及水田及其周边水\n洼、休耕田、水流平缓的水渠。自1960年代以来，由于农药使用及圃场整备，本州以南地区数\n量急剧减少，已被列入环境省红色名录的易危(VU)等级，但在南西诸岛仍相对常见。其体形和\n色调与褐色龙虱非常相似，仅凭照片很难区分。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000002_20250403_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000003_20250406_23.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/kogata-no-gengoro.html"
+  },
+  {
+    "id": "naga-tsuya-doromushi",
+    "name": "长形泽泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      2,
+      5,
+      8
+    ],
+    "description": "长角泥甲科泽泥甲属 *Zaitzevia elongata* Nomura, 1962\n\n分布于奄美群岛及冲绳诸岛的小型水生甲虫。泽泥甲属在日本已知有8种，各种分布范围从本州\n到八重山诸岛不等。长角泥甲科主要栖息于清澈溪流，但本种自身的详细生态目前仍有许多未解\n之谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000003_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000004_20250810_15.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/naga-tsuya-doromushi.html"
+  },
+  {
+    "id": "nomura-himedoromushi",
+    "name": "野村长角泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      3,
+      4
+    ],
+    "description": "长角泥甲科长足沟泥甲属 *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\n分布于奄美群岛及冲绳诸岛的小型水生甲虫。原本被视为独立属中的唯一种，但2021年的分子\n系统学研究(Kobayashi et al., 2021)将其归入长足沟泥甲属。属名(Nomuraelmis)及日文俗名由佐藤正孝博士于1964年命名，据信是为纪念同时代开拓日\n本长角泥甲科研究的野村镇博士而得名。本种自身的详细生态目前仍有许多未解之谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000002_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000003_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000004_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000005_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000006_20250416_16.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000007_20250416_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000008_20250416_18.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/nomura-himedoromushi.html"
+  },
+  {
+    "id": "okinawa-suji-gengoro",
+    "name": "冲绳条纹龙虱",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "龙虱科斑龙虱属 *Hydaticus vittatus* (Fabricius, 1775)\n\n体长约11〜14毫米。分布于屋久岛以南的南西诸岛，国外见于台湾、中国及东南亚的南方型龙\n虱。栖息于水生植物丰富的池沼、水田等静水域。除了栖息环境减少外，近年发现包括本种在内\n的多种龙虱因疑似以饲养为目的而被大量贩卖，因此2023年1月与其他龙虱一同被指定为特定第\n二种国内稀有野生动植物种。该指定仅限制以贩卖、分发为目的的捕获及转让，以观察为目的的\n采集不在限制范围内。与分布于本州以西的同属近缘种十分相似，但由于分布范围不同，比较容\n易区分。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000002_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000003_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000004_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000005_20250406_23.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000006_20241218_16.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000007_20241219_21.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/okinawa-suji-gengoro.html"
+  },
+  {
+    "id": "ryuukyuu-munabiro-tuyadoromushi",
+    "name": "琉球宽胸扁泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      4
+    ],
+    "description": "扁泥甲科宽胸扁泥甲属 *Elmomorphus amamiensis* Nomura, 1959\n\n为奄美大岛、冲永良部岛有记录的小型水生甲虫。过去曾被视为分布于本州以西近缘种的琉球列\n岛亚种，但2014年一项通过COI基因分析及形态比较的研究确认两者之间存在种级水平的巨大\n遗传分歧，因而被提升为独立种。目前已普遍认定其为独立物种。扁泥甲科与长角泥甲科为近缘\n类群，同样栖息于清澈溪流。本种自身的详细生态目前仍有许多未解之谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000002_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000003_20250405_17.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000004_20250408_13.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000005_20260425_11.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/ryuukyuu-munabiro-tuyadoromushi.html"
+  },
+  {
+    "id": "satou-kara-himedoromushi",
+    "name": "佐藤华爪泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      5
+    ],
+    "description": "长角泥甲科华爪泥甲属 *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\n分布于奄美群岛、冲绳诸岛(冲绳岛本身无记录)的小型水生甲虫，2007年被记载。华爪泥甲属\n在日本仅知2种，另一种分布于九州。本种自身的详细生态目前仍有许多未解之谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000002_20250501_14.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000003_20250501_14.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/satou-kara-himedoromushi.html"
+  },
+  {
+    "id": "tsutsui-nagare-katabiro-amennbo",
+    "name": "筒井溪宽肩蝽",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      3,
+      4
+    ],
+    "description": "宽肩蝽科溪宽肩蝽属 *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\n分布于南西诸岛(宝岛至冲绳岛)。溪宽肩蝽属在日本已知有数种，是栖息于河流及池塘岸边的\n类群。本种自身的详细生态目前尚未获得充分的资料确认。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000002_20260328_21.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000003_20260328_21.jpg",
+      "../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000004_20250403_22.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/tsutsui-nagare-katabiro-amennbo.html"
+  },
+  {
+    "id": "ueno-tsuya-doromushi",
+    "name": "上野光泽泥甲",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "长角泥甲科光泽泥甲属 *Urumaelmis uenoi* (Nomura, 1961)\n\n分布于大隅群岛、吐噶喇列岛、奄美群岛及冲绳诸岛的小型水生甲虫。光泽泥甲属中，2020年\n又从九州新记载了第二个种，使日本已知的本属种类增至2种。吐噶喇列岛口之岛的种群被区分\n为独立亚种。本种自身的详细生态目前仍有许多未解之谜。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000002_20260204_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000003_20260318_20.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000004_20250322_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000005_20250326_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000006_20250404_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000007_20250405_22.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000008_20250411_23.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000009_20250416_00.jpg",
+      "../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000010_20250424_23.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/ueno-tsuya-doromushi.html"
+  },
+  {
+    "id": "usuiro-shima-gengoro",
+    "name": "淡色斑龙虱",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "龙虱科斑龙虱属 *Hydaticus rhantoides* Sharp, 1882\n\n体长约10〜11毫米的小型龙虱。鞘翅整体呈黄褐色，没有明显的条纹。分布于本州(关东地方以\n西)、四国、九州、对马、南西诸岛及大东诸岛，国外见于中国、台湾及东南亚。栖息于水田、池\n沼等开阔的静水域。在南西诸岛的龙虱中，与褐色龙虱、小龙虱一起，被认为是数量相对稳定的\n种类。",
+    "photos": [
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000002_20250403_00.jpg",
+      "../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000003_20250403_00.jpg"
+    ],
+    "page_path": "creatures/suisei-konntyuu/usuiro-shima-gengoro.html"
+  },
+  {
+    "id": "ba-ba-tokage",
+    "name": "巴氏石龙子",
+    "category": "tokage",
+    "category_name": "蜧虔",
+    "months": [
+      4,
+      9
+    ],
+    "description": "石龙子科石龙子属 *Plestiodon barbouri*\n\n全长15.5〜20厘米(吻肛长5.2〜7.3厘米)。分布于奄美大岛、加计吕麻岛、请岛、与路岛、\n德之岛及冲绳诸岛的日本固有种。幼体呈黑褐色，带有5条明亮的纵纹，尾巴呈鲜艳的蓝色，占\n尾部全长的三分之二以上。随着成长，蓝色逐渐褪去，雄性整体变为暗褐色至褐色，而雌性则多\n保持接近幼体的色彩。喜欢栖息在常绿阔叶天然林或恢复良好的次生林的林下及林缘，通过日光\n浴调节体温，以蜘蛛类和陆生贝类为食。冬季活动迟缓但不冬眠。因森林砍伐及割除下层植被导\n致的干燥化，以及野猫和外来入侵种爪哇獴的捕食，其数量有所减少。已被环境省红色名录列为\n易危(VU)，2019年又被指定为鹿儿岛县稀有野生动植物，未经许可的捕获、采集将受到处罚。",
+    "photos": [
+      "../images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
+      "../images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000002_20260416_12.jpg"
+    ],
+    "page_path": "creatures/tokage/ba-ba-tokage.html"
+  },
+  {
+    "id": "akahige",
+    "name": "琉球歌鸲",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      1,
+      12
+    ],
+    "description": "鹟科歌鸲属 *Larvivora komadori*\n\n全长约14厘米，体重约18克。从男女群岛经吐噶喇列岛、奄美大岛及其周边岛屿到德之岛一带\n繁殖的日本固有种，1970年被指定为天然纪念物。雄鸟头部、背部及尾部呈鲜艳的橙红色，胸\n部和体侧的黑色部分看起来像\"胡须\"，这也是其日文名称的由来。雌鸟整体色调较为朴素。常\n在常绿阔叶林的林下取食昆虫，以有力而美丽的鸣声宣示领地。清晨循着鸣声寻找比较容易发现\n它。冲绳岛北部栖息着另一近缘种，但两者的分布范围并不重叠。",
+    "photos": [
+      "../images/creatures/tori/akahige/akahige_000001_20250120_14.jpg",
+      "../images/creatures/tori/akahige/akahige_000002_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000003_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000004_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000005_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000006_20250123_12.jpg",
+      "../images/creatures/tori/akahige/akahige_000007_20241203_13.jpg"
+    ],
+    "page_path": "creatures/tori/akahige.html"
+  },
+  {
+    "id": "amami-yamashigi",
+    "name": "琉球丘鹬",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      6
+    ],
+    "description": "鹬科丘鹬属 *Scolopax mira*\n\n全长约35〜36厘米。仅分布于奄美群岛和冲绳诸岛的日本固有种，已在奄美大岛、加计吕麻\n岛、请岛、与路岛及德之岛确认有繁殖记录。外形与近缘的丘鹬相似，但腿更长、通体偏黑，体\n型比其他鹬类更为敦实。喜欢栖息在常绿阔叶林阴暗的林下地面，从日落到日出期间活动活跃，\n在地面觅食蚯蚓和昆虫。在晨昏的昏暗时段及满月之夜尤为活跃。在林内地面筑巢，3月至5月\n左右产卵2〜4枚。1993年被指定为国内稀有野生动植物种。獴类和野猫的捕食，以及森林砍伐\n导致的栖息地减少，是其面临的课题。",
+    "photos": [
+      "../images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
+    ],
+    "page_path": "creatures/tori/amami-yamashigi.html"
+  },
+  {
+    "id": "oo-tora-tsugumi",
+    "name": "奄美地鸫",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      2,
+      3,
+      4
+    ],
+    "description": "鹟科地鸫属 *Zoothera dauma major*\n\n全长约30厘米。仅分布于奄美大岛的留鸟，黄褐色底色上带有虎斑状的黑色斑纹。已被指定为\n国家天然纪念物及国内稀有野生动植物种。喜欢栖息在树龄较高的阔叶林阴暗林下，以蚯蚓等为\n食。繁殖期为2月至4月初，在黎明前及黄昏的昏暗时段会发出清脆美丽的\"叩噜嗯、唏——\"鸣\n声。曾因森林砍伐及外来物种的影响而数量锐减，一度被称为\"幻之鸟\"，但近年来随着森林的恢\n复，其种群数量呈现恢复趋势。",
+    "photos": [
+      "../images/creatures/tori/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg"
+    ],
+    "page_path": "creatures/tori/oo-tora-tsugumi.html"
+  },
+  {
+    "id": "oosuton-ooakagera",
+    "name": "奥氏白背啄木鸟",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "description": "啄木鸟科啄木鸟属 *Dendrocopos leucotos owstoni*\n\n全长约28厘米，在啄木鸟中属中型。仅分布于奄美大岛的特有亚种，体背几乎全黑并带白斑，\n腹面的褐色调比其他亚种更浓。雄鸟头顶为红色，雌鸟为黑色，因此雌雄很容易区分。主要栖息\n于成熟的照叶林，在阔叶大树的树干上凿洞筑巢。食性以潜伏在朽木中的天牛幼虫等为主。从冬\n季前后开始出现宣示领地及向配偶示爱的行为，2月至5月左右是最容易听到其用喙连续敲击树\n干的\"敲击声\"及鸣叫的时期。近年来因松树枯死等影响，分布已扩展至奄美大岛全岛。由于奄美\n大岛栖息的啄木鸟只有奄美小星头啄木鸟，可以通过体型大小加以区分。1971年被指定为国家\n天然纪念物，1993年被指定为国内稀有野生动植物种，禁止捕获、转让。",
+    "photos": [
+      "../images/creatures/tori/oosuton-ooakagera/IMG_9894.JPG",
+      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
+      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg"
+    ],
+    "page_path": "creatures/tori/oosuton-ooakagera.html"
+  },
+  {
+    "id": "ruri-kakesu",
+    "name": "琉璃松鸦",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      3,
+      7
+    ],
+    "description": "鸦科松鸦属 *Garrulus lidthi*\n\n全长约38厘米。仅分布于奄美大岛、加计吕麻岛及请岛的日本固有种，通体琉璃蓝色，翅膀呈\n红褐色，喙和翼尖呈白色，十分美丽。1921年被指定为天然纪念物。喜欢栖息在常绿阔叶林，\n食性为杂食，以椎树及橡树的果实为食。繁殖期为2月至5月左右，在树洞等处产卵3〜7枚。曾\n因野猫及外来入侵种爪哇獴的捕食而数量减少，但随着保护工作取得成效——包括2024年宣布\n灭獴成功——近年来种群数量正在恢复。白天活跃地四处飞翔，夜晚则可观察到它在林道沿线的\n电线或树枝顶端休息的身影。",
+    "photos": [
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000003_20250726_09.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000004_20250726_09.jpg",
+      "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg"
+    ],
+    "page_path": "creatures/tori/ruri-kakesu.html"
+  }
+]
