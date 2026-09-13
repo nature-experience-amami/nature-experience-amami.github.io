@@ -221,7 +221,15 @@ select{ -webkit-appearance:none; appearance:none; }
         "Accept": "application/vnd.github+json"
       }
     })
-      .then(function (res) { return res.ok ? res.json() : []; })
+      .then(function (res) {
+        if (res.status === 404) return []; // カテゴリーのフォルダがまだ無いだけ(正常)
+        if (!res.ok) {
+          return res.text().then(function (text) {
+            throw new Error("HTTP " + res.status + ": " + text.slice(0, 200));
+          });
+        }
+        return res.json();
+      })
       .then(function (items) {
         var dirs = items.filter(function (item) { return item.type === "dir"; });
         speciesSuggestions.innerHTML = "";
@@ -242,8 +250,12 @@ select{ -webkit-appearance:none; appearance:none; }
           speciesSuggestions.appendChild(chip);
         });
       })
-      .catch(function () {
-        speciesSuggestions.innerHTML = '<span class="chip-empty">候補を読み込めませんでした(新規入力はできます)</span>';
+      .catch(function (err) {
+        var detail = (err && err.message) ? err.message : "ネットワークエラー(fetch自体が失敗)";
+        speciesSuggestions.innerHTML =
+          '<span class="chip-empty">候補を読み込めませんでした: ' +
+          detail.replace(/</g, "&lt;").replace(/>/g, "&gt;") +
+          '(新規入力はできます)</span>';
       });
   }
 
