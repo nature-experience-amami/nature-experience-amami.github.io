@@ -15,6 +15,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
 
+<!-- 縮小・圧縮で失われる撮影日時(EXIF)を、圧縮後の写真に書き戻すために使う -->
+<script src="https://cdn.jsdelivr.net/npm/piexifjs@1.0.6/piexif.js"></script>
+
 <style>
 :root{
   --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
@@ -132,8 +135,7 @@ select{ -webkit-appearance:none; appearance:none; }
       <input type="password" id="pat" placeholder="ghp_... または github_pat_...">
       <button type="button" id="toggle-pat" class="icon-btn" aria-label="トークンを表示">👁</button>
     </div>
-    <label for="repo">リポジトリ (owner/repo)</label>
-    <input type="text" id="repo" placeholder="nature-experience-amami/nature-experience-amami.github.io">
+    <p class="hint">接続先: <strong>nature-experience-amami/nature-experience-amami.github.io</strong>(固定)</p>
     <button class="btn" id="save-setup">保存する</button>
     <p class="hint">
       トークンはこの端末のブラウザにだけ保存され、どこにも送信されません(GitHubへ写真をアップロードする通信でのみ使われます)。<br>
@@ -201,6 +203,7 @@ select{ -webkit-appearance:none; appearance:none; }
 <script>
 (function () {
   var LS_KEY = "amami_tool_settings";
+  var FIXED_REPO = "nature-experience-amami/nature-experience-amami.github.io"; // このツールは専用なので固定
 
   function getSettings() {
     try { return JSON.parse(localStorage.getItem(LS_KEY) || "null"); }
@@ -223,10 +226,8 @@ select{ -webkit-appearance:none; appearance:none; }
   function loadSpeciesOptions() {
     var settings = getSettings();
     if (!settings) return;
-    var repoParts = settings.repo.split("/");
     var category = categorySelect.value;
-    var url = "https://api.github.com/repos/" + repoParts[0] + "/" + repoParts[1] +
-      "/contents/images/creatures/" + category;
+    var url = "https://api.github.com/repos/" + FIXED_REPO + "/contents/images/creatures/" + category;
 
     speciesSuggestions.innerHTML = '<span class="chip-empty">候補を読み込み中…</span>';
 
@@ -290,12 +291,11 @@ select{ -webkit-appearance:none; appearance:none; }
     loadSpeciesOptions();
   }
 
-  // 設定画面(トークン・リポジトリの確認や再入力)にいつでも戻れるようにする
+  // 設定画面(トークンの確認や再入力)にいつでも戻れるようにする
   function showSetup() {
     var current = getSettings();
     if (current) {
       document.getElementById("pat").value = current.pat || "";
-      document.getElementById("repo").value = current.repo || "";
     }
     tabs.style.display = "none";
     settingsBtn.style.display = "none";
@@ -315,27 +315,24 @@ select{ -webkit-appearance:none; appearance:none; }
   });
 
   var existing = getSettings();
-  if (existing && existing.pat && existing.repo) {
+  if (existing && existing.pat) {
     document.getElementById("pat").value = existing.pat;
-    document.getElementById("repo").value = existing.repo;
     showApp();
   }
 
   document.getElementById("save-setup").addEventListener("click", function () {
     var pat = document.getElementById("pat").value.trim();
-    var repo = document.getElementById("repo").value.trim();
-    if (!pat || !repo || repo.indexOf("/") === -1) {
-      alert("トークンと、owner/repo の形式でリポジトリ名を入力してください。");
+    if (!pat) {
+      alert("トークンを入力してください。");
       return;
     }
-    saveSettings({ pat: pat, repo: repo });
+    saveSettings({ pat: pat, repo: FIXED_REPO });
     showApp();
   });
 
   document.getElementById("clear-setup").addEventListener("click", function () {
     clearSettings();
     document.getElementById("pat").value = "";
-    document.getElementById("repo").value = "";
     tabs.style.display = "none";
     settingsBtn.style.display = "none";
     screens.forEach(function (s) { s.classList.remove("active"); });
@@ -424,12 +421,47 @@ select{ -webkit-appearance:none; appearance:none; }
     });
   }
 
-  function blobToBase64(blob) {
+  function blobToDataURL(blob) {
     return new Promise(function (resolve, reject) {
       var reader = new FileReader();
-      reader.onload = function () { resolve(reader.result.split(",")[1]); };
+      reader.onload = function () { resolve(reader.result); };
       reader.onerror = reject;
       reader.readAsDataURL(blob);
+    });
+  }
+
+  // 縮小・圧縮の前に、元の写真から撮影日時(EXIF)だけを読み取っておく。
+  // (canvasで作り直した写真はEXIFが全部消えるため、後で書き戻す)
+  function readOriginalDateExif(file) {
+    return blobToDataURL(file).then(function (dataUrl) {
+      try {
+        var exifObj = piexif.load(dataUrl);
+        return (
+          (exifObj["Exif"] && exifObj["Exif"][piexif.ExifIFD.DateTimeOriginal]) ||
+          (exifObj["0th"] && exifObj["0th"][piexif.ImageIFD.DateTime]) ||
+          null
+        );
+      } catch (e) {
+        return null; // EXIFが無い/読めない写真はそのまま(従来通りfailed行きになる)
+      }
+    }).catch(function () { return null; });
+  }
+
+  // 圧縮後の写真に、読み取っておいた撮影日時を書き戻してからbase64化する
+  function injectExifDateAndBase64(blob, dateStr) {
+    return blobToDataURL(blob).then(function (dataUrl) {
+      if (!dateStr) return dataUrl.split(",")[1];
+      try {
+        var exifDict = { "0th": {}, "Exif": {}, "1st": {}, "thumbnail": null, "GPS": {} };
+        exifDict["0th"][piexif.ImageIFD.DateTime] = dateStr;
+        exifDict["Exif"][piexif.ExifIFD.DateTimeOriginal] = dateStr;
+        exifDict["Exif"][piexif.ExifIFD.DateTimeDigitized] = dateStr;
+        var exifBytes = piexif.dump(exifDict);
+        var newDataUrl = piexif.insert(exifBytes, dataUrl);
+        return newDataUrl.split(",")[1];
+      } catch (e) {
+        return dataUrl.split(",")[1]; // 書き戻しに失敗してもアップロード自体は続ける
+      }
     });
   }
 
@@ -452,8 +484,6 @@ select{ -webkit-appearance:none; appearance:none; }
     }
     if (files.length === 0) return;
 
-    var repoParts = settings.repo.split("/");
-    var owner = repoParts[0], repoName = repoParts[1];
     var statusList = document.getElementById("upload-status");
     statusList.innerHTML = "";
     uploadBtn.disabled = true;
@@ -467,11 +497,13 @@ select{ -webkit-appearance:none; appearance:none; }
     Promise.all(files.map(function (file, i) {
       var jpgName = file.name.replace(/\.[^.]+$/, "") + ".jpg";
       var path = "images/creatures/" + category + "/" + speciesId + "/" + jpgName;
-      return resizeAndCompress(file).then(function (blob) {
-        return blobToBase64(blob);
+      return readOriginalDateExif(file).then(function (dateStr) {
+        return resizeAndCompress(file).then(function (blob) {
+          return injectExifDateAndBase64(blob, dateStr);
+        });
       }).then(function (base64) {
         return fetch(
-          "https://api.github.com/repos/" + owner + "/" + repoName + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/"),
+          "https://api.github.com/repos/" + FIXED_REPO + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/"),
           {
             method: "PUT",
             headers: {
@@ -512,8 +544,7 @@ select{ -webkit-appearance:none; appearance:none; }
   function loadProgress() {
     var settings = getSettings();
     if (!settings) return;
-    var repoParts = settings.repo.split("/");
-    var url = "https://raw.githubusercontent.com/" + repoParts[0] + "/" + repoParts[1] + "/main/data/creatures.json";
+    var url = "https://raw.githubusercontent.com/" + FIXED_REPO + "/main/data/creatures.json";
     var body = document.getElementById("progress-body");
     body.innerHTML = '<p class="progress-empty">読み込み中…</p>';
 
