@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Amami管理ツール</title>
+
+<!-- iPhoneでホーム画面に追加したとき、アプリらしく見えるようにする設定 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Amami管理">
+<meta name="theme-color" content="#0A1613">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
+  --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A; --warn:#E86B3D;
+}
+*{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html,body{ height:100%; }
+body{
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  background:var(--night); color:var(--moonlight);
+  padding-top:env(safe-area-inset-top); padding-bottom:env(safe-area-inset-bottom);
+  overscroll-behavior:none;
+}
+h1,h2{ font-family:'Shippori Mincho',serif; font-weight:700; }
+
+header{ padding:1.2rem 1.2rem .8rem; border-bottom:1px solid rgba(234,242,233,.1); }
+header h1{ font-size:1.15rem; letter-spacing:.04em; }
+header p{ font-size:.72rem; color:var(--moss); font-family:'Space Mono',monospace; margin-top:.2rem; }
+
+main{ padding:1.2rem; padding-bottom:6rem; max-width:560px; margin:auto; }
+
+.card{
+  background:var(--canopy); border:1px solid rgba(234,242,233,.1); border-radius:10px;
+  padding:1.2rem; margin-bottom:1rem;
+}
+.card h2{ font-size:1.05rem; margin-bottom:.9rem; }
+
+label{ display:block; font-size:.78rem; color:rgba(234,242,233,.7); margin-bottom:.35rem; margin-top:.9rem; }
+label:first-of-type{ margin-top:0; }
+select, input[type=text], input[type=password]{
+  width:100%; padding:.75rem .9rem; border-radius:8px; border:1px solid rgba(234,242,233,.2);
+  background:rgba(234,242,233,.05); color:var(--moonlight); font-size:1rem; font-family:inherit;
+}
+select{ -webkit-appearance:none; appearance:none; }
+
+.file-drop{
+  margin-top:.9rem; border:1.5px dashed rgba(234,242,233,.25); border-radius:10px;
+  padding:1.6rem 1rem; text-align:center; color:rgba(234,242,233,.55); font-size:.85rem;
+  position:relative;
+}
+.file-drop input{ position:absolute; inset:0; opacity:0; width:100%; height:100%; }
+.file-drop.has-files{ border-color:var(--amber); color:var(--amber); border-style:solid; }
+
+.btn{
+  display:block; width:100%; margin-top:1rem; padding:.85rem; border:none; border-radius:8px;
+  background:var(--amber); color:var(--bark); font-weight:700; font-size:.95rem; font-family:inherit;
+}
+.btn:disabled{ background:rgba(232,163,61,.35); color:rgba(42,33,26,.6); }
+.btn.secondary{ background:transparent; border:1px solid rgba(234,242,233,.25); color:var(--moonlight); }
+
+.status-list{ margin-top:.9rem; font-size:.82rem; }
+.status-row{ display:flex; justify-content:space-between; gap:.6rem; padding:.4rem 0; border-bottom:1px solid rgba(234,242,233,.08); }
+.status-ok{ color:#8fd19e; }
+.status-fail{ color:var(--warn); }
+.status-pending{ color:var(--moss); }
+
+.tabs{
+  position:fixed; bottom:0; left:0; right:0; display:flex;
+  background:rgba(10,22,19,.96); backdrop-filter:blur(10px);
+  border-top:1px solid rgba(234,242,233,.1);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.tabs button{
+  flex:1; padding:.9rem 0; background:none; border:none; color:rgba(234,242,233,.5);
+  font-family:inherit; font-size:.75rem;
+}
+.tabs button.active{ color:var(--amber); }
+
+.progress-row{ margin-bottom:1rem; }
+.progress-row .label-line{ display:flex; justify-content:space-between; font-size:.85rem; margin-bottom:.4rem; }
+.progress-row .label-line strong{ color:var(--amber); font-family:'Space Mono',monospace; font-weight:400; }
+.progress-track{ height:8px; background:rgba(234,242,233,.1); border-radius:4px; overflow:hidden; }
+.progress-fill{ height:100%; background:var(--moss); }
+.progress-empty{ color:rgba(234,242,233,.4); font-size:.85rem; text-align:center; padding:2rem 0; }
+
+.hint{ font-size:.72rem; color:rgba(234,242,233,.45); margin-top:.6rem; line-height:1.6; }
+.screen{ display:none; }
+.screen.active{ display:block; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌙 Amami管理ツール</h1>
+  <p>NATURE EXPERIENCE AMAMI · PERSONAL</p>
+</header>
+
+<main>
+
+  <!-- 初回設定 -->
+  <div class="card" id="setup-card">
+    <h2>接続設定</h2>
+    <label for="pat">GitHubトークン</label>
+    <input type="password" id="pat" placeholder="ghp_... または github_pat_...">
+    <label for="repo">リポジトリ (owner/repo)</label>
+    <input type="text" id="repo" placeholder="nature-experience-amami/nature-experience-amami.github.io">
+    <button class="btn" id="save-setup">保存する</button>
+    <p class="hint">
+      トークンはこの端末のブラウザにだけ保存され、どこにも送信されません(GitHubへ写真をアップロードする通信でのみ使われます)。<br>
+      GitHubの Settings → Developer settings → Fine-grained tokens で、このリポジトリだけに
+      「Contents: Read and write」権限を与えたトークンを作るのがおすすめです。
+    </p>
+    <button class="btn secondary" id="clear-setup" style="margin-top:.6rem;">保存済みの設定を消す</button>
+  </div>
+
+  <!-- 写真追加画面 -->
+  <div class="screen" id="screen-upload">
+    <div class="card">
+      <h2>写真を追加</h2>
+      <label for="category">カテゴリー</label>
+      <select id="category">
+        <option value="hebi">ヘビ</option>
+        <option value="kaeru">両生類(カエル・イモリ)</option>
+        <option value="kuwagata">クワガタ</option>
+        <option value="honyuurui">哺乳類</option>
+        <option value="tori">鳥</option>
+        <option value="tokage">トカゲ</option>
+        <option value="suisei-konntyuu">水生昆虫</option>
+        <option value="konchu">昆虫その他</option>
+        <option value="kai">貝</option>
+        <option value="sonota">甲殻類・汽水域など</option>
+      </select>
+
+      <label for="species-id">生き物ID(写真フォルダ名)</label>
+      <input type="text" id="species-id" placeholder="例: habu, hanasaki-gaeru">
+
+      <label>写真</label>
+      <div class="file-drop" id="file-drop">
+        <span id="file-drop-label">タップして写真を選ぶ(複数選択可)</span>
+        <input type="file" id="file-input" accept="image/*" multiple>
+      </div>
+
+      <button class="btn" id="upload-btn" disabled>アップロード</button>
+      <div class="status-list" id="upload-status"></div>
+      <p class="hint">
+        アップロードした写真は、そのままでは透かし・リサイズされていません。
+        GitHub Actionsが自動で処理してくれるので、数分待ってからサイトを確認してください。
+      </p>
+    </div>
+  </div>
+
+  <!-- 進捗画面 -->
+  <div class="screen" id="screen-progress">
+    <div class="card">
+      <h2>カテゴリー別 掲載種数</h2>
+      <div id="progress-body">
+        <p class="progress-empty">読み込み中…</p>
+      </div>
+      <button class="btn secondary" id="refresh-progress">更新する</button>
+    </div>
+  </div>
+
+</main>
+
+<nav class="tabs" id="tabs" style="display:none;">
+  <button data-screen="screen-upload" class="active">📷 写真を追加</button>
+  <button data-screen="screen-progress">📊 進捗</button>
+</nav>
+
+<script>
+(function () {
+  var LS_KEY = "amami_tool_settings";
+
+  function getSettings() {
+    try { return JSON.parse(localStorage.getItem(LS_KEY) || "null"); }
+    catch (e) { return null; }
+  }
+  function saveSettings(s) { localStorage.setItem(LS_KEY, JSON.stringify(s)); }
+  function clearSettings() { localStorage.removeItem(LS_KEY); }
+
+  var setupCard = document.getElementById("setup-card");
+  var tabs = document.getElementById("tabs");
+  var screens = document.querySelectorAll(".screen");
+
+  function showApp() {
+    setupCard.style.display = "none";
+    tabs.style.display = "flex";
+    document.getElementById("screen-upload").classList.add("active");
+    loadProgress();
+  }
+
+  var existing = getSettings();
+  if (existing && existing.pat && existing.repo) {
+    document.getElementById("pat").value = existing.pat;
+    document.getElementById("repo").value = existing.repo;
+    showApp();
+  }
+
+  document.getElementById("save-setup").addEventListener("click", function () {
+    var pat = document.getElementById("pat").value.trim();
+    var repo = document.getElementById("repo").value.trim();
+    if (!pat || !repo || repo.indexOf("/") === -1) {
+      alert("トークンと、owner/repo の形式でリポジトリ名を入力してください。");
+      return;
+    }
+    saveSettings({ pat: pat, repo: repo });
+    showApp();
+  });
+
+  document.getElementById("clear-setup").addEventListener("click", function () {
+    clearSettings();
+    document.getElementById("pat").value = "";
+    document.getElementById("repo").value = "";
+    tabs.style.display = "none";
+    screens.forEach(function (s) { s.classList.remove("active"); });
+    setupCard.style.display = "block";
+  });
+
+  // タブ切り替え
+  tabs.addEventListener("click", function (e) {
+    var btn = e.target.closest("button[data-screen]");
+    if (!btn) return;
+    tabs.querySelectorAll("button").forEach(function (b) { b.classList.remove("active"); });
+    btn.classList.add("active");
+    screens.forEach(function (s) { s.classList.remove("active"); });
+    document.getElementById(btn.dataset.screen).classList.add("active");
+    if (btn.dataset.screen === "screen-progress") loadProgress();
+  });
+
+  // ファイル選択
+  var fileInput = document.getElementById("file-input");
+  var fileDrop = document.getElementById("file-drop");
+  var fileDropLabel = document.getElementById("file-drop-label");
+  var uploadBtn = document.getElementById("upload-btn");
+
+  fileInput.addEventListener("change", function () {
+    var n = fileInput.files.length;
+    if (n > 0) {
+      fileDrop.classList.add("has-files");
+      fileDropLabel.textContent = n + "枚選択中";
+      uploadBtn.disabled = false;
+    } else {
+      fileDrop.classList.remove("has-files");
+      fileDropLabel.textContent = "タップして写真を選ぶ(複数選択可)";
+      uploadBtn.disabled = true;
+    }
+  });
+
+  function fileToBase64(file) {
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        resolve(reader.result.split(",")[1]);
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function statusRow(name) {
+    var row = document.createElement("div");
+    row.className = "status-row";
+    row.innerHTML = '<span>' + name + '</span><span class="status-pending">送信中…</span>';
+    return row;
+  }
+
+  uploadBtn.addEventListener("click", function () {
+    var settings = getSettings();
+    var category = document.getElementById("category").value;
+    var speciesId = document.getElementById("species-id").value.trim();
+    var files = Array.from(fileInput.files);
+
+    if (!speciesId) {
+      alert("生き物ID(写真フォルダ名)を入力してください。");
+      return;
+    }
+    if (files.length === 0) return;
+
+    var repoParts = settings.repo.split("/");
+    var owner = repoParts[0], repoName = repoParts[1];
+    var statusList = document.getElementById("upload-status");
+    statusList.innerHTML = "";
+    uploadBtn.disabled = true;
+
+    var rows = files.map(function (f) {
+      var row = statusRow(f.name);
+      statusList.appendChild(row);
+      return row;
+    });
+
+    Promise.all(files.map(function (file, i) {
+      var path = "images/creatures/" + category + "/" + speciesId + "/" + file.name;
+      return fileToBase64(file).then(function (base64) {
+        return fetch(
+          "https://api.github.com/repos/" + owner + "/" + repoName + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/"),
+          {
+            method: "PUT",
+            headers: {
+              "Authorization": "Bearer " + settings.pat,
+              "Accept": "application/vnd.github+json"
+            },
+            body: JSON.stringify({
+              message: speciesId + " の写真を追加 (" + file.name + ")",
+              content: base64
+            })
+          }
+        ).then(function (res) {
+          rows[i].querySelector("span:last-child").textContent = res.ok ? "完了" : "失敗 (" + res.status + ")";
+          rows[i].querySelector("span:last-child").className = res.ok ? "status-ok" : "status-fail";
+          return res.ok;
+        });
+      }).catch(function () {
+        rows[i].querySelector("span:last-child").textContent = "失敗";
+        rows[i].querySelector("span:last-child").className = "status-fail";
+        return false;
+      });
+    })).then(function () {
+      uploadBtn.disabled = false;
+      fileInput.value = "";
+      fileDrop.classList.remove("has-files");
+      fileDropLabel.textContent = "タップして写真を選ぶ(複数選択可)";
+    });
+  });
+
+  // 進捗画面
+  var CATEGORY_LABELS = {
+    "hebi": "ヘビ", "kaeru": "両生類(カエル・イモリ)", "kuwagata": "クワガタ",
+    "honyuurui": "哺乳類", "tori": "鳥", "tokage": "トカゲ",
+    "suisei-konntyuu": "水生昆虫", "konchu": "昆虫その他",
+    "kai": "貝", "sonota": "甲殻類・汽水域など"
+  };
+
+  function loadProgress() {
+    var settings = getSettings();
+    if (!settings) return;
+    var repoParts = settings.repo.split("/");
+    var url = "https://raw.githubusercontent.com/" + repoParts[0] + "/" + repoParts[1] + "/main/data/creatures.json";
+    var body = document.getElementById("progress-body");
+    body.innerHTML = '<p class="progress-empty">読み込み中…</p>';
+
+    fetch(url)
+      .then(function (res) { if (!res.ok) throw new Error(); return res.json(); })
+      .then(function (creatures) {
+        var counts = {};
+        creatures.forEach(function (c) {
+          counts[c.category] = (counts[c.category] || 0) + 1;
+        });
+        var max = Math.max.apply(null, Object.values(counts).concat([1]));
+        body.innerHTML = "";
+        Object.keys(CATEGORY_LABELS).forEach(function (key) {
+          var count = counts[key] || 0;
+          var row = document.createElement("div");
+          row.className = "progress-row";
+          row.innerHTML =
+            '<div class="label-line"><span>' + CATEGORY_LABELS[key] + '</span><strong>' + count + '種</strong></div>' +
+            '<div class="progress-track"><div class="progress-fill" style="width:' + (count / max * 100) + '%"></div></div>';
+          body.appendChild(row);
+        });
+      })
+      .catch(function () {
+        body.innerHTML = '<p class="progress-empty">読み込みに失敗しました。設定を確認してください。</p>';
+      });
+  }
+
+  document.getElementById("refresh-progress").addEventListener("click", loadProgress);
+})();
+</script>
+
+</body>
+</html>
