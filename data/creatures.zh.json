@@ -64,7 +64,8 @@
       "../images/creatures/hebi/akamata/akamata_000043_20260607_23.jpg",
       "../images/creatures/hebi/akamata/akamata_000043_20260830_21.jpg",
       "../images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg",
-      "../images/creatures/hebi/akamata/akamata_000045_20260903_09.jpg"
+      "../images/creatures/hebi/akamata/akamata_000045_20260903_09.jpg",
+      "../images/creatures/hebi/akamata/akamata_000046_20260911_20.jpg"
     ],
     "page_path": "creatures/hebi/akamata.html"
   },
@@ -225,7 +226,7 @@
       "../images/creatures/hebi/habu/habu_000074_20260618_00.jpg",
       "../images/creatures/hebi/habu/habu_000075_20260630_00.jpg",
       "../images/creatures/hebi/habu/habu_000076_20250713_00.jpg",
-      "../images/creatures/hebi/habu/IMG_9736.JPG"
+      "../images/creatures/hebi/habu/habu_000077_20260705_22.jpg"
     ],
     "page_path": "creatures/hebi/habu.html"
   },
@@ -614,7 +615,7 @@
       "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260404_00.jpg",
       "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg",
       "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000013_20260423_21.jpg",
-      "../images/creatures/kaeru/amami-ishikawa-gaeru/IMG_9643.JPG"
+      "../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000014_20260630_22.jpg"
     ],
     "page_path": "creatures/kaeru/ishikawa-gaeru.html"
   },
@@ -1366,9 +1367,9 @@
     ],
     "description": "啄木鸟科啄木鸟属 *Dendrocopos leucotos owstoni*\n\n全长约28厘米，在啄木鸟中属中型。仅分布于奄美大岛的特有亚种，体背几乎全黑并带白斑，\n腹面的褐色调比其他亚种更浓。雄鸟头顶为红色，雌鸟为黑色，因此雌雄很容易区分。主要栖息\n于成熟的照叶林，在阔叶大树的树干上凿洞筑巢。食性以潜伏在朽木中的天牛幼虫等为主。从冬\n季前后开始出现宣示领地及向配偶示爱的行为，2月至5月左右是最容易听到其用喙连续敲击树\n干的\"敲击声\"及鸣叫的时期。近年来因松树枯死等影响，分布已扩展至奄美大岛全岛。由于奄美\n大岛栖息的啄木鸟只有奄美小星头啄木鸟，可以通过体型大小加以区分。1971年被指定为国家\n天然纪念物，1993年被指定为国内稀有野生动植物种，禁止捕获、转让。",
     "photos": [
-      "../images/creatures/tori/oosuton-ooakagera/IMG_9894.JPG",
       "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
-      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg"
+      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg",
+      "../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000003_20260713_14.jpg"
     ],
     "page_path": "creatures/tori/oosuton-ooakagera.html"
   },
