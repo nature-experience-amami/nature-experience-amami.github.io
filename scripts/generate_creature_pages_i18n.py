@@ -130,7 +130,7 @@ def load_translated_creatures(lang):
 
 def render_card(candidate, current, all_ja_categories, strings):
     if candidate["photos"]:
-        image = f'<img src="../../{candidate["photos"][0]}" alt="{escape(candidate["name"])}">'
+        image = f'<img src="../../../{candidate["photos"][0]}" alt="{escape(candidate["name"])}">'
     else:
         image = f'<div class="placeholder">{escape(strings["strings"]["photo_prep"])}</div>'
     href = (
@@ -183,11 +183,11 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
 
     photos = creature["photos"]
     if photos:
-        hero = f'<img src="../../{photos[0]}" alt="{escape(creature["name"])}">'
+        hero = f'<img src="../../../{photos[0]}" alt="{escape(creature["name"])}">'
         gallery_photos = photos[1:4]
         if gallery_photos:
             figures = "".join(
-                f'<figure><img class="gallery-photo" src="../../{p}" alt="{escape(creature["name"])}"></figure>'
+                f'<figure><img class="gallery-photo" src="../../../{p}" alt="{escape(creature["name"])}"></figure>'
                 for p in gallery_photos
             )
             gallery = f'<div class="gallery">{figures}</div>'
