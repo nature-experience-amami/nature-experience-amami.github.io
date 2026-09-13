@@ -28,6 +28,9 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 # 図鑑形式で作るカテゴリー(ヘビ・カエル・クワガタのようなフルページ形式のものは含めない)
 ZUKAN_CATEGORIES = ["suisei-konntyuu", "konchu", "kani"]
 
+# 翻訳版(generate_zukan_page_i18n.py)が実際に生成しているカテゴリー
+TRANSLATED_ZUKAN_CATEGORIES = {"suisei-konntyuu"}
+
 # 写真フォルダ名がMarkdownのidと違う場合の対応表。(カテゴリ, Markdownのid): 実際の写真フォルダ名
 PHOTO_DIR_ALIASES = {}
 
@@ -266,6 +269,17 @@ def render_other_buttons(categories, current, available_categories):
     return "".join(buttons)
 
 
+def render_lang_bar(category):
+    order = [("en", "EN"), ("es", "ES"), ("zh", "中文")]
+    parts = ['<span class="current">JA</span>']
+    for code, label in order:
+        if category in TRANSLATED_ZUKAN_CATEGORIES:
+            parts.append(f'<a href="../{code}/generated-categories/{category}.html">{label}</a>')
+        else:
+            parts.append(f'<span class="disabled">{label}</span>')
+    return "".join(parts)
+
+
 def render_category(category, categories, available_categories):
     creatures = load_creatures(category)
     if not creatures:
@@ -286,6 +300,7 @@ def render_category(category, categories, available_categories):
         nav_links=render_nav(categories, category, available_categories),
         groups_html=render_groups(category, creatures),
         other_buttons=render_other_buttons(categories, category, available_categories),
+        lang_links=render_lang_bar(category),
     )
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -302,6 +317,7 @@ def main():
     available_categories = {
         parse_markdown(path)[0].get("id", path.stem)
         for path in CATEGORY_PAGES_DIR.glob("*.md")
+        if not path.name.endswith((".en.md", ".es.md", ".zh.md"))
     } | {category for category in ZUKAN_CATEGORIES if load_creatures(category)}
     for category in ZUKAN_CATEGORIES:
         render_category(category, categories, available_categories)

@@ -22,6 +22,13 @@
   img{ display:block; width:100%; }
   a{ color:inherit; text-decoration:none; }
 
+  .lang-bar{ background:#050907; border-bottom:1px solid rgba(234,242,233,.12); }
+  .lang-bar-inner{ max-width:1200px; margin:auto; padding:.5rem 6vw; display:flex; justify-content:flex-end; gap:1rem; font-family:"Space Mono",monospace; font-size:.7rem; letter-spacing:.06em; }
+  .lang-bar a, .lang-bar span{ text-decoration:none; color:rgba(234,242,233,.5); }
+  .lang-bar a:hover{ color:var(--moonlight); }
+  .lang-bar span.current{ color:var(--amber); }
+  .lang-bar span.disabled{ color:rgba(234,242,233,.25); }
+
   .site-header-sticky{ position:sticky; top:0; z-index:1000; }
   header{
     background:rgba(10,22,19,.94); backdrop-filter:blur(10px);
@@ -149,6 +156,8 @@
 </style>
 </head>
 <body>
+
+<div class="lang-bar"><div class="lang-bar-inner"><span class="current">JA</span><a href="../en/generated-categories/suisei-konntyuu.html">EN</a><a href="../es/generated-categories/suisei-konntyuu.html">ES</a><a href="../zh/generated-categories/suisei-konntyuu.html">中文</a></div></div>
 
 <div class="site-header-sticky">
   <header>

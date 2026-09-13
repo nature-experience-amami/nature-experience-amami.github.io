@@ -29,6 +29,9 @@ from generate_creature_pages import (  # noqa: E402
 TEMPLATE = ROOT / "templates" / "creature.i18n.html"
 I18N_DIR = ROOT / "content" / "i18n"
 LANGS = ["en", "es", "zh"]
+# 多言語版のカテゴリーページ(generate_category_pages_i18n.py / generate_zukan_page_i18n.py)が
+# 実際に生成しているカテゴリー。個別ページのカテゴリーナビでリンク可否を判定するのに使う。
+AVAILABLE_CATEGORY_PAGES = {"hebi", "kaeru", "kuwagata", "suisei-konntyuu"}
 
 
 def escape(value):
@@ -143,11 +146,15 @@ def render_card(candidate, current, all_ja_categories, strings):
     )
 
 
-def render_category_nav(strings, current_category):
+def render_category_nav(strings, current_category, available_categories):
     links = []
     for key, label in strings["categories"].items():
-        cls = ' class="active"' if key == current_category else ""
-        links.append(f'<a href="../../{key}.html"{cls}>{escape(label)}</a>')
+        if key == current_category:
+            links.append(f'<span class="active">{escape(label)}</span>')
+        elif key in available_categories:
+            links.append(f'<a href="../../generated-categories/{key}.html">{escape(label)}</a>')
+        else:
+            links.append(f'<span class="disabled">{escape(label)}</span>')
     return "".join(links)
 
 
@@ -230,7 +237,7 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
         safety_html=safety_html,
         safety_class=safety_class,
         related=related_html,
-        category_nav=render_category_nav(strings, creature["category"]),
+        category_nav=render_category_nav(strings, creature["category"], AVAILABLE_CATEGORY_PAGES),
         lang_links=lang_links,
         photo_script="",
         t_home=escape(s["home"]),

@@ -31,6 +31,27 @@
     "gallery_empty": "Photos are coming soon. In the meantime, you can still read about this creature below.",
     "months_prep": "Observation season information coming soon",
     "safety_common": "Please enjoy Amami's wildlife through photographs. Some species are protected by law or local ordinance, and capturing or removing them is prohibited. In special protection zones within the national park, collecting any wildlife is prohibited entirely. Please check the notes on this page, and confirm local rules before visiting any site.",
-    "safety_warning_template": "This creature is subject to: \u201c{danger}\u201d. Touching or capturing it is prohibited by law or ordinance."
+    "safety_warning_template": "This creature is subject to: \u201c{danger}\u201d. Touching or capturing it is prohibited by law or ordinance.",
+    "tour": "Tour",
+    "highlights_nav": "Signature Wildlife",
+    "pending_label": "Coming soon",
+    "info_prep": "Information coming soon.",
+    "collecting_prohibited": "Collecting prohibited",
+    "enjoy_observing": "Enjoy observing",
+    "observation_info_prep": "Observation info coming soon",
+    "explore_more_title": "See More Creatures",
+    "explore_more_lead": "Pick a category to see more of Amami Oshima's wildlife.",
+    "night_tour_title": "Walk Amami's Night Forest",
+    "night_tour_lead": "Join a guide and search for wildlife together in the night forest.",
+    "night_tour_cta": "See night tour details and pricing \u2192",
+    "creature_category_nav_aria": "Creature categories",
+    "group_frog": "\u2015\u2015 Frogs \u2015\u2015",
+    "group_newt": "\u2015\u2015 Newts \u2015\u2015",
+    "group_gengoro": "\u2015\u2015 Diving Beetles \u2015\u2015",
+    "group_doromushi": "\u2015\u2015 Riffle Beetles \u2015\u2015",
+    "group_amenbo": "\u2015\u2015 Water Striders \u2015\u2015",
+    "group_mizumushi": "\u2015\u2015 Water Bugs \u2015\u2015",
+    "group_other": "\u2015\u2015 Others \u2015\u2015",
+    "zukan_about_title": "About This Field Guide"
   }
 }

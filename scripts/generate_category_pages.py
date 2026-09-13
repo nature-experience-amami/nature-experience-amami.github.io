@@ -181,6 +181,17 @@ def category_buttons(category, available_categories):
     return "".join(buttons)
 
 
+def render_lang_bar(category):
+    order = [("en", "EN"), ("es", "ES"), ("zh", "中文")]
+    parts = ['<span class="current">JA</span>']
+    for code, label in order:
+        if (CATEGORY_CONTENT_DIR / f"{category}.{code}.md").exists():
+            parts.append(f'<a href="../{code}/generated-categories/{category}.html">{label}</a>')
+        else:
+            parts.append(f'<span class="disabled">{label}</span>')
+    return "".join(parts)
+
+
 def header_category_navigation(category, available_categories):
     categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
     links = [
@@ -206,7 +217,10 @@ def main():
         for path in (ROOT / "generated-creatures").glob("*/*.html")
     }
     template = TEMPLATE.read_text(encoding="utf-8")
-    content_paths = sorted(CATEGORY_CONTENT_DIR.glob("*.md"))
+    content_paths = sorted(
+        path for path in CATEGORY_CONTENT_DIR.glob("*.md")
+        if not path.name.endswith(TRANSLATION_SUFFIXES)
+    )
     available_categories = {
         parse_markdown(content_path)[0].get("id", content_path.stem)
         for content_path in content_paths
@@ -230,6 +244,7 @@ def main():
             cards=cards_html(category, creatures, generated_creature_keys),
             category_buttons=category_buttons(category, available_categories),
             header_category_navigation=header_category_navigation(category, available_categories),
+            lang_links=render_lang_bar(category),
         )
         OUTPUT_DIR.mkdir(exist_ok=True)
         output_path = OUTPUT_DIR / f"{category}.html"

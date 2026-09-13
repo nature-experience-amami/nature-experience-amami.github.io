@@ -31,6 +31,27 @@
     "gallery_empty": "Las fotos estar\u00e1n disponibles pronto. Mientras tanto, puede leer sobre este animal a continuaci\u00f3n.",
     "months_prep": "Informaci\u00f3n sobre la temporada de observaci\u00f3n pr\u00f3ximamente",
     "safety_common": "Disfrute de la fauna de Amami solo a trav\u00e9s de fotograf\u00edas. Algunas especies est\u00e1n protegidas por ley o por ordenanza local, y su captura o extracci\u00f3n est\u00e1 prohibida. En las zonas de protecci\u00f3n especial dentro del parque nacional, la recolecci\u00f3n de cualquier fauna est\u00e1 totalmente prohibida. Consulte las notas de esta p\u00e1gina y confirme las normas locales antes de visitar cualquier lugar.",
-    "safety_warning_template": "Este animal est\u00e1 sujeto a: \u201c{danger}\u201d. Tocarlo o capturarlo est\u00e1 prohibido por ley u ordenanza."
+    "safety_warning_template": "Este animal est\u00e1 sujeto a: \u201c{danger}\u201d. Tocarlo o capturarlo est\u00e1 prohibido por ley u ordenanza.",
+    "tour": "Tour",
+    "highlights_nav": "Fauna Emblem\u00e1tica",
+    "pending_label": "Pr\u00f3ximamente",
+    "info_prep": "Informaci\u00f3n pr\u00f3ximamente.",
+    "collecting_prohibited": "Recolecci\u00f3n prohibida",
+    "enjoy_observing": "Disfrute observando",
+    "observation_info_prep": "Informaci\u00f3n de observaci\u00f3n pr\u00f3ximamente",
+    "explore_more_title": "Descubra M\u00e1s Fauna",
+    "explore_more_lead": "Elija una categor\u00eda para ver m\u00e1s fauna de Amami Oshima.",
+    "night_tour_title": "Camine por el Bosque Nocturno de Amami",
+    "night_tour_lead": "\u00danase a un gu\u00eda y busquen juntos la fauna en el bosque de noche.",
+    "night_tour_cta": "Vea detalles y precios del tour nocturno \u2192",
+    "creature_category_nav_aria": "Categor\u00edas de fauna",
+    "group_frog": "\u2015\u2015 Ranas \u2015\u2015",
+    "group_newt": "\u2015\u2015 Tritones \u2015\u2015",
+    "group_gengoro": "\u2015\u2015 Escarabajos Buceadores \u2015\u2015",
+    "group_doromushi": "\u2015\u2015 Escarabajos de Rab\u00f3n \u2015\u2015",
+    "group_amenbo": "\u2015\u2015 Zapateros de Agua \u2015\u2015",
+    "group_mizumushi": "\u2015\u2015 Chinches de Agua \u2015\u2015",
+    "group_other": "\u2015\u2015 Otros \u2015\u2015",
+    "zukan_about_title": "Sobre Esta Gu\u00eda de Campo"
   }
 }
