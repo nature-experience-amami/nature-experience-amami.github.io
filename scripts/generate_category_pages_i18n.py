@@ -2,7 +2,7 @@
 content/category-pages/カテゴリID.<lang>.md をもとに、ヘビ・カエル・クワガタのような
 フルページ形式のカテゴリーページの翻訳版を生成する。
 
-出力先: <lang>/generated-categories/カテゴリID.html
+出力先: <lang>/categories/カテゴリID.html
 実行方法: python scripts/generate_category_pages_i18n.py
 """
 import html
@@ -21,7 +21,7 @@ from generate_creature_pages_i18n import (  # noqa: E402
 
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
 TEMPLATE = ROOT / "templates" / "category.i18n.html"
-OUTPUT_DIR_NAME = "generated-categories"
+OUTPUT_DIR_NAME = "categories"
 FULL_PAGE_CATEGORIES = ["hebi", "kaeru", "kuwagata"]
 
 GROUP_ORDER = {"frog": 0, "newt": 1}
@@ -168,9 +168,9 @@ def render_lang_bar(lang, category):
         if code == lang:
             parts.append(f'<span class="current">{escape(label)}</span>')
         elif code == "ja":
-            parts.append(f'<a href="../../generated-categories/{category}.html">{escape(label)}</a>')
+            parts.append(f'<a href="../../categories/{category}.html">{escape(label)}</a>')
         else:
-            parts.append(f'<a href="../../{code}/generated-categories/{category}.html">{escape(label)}</a>')
+            parts.append(f'<a href="../../{code}/categories/{category}.html">{escape(label)}</a>')
     return "".join(parts)
 
 

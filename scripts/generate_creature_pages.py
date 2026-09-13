@@ -7,7 +7,7 @@ from string import Template
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "creatures"
 IMAGES_DIR = ROOT / "images" / "creatures"
-OUTPUT_DIR = ROOT / "generated-creatures"
+OUTPUT_DIR = ROOT / "creatures"
 TEMPLATE = ROOT / "templates" / "creature.html"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -278,7 +278,7 @@ def category_navigation(categories):
         category_page = ROOT / "content" / "category-pages" / f"{category_id}.md"
         if category_page.exists():
             links.append(
-                f'<a href="../../generated-categories/{category_id}.html">{escape(name)}一覧</a>'
+                f'<a href="../../categories/{category_id}.html">{escape(name)}一覧</a>'
             )
     return "".join(links)
 

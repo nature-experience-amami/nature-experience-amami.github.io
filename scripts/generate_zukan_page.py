@@ -22,7 +22,7 @@ IMAGES_DIR = ROOT / "images" / "creatures"
 CATEGORIES_FILE = ROOT / "content" / "categories.json"
 CATEGORY_PAGES_DIR = ROOT / "content" / "category-pages"
 TEMPLATE = ROOT / "templates" / "zukan.html"
-OUTPUT_DIR = ROOT / "generated-categories"
+OUTPUT_DIR = ROOT / "categories"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 # 図鑑形式で作るカテゴリー(ヘビ・カエル・クワガタのようなフルページ形式のものは含めない)
@@ -274,7 +274,7 @@ def render_lang_bar(category):
     parts = ['<span class="current">JA</span>']
     for code, label in order:
         if category in TRANSLATED_ZUKAN_CATEGORIES:
-            parts.append(f'<a href="../{code}/generated-categories/{category}.html">{label}</a>')
+            parts.append(f'<a href="../{code}/categories/{category}.html">{label}</a>')
         else:
             parts.append(f'<span class="disabled">{label}</span>')
     return "".join(parts)

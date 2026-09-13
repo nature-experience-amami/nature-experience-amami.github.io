@@ -139,7 +139,7 @@ def scan():
                     "description": description,
                     "photos": photos,
                     "page_path": (
-                        f"generated-creatures/{category_dir.name}/{markdown_id}.html"
+                        f"creatures/{category_dir.name}/{markdown_id}.html"
                         if md_path.exists()
                         else None
                     ),

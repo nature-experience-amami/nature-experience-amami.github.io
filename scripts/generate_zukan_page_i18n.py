@@ -4,7 +4,7 @@
 無ければ日本語版をそのまま使う。カテゴリー紹介文(hero_lead等)は
 CATEGORY_CONTENT_I18N にこのスクリプト内で直接持たせている(日本語版と同じ方式)。
 
-出力先: <lang>/generated-categories/カテゴリID.html
+出力先: <lang>/categories/カテゴリID.html
 実行方法: python scripts/generate_zukan_page_i18n.py
 """
 import html
@@ -21,7 +21,7 @@ from generate_zukan_page import (  # noqa: E402
 from generate_creature_pages_i18n import load_lang, LANGS, AVAILABLE_CATEGORY_PAGES  # noqa: E402
 
 TEMPLATE = ROOT / "templates" / "zukan.i18n.html"
-OUTPUT_DIR_NAME = "generated-categories"
+OUTPUT_DIR_NAME = "categories"
 
 CATEGORY_CONTENT_I18N = {
     "suisei-konntyuu": {
@@ -224,9 +224,9 @@ def render_lang_bar(lang, category):
         if code == lang:
             parts.append(f'<span class="current">{escape(label)}</span>')
         elif code == "ja":
-            parts.append(f'<a href="../../generated-categories/{category}.html">{escape(label)}</a>')
+            parts.append(f'<a href="../../categories/{category}.html">{escape(label)}</a>')
         else:
-            parts.append(f'<a href="../../{code}/generated-categories/{category}.html">{escape(label)}</a>')
+            parts.append(f'<a href="../../{code}/categories/{category}.html">{escape(label)}</a>')
     return "".join(parts)
 
 

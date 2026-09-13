@@ -52,7 +52,7 @@ jobs:
       - name: Regenerate site pages
         run: |
           python scripts/generate_creatures_json.py
-          rm -rf generated-creatures
+          rm -rf creatures
           python scripts/generate_creature_pages.py
           python scripts/generate_category_pages.py
           python scripts/generate_zukan_page.py
@@ -63,7 +63,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add images/creatures data/creatures.json generated-creatures generated-categories highlights.html
+          git add images/creatures data/creatures.json creatures categories highlights.html
 
           if git diff --cached --quiet; then
             echo "No files changed; nothing to commit."

@@ -66,7 +66,7 @@
       "images/creatures/hebi/akamata/akamata_000044_20260425_22.jpg",
       "images/creatures/hebi/akamata/akamata_000045_20260903_09.jpg"
     ],
-    "page_path": "generated-creatures/hebi/akamata.html"
+    "page_path": "creatures/hebi/akamata.html"
   },
   {
     "id": "takachiho-hebi",
@@ -83,7 +83,7 @@
       "images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000003_20260401_22.jpg",
       "images/creatures/hebi/amami-takachiho-hebi/amami-takachiho-hebi_000004_20260401_22.jpg"
     ],
-    "page_path": "generated-creatures/hebi/takachiho-hebi.html"
+    "page_path": "creatures/hebi/takachiho-hebi.html"
   },
   {
     "id": "garasu-hibaa",
@@ -118,7 +118,7 @@
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260411_21.jpg",
       "images/creatures/hebi/garasu-hibaa/garasu-hibaa_000016_20260608_00.jpg"
     ],
-    "page_path": "generated-creatures/hebi/garasu-hibaa.html"
+    "page_path": "creatures/hebi/garasu-hibaa.html"
   },
   {
     "id": "habu",
@@ -224,9 +224,10 @@
       "images/creatures/hebi/habu/habu_000073_20260903_11.jpg",
       "images/creatures/hebi/habu/habu_000074_20260618_00.jpg",
       "images/creatures/hebi/habu/habu_000075_20260630_00.jpg",
-      "images/creatures/hebi/habu/habu_000076_20250713_00.jpg"
+      "images/creatures/hebi/habu/habu_000076_20250713_00.jpg",
+      "images/creatures/hebi/habu/IMG_9736.JPG"
     ],
-    "page_path": "generated-creatures/hebi/habu.html"
+    "page_path": "creatures/hebi/habu.html"
   },
   {
     "id": "hime-habu",
@@ -272,7 +273,7 @@
       "images/creatures/hebi/hime-habu/hime-habu_000023_20260404_22.jpg",
       "images/creatures/hebi/hime-habu/hime-habu_000023_20260629_22.jpg"
     ],
-    "page_path": "generated-creatures/hebi/hime-habu.html"
+    "page_path": "creatures/hebi/hime-habu.html"
   },
   {
     "id": "hyan",
@@ -308,7 +309,7 @@
       "images/creatures/hebi/hyan/hyan_000017_20250527_23.jpg",
       "images/creatures/hebi/hyan/hyan_000018_20260626_00.jpg"
     ],
-    "page_path": "generated-creatures/hebi/hyan.html"
+    "page_path": "creatures/hebi/hyan.html"
   },
   {
     "id": "mekura-hebi",
@@ -364,7 +365,7 @@
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000010_20260413_23.jpg",
       "images/creatures/hebi/ryuukyuu-aohebi/ryuukyuu-aohebi_000011_20251019_22.jpg"
     ],
-    "page_path": "generated-creatures/hebi/ryukyu-ao-hebi.html"
+    "page_path": "creatures/hebi/ryukyu-ao-hebi.html"
   },
   {
     "id": "amami-kuro-usagi",
@@ -390,7 +391,7 @@
       "images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
       "images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg"
     ],
-    "page_path": "generated-creatures/honyuurui/amami-kuro-usagi.html"
+    "page_path": "creatures/honyuurui/amami-kuro-usagi.html"
   },
   {
     "id": "kenaga-nezumi",
@@ -414,7 +415,7 @@
       "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000007_20260421_21.jpg",
       "images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000008_20251202_21.jpg"
     ],
-    "page_path": "generated-creatures/honyuurui/kenaga-nezumi.html"
+    "page_path": "creatures/honyuurui/kenaga-nezumi.html"
   },
   {
     "id": "watase-jinezumi",
@@ -431,7 +432,7 @@
       "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000003_20241218_18.jpg",
       "images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000004_20241218_19.jpg"
     ],
-    "page_path": "generated-creatures/honyuurui/watase-jinezumi.html"
+    "page_path": "creatures/honyuurui/watase-jinezumi.html"
   },
   {
     "id": "amami-aka-gaeru",
@@ -455,7 +456,7 @@
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000006_20250312_22.jpg",
       "images/creatures/kaeru/amami-aka-gaeru/amami-aka-gaeru_000007_20260905_11.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/amami-aka-gaeru.html"
+    "page_path": "creatures/kaeru/amami-aka-gaeru.html"
   },
   {
     "id": "amami-ao-gaeru",
@@ -502,7 +503,7 @@
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000020_20250427_20.jpg",
       "images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000021_20250506_20.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/amami-ao-gaeru.html"
+    "page_path": "creatures/kaeru/amami-ao-gaeru.html"
   },
   {
     "id": "hanasaki-gaeru",
@@ -540,7 +541,7 @@
       "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000006_20250506_20.jpg",
       "images/creatures/kaeru/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000007_20250926_00.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/hanasaki-gaeru.html"
+    "page_path": "creatures/kaeru/hanasaki-gaeru.html"
   },
   {
     "id": "iboimori",
@@ -582,7 +583,7 @@
       "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000024_20260907_19.jpg",
       "images/creatures/kaeru/amami-ibo-imori/amami-ibo-imori_000025_20260907_19.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/iboimori.html"
+    "page_path": "creatures/kaeru/iboimori.html"
   },
   {
     "id": "ishikawa-gaeru",
@@ -628,9 +629,10 @@
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20250716_22.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260404_00.jpg",
       "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000012_20260810_21.jpg",
-      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000013_20260423_21.jpg"
+      "images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000013_20260423_21.jpg",
+      "images/creatures/kaeru/amami-ishikawa-gaeru/IMG_9643.JPG"
     ],
-    "page_path": "generated-creatures/kaeru/ishikawa-gaeru.html"
+    "page_path": "creatures/kaeru/ishikawa-gaeru.html"
   },
   {
     "id": "shiriken-imori",
@@ -649,13 +651,13 @@
       8,
       9
     ],
-    "description": "イモリ科イモリ属 *Cynops ensicauda ensicauda*\n\n全長はオス14cm・メス18cmほど。奄美大島・請島・加計呂麻島・与路島に生息し、池や水田、渓流沿いの緩やかな流れなどで繁殖する。9月を過ぎるとほとんどの個体が水場を離れ、繁殖期の12月頃には水辺で数多く観察できる。黒色の体に黄色や橙色の斑点が入り、個体差が大きい。沖縄にはオキナワシリケンイモリが生息する。",
+    "description": "イモリ科イモリ属 *Cynops ensicauda ensicauda*\n\n全長はオス14cm・メス18cmほど。奄美大島・請島・加計呂麻島・与路島等に生息し、池や水田、渓流沿いの緩やかな流れなどで繁殖する。9月を過ぎるとほとんどの個体が水場を離れ、繁殖期の12月頃には水辺で数多く観察できる。黒色の体に黄色や橙色の斑点が入り、個体差が大きい。沖縄にはオキナワシリケンイモリが生息する。",
     "photos": [
       "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
       "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000002_20250128_22.jpg",
       "images/creatures/kaeru/amami-shiriken-imori/amami-shiriken-imori_000003_20260329_22.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/shiriken-imori.html"
+    "page_path": "creatures/kaeru/shiriken-imori.html"
   },
   {
     "id": "haroweru-amagaeru",
@@ -684,7 +686,7 @@
       "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000004_20250516_22.jpg",
       "images/creatures/kaeru/haroweru-amagaeru/haroweru-amagaeru_000005_20250516_22.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/haroweru-amagaeru.html"
+    "page_path": "creatures/kaeru/haroweru-amagaeru.html"
   },
   {
     "id": "hime-amagaeru",
@@ -704,7 +706,7 @@
       "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg",
       "images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000003_20250516_22.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/hime-amagaeru.html"
+    "page_path": "creatures/kaeru/hime-amagaeru.html"
   },
   {
     "id": "numa-gaeru",
@@ -748,7 +750,7 @@
       "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250812_15.jpg",
       "images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20251009_23.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/otton-gaeru.html"
+    "page_path": "creatures/kaeru/otton-gaeru.html"
   },
   {
     "id": "ryukyu-kajika-gaeru",
@@ -774,7 +776,7 @@
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20260608_00.jpg",
       "images/creatures/kaeru/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg"
     ],
-    "page_path": "generated-creatures/kaeru/ryukyu-kajika-gaeru.html"
+    "page_path": "creatures/kaeru/ryukyu-kajika-gaeru.html"
   },
   {
     "id": "rurimadara-shiomaneki",
@@ -857,21 +859,6 @@
       "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg",
       "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg",
       "images/creatures/konchu/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "amenbo",
-    "name": "amenbo",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      4
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/amenbo/amenbo_000001_20260420_13.jpg",
-      "images/creatures/konchu/amenbo/amenbo_000002_20260420_13.jpg"
     ],
     "page_path": null
   },
@@ -1075,6 +1062,19 @@
     "page_path": null
   },
   {
+    "id": "oomidor-isaru-hamshi",
+    "name": "oomidor-isaru-hamshi",
+    "category": "konchu",
+    "category_name": "昆虫その他",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/konchu/oomidor-isaru-hamshi/IMG_9785.JPG",
+      "images/creatures/konchu/oomidor-isaru-hamshi/IMG_9789.JPG"
+    ],
+    "page_path": null
+  },
+  {
     "id": "ootomoe",
     "name": "ootomoe",
     "category": "konchu",
@@ -1236,7 +1236,7 @@
       "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000004_20250812_15.jpg",
       "images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000005_20260607_20.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/amami-hirata-kuwagata.html"
+    "page_path": "creatures/kuwagata/amami-hirata-kuwagata.html"
   },
   {
     "id": "ko-kuwagata",
@@ -1257,7 +1257,7 @@
       "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260720_22.jpg",
       "images/creatures/kuwagata/amami-ko-kuwagata/amami-ko-kuwagata_000001_20260801_01.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/ko-kuwagata.html"
+    "page_path": "creatures/kuwagata/ko-kuwagata.html"
   },
   {
     "id": "marubane-kuwagata",
@@ -1284,7 +1284,7 @@
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000006_20250920_01.jpg",
       "images/creatures/kuwagata/amami-marubane-kuwagata/amami-marubane-kuwagata_000007_20250919_22.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/marubane-kuwagata.html"
+    "page_path": "creatures/kuwagata/marubane-kuwagata.html"
   },
   {
     "id": "miyama-kuwagata",
@@ -1308,7 +1308,7 @@
       "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000004_20250827_02.jpg",
       "images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000005_20250902_01.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/miyama-kuwagata.html"
+    "page_path": "creatures/kuwagata/miyama-kuwagata.html"
   },
   {
     "id": "nebuto-kuwagata",
@@ -1332,7 +1332,7 @@
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg",
       "images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000005_20260910_16.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/nebuto-kuwagata.html"
+    "page_path": "creatures/kuwagata/nebuto-kuwagata.html"
   },
   {
     "id": "nokogiri-kuwagata",
@@ -1367,7 +1367,7 @@
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000015_20260901_23.jpg",
       "images/creatures/kuwagata/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000016_20260903_11.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/nokogiri-kuwagata.html"
+    "page_path": "creatures/kuwagata/nokogiri-kuwagata.html"
   },
   {
     "id": "shika-kuwagata",
@@ -1400,7 +1400,7 @@
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260713_22.jpg",
       "images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000012_20250728_21.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/shika-kuwagata.html"
+    "page_path": "creatures/kuwagata/shika-kuwagata.html"
   },
   {
     "id": "ruisu-tsuno-hyotan-kuwagata",
@@ -1417,7 +1417,7 @@
       "images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250907_03.jpg",
       "images/creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20260823_22.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata.html"
+    "page_path": "creatures/kuwagata/ruisu-tsuno-hyotan-kuwagata.html"
   },
   {
     "id": "sujibuto-hirata-kuwagata",
@@ -1444,7 +1444,7 @@
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20250928_02.jpg",
       "images/creatures/kuwagata/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000013_20251002_00.jpg"
     ],
-    "page_path": "generated-creatures/kuwagata/sujibuto-hirata-kuwagata.html"
+    "page_path": "creatures/kuwagata/sujibuto-hirata-kuwagata.html"
   },
   {
     "id": "amami-sasorimodoki",
@@ -1474,13 +1474,13 @@
       5,
       7
     ],
-    "description": "ヒメドロムシ科アシナガミゾドロムシ属アカハラアシナガミゾドロムシ *Stenelmis hisamatsui*\n\n奄美群島・沖縄諸島とグアムに分布する小型の水生甲虫。ヒメドロムシ科は主に清流に生息し、幼虫・成虫ともに水中で暮らす体長5mm前後までの甲虫のグループで、水のきれいな川の指標としても注目される。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科アシナガミゾドロムシ属アカハラアシナガミゾドロムシ *Stenelmis hisamatsui* M. Satô, 1960\n\n奄美群島・沖縄諸島とグアムに分布する小型の水生甲虫。ヒメドロムシ科は主に清流に生息し、幼虫・成虫ともに水中で暮らす体長5mm前後までの甲虫のグループで、水のきれいな川の指標としても注目される。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000002_20250501_14.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000003_20250706_14.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/akahara-ashinaga-mizodoromushi.html"
+    "page_path": "creatures/suisei-konntyuu/akahara-ashinaga-mizodoromushi.html"
   },
   {
     "id": "amami-hababiro-doromusshi",
@@ -1491,14 +1491,14 @@
       7,
       8
     ],
-    "description": "ヒメドロムシ科ハバビロドロムシ属アマミハバビロドロムシ *Dryopomorphus amami*\n\n奄美大島だけに分布する固有種で、2005年に記載された。同じハバビロドロムシ属には、本州・四国・九州のハバビロドロムシとヒメハバビロドロムシ、大隅諸島のヤクハバビロドロムシがいる。ヒメドロムシ科は主に清流に生息する小型の水生甲虫のグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科ハバビロドロムシ属アマミハバビロドロムシ *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\n奄美大島だけに分布する固有種で、2005年に記載された。同じハバビロドロムシ属には、本州・四国・九州のハバビロドロムシとヒメハバビロドロムシ、大隅諸島のヤクハバビロドロムシがいる。ヒメドロムシ科は主に清流に生息する小型の水生甲虫のグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000002_20260801_18.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000003_20260801_18.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000004_20260801_18.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/amami-hababiro-doromusshi.html"
+    "page_path": "creatures/suisei-konntyuu/amami-hababiro-doromusshi.html"
   },
   {
     "id": "amami-kochibi-mizumusi",
@@ -1522,11 +1522,11 @@
     "months": [
       7
     ],
-    "description": "ヒメドロムシ科ミゾドロムシ属アマミミゾドロムシ *Ordobrevia amamiensis*\n\n奄美群島・沖縄諸島・八重山諸島とグアムに分布する小型の水生甲虫。沖縄島の個体群は別亜種オキナワミゾドロムシとして区別されている。ヒメドロムシ科は主に清流に生息するグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科ミゾドロムシ属アマミミゾドロムシ *Ordobrevia amamiensis* (Nomura, 1957)\n\n奄美群島・沖縄諸島・八重山諸島とグアムに分布する小型の水生甲虫。沖縄島の個体群は別亜種オキナワミゾドロムシとして区別されている。ヒメドロムシ科は主に清流に生息するグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/suisei-konntyuu/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/amami-mizo-doromushi.html"
+    "page_path": "creatures/suisei-konntyuu/amami-mizo-doromushi.html"
   },
   {
     "id": "amami-yokomizo-doromushi",
@@ -1537,7 +1537,7 @@
       4,
       5
     ],
-    "description": "ヒメドロムシ科ヨコミゾドロムシ属アマミヨコミゾドロムシ *Leptelmis torikaii*\n\n奄美大島だけに分布する固有種で、2017年に記載されたばかりの新しい種。日本本土や台湾にいる同属他種とは形態が異なる一方、交尾器の形状などが中国南部に分布する種と酷似しており近縁関係にあることがわかっている。もともとユーラシア大陸に広く分布していた祖先種のうち、奄美大島の孤立後に他地域の近縁個体群が絶滅し、本種だけが生き残ったと考えられる「遺存固有種」の一例とされる。ヒメドロムシ科は主に清流に生息する小型の水生甲虫のグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科ヨコミゾドロムシ属アマミヨコミゾドロムシ *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017\n\n奄美大島だけに分布する固有種で、2017年に記載されたばかりの新しい種。日本本土や台湾にいる同属他種とは形態が異なる一方、交尾器の形状などが中国南部に分布する種と酷似しており近縁関係にあることがわかっている。もともとユーラシア大陸に広く分布していた祖先種のうち、奄美大島の孤立後に他地域の近縁個体群が絶滅し、本種だけが生き残ったと考えられる「遺存固有種」の一例とされる。ヒメドロムシ科は主に清流に生息する小型の水生甲虫のグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000001_20260425_10.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000002_20260425_10.jpg",
@@ -1551,7 +1551,7 @@
       "images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000010_20260425_11.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000011_20250501_14.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/amami-yokomizo-doromushi.html"
+    "page_path": "creatures/suisei-konntyuu/amami-yokomizo-doromushi.html"
   },
   {
     "id": "chairo-kesi-katabiro-amennbo",
@@ -1570,7 +1570,7 @@
       "images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000004_20241204_10.jpg",
       "images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/chairo-kesi-katabiro-amennbo.html"
+    "page_path": "creatures/suisei-konntyuu/chairo-kesi-katabiro-amennbo.html"
   },
   {
     "id": "iriomote-kesi-katabiro-amennbo",
@@ -1584,7 +1584,7 @@
     "photos": [
       "images/creatures/suisei-konntyuu/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/iriomote-kesi-katabiro-amennbo.html"
+    "page_path": "creatures/suisei-konntyuu/iriomote-kesi-katabiro-amennbo.html"
   },
   {
     "id": "kesi-katabiro-amennbo",
@@ -1598,7 +1598,7 @@
     "photos": [
       "images/creatures/suisei-konntyuu/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/kesi-katabiro-amennbo.html"
+    "page_path": "creatures/suisei-konntyuu/kesi-katabiro-amennbo.html"
   },
   {
     "id": "kogata-no-gengoro",
@@ -1613,13 +1613,28 @@
       8,
       9
     ],
-    "description": "ゲンゴロウ科ゲンゴロウ属コガタノゲンゴロウ *Cybister tripunctatus orientalis* Gschwendtner, 1931\n\n体長24〜29mm。本州、四国、九州、南西諸島、小笠原諸島に分布し、国外では中国、朝鮮半島、台湾にも生息する。長卵形でやや扁平、背面は緑色から褐色を帯びた黒色で強い光沢があり、上翅の縁に黄色いふちどりが入るのがトビイロゲンゴロウとの見分けのポイント。水草の豊富な池沼や湿地、水田やその周辺の水たまり、休耕田、流れの緩やかな水路に生息する。1960年代以降、農薬の使用や圃場整備によって本州以南で激減し環境省レッドリストの絶滅危惧II類に指定されているが、南西諸島では比較的普通に見られる。トビイロゲンゴロウとは体形や色合いがよく似ており、写真だけでの判別は難しい。",
+    "description": "ゲンゴロウ科ゲンゴロウ属コガタノゲンゴロウ *Cybister tripunctatus lateralis*\n(Fabricius, 1798)（日本産には*orientalis* Gschwendtner, 1931の名も長く使われてきた）\n\n体長24〜29mm。本州、四国、九州、南西諸島、小笠原諸島に分布し、国外では中国、朝鮮半島、台湾にも生息する。長卵形でやや扁平、背面は緑色から褐色を帯びた黒色で強い光沢があり、上翅の縁に黄色いふちどりが入るのがトビイロゲンゴロウとの見分けのポイント。水草の豊富な池沼や湿地、水田やその周辺の水たまり、休耕田、流れの緩やかな水路に生息する。1960年代以降、農薬の使用や圃場整備によって本州以南で激減し環境省レッドリストの絶滅危惧II類に指定されているが、南西諸島では比較的普通に見られる。",
     "photos": [
       "images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
       "images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000002_20250403_23.jpg",
       "images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000003_20250406_23.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/kogata-no-gengoro.html"
+    "page_path": "creatures/suisei-konntyuu/kogata-no-gengoro.html"
+  },
+  {
+    "id": "koseaka-amennbo",
+    "name": "koseaka-amennbo",
+    "category": "suisei-konntyuu",
+    "category_name": "水生昆虫",
+    "months": [
+      4
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/suisei-konntyuu/amenbo/koseaka-amennbo/amenbo_000001_20260420_13.jpg",
+      "images/creatures/suisei-konntyuu/amenbo/koseaka-amennbo/amenbo_000002_20260420_13.jpg"
+    ],
+    "page_path": null
   },
   {
     "id": "naga-tsuya-doromushi",
@@ -1631,14 +1646,14 @@
       5,
       8
     ],
-    "description": "ヒメドロムシ科ツヤドロムシ属ナガツヤドロムシ *Zaitzevia elongata*\n\n奄美群島と沖縄諸島に分布する小型の水生甲虫。ツヤドロムシ属は日本に8種が知られ、種によって本州から八重山諸島まで分布域が異なる。ヒメドロムシ科は主に清流に生息するグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科ツヤドロムシ属ナガツヤドロムシ *Zaitzevia elongata* Nomura, 1962\n\n奄美群島と沖縄諸島に分布する小型の水生甲虫。ツヤドロムシ属は日本に8種が知られ、種によって本州から八重山諸島まで分布域が異なる。ヒメドロムシ科は主に清流に生息するグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000002_20250501_14.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000003_20250501_14.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000004_20250810_15.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/naga-tsuya-doromushi.html"
+    "page_path": "creatures/suisei-konntyuu/naga-tsuya-doromushi.html"
   },
   {
     "id": "nomura-himedoromushi",
@@ -1649,7 +1664,7 @@
       3,
       4
     ],
-    "description": "ヒメドロムシ科ノムラヒメドロムシ属ノムラヒメドロムシ *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\n奄美群島・沖縄諸島に分布する小型の水生甲虫で、ノムラヒメドロムシ属では日本から唯一知られる種。日本のヒメドロムシ科研究の先駆者である野村鎮博士にちなんで名付けられた。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科アシナガミゾドロムシ属ノムラヒメドロムシ *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\n奄美群島・沖縄諸島に分布する小型の水生甲虫。もともとはノムラヒメドロムシ属(Nomuraelmis)の唯一種とされていたが、2021年の分子系統解析(Kobayashi et al., 2021)によりアシナガミゾドロムシ属(Stenelmis)に統合された。属名(Nomuraelmis)および和名は、佐藤正孝博士が1964年に命名したもので、同時代に日本のヒメドロムシ科研究を切り拓いた野村鎮博士にちなむと考えられている。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000002_20250322_00.jpg",
@@ -1660,7 +1675,7 @@
       "images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000007_20250416_17.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000008_20250416_18.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/nomura-himedoromushi.html"
+    "page_path": "creatures/suisei-konntyuu/nomura-himedoromushi.html"
   },
   {
     "id": "okinawa-suji-gengoro",
@@ -1675,7 +1690,7 @@
       8,
       9
     ],
-    "description": "ゲンゴロウ科シマゲンゴロウ属オキナワスジゲンゴロウ *Hydaticus vittatus*\n\n体長11〜14mm。屋久島以南の南西諸島に分布し、国外では台湾、中国、東南アジアにも生息する南方系のゲンゴロウ。水生植物の豊富な池沼や水田などの止水域に生息する。生息環境の減少に加え、ゲンゴロウ類は近年飼育目的とみられる販売が多く確認されていたことから、2023年1月に他のゲンゴロウ類とあわせて特定第二種国内希少野生動植物種に指定された。この区分は販売・頒布目的の捕獲・譲渡のみを規制するもので、観察目的の採集そのものは規制対象外。同属のスジゲンゴロウ(本州以西に分布)によく似るが、分布域が異なるため見分けやすい。",
+    "description": "ゲンゴロウ科シマゲンゴロウ属オキナワスジゲンゴロウ *Hydaticus vittatus* (Fabricius, 1775)\n\n体長11〜14mm。屋久島以南の南西諸島に分布し、国外では台湾、中国、東南アジアにも生息する南方系のゲンゴロウ。水生植物の豊富な池沼や水田などの止水域に生息する。生息環境の減少に加え、ゲンゴロウ類は近年飼育目的とみられる販売が多く確認されていたことから、2023年1月に他のゲンゴロウ類とあわせて特定第二種国内希少野生動植物種に指定された。この区分は販売・頒布目的の捕獲・譲渡のみを規制するもので、観察目的の採集そのものは規制対象外。同属のスジゲンゴロウ(本州以西に分布)によく似るが、分布域が異なるため見分けやすい。",
     "photos": [
       "images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
       "images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000002_20250406_23.jpg",
@@ -1685,7 +1700,7 @@
       "images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000006_20241218_16.jpg",
       "images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000007_20241219_21.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/okinawa-suji-gengoro.html"
+    "page_path": "creatures/suisei-konntyuu/okinawa-suji-gengoro.html"
   },
   {
     "id": "ryuukyuu-munabiro-tuyadoromushi",
@@ -1703,7 +1718,7 @@
       "images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000004_20250408_13.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000005_20260425_11.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/ryuukyuu-munabiro-tuyadoromushi.html"
+    "page_path": "creatures/suisei-konntyuu/ryuukyuu-munabiro-tuyadoromushi.html"
   },
   {
     "id": "satou-kara-himedoromushi",
@@ -1713,13 +1728,13 @@
     "months": [
       5
     ],
-    "description": "ヒメドロムシ科カラヒメドロムシ属サトウカラヒメドロムシ *Sinonychus satoi*\n\n奄美群島・沖縄諸島(沖縄島では記録なし)に分布する小型の水生甲虫で、2007年に記載された。カラヒメドロムシ属は日本に2種のみが知られ、もう1種のキュウシュウカラヒメドロムシは九州に分布する。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科カラヒメドロムシ属サトウカラヒメドロムシ *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\n奄美群島・沖縄諸島(沖縄島では記録なし)に分布する小型の水生甲虫で、2007年に記載された。カラヒメドロムシ属は日本に2種のみが知られ、もう1種のキュウシュウカラヒメドロムシは九州に分布する。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000002_20250501_14.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000003_20250501_14.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/satou-kara-himedoromushi.html"
+    "page_path": "creatures/suisei-konntyuu/satou-kara-himedoromushi.html"
   },
   {
     "id": "tsutsui-nagare-katabiro-amennbo",
@@ -1737,7 +1752,7 @@
       "images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000003_20260328_21.jpg",
       "images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000004_20250403_22.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/tsutsui-nagare-katabiro-amennbo.html"
+    "page_path": "creatures/suisei-konntyuu/tsutsui-nagare-katabiro-amennbo.html"
   },
   {
     "id": "ueno-tsuya-doromushi",
@@ -1750,7 +1765,7 @@
       3,
       4
     ],
-    "description": "ヒメドロムシ科ウエノツヤドロムシ属ウエノツヤドロムシ *Urumaelmis uenoi*\n\n大隅諸島・トカラ列島・奄美群島・沖縄諸島に分布する小型の水生甲虫。ウエノツヤドロムシ属には2020年に九州から新種記載されたカエンツヤドロムシ(Urumaelmis flammea)もおり、日本には本属2種が知られている。トカラ列島口之島の個体群は別亜種トカラツヤドロムシとして区別されている。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科ウエノツヤドロムシ属ウエノツヤドロムシ *Urumaelmis uenoi* (Nomura, 1961)\n\n大隅諸島・トカラ列島・奄美群島・沖縄諸島に分布する小型の水生甲虫。ウエノツヤドロムシ属には2020年に九州から新種記載されたカエンツヤドロムシ(Urumaelmis flammea)もおり、日本には本属2種が知られている。トカラ列島口之島の個体群は別亜種トカラツヤドロムシとして区別されている。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000002_20260204_22.jpg",
@@ -1763,7 +1778,7 @@
       "images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000009_20250416_00.jpg",
       "images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000010_20250424_23.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/ueno-tsuya-doromushi.html"
+    "page_path": "creatures/suisei-konntyuu/ueno-tsuya-doromushi.html"
   },
   {
     "id": "usuiro-shima-gengoro",
@@ -1784,7 +1799,7 @@
       "images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000002_20250403_00.jpg",
       "images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000003_20250403_00.jpg"
     ],
-    "page_path": "generated-creatures/suisei-konntyuu/usuiro-shima-gengoro.html"
+    "page_path": "creatures/suisei-konntyuu/usuiro-shima-gengoro.html"
   },
   {
     "id": "amami-hime-tokage",
@@ -1817,7 +1832,7 @@
       "images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
       "images/creatures/tokage/ba-ba-tokage/ba-ba-tokage_000002_20260416_12.jpg"
     ],
-    "page_path": "generated-creatures/tokage/ba-ba-tokage.html"
+    "page_path": "creatures/tokage/ba-ba-tokage.html"
   },
   {
     "id": "okinawa-kinobori-tokage",
@@ -1861,7 +1876,7 @@
       "images/creatures/tori/akahige/akahige_000006_20250123_12.jpg",
       "images/creatures/tori/akahige/akahige_000007_20241203_13.jpg"
     ],
-    "page_path": "generated-creatures/tori/akahige.html"
+    "page_path": "creatures/tori/akahige.html"
   },
   {
     "id": "amami-yamashigi",
@@ -1877,7 +1892,7 @@
     "photos": [
       "images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
     ],
-    "page_path": "generated-creatures/tori/amami-yamashigi.html"
+    "page_path": "creatures/tori/amami-yamashigi.html"
   },
   {
     "id": "kawasemi",
@@ -1912,7 +1927,7 @@
     "photos": [
       "images/creatures/tori/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg"
     ],
-    "page_path": "generated-creatures/tori/oo-tora-tsugumi.html"
+    "page_path": "creatures/tori/oo-tora-tsugumi.html"
   },
   {
     "id": "oo-toratsugumi",
@@ -1941,10 +1956,11 @@
     ],
     "description": "キツツキ科アカゲラ属 *Dendrocopos leucotos owstoni*\n\n全長約28cm、キツツキの仲間では中型。奄美大島のみに分布する固有亜種で、体の上面はほぼ黒く白い斑が入り、他の亜種に比べて体下面の褐色味が強い。頭頂部はオスが赤く、メスは黒いので雌雄の見分けは簡単。成熟した照葉樹林を中心に生息し、広葉樹の大木の幹に穴を掘って営巣する。食性は朽木に潜むカミキリムシの幼虫など。冬頃から縄張りの主張や繁殖相手へのアピールが始まり、2月から5月頃はくちばしで幹を連続して叩く「ドラミング」や鳴き声が聞こえやすい時期。近年はマツ枯れなどの影響で分布が奄美大島の全域に拡大している。奄美大島に生息するキツツキはアマミコゲラのみなので、大きさで区別できる。1971年に国指定天然記念物、1993年に国内希少野生動植物種に指定され、捕獲・譲渡は禁止。",
     "photos": [
+      "images/creatures/tori/oosuton-ooakagera/IMG_9894.JPG",
       "images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
       "images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg"
     ],
-    "page_path": "generated-creatures/tori/oosuton-ooakagera.html"
+    "page_path": "creatures/tori/oosuton-ooakagera.html"
   },
   {
     "id": "ruri-kakesu",
@@ -1965,7 +1981,7 @@
       "images/creatures/tori/ruri-kakesu/ruri-kakesu_000004_20250726_09.jpg",
       "images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg"
     ],
-    "page_path": "generated-creatures/tori/ruri-kakesu.html"
+    "page_path": "creatures/tori/ruri-kakesu.html"
   },
   {
     "id": "ryukyu-akashobin",
@@ -1978,6 +1994,8 @@
     ],
     "description": "",
     "photos": [
+      "images/creatures/tori/ryukyu-akashobin/IMG_9503.JPG",
+      "images/creatures/tori/ryukyu-akashobin/IMG_9887.JPG",
       "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
       "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000002_20260615_00.jpg",
       "images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000003_20260626_00.jpg",
@@ -2014,6 +2032,18 @@
     "photos": [
       "images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg",
       "images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000002_20241122_21.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "sankoutyou",
+    "name": "sankoutyou",
+    "category": "tori",
+    "category_name": "鳥",
+    "months": [],
+    "description": "",
+    "photos": [
+      "images/creatures/tori/sankoutyou/IMG_9793.JPG"
     ],
     "page_path": null
   },

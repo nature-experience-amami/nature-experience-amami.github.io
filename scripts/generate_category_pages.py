@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
 CREATURE_CONTENT_DIR = ROOT / "content" / "creatures"
 IMAGES_DIR = ROOT / "images" / "creatures"
-OUTPUT_DIR = ROOT / "generated-categories"
+OUTPUT_DIR = ROOT / "categories"
 TEMPLATE = ROOT / "templates" / "category.html"
 CATEGORY_NAMES = ROOT / "content" / "categories.json"
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
@@ -108,7 +108,7 @@ def card_html(category, creature, generated_creature_keys):
 
     key = (category, creature["id"])
     if key in generated_creature_keys:
-        opening = f'<a href="../generated-creatures/{category}/{creature["id"]}.html">'
+        opening = f'<a href="../creatures/{category}/{creature["id"]}.html">'
         closing = "</a>"
         link = "VIEW CREATURE →"
         card_class = ""
@@ -186,7 +186,7 @@ def render_lang_bar(category):
     parts = ['<span class="current">JA</span>']
     for code, label in order:
         if (CATEGORY_CONTENT_DIR / f"{category}.{code}.md").exists():
-            parts.append(f'<a href="../{code}/generated-categories/{category}.html">{label}</a>')
+            parts.append(f'<a href="../{code}/categories/{category}.html">{label}</a>')
         else:
             parts.append(f'<span class="disabled">{label}</span>')
     return "".join(parts)
@@ -214,7 +214,7 @@ def header_category_navigation(category, available_categories):
 def main():
     generated_creature_keys = {
         (path.parent.name, path.stem)
-        for path in (ROOT / "generated-creatures").glob("*/*.html")
+        for path in (ROOT / "creatures").glob("*/*.html")
     }
     template = TEMPLATE.read_text(encoding="utf-8")
     content_paths = sorted(

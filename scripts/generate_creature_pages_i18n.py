@@ -152,7 +152,7 @@ def render_category_nav(strings, current_category, available_categories):
         if key == current_category:
             links.append(f'<span class="active">{escape(label)}</span>')
         elif key in available_categories:
-            links.append(f'<a href="../../generated-categories/{key}.html">{escape(label)}</a>')
+            links.append(f'<a href="../../categories/{key}.html">{escape(label)}</a>')
         else:
             links.append(f'<span class="disabled">{escape(label)}</span>')
     return "".join(links)
@@ -165,7 +165,7 @@ def render_lang_bar(lang, category, creature_id, translated_langs_for_this_creat
         if code == lang:
             parts.append(f'<span class="current">{escape(label)}</span>')
         elif code == "ja":
-            parts.append(f'<a href="../../../generated-creatures/{category}/{creature_id}.html">{escape(label)}</a>')
+            parts.append(f'<a href="../../../creatures/{category}/{creature_id}.html">{escape(label)}</a>')
         elif code in translated_langs_for_this_creature:
             parts.append(f'<a href="../../../{code}/creatures/{category}/{creature_id}.html">{escape(label)}</a>')
         else:

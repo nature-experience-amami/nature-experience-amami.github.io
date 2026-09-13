@@ -3,7 +3,7 @@
 
 カテゴリーページ(generate_category_pages.py)とは違い、複数カテゴリーを
 またいで、厳選した生き物だけを1ページに集める。サイトのトップ階層に
-置く前提（generated-categories/ の中ではない）なので、パスの組み立て方が
+置く前提（categories/ の中ではない）なので、パスの組み立て方が
 generate_category_pages.py とは少し異なる。
 
 掲載する生き物を増やしたいときは、下の HIGHLIGHT_CREATURES に
@@ -90,7 +90,7 @@ def highlight_card_html(creature, generated_creature_keys):
 
     key = (category, creature["id"])
     if key in generated_creature_keys:
-        opening = f'<a href="generated-creatures/{category}/{creature["id"]}.html">'
+        opening = f'<a href="creatures/{category}/{creature["id"]}.html">'
         closing = "</a>"
         link = "VIEW CREATURE →"
         card_class = ""
@@ -125,7 +125,7 @@ def category_buttons_for_highlights(available_categories):
         escaped_name = html.escape(name)
         if category_id in available_categories:
             buttons.append(
-                f'<a class="category-button" href="generated-categories/{category_id}.html">{escaped_name} →</a>'
+                f'<a class="category-button" href="categories/{category_id}.html">{escaped_name} →</a>'
             )
         else:
             buttons.append(
@@ -143,14 +143,14 @@ def header_navigation_for_highlights(available_categories):
         if category_id not in available_categories:
             continue
         escaped_name = html.escape(name)
-        links.append(f'<a href="generated-categories/{category_id}.html">{escaped_name}一覧</a>')
+        links.append(f'<a href="categories/{category_id}.html">{escaped_name}一覧</a>')
     return "".join(links)
 
 
 def main():
     generated_creature_keys = {
         (path.parent.name, path.stem)
-        for path in (ROOT / "generated-creatures").glob("*/*.html")
+        for path in (ROOT / "creatures").glob("*/*.html")
     }
     available_categories = {
         parse_markdown(content_path)[0].get("id", content_path.stem)

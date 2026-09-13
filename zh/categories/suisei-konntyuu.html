@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>水生昆虫 | Nature Experience Amami</title>
+<meta name="description" content="水生昆虫 of Amami Oshima — Nature Experience Amami.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
+    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ background:var(--night); color:var(--moonlight); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.9; }
+  img{ display:block; width:100%; }
+  a{ color:inherit; text-decoration:none; }
+
+  .lang-bar{ background:#050907; border-bottom:1px solid rgba(234,242,233,.12); }
+  .lang-bar-inner{ max-width:1200px; margin:auto; padding:.5rem 6vw; display:flex; justify-content:flex-end; gap:1rem; font-family:"Space Mono",monospace; font-size:.7rem; letter-spacing:.06em; }
+  .lang-bar a, .lang-bar span{ text-decoration:none; color:rgba(234,242,233,.5); }
+  .lang-bar a:hover{ color:var(--moonlight); }
+  .lang-bar span.current{ color:var(--amber); }
+  .lang-bar span.disabled{ color:rgba(234,242,233,.25); }
+
+  .site-header-sticky{ position:sticky; top:0; z-index:1000; }
+  header{
+    background:rgba(10,22,19,.94); backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .header-inner{
+    max-width:1200px; margin:0 auto; padding:18px 28px;
+    display:flex; align-items:center; justify-content:space-between; gap:30px;
+  }
+  .logo{ font-family:"Shippori Mincho", serif; font-size:20px; font-weight:600; letter-spacing:.08em; white-space:nowrap; }
+  .logo span{ display:block; font-family:"Space Mono", monospace; font-size:9px; letter-spacing:.18em; color:var(--amber); margin-top:2px; }
+  nav{ display:flex; align-items:center; gap:28px; }
+  nav a{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; opacity:.82; transition:.25s; }
+  nav a:hover{ color:var(--amber); opacity:1; }
+
+  .creature-nav{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); }
+  .creature-nav-inner{
+    max-width:1200px; margin:0 auto; padding:0 28px;
+    display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
+  }
+  .creature-nav-inner::-webkit-scrollbar{ display:none; }
+  .creature-nav a{
+    flex:0 0 auto; padding:14px 20px; font-size:12px; color:rgba(234,242,233,.65);
+    border-right:1px solid rgba(234,242,233,.08); transition:.25s; white-space:nowrap;
+  }
+  .creature-nav a:first-child{ border-left:1px solid rgba(234,242,233,.08); }
+  .creature-nav a:hover{ color:var(--amber); background:rgba(232,163,61,.05); }
+  .creature-nav span{
+    flex:0 0 auto; padding:14px 20px; font-size:12px;
+    border-right:1px solid rgba(234,242,233,.08); white-space:nowrap;
+  }
+  .creature-nav span.active{ color:var(--amber); background:rgba(232,163,61,.05); }
+  .creature-nav span.is-pending{ color:rgba(234,242,233,.32); cursor:default; }
+
+  .hero{
+    min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
+    background:
+      linear-gradient(to bottom, rgba(10,22,19,.2), rgba(10,22,19,.95)),
+      radial-gradient(circle at 70% 35%, rgba(107,143,113,.18), transparent 35%);
+  }
+  .hero-inner{ width:100%; max-width:1200px; margin:0 auto; padding:80px 28px 55px; }
+  .eyebrow{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.18em; color:var(--amber); margin-bottom:18px; }
+  .hero h1{ font-family:"Shippori Mincho", serif; font-size:clamp(38px,6vw,64px); line-height:1.2; font-weight:600; letter-spacing:.04em; }
+  .hero-lead{ max-width:680px; margin-top:22px; font-size:15px; line-height:2; color:rgba(234,242,233,.82); }
+
+  section{ padding:70px 28px; }
+  .section-inner{ max-width:1200px; margin:0 auto; }
+  .section-label{ font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.18em; color:var(--amber); margin-bottom:12px; }
+  .section-title{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin-bottom:24px; }
+
+  .intro{ background:var(--canopy); }
+  .intro-text{ max-width:720px; font-size:14px; color:rgba(234,242,233,.85); }
+  .intro-text p + p{ margin-top:16px; }
+  .note-box{
+    margin-top:28px; padding:20px 22px; border-left:2px solid var(--moss);
+    background:rgba(10,22,19,.35); font-size:12.5px; color:rgba(234,242,233,.75); line-height:1.8;
+  }
+
+  .creatures{ background:var(--night); }
+  .group{ margin-bottom:56px; }
+  .group:last-child{ margin-bottom:0; }
+  .group-title{
+    font-family:"Space Mono", monospace; font-size:12px; letter-spacing:.14em; color:var(--moss);
+    text-align:center; margin-bottom:26px;
+  }
+
+  .zukan-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:20px; }
+  .zukan-card{ border-top:1px solid rgba(234,242,233,.14); padding-top:16px; }
+  .zukan-image{
+    aspect-ratio:4/3; overflow:hidden; background:var(--canopy);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .zukan-image img{ width:100%; height:100%; object-fit:cover; }
+  .zukan-placeholder{
+    width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    color:rgba(234,242,233,.35); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.06em;
+    background:repeating-linear-gradient(135deg, rgba(234,242,233,.03) 0 10px, transparent 10px 20px);
+  }
+  .zukan-info{ padding-top:14px; }
+  .zukan-name{ font-family:"Shippori Mincho", serif; font-size:19px; font-weight:600; margin-bottom:3px; }
+  .zukan-latin{ font-size:11px; font-style:italic; color:rgba(234,242,233,.5); margin-bottom:8px; }
+  .zukan-desc{ font-size:12.5px; color:rgba(234,242,233,.72); line-height:1.8; margin-bottom:10px; }
+  .zukan-tag{
+    display:inline-block; font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.04em;
+    padding:3px 8px; border:1px solid rgba(234,242,233,.2); border-radius:2px; color:rgba(234,242,233,.6);
+  }
+  .zukan-tag.rare{ border-color:rgba(232,163,61,.5); color:var(--amber); }
+
+  .tour{ text-align:center; background:var(--canopy); }
+  .tour h2{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin:16px 0 18px; }
+  .tour p{ max-width:560px; margin:0 auto 28px; font-size:13.5px; color:rgba(234,242,233,.75); line-height:1.8; }
+  .btn{ display:inline-block; padding:15px 32px; background:var(--amber); color:var(--bark); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; }
+  .btn:hover{ background:#f4b95a; }
+
+  .other-categories{ background:var(--canopy); border-top:1px solid rgba(234,242,233,.12); }
+  .other-creatures-title{ font-family:"Shippori Mincho", serif; font-size:22px; margin-bottom:22px; }
+  .other-creatures-buttons{ display:flex; flex-wrap:wrap; gap:12px; }
+  .category-button{
+    display:inline-flex; align-items:center; justify-content:center; padding:12px 22px;
+    border:1px solid rgba(234,242,233,.2); font-size:12px; color:rgba(234,242,233,.75); transition:.25s;
+  }
+  .category-button:hover{ border-color:var(--amber); color:var(--amber); background:rgba(232,163,61,.04); }
+  .category-button.is-pending{ color:rgba(234,242,233,.4); border-color:rgba(234,242,233,.12); cursor:default; }
+  .category-button.is-pending:hover{ border-color:rgba(234,242,233,.12); color:rgba(234,242,233,.4); background:none; }
+  .category-button.is-pending small{ margin-left:8px; font-size:10px; }
+
+  footer{ background:#07100E; padding:45px 28px 25px; }
+  .footer-inner{
+    max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; gap:30px;
+    padding-bottom:30px; border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .footer-logo{ font-family:"Shippori Mincho", serif; font-size:18px; }
+  .footer-copy{ margin-top:8px; font-size:11px; color:rgba(234,242,233,.5); }
+  .copyright{ max-width:1200px; margin:20px auto 0; font-family:"Space Mono", monospace; font-size:9px; color:rgba(234,242,233,.35); }
+
+  @media(max-width:760px){
+    .header-inner{ padding:15px 18px; }
+    nav a:not(.contact-link){ display:none; }
+    .hero-inner{ padding:60px 20px 40px; }
+    section{ padding:50px 20px; }
+    .zukan-grid{ grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:14px; }
+    .other-creatures-buttons{ display:grid; grid-template-columns:1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-bar"><div class="lang-bar-inner"><a href="../../categories/suisei-konntyuu.html">JA</a><a href="../../en/categories/suisei-konntyuu.html">EN</a><a href="../../es/categories/suisei-konntyuu.html">ES</a><span class="current">中文</span></div></div>
+
+<div class="site-header-sticky">
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="../../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
+      <nav>
+        <a href="../../index.html">首页</a>
+        <a href="../../tour.html">夜间旅行团</a>
+        <a href="../../contact.html">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="creature-nav">
+    <div class="creature-nav-inner">
+      <a href="hebi.html">蛇类</a><a href="kaeru.html">两栖类</a><a href="kuwagata.html">锅甲</a><span class="is-pending">哺乳类</span><span class="is-pending">鸟类</span><span class="is-pending">蜧虔</span><span class="active">水生昆虫</span><span class="is-pending">昆虫</span><span class="is-pending">贝类</span><span class="is-pending">甲壳类等</span>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">CREATURES / AQUATIC INSECTS</div>
+    <h1>水生昆虫</h1>
+    <p class="hero-lead">静静生活在奄美水边的小生物——水田、池塘、河边。龙虱、长角泥甲、宽肩蝽——仔细寻找就能与它们相遇。</p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="section-inner">
+    <div class="section-label">ABOUT</div>
+    <h2 class="section-title">关于本图鉴页面</h2>
+    <div class="intro-text"><p>与蛇类、蛙类不同，水生昆虫不会在本站为每个物种单独制作详细页面，而是采用图鉴形式集中介绍。</p><p>水生昆虫种类繁多，其中不少还是专业性很强的类群，我们会随着照片和资料的积累逐步补充完善。</p></div>
+    <div class="note-box">水生昆虫较为纤弱，部分种类数量稀少。请在水边轻柔地观察，如需采集，也请将带走的数量控制在最低限度。</div>
+  </div>
+</section>
+
+<section class="creatures">
+  <div class="section-inner">
+    <div class="section-label">FIELD GUIDE</div>
+    <h2 class="section-title">水生昆虫</h2>
+
+    <div class="group"><p class="group-title">―― 龙螱类 ――</p><div class="zukan-grid"><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000002_20250403_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/kogata-no-gengoro/kogata-no-gengoro_000003_20250406_23.jpg&quot;]' alt="小龙虱"></div><div class="zukan-info"><div class="zukan-name">小龙虱</div><div class="zukan-latin">龙虱科真龙虱属 <em>Cybister tripunctatus orientalis</em> Gschwendtner, 1931</div><p class="zukan-desc">体长约24〜29毫米。分布于本州、四国、九州、南西诸岛及小笠原诸岛，国外见于中国、朝鲜
+半岛及台湾。体形呈长卵形、略扁平，背面光泽强烈，呈绿色至带褐色的黑色，鞘翅边缘有一圈
+黄色镶边，是与褐色龙虱区分的要点。栖息于水生植物丰富的池沼、湿地，以及水田及其周边水
+洼、休耕田、水流平缓的水渠。自1960年代以来，由于农药使用及圃场整备，本州以南地区数
+量急剧减少，已被列入环境省红色名录的易危(VU)等级，但在南西诸岛仍相对常见。其体形和
+色调与褐色龙虱非常相似，仅凭照片很难区分。</p><span class="zukan-tag rare">环境省红色名录:易危(VU)</span></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000002_20250406_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000003_20250406_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000004_20250406_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000005_20250406_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000006_20241218_16.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000007_20241219_21.jpg&quot;]' alt="冲绳条纹龙虱"></div><div class="zukan-info"><div class="zukan-name">冲绳条纹龙虱</div><div class="zukan-latin">龙虱科斑龙虱属 <em>Hydaticus vittatus</em> (Fabricius, 1775)</div><p class="zukan-desc">体长约11〜14毫米。分布于屋久岛以南的南西诸岛，国外见于台湾、中国及东南亚的南方型龙
+虱。栖息于水生植物丰富的池沼、水田等静水域。除了栖息环境减少外，近年发现包括本种在内
+的多种龙虱因疑似以饲养为目的而被大量贩卖，因此2023年1月与其他龙虱一同被指定为特定第
+二种国内稀有野生动植物种。该指定仅限制以贩卖、分发为目的的捕获及转让，以观察为目的的
+采集不在限制范围内。与分布于本州以西的同属近缘种十分相似，但由于分布范围不同，比较容
+易区分。</p><span class="zukan-tag rare">禁止以贩卖、分发为目的的捕获(特定第二种国内稀有野生动植物种)</span></div></div><div class="zukan-card"><div class="zukan-image"><div class="zukan-placeholder">照片准备中</div></div><div class="zukan-info"><div class="zukan-name">褐色龙虱</div><div class="zukan-latin">龙虱科真龙虱属 <em>Cybister sugillatus</em> Erichson, 1834</div><p class="zukan-desc">体长18〜25毫米。日本国内分布于南西诸岛(中之岛以南)及大东诸岛，国外分布于中国、台
+湾、东南亚及南亚。外形与黑龙虱十分相似，但体形略呈细长卵形，背面呈有光泽的绿色至黑褐
+色。在分布于南西诸岛的近缘种中，被认为是数量相对稳定的一种。栖息于水生植物丰富的浅水
+池塘及休耕水田。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000002_20250403_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000003_20250403_00.jpg&quot;]' alt="淡色斑龙虱"></div><div class="zukan-info"><div class="zukan-name">淡色斑龙虱</div><div class="zukan-latin">龙虱科斑龙虱属 <em>Hydaticus rhantoides</em> Sharp, 1882</div><p class="zukan-desc">体长约10〜11毫米的小型龙虱。鞘翅整体呈黄褐色，没有明显的条纹。分布于本州(关东地方以
+西)、四国、九州、对马、南西诸岛及大东诸岛，国外见于中国、台湾及东南亚。栖息于水田、池
+沼等开阔的静水域。在南西诸岛的龙虱中，与褐色龙虱、小龙虱一起，被认为是数量相对稳定的
+种类。</p></div></div></div></div>
+<div class="group"><p class="group-title">―― 长角泥甲类 ――</p><div class="zukan-grid"><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000002_20250501_14.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000003_20250706_14.jpg&quot;]' alt="红腹长足沟泥甲"></div><div class="zukan-info"><div class="zukan-name">红腹长足沟泥甲</div><div class="zukan-latin">长角泥甲科长足沟泥甲属 <em>Stenelmis hisamatsui</em> M. Satô, 1960</div><p class="zukan-desc">分布于奄美群岛、冲绳诸岛及关岛的小型水生甲虫。长角泥甲科主要栖息于清澈溪流，幼虫和成
+虫都在水中生活，体长最大约5毫米，也因此作为清澈河流的指标而受到关注。本种自身的详细
+生态目前仍有许多未解之谜。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000002_20260801_18.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000003_20260801_18.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000004_20260801_18.jpg&quot;]' alt="奄美宽体长角泥甲"></div><div class="zukan-info"><div class="zukan-name">奄美宽体长角泥甲</div><div class="zukan-latin">长角泥甲科宽体泥甲属 <em>Dryopomorphus amami</em> Yoshitomi &amp; M. Satô, 2005</div><p class="zukan-desc">仅分布于奄美大岛的特有种，2005年被记载。同属(宽体泥甲属)还包括分布于本州、四国、九
+州的宽体泥甲及其近缘小型种，以及分布于大隅群岛的另一特有种。长角泥甲科主要是栖息于清
+澈溪流的小型水生甲虫，但本种自身的详细生态目前仍有许多未解之谜。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg" alt="奄美沟泥甲"></div><div class="zukan-info"><div class="zukan-name">奄美沟泥甲</div><div class="zukan-latin">长角泥甲科沟泥甲属 <em>Ordobrevia amamiensis</em> (Nomura, 1957)</div><p class="zukan-desc">分布于奄美群岛、冲绳诸岛、八重山诸岛及关岛的小型水生甲虫。冲绳岛的种群被区分为独立亚
+种(冲绳沟泥甲)。长角泥甲科主要栖息于清澈溪流，但本种自身的详细生态目前仍有许多未解之
+谜。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000001_20260425_10.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000001_20260425_10.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000002_20260425_10.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000003_20260425_10.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000004_20260425_10.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000005_20260425_10.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000006_20260425_11.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000007_20260425_11.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000008_20260425_11.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000009_20260425_11.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000010_20260425_11.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000011_20250501_14.jpg&quot;]' alt="奄美侧沟泥甲"></div><div class="zukan-info"><div class="zukan-name">奄美侧沟泥甲</div><div class="zukan-latin">长角泥甲科细跗泥甲属 <em>Leptelmis torikaii</em> Kamite, Yoshitomi &amp; Hayashi, 2017</div><p class="zukan-desc">奄美大岛特有种，2017年才被记载的新种。其形态与分布于日本本土及台湾的同属其他种不
+同，而交尾器的形状等特征与分布于中国南部的一个种非常相似，表明两者关系密切。因此被视
+为&quot;遗存固有种&quot;的一个例子：其祖先种被认为曾广泛分布于欧亚大陆，奄美大岛孤立后，其他地
+区的近缘种群相继灭绝，唯独本种存活至今。长角泥甲科主要是栖息于清澈溪流的小型水生甲
+虫，但本种自身的详细生态目前仍有许多未解之谜。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000002_20250501_14.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000003_20250501_14.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000004_20250810_15.jpg&quot;]' alt="长形泽泥甲"></div><div class="zukan-info"><div class="zukan-name">长形泽泥甲</div><div class="zukan-latin">长角泥甲科泽泥甲属 <em>Zaitzevia elongata</em> Nomura, 1962</div><p class="zukan-desc">分布于奄美群岛及冲绳诸岛的小型水生甲虫。泽泥甲属在日本已知有8种，各种分布范围从本州
+到八重山诸岛不等。长角泥甲科主要栖息于清澈溪流，但本种自身的详细生态目前仍有许多未解
+之谜。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000002_20250322_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000003_20250322_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000004_20250326_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000005_20250326_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000006_20250416_16.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000007_20250416_17.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000008_20250416_18.jpg&quot;]' alt="野村长角泥甲"></div><div class="zukan-info"><div class="zukan-name">野村长角泥甲</div><div class="zukan-latin">长角泥甲科长足沟泥甲属 <em>Stenelmis amami</em> Yoshitomi et Hayashi, 2021</div><p class="zukan-desc">分布于奄美群岛及冲绳诸岛的小型水生甲虫。原本被视为独立属中的唯一种，但2021年的分子
+系统学研究(Kobayashi et al., 2021)将其归入长足沟泥甲属。属名(Nomuraelmis)及日文俗名由佐藤正孝博士于1964年命名，据信是为纪念同时代开拓日
+本长角泥甲科研究的野村镇博士而得名。本种自身的详细生态目前仍有许多未解之谜。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000002_20250405_17.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000003_20250405_17.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000004_20250408_13.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000005_20260425_11.jpg&quot;]' alt="琉球宽胸扁泥甲"></div><div class="zukan-info"><div class="zukan-name">琉球宽胸扁泥甲</div><div class="zukan-latin">扁泥甲科宽胸扁泥甲属 <em>Elmomorphus amamiensis</em> Nomura, 1959</div><p class="zukan-desc">为奄美大岛、冲永良部岛有记录的小型水生甲虫。过去曾被视为分布于本州以西近缘种的琉球列
+岛亚种，但2014年一项通过COI基因分析及形态比较的研究确认两者之间存在种级水平的巨大
+遗传分歧，因而被提升为独立种。目前已普遍认定其为独立物种。扁泥甲科与长角泥甲科为近缘
+类群，同样栖息于清澈溪流。本种自身的详细生态目前仍有许多未解之谜。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000002_20250501_14.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000003_20250501_14.jpg&quot;]' alt="佐藤华爪泥甲"></div><div class="zukan-info"><div class="zukan-name">佐藤华爪泥甲</div><div class="zukan-latin">长角泥甲科华爪泥甲属 <em>Sinonychus satoi</em> Yoshitomi &amp; Nakajima, 2007</div><p class="zukan-desc">分布于奄美群岛、冲绳诸岛(冲绳岛本身无记录)的小型水生甲虫，2007年被记载。华爪泥甲属
+在日本仅知2种，另一种分布于九州。本种自身的详细生态目前仍有许多未解之谜。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000002_20260204_22.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000003_20260318_20.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000004_20250322_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000005_20250326_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000006_20250404_22.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000007_20250405_22.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000008_20250411_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000009_20250416_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000010_20250424_23.jpg&quot;]' alt="上野光泽泥甲"></div><div class="zukan-info"><div class="zukan-name">上野光泽泥甲</div><div class="zukan-latin">长角泥甲科光泽泥甲属 <em>Urumaelmis uenoi</em> (Nomura, 1961)</div><p class="zukan-desc">分布于大隅群岛、吐噶喇列岛、奄美群岛及冲绳诸岛的小型水生甲虫。光泽泥甲属中，2020年
+又从九州新记载了第二个种，使日本已知的本属种类增至2种。吐噶喇列岛口之岛的种群被区分
+为独立亚种。本种自身的详细生态目前仍有许多未解之谜。</p></div></div></div></div>
+<div class="group"><p class="group-title">―― 宽肩螺类 ――</p><div class="zukan-grid"><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000002_20250214_13.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000003_20241203_14.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000004_20241204_10.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg&quot;]' alt="褐小宽肩蝽"></div><div class="zukan-info"><div class="zukan-name">褐小宽肩蝽</div><div class="zukan-latin">宽肩蝽科宽肩蝽属 <em>Microvelia japonica</em> Esaki &amp; Miyamoto, 1955</div><p class="zukan-desc">体长约1.5〜2.1毫米的小型水生昆虫。分布于本州(福岛县以西)、四国、九州，在南西诸岛则
+分布于喜界岛至冲绳岛一带。常见于细流旁阴暗的水洼及岩石背阴处，捕食落在水面上的小型昆
+虫。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg" alt="西表小宽肩蝽"></div><div class="zukan-info"><div class="zukan-name">西表小宽肩蝽</div><div class="zukan-latin">宽肩蝽科宽肩蝽属 <em>Microvelia iriomotensis</em> Miyamoto, 1964</div><p class="zukan-desc">体长约1.7〜1.9毫米的小型水生昆虫。分布于南西诸岛(奄美群岛至八重山诸岛)及台湾。常见
+于山间林道旁渗水形成的小水洼，学术研究曾报道其雄性长时间守护雌性的配偶行为。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg" alt="小宽肩蝽"></div><div class="zukan-info"><div class="zukan-name">小宽肩蝽</div><div class="zukan-latin">宽肩蝽科宽肩蝽属 <em>Microvelia douglasi</em> Scott, 1874</div><p class="zukan-desc">体长约1.5〜2毫米，是宽肩蝽科中体型最小的一类。分布于本州、四国、九州、对马、南西诸
+岛及大东诸岛(南大东岛)，国外也广泛分布于朝鲜半岛、中国、东南亚、台湾乃至大洋洲。喜欢
+栖息在小水田、细流等有水流的水边，捕食落在水面上的小型昆虫。宽肩蝽科中既有不能飞的无
+翅型，也有能飞的长翅型。</p></div></div><div class="zukan-card"><div class="zukan-image"><img src="../../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg" data-photos='[&quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000002_20260328_21.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000003_20260328_21.jpg&quot;, &quot;../../images/creatures/suisei-konntyuu/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000004_20250403_22.jpg&quot;]' alt="筒井溪宽肩蝽"></div><div class="zukan-info"><div class="zukan-name">筒井溪宽肩蝽</div><div class="zukan-latin">宽肩蝽科溪宽肩蝽属 <em>Pseudovelia tsutsuii</em> Esaki &amp; Miyamoto, 1955</div><p class="zukan-desc">分布于南西诸岛(宝岛至冲绳岛)。溪宽肩蝽属在日本已知有数种，是栖息于河流及池塘岸边的
+类群。本种自身的详细生态目前尚未获得充分的资料确认。</p></div></div></div></div>
+  </div>
+</section>
+
+<section class="tour">
+  <p class="section-label">NIGHT FIELD TOUR</p>
+  <h2>走进奥美的夜间森林</h2>
+  <p>跟着向导一起在夜间森林中寻找生物。</p>
+  <a class="btn" href="../../contact.html">查看夜间旅行团详情及费用 →</a>
+</section>
+
+<section class="other-categories">
+  <div class="section-inner">
+    <div class="section-label">EXPLORE MORE</div>
+    <h3 class="other-creatures-title">探索更多生物</h3>
+    <div class="other-creatures-buttons">
+      <a href="hebi.html" class="category-button">蛇类 →</a><a href="kaeru.html" class="category-button">两栖类 →</a><a href="kuwagata.html" class="category-button">锅甲 →</a><span class="category-button is-pending">哺乳类<small>即将推出</small></span><span class="category-button is-pending">鸟类<small>即将推出</small></span><span class="category-button is-pending">蜧虔<small>即将推出</small></span><span class="category-button is-pending">昆虫<small>即将推出</small></span><span class="category-button is-pending">贝类<small>即将推出</small></span><span class="category-button is-pending">甲壳类等<small>即将推出</small></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Nature Experience Amami</div>
+      <div class="footer-copy">© 2026 Nature-Experience Amami。版权所有，未经许可禁止转载。</div>
+    </div>
+  </div>
+  <div class="copyright">&copy; Nature Experience Amami</div>
+</footer>
+
+<script>
+(function () {
+  document.querySelectorAll(".zukan-image img[data-photos]").forEach(function (img) {
+    try {
+      var photos = JSON.parse(img.dataset.photos);
+      if (photos.length > 1) {
+        img.src = photos[Math.floor(Math.random() * photos.length)];
+      }
+    } catch (e) {}
+  });
+})();
+</script>
+
+</body>
+</html>
