@@ -117,6 +117,7 @@ def load_creatures_lang(category, lang):
         description = " ".join(desc_paragraphs)
         creatures.append({
             "id": creature_id,
+            "category": category,
             "name": data.get("name", creature_id),
             "group": ja_data.get("group", "other"),
             "danger": data.get("danger", ""),
@@ -137,7 +138,7 @@ def zukan_tag(ja_danger, display_danger):
     return f'<span class="{css_class}">{escape(text)}</span>'
 
 
-def render_card(creature, strings):
+def render_card(creature, strings, lang):
     photos = creature["photos"]
     if photos:
         if len(photos) > 1:
@@ -152,22 +153,29 @@ def render_card(creature, strings):
         image = f'<div class="zukan-placeholder">{escape(strings["strings"]["photo_prep"])}</div>'
     latin_html = f'<div class="zukan-latin">{creature["latin"]}</div>' if creature["latin"] else ""
     tag_html = zukan_tag(creature["danger_ja"], creature["danger"])
+    page_path = ROOT / lang / "creatures" / creature["category"] / f'{creature["id"]}.html'
+    if page_path.is_file():
+        opening = f'<a class="zukan-card" href="../creatures/{creature["category"]}/{creature["id"]}.html">'
+        closing = "</a>"
+    else:
+        opening = '<div class="zukan-card">'
+        closing = "</div>"
     return (
-        '<div class="zukan-card">'
+        f'{opening}'
         f'<div class="zukan-image">{image}</div>'
         '<div class="zukan-info">'
         f'<div class="zukan-name">{escape(creature["name"])}</div>'
         f'{latin_html}'
         f'<p class="zukan-desc">{escape(creature["description"])}</p>'
         f'{tag_html}'
-        '</div></div>'
+        f'</div>{closing}'
     )
 
 
-def render_groups(category, creatures, strings):
+def render_groups(category, creatures, strings, lang):
     group_def = CATEGORY_GROUPS.get(category)
     if not group_def:
-        cards = "".join(render_card(c, strings) for c in creatures)
+        cards = "".join(render_card(c, strings, lang) for c in creatures)
         return f'<div class="group"><div class="zukan-grid">{cards}</div></div>'
 
     by_group = {}
@@ -181,7 +189,7 @@ def render_groups(category, creatures, strings):
             continue
         label_key = f"group_{key}"
         label = strings["strings"].get(label_key, key)
-        cards = "".join(render_card(c, strings) for c in members)
+        cards = "".join(render_card(c, strings, lang) for c in members)
         sections.append(
             f'<div class="group"><p class="group-title">{escape(label)}</p>'
             f'<div class="zukan-grid">{cards}</div></div>'
@@ -257,7 +265,7 @@ def render_category(category, lang):
         note=escape(content["note"]),
         field_guide_title=escape(title),
         nav_links=render_nav(strings, category),
-        groups_html=render_groups(category, creatures, strings),
+        groups_html=render_groups(category, creatures, strings, lang),
         other_buttons=render_other_buttons(strings, category),
         night_tour_title=escape(s["night_tour_title"]),
         night_tour_lead=escape(s["night_tour_lead"]),

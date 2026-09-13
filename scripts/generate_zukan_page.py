@@ -182,6 +182,7 @@ def load_creatures(category):
         description = " ".join(desc_paragraphs)
         creatures.append({
             "id": creature_id,
+            "category": category,
             "name": data.get("name", creature_id),
             "group": data.get("group", "other"),
             "danger": data.get("danger", ""),
@@ -207,15 +208,22 @@ def render_card(creature):
         image = '<div class="zukan-placeholder">写真準備中</div>'
     latin_html = f'<div class="zukan-latin">{creature["latin"]}</div>' if creature["latin"] else ""
     tag_html = zukan_tag(creature["danger"])
+    page_path = ROOT / "creatures" / creature["category"] / f'{creature["id"]}.html'
+    if page_path.is_file():
+        opening = f'<a class="zukan-card" href="../creatures/{creature["category"]}/{creature["id"]}.html">'
+        closing = "</a>"
+    else:
+        opening = '<div class="zukan-card">'
+        closing = "</div>"
     return (
-        '<div class="zukan-card">'
+        f'{opening}'
         f'<div class="zukan-image">{image}</div>'
         '<div class="zukan-info">'
         f'<div class="zukan-name">{escape(creature["name"])}</div>'
         f'{latin_html}'
         f'<p class="zukan-desc">{escape(creature["description"])}</p>'
         f'{tag_html}'
-        '</div></div>'
+        f'</div>{closing}'
     )
 
 
