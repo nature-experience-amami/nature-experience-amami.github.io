@@ -198,6 +198,57 @@ select{ -webkit-appearance:none; appearance:none; }
   var tabs = document.getElementById("tabs");
   var screens = document.querySelectorAll(".screen");
 
+  // カテゴリーを選んだら、そのカテゴリーに実在する生き物IDの候補を取得してチップで表示する
+  // (showAppより前に必ず定義しておく: 保存済み設定がある場合、ページを開いた直後にshowApp→
+  //  loadSpeciesOptionsが呼ばれるため、ここより後ろで定義すると未定義エラーになる)
+  var categorySelect = document.getElementById("category");
+  var speciesInput = document.getElementById("species-id");
+  var speciesSuggestions = document.getElementById("species-suggestions");
+
+  function loadSpeciesOptions() {
+    var settings = getSettings();
+    if (!settings) return;
+    var repoParts = settings.repo.split("/");
+    var category = categorySelect.value;
+    var url = "https://api.github.com/repos/" + repoParts[0] + "/" + repoParts[1] +
+      "/contents/images/creatures/" + category;
+
+    speciesSuggestions.innerHTML = '<span class="chip-empty">候補を読み込み中…</span>';
+
+    fetch(url, {
+      headers: {
+        "Authorization": "Bearer " + settings.pat,
+        "Accept": "application/vnd.github+json"
+      }
+    })
+      .then(function (res) { return res.ok ? res.json() : []; })
+      .then(function (items) {
+        var dirs = items.filter(function (item) { return item.type === "dir"; });
+        speciesSuggestions.innerHTML = "";
+        if (dirs.length === 0) {
+          speciesSuggestions.innerHTML = '<span class="chip-empty">まだフォルダがありません(新規入力してください)</span>';
+          return;
+        }
+        dirs.forEach(function (item) {
+          var chip = document.createElement("button");
+          chip.type = "button";
+          chip.className = "chip";
+          chip.textContent = item.name;
+          chip.addEventListener("click", function () {
+            speciesInput.value = item.name;
+            speciesSuggestions.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("selected"); });
+            chip.classList.add("selected");
+          });
+          speciesSuggestions.appendChild(chip);
+        });
+      })
+      .catch(function () {
+        speciesSuggestions.innerHTML = '<span class="chip-empty">候補を読み込めませんでした(新規入力はできます)</span>';
+      });
+  }
+
+  categorySelect.addEventListener("change", loadSpeciesOptions);
+
   function showApp() {
     setupCard.style.display = "none";
     tabs.style.display = "flex";
@@ -264,53 +315,7 @@ select{ -webkit-appearance:none; appearance:none; }
   });
 
   // カテゴリーを選んだら、そのカテゴリーに実在する生き物IDの候補を取得してチップで表示する
-  var categorySelect = document.getElementById("category");
-  var speciesInput = document.getElementById("species-id");
-  var speciesSuggestions = document.getElementById("species-suggestions");
-
-  function loadSpeciesOptions() {
-    var settings = getSettings();
-    if (!settings) return;
-    var repoParts = settings.repo.split("/");
-    var category = categorySelect.value;
-    var url = "https://api.github.com/repos/" + repoParts[0] + "/" + repoParts[1] +
-      "/contents/images/creatures/" + category;
-
-    speciesSuggestions.innerHTML = '<span class="chip-empty">候補を読み込み中…</span>';
-
-    fetch(url, {
-      headers: {
-        "Authorization": "Bearer " + settings.pat,
-        "Accept": "application/vnd.github+json"
-      }
-    })
-      .then(function (res) { return res.ok ? res.json() : []; })
-      .then(function (items) {
-        var dirs = items.filter(function (item) { return item.type === "dir"; });
-        speciesSuggestions.innerHTML = "";
-        if (dirs.length === 0) {
-          speciesSuggestions.innerHTML = '<span class="chip-empty">まだフォルダがありません(新規入力してください)</span>';
-          return;
-        }
-        dirs.forEach(function (item) {
-          var chip = document.createElement("button");
-          chip.type = "button";
-          chip.className = "chip";
-          chip.textContent = item.name;
-          chip.addEventListener("click", function () {
-            speciesInput.value = item.name;
-            speciesSuggestions.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("selected"); });
-            chip.classList.add("selected");
-          });
-          speciesSuggestions.appendChild(chip);
-        });
-      })
-      .catch(function () {
-        speciesSuggestions.innerHTML = '<span class="chip-empty">候補を読み込めませんでした(新規入力はできます)</span>';
-      });
-  }
-
-  categorySelect.addEventListener("change", loadSpeciesOptions);
+  // (定義はファイル前方に移動済み。ここでは何もしない)
 
   function fileToBase64(file) {
     return new Promise(function (resolve, reject) {
