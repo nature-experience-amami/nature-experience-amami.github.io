@@ -6,7 +6,7 @@ group: gengoro
 danger: Capture for sale or distribution prohibited (Specified Second-Class Nationally Rare Wild Species)
 months: [4, 5, 6, 7, 8, 9]
 ---
-Diving beetle family, genus Hydaticus. *Hydaticus vittatus*
+Diving beetle family, genus Hydaticus. *Hydaticus vittatus* (Fabricius, 1775)
 
 Grows to about 11-14mm. A southern-type diving beetle found in the Ryukyu
 Islands south of Yakushima, and abroad in Taiwan, China, and Southeast Asia.

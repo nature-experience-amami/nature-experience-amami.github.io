@@ -6,7 +6,7 @@ group: doromushi
 months: [1, 2, 3, 4]
 source: Nakajima, J. & Kamite, Y. (2020) A new species of the genus Urumaelmis Satô (Coleoptera, Elmidae, Macronychini) from Kyushu Island, Japan. Zootaxa, 4853(3), 421-428.
 ---
-Familia de los escarabajos de rabión, género Urumaelmis. *Urumaelmis uenoi*
+Familia de los escarabajos de rabión, género Urumaelmis. *Urumaelmis uenoi* (Nomura, 1961)
 
 Un pequeño escarabajo acuático que se encuentra en las islas Osumi, las islas
 Tokara, el archipiélago de Amami y el archipiélago de Okinawa. El género

@@ -5,7 +5,7 @@ category: suisei-konntyuu
 group: doromushi
 months: [2, 5, 7]
 ---
-Familia de los escarabajos de rabión, género Stenelmis. *Stenelmis hisamatsui*
+Familia de los escarabajos de rabión, género Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960
 
 Un pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami y
 Okinawa y en Guam. Los escarabajos de rabión viven principalmente en corrientes

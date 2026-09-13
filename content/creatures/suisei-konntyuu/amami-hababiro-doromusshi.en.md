@@ -5,7 +5,7 @@ category: suisei-konntyuu
 group: doromushi
 months: [7, 8]
 ---
-Riffle beetle family, genus Dryopomorphus. *Dryopomorphus amami*
+Riffle beetle family, genus Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005
 
 An endemic species found only on Amami Oshima, described in 2005. The genus
 Dryopomorphus also includes a widespread relative found on Honshu, Shikoku,

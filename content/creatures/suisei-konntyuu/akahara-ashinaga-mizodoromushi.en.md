@@ -5,7 +5,7 @@ category: suisei-konntyuu
 group: doromushi
 months: [2, 5, 7]
 ---
-Riffle beetle family, genus Stenelmis. *Stenelmis hisamatsui*
+Riffle beetle family, genus Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960
 
 A small aquatic beetle found in the Amami and Okinawa island groups and Guam.
 Riffle beetles live mainly in clean streams; both larvae and adults spend their

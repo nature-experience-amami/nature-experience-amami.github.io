@@ -6,7 +6,7 @@ group: doromushi
 months: [4, 5]
 source: Kamite, Y., Yoshitomi, H. & Hayashi, M. (2017) A remarkable new species of the genus Leptelmis Sharp from Amami-Ôshima, with redescription of the larva of Leptelmis gracilis Sharp (Coleoptera, Elmidae, Elminae). Elytra, Tokyo, New Series, 7(2), 395-408.
 ---
-长角泥甲科细跗泥甲属 *Leptelmis torikaii*
+长角泥甲科细跗泥甲属 *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017
 
 奄美大岛特有种，2017年才被记载的新种。其形态与分布于日本本土及台湾的同属其他种不
 同，而交尾器的形状等特征与分布于中国南部的一个种非常相似，表明两者关系密切。因此被视

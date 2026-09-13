@@ -6,7 +6,7 @@ group: gengoro
 danger: Prohibida su captura con fines de venta o distribución (Especie Silvestre Nacional Rara de Segunda Clase Especificada)
 months: [4, 5, 6, 7, 8, 9]
 ---
-Familia de los escarabajos buceadores, género Hydaticus. *Hydaticus vittatus*
+Familia de los escarabajos buceadores, género Hydaticus. *Hydaticus vittatus* (Fabricius, 1775)
 
 Alcanza unos 11-14 mm. Un escarabajo buceador de tipo meridional que se
 encuentra en las islas Ryukyu al sur de Yakushima, y en el extranjero en

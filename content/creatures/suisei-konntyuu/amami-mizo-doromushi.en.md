@@ -5,7 +5,7 @@ category: suisei-konntyuu
 group: doromushi
 months: [7]
 ---
-Riffle beetle family, genus Ordobrevia. *Ordobrevia amamiensis*
+Riffle beetle family, genus Ordobrevia. *Ordobrevia amamiensis* (Nomura, 1957)
 
 A small aquatic beetle found in the Amami, Okinawa, and Yaeyama island groups
 and Guam. The population on Okinawa Island is distinguished as a separate

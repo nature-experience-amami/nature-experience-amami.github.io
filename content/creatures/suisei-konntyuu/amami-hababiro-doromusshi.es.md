@@ -5,7 +5,7 @@ category: suisei-konntyuu
 group: doromushi
 months: [7, 8]
 ---
-Familia de los escarabajos de rabión, género Dryopomorphus. *Dryopomorphus amami*
+Familia de los escarabajos de rabión, género Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005
 
 Una especie endémica que solo se encuentra en Amami Oshima, descrita en 2005.
 El género Dryopomorphus también incluye una especie emparentada de amplia

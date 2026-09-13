@@ -6,7 +6,7 @@ group: doromushi
 months: [4, 5]
 source: Kamite, Y., Yoshitomi, H. & Hayashi, M. (2017) A remarkable new species of the genus Leptelmis Sharp from Amami-Ôshima, with redescription of the larva of Leptelmis gracilis Sharp (Coleoptera, Elmidae, Elminae). Elytra, Tokyo, New Series, 7(2), 395-408.
 ---
-Riffle beetle family, genus Leptelmis. *Leptelmis torikaii*
+Riffle beetle family, genus Leptelmis. *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017
 
 Endemic to Amami Oshima, a species described as recently as 2017. Its form
 differs from other species in the same genus found on mainland Japan and

@@ -6,7 +6,7 @@ group: doromushi
 months: [1, 2, 3, 4]
 source: Nakajima, J. & Kamite, Y. (2020) A new species of the genus Urumaelmis Satô (Coleoptera, Elmidae, Macronychini) from Kyushu Island, Japan. Zootaxa, 4853(3), 421-428.
 ---
-Riffle beetle family, genus Urumaelmis. *Urumaelmis uenoi*
+Riffle beetle family, genus Urumaelmis. *Urumaelmis uenoi* (Nomura, 1961)
 
 A small aquatic beetle found in the Osumi Islands, Tokara Islands, Amami
 island group, and Okinawa island group. The genus Urumaelmis also includes a

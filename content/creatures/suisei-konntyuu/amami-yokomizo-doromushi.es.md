@@ -6,7 +6,7 @@ group: doromushi
 months: [4, 5]
 source: Kamite, Y., Yoshitomi, H. & Hayashi, M. (2017) A remarkable new species of the genus Leptelmis Sharp from Amami-Ôshima, with redescription of the larva of Leptelmis gracilis Sharp (Coleoptera, Elmidae, Elminae). Elytra, Tokyo, New Series, 7(2), 395-408.
 ---
-Familia de los escarabajos de rabión, género Leptelmis. *Leptelmis torikaii*
+Familia de los escarabajos de rabión, género Leptelmis. *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017
 
 Endémica de Amami Oshima, una especie descrita tan recientemente como 2017. Su
 forma difiere de otras especies del mismo género que se encuentran en la isla

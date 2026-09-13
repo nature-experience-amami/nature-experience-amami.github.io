@@ -5,7 +5,7 @@ category: suisei-konntyuu
 group: doromushi
 months: [2, 5, 8]
 ---
-Riffle beetle family, genus Zaitzevia. *Zaitzevia elongata*
+Riffle beetle family, genus Zaitzevia. *Zaitzevia elongata* Nomura, 1962
 
 A small aquatic beetle found in the Amami and Okinawa island groups. Eight
 species of the genus Zaitzevia are known in Japan, with different species
