@@ -197,6 +197,12 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
         hero = f'<div class="placeholder">{escape(s["photo_prep"])}</div>'
         gallery = f'<div class="gallery-empty">{escape(s["gallery_empty"])}</div>'
 
+    if photos:
+        relative_photos = [f"../../../{p}" for p in photos]
+        photo_script = f"var photos = {json.dumps(relative_photos)};"
+    else:
+        photo_script = "var photos = [];"
+
     body_html = "".join(f"<p>{escape(p)}</p>" for p in creature["body_paragraphs"])
     latin_line = f'<p class="latin">{creature["latin_line"]}</p>' if creature["latin_line"] else ""
 
@@ -239,7 +245,7 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
         related=related_html,
         category_nav=render_category_nav(strings, creature["category"], AVAILABLE_CATEGORY_PAGES),
         lang_links=lang_links,
-        photo_script="",
+        photo_script=photo_script,
         t_home=escape(s["home"]),
         t_contact=escape(s["contact"]),
         t_close=escape(s["close"]),

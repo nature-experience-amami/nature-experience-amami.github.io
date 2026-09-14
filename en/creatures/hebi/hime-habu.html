@@ -397,7 +397,19 @@ Be careful not to step on it.</p>
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/hebi/hime-habu/hime-habu_000002_20250429_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000003_20250429_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000004_20250430_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000005_20250430_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000006_20260205_19.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000007_20250212_21.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000008_20260223_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000009_20260225_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000010_20250227_19.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000011_20250302_19.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000012_20250302_19.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000013_20260306_21.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000014_20260318_21.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000015_20260319_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000016_20260320_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000017_20260320_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000018_20250326_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000019_20260328_22.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000020_20250527_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000021_20250726_09.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000022_20251122_22.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000023_20250925_00.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000023_20260403_21.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_20.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_21.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000023_20260404_22.jpg", "../../../images/creatures/hebi/hime-habu/hime-habu_000023_20260629_22.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

@@ -396,7 +396,19 @@ gran parte, desconocida.</p>
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg", "../../../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000002_20250501_14.jpg", "../../../images/creatures/suisei-konntyuu/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000003_20250706_14.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

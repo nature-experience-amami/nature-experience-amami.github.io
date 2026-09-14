@@ -400,7 +400,19 @@ catalogada como Casi Amenazada por el Ministerio de Medio Ambiente.</p>
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg", "../../../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000002_20241218_18.jpg", "../../../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000003_20241218_18.jpg", "../../../images/creatures/honyuurui/watase-jinezumi/watase-jinezumi_000004_20241218_19.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

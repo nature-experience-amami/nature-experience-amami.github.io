@@ -397,7 +397,19 @@ objetivo: superar los 30 mm.</p>
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg", "../../../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000002_20250521_22.jpg", "../../../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000003_20250620_22.jpg", "../../../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260422_23.jpg", "../../../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260427_22.jpg", "../../../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000004_20260630_00.jpg", "../../../images/creatures/kuwagata/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000005_20260910_16.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

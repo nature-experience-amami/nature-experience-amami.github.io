@@ -400,7 +400,19 @@ come from its call.</p>
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000001_20250228_22.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000002_20250228_22.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000003_20250722_20.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000004_20241204_22.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250516_21.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250517_21.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250520_21.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250602_21.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250727_13.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20250812_15.jpg", "../../../images/creatures/kaeru/otton-gaeru/otton-gaeru_000005_20251009_23.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

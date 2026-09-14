@@ -397,7 +397,19 @@ by accident (never take home an individual you can&#x27;t identify yourself).</p
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000001_20250627_21.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000002_20250627_21.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000003_20250628_22.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000004_20250704_21.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000005_20250720_22.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000006_20250720_23.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000008_20250728_21.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000009_20250728_21.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000010_20250728_21.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250728_21.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20250813_10.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260703_00.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260706_00.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260712_21.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000011_20260713_22.jpg", "../../../images/creatures/kuwagata/amami-shika-kuwagata/amami-shika-kuwagata_000012_20250728_21.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

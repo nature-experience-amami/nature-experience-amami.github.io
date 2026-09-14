@@ -393,7 +393,19 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000002_20250201_21.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000003_20250221_19.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000004_20250221_22.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000005_20250227_19.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000007_20250228_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000008_20250228_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000009_20250228_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000010_20250228_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000011_20250302_19.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000012_20250302_19.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000013_20250302_19.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000014_20250302_19.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000015_20241210_21.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250119_19.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250228_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250314_23.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250414_23.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250427_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250506_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250509_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250516_21.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20250520_21.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260409_23.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000016_20260502_21.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000017_20250314_23.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000018_20250314_23.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000019_20250427_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000020_20250427_20.jpg", "../../../images/creatures/kaeru/amami-ao-gaeru/amami-ao-gaeru_000021_20250506_20.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

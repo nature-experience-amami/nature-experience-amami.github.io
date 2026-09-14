@@ -393,7 +393,19 @@ footer{
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg", "../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_02.jpg", "../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250902_01.jpg", "../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250905_23.jpg", "../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20260823_22.jpg", "../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000002_20250827_02.jpg", "../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000003_20250827_02.jpg", "../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000004_20250827_02.jpg", "../../../images/creatures/kuwagata/amami-miyama-kuwagata/amami-miyama-kuwagata_000005_20250902_01.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

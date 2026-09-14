@@ -395,7 +395,19 @@ from above. Japan&#x27;s smallest frog, but it calls with a surprisingly loud vo
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg", "../../../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000002_20250228_21.jpg", "../../../images/creatures/kaeru/hime-amagaeru/hime-amagaeru_000003_20250516_22.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {

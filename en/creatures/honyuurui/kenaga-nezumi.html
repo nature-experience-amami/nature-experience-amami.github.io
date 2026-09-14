@@ -400,7 +400,19 @@ forest roads.</p>
   window.closeLightbox = function(){
     document.getElementById("lightbox").classList.remove("open");
   };
-  
+
+  var photos = ["../../../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg", "../../../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000002_20260206_20.jpg", "../../../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000003_20260319_21.jpg", "../../../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000004_20260413_23.jpg", "../../../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000005_20260413_23.jpg", "../../../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000006_20260413_23.jpg", "../../../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000007_20260421_21.jpg", "../../../images/creatures/honyuurui/kenaga-nezumi/kenaga-nezumi_000008_20251202_21.jpg"];
+  if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
+    var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
+    var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');
+    allImgElements.forEach(function(img, index){
+      if (shuffled[index]) {
+        img.src = shuffled[index];
+      } else {
+        img.src = shuffled[index % shuffled.length];
+      }
+    });
+  }
 })();
 
 (function () {
