@@ -10,11 +10,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/category-strip.css">
 
 <style>
   :root{{
     --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
-    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A;
+    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A; --line:rgba(234,242,233,.12);
   }}
   *{{ margin:0; padding:0; box-sizing:border-box; }}
   html{{ scroll-behavior:smooth; }}
@@ -43,26 +44,7 @@
   nav{{ display:flex; align-items:center; gap:28px; }}
   nav a{{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; opacity:.82; transition:.25s; }}
   nav a:hover{{ color:var(--amber); opacity:1; }}
-
-  .creature-nav{{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); }}
-  .creature-nav-inner{{
-    max-width:1200px; margin:0 auto; padding:0 28px;
-    display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
-  }}
-  .creature-nav-inner::-webkit-scrollbar{{ display:none; }}
-  .creature-nav-inner + .creature-nav-inner{{ border-top:1px solid rgba(234,242,233,.08); }}
-  .creature-nav a{{
-    flex:0 0 auto; padding:14px 20px; font-size:12px; color:rgba(234,242,233,.65);
-    border-right:1px solid rgba(234,242,233,.08); transition:.25s; white-space:nowrap;
-  }}
-  .creature-nav a:first-child{{ border-left:1px solid rgba(234,242,233,.08); }}
-  .creature-nav a:hover{{ color:var(--amber); background:rgba(232,163,61,.05); }}
-  .creature-nav span{{
-    flex:0 0 auto; padding:14px 20px; font-size:12px;
-    border-right:1px solid rgba(234,242,233,.08); white-space:nowrap;
-  }}
-  .creature-nav span.active{{ color:var(--amber); background:rgba(232,163,61,.05); }}
-  .creature-nav span.is-pending{{ color:rgba(234,242,233,.32); cursor:default; }}
+  nav span{{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; color:rgba(234,242,233,.35); }}
 
   .hero{{
     min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
@@ -146,8 +128,11 @@
   .copyright{{ max-width:1200px; margin:20px auto 0; font-family:"Space Mono", monospace; font-size:9px; color:rgba(234,242,233,.35); }}
 
   @media(max-width:760px){{
-    .header-inner{{ padding:15px 18px; }}
-    nav a:not(.contact-link){{ display:none; }}
+    .header-inner{{ padding:12px 16px; gap:8px; flex-direction:column-reverse; align-items:flex-start; }}
+    .logo{{ font-size:17px; }}
+    nav{{ width:100%; gap:14px; justify-content:flex-end; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; }}
+    nav::-webkit-scrollbar{{ display:none; }}
+    nav a, nav span{{ font-size:10px; white-space:nowrap; flex:0 0 auto; }}
     .hero-inner{{ padding:60px 20px 40px; }}
     section{{ padding:50px 20px; }}
     .zukan-grid{{ grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:14px; }}
@@ -163,20 +148,20 @@
   <header>
     <div class="header-inner">
       <a class="logo" href="../../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
-      <nav>
+      <nav class="main-nav">
         <a href="../../index.html">{t_home}</a>
+        <span>{t_highlights}</span>
         <a href="../../tour.html">{t_tour}</a>
         <a href="../../contact.html">{t_contact}</a>
       </nav>
     </div>
   </header>
 
-  <div class="creature-nav">
-    <div class="creature-nav-inner">
-      {nav_links_row1}
-    </div>
-    <div class="creature-nav-inner">
-      {nav_links_row2}
+  <div class="cat-strip-outer">
+    <div class="cat-strip-wrap">
+      <div class="cat-strip" id="catStrip" aria-label="{t_category_nav_aria}">{category_strip}</div>
+      <div class="fade-right" id="fadeRight"></div>
+      <div class="scroll-hint" id="scrollHint" aria-hidden="true">→</div>
     </div>
   </div>
 </div>
@@ -246,6 +231,7 @@
   }});
 }})();
 </script>
+<script src="../../js/category-strip.js"></script>
 
 </body>
 </html>
