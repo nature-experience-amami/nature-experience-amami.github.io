@@ -3,42 +3,253 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>鳥｜Nature Experience Amami</title>
-<meta name="description" content="鳥の生き物を写真とともに紹介します。">
+
+<title>奄美の鳥｜Nature Experience Amami</title>
+<meta name="description" content="奄美大島で見られる鳥を紹介する図鑑ページ。">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--night:#0A1613;--canopy:#16302A;--moonlight:#EAF2E9;--amber:#E8A33D;--moss:#6B8F71;--bark:#2A211A;--line:rgba(234,242,233,.12);--soft:rgba(234,242,233,.75)}
-*{margin:0;padding:0;box-sizing:border-box} body{background:var(--night);color:var(--moonlight);font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.9} a{color:inherit;text-decoration:none} img{display:block;width:100%;height:100%;object-fit:cover}
-.lang-bar{ background:#050907; border-bottom:1px solid var(--line); } .lang-bar-inner{ max-width:1200px; margin:auto; padding:.5rem 6vw; display:flex; justify-content:flex-end; gap:1rem; font-family:"Space Mono",monospace; font-size:.7rem; letter-spacing:.06em; } .lang-bar a, .lang-bar span{ text-decoration:none; color:rgba(234,242,233,.5); } .lang-bar a:hover{ color:var(--moonlight); } .lang-bar span.current{ color:var(--amber); } .lang-bar span.disabled{ color:rgba(234,242,233,.25); }
-.site-header{position:sticky;top:0;z-index:20;background:rgba(10,22,19,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)} .header-inner{max-width:1200px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:30px} .logo{font-family:"Shippori Mincho",serif;font-size:20px;font-weight:600;letter-spacing:.08em;white-space:nowrap} .logo::before{content:"";display:inline-block;width:7px;height:7px;margin-right:.55rem;border-radius:50%;background:var(--amber);box-shadow:0 0 10px 2px rgba(232,163,61,.7)} nav{display:flex;gap:28px} nav a{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em;color:rgba(234,242,233,.82)} nav a:hover{color:var(--amber)} .mobile-contact,.mobile-category-nav{display:none} .category-nav-current{color:var(--amber);font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em}
-main{max-width:1200px;margin:auto} section{padding:100px 28px} .section-inner{max-width:1200px;margin:auto} .section-label{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.18em;color:var(--amber);margin-bottom:12px} .section-title{font-family:"Shippori Mincho",serif;font-size:clamp(30px,5vw,48px);line-height:1.4;font-weight:600;margin-bottom:30px}
-.hero{min-height:55vh;display:flex;align-items:flex-end;background:linear-gradient(to bottom,rgba(10,22,19,.2),rgba(10,22,19,.95)),radial-gradient(circle at 70% 35%,rgba(107,143,113,.18),transparent 35%)} .hero-inner{width:100%;max-width:1200px;margin:auto;padding:100px 28px 75px} .hero h1{font-family:"Shippori Mincho",serif;font-size:clamp(48px,8vw,88px);line-height:1.15;font-weight:600;letter-spacing:.04em} .hero-lead{max-width:720px;margin-top:25px;font-size:16px;line-height:2;color:rgba(234,242,233,.82)}
-.intro{background:var(--canopy)} .intro-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:80px;align-items:start} .intro-text{max-width:720px;font-size:15px;color:rgba(234,242,233,.85)} .intro-text p+p{margin-top:20px} .safety-note{margin-top:35px;padding:24px 26px;border-left:2px solid var(--amber);background:rgba(10,22,19,.35)} .safety-note strong{display:block;color:var(--amber);font-size:14px;margin-bottom:7px} .safety-note p{font-size:13px;line-height:1.8}
-.creatures{background:var(--night)} .creatures-intro{max-width:720px;margin-bottom:55px;color:var(--soft);font-size:14px} .creature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:55px 38px} .group-divider{grid-column:1/-1;font-family:"Shippori Mincho",serif;font-size:22px;font-weight:600;color:var(--amber);margin:10px 0 -15px;padding-top:20px;border-top:1px solid var(--line)} .creature-card{border-top:1px solid var(--line);padding-top:18px} .creature-image{aspect-ratio:16/9;overflow:hidden;background:var(--canopy)} .creature-image img{transition:transform .5s ease} .creature-card:hover .creature-image img{transform:scale(1.03)} .photo-placeholder{height:100%;display:grid;place-items:center;color:rgba(234,242,233,.45);font-family:"Space Mono",monospace;font-size:.8rem;background:repeating-linear-gradient(135deg,rgba(234,242,233,.03) 0 12px,transparent 12px 24px)} .creature-info{padding:4px 0 22px} .creature-meta{display:flex;gap:16px;margin-bottom:8px;font-family:"Space Mono",monospace;font-size:10px;color:var(--moss);letter-spacing:.05em} .creature-meta .danger{color:var(--amber)} .creature-name{display:inline-block;font-family:"Shippori Mincho",serif;font-size:30px;font-weight:600;margin-bottom:12px} .creature-card:hover .creature-name{color:var(--amber)} .creature-description{font-size:14px;color:var(--soft);line-height:1.9} .creature-link{display:inline-block;margin-top:18px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;color:var(--amber);padding-bottom:4px;border-bottom:1px solid rgba(232,163,61,.45)} .card-disabled{opacity:.72} .card-disabled .creature-link{color:var(--soft);border-color:rgba(234,242,233,.2)}
-.other-categories{background:var(--canopy)} .category-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:35px} .category-button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 22px;border:1px solid rgba(234,242,233,.35);font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.06em;transition:background .2s,color .2s,border-color .2s} .category-button:not(.is-current):not(.is-pending):hover{background:var(--amber);border-color:var(--amber);color:var(--bark)} .category-button.is-current{background:var(--amber);border-color:var(--amber);color:var(--bark);pointer-events:none} .category-button.is-pending{color:rgba(234,242,233,.5);border-color:rgba(234,242,233,.16);cursor:default} .category-button small{margin-left:8px;font-family:"Zen Kaku Gothic New",sans-serif;font-size:10px;letter-spacing:0}
-.tour{text-align:center;background:var(--canopy)} .tour h2{font-family:"Shippori Mincho",serif;font-size:clamp(30px,5vw,46px);line-height:1.5;margin-bottom:20px} .tour p{max-width:600px;margin:0 auto 35px;color:var(--soft);font-size:14px} .btn{display:inline-block;padding:16px 34px;background:var(--amber);color:var(--bark);font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em} .btn:hover{background:#f4b95a} footer{padding:30px 28px;background:#07100E;text-align:center;font-family:"Space Mono",monospace;font-size:9px;color:rgba(234,242,233,.35)}
-@media(max-width:760px){.header-inner{padding:15px 18px 10px;gap:18px}.logo{font-size:17px}.desktop-nav{display:none}.mobile-contact{display:inline-flex;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.06em;color:rgba(234,242,233,.82)}.mobile-category-nav{display:flex;gap:16px;overflow-x:auto;padding:0 18px 13px;white-space:nowrap;-webkit-overflow-scrolling:touch}.mobile-category-nav a,.mobile-category-nav .category-nav-current{flex:0 0 auto;font-size:10px}section{padding:75px 20px}.hero{min-height:48vh}.hero-inner{padding:80px 20px 55px}.hero h1{font-size:48px}.hero-lead{font-size:14px}.intro-grid{grid-template-columns:1fr;gap:35px}.creature-grid{grid-template-columns:1fr;gap:50px}.creature-name{font-size:27px}.creature-description{font-size:13px}}
+  :root{
+    --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
+    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ background:var(--night); color:var(--moonlight); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.9; }
+  img{ display:block; width:100%; }
+  a{ color:inherit; text-decoration:none; }
+
+  .lang-bar{ background:#050907; border-bottom:1px solid rgba(234,242,233,.12); }
+  .lang-bar-inner{ max-width:1200px; margin:auto; padding:.5rem 6vw; display:flex; justify-content:flex-end; gap:1rem; font-family:"Space Mono",monospace; font-size:.7rem; letter-spacing:.06em; }
+  .lang-bar a, .lang-bar span{ text-decoration:none; color:rgba(234,242,233,.5); }
+  .lang-bar a:hover{ color:var(--moonlight); }
+  .lang-bar span.current{ color:var(--amber); }
+  .lang-bar span.disabled{ color:rgba(234,242,233,.25); }
+
+  .site-header-sticky{ position:sticky; top:0; z-index:1000; }
+  header{
+    background:rgba(10,22,19,.94); backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .header-inner{
+    max-width:1200px; margin:0 auto; padding:18px 28px;
+    display:flex; align-items:center; justify-content:space-between; gap:30px;
+  }
+  .logo{ font-family:"Shippori Mincho", serif; font-size:20px; font-weight:600; letter-spacing:.08em; white-space:nowrap; }
+  .logo span{ display:block; font-family:"Space Mono", monospace; font-size:9px; letter-spacing:.18em; color:var(--amber); margin-top:2px; }
+  nav{ display:flex; align-items:center; gap:28px; }
+  nav a{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; opacity:.82; transition:.25s; }
+  nav a:hover{ color:var(--amber); opacity:1; }
+
+  .creature-nav{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); }
+  .creature-nav-inner{
+    max-width:1200px; margin:0 auto; padding:0 28px;
+    display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
+  }
+  .creature-nav-inner::-webkit-scrollbar{ display:none; }
+  .creature-nav a{
+    flex:0 0 auto; padding:14px 20px; font-size:12px; color:rgba(234,242,233,.65);
+    border-right:1px solid rgba(234,242,233,.08); transition:.25s; white-space:nowrap;
+  }
+  .creature-nav a:first-child{ border-left:1px solid rgba(234,242,233,.08); }
+  .creature-nav a:hover{ color:var(--amber); background:rgba(232,163,61,.05); }
+  .creature-nav span{
+    flex:0 0 auto; padding:14px 20px; font-size:12px;
+    border-right:1px solid rgba(234,242,233,.08); white-space:nowrap;
+  }
+  .creature-nav span.active{ color:var(--amber); background:rgba(232,163,61,.05); }
+  .creature-nav span.is-pending{ color:rgba(234,242,233,.32); cursor:default; }
+
+  .hero{
+    min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
+    background:
+      linear-gradient(to bottom, rgba(10,22,19,.2), rgba(10,22,19,.95)),
+      radial-gradient(circle at 70% 35%, rgba(107,143,113,.18), transparent 35%);
+  }
+  .hero-inner{ width:100%; max-width:1200px; margin:0 auto; padding:80px 28px 55px; }
+  .eyebrow{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.18em; color:var(--amber); margin-bottom:18px; }
+  .hero h1{ font-family:"Shippori Mincho", serif; font-size:clamp(38px,6vw,64px); line-height:1.2; font-weight:600; letter-spacing:.04em; }
+  .hero-lead{ max-width:680px; margin-top:22px; font-size:15px; line-height:2; color:rgba(234,242,233,.82); }
+
+  section{ padding:70px 28px; }
+  .section-inner{ max-width:1200px; margin:0 auto; }
+  .section-label{ font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.18em; color:var(--amber); margin-bottom:12px; }
+  .section-title{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin-bottom:24px; }
+
+  .intro{ background:var(--canopy); }
+  .intro-text{ max-width:720px; font-size:14px; color:rgba(234,242,233,.85); }
+  .intro-text p + p{ margin-top:16px; }
+  .note-box{
+    margin-top:28px; padding:20px 22px; border-left:2px solid var(--moss);
+    background:rgba(10,22,19,.35); font-size:12.5px; color:rgba(234,242,233,.75); line-height:1.8;
+  }
+
+  .creatures{ background:var(--night); }
+  .group{ margin-bottom:56px; }
+  .group:last-child{ margin-bottom:0; }
+  .group-title{
+    font-family:"Space Mono", monospace; font-size:12px; letter-spacing:.14em; color:var(--moss);
+    text-align:center; margin-bottom:26px;
+  }
+  .group-title::before, .group-title::after{ content:"――"; margin:0 .8em; color:rgba(107,143,113,.5); }
+
+  .zukan-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:20px; }
+  .zukan-card{ border-top:1px solid rgba(234,242,233,.14); padding-top:16px; }
+  .zukan-image{
+    aspect-ratio:4/3; overflow:hidden; background:var(--canopy);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .zukan-image img{ width:100%; height:100%; object-fit:cover; }
+  .zukan-placeholder{
+    width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    color:rgba(234,242,233,.35); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.06em;
+    background:repeating-linear-gradient(135deg, rgba(234,242,233,.03) 0 10px, transparent 10px 20px);
+  }
+  .zukan-info{ padding-top:14px; }
+  .zukan-name{ font-family:"Shippori Mincho", serif; font-size:19px; font-weight:600; margin-bottom:3px; }
+  .zukan-latin{ font-size:11px; font-style:italic; color:rgba(234,242,233,.5); margin-bottom:8px; }
+  .zukan-desc{ font-size:12.5px; color:rgba(234,242,233,.72); line-height:1.8; margin-bottom:10px; }
+  .zukan-season{ font-family:"Space Mono", monospace; font-size:10.5px; color:var(--moss); letter-spacing:.03em; margin-bottom:8px; }
+  .zukan-tag{
+    display:inline-block; font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.04em;
+    padding:3px 8px; border:1px solid rgba(234,242,233,.2); border-radius:2px; color:rgba(234,242,233,.6);
+  }
+  .zukan-tag.rare{ border-color:rgba(232,163,61,.5); color:var(--amber); }
+
+  .tour{ text-align:center; background:var(--canopy); }
+  .tour h2{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin:16px 0 18px; }
+  .tour p{ max-width:560px; margin:0 auto 28px; font-size:13.5px; color:rgba(234,242,233,.75); line-height:1.8; }
+  .btn{ display:inline-block; padding:15px 32px; background:var(--amber); color:var(--bark); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; }
+  .btn:hover{ background:#f4b95a; }
+
+  .other-categories{ background:var(--canopy); border-top:1px solid rgba(234,242,233,.12); }
+  .other-creatures-title{ font-family:"Shippori Mincho", serif; font-size:22px; margin-bottom:22px; }
+  .other-creatures-buttons{ display:flex; flex-wrap:wrap; gap:12px; }
+  .category-button{
+    display:inline-flex; align-items:center; justify-content:center; padding:12px 22px;
+    border:1px solid rgba(234,242,233,.2); font-size:12px; color:rgba(234,242,233,.75); transition:.25s;
+  }
+  .category-button:hover{ border-color:var(--amber); color:var(--amber); background:rgba(232,163,61,.04); }
+  .category-button.is-pending{ color:rgba(234,242,233,.4); border-color:rgba(234,242,233,.12); cursor:default; }
+  .category-button.is-pending:hover{ border-color:rgba(234,242,233,.12); color:rgba(234,242,233,.4); background:none; }
+  .category-button.is-pending small{ margin-left:8px; font-size:10px; }
+
+  footer{ background:#07100E; padding:45px 28px 25px; }
+  .footer-inner{
+    max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; gap:30px;
+    padding-bottom:30px; border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .footer-logo{ font-family:"Shippori Mincho", serif; font-size:18px; }
+  .footer-copy{ margin-top:8px; font-size:11px; color:rgba(234,242,233,.5); }
+  .copyright{ max-width:1200px; margin:20px auto 0; font-family:"Space Mono", monospace; font-size:9px; color:rgba(234,242,233,.35); }
+
+  @media(max-width:760px){
+    .header-inner{ padding:15px 18px; }
+    nav a:not(.contact-link){ display:none; }
+    .hero-inner{ padding:60px 20px 40px; }
+    section{ padding:50px 20px; }
+    .zukan-grid{ grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:14px; }
+    .other-creatures-buttons{ display:grid; grid-template-columns:1fr 1fr; }
+  }
 </style>
 </head>
 <body>
+
 <div class="lang-bar"><div class="lang-bar-inner"><span class="current">JA</span><span class="disabled">EN</span><span class="disabled">ES</span><span class="disabled">中文</span></div></div>
-<header class="site-header"><div class="header-inner"><a href="../index.html" class="logo">Nature Experience Amami</a><nav class="desktop-nav"><a href="../index.html">HOME</a><a href="../highlights.html">代表的な生き物</a><a href="suisei-konntyuu.html">水生昆虫</a><a href="hebi.html">ヘビ一覧</a><a href="kaeru.html">両生類(カエル・イモリ)一覧</a><a href="kuwagata.html">クワガタ一覧</a><a href="honyuurui.html">哺乳類一覧</a><span class="category-nav-current">鳥一覧</span><a href="../tour.html">TOUR</a><a href="../contact.html">CONTACT</a></nav><a href="../contact.html" class="mobile-contact">CONTACT</a></div><nav class="mobile-category-nav" aria-label="生き物カテゴリー"><a href="../highlights.html">代表的な生き物</a><a href="suisei-konntyuu.html">水生昆虫</a><a href="hebi.html">ヘビ一覧</a><a href="kaeru.html">両生類(カエル・イモリ)一覧</a><a href="kuwagata.html">クワガタ一覧</a><a href="honyuurui.html">哺乳類一覧</a><span class="category-nav-current">鳥一覧</span></nav></header>
-<main>
-<section class="hero"><div class="hero-inner"><p class="section-label">CREATURES / TORI</p><h1>奄美大島の鳥</h1><p class="hero-lead">奄美大島の照葉樹林には、瑠璃色のルリカケスや幻の鳥オオトラツグミなど、この島や周辺の島々だけに暮らす固有の鳥たちがいます。多くが国の天然記念物に指定されています。</p></div></section>
-<section class="intro"><div class="section-inner"><div class="intro-grid"><div><p class="section-label">ABOUT</p><h2 class="section-title">奄美大島の鳥</h2></div><div class="intro-text"><p>奄美大島の照葉樹林には、瑠璃色の羽が美しいルリカケスや、かつて幻の鳥と呼ばれたオオトラツグミなど、この島ならではの鳥たちが暮らしています。</p><p>多くは薄暗い林床や樹上を好み、早朝や夕暮れどきに活発にさえずります。夜行性のアマミヤマシギのように、夜の森を歩く際に出会える種類もいます。</p><p>さえずりを頼りに探してみると、思わぬ場所でその姿を見つけられることがあります。驚かせないよう、静かに観察を楽しんでください。</p><div class="safety-note"><strong>天然記念物への配慮</strong><p>ここで紹介する鳥の多くは、国の天然記念物や国内希少野生動植物種に指定されており、捕獲・採集・譲渡が法律で禁止されています。営巣中は特に敏感なため、驚かせたり近づきすぎたりしないよう注意してください。</p></div></div></div></div></section>
-<section class="creatures"><div class="section-inner"><p class="section-label">BIRDS OF AMAMI</p><h2 class="section-title">奄美で出会える鳥</h2><p class="creatures-intro">奄美大島の森で出会える鳥を紹介します。写真や名前をクリックすると、それぞれの詳しいページを見ることができます。</p><div class="creature-grid"><article class="creature-card"><a href="../creatures/tori/akahige.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲・譲渡禁止(天然記念物)</span></div><span class="creature-name">アカヒゲ</span><p class="creature-description">全長約14cm 体重約18g。男女群島からトカラ列島、奄美大島とその周辺島、徳之島にかけて繁殖する日本固有種で、1970年に天然記念物に指定。オスは頭部・背・尾が鮮やかな橙。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/akahige/akahige_000001_20250120_14.jpg&quot;, &quot;images/creatures/tori/akahige/akahige_000002_20250123_12.jpg&quot;, &quot;images/creatures/tori/akahige/akahige_000003_20250123_12.jpg&quot;, &quot;images/creatures/tori/akahige/akahige_000004_20250123_12.jpg&quot;, &quot;images/creatures/tori/akahige/akahige_000005_20250123_12.jpg&quot;, &quot;images/creatures/tori/akahige/akahige_000006_20250123_12.jpg&quot;, &quot;images/creatures/tori/akahige/akahige_000007_20241203_13.jpg&quot;]"><img src="../images/creatures/tori/akahige/akahige_000001_20250120_14.jpg" alt="アカヒゲ"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/amami-yamashigi.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲・譲渡禁止(国内希少野生動植物種)</span></div><span class="creature-name">アマミヤマシギ</span><p class="creature-description">全長約35〜36cm。奄美群島と沖縄諸島にのみ生息する日本固有種で、奄美大島・加計呂麻島・請島・与路島・徳之島で繁殖が確認されている。近縁のヤマシギに似るが、脚が長く全体的。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg&quot;]"><img src="../images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg" alt="アマミヤマシギ"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/kawasemi.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲禁止(鳥獣保護管理法)</span></div><span class="creature-name">カワセミ</span><p class="creature-description">全長17cm、体重19〜40g程度の小型のカワセミ。頭部から背にかけて光沢のある青緑色、腹部は鮮やかな橙色で、「水辺の宝石」とも呼ばれる。奄美大島では周年生息する留鳥で、河。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/kawasemi/kawasemi_000001_20250207_10.jpg&quot;, &quot;images/creatures/tori/kawasemi/kawasemi_000002_20250208_10.jpg&quot;, &quot;images/creatures/tori/kawasemi/kawasemi_000003_20250215_10.jpg&quot;, &quot;images/creatures/tori/kawasemi/kawasemi_000004_20250217_11.jpg&quot;, &quot;images/creatures/tori/kawasemi/kawasemi_000005_20250314_10.jpg&quot;]"><img src="../images/creatures/tori/kawasemi/kawasemi_000001_20250207_10.jpg" alt="カワセミ"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/oo-tora-tsugumi.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲・譲渡禁止(天然記念物)</span></div><span class="creature-name">オオトラツグミ</span><p class="creature-description">全長約30cm。奄美大島にのみ生息する留鳥で、黄褐色の地に虎柄のような黒い斑紋が入る。国の天然記念物、国内希少野生動植物種に指定。林齢の高い広葉樹林の薄暗い林床を好み、ミミ。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg&quot;]"><img src="../images/creatures/tori/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg" alt="オオトラツグミ"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/oosuton-ooakagera.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲・譲渡禁止(天然記念物・国内希少野生動植物種)</span></div><span class="creature-name">オーストンオオアカゲラ</span><p class="creature-description">全長約28cm、キツツキの仲間では中型。奄美大島のみに分布する固有亜種で、体の上面はほぼ黒く白い斑が入り、他の亜種に比べて体下面の褐色味が強い。頭頂部はオスが赤く、メスは黒。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg&quot;, &quot;images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg&quot;, &quot;images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000003_20260713_14.jpg&quot;]"><img src="../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg" alt="オーストンオオアカゲラ"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/ruri-kakesu.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲・譲渡禁止(天然記念物)</span></div><span class="creature-name">ルリカケス</span><p class="creature-description">全長約38cm。奄美大島・加計呂麻島・請島にのみ生息する日本固有種で、瑠璃色の体に赤褐色の翼、白いくちばしと羽先が美しい。1921年に天然記念物に指定。常緑広葉樹林を好み、。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg&quot;, &quot;images/creatures/tori/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg&quot;, &quot;images/creatures/tori/ruri-kakesu/ruri-kakesu_000003_20250726_09.jpg&quot;, &quot;images/creatures/tori/ruri-kakesu/ruri-kakesu_000004_20250726_09.jpg&quot;, &quot;images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg&quot;]"><img src="../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg" alt="ルリカケス"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/ryukyu-akashobin.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲禁止(鳥獣保護管理法)</span></div><span class="creature-name">アカショウビン</span><p class="creature-description">全長約27cm。全身が光沢のある赤褐色で、腰の水色の斑が飛翔時によく目立つ。奄美大島では地元で「クッカル」とも呼ばれ、「キョロロロロー」とよく通る鳴き声で親しまれている渡り。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg&quot;, &quot;images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000002_20260615_00.jpg&quot;, &quot;images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000003_20260626_00.jpg&quot;, &quot;images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000004_20250809_23.jpg&quot;, &quot;images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000005_20260623_10.jpg&quot;, &quot;images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000006_20260713_10.jpg&quot;]"><img src="../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg" alt="アカショウビン"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/ryukyu-zuaka-aobato.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲禁止(鳥獣保護管理法)</span></div><span class="creature-name">ズアカアオバト</span><p class="creature-description">全長35cmほどで、アオバトよりやや大きい留鳥。全身が鮮やかな緑色をしている。和名の「頭赤」は、近縁種であるタイワンズアカアオバト(Treron formosae)の頭部が。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg&quot;, &quot;images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000002_20250718_12.jpg&quot;]"><img src="../images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg" alt="ズアカアオバト"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/ryuukyuu-konohazuku.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲禁止(鳥獣保護管理法)</span></div><span class="creature-name">リュウキュウコノハズク</span><p class="creature-description">全長22cm、日本最小級のフクロウの仲間。全身が褐色で細かな虫食い状の斑が入る。奄美大島以南の南西諸島に周年生息する留鳥で、成熟した森だけでなく人家近くの林でも見られる。夜。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg&quot;, &quot;images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000002_20241122_21.jpg&quot;]"><img src="../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg" alt="リュウキュウコノハズク"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/sankoutyou.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲禁止(鳥獣保護管理法)</span></div><span class="creature-name">サンコウチョウ</span><p class="creature-description">全長はオスが尾羽を含め約45cm、メスは約18cm。全体に黒紫色の光沢があり、目の周りとくちばしは鮮やかなコバルトブルー。オスは体長の3倍近い長い尾羽を持ち、飛翔する姿は独。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/sankoutyou/sankoutyou_000001_20260708_13.jpg&quot;]"><img src="../images/creatures/tori/sankoutyou/sankoutyou_000001_20260708_13.jpg" alt="サンコウチョウ"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/sasiba.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲禁止(鳥獣保護管理法・絶滅危惧II類)</span></div><span class="creature-name">サシバ</span><p class="creature-description">全長はオス約47cm、メス約51cm、翼を広げると105〜115cmになる中型のタカ。頭部は灰褐色、体の上面と胸は茶褐色で、喉は白地に黒い縦線が入る。ヘビやトカゲ、カエルな。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/sasiba/sasiba_000001_20240119_16.jpg&quot;, &quot;images/creatures/tori/sasiba/sasiba_000002_20250120_12.jpg&quot;, &quot;images/creatures/tori/sasiba/sasiba_000003_20250120_12.jpg&quot;, &quot;images/creatures/tori/sasiba/sasiba_000004_20250121_10.jpg&quot;, &quot;images/creatures/tori/sasiba/sasiba_000006_20250123_13.jpg&quot;, &quot;images/creatures/tori/sasiba/sasiba_000007_20250320_10.jpg&quot;, &quot;images/creatures/tori/sasiba/sasiba_000008_20250331_11.jpg&quot;]"><img src="../images/creatures/tori/sasiba/sasiba_000001_20240119_16.jpg" alt="サシバ"></div><span class="creature-link">VIEW CREATURE →</span></a></article><article class="creature-card"><a href="../creatures/tori/tageri.html"><div class="creature-info"><div class="creature-meta"><span>TORI</span><span class="">捕獲禁止(鳥獣保護管理法)</span></div><span class="creature-name">タゲリ</span><p class="creature-description">全長32cm。頭には長く伸びた冠羽があり、背は光沢のある緑黒色、腹は白い。優雅な姿から「冬の貴婦人」とも呼ばれる。ユーラシア大陸で繁殖し、日本には冬鳥として飛来する。奄美大。</p></div><div class="creature-image" data-photos="[&quot;images/creatures/tori/tageri/tageri_000001_20251221_15.jpg&quot;, &quot;images/creatures/tori/tageri/tageri_000002_20251221_15.jpg&quot;, &quot;images/creatures/tori/tageri/tageri_000003_20251221_15.jpg&quot;, &quot;images/creatures/tori/tageri/tageri_000004_20251221_15.jpg&quot;]"><img src="../images/creatures/tori/tageri/tageri_000001_20251221_15.jpg" alt="タゲリ"></div><span class="creature-link">VIEW CREATURE →</span></a></article></div></div></section>
-<section class="other-categories"><div class="section-inner"><p class="section-label">EXPLORE MORE</p><h2 class="section-title">他の生き物を見る</h2><p class="creatures-intro">カテゴリーを選んで、奄美大島の生き物をもっと見てみましょう。</p><div class="category-buttons"><a class="category-button" href="../highlights.html">代表的な生き物 →</a><a class="category-button" href="suisei-konntyuu.html">水生昆虫 →</a><a class="category-button" href="hebi.html">ヘビ →</a><a class="category-button" href="kaeru.html">両生類(カエル・イモリ) →</a><a class="category-button" href="kuwagata.html">クワガタ →</a><a class="category-button" href="honyuurui.html">哺乳類 →</a><span class="category-button is-current">鳥</span><span class="category-button is-pending">トカゲ<small>準備中</small></span><span class="category-button is-pending">昆虫その他<small>準備中</small></span><span class="category-button is-pending">貝<small>準備中</small></span><span class="category-button is-pending">甲殻類・汽水域など<small>準備中</small></span></div></div></section>
-<section class="tour"><p class="section-label">NIGHT FIELD TOUR</p><h2>奄美の夜の森を歩いてみませんか？</h2><p>ガイドと一緒に、生き物を探しながら夜の森を観察できます。</p><a class="btn" href="../tour.html">ナイトツアーの内容や料金はこちら →</a></section>
-</main>
-<footer>&copy; 2026 Nature-Experience Amami. 画像の無断転載・複製・改変を禁じます。</footer>
+
+<div class="site-header-sticky">
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
+      <nav>
+        <a href="../index.html">HOME</a>
+        <a href="../tour.html">TOUR</a>
+        <a href="../contact.html">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="creature-nav">
+    <div class="creature-nav-inner">
+      <a href="hebi.html">ヘビ</a><a href="kaeru.html">両生類(カエル・イモリ)</a><a href="kuwagata.html">クワガタ</a><a href="honyuurui.html">哺乳類</a><span class="active">鳥</span><span class="is-pending">トカゲ</span><a href="suisei-konntyuu.html">水生昆虫</a><span class="is-pending">昆虫その他</span><span class="is-pending">貝</span><span class="is-pending">甲殻類・汽水域など</span>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">CREATURES / BIRDS</div>
+    <h1>鳥</h1>
+    <p class="hero-lead">奄美大島の照葉樹林には、瑠璃色のルリカケスや幻の鳥オオトラツグミなど、この島や周辺の島々だけに暮らす固有の鳥たちがいます。渡り鳥や冬鳥も多く、季節によって出会える顔ぶれが変わります。</p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="section-inner">
+    <div class="section-label">ABOUT</div>
+    <h2 class="section-title">図鑑ページについて</h2>
+    <div class="intro-text"><p>奄美大島には、ルリカケスやオオトラツグミのようにこの島でしか見られない固有種から、アカショウビンやサシバのように決まった季節にだけ訪れる渡り鳥まで、多様な鳥が暮らしています。分類の近い仲間ごとにグループ分けして紹介しています。</p><p>鳥は種類が多く、これからも記録が増えていくジャンルのため、写真や情報が集まった種類から少しずつ図鑑形式で追加しています。</p></div>
+    <div class="note-box">ここで紹介する鳥の多くは、国の天然記念物や国内希少野生動植物種、鳥獣保護管理法などにより捕獲・採集・譲渡が禁止されています。特に営巣中や渡りの時期は鳥が神経質になりやすいため、驚かせたり近づきすぎたりせず、静かに観察してください。</div>
+  </div>
+</section>
+
+<section class="creatures">
+  <div class="section-inner">
+    <div class="section-label">FIELD GUIDE</div>
+    <h2 class="section-title">奄美で出会える鳥</h2>
+
+    <div class="group"><p class="group-title">スズメ目(ヒタキ・カラス・サンコウチョウの仲間)</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/tori/akahige.html"><div class="zukan-image"><img src="../images/creatures/tori/akahige/akahige_000001_20250120_14.jpg" data-photos='[&quot;../images/creatures/tori/akahige/akahige_000001_20250120_14.jpg&quot;, &quot;../images/creatures/tori/akahige/akahige_000002_20250123_12.jpg&quot;, &quot;../images/creatures/tori/akahige/akahige_000003_20250123_12.jpg&quot;, &quot;../images/creatures/tori/akahige/akahige_000004_20250123_12.jpg&quot;, &quot;../images/creatures/tori/akahige/akahige_000005_20250123_12.jpg&quot;, &quot;../images/creatures/tori/akahige/akahige_000006_20250123_12.jpg&quot;, &quot;../images/creatures/tori/akahige/akahige_000007_20241203_13.jpg&quot;]' alt="アカヒゲ"></div><div class="zukan-info"><div class="zukan-name">アカヒゲ</div><div class="zukan-latin">スズメ目ヒタキ科Larvivora属アカヒゲ <em>Larvivora komadori</em></div><p class="zukan-desc">全長約14cm 体重約18g。男女群島からトカラ列島、奄美大島とその周辺島、徳之島にかけて繁殖する日本固有種で、1970年に天然記念物に指定。オスは頭部・背・尾が鮮やかな橙赤色で、胸と脇の黒い部分が名前の由来である「ヒゲ」のように見える。メスは全体に地味な色合い。常緑広葉樹林の林床で昆虫などを採餌し、力強く美しいさえずりで縄張りを主張する。早朝、さえずりを頼りに探すと見つけやすい。沖縄島北部には別種のホントウアカヒゲが生息するが、分布域は重ならない。</p><span class="zukan-tag rare">捕獲・譲渡禁止(天然記念物)</span></div></a><a class="zukan-card" href="../creatures/tori/oo-tora-tsugumi.html"><div class="zukan-image"><img src="../images/creatures/tori/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg" alt="オオトラツグミ"></div><div class="zukan-info"><div class="zukan-name">オオトラツグミ</div><div class="zukan-latin">スズメ目ヒタキ科オオトラツグミ <em>Zoothera dauma major</em></div><p class="zukan-desc">全長約30cm。奄美大島にのみ生息する留鳥で、黄褐色の地に虎柄のような黒い斑紋が入る。国の天然記念物、国内希少野生動植物種に指定。林齢の高い広葉樹林の薄暗い林床を好み、ミミズなどを食べる。繁殖期の2月から4月初旬には、夜明け前や夕暮れどきの薄暗い時間帯に「キョローン、ツィーッ」という澄んだ美しい声でさえずる。かつては森林伐採や外来種の影響で「幻の鳥」と言われるほど数を減らしたが、近年は森林の回復とともに生息数が回復傾向にある。</p><div class="zukan-season">観察期 2〜4月</div><span class="zukan-tag rare">捕獲・譲渡禁止(天然記念物)</span></div></a><a class="zukan-card" href="../creatures/tori/ruri-kakesu.html"><div class="zukan-image"><img src="../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg" data-photos='[&quot;../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg&quot;, &quot;../images/creatures/tori/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg&quot;, &quot;../images/creatures/tori/ruri-kakesu/ruri-kakesu_000003_20250726_09.jpg&quot;, &quot;../images/creatures/tori/ruri-kakesu/ruri-kakesu_000004_20250726_09.jpg&quot;, &quot;../images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg&quot;]' alt="ルリカケス"></div><div class="zukan-info"><div class="zukan-name">ルリカケス</div><div class="zukan-latin">スズメ目カラス科カケス属ルリカケス <em>Garrulus lidthi</em></div><p class="zukan-desc">全長約38cm。奄美大島・加計呂麻島・請島にのみ生息する日本固有種で、瑠璃色の体に赤褐色の翼、白いくちばしと羽先が美しい。1921年に天然記念物に指定。常緑広葉樹林を好み、シイやカシの実を食べる雑食性。繁殖期は2月から5月頃で、樹洞などに3〜7個の卵を産む。かつてはノネコやフイリマングースの捕食で数を減らしたが、2024年にマングースの根絶が宣言されるなど保護の成果が実り、近年は生息数が回復している。日中は活発に飛び回るが、夜は林道沿いの電線や枝先で休む姿を観察できる。</p><span class="zukan-tag rare">捕獲・譲渡禁止(天然記念物)</span></div></a><a class="zukan-card" href="../creatures/tori/sankoutyou.html"><div class="zukan-image"><img src="../images/creatures/tori/sankoutyou/sankoutyou_000001_20260708_13.jpg" alt="サンコウチョウ"></div><div class="zukan-info"><div class="zukan-name">サンコウチョウ</div><div class="zukan-latin">スズメ目カササギヒタキ科サンコウチョウ属 リュウキュウサンコウチョウ <em>Terpsiphone atrocaudata illex</em></div><p class="zukan-desc">全長はオスが尾羽を含め約45cm、メスは約18cm。全体に黒紫色の光沢があり、目の周りとくちばしは鮮やかなコバルトブルー。オスは体長の3倍近い長い尾羽を持ち、飛翔する姿は独特。奄美大島には夏鳥として4月頃に渡来し、薄暗い林内で枝から枝へ飛び移りながら、羽虫やハチ、チョウなど飛んでいる昆虫を空中で捕らえる。鳴き声が「ツキ・ヒ・ホシ、ホイホイホイ(月・日・星、ホイホイホイ)」と聞こえることから、三つの光にちなんで「三光鳥」と名付けられた。5月から7月にかけてコケなどを使ったお椀型の巣を木の股に作り、抱卵・育雛を行う。巣立ち前のヒナがいる時期は、巣のすぐそばに長時間留まったり枝を揺らしたりすると抱卵放棄につながるおそれがあるため、双眼鏡越しに短時間観察するにとどめる。9月頃には東南アジアの越冬地へ再び渡っていく。</p><div class="zukan-season">観察期 4〜9月</div><span class="zukan-tag">観察できる生き物</span></div></a></div></div>
+<div class="group"><p class="group-title">ブッポウソウ目(カワセミの仲間)</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/tori/kawasemi.html"><div class="zukan-image"><img src="../images/creatures/tori/kawasemi/kawasemi_000001_20250207_10.jpg" data-photos='[&quot;../images/creatures/tori/kawasemi/kawasemi_000001_20250207_10.jpg&quot;, &quot;../images/creatures/tori/kawasemi/kawasemi_000002_20250208_10.jpg&quot;, &quot;../images/creatures/tori/kawasemi/kawasemi_000003_20250215_10.jpg&quot;, &quot;../images/creatures/tori/kawasemi/kawasemi_000004_20250217_11.jpg&quot;, &quot;../images/creatures/tori/kawasemi/kawasemi_000005_20250314_10.jpg&quot;]' alt="カワセミ"></div><div class="zukan-info"><div class="zukan-name">カワセミ</div><div class="zukan-latin">ブッポウソウ目カワセミ科カワセミ属カワセミ <em>Alcedo atthis bengalensis</em></div><p class="zukan-desc">全長17cm、体重19〜40g程度の小型のカワセミ。頭部から背にかけて光沢のある青緑色、腹部は鮮やかな橙色で、「水辺の宝石」とも呼ばれる。奄美大島では周年生息する留鳥で、河川や水田脇の水路、ため池など様々な淡水域に現れる。水辺に張り出した枝や杭にとまって水面を見つめ、小魚やエビを見つけると勢いよく飛び込んで捕らえる。縄張り意識が強く、単独かつがいで行動し、土手や崩れた斜面の土中に横穴を掘って営巣する。他の多くの鳥のように夜の森ではなく、明るい時間帯の水辺で観察しやすい数少ない鳥。</p><span class="zukan-tag">観察できる生き物</span></div></a><a class="zukan-card" href="../creatures/tori/ryukyu-akashobin.html"><div class="zukan-image"><img src="../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg" data-photos='[&quot;../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg&quot;, &quot;../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000002_20260615_00.jpg&quot;, &quot;../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000003_20260626_00.jpg&quot;, &quot;../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000004_20250809_23.jpg&quot;, &quot;../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000005_20260623_10.jpg&quot;, &quot;../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000006_20260713_10.jpg&quot;]' alt="アカショウビン"></div><div class="zukan-info"><div class="zukan-name">アカショウビン</div><div class="zukan-latin">ブッポウソウ目カワセミ科アカショウビン属 リュウキュウアカショウビン <em>Halcyon coromanda bangsi</em></div><p class="zukan-desc">全長約27cm。全身が光沢のある赤褐色で、腰の水色の斑が飛翔時によく目立つ。奄美大島では地元で「クッカル」とも呼ばれ、「キョロロロロー」とよく通る鳴き声で親しまれている渡り鳥(夏鳥)。東南アジアの越冬地から例年4月末のゴールデンウィーク前後に渡ってきて、9月頃までに再び南へ渡っていく。カワセミの仲間だが魚はあまり食べず、カニやカエル、トカゲ、昆虫など森の生き物を幅広く捕食する。繁殖期の6月から7月にかけて樹洞やキツツキの古巣に5個ほどの卵を産み、雛は7月頃に巣立つ。この時期は親鳥が神経質になっており、営巣木に近づいたり物音を立てたり、フラッシュ撮影をしたりすると抱卵放棄や早期の巣立ちにつながるおそれがあるため、離れた場所から静かに、短時間の観察にとどめる。</p><div class="zukan-season">観察期 4〜9月</div><span class="zukan-tag">観察できる生き物</span></div></a></div></div>
+<div class="group"><p class="group-title">フクロウ目</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/tori/ryuukyuu-konohazuku.html"><div class="zukan-image"><img src="../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg" data-photos='[&quot;../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg&quot;, &quot;../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000002_20241122_21.jpg&quot;]' alt="リュウキュウコノハズク"></div><div class="zukan-info"><div class="zukan-name">リュウキュウコノハズク</div><div class="zukan-latin">フクロウ目フクロウ科コノハズク属 リュウキュウコノハズク <em>Otus elegans elegans</em></div><p class="zukan-desc">全長22cm、日本最小級のフクロウの仲間。全身が褐色で細かな虫食い状の斑が入る。奄美大島以南の南西諸島に周年生息する留鳥で、成熟した森だけでなく人家近くの林でも見られる。夜行性で、日没後に「コホッ、コホッ」という低い声を繰り返し、メスが「ニャッ」と応えるように鳴くこともある。昆虫やクモ、ヤモリなどを捕食する。樹洞やキツツキの古巣、オオタニワタリの葉陰などに営巣し、繁殖期の4月から7月頃に4〜5個の卵を産む。抱卵はメスのみが行い、雛への給餌は雌雄で協力して行い、7月頃に巣立ちを迎える個体が多い。巣立ち前後のヒナは飛翔がまだ不安定で、地面近くの枝に降りていることがあるが、拾い上げたり長時間ライトを当て続けたりせず、そっとその場を離れる。鳴き声自体は繁殖期に限らず一年を通じて聞こえる。IUCNレッドリストでは準絶滅危惧(NT)に指定されている。</p><div class="zukan-season">観察期 4〜7月</div><span class="zukan-tag rare">IUCNレッドリスト:準絶滅危惧(NT)</span></div></a></div></div>
+<div class="group"><p class="group-title">タカ目</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/tori/sasiba.html"><div class="zukan-image"><img src="../images/creatures/tori/sasiba/sasiba_000001_20240119_16.jpg" data-photos='[&quot;../images/creatures/tori/sasiba/sasiba_000001_20240119_16.jpg&quot;, &quot;../images/creatures/tori/sasiba/sasiba_000002_20250120_12.jpg&quot;, &quot;../images/creatures/tori/sasiba/sasiba_000003_20250120_12.jpg&quot;, &quot;../images/creatures/tori/sasiba/sasiba_000004_20250121_10.jpg&quot;, &quot;../images/creatures/tori/sasiba/sasiba_000006_20250123_13.jpg&quot;, &quot;../images/creatures/tori/sasiba/sasiba_000007_20250320_10.jpg&quot;, &quot;../images/creatures/tori/sasiba/sasiba_000008_20250331_11.jpg&quot;]' alt="サシバ"></div><div class="zukan-info"><div class="zukan-name">サシバ</div><div class="zukan-latin">タカ目タカ科サシバ属サシバ <em>Butastur indicus</em></div><p class="zukan-desc">全長はオス約47cm、メス約51cm、翼を広げると105〜115cmになる中型のタカ。頭部は灰褐色、体の上面と胸は茶褐色で、喉は白地に黒い縦線が入る。ヘビやトカゲ、カエルなどの小動物やセミ、バッタといった昆虫を主に捕食する。九州以北の本州・四国で繁殖し、繁殖を終えた個体が9月上旬から南西諸島を経由して東南アジアへ渡っていく。奄美大島は国内最大級の越冬地として知られ、10月中旬頃に渡りのピークを迎え、上空で多数の個体が輪を描いて上昇する「鷹柱」が観察できる。渡りきれずに越冬する個体も多く、例年約2000羽が11月から翌年3月頃にかけて滞在する。環境省レッドリストで絶滅危惧II類(VU)、ワシントン条約付属書IIに掲載されている。ねぐらにしている林の周辺では、大声や急な動き、フラッシュ撮影で個体を驚かせて余計な飛行をさせないよう、離れた場所から静かに観察する。</p><div class="zukan-season">観察期 10〜3月</div><span class="zukan-tag rare">環境省レッドリスト:絶滅危惧II類(VU)</span></div></a></div></div>
+<div class="group"><p class="group-title">キツツキ目</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/tori/oosuton-ooakagera.html"><div class="zukan-image"><img src="../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg" data-photos='[&quot;../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg&quot;, &quot;../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000002_20250726_09.jpg&quot;, &quot;../images/creatures/tori/oosuton-ooakagera/oosuton-ooakagera_000003_20260713_14.jpg&quot;]' alt="オーストンオオアカゲラ"></div><div class="zukan-info"><div class="zukan-name">オーストンオオアカゲラ</div><div class="zukan-latin">キツツキ科アカゲラ属 <em>Dendrocopos leucotos owstoni</em></div><p class="zukan-desc">全長約28cm、キツツキの仲間では中型。奄美大島のみに分布する固有亜種で、体の上面はほぼ黒く白い斑が入り、他の亜種に比べて体下面の褐色味が強い。頭頂部はオスが赤く、メスは黒いので雌雄の見分けは簡単。成熟した照葉樹林を中心に生息し、広葉樹の大木の幹に穴を掘って営巣する。食性は朽木に潜むカミキリムシの幼虫など。冬頃から縄張りの主張や繁殖相手へのアピールが始まり、2月から5月頃はくちばしで幹を連続して叩く「ドラミング」や鳴き声が聞こえやすい時期。近年はマツ枯れなどの影響で分布が奄美大島の全域に拡大している。奄美大島に生息するキツツキはアマミコゲラのみなので、大きさで区別できる。1971年に国指定天然記念物、1993年に国内希少野生動植物種に指定され、捕獲・譲渡は禁止。</p><div class="zukan-season">観察期 2〜5月</div><span class="zukan-tag rare">捕獲・譲渡禁止(天然記念物・国内希少野生動植物種)</span></div></a></div></div>
+<div class="group"><p class="group-title">ハト目</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/tori/ryukyu-zuaka-aobato.html"><div class="zukan-image"><img src="../images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg" data-photos='[&quot;../images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg&quot;, &quot;../images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000002_20250718_12.jpg&quot;]' alt="ズアカアオバト"></div><div class="zukan-info"><div class="zukan-name">ズアカアオバト</div><div class="zukan-latin">ハト目ハト科アオバト属 リュウキュウズアカアオバト <em>Treron permagnus</em></div><p class="zukan-desc">全長35cmほどで、アオバトよりやや大きい留鳥。全身が鮮やかな緑色をしている。和名の「頭赤」は、近縁種であるタイワンズアカアオバト(Treron formosae)の頭部が赤みを帯びることに由来するが、奄美大島などに生息する本種は頭部まで緑色。低地から山地の照葉樹林に生息し、樹上でイヌビワなどの木の実や種子を食べる。「ウーアオー、ペー、ヘポー」と尺八のような独特の声で鳴く。5月頃に2個の卵を産んで繁殖する。生息地の分断や減少により、IUCNレッドリストで準絶滅危惧(NT)に指定されている。</p><div class="zukan-season">観察期 5〜7月</div><span class="zukan-tag rare">IUCNレッドリスト:準絶滅危惧(NT)</span></div></a></div></div>
+<div class="group"><p class="group-title">チドリ目(シギ・チドリの仲間)</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/tori/amami-yamashigi.html"><div class="zukan-image"><img src="../images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg" alt="アマミヤマシギ"></div><div class="zukan-info"><div class="zukan-name">アマミヤマシギ</div><div class="zukan-latin">チドリ目シギ科アマミヤマシギ <em>Scolopax mira</em></div><p class="zukan-desc">全長約35〜36cm。奄美群島と沖縄諸島にのみ生息する日本固有種で、奄美大島・加計呂麻島・請島・与路島・徳之島で繁殖が確認されている。近縁のヤマシギに似るが、脚が長く全体的に黒みがかり、他のシギ類よりずんぐりとした体つき。常緑広葉樹林の薄暗い林床を好み、日没から日の出にかけて活発に活動し、地面でミミズや昆虫を採る。朝夕の薄暗い時間帯や満月の夜に特に活発になる。林内の地上に営巣し、3月から5月頃に2〜4個の卵を産む。1993年に国内希少野生動植物種に指定。マングースやノネコによる捕食、森林伐採による生息地の減少が課題となっている。</p><span class="zukan-tag rare">捕獲・譲渡禁止(国内希少野生動植物種)</span></div></a><a class="zukan-card" href="../creatures/tori/tageri.html"><div class="zukan-image"><img src="../images/creatures/tori/tageri/tageri_000001_20251221_15.jpg" data-photos='[&quot;../images/creatures/tori/tageri/tageri_000001_20251221_15.jpg&quot;, &quot;../images/creatures/tori/tageri/tageri_000002_20251221_15.jpg&quot;, &quot;../images/creatures/tori/tageri/tageri_000003_20251221_15.jpg&quot;, &quot;../images/creatures/tori/tageri/tageri_000004_20251221_15.jpg&quot;]' alt="タゲリ"></div><div class="zukan-info"><div class="zukan-name">タゲリ</div><div class="zukan-latin">チドリ目チドリ科タゲリ属タゲリ <em>Vanellus vanellus</em></div><p class="zukan-desc">全長32cm。頭には長く伸びた冠羽があり、背は光沢のある緑黒色、腹は白い。優雅な姿から「冬の貴婦人」とも呼ばれる。ユーラシア大陸で繁殖し、日本には冬鳥として飛来する。奄美大島には例年10月下旬頃から水田や畑などの開けた農耕地に姿を見せ始め、翌年3月末から4月頃まで越冬する。群れで行動し、ミミズや昆虫を土の中から探して捕食する。奄美大島の代表的な夜の森の生き物とは異なり、日中の農耕地で観察しやすい冬の使者。</p><div class="zukan-season">観察期 10〜3月</div><span class="zukan-tag">観察できる生き物</span></div></a></div></div>
+  </div>
+</section>
+
+<section class="tour">
+  <p class="section-label">NIGHT FIELD TOUR</p>
+  <h2>奄美の夜の森を歩いてみませんか？</h2>
+  <p>ガイドと一緒に、生き物を探しながら夜の森を観察できます。</p>
+  <a class="btn" href="../tour.html">ナイトツアーの内容や料金はこちら →</a>
+</section>
+
+<section class="other-categories">
+  <div class="section-inner">
+    <div class="section-label">EXPLORE MORE</div>
+    <h3 class="other-creatures-title">他の生き物を見る</h3>
+    <div class="other-creatures-buttons">
+      <a href="hebi.html" class="category-button">ヘビ →</a><a href="kaeru.html" class="category-button">両生類(カエル・イモリ) →</a><a href="kuwagata.html" class="category-button">クワガタ →</a><a href="honyuurui.html" class="category-button">哺乳類 →</a><span class="category-button is-pending">トカゲ<small>準備中</small></span><a href="suisei-konntyuu.html" class="category-button">水生昆虫 →</a><span class="category-button is-pending">昆虫その他<small>準備中</small></span><span class="category-button is-pending">貝<small>準備中</small></span><span class="category-button is-pending">甲殻類・汽水域など<small>準備中</small></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Nature Experience Amami</div>
+      <div class="footer-copy">奄美大島の夜の森を歩くネイチャーガイド</div>
+    </div>
+  </div>
+  <div class="copyright">&copy; Nature Experience Amami</div>
+</footer>
+
 <script>
-document.querySelectorAll(".creature-image[data-photos]").forEach((container) => {
-  const photos = JSON.parse(container.dataset.photos);
-  const image = container.querySelector("img");
-  image.src = `../${photos[Math.floor(Math.random() * photos.length)]}`;
-});
+(function () {
+  document.querySelectorAll(".zukan-image img[data-photos]").forEach(function (img) {
+    try {
+      var photos = JSON.parse(img.dataset.photos);
+      if (photos.length > 1) {
+        img.src = photos[Math.floor(Math.random() * photos.length)];
+      }
+    } catch (e) {}
+  });
+})();
 </script>
+
 </body>
 </html>
