@@ -33,6 +33,18 @@ body{
 img{ display:block; width:100%; height:100%; object-fit:cover; }
 a{ color:inherit; }
 
+/* ===== LANGUAGE BAR ===== */
+.lang-bar{ background:#050907; border-bottom:1px solid var(--line); }
+.lang-bar-inner{
+  max-width:1200px; margin:auto; padding:.5rem 6vw;
+  display:flex; justify-content:flex-end; gap:1rem;
+  font-family:'Space Mono',monospace; font-size:.7rem; letter-spacing:.06em;
+}
+.lang-bar a, .lang-bar span{ text-decoration:none; color:rgba(234,242,233,.5); }
+.lang-bar a:hover{ color:var(--moonlight); }
+.lang-bar span.current{ color:var(--amber); }
+.lang-bar span.disabled{ color:rgba(234,242,233,.25); }
+
 /* ===== HEADER ===== */
 .site-header{
   position:sticky; top:0; z-index:20;
@@ -271,6 +283,8 @@ footer{
 </style>
 </head>
 <body>
+
+<div class="lang-bar"><div class="lang-bar-inner"><span class="current">JA</span><a href="../../en/creatures/suisei-konntyuu/satou-kara-himedoromushi.html">EN</a><a href="../../es/creatures/suisei-konntyuu/satou-kara-himedoromushi.html">ES</a><a href="../../zh/creatures/suisei-konntyuu/satou-kara-himedoromushi.html">中文</a></div></div>
 
 <header class="site-header">
   <div class="header-inner">

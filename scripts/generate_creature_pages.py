@@ -44,6 +44,9 @@ PHOTO_DIR_ALIASES = {
 
 TARGETS = None
 
+LANGS = ["en", "es", "zh"]
+LANG_LABELS = {"en": "EN", "es": "ES", "zh": "中文"}
+
 COMMON_SAFETY_MESSAGE = (
     "奄美の生き物は、写真におさめて楽しみましょう。生き物によっては、法律や条例で捕獲・採集・"
     "持ち出しが禁止されています。国立公園内の特別保護区では、採集そのものが禁止されているエリア"
@@ -272,6 +275,17 @@ def render_safety(danger_text, prohibited):
     return "".join(parts), (" warning" if prohibited else "")
 
 
+def render_lang_bar(category, creature_id):
+    parts = ['<span class="current">JA</span>']
+    for code in LANGS:
+        translated_md = CONTENT_DIR / category / f"{creature_id}.{code}.md"
+        if translated_md.exists():
+            parts.append(f'<a href="../../{code}/creatures/{category}/{creature_id}.html">{LANG_LABELS[code]}</a>')
+        else:
+            parts.append(f'<span class="disabled">{LANG_LABELS[code]}</span>')
+    return "".join(parts)
+
+
 def category_navigation(categories):
     links = []
     for category_id, name in categories.items():
@@ -354,6 +368,7 @@ def render(item, creatures, generated_keys, categories):
         .replace("{related}", "$related")
         .replace("{category_navigation}", "$category_navigation")
         .replace("{photo_script}", "$photo_script")
+        .replace("{lang_links}", "$lang_links")
     )
 
     return t.safe_substitute(
@@ -372,6 +387,7 @@ def render(item, creatures, generated_keys, categories):
         related=related_html,
         category_navigation=category_navigation(categories),
         photo_script=photo_script,
+        lang_links=render_lang_bar(item["category"], item["id"]),
     )
 
 
