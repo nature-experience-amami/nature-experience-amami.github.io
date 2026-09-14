@@ -32,10 +32,9 @@ CATEGORY_CONTENT_I18N = {
                 "you'll find them."
             ),
             "about_paragraphs": [
-                "Unlike snakes or frogs, aquatic insects don't get a full page per species here. "
-                "Instead, this page gathers them all in one field-guide format.",
-                "There are a great many species, many of them highly specialized groups, so we "
-                "add photos and information gradually as they come together.",
+                "There are a great many species, many of them highly specialized groups, so this "
+                "page adds them gradually, in field-guide format, as photos and information come "
+                "together. Click a photo or name to see that species' full page.",
             ],
             "note": (
                 "Aquatic insects are delicate, and some species are quite scarce. Please observe "
@@ -50,11 +49,10 @@ CATEGORY_CONTENT_I18N = {
                 "agua: mire con atención y los encontrará."
             ),
             "about_paragraphs": [
-                "A diferencia de las serpientes o las ranas, los insectos acuáticos no tienen "
-                "aquí una página completa por especie. En su lugar, esta página los reúne a "
-                "todos en formato de guía de campo.",
                 "Hay muchísimas especies, y muchas pertenecen a grupos muy especializados, así "
-                "que añadimos fotos e información poco a poco conforme las vamos reuniendo.",
+                "que esta página las añade poco a poco, en formato de guía de campo, conforme "
+                "reunimos fotos e información. Haga clic en una foto o un nombre para ver la "
+                "página completa de esa especie.",
             ],
             "note": (
                 "Los insectos acuáticos son delicados, y algunas especies son bastante escasas. "
@@ -68,14 +66,83 @@ CATEGORY_CONTENT_I18N = {
                 "仔细寻找就能与它们相遇。"
             ),
             "about_paragraphs": [
-                "与蛇类、蛙类不同，水生昆虫不会在本站为每个物种单独制作详细页面，"
-                "而是采用图鉴形式集中介绍。",
-                "水生昆虫种类繁多，其中不少还是专业性很强的类群，我们会随着照片和资料"
-                "的积累逐步补充完善。",
+                "水生昆虫种类繁多，其中不少还是专业性很强的类群，本页会随着照片和资料的积累"
+                "逐步以图鉴形式补充完善。点击照片或名称，即可查看该物种的详细页面。",
             ],
             "note": (
                 "水生昆虫较为纤弱，部分种类数量稀少。请在水边轻柔地观察，如需采集，"
                 "也请将带走的数量控制在最低限度。"
+            ),
+        },
+    },
+    "tori": {
+        "en": {
+            "hero_lead": (
+                "Amami Oshima's laurel forests are home to birds found only on this island and "
+                "its neighbors — from the deep blue Lidth's Jay to the once-legendary Amami "
+                "Thrush. Many migrants and winter visitors pass through too, so the birds you "
+                "meet change with the season."
+            ),
+            "about_paragraphs": [
+                "Amami Oshima is home to everything from endemic species like Lidth's Jay and "
+                "the Amami Thrush, found nowhere else, to migratory birds like the Ruddy "
+                "Kingfisher and the Grey-faced Buzzard that visit only in certain seasons. Birds "
+                "are grouped here by their closest relatives.",
+                "There are many kinds of birds, and new records keep being added, so species are "
+                "added to this field guide gradually as photos and information come together. "
+                "Click a photo or name to see that species' full page.",
+            ],
+            "note": (
+                "Many of the birds introduced here are protected as national Natural Monuments, "
+                "Nationally Rare Wild Species, or under the Wildlife Protection and Hunting "
+                "Management Act, which prohibits their capture, collection, or transfer. Birds "
+                "are especially easily disturbed while nesting or migrating, so please observe "
+                "quietly without startling them or approaching too closely."
+            ),
+        },
+        "es": {
+            "hero_lead": (
+                "Los bosques laurifolios de Amami Oshima albergan aves que solo existen en esta "
+                "isla y las vecinas, desde el azul intenso del arrendajo de Lidth hasta el otrora "
+                "legendario zorzal de Amami. También pasan muchas aves migratorias y visitantes "
+                "invernales, así que las especies que se encuentran cambian con la estación."
+            ),
+            "about_paragraphs": [
+                "En Amami Oshima conviven especies endémicas como el arrendajo de Lidth y el "
+                "zorzal de Amami, que no se encuentran en ningún otro lugar, junto con aves "
+                "migratorias como el martín pescador rojizo y el busardo cariblanco, que solo "
+                "visitan en ciertas estaciones. Aquí se agrupan por parentesco taxonómico.",
+                "Hay muchas especies de aves y los registros siguen aumentando, así que vamos "
+                "añadiendo especies a esta guía de campo poco a poco, conforme reunimos fotos e "
+                "información. Haga clic en una foto o un nombre para ver la página completa de "
+                "esa especie.",
+            ],
+            "note": (
+                "Muchas de las aves presentadas aquí están protegidas como Monumentos Naturales "
+                "nacionales, Especies Silvestres Nacionales Raras, o por la Ley de Protección y "
+                "Gestión de la Fauna Silvestre, que prohíbe su captura, recolección o traslado. "
+                "Las aves se alteran con especial facilidad durante la nidificación o la "
+                "migración, así que obsérvelas en silencio, sin asustarlas ni acercarse "
+                "demasiado."
+            ),
+        },
+        "zh": {
+            "hero_lead": (
+                "奄美大岛的照叶树林中，栖息着只分布于这座岛屿及周边岛屿的固有鸟类——从蓝紫色的"
+                "琉球松鸦，到曾被称为「幻之鸟」的奄美地鸫。此外还有许多候鸟与冬候鸟经过或停留，"
+                "因此不同季节能遇见的鸟类也会随之变化。"
+            ),
+            "about_paragraphs": [
+                "奄美大岛既有琉球松鸦、奄美地鸫这样只分布于本岛的固有种，也有琉球赤翡翠、"
+                "灰脸鵟鹰这样只在特定季节到访的候鸟，鸟类种类十分多样。这里按照亲缘关系相近的"
+                "类群进行分组介绍。",
+                "鸟类种类繁多，观察记录也在不断增加，因此本页会随着照片和资料的积累逐步以"
+                "图鉴形式补充新的种类。点击照片或名称，即可查看该物种的详细页面。",
+            ],
+            "note": (
+                "这里介绍的鸟类中，有不少被指定为国家天然纪念物、国内稀有野生动植物种，或受"
+                "《鸟兽保护管理法》保护，禁止捕获、采集及转让。鸟类在营巢期和迁徙期尤其容易"
+                "受到惊扰，请勿使其受惊或过度靠近，安静地进行观察。"
             ),
         },
     },
