@@ -148,9 +148,17 @@ select{ -webkit-appearance:none; appearance:none; }
       <input type="password" id="pat" placeholder="ghp_... または github_pat_...">
       <button type="button" id="toggle-pat" class="icon-btn" aria-label="トークンを表示">👁</button>
     </div>
-    <label for="pat-expiry">トークンの有効期限(任意)</label>
-    <input type="date" id="pat-expiry">
-    <p class="hint">GitHubでトークンを作った時に設定した期限日を入れておくと、ログイン後に残り日数が表示されます。空欄でもツールは使えます。</p>
+    <label for="pat-expiry-preset">トークンの有効期限(任意)</label>
+    <select id="pat-expiry-preset">
+      <option value="">設定しない</option>
+      <option value="7">今日から7日</option>
+      <option value="30">今日から30日</option>
+      <option value="60">今日から60日</option>
+      <option value="90">今日から90日</option>
+      <option value="custom">日付を直接指定</option>
+    </select>
+    <input type="date" id="pat-expiry" style="margin-top:.5rem; display:none;">
+    <p class="hint" id="pat-expiry-preview">GitHubでトークンを作った時に選んだ期限(7日/30日/60日/90日など)を選ぶと、期限日が自動計算されます。空欄でもツールは使えます。</p>
     <p class="hint">接続先: <strong>nature-experience-amami/nature-experience-amami.github.io</strong>(固定)</p>
     <button class="btn" id="save-setup">保存する</button>
     <p class="hint">
@@ -299,6 +307,62 @@ select{ -webkit-appearance:none; appearance:none; }
   var settingsBtn = document.getElementById("settings-btn");
   var tokenStatus = document.getElementById("token-status");
 
+  // トークン有効期限の入力(プリセット日数 or カスタム日付)
+  var expiryPreset = document.getElementById("pat-expiry-preset");
+  var expiryInput = document.getElementById("pat-expiry");
+  var expiryPreview = document.getElementById("pat-expiry-preview");
+
+  function formatDateJp(dateStr) {
+    var d = new Date(dateStr + "T00:00:00");
+    return d.getFullYear() + "年" + (d.getMonth() + 1) + "月" + d.getDate() + "日";
+  }
+
+  function toIsoDate(d) {
+    var y = d.getFullYear();
+    var m = ("0" + (d.getMonth() + 1)).slice(-2);
+    var day = ("0" + d.getDate()).slice(-2);
+    return y + "-" + m + "-" + day;
+  }
+
+  // プリセット・カスタム日付の入力状況から、実際に保存する期限日(YYYY-MM-DD)を算出する
+  function computeExpiryDate() {
+    if (expiryPreset.value === "") return null;
+    if (expiryPreset.value === "custom") return expiryInput.value || null;
+    var d = new Date();
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() + parseInt(expiryPreset.value, 10));
+    return toIsoDate(d);
+  }
+
+  function updateExpiryPreview() {
+    var expiry = computeExpiryDate();
+    if (!expiry) {
+      expiryPreview.textContent = "GitHubでトークンを作った時に選んだ期限(7日/30日/60日/90日など)を選ぶと、期限日が自動計算されます。空欄でもツールは使えます。";
+    } else {
+      expiryPreview.textContent = "→ " + formatDateJp(expiry) + " に期限切れになります。";
+    }
+  }
+
+  expiryPreset.addEventListener("change", function () {
+    expiryInput.style.display = (expiryPreset.value === "custom") ? "block" : "none";
+    updateExpiryPreview();
+  });
+  expiryInput.addEventListener("change", updateExpiryPreview);
+
+  // 保存済みの期限日をプリセットUIに反映する(常に「日付を直接指定」として表示する)
+  function applyExpiryToInputs(expiry) {
+    if (!expiry) {
+      expiryPreset.value = "";
+      expiryInput.value = "";
+      expiryInput.style.display = "none";
+    } else {
+      expiryPreset.value = "custom";
+      expiryInput.value = expiry;
+      expiryInput.style.display = "block";
+    }
+    updateExpiryPreview();
+  }
+
   // 保存されている有効期限をもとに、残り日数のバッジを更新する
   function updateTokenStatus() {
     var settings = getSettings();
@@ -341,7 +405,7 @@ select{ -webkit-appearance:none; appearance:none; }
     var current = getSettings();
     if (current) {
       document.getElementById("pat").value = current.pat || "";
-      document.getElementById("pat-expiry").value = current.expiry || "";
+      applyExpiryToInputs(current.expiry || null);
     }
     tabs.style.display = "none";
     settingsBtn.style.display = "none";
@@ -363,13 +427,13 @@ select{ -webkit-appearance:none; appearance:none; }
   var existing = getSettings();
   if (existing && existing.pat) {
     document.getElementById("pat").value = existing.pat;
-    document.getElementById("pat-expiry").value = existing.expiry || "";
+    applyExpiryToInputs(existing.expiry || null);
     showApp();
   }
 
   document.getElementById("save-setup").addEventListener("click", function () {
     var pat = document.getElementById("pat").value.trim();
-    var expiry = document.getElementById("pat-expiry").value || null;
+    var expiry = computeExpiryDate();
     if (!pat) {
       alert("トークンを入力してください。");
       return;
@@ -381,7 +445,7 @@ select{ -webkit-appearance:none; appearance:none; }
   document.getElementById("clear-setup").addEventListener("click", function () {
     clearSettings();
     document.getElementById("pat").value = "";
-    document.getElementById("pat-expiry").value = "";
+    applyExpiryToInputs(null);
     tokenStatus.style.display = "none";
     tabs.style.display = "none";
     settingsBtn.style.display = "none";
