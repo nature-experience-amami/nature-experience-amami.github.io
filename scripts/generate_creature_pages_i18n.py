@@ -23,8 +23,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from generate_creature_pages import (  # noqa: E402
     ROOT, CONTENT_DIR, PHOTO_DIR_ALIASES,
     parse_markdown, photo_files, split_paragraphs, render_latin_inline,
-    related_cards,
+    related_cards, all_creatures, load_categories,
 )
+
+# 日本語版の生成ロジック(明示的なmonths指定が無い場合、本文やEXIF日付から
+# 観察時期を推測するフォールバック)による、確定済みの月情報を流用する。
+# ここで再計算すると重複・食い違いの元になるため、日本語版が出した結果をそのまま使う。
+_JA_CREATURES_BY_KEY = {
+    (item["category"], item["id"]): item for item in all_creatures(load_categories())
+}
 
 TEMPLATE = ROOT / "templates" / "creature.i18n.html"
 I18N_DIR = ROOT / "content" / "i18n"
@@ -103,6 +110,7 @@ def load_translated_creatures(lang):
             print(f"スキップ（{lang}: 日本語版が見つかりません）: {category}/{creature_id}")
             continue
         ja_data, _ = parse_markdown(ja_md)
+        ja_creature = _JA_CREATURES_BY_KEY.get((category, creature_id), {})
 
         photos = photo_files(category, creature_id)
         paragraphs = split_paragraphs(body)
@@ -119,7 +127,7 @@ def load_translated_creatures(lang):
             "name": data.get("name", creature_id),
             "danger": data.get("danger", ""),
             "danger_ja": ja_data.get("danger", ""),
-            "months": data.get("months") or ja_data.get("months") or [],
+            "months": data.get("months") or ja_data.get("months") or ja_creature.get("months") or [],
             "latin_line": latin_line,
             "body_paragraphs": desc_paragraphs,
             "photos": photos,
