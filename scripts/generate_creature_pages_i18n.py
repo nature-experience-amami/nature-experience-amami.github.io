@@ -25,6 +25,7 @@ from generate_creature_pages import (  # noqa: E402
     parse_markdown, photo_files, split_paragraphs, render_latin_inline,
     related_cards, all_creatures, load_categories,
 )
+from generate_zukan_page import ZUKAN_CATEGORIES  # noqa: E402
 
 # 日本語版の生成ロジック(明示的なmonths指定が無い場合、本文やEXIF日付から
 # 観察時期を推測するフォールバック)による、確定済みの月情報を流用する。
@@ -160,15 +161,17 @@ def render_card(candidate, current, all_ja_categories, strings):
 
 
 def render_category_nav(strings, current_category, available_categories):
-    links = []
+    # 上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける。
+    row1, row2 = [], []
     for key, label in strings["categories"].items():
         if key == current_category:
-            links.append(f'<span class="active">{escape(label)}</span>')
+            html_piece = f'<span class="active">{escape(label)}</span>'
         elif key in available_categories:
-            links.append(f'<a href="../../categories/{key}.html">{escape(label)}</a>')
+            html_piece = f'<a href="../../categories/{key}.html">{escape(label)}</a>'
         else:
-            links.append(f'<span class="disabled">{escape(label)}</span>')
-    return "".join(links)
+            html_piece = f'<span class="disabled">{escape(label)}</span>'
+        (row2 if key in ZUKAN_CATEGORIES else row1).append(html_piece)
+    return "".join(row1), "".join(row2)
 
 
 def render_lang_bar(lang, category, creature_id, translated_langs_for_this_creature):
@@ -239,6 +242,7 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
     lang_links = render_lang_bar(lang, creature["category"], creature["id"], translated_langs_by_key.get(key, set()))
 
     months_text = "・".join(str(m) for m in creature["months"]) if creature["months"] else s["months_prep"]
+    category_nav_row1, category_nav_row2 = render_category_nav(strings, creature["category"], AVAILABLE_CATEGORY_PAGES)
 
     return TEMPLATE.read_text(encoding="utf-8").format(
         html_lang=lang,
@@ -256,7 +260,8 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
         safety_html=safety_html,
         safety_class=safety_class,
         related=related_html,
-        category_nav=render_category_nav(strings, creature["category"], AVAILABLE_CATEGORY_PAGES),
+        category_nav_row1=category_nav_row1,
+        category_nav_row2=category_nav_row2,
         lang_links=lang_links,
         photo_script=photo_script,
         t_home=escape(s["home"]),

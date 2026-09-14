@@ -18,6 +18,7 @@ from generate_category_pages import (  # noqa: E402
 from generate_creature_pages_i18n import (  # noqa: E402
     load_lang, LANGS, AVAILABLE_CATEGORY_PAGES,
 )
+from generate_zukan_page import ZUKAN_CATEGORIES  # noqa: E402
 
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
 TEMPLATE = ROOT / "templates" / "category.i18n.html"
@@ -161,6 +162,23 @@ def header_category_navigation(category, strings):
     return "".join(links)
 
 
+def header_category_navigation_rows(category, strings):
+    # 上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける。
+    s = strings["strings"]
+    cats = strings["categories"]
+    row1 = [f'<span class="disabled">{escape(s["highlights_nav"])}</span>']
+    row2 = []
+    for category_id, name in cats.items():
+        if category_id not in AVAILABLE_CATEGORY_PAGES:
+            continue
+        if category_id == category:
+            piece = f'<span class="category-nav-current">{escape(name)}</span>'
+        else:
+            piece = f'<a href="{category_id}.html">{escape(name)}</a>'
+        (row2 if category_id in ZUKAN_CATEGORIES else row1).append(piece)
+    return "".join(row1), "".join(row2)
+
+
 def render_lang_bar(lang, category):
     order = [("ja", "JA")] + [(code, load_lang(code)["lang_label"]) for code in LANGS]
     parts = []
@@ -197,6 +215,7 @@ def main():
             strings = load_lang(lang)
             meta, body = parse_markdown(translated_path)
             creatures = creatures_in_category_lang(category, lang)
+            nav_row1, nav_row2 = header_category_navigation_rows(category, strings)
 
             page = template.format(
                 html_lang=lang,
@@ -215,6 +234,8 @@ def main():
                 cards=cards_html(category, creatures, generated_keys, lang, strings),
                 category_buttons=category_buttons(category, strings),
                 header_category_navigation=header_category_navigation(category, strings),
+                header_category_navigation_row1=nav_row1,
+                header_category_navigation_row2=nav_row2,
                 explore_more_title=escape(strings["strings"]["explore_more_title"]),
                 explore_more_lead=escape(strings["strings"]["explore_more_lead"]),
                 night_tour_title=escape(strings["strings"]["night_tour_title"]),

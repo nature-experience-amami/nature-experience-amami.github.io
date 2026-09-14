@@ -1,8 +1,12 @@
 import html
 import json
 import re
+import sys
 from pathlib import Path
 from string import Template
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from generate_zukan_page import ZUKAN_CATEGORIES  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "creatures"
@@ -315,6 +319,18 @@ def category_navigation(categories):
     return "".join(links)
 
 
+def category_navigation_rows(categories):
+    # スマホ用ナビは、上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける。
+    row1, row2 = [], []
+    for category_id, name in categories.items():
+        category_page = ROOT / "content" / "category-pages" / f"{category_id}.md"
+        if not (category_page.exists() or category_id == "tori"):
+            continue
+        piece = f'<a href="../../categories/{category_id}.html">{escape(name)}一覧</a>'
+        (row2 if category_id in ZUKAN_CATEGORIES else row1).append(piece)
+    return "".join(row1), "".join(row2)
+
+
 def render(item, creatures, generated_keys, categories):
     active = {int(month) for month in item["months"]}
     ticks = "".join(
@@ -385,9 +401,13 @@ def render(item, creatures, generated_keys, categories):
         .replace("{safety_class}", "$safety_class")
         .replace("{related}", "$related")
         .replace("{category_navigation}", "$category_navigation")
+        .replace("{category_navigation_row1}", "$category_navigation_row1")
+        .replace("{category_navigation_row2}", "$category_navigation_row2")
         .replace("{photo_script}", "$photo_script")
         .replace("{lang_links}", "$lang_links")
     )
+
+    category_navigation_row1, category_navigation_row2 = category_navigation_rows(categories)
 
     return t.safe_substitute(
         title=escape(item["name"]),
@@ -404,6 +424,8 @@ def render(item, creatures, generated_keys, categories):
         safety_class=safety_class,
         related=related_html,
         category_navigation=category_navigation(categories),
+        category_navigation_row1=category_navigation_row1,
+        category_navigation_row2=category_navigation_row2,
         photo_script=photo_script,
         lang_links=render_lang_bar(item["category"], item["id"]),
     )

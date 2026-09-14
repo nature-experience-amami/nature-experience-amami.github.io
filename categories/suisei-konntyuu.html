@@ -50,6 +50,7 @@
     display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
   }
   .creature-nav-inner::-webkit-scrollbar{ display:none; }
+  .creature-nav-inner + .creature-nav-inner{ border-top:1px solid rgba(234,242,233,.08); }
   .creature-nav a{
     flex:0 0 auto; padding:14px 20px; font-size:12px; color:rgba(234,242,233,.65);
     border-right:1px solid rgba(234,242,233,.08); transition:.25s; white-space:nowrap;
@@ -174,7 +175,10 @@
 
   <div class="creature-nav">
     <div class="creature-nav-inner">
-      <a href="hebi.html">ヘビ</a><a href="kaeru.html">両生類(カエル・イモリ)</a><a href="kuwagata.html">クワガタ</a><a href="honyuurui.html">哺乳類</a><a href="tori.html">鳥</a><span class="is-pending">トカゲ</span><span class="active">水生昆虫</span><span class="is-pending">昆虫その他</span><span class="is-pending">貝</span><span class="is-pending">甲殻類・汽水域など</span>
+      <a href="hebi.html">ヘビ</a><a href="kaeru.html">両生類(カエル・イモリ)</a><a href="kuwagata.html">クワガタ</a><a href="honyuurui.html">哺乳類</a><span class="is-pending">トカゲ</span><span class="is-pending">貝</span><span class="is-pending">甲殻類・汽水域など</span>
+    </div>
+    <div class="creature-nav-inner">
+      <a href="tori.html">鳥</a><span class="active">水生昆虫</span><span class="is-pending">昆虫その他</span>
     </div>
   </div>
 </div>

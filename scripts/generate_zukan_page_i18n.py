@@ -15,8 +15,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from generate_zukan_page import (  # noqa: E402
     ROOT, CONTENT_DIR, TRANSLATED_ZUKAN_CATEGORIES, CATEGORY_GROUPS,
-    ENGLISH_LABELS, parse_markdown, split_paragraphs, render_latin_inline,
-    photo_files, load_categories,
+    ENGLISH_LABELS, ZUKAN_CATEGORIES, parse_markdown, split_paragraphs,
+    render_latin_inline, photo_files, load_categories,
 )
 from generate_creature_pages_i18n import load_lang, LANGS, AVAILABLE_CATEGORY_PAGES  # noqa: E402
 
@@ -277,15 +277,17 @@ def render_groups(category, creatures, strings, lang):
 
 
 def render_nav(strings, current):
-    links = []
+    # 上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける。
+    row1, row2 = [], []
     for key, label in strings["categories"].items():
         if key == current:
-            links.append(f'<span class="active">{escape(label)}</span>')
+            html_piece = f'<span class="active">{escape(label)}</span>'
         elif key in AVAILABLE_CATEGORY_PAGES:
-            links.append(f'<a href="{key}.html">{escape(label)}</a>')
+            html_piece = f'<a href="{key}.html">{escape(label)}</a>'
         else:
-            links.append(f'<span class="is-pending">{escape(label)}</span>')
-    return "".join(links)
+            html_piece = f'<span class="is-pending">{escape(label)}</span>'
+        (row2 if key in ZUKAN_CATEGORIES else row1).append(html_piece)
+    return "".join(row1), "".join(row2)
 
 
 def render_other_buttons(strings, current):
@@ -333,6 +335,7 @@ def render_category(category, lang):
     eyebrow = f"CREATURES / {ENGLISH_LABELS.get(category, category.upper())}"
     s = strings["strings"]
 
+    nav_links_row1, nav_links_row2 = render_nav(strings, category)
     page = TEMPLATE.read_text(encoding="utf-8").format(
         html_lang=lang,
         title=escape(title),
@@ -343,7 +346,8 @@ def render_category(category, lang):
         about_paragraphs=about_html,
         note=escape(content["note"]),
         field_guide_title=escape(title),
-        nav_links=render_nav(strings, category),
+        nav_links_row1=nav_links_row1,
+        nav_links_row2=nav_links_row2,
         groups_html=render_groups(category, creatures, strings, lang),
         other_buttons=render_other_buttons(strings, category),
         night_tour_title=escape(s["night_tour_title"]),

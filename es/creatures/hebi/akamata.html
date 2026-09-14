@@ -74,6 +74,7 @@ nav a:hover{ color:var(--moonlight); }
   display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
 }
 .creature-nav-inner::-webkit-scrollbar{ display:none; }
+.creature-nav-inner + .creature-nav-inner{ border-top:1px solid rgba(234,242,233,.08); }
 .creature-nav a{
   flex:0 0 auto; padding:12px 18px; font-size:12px; color:rgba(234,242,233,.65);
   border-right:1px solid rgba(234,242,233,.08); white-space:nowrap; text-decoration:none;
@@ -313,7 +314,10 @@ footer{
 
 <div class="creature-nav">
   <div class="creature-nav-inner">
-    <span class="active">Serpientes</span><a href="../../categories/kaeru.html">Anfibios</a><a href="../../categories/kuwagata.html">Escarabajos ciervo</a><span class="disabled">Mamíferos</span><a href="../../categories/tori.html">Aves</a><span class="disabled">Lagartos</span><a href="../../categories/suisei-konntyuu.html">Insectos acuáticos</a><span class="disabled">Insectos</span><span class="disabled">Moluscos</span><span class="disabled">Crustáceos y otros</span>
+    <span class="active">Serpientes</span><a href="../../categories/kaeru.html">Anfibios</a><a href="../../categories/kuwagata.html">Escarabajos ciervo</a><span class="disabled">Mamíferos</span><span class="disabled">Lagartos</span><span class="disabled">Moluscos</span><span class="disabled">Crustáceos y otros</span>
+  </div>
+  <div class="creature-nav-inner">
+    <a href="../../categories/tori.html">Aves</a><a href="../../categories/suisei-konntyuu.html">Insectos acuáticos</a><span class="disabled">Insectos</span>
   </div>
 </div>
 

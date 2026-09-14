@@ -74,6 +74,7 @@ nav a:hover{{ color:var(--moonlight); }}
   display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
 }}
 .creature-nav-inner::-webkit-scrollbar{{ display:none; }}
+.creature-nav-inner + .creature-nav-inner{{ border-top:1px solid rgba(234,242,233,.08); }}
 .creature-nav a{{
   flex:0 0 auto; padding:12px 18px; font-size:12px; color:rgba(234,242,233,.65);
   border-right:1px solid rgba(234,242,233,.08); white-space:nowrap; text-decoration:none;
@@ -313,7 +314,10 @@ footer{{
 
 <div class="creature-nav">
   <div class="creature-nav-inner">
-    {category_nav}
+    {category_nav_row1}
+  </div>
+  <div class="creature-nav-inner">
+    {category_nav_row2}
   </div>
 </div>
 
