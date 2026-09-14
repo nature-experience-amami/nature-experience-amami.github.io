@@ -14,7 +14,11 @@ group: gengoro のような行を追加し、CATEGORY_GROUPS に定義する。
 import html
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from category_header import render_category_strip  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "creatures"
@@ -310,21 +314,6 @@ def render_groups(category, creatures):
     return "\n".join(sections)
 
 
-def render_nav(categories, current, available_categories):
-    # 上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける
-    # (カテゴリーが増えてスマホで1段だと横スクロールが必要になり分かりにくいため)。
-    row1, row2 = [], []
-    for key, label in categories.items():
-        if key == current:
-            html_piece = f'<span class="active">{escape(label)}</span>'
-        elif key in available_categories:
-            html_piece = f'<a href="{key}.html">{escape(label)}</a>'
-        else:
-            html_piece = f'<span class="is-pending">{escape(label)}</span>'
-        (row2 if key in ZUKAN_CATEGORIES else row1).append(html_piece)
-    return "".join(row1), "".join(row2)
-
-
 def render_other_buttons(categories, current, available_categories):
     buttons = []
     for key, label in categories.items():
@@ -360,7 +349,6 @@ def render_category(category, categories, available_categories):
     content = CATEGORY_CONTENT.get(category, DEFAULT_CONTENT)
     about_html = "".join(f"<p>{escape(p)}</p>" for p in content["about_paragraphs"])
     eyebrow = f"CREATURES / {ENGLISH_LABELS.get(category, category.upper())}"
-    nav_links_row1, nav_links_row2 = render_nav(categories, category, available_categories)
 
     html_out = TEMPLATE.read_text(encoding="utf-8").format(
         title=escape(title),
@@ -368,8 +356,7 @@ def render_category(category, categories, available_categories):
         hero_lead=escape(content["hero_lead"]),
         about_paragraphs=about_html,
         note=escape(content["note"]),
-        nav_links_row1=nav_links_row1,
-        nav_links_row2=nav_links_row2,
+        category_strip=render_category_strip(categories, category, available_categories),
         groups_html=render_groups(category, creatures),
         other_buttons=render_other_buttons(categories, category, available_categories),
         lang_links=render_lang_bar(category),

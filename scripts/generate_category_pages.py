@@ -5,7 +5,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from generate_zukan_page import ZUKAN_CATEGORIES  # noqa: E402
+from generate_zukan_page import ZUKAN_CATEGORIES, load_creatures  # noqa: E402
+from category_header import render_category_strip  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
@@ -197,44 +198,7 @@ def render_lang_bar(category):
     return "".join(parts)
 
 
-def header_category_navigation(category, available_categories):
-    categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
-    links = [
-        '<a href="../highlights.html">代表的な生き物</a>',
-        '<a href="suisei-konntyuu.html">水生昆虫</a>',
-        '<a href="tori.html">鳥</a>',
-    ]
-    for category_id, name in categories.items():
-        if category_id in ("suisei-konntyuu", "tori"):
-            continue
-        if category_id not in available_categories:
-            continue
-        escaped_name = html.escape(name)
-        if category_id == category:
-            links.append(f'<span class="category-nav-current">{escaped_name}一覧</span>')
-        else:
-            links.append(f'<a href="{category_id}.html">{escaped_name}一覧</a>')
-    return "".join(links)
-
-
-def header_category_navigation_rows(category, available_categories):
-    # スマホ用ナビは、上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける
-    # (カテゴリーが増えてスマホで1段だと横スクロールが必要になり分かりにくいため)。
-    categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
-    row1 = ['<a href="../highlights.html">代表的な生き物</a>']
-    row2 = ['<a href="suisei-konntyuu.html">水生昆虫</a>', '<a href="tori.html">鳥</a>']
-    for category_id, name in categories.items():
-        if category_id in ("suisei-konntyuu", "tori"):
-            continue
-        if category_id not in available_categories:
-            continue
-        escaped_name = html.escape(name)
-        if category_id == category:
-            piece = f'<span class="category-nav-current">{escaped_name}一覧</span>'
-        else:
-            piece = f'<a href="{category_id}.html">{escaped_name}一覧</a>'
-        (row2 if category_id in ZUKAN_CATEGORIES else row1).append(piece)
-    return "".join(row1), "".join(row2)
+TARGETS = None  # Noneなら全ページ対象。動作確認中は["hebi"]のように絞れる。
 
 
 def main():
@@ -251,11 +215,17 @@ def main():
         parse_markdown(content_path)[0].get("id", content_path.stem)
         for content_path in content_paths
     }
+    # カテゴリー帯(ヘッダー)では、図鑑形式で実際にページがあるカテゴリーもリンク可能として扱う。
+    strip_available = available_categories | {
+        category_id for category_id in ZUKAN_CATEGORIES if load_creatures(category_id)
+    }
+    category_names = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
     for content_path in content_paths:
         metadata, body = parse_markdown(content_path)
         category = metadata.get("id", content_path.stem)
+        if TARGETS is not None and category not in TARGETS:
+            continue
         creatures = creatures_in_category(category)
-        nav_row1, nav_row2 = header_category_navigation_rows(category, available_categories)
         page = template.format(
             name=html.escape(metadata["name"]),
             eyebrow=html.escape(metadata["eyebrow"]),
@@ -270,9 +240,7 @@ def main():
             list_lead=html.escape(metadata["list_lead"]),
             cards=cards_html(category, creatures, generated_creature_keys),
             category_buttons=category_buttons(category, available_categories),
-            header_category_navigation=header_category_navigation(category, available_categories),
-            header_category_navigation_row1=nav_row1,
-            header_category_navigation_row2=nav_row2,
+            category_strip=render_category_strip(category_names, category, strip_available),
             lang_links=render_lang_bar(category),
         )
         OUTPUT_DIR.mkdir(exist_ok=True)

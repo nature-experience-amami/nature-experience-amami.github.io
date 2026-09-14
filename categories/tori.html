@@ -10,11 +10,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/category-strip.css">
 
 <style>
   :root{
     --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
-    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A;
+    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A; --line:rgba(234,242,233,.12);
   }
   *{ margin:0; padding:0; box-sizing:border-box; }
   html{ scroll-behavior:smooth; }
@@ -43,26 +44,6 @@
   nav{ display:flex; align-items:center; gap:28px; }
   nav a{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; opacity:.82; transition:.25s; }
   nav a:hover{ color:var(--amber); opacity:1; }
-
-  .creature-nav{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); }
-  .creature-nav-inner{
-    max-width:1200px; margin:0 auto; padding:0 28px;
-    display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
-  }
-  .creature-nav-inner::-webkit-scrollbar{ display:none; }
-  .creature-nav-inner + .creature-nav-inner{ border-top:1px solid rgba(234,242,233,.08); }
-  .creature-nav a{
-    flex:0 0 auto; padding:14px 20px; font-size:12px; color:rgba(234,242,233,.65);
-    border-right:1px solid rgba(234,242,233,.08); transition:.25s; white-space:nowrap;
-  }
-  .creature-nav a:first-child{ border-left:1px solid rgba(234,242,233,.08); }
-  .creature-nav a:hover{ color:var(--amber); background:rgba(232,163,61,.05); }
-  .creature-nav span{
-    flex:0 0 auto; padding:14px 20px; font-size:12px;
-    border-right:1px solid rgba(234,242,233,.08); white-space:nowrap;
-  }
-  .creature-nav span.active{ color:var(--amber); background:rgba(232,163,61,.05); }
-  .creature-nav span.is-pending{ color:rgba(234,242,233,.32); cursor:default; }
 
   .hero{
     min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
@@ -148,8 +129,10 @@
   .copyright{ max-width:1200px; margin:20px auto 0; font-family:"Space Mono", monospace; font-size:9px; color:rgba(234,242,233,.35); }
 
   @media(max-width:760px){
-    .header-inner{ padding:15px 18px; }
-    nav a:not(.contact-link){ display:none; }
+    .header-inner{ padding:15px 18px; gap:14px; }
+    .logo{ font-size:15px; }
+    nav{ gap:14px; }
+    nav a{ font-size:10px; }
     .hero-inner{ padding:60px 20px 40px; }
     section{ padding:50px 20px; }
     .zukan-grid{ grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:14px; }
@@ -165,20 +148,20 @@
   <header>
     <div class="header-inner">
       <a class="logo" href="../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
-      <nav>
+      <nav class="main-nav">
         <a href="../index.html">HOME</a>
+        <a href="../highlights.html">代表的な生き物</a>
         <a href="../tour.html">TOUR</a>
         <a href="../contact.html">CONTACT</a>
       </nav>
     </div>
   </header>
 
-  <div class="creature-nav">
-    <div class="creature-nav-inner">
-      <a href="hebi.html">ヘビ</a><a href="kaeru.html">両生類(カエル・イモリ)</a><a href="kuwagata.html">クワガタ</a><a href="honyuurui.html">哺乳類</a><span class="is-pending">トカゲ</span><span class="is-pending">貝</span><span class="is-pending">甲殻類・汽水域など</span>
-    </div>
-    <div class="creature-nav-inner">
-      <span class="active">鳥</span><a href="suisei-konntyuu.html">水生昆虫</a><span class="is-pending">昆虫その他</span>
+  <div class="cat-strip-outer">
+    <div class="cat-strip-wrap">
+      <div class="cat-strip" id="catStrip" aria-label="生き物カテゴリー"><a href="hebi.html" class="cat-item">ヘビ</a><a href="kaeru.html" class="cat-item">両生類(カエル・イモリ)</a><a href="kuwagata.html" class="cat-item">クワガタ</a><span class="cat-item current" id="currentCat">鳥</span><a href="honyuurui.html" class="cat-item">哺乳類</a><a href="suisei-konntyuu.html" class="cat-item">水生昆虫</a><span class="cat-item soon">トカゲ(準備中)</span><span class="cat-item soon">昆虫その他(準備中)</span><span class="cat-item soon">貝(準備中)</span><span class="cat-item soon">甲殻類・汽水域など(準備中)</span></div>
+      <div class="fade-right" id="fadeRight"></div>
+      <div class="scroll-hint" id="scrollHint" aria-hidden="true">→</div>
     </div>
   </div>
 </div>
@@ -254,6 +237,7 @@
   });
 })();
 </script>
+<script src="../js/category-strip.js"></script>
 
 </body>
 </html>
