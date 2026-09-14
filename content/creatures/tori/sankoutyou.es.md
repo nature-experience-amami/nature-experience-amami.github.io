@@ -1,6 +1,6 @@
 ---
 id: sankoutyou
-name: Monarca Japonés
+name: Monarca de Ryukyu
 category: tori
 danger: Sin estatus de protección especial
 months: [4, 5, 6, 7, 8, 9]

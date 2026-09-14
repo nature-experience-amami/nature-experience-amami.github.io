@@ -1,6 +1,6 @@
 ---
 id: sankoutyou
-name: サンコウチョウ
+name: リュウキュウサンコウチョウ
 category: tori
 group: suzume
 danger: 観察できる生き物

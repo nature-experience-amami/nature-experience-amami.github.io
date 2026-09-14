@@ -1,6 +1,6 @@
 ---
 id: ryukyu-zuaka-aobato
-name: ズアカアオバト
+name: リュウキュウズアカアオバト
 category: tori
 group: hato
 danger: IUCNレッドリスト:準絶滅危惧(NT)

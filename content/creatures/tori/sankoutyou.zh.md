@@ -1,6 +1,6 @@
 ---
 id: sankoutyou
-name: 寿带
+name: 琉球寿带
 category: tori
 danger: 无特殊保护等级
 months: [4, 5, 6, 7, 8, 9]

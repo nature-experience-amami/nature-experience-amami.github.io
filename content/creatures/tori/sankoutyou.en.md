@@ -1,6 +1,6 @@
 ---
 id: sankoutyou
-name: Japanese Paradise Flycatcher
+name: Ryukyu Paradise Flycatcher
 category: tori
 danger: No special protected status
 months: [4, 5, 6, 7, 8, 9]

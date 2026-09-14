@@ -1,6 +1,6 @@
 ---
 id: ryukyu-akashobin
-name: アカショウビン
+name: リュウキュウアカショウビン
 category: tori
 group: buppousou
 danger: 観察できる生き物

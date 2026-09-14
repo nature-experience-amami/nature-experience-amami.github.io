@@ -1966,7 +1966,7 @@
   },
   {
     "id": "ryukyu-akashobin",
-    "name": "アカショウビン",
+    "name": "リュウキュウアカショウビン",
     "category": "tori",
     "category_name": "鳥",
     "months": [
@@ -1990,7 +1990,7 @@
   },
   {
     "id": "ryukyu-zuaka-aobato",
-    "name": "ズアカアオバト",
+    "name": "リュウキュウズアカアオバト",
     "category": "tori",
     "category_name": "鳥",
     "months": [
@@ -2025,7 +2025,7 @@
   },
   {
     "id": "sankoutyou",
-    "name": "サンコウチョウ",
+    "name": "リュウキュウサンコウチョウ",
     "category": "tori",
     "category_name": "鳥",
     "months": [
