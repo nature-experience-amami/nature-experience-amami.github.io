@@ -1,8 +1,37 @@
 // Cloudflare Worker: 旅行時期の質問に、実際の観察データ(creatures.json)だけを根拠に答える
 // 環境変数(Secrets): GEMINI_API_KEY, ALLOWED_ORIGIN(例: https://tetsu5686.github.io)
 
-const CREATURES_URL = "https://tetsu5686.github.io/nature-experience-amami/data/creatures.json";
 const MODEL = "gemini-3.5-flash"; // モデル名は変更される可能性があるので、時々公式ドキュメントで確認してください
+
+// サイトの言語ごとの設定。フロント側(index.html / en,es,zh/index.html)が送ってくる
+// lang(ja/en/es/zh)に応じて、参照するcreatures.json・Geminiへの指示言語・
+// エラーメッセージをすべて切り替える。langが未指定/未知の値の場合は日本語扱い。
+const LANG_CONFIG = {
+  ja: {
+    name: "Japanese",
+    creaturesUrl: "https://tetsu5686.github.io/nature-experience-amami/data/creatures.json",
+    tooLong: "質問を200文字以内で入力してください。",
+    fallback: "うまく答えられませんでした。もう一度試してください。",
+  },
+  en: {
+    name: "English",
+    creaturesUrl: "https://tetsu5686.github.io/nature-experience-amami/data/creatures.en.json",
+    tooLong: "Please keep your question under 200 characters.",
+    fallback: "Sorry, I couldn't come up with a good answer. Please try again.",
+  },
+  es: {
+    name: "Spanish",
+    creaturesUrl: "https://tetsu5686.github.io/nature-experience-amami/data/creatures.es.json",
+    tooLong: "Por favor, escribe tu pregunta en menos de 200 caracteres.",
+    fallback: "No he podido dar una buena respuesta. Inténtalo de nuevo.",
+  },
+  zh: {
+    name: "Simplified Chinese",
+    creaturesUrl: "https://tetsu5686.github.io/nature-experience-amami/data/creatures.zh.json",
+    tooLong: "请将问题控制在200字以内。",
+    fallback: "抱歉，未能给出合适的回答，请再试一次。",
+  },
+};
 
 export default {
   async fetch(request, env) {
@@ -15,31 +44,35 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { headers: cors });
     if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: cors });
 
-    const { message } = await request.json();
+    const { message, lang } = await request.json();
+    const config = LANG_CONFIG[lang] || LANG_CONFIG.ja;
+
     if (!message || message.length > 200) {
-      return json({ reply: "質問を200文字以内で入力してください。", creature_ids: [] }, cors);
+      return json({ reply: config.tooLong, creature_ids: [] }, cors);
     }
 
-    const creatures = await (await fetch(CREATURES_URL)).json();
+    const creatures = await (await fetch(config.creaturesUrl)).json();
 
     // Geminiには「回答文」と「該当する生き物のID」だけをJSONで返させる。
     // 写真パスそのものは作らせない(捏造防止)。パスは必ずcreatures.jsonから実データを引く。
-    const prompt = `あなたは奄美大島のナイトツアーガイドです。
-以下の[生き物データ]だけを根拠に、お客さんの質問に答えてください。
-生き物データのdescription、months、name、category_nameだけを根拠にしてください。
-データに無い情報は絶対に作らず、記載がない場合は「このサイトの資料には情報がありません」と答えてください。
-写真の撮影月から「見やすい時期」を推測しないでください。観察時期はmonthsだけを使ってください。
-回答文では生き物のnameとcategory_nameを使い、必ず自然な日本語の表示名にしてください。
-idとcategoryは内部処理用のローマ字なので、回答文には絶対に表示しないでください。
-creature_idsには該当する生き物の内部idを返してください（例: "akamata"）。
+    const prompt = `You are a night-tour guide on Amami Oshima, Japan.
+Answer the customer's question using ONLY the [Creature data] below as your source.
+Base your answer only on each creature's description, months, name, and category_name fields.
+Never invent information that isn't in the data; if the data doesn't cover the question, say so (in ${config.name}) rather than guessing.
+Do not infer a "best season to see it" from photo dates — use only the months field for observation timing.
+In your answer, use each creature's name and category_name exactly as given in the data (they are already the display names for this language).
+The internal id and category fields are for backend use only — never show them in your answer.
+creature_ids should list the internal id(s) of any matching creatures (e.g. "akamata").
 
-出力は必ず次のJSON形式のみで、説明文やコードブロックは付けないでください。
-{"reply": "日本語で100〜150字程度の回答文", "creature_ids": ["該当するidのみ。無ければ空配列"]}
+You must write the "reply" text itself in ${config.name}, regardless of what language the question was asked in.
 
-[生き物データ]
+Output ONLY the following JSON format, with no extra explanation or code block markers:
+{"reply": "a natural-sounding answer in ${config.name}, about 2-3 sentences", "creature_ids": ["matching ids only, or an empty array if none"]}
+
+[Creature data]
 ${JSON.stringify(creatures)}
 
-[お客さんの質問]
+[Customer's question]
 ${message}`;
 
     const res = await fetch(
@@ -53,14 +86,14 @@ ${message}`;
     const data = await res.json();
     const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
 
-    const parsed = safeParse(rawText, creatures);
+    const parsed = safeParse(rawText, creatures, config);
     return json(parsed, cors);
   },
 };
 
 // Geminiがコードブロック(```json ... ```)を付けてしまった場合も剥がしてから解析する。
 // 解析に失敗した場合は、生成文をそのままreplyとして返し、creature_idsは空にする(壊れない設計)。
-function safeParse(rawText, creatures) {
+function safeParse(rawText, creatures, config) {
   const cleaned = rawText.replace(/```json|```/g, "").trim();
   try {
     const obj = JSON.parse(cleaned);
@@ -68,9 +101,9 @@ function safeParse(rawText, creatures) {
     const ids = Array.isArray(obj.creature_ids)
       ? [...new Set(obj.creature_ids.filter((id) => validIds.has(id)))]
       : [];
-    return { reply: obj.reply ?? "うまく答えられませんでした。もう一度試してください。", creature_ids: ids };
+    return { reply: obj.reply ?? config.fallback, creature_ids: ids };
   } catch {
-    return { reply: rawText || "うまく答えられませんでした。もう一度試してください。", creature_ids: [] };
+    return { reply: rawText || config.fallback, creature_ids: [] };
   }
 }
 
