@@ -2,7 +2,8 @@
 id: sasiba
 name: サシバ
 category: tori
-danger: 捕獲禁止(鳥獣保護管理法・絶滅危惧II類)
+group: taka
+danger: 環境省レッドリスト:絶滅危惧II類(VU)
 months: [10, 11, 12, 1, 2, 3]
 ---
 タカ目タカ科サシバ属サシバ *Butastur indicus*

@@ -2,6 +2,7 @@
 id: amami-yamashigi
 name: アマミヤマシギ
 category: tori
+group: chidori
 danger: 捕獲・譲渡禁止(国内希少野生動植物種)
 ---
 チドリ目シギ科アマミヤマシギ *Scolopax mira*

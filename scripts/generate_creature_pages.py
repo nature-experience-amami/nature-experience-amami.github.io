@@ -290,7 +290,9 @@ def category_navigation(categories):
     links = []
     for category_id, name in categories.items():
         category_page = ROOT / "content" / "category-pages" / f"{category_id}.md"
-        if category_page.exists():
+        # 鳥は図鑑形式(generate_zukan_page.py)に移行し、content/category-pages/tori.md
+        # が無くなったが、一覧ページ自体は categories/tori.html として存在するのでリンクする。
+        if category_page.exists() or category_id == "tori":
             links.append(
                 f'<a href="../../categories/{category_id}.html">{escape(name)}一覧</a>'
             )

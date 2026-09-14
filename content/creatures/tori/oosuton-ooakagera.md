@@ -2,6 +2,7 @@
 id: oosuton-ooakagera
 name: オーストンオオアカゲラ
 category: tori
+group: kitsutsuki
 danger: 捕獲・譲渡禁止(天然記念物・国内希少野生動植物種)
 months: [2, 3, 4, 5]
 ---

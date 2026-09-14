@@ -162,9 +162,10 @@ def category_buttons(category, available_categories):
     buttons = [
         '<a class="category-button" href="../highlights.html">代表的な生き物 →</a>',
         '<a class="category-button" href="suisei-konntyuu.html">水生昆虫 →</a>',
+        '<a class="category-button" href="tori.html">鳥 →</a>',
     ]
     for category_id, name in categories.items():
-        if category_id == "suisei-konntyuu":
+        if category_id in ("suisei-konntyuu", "tori"):
             continue
         escaped_name = html.escape(name)
         if category_id == category:
@@ -197,9 +198,10 @@ def header_category_navigation(category, available_categories):
     links = [
         '<a href="../highlights.html">代表的な生き物</a>',
         '<a href="suisei-konntyuu.html">水生昆虫</a>',
+        '<a href="tori.html">鳥</a>',
     ]
     for category_id, name in categories.items():
-        if category_id == "suisei-konntyuu":
+        if category_id in ("suisei-konntyuu", "tori"):
             continue
         if category_id not in available_categories:
             continue

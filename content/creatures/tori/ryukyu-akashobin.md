@@ -2,7 +2,8 @@
 id: ryukyu-akashobin
 name: アカショウビン
 category: tori
-danger: 捕獲禁止(鳥獣保護管理法)
+group: buppousou
+danger: 観察できる生き物
 months: [4, 5, 6, 7, 8, 9]
 ---
 ブッポウソウ目カワセミ科アカショウビン属 リュウキュウアカショウビン *Halcyon coromanda bangsi*

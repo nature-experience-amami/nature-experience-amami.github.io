@@ -2,7 +2,8 @@
 id: ryukyu-zuaka-aobato
 name: ズアカアオバト
 category: tori
-danger: 捕獲禁止(鳥獣保護管理法)
+group: hato
+danger: IUCNレッドリスト:準絶滅危惧(NT)
 months: [5, 6, 7]
 ---
 ハト目ハト科アオバト属 リュウキュウズアカアオバト *Treron permagnus*

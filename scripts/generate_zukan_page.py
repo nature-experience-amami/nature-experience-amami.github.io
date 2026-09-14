@@ -26,7 +26,7 @@ OUTPUT_DIR = ROOT / "categories"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 # 図鑑形式で作るカテゴリー(ヘビ・カエル・クワガタのようなフルページ形式のものは含めない)
-ZUKAN_CATEGORIES = ["suisei-konntyuu", "konchu", "kani"]
+ZUKAN_CATEGORIES = ["suisei-konntyuu", "konchu", "kani", "tori"]
 
 # 翻訳版(generate_zukan_page_i18n.py)が実際に生成しているカテゴリー
 TRANSLATED_ZUKAN_CATEGORIES = {"suisei-konntyuu"}
@@ -39,6 +39,7 @@ ENGLISH_LABELS = {
     "suisei-konntyuu": "AQUATIC INSECTS",
     "konchu": "INSECTS",
     "kani": "CRABS",
+    "tori": "BIRDS",
 }
 
 # カテゴリーごとの紹介文・注意書き。無ければ汎用の文章を使う。
@@ -57,6 +58,26 @@ CATEGORY_CONTENT = {
         "note": (
             "水生昆虫は繊細で、種類によっては生息数が少ないものもいます。観察は水辺からそっと行い、"
             "採集する場合も持ち帰る数は最小限にとどめましょう。"
+        ),
+    },
+    "tori": {
+        "hero_lead": (
+            "奄美大島の照葉樹林には、瑠璃色のルリカケスや幻の鳥オオトラツグミなど、"
+            "この島や周辺の島々だけに暮らす固有の鳥たちがいます。渡り鳥や冬鳥も多く、"
+            "季節によって出会える顔ぶれが変わります。"
+        ),
+        "about_paragraphs": [
+            "奄美大島には、ルリカケスやオオトラツグミのようにこの島でしか見られない固有種から、"
+            "アカショウビンやサシバのように決まった季節にだけ訪れる渡り鳥まで、多様な鳥が暮らしています。"
+            "分類の近い仲間ごとにグループ分けして紹介しています。",
+            "鳥は種類が多く、これからも記録が増えていくジャンルのため、"
+            "写真や情報が集まった種類から少しずつ図鑑形式で追加しています。",
+        ],
+        "note": (
+            "ここで紹介する鳥の多くは、国の天然記念物や国内希少野生動植物種、"
+            "鳥獣保護管理法などにより捕獲・採集・譲渡が禁止されています。"
+            "特に営巣中や渡りの時期は鳥が神経質になりやすいため、驚かせたり近づきすぎたりせず、"
+            "静かに観察してください。"
         ),
     },
 }
@@ -78,6 +99,19 @@ CATEGORY_GROUPS = {
             "doromushi": "ヒメドロムシの仲間",
             "amenbo": "アメンボの仲間",
             "mizumushi": "ミズムシの仲間",
+            "other": "その他",
+        },
+    },
+    "tori": {
+        "order": ["suzume", "buppousou", "fukurou", "taka", "kitsutsuki", "hato", "chidori", "other"],
+        "labels": {
+            "suzume": "スズメ目(ヒタキ・カラス・サンコウチョウの仲間)",
+            "buppousou": "ブッポウソウ目(カワセミの仲間)",
+            "fukurou": "フクロウ目",
+            "taka": "タカ目",
+            "kitsutsuki": "キツツキ目",
+            "hato": "ハト目",
+            "chidori": "チドリ目(シギ・チドリの仲間)",
             "other": "その他",
         },
     },
@@ -152,6 +186,24 @@ def photo_files(category, creature_id):
     )
 
 
+def format_months(months):
+    """観察しやすい時期を「4〜9月」のような短い表記にする(年をまたぐ範囲にも対応)。"""
+    months = sorted({int(m) for m in months})
+    if not months:
+        return ""
+    if len(months) == 1:
+        return f"{months[0]}月"
+    doubled = months + [m + 12 for m in months]
+    n = len(months)
+    for start_idx in range(n):
+        window = doubled[start_idx:start_idx + n]
+        if window == list(range(window[0], window[0] + n)):
+            start_m = window[0] if window[0] <= 12 else window[0] - 12
+            end_m = window[-1] if window[-1] <= 12 else window[-1] - 12
+            return f"{start_m}〜{end_m}月"
+    return "・".join(f"{m}月" for m in months)
+
+
 def zukan_tag(danger_text):
     text = (danger_text or "").strip()
     if not text:
@@ -186,6 +238,7 @@ def load_creatures(category):
             "name": data.get("name", creature_id),
             "group": data.get("group", "other"),
             "danger": data.get("danger", ""),
+            "months": data.get("months") or [],
             "latin": latin_line,
             "description": description,
             "photos": photos,
@@ -207,6 +260,8 @@ def render_card(creature):
     else:
         image = '<div class="zukan-placeholder">写真準備中</div>'
     latin_html = f'<div class="zukan-latin">{creature["latin"]}</div>' if creature["latin"] else ""
+    season_text = format_months(creature.get("months", []))
+    season_html = f'<div class="zukan-season">観察期 {escape(season_text)}</div>' if season_text else ""
     tag_html = zukan_tag(creature["danger"])
     page_path = ROOT / "creatures" / creature["category"] / f'{creature["id"]}.html'
     if page_path.is_file():
@@ -222,6 +277,7 @@ def render_card(creature):
         f'<div class="zukan-name">{escape(creature["name"])}</div>'
         f'{latin_html}'
         f'<p class="zukan-desc">{escape(creature["description"])}</p>'
+        f'{season_html}'
         f'{tag_html}'
         f'</div>{closing}'
     )

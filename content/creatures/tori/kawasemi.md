@@ -2,7 +2,8 @@
 id: kawasemi
 name: カワセミ
 category: tori
-danger: 捕獲禁止(鳥獣保護管理法)
+group: buppousou
+danger: 観察できる生き物
 ---
 ブッポウソウ目カワセミ科カワセミ属カワセミ *Alcedo atthis bengalensis*
 

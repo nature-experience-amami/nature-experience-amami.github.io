@@ -2,7 +2,8 @@
 id: tageri
 name: タゲリ
 category: tori
-danger: 捕獲禁止(鳥獣保護管理法)
+group: chidori
+danger: 観察できる生き物
 months: [10, 11, 12, 1, 2, 3]
 ---
 チドリ目チドリ科タゲリ属タゲリ *Vanellus vanellus*

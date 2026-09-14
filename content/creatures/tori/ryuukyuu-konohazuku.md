@@ -2,7 +2,8 @@
 id: ryuukyuu-konohazuku
 name: リュウキュウコノハズク
 category: tori
-danger: 捕獲禁止(鳥獣保護管理法)
+group: fukurou
+danger: IUCNレッドリスト:準絶滅危惧(NT)
 months: [4, 5, 6, 7]
 ---
 フクロウ目フクロウ科コノハズク属 リュウキュウコノハズク *Otus elegans elegans*

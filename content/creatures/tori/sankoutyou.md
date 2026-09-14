@@ -2,7 +2,8 @@
 id: sankoutyou
 name: サンコウチョウ
 category: tori
-danger: 捕獲禁止(鳥獣保護管理法)
+group: suzume
+danger: 観察できる生き物
 months: [4, 5, 6, 7, 8, 9]
 ---
 スズメ目カササギヒタキ科サンコウチョウ属 リュウキュウサンコウチョウ *Terpsiphone atrocaudata illex*

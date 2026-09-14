@@ -2,6 +2,7 @@
 id: oo-tora-tsugumi
 name: オオトラツグミ
 category: tori
+group: suzume
 danger: 捕獲・譲渡禁止(天然記念物)
 months: [2, 3, 4]
 ---
