@@ -89,10 +89,15 @@ def render_danger_block(category, danger_ja_text, danger_display_text, strings):
     return f'<span class="status-badge {info["tone"]}">{escape(label)}</span>', info["prohibited"]
 
 
-def render_safety(danger_display_text, prohibited, strings):
+def render_safety(danger_display_text, prohibited, strings, category=None):
     s = strings["strings"]
     parts = [f"<p>{escape(s['safety_common'])}</p>"]
-    if prohibited and danger_display_text:
+    if category == "tori":
+        parts.append(f"<p>{escape(s['bird_safety_note'])}</p>")
+        if prohibited and danger_display_text:
+            warning = s["safety_warning_template_bird"].format(danger=danger_display_text)
+            parts.append(f'<p class="warning-line">{escape(warning)}</p>')
+    elif prohibited and danger_display_text:
         warning = s["safety_warning_template"].format(danger=danger_display_text)
         parts.append(f'<p class="warning-line">{escape(warning)}</p>')
     return "".join(parts), (" warning" if prohibited else "")
@@ -217,7 +222,7 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
     danger_block, prohibited = render_danger_block(
         creature["category"], creature["danger_ja"], creature["danger"], strings
     )
-    safety_html, safety_class = render_safety(creature["danger"], prohibited, strings)
+    safety_html, safety_class = render_safety(creature["danger"], prohibited, strings, creature["category"])
 
     related = related_cards(
         {**creature, "months": creature["months"], "related": creature["related_ja"]},

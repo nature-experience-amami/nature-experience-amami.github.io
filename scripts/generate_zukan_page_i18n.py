@@ -93,11 +93,16 @@ CATEGORY_CONTENT_I18N = {
                 "Click a photo or name to see that species' full page.",
             ],
             "note": (
-                "Many of the birds introduced here are protected as national Natural Monuments, "
-                "Nationally Rare Wild Species, or under the Wildlife Protection and Hunting "
-                "Management Act, which prohibits their capture, collection, or transfer. Birds "
-                "are especially easily disturbed while nesting or migrating, so please observe "
-                "quietly without startling them or approaching too closely."
+                "Many of the birds introduced here are protected as national Natural Monuments "
+                "or Nationally Rare Wild Species, and their capture, collection, or transfer is "
+                "prohibited by law. Wild birds aren't something to catch and take home — they're "
+                "best enjoyed by observing and photographing them without disturbing them. Keep "
+                "a good distance, and avoid using playback calls or food to lure them in. Parent "
+                "birds and chicks are especially sensitive while nesting or breeding, and "
+                "approaching too closely or making noise can cause the nest to be abandoned or "
+                "the chicks to fail to fledge successfully. Avoid flash or strong lights when "
+                "photographing at night, and don't share information online that could reveal a "
+                "nest's exact location."
             ),
         },
         "es": {
@@ -119,11 +124,15 @@ CATEGORY_CONTENT_I18N = {
             ],
             "note": (
                 "Muchas de las aves presentadas aquí están protegidas como Monumentos Naturales "
-                "nacionales, Especies Silvestres Nacionales Raras, o por la Ley de Protección y "
-                "Gestión de la Fauna Silvestre, que prohíbe su captura, recolección o traslado. "
-                "Las aves se alteran con especial facilidad durante la nidificación o la "
-                "migración, así que obsérvelas en silencio, sin asustarlas ni acercarse "
-                "demasiado."
+                "nacionales o Especies Silvestres Nacionales Raras, y su captura, recolección o "
+                "traslado está prohibido por ley. Las aves silvestres no son algo que se capture "
+                "y se lleve a casa: lo mejor es disfrutarlas observándolas y fotografiándolas sin "
+                "molestarlas. Mantenga una buena distancia y evite usar reproducciones de cantos "
+                "o comida para atraerlas. Los progenitores y los polluelos son especialmente "
+                "sensibles durante la nidificación o la cría, y acercarse demasiado o hacer "
+                "ruido puede provocar que abandonen el nido o que las crías no lleguen a volar "
+                "con éxito. Evite el flash o las luces intensas al fotografiar de noche, y no "
+                "comparta en línea información que pueda revelar la ubicación exacta de un nido."
             ),
         },
         "zh": {
@@ -140,9 +149,12 @@ CATEGORY_CONTENT_I18N = {
                 "图鉴形式补充新的种类。点击照片或名称，即可查看该物种的详细页面。",
             ],
             "note": (
-                "这里介绍的鸟类中，有不少被指定为国家天然纪念物、国内稀有野生动植物种，或受"
-                "《鸟兽保护管理法》保护，禁止捕获、采集及转让。鸟类在营巢期和迁徙期尤其容易"
-                "受到惊扰，请勿使其受惊或过度靠近，安静地进行观察。"
+                "这里介绍的鸟类中，有不少被指定为国家天然纪念物或国内稀有野生动植物种，根据法律"
+                "禁止对其进行捕获、采集及转让。野鸟并非应该捕捉带回家的对象，最好的享受方式是在"
+                "不打扰它们的前提下进行观察与拍摄。请保持足够的距离，避免使用鸣声回放或食物来"
+                "引诱它们靠近。亲鸟和雏鸟在营巢或育雏期间格外敏感，过度靠近或发出声响可能导致"
+                "弃巢或雏鸟无法顺利离巢。夜间拍摄时请避免使用闪光灯或强光，也不要在网络上公开"
+                "可能暴露鸟巢具体位置的信息。"
             ),
         },
     },

@@ -32,6 +32,8 @@
     "months_prep": "Observation season information coming soon",
     "safety_common": "Please enjoy Amami's wildlife through photographs. Some species are protected by law or local ordinance, and capturing or removing them is prohibited. In special protection zones within the national park, collecting any wildlife is prohibited entirely. Please check the notes on this page, and confirm local rules before visiting any site.",
     "safety_warning_template": "This creature is subject to: \u201c{danger}\u201d. Touching or capturing it is prohibited by law or ordinance.",
+    "bird_safety_note": "Wild birds aren't something to catch and take home \u2014 they're best enjoyed by observing and photographing them without disturbing them. Keep a good distance, and avoid using playback calls or food to lure them in. Parent birds and chicks are especially sensitive while nesting or breeding; approaching too closely or making noise can cause the nest to be abandoned or the chicks to fail to fledge successfully. Avoid flash or strong lights when photographing at night, and don't share information online that could reveal a nest's exact location.",
+    "safety_warning_template_bird": "This bird is subject to: \u201c{danger}\u201d. Its capture, collection, or transfer is prohibited by law.",
     "tour": "Tour",
     "highlights_nav": "Signature Wildlife",
     "pending_label": "Coming soon",

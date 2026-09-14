@@ -265,9 +265,25 @@ def danger_block_and_flag(category, danger_text, danger_level=None):
     return block, prohibited
 
 
-def render_safety(danger_text, prohibited):
+BIRD_SAFETY_NOTE = (
+    "野鳥は捕まえて持ち帰るようなものではなく、驚かせずに観察・撮影を楽しむ生き物です。"
+    "十分な距離を保ち、鳴き声の再生(プレイバック)や餌で呼び寄せることは避けてください。"
+    "営巣中や繁殖期は親鳥やヒナが特に敏感で、近づいたり物音を立てたりすると抱卵放棄や"
+    "巣立ちの失敗につながるおそれがあります。夜間の撮影ではストロボや強い照明の使用を避け、"
+    "営巣場所が特定できる情報をSNS等で公開しないようにしましょう。"
+)
+
+
+def render_safety(danger_text, prohibited, category=None):
     parts = [f"<p>{escape(COMMON_SAFETY_MESSAGE)}</p>"]
-    if prohibited and danger_text:
+    if category == "tori":
+        parts.append(f"<p>{escape(BIRD_SAFETY_NOTE)}</p>")
+        if prohibited and danger_text:
+            parts.append(
+                f'<p class="warning-line">この生き物は「{escape(danger_text)}」に該当します。'
+                f"法律により捕獲・採集・譲渡が禁止されています。</p>"
+            )
+    elif prohibited and danger_text:
         parts.append(
             f'<p class="warning-line">この生き物は「{escape(danger_text)}」に該当します。'
             f"触れることも持ち帰ることも法律・条例で禁止されています。</p>"
@@ -339,7 +355,7 @@ def render(item, creatures, generated_keys, categories):
     danger_block, prohibited = danger_block_and_flag(
         item["category"], item["danger"], item["danger_level"]
     )
-    safety_html, safety_class = render_safety(item["danger"], prohibited)
+    safety_html, safety_class = render_safety(item["danger"], prohibited, item["category"])
 
     related = related_cards(item, creatures)
     cards = "".join(render_card(candidate, item, generated_keys) for candidate in related)
