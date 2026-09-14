@@ -129,10 +129,11 @@
   .copyright{ max-width:1200px; margin:20px auto 0; font-family:"Space Mono", monospace; font-size:9px; color:rgba(234,242,233,.35); }
 
   @media(max-width:760px){
-    .header-inner{ padding:15px 18px; gap:14px; }
-    .logo{ font-size:15px; }
-    nav{ gap:14px; }
-    nav a{ font-size:10px; }
+    .header-inner{ padding:12px 16px; gap:8px; flex-direction:column-reverse; align-items:flex-start; }
+    .logo{ font-size:17px; }
+    nav{ width:100%; gap:14px; justify-content:flex-end; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    nav::-webkit-scrollbar{ display:none; }
+    nav a{ font-size:10px; white-space:nowrap; flex:0 0 auto; }
     .hero-inner{ padding:60px 20px 40px; }
     section{ padding:50px 20px; }
     .zukan-grid{ grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:14px; }
