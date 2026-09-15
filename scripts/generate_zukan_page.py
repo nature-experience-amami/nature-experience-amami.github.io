@@ -121,7 +121,7 @@ CATEGORY_GROUPS = {
     "koucyu": {
         "order": ["funchu", "kabuto", "hanamuguri", "manmaru", "tamamushi", "kamikiri", "hamushi", "other"],
         "labels": {
-            "funchu": "糞虫の仲間",
+            "funchu": "糞虫",
             "kabuto": "カブトムシの仲間",
             "hanamuguri": "ハナムグリの仲間",
             "manmaru": "マンマルコガネの仲間",

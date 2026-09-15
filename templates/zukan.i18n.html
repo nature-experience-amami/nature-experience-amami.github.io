@@ -71,11 +71,12 @@
   }}
 
   .creatures{{ background:var(--night); }}
-  .group{{ margin-bottom:56px; }}
+  .group{{ margin-bottom:64px; padding-top:36px; border-top:1px solid rgba(234,242,233,.12); }}
+  .group:first-child{{ padding-top:0; border-top:none; }}
   .group:last-child{{ margin-bottom:0; }}
   .group-title{{
-    font-family:"Space Mono", monospace; font-size:12px; letter-spacing:.14em; color:var(--moss);
-    text-align:center; margin-bottom:26px;
+    font-family:"Shippori Mincho", serif; font-size:22px; font-weight:600; letter-spacing:.08em; color:var(--amber);
+    text-align:center; margin-bottom:32px;
   }}
 
   .zukan-grid{{ display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:20px; }}
