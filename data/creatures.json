@@ -795,23 +795,6 @@
     "page_path": null
   },
   {
-    "id": "amami-himekebuka-magusokogane",
-    "name": "amami-himekebuka-magusokogane",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      4
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
-      "images/creatures/konchu/koucyu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000002_20260427_12.jpg",
-      "images/creatures/konchu/koucyu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000003_20260427_12.jpg",
-      "images/creatures/konchu/koucyu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000004_20260427_12.jpg"
-    ],
-    "page_path": null
-  },
-  {
     "id": "amami-hirata-hishibatta",
     "name": "amami-hirata-hishibatta",
     "category": "konchu",
@@ -826,62 +809,6 @@
     "page_path": null
   },
   {
-    "id": "amami-ko-kabuto",
-    "name": "amami-ko-kabuto",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      3,
-      4,
-      11
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
-      "images/creatures/konchu/koucyu/amami-ko-kabuto/amami-ko-kabuto_000002_20260416_22.jpg",
-      "images/creatures/konchu/koucyu/amami-ko-kabuto/amami-ko-kabuto_000003_20241128_17.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "amami-semadara-magusokogane",
-    "name": "amami-semadara-magusokogane",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      4,
-      12
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
-      "images/creatures/konchu/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000002_20260427_12.jpg",
-      "images/creatures/konchu/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000003_20260427_12.jpg",
-      "images/creatures/konchu/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg",
-      "images/creatures/konchu/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg",
-      "images/creatures/konchu/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "ao-uba-tamamushi",
-    "name": "ao-uba-tamamushi",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      4,
-      6
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
-      "images/creatures/konchu/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg",
-      "images/creatures/konchu/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg",
-      "images/creatures/konchu/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg"
-    ],
-    "page_path": null
-  },
-  {
     "id": "aosuji-ageha",
     "name": "aosuji-ageha",
     "category": "konchu",
@@ -892,45 +819,6 @@
     "description": "",
     "photos": [
       "images/creatures/konchu/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "be-tsu-hirata-kamikiri",
-    "name": "be-tsu-hirata-kamikiri",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      9
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "ferie-beniboshi-kamikiri",
-    "name": "ferie-beniboshi-kamikiri",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      6,
-      7
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000003_20250628_15.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000004_20250628_15.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000005_20250628_15.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000006_20250628_15.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000007_20250705_13.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000008_20250705_13.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000009_20250705_13.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg",
-      "images/creatures/konchu/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg"
     ],
     "page_path": null
   },
@@ -994,23 +882,6 @@
     "page_path": null
   },
   {
-    "id": "marudaikoku-kogane",
-    "name": "marudaikoku-kogane",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      11
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
-      "images/creatures/konchu/koucyu/marudaikoku-kogane/marudaikoku-kogane_000002_20251126_22.jpg",
-      "images/creatures/konchu/koucyu/marudaikoku-kogane/marudaikoku-kogane_000003_20251126_22.jpg",
-      "images/creatures/konchu/koucyu/marudaikoku-kogane/marudaikoku-kogane_000004_20251126_22.jpg"
-    ],
-    "page_path": null
-  },
-  {
     "id": "marumon-korogisu",
     "name": "marumon-korogisu",
     "category": "konchu",
@@ -1025,22 +896,6 @@
       "images/creatures/konchu/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
       "images/creatures/konchu/tyokushi/marumon-korogisu/marumon-korogisu_000002_20250604_23.jpg",
       "images/creatures/konchu/tyokushi/marumon-korogisu/marumon-korogisu_000003_20250703_01.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "midori-nakaboso-tamamushi",
-    "name": "midori-nakaboso-tamamushi",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      6
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
-      "images/creatures/konchu/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg",
-      "images/creatures/konchu/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg"
     ],
     "page_path": null
   },
@@ -1063,21 +918,6 @@
     "page_path": null
   },
   {
-    "id": "oomidor-isaru-hamshi",
-    "name": "oomidor-isaru-hamshi",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      7
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
-      "images/creatures/konchu/koucyu/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000002_20260708_12.jpg"
-    ],
-    "page_path": null
-  },
-  {
     "id": "ootomoe",
     "name": "ootomoe",
     "category": "konchu",
@@ -1088,55 +928,6 @@
     "description": "",
     "photos": [
       "images/creatures/konchu/ga/ootomoe/ootomoe_000001_20250808_01.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "oshima-senchi-kogane",
-    "name": "oshima-senchi-kogane",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      11
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "oshima-torafu-hanamuguri",
-    "name": "oshima-torafu-hanamuguri",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      5
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
-      "images/creatures/konchu/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg",
-      "images/creatures/konchu/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000003_20250515_10.jpg",
-      "images/creatures/konchu/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg",
-      "images/creatures/konchu/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "ruri-nakaboso-tamamushi",
-    "name": "ruri-nakaboso-tamamushi",
-    "category": "konchu",
-    "category_name": "昆虫その他",
-    "months": [
-      4
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/konchu/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
-      "images/creatures/konchu/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg",
-      "images/creatures/konchu/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg",
-      "images/creatures/konchu/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg"
     ],
     "page_path": null
   },
@@ -1180,40 +971,263 @@
     "page_path": null
   },
   {
-    "id": "taiwan-saikabuto",
-    "name": "taiwan-saikabuto",
-    "category": "konchu",
-    "category_name": "昆虫その他",
+    "id": "amami-himekebuka-magusokogane",
+    "name": "アマミヒメケブカマグソコガネ",
+    "category": "koucyu",
+    "category_name": "甲虫",
     "months": [
       4
     ],
+    "description": "コガネムシ科マグソコガネ亜科アマミヒメケブカマグソコガネ *Gilletianus atsushii* (Ochi, 1986)\n\n奄美大島に生息する、採集記録が非常に少ない希少なマグソコガネの仲間。1986年に越智輝夫によって *Aphodius (Trichaphodius) atsushii* として記載されたが、その後の分類の見直しによって現在はGilletianus属として扱われている。アマミノクロウサギの糞を利用して暮らしていると考えられているが、生態についてはまだ分かっていないことが多く、採集例も限られる。",
+    "photos": [
+      "images/creatures/koucyu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
+      "images/creatures/koucyu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000002_20260427_12.jpg",
+      "images/creatures/koucyu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000003_20260427_12.jpg",
+      "images/creatures/koucyu/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000004_20260427_12.jpg"
+    ],
+    "page_path": "creatures/koucyu/amami-himekebuka-magusokogane.html"
+  },
+  {
+    "id": "amami-ko-kabuto",
+    "name": "アマミコカブト",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "コガネムシ科カブトムシ亜科アマミコカブト *Eophileurus chinensis irregularis* Prell, 1913\n\nコカブト *Eophileurus chinensis* の奄美大島・徳之島・与路島・請島に分布する亜種。体長はオス20〜25mm、メス15〜20mmほど。平地から山地の森林に生息し、夜行性で林床や林道を歩く姿がよく見られるほか、初夏から秋の終わり頃にかけては樹液や灯火にも飛来する。成虫はほぼ通年見られるが、あまり個体数の多い種ではない。",
+    "photos": [
+      "images/creatures/koucyu/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
+      "images/creatures/koucyu/amami-ko-kabuto/amami-ko-kabuto_000002_20260416_22.jpg",
+      "images/creatures/koucyu/amami-ko-kabuto/amami-ko-kabuto_000003_20241128_17.jpg"
+    ],
+    "page_path": "creatures/koucyu/amami-ko-kabuto.html"
+  },
+  {
+    "id": "amami-semadara-magusokogane",
+    "name": "アマミセマダラマグソコガネ",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "コガネムシ科マグソコガネ亜科アマミセマダラマグソコガネ *Chilothorax ohishii* (Masumoto, 1975)\n\n奄美大島・徳之島にのみ分布する固有種。1975年に桝元敏也によって *Aphodius ohishii* として記載されたが、現在はChilothorax属に含められている。アマミノクロウサギの糞を主な餌とし、秋から春にかけてよく見られる一方、夏場はほとんど姿を見せない。",
+    "photos": [
+      "images/creatures/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
+      "images/creatures/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000002_20260427_12.jpg",
+      "images/creatures/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000003_20260427_12.jpg",
+      "images/creatures/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg",
+      "images/creatures/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg",
+      "images/creatures/koucyu/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg"
+    ],
+    "page_path": "creatures/koucyu/amami-semadara-magusokogane.html"
+  },
+  {
+    "id": "ao-uba-tamamushi",
+    "name": "ao-uba-tamamushi",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      4,
+      6
+    ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/koucyu/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
-      "images/creatures/konchu/koucyu/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg"
+      "images/creatures/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
+      "images/creatures/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg",
+      "images/creatures/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg",
+      "images/creatures/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg"
     ],
     "page_path": null
   },
   {
-    "id": "tokara-mannmaru-kogane",
-    "name": "tokara-mannmaru-kogane",
-    "category": "konchu",
-    "category_name": "昆虫その他",
+    "id": "be-tsu-hirata-kamikiri",
+    "name": "be-tsu-hirata-kamikiri",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      9
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/koucyu/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "ferie-beniboshi-kamikiri",
+    "name": "ferie-beniboshi-kamikiri",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      6,
+      7
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000003_20250628_15.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000004_20250628_15.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000005_20250628_15.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000006_20250628_15.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000007_20250705_13.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000008_20250705_13.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000009_20250705_13.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg",
+      "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "marudaikoku-kogane",
+    "name": "マルダイコクコガネ",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      11
+    ],
+    "description": "コガネムシ科ダイコクコガネ亜科マルダイコクコガネ *Copris brachypterus* Nomura, 1964\n\n体長13〜20mm。奄美大島・徳之島にのみ分布する固有種で、後翅が退化しており飛ぶことができない(徳之島には別亜種が分布)。夜間、山地の森の中を歩き回ってアマミノクロウサギの糞を探し、糞玉の下に穴を掘って前脚で後ずさりしながら引きずり込む習性を持つ。分布域がごく限られる上、移動性に乏しく過去の採集圧による個体数減少が大きいことから、環境省レッドリストで絶滅危惧II類(VU)に指定されている。",
+    "photos": [
+      "images/creatures/koucyu/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
+      "images/creatures/koucyu/marudaikoku-kogane/marudaikoku-kogane_000002_20251126_22.jpg",
+      "images/creatures/koucyu/marudaikoku-kogane/marudaikoku-kogane_000003_20251126_22.jpg",
+      "images/creatures/koucyu/marudaikoku-kogane/marudaikoku-kogane_000004_20251126_22.jpg"
+    ],
+    "page_path": "creatures/koucyu/marudaikoku-kogane.html"
+  },
+  {
+    "id": "midori-nakaboso-tamamushi",
+    "name": "midori-nakaboso-tamamushi",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      6
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
+      "images/creatures/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg",
+      "images/creatures/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "oomidor-isaru-hamshi",
+    "name": "oomidor-isaru-hamshi",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      7
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/koucyu/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
+      "images/creatures/koucyu/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000002_20260708_12.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "oshima-senchi-kogane",
+    "name": "オオシマセンチコガネ",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ],
+    "description": "センチコガネ科オオシマセンチコガネ *Phelotrupes oshimanus* Fairmaire, 1895\n\n体長20mmに達する、日本産センチコガネ科最大種。奄美大島・徳之島にのみ分布する固有種で、秋から冬にかけて活動し、アマミノクロウサギやイノシシの糞に集まる。糞を前脚で抱えるようにして後ずさりしながら引きずり、自分の巣穴まで運び込む独特の習性を持つ。鹿児島県レッドリストで準絶滅危惧に選定されている。",
+    "photos": [
+      "images/creatures/koucyu/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg"
+    ],
+    "page_path": "creatures/koucyu/oshima-senchi-kogane.html"
+  },
+  {
+    "id": "oshima-torafu-hanamuguri",
+    "name": "oshima-torafu-hanamuguri",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      5
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
+      "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg",
+      "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000003_20250515_10.jpg",
+      "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg",
+      "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg"
+    ],
+    "page_path": null
+  },
+  {
+    "id": "ruri-nakaboso-tamamushi",
+    "name": "ruri-nakaboso-tamamushi",
+    "category": "koucyu",
+    "category_name": "甲虫",
     "months": [
       4
     ],
     "description": "",
     "photos": [
-      "images/creatures/konchu/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
-      "images/creatures/konchu/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000002_20260415_21.jpg",
-      "images/creatures/konchu/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000003_20260415_21.jpg",
-      "images/creatures/konchu/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000004_20260415_21.jpg",
-      "images/creatures/konchu/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000005_20260415_21.jpg",
-      "images/creatures/konchu/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000006_20260415_21.jpg",
-      "images/creatures/konchu/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000007_20260415_21.jpg",
-      "images/creatures/konchu/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000008_20260415_21.jpg"
+      "images/creatures/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
+      "images/creatures/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg",
+      "images/creatures/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg",
+      "images/creatures/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg"
     ],
     "page_path": null
+  },
+  {
+    "id": "taiwan-saikabuto",
+    "name": "タイワンサイカブト",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      4
+    ],
+    "description": "コガネムシ科カブトムシ亜科サイカブト(タイワンサイカブト) *Oryctes rhinoceros* (Linnaeus, 1758)\n\nインドシナ半島周辺を原産とする外来種。20世紀初頭に台湾からの輸入資材に紛れて石垣島に侵入したのが日本国内での最初の記録とされ、その後分布を北上させ、1991年には奄美大島・徳之島でも確認された。現在は南西諸島のほぼ全域で定着・自然繁殖している。ヤシ類やパイナップル、サトウキビなどの茎や芯に穿孔して加害する農業害虫として知られ、在来のカブトムシ類との競合も懸念されている。",
+    "photos": [
+      "images/creatures/koucyu/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
+      "images/creatures/koucyu/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg"
+    ],
+    "page_path": "creatures/koucyu/taiwan-saikabuto.html"
+  },
+  {
+    "id": "tokara-mannmaru-kogane",
+    "name": "トカラマンマルコガネ",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
+      4
+    ],
+    "description": "アツバコガネ科マンマルコガネ亜科トカラマンマルコガネ *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\n体長5.0〜5.8mmほどの小型の甲虫で、トカラ列島(タイプ産地は中之島)と奄美大島に分布する。八重山諸島に分布する近縁のサキシママンマルコガネ(*M. kazumai hisamatsui* Ochi, 1990)とは分布域で区別される。朽ち木の中やその周辺の落ち葉の層など、アリの巣に近い環境で見つかる好蟻性の種とされ、原記載の論文名にも「myrmecophilous(好蟻性)」と記されている。刺激を受けると触角や脚を体内に収め、ダンゴムシのように完全な球状に丸まって身を守る。",
+    "photos": [
+      "images/creatures/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
+      "images/creatures/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000002_20260415_21.jpg",
+      "images/creatures/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000003_20260415_21.jpg",
+      "images/creatures/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000004_20260415_21.jpg",
+      "images/creatures/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000005_20260415_21.jpg",
+      "images/creatures/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000006_20260415_21.jpg",
+      "images/creatures/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000007_20260415_21.jpg",
+      "images/creatures/koucyu/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000008_20260415_21.jpg"
+    ],
+    "page_path": "creatures/koucyu/tokara-mannmaru-kogane.html"
   },
   {
     "id": "amami-hirata-kuwagata",
