@@ -599,27 +599,45 @@ select{ -webkit-appearance:none; appearance:none; }
     });
   });
 
-  // GitHubのContents APIは同じブランチへの書き込みが同時に走ると409(競合)を返すため、
-  // 1枚ずつ順番にアップロードする。GitHub Actions側の自動コミット(写真の自動処理)と
-  // 衝突した場合も409になり得るが、その処理には時間がかかることがあるため、
-  // 間隔を空けながら根気強く再試行する。
+  // GitHubのContents APIは、既に同じ場所にファイルがある状態で「新規作成」として
+  // PUTすると409(競合)を返す(例: 同じ写真を選び直して再送してしまった場合)。
+  // これを避けるため、PUTの前に必ず現在のファイル有無を確認し、既にあればその
+  // sha(バージョン識別子)を付けて「上書き更新」として送る。
+  // また、同じブランチへの書き込みが同時に走った場合や、GitHub Actions側の
+  // 自動コミット(写真の自動処理)と衝突した場合も409になり得るため、
+  // その場合は間隔を空けながら根気強く再試行する。
+  function apiContentsUrl(path) {
+    return "https://api.github.com/repos/" + FIXED_REPO + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/");
+  }
+  function getExistingSha(path, settings) {
+    return fetch(apiContentsUrl(path), {
+      headers: {
+        "Authorization": "Bearer " + settings.pat,
+        "Accept": "application/vnd.github+json"
+      }
+    }).then(function (res) {
+      if (!res.ok) return null; // 404(まだ無い)や取得失敗時は、新規作成として進める
+      return res.json().then(function (data) { return data.sha || null; });
+    }).catch(function () { return null; });
+  }
   var MAX_PUT_ATTEMPTS = 8;
   function putFileWithRetry(path, jpgName, base64, settings, speciesId, row, attempt) {
     attempt = attempt || 1;
-    return fetch(
-      "https://api.github.com/repos/" + FIXED_REPO + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/"),
-      {
+    return getExistingSha(path, settings).then(function (sha) {
+      var body = {
+        message: speciesId + " の写真を追加 (" + jpgName + ")",
+        content: base64
+      };
+      if (sha) body.sha = sha;
+      return fetch(apiContentsUrl(path), {
         method: "PUT",
         headers: {
           "Authorization": "Bearer " + settings.pat,
           "Accept": "application/vnd.github+json"
         },
-        body: JSON.stringify({
-          message: speciesId + " の写真を追加 (" + jpgName + ")",
-          content: base64
-        })
-      }
-    ).then(function (res) {
+        body: JSON.stringify(body)
+      });
+    }).then(function (res) {
       if (!res.ok && res.status === 409 && attempt < MAX_PUT_ATTEMPTS) {
         row.querySelector("span:last-child").textContent = "再試行中(" + attempt + "/" + MAX_PUT_ATTEMPTS + ")…";
         row.querySelector("span:last-child").className = "status-pending";
