@@ -356,7 +356,7 @@
     "id": "amami-kuro-usagi",
     "name": "Amami Rabbit",
     "category": "honyuurui",
-    "category_name": "honyuurui",
+    "category_name": "Mammals",
     "months": [
       1,
       2,
@@ -382,7 +382,7 @@
     "id": "kenaga-nezumi",
     "name": "Ryukyu Long-haired Rat",
     "category": "honyuurui",
-    "category_name": "honyuurui",
+    "category_name": "Mammals",
     "months": [
       2,
       3,
@@ -406,7 +406,7 @@
     "id": "watase-jinezumi",
     "name": "Watase's Shrew",
     "category": "honyuurui",
-    "category_name": "honyuurui",
+    "category_name": "Mammals",
     "months": [
       12
     ],
@@ -1309,10 +1309,12 @@
     "category": "tori",
     "category_name": "Birds",
     "months": [
-      1,
-      12
+      3,
+      4,
+      5,
+      6
     ],
-    "description": "Old World flycatcher family (Muscicapidae), genus Larvivora.\n*Larvivora komadori*\n\nAbout 14 cm long, weighing about 18 g. A species endemic to Japan that\nbreeds from the Danjo Islands through the Tokara Islands, Amami Oshima and\nits surrounding islets, to Tokunoshima; designated a Natural Monument in\n1970. Males have a vivid orange-red head, back, and tail, and the black\npatches on the breast and flanks look like a \"beard,\" which gives the\nspecies its Japanese name. Females are overall plainer in color. It forages\nfor insects on the forest floor of evergreen broadleaf forest, proclaiming\nits territory with a strong, beautiful song. It is easiest to find early in\nthe morning by following its song. A different species lives in northern\nOkinawa Island, but the two ranges do not overlap.",
+    "description": "Old World flycatcher family (Muscicapidae), genus Larvivora.\n*Larvivora komadori*\n\nAbout 14 cm long, weighing about 18 g. A species endemic to Japan that\nbreeds from the Danjo Islands through the Tokara Islands, Amami Oshima and\nits surrounding islets, to Tokunoshima; designated a Natural Monument in\n1970. It is a year-round resident on Amami Oshima, but males sing especially\noften to proclaim territory during the breeding season from March to June,\nso following the song early in the morning is the best way to find one at\nthat time of year. Males have a vivid orange-red head, back, and tail, and\nthe black patches on the breast and flanks look like a \"beard,\" which gives\nthe species its Japanese name. Females are overall plainer in color. It\nforages for insects on the forest floor of evergreen broadleaf forest. A\ndifferent species lives in northern Okinawa Island, but the two ranges do\nnot overlap.",
     "photos": [
       "../images/creatures/tori/akahige/akahige_000001_20250120_14.jpg",
       "../images/creatures/tori/akahige/akahige_000002_20250123_12.jpg",
@@ -1330,13 +1332,39 @@
     "category": "tori",
     "category_name": "Birds",
     "months": [
-      6
+      2,
+      3,
+      4,
+      5
     ],
-    "description": "Sandpiper family (Scolopacidae), genus Scolopax. *Scolopax mira*\n\nAbout 35-36 cm long. A species endemic to Japan found only in the Amami and\nOkinawa island groups, with breeding confirmed on Amami Oshima, Kakeromajima,\nUke-jima, Yoro-jima, and Tokunoshima. It resembles the closely related\nEurasian woodcock but has longer legs, an overall blacker tone, and a\nstockier build than other sandpipers. It prefers the dim forest floor of\nevergreen broadleaf forest, is most active from dusk to dawn, and forages on\nthe ground for earthworms and insects. It becomes especially active in the\ndim light of early morning and evening, and on moonlit nights. It nests on\nthe ground within forests and lays 2-4 eggs from around March through May.\nDesignated a Nationally Rare Wild Species in 1993. Predation by mongooses\nand feral cats, along with habitat loss from logging, are ongoing concerns.",
+    "description": "Sandpiper family (Scolopacidae), genus Scolopax. *Scolopax mira*\n\nAbout 35-36 cm long. A species endemic to Japan found only in the Amami and\nOkinawa island groups, with breeding confirmed on Amami Oshima, Kakeromajima,\nUke-jima, Yoro-jima, and Tokunoshima. It resembles the closely related\nEurasian woodcock but has longer legs, an overall blacker tone, and a\nstockier build than other sandpipers. It prefers the dim forest floor of\nevergreen broadleaf forest, is most active from dusk to dawn, and forages on\nthe ground for earthworms and insects. It becomes especially active in the\ndim light of early morning and evening, and on moonlit nights. The breeding\nseason runs from around February to May, and at dusk males perform a\ncourtship and territorial \"roding\" display flight, making this the easiest\ntime of year to spot one. It nests on the ground within forests and lays\n2-4 eggs from around March through May. Designated a Nationally Rare Wild\nSpecies in 1993. Predation by mongooses and feral cats, along with habitat\nloss from logging, are ongoing concerns.",
     "photos": [
       "../images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
     ],
     "page_path": "creatures/tori/amami-yamashigi.html"
+  },
+  {
+    "id": "kawasemi",
+    "name": "Common Kingfisher",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "description": "Kingfisher family (Alcedinidae), genus Alcedo. *Alcedo atthis bengalensis*\n\nAbout 17 cm long and weighing 19-40 g, a small kingfisher. The head and\nback have a glossy blue-green sheen and the underparts are a vivid orange,\nearning it the nickname \"jewel of the water's edge.\" On Amami Oshima it is\na year-round resident found along rivers, irrigation channels beside rice\npaddies, and ponds of many kinds. It watches the water from a perch on an\noverhanging branch or post, then plunges in to catch small fish or shrimp\nas soon as it spots one. Strongly territorial, it lives alone or in pairs\nand digs a tunnel nest into a riverbank or eroded slope. The breeding\nseason runs from around March to August, and pairs may raise more than one\nbrood; courtship includes the male passing a small fish to the female,\nknown as courtship feeding, and the birds are especially active and easy\nto watch during this period. Unlike most of the birds on this site, it can\nbe watched by daylight at the water's edge rather than in the night\nforest.",
+    "photos": [
+      "../images/creatures/tori/kawasemi/kawasemi_000001_20250207_10.jpg",
+      "../images/creatures/tori/kawasemi/kawasemi_000002_20250208_10.jpg",
+      "../images/creatures/tori/kawasemi/kawasemi_000003_20250215_10.jpg",
+      "../images/creatures/tori/kawasemi/kawasemi_000004_20250217_11.jpg",
+      "../images/creatures/tori/kawasemi/kawasemi_000005_20250314_10.jpg"
+    ],
+    "page_path": "creatures/tori/kawasemi.html"
   },
   {
     "id": "oo-tora-tsugumi",
@@ -1379,10 +1407,12 @@
     "category": "tori",
     "category_name": "Birds",
     "months": [
+      2,
       3,
-      7
+      4,
+      5
     ],
-    "description": "Crow family (Corvidae), genus Garrulus. *Garrulus lidthi*\n\nAbout 38 cm long. A species endemic to Japan found only on Amami Oshima,\nKakeromajima, and Uke-jima, beautiful with its azure-blue body, reddish-brown\nwings, and white bill and wingtips. Designated a Natural Monument in 1921.\nIt prefers evergreen broadleaf forest and is omnivorous, feeding on\nchinquapin and oak acorns. Breeds from around February through May, laying\n3-7 eggs in a tree hollow or similar site. Its numbers once declined due to\npredation by feral cats and the introduced small Indian mongoose, but\nconservation efforts have paid off — including the 2024 declaration of\nmongoose eradication — and its population has been recovering in recent\nyears. It flies about actively during the day, but at night it can be\nobserved resting on power lines or branch tips along forest roads.",
+    "description": "Crow family (Corvidae), genus Garrulus. *Garrulus lidthi*\n\nAbout 38 cm long. A species endemic to Japan found only on Amami Oshima,\nKakeromajima, and Uke-jima, beautiful with its azure-blue body, reddish-brown\nwings, and white bill and wingtips. Designated a Natural Monument in 1921.\nIt prefers evergreen broadleaf forest and is omnivorous, feeding on\nchinquapin and oak acorns. Nest-building begins around December, and during\nthe breeding season from around February through May it lays 3-7 eggs in a\ntree hollow or similar site; late February through early April, when\nparent birds move about actively near the nest, is an especially good time\nto spot one. Its numbers once declined due to\npredation by feral cats and the introduced small Indian mongoose, but\nconservation efforts have paid off — including the 2024 declaration of\nmongoose eradication — and its population has been recovering in recent\nyears. It flies about actively during the day, but at night it can be\nobserved resting on power lines or branch tips along forest roads.",
     "photos": [
       "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
       "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg",
@@ -1391,5 +1421,130 @@
       "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg"
     ],
     "page_path": "creatures/tori/ruri-kakesu.html"
+  },
+  {
+    "id": "ryukyu-akashobin",
+    "name": "Ryukyu Ruddy Kingfisher",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Kingfisher family (Alcedinidae), genus Halcyon. *Halcyon coromanda bangsi*\n\nAbout 27 cm long, its whole body a glossy reddish-brown, with a pale-blue\npatch on the rump that stands out clearly in flight. Locally on Amami\nOshima it is also known as \"Kukkaru,\" and is loved for its far-carrying\n\"kyororororo\" call. It is a summer migrant that arrives from its\nSoutheast Asian wintering grounds around the end of April, near Japan's\nGolden Week holidays, and heads south again by around September. Despite\nbelonging to the kingfisher family, it eats relatively little fish,\npreying widely on crabs, frogs, lizards, and insects of the forest. During\nthe breeding season from June to July it lays around five eggs in a tree\nhollow or an old woodpecker nest, and the chicks fledge around July. Parent\nbirds become especially nervous during this period; approaching the nest\ntree, making noise, or using flash photography can cause them to abandon\nthe nest or force the chicks to fledge early, so it is best to watch\nquietly from a distance and for only a short time.",
+    "photos": [
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000002_20260615_00.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000003_20260626_00.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000004_20250809_23.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000005_20260623_10.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000006_20260713_10.jpg"
+    ],
+    "page_path": "creatures/tori/ryukyu-akashobin.html"
+  },
+  {
+    "id": "ryukyu-zuaka-aobato",
+    "name": "Ryukyu Whistling Green-Pigeon",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "description": "Pigeon family (Columbidae), genus Treron. *Treron permagnus*\n\nAbout 35 cm long, somewhat larger than the White-bellied Green-Pigeon, and\na year-round resident. Its whole body is a vivid green. The Japanese name,\nmeaning \"red-headed green-pigeon,\" comes from the reddish head of its\nclose relative the Taiwan Whistling Green-Pigeon (Treron formosae), but\nthis species, found on Amami Oshima and elsewhere, is green even on the\nhead. It lives in laurel forest from lowlands to mountains and feeds in\nthe trees on fruit and seeds, including that of Ficus erecta. It gives a\ndistinctive shakuhachi-like call, \"oo-ao, pe, hepo.\" It breeds around May,\nlaying two eggs. Due to habitat fragmentation and decline, it is listed as\nNear Threatened on the IUCN Red List.",
+    "photos": [
+      "../images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg",
+      "../images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000002_20250718_12.jpg"
+    ],
+    "page_path": "creatures/tori/ryukyu-zuaka-aobato.html"
+  },
+  {
+    "id": "ryuukyuu-konohazuku",
+    "name": "Ryukyu Scops Owl",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "description": "Owl family (Strigidae), genus Otus. *Otus elegans elegans*\n\nAbout 22 cm long, one of the smallest owls found in Japan. The whole body\nis brown with fine, moth-eaten-looking mottling. It is a year-round\nresident found from Amami Oshima southward through the Ryukyu Islands,\noccurring not only in mature forest but also in woodland near houses.\nNocturnal, after sunset it repeats a low \"koho, koho\" call, and the female\nsometimes answers with a \"nya.\" It preys on insects, spiders, and geckos.\nIt nests in tree hollows, old woodpecker holes, or among the fronds of\nbird's-nest fern, and lays 4-5 eggs during the breeding season from April\nto around July. Only the female incubates, but both parents share the\nwork of feeding the chicks, and most fledge around July. Around the time\nof fledging, chicks are still unsteady in flight and may be found perched\non branches close to the ground; rather than picking them up or shining\na light on them for long periods, it is best to quietly leave the area.\nThe call itself can be heard year-round, not only during the breeding\nseason.",
+    "photos": [
+      "../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg",
+      "../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000002_20241122_21.jpg"
+    ],
+    "page_path": "creatures/tori/ryuukyuu-konohazuku.html"
+  },
+  {
+    "id": "sankoutyou",
+    "name": "Ryukyu Paradise Flycatcher",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Monarch flycatcher family (Monarchidae), genus Terpsiphone.\n*Terpsiphone atrocaudata illex*\n\nMales measure about 45 cm including the tail streamers, females about 18\ncm. The whole body has a black-purple sheen, and the eye-ring and bill are\na vivid cobalt blue. Males have tail feathers nearly three times the\nlength of the body, giving them a striking silhouette in flight. On Amami\nOshima it arrives as a summer migrant around April and, in the dim\ninterior of the forest, flits from branch to branch catching flying\ninsects such as small flies, wasps, and butterflies in mid-air. Its call\nis said to sound like \"tsuki-hi-hoshi, hoi-hoi-hoi\" (\"moon, sun, stars,\nhoi-hoi-hoi\"), which is why it is named the \"three-light bird\" after these\nthree lights. From May to July it builds a cup-shaped nest of moss in the\nfork of a tree and shares incubation and chick-rearing duties. While\nunfledged chicks are in the nest, lingering close by or shaking the\nbranch can cause the parents to abandon it, so it is best to watch briefly\nthrough binoculars from a distance. It heads back to its Southeast Asian\nwintering grounds around September.",
+    "photos": [
+      "../images/creatures/tori/sankoutyou/sankoutyou_000001_20260708_13.jpg"
+    ],
+    "page_path": "creatures/tori/sankoutyou.html"
+  },
+  {
+    "id": "sasiba",
+    "name": "Grey-faced Buzzard",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "description": "Hawk family (Accipitridae), genus Butastur. *Butastur indicus*\n\nMales are about 47 cm long and females about 51 cm, with a wingspan of\n105-115 cm; a medium-sized hawk. The head is grayish-brown, the upperparts\nand breast are brown, and the throat is white with a black central streak.\nIt preys mainly on small animals such as snakes, lizards, and frogs, as\nwell as insects like cicadas and grasshoppers. It breeds in Kyushu and\nnorthward through Honshu and Shikoku, and once breeding is finished, birds\nmigrate south from early September through the Nansei Islands toward\nSoutheast Asia. Amami Oshima is known as Japan's largest wintering ground\nfor the species, with the passage peaking around mid-October, when large\nnumbers of birds can be seen circling and rising together in what is\ncalled a \"hawk pillar.\" Many birds do not complete the journey south and\ninstead winter on the island; an estimated 2,000 or so stay from November\nthrough around March. It is listed as Vulnerable on the Ministry of the\nEnvironment's Red List and on Appendix II of CITES. Around the forests\nused as roosts, avoid loud noises, sudden movements, and flash photography\nthat could startle the birds into unnecessary flight, and observe quietly\nfrom a distance.",
+    "photos": [
+      "../images/creatures/tori/sasiba/sasiba_000001_20240119_16.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000002_20250120_12.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000003_20250120_12.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000004_20250121_10.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000006_20250123_13.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000007_20250320_10.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000008_20250331_11.jpg"
+    ],
+    "page_path": "creatures/tori/sasiba.html"
+  },
+  {
+    "id": "tageri",
+    "name": "Northern Lapwing",
+    "category": "tori",
+    "category_name": "Birds",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "description": "Plover family (Charadriidae), genus Vanellus. *Vanellus vanellus*\n\nAbout 32 cm long, with a long crest on the head, a back with a glossy\ngreenish-black sheen, and a white belly. Its elegant appearance has earned\nit the nickname \"winter lady.\" It breeds across Eurasia and visits Japan\nas a winter migrant. On Amami Oshima it begins to appear in open farmland\nsuch as rice paddies and fields from around late October, staying through\nthe winter until around late March or April of the following year. It\nmoves in flocks, foraging in the soil for earthworms and insects. Unlike\nthe creatures of the night forest that this site mainly features, it is a\nmessenger of winter that is easy to observe by day in open farmland.",
+    "photos": [
+      "../images/creatures/tori/tageri/tageri_000001_20251221_15.jpg",
+      "../images/creatures/tori/tageri/tageri_000002_20251221_15.jpg",
+      "../images/creatures/tori/tageri/tageri_000003_20251221_15.jpg",
+      "../images/creatures/tori/tageri/tageri_000004_20251221_15.jpg"
+    ],
+    "page_path": "creatures/tori/tageri.html"
   }
 ]

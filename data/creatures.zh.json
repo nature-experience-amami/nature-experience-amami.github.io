@@ -356,7 +356,7 @@
     "id": "amami-kuro-usagi",
     "name": "奄美黑兔",
     "category": "honyuurui",
-    "category_name": "honyuurui",
+    "category_name": "哺乳类",
     "months": [
       1,
       2,
@@ -382,7 +382,7 @@
     "id": "kenaga-nezumi",
     "name": "琉球长毛鼠",
     "category": "honyuurui",
-    "category_name": "honyuurui",
+    "category_name": "哺乳类",
     "months": [
       2,
       3,
@@ -406,7 +406,7 @@
     "id": "watase-jinezumi",
     "name": "渡濑麝鼩",
     "category": "honyuurui",
-    "category_name": "honyuurui",
+    "category_name": "哺乳类",
     "months": [
       12
     ],
@@ -1309,10 +1309,12 @@
     "category": "tori",
     "category_name": "鸟类",
     "months": [
-      1,
-      12
+      3,
+      4,
+      5,
+      6
     ],
-    "description": "鹟科歌鸲属 *Larvivora komadori*\n\n全长约14厘米，体重约18克。从男女群岛经吐噶喇列岛、奄美大岛及其周边岛屿到德之岛一带\n繁殖的日本固有种，1970年被指定为天然纪念物。雄鸟头部、背部及尾部呈鲜艳的橙红色，胸\n部和体侧的黑色部分看起来像\"胡须\"，这也是其日文名称的由来。雌鸟整体色调较为朴素。常\n在常绿阔叶林的林下取食昆虫，以有力而美丽的鸣声宣示领地。清晨循着鸣声寻找比较容易发现\n它。冲绳岛北部栖息着另一近缘种，但两者的分布范围并不重叠。",
+    "description": "鹟科歌鸲属 *Larvivora komadori*\n\n全长约14厘米，体重约18克。从男女群岛经吐噶喇列岛、奄美大岛及其周边岛屿到德之岛一带\n繁殖的日本固有种，1970年被指定为天然纪念物。它是奄美大岛的留鸟，一年四季都能见到，\n但在3月至6月的繁殖期，雄鸟会格外频繁地鸣叫以宣示领地，这一时期清晨循着鸣声寻找最容\n易发现它。雄鸟头部、背部及尾部呈鲜艳的橙红色，胸部和体侧的黑色部分看起来像\"胡须\"，\n这也是其日文名称的由来。雌鸟整体色调较为朴素。常在常绿阔叶林的林下取食昆虫。冲绳岛\n北部栖息着另一近缘种，但两者的分布范围并不重叠。",
     "photos": [
       "../images/creatures/tori/akahige/akahige_000001_20250120_14.jpg",
       "../images/creatures/tori/akahige/akahige_000002_20250123_12.jpg",
@@ -1330,13 +1332,39 @@
     "category": "tori",
     "category_name": "鸟类",
     "months": [
-      6
+      2,
+      3,
+      4,
+      5
     ],
-    "description": "鹬科丘鹬属 *Scolopax mira*\n\n全长约35〜36厘米。仅分布于奄美群岛和冲绳诸岛的日本固有种，已在奄美大岛、加计吕麻\n岛、请岛、与路岛及德之岛确认有繁殖记录。外形与近缘的丘鹬相似，但腿更长、通体偏黑，体\n型比其他鹬类更为敦实。喜欢栖息在常绿阔叶林阴暗的林下地面，从日落到日出期间活动活跃，\n在地面觅食蚯蚓和昆虫。在晨昏的昏暗时段及满月之夜尤为活跃。在林内地面筑巢，3月至5月\n左右产卵2〜4枚。1993年被指定为国内稀有野生动植物种。獴类和野猫的捕食，以及森林砍伐\n导致的栖息地减少，是其面临的课题。",
+    "description": "鹬科丘鹬属 *Scolopax mira*\n\n全长约35〜36厘米。仅分布于奄美群岛和冲绳诸岛的日本固有种，已在奄美大岛、加计吕麻\n岛、请岛、与路岛及德之岛确认有繁殖记录。外形与近缘的丘鹬相似，但腿更长、通体偏黑，体\n型比其他鹬类更为敦实。喜欢栖息在常绿阔叶林阴暗的林下地面，从日落到日出期间活动活跃，\n在地面觅食蚯蚓和昆虫。在晨昏的昏暗时段及满月之夜尤为活跃。繁殖期约为2月至5月，黄昏\n时分雄鸟会进行求偶及宣示领地的\"展示飞行\"，这段时期是全年最容易发现它的时候。在林内\n地面筑巢，3月至5月左右产卵2〜4枚。1993年被指定为国内稀有野生动植物种。獴类和野猫的\n捕食，以及森林砍伐导致的栖息地减少，是其面临的课题。",
     "photos": [
       "../images/creatures/tori/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
     ],
     "page_path": "creatures/tori/amami-yamashigi.html"
+  },
+  {
+    "id": "kawasemi",
+    "name": "普通翠鸟",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "description": "翠鸟科翠鸟属 *Alcedo atthis bengalensis*\n\n体长约17厘米，体重19〜40克左右的小型翠鸟。头部至背部呈带光泽的青绿色，腹部为鲜艳\n的橙色，因而被称为\"水边的宝石\"。在奄美大岛为留鸟，一年四季都能见到，常出没于河\n流、水田边的水渠以及各种池塘等淡水环境。它会停在水边伸出的树枝或木桩上注视水面，\n一旦发现小鱼或虾便会猛地扎入水中捕食。领地意识很强，多单独或成对活动，在河岸或崩\n塌的斜坡土中挖掘横穴筑巢。繁殖期大约在3月至8月，一对繁殖鸟有时会连续育雏数次；求\n偶时雄鸟会将小鱼递给雌鸟，称为\"求爱喂食\"，这一时期活动格外活跃，也更容易观察到。\n与本网站介绍的大多数鸟类不同，它并非夜间森林的居民，而是少数可以在白天的水边轻松\n观察到的鸟类。",
+    "photos": [
+      "../images/creatures/tori/kawasemi/kawasemi_000001_20250207_10.jpg",
+      "../images/creatures/tori/kawasemi/kawasemi_000002_20250208_10.jpg",
+      "../images/creatures/tori/kawasemi/kawasemi_000003_20250215_10.jpg",
+      "../images/creatures/tori/kawasemi/kawasemi_000004_20250217_11.jpg",
+      "../images/creatures/tori/kawasemi/kawasemi_000005_20250314_10.jpg"
+    ],
+    "page_path": "creatures/tori/kawasemi.html"
   },
   {
     "id": "oo-tora-tsugumi",
@@ -1379,10 +1407,12 @@
     "category": "tori",
     "category_name": "鸟类",
     "months": [
+      2,
       3,
-      7
+      4,
+      5
     ],
-    "description": "鸦科松鸦属 *Garrulus lidthi*\n\n全长约38厘米。仅分布于奄美大岛、加计吕麻岛及请岛的日本固有种，通体琉璃蓝色，翅膀呈\n红褐色，喙和翼尖呈白色，十分美丽。1921年被指定为天然纪念物。喜欢栖息在常绿阔叶林，\n食性为杂食，以椎树及橡树的果实为食。繁殖期为2月至5月左右，在树洞等处产卵3〜7枚。曾\n因野猫及外来入侵种爪哇獴的捕食而数量减少，但随着保护工作取得成效——包括2024年宣布\n灭獴成功——近年来种群数量正在恢复。白天活跃地四处飞翔，夜晚则可观察到它在林道沿线的\n电线或树枝顶端休息的身影。",
+    "description": "鸦科松鸦属 *Garrulus lidthi*\n\n全长约38厘米。仅分布于奄美大岛、加计吕麻岛及请岛的日本固有种，通体琉璃蓝色，翅膀呈\n红褐色，喙和翼尖呈白色，十分美丽。1921年被指定为天然纪念物。喜欢栖息在常绿阔叶林，\n食性为杂食，以椎树及橡树的果实为食。约从12月起开始筑巢准备，繁殖期为2月至5月左右，\n在树洞等处产卵3〜7枚；2月下旬至4月上旬亲鸟会在巢附近频繁活动，是格外容易观察到它的\n时期。曾因野猫及外来入侵种爪哇獴的捕食而数量减少，但随着保护工作取得成效——包括2024年宣布\n灭獴成功——近年来种群数量正在恢复。白天活跃地四处飞翔，夜晚则可观察到它在林道沿线的\n电线或树枝顶端休息的身影。",
     "photos": [
       "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
       "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg",
@@ -1391,5 +1421,130 @@
       "../images/creatures/tori/ruri-kakesu/ruri-kakesu_000005_20250726_09.jpg"
     ],
     "page_path": "creatures/tori/ruri-kakesu.html"
+  },
+  {
+    "id": "ryukyu-akashobin",
+    "name": "琉球赤翡翠",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "翠鸟科翡翠属 *Halcyon coromanda bangsi*\n\n全长约27厘米，通体呈带光泽的红褐色，飞行时腰部的浅蓝色斑纹十分显眼。在奄美大岛当\n地也被称为\"库卡鲁(クッカル)\"，因\"叽哦哦哦哦——\"般响亮的鸣声而深受喜爱。它是一种\n夏候鸟，通常在黄金周前后的4月末从东南亚的越冬地飞来，9月前后再度南迁离开。虽属翠\n鸟科，但它并不太吃鱼，而是广泛捕食螃蟹、青蛙、蜥蜴及森林中的各种昆虫。6月至7月的\n繁殖期，它会在树洞或啄木鸟废弃的旧巢中产下约5枚卵，雏鸟多在7月前后离巢。此时亲鸟\n会变得格外敏感，靠近巢树、制造噪音或使用闪光灯拍摄都可能导致弃巢或雏鸟提前离巢，\n因此应保持距离、安静观察，且不宜逗留太久。",
+    "photos": [
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000002_20260615_00.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000003_20260626_00.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000004_20250809_23.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000005_20260623_10.jpg",
+      "../images/creatures/tori/ryukyu-akashobin/ryukyu-akashobin_000006_20260713_10.jpg"
+    ],
+    "page_path": "creatures/tori/ryukyu-akashobin.html"
+  },
+  {
+    "id": "ryukyu-zuaka-aobato",
+    "name": "琉球绿鸠",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "description": "鸠鸽科绿鸠属 *Treron permagnus*\n\n体长约35厘米，体型比小绿鸠稍大，为留鸟。通体呈鲜艳的绿色。其日文名\"头赤\"(意为红\n头)源自近缘种台湾绿鸠(Treron formosae)头部带有红色，而分布于奄美大岛等地的本种\n则连头部也是绿色。栖息于低地到山地的照叶林中，在树上取食薜荔等植物的果实与种子。\n鸣声独特，如尺八般\"呜——奥、佩、黑波\"作响。约在5月繁殖，产卵2枚。由于栖息地的\n分割与减少，IUCN红色名录将其列为近危(NT)物种。",
+    "photos": [
+      "../images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg",
+      "../images/creatures/tori/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000002_20250718_12.jpg"
+    ],
+    "page_path": "creatures/tori/ryukyu-zuaka-aobato.html"
+  },
+  {
+    "id": "ryuukyuu-konohazuku",
+    "name": "琉球角鸮",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "description": "鸱鸮科角鸮属 *Otus elegans elegans*\n\n体长22厘米，是日本体型最小的猫头鹰之一。通体呈褐色，带有细密的虫蚀状斑纹。为留\n鸟，分布于奄美大岛以南的南西诸岛，一年四季都能见到，不仅栖息于成熟的森林，也常见\n于人家附近的树林。夜行性，日落后会反复发出低沉的\"科霍、科霍\"叫声，雌鸟有时会以\n\"喵\"声应和。以昆虫、蜘蛛、壁虎等为食。营巢于树洞、啄木鸟废弃的旧巢或山苏花的叶\n间，在4月至7月左右的繁殖期产卵4〜5枚。抱卵仅由雌鸟负责，但雌雄会共同承担育雏的\n喂食工作，多数雏鸟在7月前后离巢。离巢前后，雏鸟的飞行能力尚不稳定，有时会停在靠\n近地面的树枝上，此时不应将其捡起或用灯光长时间照射，而应悄悄离开现场。其鸣声本身\n并不限于繁殖期，一年四季均可听到。",
+    "photos": [
+      "../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg",
+      "../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000002_20241122_21.jpg"
+    ],
+    "page_path": "creatures/tori/ryuukyuu-konohazuku.html"
+  },
+  {
+    "id": "sankoutyou",
+    "name": "琉球寿带",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "王鹟科寿带属 *Terpsiphone atrocaudata illex*\n\n雄鸟连尾羽全长约45厘米，雌鸟约18厘米。通体带黑紫色光泽，眼周和喙呈鲜艳的钴蓝色。\n雄鸟拥有近乎体长三倍的长尾羽，飞行姿态十分独特。在奄美大岛作为夏候鸟于4月前后飞\n来，常在昏暗的林内枝头间穿梭跳跃，在空中捕食小虫、蜂类、蝴蝶等飞行昆虫。其鸣声听\n起来像\"月、日、星，嗬伊嗬伊嗬伊\"，因而以日、月、星三种光芒之意被称为\"三光鸟\"。5月\n至7月间，它会用苔藓等材料在树杈间筑成碗状巢，雌雄共同抱卵育雏。雏鸟离巢前，如在巢\n附近长时间逗留或摇晃树枝，可能导致亲鸟弃巢，因此应隔着望远镜进行短时间观察。9月前\n后，它会再次飞往东南亚的越冬地。",
+    "photos": [
+      "../images/creatures/tori/sankoutyou/sankoutyou_000001_20260708_13.jpg"
+    ],
+    "page_path": "creatures/tori/sankoutyou.html"
+  },
+  {
+    "id": "sasiba",
+    "name": "灰脸鵟鹰",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "description": "鹰科灰脸鵟鹰属 *Butastur indicus*\n\n雄鸟全长约47厘米，雌鸟约51厘米，翼展105〜115厘米，属中型猛禽。头部灰褐色，背部及\n胸部呈茶褐色，喉部为白色并带有黑色纵纹。主要捕食蛇、蜥蜴、青蛙等小型动物，也吃蝉、\n蚱蜢等昆虫。在九州以北至本州、四国一带繁殖，繁殖结束后，个体会从9月上旬开始经由西\n南诸岛南迁前往东南亚。奄美大岛作为日本国内最大规模的越冬地而闻名，每年10月中旬前\n后迎来迁徙高峰，届时可看到大量个体在空中盘旋上升、形成所谓的\"鹰柱\"景观。许多个体\n并未继续南迁而选择在岛上越冬，据估计每年约有2000只在11月至翌年3月左右停留。该物种\n被环境省红色名录列为易危(VU)物种，并列入《濒危野生动植物种国际贸易公约》附录II。在\n其栖息的林地周边，应避免大声喧哗、突然移动及使用闪光灯拍摄等惊扰个体、致其无谓飞\n离的行为，宜在远处安静观察。",
+    "photos": [
+      "../images/creatures/tori/sasiba/sasiba_000001_20240119_16.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000002_20250120_12.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000003_20250120_12.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000004_20250121_10.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000006_20250123_13.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000007_20250320_10.jpg",
+      "../images/creatures/tori/sasiba/sasiba_000008_20250331_11.jpg"
+    ],
+    "page_path": "creatures/tori/sasiba.html"
+  },
+  {
+    "id": "tageri",
+    "name": "凤头麦鸡",
+    "category": "tori",
+    "category_name": "鸟类",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "description": "鸻科麦鸡属 *Vanellus vanellus*\n\n体长32厘米，头上有长长的冠羽，背部呈带光泽的绿黑色，腹部为白色。因姿态优雅而被\n称为\"冬日贵妇\"。在欧亚大陆繁殖，作为冬候鸟飞抵日本。在奄美大岛，它通常从10月下\n旬前后开始出现在水田、旱地等开阔的农耕地，一直停留越冬至翌年3月末至4月左右。常成\n群活动，在泥土中觅食蚯蚓和昆虫。与本网站主要介绍的夜间森林生物不同，它是在白天的\n农耕地里就能轻松观察到的冬季使者。",
+    "photos": [
+      "../images/creatures/tori/tageri/tageri_000001_20251221_15.jpg",
+      "../images/creatures/tori/tageri/tageri_000002_20251221_15.jpg",
+      "../images/creatures/tori/tageri/tageri_000003_20251221_15.jpg",
+      "../images/creatures/tori/tageri/tageri_000004_20251221_15.jpg"
+    ],
+    "page_path": "creatures/tori/tageri.html"
   }
 ]
