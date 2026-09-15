@@ -226,7 +226,8 @@
       "images/creatures/hebi/habu/habu_000074_20260618_00.jpg",
       "images/creatures/hebi/habu/habu_000075_20260630_00.jpg",
       "images/creatures/hebi/habu/habu_000076_20250713_00.jpg",
-      "images/creatures/hebi/habu/habu_000077_20260705_22.jpg"
+      "images/creatures/hebi/habu/habu_000077_20260705_22.jpg",
+      "images/creatures/hebi/habu/habu_000078_20260915_23.jpg"
     ],
     "page_path": "creatures/hebi/habu.html"
   },
@@ -1037,46 +1038,48 @@
   },
   {
     "id": "ao-uba-tamamushi",
-    "name": "ao-uba-tamamushi",
+    "name": "アオウバタマムシ",
     "category": "koucyu",
     "category_name": "甲虫",
     "months": [
-      4,
-      6
+      6,
+      7,
+      8
     ],
-    "description": "",
+    "description": "タマムシ科アオウバタマムシ *Chalcophora japonica oshimana* Schönfeldt, 1890\n\n体長24〜40mm。北海道から沖縄まで広く分布するウバタマムシの、奄美群島・沖縄諸島に分布する亜種。マツ類の枯れ木や弱った木を好み、幼虫はその材を食べて育つ。成虫は初夏から夏にかけて見られる。",
     "photos": [
       "images/creatures/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
       "images/creatures/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg",
       "images/creatures/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg",
       "images/creatures/koucyu/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/koucyu/ao-uba-tamamushi.html"
   },
   {
     "id": "be-tsu-hirata-kamikiri",
-    "name": "be-tsu-hirata-kamikiri",
-    "category": "koucyu",
-    "category_name": "甲虫",
-    "months": [
-      9
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/koucyu/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"
-    ],
-    "page_path": null
-  },
-  {
-    "id": "ferie-beniboshi-kamikiri",
-    "name": "ferie-beniboshi-kamikiri",
+    "name": "ベーツヒラタカミキリ",
     "category": "koucyu",
     "category_name": "甲虫",
     "months": [
       6,
+      7,
+      8
+    ],
+    "description": "カミキリムシ科ベーツヒラタカミキリ *Eurypoda batesi* Gahan, 1894\n\n体長26〜34mm。関東・中部地方以南の本州から四国、九州、沖縄島以北の南西諸島(奄美大島・徳之島を含む)にかけて広く分布し、国外では朝鮮半島や中国南西部にも生息する。クスノキ、シイノキ、タブノキなどの樹木に集まり、夜行性で灯火にも飛来する。6月から8月頃によく見られる。",
+    "photos": [
+      "images/creatures/koucyu/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"
+    ],
+    "page_path": "creatures/koucyu/be-tsu-hirata-kamikiri.html"
+  },
+  {
+    "id": "ferie-beniboshi-kamikiri",
+    "name": "フェリエベニボシカミキリ",
+    "category": "koucyu",
+    "category_name": "甲虫",
+    "months": [
       7
     ],
-    "description": "",
+    "description": "カミキリムシ科フェリエベニボシカミキリ *Rosalia (Eurybatus) ferriei* Vuillet, 1911\n\n奄美大島にのみ分布する固有種。赤地に黒紋の美しい体色を持ち、深い森の中の立ち枯れ木に7月頃現れる。奄美大島で本種を採集したフェリエ神父にちなんで名付けられた。鹿児島県希少野生動植物の保護に関する条例により指定希少野生動植物に指定されており、捕獲・採集が禁止されている。",
     "photos": [
       "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
       "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg",
@@ -1090,7 +1093,7 @@
       "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg",
       "images/creatures/koucyu/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/koucyu/ferie-beniboshi-kamikiri.html"
   },
   {
     "id": "marudaikoku-kogane",
@@ -1111,34 +1114,43 @@
   },
   {
     "id": "midori-nakaboso-tamamushi",
-    "name": "midori-nakaboso-tamamushi",
+    "name": "ミドリナカボソタマムシ",
     "category": "koucyu",
     "category_name": "甲虫",
     "months": [
-      6
+      6,
+      7,
+      8,
+      9
     ],
-    "description": "",
+    "description": "タマムシ科ミドリナカボソタマムシ *Coraebus hastanus oberthueri*\n\n体長約11mmの小型のタマムシ。奄美大島以南に分布する。ナカボソタマムシ属の仲間は日差しの強い夏場によく活動することが知られ、本種も6月から9月頃にかけて見られる。",
     "photos": [
       "images/creatures/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
       "images/creatures/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg",
       "images/creatures/koucyu/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/koucyu/midori-nakaboso-tamamushi.html"
   },
   {
     "id": "oomidor-isaru-hamshi",
-    "name": "oomidor-isaru-hamshi",
+    "name": "オオミドリサルハムシ",
     "category": "koucyu",
     "category_name": "甲虫",
     "months": [
-      7
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
-    "description": "",
+    "description": "ハムシ科オオミドリサルハムシ *Platycorynus japonicus*\n\n体長約10mm。金属光沢のある緑色の体を持つ小型のハムシで、南西諸島(奄美大島以南)に分布する。テイカカズラの仲間を食草とし、4月から10月頃にかけて見られる。",
     "photos": [
       "images/creatures/koucyu/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
       "images/creatures/koucyu/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000002_20260708_12.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/koucyu/oomidor-isaru-hamshi.html"
   },
   {
     "id": "oshima-senchi-kogane",
@@ -1160,13 +1172,14 @@
   },
   {
     "id": "oshima-torafu-hanamuguri",
-    "name": "oshima-torafu-hanamuguri",
+    "name": "オオシマトラフハナムグリ",
     "category": "koucyu",
     "category_name": "甲虫",
     "months": [
+      4,
       5
     ],
-    "description": "",
+    "description": "コガネムシ科オオシマトラフハナムグリ *Paratrichius duplicatus duplicatus* Lewis, 1895\n\n体長11.8〜15.6mm。奄美大島・徳之島に分布する原名亜種(P. d. duplicatus)。沖縄諸島には別亜種のオキナワトラフハナムグリ(P. d. okinawanus)が分布する。近縁のトラフハナムグリ類と比べて翅の色合いが黒みを帯びるのが特徴で、独特の光沢を持つ。4月から5月にかけて出現する。",
     "photos": [
       "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
       "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg",
@@ -1174,24 +1187,27 @@
       "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg",
       "images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/koucyu/oshima-torafu-hanamuguri.html"
   },
   {
     "id": "ruri-nakaboso-tamamushi",
-    "name": "ruri-nakaboso-tamamushi",
+    "name": "ルリナカボソタマムシ",
     "category": "koucyu",
     "category_name": "甲虫",
     "months": [
-      4
+      6,
+      7,
+      8,
+      9
     ],
-    "description": "",
+    "description": "タマムシ科ルリナカボソタマムシ *Coraebus niponicus* Lewis, 1894\n\n瑠璃色の光沢を持つ小型のタマムシで、奄美大島で確認されている。ナカボソタマムシ属の仲間は日差しの強い夏場によく活動することが知られ、本種も6月から9月頃にかけて見られる。",
     "photos": [
       "images/creatures/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
       "images/creatures/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg",
       "images/creatures/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg",
       "images/creatures/koucyu/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/koucyu/ruri-nakaboso-tamamushi.html"
   },
   {
     "id": "taiwan-saikabuto",
