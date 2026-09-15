@@ -315,7 +315,7 @@ def render_groups(category, creatures):
 
 
 def render_other_buttons(categories, current, available_categories):
-    buttons = []
+    buttons = ['<a href="../highlights.html" class="category-button">代表的な生き物 →</a>']
     for key, label in categories.items():
         if key == current:
             continue

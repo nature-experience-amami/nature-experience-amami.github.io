@@ -278,7 +278,8 @@ def render_groups(category, creatures, strings, lang):
 
 
 def render_other_buttons(strings, current):
-    buttons = []
+    s = strings["strings"]
+    buttons = [f'<a href="../highlights.html" class="category-button">{escape(s["highlights_nav"])} →</a>']
     for key, label in strings["categories"].items():
         if key == current:
             continue

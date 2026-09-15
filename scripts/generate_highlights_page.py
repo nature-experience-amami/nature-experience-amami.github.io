@@ -117,6 +117,17 @@ def highlight_card_html(creature, generated_creature_keys):
     )
 
 
+def render_lang_bar():
+    order = [("en", "EN"), ("es", "ES"), ("zh", "中文")]
+    parts = ['<span class="current">JA</span>']
+    for code, label in order:
+        if (ROOT / code / "highlights.html").exists():
+            parts.append(f'<a href="{code}/highlights.html">{label}</a>')
+        else:
+            parts.append(f'<span class="disabled">{label}</span>')
+    return "".join(parts)
+
+
 def category_buttons_for_highlights(available_categories):
     """category.htmlの category_buttons() のルート階層版。"""
     categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
@@ -173,6 +184,7 @@ def main():
         cards=cards,
         category_buttons=category_buttons_for_highlights(available_categories),
         header_category_navigation=header_navigation_for_highlights(available_categories),
+        lang_links=render_lang_bar(),
     )
     OUTPUT.write_text(page, encoding="utf-8")
     print(OUTPUT.relative_to(ROOT))

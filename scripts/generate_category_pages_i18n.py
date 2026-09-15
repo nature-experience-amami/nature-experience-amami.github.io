@@ -23,7 +23,7 @@ from category_header import render_category_strip  # noqa: E402
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
 TEMPLATE = ROOT / "templates" / "category.i18n.html"
 OUTPUT_DIR_NAME = "categories"
-FULL_PAGE_CATEGORIES = ["hebi", "kaeru", "kuwagata"]
+FULL_PAGE_CATEGORIES = ["hebi", "kaeru", "kuwagata", "honyuurui"]
 
 GROUP_ORDER = {"frog": 0, "newt": 1}
 GROUP_LABEL_KEYS = {"frog": "group_frog", "newt": "group_newt"}
@@ -133,7 +133,7 @@ def category_buttons(category, strings):
     s = strings["strings"]
     cats = strings["categories"]
     buttons = [
-        f'<span class="category-button is-pending">{escape(s["highlights_nav"])}<small>{escape(s["pending_label"])}</small></span>'
+        f'<a class="category-button" href="../highlights.html">{escape(s["highlights_nav"])} →</a>'
     ]
     for category_id, name in cats.items():
         if category_id == category:
