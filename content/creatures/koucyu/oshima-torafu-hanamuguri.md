@@ -2,6 +2,7 @@
 id: oshima-torafu-hanamuguri
 name: オオシマトラフハナムグリ
 category: koucyu
+group: hanamuguri
 months: [4, 5]
 source: Lewis(1895)による記載(Paratrichius duplicatus duplicatus Lewis, 1895)。専門サイト「日本産コガネムシ図鑑」の記録(体長・分布・発生時期・近縁種との識別点)。
 ---

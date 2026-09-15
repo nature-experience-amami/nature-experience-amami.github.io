@@ -2,6 +2,7 @@
 id: oomidor-isaru-hamshi
 name: オオミドリサルハムシ
 category: koucyu
+group: hamushi
 months: [4, 5, 6, 7, 8, 9, 10]
 source: 学名Platycorynus japonicus。虫ナビ・GreenBreeze等の記録(体長・分布・食草・発生時期)。
 ---

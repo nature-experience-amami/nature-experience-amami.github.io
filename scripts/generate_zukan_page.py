@@ -118,6 +118,19 @@ DEFAULT_CONTENT = {
 
 # グループ分けの定義。(カテゴリー): {"order": [...], "labels": {...}}
 CATEGORY_GROUPS = {
+    "koucyu": {
+        "order": ["funchu", "kabuto", "hanamuguri", "manmaru", "tamamushi", "kamikiri", "hamushi", "other"],
+        "labels": {
+            "funchu": "糞虫の仲間",
+            "kabuto": "カブトムシの仲間",
+            "hanamuguri": "ハナムグリの仲間",
+            "manmaru": "マンマルコガネの仲間",
+            "tamamushi": "タマムシの仲間",
+            "kamikiri": "カミキリムシの仲間",
+            "hamushi": "ハムシの仲間",
+            "other": "その他",
+        },
+    },
     "suisei-konntyuu": {
         "order": ["gengoro", "doromushi", "amenbo", "mizumushi", "other"],
         "labels": {
