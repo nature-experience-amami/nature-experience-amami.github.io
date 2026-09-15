@@ -6,7 +6,7 @@ from pathlib import Path
 from string import Template
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from generate_zukan_page import ZUKAN_CATEGORIES  # noqa: E402
+from category_header import render_category_strip  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "creatures"
@@ -306,20 +306,16 @@ def render_lang_bar(category, creature_id):
     return "".join(parts)
 
 
-def category_navigation_rows(categories):
-    # 上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける。
+def available_categories_set():
     # 実際に categories/{id}.html が生成されているかどうかでリンク可否を判定する
     # (content/category-pages/*.md の有無ではなく、図鑑形式ページも正しく拾えるように)。
-    row1, row2 = [], []
-    for category_id, name in categories.items():
-        if not (ROOT / "categories" / f"{category_id}.html").exists():
-            continue
-        piece = f'<a href="../../categories/{category_id}.html">{escape(name)}一覧</a>'
-        (row2 if category_id in ZUKAN_CATEGORIES else row1).append(piece)
-    return "".join(row1), "".join(row2)
+    return {
+        path.stem
+        for path in (ROOT / "categories").glob("*.html")
+    }
 
 
-def render(item, creatures, generated_keys, categories):
+def render(item, creatures, generated_keys, categories, available_categories):
     active = {int(month) for month in item["months"]}
     ticks = "".join(
         f'<span class="season-tick{" active" if month in active else ""}"></span>'
@@ -388,13 +384,15 @@ def render(item, creatures, generated_keys, categories):
         .replace("{safety_html}", "$safety_html")
         .replace("{safety_class}", "$safety_class")
         .replace("{related}", "$related")
-        .replace("{category_navigation_row1}", "$category_navigation_row1")
-        .replace("{category_navigation_row2}", "$category_navigation_row2")
+        .replace("{category_strip}", "$category_strip")
         .replace("{photo_script}", "$photo_script")
         .replace("{lang_links}", "$lang_links")
     )
 
-    category_navigation_row1, category_navigation_row2 = category_navigation_rows(categories)
+    category_strip = render_category_strip(
+        categories, item["category"], available_categories,
+        href_prefix="../../categories/",
+    )
 
     return t.safe_substitute(
         title=escape(item["name"]),
@@ -410,8 +408,7 @@ def render(item, creatures, generated_keys, categories):
         safety_html=safety_html,
         safety_class=safety_class,
         related=related_html,
-        category_navigation_row1=category_navigation_row1,
-        category_navigation_row2=category_navigation_row2,
+        category_strip=category_strip,
         photo_script=photo_script,
         lang_links=render_lang_bar(item["category"], item["id"]),
     )
@@ -426,6 +423,7 @@ def main():
         targets = TARGETS
     by_key = {(item["category"], item["id"]): item for item in creatures}
     generated_keys = set(targets)
+    available_categories = available_categories_set()
     for category, creature_id in targets:
         item = by_key.get((category, creature_id))
         if not item:
@@ -433,7 +431,7 @@ def main():
             continue
         output = OUTPUT_DIR / category / f"{creature_id}.html"
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(render(item, creatures, generated_keys, categories), encoding="utf-8")
+        output.write_text(render(item, creatures, generated_keys, categories, available_categories), encoding="utf-8")
         print(output.relative_to(ROOT))
 
 

@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../css/category-strip.css">
 <style>
 
 :root{
@@ -67,24 +68,6 @@ nav{ display:flex; gap:1.8rem; font-size:.82rem; }
 nav a{ text-decoration:none; color:rgba(234,242,233,.75); }
 nav a:hover{ color:var(--moonlight); }
 
-/* ===== CATEGORY NAV ===== */
-.creature-nav{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); position:sticky; z-index:19; }
-.creature-nav-inner{
-  max-width:1200px; margin:0 auto; padding:0 6vw;
-  display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
-}
-.creature-nav-inner::-webkit-scrollbar{ display:none; }
-.creature-nav-inner + .creature-nav-inner{ border-top:1px solid rgba(234,242,233,.08); }
-.creature-nav a{
-  flex:0 0 auto; padding:12px 18px; font-size:12px; color:rgba(234,242,233,.65);
-  border-right:1px solid rgba(234,242,233,.08); white-space:nowrap; text-decoration:none;
-}
-.creature-nav a:first-child{ border-left:1px solid rgba(234,242,233,.08); }
-.creature-nav a:hover, .creature-nav a.active{ color:var(--amber); background:rgba(232,163,61,.05); }
-.creature-nav span{ flex:0 0 auto; padding:12px 18px; font-size:12px; border-right:1px solid rgba(234,242,233,.08); white-space:nowrap; }
-.creature-nav span:first-child{ border-left:1px solid rgba(234,242,233,.08); }
-.creature-nav span.active{ color:var(--amber); }
-.creature-nav span.disabled{ color:rgba(234,242,233,.28); }
 
 main{ max-width:1200px; margin:auto; }
 
@@ -313,22 +296,20 @@ footer{
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="../../../index.html" class="logo">Nature – Experience</a>
+    <a href="../../index.html" class="logo">Nature – Experience</a>
     <nav>
-      <a href="../../../index.html">Inicio</a>
+      <a href="../../index.html">Inicio</a>
       <a href="../../contact.html">Contacto</a>
     </nav>
   </div>
+  <div class="cat-strip-outer">
+    <div class="cat-strip-wrap">
+      <div class="cat-strip" id="catStrip" aria-label="Categorías de fauna"><span class="cat-item current" id="currentCat">Serpientes</span><a href="../../categories/kaeru.html" class="cat-item">Anfibios</a><a href="../../categories/kuwagata.html" class="cat-item">Escarabajos ciervo</a><a href="../../categories/tori.html" class="cat-item">Aves</a><a href="../../categories/honyuurui.html" class="cat-item">Mamíferos</a><a href="../../categories/suisei-konntyuu.html" class="cat-item">Insectos acuáticos</a></div>
+      <div class="fade-right" id="fadeRight"></div>
+      <div class="scroll-hint" id="scrollHint" aria-hidden="true">→</div>
+    </div>
+  </div>
 </header>
-
-<div class="creature-nav">
-  <div class="creature-nav-inner">
-    <span class="active">Serpientes</span><a href="../../categories/kaeru.html">Anfibios</a><a href="../../categories/kuwagata.html">Escarabajos ciervo</a><a href="../../categories/honyuurui.html">Mamíferos</a><span class="disabled">Lagartos</span><span class="disabled">Moluscos</span><span class="disabled">Crustáceos y otros</span>
-  </div>
-  <div class="creature-nav-inner">
-    <a href="../../categories/tori.html">Aves</a><a href="../../categories/suisei-konntyuu.html">Insectos acuáticos</a><span class="disabled">Insectos</span>
-  </div>
-</div>
 
 <main>
 
@@ -428,19 +409,8 @@ inmediato a un hospital. Ten cuidado de no pisarla.</p>
     });
   }
 })();
-
-(function () {
-  function updateNavOffset() {
-    var header = document.querySelector(".site-header");
-    var catNav = document.querySelector(".creature-nav");
-    if (header && catNav) {
-      catNav.style.top = header.offsetHeight + "px";
-    }
-  }
-  updateNavOffset();
-  window.addEventListener("resize", updateNavOffset);
-})();
 </script>
+<script src="../../../js/category-strip.js"></script>
 
 </body>
 </html>
