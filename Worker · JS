@@ -1,5 +1,5 @@
 // Cloudflare Worker: 旅行時期の質問に、実際の観察データ(creatures.json)だけを根拠に答える
-// 環境変数(Secrets): GEMINI_API_KEY, ALLOWED_ORIGIN(例: https://tetsu5686.github.io)
+// 環境変数(Secrets): GEMINI_API_KEY, ALLOWED_ORIGIN(例: https://nature-experience-amami.github.io)
 
 const MODEL = "gemini-3.5-flash"; // モデル名は変更される可能性があるので、時々公式ドキュメントで確認してください
 
@@ -9,25 +9,25 @@ const MODEL = "gemini-3.5-flash"; // モデル名は変更される可能性が�
 const LANG_CONFIG = {
   ja: {
     name: "Japanese",
-    creaturesUrl: "https://tetsu5686.github.io/nature-experience-amami/data/creatures.json",
+    creaturesUrl: "https://nature-experience-amami.github.io/data/creatures.json",
     tooLong: "質問を200文字以内で入力してください。",
     fallback: "うまく答えられませんでした。もう一度試してください。",
   },
   en: {
     name: "English",
-    creaturesUrl: "https://tetsu5686.github.io/nature-experience-amami/data/creatures.en.json",
+    creaturesUrl: "https://nature-experience-amami.github.io/data/creatures.en.json",
     tooLong: "Please keep your question under 200 characters.",
     fallback: "Sorry, I couldn't come up with a good answer. Please try again.",
   },
   es: {
     name: "Spanish",
-    creaturesUrl: "https://tetsu5686.github.io/nature-experience-amami/data/creatures.es.json",
+    creaturesUrl: "https://nature-experience-amami.github.io/data/creatures.es.json",
     tooLong: "Por favor, escribe tu pregunta en menos de 200 caracteres.",
     fallback: "No he podido dar una buena respuesta. Inténtalo de nuevo.",
   },
   zh: {
     name: "Simplified Chinese",
-    creaturesUrl: "https://tetsu5686.github.io/nature-experience-amami/data/creatures.zh.json",
+    creaturesUrl: "https://nature-experience-amami.github.io/data/creatures.zh.json",
     tooLong: "请将问题控制在200字以内。",
     fallback: "抱歉，未能给出合适的回答，请再试一次。",
   },
