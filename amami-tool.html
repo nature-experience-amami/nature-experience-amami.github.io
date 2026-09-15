@@ -600,9 +600,11 @@ select{ -webkit-appearance:none; appearance:none; }
   });
 
   // GitHubのContents APIは同じブランチへの書き込みが同時に走ると409(競合)を返すため、
-  // 1枚ずつ順番にアップロードする。GitHub Actions側の自動コミットと衝突した場合も
-  // 409になり得るので、その場合は少し待って自動的に再試行する。
-  function putFileWithRetry(path, jpgName, base64, settings, speciesId, attempt) {
+  // 1枚ずつ順番にアップロードする。GitHub Actions側の自動コミット(写真の自動処理)と
+  // 衝突した場合も409になり得るが、その処理には時間がかかることがあるため、
+  // 間隔を空けながら根気強く再試行する。
+  var MAX_PUT_ATTEMPTS = 8;
+  function putFileWithRetry(path, jpgName, base64, settings, speciesId, row, attempt) {
     attempt = attempt || 1;
     return fetch(
       "https://api.github.com/repos/" + FIXED_REPO + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/"),
@@ -618,9 +620,11 @@ select{ -webkit-appearance:none; appearance:none; }
         })
       }
     ).then(function (res) {
-      if (!res.ok && res.status === 409 && attempt < 4) {
-        return new Promise(function (resolve) { setTimeout(resolve, 1200 * attempt); })
-          .then(function () { return putFileWithRetry(path, jpgName, base64, settings, speciesId, attempt + 1); });
+      if (!res.ok && res.status === 409 && attempt < MAX_PUT_ATTEMPTS) {
+        row.querySelector("span:last-child").textContent = "再試行中(" + attempt + "/" + MAX_PUT_ATTEMPTS + ")…";
+        row.querySelector("span:last-child").className = "status-pending";
+        return new Promise(function (resolve) { setTimeout(resolve, 2500 * attempt); })
+          .then(function () { return putFileWithRetry(path, jpgName, base64, settings, speciesId, row, attempt + 1); });
       }
       return res;
     });
@@ -637,7 +641,7 @@ select{ -webkit-appearance:none; appearance:none; }
         return injectExifDateAndBase64(blob, dateStr);
       });
     }).then(function (base64) {
-      return putFileWithRetry(path, jpgName, base64, settings, speciesId);
+      return putFileWithRetry(path, jpgName, base64, settings, speciesId, rows[index]);
     }).then(function (res) {
       var label = "完了";
       if (!res.ok) {
@@ -650,6 +654,9 @@ select{ -webkit-appearance:none; appearance:none; }
     }).catch(function () {
       rows[index].querySelector("span:last-child").textContent = "失敗";
       rows[index].querySelector("span:last-child").className = "status-fail";
+    }).then(function () {
+      // 連続送信の間隔を少し空け、GitHub側のref更新が落ち着くのを待ってから次の1枚に進む
+      return new Promise(function (resolve) { setTimeout(resolve, 600); });
     }).then(function () {
       return uploadFilesSequentially(files, category, speciesId, settings, rows, index + 1);
     });
