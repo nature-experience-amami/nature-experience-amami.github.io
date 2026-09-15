@@ -1,8 +1,7 @@
 ---
 id: oshima-senchi-kogane
 name: オオシマセンチコガネ
-category: konchu
-group: koucyu
+category: koucyu
 danger: 鹿児島県レッドリスト準絶滅危惧
 months: [9, 10, 11, 12, 1]
 source: Fairmaire(1895)による記載(Phelotrupes oshimanus Fairmaire, 1895)。鹿児島県レッドリスト。専門サイト「せとうちなんでも探検隊」「奄美自然観察記」の記録(体長・分布・糞の運搬行動等)。

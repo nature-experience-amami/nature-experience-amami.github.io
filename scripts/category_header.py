@@ -14,7 +14,7 @@ import html
 # 表示順のマスターリスト。全カテゴリー/図鑑ページでこの順序に統一する。
 MASTER_CATEGORY_ORDER = [
     "hebi", "kaeru", "kuwagata", "tori", "honyuurui",
-    "tokage", "suisei-konntyuu", "konchu", "kai", "sonota",
+    "tokage", "suisei-konntyuu", "koucyu", "konchu", "kai", "sonota",
 ]
 
 

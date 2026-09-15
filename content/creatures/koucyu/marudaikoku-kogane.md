@@ -1,8 +1,7 @@
 ---
 id: marudaikoku-kogane
 name: マルダイコクコガネ
-category: konchu
-group: koucyu
+category: koucyu
 danger: 採集禁止(国立公園指定動物・条例指定希少野生動植物)、環境省レッドリスト絶滅危惧II類(VU)
 source: 野村鎮(1964)による記載(Copris brachypterus Nomura, 1964)。環境省レッドリスト付属説明資料(昆虫類)。専門サイト「日本産糞虫図鑑」「GreenBreeze」の記録(体長・後翅退化・糞の運搬行動等)。
 ---

@@ -213,7 +213,12 @@ def zukan_tag(ja_danger, display_danger):
     text = (display_danger or "").strip()
     if not text:
         return ""
-    tone = "rare" if any(word in ja_danger for word in ("レッドリスト", "絶滅危惧", "禁止")) else ""
+    if "外来種" in ja_danger:
+        tone = "invasive"
+    elif any(word in ja_danger for word in ("レッドリスト", "絶滅危惧", "禁止")):
+        tone = "rare"
+    else:
+        tone = ""
     css_class = f"zukan-tag {tone}".strip()
     return f'<span class="{css_class}">{escape(text)}</span>'
 

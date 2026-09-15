@@ -30,7 +30,7 @@ OUTPUT_DIR = ROOT / "categories"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 # 図鑑形式で作るカテゴリー(ヘビ・カエル・クワガタのようなフルページ形式のものは含めない)
-ZUKAN_CATEGORIES = ["suisei-konntyuu", "konchu", "kani", "tori"]
+ZUKAN_CATEGORIES = ["suisei-konntyuu", "koucyu", "konchu", "kani", "tori"]
 
 # 翻訳版(generate_zukan_page_i18n.py)が実際に生成しているカテゴリー
 TRANSLATED_ZUKAN_CATEGORIES = {"suisei-konntyuu", "tori"}
@@ -41,6 +41,7 @@ PHOTO_DIR_ALIASES = {}
 # カテゴリーごとの英語表記(ヒーローのラベル用)。無ければカテゴリーIDをそのまま大文字にする。
 ENGLISH_LABELS = {
     "suisei-konntyuu": "AQUATIC INSECTS",
+    "koucyu": "BEETLES",
     "konchu": "INSECTS",
     "kani": "CRABS",
     "tori": "BIRDS",
@@ -48,6 +49,24 @@ ENGLISH_LABELS = {
 
 # カテゴリーごとの紹介文・注意書き。無ければ汎用の文章を使う。
 CATEGORY_CONTENT = {
+    "koucyu": {
+        "hero_lead": (
+            "夜の森で出会う、姿も暮らしぶりもさまざまな甲虫たち。"
+            "アマミノクロウサギの糞を利用する糞虫から、灯火に飛んでくるカブトムシまで、"
+            "奄美で見られる甲虫の一部を紹介します。"
+        ),
+        "about_paragraphs": [
+            "甲虫は奄美大島だけでも非常に種類が多く、専門的なグループも多いジャンルのため、"
+            "このページでは写真や情報が集まった種類から少しずつ図鑑形式で紹介しています。"
+            "写真や名前をクリックすると、それぞれの詳しいページを見ることができます。",
+        ],
+        "note": (
+            "ここで紹介する甲虫の多くは奄美大島・徳之島にしか分布しない固有種や希少種で、"
+            "種によっては法律や条例により採集が禁止されています。観察は生き物にも環境にも"
+            "負担をかけないよう、そっと行いましょう。なお、人の活動にともなって島外から"
+            "持ち込まれた外来種も含めて紹介しており、これらは在来の生き物と区別して掲載しています。"
+        ),
+    },
     "suisei-konntyuu": {
         "hero_lead": (
             "田んぼや池、川のふちなど、奄美の水辺にひっそりと暮らす小さな生き物たち。"
@@ -215,7 +234,12 @@ def zukan_tag(danger_text):
     text = (danger_text or "").strip()
     if not text:
         return ""
-    tone = "rare" if any(word in text for word in ("レッドリスト", "絶滅危惧", "禁止")) else ""
+    if "外来種" in text:
+        tone = "invasive"
+    elif any(word in text for word in ("レッドリスト", "絶滅危惧", "禁止")):
+        tone = "rare"
+    else:
+        tone = ""
     css_class = f"zukan-tag {tone}".strip()
     return f'<span class="{css_class}">{escape(text)}</span>'
 
