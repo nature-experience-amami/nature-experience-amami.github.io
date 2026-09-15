@@ -591,50 +591,69 @@ select{ -webkit-appearance:none; appearance:none; }
       return row;
     });
 
-    Promise.all(files.map(function (file, i) {
-      var jpgName = file.name.replace(/\.[^.]+$/, "") + ".jpg";
-      var path = "images/creatures/" + category + "/" + speciesId + "/" + jpgName;
-      return readOriginalDateExif(file).then(function (dateStr) {
-        return resizeAndCompress(file).then(function (blob) {
-          return injectExifDateAndBase64(blob, dateStr);
-        });
-      }).then(function (base64) {
-        return fetch(
-          "https://api.github.com/repos/" + FIXED_REPO + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/"),
-          {
-            method: "PUT",
-            headers: {
-              "Authorization": "Bearer " + settings.pat,
-              "Accept": "application/vnd.github+json"
-            },
-            body: JSON.stringify({
-              message: speciesId + " の写真を追加 (" + jpgName + ")",
-              content: base64
-            })
-          }
-        ).then(function (res) {
-          var label = "完了";
-          if (!res.ok) {
-            label = (res.status === 401 || res.status === 403)
-              ? "失敗(トークン切れ?)"
-              : "失敗 (" + res.status + ")";
-          }
-          rows[i].querySelector("span:last-child").textContent = label;
-          rows[i].querySelector("span:last-child").className = res.ok ? "status-ok" : "status-fail";
-          return res.ok;
-        });
-      }).catch(function () {
-        rows[i].querySelector("span:last-child").textContent = "失敗";
-        rows[i].querySelector("span:last-child").className = "status-fail";
-        return false;
-      });
-    })).then(function () {
+    uploadFilesSequentially(files, category, speciesId, settings, rows, 0).then(function () {
       uploadBtn.disabled = false;
       fileInput.value = "";
       fileDrop.classList.remove("has-files");
       fileDropLabel.textContent = "タップして写真を選ぶ(複数選択可)";
     });
   });
+
+  // GitHubのContents APIは同じブランチへの書き込みが同時に走ると409(競合)を返すため、
+  // 1枚ずつ順番にアップロードする。GitHub Actions側の自動コミットと衝突した場合も
+  // 409になり得るので、その場合は少し待って自動的に再試行する。
+  function putFileWithRetry(path, jpgName, base64, settings, speciesId, attempt) {
+    attempt = attempt || 1;
+    return fetch(
+      "https://api.github.com/repos/" + FIXED_REPO + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/"),
+      {
+        method: "PUT",
+        headers: {
+          "Authorization": "Bearer " + settings.pat,
+          "Accept": "application/vnd.github+json"
+        },
+        body: JSON.stringify({
+          message: speciesId + " の写真を追加 (" + jpgName + ")",
+          content: base64
+        })
+      }
+    ).then(function (res) {
+      if (!res.ok && res.status === 409 && attempt < 4) {
+        return new Promise(function (resolve) { setTimeout(resolve, 1200 * attempt); })
+          .then(function () { return putFileWithRetry(path, jpgName, base64, settings, speciesId, attempt + 1); });
+      }
+      return res;
+    });
+  }
+
+  function uploadFilesSequentially(files, category, speciesId, settings, rows, index) {
+    if (index >= files.length) return Promise.resolve();
+    var file = files[index];
+    var jpgName = file.name.replace(/\.[^.]+$/, "") + ".jpg";
+    var path = "images/creatures/" + category + "/" + speciesId + "/" + jpgName;
+
+    return readOriginalDateExif(file).then(function (dateStr) {
+      return resizeAndCompress(file).then(function (blob) {
+        return injectExifDateAndBase64(blob, dateStr);
+      });
+    }).then(function (base64) {
+      return putFileWithRetry(path, jpgName, base64, settings, speciesId);
+    }).then(function (res) {
+      var label = "完了";
+      if (!res.ok) {
+        label = (res.status === 401 || res.status === 403)
+          ? "失敗(トークン切れ?)"
+          : "失敗 (" + res.status + ")";
+      }
+      rows[index].querySelector("span:last-child").textContent = label;
+      rows[index].querySelector("span:last-child").className = res.ok ? "status-ok" : "status-fail";
+    }).catch(function () {
+      rows[index].querySelector("span:last-child").textContent = "失敗";
+      rows[index].querySelector("span:last-child").className = "status-fail";
+    }).then(function () {
+      return uploadFilesSequentially(files, category, speciesId, settings, rows, index + 1);
+    });
+  }
 
   var CATEGORY_LABELS = {
     "hebi": "ヘビ", "kaeru": "両生類(カエル・イモリ)", "kuwagata": "クワガタ",
