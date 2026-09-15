@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Amami管理ツール</title>
 
-<!-- iPhoneでホーム画面に追加したとき、アプリらしく見えるようにする設定 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Amami管理">
@@ -15,7 +14,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
 
-<!-- 縮小・圧縮で失われる撮影日時(EXIF)を、圧縮後の写真に書き戻すために使う -->
 <script src="https://cdn.jsdelivr.net/npm/piexifjs@1.0.6/piexif.js"></script>
 
 <style>
@@ -32,19 +30,16 @@ body{
   overscroll-behavior:none;
 }
 h1,h2{ font-family:'Shippori Mincho',serif; font-weight:700; }
-
 header{ padding:1.2rem 1.2rem .8rem; border-bottom:1px solid rgba(234,242,233,.1); }
 header.header-row{ display:flex; justify-content:space-between; align-items:center; gap:.8rem; }
 header h1{ font-size:1.15rem; letter-spacing:.04em; }
 header p{ font-size:.72rem; color:var(--moss); font-family:'Space Mono',monospace; margin-top:.2rem; }
 .header-right{ display:flex; align-items:center; gap:.5rem; flex-shrink:0; }
-
 .icon-btn{
   flex-shrink:0; background:rgba(234,242,233,.05); border:1px solid rgba(234,242,233,.2);
   border-radius:8px; color:var(--moonlight); font-size:1.05rem; padding:.55rem .7rem;
   font-family:inherit; line-height:1;
 }
-
 .token-badge{
   flex-shrink:0; font-family:'Space Mono',monospace; font-size:.68rem;
   padding:.35rem .55rem; border-radius:6px; border:1px solid rgba(234,242,233,.2);
@@ -55,15 +50,12 @@ header p{ font-size:.72rem; color:var(--moss); font-family:'Space Mono',monospac
 .token-badge.danger{ color:var(--warn); border-color:rgba(232,107,61,.35); background:rgba(232,107,61,.08); }
 .input-with-btn{ display:flex; gap:.5rem; align-items:stretch; }
 .input-with-btn input{ flex:1; min-width:0; }
-
 main{ padding:1.2rem; padding-bottom:6rem; max-width:560px; margin:auto; }
-
 .card{
   background:var(--canopy); border:1px solid rgba(234,242,233,.1); border-radius:10px;
   padding:1.2rem; margin-bottom:1rem;
 }
 .card h2{ font-size:1.05rem; margin-bottom:.9rem; }
-
 label{ display:block; font-size:.78rem; color:rgba(234,242,233,.7); margin-bottom:.35rem; margin-top:.9rem; }
 label:first-of-type{ margin-top:0; }
 select, input[type=text], input[type=password]{
@@ -71,7 +63,6 @@ select, input[type=text], input[type=password]{
   background:rgba(234,242,233,.05); color:var(--moonlight); font-size:1rem; font-family:inherit;
 }
 select{ -webkit-appearance:none; appearance:none; }
-
 .file-drop{
   margin-top:.9rem; border:1.5px dashed rgba(234,242,233,.25); border-radius:10px;
   padding:1.6rem 1rem; text-align:center; color:rgba(234,242,233,.55); font-size:.85rem;
@@ -79,20 +70,17 @@ select{ -webkit-appearance:none; appearance:none; }
 }
 .file-drop input{ position:absolute; inset:0; opacity:0; width:100%; height:100%; }
 .file-drop.has-files{ border-color:var(--amber); color:var(--amber); border-style:solid; }
-
 .btn{
   display:block; width:100%; margin-top:1rem; padding:.85rem; border:none; border-radius:8px;
   background:var(--amber); color:var(--bark); font-weight:700; font-size:.95rem; font-family:inherit;
 }
 .btn:disabled{ background:rgba(232,163,61,.35); color:rgba(42,33,26,.6); }
 .btn.secondary{ background:transparent; border:1px solid rgba(234,242,233,.25); color:var(--moonlight); }
-
 .status-list{ margin-top:.9rem; font-size:.82rem; }
 .status-row{ display:flex; justify-content:space-between; gap:.6rem; padding:.4rem 0; border-bottom:1px solid rgba(234,242,233,.08); }
 .status-ok{ color:#8fd19e; }
 .status-fail{ color:var(--warn); }
 .status-pending{ color:var(--moss); }
-
 .tabs{
   position:fixed; bottom:0; left:0; right:0; display:flex;
   background:rgba(10,22,19,.96); backdrop-filter:blur(10px);
@@ -104,16 +92,13 @@ select{ -webkit-appearance:none; appearance:none; }
   font-family:inherit; font-size:.75rem;
 }
 .tabs button.active{ color:var(--amber); }
-
 .progress-row{ margin-bottom:1rem; }
 .progress-row .label-line{ display:flex; justify-content:space-between; font-size:.85rem; margin-bottom:.4rem; }
 .progress-row .label-line strong{ color:var(--amber); font-family:'Space Mono',monospace; font-weight:400; }
 .progress-track{ height:8px; background:rgba(234,242,233,.1); border-radius:4px; overflow:hidden; }
 .progress-fill{ height:100%; background:var(--moss); }
 .progress-empty{ color:rgba(234,242,233,.4); font-size:.85rem; text-align:center; padding:2rem 0; }
-
 .hint{ font-size:.72rem; color:rgba(234,242,233,.45); margin-top:.6rem; line-height:1.6; }
-
 .chip-list{ display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.5rem; }
 .chip-list .chip{
   padding:.4rem .7rem; border-radius:99px; border:1px solid rgba(234,242,233,.2);
@@ -140,7 +125,6 @@ select{ -webkit-appearance:none; appearance:none; }
 
 <main>
 
-  <!-- 初回設定 -->
   <div class="card" id="setup-card">
     <h2>接続設定</h2>
     <label for="pat">GitHubトークン</label>
@@ -169,7 +153,6 @@ select{ -webkit-appearance:none; appearance:none; }
     <button class="btn secondary" id="clear-setup" style="margin-top:.6rem;">保存済みの設定を消す</button>
   </div>
 
-  <!-- 写真追加画面 -->
   <div class="screen" id="screen-upload">
     <div class="card">
       <h2>写真を追加</h2>
@@ -206,7 +189,6 @@ select{ -webkit-appearance:none; appearance:none; }
     </div>
   </div>
 
-  <!-- 進捗画面 -->
   <div class="screen" id="screen-progress">
     <div class="card">
       <h2>カテゴリー別 掲載種数</h2>
@@ -227,22 +209,43 @@ select{ -webkit-appearance:none; appearance:none; }
 <script>
 (function () {
   var LS_KEY = "amami_tool_settings";
-  var FIXED_REPO = "nature-experience-amami/nature-experience-amami.github.io"; // このツールは専用なので固定
+  var FIXED_REPO = "nature-experience-amami/nature-experience-amami.github.io";
 
   function getSettings() {
     try { return JSON.parse(localStorage.getItem(LS_KEY) || "null"); }
     catch (e) { return null; }
   }
-  function saveSettings(s) { localStorage.setItem(LS_KEY, JSON.stringify(s)); }
+  function saveSettings(s) {
+    try {
+      localStorage.setItem(LS_KEY, JSON.stringify(s));
+    } catch (e) {
+      alert(
+        "設定を保存できませんでした。\n\n考えられる原因:\n" +
+        "・プライベートブラウズモードで開いている\n" +
+        "・Safariの設定で「Webサイトデータを消去」がオンになっている\n\n" +
+        "エラー内容: " + (e && e.message ? e.message : e)
+      );
+      return false;
+    }
+    var check = null;
+    try { check = JSON.parse(localStorage.getItem(LS_KEY) || "null"); } catch (e2) {}
+    if (!check || check.pat !== s.pat) {
+      alert(
+        "設定を保存しましたが、読み戻しに失敗しました。\n\n" +
+        "iPhoneの「設定」→「Safari」→「詳細」→「Webサイトデータ」で、このサイトのデータが" +
+        "頻繁に消されていないか確認してください。ホーム画面のアプリをしばらく開かないと、" +
+        "iPhone側が自動的にデータを消すことがあります。"
+      );
+      return false;
+    }
+    return true;
+  }
   function clearSettings() { localStorage.removeItem(LS_KEY); }
 
   var setupCard = document.getElementById("setup-card");
   var tabs = document.getElementById("tabs");
   var screens = document.querySelectorAll(".screen");
 
-  // カテゴリーを選んだら、そのカテゴリーに実在する生き物IDの候補を取得してチップで表示する
-  // (showAppより前に必ず定義しておく: 保存済み設定がある場合、ページを開いた直後にshowApp→
-  //  loadSpeciesOptionsが呼ばれるため、ここより後ろで定義すると未定義エラーになる)
   var categorySelect = document.getElementById("category");
   var speciesInput = document.getElementById("species-id");
   var speciesSuggestions = document.getElementById("species-suggestions");
@@ -262,7 +265,7 @@ select{ -webkit-appearance:none; appearance:none; }
       }
     })
       .then(function (res) {
-        if (res.status === 404) return []; // カテゴリーのフォルダがまだ無いだけ(正常)
+        if (res.status === 404) return [];
         if (res.status === 401 || res.status === 403) {
           throw new Error("トークンが無効か期限切れの可能性があります(設定画面で確認してください)");
         }
@@ -307,7 +310,6 @@ select{ -webkit-appearance:none; appearance:none; }
   var settingsBtn = document.getElementById("settings-btn");
   var tokenStatus = document.getElementById("token-status");
 
-  // トークン有効期限の入力(プリセット日数 or カスタム日付)
   var expiryPreset = document.getElementById("pat-expiry-preset");
   var expiryInput = document.getElementById("pat-expiry");
   var expiryPreview = document.getElementById("pat-expiry-preview");
@@ -316,15 +318,12 @@ select{ -webkit-appearance:none; appearance:none; }
     var d = new Date(dateStr + "T00:00:00");
     return d.getFullYear() + "年" + (d.getMonth() + 1) + "月" + d.getDate() + "日";
   }
-
   function toIsoDate(d) {
     var y = d.getFullYear();
     var m = ("0" + (d.getMonth() + 1)).slice(-2);
     var day = ("0" + d.getDate()).slice(-2);
     return y + "-" + m + "-" + day;
   }
-
-  // プリセット・カスタム日付の入力状況から、実際に保存する期限日(YYYY-MM-DD)を算出する
   function computeExpiryDate() {
     if (expiryPreset.value === "") return null;
     if (expiryPreset.value === "custom") return expiryInput.value || null;
@@ -333,7 +332,6 @@ select{ -webkit-appearance:none; appearance:none; }
     d.setDate(d.getDate() + parseInt(expiryPreset.value, 10));
     return toIsoDate(d);
   }
-
   function updateExpiryPreview() {
     var expiry = computeExpiryDate();
     if (!expiry) {
@@ -342,14 +340,12 @@ select{ -webkit-appearance:none; appearance:none; }
       expiryPreview.textContent = "→ " + formatDateJp(expiry) + " に期限切れになります。";
     }
   }
-
   expiryPreset.addEventListener("change", function () {
     expiryInput.style.display = (expiryPreset.value === "custom") ? "block" : "none";
     updateExpiryPreview();
   });
   expiryInput.addEventListener("change", updateExpiryPreview);
 
-  // 保存済みの期限日をプリセットUIに反映する(常に「日付を直接指定」として表示する)
   function applyExpiryToInputs(expiry) {
     if (!expiry) {
       expiryPreset.value = "";
@@ -363,7 +359,6 @@ select{ -webkit-appearance:none; appearance:none; }
     updateExpiryPreview();
   }
 
-  // 保存されている有効期限をもとに、残り日数のバッジを更新する
   function updateTokenStatus() {
     var settings = getSettings();
     if (!settings || !settings.expiry) {
@@ -400,7 +395,6 @@ select{ -webkit-appearance:none; appearance:none; }
     loadSpeciesOptions();
   }
 
-  // 設定画面(トークンの確認や再入力)にいつでも戻れるようにする
   function showSetup() {
     var current = getSettings();
     if (current) {
@@ -415,7 +409,6 @@ select{ -webkit-appearance:none; appearance:none; }
 
   settingsBtn.addEventListener("click", showSetup);
 
-  // トークンの中身を目で確認できるようにする(自動入力ミスなどに気づきやすくする)
   document.getElementById("toggle-pat").addEventListener("click", function () {
     var patInput = document.getElementById("pat");
     var showing = patInput.type === "text";
@@ -438,8 +431,8 @@ select{ -webkit-appearance:none; appearance:none; }
       alert("トークンを入力してください。");
       return;
     }
-    saveSettings({ pat: pat, repo: FIXED_REPO, expiry: expiry });
-    showApp();
+    var ok = saveSettings({ pat: pat, repo: FIXED_REPO, expiry: expiry });
+    if (ok) showApp();
   });
 
   document.getElementById("clear-setup").addEventListener("click", function () {
@@ -453,7 +446,6 @@ select{ -webkit-appearance:none; appearance:none; }
     setupCard.style.display = "block";
   });
 
-  // タブ切り替え
   tabs.addEventListener("click", function (e) {
     var btn = e.target.closest("button[data-screen]");
     if (!btn) return;
@@ -464,7 +456,6 @@ select{ -webkit-appearance:none; appearance:none; }
     if (btn.dataset.screen === "screen-progress") loadProgress();
   });
 
-  // ファイル選択
   var fileInput = document.getElementById("file-input");
   var fileDrop = document.getElementById("file-drop");
   var fileDropLabel = document.getElementById("file-drop-label");
@@ -483,22 +474,16 @@ select{ -webkit-appearance:none; appearance:none; }
     }
   });
 
-  // カテゴリーを選んだら、そのカテゴリーに実在する生き物IDの候補を取得してチップで表示する
-  // (定義はファイル前方に移動済み。ここでは何もしない)
-
   function fileToBase64(file) {
     return new Promise(function (resolve, reject) {
       var reader = new FileReader();
-      reader.onload = function () {
-        resolve(reader.result.split(",")[1]);
-      };
+      reader.onload = function () { resolve(reader.result.split(",")[1]); };
       reader.onerror = reject;
       reader.readAsDataURL(file);
     });
   }
 
-  // GitHubの1ファイル1MB制限に収まるよう、必要なら縮小・圧縮してからbase64化する
-  var MAX_BYTES = 950 * 1024; // 少し余裕を持たせて950KB
+  var MAX_BYTES = 950 * 1024;
   var MAX_LONG_SIDE = 2400;
 
   function resizeAndCompress(file) {
@@ -544,8 +529,6 @@ select{ -webkit-appearance:none; appearance:none; }
     });
   }
 
-  // 縮小・圧縮の前に、元の写真から撮影日時(EXIF)だけを読み取っておく。
-  // (canvasで作り直した写真はEXIFが全部消えるため、後で書き戻す)
   function readOriginalDateExif(file) {
     return blobToDataURL(file).then(function (dataUrl) {
       try {
@@ -556,12 +539,11 @@ select{ -webkit-appearance:none; appearance:none; }
           null
         );
       } catch (e) {
-        return null; // EXIFが無い/読めない写真はそのまま(従来通りfailed行きになる)
+        return null;
       }
     }).catch(function () { return null; });
   }
 
-  // 圧縮後の写真に、読み取っておいた撮影日時を書き戻してからbase64化する
   function injectExifDateAndBase64(blob, dateStr) {
     return blobToDataURL(blob).then(function (dataUrl) {
       if (!dateStr) return dataUrl.split(",")[1];
@@ -574,7 +556,7 @@ select{ -webkit-appearance:none; appearance:none; }
         var newDataUrl = piexif.insert(exifBytes, dataUrl);
         return newDataUrl.split(",")[1];
       } catch (e) {
-        return dataUrl.split(",")[1]; // 書き戻しに失敗してもアップロード自体は続ける
+        return dataUrl.split(",")[1];
       }
     });
   }
@@ -653,7 +635,6 @@ select{ -webkit-appearance:none; appearance:none; }
     });
   });
 
-  // 進捗画面
   var CATEGORY_LABELS = {
     "hebi": "ヘビ", "kaeru": "両生類(カエル・イモリ)", "kuwagata": "クワガタ",
     "honyuurui": "哺乳類", "tori": "鳥", "tokage": "トカゲ",
