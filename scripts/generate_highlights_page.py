@@ -159,8 +159,8 @@ def main():
         for path in (ROOT / "creatures").glob("*/*.html")
     }
     available_categories = {
-        parse_markdown(content_path)[0].get("id", content_path.stem)
-        for content_path in CATEGORY_CONTENT_DIR.glob("*.md")
+        content_path.stem
+        for content_path in (ROOT / "categories").glob("*.html")
     }
 
     cards = "".join(

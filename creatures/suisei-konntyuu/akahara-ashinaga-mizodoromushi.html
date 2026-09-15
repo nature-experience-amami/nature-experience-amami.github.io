@@ -53,7 +53,7 @@ a{ color:inherit; }
 }
 .header-inner{
   max-width:1200px; margin:auto; padding:1.3rem 6vw;
-  display:flex; align-items:center; justify-content:space-between; gap:2rem;
+  display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;
 }
 .logo{
   font-family:'Shippori Mincho',serif; font-weight:700; font-size:1.15rem;
@@ -66,7 +66,25 @@ a{ color:inherit; }
 nav{ display:flex; gap:1.8rem; font-size:.82rem; }
 nav a{ text-decoration:none; color:rgba(234,242,233,.75); }
 nav a:hover{ color:var(--moonlight); }
-.mobile-contact, .mobile-category-nav{ display:none; }
+
+/* ===== CATEGORY NAV ===== */
+.creature-nav{ background:#0C1C18; border-bottom:1px solid rgba(234,242,233,.08); position:sticky; z-index:19; }
+.creature-nav-inner{
+  max-width:1200px; margin:0 auto; padding:0 6vw;
+  display:flex; align-items:center; gap:0; overflow-x:auto; scrollbar-width:none;
+}
+.creature-nav-inner::-webkit-scrollbar{ display:none; }
+.creature-nav-inner + .creature-nav-inner{ border-top:1px solid rgba(234,242,233,.08); }
+.creature-nav a{
+  flex:0 0 auto; padding:12px 18px; font-size:12px; color:rgba(234,242,233,.65);
+  border-right:1px solid rgba(234,242,233,.08); white-space:nowrap; text-decoration:none;
+}
+.creature-nav a:first-child{ border-left:1px solid rgba(234,242,233,.08); }
+.creature-nav a:hover, .creature-nav a.active{ color:var(--amber); background:rgba(232,163,61,.05); }
+.creature-nav span{ flex:0 0 auto; padding:12px 18px; font-size:12px; border-right:1px solid rgba(234,242,233,.08); white-space:nowrap; }
+.creature-nav span:first-child{ border-left:1px solid rgba(234,242,233,.08); }
+.creature-nav span.active{ color:var(--amber); }
+.creature-nav span.disabled{ color:rgba(234,242,233,.28); }
 
 main{ max-width:1200px; margin:auto; }
 
@@ -261,18 +279,6 @@ footer{
 @media(max-width:800px){
   .header-inner{ padding:.85rem 5vw .65rem; gap:1rem; }
   .logo{ font-size:.95rem; letter-spacing:.08em; }
-  .desktop-nav{ display:none; }
-  .mobile-contact{
-    display:inline-flex; align-items:center; font-size:.78rem;
-    text-decoration:none; color:rgba(234,242,233,.75); white-space:nowrap;
-  }
-  .mobile-category-nav{ display:flex; flex-direction:column; }
-  .mobile-nav-row{
-    display:flex; gap:1.2rem; overflow-x:auto; padding:.5rem 5vw;
-    font-size:.78rem; white-space:nowrap; -webkit-overflow-scrolling:touch;
-  }
-  .mobile-nav-row + .mobile-nav-row{ border-top:1px solid rgba(234,242,233,.1); }
-  .mobile-nav-row a{ flex:0 0 auto; }
   .creature-hero{ grid-template-columns:1fr; margin:1.5rem 5vw 0; min-height:auto; }
   .hero-photo{ min-height:260px; }
   .hero-info{ padding:1.8rem; }
@@ -291,18 +297,21 @@ footer{
 <header class="site-header">
   <div class="header-inner">
     <a href="../../index.html" class="logo">Nature – Experience</a>
-    <nav class="desktop-nav">
+    <nav>
       <a href="../../index.html">ホーム</a>
-      <a href="../../categories/hebi.html">ヘビ一覧</a><a href="../../categories/kaeru.html">両生類(カエル・イモリ)一覧</a><a href="../../categories/kuwagata.html">クワガタ一覧</a><a href="../../categories/honyuurui.html">哺乳類一覧</a><a href="../../categories/tori.html">鳥一覧</a>
       <a href="../../contact.html">お問い合わせ</a>
     </nav>
-    <a href="../../contact.html" class="mobile-contact">お問い合わせ</a>
   </div>
-  <nav class="mobile-category-nav" aria-label="生き物カテゴリー">
-    <div class="mobile-nav-row"><a href="../../categories/hebi.html">ヘビ一覧</a><a href="../../categories/kaeru.html">両生類(カエル・イモリ)一覧</a><a href="../../categories/kuwagata.html">クワガタ一覧</a><a href="../../categories/honyuurui.html">哺乳類一覧</a></div>
-    <div class="mobile-nav-row"><a href="../../categories/tori.html">鳥一覧</a></div>
-  </nav>
 </header>
+
+<div class="creature-nav">
+  <div class="creature-nav-inner">
+    <a href="../../categories/hebi.html">ヘビ一覧</a><a href="../../categories/kaeru.html">両生類(カエル・イモリ)一覧</a><a href="../../categories/kuwagata.html">クワガタ一覧</a><a href="../../categories/honyuurui.html">哺乳類一覧</a>
+  </div>
+  <div class="creature-nav-inner">
+    <a href="../../categories/tori.html">鳥一覧</a><a href="../../categories/suisei-konntyuu.html">水生昆虫一覧</a>
+  </div>
+</div>
 
 <main>
 
@@ -403,6 +412,18 @@ footer{
       }
     });
   }
+})();
+
+(function () {
+  function updateNavOffset() {
+    var header = document.querySelector(".site-header");
+    var catNav = document.querySelector(".creature-nav");
+    if (header && catNav) {
+      catNav.style.top = header.offsetHeight + "px";
+    }
+  }
+  updateNavOffset();
+  window.addEventListener("resize", updateNavOffset);
 })();
 </script>
 

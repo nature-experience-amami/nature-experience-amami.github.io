@@ -306,25 +306,13 @@ def render_lang_bar(category, creature_id):
     return "".join(parts)
 
 
-def category_navigation(categories):
-    links = []
-    for category_id, name in categories.items():
-        category_page = ROOT / "content" / "category-pages" / f"{category_id}.md"
-        # 鳥は図鑑形式(generate_zukan_page.py)に移行し、content/category-pages/tori.md
-        # が無くなったが、一覧ページ自体は categories/tori.html として存在するのでリンクする。
-        if category_page.exists() or category_id == "tori":
-            links.append(
-                f'<a href="../../categories/{category_id}.html">{escape(name)}一覧</a>'
-            )
-    return "".join(links)
-
-
 def category_navigation_rows(categories):
-    # スマホ用ナビは、上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける。
+    # 上段=個別ページ形式のカテゴリー、下段=図鑑形式のカテゴリー、の2段に分ける。
+    # 実際に categories/{id}.html が生成されているかどうかでリンク可否を判定する
+    # (content/category-pages/*.md の有無ではなく、図鑑形式ページも正しく拾えるように)。
     row1, row2 = [], []
     for category_id, name in categories.items():
-        category_page = ROOT / "content" / "category-pages" / f"{category_id}.md"
-        if not (category_page.exists() or category_id == "tori"):
+        if not (ROOT / "categories" / f"{category_id}.html").exists():
             continue
         piece = f'<a href="../../categories/{category_id}.html">{escape(name)}一覧</a>'
         (row2 if category_id in ZUKAN_CATEGORIES else row1).append(piece)
@@ -400,7 +388,6 @@ def render(item, creatures, generated_keys, categories):
         .replace("{safety_html}", "$safety_html")
         .replace("{safety_class}", "$safety_class")
         .replace("{related}", "$related")
-        .replace("{category_navigation}", "$category_navigation")
         .replace("{category_navigation_row1}", "$category_navigation_row1")
         .replace("{category_navigation_row2}", "$category_navigation_row2")
         .replace("{photo_script}", "$photo_script")
@@ -423,7 +410,6 @@ def render(item, creatures, generated_keys, categories):
         safety_html=safety_html,
         safety_class=safety_class,
         related=related_html,
-        category_navigation=category_navigation(categories),
         category_navigation_row1=category_navigation_row1,
         category_navigation_row2=category_navigation_row2,
         photo_script=photo_script,
