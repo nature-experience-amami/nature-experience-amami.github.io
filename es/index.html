@@ -123,36 +123,32 @@
   }
   .tour-teaser h2{
     font-family:'Shippori Mincho', serif; font-size:clamp(1.7rem, 4vw, 2.4rem);
-    line-height:1.5; letter-spacing:.03em; margin-bottom:1.6rem;
+    line-height:1.5; letter-spacing:.03em; margin-bottom:1.2rem;
   }
-  .tour-teaser .teaser-link{
-    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
-    padding:.95rem 2rem; background:var(--amber); color:var(--bark);
-    text-decoration:none; font-weight:700; border-radius:2px; letter-spacing:.04em;
-    transition:background .2s ease, gap .2s ease;
-  }
-  .tour-teaser .teaser-link:hover{ background:#f4b95a; gap:.8rem; }
+  .tour-teaser p{ max-width:60ch; margin:0 auto 1.8rem; color:rgba(234,242,233,.8); line-height:1.9; }
 
-  .creature-guide{ background:var(--canopy); text-align:center; }
-  .creature-guide .inner{ max-width:640px; margin:0 auto; }
+  .creature-guide{ background:var(--canopy); }
+  .creature-guide .inner{ max-width:900px; margin:0 auto; }
   .creature-guide .label{
     font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.15em;
-    color:var(--moss); margin-bottom:1rem;
+    color:var(--amber); margin-bottom:1rem;
   }
   .creature-guide h2{
     font-family:'Shippori Mincho', serif; font-size:clamp(1.7rem, 4vw, 2.4rem);
-    line-height:1.5; letter-spacing:.03em; margin-bottom:1.6rem;
+    line-height:1.5; letter-spacing:.03em; margin-bottom:1rem;
   }
+  .creature-guide p{ max-width:60ch; color:rgba(234,242,233,.8); line-height:1.9; margin-bottom:2rem; }
   .creature-guide .guide-links{
-    display:flex; flex-wrap:wrap; justify-content:center; gap:.8rem;
+    display:flex; flex-wrap:wrap; gap:.8rem;
   }
   .creature-guide .guide-link{
-    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
-    padding:.95rem 2rem; background:var(--amber); color:var(--bark);
-    text-decoration:none; font-weight:700; border-radius:2px; letter-spacing:.04em;
-    transition:background .2s ease, gap .2s ease;
+    display:inline-flex; align-items:center; justify-content:center; min-height:52px;
+    padding:.8rem 1.4rem; border:1px solid rgba(234,242,233,.35); border-radius:2px;
+    color:var(--moonlight); text-decoration:none;
+    font-family:'Space Mono', monospace; font-size:.78rem; letter-spacing:.04em;
+    transition:background .2s ease, color .2s ease, border-color .2s ease;
   }
-  .creature-guide .guide-link:hover{ background:#f4b95a; gap:.8rem; }
+  .creature-guide .guide-link:hover{ background:var(--amber); border-color:var(--amber); color:var(--bark); }
 
   /* ===== AI ASK ===== */
   .ai-ask{ background:var(--night); }
@@ -354,47 +350,25 @@
 <section class="tour-teaser" aria-label="Información del tour nocturno">
   <div class="inner">
     <p class="label">NIGHT FIELD TOUR</p>
-    <h2>Al Bosque Nocturno de Amami</h2>
-    <a class="teaser-link" href="../tour.html">
-      Vea los detalles y precios del tour nocturno
-      <span aria-hidden="true">→</span>
-    </a>
+    <h2>Camine por el Bosque Nocturno de Amami</h2>
+    <p>Únase a un guía y busquen juntos la fauna en el bosque de noche.</p>
+    <a class="btn" href="../tour.html">Vea detalles y precios del tour nocturno →</a>
   </div>
 </section>
 
 <section class="creature-guide" aria-label="Guía de campo de fauna">
   <div class="inner">
-    <p class="label">CREATURE GUIDE</p>
-    <h2>Descubra la Fauna de Amami</h2>
+    <p class="label">EXPLORE MORE</p>
+    <h2>Descubra Más Fauna</h2>
+    <p>Elija una categoría para ver más fauna de Amami Oshima.</p>
     <div class="guide-links">
-      <a class="guide-link" href="../highlights.html">
-        Fauna Emblemática<span class="ja-tag">JA</span>
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/hebi.html">
-        Ver las Serpientes
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/kaeru.html">
-        Ver los Anfibios
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/kuwagata.html">
-        Ver los Escarabajos Ciervo
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/suisei-konntyuu.html">
-        Ver los Insectos Acuáticos
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="../categories/honyuurui.html">
-        Ver los Mamíferos<span class="ja-tag">JA</span>
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/tori.html">
-        Ver las Aves
-        <span aria-hidden="true">→</span>
-      </a>
+      <a class="guide-link" href="../highlights.html">Fauna Emblemática<span class="ja-tag">JA</span> →</a>
+      <a class="guide-link" href="categories/hebi.html">Serpientes →</a>
+      <a class="guide-link" href="categories/kaeru.html">Anfibios →</a>
+      <a class="guide-link" href="categories/kuwagata.html">Escarabajos ciervo →</a>
+      <a class="guide-link" href="categories/suisei-konntyuu.html">Insectos acuáticos →</a>
+      <a class="guide-link" href="../categories/honyuurui.html">Mamíferos<span class="ja-tag">JA</span> →</a>
+      <a class="guide-link" href="categories/tori.html">Aves →</a>
     </div>
   </div>
 </section>

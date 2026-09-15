@@ -123,36 +123,32 @@
   }
   .tour-teaser h2{
     font-family:'Shippori Mincho', serif; font-size:clamp(1.7rem, 4vw, 2.4rem);
-    line-height:1.5; letter-spacing:.03em; margin-bottom:1.6rem;
+    line-height:1.5; letter-spacing:.03em; margin-bottom:1.2rem;
   }
-  .tour-teaser .teaser-link{
-    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
-    padding:.95rem 2rem; background:var(--amber); color:var(--bark);
-    text-decoration:none; font-weight:700; border-radius:2px; letter-spacing:.04em;
-    transition:background .2s ease, gap .2s ease;
-  }
-  .tour-teaser .teaser-link:hover{ background:#f4b95a; gap:.8rem; }
+  .tour-teaser p{ max-width:60ch; margin:0 auto 1.8rem; color:rgba(234,242,233,.8); line-height:1.9; }
 
-  .creature-guide{ background:var(--canopy); text-align:center; }
-  .creature-guide .inner{ max-width:640px; margin:0 auto; }
+  .creature-guide{ background:var(--canopy); }
+  .creature-guide .inner{ max-width:900px; margin:0 auto; }
   .creature-guide .label{
     font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.15em;
-    color:var(--moss); margin-bottom:1rem;
+    color:var(--amber); margin-bottom:1rem;
   }
   .creature-guide h2{
     font-family:'Shippori Mincho', serif; font-size:clamp(1.7rem, 4vw, 2.4rem);
-    line-height:1.5; letter-spacing:.03em; margin-bottom:1.6rem;
+    line-height:1.5; letter-spacing:.03em; margin-bottom:1rem;
   }
+  .creature-guide p{ max-width:60ch; color:rgba(234,242,233,.8); line-height:1.9; margin-bottom:2rem; }
   .creature-guide .guide-links{
-    display:flex; flex-wrap:wrap; justify-content:center; gap:.8rem;
+    display:flex; flex-wrap:wrap; gap:.8rem;
   }
   .creature-guide .guide-link{
-    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
-    padding:.95rem 2rem; background:var(--amber); color:var(--bark);
-    text-decoration:none; font-weight:700; border-radius:2px; letter-spacing:.04em;
-    transition:background .2s ease, gap .2s ease;
+    display:inline-flex; align-items:center; justify-content:center; min-height:52px;
+    padding:.8rem 1.4rem; border:1px solid rgba(234,242,233,.35); border-radius:2px;
+    color:var(--moonlight); text-decoration:none;
+    font-family:'Space Mono', monospace; font-size:.78rem; letter-spacing:.04em;
+    transition:background .2s ease, color .2s ease, border-color .2s ease;
   }
-  .creature-guide .guide-link:hover{ background:#f4b95a; gap:.8rem; }
+  .creature-guide .guide-link:hover{ background:var(--amber); border-color:var(--amber); color:var(--bark); }
 
   /* ===== AI ASK ===== */
   .ai-ask{ background:var(--night); }
@@ -354,47 +350,25 @@
 <section class="tour-teaser" aria-label="夜间旅行团介绍">
   <div class="inner">
     <p class="label">NIGHT FIELD TOUR</p>
-    <h2>走进奄美的夜之森</h2>
-    <a class="teaser-link" href="../tour.html">
-      查看夜间旅行团详情及费用
-      <span aria-hidden="true">→</span>
-    </a>
+    <h2>走进奄美的夜间森林</h2>
+    <p>跟着向导一起在夜间森林中寻找生物。</p>
+    <a class="btn" href="../tour.html">查看夜间旅行团详情及费用 →</a>
   </div>
 </section>
 
 <section class="creature-guide" aria-label="生物图鉴介绍">
   <div class="inner">
-    <p class="label">CREATURE GUIDE</p>
-    <h2>了解奄美的生物</h2>
+    <p class="label">EXPLORE MORE</p>
+    <h2>探索更多生物</h2>
+    <p>选择一个分类，了解更多奄美大岛的生物。</p>
     <div class="guide-links">
-      <a class="guide-link" href="../highlights.html">
-        代表性生物<span class="ja-tag">JA</span>
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/hebi.html">
-        查看蛇类
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/kaeru.html">
-        查看两栖类
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/kuwagata.html">
-        查看锹甲
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/suisei-konntyuu.html">
-        查看水生昆虫
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="../categories/honyuurui.html">
-        查看哺乳类<span class="ja-tag">JA</span>
-        <span aria-hidden="true">→</span>
-      </a>
-      <a class="guide-link" href="categories/tori.html">
-        查看鸟类
-        <span aria-hidden="true">→</span>
-      </a>
+      <a class="guide-link" href="../highlights.html">代表性生物<span class="ja-tag">JA</span> →</a>
+      <a class="guide-link" href="categories/hebi.html">蛇类 →</a>
+      <a class="guide-link" href="categories/kaeru.html">两栖类 →</a>
+      <a class="guide-link" href="categories/kuwagata.html">锹甲 →</a>
+      <a class="guide-link" href="categories/suisei-konntyuu.html">水生昆虫 →</a>
+      <a class="guide-link" href="../categories/honyuurui.html">哺乳类<span class="ja-tag">JA</span> →</a>
+      <a class="guide-link" href="categories/tori.html">鸟类 →</a>
     </div>
   </div>
 </section>
