@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/category-strip.css">
 <style>
   :root{
     --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
@@ -97,12 +98,9 @@
     box-shadow:0 0 10px 2px rgba(232,163,61,.7); flex-shrink:0;
   }
   .brand-bar .mark .dash{ color:inherit; font-weight:400; }
-  .top-category-nav{ display:flex; gap:1.4rem; }
-  .top-category-nav a{
-    color:rgba(234,242,233,.78); font-family:'Space Mono', monospace; font-size:.75rem;
-    letter-spacing:.08em; text-decoration:none; white-space:nowrap;
-  }
-  .top-category-nav a:hover{ color:var(--amber); }
+  .brand-bar .cat-strip-wrap{ max-width:none; margin:0; flex:1 1 auto; min-width:0; }
+  .brand-bar .cat-strip{ padding:0; }
+  .brand-bar .fade-right{ background:linear-gradient(to right, transparent, var(--night) 85%); }
   .ja-tag{ opacity:.6; font-size:.82em; margin-left:.35em; font-weight:400; }
 
   section{ padding:5.5rem 6vw; }
@@ -209,8 +207,7 @@
     }
     .brand-bar{ position: absolute; top: 0; left: 0; right: 0; align-items: flex-start; flex-wrap: wrap; gap: .7rem; padding: 1rem 6vw 0; }
     .brand-bar .mark{ font-size:1.7rem; }
-    .top-category-nav{ width:100%; gap:1.2rem; overflow-x:auto; padding-bottom:.25rem; -webkit-overflow-scrolling:touch; }
-    .top-category-nav a{ flex:0 0 auto; font-size:.72rem; }
+    .brand-bar .cat-strip-wrap{ width:100%; flex:1 1 100%; }
     .hero-content{ position: relative; order: 2; padding: 1.5rem 6vw 3rem; max-width: none; background: var(--night); }
     .hero h1{ font-size:clamp(1.8rem, 7vw, 2.4rem); margin-bottom:1rem; }
     .hero p{ font-size:.95rem; margin-bottom:1.6rem; }
@@ -254,8 +251,6 @@
     .hero-photo-name{ position: absolute; right: 4vw; bottom: 2vh; top: auto; z-index: 7; font-size: .7rem; background: rgba(10, 22, 19, 0.8); padding: .2rem .5rem; border-radius: 3px; }
     .brand-bar{ padding: .8rem 4vw 0; z-index: 8; }
     .brand-bar .mark{ font-size: 1.3rem; }
-    .top-category-nav{ width:auto; overflow:visible; padding-bottom:0; gap: .8rem; }
-    .top-category-nav a{ font-size: .65rem; }
     .hero::after{
       display: block; content: ""; position: absolute; inset: 0; z-index: 4; pointer-events: none;
       background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, transparent 40%, rgba(10,22,19,0.7) 100%);
@@ -282,15 +277,19 @@
 
   <div class="brand-bar">
     <span class="mark">Nature <span class="dash">–</span> Experience</span>
-    <nav class="top-category-nav" aria-label="生物分类">
-      <a href="../highlights.html">代表性生物<span class="ja-tag">JA</span></a>
-      <a href="categories/hebi.html">蛇类</a>
-      <a href="categories/kaeru.html">两栖类</a>
-      <a href="categories/kuwagata.html">锹甲</a>
-      <a href="categories/suisei-konntyuu.html">水生昆虫</a>
-      <a href="../categories/honyuurui.html">哺乳类<span class="ja-tag">JA</span></a>
-      <a href="categories/tori.html">鸟类</a>
-    </nav>
+    <div class="cat-strip-wrap">
+      <nav class="cat-strip" id="catStrip" aria-label="生物分类">
+        <a href="../highlights.html" class="cat-item">代表性生物<span class="ja-tag">JA</span></a>
+        <a href="categories/hebi.html" class="cat-item">蛇类</a>
+        <a href="categories/kaeru.html" class="cat-item">两栖类</a>
+        <a href="categories/kuwagata.html" class="cat-item">锹甲</a>
+        <a href="categories/suisei-konntyuu.html" class="cat-item">水生昆虫</a>
+        <a href="../categories/honyuurui.html" class="cat-item">哺乳类<span class="ja-tag">JA</span></a>
+        <a href="categories/tori.html" class="cat-item">鸟类</a>
+      </nav>
+      <div class="fade-right" id="fadeRight"></div>
+      <div class="scroll-hint" id="scrollHint" aria-hidden="true">→</div>
+    </div>
   </div>
 
   <div class="hero-content">
@@ -595,6 +594,7 @@
     }
   }
 </script>
+<script src="../js/category-strip.js"></script>
 
 </body>
 </html>

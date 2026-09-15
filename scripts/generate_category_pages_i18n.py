@@ -140,11 +140,6 @@ def category_buttons(category, strings):
             buttons.append(f'<span class="category-button is-current">{escape(name)}</span>')
         elif category_id in AVAILABLE_CATEGORY_PAGES:
             buttons.append(f'<a class="category-button" href="{category_id}.html">{escape(name)} →</a>')
-        else:
-            buttons.append(
-                f'<span class="category-button is-pending">{escape(name)}'
-                f'<small>{escape(s["pending_label"])}</small></span>'
-            )
     return "".join(buttons)
 
 
@@ -201,7 +196,7 @@ def main():
                 list_lead=escape(meta["list_lead"]),
                 cards=cards_html(category, creatures, generated_keys, lang, strings),
                 category_buttons=category_buttons(category, strings),
-                category_strip=render_category_strip(strings["categories"], category, AVAILABLE_CATEGORY_PAGES, pending_label=strings["strings"]["pending_label"]),
+                category_strip=render_category_strip(strings["categories"], category, AVAILABLE_CATEGORY_PAGES),
                 explore_more_title=escape(strings["strings"]["explore_more_title"]),
                 explore_more_lead=escape(strings["strings"]["explore_more_lead"]),
                 night_tour_title=escape(strings["strings"]["night_tour_title"]),

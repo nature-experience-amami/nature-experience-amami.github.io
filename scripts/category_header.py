@@ -22,19 +22,16 @@ def escape(value):
     return html.escape(str(value), quote=True)
 
 
-def render_category_strip(categories, current, available, href_suffix=".html", href_prefix="", pending_label="準備中"):
+def render_category_strip(categories, current, available, href_suffix=".html", href_prefix=""):
     """categories: {カテゴリーID: 表示名} の辞書(content/categories.json相当)。
     current: 現在表示中のカテゴリーID。
     available: リンク可能な(実際にページがある)カテゴリーIDの集合。
     href_prefix/href_suffix: リンク先の組み立てに使う(ページの階層により変える)。
-    pending_label: 準備中カテゴリーに添える文言(i18n版では翻訳された文言を渡す)。
 
     戻り値はカテゴリー帯の中身のHTML文字列(<a>/<span class="cat-item ...">を並べたもの)。
-    実装済み(現在地・リンク可能)のカテゴリーを左側に、準備中のカテゴリーを右側に
-    まとめる。各グループ内の並び順はMASTER_CATEGORY_ORDERに従う。
+    まだページのない(準備中の)カテゴリーは表示しない。並び順はMASTER_CATEGORY_ORDERに従う。
     """
     ready_items = []
-    soon_items = []
     for category_id in MASTER_CATEGORY_ORDER:
         name = categories.get(category_id)
         if not name:
@@ -48,8 +45,4 @@ def render_category_strip(categories, current, available, href_suffix=".html", h
             ready_items.append(
                 f'<a href="{href_prefix}{category_id}{href_suffix}" class="cat-item">{escaped_name}</a>'
             )
-        else:
-            soon_items.append(
-                f'<span class="cat-item soon">{escaped_name}({escape(pending_label)})</span>'
-            )
-    return "".join(ready_items) + "".join(soon_items)
+    return "".join(ready_items)

@@ -321,10 +321,6 @@ def render_other_buttons(categories, current, available_categories):
             continue
         if key in available_categories:
             buttons.append(f'<a href="{key}.html" class="category-button">{escape(label)} →</a>')
-        else:
-            buttons.append(
-                f'<span class="category-button is-pending">{escape(label)}<small>準備中</small></span>'
-            )
     return "".join(buttons)
 
 

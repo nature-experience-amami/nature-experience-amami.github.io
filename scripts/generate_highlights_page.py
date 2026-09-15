@@ -127,11 +127,6 @@ def category_buttons_for_highlights(available_categories):
             buttons.append(
                 f'<a class="category-button" href="categories/{category_id}.html">{escaped_name} →</a>'
             )
-        else:
-            buttons.append(
-                f'<span class="category-button is-pending">{escaped_name}'
-                '<small>準備中</small></span>'
-            )
     return "".join(buttons)
 
 

@@ -278,18 +278,12 @@ def render_groups(category, creatures, strings, lang):
 
 
 def render_other_buttons(strings, current):
-    s = strings["strings"]
     buttons = []
     for key, label in strings["categories"].items():
         if key == current:
             continue
         if key in AVAILABLE_CATEGORY_PAGES:
             buttons.append(f'<a href="{key}.html" class="category-button">{escape(label)} →</a>')
-        else:
-            buttons.append(
-                f'<span class="category-button is-pending">{escape(label)}'
-                f'<small>{escape(s["pending_label"])}</small></span>'
-            )
     return "".join(buttons)
 
 
@@ -332,7 +326,7 @@ def render_category(category, lang):
         about_paragraphs=about_html,
         note=escape(content["note"]),
         field_guide_title=escape(title),
-        category_strip=render_category_strip(strings["categories"], category, AVAILABLE_CATEGORY_PAGES, pending_label=s["pending_label"]),
+        category_strip=render_category_strip(strings["categories"], category, AVAILABLE_CATEGORY_PAGES),
         groups_html=render_groups(category, creatures, strings, lang),
         other_buttons=render_other_buttons(strings, category),
         night_tour_title=escape(s["night_tour_title"]),
