@@ -25,6 +25,7 @@ from generate_category_pages import (
     card_description,
     card_status,
 )
+from category_header import render_category_strip
 
 TEMPLATE = ROOT / "templates" / "highlights.html"
 OUTPUT = ROOT / "highlights.html"
@@ -141,18 +142,6 @@ def category_buttons_for_highlights(available_categories):
     return "".join(buttons)
 
 
-def header_navigation_for_highlights(available_categories):
-    """category.htmlの header_category_navigation() のルート階層版。"""
-    categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
-    links = []
-    for category_id, name in categories.items():
-        if category_id not in available_categories:
-            continue
-        escaped_name = html.escape(name)
-        links.append(f'<a href="categories/{category_id}.html">{escaped_name}一覧</a>')
-    return "".join(links)
-
-
 def main():
     generated_creature_keys = {
         (path.parent.name, path.stem)
@@ -183,7 +172,11 @@ def main():
         list_lead=html.escape(LIST_LEAD),
         cards=cards,
         category_buttons=category_buttons_for_highlights(available_categories),
-        header_category_navigation=header_navigation_for_highlights(available_categories),
+        category_strip=render_category_strip(
+            json.loads(CATEGORY_NAMES.read_text(encoding="utf-8")),
+            None, available_categories,
+            href_prefix="categories/",
+        ),
         lang_links=render_lang_bar(),
     )
     OUTPUT.write_text(page, encoding="utf-8")

@@ -20,6 +20,7 @@ from generate_category_pages import (  # noqa: E402
 from generate_category_pages_i18n import card_description, card_status  # noqa: E402
 from generate_highlights_page import HIGHLIGHT_CREATURES  # noqa: E402
 from generate_creature_pages_i18n import load_lang, LANGS, AVAILABLE_CATEGORY_PAGES  # noqa: E402
+from category_header import render_category_strip  # noqa: E402
 
 TEMPLATE = ROOT / "templates" / "highlights.i18n.html"
 OUTPUT_NAME = "highlights.html"
@@ -183,15 +184,6 @@ def category_buttons(strings):
     )
 
 
-def header_category_navigation(strings):
-    cats = strings["categories"]
-    return "".join(
-        f'<a href="categories/{category_id}.html">{escape(name)}</a>'
-        for category_id, name in cats.items()
-        if category_id in AVAILABLE_CATEGORY_PAGES
-    )
-
-
 def render_lang_bar(lang):
     order = [("ja", "JA")] + [(code, load_lang(code)["lang_label"]) for code in LANGS]
     parts = []
@@ -245,7 +237,10 @@ def main():
             list_lead=escape(content["list_lead"]),
             cards=cards,
             category_buttons=category_buttons(strings),
-            header_category_navigation=header_category_navigation(strings),
+            category_strip=render_category_strip(
+                strings["categories"], None, AVAILABLE_CATEGORY_PAGES,
+                href_prefix="categories/",
+            ),
             explore_more_title=escape(s["explore_more_title"]),
             explore_more_lead=escape(s["explore_more_lead"]),
             night_tour_title=escape(s["night_tour_title"]),
