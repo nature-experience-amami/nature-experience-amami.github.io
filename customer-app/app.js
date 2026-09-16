@@ -43,7 +43,31 @@ function parseText(t){
   const phone=t.match(/0\d{1,4}[-ー]?\d{2,4}[-ー]?\d{3,4}/);
   const email=t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i);
   const people=t.match(/(\d+)\s*(?:名|人)/);
-  const hotel=t.match(/([^\n。、]{1,30}(?:ホテル|旅館|民宿|ゲストハウス))/);
+  // 「宿泊予定ホテルは何処ですか？」のような質問文自体を宿泊先と誤認しないよう、
+  // まず「宿泊先：◯◯」「宿泊予定ホテル　◯◯」のようなラベル＋区切り記号の形を優先的に探す。
+  // 見つからない場合だけ、「◯◯ホテル」のように名前自体にホテル系の語が付く形にフォールバックする。
+  let hotel="";
+  const hotelLabelRe=/(?:宿泊(?:予定)?(?:ホテル|先)?|ホテル(?:名)?)(?:[：:\s　]+|は|が)([^\n。、]{1,30})/g;
+  let hm;
+  while((hm=hotelLabelRe.exec(t))){
+    const val=hm[1].trim();
+    // 「宿泊予定ホテルは何処ですか？」のような質問文自体を拾わないよう、
+    // 疑問符や疑問詞で始まる場合はスキップして次の候補を探す
+    if(/[？?]/.test(val)||/^(?:何|いつ|どこ|どちら|どの|どんな)/.test(val)) continue;
+    hotel=val.replace(/(?:です|でした|となります|になります)$/,"").trim();
+    break;
+  }
+  if(!hotel){
+    const hotelSuffixRe=/([^\n。、]{1,30}(?:ホテル|旅館|民宿|ゲストハウス))/g;
+    let sm;
+    while((sm=hotelSuffixRe.exec(t))){
+      const val=sm[1].trim();
+      // 「宿泊予定ホテル」のようなラベル文言そのものは、固有名詞が付いていないので除外
+      if(/^(?:宿泊|予定|ご宿泊)*(?:ホテル|旅館|民宿|ゲストハウス)$/.test(val)) continue;
+      hotel=val;
+      break;
+    }
+  }
   const creatures=["ヘビ","ハブ","アカマタ","カエル","アマミアカガエル","オットンガエル","クワガタ","アマミノクロウサギ","カエル類"].filter(x=>t.includes(x));
   let name="";
   const nm=t.match(/(?:代表者|名前|氏名)[：:\s]+([^\n。、]+)/);
@@ -57,7 +81,7 @@ function parseText(t){
   else if(monthDay){
     const y=new Date().getFullYear(); desired=`${y}-${String(monthDay[1]).padStart(2,"0")}-${String(monthDay[2]).padStart(2,"0")}`;
   }
-  return {name,phone:phone?.[0]||"",email:email?.[0]||"",desiredDate:desired,people:people?.[1]||"",hotel:hotel?.[1]?.trim()||"",creatures:creatures.join("、")};
+  return {name,phone:phone?.[0]||"",email:email?.[0]||"",desiredDate:desired,people:people?.[1]||"",hotel,creatures:creatures.join("、")};
 }
 function parseParticipants(t){
   const results=[];
