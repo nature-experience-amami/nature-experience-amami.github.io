@@ -422,7 +422,8 @@ function showDetail(id){
   currentDetailId=id;
   if(r.status==="personal"){showScheduleDetail(r,id);return;}
   $("detailTitle").textContent=r.name||"問い合わせ詳細";
-  const history=[{date:r.createdAt,text:r.raw}].concat(Array.isArray(r.followups)?r.followups:[]);
+  // 新しい返信ほど上に来るように、最新のものから順に並べる
+  const history=[{date:r.createdAt,text:r.raw}].concat(Array.isArray(r.followups)?r.followups:[]).reverse();
   const historyHtml=history.map(h=>`
     <div style="margin-bottom:10px">
       <div class="hint" style="margin-bottom:4px">${fmt(h.date)}</div>
