@@ -470,6 +470,20 @@ function showDetail(id){
 $("closeModal").onclick=()=>$("detailModal").classList.add("hidden");
 $("detailModal").onclick=e=>{if(e.target===$("detailModal"))$("detailModal").classList.add("hidden")};
 
+// ホーム画面に追加したアプリは、消して登録し直さなくても、ここでキャッシュを
+// バイパスして最新のindex.html/app.jsを取りに行けるようにする。
+$("refreshBtn").onclick=async()=>{
+  if("caches" in window){
+    try{
+      const keys=await caches.keys();
+      await Promise.all(keys.map(k=>caches.delete(k)));
+    }catch(e){/* キャッシュAPIが無い/失敗しても、下のURL書き換えだけで基本は更新できる */}
+  }
+  const url=new URL(location.href);
+  url.searchParams.set("_r",Date.now());
+  location.href=url.toString();
+};
+
 $("backupBtn").onclick=async()=>{
   if(!records.length){alert("バックアップするデータがありません。");return;}
   const password=prompt("バックアップ用のパスワードを決めてください(復元時に同じパスワードが必要です)");
