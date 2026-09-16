@@ -13,7 +13,10 @@
     <h1>Nature Experience Amami</h1>
     <p>問い合わせ・予約管理</p>
   </div>
-  <button id="newBtn" class="primary">＋ 新規問い合わせ</button>
+  <div class="actions" style="margin:0">
+    <button id="newScheduleBtn" class="ghost">＋ 予定を追加</button>
+    <button id="newBtn" class="primary">＋ 新規問い合わせ</button>
+  </div>
 </header>
 
 <main>
@@ -29,10 +32,23 @@
       <option value="all">すべて</option>
       <option value="pending">未確定</option>
       <option value="confirmed">予約確定</option>
+      <option value="personal">自分の予定</option>
     </select>
   </section>
 
   <section id="list" class="cards"></section>
+
+  <section id="scheduleEditor" class="panel hidden">
+    <div class="panel-head">
+      <h2>予定を追加</h2>
+      <button id="closeScheduleEditor" class="ghost">閉じる</button>
+    </div>
+    <label>日付<input id="scheduleDate" type="date"></label>
+    <label>内容<textarea id="scheduleNotes" rows="3" placeholder="歯医者、法事、他ガイドの予定など"></textarea></label>
+    <div class="actions">
+      <button id="saveScheduleBtn" class="primary">保存</button>
+    </div>
+  </section>
 
   <section id="editor" class="panel hidden">
     <div class="panel-head">
@@ -64,6 +80,8 @@
           </select>
         </label>
       </div>
+
+      <label>備考<textarea id="notes" rows="3" placeholder="アレルギー、特別なご要望、その他メモなど"></textarea></label>
 
       <label>不足している情報</label>
       <div id="missing" class="missing"></div>

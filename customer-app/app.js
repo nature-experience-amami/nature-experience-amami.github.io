@@ -10,30 +10,57 @@ const save=()=>localStorage.setItem(KEY,JSON.stringify(records));
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function fmt(d){if(!d)return "未入力"; const [y,m,day]=d.split("-"); return `${y}/${m}/${day}`}
 function updateStats(){
-  $("allCount").textContent=records.length;
-  $("pendingCount").textContent=records.filter(r=>r.status==="pending").length;
-  $("confirmedCount").textContent=records.filter(r=>r.status==="confirmed").length;
+  // 「自分の予定」は問い合わせではないので、集計には含めない
+  const customerRecords=records.filter(r=>r.status!=="personal");
+  $("allCount").textContent=customerRecords.length;
+  $("pendingCount").textContent=customerRecords.filter(r=>r.status==="pending").length;
+  $("confirmedCount").textContent=customerRecords.filter(r=>r.status==="confirmed").length;
+}
+function cardHtml(r){
+  if(r.status==="personal"){
+    return `
+    <article class="card personal" data-id="${r.id}">
+      <div class="card-top"><div><div class="name">自分の予定</div><div class="date">${fmt(r.desiredDate)}</div></div>
+      <span class="tag personal">予定あり</span></div>
+      <div class="meta">${esc(r.notes||"内容未入力")}</div>
+    </article>`;
+  }
+  return `
+    <article class="card" data-id="${r.id}">
+      <div class="card-top"><div><div class="name">${esc(r.name||"氏名未入力")}</div><div class="date">${fmt(r.desiredDate)}</div></div>
+      <span class="tag ${r.status}">${r.status==="confirmed"?"予約確定":"未確定"}</span></div>
+      <div class="meta">${esc(r.people||"人数未入力")}名　${esc(r.creatures||"生き物未入力")}　${esc(r.hotel||"ホテル未入力")}</div>
+    </article>`;
 }
 function render(){
   updateStats();
   const q=$("search").value.trim().toLowerCase(), f=$("statusFilter").value;
   const rows=records.filter(r=>{
-    const text=[r.name,r.hotel,r.creatures,r.phone,r.email].join(" ").toLowerCase();
+    const text=[r.name,r.hotel,r.creatures,r.phone,r.email,r.notes].join(" ").toLowerCase();
     return (!q||text.includes(q))&&(f==="all"||r.status===f);
   }).sort((a,b)=>(a.desiredDate||"").localeCompare(b.desiredDate||""));
-  $("list").innerHTML=rows.length?rows.map(r=>`
-    <article class="card" data-id="${r.id}">
-      <div class="card-top"><div><div class="name">${esc(r.name||"氏名未入力")}</div><div class="date">${fmt(r.desiredDate)}</div></div>
-      <span class="tag ${r.status}">${r.status==="confirmed"?"予約確定":"未確定"}</span></div>
-      <div class="meta">${esc(r.people||"人数未入力")}名　${esc(r.creatures||"生き物未入力")}　${esc(r.hotel||"ホテル未入力")}</div>
-    </article>`).join(""):"<div class='card'>まだ問い合わせはありません。「＋ 新規問い合わせ」から試せます。</div>";
+  $("list").innerHTML=rows.length?rows.map(cardHtml).join(""):"<div class='card'>まだ問い合わせはありません。「＋ 新規問い合わせ」から試せます。</div>";
   document.querySelectorAll(".card[data-id]").forEach(el=>el.onclick=()=>showDetail(el.dataset.id));
 }
 function openEditor(){
   currentId=null;$("editor").classList.remove("hidden");$("parsedArea").classList.add("hidden");$("rawText").focus();
 }
+function openScheduleEditor(){
+  $("scheduleEditor").classList.remove("hidden");$("scheduleDate").focus();
+}
+function closeScheduleEditor(){
+  $("scheduleEditor").classList.add("hidden");
+  $("scheduleDate").value="";$("scheduleNotes").value="";
+}
+$("newScheduleBtn").onclick=openScheduleEditor;
+$("closeScheduleEditor").onclick=closeScheduleEditor;
+$("saveScheduleBtn").onclick=()=>{
+  if(!$("scheduleDate").value){alert("日付を入力してください。");return;}
+  const r={id:Date.now().toString(),createdAt:today(),desiredDate:$("scheduleDate").value,notes:$("scheduleNotes").value,status:"personal"};
+  records.push(r);save();render();closeScheduleEditor();
+};
 function resetEditor(){
-  ["rawText","name","phone","email","desiredDate","people","hotel","creatures","alt1","alt2","reply"].forEach(id=>$(id).value="");
+  ["rawText","name","phone","email","desiredDate","people","hotel","creatures","notes","alt1","alt2","reply"].forEach(id=>$(id).value="");
   $("parsedArea").classList.add("hidden"); $("missing").innerHTML="";
   parsedParticipants=[]; $("participantFieldsEditor").innerHTML="";
 }
@@ -161,43 +188,173 @@ $("makeReply").onclick=makeReply;
 $("copyReply").onclick=async()=>{await navigator.clipboard.writeText($("reply").value);$("copyReply").textContent="コピーしました";setTimeout(()=>$("copyReply").textContent="返信をコピー",1200)};
 $("saveBtn").onclick=()=>{
   syncParticipantEditorToState();
-  const r={id:Date.now().toString(),createdAt:today(),name:$("name").value,phone:$("phone").value,email:$("email").value,desiredDate:$("desiredDate").value,people:$("people").value,hotel:$("hotel").value,creatures:$("creatures").value,contactMethod:$("contactMethod").value,status:"pending",raw:$("rawText").value,reply:$("reply").value,participants:parsedParticipants};
+  const r={id:Date.now().toString(),createdAt:today(),name:$("name").value,phone:$("phone").value,email:$("email").value,desiredDate:$("desiredDate").value,people:$("people").value,hotel:$("hotel").value,creatures:$("creatures").value,contactMethod:$("contactMethod").value,notes:$("notes").value,status:"pending",raw:$("rawText").value,reply:$("reply").value,participants:parsedParticipants};
   records.push(r);save();render();$("editor").classList.add("hidden");alert("保存しました。現在は未確定として登録されています。");
 };
-function participantFieldsHtml(prefix,count,participants){
+function participantFormHtml(prefix,p,i){
+  return `
+    <div class="ptab-fields">
+      <label>氏名<input class="p-name-input" id="${prefix}-name-${i}" value="${esc(p.name)}"></label>
+      <label>年齢<input class="p-age-input" id="${prefix}-age-${i}" type="number" min="0" value="${esc(p.age)}"></label>
+      <label>靴のサイズ<input class="p-shoe-input" id="${prefix}-shoe-${i}" placeholder="例: 26.0cm" value="${esc(p.shoeSize)}"></label>
+    </div>
+    <div class="actions">${i>0?'<button type="button" class="ghost ptab-prev">← 戻る</button>':""}<button type="button" class="primary ptab-confirm">確定</button></div>`;
+}
+function participantSummaryHtml(p,i){
+  return `
+    <div class="participant-summary">
+      <div class="ps-row"><b>氏名</b><span>${esc(p.name||"未入力")}</span></div>
+      <div class="ps-row"><b>年齢</b><span>${p.age?esc(p.age)+"歳":"未入力"}</span></div>
+      <div class="ps-row"><b>靴のサイズ</b><span>${esc(p.shoeSize||"未入力")}</span></div>
+    </div>
+    <div class="actions">${i>0?'<button type="button" class="ghost ptab-prev">← 戻る</button>':""}<button type="button" class="ghost ptab-edit">編集</button></div>`;
+}
+function participantTabsHtml(prefix,count,participants){
   participants=Array.isArray(participants)?participants:[];
-  let html="";
+  let nav="",panels="";
   for(let i=0;i<count;i++){
     const p=participants[i]||{};
-    html+=`
-      <div class="participant-block">
-        <div class="p-title">参加者${i+1}</div>
-        <div class="participant-fields">
-          <label>氏名<input id="${prefix}-name-${i}" value="${esc(p.name)}"></label>
-          <label>年齢<input id="${prefix}-age-${i}" type="number" min="0" value="${esc(p.age)}"></label>
-          <label>靴のサイズ<input id="${prefix}-shoe-${i}" placeholder="例: 26.0cm" value="${esc(p.shoeSize)}"></label>
-        </div>
-      </div>`;
+    const isConfirmed=!!p.confirmed;
+    const active=i===0?" active":"";
+    nav+=`<button type="button" class="ptab-btn${active}${isConfirmed?" confirmed":""}" data-idx="${i}">参加者${i+1}${isConfirmed?" ✓":""}</button>`;
+    panels+=`<div class="ptab-panel${active}" data-idx="${i}">${isConfirmed?participantSummaryHtml(p,i):participantFormHtml(prefix,p,i)}</div>`;
   }
-  return html;
+  return `<div class="participant-tabs"><div class="ptab-nav">${nav}</div><div class="ptab-panels">${panels}</div></div>`;
+}
+// タブ切り替え・確定・編集を、コンテナへのイベント委譲でまとめて処理する。
+// (人数変更のたびにHTMLごと作り直すため、要素ごとにonclickを付け直す必要がない)
+function bindParticipantTabs(container,prefix,getParticipants,setParticipants,onConfirmOrEdit){
+  container.addEventListener("click",e=>{
+    const tabBtn=e.target.closest(".ptab-btn");
+    if(tabBtn){
+      const idx=tabBtn.dataset.idx;
+      container.querySelectorAll(".ptab-btn").forEach(b=>b.classList.toggle("active",b.dataset.idx===idx));
+      container.querySelectorAll(".ptab-panel").forEach(p=>p.classList.toggle("active",p.dataset.idx===idx));
+      return;
+    }
+    const prevBtn=e.target.closest(".ptab-prev");
+    if(prevBtn){
+      const i=parseInt(prevBtn.closest(".ptab-panel").dataset.idx,10);
+      const target=container.querySelector(`.ptab-btn[data-idx="${i-1}"]`);
+      if(target) target.click();
+      return;
+    }
+    const confirmBtn=e.target.closest(".ptab-confirm");
+    if(confirmBtn){
+      const panel=confirmBtn.closest(".ptab-panel");
+      const i=parseInt(panel.dataset.idx,10);
+      const p={
+        name:panel.querySelector(".p-name-input").value,
+        age:panel.querySelector(".p-age-input").value,
+        shoeSize:panel.querySelector(".p-shoe-input").value,
+        confirmed:true,
+      };
+      const participants=getParticipants();
+      participants[i]=p;
+      setParticipants(participants);
+      panel.innerHTML=participantSummaryHtml(p,i);
+      const btn=container.querySelector(`.ptab-btn[data-idx="${i}"]`);
+      if(btn){btn.classList.add("confirmed");btn.textContent=`参加者${i+1} ✓`;}
+      onConfirmOrEdit&&onConfirmOrEdit();
+      const nextBtn=container.querySelector(`.ptab-btn[data-idx="${i+1}"]`);
+      if(nextBtn) nextBtn.click();
+      return;
+    }
+    const editBtn=e.target.closest(".ptab-edit");
+    if(editBtn){
+      const panel=editBtn.closest(".ptab-panel");
+      const i=parseInt(panel.dataset.idx,10);
+      const participants=getParticipants();
+      const p=participants[i]||{};
+      p.confirmed=false;
+      setParticipants(participants);
+      panel.innerHTML=participantFormHtml(prefix,p,i);
+      const btn=container.querySelector(`.ptab-btn[data-idx="${i}"]`);
+      if(btn){btn.classList.remove("confirmed");btn.textContent=`参加者${i+1}`;}
+      onConfirmOrEdit&&onConfirmOrEdit();
+    }
+  });
 }
 function renderParticipantEditor(){
   const count=parseInt($("people").value,10)||1;
-  $("participantFieldsEditor").innerHTML=participantFieldsHtml("np",count,parsedParticipants);
+  $("participantFieldsEditor").innerHTML=participantTabsHtml("np",count,parsedParticipants);
 }
 function syncParticipantEditorToState(){
-  const rows=$("participantFieldsEditor").querySelectorAll(".participant-block").length;
+  const panels=$("participantFieldsEditor").querySelectorAll(".ptab-panel");
   const updated=[];
-  for(let i=0;i<rows;i++){
-    const nameEl=$(`np-name-${i}`);
-    if(!nameEl) break;
-    updated.push({name:nameEl.value,age:$(`np-age-${i}`).value,shoeSize:$(`np-shoe-${i}`).value});
-  }
+  panels.forEach((panel,i)=>{
+    const nameEl=panel.querySelector(".p-name-input");
+    if(nameEl){
+      updated[i]={name:nameEl.value,age:panel.querySelector(".p-age-input").value,shoeSize:panel.querySelector(".p-shoe-input").value,confirmed:false};
+    }else{
+      updated[i]=parsedParticipants[i]||{};
+    }
+  });
   parsedParticipants=updated;
+}
+bindParticipantTabs($("participantFieldsEditor"),"np",()=>parsedParticipants,v=>{parsedParticipants=v;});
+// 返信メールなど、後から届いた文章を読み取って既存の問い合わせに反映する。
+// 「代表者氏名」のような基本項目は、すでに入力済みなら上書きしない(誤読で消さないため)。
+// 参加者情報は、まだ確定していないタブだけを新しい内容で置き換える(確定済みは保護する)。
+function applyFollowupText(r,text){
+  const p=parseText(text);
+  ["name","phone","email","desiredDate","people","hotel"].forEach(key=>{
+    if(!r[key]&&p[key]) r[key]=p[key];
+  });
+  if(p.creatures){
+    const existing=(r.creatures||"").split(/[、,]/).map(s=>s.trim()).filter(Boolean);
+    const added=p.creatures.split(/[、,]/).map(s=>s.trim()).filter(Boolean);
+    r.creatures=Array.from(new Set([...existing,...added])).join("、");
+  }
+  const extracted=parseParticipants(text);
+  if(extracted.length){
+    if(!Array.isArray(r.participants)) r.participants=[];
+    extracted.forEach((ep,i)=>{
+      const cur=r.participants[i];
+      if(!cur||!cur.confirmed) r.participants[i]={name:ep.name,age:ep.age,shoeSize:ep.shoeSize,confirmed:false};
+    });
+  }
+  if(!Array.isArray(r.followups)) r.followups=[];
+  r.followups.push({date:today(),text});
+}
+let currentDetailId=null;
+bindParticipantTabs($("detail"),"p",
+  ()=>{
+    const rec=records.find(x=>x.id===currentDetailId);
+    if(!rec) return [];
+    if(!Array.isArray(rec.participants)) rec.participants=[];
+    return rec.participants;
+  },
+  participants=>{
+    const rec=records.find(x=>x.id===currentDetailId);
+    if(rec){rec.participants=participants;save();}
+  }
+);
+function showScheduleDetail(r,id){
+  $("detailTitle").textContent="自分の予定";
+  $("detail").innerHTML=`
+    <div class="detail-grid">
+      <div class="detail-item"><b>日付</b>${fmt(r.desiredDate)}</div>
+    </div>
+    <h3>内容</h3>
+    <textarea id="scheduleDetailNotes" rows="4">${esc(r.notes||"")}</textarea>
+    <h3>操作</h3>
+    <div class="actions"><button class="ghost" id="deleteRecord">削除</button></div>`;
+  $("detailModal").classList.remove("hidden");
+  $("scheduleDetailNotes").onchange=()=>{r.notes=$("scheduleDetailNotes").value;save();render();};
+  $("deleteRecord").onclick=()=>{if(confirm("この予定を削除しますか？")){records=records.filter(x=>x.id!==id);save();render();$("detailModal").classList.add("hidden")}};
 }
 function showDetail(id){
   const r=records.find(x=>x.id===id);if(!r)return;
+  currentDetailId=id;
+  if(r.status==="personal"){showScheduleDetail(r,id);return;}
   $("detailTitle").textContent=r.name||"問い合わせ詳細";
+  const history=[{date:r.createdAt,text:r.raw}].concat(Array.isArray(r.followups)?r.followups:[]);
+  const historyHtml=history.map(h=>`
+    <div style="margin-bottom:10px">
+      <div class="hint" style="margin-bottom:4px">${fmt(h.date)}</div>
+      <pre style="white-space:pre-wrap;background:#f5f7f5;padding:12px;border-radius:10px;margin:0">${esc(h.text)}</pre>
+    </div>`).join("");
   $("detail").innerHTML=`
     <div class="detail-grid">
       <div class="detail-item"><b>状態</b>${r.status==="confirmed"?"予約確定":"未確定"}</div>
@@ -209,28 +366,34 @@ function showDetail(id){
       <div class="detail-item"><b>ホテル</b>${esc(r.hotel||"未入力")}</div>
       <div class="detail-item"><b>問い合わせ方法</b>${esc(r.contactMethod)}</div>
     </div>
+    <h3>備考</h3>
+    <textarea id="detailNotes" rows="3" placeholder="アレルギー、特別なご要望、その他メモなど">${esc(r.notes||"")}</textarea>
     <h3>操作</h3>
     <div class="actions">
       <button class="primary" id="toggleStatus">${r.status==="confirmed"?"未確定に戻す":"予約確定にする"}</button>
       <button class="ghost" id="deleteRecord">削除</button>
     </div>
     <h3>参加者情報</h3>
-    <div id="participantFields">${participantFieldsHtml("p",parseInt(r.people,10)||1,r.participants)}</div>
-    <div class="actions"><button class="secondary" id="saveParticipants">参加者情報を保存</button></div>
-    <h3>元の問い合わせ</h3><pre style="white-space:pre-wrap;background:#f5f7f5;padding:12px;border-radius:10px">${esc(r.raw)}</pre>
+    <p class="hint">タブで参加者を切り替えながら入力し、「確定」を押すと見やすい表示になります(自動保存されます)。</p>
+    ${participantTabsHtml("p",parseInt(r.people,10)||1,r.participants)}
+    <h3>返信メール・追加のやり取りを読み取る</h3>
+    <p class="hint">お客様からの返信メールなどをそのまま貼り付けて読み取ると、まだ空欄の項目や、未確定の参加者タブを埋められます。すでに入力・確定済みの項目は上書きしません。</p>
+    <textarea id="followupText" rows="6" placeholder="返信メールの内容をそのまま貼り付けてください"></textarea>
+    <div class="actions"><button class="primary" id="applyFollowup">読み取って反映</button></div>
+    <h3>やり取りの履歴</h3>
+    ${historyHtml}
     <h3>返信案</h3><textarea id="detailReply" rows="8">${esc(r.reply||"")}</textarea>
     <div class="actions"><button class="ghost" id="copyDetail">返信をコピー</button></div>`;
   $("detailModal").classList.remove("hidden");
   $("toggleStatus").onclick=()=>{r.status=r.status==="confirmed"?"pending":"confirmed";save();render();showDetail(id)};
   $("deleteRecord").onclick=()=>{if(confirm("この問い合わせを削除しますか？")){records=records.filter(x=>x.id!==id);save();render();$("detailModal").classList.add("hidden")}};
-  $("saveParticipants").onclick=()=>{
-    const count=parseInt(r.people,10)||1;
-    const participants=[];
-    for(let i=0;i<count;i++){
-      participants.push({name:$(`p-name-${i}`).value,age:$(`p-age-${i}`).value,shoeSize:$(`p-shoe-${i}`).value});
-    }
-    r.participants=participants;save();
-    $("saveParticipants").textContent="保存しました";setTimeout(()=>{$("saveParticipants").textContent="参加者情報を保存"},1200);
+  $("detailNotes").onchange=()=>{r.notes=$("detailNotes").value;save();};
+  $("applyFollowup").onclick=()=>{
+    const text=$("followupText").value.trim();
+    if(!text){alert("貼り付ける内容がありません。");return;}
+    applyFollowupText(r,text);
+    save();
+    showDetail(id);
   };
   $("copyDetail").onclick=async()=>{await navigator.clipboard.writeText($("detailReply").value);$("copyDetail").textContent="コピーしました"};
 }
