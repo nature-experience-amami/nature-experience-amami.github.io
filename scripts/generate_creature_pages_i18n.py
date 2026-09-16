@@ -39,7 +39,7 @@ I18N_DIR = ROOT / "content" / "i18n"
 LANGS = ["en", "es", "zh"]
 # 多言語版のカテゴリーページ(generate_category_pages_i18n.py / generate_zukan_page_i18n.py)が
 # 実際に生成しているカテゴリー。個別ページのカテゴリーナビでリンク可否を判定するのに使う。
-AVAILABLE_CATEGORY_PAGES = {"hebi", "kaeru", "kuwagata", "suisei-konntyuu", "tori", "honyuurui"}
+AVAILABLE_CATEGORY_PAGES = {"snakes", "amphibians", "stag-beetles", "aquatic-insects", "birds", "mammals"}
 
 
 def escape(value):
@@ -55,7 +55,7 @@ def classify_danger(category, danger_ja_text):
     """危険度の強さを、日本語版のdanger記述から判定する(表示ラベルは別途翻訳版を使う)。"""
     text = (danger_ja_text or "").strip()
     prohibited = "禁止" in text
-    if category == "hebi":
+    if category == "snakes":
         if not text or "情報準備中" in text:
             level = 0
         elif "無毒" in text:
@@ -93,7 +93,7 @@ def render_danger_block(category, danger_ja_text, danger_display_text, strings):
 def render_safety(danger_display_text, prohibited, strings, category=None):
     s = strings["strings"]
     parts = [f"<p>{escape(s['safety_common'])}</p>"]
-    if category == "tori":
+    if category == "birds":
         parts.append(f"<p>{escape(s['bird_safety_note'])}</p>")
         if prohibited and danger_display_text:
             warning = s["safety_warning_template_bird"].format(danger=danger_display_text)

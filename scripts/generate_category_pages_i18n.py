@@ -23,7 +23,7 @@ from category_header import render_category_strip  # noqa: E402
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
 TEMPLATE = ROOT / "templates" / "category.i18n.html"
 OUTPUT_DIR_NAME = "categories"
-FULL_PAGE_CATEGORIES = ["hebi", "kaeru", "kuwagata", "honyuurui"]
+FULL_PAGE_CATEGORIES = ["snakes", "amphibians", "stag-beetles", "mammals"]
 
 GROUP_ORDER = {"frog": 0, "newt": 1}
 GROUP_LABEL_KEYS = {"frog": "group_frog", "newt": "group_newt"}
@@ -42,7 +42,7 @@ def card_description(body, strings):
 
 def card_status(category, ja_danger, display_danger, strings):
     s = strings["strings"]
-    if category == "kuwagata":
+    if category == "stag-beetles":
         return s["collecting_prohibited"] if "禁止" in ja_danger else s["enjoy_observing"]
     return display_danger or s["observation_info_prep"]
 

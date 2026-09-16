@@ -32,12 +32,12 @@ OUTPUT = ROOT / "highlights.html"
 
 # 掲載する生き物。増やしたいときはここに (カテゴリー, id) を追加するだけでよい。
 HIGHLIGHT_CREATURES = [
-    ("honyuurui", "amami-kuro-usagi"),
-    ("honyuurui", "kenaga-nezumi"),
-    ("tori", "ruri-kakesu"),
-    ("tori", "oosuton-ooakagera"),
-    ("tori", "amami-yamashigi"),
-    ("kaeru", "ishikawa-gaeru"),
+    ("mammals", "amami-kuro-usagi"),
+    ("mammals", "kenaga-nezumi"),
+    ("birds", "ruri-kakesu"),
+    ("birds", "oosuton-ooakagera"),
+    ("birds", "amami-yamashigi"),
+    ("amphibians", "ishikawa-gaeru"),
 ]
 
 EYEBROW = "CREATURES / HIGHLIGHTS"

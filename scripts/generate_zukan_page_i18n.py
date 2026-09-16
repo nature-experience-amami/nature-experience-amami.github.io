@@ -25,7 +25,7 @@ TEMPLATE = ROOT / "templates" / "zukan.i18n.html"
 OUTPUT_DIR_NAME = "categories"
 
 CATEGORY_CONTENT_I18N = {
-    "suisei-konntyuu": {
+    "aquatic-insects": {
         "en": {
             "hero_lead": (
                 "Small creatures living quietly at the water's edge — rice paddies, ponds, "
@@ -76,7 +76,7 @@ CATEGORY_CONTENT_I18N = {
             ),
         },
     },
-    "tori": {
+    "birds": {
         "en": {
             "hero_lead": (
                 "Amami Oshima's laurel forests are home to birds found only on this island and "
@@ -162,7 +162,7 @@ CATEGORY_CONTENT_I18N = {
 }
 
 FIELD_GUIDE_TITLE_KEY = {
-    "suisei-konntyuu": "categories",  # 実際のタイトルは categories[category] をそのまま使う
+    "aquatic-insects": "categories",  # 実際のタイトルは categories[category] をそのまま使う
 }
 
 

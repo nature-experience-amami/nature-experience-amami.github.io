@@ -30,26 +30,26 @@ OUTPUT_DIR = ROOT / "categories"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 # 図鑑形式で作るカテゴリー(ヘビ・カエル・クワガタのようなフルページ形式のものは含めない)
-ZUKAN_CATEGORIES = ["suisei-konntyuu", "koucyu", "konchu", "kani", "tori"]
+ZUKAN_CATEGORIES = ["aquatic-insects", "beetles", "other-insects", "kani", "birds"]
 
 # 翻訳版(generate_zukan_page_i18n.py)が実際に生成しているカテゴリー
-TRANSLATED_ZUKAN_CATEGORIES = {"suisei-konntyuu", "tori"}
+TRANSLATED_ZUKAN_CATEGORIES = {"aquatic-insects", "birds"}
 
 # 写真フォルダ名がMarkdownのidと違う場合の対応表。(カテゴリ, Markdownのid): 実際の写真フォルダ名
 PHOTO_DIR_ALIASES = {}
 
 # カテゴリーごとの英語表記(ヒーローのラベル用)。無ければカテゴリーIDをそのまま大文字にする。
 ENGLISH_LABELS = {
-    "suisei-konntyuu": "AQUATIC INSECTS",
-    "koucyu": "BEETLES",
-    "konchu": "INSECTS",
+    "aquatic-insects": "AQUATIC INSECTS",
+    "beetles": "BEETLES",
+    "other-insects": "INSECTS",
     "kani": "CRABS",
-    "tori": "BIRDS",
+    "birds": "BIRDS",
 }
 
 # カテゴリーごとの紹介文・注意書き。無ければ汎用の文章を使う。
 CATEGORY_CONTENT = {
-    "koucyu": {
+    "beetles": {
         "hero_lead": (
             "夜の森で出会う、姿も暮らしぶりもさまざまな甲虫たち。"
             "アマミノクロウサギの糞を利用する糞虫から、灯火に飛んでくるカブトムシまで、"
@@ -67,7 +67,7 @@ CATEGORY_CONTENT = {
             "持ち込まれた外来種も含めて紹介しており、これらは在来の生き物と区別して掲載しています。"
         ),
     },
-    "suisei-konntyuu": {
+    "aquatic-insects": {
         "hero_lead": (
             "田んぼや池、川のふちなど、奄美の水辺にひっそりと暮らす小さな生き物たち。"
             "ゲンゴロウ、ドロムシ、アメンボ――じっくり探すと出会える種類を紹介します。"
@@ -82,7 +82,7 @@ CATEGORY_CONTENT = {
             "採集する場合も持ち帰る数は最小限にとどめましょう。"
         ),
     },
-    "tori": {
+    "birds": {
         "hero_lead": (
             "奄美大島の照葉樹林には、瑠璃色のルリカケスや幻の鳥オオトラツグミなど、"
             "この島や周辺の島々だけに暮らす固有の鳥たちがいます。渡り鳥や冬鳥も多く、"
@@ -118,7 +118,7 @@ DEFAULT_CONTENT = {
 
 # グループ分けの定義。(カテゴリー): {"order": [...], "labels": {...}}
 CATEGORY_GROUPS = {
-    "koucyu": {
+    "beetles": {
         "order": ["funchu", "kabuto", "hanamuguri", "manmaru", "tamamushi", "kamikiri", "hamushi", "other"],
         "labels": {
             "funchu": "糞虫",
@@ -131,7 +131,7 @@ CATEGORY_GROUPS = {
             "other": "その他",
         },
     },
-    "suisei-konntyuu": {
+    "aquatic-insects": {
         "order": ["gengoro", "doromushi", "amenbo", "mizumushi", "other"],
         "labels": {
             "gengoro": "ゲンゴロウの仲間",
@@ -141,7 +141,7 @@ CATEGORY_GROUPS = {
             "other": "その他",
         },
     },
-    "tori": {
+    "birds": {
         "order": ["suzume", "buppousou", "fukurou", "taka", "kitsutsuki", "hato", "chidori", "other"],
         "labels": {
             "suzume": "スズメ目(ヒタキ・カラス・サンコウチョウの仲間)",

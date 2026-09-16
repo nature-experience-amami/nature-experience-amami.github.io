@@ -18,18 +18,18 @@ CATEGORY_NAMES = ROOT / "content" / "categories.json"
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
 
 PHOTO_DIR_ALIASES = {
-    ("hebi", "ryukyu-ao-hebi"): "ryuukyuu-aohebi",
-    ("hebi", "takachiho-hebi"): "amami-takachiho-hebi",
-    ("kaeru", "hanasaki-gaeru"): "amami-hanasaki-gaeru",
-    ("kaeru", "ishikawa-gaeru"): "amami-ishikawa-gaeru",
-    ("kaeru", "iboimori"): "amami-ibo-imori",
-    ("kaeru", "shiriken-imori"): "amami-shiriken-imori",
-    ("kuwagata", "marubane-kuwagata"): "amami-marubane-kuwagata",
-    ("kuwagata", "nebuto-kuwagata"): "amami-nebuto-kuwagata",
-    ("kuwagata", "nokogiri-kuwagata"): "amami-nokogiri-kuwagata",
-    ("kuwagata", "shika-kuwagata"): "amami-shika-kuwagata",
-    ("kuwagata", "miyama-kuwagata"): "amami-miyama-kuwagata",
-    ("kuwagata", "ko-kuwagata"): "amami-ko-kuwagata",
+    ("snakes", "ryukyu-ao-hebi"): "ryuukyuu-aohebi",
+    ("snakes", "takachiho-hebi"): "amami-takachiho-hebi",
+    ("amphibians", "hanasaki-gaeru"): "amami-hanasaki-gaeru",
+    ("amphibians", "ishikawa-gaeru"): "amami-ishikawa-gaeru",
+    ("amphibians", "iboimori"): "amami-ibo-imori",
+    ("amphibians", "shiriken-imori"): "amami-shiriken-imori",
+    ("stag-beetles", "marubane-kuwagata"): "amami-marubane-kuwagata",
+    ("stag-beetles", "nebuto-kuwagata"): "amami-nebuto-kuwagata",
+    ("stag-beetles", "nokogiri-kuwagata"): "amami-nokogiri-kuwagata",
+    ("stag-beetles", "shika-kuwagata"): "amami-shika-kuwagata",
+    ("stag-beetles", "miyama-kuwagata"): "amami-miyama-kuwagata",
+    ("stag-beetles", "ko-kuwagata"): "amami-ko-kuwagata",
 }
 
 
@@ -66,7 +66,7 @@ def card_description(body):
 
 
 def card_status(category, danger):
-    if category == "kuwagata":
+    if category == "stag-beetles":
         return "採集禁止" if "禁止" in danger else "観察して楽しもう"
     return danger or "観察情報準備中"
 
@@ -166,11 +166,11 @@ def category_buttons(category, available_categories):
     categories = json.loads(CATEGORY_NAMES.read_text(encoding="utf-8"))
     buttons = [
         '<a class="category-button" href="../highlights.html">代表的な生き物 →</a>',
-        '<a class="category-button" href="suisei-konntyuu.html">水生昆虫 →</a>',
-        '<a class="category-button" href="tori.html">鳥 →</a>',
+        '<a class="category-button" href="aquatic-insects.html">水生昆虫 →</a>',
+        '<a class="category-button" href="birds.html">鳥 →</a>',
     ]
     for category_id, name in categories.items():
-        if category_id in ("suisei-konntyuu", "tori"):
+        if category_id in ("aquatic-insects", "birds"):
             continue
         escaped_name = html.escape(name)
         if category_id == category:
@@ -193,7 +193,7 @@ def render_lang_bar(category):
     return "".join(parts)
 
 
-TARGETS = None  # Noneなら全ページ対象。動作確認中は["hebi"]のように絞れる。
+TARGETS = None  # Noneなら全ページ対象。動作確認中は["snakes"]のように絞れる。
 
 
 def main():

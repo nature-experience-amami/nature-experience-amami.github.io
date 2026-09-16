@@ -16,34 +16,34 @@ TEMPLATE = ROOT / "templates" / "creature.html"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 PHOTO_DIR_ALIASES = {
-    ("hebi", "ryukyu-ao-hebi"): "ryuukyuu-aohebi",
-    ("hebi", "takachiho-hebi"): "amami-takachiho-hebi",
-    ("kaeru", "hanasaki-gaeru"): "amami-hanasaki-gaeru",
-    ("kaeru", "ishikawa-gaeru"): "amami-ishikawa-gaeru",
-    ("kaeru", "iboimori"): "amami-ibo-imori",
-    ("kaeru", "shiriken-imori"): "amami-shiriken-imori",
-    ("kuwagata", "marubane-kuwagata"): "amami-marubane-kuwagata",
-    ("kuwagata", "nebuto-kuwagata"): "amami-nebuto-kuwagata",
-    ("kuwagata", "nokogiri-kuwagata"): "amami-nokogiri-kuwagata",
-    ("kuwagata", "shika-kuwagata"): "amami-shika-kuwagata",
-    ("kuwagata", "miyama-kuwagata"): "amami-miyama-kuwagata",
-    ("kuwagata", "ko-kuwagata"): "amami-ko-kuwagata",
-    ("suisei-konntyuu", "okinawa-suji-gengoro"): "gengoro/okinawa-suji-gengoro",
-    ("suisei-konntyuu", "kogata-no-gengoro"): "gengoro/kogata-no-gengoro",
-    ("suisei-konntyuu", "usuiro-shima-gengoro"): "gengoro/usuiro-shima-gengoro",
-    ("suisei-konntyuu", "akahara-ashinaga-mizodoromushi"): "himedoromushi/akahara-ashinaga-mizodoromushi",
-    ("suisei-konntyuu", "amami-hababiro-doromusshi"): "himedoromushi/amami-hababiro-doromusshi",
-    ("suisei-konntyuu", "amami-mizo-doromushi"): "himedoromushi/amami-mizo-doromushi",
-    ("suisei-konntyuu", "amami-yokomizo-doromushi"): "himedoromushi/amami-yokomizo-doromushi",
-    ("suisei-konntyuu", "naga-tsuya-doromushi"): "himedoromushi/naga-tsuya-doromushi",
-    ("suisei-konntyuu", "nomura-himedoromushi"): "himedoromushi/nomura-himedoromushi",
-    ("suisei-konntyuu", "ryuukyuu-munabiro-tuyadoromushi"): "himedoromushi/ryuukyuu-munabiro-tuyadoromushi",
-    ("suisei-konntyuu", "satou-kara-himedoromushi"): "himedoromushi/satou-kara-himedoromushi",
-    ("suisei-konntyuu", "ueno-tsuya-doromushi"): "himedoromushi/ueno-tsuya-doromushi",
-    ("suisei-konntyuu", "kesi-katabiro-amennbo"): "katabiro-amennbo/kesi-katabiro-amennbo",
-    ("suisei-konntyuu", "chairo-kesi-katabiro-amennbo"): "katabiro-amennbo/chairo-kesi-katabiro-amennbo",
-    ("suisei-konntyuu", "iriomote-kesi-katabiro-amennbo"): "katabiro-amennbo/iriomote-kesi-katabiro-amennbo",
-    ("suisei-konntyuu", "tsutsui-nagare-katabiro-amennbo"): "katabiro-amennbo/tsutsui-nagare-katabiro-amennbo",
+    ("snakes", "ryukyu-ao-hebi"): "ryuukyuu-aohebi",
+    ("snakes", "takachiho-hebi"): "amami-takachiho-hebi",
+    ("amphibians", "hanasaki-gaeru"): "amami-hanasaki-gaeru",
+    ("amphibians", "ishikawa-gaeru"): "amami-ishikawa-gaeru",
+    ("amphibians", "iboimori"): "amami-ibo-imori",
+    ("amphibians", "shiriken-imori"): "amami-shiriken-imori",
+    ("stag-beetles", "marubane-kuwagata"): "amami-marubane-kuwagata",
+    ("stag-beetles", "nebuto-kuwagata"): "amami-nebuto-kuwagata",
+    ("stag-beetles", "nokogiri-kuwagata"): "amami-nokogiri-kuwagata",
+    ("stag-beetles", "shika-kuwagata"): "amami-shika-kuwagata",
+    ("stag-beetles", "miyama-kuwagata"): "amami-miyama-kuwagata",
+    ("stag-beetles", "ko-kuwagata"): "amami-ko-kuwagata",
+    ("aquatic-insects", "okinawa-suji-gengoro"): "gengoro/okinawa-suji-gengoro",
+    ("aquatic-insects", "kogata-no-gengoro"): "gengoro/kogata-no-gengoro",
+    ("aquatic-insects", "usuiro-shima-gengoro"): "gengoro/usuiro-shima-gengoro",
+    ("aquatic-insects", "akahara-ashinaga-mizodoromushi"): "himedoromushi/akahara-ashinaga-mizodoromushi",
+    ("aquatic-insects", "amami-hababiro-doromusshi"): "himedoromushi/amami-hababiro-doromusshi",
+    ("aquatic-insects", "amami-mizo-doromushi"): "himedoromushi/amami-mizo-doromushi",
+    ("aquatic-insects", "amami-yokomizo-doromushi"): "himedoromushi/amami-yokomizo-doromushi",
+    ("aquatic-insects", "naga-tsuya-doromushi"): "himedoromushi/naga-tsuya-doromushi",
+    ("aquatic-insects", "nomura-himedoromushi"): "himedoromushi/nomura-himedoromushi",
+    ("aquatic-insects", "ryuukyuu-munabiro-tuyadoromushi"): "himedoromushi/ryuukyuu-munabiro-tuyadoromushi",
+    ("aquatic-insects", "satou-kara-himedoromushi"): "himedoromushi/satou-kara-himedoromushi",
+    ("aquatic-insects", "ueno-tsuya-doromushi"): "himedoromushi/ueno-tsuya-doromushi",
+    ("aquatic-insects", "kesi-katabiro-amennbo"): "katabiro-amennbo/kesi-katabiro-amennbo",
+    ("aquatic-insects", "chairo-kesi-katabiro-amennbo"): "katabiro-amennbo/chairo-kesi-katabiro-amennbo",
+    ("aquatic-insects", "iriomote-kesi-katabiro-amennbo"): "katabiro-amennbo/iriomote-kesi-katabiro-amennbo",
+    ("aquatic-insects", "tsutsui-nagare-katabiro-amennbo"): "katabiro-amennbo/tsutsui-nagare-katabiro-amennbo",
 }
 
 TARGETS = None
@@ -228,7 +228,7 @@ def danger_block_and_flag(category, danger_text, danger_level=None):
     text = (danger_text or "").strip()
     prohibited = "禁止" in text
 
-    if category == "hebi":
+    if category == "snakes":
         if danger_level is not None:
             try:
                 level = max(0, min(100, int(danger_level)))
@@ -280,7 +280,7 @@ BIRD_SAFETY_NOTE = (
 
 def render_safety(danger_text, prohibited, category=None):
     parts = [f"<p>{escape(COMMON_SAFETY_MESSAGE)}</p>"]
-    if category == "tori":
+    if category == "birds":
         parts.append(f"<p>{escape(BIRD_SAFETY_NOTE)}</p>")
         if prohibited and danger_text:
             parts.append(

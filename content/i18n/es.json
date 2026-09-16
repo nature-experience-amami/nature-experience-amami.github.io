@@ -1,16 +1,16 @@
 {
   "lang_label": "ES",
   "categories": {
-    "hebi": "Serpientes",
-    "kaeru": "Anfibios",
-    "kuwagata": "Escarabajos ciervo",
-    "honyuurui": "Mam\u00edferos",
-    "tori": "Aves",
-    "tokage": "Lagartos",
-    "suisei-konntyuu": "Insectos acu\u00e1ticos",
-    "konchu": "Insectos",
-    "kai": "Moluscos",
-    "sonota": "Crust\u00e1ceos y otros"
+    "snakes": "Serpientes",
+    "amphibians": "Anfibios",
+    "stag-beetles": "Escarabajos ciervo",
+    "mammals": "Mam\u00edferos",
+    "birds": "Aves",
+    "lizards": "Lagartos",
+    "aquatic-insects": "Insectos acu\u00e1ticos",
+    "other-insects": "Insectos",
+    "shellfish": "Moluscos",
+    "crustaceans": "Crust\u00e1ceos y otros"
   },
   "strings": {
     "home": "Inicio",

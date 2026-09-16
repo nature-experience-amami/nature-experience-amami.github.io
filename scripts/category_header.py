@@ -13,8 +13,8 @@ import html
 
 # 表示順のマスターリスト。全カテゴリー/図鑑ページでこの順序に統一する。
 MASTER_CATEGORY_ORDER = [
-    "hebi", "kaeru", "kuwagata", "tori", "honyuurui",
-    "tokage", "suisei-konntyuu", "koucyu", "konchu", "kai", "sonota",
+    "snakes", "amphibians", "stag-beetles", "birds", "mammals",
+    "lizards", "aquatic-insects", "beetles", "other-insects", "shellfish", "crustaceans",
 ]
 
 

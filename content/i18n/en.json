@@ -1,16 +1,16 @@
 {
   "lang_label": "EN",
   "categories": {
-    "hebi": "Snakes",
-    "kaeru": "Amphibians",
-    "kuwagata": "Beetles",
-    "honyuurui": "Mammals",
-    "tori": "Birds",
-    "tokage": "Lizards",
-    "suisei-konntyuu": "Aquatic Insects",
-    "konchu": "Insects",
-    "kai": "Shellfish",
-    "sonota": "Crustaceans & Others"
+    "snakes": "Snakes",
+    "amphibians": "Amphibians",
+    "stag-beetles": "Stag Beetles",
+    "mammals": "Mammals",
+    "birds": "Birds",
+    "lizards": "Lizards",
+    "aquatic-insects": "Aquatic Insects",
+    "other-insects": "Insects",
+    "shellfish": "Shellfish",
+    "crustaceans": "Crustaceans & Others"
   },
   "strings": {
     "home": "Home",

@@ -21,21 +21,21 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 IGNORED_DIR_NAMES = {"failed"}
 # 正式名称ではない・使っていない写真フォルダ（(カテゴリ, フォルダ名)）
 IGNORED_SPECIES_DIRS = {
-    ("kaeru", "ishikawa-gaeru"),
+    ("amphibians", "ishikawa-gaeru"),
 }
 MARKDOWN_ID_ALIASES = {
-    ("hebi", "ryuukyuu-aohebi"): "ryukyu-ao-hebi",
-    ("hebi", "amami-takachiho-hebi"): "takachiho-hebi",
-    ("kaeru", "amami-hanasaki-gaeru"): "hanasaki-gaeru",
-    ("kaeru", "amami-ishikawa-gaeru"): "ishikawa-gaeru",
-    ("kaeru", "amami-ibo-imori"): "iboimori",
-    ("kaeru", "amami-shiriken-imori"): "shiriken-imori",
-    ("kuwagata", "amami-marubane-kuwagata"): "marubane-kuwagata",
-    ("kuwagata", "amami-ko-kuwagata"): "ko-kuwagata",
-    ("kuwagata", "amami-miyama-kuwagata"): "miyama-kuwagata",
-    ("kuwagata", "amami-nebuto-kuwagata"): "nebuto-kuwagata",
-    ("kuwagata", "amami-nokogiri-kuwagata"): "nokogiri-kuwagata",
-    ("kuwagata", "amami-shika-kuwagata"): "shika-kuwagata",
+    ("snakes", "ryuukyuu-aohebi"): "ryukyu-ao-hebi",
+    ("snakes", "amami-takachiho-hebi"): "takachiho-hebi",
+    ("amphibians", "amami-hanasaki-gaeru"): "hanasaki-gaeru",
+    ("amphibians", "amami-ishikawa-gaeru"): "ishikawa-gaeru",
+    ("amphibians", "amami-ibo-imori"): "iboimori",
+    ("amphibians", "amami-shiriken-imori"): "shiriken-imori",
+    ("stag-beetles", "amami-marubane-kuwagata"): "marubane-kuwagata",
+    ("stag-beetles", "amami-ko-kuwagata"): "ko-kuwagata",
+    ("stag-beetles", "amami-miyama-kuwagata"): "miyama-kuwagata",
+    ("stag-beetles", "amami-nebuto-kuwagata"): "nebuto-kuwagata",
+    ("stag-beetles", "amami-nokogiri-kuwagata"): "nokogiri-kuwagata",
+    ("stag-beetles", "amami-shika-kuwagata"): "shika-kuwagata",
 }
 
 

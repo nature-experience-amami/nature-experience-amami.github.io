@@ -1,16 +1,16 @@
 {
   "lang_label": "\u4e2d\u6587",
   "categories": {
-    "hebi": "\u86c7\u7c7b",
-    "kaeru": "\u4e24\u6816\u7c7b",
-    "kuwagata": "\u9505\u7532",
-    "honyuurui": "\u54fa\u4e73\u7c7b",
-    "tori": "\u9e1f\u7c7b",
-    "tokage": "\u8727\u8654",
-    "suisei-konntyuu": "\u6c34\u751f\u6606\u866b",
-    "konchu": "\u6606\u866b",
-    "kai": "\u8d1d\u7c7b",
-    "sonota": "\u7532\u58f3\u7c7b\u7b49"
+    "snakes": "\u86c7\u7c7b",
+    "amphibians": "\u4e24\u6816\u7c7b",
+    "stag-beetles": "\u9505\u7532",
+    "mammals": "\u54fa\u4e73\u7c7b",
+    "birds": "\u9e1f\u7c7b",
+    "lizards": "\u8727\u8654",
+    "aquatic-insects": "\u6c34\u751f\u6606\u866b",
+    "other-insects": "\u6606\u866b",
+    "shellfish": "\u8d1d\u7c7b",
+    "crustaceans": "\u7532\u58f3\u7c7b\u7b49"
   },
   "strings": {
     "home": "\u9996\u9875",

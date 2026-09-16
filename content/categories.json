@@ -1,13 +1,13 @@
 {
-  "hebi": "ヘビ",
-  "kaeru": "両生類(カエル・イモリ)",
-  "kuwagata": "クワガタ",
-  "honyuurui": "哺乳類",
-  "tori": "鳥",
-  "tokage": "トカゲ",
-  "suisei-konntyuu": "水生昆虫",
-  "koucyu": "甲虫",
-  "konchu": "昆虫その他",
-  "kai": "貝",
-  "sonota": "甲殻類・汽水域など"
+  "snakes": "ヘビ",
+  "amphibians": "両生類(カエル・イモリ)",
+  "stag-beetles": "クワガタ",
+  "mammals": "哺乳類",
+  "birds": "鳥",
+  "lizards": "トカゲ",
+  "aquatic-insects": "水生昆虫",
+  "beetles": "甲虫",
+  "other-insects": "昆虫その他",
+  "shellfish": "貝",
+  "crustaceans": "甲殻類・汽水域など"
 }
