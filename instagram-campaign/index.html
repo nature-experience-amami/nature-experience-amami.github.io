@@ -146,8 +146,8 @@ h1,h2{ font-family:'Shippori Mincho',serif; font-weight:700; }
   margin-top:1.6rem; display:flex; align-items:center; gap:1rem;
   background:var(--moonlight); border-radius:16px; padding:1rem;
 }
-.qr-box .qr-img{ flex:0 0 auto; width:96px; height:96px; border-radius:8px; overflow:hidden; background:#fff; }
-.qr-box .qr-img img{ width:100%; height:100%; display:block; }
+.qr-box .qr-img{ flex:0 0 auto; width:96px; height:96px; border-radius:8px; overflow:hidden; background:#fff; display:flex; align-items:center; justify-content:center; }
+.qr-box .qr-img img, .qr-box .qr-img canvas{ width:100%; height:100%; display:block; }
 .qr-box .qr-text{ min-width:0; color:var(--bark); }
 .qr-box .url{ font-family:'Space Mono',monospace; font-weight:700; font-size:.78rem; word-break:break-all; }
 .qr-box .note{ margin-top:.5rem; font-size:12px; line-height:1.6; color:rgba(42,33,26,.75); }
@@ -294,7 +294,7 @@ h1,h2{ font-family:'Shippori Mincho',serif; font-weight:700; }
         </div>
       </div>
       <div class="qr-box">
-        <div class="qr-img"><img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=8&data=https%3A%2F%2Fnature-experience-amami.github.io%2F" alt="ホームページQRコード" loading="lazy"></div>
+        <div class="qr-img" id="qrCode" role="img" aria-label="ホームページQRコード"></div>
         <div class="qr-text">
           <div class="url">nature-experience-amami.github.io</div>
           <div class="note">当日はホーム画面のアイコンを開いて、ガイドにお見せください</div>
@@ -307,6 +307,7 @@ h1,h2{ font-family:'Shippori Mincho',serif; font-weight:700; }
 
 <div class="dots" id="dots"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 (function(){
   var slidesEl = document.getElementById('slides');
@@ -342,6 +343,17 @@ h1,h2{ font-family:'Shippori Mincho',serif; font-weight:700; }
   });
 
   updateActive();
+
+  // QRコードはローカルで生成(外部サービスに頼らないので、表示が速く、落ちていても表示される)
+  var qrEl = document.getElementById('qrCode');
+  if (qrEl && window.QRCode) {
+    new QRCode(qrEl, {
+      text: 'https://nature-experience-amami.github.io/',
+      width: 200, height: 200,
+      colorDark: '#2A211A', colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.M
+    });
+  }
 })();
 </script>
 
