@@ -26,6 +26,12 @@
     <div class="stat"><span id="confirmedCount">0</span><small>予約確定</small></div>
   </section>
 
+  <section class="actions" style="margin-top:0">
+    <button id="backupBtn" class="ghost">⬇ バックアップ</button>
+    <button id="restoreBtn" class="ghost">⬆ 復元</button>
+    <input type="file" id="restoreFile" accept="application/json" hidden>
+  </section>
+
   <section class="toolbar">
     <input id="search" type="search" placeholder="氏名・ホテル・生き物で検索">
     <select id="statusFilter">

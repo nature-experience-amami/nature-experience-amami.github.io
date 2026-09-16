@@ -8,6 +8,45 @@ const today=()=>new Date().toISOString().slice(0,10);
 const save=()=>localStorage.setItem(KEY,JSON.stringify(records));
 
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+
+// --- バックアップ(パスワード暗号化) ---
+// PBKDF2でパスワードから鍵を作り、AES-GCMで暗号化する。塩(salt)とIVは
+// ファイルに一緒に保存するが、パスワードそのものはどこにも保存しない。
+function bufToBase64(buf){
+  let binary="";
+  const bytes=new Uint8Array(buf);
+  for(let i=0;i<bytes.byteLength;i++) binary+=String.fromCharCode(bytes[i]);
+  return btoa(binary);
+}
+function base64ToBuf(b64){
+  const binary=atob(b64);
+  const bytes=new Uint8Array(binary.length);
+  for(let i=0;i<binary.length;i++) bytes[i]=binary.charCodeAt(i);
+  return bytes;
+}
+async function deriveKey(password,salt){
+  const keyMaterial=await crypto.subtle.importKey("raw",new TextEncoder().encode(password),"PBKDF2",false,["deriveKey"]);
+  return crypto.subtle.deriveKey(
+    {name:"PBKDF2",salt,iterations:100000,hash:"SHA-256"},
+    keyMaterial,
+    {name:"AES-GCM",length:256},
+    false,
+    ["encrypt","decrypt"]
+  );
+}
+async function encryptBackup(password,data){
+  const salt=crypto.getRandomValues(new Uint8Array(16));
+  const iv=crypto.getRandomValues(new Uint8Array(12));
+  const key=await deriveKey(password,salt);
+  const plain=new TextEncoder().encode(JSON.stringify(data));
+  const ciphertext=await crypto.subtle.encrypt({name:"AES-GCM",iv},key,plain);
+  return {v:1,salt:bufToBase64(salt),iv:bufToBase64(iv),data:bufToBase64(ciphertext)};
+}
+async function decryptBackup(obj,password){
+  const key=await deriveKey(password,base64ToBuf(obj.salt));
+  const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:base64ToBuf(obj.iv)},key,base64ToBuf(obj.data));
+  return JSON.parse(new TextDecoder().decode(plain));
+}
 function fmt(d){if(!d)return "未入力"; const [y,m,day]=d.split("-"); return `${y}/${m}/${day}`}
 function updateStats(){
   // 「自分の予定」は問い合わせではないので、集計には含めない
@@ -430,4 +469,37 @@ function showDetail(id){
 }
 $("closeModal").onclick=()=>$("detailModal").classList.add("hidden");
 $("detailModal").onclick=e=>{if(e.target===$("detailModal"))$("detailModal").classList.add("hidden")};
+
+$("backupBtn").onclick=async()=>{
+  if(!records.length){alert("バックアップするデータがありません。");return;}
+  const password=prompt("バックアップ用のパスワードを決めてください(復元時に同じパスワードが必要です)");
+  if(!password) return;
+  const backup=await encryptBackup(password,records);
+  const blob=new Blob([JSON.stringify(backup)],{type:"application/json"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url;
+  a.download=`nea-customer-backup-${today().replace(/-/g,"")}.json`;
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+};
+$("restoreBtn").onclick=()=>$("restoreFile").click();
+$("restoreFile").onchange=async(e)=>{
+  const file=e.target.files[0];
+  if(!file){return;}
+  const password=prompt("バックアップ作成時に設定したパスワードを入力してください");
+  if(!password){e.target.value="";return;}
+  try{
+    const obj=JSON.parse(await file.text());
+    const restored=await decryptBackup(obj,password);
+    if(!Array.isArray(restored)) throw new Error("invalid backup");
+    if(!confirm(`${restored.length}件のデータが見つかりました。今のデータをこれで置き換えます。よろしいですか？`)){e.target.value="";return;}
+    records=restored;save();render();
+    alert("復元しました。");
+  }catch(err){
+    alert("復元に失敗しました。パスワードが違うか、ファイルが壊れている可能性があります。");
+  }
+  e.target.value="";
+};
+
 render();
