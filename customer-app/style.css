@@ -12,8 +12,10 @@ button{border:0;border-radius:10px;padding:11px 15px;cursor:pointer}
 .toolbar{display:flex;gap:10px;margin-bottom:14px}.toolbar input{flex:1}
 input,select,textarea{width:100%;border:1px solid #d7ded9;border-radius:9px;padding:10px;background:white}
 .cards{display:grid;gap:10px}.card{background:white;border-radius:14px;padding:15px;box-shadow:0 2px 10px #0000000b;cursor:pointer}
-.card-top{display:flex;justify-content:space-between;gap:10px}.name{font-weight:700;font-size:17px}.date{font-weight:700}.meta{color:#667169;font-size:13px;margin-top:7px}.tag{display:inline-block;border-radius:99px;padding:4px 9px;font-size:12px;background:#eef2ef}.tag.confirmed{background:#dcecdf}.tag.pending{background:#fff0d6}.tag.personal{background:#e6e6f5}
+.card-top{display:flex;justify-content:space-between;gap:10px}.name{font-weight:700;font-size:17px}.date{font-weight:700}.meta{color:#667169;font-size:13px;margin-top:7px}.tag{display:inline-block;border-radius:99px;padding:4px 9px;font-size:12px;background:#eef2ef}.tag.confirmed{background:#dcecdf}.tag.pending{background:#fff0d6}.tag.personal{background:#e6e6f5}.tag.completed{background:#e3e3e3;color:#68736c}.tag.cancelled{background:#fbdada;color:#a3312f}
 .card.personal{background:#f7f7fb;border:1px dashed #c9c9e0}
+.card.completed{opacity:.65}
+.card.cancelled{background:#fff7f7;border:1px solid #f3d3d3}
 .panel{background:white;margin-top:18px;border-radius:15px;padding:18px;box-shadow:0 2px 12px #0000000b}.hidden{display:none!important}
 .panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px}h2{font-size:20px;margin:0 0 14px}h3{font-size:16px;margin:18px 0 9px}
 label{display:block;font-size:13px;color:#56635b;margin-bottom:10px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.grid label{margin:0}

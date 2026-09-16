@@ -48,6 +48,7 @@ async function decryptBackup(obj,password){
   return JSON.parse(new TextDecoder().decode(plain));
 }
 function fmt(d){if(!d)return "未入力"; const [y,m,day]=d.split("-"); return `${y}/${m}/${day}`}
+function statusLabel(status){return {pending:"未確定",confirmed:"予約確定",completed:"終了",cancelled:"キャンセル",personal:"予定あり"}[status]||status}
 function updateStats(){
   // 「自分の予定」は問い合わせではないので、集計には含めない
   const customerRecords=records.filter(r=>r.status!=="personal");
@@ -65,17 +66,20 @@ function cardHtml(r){
     </article>`;
   }
   return `
-    <article class="card" data-id="${r.id}">
+    <article class="card${r.status==="completed"?" completed":""}${r.status==="cancelled"?" cancelled":""}" data-id="${r.id}">
       <div class="card-top"><div><div class="name">${esc(r.name||"氏名未入力")}</div><div class="date">${fmt(r.desiredDate)}</div></div>
-      <span class="tag ${r.status}">${r.status==="confirmed"?"予約確定":"未確定"}</span></div>
+      <span class="tag ${r.status}">${statusLabel(r.status)}</span></div>
       <div class="meta">${esc(r.people||"人数未入力")}名　${esc(r.creatures||"生き物未入力")}　${esc(r.hotel||"ホテル未入力")}</div>
+      ${r.status==="cancelled"?`<div class="meta">理由: ${esc(r.cancelReason||"未記入")}</div>`:""}
     </article>`;
 }
 function render(){
   updateStats();
   const q=$("search").value.trim().toLowerCase(), f=$("statusFilter").value;
+  // キャンセル済みは、通常の一覧(すべて)からは消えて、専用フィルターの時だけ表示する
   const rows=records.filter(r=>{
-    const text=[r.name,r.hotel,r.creatures,r.phone,r.email,r.notes].join(" ").toLowerCase();
+    if(f==="all"&&r.status==="cancelled") return false;
+    const text=[r.name,r.hotel,r.creatures,r.phone,r.email,r.notes,r.cancelReason].join(" ").toLowerCase();
     return (!q||text.includes(q))&&(f==="all"||r.status===f);
   }).sort((a,b)=>(a.desiredDate||"").localeCompare(b.desiredDate||""));
   $("list").innerHTML=rows.length?rows.map(cardHtml).join(""):"<div class='card'>まだ問い合わせはありません。「＋ 新規問い合わせ」から試せます。</div>";
@@ -388,9 +392,13 @@ const CONTACT_METHODS=["公式LINE","メール","電話","SNSのDM","SIMDEF"];
 // 確定後に間違いに気づいた時は、一度未確定へ戻してから直せる、という運用に合わせている。
 function detailInfoHtml(r){
   if(r.status!=="pending"){
+    const cancelNote=r.status==="cancelled"
+      ?`<div class="detail-item" style="grid-column:1/-1;background:#fdeaea"><b>キャンセル理由</b>${esc(r.cancelReason||"理由未記入")}</div>`
+      :"";
     return `
     <div class="detail-grid">
-      <div class="detail-item"><b>状態</b>${r.status==="confirmed"?"予約確定":"未確定"}</div>
+      <div class="detail-item"><b>状態</b>${statusLabel(r.status)}</div>
+      ${cancelNote}
       <div class="detail-item"><b>希望日</b>${fmt(r.desiredDate)}</div>
       <div class="detail-item"><b>人数</b>${esc(r.people||"未入力")}名</div>
       <div class="detail-item"><b>観察希望</b>${esc(r.creatures||"未入力")}</div>
@@ -435,7 +443,11 @@ function showDetail(id){
     <textarea id="detailNotes" rows="3" placeholder="アレルギー、特別なご要望、その他メモなど">${esc(r.notes||"")}</textarea>
     <h3>操作</h3>
     <div class="actions">
-      <button class="primary" id="toggleStatus">${r.status==="confirmed"?"未確定に戻す":"予約確定にする"}</button>
+      ${r.status==="pending"?'<button class="primary" id="toggleStatus">予約確定にする</button>':""}
+      ${r.status==="confirmed"?'<button class="ghost" id="toggleStatus">未確定に戻す</button><button class="primary" id="completeBtn">ガイド終了にする</button>':""}
+      ${r.status==="completed"?'<button class="ghost" id="uncompleteBtn">確定に戻す</button>':""}
+      ${(r.status==="pending"||r.status==="confirmed")?'<button class="ghost" id="cancelBtn">キャンセル</button>':""}
+      ${r.status==="cancelled"?'<button class="ghost" id="uncancelBtn">キャンセルを取り消す</button>':""}
       <button class="ghost" id="deleteRecord">削除</button>
     </div>
     <h3>参加者情報</h3>
@@ -450,7 +462,19 @@ function showDetail(id){
     <h3>返信案</h3><textarea id="detailReply" rows="8">${esc(r.reply||"")}</textarea>
     <div class="actions"><button class="ghost" id="copyDetail">返信をコピー</button></div>`;
   $("detailModal").classList.remove("hidden");
-  $("toggleStatus").onclick=()=>{r.status=r.status==="confirmed"?"pending":"confirmed";save();render();showDetail(id)};
+  if($("toggleStatus")) $("toggleStatus").onclick=()=>{r.status=r.status==="confirmed"?"pending":"confirmed";save();render();showDetail(id)};
+  if($("completeBtn")) $("completeBtn").onclick=()=>{r.status="completed";save();render();showDetail(id)};
+  if($("uncompleteBtn")) $("uncompleteBtn").onclick=()=>{r.status="confirmed";save();render();showDetail(id)};
+  if($("cancelBtn")) $("cancelBtn").onclick=()=>{
+    const reason=prompt("キャンセルの理由を入力してください(台風接近、お客様都合など)");
+    if(reason===null) return;
+    r.previousStatus=r.status;
+    r.status="cancelled";
+    r.cancelReason=reason;
+    r.cancelledAt=today();
+    save();render();showDetail(id);
+  };
+  if($("uncancelBtn")) $("uncancelBtn").onclick=()=>{r.status=r.previousStatus||"pending";save();render();showDetail(id)};
   $("deleteRecord").onclick=()=>{if(confirm("この問い合わせを削除しますか？")){records=records.filter(x=>x.id!==id);save();render();$("detailModal").classList.add("hidden")}};
   $("detailNotes").onchange=()=>{r.notes=$("detailNotes").value;save();};
   if(r.status==="pending"){
