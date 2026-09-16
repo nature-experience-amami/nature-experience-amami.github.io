@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>ホームページリニューアル紹介｜Nature Experience Amami</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
+  --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A;
+  --line:rgba(234,242,233,.14);
+}
+*{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html,body{ height:100%; overscroll-behavior:none; }
+body{
+  background:var(--night); color:var(--moonlight);
+  font-family:'Zen Kaku Gothic New',sans-serif; line-height:1.85;
+}
+h1,h2{ font-family:'Shippori Mincho',serif; font-weight:700; }
+.eyebrow{ font-family:'Space Mono',monospace; font-size:.7rem; letter-spacing:.18em; color:var(--amber); margin-bottom:.9rem; }
+.slide-index{
+  position:fixed; top:calc(18px + env(safe-area-inset-top)); left:20px; z-index:20;
+  font-family:'Space Mono',monospace; font-size:.7rem; letter-spacing:.08em; color:rgba(234,242,233,.55);
+}
+.brand-mark{
+  position:fixed; top:calc(18px + env(safe-area-inset-top)); right:20px; z-index:20;
+  font-family:'Shippori Mincho',serif; font-size:.8rem; letter-spacing:.06em; color:rgba(234,242,233,.55);
+  display:flex; align-items:center; gap:.4rem;
+}
+.brand-mark::before{ content:""; width:6px; height:6px; border-radius:50%; background:var(--amber); box-shadow:0 0 8px 2px rgba(232,163,61,.7); }
+
+.slides{
+  display:flex; height:100dvh; overflow-x:auto; overflow-y:hidden;
+  scroll-snap-type:x mandatory; scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch; scrollbar-width:none;
+}
+.slides::-webkit-scrollbar{ display:none; }
+
+.slide{
+  min-width:100%; height:100dvh; scroll-snap-align:start; scroll-snap-stop:always;
+  display:flex; flex-direction:column; justify-content:center;
+  padding:calc(70px + env(safe-area-inset-top)) 7vw calc(70px + env(safe-area-inset-bottom));
+  position:relative; overflow:hidden;
+}
+.slide-inner{ max-width:440px; margin:0 auto; width:100%; }
+.slide h1{ font-size:clamp(28px,7vw,40px); line-height:1.35; letter-spacing:.02em; margin-bottom:1.1rem; }
+.slide p{ font-size:14.5px; color:rgba(234,242,233,.82); }
+.slide p+p{ margin-top:.7rem; }
+
+/* --- cover --- */
+.cover{ background:
+  linear-gradient(to bottom, rgba(10,22,19,.2), rgba(10,22,19,.35) 55%, rgba(10,22,19,.85) 92%),
+  url('../images/creatures/hebi/habu/habu_000002_20250228_00.jpg') center/cover no-repeat;
+}
+.cover .slide-inner{ text-align:center; text-shadow:0 2px 14px rgba(0,0,0,.6); }
+.cover .site-name{ font-family:'Space Mono',monospace; font-size:.72rem; letter-spacing:.2em; color:var(--amber); margin-bottom:1.1rem; }
+.cover .brand-dot{ width:10px; height:10px; margin:0 auto 1rem; border-radius:50%; background:var(--amber); box-shadow:0 0 16px 4px rgba(232,163,61,.75); }
+.cover .brand-title{ font-size:clamp(38px,11vw,58px); line-height:1.18; letter-spacing:.02em; }
+.cover .cover-sub{ margin-top:1.3rem; font-family:'Shippori Mincho',serif; font-weight:600; font-size:clamp(18px,4.6vw,22px); color:rgba(234,242,233,.92); }
+.cover .lead{ margin-top:1.1rem; font-size:15px; color:rgba(234,242,233,.85); }
+.swipe-cue{
+  margin-top:3rem; display:inline-flex; align-items:center; gap:.5rem;
+  font-family:'Space Mono',monospace; font-size:.72rem; letter-spacing:.1em; color:rgba(234,242,233,.65);
+  animation:nudge 1.8s ease-in-out infinite;
+}
+@keyframes nudge{ 0%,100%{ transform:translateX(0); } 50%{ transform:translateX(8px); } }
+
+/* --- photo stack (top page rotation) --- */
+.stack{ position:relative; height:280px; margin:2rem auto 1.6rem; max-width:230px; }
+.stack img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  border-radius:16px; box-shadow:0 18px 40px rgba(0,0,0,.45); border:1px solid var(--line);
+}
+.stack img:nth-child(1){ transform:rotate(-9deg) translate(-14px,6px); opacity:.55; filter:saturate(.7); }
+.stack img:nth-child(2){ transform:rotate(7deg) translate(14px,10px); opacity:.7; filter:saturate(.8); }
+.stack img:nth-child(3){ transform:rotate(0deg); z-index:2; }
+.timer-badge{
+  position:absolute; bottom:-14px; right:-6px; z-index:3;
+  background:var(--amber); color:var(--bark); font-family:'Space Mono',monospace; font-weight:700;
+  font-size:.78rem; padding:.4rem .65rem; border-radius:99px; box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+/* --- photo mosaic --- */
+.mosaic{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin:1.8rem 0; }
+.mosaic .cell{ aspect-ratio:1/1; border-radius:12px; overflow:hidden; border:1px solid var(--line); position:relative; }
+.mosaic .cell img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* --- zukan cards --- */
+.card-list{ display:flex; flex-direction:column; gap:10px; margin:1.8rem 0; }
+.zcard{ display:flex; align-items:center; gap:12px; background:var(--canopy); border:1px solid var(--line); border-radius:12px; padding:9px; }
+.zcard .thumb{ width:58px; height:58px; border-radius:8px; overflow:hidden; flex-shrink:0; }
+.zcard .thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+.zcard .meta{ min-width:0; }
+.zcard .cat{ font-family:'Space Mono',monospace; font-size:.62rem; letter-spacing:.08em; color:var(--moss); }
+.zcard .nm{ font-size:14px; font-weight:700; margin-top:.15rem; }
+
+/* --- language pills --- */
+.lang-pills{ display:flex; flex-wrap:wrap; gap:10px; margin:1.8rem 0; }
+.lang-pills .pill{
+  flex:1 1 calc(50% - 10px); min-width:130px; background:var(--canopy); border:1px solid var(--line); border-radius:12px;
+  padding:1rem 1.1rem; text-align:center;
+}
+.lang-pills .pill .code{ font-family:'Space Mono',monospace; color:var(--amber); font-size:.68rem; letter-spacing:.1em; }
+.lang-pills .pill .lbl{ margin-top:.35rem; font-weight:700; font-size:15px; }
+
+/* --- chat mockup --- */
+.chat{ margin:1.8rem 0; display:flex; flex-direction:column; gap:10px; }
+.bubble{ max-width:88%; padding:.75rem 1rem; border-radius:14px; font-size:13.5px; line-height:1.7; }
+.bubble.q{ align-self:flex-end; background:var(--amber); color:var(--bark); border-bottom-right-radius:4px; }
+.bubble.a{ align-self:flex-start; background:var(--canopy); border:1px solid var(--line); border-bottom-left-radius:4px; }
+.bubble .who{ display:block; font-family:'Space Mono',monospace; font-size:.6rem; letter-spacing:.08em; opacity:.6; margin-bottom:.25rem; }
+
+/* --- campaign --- */
+.campaign-slide{ background:radial-gradient(circle at 30% 20%,rgba(232,163,61,.14),transparent 45%); }
+.price-tag{
+  margin:1.6rem 0; text-align:center; background:var(--canopy); border:1px solid rgba(232,163,61,.4); border-radius:16px; padding:1.6rem 1rem;
+}
+.price-tag .amt{ font-family:'Shippori Mincho',serif; font-weight:700; font-size:clamp(40px,11vw,58px); color:var(--amber); line-height:1; }
+.price-tag .amt small{ font-size:.4em; font-family:'Zen Kaku Gothic New',sans-serif; font-weight:500; margin-left:.3rem; }
+.price-tag .note{ margin-top:.5rem; font-family:'Space Mono',monospace; font-size:.68rem; letter-spacing:.05em; color:rgba(234,242,233,.6); }
+.condition{ margin-top:1.2rem; font-size:12.5px; color:rgba(234,242,233,.65); background:rgba(234,242,233,.05); border-left:2px solid var(--amber); padding:.8rem 1rem; border-radius:0 8px 8px 0; }
+
+/* --- install steps --- */
+.install-cols{ display:flex; flex-wrap:wrap; gap:14px; margin:1.6rem 0; }
+.install-card{ flex:1 1 calc(50% - 14px); min-width:150px; background:var(--canopy); border:1px solid var(--line); border-radius:14px; padding:1.1rem 1.1rem; }
+.install-card .os{ display:flex; align-items:center; gap:.45rem; font-family:'Shippori Mincho',serif; font-weight:700; font-size:1rem; color:var(--amber); margin-bottom:.85rem; }
+.install-card .os-icon{ font-size:1.05rem; }
+.install-card .steps{ display:flex; flex-direction:column; gap:.65rem; }
+.install-card .step{ display:flex; align-items:flex-start; gap:.55rem; }
+.install-card .num{
+  flex:0 0 auto; width:20px; height:20px; margin-top:.1rem; border-radius:50%;
+  background:var(--amber); color:var(--bark); font-family:'Space Mono',monospace; font-weight:700;
+  font-size:.68rem; display:flex; align-items:center; justify-content:center;
+}
+.install-card .txt{ font-size:12.5px; color:rgba(234,242,233,.85); line-height:1.6; }
+
+/* --- qr / closing --- */
+.closing h1{ font-size:clamp(26px,6.4vw,34px); }
+.qr-box{
+  margin-top:1.6rem; display:flex; align-items:center; gap:1rem;
+  background:var(--moonlight); border-radius:16px; padding:1rem;
+}
+.qr-box .qr-img{ flex:0 0 auto; width:96px; height:96px; border-radius:8px; overflow:hidden; background:#fff; }
+.qr-box .qr-img img{ width:100%; height:100%; display:block; }
+.qr-box .qr-text{ min-width:0; color:var(--bark); }
+.qr-box .url{ font-family:'Space Mono',monospace; font-weight:700; font-size:.78rem; word-break:break-all; }
+.qr-box .note{ margin-top:.5rem; font-size:12px; line-height:1.6; color:rgba(42,33,26,.75); }
+
+.dots{
+  position:fixed; bottom:calc(20px + env(safe-area-inset-bottom)); left:50%; transform:translateX(-50%);
+  display:flex; gap:7px; z-index:20;
+}
+.dots span{ width:6px; height:6px; border-radius:50%; background:rgba(234,242,233,.25); transition:background .25s,transform .25s; }
+.dots span.active{ background:var(--amber); transform:scale(1.35); }
+
+@media(min-width:760px){
+  .slide{ padding-left:0; padding-right:0; }
+  .lang-pills .pill{ flex:1 1 calc(25% - 10px); }
+}
+</style>
+</head>
+<body>
+
+<div class="slide-index" id="slideIndex">01 / 08</div>
+<div class="brand-mark">Nature Experience Amami</div>
+
+<div class="slides" id="slides">
+
+  <!-- 1. Cover -->
+  <section class="slide cover">
+    <div class="slide-inner">
+      <p class="site-name">WEBSITE RENEWAL</p>
+      <div class="brand-dot"></div>
+      <h1 class="brand-title">Nature Experience</h1>
+      <p class="cover-sub">ホームページが、生まれ変わりました</p>
+      <p class="lead">奄美大島の夜の生き物たちを、<br>もっと身近に、もっと分かりやすく。</p>
+      <div class="swipe-cue">→ スワイプしてチェック</div>
+    </div>
+  </section>
+
+  <!-- 2. Hero photo rotation -->
+  <section class="slide">
+    <div class="slide-inner">
+      <p class="eyebrow">TOP PAGE</p>
+      <h1>写真は、8秒ごとに<br>変わります</h1>
+      <div class="stack">
+        <img src="../images/creatures/tori/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg" alt="ルリカケス" loading="lazy">
+        <img src="../images/creatures/hebi/akamata/akamata_000001_20250921_22.jpg" alt="アカマタ" loading="lazy">
+        <img src="../images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg" alt="アマミノクロウサギ" loading="lazy">
+        <span class="timer-badge">8s ごと</span>
+      </div>
+      <p>サイトを開くたびに、掲載中の生き物写真からランダムに1枚。ヘビ、鳥、ウサギ…毎回ちがう一枚に出会えます。</p>
+    </div>
+  </section>
+
+  <!-- 3. Category / creature photos change -->
+  <section class="slide">
+    <div class="slide-inner">
+      <p class="eyebrow">CREATURE PAGES</p>
+      <h1>訪れるたびに、<br>違う一枚に出会える</h1>
+      <div class="mosaic">
+        <div class="cell"><img src="../images/creatures/kaeru/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg" alt="アマミイシカワガエル" loading="lazy"></div>
+        <div class="cell"><img src="../images/creatures/kuwagata/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg" alt="アマミヒラタクワガタ" loading="lazy"></div>
+        <div class="cell"><img src="../images/creatures/koucyu/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg" alt="オオシマトラフハナムグリ" loading="lazy"></div>
+        <div class="cell"><img src="../images/creatures/tokage/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg" alt="オキナワキノボリトカゲ" loading="lazy"></div>
+      </div>
+      <p>図鑑ページも、個別の生き物ページも同じ仕組み。同じ生き物でも、見るたびに違う写真が表示されます。</p>
+    </div>
+  </section>
+
+  <!-- 4. Multilingual -->
+  <section class="slide">
+    <div class="slide-inner">
+      <p class="eyebrow">4 LANGUAGES</p>
+      <h1>日本語 / English<br>Español / 中文</h1>
+      <div class="lang-pills">
+        <div class="pill"><div class="code">JA</div><div class="lbl">日本語</div></div>
+        <div class="pill"><div class="code">EN</div><div class="lbl">English</div></div>
+        <div class="pill"><div class="code">ES</div><div class="lbl">Español</div></div>
+        <div class="pill"><div class="code">ZH</div><div class="lbl">中文</div></div>
+      </div>
+      <p>海外からのお客様にも、ツアーの内容をそのまま伝えられるように。生き物ページも4か国語に対応しました。</p>
+    </div>
+  </section>
+
+  <!-- 5. AI question corner -->
+  <section class="slide">
+    <div class="slide-inner">
+      <p class="eyebrow">ASK AI</p>
+      <h1>気になったことは、<br>AIに聞いてみて</h1>
+      <div class="chat">
+        <div class="bubble q"><span class="who">YOU</span>奄美でよく見るヘビは？</div>
+        <div class="bubble a"><span class="who">AI</span>アカマタやハブが代表的です。夜の林道でよく出会えますよ。</div>
+      </div>
+      <p>「このヘビは危険？」「今の時期に会える生き物は？」など、気になったことをその場でAIに質問できます。</p>
+    </div>
+  </section>
+
+  <!-- 6. Zukan pages -->
+  <section class="slide">
+    <div class="slide-inner">
+      <p class="eyebrow">FIELD GUIDE</p>
+      <h1>生き物図鑑で、<br>まるごとチェック</h1>
+      <div class="card-list">
+        <div class="zcard"><div class="thumb"><img src="../images/creatures/tori/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg" alt="リュウキュウコノハズク" loading="lazy"></div><div class="meta"><div class="cat">TORI</div><div class="nm">リュウキュウコノハズク</div></div></div>
+        <div class="zcard"><div class="thumb"><img src="../images/creatures/hebi/habu/habu_000002_20250228_00.jpg" alt="ハブ" loading="lazy"></div><div class="meta"><div class="cat">HEBI</div><div class="nm">ハブ</div></div></div>
+        <div class="zcard"><div class="thumb"><img src="../images/creatures/honyuurui/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg" alt="アマミノクロウサギ" loading="lazy"></div><div class="meta"><div class="cat">HONYUURUI</div><div class="nm">アマミノクロウサギ</div></div></div>
+      </div>
+      <p>カテゴリーごとに、写真と特徴を一覧でチェック。次にどんな生き物に会えるか、ツアー前からワクワクできます。</p>
+    </div>
+  </section>
+
+  <!-- 7. Campaign -->
+  <section class="slide campaign-slide">
+    <div class="slide-inner">
+      <p class="eyebrow">CAMPAIGN</p>
+      <h1>ホーム画面に追加して<br>見せるだけ</h1>
+      <div class="price-tag">
+        <div class="amt">1,000<small>円 OFF</small></div>
+        <div class="note">GUIDE DAY DISCOUNT</div>
+      </div>
+      <p>ホームページをスマホのホーム画面に追加(アプリ化)して、ガイド当日に見せてください。それだけで、その場で1,000円サービスします。</p>
+      <div class="condition">※ 12月末までにご予約の方が対象です。<br>※ 1グループ様につき1回限りのご案内となります。</div>
+    </div>
+  </section>
+
+  <!-- 8. Install steps + QR (closing) -->
+  <section class="slide closing">
+    <div class="slide-inner">
+      <p class="eyebrow">HOW TO INSTALL</p>
+      <h1>スマホのホーム画面に<br>追加する方法</h1>
+      <div class="install-cols">
+        <div class="install-card">
+          <div class="os"><span class="os-icon">📱</span>iPhone</div>
+          <div class="steps">
+            <div class="step"><span class="num">1</span><span class="txt">Safariで下部の共有ボタンをタップ</span></div>
+            <div class="step"><span class="num">2</span><span class="txt">「ホーム画面に追加」を選択</span></div>
+            <div class="step"><span class="num">3</span><span class="txt">右上の「追加」をタップで完了</span></div>
+          </div>
+        </div>
+        <div class="install-card">
+          <div class="os"><span class="os-icon">🤖</span>Android</div>
+          <div class="steps">
+            <div class="step"><span class="num">1</span><span class="txt">Chromeで右上の「⋮」をタップ</span></div>
+            <div class="step"><span class="num">2</span><span class="txt">「アプリをインストール」を選択</span></div>
+            <div class="step"><span class="num">3</span><span class="txt">表示に従ってインストール完了</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="qr-box">
+        <div class="qr-img"><img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=8&data=https%3A%2F%2Fnature-experience-amami.github.io%2F" alt="ホームページQRコード" loading="lazy"></div>
+        <div class="qr-text">
+          <div class="url">nature-experience-amami.github.io</div>
+          <div class="note">当日はホーム画面のアイコンを開いて、ガイドにお見せください</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="dots" id="dots"></div>
+
+<script>
+(function(){
+  var slidesEl = document.getElementById('slides');
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var dotsEl = document.getElementById('dots');
+  var indexEl = document.getElementById('slideIndex');
+  var total = slides.length;
+
+  slides.forEach(function(_, i){
+    var d = document.createElement('span');
+    if (i === 0) d.classList.add('active');
+    dotsEl.appendChild(d);
+  });
+  var dots = Array.prototype.slice.call(dotsEl.children);
+
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+
+  function updateActive(){
+    var scrollLeft = slidesEl.scrollLeft;
+    var width = slidesEl.clientWidth;
+    var idx = Math.round(scrollLeft / width);
+    idx = Math.max(0, Math.min(total - 1, idx));
+    dots.forEach(function(d, i){ d.classList.toggle('active', i === idx); });
+    indexEl.textContent = pad(idx + 1) + ' / ' + pad(total);
+  }
+
+  var ticking = false;
+  slidesEl.addEventListener('scroll', function(){
+    if (!ticking) {
+      window.requestAnimationFrame(function(){ updateActive(); ticking = false; });
+      ticking = true;
+    }
+  });
+
+  updateActive();
+})();
+</script>
+
+</body>
+</html>
