@@ -344,6 +344,40 @@ function showScheduleDetail(r,id){
   $("scheduleDetailNotes").onchange=()=>{r.notes=$("scheduleDetailNotes").value;save();render();};
   $("deleteRecord").onclick=()=>{if(confirm("この予定を削除しますか？")){records=records.filter(x=>x.id!==id);save();render();$("detailModal").classList.add("hidden")}};
 }
+const CONTACT_METHODS=["公式LINE","メール","電話","SNSのDM","SIMDEF"];
+// 予約確定にすると基本情報は編集できないようにし、「未確定に戻す」で編集を解禁する。
+// 確定後に間違いに気づいた時は、一度未確定へ戻してから直せる、という運用に合わせている。
+function detailInfoHtml(r){
+  if(r.status!=="pending"){
+    return `
+    <div class="detail-grid">
+      <div class="detail-item"><b>状態</b>${r.status==="confirmed"?"予約確定":"未確定"}</div>
+      <div class="detail-item"><b>希望日</b>${fmt(r.desiredDate)}</div>
+      <div class="detail-item"><b>人数</b>${esc(r.people||"未入力")}名</div>
+      <div class="detail-item"><b>観察希望</b>${esc(r.creatures||"未入力")}</div>
+      <div class="detail-item"><b>電話</b>${esc(r.phone||"未入力")}</div>
+      <div class="detail-item"><b>メール</b>${esc(r.email||"未入力")}</div>
+      <div class="detail-item"><b>ホテル</b>${esc(r.hotel||"未入力")}</div>
+      <div class="detail-item"><b>問い合わせ方法</b>${esc(r.contactMethod)}</div>
+    </div>`;
+  }
+  return `
+    <p class="hint">未確定の間は、下の項目を直接編集できます。予約確定にすると編集できなくなります。</p>
+    <div class="grid">
+      <label>代表者氏名<input id="d-name" value="${esc(r.name)}"></label>
+      <label>電話<input id="d-phone" value="${esc(r.phone)}"></label>
+      <label>メール<input id="d-email" value="${esc(r.email)}"></label>
+      <label>希望日<input id="d-desiredDate" type="date" value="${esc(r.desiredDate)}"></label>
+      <label>人数<input id="d-people" type="number" min="1" value="${esc(r.people)}"></label>
+      <label>ホテル<input id="d-hotel" value="${esc(r.hotel)}"></label>
+      <label>観察したい生き物<input id="d-creatures" value="${esc(r.creatures)}"></label>
+      <label>問い合わせ方法
+        <select id="d-contactMethod">
+          ${CONTACT_METHODS.map(m=>`<option${r.contactMethod===m?" selected":""}>${m}</option>`).join("")}
+        </select>
+      </label>
+    </div>`;
+}
 function showDetail(id){
   const r=records.find(x=>x.id===id);if(!r)return;
   currentDetailId=id;
@@ -356,16 +390,7 @@ function showDetail(id){
       <pre style="white-space:pre-wrap;background:#f5f7f5;padding:12px;border-radius:10px;margin:0">${esc(h.text)}</pre>
     </div>`).join("");
   $("detail").innerHTML=`
-    <div class="detail-grid">
-      <div class="detail-item"><b>状態</b>${r.status==="confirmed"?"予約確定":"未確定"}</div>
-      <div class="detail-item"><b>希望日</b>${fmt(r.desiredDate)}</div>
-      <div class="detail-item"><b>人数</b>${esc(r.people||"未入力")}名</div>
-      <div class="detail-item"><b>観察希望</b>${esc(r.creatures||"未入力")}</div>
-      <div class="detail-item"><b>電話</b>${esc(r.phone||"未入力")}</div>
-      <div class="detail-item"><b>メール</b>${esc(r.email||"未入力")}</div>
-      <div class="detail-item"><b>ホテル</b>${esc(r.hotel||"未入力")}</div>
-      <div class="detail-item"><b>問い合わせ方法</b>${esc(r.contactMethod)}</div>
-    </div>
+    ${detailInfoHtml(r)}
     <h3>備考</h3>
     <textarea id="detailNotes" rows="3" placeholder="アレルギー、特別なご要望、その他メモなど">${esc(r.notes||"")}</textarea>
     <h3>操作</h3>
@@ -388,6 +413,12 @@ function showDetail(id){
   $("toggleStatus").onclick=()=>{r.status=r.status==="confirmed"?"pending":"confirmed";save();render();showDetail(id)};
   $("deleteRecord").onclick=()=>{if(confirm("この問い合わせを削除しますか？")){records=records.filter(x=>x.id!==id);save();render();$("detailModal").classList.add("hidden")}};
   $("detailNotes").onchange=()=>{r.notes=$("detailNotes").value;save();};
+  if(r.status==="pending"){
+    ["name","phone","email","desiredDate","people","hotel","creatures","contactMethod"].forEach(field=>{
+      const el=$(`d-${field}`);
+      if(el) el.onchange=()=>{r[field]=el.value;save();render();showDetail(id);};
+    });
+  }
   $("applyFollowup").onclick=()=>{
     const text=$("followupText").value.trim();
     if(!text){alert("貼り付ける内容がありません。");return;}
