@@ -7,6 +7,109 @@ const $=id=>document.getElementById(id);
 const today=()=>new Date().toISOString().slice(0,10);
 const save=()=>localStorage.setItem(KEY,JSON.stringify(records));
 
+// --- AI連携(サイト本体と同じCloudflare Worker + Geminiを共用) ---
+const WORKER_URL="https://nature-experience-ai.aegusaegus.workers.dev/";
+
+// 料金・持ち物など、返信文に正確に反映させたい固定の業務情報。変わったらここを直す。
+const GUIDE_FACTS=`
+- ツアー料金は2時間6,000円(小学生以下3,000円)。延長は1グループにつき1時間2,000円。
+- 保険に加入するため、参加者全員のフルネームと年齢、代表者の連絡先(電話またはメール)が必要。
+- 長靴を用意するので、参加者の靴のサイズを聞く。
+- 集合場所の相談や、夜間の送迎の相談にも対応可能。
+- 予約が確定したら、集合の日時・場所を伝え、長靴を履くので靴下を持参してもらうよう伝える。
+- 帰りが遅くなるので、夕食は事前に済ませておいてもらうよう伝える。
+- 懐中電灯・カメラ・飲み物・汗拭きタオルがあると楽しめる、と伝えるとよい。
+`.trim();
+
+// 返信文の見本(過去の実際の返信)。AIにはこの言い回し・構成をできるだけ真似てもらう。
+// 見本を差し替えたい時は、このまま書き換えればすぐ反映される。
+const REPLY_EXAMPLES=[
+`○○さま
+
+お問合せありがとうございます。ガイドの東田と申します。宜しくお願いします。
+お問合せ頂きました日程は両日共に空いておりますのでご案内可能です。2日間でも大丈夫ですよ。
+奄美大島の生き物を出来るだけ沢山観察できる様にご案内出来ればと思います。
+ツアーは2時間6000円で延長がひとグループで1時間2000円となります。生き物を探したり撮影しているとあっという間に時間が過ぎてしまいますので、延長もご検討ください。3時間から4時間程あれば色々と観察出来ると思います。生き物はそれぞれ生息環境が違いますので、日にちを分けても楽しめると思います。
+集合場所は龍郷町にあるビッグ2の駐車場にしたいと思いますが、夜間の運転に不安なら送迎も可能ですのでご連絡ください。
+
+それで宜しければ
+ツアー参加希望日
+保険に加入しますので、ツアーに参加される方のフルネームと年齢、代表者の連絡先
+長靴を準備しますので、靴のサイズを教えてください。
+
+ご検討よろしくお願いします。
+東田`,
+`○○さま
+お問合せありがとうございます。
+9月11日、12日は空いているのでご案内可能ですよ
+
+⑤ですが、その時の発生状況や天候によってかなり左右されます。
+時期的にアマミマルバネクワガタがシーズンに入る頃で、アマミミヤマクワガタもまだ観れる可能性もありますが、それぞれ環境が違うので一度に両方ご案内するとかなりの長時間コースになってしまいます。
+
+コロギスはマルモンコロギスが発生時期からだいぶ経ってしまっているのであまり観ることが出来ません。
+コバネコロギスやハネナシコロギスは観れる可能性はあります。
+
+マルバネを探しに行くのであれば、名瀬からですとポイントまで1時間程かかるので18時頃出発して3時間から4時間程の所用時間がかかります。林道沿いからすぐ見つかる場合もありますが、居なければ林内を歩いて探します。（タイミングによっては見つからない可能性もあります）
+アマミミヤマクワガタを観察するには、他のクロウサギガイドの方の迷惑にならない様に少し遅めの時間帯になります。こちらも名瀬から少し離れています。
+20時半頃から3時間程度かかる見込みです。
+マルバネクワガタを早めに観察する事が出来れば、切り上げてアマミミヤマクワガタを探しに行く事も可能です。
+料金は2時間大人6000円、小学生以下3000円で延長がひとグループで1時間2000円になります。
+
+ご検討宜しくお願いします
+東田`,
+`こんにちは　お問合せありがとうございます。ガイドの東田と申します。宜しくお願いします。
+お問合せ頂きました日程だと9月13日も14日も埋まっていて
+
+9月12日が空いております。
+
+料金は2時間6000円で延長がひとグループで1時間2000円となっております。生き物を探したり撮影しているとあっという間に時間が過ぎてしまいますので、延長も併せてご検討ください。
+それでも宜しければ、保険に加入しますので、ツアーに参加される方のフルネームと年齢、代表者の連絡先
+宿泊予定ホテルを教えてください。
+それと長靴を準備しますので、靴のサイズも教えてください。
+
+ご検討宜しくお願いします。
+東田`,
+`ご予約ありがとうございます。
+それでは明日8月20日、19時30分にウエストコートwaテラスまでお迎えに伺いますね。
+長靴を履くので靴下を履いてきてください。
+帰りは遅くなりますので夕食は済ませておいてください。
+飲み物や汗拭きタオルなどあると楽しめると思います。
+奄美の生き物を出来るだけ沢山紹介出来る様にコースを組み立てたいと思います。
+それではお会い出来るのを楽しみにしております。
+東田`,
+`いよいよ奄美旅行ですね！
+8月17日月曜日19時40分に山羊島ホテル前までお迎えに伺いますので宜しくお願いします。
+帰りは遅くなりますので夕食は済ませておいてください。`,
+`○○さま
+お問合せありがとうございます。ガイドの東田と申します。
+お問合せ頂きました7月29日、30日は両日とも予定が入っております。
+今のところ27、28日なら空いております。
+日程の調整が出来るのであれば、ご案内したいと思います。
+何か聞きたい事などあれば気軽に質問してくださいね。
+宜しくお願いします。
+
+東田
+
+もうすでに予約が入っているかもしれませんが
+フィールドワークの西さんやアマミノダイボウケンの高川さんへも問い合わせてみてください`,
+`ご予約ありがとうございます。
+7月18日のナイトツアーで予定を組んでおきますね
+長靴も準備しておきます。
+当日は靴下を履いて来てください。
+懐中電灯とカメラがあると楽しめると思います。特にお子さんと一緒に見た生き物の記録をとって後で種類を自分で調べたりするととても勉強になりますよ。
+それでは当日お会い出来るのを楽しみにしております！`,
+];
+
+async function callWorker(action,payload){
+  const res=await fetch(WORKER_URL,{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({action,...payload}),
+  });
+  if(!res.ok) throw new Error("worker error "+res.status);
+  return res.json();
+}
+
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 
 // --- バックアップ(パスワード暗号化) ---
@@ -190,7 +293,8 @@ function getMissing(){
 function renderMissing(){
   const miss=getMissing();$("missing").innerHTML=miss.length?miss.map(x=>`<span>${esc(x)}</span>`).join(""):"<span style='background:#dcecdf'>基本情報はそろっています</span>";
 }
-function makeReply(){
+// AI(Gemini)が使えない/失敗した時の、ローカルだけで組み立てるフォールバック用の返信文。
+function buildTemplateReply(){
   const n=$("name").value||"お客様",d=$("desiredDate").value, st=$("dateStatus").value;
   const alts=[$("alt1").value,$("alt2").value].filter(Boolean).map(fmt);
   const miss=getMissing();
@@ -209,22 +313,61 @@ function makeReply(){
     miss.forEach(x=>s+=`・${x}\n`);
   } else s+=`\n内容を確認のうえ、予約についてご案内いたします。\n`;
   s+="\nよろしくお願いいたします。";
-  $("reply").value=s;
+  return s;
+}
+async function makeReply(){
+  const btn=$("makeReply");
+  const original=btn?btn.textContent:null;
+  if(btn){btn.disabled=true;btn.textContent="作成中…";}
+  const context={
+    name:$("name").value||"お客様",
+    desiredDate:$("desiredDate").value?fmt($("desiredDate").value):"",
+    dateStatus:$("dateStatus").value,
+    alt1:$("alt1").value?fmt($("alt1").value):"",
+    alt2:$("alt2").value?fmt($("alt2").value):"",
+    creatures:$("creatures").value,
+    people:$("people").value,
+    hotel:$("hotel").value,
+    missing:getMissing(),
+  };
+  try{
+    const ai=await callWorker("draftReply",{context,examples:REPLY_EXAMPLES,facts:GUIDE_FACTS});
+    if(!ai.reply) throw new Error("empty reply");
+    $("reply").value=ai.reply;
+  }catch(err){
+    console.error("AI返信作成に失敗、テンプレートにフォールバックします",err);
+    $("reply").value=buildTemplateReply();
+  }
+  if(btn){btn.disabled=false;btn.textContent=original;}
 }
 $("newBtn").onclick=openEditor;
 $("closeEditor").onclick=()=>{$("editor").classList.add("hidden")};
 $("clearBtn").onclick=resetEditor;
 $("search").oninput=render;$("statusFilter").onchange=render;
-$("parseBtn").onclick=()=>{
+$("parseBtn").onclick=async()=>{
   const raw=$("rawText").value;
-  const p=parseText(raw);
+  if(!raw.trim()){alert("問い合わせ内容を貼り付けてください。");return;}
+  const btn=$("parseBtn");
+  const original=btn.textContent;
+  btn.disabled=true;btn.textContent="読み取り中…";
+  let p,participants;
+  try{
+    const ai=await callWorker("parseInquiry",{text:raw});
+    p={name:ai.name||"",phone:ai.phone||"",email:ai.email||"",desiredDate:ai.desiredDate||"",people:ai.people||"",hotel:ai.hotel||"",creatures:ai.creatures||""};
+    participants=Array.isArray(ai.participants)?ai.participants:[];
+  }catch(err){
+    console.error("AI読み取りに失敗、簡易抽出にフォールバックします",err);
+    p=parseText(raw);
+    participants=parseParticipants(raw);
+  }
+  btn.disabled=false;btn.textContent=original;
   Object.entries(p).forEach(([k,v])=>{if($(k))$(k).value=v});
   $("parsedArea").classList.remove("hidden"); renderMissing();
-  parsedParticipants=parseParticipants(raw);
+  parsedParticipants=participants;
   renderParticipantEditor();
   $("desiredDate").oninput=renderMissing;$("name").oninput=renderMissing;$("creatures").oninput=renderMissing;$("phone").oninput=renderMissing;$("email").oninput=renderMissing;
   $("people").oninput=()=>{syncParticipantEditorToState();renderMissing();renderParticipantEditor()};
-  makeReply();
+  await makeReply();
 };
 $("dateStatus").onchange=makeReply;$("alt1").onchange=makeReply;$("alt2").onchange=makeReply;
 $("makeReply").onclick=makeReply;
@@ -339,8 +482,17 @@ bindParticipantTabs($("participantFieldsEditor"),"np",()=>parsedParticipants,v=>
 // 返信メールなど、後から届いた文章を読み取って既存の問い合わせに反映する。
 // 「代表者氏名」のような基本項目は、すでに入力済みなら上書きしない(誤読で消さないため)。
 // 参加者情報は、まだ確定していないタブだけを新しい内容で置き換える(確定済みは保護する)。
-function applyFollowupText(r,text){
-  const p=parseText(text);
+async function applyFollowupText(r,text){
+  let p,extracted;
+  try{
+    const ai=await callWorker("parseInquiry",{text});
+    p={name:ai.name||"",phone:ai.phone||"",email:ai.email||"",desiredDate:ai.desiredDate||"",people:ai.people||"",hotel:ai.hotel||"",creatures:ai.creatures||""};
+    extracted=Array.isArray(ai.participants)?ai.participants:[];
+  }catch(err){
+    console.error("AI読み取りに失敗、簡易抽出にフォールバックします",err);
+    p=parseText(text);
+    extracted=parseParticipants(text);
+  }
   ["name","phone","email","desiredDate","people","hotel"].forEach(key=>{
     if(!r[key]&&p[key]) r[key]=p[key];
   });
@@ -349,7 +501,6 @@ function applyFollowupText(r,text){
     const added=p.creatures.split(/[、,]/).map(s=>s.trim()).filter(Boolean);
     r.creatures=Array.from(new Set([...existing,...added])).join("、");
   }
-  const extracted=parseParticipants(text);
   if(extracted.length){
     if(!Array.isArray(r.participants)) r.participants=[];
     extracted.forEach((ep,i)=>{
@@ -483,10 +634,12 @@ function showDetail(id){
       if(el) el.onchange=()=>{r[field]=el.value;save();render();showDetail(id);};
     });
   }
-  $("applyFollowup").onclick=()=>{
+  $("applyFollowup").onclick=async()=>{
     const text=$("followupText").value.trim();
     if(!text){alert("貼り付ける内容がありません。");return;}
-    applyFollowupText(r,text);
+    const btn=$("applyFollowup");
+    btn.disabled=true;btn.textContent="読み取り中…";
+    await applyFollowupText(r,text);
     save();
     showDetail(id);
   };

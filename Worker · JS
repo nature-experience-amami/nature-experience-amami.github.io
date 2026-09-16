@@ -1,4 +1,4 @@
-// Cloudflare Worker: 旅行時期の質問に、実際の観察データ(creatures.json)だけを根拠に答える
+// Cloudflare Worker: 旅行時期の質問に答える(ask) + customer-appの問い合わせ読み取り・返信作成(parseInquiry / draftReply)
 // 環境変数(Secrets): GEMINI_API_KEY, ALLOWED_ORIGIN(例: https://nature-experience-amami.github.io)
 
 const MODEL = "gemini-3.5-flash"; // モデル名は変更される可能性があるので、時々公式ドキュメントで確認してください
@@ -44,18 +44,30 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { headers: cors });
     if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: cors });
 
-    const { message, lang } = await request.json();
-    const config = LANG_CONFIG[lang] || LANG_CONFIG.ja;
+    const body = await request.json();
+    // actionが無ければ、これまで通り「訪問者からの質問に答える」動作(ask)として扱う。
+    // (index.htmlなど既存のフロント側は今もactionを送ってこないので、後方互換のためのデフォルト)
+    const action = body.action || "ask";
 
-    if (!message || message.length > 200) {
-      return json({ reply: config.tooLong, creature_ids: [] }, cors);
-    }
+    if (action === "parseInquiry") return handleParseInquiry(body, env, cors);
+    if (action === "draftReply") return handleDraftReply(body, env, cors);
+    return handleAsk(body, env, cors);
+  },
+};
 
-    const creatures = await (await fetch(config.creaturesUrl)).json();
+async function handleAsk(body, env, cors) {
+  const { message, lang } = body;
+  const config = LANG_CONFIG[lang] || LANG_CONFIG.ja;
 
-    // Geminiには「回答文」と「該当する生き物のID」だけをJSONで返させる。
-    // 写真パスそのものは作らせない(捏造防止)。パスは必ずcreatures.jsonから実データを引く。
-    const prompt = `You are a night-tour guide on Amami Oshima, Japan.
+  if (!message || message.length > 200) {
+    return json({ reply: config.tooLong, creature_ids: [] }, cors);
+  }
+
+  const creatures = await (await fetch(config.creaturesUrl)).json();
+
+  // Geminiには「回答文」と「該当する生き物のID」だけをJSONで返させる。
+  // 写真パスそのものは作らせない(捏造防止)。パスは必ずcreatures.jsonから実データを引く。
+  const prompt = `You are a night-tour guide on Amami Oshima, Japan.
 Answer the customer's question using ONLY the [Creature data] below as your source.
 Base your answer only on each creature's description, months, name, and category_name fields.
 Never invent information that isn't in the data; if the data doesn't cover the question, say so (in ${config.name}) rather than guessing.
@@ -75,40 +87,129 @@ ${JSON.stringify(creatures)}
 [Customer's question]
 ${message}`;
 
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
-        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
-      }
-    );
-    const data = await res.json();
-    const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
+  const rawText = await callGemini(prompt, env);
+  const parsed = safeParseAsk(rawText, creatures, config);
+  return json(parsed, cors);
+}
 
-    const parsed = safeParse(rawText, creatures, config);
-    return json(parsed, cors);
-  },
-};
+// 問い合わせ・返信メールの文章から、customer-appの各項目を読み取る。
+// 書かれていない項目は空にする(捏造しない)よう、プロンプトで強く指示する。
+async function handleParseInquiry(body, env, cors) {
+  const text = (body.text || "").trim();
+  if (!text) return json({ error: "empty text" }, cors, 400);
+
+  const today = new Date().toISOString().slice(0, 10);
+  const prompt = `You are helping a private Japanese nature tour guide extract structured booking information from a raw customer inquiry or reply email written in Japanese.
+Extract ONLY information that is explicitly stated in the text — never invent, guess, or infer information that isn't there. If a field is not mentioned, leave it as an empty string (or an empty array for participants).
+A question the customer is ASKING (e.g. "宿泊予定ホテルはどこですか？") is never an answer — never confuse it with information the customer is providing.
+Today's date is ${today}. If the text gives only a month and day (no year), assume the nearest such date that is today or later (roll over to next year only if that month/day has already passed this year).
+
+Return ONLY this JSON shape, with no extra text and no markdown code fences:
+{
+  "name": "the representative/booking person's full name, or empty string",
+  "phone": "phone number exactly as written, or empty string",
+  "email": "email address exactly as written, or empty string",
+  "desiredDate": "YYYY-MM-DD if a specific calendar date is clearly stated, or empty string",
+  "people": "number of participants as a digit string, or empty string",
+  "hotel": "the name of the hotel/accommodation they are staying at, or empty string",
+  "creatures": "a 、-separated list of specific creatures/animals they want to see, in Japanese, or empty string",
+  "participants": [{"name": "full name", "age": "age as a string", "shoeSize": "e.g. 26.5cm"}]
+}
+participants should list every individual participant explicitly named with at least a name; use an empty array if none are named individually.
+
+[Email text]
+${text}`;
+
+  const rawText = await callGemini(prompt, env);
+  const parsed = safeParseJSON(rawText);
+  if (!parsed) return json({ error: "failed to parse AI response" }, cors, 502);
+
+  return json(
+    {
+      name: parsed.name || "",
+      phone: parsed.phone || "",
+      email: parsed.email || "",
+      desiredDate: parsed.desiredDate || "",
+      people: parsed.people || "",
+      hotel: parsed.hotel || "",
+      creatures: parsed.creatures || "",
+      participants: Array.isArray(parsed.participants) ? parsed.participants : [],
+    },
+    cors
+  );
+}
+
+// ガイド本人の過去の返信例(見本)と、固定の業務情報(料金など)をもとに、
+// その人の言い回しに寄せた返信文を作らせる。
+async function handleDraftReply(body, env, cors) {
+  const context = body.context || {};
+  const examples = Array.isArray(body.examples) ? body.examples : [];
+  const facts = body.facts || "";
+
+  const examplesBlock = examples
+    .map((ex, i) => `Example ${i + 1}:\n${ex}`)
+    .join("\n\n");
+
+  const prompt = `You are 東田 (Higashida), a private Japanese night-tour guide on Amami Oshima, writing a reply email to a customer inquiry.
+Write ONLY the body text of the reply, in natural Japanese, matching the tone, sentence structure, phrasing habits, and sign-off style shown in [Past reply examples] as closely as possible.
+Do not invent any facts that are not given in [Known facts] or [Booking details]. If information is missing, ask for it politely the way the examples do, instead of guessing.
+Do not add a subject line, and do not wrap the reply in quotes or markdown.
+
+[Known facts — always accurate, use exact wording/numbers when relevant]
+${facts}
+
+[Past reply examples — copy this voice and structure]
+${examplesBlock}
+
+[Booking details for this reply]
+${JSON.stringify(context)}
+
+Write the reply now, in Japanese, as plain text only.`;
+
+  const rawText = await callGemini(prompt, env);
+  if (!rawText || !rawText.trim()) return json({ error: "empty AI response" }, cors, 502);
+
+  return json({ reply: rawText.trim() }, cors);
+}
+
+async function callGemini(prompt, env) {
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+    }
+  );
+  const data = await res.json();
+  return data?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
+}
 
 // Geminiがコードブロック(```json ... ```)を付けてしまった場合も剥がしてから解析する。
 // 解析に失敗した場合は、生成文をそのままreplyとして返し、creature_idsは空にする(壊れない設計)。
-function safeParse(rawText, creatures, config) {
+function safeParseAsk(rawText, creatures, config) {
+  const obj = safeParseJSON(rawText);
+  if (!obj) return { reply: rawText || config.fallback, creature_ids: [] };
+  const validIds = new Set(creatures.map((c) => c.id));
+  const ids = Array.isArray(obj.creature_ids)
+    ? [...new Set(obj.creature_ids.filter((id) => validIds.has(id)))]
+    : [];
+  return { reply: obj.reply ?? config.fallback, creature_ids: ids };
+}
+
+// Geminiの出力からJSONオブジェクトを取り出す共通ヘルパー。失敗したらnullを返す。
+function safeParseJSON(rawText) {
   const cleaned = rawText.replace(/```json|```/g, "").trim();
   try {
-    const obj = JSON.parse(cleaned);
-    const validIds = new Set(creatures.map((c) => c.id));
-    const ids = Array.isArray(obj.creature_ids)
-      ? [...new Set(obj.creature_ids.filter((id) => validIds.has(id)))]
-      : [];
-    return { reply: obj.reply ?? config.fallback, creature_ids: ids };
+    return JSON.parse(cleaned);
   } catch {
-    return { reply: rawText || config.fallback, creature_ids: [] };
+    return null;
   }
 }
 
-function json(body, cors) {
+function json(body, cors, status) {
   return new Response(JSON.stringify(body), {
+    status: status || 200,
     headers: { "Content-Type": "application/json", ...cors },
   });
 }
