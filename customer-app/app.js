@@ -100,14 +100,23 @@ const REPLY_EXAMPLES=[
 それでは当日お会い出来るのを楽しみにしております！`,
 ];
 
-async function callWorker(action,payload){
-  const res=await fetch(WORKER_URL,{
-    method:"POST",
-    headers:{"Content-Type":"application/json"},
-    body:JSON.stringify({action,...payload}),
-  });
-  if(!res.ok) throw new Error("worker error "+res.status);
-  return res.json();
+// Geminiが混雑していると応答がとても遅くなる/固まることがあるため、
+// 一定時間で自動的にあきらめて、呼び出し元のフォールバック処理に切り替える。
+async function callWorker(action,payload,timeoutMs=20000){
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),timeoutMs);
+  try{
+    const res=await fetch(WORKER_URL,{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({action,...payload}),
+      signal:controller.signal,
+    });
+    if(!res.ok) throw new Error("worker error "+res.status);
+    return await res.json();
+  }finally{
+    clearTimeout(timer);
+  }
 }
 
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -369,7 +378,8 @@ $("parseBtn").onclick=async()=>{
   $("people").oninput=()=>{syncParticipantEditorToState();renderMissing();renderParticipantEditor()};
   await makeReply();
 };
-$("dateStatus").onchange=makeReply;$("alt1").onchange=makeReply;$("alt2").onchange=makeReply;
+// 希望日の状態や候補日を変えるたびに自動でAIを呼ぶと、無駄にクォータを消費するため、
+// 「返信案を作る」ボタンを押した時だけ作成する(自動作成はしない)。
 $("makeReply").onclick=makeReply;
 $("copyReply").onclick=async()=>{await navigator.clipboard.writeText($("reply").value);$("copyReply").textContent="コピーしました";setTimeout(()=>$("copyReply").textContent="返信をコピー",1200)};
 $("saveBtn").onclick=()=>{
@@ -610,8 +620,13 @@ function showDetail(id){
     <div class="actions"><button class="primary" id="applyFollowup">読み取って反映</button></div>
     <h3>やり取りの履歴</h3>
     ${historyHtml}
-    <h3>返信案</h3><textarea id="detailReply" rows="8">${esc(r.reply||"")}</textarea>
-    <div class="actions"><button class="ghost" id="copyDetail">返信をコピー</button></div>`;
+    <h3>返信案</h3>
+    <p class="hint">やり取りを重ねて返信内容を書き直した時は、「変更を保存」を押すとここに残ります。</p>
+    <textarea id="detailReply" rows="8">${esc(r.reply||"")}</textarea>
+    <div class="actions">
+      <button class="primary" id="saveReply">変更を保存</button>
+      <button class="ghost" id="copyDetail">返信をコピー</button>
+    </div>`;
   $("detailModal").classList.remove("hidden");
   if($("toggleStatus")) $("toggleStatus").onclick=()=>{r.status=r.status==="confirmed"?"pending":"confirmed";save();render();showDetail(id)};
   if($("completeBtn")) $("completeBtn").onclick=()=>{r.status="completed";save();render();showDetail(id)};
@@ -642,6 +657,12 @@ function showDetail(id){
     await applyFollowupText(r,text);
     save();
     showDetail(id);
+  };
+  $("saveReply").onclick=()=>{
+    r.reply=$("detailReply").value;
+    save();
+    $("saveReply").textContent="保存しました";
+    setTimeout(()=>{$("saveReply").textContent="変更を保存";},1200);
   };
   $("copyDetail").onclick=async()=>{await navigator.clipboard.writeText($("detailReply").value);$("copyDetail").textContent="コピーしました"};
 }
