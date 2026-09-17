@@ -33,7 +33,7 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 ZUKAN_CATEGORIES = ["aquatic-insects", "beetles", "other-insects", "kani", "birds"]
 
 # 翻訳版(generate_zukan_page_i18n.py)が実際に生成しているカテゴリー
-TRANSLATED_ZUKAN_CATEGORIES = {"aquatic-insects", "birds", "beetles"}
+TRANSLATED_ZUKAN_CATEGORIES = {"aquatic-insects", "birds", "beetles", "other-insects"}
 
 # 写真フォルダ名がMarkdownのidと違う場合の対応表。(カテゴリ, Markdownのid): 実際の写真フォルダ名
 PHOTO_DIR_ALIASES = {

@@ -1237,6 +1237,235 @@
     "page_path": "creatures/mammals/watase-jinezumi.html"
   },
   {
+    "id": "amami-hirata-hishibatta",
+    "name": "Amami Flat Pygmy Grasshopper",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      10
+    ],
+    "description": "Pygmy grasshopper family, Amami Flat Pygmy Grasshopper *Austrohancockia amamiensis* Yamasaki, 1994\n\nA species endemic to Japan, found on Amami Oshima and Tokunoshima. Body length is about 10mm in males and about 14.5mm in females. Its flattened, broadly spread pronotum is distinctive, and it lives on the leaf-littered forest floor, camouflaged to match its surroundings. It moves quickly and leaps away when startled.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
+    ],
+    "page_path": "creatures/other-insects/amami-hirata-hishibatta.html"
+  },
+  {
+    "id": "aosuji-ageha",
+    "name": "Common Bluebottle",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Swallowtail family, Common Bluebottle *Graphium sarpedon nipponum* Fruhstorfer, 1903\n\nA fast-flying, striking swallowtail with a band of blue-green running across both wings on an otherwise black background. It feeds on camphor-family trees such as camphor and machilus, and is seen island-wide on Amami Oshima. With several generations a year, it remains on the wing for a long stretch of the warmer months.",
+    "photos": [
+      "../images/creatures/other-insects/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg"
+    ],
+    "page_path": "creatures/other-insects/aosuji-ageha.html"
+  },
+  {
+    "id": "hanenaga-tyou-tombo",
+    "name": "Amami Longwing Dragonfly",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Skimmer family, Amami Longwing Dragonfly *Rhyothemis severini* Ris, 1913\n\nA rare dragonfly confirmed in Japan only on Amami Oshima. Its body is black with a deep green sheen, and its clear wings carry indigo markings. It favors ponds thick with emergent vegetation, where males patrol low over the water waiting for females. Because its habitat and population are extremely limited, it is designated a Nationally Rare Species of Wild Fauna and Flora under Japan's Act on Conservation of Endangered Species, and capture is prohibited.",
+    "photos": [
+      "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000001_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000002_20250731_17.jpg"
+    ],
+    "page_path": "creatures/other-insects/hanenaga-tyou-tombo.html"
+  },
+  {
+    "id": "ishigake-tyou",
+    "name": "Common Map Butterfly",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "Brush-footed butterfly family, Common Map Butterfly *Cyrestis thyodamas* Boisduval, 1836\n\nA butterfly with truly distinctive wings — a white ground crossed by a dark brown, tortoiseshell-like pattern. Found from the Kii Peninsula westward through the Nansei Islands, including Amami Oshima. Larvae feed on fig-family plants such as Ficus erecta and banyan. It overwinters as an adult and produces repeated generations from spring into late autumn during the warmer months.",
+    "photos": [
+      "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000001_20250605_22.jpg",
+      "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000002_20241124_21.jpg"
+    ],
+    "page_path": "creatures/other-insects/ishigake-tyou.html"
+  },
+  {
+    "id": "kuchiki-koorogi",
+    "name": "Rotten Wood Cricket",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Bush cricket family (Eneopteridae) Rotten Wood Cricket *Duolandrevus ivani*\n\nA somewhat large cricket-like insect, 31–35mm long. Widely distributed across the Nansei Islands, including Amami Oshima and Tokunoshima, it lives hidden beneath the bark of rotting wood, as its Japanese name suggests. At night it calls with a distinctive \"gwiii, gwiii.\" In warm regions, adults can be seen year-round regardless of season.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg"
+    ],
+    "page_path": "creatures/other-insects/kuchiki-koorogi.html"
+  },
+  {
+    "id": "madara-kourogi",
+    "name": "Spotted Bush Cricket",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "Bush cricket family (Eneopteridae) Spotted Bush Cricket *Cardiodactylus guttulus*\n\nAlthough its Japanese name means \"cricket,\" it is taxonomically a bush cricket. It lives in the forests of the Nansei Islands south of the Tokara Islands, and in the Amami Islands adults appear from around late August. It often gathers on tree trunks day and night, calling with a sharp \"chit, chit\" sound. It is abundant and serves as an important food source for reptiles and birds.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/madara-kourogi/madara-kourogi_000001_20250914_12.jpg"
+    ],
+    "page_path": "creatures/other-insects/madara-kourogi.html"
+  },
+  {
+    "id": "marumon-korogisu",
+    "name": "Round-spot Raspy Cricket",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "description": "Raspy cricket family (Gryllacrididae) Round-spot Raspy Cricket *Prosopogryllacris okadai* Ichikawa, 2001\n\nAn arboreal raspy cricket found on Takara Island, Amami Oshima, and Kakeroma Island. Its antennae are far longer than its body. By day it hides in a nest of leaves bound together with its own silk, emerging at night to be active. Strongly carnivorous, it preys on other insects. It is very wary and difficult to spot.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000002_20250604_23.jpg",
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000003_20250703_01.jpg"
+    ],
+    "page_path": "creatures/other-insects/marumon-korogisu.html"
+  },
+  {
+    "id": "okinawa-tyou-tombo",
+    "name": "Okinawa Variegated Flutterer",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Skimmer family, Okinawa Variegated Flutterer *Rhyothemis variegata imperatrix* Selys, 1887\n\nA subspecies of the Variegated Flutterer found across the Nansei Islands, seen widely from Amami Oshima through Okinawa, Miyako, and the Yaeyama Islands. About 40mm long, with dark brown wing markings that vary considerably in size and shape between individuals. Fluttering around ponds and rice paddies, it flies with a butterfly-like, flitting motion.",
+    "photos": [
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000001_20250731_16.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000002_20250731_16.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000003_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000004_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000005_20250731_17.jpg"
+    ],
+    "page_path": "creatures/other-insects/okinawa-tyou-tombo.html"
+  },
+  {
+    "id": "ootomoe",
+    "name": "Great Ring-spot Moth",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "Owlet moth family (Erebidae in recent classification) Great Ring-spot Moth *Erebus ephesperis* (Hübner, [1823])\n\nThe largest of the tomoe moths, with a wingspan reaching 90–100mm. Its brown wings have a wavy, undulating edge and a ring-shaped white marking on the forewing — the source of its Japanese name, meaning \"great comma.\" The larvae feed on Smilax (catbrier) plants, and the adults also come to lights. On Amami Oshima, it has also been documented academically as a pollinator of Hoya (wax vine) flowers.",
+    "photos": [
+      "../images/creatures/other-insects/ga/ootomoe/ootomoe_000001_20250808_01.jpg"
+    ],
+    "page_path": "creatures/other-insects/ootomoe.html"
+  },
+  {
+    "id": "ryuukyuu-asagi-madara",
+    "name": "Blue Tiger",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Brush-footed butterfly family, Blue Tiger *Ideopsis similis* (Linnaeus, 1758)\n\nA milkweed butterfly with pale blue markings, gliding gracefully and unhurriedly through the air. Found from Amami Oshima southward, its larvae feed on Marsdenia tinctoria. On winter days when the temperature drops below 15°C, hundreds can be seen clustering together to overwinter in the forests of the island's valleys — a well-known winter scene on Amami Oshima.",
+    "photos": [
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000002_20260106_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000003_20250124_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000004_20250204_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000005_20250205_12.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000006_20250206_12.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000007_20260210_22.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000008_20260210_22.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000009_20251218_11.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000010_20251219_11.jpg"
+    ],
+    "page_path": "creatures/other-insects/ryuukyuu-asagi-madara.html"
+  },
+  {
+    "id": "taiwan-kutsuwamushi",
+    "name": "Giant Katydid",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Katydid family (Tettigoniidae) Giant Katydid *Mecopoda elongata* (Linnaeus, 1758)\n\nA katydid found in warm regions from the Izu Peninsula southward, including Amami Oshima and the rest of the Nansei Islands. It begins calling in late summer, and as autumn deepens it sings loudly with a rattling \"gyururururu.\" Its early calls are spaced apart — \"gyuu, gyuu\" — before gradually becoming one continuous, unbroken sound.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg"
+    ],
+    "page_path": "creatures/other-insects/taiwan-kutsuwamushi.html"
+  },
+  {
     "id": "akamata",
     "name": "Akamata Snake",
     "category": "snakes",

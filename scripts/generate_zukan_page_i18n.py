@@ -25,6 +25,55 @@ TEMPLATE = ROOT / "templates" / "zukan.i18n.html"
 OUTPUT_DIR_NAME = "categories"
 
 CATEGORY_CONTENT_I18N = {
+    "other-insects": {
+        "en": {
+            "hero_lead": (
+                "From butterflies and dragonflies to moths, crickets, and katydids — the "
+                "insects of Amami Oshima beyond beetles and aquatic insects."
+            ),
+            "about_paragraphs": [
+                "This page adds species gradually, in field-guide format, as photos and "
+                "information come together. Click a photo or name to see that species' "
+                "full page.",
+            ],
+            "note": (
+                "Some species shown here — including a dragonfly found almost nowhere else "
+                "in Japan — are protected under Japan's Act on Conservation of Endangered "
+                "Species and may not be collected. Please observe gently, without disturbing "
+                "the animals or their habitat."
+            ),
+        },
+        "es": {
+            "hero_lead": (
+                "De mariposas y libélulas a polillas, grillos y saltamontes: los insectos de "
+                "Amami Oshima más allá de los escarabajos y los insectos acuáticos."
+            ),
+            "about_paragraphs": [
+                "Esta página se va completando poco a poco, especie por especie, en formato "
+                "de guía de campo, conforme reunimos fotos e información. Haga clic en una "
+                "foto o un nombre para ver la página completa de esa especie.",
+            ],
+            "note": (
+                "Algunas especies presentadas aquí — entre ellas una libélula que apenas se "
+                "encuentra en otro lugar de Japón — están protegidas por la Ley de "
+                "Conservación de Especies en Peligro de Japón y no pueden recolectarse. "
+                "Obsérvelas con cuidado, sin perturbar a los animales ni su hábitat."
+            ),
+        },
+        "zh": {
+            "hero_lead": (
+                "从蝴蝶、蜻蜓到蛾类、蟋蟀与螽斯——甲虫和水生昆虫之外，奄美大岛的昆虫们。"
+            ),
+            "about_paragraphs": [
+                "本页面会随着照片与资料的积累，逐步以图鉴形式增加物种。点击照片或名称即可"
+                "查看该物种的详细页面。",
+            ],
+            "note": (
+                "本页介绍的部分物种——包括一种在日本其他地方几乎难觅踪迹的蜻蜓——受日本"
+                "《濒危物种保护法》保护，禁止采集。请轻声观察，避免打扰生物及其栖息环境。"
+            ),
+        },
+    },
     "beetles": {
         "en": {
             "hero_lead": (

@@ -1237,6 +1237,235 @@
     "page_path": "creatures/mammals/watase-jinezumi.html"
   },
   {
+    "id": "amami-hirata-hishibatta",
+    "name": "Saltamontes Pigmeo Plano de Amami",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      10
+    ],
+    "description": "Familia Tetrigidae, Saltamontes Pigmeo Plano de Amami *Austrohancockia amamiensis* Yamasaki, 1994\n\nUna especie endémica de Japón, presente en Amami Oshima y Tokunoshima. La longitud corporal es de unos 10mm en los machos y unos 14,5mm en las hembras. Su pronoto aplanado y ampliamente extendido es característico, y vive en el suelo del bosque cubierto de hojarasca, camuflado para mezclarse con su entorno. Se mueve rápidamente y salta para huir cuando se le sobresalta.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
+    ],
+    "page_path": "creatures/other-insects/amami-hirata-hishibatta.html"
+  },
+  {
+    "id": "aosuji-ageha",
+    "name": "Mariposa Azulada Común",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Familia Papilionidae, Mariposa Azulada Común *Graphium sarpedon nipponum* Fruhstorfer, 1903\n\nUna mariposa vistosa y de vuelo rápido, con una banda azul verdosa que atraviesa ambas alas sobre un fondo negro. Se alimenta de árboles de la familia del alcanforero, como el alcanforero y el machilus, y se encuentra por toda la isla de Amami Oshima. Con varias generaciones al año, permanece en vuelo durante gran parte de la temporada cálida.",
+    "photos": [
+      "../images/creatures/other-insects/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg"
+    ],
+    "page_path": "creatures/other-insects/aosuji-ageha.html"
+  },
+  {
+    "id": "hanenaga-tyou-tombo",
+    "name": "Libélula Alilarga de Amami",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Familia Libellulidae, Libélula Alilarga de Amami *Rhyothemis severini* Ris, 1913\n\nUna libélula rara confirmada en Japón únicamente en Amami Oshima. Su cuerpo es negro con un brillo verde intenso, y sus alas transparentes presentan manchas de color añil. Prefiere estanques con abundante vegetación emergente, donde los machos patrullan cerca de la superficie del agua esperando a las hembras. Debido a que su hábitat y su población son extremadamente limitados, está designada como Especie Silvestre Rara Nacional según la Ley de Conservación de Especies en Peligro de Japón, y su captura está prohibida.",
+    "photos": [
+      "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000001_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000002_20250731_17.jpg"
+    ],
+    "page_path": "creatures/other-insects/hanenaga-tyou-tombo.html"
+  },
+  {
+    "id": "ishigake-tyou",
+    "name": "Mapa Común",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "Familia Nymphalidae, Mapa Común *Cyrestis thyodamas* Boisduval, 1836\n\nUna mariposa de alas verdaderamente singulares, con un fondo blanco recorrido por un patrón de líneas pardo oscuro que recuerda a un caparazón de tortuga. Se distribuye desde la península de Kii hacia el oeste, a través de las islas Nansei, incluida Amami Oshima. Las larvas se alimentan de plantas de la familia de la higuera, como Ficus erecta y el baniano. Pasa el invierno como adulto y produce generaciones sucesivas desde la primavera hasta finales del otoño.",
+    "photos": [
+      "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000001_20250605_22.jpg",
+      "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000002_20241124_21.jpg"
+    ],
+    "page_path": "creatures/other-insects/ishigake-tyou.html"
+  },
+  {
+    "id": "kuchiki-koorogi",
+    "name": "Grillo de la Madera Podrida",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Familia de grillos arbóreos (Eneopteridae) Grillo de la Madera Podrida *Duolandrevus ivani*\n\nUn insecto parecido a un grillo, de tamaño algo grande, de 31 a 35mm de longitud. Ampliamente distribuido por las islas Nansei, incluidas Amami Oshima y Tokunoshima, vive oculto bajo la corteza de madera podrida, tal como sugiere su nombre en japonés. Por la noche emite un canto característico, \"gwiii, gwiii\". En las regiones cálidas, los adultos pueden verse durante todo el año, sin importar la estación.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg"
+    ],
+    "page_path": "creatures/other-insects/kuchiki-koorogi.html"
+  },
+  {
+    "id": "madara-kourogi",
+    "name": "Grillo Arbóreo Moteado",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "Familia de grillos arbóreos (Eneopteridae) Grillo Arbóreo Moteado *Cardiodactylus guttulus*\n\nAunque su nombre japonés significa \"grillo\", taxonómicamente es un grillo arbóreo. Vive en los bosques de las islas Nansei al sur de las islas Tokara, y en las islas Amami los adultos aparecen desde finales de agosto aproximadamente. Suele agruparse en los troncos de los árboles de día y de noche, y canta con un sonido agudo, \"chit, chit\". Es abundante y constituye una importante fuente de alimento para reptiles y aves.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/madara-kourogi/madara-kourogi_000001_20250914_12.jpg"
+    ],
+    "page_path": "creatures/other-insects/madara-kourogi.html"
+  },
+  {
+    "id": "marumon-korogisu",
+    "name": "Grillo Áspero de Manchas Redondas",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "description": "Familia de grillos ásperos (Gryllacrididae) Grillo Áspero de Manchas Redondas *Prosopogryllacris okadai* Ichikawa, 2001\n\nUn grillo áspero arborícola que se encuentra en la isla Takara, Amami Oshima y la isla Kakeroma. Sus antenas son mucho más largas que su cuerpo. Durante el día se oculta en un nido hecho de hojas unidas con su propia seda, y sale de noche para estar activo. Es fuertemente carnívoro y captura otros insectos. Es muy cauteloso y difícil de encontrar.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000002_20250604_23.jpg",
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000003_20250703_01.jpg"
+    ],
+    "page_path": "creatures/other-insects/marumon-korogisu.html"
+  },
+  {
+    "id": "okinawa-tyou-tombo",
+    "name": "Aleteadora Variegada de Okinawa",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Familia Libellulidae, Aleteadora Variegada de Okinawa *Rhyothemis variegata imperatrix* Selys, 1887\n\nUna subespecie de la libélula aleteadora variegada que se encuentra en todo el archipiélago Nansei, vista ampliamente desde Amami Oshima hasta Okinawa, Miyako y las islas Yaeyama. Mide unos 40mm, y las manchas pardo oscuras de sus alas varían considerablemente en tamaño y forma entre individuos. Revoloteando alrededor de estanques y arrozales, vuela con un movimiento aleteante que recuerda al de una mariposa.",
+    "photos": [
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000001_20250731_16.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000002_20250731_16.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000003_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000004_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000005_20250731_17.jpg"
+    ],
+    "page_path": "creatures/other-insects/okinawa-tyou-tombo.html"
+  },
+  {
+    "id": "ootomoe",
+    "name": "Polilla del Gran Anillo",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "Familia Erebidae (clasificación reciente) Polilla del Gran Anillo *Erebus ephesperis* (Hübner, [1823])\n\nLa mayor de las polillas tomoe, con una envergadura de 90 a 100mm. Sus alas de color marrón tienen un borde ondulado y una marca blanca en forma de anillo en el ala anterior, origen de su nombre japonés, que significa \"gran coma\". Las larvas se alimentan de plantas del género Smilax (zarzaparrilla), y los adultos también acuden a las luces. En Amami Oshima, también se ha documentado académicamente como polinizador de las flores de Hoya.",
+    "photos": [
+      "../images/creatures/other-insects/ga/ootomoe/ootomoe_000001_20250808_01.jpg"
+    ],
+    "page_path": "creatures/other-insects/ootomoe.html"
+  },
+  {
+    "id": "ryuukyuu-asagi-madara",
+    "name": "Tigre Azul",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Familia Nymphalidae, Tigre Azul *Ideopsis similis* (Linnaeus, 1758)\n\nUna mariposa de la familia de las danaidas con manchas de un azul pálido, que se desliza por el aire con gracia y calma. Se distribuye desde Amami Oshima hacia el sur, y sus larvas se alimentan de Marsdenia tinctoria. En los días de invierno en que la temperatura baja de 15°C, se pueden ver cientos de ejemplares agrupándose para pasar el invierno en los bosques de los valles de la isla, una escena invernal muy conocida en Amami Oshima.",
+    "photos": [
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000002_20260106_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000003_20250124_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000004_20250204_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000005_20250205_12.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000006_20250206_12.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000007_20260210_22.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000008_20260210_22.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000009_20251218_11.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000010_20251219_11.jpg"
+    ],
+    "page_path": "creatures/other-insects/ryuukyuu-asagi-madara.html"
+  },
+  {
+    "id": "taiwan-kutsuwamushi",
+    "name": "Saltamontes Gigante",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Familia de saltamontes longicornios (Tettigoniidae) Saltamontes Gigante *Mecopoda elongata* (Linnaeus, 1758)\n\nUn saltamontes longicornio que se encuentra en regiones cálidas desde la península de Izu hacia el sur, incluidas Amami Oshima y el resto de las islas Nansei. Comienza a cantar a finales del verano, y a medida que avanza el otoño canta con fuerza, con un sonido estridente parecido a \"gyururururu\". Sus primeros cantos están espaciados —\"gyuu, gyuu\"— antes de convertirse gradualmente en un sonido continuo e ininterrumpido.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg"
+    ],
+    "page_path": "creatures/other-insects/taiwan-kutsuwamushi.html"
+  },
+  {
     "id": "akamata",
     "name": "Serpiente Akamata",
     "category": "snakes",

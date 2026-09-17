@@ -1237,6 +1237,235 @@
     "page_path": "creatures/mammals/watase-jinezumi.html"
   },
   {
+    "id": "amami-hirata-hishibatta",
+    "name": "奄美扁蚱",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      10
+    ],
+    "description": "蚱科奄美扁蚱 *Austrohancockia amamiensis* Yamasaki, 1994\n\n分布于奄美大岛、德之岛的日本固有种。体长雄性约10毫米，雌性约14.5毫米。前胸背板扁平宽展为其特征，栖息于堆积落叶的林地地面，具有融入周围环境的保护色。行动敏捷，受惊时会跳跃逃走。",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
+    ],
+    "page_path": "creatures/other-insects/amami-hirata-hishibatta.html"
+  },
+  {
+    "id": "aosuji-ageha",
+    "name": "青凤蝶",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "凤蝶科青凤蝶 *Graphium sarpedon nipponum* Fruhstorfer, 1903\n\n黑色翅膀上有一道贯穿前后翅的青绿色宽带，飞行迅速，外形美丽。以樟树、红楠等樟科植物为食草，在奄美大岛全岛各地均可见。一年可发生多代，温暖时节长期可见其身影。",
+    "photos": [
+      "../images/creatures/other-insects/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg"
+    ],
+    "page_path": "creatures/other-insects/aosuji-ageha.html"
+  },
+  {
+    "id": "hanenaga-tyou-tombo",
+    "name": "长翅蝶蜻",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "蜻科长翅蝶蜻 *Rhyothemis severini* Ris, 1913\n\n日本国内仅确认分布于奄美大岛的稀有蜻蜓。体色黑而带深绿色光泽，透明的翅膀上有藏青色斑纹。偏好挺水植物茂密的池塘，雄性会在水面附近低飞等待雌性。由于栖息地与个体数量都极为有限，根据《濒危物种保护法》被指定为国内稀有野生动植物种，禁止捕获。",
+    "photos": [
+      "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000001_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000002_20250731_17.jpg"
+    ],
+    "page_path": "creatures/other-insects/hanenaga-tyou-tombo.html"
+  },
+  {
+    "id": "ishigake-tyou",
+    "name": "网蛱蝶",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "蛱蝶科网蛱蝶 *Cyrestis thyodamas* Boisduval, 1836\n\n翅膀纹路独特，白色底色上分布着深褐色的龟甲状花纹。分布于纪伊半岛以西至南西诸岛，奄美大岛也可见其踪影。幼虫以对叶榕、榕树等桑科植物为食。成虫可越冬，温暖时节从春季到深秋反复繁殖出现。",
+    "photos": [
+      "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000001_20250605_22.jpg",
+      "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000002_20241124_21.jpg"
+    ],
+    "page_path": "creatures/other-insects/ishigake-tyou.html"
+  },
+  {
+    "id": "kuchiki-koorogi",
+    "name": "朽木蟋蟀",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "树蟋科(松虫科) 朽木蟋蟀 *Duolandrevus ivani*\n\n体长31〜35毫米，体型偏大，外形近似蟋蟀。广泛分布于奄美大岛、德之岛等南西诸岛，如其名所示，栖息于朽木树皮下等隐蔽处。夜间会发出\"咕依——咕依——\"的特有鸣声。在温暖地区，无论季节，全年皆可见成虫身影。",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg"
+    ],
+    "page_path": "creatures/other-insects/kuchiki-koorogi.html"
+  },
+  {
+    "id": "madara-kourogi",
+    "name": "斑树蟋",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "树蟋科(松虫科) 斑树蟋 *Cardiodactylus guttulus*\n\n名字虽带\"蟋蟀\"二字，但分类上属于树蟋类。栖息于吐噶喇列岛以南南西诸岛的森林中，在奄美群岛约从8月下旬开始出现成虫。常不分昼夜地群集于树干上，发出\"嘶、嘶\"的鸣声。个体数量众多，也是爬行类与鸟类的重要食物来源。",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/madara-kourogi/madara-kourogi_000001_20250914_12.jpg"
+    ],
+    "page_path": "creatures/other-insects/madara-kourogi.html"
+  },
+  {
+    "id": "marumon-korogisu",
+    "name": "圆斑树蟋螽",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "description": "树蟋螽科 圆斑树蟋螽 *Prosopogryllacris okadai* Ichikawa, 2001\n\n分布于宝岛、奄美大岛、加计吕麻岛的树栖性树蟋螽类。触角远长于体长。白天躲藏在自己吐丝缀合树叶做成的巢中，夜晚才爬出活动，属夜行性昆虫。肉食性强，捕食其他昆虫。警戒心强，很难被发现。",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000002_20250604_23.jpg",
+      "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000003_20250703_01.jpg"
+    ],
+    "page_path": "creatures/other-insects/marumon-korogisu.html"
+  },
+  {
+    "id": "okinawa-tyou-tombo",
+    "name": "冲绳斑丽蜻",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "蜻科冲绳斑丽蜻 *Rhyothemis variegata imperatrix* Selys, 1887\n\n斑丽蜻分布于南西诸岛的亚种，从奄美大岛到冲绳、宫古、八重山诸岛都能广泛见到。体长约40毫米，翅上深褐色斑纹的大小与形状因个体而异，差异较大。在池塘与水田周围振翅飞舞，姿态犹如蝴蝶一般。",
+    "photos": [
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000001_20250731_16.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000002_20250731_16.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000003_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000004_20250731_17.jpg",
+      "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000005_20250731_17.jpg"
+    ],
+    "page_path": "creatures/other-insects/okinawa-tyou-tombo.html"
+  },
+  {
+    "id": "ootomoe",
+    "name": "大巴纹裳蛾",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "夜蛾科(近期分类归入裳蛾科) 大巴纹裳蛾 *Erebus ephesperis* (Hübner, [1823])\n\n翼展可达90〜100毫米，是巴纹蛾类中体型最大的物种。茶褐色的翅膀边缘呈波浪状，前翅上有环状白色斑纹，这正是其日文名\"巴\"字的由来。幼虫以菝葜等百合科植物为食，成虫也会飞向灯光。在奄美大岛，本种还被学术记录为球兰(马蹄铃)花朵的传粉者。",
+    "photos": [
+      "../images/creatures/other-insects/ga/ootomoe/ootomoe_000001_20250808_01.jpg"
+    ],
+    "page_path": "creatures/other-insects/ootomoe.html"
+  },
+  {
+    "id": "ryuukyuu-asagi-madara",
+    "name": "青斑蝶",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "蛱蝶科青斑蝶 *Ideopsis similis* (Linnaeus, 1758)\n\n具有浅蓝色斑纹的斑蝶类，飞行姿态轻盈优雅。分布于奄美大岛以南，幼虫以娃儿藤为食草。气温降至15度以下的冬日，会有数百只个体聚集在山谷林间集体越冬，是奄美大岛冬季的知名景象。",
+    "photos": [
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000002_20260106_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000003_20250124_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000004_20250204_13.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000005_20250205_12.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000006_20250206_12.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000007_20260210_22.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000008_20260210_22.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000009_20251218_11.jpg",
+      "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000010_20251219_11.jpg"
+    ],
+    "page_path": "creatures/other-insects/ryuukyuu-asagi-madara.html"
+  },
+  {
+    "id": "taiwan-kutsuwamushi",
+    "name": "台湾树螽",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "螽斯科台湾树螽 *Mecopoda elongata* (Linnaeus, 1758)\n\n分布于伊豆半岛以南温暖地区的螽斯类，奄美大岛及南西诸岛其他地区也可见到。从夏末开始鸣叫，随着秋意渐浓，会发出\"咕噜噜噜噜\"般响亮嘈杂的鸣声。刚开始鸣叫时是\"咕——、咕——\"般间隔的声音，随后逐渐变为不间断的连续音。",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg"
+    ],
+    "page_path": "creatures/other-insects/taiwan-kutsuwamushi.html"
+  },
+  {
     "id": "akamata",
     "name": "赤楝蛇",
     "category": "snakes",
