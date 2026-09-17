@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /customer-app/
+Disallow: /amami-tool.html
+Disallow: /instagram-campaign/
+
+Sitemap: https://nature-experience-amami.github.io/sitemap.xml

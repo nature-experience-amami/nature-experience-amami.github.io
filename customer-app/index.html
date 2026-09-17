@@ -7,10 +7,11 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
+  <meta name="robots" content="noindex, nofollow">
   <title>Nature Experience Amami｜予約管理</title>
   <!-- app.js・style.cssを更新したら、この?v=の数字を上げること
        (ホーム画面に追加したアプリでも「🔄 更新を確認」ボタンで最新版に切り替わる) -->
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <header>
@@ -77,6 +78,7 @@
       <button id="parseBtn" class="primary">AI整理</button>
       <button id="clearBtn" class="ghost">クリア</button>
     </div>
+    <p class="hint" id="parseStatus" hidden></p>
 
     <div id="parsedArea" class="hidden">
       <h3>整理結果</h3>
@@ -128,6 +130,7 @@
         <button id="copyReply" class="ghost">返信をコピー</button>
         <button id="saveBtn" class="primary">この問い合わせを保存</button>
       </div>
+      <p class="hint" id="replyStatus" hidden></p>
     </div>
   </section>
 </main>
@@ -142,6 +145,6 @@
   </div>
 </section>
 
-<script src="app.js?v=9"></script>
+<script src="app.js?v=10"></script>
 </body>
 </html>
