@@ -44,6 +44,17 @@ PHOTO_DIR_ALIASES = {
     ("aquatic-insects", "chairo-kesi-katabiro-amennbo"): "katabiro-amennbo/chairo-kesi-katabiro-amennbo",
     ("aquatic-insects", "iriomote-kesi-katabiro-amennbo"): "katabiro-amennbo/iriomote-kesi-katabiro-amennbo",
     ("aquatic-insects", "tsutsui-nagare-katabiro-amennbo"): "katabiro-amennbo/tsutsui-nagare-katabiro-amennbo",
+    ("other-insects", "ootomoe"): "ga/ootomoe",
+    ("other-insects", "hanenaga-tyou-tombo"): "tombo/hanenaga-tyou-tombo",
+    ("other-insects", "okinawa-tyou-tombo"): "tombo/okinawa-tyou-tombo",
+    ("other-insects", "amami-hirata-hishibatta"): "tyokushi/amami-hirata-hishibatta",
+    ("other-insects", "kuchiki-koorogi"): "tyokushi/kuchiki-koorogi",
+    ("other-insects", "madara-kourogi"): "tyokushi/madara-kourogi",
+    ("other-insects", "marumon-korogisu"): "tyokushi/marumon-korogisu",
+    ("other-insects", "taiwan-kutsuwamushi"): "tyokushi/taiwan-kutsuwamushi",
+    ("other-insects", "aosuji-ageha"): "tyou/aosuji-ageha",
+    ("other-insects", "ishigake-tyou"): "tyou/ishigake-tyou",
+    ("other-insects", "ryuukyuu-asagi-madara"): "tyou/ryuukyuu-asagi-madara",
 }
 
 TARGETS = None

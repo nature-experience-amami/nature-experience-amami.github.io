@@ -36,7 +36,19 @@ ZUKAN_CATEGORIES = ["aquatic-insects", "beetles", "other-insects", "kani", "bird
 TRANSLATED_ZUKAN_CATEGORIES = {"aquatic-insects", "birds", "beetles"}
 
 # 写真フォルダ名がMarkdownのidと違う場合の対応表。(カテゴリ, Markdownのid): 実際の写真フォルダ名
-PHOTO_DIR_ALIASES = {}
+PHOTO_DIR_ALIASES = {
+    ("other-insects", "ootomoe"): "ga/ootomoe",
+    ("other-insects", "hanenaga-tyou-tombo"): "tombo/hanenaga-tyou-tombo",
+    ("other-insects", "okinawa-tyou-tombo"): "tombo/okinawa-tyou-tombo",
+    ("other-insects", "amami-hirata-hishibatta"): "tyokushi/amami-hirata-hishibatta",
+    ("other-insects", "kuchiki-koorogi"): "tyokushi/kuchiki-koorogi",
+    ("other-insects", "madara-kourogi"): "tyokushi/madara-kourogi",
+    ("other-insects", "marumon-korogisu"): "tyokushi/marumon-korogisu",
+    ("other-insects", "taiwan-kutsuwamushi"): "tyokushi/taiwan-kutsuwamushi",
+    ("other-insects", "aosuji-ageha"): "tyou/aosuji-ageha",
+    ("other-insects", "ishigake-tyou"): "tyou/ishigake-tyou",
+    ("other-insects", "ryuukyuu-asagi-madara"): "tyou/ryuukyuu-asagi-madara",
+}
 
 # カテゴリーごとの英語表記(ヒーローのラベル用)。無ければカテゴリーIDをそのまま大文字にする。
 ENGLISH_LABELS = {
@@ -151,6 +163,16 @@ CATEGORY_GROUPS = {
             "kitsutsuki": "キツツキ目",
             "hato": "ハト目",
             "chidori": "チドリ目(シギ・チドリの仲間)",
+            "other": "その他",
+        },
+    },
+    "other-insects": {
+        "order": ["tyou", "tombo", "ga", "tyokushi", "other"],
+        "labels": {
+            "tyou": "チョウの仲間",
+            "tombo": "トンボの仲間",
+            "ga": "蛾の仲間",
+            "tyokushi": "バッタ・コオロギ・キリギリスの仲間(直翅目)",
             "other": "その他",
         },
     },

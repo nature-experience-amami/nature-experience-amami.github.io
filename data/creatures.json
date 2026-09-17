@@ -1343,118 +1343,157 @@
   },
   {
     "id": "amami-hirata-hishibatta",
-    "name": "amami-hirata-hishibatta",
+    "name": "アマミヒラタヒシバッタ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
       10
     ],
-    "description": "",
+    "description": "ヒシバッタ科 アマミヒラタヒシバッタ *Austrohancockia amamiensis* Yamasaki, 1994\n\n奄美大島・徳之島に分布する日本固有種。体長は雄で10mm前後、雌で14.5mm前後。前胸背板が扁平に広がった姿が特徴で、落ち葉の積もる林床などに生息し、周囲の色合いに紛れる保護色を持つ。動きは素早く、驚くと跳ねて逃げる。",
     "photos": [
       "images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/amami-hirata-hishibatta.html"
   },
   {
     "id": "aosuji-ageha",
-    "name": "aosuji-ageha",
+    "name": "アオスジアゲハ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      3
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "description": "",
+    "description": "アゲハチョウ科 アオスジアゲハ *Graphium sarpedon nipponum* Fruhstorfer, 1903\n\n黒い翅に青緑色の帯が前後の翅を貫くように入る、飛翔の速い美しいアゲハチョウ。クスノキやタブノキなどクスノキ科の樹木を食草とし、奄美大島の島内各地で見られる。年に数回世代を繰り返す多化性で、暖かい時期は長期間にわたって姿を見せる。",
     "photos": [
       "images/creatures/other-insects/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/aosuji-ageha.html"
   },
   {
     "id": "hanenaga-tyou-tombo",
-    "name": "hanenaga-tyou-tombo",
+    "name": "ハネナガチョウトンボ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      7
+      5,
+      6,
+      7,
+      8,
+      9
     ],
-    "description": "",
+    "description": "トンボ科 ハネナガチョウトンボ *Rhyothemis severini* Ris, 1913\n\n国内では奄美大島にのみ生息が確認されている希少なトンボ。黒い体に深緑色の光沢を持ち、透明な翅には藍色の紋様が入る。抽水植物の茂る池を好み、オスは水面近くを飛びながらメスを待つ。生息地・個体数が極めて限られることから、種の保存法により国内希少野生動植物種に指定され、捕獲が禁止されている。",
     "photos": [
       "images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000001_20250731_17.jpg",
       "images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000002_20250731_17.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/hanenaga-tyou-tombo.html"
   },
   {
     "id": "ishigake-tyou",
-    "name": "ishigake-tyou",
+    "name": "イシガケチョウ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
+      3,
+      4,
+      5,
       6,
+      7,
+      8,
+      9,
+      10,
       11
     ],
-    "description": "",
+    "description": "タテハチョウ科 イシガケチョウ *Cyrestis thyodamas* Boisduval, 1836\n\n白地に黒褐色の亀甲状の模様が広がる、他に類を見ない翅を持つチョウ。紀伊半島以西から南西諸島にかけて分布し、奄美大島でも見られる。幼虫はイヌビワやガジュマルなどクワ科の植物を食べる。成虫のまま越冬し、暖かい時期は春から秋遅くまで世代を繰り返しながら姿を見せる。",
     "photos": [
       "images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000001_20250605_22.jpg",
       "images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000002_20241124_21.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/ishigake-tyou.html"
   },
   {
     "id": "kuchiki-koorogi",
-    "name": "kuchiki-koorogi",
+    "name": "クチキコオロギ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      11
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "description": "",
+    "description": "マツムシ科 クチキコオロギ *Duolandrevus ivani*\n\n体長31〜35mmとやや大型のコオロギに似た仲間。奄美大島・徳之島をはじめ南西諸島に広く分布し、名前の通り朽木の樹皮の下などに潜んで暮らす。夜になると「グィーー、グィーー」という特徴的な声で鳴く。暖かい地域では季節を問わず、一年を通して成虫の姿が見られる。",
     "photos": [
       "images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/kuchiki-koorogi.html"
   },
   {
     "id": "madara-kourogi",
-    "name": "madara-kourogi",
+    "name": "マダラコオロギ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      9
+      8,
+      9,
+      10,
+      11
     ],
-    "description": "",
+    "description": "マツムシ科 マダラコオロギ *Cardiodactylus guttulus*\n\n名前に「コオロギ」とあるが、分類上はマツムシの仲間。トカラ列島以南の南西諸島の森林に生息し、奄美群島では8月下旬頃から成虫が現れる。樹の幹に昼夜を問わず群れることが多く、「シッ、シッ」という声で鳴く。個体数が多く、爬虫類や鳥類にとって重要な餌にもなっている。",
     "photos": [
       "images/creatures/other-insects/tyokushi/madara-kourogi/madara-kourogi_000001_20250914_12.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/madara-kourogi.html"
   },
   {
     "id": "marumon-korogisu",
-    "name": "marumon-korogisu",
+    "name": "マルモンコロギス",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
+      5,
       6,
-      7,
-      9
+      7
     ],
-    "description": "",
+    "description": "コロギス科 マルモンコロギス *Prosopogryllacris okadai* Ichikawa, 2001\n\n宝島・奄美大島・加計呂麻島に分布する樹上性のコロギスの仲間。体長よりはるかに長い触角を持ち、昼間は自分の出す糸で葉を綴り合わせた巣に潜み、夜になると這い出して活動する夜行性。肉食性が強く、他の昆虫を捕食する。警戒心が強く、なかなか見つけることができない。",
     "photos": [
       "images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
       "images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000002_20250604_23.jpg",
       "images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000003_20250703_01.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/marumon-korogisu.html"
   },
   {
     "id": "okinawa-tyou-tombo",
-    "name": "okinawa-tyou-tombo",
+    "name": "オキナワチョウトンボ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      7
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
-    "description": "",
+    "description": "トンボ科 オキナワチョウトンボ *Rhyothemis variegata imperatrix* Selys, 1887\n\nチョウトンボの南西諸島に分布する亜種で、奄美大島から沖縄・宮古・八重山諸島にかけて広く見られる。体長は約40mmで、翅にある濃い褐色の斑紋の大きさや形には個体差が大きい。池や水田の周辺を、翅をひらひらとさせながら飛ぶ姿はチョウのようにも見える。",
     "photos": [
       "images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000001_20250731_16.jpg",
       "images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000002_20250731_16.jpg",
@@ -1462,33 +1501,44 @@
       "images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000004_20250731_17.jpg",
       "images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000005_20250731_17.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/okinawa-tyou-tombo.html"
   },
   {
     "id": "ootomoe",
-    "name": "ootomoe",
+    "name": "オオトモエ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
+      6,
+      7,
       8
     ],
-    "description": "",
+    "description": "ヤガ科(近年の分類ではエレビダエ科) オオトモエ *Erebus ephesperis* (Hübner, [1823])\n\n開張90〜100mmに達するトモエガ類最大種。茶褐色の翅に波打つ縁取りと、前翅にある輪状の白い斑紋を持ち、これが「巴」の名の由来になっている。幼虫はサルトリイバラなどユリ科植物を食べ、成虫は灯火にも飛来する。奄美大島ではサクララン(ホヤ)の花を訪れる送粉者としても学術的に記録されている。",
     "photos": [
       "images/creatures/other-insects/ga/ootomoe/ootomoe_000001_20250808_01.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/ootomoe.html"
   },
   {
     "id": "ryuukyuu-asagi-madara",
-    "name": "ryuukyuu-asagi-madara",
+    "name": "リュウキュウアサギマダラ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
       1,
       2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
-    "description": "",
+    "description": "タテハチョウ科 リュウキュウアサギマダラ *Ideopsis similis* (Linnaeus, 1758)\n\n淡い水色(浅葱色)の斑紋を持つ、ふわふわと優雅に飛ぶマダラチョウの仲間。奄美大島以南に分布し、幼虫はツルモウリンカを食草とする。気温15度を下回る冬の日には、谷間の樹林内に数百頭単位で集まって集団で越冬する姿が見られ、奄美大島の冬の風物詩として知られている。",
     "photos": [
       "images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
       "images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000002_20260106_13.jpg",
@@ -1501,21 +1551,24 @@
       "images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000009_20251218_11.jpg",
       "images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000010_20251219_11.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/ryuukyuu-asagi-madara.html"
   },
   {
     "id": "taiwan-kutsuwamushi",
-    "name": "taiwan-kutsuwamushi",
+    "name": "タイワンクツワムシ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      3
+      9,
+      10,
+      11,
+      12
     ],
-    "description": "",
+    "description": "キリギリス科 タイワンクツワムシ *Mecopoda elongata* (Linnaeus, 1758)\n\n伊豆半島以南の暖かい地域に分布するキリギリスの仲間で、奄美大島をはじめ南西諸島でも見られる。夏の終わりから鳴き始め、秋が深まるにつれて「ギュルルルルルー」という騒々しい声で盛んに鳴くようになる。鳴き始めは「ギューッ、ギューッ」と間隔を空けた声だが、次第に途切れない連続音になっていく。",
     "photos": [
       "images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/taiwan-kutsuwamushi.html"
   },
   {
     "id": "akamata",
