@@ -25,6 +25,70 @@ TEMPLATE = ROOT / "templates" / "zukan.i18n.html"
 OUTPUT_DIR_NAME = "categories"
 
 CATEGORY_CONTENT_I18N = {
+    "beetles": {
+        "en": {
+            "hero_lead": (
+                "Beetles you'll meet in the night forest, each with its own look and way of "
+                "life. From dung beetles that rely on the Amami rabbit's droppings to "
+                "rhinoceros beetles drawn to lights, here's a glimpse of the beetles found on "
+                "Amami Oshima."
+            ),
+            "about_paragraphs": [
+                "Amami Oshima alone is home to an enormous variety of beetles, many belonging "
+                "to highly specialized groups, so this page adds species gradually, in "
+                "field-guide format, as photos and information come together. Click a photo "
+                "or name to see that species' full page.",
+            ],
+            "note": (
+                "Many of the beetles introduced here are endemic or rare species found only "
+                "on Amami Oshima and Tokunoshima, and collecting some of them is prohibited "
+                "by law or ordinance. Please observe gently, without placing a burden on the "
+                "creatures or their environment. This page also includes invasive species "
+                "brought in from outside the island through human activity, which are marked "
+                "separately from native species."
+            ),
+        },
+        "es": {
+            "hero_lead": (
+                "Escarabajos que se encuentran en el bosque nocturno, cada uno con su propio "
+                "aspecto y forma de vida. Desde los escarabajos peloteros que dependen de los "
+                "excrementos del conejo de Amami hasta los escarabajos rinoceronte atraídos "
+                "por la luz, aquí se presenta una muestra de los escarabajos de Amami Oshima."
+            ),
+            "about_paragraphs": [
+                "Amami Oshima alberga una enorme variedad de escarabajos, muchos de ellos "
+                "pertenecientes a grupos muy especializados, así que esta página los añade "
+                "poco a poco, en formato de guía de campo, conforme reunimos fotos e "
+                "información. Haga clic en una foto o un nombre para ver la página completa "
+                "de esa especie.",
+            ],
+            "note": (
+                "Muchos de los escarabajos presentados aquí son especies endémicas o raras "
+                "que solo se encuentran en Amami Oshima y Tokunoshima, y la recolección de "
+                "algunas está prohibida por ley u ordenanza. Obsérvelos con cuidado, sin "
+                "suponer una carga para los animales ni para el entorno. Esta página también "
+                "incluye especies invasoras introducidas desde fuera de la isla por la "
+                "actividad humana, que se indican por separado de las especies nativas."
+            ),
+        },
+        "zh": {
+            "hero_lead": (
+                "在夜晚的森林中邂逅的甲虫们，姿态与生活方式各不相同。从依靠奄美黑兔粪便生活的"
+                "粪金龟，到飞向灯光的犀金龟，这里介绍的是奄美岛上的部分甲虫。"
+            ),
+            "about_paragraphs": [
+                "仅奄美大岛的甲虫种类就极为丰富，其中不少还是专业性很强的类群，本页会随着"
+                "照片和资料的积累逐步以图鉴形式补充完善。点击照片或名称，即可查看该物种的"
+                "详细页面。",
+            ],
+            "note": (
+                "这里介绍的甲虫中，许多是只分布于奄美大岛、德之岛的固有种或稀有种，其中一些"
+                "物种根据法律或条例禁止采集。请在不给生物和环境造成负担的前提下轻柔地进行"
+                "观察。此外，本页也收录了因人类活动而从岛外带入的外来种，并将其与本土生物"
+                "区分标注。"
+            ),
+        },
+    },
     "aquatic-insects": {
         "en": {
             "hero_lead": (

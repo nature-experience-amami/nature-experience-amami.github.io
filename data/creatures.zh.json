@@ -636,6 +636,280 @@
     "page_path": "creatures/aquatic-insects/usuiro-shima-gengoro.html"
   },
   {
+    "id": "amami-himekebuka-magusokogane",
+    "name": "奄美毛粪金龟",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      4
+    ],
+    "description": "金龟科粪金龟亚科奄美毛粪金龟 *Gilletianus atsushii* (Ochi, 1986)\n\n分布于奄美大岛的稀有粪金龟，采集记录非常稀少。1986年由越智辉夫以 *Aphodius (Trichaphodius) atsushii* 之名记载，后经分类修订，现归入Gilletianus属。据推测以奄美黑兔的粪便为食，但其生态尚有许多未知之处，采集实例也十分有限。",
+    "photos": [
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000002_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000003_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000004_20260427_12.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-himekebuka-magusokogane.html"
+  },
+  {
+    "id": "amami-ko-kabuto",
+    "name": "奄美小犀金龟",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "金龟科犀金龟亚科奄美小犀金龟 *Eophileurus chinensis irregularis* Prell, 1913\n\n小犀金龟 *Eophileurus chinensis* 分布于奄美大岛、德之岛、与路岛及请岛的亚种。体长雄性约20〜25毫米，雌性约15〜20毫米。栖息于平地到山地的森林中，夜行性，常见于林地地面或林道上行走，初夏至晚秋期间也会飞向树液及灯光。成虫几乎全年可见，但并非个体数量很多的物种。",
+    "photos": [
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000002_20260416_22.jpg",
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000003_20241128_17.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-ko-kabuto.html"
+  },
+  {
+    "id": "amami-semadara-magusokogane",
+    "name": "奄美斑纹粪金龟",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "金龟科粪金龟亚科奄美斑纹粪金龟 *Chilothorax ohishii* (Masumoto, 1975)\n\n仅分布于奄美大岛、德之岛的固有种。1975年由桝元敏也以 *Aphodius ohishii* 之名记载，现归入Chilothorax属。主要以奄美黑兔的粪便为食，秋季至春季常可见到，夏季则几乎难觅踪影。",
+    "photos": [
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000002_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000003_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-semadara-magusokogane.html"
+  },
+  {
+    "id": "ao-uba-tamamushi",
+    "name": "奄美青姥吉丁虫",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "吉丁虫科奄美青姥吉丁虫 *Chalcophora japonica oshimana* Schönfeldt, 1890\n\n体长24〜40毫米。分布于北海道至冲绳的姥吉丁虫 *Chalcophora japonica* 在奄美群岛、冲绳诸岛的亚种。偏好松树的枯木或衰弱木，幼虫在木材中取食成长。成虫在初夏至夏季可见。",
+    "photos": [
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg"
+    ],
+    "page_path": "creatures/beetles/ao-uba-tamamushi.html"
+  },
+  {
+    "id": "be-tsu-hirata-kamikiri",
+    "name": "贝茨扁天牛",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "天牛科贝茨扁天牛 *Eurypoda batesi* Gahan, 1894\n\n体长26〜34毫米。广泛分布于关东、中部地方以南的本州，以及四国、九州、冲绳岛以北的南西诸岛(含奄美大岛、德之岛)，国外见于朝鲜半岛及中国西南部。常聚集于樟树、椎树、红楠等树木，夜行性，也会飞向灯光。6月至8月前后常见。",
+    "photos": [
+      "../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"
+    ],
+    "page_path": "creatures/beetles/be-tsu-hirata-kamikiri.html"
+  },
+  {
+    "id": "ferie-beniboshi-kamikiri",
+    "name": "费氏红星天牛",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      7
+    ],
+    "description": "天牛科费氏红星天牛 *Rosalia (Eurybatus) ferriei* Vuillet, 1911\n\n仅分布于奄美大岛的固有种。体色红底黑纹，十分美丽，7月前后出现在深山森林中的枯立木上。因在奄美大岛采集到本种的费里耶神父而得名。根据鹿儿岛县稀有野生动植物保护条例被指定为稀有野生动植物，禁止捕获、采集。",
+    "photos": [
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000003_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000004_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000005_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000006_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000007_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000008_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000009_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg"
+    ],
+    "page_path": "creatures/beetles/ferie-beniboshi-kamikiri.html"
+  },
+  {
+    "id": "marudaikoku-kogane",
+    "name": "奄美圆大黑金龟",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      11
+    ],
+    "description": "金龟科大黑金龟亚科奄美圆大黑金龟 *Copris brachypterus* Nomura, 1964\n\n体长13〜20毫米。仅分布于奄美大岛、德之岛的固有种(德之岛分布有另一亚种)，后翅退化，无法飞行。夜间在山地森林中四处走动寻找奄美黑兔的粪便，具有在粪球下方挖洞、用前脚一边后退一边将粪球拖入洞中的习性。由于分布范围极为有限、迁移能力弱，加之过去采集压力导致个体数量大幅减少，被环境省红色名录列为濒危II类(VU)。",
+    "photos": [
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000002_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000003_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000004_20251126_22.jpg"
+    ],
+    "page_path": "creatures/beetles/marudaikoku-kogane.html"
+  },
+  {
+    "id": "midori-nakaboso-tamamushi",
+    "name": "绿窄吉丁虫",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "吉丁虫科绿窄吉丁虫 *Coraebus hastanus oberthueri*\n\n体长约11毫米的小型吉丁虫，分布于奄美大岛以南地区。窄吉丁虫属的成员以夏季强烈日照下活跃著称，本种也大致在6月至9月间可见。",
+    "photos": [
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg",
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg"
+    ],
+    "page_path": "creatures/beetles/midori-nakaboso-tamamushi.html"
+  },
+  {
+    "id": "oomidor-isaru-hamshi",
+    "name": "大绿猿叶甲",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "叶甲科大绿猿叶甲 *Platycorynus japonicus*\n\n体长约10毫米。体具金属光泽的绿色小型叶甲，分布于南西诸岛(奄美大岛以南)。以络石类植物为食草，大致在4月至10月间可见。",
+    "photos": [
+      "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
+      "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000002_20260708_12.jpg"
+    ],
+    "page_path": "creatures/beetles/oomidor-isaru-hamshi.html"
+  },
+  {
+    "id": "oshima-senchi-kogane",
+    "name": "大岛黑蜣",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ],
+    "description": "黑蜣科大岛黑蜣 *Phelotrupes oshimanus* Fairmaire, 1895\n\n体长可达20毫米，是日本产黑蜣科中体型最大的物种。仅分布于奄美大岛、德之岛的固有种，秋季至冬季活动，聚集于奄美黑兔及野猪的粪便。具有用前脚抱住粪便一边后退一边拖拽、运回自己巢穴的独特习性。被鹿儿岛县红色名录列为准濒危。",
+    "photos": [
+      "../images/creatures/beetles/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg"
+    ],
+    "page_path": "creatures/beetles/oshima-senchi-kogane.html"
+  },
+  {
+    "id": "oshima-torafu-hanamuguri",
+    "name": "大岛虎纹花金龟",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      4,
+      5
+    ],
+    "description": "金龟科大岛虎纹花金龟 *Paratrichius duplicatus duplicatus* Lewis, 1895\n\n体长11.8〜15.6毫米。分布于奄美大岛、德之岛的指名亚种(P. d. duplicatus)。冲绳诸岛则分布着另一亚种冲绳虎纹花金龟(P. d. okinawanus)。与近缘的虎纹花金龟类相比，翅色偏黑，具有独特光泽为其特征。4月至5月间出现。",
+    "photos": [
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000003_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg"
+    ],
+    "page_path": "creatures/beetles/oshima-torafu-hanamuguri.html"
+  },
+  {
+    "id": "ruri-nakaboso-tamamushi",
+    "name": "琉璃窄吉丁虫",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "吉丁虫科琉璃窄吉丁虫 *Coraebus niponicus* Lewis, 1894\n\n具琉璃色光泽的小型吉丁虫，已在奄美大岛确认分布。窄吉丁虫属的成员以夏季强烈日照下活跃著称，本种也大致在6月至9月间可见。",
+    "photos": [
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg"
+    ],
+    "page_path": "creatures/beetles/ruri-nakaboso-tamamushi.html"
+  },
+  {
+    "id": "taiwan-saikabuto",
+    "name": "椰子犀金龟(台湾犀角金龟)",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      4
+    ],
+    "description": "金龟科犀金龟亚科椰子犀金龟(台湾犀角金龟) *Oryctes rhinoceros* (Linnaeus, 1758)\n\n原产于中南半岛周边的外来种。据信20世纪初随从台湾进口的资材混入侵入石垣岛，为日本国内最早记录，此后分布逐渐北扩，1991年在奄美大岛、德之岛也被确认。目前已在南西诸岛几乎全境定着并自然繁殖。作为在椰子类、菠萝、甘蔗等植物的茎部及芯部钻孔为害的农业害虫而为人所知，也有人担忧其与本地犀金龟类之间的竞争关系。",
+    "photos": [
+      "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
+      "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg"
+    ],
+    "page_path": "creatures/beetles/taiwan-saikabuto.html"
+  },
+  {
+    "id": "tokara-mannmaru-kogane",
+    "name": "吐噶喇球金龟",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      4
+    ],
+    "description": "厚甲金龟科球金龟亚科吐噶喇球金龟 *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\n体长约5.0〜5.8毫米的小型甲虫，分布于吐噶喇列岛(模式产地为中之岛)及奄美大岛。与分布于八重山诸岛的近缘种先岛球金龟(*M. kazumai hisamatsui* Ochi, 1990)以分布区域区分。被认为是一种好蚁性昆虫，多见于朽木内部及其周围落叶层等靠近蚁巢的环境中，原始记载论文的题名中也使用了\"myrmecophilous(好蚁性)\"一词。受到刺激时会将触角与足收入体内，蜷缩成完整的球状，如同鼠妇一般保护自己。",
+    "photos": [
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000002_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000003_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000004_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000005_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000006_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000007_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000008_20260415_21.jpg"
+    ],
+    "page_path": "creatures/beetles/tokara-mannmaru-kogane.html"
+  },
+  {
     "id": "akahige",
     "name": "琉球歌鸲",
     "category": "birds",

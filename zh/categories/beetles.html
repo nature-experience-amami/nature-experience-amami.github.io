@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>甲虫 | Nature Experience Amami</title>
+<meta name="description" content="甲虫 of Amami Oshima — Nature Experience Amami.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/category-strip.css">
+
+<style>
+  :root{
+    --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
+    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A; --line:rgba(234,242,233,.12);
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ background:var(--night); color:var(--moonlight); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.9; }
+  img{ display:block; width:100%; }
+  a{ color:inherit; text-decoration:none; }
+
+  .lang-bar{ background:#050907; border-bottom:1px solid rgba(234,242,233,.12); }
+  .lang-bar-inner{ max-width:1200px; margin:auto; padding:.5rem 6vw; display:flex; justify-content:flex-end; gap:1rem; font-family:"Space Mono",monospace; font-size:.7rem; letter-spacing:.06em; }
+  .lang-bar a, .lang-bar span{ text-decoration:none; color:rgba(234,242,233,.5); }
+  .lang-bar a:hover{ color:var(--moonlight); }
+  .lang-bar span.current{ color:var(--amber); }
+  .lang-bar span.disabled{ color:rgba(234,242,233,.25); }
+
+  .site-header-sticky{ position:sticky; top:0; z-index:1000; }
+  header{
+    background:rgba(10,22,19,.94); backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .header-inner{
+    max-width:1200px; margin:0 auto; padding:18px 28px;
+    display:flex; align-items:center; justify-content:space-between; gap:30px;
+  }
+  .logo{ font-family:"Shippori Mincho", serif; font-size:20px; font-weight:600; letter-spacing:.08em; white-space:nowrap; }
+  .logo span{ display:block; font-family:"Space Mono", monospace; font-size:9px; letter-spacing:.18em; color:var(--amber); margin-top:2px; }
+  nav{ display:flex; align-items:center; gap:28px; }
+  nav a{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; opacity:.82; transition:.25s; }
+  nav a:hover{ color:var(--amber); opacity:1; }
+  nav span{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; color:rgba(234,242,233,.35); }
+
+  .hero{
+    min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
+    background:
+      linear-gradient(to bottom, rgba(10,22,19,.2), rgba(10,22,19,.95)),
+      radial-gradient(circle at 70% 35%, rgba(107,143,113,.18), transparent 35%);
+  }
+  .hero-inner{ width:100%; max-width:1200px; margin:0 auto; padding:80px 28px 55px; }
+  .eyebrow{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.18em; color:var(--amber); margin-bottom:18px; }
+  .hero h1{ font-family:"Shippori Mincho", serif; font-size:clamp(38px,6vw,64px); line-height:1.2; font-weight:600; letter-spacing:.04em; }
+  .hero-lead{ max-width:680px; margin-top:22px; font-size:15px; line-height:2; color:rgba(234,242,233,.82); }
+
+  section{ padding:70px 28px; }
+  .section-inner{ max-width:1200px; margin:0 auto; }
+  .section-label{ font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.18em; color:var(--amber); margin-bottom:12px; }
+  .section-title{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin-bottom:24px; }
+
+  .intro{ background:var(--canopy); }
+  .intro-text{ max-width:720px; font-size:14px; color:rgba(234,242,233,.85); }
+  .intro-text p + p{ margin-top:16px; }
+  .note-box{
+    margin-top:28px; padding:20px 22px; border-left:2px solid var(--moss);
+    background:rgba(10,22,19,.35); font-size:12.5px; color:rgba(234,242,233,.75); line-height:1.8;
+  }
+
+  .creatures{ background:var(--night); }
+  .group{ margin-bottom:64px; padding-top:36px; border-top:1px solid rgba(234,242,233,.12); }
+  .group:first-child{ padding-top:0; border-top:none; }
+  .group:last-child{ margin-bottom:0; }
+  .group-title{
+    font-family:"Shippori Mincho", serif; font-size:22px; font-weight:600; letter-spacing:.08em; color:var(--amber);
+    text-align:center; margin-bottom:32px;
+  }
+
+  .zukan-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:20px; }
+  .zukan-card{ border-top:1px solid rgba(234,242,233,.14); padding-top:16px; }
+  .zukan-image{
+    aspect-ratio:4/3; overflow:hidden; background:var(--canopy);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .zukan-image img{ width:100%; height:100%; object-fit:cover; }
+  .zukan-placeholder{
+    width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    color:rgba(234,242,233,.35); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.06em;
+    background:repeating-linear-gradient(135deg, rgba(234,242,233,.03) 0 10px, transparent 10px 20px);
+  }
+  .zukan-info{ padding-top:14px; }
+  .zukan-name{ font-family:"Shippori Mincho", serif; font-size:19px; font-weight:600; margin-bottom:3px; }
+  .zukan-latin{ font-size:11px; font-style:italic; color:rgba(234,242,233,.5); margin-bottom:8px; }
+  .zukan-desc{ font-size:12.5px; color:rgba(234,242,233,.72); line-height:1.8; margin-bottom:10px; }
+  .zukan-tag{
+    display:inline-block; font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.04em;
+    padding:3px 8px; border:1px solid rgba(234,242,233,.2); border-radius:2px; color:rgba(234,242,233,.6);
+  }
+  .zukan-tag.rare{ border-color:rgba(232,163,61,.5); color:var(--amber); }
+  .zukan-tag.invasive{
+    border-color:rgba(232,107,61,.6);
+    color:#E86B3D;
+    background:rgba(232,107,61,.08);
+  }
+
+  .tour{ text-align:center; background:var(--canopy); }
+  .tour h2{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin:16px 0 18px; }
+  .tour p{ max-width:560px; margin:0 auto 28px; font-size:13.5px; color:rgba(234,242,233,.75); line-height:1.8; }
+  .btn{ display:inline-block; padding:15px 32px; background:var(--amber); color:var(--bark); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; }
+  .btn:hover{ background:#f4b95a; }
+
+  .other-categories{ background:var(--canopy); border-top:1px solid rgba(234,242,233,.12); }
+  .other-creatures-title{ font-family:"Shippori Mincho", serif; font-size:22px; margin-bottom:22px; }
+  .other-creatures-buttons{ display:flex; flex-wrap:wrap; gap:12px; }
+  .category-button{
+    display:inline-flex; align-items:center; justify-content:center; padding:12px 22px;
+    border:1px solid rgba(234,242,233,.2); font-size:12px; color:rgba(234,242,233,.75); transition:.25s;
+  }
+  .category-button:hover{ border-color:var(--amber); color:var(--amber); background:rgba(232,163,61,.04); }
+  .category-button.is-pending{ color:rgba(234,242,233,.4); border-color:rgba(234,242,233,.12); cursor:default; }
+  .category-button.is-pending:hover{ border-color:rgba(234,242,233,.12); color:rgba(234,242,233,.4); background:none; }
+  .category-button.is-pending small{ margin-left:8px; font-size:10px; }
+
+  footer{ background:#07100E; padding:45px 28px 25px; }
+  .footer-inner{
+    max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:30px; flex-wrap:wrap;
+    padding-bottom:30px; border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .footer-logo{ font-family:"Shippori Mincho", serif; font-size:18px; }
+  .footer-copy{ margin-top:8px; font-size:11px; color:rgba(234,242,233,.5); }
+  .footer-social{ display:flex; gap:1.6rem; }
+  .footer-social a{ display:inline-flex; color:rgba(234,242,233,.55); }
+  .footer-social a:hover{ color:var(--amber); }
+  .footer-social svg{ width:19px; height:19px; }
+  .footer-social .icon-mask{
+    display:block; width:19px; height:19px; background-color:currentColor;
+    -webkit-mask:url('../../images/icons/x-logo-black.png') no-repeat center / contain;
+    mask:url('../../images/icons/x-logo-black.png') no-repeat center / contain;
+  }
+  .copyright{ max-width:1200px; margin:20px auto 0; font-family:"Space Mono", monospace; font-size:9px; color:rgba(234,242,233,.35); }
+
+  @media(max-width:760px){
+    .header-inner{ padding:12px 16px; gap:8px; flex-direction:column-reverse; align-items:flex-start; }
+    .logo{ font-size:17px; }
+    nav{ width:100%; gap:14px; justify-content:flex-end; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    nav::-webkit-scrollbar{ display:none; }
+    nav a, nav span{ font-size:10px; white-space:nowrap; flex:0 0 auto; }
+    .hero-inner{ padding:60px 20px 40px; }
+    section{ padding:50px 20px; }
+    .zukan-grid{ grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:14px; }
+    .other-creatures-buttons{ display:grid; grid-template-columns:1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-bar"><div class="lang-bar-inner"><a href="../../categories/beetles.html">JA</a><a href="../../en/categories/beetles.html">EN</a><a href="../../es/categories/beetles.html">ES</a><span class="current">中文</span></div></div>
+
+<div class="site-header-sticky">
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
+      <nav class="main-nav">
+        <a href="../index.html">首页</a>
+        <a href="../highlights.html">代表性生物</a>
+        <a href="../../tour.html">夜间旅行团</a>
+        <a href="../contact.html">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="cat-strip-outer">
+    <div class="cat-strip-wrap">
+      <div class="cat-strip" id="catStrip" aria-label="生物分类"><a href="snakes.html" class="cat-item">蛇类</a><a href="amphibians.html" class="cat-item">两栖类</a><a href="stag-beetles.html" class="cat-item">锅甲</a><a href="birds.html" class="cat-item">鸟类</a><a href="mammals.html" class="cat-item">哺乳类</a><a href="aquatic-insects.html" class="cat-item">水生昆虫</a><span class="cat-item current" id="currentCat">甲虫</span></div>
+      <div class="fade-right" id="fadeRight"></div>
+      <div class="scroll-hint" id="scrollHint" aria-hidden="true">→</div>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">CREATURES / BEETLES</div>
+    <h1>甲虫</h1>
+    <p class="hero-lead">在夜晚的森林中邂逅的甲虫们，姿态与生活方式各不相同。从依靠奄美黑兔粪便生活的粪金龟，到飞向灯光的犀金龟，这里介绍的是奄美岛上的部分甲虫。</p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="section-inner">
+    <div class="section-label">ABOUT</div>
+    <h2 class="section-title">关于本图鉴页面</h2>
+    <div class="intro-text"><p>仅奄美大岛的甲虫种类就极为丰富，其中不少还是专业性很强的类群，本页会随着照片和资料的积累逐步以图鉴形式补充完善。点击照片或名称，即可查看该物种的详细页面。</p></div>
+    <div class="note-box">这里介绍的甲虫中，许多是只分布于奄美大岛、德之岛的固有种或稀有种，其中一些物种根据法律或条例禁止采集。请在不给生物和环境造成负担的前提下轻柔地进行观察。此外，本页也收录了因人类活动而从岛外带入的外来种，并将其与本土生物区分标注。</div>
+  </div>
+</section>
+
+<section class="creatures">
+  <div class="section-inner">
+    <div class="section-label">FIELD GUIDE</div>
+    <h2 class="section-title">甲虫</h2>
+
+    <div class="group"><p class="group-title">―― 粪金龟类 ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/amami-himekebuka-magusokogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg" data-photos='[&quot;../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000002_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000003_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000004_20260427_12.jpg&quot;]' alt="奄美毛粪金龟"></div><div class="zukan-info"><div class="zukan-name">奄美毛粪金龟</div><div class="zukan-latin">金龟科粪金龟亚科奄美毛粪金龟 <em>Gilletianus atsushii</em> (Ochi, 1986)</div><p class="zukan-desc">分布于奄美大岛的稀有粪金龟，采集记录非常稀少。1986年由越智辉夫以 *Aphodius (Trichaphodius) atsushii* 之名记载，后经分类修订，现归入Gilletianus属。据推测以奄美黑兔的粪便为食，但其生态尚有许多未知之处，采集实例也十分有限。</p></div></a><a class="zukan-card" href="../creatures/beetles/amami-semadara-magusokogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg" data-photos='[&quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000002_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000003_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg&quot;]' alt="奄美斑纹粪金龟"></div><div class="zukan-info"><div class="zukan-name">奄美斑纹粪金龟</div><div class="zukan-latin">金龟科粪金龟亚科奄美斑纹粪金龟 <em>Chilothorax ohishii</em> (Masumoto, 1975)</div><p class="zukan-desc">仅分布于奄美大岛、德之岛的固有种。1975年由桝元敏也以 *Aphodius ohishii* 之名记载，现归入Chilothorax属。主要以奄美黑兔的粪便为食，秋季至春季常可见到，夏季则几乎难觅踪影。</p></div></a><a class="zukan-card" href="../creatures/beetles/marudaikoku-kogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg" data-photos='[&quot;../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg&quot;, &quot;../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000002_20251126_22.jpg&quot;, &quot;../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000003_20251126_22.jpg&quot;, &quot;../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000004_20251126_22.jpg&quot;]' alt="奄美圆大黑金龟"></div><div class="zukan-info"><div class="zukan-name">奄美圆大黑金龟</div><div class="zukan-latin">金龟科大黑金龟亚科奄美圆大黑金龟 <em>Copris brachypterus</em> Nomura, 1964</div><p class="zukan-desc">体长13〜20毫米。仅分布于奄美大岛、德之岛的固有种(德之岛分布有另一亚种)，后翅退化，无法飞行。夜间在山地森林中四处走动寻找奄美黑兔的粪便，具有在粪球下方挖洞、用前脚一边后退一边将粪球拖入洞中的习性。由于分布范围极为有限、迁移能力弱，加之过去采集压力导致个体数量大幅减少，被环境省红色名录列为濒危II类(VU)。</p><span class="zukan-tag rare">禁止采集(国立公园指定动物·条例指定稀有野生动植物)，环境省红色名录 濒危II类(VU)</span></div></a><a class="zukan-card" href="../creatures/beetles/oshima-senchi-kogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg" alt="大岛黑蜣"></div><div class="zukan-info"><div class="zukan-name">大岛黑蜣</div><div class="zukan-latin">黑蜣科大岛黑蜣 <em>Phelotrupes oshimanus</em> Fairmaire, 1895</div><p class="zukan-desc">体长可达20毫米，是日本产黑蜣科中体型最大的物种。仅分布于奄美大岛、德之岛的固有种，秋季至冬季活动，聚集于奄美黑兔及野猪的粪便。具有用前脚抱住粪便一边后退一边拖拽、运回自己巢穴的独特习性。被鹿儿岛县红色名录列为准濒危。</p><span class="zukan-tag rare">鹿儿岛县红色名录 准濒危</span></div></a></div></div>
+<div class="group"><p class="group-title">―― 犀金龟类 ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/amami-ko-kabuto.html"><div class="zukan-image"><img src="../../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg" data-photos='[&quot;../../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg&quot;, &quot;../../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000002_20260416_22.jpg&quot;, &quot;../../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000003_20241128_17.jpg&quot;]' alt="奄美小犀金龟"></div><div class="zukan-info"><div class="zukan-name">奄美小犀金龟</div><div class="zukan-latin">金龟科犀金龟亚科奄美小犀金龟 <em>Eophileurus chinensis irregularis</em> Prell, 1913</div><p class="zukan-desc">小犀金龟 *Eophileurus chinensis* 分布于奄美大岛、德之岛、与路岛及请岛的亚种。体长雄性约20〜25毫米，雌性约15〜20毫米。栖息于平地到山地的森林中，夜行性，常见于林地地面或林道上行走，初夏至晚秋期间也会飞向树液及灯光。成虫几乎全年可见，但并非个体数量很多的物种。</p></div></a><a class="zukan-card" href="../creatures/beetles/taiwan-saikabuto.html"><div class="zukan-image"><img src="../../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg" data-photos='[&quot;../../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg&quot;, &quot;../../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg&quot;]' alt="椰子犀金龟(台湾犀角金龟)"></div><div class="zukan-info"><div class="zukan-name">椰子犀金龟(台湾犀角金龟)</div><div class="zukan-latin">金龟科犀金龟亚科椰子犀金龟(台湾犀角金龟) <em>Oryctes rhinoceros</em> (Linnaeus, 1758)</div><p class="zukan-desc">原产于中南半岛周边的外来种。据信20世纪初随从台湾进口的资材混入侵入石垣岛，为日本国内最早记录，此后分布逐渐北扩，1991年在奄美大岛、德之岛也被确认。目前已在南西诸岛几乎全境定着并自然繁殖。作为在椰子类、菠萝、甘蔗等植物的茎部及芯部钻孔为害的农业害虫而为人所知，也有人担忧其与本地犀金龟类之间的竞争关系。</p><span class="zukan-tag invasive">外来种(1991年首次在奄美大岛、德之岛确认，为椰子、菠萝、甘蔗的害虫)</span></div></a></div></div>
+<div class="group"><p class="group-title">―― 花金龟类 ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/oshima-torafu-hanamuguri.html"><div class="zukan-image"><img src="../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg" data-photos='[&quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg&quot;, &quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg&quot;, &quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000003_20250515_10.jpg&quot;, &quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg&quot;, &quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg&quot;]' alt="大岛虎纹花金龟"></div><div class="zukan-info"><div class="zukan-name">大岛虎纹花金龟</div><div class="zukan-latin">金龟科大岛虎纹花金龟 <em>Paratrichius duplicatus duplicatus</em> Lewis, 1895</div><p class="zukan-desc">体长11.8〜15.6毫米。分布于奄美大岛、德之岛的指名亚种(P. d. duplicatus)。冲绳诸岛则分布着另一亚种冲绳虎纹花金龟(P. d. okinawanus)。与近缘的虎纹花金龟类相比，翅色偏黑，具有独特光泽为其特征。4月至5月间出现。</p></div></a></div></div>
+<div class="group"><p class="group-title">―― 球金龟类 ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/tokara-mannmaru-kogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg" data-photos='[&quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000002_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000003_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000004_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000005_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000006_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000007_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000008_20260415_21.jpg&quot;]' alt="吐噶喇球金龟"></div><div class="zukan-info"><div class="zukan-name">吐噶喇球金龟</div><div class="zukan-latin">厚甲金龟科球金龟亚科吐噶喇球金龟 <em>Madrasostes kazumai</em> Ochi, Johki et Nakata, 1990</div><p class="zukan-desc">体长约5.0〜5.8毫米的小型甲虫，分布于吐噶喇列岛(模式产地为中之岛)及奄美大岛。与分布于八重山诸岛的近缘种先岛球金龟(*M. kazumai hisamatsui* Ochi, 1990)以分布区域区分。被认为是一种好蚁性昆虫，多见于朽木内部及其周围落叶层等靠近蚁巢的环境中，原始记载论文的题名中也使用了&quot;myrmecophilous(好蚁性)&quot;一词。受到刺激时会将触角与足收入体内，蜷缩成完整的球状，如同鼠妇一般保护自己。</p></div></a></div></div>
+<div class="group"><p class="group-title">―― 吉丁虫类 ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/ao-uba-tamamushi.html"><div class="zukan-image"><img src="../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg" data-photos='[&quot;../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg&quot;, &quot;../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg&quot;, &quot;../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg&quot;, &quot;../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg&quot;]' alt="奄美青姥吉丁虫"></div><div class="zukan-info"><div class="zukan-name">奄美青姥吉丁虫</div><div class="zukan-latin">吉丁虫科奄美青姥吉丁虫 <em>Chalcophora japonica oshimana</em> Schönfeldt, 1890</div><p class="zukan-desc">体长24〜40毫米。分布于北海道至冲绳的姥吉丁虫 *Chalcophora japonica* 在奄美群岛、冲绳诸岛的亚种。偏好松树的枯木或衰弱木，幼虫在木材中取食成长。成虫在初夏至夏季可见。</p></div></a><a class="zukan-card" href="../creatures/beetles/midori-nakaboso-tamamushi.html"><div class="zukan-image"><img src="../../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg" data-photos='[&quot;../../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg&quot;, &quot;../../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg&quot;, &quot;../../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg&quot;]' alt="绿窄吉丁虫"></div><div class="zukan-info"><div class="zukan-name">绿窄吉丁虫</div><div class="zukan-latin">吉丁虫科绿窄吉丁虫 <em>Coraebus hastanus oberthueri</em></div><p class="zukan-desc">体长约11毫米的小型吉丁虫，分布于奄美大岛以南地区。窄吉丁虫属的成员以夏季强烈日照下活跃著称，本种也大致在6月至9月间可见。</p></div></a><a class="zukan-card" href="../creatures/beetles/ruri-nakaboso-tamamushi.html"><div class="zukan-image"><img src="../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg" data-photos='[&quot;../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg&quot;, &quot;../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg&quot;, &quot;../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg&quot;, &quot;../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg&quot;]' alt="琉璃窄吉丁虫"></div><div class="zukan-info"><div class="zukan-name">琉璃窄吉丁虫</div><div class="zukan-latin">吉丁虫科琉璃窄吉丁虫 <em>Coraebus niponicus</em> Lewis, 1894</div><p class="zukan-desc">具琉璃色光泽的小型吉丁虫，已在奄美大岛确认分布。窄吉丁虫属的成员以夏季强烈日照下活跃著称，本种也大致在6月至9月间可见。</p></div></a></div></div>
+<div class="group"><p class="group-title">―― 天牛类 ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/be-tsu-hirata-kamikiri.html"><div class="zukan-image"><img src="../../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg" alt="贝茨扁天牛"></div><div class="zukan-info"><div class="zukan-name">贝茨扁天牛</div><div class="zukan-latin">天牛科贝茨扁天牛 <em>Eurypoda batesi</em> Gahan, 1894</div><p class="zukan-desc">体长26〜34毫米。广泛分布于关东、中部地方以南的本州，以及四国、九州、冲绳岛以北的南西诸岛(含奄美大岛、德之岛)，国外见于朝鲜半岛及中国西南部。常聚集于樟树、椎树、红楠等树木，夜行性，也会飞向灯光。6月至8月前后常见。</p></div></a><a class="zukan-card" href="../creatures/beetles/ferie-beniboshi-kamikiri.html"><div class="zukan-image"><img src="../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg" data-photos='[&quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000003_20250628_15.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000004_20250628_15.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000005_20250628_15.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000006_20250628_15.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000007_20250705_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000008_20250705_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000009_20250705_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg&quot;]' alt="费氏红星天牛"></div><div class="zukan-info"><div class="zukan-name">费氏红星天牛</div><div class="zukan-latin">天牛科费氏红星天牛 <em>Rosalia (Eurybatus) ferriei</em> Vuillet, 1911</div><p class="zukan-desc">仅分布于奄美大岛的固有种。体色红底黑纹，十分美丽，7月前后出现在深山森林中的枯立木上。因在奄美大岛采集到本种的费里耶神父而得名。根据鹿儿岛县稀有野生动植物保护条例被指定为稀有野生动植物，禁止捕获、采集。</p><span class="zukan-tag rare">禁止采集(鹿儿岛县稀有野生动植物保护条例·指定稀有野生动植物)</span></div></a></div></div>
+<div class="group"><p class="group-title">―― 叶甲类 ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/oomidor-isaru-hamshi.html"><div class="zukan-image"><img src="../../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg" data-photos='[&quot;../../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg&quot;, &quot;../../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000002_20260708_12.jpg&quot;]' alt="大绿猿叶甲"></div><div class="zukan-info"><div class="zukan-name">大绿猿叶甲</div><div class="zukan-latin">叶甲科大绿猿叶甲 <em>Platycorynus japonicus</em></div><p class="zukan-desc">体长约10毫米。体具金属光泽的绿色小型叶甲，分布于南西诸岛(奄美大岛以南)。以络石类植物为食草，大致在4月至10月间可见。</p></div></a></div></div>
+  </div>
+</section>
+
+<section class="tour">
+  <p class="section-label">NIGHT FIELD TOUR</p>
+  <h2>走进奥美的夜间森林</h2>
+  <p>跟着向导一起在夜间森林中寻找生物。</p>
+  <a class="btn" href="../contact.html">查看夜间旅行团详情及费用 →</a>
+</section>
+
+<section class="other-categories">
+  <div class="section-inner">
+    <div class="section-label">EXPLORE MORE</div>
+    <h3 class="other-creatures-title">探索更多生物</h3>
+    <div class="other-creatures-buttons">
+      <a href="../highlights.html" class="category-button">代表性生物 →</a><a href="snakes.html" class="category-button">蛇类 →</a><a href="amphibians.html" class="category-button">两栖类 →</a><a href="stag-beetles.html" class="category-button">锅甲 →</a><a href="mammals.html" class="category-button">哺乳类 →</a><a href="birds.html" class="category-button">鸟类 →</a><a href="aquatic-insects.html" class="category-button">水生昆虫 →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Nature Experience Amami</div>
+      <div class="footer-copy">© 2026 Nature-Experience Amami。版权所有，未经许可禁止转载。</div>
+    </div>
+    <div class="footer-social"><a href="https://x.com/shiikumemo" target="_blank" rel="noopener" aria-label="X (Twitter)"><span class="icon-mask" aria-hidden="true"></span></a><a href="https://www.instagram.com/nature_experience_amami/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 1000 1000" fill="currentColor" aria-hidden="true"><path d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34" transform="translate(-2.5 -2.5)"/></svg></a></div>
+  </div>
+  <div class="copyright">&copy; Nature Experience Amami</div>
+</footer>
+
+<script>
+(function () {
+  document.querySelectorAll(".zukan-image img[data-photos]").forEach(function (img) {
+    try {
+      var photos = JSON.parse(img.dataset.photos);
+      if (photos.length > 1) {
+        img.src = photos[Math.floor(Math.random() * photos.length)];
+      }
+    } catch (e) {}
+  });
+})();
+</script>
+<script src="../../js/category-strip.js"></script>
+
+</body>
+</html>

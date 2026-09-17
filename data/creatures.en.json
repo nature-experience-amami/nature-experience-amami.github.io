@@ -636,6 +636,280 @@
     "page_path": "creatures/aquatic-insects/usuiro-shima-gengoro.html"
   },
   {
+    "id": "amami-himekebuka-magusokogane",
+    "name": "Amami Hairy Dung Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      4
+    ],
+    "description": "Scarabaeidae, subfamily Aphodiinae, Amami Hairy Dung Beetle *Gilletianus atsushii* (Ochi, 1986)\n\nA rare dung beetle found on Amami Oshima, with very few collection records. It was described in 1986 by Teruo Ochi as *Aphodius (Trichaphodius) atsushii*, but later taxonomic revisions placed it in the genus Gilletianus. It is thought to live off the droppings of the Amami rabbit, but much about its ecology remains unknown, and records of it are limited.",
+    "photos": [
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000002_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000003_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000004_20260427_12.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-himekebuka-magusokogane.html"
+  },
+  {
+    "id": "amami-ko-kabuto",
+    "name": "Amami Small Rhinoceros Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "Scarabaeidae, subfamily Dynastinae, Amami Small Rhinoceros Beetle *Eophileurus chinensis irregularis* Prell, 1913\n\nA subspecies of the small rhinoceros beetle *Eophileurus chinensis*, found on Amami Oshima, Tokunoshima, Yoro, and Uke. Males reach about 20–25mm and females about 15–20mm. It lives in forests from lowlands to mountains, and is nocturnal, often seen walking on the forest floor or along forest roads; from early summer to late autumn it also comes to sap and lights. Adults can be seen nearly year-round, though it is not a particularly abundant species.",
+    "photos": [
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000002_20260416_22.jpg",
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000003_20241128_17.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-ko-kabuto.html"
+  },
+  {
+    "id": "amami-semadara-magusokogane",
+    "name": "Amami Mottled Dung Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Scarabaeidae, subfamily Aphodiinae, Amami Mottled Dung Beetle *Chilothorax ohishii* (Masumoto, 1975)\n\nAn endemic species found only on Amami Oshima and Tokunoshima. It was described in 1975 by Toshiya Masumoto as *Aphodius ohishii*, but is now placed in the genus Chilothorax. It feeds mainly on the droppings of the Amami rabbit, and is commonly seen from autumn through spring, while rarely appearing in summer.",
+    "photos": [
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000002_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000003_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-semadara-magusokogane.html"
+  },
+  {
+    "id": "ao-uba-tamamushi",
+    "name": "Amami Green Jewel Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "Buprestidae, Amami Green Jewel Beetle *Chalcophora japonica oshimana* Schönfeldt, 1890\n\nBody length 24–40mm. A subspecies, found in the Amami and Okinawa island groups, of the jewel beetle *Chalcophora japonica*, which is widely distributed from Hokkaido to Okinawa. It favors dead or weakened pine trees, and the larvae feed and grow inside the wood. Adults are seen from early summer into summer.",
+    "photos": [
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg"
+    ],
+    "page_path": "creatures/beetles/ao-uba-tamamushi.html"
+  },
+  {
+    "id": "be-tsu-hirata-kamikiri",
+    "name": "Bates's Flat Longhorn Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "Cerambycidae, Bates's Flat Longhorn Beetle *Eurypoda batesi* Gahan, 1894\n\nBody length 26–34mm. Widely distributed from Honshu (south of the Kanto and Chubu regions) through Shikoku, Kyushu, and the Nansei Islands north of Okinawa Island (including Amami Oshima and Tokunoshima), and also found outside Japan on the Korean Peninsula and in southwestern China. It gathers on camphor, chinquapin, and machilus trees, is nocturnal, and also comes to lights. Commonly seen from around June to August.",
+    "photos": [
+      "../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"
+    ],
+    "page_path": "creatures/beetles/be-tsu-hirata-kamikiri.html"
+  },
+  {
+    "id": "ferie-beniboshi-kamikiri",
+    "name": "Ferrié's Red Longhorn Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      7
+    ],
+    "description": "Cerambycidae, Ferrié's Red Longhorn Beetle *Rosalia (Eurybatus) ferriei* Vuillet, 1911\n\nAn endemic species found only on Amami Oshima. It has a beautiful red body marked with black patterns, and appears on standing dead trees deep in the forest around July. It is named after Father Ferrié, who collected the species on Amami Oshima. It is designated a Rare Wild Species under Kagoshima Prefecture's ordinance for the protection of rare wildlife, and its capture or collection is prohibited.",
+    "photos": [
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000003_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000004_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000005_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000006_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000007_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000008_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000009_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg"
+    ],
+    "page_path": "creatures/beetles/ferie-beniboshi-kamikiri.html"
+  },
+  {
+    "id": "marudaikoku-kogane",
+    "name": "Amami Round Dung Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      11
+    ],
+    "description": "Scarabaeidae, subfamily Coprinae, Amami Round Dung Beetle *Copris brachypterus* Nomura, 1964\n\nBody length 13–20mm. An endemic species found only on Amami Oshima and Tokunoshima (a different subspecies occurs on Tokunoshima); its hind wings are reduced, so it cannot fly. At night it walks through mountain forests searching for the droppings of the Amami rabbit, and has the habit of digging a hole beneath a dung ball and dragging it in backwards with its front legs. Because its range is extremely limited, it has poor mobility, and past collection pressure has significantly reduced its numbers, it is listed as Vulnerable (VU) on the Ministry of the Environment's Red List.",
+    "photos": [
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000002_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000003_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000004_20251126_22.jpg"
+    ],
+    "page_path": "creatures/beetles/marudaikoku-kogane.html"
+  },
+  {
+    "id": "midori-nakaboso-tamamushi",
+    "name": "Green Narrow Jewel Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Buprestidae, Green Narrow Jewel Beetle *Coraebus hastanus oberthueri*\n\nA small jewel beetle about 11mm long, found from Amami Oshima southward. Members of the genus Coraebus are known to be most active during the strong sunlight of summer, and this species too is seen from around June to September.",
+    "photos": [
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg",
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg"
+    ],
+    "page_path": "creatures/beetles/midori-nakaboso-tamamushi.html"
+  },
+  {
+    "id": "oomidor-isaru-hamshi",
+    "name": "Large Green Leaf Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Chrysomelidae, Large Green Leaf Beetle *Platycorynus japonicus*\n\nBody length about 10mm. A small leaf beetle with a metallic green sheen, found in the Nansei Islands (from Amami Oshima southward). It feeds on plants of the star jasmine group, and is seen from around April to October.",
+    "photos": [
+      "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
+      "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000002_20260708_12.jpg"
+    ],
+    "page_path": "creatures/beetles/oomidor-isaru-hamshi.html"
+  },
+  {
+    "id": "oshima-senchi-kogane",
+    "name": "Oshima Earth-boring Dung Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ],
+    "description": "Geotrupidae, Oshima Earth-boring Dung Beetle *Phelotrupes oshimanus* Fairmaire, 1895\n\nReaching 20mm in length, this is the largest species of Geotrupidae found in Japan. An endemic species found only on Amami Oshima and Tokunoshima, it is active from autumn into winter and gathers at the droppings of the Amami rabbit and wild boar. It has the distinctive habit of cradling dung with its front legs and dragging it backwards into its own burrow. It is listed as Near Threatened on the Kagoshima Prefecture Red List.",
+    "photos": [
+      "../images/creatures/beetles/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg"
+    ],
+    "page_path": "creatures/beetles/oshima-senchi-kogane.html"
+  },
+  {
+    "id": "oshima-torafu-hanamuguri",
+    "name": "Oshima Tiger Flower Chafer",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      4,
+      5
+    ],
+    "description": "Scarabaeidae, Oshima Tiger Flower Chafer *Paratrichius duplicatus duplicatus* Lewis, 1895\n\nBody length 11.8–15.6mm. The nominate subspecies (P. d. duplicatus), found on Amami Oshima and Tokunoshima; a different subspecies, the Okinawa Tiger Flower Chafer (P. d. okinawanus), occurs in the Okinawa island group. Compared with related tiger flower chafers, its wing covers are tinged darker, giving it a distinctive sheen. It appears from April to May.",
+    "photos": [
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000003_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg"
+    ],
+    "page_path": "creatures/beetles/oshima-torafu-hanamuguri.html"
+  },
+  {
+    "id": "ruri-nakaboso-tamamushi",
+    "name": "Azure Narrow Jewel Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Buprestidae, Azure Narrow Jewel Beetle *Coraebus niponicus* Lewis, 1894\n\nA small jewel beetle with an azure sheen, recorded on Amami Oshima. Members of the genus Coraebus are known to be most active during the strong sunlight of summer, and this species too is seen from around June to September.",
+    "photos": [
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg"
+    ],
+    "page_path": "creatures/beetles/ruri-nakaboso-tamamushi.html"
+  },
+  {
+    "id": "taiwan-saikabuto",
+    "name": "Coconut Rhinoceros Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      4
+    ],
+    "description": "Scarabaeidae, subfamily Dynastinae, Coconut Rhinoceros Beetle *Oryctes rhinoceros* (Linnaeus, 1758)\n\nAn invasive species native to the Indochina Peninsula region. The first record in Japan is believed to be its introduction to Ishigaki Island in imported materials from Taiwan in the early 20th century; it subsequently spread northward, and was confirmed on Amami Oshima and Tokunoshima in 1991. It is now established and breeding naturally across nearly the entire Nansei Islands. It is known as an agricultural pest that bores into the stems and cores of palms, pineapple, and sugarcane, and there is concern about competition with native rhinoceros beetle species.",
+    "photos": [
+      "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
+      "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg"
+    ],
+    "page_path": "creatures/beetles/taiwan-saikabuto.html"
+  },
+  {
+    "id": "tokara-mannmaru-kogane",
+    "name": "Tokara Pill Scarab",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      4
+    ],
+    "description": "Ceratocanthidae, subfamily Ceratocanthinae, Tokara Pill Scarab *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\nA small beetle about 5.0–5.8mm long, found in the Tokara Islands (the type locality is Nakanoshima) and on Amami Oshima. It is distinguished by range from the closely related Sakishima Pill Scarab (*M. kazumai hisamatsui* Ochi, 1990), found in the Yaeyama Islands. It is considered a myrmecophilous species — found in environments close to ant nests, such as inside rotten wood or in the leaf litter layer around it — and the original description's paper title itself uses the word \"myrmecophilous.\" When disturbed, it withdraws its antennae and legs into its body and rolls up into a perfect ball, like a pill bug, to protect itself.",
+    "photos": [
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000002_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000003_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000004_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000005_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000006_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000007_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000008_20260415_21.jpg"
+    ],
+    "page_path": "creatures/beetles/tokara-mannmaru-kogane.html"
+  },
+  {
     "id": "akahige",
     "name": "Ryukyu Robin",
     "category": "birds",

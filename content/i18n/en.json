@@ -8,6 +8,7 @@
     "birds": "Birds",
     "lizards": "Lizards",
     "aquatic-insects": "Aquatic Insects",
+    "beetles": "Beetles",
     "other-insects": "Insects",
     "shellfish": "Shellfish",
     "crustaceans": "Crustaceans & Others"
@@ -60,6 +61,13 @@
     "group_kitsutsuki": "\u2015\u2015 Woodpeckers \u2015\u2015",
     "group_hato": "\u2015\u2015 Pigeons \u2015\u2015",
     "group_chidori": "\u2015\u2015 Shorebirds (Sandpipers & Plovers) \u2015\u2015",
+    "group_funchu": "\u2015\u2015 Dung Beetles \u2015\u2015",
+    "group_kabuto": "\u2015\u2015 Rhinoceros Beetles \u2015\u2015",
+    "group_hanamuguri": "\u2015\u2015 Flower Chafers \u2015\u2015",
+    "group_manmaru": "\u2015\u2015 Pill Scarabs \u2015\u2015",
+    "group_tamamushi": "\u2015\u2015 Jewel Beetles \u2015\u2015",
+    "group_kamikiri": "\u2015\u2015 Longhorn Beetles \u2015\u2015",
+    "group_hamushi": "\u2015\u2015 Leaf Beetles \u2015\u2015",
     "group_other": "\u2015\u2015 Others \u2015\u2015",
     "zukan_about_title": "About This Field Guide"
   }

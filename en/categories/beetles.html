@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beetles | Nature Experience Amami</title>
+<meta name="description" content="Beetles of Amami Oshima — Nature Experience Amami.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/category-strip.css">
+
+<style>
+  :root{
+    --night:#0A1613; --canopy:#16302A; --moonlight:#EAF2E9;
+    --amber:#E8A33D; --moss:#6B8F71; --bark:#2A211A; --line:rgba(234,242,233,.12);
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ background:var(--night); color:var(--moonlight); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.9; }
+  img{ display:block; width:100%; }
+  a{ color:inherit; text-decoration:none; }
+
+  .lang-bar{ background:#050907; border-bottom:1px solid rgba(234,242,233,.12); }
+  .lang-bar-inner{ max-width:1200px; margin:auto; padding:.5rem 6vw; display:flex; justify-content:flex-end; gap:1rem; font-family:"Space Mono",monospace; font-size:.7rem; letter-spacing:.06em; }
+  .lang-bar a, .lang-bar span{ text-decoration:none; color:rgba(234,242,233,.5); }
+  .lang-bar a:hover{ color:var(--moonlight); }
+  .lang-bar span.current{ color:var(--amber); }
+  .lang-bar span.disabled{ color:rgba(234,242,233,.25); }
+
+  .site-header-sticky{ position:sticky; top:0; z-index:1000; }
+  header{
+    background:rgba(10,22,19,.94); backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .header-inner{
+    max-width:1200px; margin:0 auto; padding:18px 28px;
+    display:flex; align-items:center; justify-content:space-between; gap:30px;
+  }
+  .logo{ font-family:"Shippori Mincho", serif; font-size:20px; font-weight:600; letter-spacing:.08em; white-space:nowrap; }
+  .logo span{ display:block; font-family:"Space Mono", monospace; font-size:9px; letter-spacing:.18em; color:var(--amber); margin-top:2px; }
+  nav{ display:flex; align-items:center; gap:28px; }
+  nav a{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; opacity:.82; transition:.25s; }
+  nav a:hover{ color:var(--amber); opacity:1; }
+  nav span{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; color:rgba(234,242,233,.35); }
+
+  .hero{
+    min-height:38vh; display:flex; align-items:flex-end; position:relative; overflow:hidden;
+    background:
+      linear-gradient(to bottom, rgba(10,22,19,.2), rgba(10,22,19,.95)),
+      radial-gradient(circle at 70% 35%, rgba(107,143,113,.18), transparent 35%);
+  }
+  .hero-inner{ width:100%; max-width:1200px; margin:0 auto; padding:80px 28px 55px; }
+  .eyebrow{ font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.18em; color:var(--amber); margin-bottom:18px; }
+  .hero h1{ font-family:"Shippori Mincho", serif; font-size:clamp(38px,6vw,64px); line-height:1.2; font-weight:600; letter-spacing:.04em; }
+  .hero-lead{ max-width:680px; margin-top:22px; font-size:15px; line-height:2; color:rgba(234,242,233,.82); }
+
+  section{ padding:70px 28px; }
+  .section-inner{ max-width:1200px; margin:0 auto; }
+  .section-label{ font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.18em; color:var(--amber); margin-bottom:12px; }
+  .section-title{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin-bottom:24px; }
+
+  .intro{ background:var(--canopy); }
+  .intro-text{ max-width:720px; font-size:14px; color:rgba(234,242,233,.85); }
+  .intro-text p + p{ margin-top:16px; }
+  .note-box{
+    margin-top:28px; padding:20px 22px; border-left:2px solid var(--moss);
+    background:rgba(10,22,19,.35); font-size:12.5px; color:rgba(234,242,233,.75); line-height:1.8;
+  }
+
+  .creatures{ background:var(--night); }
+  .group{ margin-bottom:64px; padding-top:36px; border-top:1px solid rgba(234,242,233,.12); }
+  .group:first-child{ padding-top:0; border-top:none; }
+  .group:last-child{ margin-bottom:0; }
+  .group-title{
+    font-family:"Shippori Mincho", serif; font-size:22px; font-weight:600; letter-spacing:.08em; color:var(--amber);
+    text-align:center; margin-bottom:32px;
+  }
+
+  .zukan-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:20px; }
+  .zukan-card{ border-top:1px solid rgba(234,242,233,.14); padding-top:16px; }
+  .zukan-image{
+    aspect-ratio:4/3; overflow:hidden; background:var(--canopy);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .zukan-image img{ width:100%; height:100%; object-fit:cover; }
+  .zukan-placeholder{
+    width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    color:rgba(234,242,233,.35); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.06em;
+    background:repeating-linear-gradient(135deg, rgba(234,242,233,.03) 0 10px, transparent 10px 20px);
+  }
+  .zukan-info{ padding-top:14px; }
+  .zukan-name{ font-family:"Shippori Mincho", serif; font-size:19px; font-weight:600; margin-bottom:3px; }
+  .zukan-latin{ font-size:11px; font-style:italic; color:rgba(234,242,233,.5); margin-bottom:8px; }
+  .zukan-desc{ font-size:12.5px; color:rgba(234,242,233,.72); line-height:1.8; margin-bottom:10px; }
+  .zukan-tag{
+    display:inline-block; font-family:"Space Mono", monospace; font-size:10px; letter-spacing:.04em;
+    padding:3px 8px; border:1px solid rgba(234,242,233,.2); border-radius:2px; color:rgba(234,242,233,.6);
+  }
+  .zukan-tag.rare{ border-color:rgba(232,163,61,.5); color:var(--amber); }
+  .zukan-tag.invasive{
+    border-color:rgba(232,107,61,.6);
+    color:#E86B3D;
+    background:rgba(232,107,61,.08);
+  }
+
+  .tour{ text-align:center; background:var(--canopy); }
+  .tour h2{ font-family:"Shippori Mincho", serif; font-size:clamp(26px,4vw,38px); line-height:1.4; font-weight:600; margin:16px 0 18px; }
+  .tour p{ max-width:560px; margin:0 auto 28px; font-size:13.5px; color:rgba(234,242,233,.75); line-height:1.8; }
+  .btn{ display:inline-block; padding:15px 32px; background:var(--amber); color:var(--bark); font-family:"Space Mono", monospace; font-size:11px; letter-spacing:.08em; }
+  .btn:hover{ background:#f4b95a; }
+
+  .other-categories{ background:var(--canopy); border-top:1px solid rgba(234,242,233,.12); }
+  .other-creatures-title{ font-family:"Shippori Mincho", serif; font-size:22px; margin-bottom:22px; }
+  .other-creatures-buttons{ display:flex; flex-wrap:wrap; gap:12px; }
+  .category-button{
+    display:inline-flex; align-items:center; justify-content:center; padding:12px 22px;
+    border:1px solid rgba(234,242,233,.2); font-size:12px; color:rgba(234,242,233,.75); transition:.25s;
+  }
+  .category-button:hover{ border-color:var(--amber); color:var(--amber); background:rgba(232,163,61,.04); }
+  .category-button.is-pending{ color:rgba(234,242,233,.4); border-color:rgba(234,242,233,.12); cursor:default; }
+  .category-button.is-pending:hover{ border-color:rgba(234,242,233,.12); color:rgba(234,242,233,.4); background:none; }
+  .category-button.is-pending small{ margin-left:8px; font-size:10px; }
+
+  footer{ background:#07100E; padding:45px 28px 25px; }
+  .footer-inner{
+    max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:30px; flex-wrap:wrap;
+    padding-bottom:30px; border-bottom:1px solid rgba(234,242,233,.1);
+  }
+  .footer-logo{ font-family:"Shippori Mincho", serif; font-size:18px; }
+  .footer-copy{ margin-top:8px; font-size:11px; color:rgba(234,242,233,.5); }
+  .footer-social{ display:flex; gap:1.6rem; }
+  .footer-social a{ display:inline-flex; color:rgba(234,242,233,.55); }
+  .footer-social a:hover{ color:var(--amber); }
+  .footer-social svg{ width:19px; height:19px; }
+  .footer-social .icon-mask{
+    display:block; width:19px; height:19px; background-color:currentColor;
+    -webkit-mask:url('../../images/icons/x-logo-black.png') no-repeat center / contain;
+    mask:url('../../images/icons/x-logo-black.png') no-repeat center / contain;
+  }
+  .copyright{ max-width:1200px; margin:20px auto 0; font-family:"Space Mono", monospace; font-size:9px; color:rgba(234,242,233,.35); }
+
+  @media(max-width:760px){
+    .header-inner{ padding:12px 16px; gap:8px; flex-direction:column-reverse; align-items:flex-start; }
+    .logo{ font-size:17px; }
+    nav{ width:100%; gap:14px; justify-content:flex-end; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    nav::-webkit-scrollbar{ display:none; }
+    nav a, nav span{ font-size:10px; white-space:nowrap; flex:0 0 auto; }
+    .hero-inner{ padding:60px 20px 40px; }
+    section{ padding:50px 20px; }
+    .zukan-grid{ grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:14px; }
+    .other-creatures-buttons{ display:grid; grid-template-columns:1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-bar"><div class="lang-bar-inner"><a href="../../categories/beetles.html">JA</a><span class="current">EN</span><a href="../../es/categories/beetles.html">ES</a><a href="../../zh/categories/beetles.html">中文</a></div></div>
+
+<div class="site-header-sticky">
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="../index.html">Nature Experience Amami<span>AMAMI NIGHT FOREST</span></a>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="../highlights.html">Signature Wildlife</a>
+        <a href="../../tour.html">Tour</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="cat-strip-outer">
+    <div class="cat-strip-wrap">
+      <div class="cat-strip" id="catStrip" aria-label="Creature categories"><a href="snakes.html" class="cat-item">Snakes</a><a href="amphibians.html" class="cat-item">Amphibians</a><a href="stag-beetles.html" class="cat-item">Stag Beetles</a><a href="birds.html" class="cat-item">Birds</a><a href="mammals.html" class="cat-item">Mammals</a><a href="aquatic-insects.html" class="cat-item">Aquatic Insects</a><span class="cat-item current" id="currentCat">Beetles</span></div>
+      <div class="fade-right" id="fadeRight"></div>
+      <div class="scroll-hint" id="scrollHint" aria-hidden="true">→</div>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">CREATURES / BEETLES</div>
+    <h1>Beetles</h1>
+    <p class="hero-lead">Beetles you&#x27;ll meet in the night forest, each with its own look and way of life. From dung beetles that rely on the Amami rabbit&#x27;s droppings to rhinoceros beetles drawn to lights, here&#x27;s a glimpse of the beetles found on Amami Oshima.</p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="section-inner">
+    <div class="section-label">ABOUT</div>
+    <h2 class="section-title">About This Field Guide</h2>
+    <div class="intro-text"><p>Amami Oshima alone is home to an enormous variety of beetles, many belonging to highly specialized groups, so this page adds species gradually, in field-guide format, as photos and information come together. Click a photo or name to see that species&#x27; full page.</p></div>
+    <div class="note-box">Many of the beetles introduced here are endemic or rare species found only on Amami Oshima and Tokunoshima, and collecting some of them is prohibited by law or ordinance. Please observe gently, without placing a burden on the creatures or their environment. This page also includes invasive species brought in from outside the island through human activity, which are marked separately from native species.</div>
+  </div>
+</section>
+
+<section class="creatures">
+  <div class="section-inner">
+    <div class="section-label">FIELD GUIDE</div>
+    <h2 class="section-title">Beetles</h2>
+
+    <div class="group"><p class="group-title">―― Dung Beetles ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/amami-himekebuka-magusokogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg" data-photos='[&quot;../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000002_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000003_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000004_20260427_12.jpg&quot;]' alt="Amami Hairy Dung Beetle"></div><div class="zukan-info"><div class="zukan-name">Amami Hairy Dung Beetle</div><div class="zukan-latin">Scarabaeidae, subfamily Aphodiinae, Amami Hairy Dung Beetle <em>Gilletianus atsushii</em> (Ochi, 1986)</div><p class="zukan-desc">A rare dung beetle found on Amami Oshima, with very few collection records. It was described in 1986 by Teruo Ochi as *Aphodius (Trichaphodius) atsushii*, but later taxonomic revisions placed it in the genus Gilletianus. It is thought to live off the droppings of the Amami rabbit, but much about its ecology remains unknown, and records of it are limited.</p></div></a><a class="zukan-card" href="../creatures/beetles/amami-semadara-magusokogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg" data-photos='[&quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000002_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000003_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg&quot;, &quot;../../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg&quot;]' alt="Amami Mottled Dung Beetle"></div><div class="zukan-info"><div class="zukan-name">Amami Mottled Dung Beetle</div><div class="zukan-latin">Scarabaeidae, subfamily Aphodiinae, Amami Mottled Dung Beetle <em>Chilothorax ohishii</em> (Masumoto, 1975)</div><p class="zukan-desc">An endemic species found only on Amami Oshima and Tokunoshima. It was described in 1975 by Toshiya Masumoto as *Aphodius ohishii*, but is now placed in the genus Chilothorax. It feeds mainly on the droppings of the Amami rabbit, and is commonly seen from autumn through spring, while rarely appearing in summer.</p></div></a><a class="zukan-card" href="../creatures/beetles/marudaikoku-kogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg" data-photos='[&quot;../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg&quot;, &quot;../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000002_20251126_22.jpg&quot;, &quot;../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000003_20251126_22.jpg&quot;, &quot;../../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000004_20251126_22.jpg&quot;]' alt="Amami Round Dung Beetle"></div><div class="zukan-info"><div class="zukan-name">Amami Round Dung Beetle</div><div class="zukan-latin">Scarabaeidae, subfamily Coprinae, Amami Round Dung Beetle <em>Copris brachypterus</em> Nomura, 1964</div><p class="zukan-desc">Body length 13–20mm. An endemic species found only on Amami Oshima and Tokunoshima (a different subspecies occurs on Tokunoshima); its hind wings are reduced, so it cannot fly. At night it walks through mountain forests searching for the droppings of the Amami rabbit, and has the habit of digging a hole beneath a dung ball and dragging it in backwards with its front legs. Because its range is extremely limited, it has poor mobility, and past collection pressure has significantly reduced its numbers, it is listed as Vulnerable (VU) on the Ministry of the Environment&#x27;s Red List.</p><span class="zukan-tag rare">Collecting prohibited (National Park Designated Animal, Ordinance-designated Rare Wild Species), Ministry of the Environment Red List: Vulnerable (VU)</span></div></a><a class="zukan-card" href="../creatures/beetles/oshima-senchi-kogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg" alt="Oshima Earth-boring Dung Beetle"></div><div class="zukan-info"><div class="zukan-name">Oshima Earth-boring Dung Beetle</div><div class="zukan-latin">Geotrupidae, Oshima Earth-boring Dung Beetle <em>Phelotrupes oshimanus</em> Fairmaire, 1895</div><p class="zukan-desc">Reaching 20mm in length, this is the largest species of Geotrupidae found in Japan. An endemic species found only on Amami Oshima and Tokunoshima, it is active from autumn into winter and gathers at the droppings of the Amami rabbit and wild boar. It has the distinctive habit of cradling dung with its front legs and dragging it backwards into its own burrow. It is listed as Near Threatened on the Kagoshima Prefecture Red List.</p><span class="zukan-tag rare">Kagoshima Prefecture Red List: Near Threatened</span></div></a></div></div>
+<div class="group"><p class="group-title">―― Rhinoceros Beetles ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/amami-ko-kabuto.html"><div class="zukan-image"><img src="../../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg" data-photos='[&quot;../../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg&quot;, &quot;../../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000002_20260416_22.jpg&quot;, &quot;../../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000003_20241128_17.jpg&quot;]' alt="Amami Small Rhinoceros Beetle"></div><div class="zukan-info"><div class="zukan-name">Amami Small Rhinoceros Beetle</div><div class="zukan-latin">Scarabaeidae, subfamily Dynastinae, Amami Small Rhinoceros Beetle <em>Eophileurus chinensis irregularis</em> Prell, 1913</div><p class="zukan-desc">A subspecies of the small rhinoceros beetle *Eophileurus chinensis*, found on Amami Oshima, Tokunoshima, Yoro, and Uke. Males reach about 20–25mm and females about 15–20mm. It lives in forests from lowlands to mountains, and is nocturnal, often seen walking on the forest floor or along forest roads; from early summer to late autumn it also comes to sap and lights. Adults can be seen nearly year-round, though it is not a particularly abundant species.</p></div></a><a class="zukan-card" href="../creatures/beetles/taiwan-saikabuto.html"><div class="zukan-image"><img src="../../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg" data-photos='[&quot;../../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg&quot;, &quot;../../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg&quot;]' alt="Coconut Rhinoceros Beetle"></div><div class="zukan-info"><div class="zukan-name">Coconut Rhinoceros Beetle</div><div class="zukan-latin">Scarabaeidae, subfamily Dynastinae, Coconut Rhinoceros Beetle <em>Oryctes rhinoceros</em> (Linnaeus, 1758)</div><p class="zukan-desc">An invasive species native to the Indochina Peninsula region. The first record in Japan is believed to be its introduction to Ishigaki Island in imported materials from Taiwan in the early 20th century; it subsequently spread northward, and was confirmed on Amami Oshima and Tokunoshima in 1991. It is now established and breeding naturally across nearly the entire Nansei Islands. It is known as an agricultural pest that bores into the stems and cores of palms, pineapple, and sugarcane, and there is concern about competition with native rhinoceros beetle species.</p><span class="zukan-tag invasive">Invasive species (first confirmed on Amami Oshima and Tokunoshima in 1991; a pest of palms, pineapple, and sugarcane)</span></div></a></div></div>
+<div class="group"><p class="group-title">―― Flower Chafers ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/oshima-torafu-hanamuguri.html"><div class="zukan-image"><img src="../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg" data-photos='[&quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg&quot;, &quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg&quot;, &quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000003_20250515_10.jpg&quot;, &quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg&quot;, &quot;../../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg&quot;]' alt="Oshima Tiger Flower Chafer"></div><div class="zukan-info"><div class="zukan-name">Oshima Tiger Flower Chafer</div><div class="zukan-latin">Scarabaeidae, Oshima Tiger Flower Chafer <em>Paratrichius duplicatus duplicatus</em> Lewis, 1895</div><p class="zukan-desc">Body length 11.8–15.6mm. The nominate subspecies (P. d. duplicatus), found on Amami Oshima and Tokunoshima; a different subspecies, the Okinawa Tiger Flower Chafer (P. d. okinawanus), occurs in the Okinawa island group. Compared with related tiger flower chafers, its wing covers are tinged darker, giving it a distinctive sheen. It appears from April to May.</p></div></a></div></div>
+<div class="group"><p class="group-title">―― Pill Scarabs ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/tokara-mannmaru-kogane.html"><div class="zukan-image"><img src="../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg" data-photos='[&quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000002_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000003_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000004_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000005_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000006_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000007_20260415_21.jpg&quot;, &quot;../../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000008_20260415_21.jpg&quot;]' alt="Tokara Pill Scarab"></div><div class="zukan-info"><div class="zukan-name">Tokara Pill Scarab</div><div class="zukan-latin">Ceratocanthidae, subfamily Ceratocanthinae, Tokara Pill Scarab <em>Madrasostes kazumai</em> Ochi, Johki et Nakata, 1990</div><p class="zukan-desc">A small beetle about 5.0–5.8mm long, found in the Tokara Islands (the type locality is Nakanoshima) and on Amami Oshima. It is distinguished by range from the closely related Sakishima Pill Scarab (*M. kazumai hisamatsui* Ochi, 1990), found in the Yaeyama Islands. It is considered a myrmecophilous species — found in environments close to ant nests, such as inside rotten wood or in the leaf litter layer around it — and the original description&#x27;s paper title itself uses the word &quot;myrmecophilous.&quot; When disturbed, it withdraws its antennae and legs into its body and rolls up into a perfect ball, like a pill bug, to protect itself.</p></div></a></div></div>
+<div class="group"><p class="group-title">―― Jewel Beetles ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/ao-uba-tamamushi.html"><div class="zukan-image"><img src="../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg" data-photos='[&quot;../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg&quot;, &quot;../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg&quot;, &quot;../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg&quot;, &quot;../../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg&quot;]' alt="Amami Green Jewel Beetle"></div><div class="zukan-info"><div class="zukan-name">Amami Green Jewel Beetle</div><div class="zukan-latin">Buprestidae, Amami Green Jewel Beetle <em>Chalcophora japonica oshimana</em> Schönfeldt, 1890</div><p class="zukan-desc">Body length 24–40mm. A subspecies, found in the Amami and Okinawa island groups, of the jewel beetle *Chalcophora japonica*, which is widely distributed from Hokkaido to Okinawa. It favors dead or weakened pine trees, and the larvae feed and grow inside the wood. Adults are seen from early summer into summer.</p></div></a><a class="zukan-card" href="../creatures/beetles/midori-nakaboso-tamamushi.html"><div class="zukan-image"><img src="../../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg" data-photos='[&quot;../../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg&quot;, &quot;../../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg&quot;, &quot;../../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg&quot;]' alt="Green Narrow Jewel Beetle"></div><div class="zukan-info"><div class="zukan-name">Green Narrow Jewel Beetle</div><div class="zukan-latin">Buprestidae, Green Narrow Jewel Beetle <em>Coraebus hastanus oberthueri</em></div><p class="zukan-desc">A small jewel beetle about 11mm long, found from Amami Oshima southward. Members of the genus Coraebus are known to be most active during the strong sunlight of summer, and this species too is seen from around June to September.</p></div></a><a class="zukan-card" href="../creatures/beetles/ruri-nakaboso-tamamushi.html"><div class="zukan-image"><img src="../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg" data-photos='[&quot;../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg&quot;, &quot;../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg&quot;, &quot;../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg&quot;, &quot;../../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg&quot;]' alt="Azure Narrow Jewel Beetle"></div><div class="zukan-info"><div class="zukan-name">Azure Narrow Jewel Beetle</div><div class="zukan-latin">Buprestidae, Azure Narrow Jewel Beetle <em>Coraebus niponicus</em> Lewis, 1894</div><p class="zukan-desc">A small jewel beetle with an azure sheen, recorded on Amami Oshima. Members of the genus Coraebus are known to be most active during the strong sunlight of summer, and this species too is seen from around June to September.</p></div></a></div></div>
+<div class="group"><p class="group-title">―― Longhorn Beetles ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/be-tsu-hirata-kamikiri.html"><div class="zukan-image"><img src="../../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg" alt="Bates&#x27;s Flat Longhorn Beetle"></div><div class="zukan-info"><div class="zukan-name">Bates&#x27;s Flat Longhorn Beetle</div><div class="zukan-latin">Cerambycidae, Bates&#x27;s Flat Longhorn Beetle <em>Eurypoda batesi</em> Gahan, 1894</div><p class="zukan-desc">Body length 26–34mm. Widely distributed from Honshu (south of the Kanto and Chubu regions) through Shikoku, Kyushu, and the Nansei Islands north of Okinawa Island (including Amami Oshima and Tokunoshima), and also found outside Japan on the Korean Peninsula and in southwestern China. It gathers on camphor, chinquapin, and machilus trees, is nocturnal, and also comes to lights. Commonly seen from around June to August.</p></div></a><a class="zukan-card" href="../creatures/beetles/ferie-beniboshi-kamikiri.html"><div class="zukan-image"><img src="../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg" data-photos='[&quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000003_20250628_15.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000004_20250628_15.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000005_20250628_15.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000006_20250628_15.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000007_20250705_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000008_20250705_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000009_20250705_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg&quot;, &quot;../../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg&quot;]' alt="Ferrié&#x27;s Red Longhorn Beetle"></div><div class="zukan-info"><div class="zukan-name">Ferrié&#x27;s Red Longhorn Beetle</div><div class="zukan-latin">Cerambycidae, Ferrié&#x27;s Red Longhorn Beetle <em>Rosalia (Eurybatus) ferriei</em> Vuillet, 1911</div><p class="zukan-desc">An endemic species found only on Amami Oshima. It has a beautiful red body marked with black patterns, and appears on standing dead trees deep in the forest around July. It is named after Father Ferrié, who collected the species on Amami Oshima. It is designated a Rare Wild Species under Kagoshima Prefecture&#x27;s ordinance for the protection of rare wildlife, and its capture or collection is prohibited.</p><span class="zukan-tag rare">Collecting prohibited (Kagoshima Prefecture Rare Wildlife Protection Ordinance, Designated Rare Wild Species)</span></div></a></div></div>
+<div class="group"><p class="group-title">―― Leaf Beetles ――</p><div class="zukan-grid"><a class="zukan-card" href="../creatures/beetles/oomidor-isaru-hamshi.html"><div class="zukan-image"><img src="../../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg" data-photos='[&quot;../../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg&quot;, &quot;../../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000002_20260708_12.jpg&quot;]' alt="Large Green Leaf Beetle"></div><div class="zukan-info"><div class="zukan-name">Large Green Leaf Beetle</div><div class="zukan-latin">Chrysomelidae, Large Green Leaf Beetle <em>Platycorynus japonicus</em></div><p class="zukan-desc">Body length about 10mm. A small leaf beetle with a metallic green sheen, found in the Nansei Islands (from Amami Oshima southward). It feeds on plants of the star jasmine group, and is seen from around April to October.</p></div></a></div></div>
+  </div>
+</section>
+
+<section class="tour">
+  <p class="section-label">NIGHT FIELD TOUR</p>
+  <h2>Walk Amami&#x27;s Night Forest</h2>
+  <p>Join a guide and search for wildlife together in the night forest.</p>
+  <a class="btn" href="../contact.html">See night tour details and pricing →</a>
+</section>
+
+<section class="other-categories">
+  <div class="section-inner">
+    <div class="section-label">EXPLORE MORE</div>
+    <h3 class="other-creatures-title">See More Creatures</h3>
+    <div class="other-creatures-buttons">
+      <a href="../highlights.html" class="category-button">Signature Wildlife →</a><a href="snakes.html" class="category-button">Snakes →</a><a href="amphibians.html" class="category-button">Amphibians →</a><a href="stag-beetles.html" class="category-button">Stag Beetles →</a><a href="mammals.html" class="category-button">Mammals →</a><a href="birds.html" class="category-button">Birds →</a><a href="aquatic-insects.html" class="category-button">Aquatic Insects →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Nature Experience Amami</div>
+      <div class="footer-copy">© 2026 Nature-Experience Amami. All photos protected; reproduction prohibited without permission.</div>
+    </div>
+    <div class="footer-social"><a href="https://x.com/shiikumemo" target="_blank" rel="noopener" aria-label="X (Twitter)"><span class="icon-mask" aria-hidden="true"></span></a><a href="https://www.instagram.com/nature_experience_amami/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 1000 1000" fill="currentColor" aria-hidden="true"><path d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34" transform="translate(-2.5 -2.5)"/></svg></a></div>
+  </div>
+  <div class="copyright">&copy; Nature Experience Amami</div>
+</footer>
+
+<script>
+(function () {
+  document.querySelectorAll(".zukan-image img[data-photos]").forEach(function (img) {
+    try {
+      var photos = JSON.parse(img.dataset.photos);
+      if (photos.length > 1) {
+        img.src = photos[Math.floor(Math.random() * photos.length)];
+      }
+    } catch (e) {}
+  });
+})();
+</script>
+<script src="../../js/category-strip.js"></script>
+
+</body>
+</html>

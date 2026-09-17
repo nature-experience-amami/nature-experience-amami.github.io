@@ -8,6 +8,7 @@
     "birds": "\u9e1f\u7c7b",
     "lizards": "\u8727\u8654",
     "aquatic-insects": "\u6c34\u751f\u6606\u866b",
+    "beetles": "\u7532\u866b",
     "other-insects": "\u6606\u866b",
     "shellfish": "\u8d1d\u7c7b",
     "crustaceans": "\u7532\u58f3\u7c7b\u7b49"
@@ -60,6 +61,13 @@
     "group_kitsutsuki": "\u2015\u2015 \u4d15\u5f62\u76ee \u2015\u2015",
     "group_hato": "\u2015\u2015 \u9e3d\u5f62\u76ee \u2015\u2015",
     "group_chidori": "\u2015\u2015 \u9e3b\u5f62\u76ee(\u9e6c\u79d1\u3001\u9e3b\u79d1) \u2015\u2015",
+    "group_funchu": "\u2015\u2015 \u7caa\u91d1\u9f9f\u7c7b \u2015\u2015",
+    "group_kabuto": "\u2015\u2015 \u7280\u91d1\u9f9f\u7c7b \u2015\u2015",
+    "group_hanamuguri": "\u2015\u2015 \u82b1\u91d1\u9f9f\u7c7b \u2015\u2015",
+    "group_manmaru": "\u2015\u2015 \u7403\u91d1\u9f9f\u7c7b \u2015\u2015",
+    "group_tamamushi": "\u2015\u2015 \u5409\u4e01\u866b\u7c7b \u2015\u2015",
+    "group_kamikiri": "\u2015\u2015 \u5929\u725b\u7c7b \u2015\u2015",
+    "group_hamushi": "\u2015\u2015 \u53f6\u7532\u7c7b \u2015\u2015",
     "group_other": "\u2015\u2015 \u5176\u4ed6 \u2015\u2015",
     "zukan_about_title": "\u5173\u4e8e\u672c\u56fe\u9274\u9875\u9762"
   }

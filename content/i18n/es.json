@@ -8,6 +8,7 @@
     "birds": "Aves",
     "lizards": "Lagartos",
     "aquatic-insects": "Insectos acu\u00e1ticos",
+    "beetles": "Escarabajos",
     "other-insects": "Insectos",
     "shellfish": "Moluscos",
     "crustaceans": "Crust\u00e1ceos y otros"
@@ -60,6 +61,13 @@
     "group_kitsutsuki": "\u2015\u2015 P\u00e1jaros Carpinteros \u2015\u2015",
     "group_hato": "\u2015\u2015 Palomas \u2015\u2015",
     "group_chidori": "\u2015\u2015 Aves Playeras (Correlimos y Chorlitos) \u2015\u2015",
+    "group_funchu": "\u2015\u2015 Escarabajos Peloteros \u2015\u2015",
+    "group_kabuto": "\u2015\u2015 Escarabajos Rinoceronte \u2015\u2015",
+    "group_hanamuguri": "\u2015\u2015 Escarabajos de las Flores \u2015\u2015",
+    "group_manmaru": "\u2015\u2015 Escarabajos P\u00edldora \u2015\u2015",
+    "group_tamamushi": "\u2015\u2015 Escarabajos Joya \u2015\u2015",
+    "group_kamikiri": "\u2015\u2015 Escarabajos Longicornios \u2015\u2015",
+    "group_hamushi": "\u2015\u2015 Escarabajos de las Hojas \u2015\u2015",
     "group_other": "\u2015\u2015 Otros \u2015\u2015",
     "zukan_about_title": "Sobre Esta Gu\u00eda de Campo"
   }

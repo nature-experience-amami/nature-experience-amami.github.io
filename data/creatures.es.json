@@ -636,6 +636,280 @@
     "page_path": "creatures/aquatic-insects/usuiro-shima-gengoro.html"
   },
   {
+    "id": "amami-himekebuka-magusokogane",
+    "name": "Escarabajo Peludo del Estiércol de Amami",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      4
+    ],
+    "description": "Scarabaeidae, subfamilia Aphodiinae, escarabajo peludo del estiércol de Amami *Gilletianus atsushii* (Ochi, 1986)\n\nUn raro escarabajo del estiércol que se encuentra en Amami Oshima, con muy pocos registros de recolección. Fue descrito en 1986 por Teruo Ochi como *Aphodius (Trichaphodius) atsushii*, pero revisiones taxonómicas posteriores lo situaron en el género Gilletianus. Se cree que vive de los excrementos del conejo de Amami, pero aún se desconoce mucho sobre su ecología, y los registros son limitados.",
+    "photos": [
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000002_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000003_20260427_12.jpg",
+      "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000004_20260427_12.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-himekebuka-magusokogane.html"
+  },
+  {
+    "id": "amami-ko-kabuto",
+    "name": "Escarabajo Rinoceronte Pequeño de Amami",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "description": "Scarabaeidae, subfamilia Dynastinae, escarabajo rinoceronte pequeño de Amami *Eophileurus chinensis irregularis* Prell, 1913\n\nUna subespecie del escarabajo rinoceronte pequeño *Eophileurus chinensis*, que se encuentra en Amami Oshima, Tokunoshima, Yoro y Uke. Los machos alcanzan unos 20–25mm y las hembras unos 15–20mm. Vive en bosques desde las tierras bajas hasta las montañas, es de hábitos nocturnos y suele verse caminando por el suelo del bosque o por los caminos forestales; desde principios de verano hasta finales de otoño también acude a la savia y a las luces. Los adultos pueden verse casi todo el año, aunque no es una especie especialmente abundante.",
+    "photos": [
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000002_20260416_22.jpg",
+      "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000003_20241128_17.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-ko-kabuto.html"
+  },
+  {
+    "id": "amami-semadara-magusokogane",
+    "name": "Escarabajo Moteado del Estiércol de Amami",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Scarabaeidae, subfamilia Aphodiinae, escarabajo moteado del estiércol de Amami *Chilothorax ohishii* (Masumoto, 1975)\n\nEspecie endémica que solo se encuentra en Amami Oshima y Tokunoshima. Fue descrita en 1975 por Toshiya Masumoto como *Aphodius ohishii*, pero actualmente se incluye en el género Chilothorax. Se alimenta principalmente de los excrementos del conejo de Amami, y se observa con frecuencia de otoño a primavera, mientras que rara vez aparece en verano.",
+    "photos": [
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000002_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000003_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000004_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000005_20260427_12.jpg",
+      "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000006_20251202_11.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-semadara-magusokogane.html"
+  },
+  {
+    "id": "ao-uba-tamamushi",
+    "name": "Escarabajo Joya Verde de Amami",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "Buprestidae, escarabajo joya verde de Amami *Chalcophora japonica oshimana* Schönfeldt, 1890\n\nLongitud corporal de 24 a 40mm. Subespecie, presente en los archipiélagos de Amami y Okinawa, del escarabajo joya *Chalcophora japonica*, ampliamente distribuido desde Hokkaido hasta Okinawa. Prefiere pinos muertos o debilitados, y las larvas se alimentan y crecen dentro de la madera. Los adultos se observan desde principios de verano hasta el verano.",
+    "photos": [
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000002_20260425_09.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000003_20260425_09.jpg",
+      "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000004_20260425_09.jpg"
+    ],
+    "page_path": "creatures/beetles/ao-uba-tamamushi.html"
+  },
+  {
+    "id": "be-tsu-hirata-kamikiri",
+    "name": "Escarabajo Longicornio Plano de Bates",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "description": "Cerambycidae, escarabajo longicornio plano de Bates *Eurypoda batesi* Gahan, 1894\n\nLongitud corporal de 26 a 34mm. Ampliamente distribuido desde Honshu (al sur de las regiones de Kanto y Chubu) hasta Shikoku, Kyushu y las islas Nansei al norte de la isla de Okinawa (incluidas Amami Oshima y Tokunoshima), y también presente fuera de Japón en la península de Corea y en el suroeste de China. Se reúne en árboles de alcanforero, castaño de Japón y machilus, es de hábitos nocturnos y también acude a las luces. Se observa con frecuencia de junio a agosto aproximadamente.",
+    "photos": [
+      "../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"
+    ],
+    "page_path": "creatures/beetles/be-tsu-hirata-kamikiri.html"
+  },
+  {
+    "id": "ferie-beniboshi-kamikiri",
+    "name": "Escarabajo Longicornio Rojo de Ferrié",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      7
+    ],
+    "description": "Cerambycidae, escarabajo longicornio rojo de Ferrié *Rosalia (Eurybatus) ferriei* Vuillet, 1911\n\nEspecie endémica que solo se encuentra en Amami Oshima. Tiene un hermoso cuerpo rojo con manchas negras, y aparece en árboles muertos en pie en lo profundo del bosque hacia el mes de julio. Recibe su nombre en honor al padre Ferrié, quien recolectó la especie en Amami Oshima. Está designada como Especie Silvestre Rara según la ordenanza de la prefectura de Kagoshima para la protección de la fauna y flora silvestre rara, y su captura o recolección está prohibida.",
+    "photos": [
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000002_20250628_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000003_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000004_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000005_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000006_20250628_15.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000007_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000008_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000009_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000010_20250705_13.jpg",
+      "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000011_20250705_13.jpg"
+    ],
+    "page_path": "creatures/beetles/ferie-beniboshi-kamikiri.html"
+  },
+  {
+    "id": "marudaikoku-kogane",
+    "name": "Escarabajo Redondo del Estiércol de Amami",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      11
+    ],
+    "description": "Scarabaeidae, subfamilia Coprinae, escarabajo redondo del estiércol de Amami *Copris brachypterus* Nomura, 1964\n\nLongitud corporal de 13 a 20mm. Especie endémica que solo se encuentra en Amami Oshima y Tokunoshima (en Tokunoshima habita una subespecie diferente); sus alas posteriores están reducidas, por lo que no puede volar. Por la noche recorre los bosques de montaña buscando los excrementos del conejo de Amami, y tiene el hábito de cavar un agujero bajo la bola de estiércol y arrastrarla hacia atrás con las patas delanteras. Debido a que su área de distribución es extremadamente limitada, tiene poca movilidad, y la presión de recolección del pasado ha reducido considerablemente su número, está incluida como Vulnerable (VU) en la Lista Roja del Ministerio de Medio Ambiente.",
+    "photos": [
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000002_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000003_20251126_22.jpg",
+      "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000004_20251126_22.jpg"
+    ],
+    "page_path": "creatures/beetles/marudaikoku-kogane.html"
+  },
+  {
+    "id": "midori-nakaboso-tamamushi",
+    "name": "Escarabajo Joya Verde Angosto",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Buprestidae, escarabajo joya verde angosto *Coraebus hastanus oberthueri*\n\nUn pequeño escarabajo joya de unos 11mm de longitud, que se encuentra desde Amami Oshima hacia el sur. Se sabe que los miembros del género Coraebus son más activos bajo la intensa luz solar del verano, y esta especie también se observa de junio a septiembre aproximadamente.",
+    "photos": [
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000002_20250611_12.jpg",
+      "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000003_20250611_12.jpg"
+    ],
+    "page_path": "creatures/beetles/midori-nakaboso-tamamushi.html"
+  },
+  {
+    "id": "oomidor-isaru-hamshi",
+    "name": "Escarabajo Hoja Verde Grande",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Chrysomelidae, escarabajo hoja verde grande *Platycorynus japonicus*\n\nLongitud corporal de unos 10mm. Un pequeño escarabajo de hoja con un brillo metálico verde, que se encuentra en las islas Nansei (desde Amami Oshima hacia el sur). Se alimenta de plantas del grupo del jazmín de estrella, y se observa de abril a octubre aproximadamente.",
+    "photos": [
+      "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
+      "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000002_20260708_12.jpg"
+    ],
+    "page_path": "creatures/beetles/oomidor-isaru-hamshi.html"
+  },
+  {
+    "id": "oshima-senchi-kogane",
+    "name": "Escarabajo Cavador de Estiércol de Oshima",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ],
+    "description": "Geotrupidae, escarabajo cavador de estiércol de Oshima *Phelotrupes oshimanus* Fairmaire, 1895\n\nCon una longitud de hasta 20mm, es la especie más grande de Geotrupidae que se encuentra en Japón. Especie endémica que solo se encuentra en Amami Oshima y Tokunoshima, está activa de otoño a invierno y se reúne en los excrementos del conejo de Amami y del jabalí. Tiene el hábito característico de abrazar el estiércol con las patas delanteras y arrastrarlo hacia atrás hasta su propia madriguera. Está incluida como Casi Amenazada en la Lista Roja de la Prefectura de Kagoshima.",
+    "photos": [
+      "../images/creatures/beetles/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg"
+    ],
+    "page_path": "creatures/beetles/oshima-senchi-kogane.html"
+  },
+  {
+    "id": "oshima-torafu-hanamuguri",
+    "name": "Escarabajo Flor Tigre de Oshima",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      4,
+      5
+    ],
+    "description": "Scarabaeidae, escarabajo flor tigre de Oshima *Paratrichius duplicatus duplicatus* Lewis, 1895\n\nLongitud corporal de 11.8 a 15.6mm. La subespecie nominal (P. d. duplicatus), que se encuentra en Amami Oshima y Tokunoshima; una subespecie diferente, el escarabajo flor tigre de Okinawa (P. d. okinawanus), habita en el archipiélago de Okinawa. En comparación con los escarabajos flor tigre emparentados, sus élitros presentan un tono más oscuro, lo que le da un brillo característico. Aparece de abril a mayo.",
+    "photos": [
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000002_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000003_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000004_20250515_10.jpg",
+      "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000005_20250515_10.jpg"
+    ],
+    "page_path": "creatures/beetles/oshima-torafu-hanamuguri.html"
+  },
+  {
+    "id": "ruri-nakaboso-tamamushi",
+    "name": "Escarabajo Joya Azur Angosto",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "description": "Buprestidae, escarabajo joya azur angosto *Coraebus niponicus* Lewis, 1894\n\nUn pequeño escarabajo joya con un brillo azur, registrado en Amami Oshima. Se sabe que los miembros del género Coraebus son más activos bajo la intensa luz solar del verano, y esta especie también se observa de junio a septiembre aproximadamente.",
+    "photos": [
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000002_20250403_10.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000003_20250403_16.jpg",
+      "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000004_20250424_13.jpg"
+    ],
+    "page_path": "creatures/beetles/ruri-nakaboso-tamamushi.html"
+  },
+  {
+    "id": "taiwan-saikabuto",
+    "name": "Escarabajo Rinoceronte del Cocotero",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      4
+    ],
+    "description": "Scarabaeidae, subfamilia Dynastinae, escarabajo rinoceronte del cocotero *Oryctes rhinoceros* (Linnaeus, 1758)\n\nEspecie invasora originaria de la región de la península de Indochina. Se cree que el primer registro en Japón fue su introducción en la isla de Ishigaki a través de materiales importados de Taiwán a principios del siglo XX; posteriormente se extendió hacia el norte, y fue confirmada en Amami Oshima y Tokunoshima en 1991. Actualmente está establecida y se reproduce de forma natural en casi todo el archipiélago Nansei. Es conocida como una plaga agrícola que perfora los tallos y el corazón de palmeras, piña y caña de azúcar, y existe preocupación por la competencia con las especies nativas de escarabajos rinoceronte.",
+    "photos": [
+      "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
+      "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg"
+    ],
+    "page_path": "creatures/beetles/taiwan-saikabuto.html"
+  },
+  {
+    "id": "tokara-mannmaru-kogane",
+    "name": "Escarabajo Píldora de Tokara",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      4
+    ],
+    "description": "Ceratocanthidae, subfamilia Ceratocanthinae, escarabajo píldora de Tokara *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\nUn pequeño escarabajo de unos 5.0 a 5.8mm de longitud, que se encuentra en las islas Tokara (la localidad tipo es Nakanoshima) y en Amami Oshima. Se distingue por su área de distribución del escarabajo píldora de Sakishima, estrechamente emparentado (*M. kazumai hisamatsui* Ochi, 1990), que se encuentra en las islas Yaeyama. Se considera una especie mirmecófila, hallada en ambientes cercanos a nidos de hormigas, como el interior de madera podrida o la capa de hojarasca a su alrededor, y el propio título del artículo de la descripción original utiliza la palabra \"mirmecófilo\". Cuando es perturbado, retrae las antenas y las patas dentro de su cuerpo y se enrolla formando una esfera perfecta, como una cochinilla, para protegerse.",
+    "photos": [
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000002_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000003_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000004_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000005_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000006_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000007_20260415_21.jpg",
+      "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000008_20260415_21.jpg"
+    ],
+    "page_path": "creatures/beetles/tokara-mannmaru-kogane.html"
+  },
+  {
     "id": "akahige",
     "name": "Petirrojo de Ryukyu",
     "category": "birds",

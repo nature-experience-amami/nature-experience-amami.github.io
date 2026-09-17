@@ -39,7 +39,7 @@ I18N_DIR = ROOT / "content" / "i18n"
 LANGS = ["en", "es", "zh"]
 # 多言語版のカテゴリーページ(generate_category_pages_i18n.py / generate_zukan_page_i18n.py)が
 # 実際に生成しているカテゴリー。個別ページのカテゴリーナビでリンク可否を判定するのに使う。
-AVAILABLE_CATEGORY_PAGES = {"snakes", "amphibians", "stag-beetles", "aquatic-insects", "birds", "mammals"}
+AVAILABLE_CATEGORY_PAGES = {"snakes", "amphibians", "stag-beetles", "aquatic-insects", "birds", "mammals", "beetles"}
 
 
 def escape(value):
