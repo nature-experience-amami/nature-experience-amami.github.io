@@ -138,10 +138,11 @@ def highlight_card_html(creature, generated_keys, lang, strings):
     category = creature["category"]
     name = escape(creature["name"])
     if creature["photos"]:
-        photos = escape(json.dumps(creature["photos"]))
+        relative_photos = [f"../{p}" for p in creature["photos"]]
+        photos = escape(json.dumps(relative_photos))
         image = (
             f'<div class="creature-image" data-photos="{photos}">'
-            f'<img src="{creature["photos"][0]}" alt="{name}"></div>'
+            f'<img src="{relative_photos[0]}" alt="{name}"></div>'
         )
     else:
         image = f'<div class="creature-image"><div class="photo-placeholder">{escape(strings["strings"]["photo_prep"])}</div></div>'
