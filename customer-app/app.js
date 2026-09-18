@@ -112,11 +112,32 @@ async function callWorker(action,payload,timeoutMs=20000){
       body:JSON.stringify({action,...payload}),
       signal:controller.signal,
     });
-    if(!res.ok) throw new Error("worker error "+res.status);
-    return await res.json();
+    const data=await res.json().catch(()=>null);
+    if(!res.ok){
+      // Worker側が返してきた具体的なエラー内容(クォータ超過など)をそのまま伝える。
+      throw new Error((data&&data.error)?data.error:("worker error "+res.status));
+    }
+    return data;
   }finally{
     clearTimeout(timer);
   }
+}
+// AIが使えなかった時、利用上限(クォータ超過)が原因かどうかを見分けて、
+// 呼び出し元がわかりやすいメッセージを出せるようにする。
+function isQuotaError(err){
+  const msg=String((err&&err.message)||err||"").toLowerCase();
+  return msg.includes("429")||msg.includes("quota")||msg.includes("resource_exhausted");
+}
+function aiFallbackMessage(err){
+  return isQuotaError(err)
+    ? "⚠ AIの利用上限(1日20回)に達したため、簡易版で処理しました。日本時間の夕方ごろに回復します。"
+    : "⚠ AIに接続できなかったため、簡易版で処理しました。";
+}
+function setAiStatus(el,msg){
+  if(!el) return;
+  el.textContent=msg;
+  el.hidden=!msg;
+  el.classList.toggle("warn",!!msg);
 }
 
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -160,6 +181,8 @@ async function decryptBackup(obj,password){
   return JSON.parse(new TextDecoder().decode(plain));
 }
 function fmt(d){if(!d)return "未入力"; const [y,m,day]=d.split("-"); return `${y}/${m}/${day}`}
+const WEEKDAYS=["日","月","火","水","木","金","土"];
+function fmtWithWeekday(d){return `${fmt(d)}(${WEEKDAYS[new Date(d+"T00:00:00").getDay()]})`}
 function statusLabel(status){return {pending:"未確定",confirmed:"予約確定",completed:"終了",cancelled:"キャンセル",personal:"予定あり"}[status]||status}
 function updateStats(){
   // 「自分の予定」は問い合わせではないので、集計には含めない
@@ -218,6 +241,7 @@ function resetEditor(){
   ["rawText","name","phone","email","desiredDate","people","hotel","creatures","notes","alt1","alt2","reply"].forEach(id=>$(id).value="");
   $("parsedArea").classList.add("hidden"); $("missing").innerHTML="";
   parsedParticipants=[]; $("participantFieldsEditor").innerHTML="";
+  setAiStatus($("parseStatus"),""); setAiStatus($("replyStatus"),"");
 }
 function parseText(t){
   const date=t.match(/(20\d{2})[\/\-年](\d{1,2})[\/\-月](\d{1,2})日?/);
@@ -343,9 +367,11 @@ async function makeReply(){
     const ai=await callWorker("draftReply",{context,examples:REPLY_EXAMPLES,facts:GUIDE_FACTS});
     if(!ai.reply) throw new Error("empty reply");
     $("reply").value=ai.reply;
+    setAiStatus($("replyStatus"),"");
   }catch(err){
     console.error("AI返信作成に失敗、テンプレートにフォールバックします",err);
     $("reply").value=buildTemplateReply();
+    setAiStatus($("replyStatus"),aiFallbackMessage(err));
   }
   if(btn){btn.disabled=false;btn.textContent=original;}
 }
@@ -364,10 +390,12 @@ $("parseBtn").onclick=async()=>{
     const ai=await callWorker("parseInquiry",{text:raw});
     p={name:ai.name||"",phone:ai.phone||"",email:ai.email||"",desiredDate:ai.desiredDate||"",people:ai.people||"",hotel:ai.hotel||"",creatures:ai.creatures||""};
     participants=Array.isArray(ai.participants)?ai.participants:[];
+    setAiStatus($("parseStatus"),"");
   }catch(err){
     console.error("AI読み取りに失敗、簡易抽出にフォールバックします",err);
     p=parseText(raw);
     participants=parseParticipants(raw);
+    setAiStatus($("parseStatus"),aiFallbackMessage(err));
   }
   btn.disabled=false;btn.textContent=original;
   Object.entries(p).forEach(([k,v])=>{if($(k))$(k).value=v});
@@ -493,13 +521,14 @@ bindParticipantTabs($("participantFieldsEditor"),"np",()=>parsedParticipants,v=>
 // 「代表者氏名」のような基本項目は、すでに入力済みなら上書きしない(誤読で消さないため)。
 // 参加者情報は、まだ確定していないタブだけを新しい内容で置き換える(確定済みは保護する)。
 async function applyFollowupText(r,text){
-  let p,extracted;
+  let p,extracted,aiErr=null;
   try{
     const ai=await callWorker("parseInquiry",{text});
     p={name:ai.name||"",phone:ai.phone||"",email:ai.email||"",desiredDate:ai.desiredDate||"",people:ai.people||"",hotel:ai.hotel||"",creatures:ai.creatures||""};
     extracted=Array.isArray(ai.participants)?ai.participants:[];
   }catch(err){
     console.error("AI読み取りに失敗、簡易抽出にフォールバックします",err);
+    aiErr=err;
     p=parseText(text);
     extracted=parseParticipants(text);
   }
@@ -520,6 +549,7 @@ async function applyFollowupText(r,text){
   }
   if(!Array.isArray(r.followups)) r.followups=[];
   r.followups.push({date:today(),text});
+  return aiErr;
 }
 let currentDetailId=null;
 bindParticipantTabs($("detail"),"p",
@@ -654,9 +684,10 @@ function showDetail(id){
     if(!text){alert("貼り付ける内容がありません。");return;}
     const btn=$("applyFollowup");
     btn.disabled=true;btn.textContent="読み取り中…";
-    await applyFollowupText(r,text);
+    const aiErr=await applyFollowupText(r,text);
     save();
     showDetail(id);
+    if(aiErr) alert(aiFallbackMessage(aiErr));
   };
   $("saveReply").onclick=()=>{
     r.reply=$("detailReply").value;
@@ -715,4 +746,5 @@ $("restoreFile").onchange=async(e)=>{
   e.target.value="";
 };
 
+$("todayLabel").textContent=`本日 ${fmtWithWeekday(today())}`;
 render();
