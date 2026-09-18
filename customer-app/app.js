@@ -578,7 +578,7 @@ function showScheduleDetail(r,id){
   $("scheduleDetailNotes").onchange=()=>{r.notes=$("scheduleDetailNotes").value;save();render();};
   $("deleteRecord").onclick=()=>{if(confirm("この予定を削除しますか？")){records=records.filter(x=>x.id!==id);save();render();$("detailModal").classList.add("hidden")}};
 }
-const CONTACT_METHODS=["公式LINE","メール","電話","SNSのDM","SIMDEF"];
+const CONTACT_METHODS=["公式LINE","メール","電話","SNSのDM","SIMDEF","その他"];
 // 予約確定にすると基本情報は編集できないようにし、「未確定に戻す」で編集を解禁する。
 // 確定後に間違いに気づいた時は、一度未確定へ戻してから直せる、という運用に合わせている。
 function detailInfoHtml(r){
