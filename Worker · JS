@@ -1,5 +1,10 @@
 // Cloudflare Worker: 旅行時期の質問に答える(ask) + customer-appの問い合わせ読み取り・返信作成(parseInquiry / draftReply)
-// 環境変数(Secrets): GEMINI_API_KEY, ALLOWED_ORIGIN(例: https://nature-experience-amami.github.io)
+// 環境変数(Secrets):
+//   GEMINI_API_KEY       … ホームページの訪問者向けAIチャット(ask)専用
+//   GEMINI_API_KEY_3     … customer-appのAI整理・返信作成(parseInquiry/draftReply)専用(別プロジェクト"nature-experience-admin"のキー)
+//   ALLOWED_ORIGIN       … 例: https://nature-experience-amami.github.io
+// キーを分けているのは、1日あたりの無料枠(1リクエスト20回)を共有すると、
+// customer-appでの利用がホームページの訪問者向けチャットの枠まで食ってしまうため。
 
 const MODEL = "gemini-3.5-flash"; // 精度重視。無料枠は1日20回だが、問い合わせ頻度がそこまで多くないため一旦このまま運用し、様子を見て足りなければ有料プランを検討する。verifyAgainstSourceによる本文照合も保険として引き続き併用。モデル名は変更される可能性があるので、時々公式ドキュメントで確認してください
 
@@ -92,7 +97,7 @@ ${JSON.stringify(creatures)}
 [Customer's question]
 ${message}`;
 
-  const rawText = await callGemini(prompt, env);
+  const rawText = await callGemini(prompt, env.GEMINI_API_KEY);
   const parsed = safeParseAsk(rawText, creatures, config);
   return json(parsed, cors);
 }
@@ -134,7 +139,7 @@ Correct output (note that 田中一郎, 田中花恵, and オリエントホテ�
 [Email text to extract from]
 ${text}`;
 
-  const rawText = await callGemini(prompt, env, 0);
+  const rawText = await callGemini(prompt, env.GEMINI_API_KEY_3, 0);
   const parsed = safeParseJSON(rawText);
   if (!parsed) return json({ error: "failed to parse AI response" }, cors, 502);
 
@@ -201,13 +206,13 @@ ${JSON.stringify(context)}
 
 Write the reply now, in Japanese, as plain text only.`;
 
-  const rawText = await callGemini(prompt, env, 0.2);
+  const rawText = await callGemini(prompt, env.GEMINI_API_KEY_3, 0.2);
   if (!rawText || !rawText.trim()) return json({ error: "empty AI response" }, cors, 502);
 
   return json({ reply: rawText.trim() }, cors);
 }
 
-async function callGemini(prompt, env, temperature) {
+async function callGemini(prompt, apiKey, temperature) {
   const body = { contents: [{ parts: [{ text: prompt }] }] };
   // temperatureを低くするほど、モデルが「それっぽい別の言葉」に勝手に
   // 置き換えにくくなる(事実の書き写しが必要なparseInquiryなどで重要)。
@@ -216,7 +221,7 @@ async function callGemini(prompt, env, temperature) {
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
     {
       method: "POST",
-      headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
+      headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
       body: JSON.stringify(body),
     }
   );
