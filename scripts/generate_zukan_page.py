@@ -145,12 +145,13 @@ CATEGORY_GROUPS = {
         },
     },
     "aquatic-insects": {
-        "order": ["gengoro", "doromushi", "amenbo", "mizumushi", "other"],
+        "order": ["gengoro", "doromushi", "amenbo", "mizumushi", "gamushi", "other"],
         "labels": {
             "gengoro": "ゲンゴロウの仲間",
             "doromushi": "ヒメドロムシの仲間",
             "amenbo": "アメンボの仲間",
             "mizumushi": "ミズムシの仲間",
+            "gamushi": "ガムシの仲間",
             "other": "その他",
         },
     },
