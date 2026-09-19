@@ -335,7 +335,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">Meet the Rotten Wood Cricket in Amami&#x27;s Forests</h2>
-    <div class="gallery-empty">More photos coming soon.</div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000002_20250821_21.jpg" alt="Rotten Wood Cricket"></figure></div>
   </section>
 
   <div class="content">
@@ -391,7 +391,7 @@ footer{
     document.getElementById("lightbox").classList.remove("open");
   };
 
-  var photos = ["../../../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg"];
+  var photos = ["../../../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg", "../../../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000002_20250821_21.jpg"];
   if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
     var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
     var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');

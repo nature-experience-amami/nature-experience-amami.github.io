@@ -335,7 +335,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">在奥美的森林中遇见小宽肩蝽</h2>
-    <div class="gallery-empty">更多照片准备中。</div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000002_20260327_11.jpg" alt="小宽肩蝽"></figure><figure><img class="gallery-photo" src="../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000003_20260327_11.jpg" alt="小宽肩蝽"></figure></div>
   </section>
 
   <div class="content">
@@ -394,7 +394,7 @@ footer{
     document.getElementById("lightbox").classList.remove("open");
   };
 
-  var photos = ["../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg"];
+  var photos = ["../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg", "../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000002_20260327_11.jpg", "../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000003_20260327_11.jpg"];
   if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
     var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
     var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');

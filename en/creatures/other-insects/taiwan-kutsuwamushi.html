@@ -335,7 +335,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">Meet the Giant Katydid in Amami&#x27;s Forests</h2>
-    <div class="gallery-empty">More photos coming soon.</div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000002_20250821_22.jpg" alt="Giant Katydid"></figure><figure><img class="gallery-photo" src="../../../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000003_20250921_21.jpg" alt="Giant Katydid"></figure><figure><img class="gallery-photo" src="../../../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000004_20251009_22.jpg" alt="Giant Katydid"></figure></div>
   </section>
 
   <div class="content">
@@ -391,7 +391,7 @@ footer{
     document.getElementById("lightbox").classList.remove("open");
   };
 
-  var photos = ["../../../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg"];
+  var photos = ["../../../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg", "../../../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000002_20250821_22.jpg", "../../../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000003_20250921_21.jpg", "../../../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000004_20251009_22.jpg"];
   if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
     var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
     var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');

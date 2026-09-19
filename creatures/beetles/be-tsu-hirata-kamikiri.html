@@ -327,7 +327,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">奄美の森で出会うベーツヒラタカミキリ</h2>
-    <div class="gallery-empty">追加の写真は準備中です。</div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000002_20250911_00.jpg" alt="ベーツヒラタカミキリ"></figure></div>
   </section>
 
   <div class="content">
@@ -385,7 +385,7 @@ footer{
   };
 
   // 写真の全ランダムシャッフル処理
-  var photos = ["../../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg"];
+  var photos = ["../../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg", "../../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000002_20250911_00.jpg"];
   if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
     // 1. 配列を複製してシャッフル
     var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });

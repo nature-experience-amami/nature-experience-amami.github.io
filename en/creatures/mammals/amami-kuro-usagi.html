@@ -335,7 +335,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">Meet the Amami Rabbit in Amami&#x27;s Forests</h2>
-    <div class="gallery"><figure><img class="gallery-photo" src="../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg" alt="Amami Rabbit"></figure></div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg" alt="Amami Rabbit"></figure><figure><img class="gallery-photo" src="../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000003_20250916_12.jpg" alt="Amami Rabbit"></figure><figure><img class="gallery-photo" src="../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000004_20250916_12.jpg" alt="Amami Rabbit"></figure></div>
   </section>
 
   <div class="content">
@@ -401,7 +401,7 @@ it is not uncommon to encounter one hopping along a forest road.</p>
     document.getElementById("lightbox").classList.remove("open");
   };
 
-  var photos = ["../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg", "../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg"];
+  var photos = ["../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg", "../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg", "../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000003_20250916_12.jpg", "../../../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000004_20250916_12.jpg"];
   if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
     var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
     var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');

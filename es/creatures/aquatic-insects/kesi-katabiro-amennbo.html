@@ -336,7 +336,7 @@ footer{
   <section class="gallery-section">
     <p class="section-label">PHOTOGRAPHS</p>
     <h2 class="gallery-title">Descubra Zapatero Diminuto Común en los bosques de Amami</h2>
-    <div class="gallery-empty">Más fotos próximamente.</div>
+    <div class="gallery"><figure><img class="gallery-photo" src="../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000002_20260327_11.jpg" alt="Zapatero Diminuto Común"></figure><figure><img class="gallery-photo" src="../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000003_20260327_11.jpg" alt="Zapatero Diminuto Común"></figure></div>
   </section>
 
   <div class="content">
@@ -399,7 +399,7 @@ que sí pueden.</p>
     document.getElementById("lightbox").classList.remove("open");
   };
 
-  var photos = ["../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg"];
+  var photos = ["../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg", "../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000002_20260327_11.jpg", "../../../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000003_20260327_11.jpg"];
   if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
     var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
     var allImgElements = document.querySelectorAll('.hero-photo img, .gallery figure img');

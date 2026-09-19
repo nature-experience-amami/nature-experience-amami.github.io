@@ -385,7 +385,7 @@ footer{
   };
 
   // 写真の全ランダムシャッフル処理
-  var photos = ["../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250417_20.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250425_22.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250503_22.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20260608_00.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg"];
+  var photos = ["../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000002_20250312_19.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250417_20.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250425_22.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20250503_22.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000003_20260608_00.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000004_20260608_00.jpg", "../../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000005_20250326_00.jpg"];
   if (typeof photos !== 'undefined' && Array.isArray(photos) && photos.length > 0) {
     // 1. 配列を複製してシャッフル
     var shuffled = photos.slice().sort(function(){ return Math.random() - 0.5; });
