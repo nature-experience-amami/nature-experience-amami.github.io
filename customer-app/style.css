@@ -6,7 +6,7 @@ h1{font-size:20px;margin:0} header p{margin:4px 0 0;opacity:.75;font-size:13px}
 main{max-width:1000px;margin:auto;padding:18px}
 button,input,select,textarea{font:inherit}
 button{border:0;border-radius:10px;padding:11px 15px;cursor:pointer}
-.primary{background:#b99752;color:white}.secondary{background:#254c39;color:white}.ghost{background:#e8ece9;color:#26332c}
+.primary{background:#b99752;color:white}.secondary{background:#254c39;color:white}.ghost{background:#e8ece9;color:#26332c}.tint{background:#dcecdf;color:#1c5c37}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
 .stat{background:white;border-radius:14px;padding:14px;text-align:center;box-shadow:0 2px 10px #0000000b}.stat span{display:block;font-size:25px;font-weight:700}.stat small{color:#6a756e}
 .toolbar{display:flex;gap:10px;margin-bottom:14px}.toolbar input{flex:1}.toolbar input[type="date"]{flex:0 0 150px}

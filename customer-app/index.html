@@ -11,7 +11,7 @@
   <title>Nature Experience Amami｜予約管理</title>
   <!-- app.js・style.cssを更新したら、この?v=の数字を上げること
        (ホーム画面に追加したアプリでも「🔄 更新を確認」ボタンで最新版に切り替わる) -->
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 <header>
@@ -37,6 +37,7 @@
       <button id="refreshBtn" class="ghost">🔄 更新を確認</button>
       <button id="backupBtn" class="ghost">⬇ バックアップ</button>
       <button id="restoreBtn" class="ghost">⬆ 復元</button>
+      <button id="historyBtn" class="tint">📋 履歴（終了・キャンセル）</button>
       <input type="file" id="restoreFile" accept="application/json" hidden>
     </section>
 
@@ -48,10 +49,6 @@
         <option value="confirmed">予約確定</option>
         <option value="personal">自分の予定</option>
       </select>
-    </section>
-
-    <section class="actions" style="margin-top:0">
-      <button id="historyBtn" class="ghost">📋 履歴（終了・キャンセル）</button>
     </section>
 
     <p id="todayLabel" class="today-label"></p>
