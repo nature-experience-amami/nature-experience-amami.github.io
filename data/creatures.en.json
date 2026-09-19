@@ -610,6 +610,22 @@
     "page_path": "creatures/aquatic-insects/kogata-no-gengoro.html"
   },
   {
+    "id": "koseaka-amennbo",
+    "name": "Gracile Water Strider",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      4,
+      5
+    ],
+    "description": "Water strider family, genus Gerris. *Gerris (Macrogerris) gracilicornis* (Horvath)\n\nA large, reddish-brown water strider about 11-16mm long. Widely distributed across Japan from Hokkaido to Kyushu, it favors ponds, rivers, and marshes, especially cooler bodies of water. It overwinters as an adult on land and, after waking, flies off to find new water bodies, so it is often seen at small puddles in early spring.",
+    "photos": [
+      "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
+      "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000002_20260420_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/koseaka-amennbo.html"
+  },
+  {
     "id": "naga-tsuya-doromushi",
     "name": "Elongate Glossy Riffle Beetle",
     "category": "aquatic-insects",

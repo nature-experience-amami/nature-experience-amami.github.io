@@ -610,6 +610,22 @@
     "page_path": "creatures/aquatic-insects/kogata-no-gengoro.html"
   },
   {
+    "id": "koseaka-amennbo",
+    "name": "细角水黾",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      4,
+      5
+    ],
+    "description": "水黾科水黾属细角水黾 *Gerris (Macrogerris) gracilicornis* (Horvath)\n\n体长11〜16毫米左右，带红褐色的大型水黾。分布广泛，从北海道到九州的日本各地均有分布，偏好池沼、河流、湿地等水域，尤其喜欢水温较低的地方。以成虫形态在陆地上越冬，苏醒后会飞往新的水域，因此早春时节常在小水洼中见到。",
+    "photos": [
+      "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
+      "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000002_20260420_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/koseaka-amennbo.html"
+  },
+  {
     "id": "naga-tsuya-doromushi",
     "name": "长形泽泥甲",
     "category": "aquatic-insects",

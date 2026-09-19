@@ -628,6 +628,22 @@
     "page_path": "creatures/aquatic-insects/kogata-no-gengoro.html"
   },
   {
+    "id": "koseaka-amennbo",
+    "name": "コセアカアメンボ",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      4,
+      5
+    ],
+    "description": "アメンボ科アメンボ属コセアカアメンボ *Gerris (Macrogerris) gracilicornis* (Horvath)\n\n体長11〜16mmほどの、赤褐色を帯びた大型のアメンボ。北海道から九州まで日本各地に広く分布し、池沼や河川、湿地など、特に水温の低い水域を好む。成虫のまま陸上で越冬し、目覚めた後に新たな水辺へ飛んで移動する習性があり、春先の小さな水たまりなどで見られることが多い。",
+    "photos": [
+      "images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
+      "images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000002_20260420_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/koseaka-amennbo.html"
+  },
+  {
     "id": "naga-tsuya-doromushi",
     "name": "ナガツヤドロムシ",
     "category": "aquatic-insects",
