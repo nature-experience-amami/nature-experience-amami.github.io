@@ -211,14 +211,29 @@ function cardHtml(r){
 function render(){
   updateStats();
   const q=$("search").value.trim().toLowerCase(), f=$("statusFilter").value;
-  // キャンセル済みは、通常の一覧(すべて)からは消えて、専用フィルターの時だけ表示する
+  // 終了・キャンセル済みは、通常の一覧からは消えて「履歴」の専用画面でだけ管理する
   const rows=records.filter(r=>{
-    if(f==="all"&&r.status==="cancelled") return false;
-    const text=[r.name,r.hotel,r.creatures,r.phone,r.email,r.notes,r.cancelReason].join(" ").toLowerCase();
+    if(r.status==="completed"||r.status==="cancelled") return false;
+    const text=[r.name,r.hotel,r.creatures,r.phone,r.email,r.notes].join(" ").toLowerCase();
     return (!q||text.includes(q))&&(f==="all"||r.status===f);
   }).sort((a,b)=>(a.desiredDate||"").localeCompare(b.desiredDate||""));
   $("list").innerHTML=rows.length?rows.map(cardHtml).join(""):"<div class='card'>まだ問い合わせはありません。「＋ 新規問い合わせ」から試せます。</div>";
-  document.querySelectorAll(".card[data-id]").forEach(el=>el.onclick=()=>showDetail(el.dataset.id));
+  document.querySelectorAll("#list .card[data-id]").forEach(el=>el.onclick=()=>showDetail(el.dataset.id));
+}
+function renderHistory(){
+  const q=$("historySearch").value.trim().toLowerCase(), d=$("historyDate").value;
+  // 終了・キャンセルになった問い合わせだけを、氏名・日付で絞り込んで表示する
+  const rows=records.filter(r=>{
+    if(r.status!=="completed"&&r.status!=="cancelled") return false;
+    const text=[r.name,r.hotel,r.creatures,r.cancelReason].join(" ").toLowerCase();
+    return (!q||text.includes(q))&&(!d||r.desiredDate===d);
+  }).sort((a,b)=>(b.desiredDate||"").localeCompare(a.desiredDate||""));
+  $("historyList").innerHTML=rows.length?rows.map(cardHtml).join(""):"<div class='card'>該当する履歴はありません。</div>";
+  document.querySelectorAll("#historyList .card[data-id]").forEach(el=>el.onclick=()=>showDetail(el.dataset.id));
+}
+function refreshAll(){
+  render();
+  if(!$("historyView").classList.contains("hidden")) renderHistory();
 }
 function openEditor(){
   currentId=null;$("editor").classList.remove("hidden");$("parsedArea").classList.add("hidden");$("rawText").focus();
@@ -379,6 +394,10 @@ $("newBtn").onclick=openEditor;
 $("closeEditor").onclick=()=>{$("editor").classList.add("hidden")};
 $("clearBtn").onclick=resetEditor;
 $("search").oninput=render;$("statusFilter").onchange=render;
+$("historyBtn").onclick=()=>{$("mainView").classList.add("hidden");$("historyView").classList.remove("hidden");renderHistory();};
+$("closeHistory").onclick=()=>{$("historyView").classList.add("hidden");$("mainView").classList.remove("hidden");};
+$("historySearch").oninput=renderHistory;$("historyDate").onchange=renderHistory;
+$("clearHistoryDate").onclick=()=>{$("historyDate").value="";renderHistory();};
 $("parseBtn").onclick=async()=>{
   const raw=$("rawText").value;
   if(!raw.trim()){alert("問い合わせ内容を貼り付けてください。");return;}
@@ -659,8 +678,8 @@ function showDetail(id){
     </div>`;
   $("detailModal").classList.remove("hidden");
   if($("toggleStatus")) $("toggleStatus").onclick=()=>{r.status=r.status==="confirmed"?"pending":"confirmed";save();render();showDetail(id)};
-  if($("completeBtn")) $("completeBtn").onclick=()=>{r.status="completed";save();render();showDetail(id)};
-  if($("uncompleteBtn")) $("uncompleteBtn").onclick=()=>{r.status="confirmed";save();render();showDetail(id)};
+  if($("completeBtn")) $("completeBtn").onclick=()=>{r.status="completed";save();refreshAll();showDetail(id)};
+  if($("uncompleteBtn")) $("uncompleteBtn").onclick=()=>{r.status="confirmed";save();refreshAll();showDetail(id)};
   if($("cancelBtn")) $("cancelBtn").onclick=()=>{
     const reason=prompt("キャンセルの理由を入力してください(台風接近、お客様都合など)");
     if(reason===null) return;
@@ -668,10 +687,10 @@ function showDetail(id){
     r.status="cancelled";
     r.cancelReason=reason;
     r.cancelledAt=today();
-    save();render();showDetail(id);
+    save();refreshAll();showDetail(id);
   };
-  if($("uncancelBtn")) $("uncancelBtn").onclick=()=>{r.status=r.previousStatus||"pending";save();render();showDetail(id)};
-  $("deleteRecord").onclick=()=>{if(confirm("この問い合わせを削除しますか？")){records=records.filter(x=>x.id!==id);save();render();$("detailModal").classList.add("hidden")}};
+  if($("uncancelBtn")) $("uncancelBtn").onclick=()=>{r.status=r.previousStatus||"pending";save();refreshAll();showDetail(id)};
+  $("deleteRecord").onclick=()=>{if(confirm("この問い合わせを削除しますか？")){records=records.filter(x=>x.id!==id);save();refreshAll();$("detailModal").classList.add("hidden")}};
   $("detailNotes").onchange=()=>{r.notes=$("detailNotes").value;save();};
   if(r.status==="pending"){
     ["name","phone","email","desiredDate","people","hotel","creatures","contactMethod"].forEach(field=>{
