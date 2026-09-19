@@ -18,4 +18,5 @@ hermoso «kyoroon, tsi-i» en la penumbra previa al amanecer y al atardecer.
 En su día disminuyó tan drásticamente por la tala y el impacto de especies
 invasoras que se la llamaba «ave fantasma», pero a medida que el bosque se
 ha recuperado, su población muestra una tendencia de recuperación en los
-últimos años.
+últimos años, y en marzo de 2026 la 5.ª Lista Roja del Ministerio de Medio
+Ambiente rebajó su categoría de Vulnerable (VU) a Casi Amenazada (NT).

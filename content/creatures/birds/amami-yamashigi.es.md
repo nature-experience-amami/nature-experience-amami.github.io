@@ -20,5 +20,9 @@ mayo aproximadamente, y al anochecer los machos realizan un vuelo de
 cortejo y exhibición territorial, lo que hace de esta la mejor época del
 año para verla. Anida en el suelo dentro del bosque y pone de 2 a 4 huevos
 desde marzo hasta mayo aproximadamente. Fue declarada Especie Silvestre
-Nacional Rara en 1993. La depredación por mangostas y gatos asilvestrados,
-junto con la pérdida de hábitat por la tala, son problemas persistentes.
+Nacional Rara en 1993. Tras la erradicación de la mangosta pequeña india y la
+recuperación del bosque a medida que ha disminuido la tala, su población se
+ha ido recuperando gradualmente, y en marzo de 2026 la 5.ª Lista Roja del
+Ministerio de Medio Ambiente rebajó su categoría de Vulnerable (VU) a Casi
+Amenazada (NT). La depredación por gatos asilvestrados sigue siendo un
+problema persistente.

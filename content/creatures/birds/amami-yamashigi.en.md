@@ -19,5 +19,8 @@ season runs from around February to May, and at dusk males perform a
 courtship and territorial "roding" display flight, making this the easiest
 time of year to spot one. It nests on the ground within forests and lays
 2-4 eggs from around March through May. Designated a Nationally Rare Wild
-Species in 1993. Predation by mongooses and feral cats, along with habitat
-loss from logging, are ongoing concerns.
+Species in 1993. Following the eradication of the small Indian mongoose and
+forest recovery as logging has declined, its population has been gradually
+recovering, and in March 2026 the Ministry of the Environment's 5th Red List
+downgraded its status from Vulnerable (VU) to Near Threatened (NT). Predation
+by feral cats remains an ongoing concern.

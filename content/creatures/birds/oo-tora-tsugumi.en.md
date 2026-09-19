@@ -17,4 +17,5 @@ April, it sings a clear, beautiful "kyoroon, tsi-i" call in the dim light
 before dawn and at dusk. It once declined so sharply due to logging and the
 impact of invasive species that it was called a "phantom bird," but as the
 forest has recovered, its population has been on a recovering trend in
-recent years.
+recent years, and in March 2026 the Ministry of the Environment's 5th Red
+List downgraded its status from Vulnerable (VU) to Near Threatened (NT).
