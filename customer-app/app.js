@@ -4,7 +4,7 @@ let currentId=null;
 let parsedParticipants=[];
 
 const $=id=>document.getElementById(id);
-const today=()=>new Date().toISOString().slice(0,10);
+const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
 const save=()=>localStorage.setItem(KEY,JSON.stringify(records));
 
 // --- AI連携(サイト本体と同じCloudflare Worker + Geminiを共用) ---
@@ -185,11 +185,14 @@ const WEEKDAYS=["日","月","火","水","木","金","土"];
 function fmtWithWeekday(d){return `${fmt(d)}(${WEEKDAYS[new Date(d+"T00:00:00").getDay()]})`}
 function statusLabel(status){return {pending:"未確定",confirmed:"予約確定",completed:"終了",cancelled:"キャンセル",personal:"予定あり"}[status]||status}
 function updateStats(){
-  // 「自分の予定」は問い合わせではないので、集計には含めない
+  // 「自分の予定」は問い合わせではないので、集計には含めない。
+  // 「全件」は終了・キャンセルを含めず、未確定+予約確定の合計とする。
   const customerRecords=records.filter(r=>r.status!=="personal");
-  $("allCount").textContent=customerRecords.length;
-  $("pendingCount").textContent=customerRecords.filter(r=>r.status==="pending").length;
-  $("confirmedCount").textContent=customerRecords.filter(r=>r.status==="confirmed").length;
+  const pending=customerRecords.filter(r=>r.status==="pending").length;
+  const confirmed=customerRecords.filter(r=>r.status==="confirmed").length;
+  $("allCount").textContent=pending+confirmed;
+  $("pendingCount").textContent=pending;
+  $("confirmedCount").textContent=confirmed;
 }
 function cardHtml(r){
   if(r.status==="personal"){
