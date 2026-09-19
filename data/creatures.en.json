@@ -387,6 +387,24 @@
     "page_path": "creatures/aquatic-insects/amami-hababiro-doromusshi.html"
   },
   {
+    "id": "amami-kochibi-mizumusi",
+    "name": "Amami Micro Water Boatman",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      3,
+      9,
+      12
+    ],
+    "description": "A member of the pygmy water boatman family (formerly treated within the water boatman family), a tiny aquatic true bug about 1mm long: the Amami Micro Water Boatman.\n\nIts scientific name has not yet been identified. A personal observation blog notes that an undescribed species of the genus Micronecta may exist in the upper reaches of rivers on Okinawa Island, but whether it is the same species as this one (the Amami Micro Water Boatman) has not been confirmed, and the relationship between the two is unknown. It normally burrows into sand or fallen leaves, and swims away quickly when startled.",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000002_20250324_12.jpg",
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000003_20250914_19.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-kochibi-mizumusi.html"
+  },
+  {
     "id": "amami-mizo-doromushi",
     "name": "Amami Groove Riffle Beetle",
     "category": "aquatic-insects",
@@ -399,6 +417,54 @@
       "../images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
     ],
     "page_path": "creatures/aquatic-insects/amami-mizo-doromushi.html"
+  },
+  {
+    "id": "amami-oyogi-katabiro-amennbo",
+    "name": "Amami Swimming Broad-shouldered Water Strider",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      2
+    ],
+    "description": "Broad-shouldered water strider family, genus Xiphovelia. *Xiphovelia curvifemur*\n\nA small broad-shouldered water strider recorded on Amami Oshima and later also found on Okinawa Island. The closely related species Xiphovelia japonica favors gravel and bedrock along the shorelines of forest-ringed valley ponds, and has been confirmed to overwinter as eggs on floating plant debris or shoreline gravel, but the specific ecology of this species itself is still poorly understood. It should also be noted that the closely related Xiphovelia japonica is listed as Vulnerable (VU) on the Ministry of the Environment's Red List, whereas that designation concerns a different species and should not be confused with this one; this species itself is not listed on the Red List.",
+    "photos": [
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000002_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000003_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000004_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000005_20250223_16.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-oyogi-katabiro-amennbo.html"
+  },
+  {
+    "id": "amami-sesuji-daruma-gamushi",
+    "name": "Amami Ridged Minute Moss Beetle",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      3
+    ],
+    "description": "Minute moss beetle family, genus Ochthebius. *Ochthebius amami* Yoshitomi & Satô, 2001\n\nA tiny aquatic beetle described as a new species from an individual collected by chance on Amami Oshima in spring 1997, belonging to the minute moss beetle family (a different family from the \"gamushi\" water scavenger beetles despite the similar Japanese name). About 1.9-2.3mm long. Found on Amami Oshima and Okinawa Island, it lives in relatively open sections of mountain streams, though it is not very abundant. Habitat degradation from river development and bank reinforcement work is a concern, and it was newly listed as Near Threatened (NT) in the 2010 revision of the Ministry of the Environment's Red List.",
+    "photos": [
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000002_20250323_15.jpg",
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000003_20250323_17.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-sesuji-daruma-gamushi.html"
+  },
+  {
+    "id": "amami-shijimi-gamushi",
+    "name": "Amami Clam Water Scavenger Beetle",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      4
+    ],
+    "description": "Water scavenger beetle family, genus Laccobius. *Laccobius (Microlaccobius) satoi* Gentili, 1989\n\nA small water scavenger beetle currently known only from Amami Oshima and Tokunoshima. Several closely related species exist within the Japanese subgenus Microlaccobius of Laccobius, including L. fragilis and L. nakanei, and telling them apart requires examining the genitalia. Detailed records of its body length and ecology are scarce, and much remains unknown.",
+    "photos": [
+      "../images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-shijimi-gamushi.html"
   },
   {
     "id": "amami-yokomizo-doromushi",
@@ -426,6 +492,23 @@
     "page_path": "creatures/aquatic-insects/amami-yokomizo-doromushi.html"
   },
   {
+    "id": "ashibutome-mizumushi",
+    "name": "Toad Bug",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      2
+    ],
+    "description": "Toad bug family, genus Nerthra. *Nerthra macrothorax* (Montrouzier, 1855)\n\nThe only species of toad bug family found in Japan, about 1cm long, with a broad, flattened body. It has no ocelli and is distinguished by its thick, sickle-shaped front legs. Its Japanese name, Ashibuto-memizumushi, literally means \"thick-legged water bug,\" but despite that name it does not live underwater in ponds; rather, it is a semi-terrestrial ambush predator active at night on sandy beaches (from the shoreline to the coastal forest), preying on pill bugs and woodlice, and overwintering as an adult. It is widely distributed from southern Kyushu through the Nansei Islands to the Ogasawara Islands, and is not endemic to Amami Oshima alone.",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000001_20260204_20.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000002_20260204_20.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000003_20250222_15.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000004_20250222_15.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/ashibutome-mizumushi.html"
+  },
+  {
     "id": "chairo-kesi-katabiro-amennbo",
     "name": "Brown Micro Water Strider",
     "category": "aquatic-insects",
@@ -443,6 +526,36 @@
       "../images/creatures/aquatic-insects/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg"
     ],
     "page_path": "creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "eguri-tamamizumushi",
+    "name": "Notched Pygmy Backswimmer",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      9
+    ],
+    "description": "Pygmy backswimmer family, genus Heterotrephes. *Heterotrephes admorsus*\n\nThe only species of the pygmy backswimmer family found in Japan, with a small, hemispherical body about 2.5-3mm long. Like the water boatman-relative backswimmers, it swims upside down. Known only from Amami Oshima and Tokunoshima, it is endemic to the Amami Islands, and lives in slow-flowing rivers, in spots where plant roots hang down from the bank into the water. It is listed as Vulnerable (VU) on the Ministry of the Environment's insect Red List.",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000001_20250914_13.jpg",
+      "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000002_20250914_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/eguri-tamamizumushi.html"
+  },
+  {
+    "id": "hutakiboshi-keshi-gengoro",
+    "name": "Two-spotted Minute Diving Beetle",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      4
+    ],
+    "description": "Diving beetle family, genus Allopachria. *Allopachria bimaculata* (M. Satô, 1972)\n\nA tiny diving beetle said to bear two spots on its elytra, as its species name (meaning \"two-spotted\") suggests. It is said to be distinguished from closely related species by its smaller body and the incomplete microreticulation on its head. Primary sources on its detailed ecology, morphology, and the extent of its distribution are scarce, but it is listed as Near Threatened (NT) on the Ministry of the Environment's insect Red List.",
+    "photos": [
+      "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000001_20250408_13.jpg",
+      "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000002_20250408_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/hutakiboshi-keshi-gengoro.html"
   },
   {
     "id": "iriomote-kesi-katabiro-amennbo",
@@ -948,6 +1061,21 @@
     "page_path": "creatures/beetles/tokara-mannmaru-kogane.html"
   },
   {
+    "id": "akaharadaka",
+    "name": "Chinese Sparrowhawk",
+    "category": "birds",
+    "category_name": "Birds",
+    "months": [
+      9,
+      10
+    ],
+    "description": "Hawk family (Accipitridae), genus Tachyspiza. *Tachyspiza soloensis* (until a\n2024 taxonomic revision, classified as *Accipiter soloensis*)\n\nA small hawk about 30 cm long that does not breed in Japan, passing through\nonly in spring and autumn as a migrant. The upperparts are dark bluish-gray\nand the underparts pale orange-brown, with reddish-brown eyes in males and\nyellow eyes in females. It breeds from northeastern China through the Korean\nPeninsula and winters in Southeast Asia. Spring passage also occurs, but\nAmami Oshima sees its largest numbers in autumn, when the passage peaks from\nmid-September through October as cicadas and dragonflies that serve as prey\nbecome abundant; flocks can sometimes be seen circling upward together on\nrising air currents in what is called a \"hawk pillar.\" It preys widely on\nsmall animals such as frogs, insects, and lizards. It is listed as Least\nConcern on the IUCN Red List and is not subject to designation under Japan's\nMinistry of the Environment Red List or Act on Conservation of Endangered\nSpecies.",
+    "photos": [
+      "../images/creatures/birds/akaharadaka/akaharadaka_000001_20250927_20.jpg"
+    ],
+    "page_path": "creatures/birds/akaharadaka.html"
+  },
+  {
     "id": "akahige",
     "name": "Ryukyu Robin",
     "category": "birds",
@@ -988,6 +1116,32 @@
     "page_path": "creatures/birds/amami-yamashigi.html"
   },
   {
+    "id": "iso-hiyodori",
+    "name": "Blue Rock Thrush",
+    "category": "birds",
+    "category_name": "Birds",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Old World flycatcher family (Muscicapidae), genus Monticola. *Monticola\nsolitarius*\n\nAbout 23 cm long. Males and females look very different: males are blue from\nthe head to the back with reddish-brown underparts, while females are\ngrayish-brown with dark scaly barring. A year-round resident on Amami\nOshima, it traditionally favors rocky coastlines and harbors — as its\nJapanese name (\"rocky shore thrush\") suggests — but in recent years it has\nbeen spreading inland and into towns across Japan, and on Amami it is\nincreasingly seen around houses, on rooftops, power lines, and in parking\nlots. A strongly predatory bird, it feeds on crustaceans, insects, lizards,\nand even small rodents, and sings a high, clear, elaborate song. It is\nsolitary and holds a year-round territory; breeding is thought to begin\naround March.",
+    "photos": [
+      "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000001_20260201_14.jpg",
+      "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000002_20250219_13.jpg"
+    ],
+    "page_path": "creatures/birds/iso-hiyodori.html"
+  },
+  {
     "id": "kawasemi",
     "name": "Common Kingfisher",
     "category": "birds",
@@ -1009,6 +1163,29 @@
       "../images/creatures/birds/kawasemi/kawasemi_000005_20250314_10.jpg"
     ],
     "page_path": "creatures/birds/kawasemi.html"
+  },
+  {
+    "id": "kurotusraherasagi",
+    "name": "Black-faced Spoonbill",
+    "category": "birds",
+    "category_name": "Birds",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Ibis family (Threskiornithidae), genus Platalea. *Platalea minor*\n\nA large waterbird about 70-80 cm long. The whole body is white, and, as its\nname suggests, it has a distinctive black, spoon-shaped bill and black skin\naround the eyes. During the breeding season it grows a crest and its breast\ntakes on a yellowish tinge. It can be told apart from the closely related\nEurasian Spoonbill by the black facial skin, which extends broadly to the\nbase of the bill. It breeds on islands off the west coast of the Korean\nPeninsula and the coast of northeastern China, and winters in Taiwan, Hong\nKong, southern China, Japan, and elsewhere. The world population fell to\naround 300 birds in the early 1990s, but conservation efforts have driven a\nrecovery, and the 2025 international census counted more than 7,000. In\nJapan, numbers arriving are on the rise, mainly in Kyushu, and on Amami\nOshima it too is observed on tidal flats and similar sites from winter\nthrough spring. It was designated a Nationally Rare Wild Species under the\nAct on Conservation of Endangered Species in 2020, prohibiting capture and\ntransfer (the Natural Monument designation applies not to the species\nitself but to certain habitat sites within Kagoshima Prefecture). Around\n2025 the IUCN Red List downgraded its status from Endangered (EN) to\nVulnerable (VU).",
+    "photos": [
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000001_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000002_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000003_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000004_20251003_15.jpg"
+    ],
+    "page_path": "creatures/birds/kurotusraherasagi.html"
   },
   {
     "id": "oo-tora-tsugumi",
@@ -1172,6 +1349,27 @@
     "page_path": "creatures/birds/sasiba.html"
   },
   {
+    "id": "seitakashigi",
+    "name": "Black-winged Stilt",
+    "category": "birds",
+    "category_name": "Birds",
+    "months": [
+      3,
+      4,
+      8,
+      9,
+      10
+    ],
+    "description": "Stilt family (Recurvirostridae), genus Himantopus. *Himantopus himantopus*\n\nAbout 37-40 cm long, a shorebird with extremely long, reddish legs and a\nthin black bill. The body is white with black wings and back; males show\nmore black extending to the back of the head, while females are paler. It\nfeeds on aquatic insects, crustaceans, shellfish, and small fish. In Japan\nit was first confirmed breeding at reclaimed land in Aichi Prefecture in\n1975 and has since become locally established in parts of Honshu, but in\nthe Nansei Islands it occurs mainly as a passage migrant and winter\nvisitor. Within Kagoshima Prefecture it has been recorded on Amami Oshima,\nTokunoshima, and Nakanoshima in the Tokara Islands, and breeding was\nconfirmed on nearby Okinoerabujima in 2009, though there are few records of\nbreeding on Amami Oshima itself, or of exactly when it arrives there. It\nfavors shallow water such as tidal flats, rice paddies, and fallow fields.\nIt was previously classified as Vulnerable (VU) on the Ministry of the\nEnvironment Red List but is now listed as Data Deficient (DD).",
+    "photos": [
+      "../images/creatures/birds/seitakashigi/seitakashigi_000001_20251003_13.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000002_20251003_13.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000003_20251003_14.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000004_20251003_14.jpg"
+    ],
+    "page_path": "creatures/birds/seitakashigi.html"
+  },
+  {
     "id": "tageri",
     "name": "Northern Lapwing",
     "category": "birds",
@@ -1192,6 +1390,24 @@
       "../images/creatures/birds/tageri/tageri_000004_20251221_15.jpg"
     ],
     "page_path": "creatures/birds/tageri.html"
+  },
+  {
+    "id": "torafuzuku",
+    "name": "Long-eared Owl",
+    "category": "birds",
+    "category_name": "Birds",
+    "months": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "description": "Owl family (Strigidae), genus Asio. *Asio otus*\n\nAbout 35-40 cm long, an owl notable for the long, ear-like tufts of\nfeathers on its head. The upperparts are grayish to pale brown with\nstreaking, and the eyes are orange. It breeds as a summer visitor in\nHokkaido and northern Honshu, but from central Honshu southward it occurs\nmainly as a winter visitor. The only owls resident year-round on Amami\nOshima are the Ryukyu Scops Owl and the Ryukyu Brown Hawk-Owl; aside from\nthese, a small number of Long-eared Owls arrive as winter visitors each\nyear, typically appearing from around November. Outside the breeding\nseason it is known to form communal roosts, gathering in groups in\nevergreen trees or bamboo thickets. It preys mainly on small mammals such\nas rodents, as well as insects and small birds. Few individuals reach Amami\nOshima, and because they are quite wary, they can be difficult to observe.",
+    "photos": [
+      "../images/creatures/birds/torafuzuku/torafuzuku_000001_20250207_20.jpg"
+    ],
+    "page_path": "creatures/birds/torafuzuku.html"
   },
   {
     "id": "ba-ba-tokage",

@@ -387,6 +387,24 @@
     "page_path": "creatures/aquatic-insects/amami-hababiro-doromusshi.html"
   },
   {
+    "id": "amami-kochibi-mizumusi",
+    "name": "Chinche de agua diminuta de Amami",
+    "category": "aquatic-insects",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      3,
+      9,
+      12
+    ],
+    "description": "Un miembro de la familia Micronectidae (antes incluida en la familia Corixidae), una diminuta chinche de agua de aproximadamente 1 mm: la chinche de agua diminuta de Amami.\n\nSu nombre científico aún no se ha identificado. Un blog de observación personal señala que podría existir una especie no descrita del género Micronecta en los tramos altos de los ríos de la isla de Okinawa, pero no se ha confirmado si se trata de la misma especie que esta (la chinche de agua diminuta de Amami), y se desconoce la relación entre ambas. Normalmente se entierra en la arena o entre las hojas caídas, y nada rápidamente para escapar cuando se la sobresalta.",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000002_20250324_12.jpg",
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000003_20250914_19.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-kochibi-mizumusi.html"
+  },
+  {
     "id": "amami-mizo-doromushi",
     "name": "Escarabajo de Rabión Acanalado de Amami",
     "category": "aquatic-insects",
@@ -399,6 +417,54 @@
       "../images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
     ],
     "page_path": "creatures/aquatic-insects/amami-mizo-doromushi.html"
+  },
+  {
+    "id": "amami-oyogi-katabiro-amennbo",
+    "name": "Zapatero de agua nadador de hombros anchos de Amami",
+    "category": "aquatic-insects",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      2
+    ],
+    "description": "Familia de los zapateros de agua de hombros anchos, género Xiphovelia. *Xiphovelia curvifemur*\n\nUn pequeño zapatero de agua de hombros anchos registrado en Amami Oshima y encontrado más tarde también en la isla de Okinawa. La especie emparentada Xiphovelia japonica prefiere zonas de guijarros y roca en las orillas de estanques de valle rodeados de bosque, y se ha confirmado que sus huevos pasan el invierno sobre restos de plantas flotantes o guijarros de la orilla, pero la ecología concreta de esta especie sigue siendo poco conocida. Cabe señalar además que la especie emparentada Xiphovelia japonica figura como Vulnerable (VU) en la Lista Roja del Ministerio de Medio Ambiente, pero esa designación corresponde a una especie distinta y no debe confundirse con esta; esta especie en sí no figura en la Lista Roja.",
+    "photos": [
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000002_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000003_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000004_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000005_20250223_16.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-oyogi-katabiro-amennbo.html"
+  },
+  {
+    "id": "amami-sesuji-daruma-gamushi",
+    "name": "Escarabajo de musgo diminuto acanalado de Amami",
+    "category": "aquatic-insects",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      3
+    ],
+    "description": "Familia de los escarabajos de musgo diminutos, género Ochthebius. *Ochthebius amami* Yoshitomi & Satô, 2001\n\nUn diminuto escarabajo acuático descrito como especie nueva a partir de un ejemplar recogido por casualidad en Amami Oshima en la primavera de 1997, perteneciente a la familia de los escarabajos de musgo diminutos (una familia distinta de los «gamushi», a pesar del nombre japonés similar). Mide entre 1.9 y 2.3 mm. Se encuentra en Amami Oshima y en la isla de Okinawa, y vive en tramos relativamente abiertos de arroyos de montaña, aunque no es muy abundante. La degradación del hábitat por obras fluviales y de refuerzo de las orillas es motivo de preocupación, y en la revisión de 2010 de la Lista Roja del Ministerio de Medio Ambiente se incluyó por primera vez como Casi Amenazada (NT).",
+    "photos": [
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000002_20250323_15.jpg",
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000003_20250323_17.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-sesuji-daruma-gamushi.html"
+  },
+  {
+    "id": "amami-shijimi-gamushi",
+    "name": "Escarabajo acuático almeja de Amami",
+    "category": "aquatic-insects",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      4
+    ],
+    "description": "Familia de los escarabajos acuáticos (Hydrophilidae), género Laccobius. *Laccobius (Microlaccobius) satoi* Gentili, 1989\n\nUn pequeño escarabajo acuático conocido por ahora solo en Amami Oshima y Tokunoshima. Dentro del subgénero japonés Microlaccobius del género Laccobius existen varias especies emparentadas, como L. fragilis y L. nakanei, y para distinguirlas es necesario examinar la genitalia. Los registros detallados de su longitud corporal y ecología son escasos, y todavía se desconocen muchos aspectos.",
+    "photos": [
+      "../images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-shijimi-gamushi.html"
   },
   {
     "id": "amami-yokomizo-doromushi",
@@ -426,6 +492,23 @@
     "page_path": "creatures/aquatic-insects/amami-yokomizo-doromushi.html"
   },
   {
+    "id": "ashibutome-mizumushi",
+    "name": "Chinche Sapo",
+    "category": "aquatic-insects",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      2
+    ],
+    "description": "Familia de las chinches sapo, género Nerthra. *Nerthra macrothorax* (Montrouzier, 1855)\n\nLa única especie de la familia de las chinches sapo presente en Japón, de aproximadamente 1 cm, con un cuerpo ancho y aplanado. Carece de ocelos y se distingue por sus patas delanteras gruesas y en forma de hoz. Su nombre japonés, Ashibuto-memizumushi, significa literalmente «chinche de agua de patas gruesas», pero a pesar de ese nombre no vive bajo el agua en estanques, sino que es un depredador semiterrestre de emboscada, activo de noche en playas de arena (desde la orilla hasta el bosque costero), que caza cochinillas de la humedad, y pasa el invierno en estado adulto. Está ampliamente distribuida desde el sur de Kyushu, pasando por las islas Nansei, hasta las islas Ogasawara, y no es endémica solo de Amami Oshima.",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000001_20260204_20.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000002_20260204_20.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000003_20250222_15.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000004_20250222_15.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/ashibutome-mizumushi.html"
+  },
+  {
     "id": "chairo-kesi-katabiro-amennbo",
     "name": "Zapatero Diminuto Marrón",
     "category": "aquatic-insects",
@@ -443,6 +526,36 @@
       "../images/creatures/aquatic-insects/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg"
     ],
     "page_path": "creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "eguri-tamamizumushi",
+    "name": "Notonéctido pigmeo dentado",
+    "category": "aquatic-insects",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      9
+    ],
+    "description": "Familia de los notonéctidos pigmeos, género Heterotrephes. *Heterotrephes admorsus*\n\nLa única especie de la familia de los notonéctidos pigmeos presente en Japón, con un cuerpo pequeño y hemisférico de unos 2.5-3 mm. Al igual que los notonectos, nada boca arriba. Conocida solo en Amami Oshima y Tokunoshima, es endémica de las islas Amami y vive en ríos de corriente lenta, en lugares donde las raíces de las plantas cuelgan desde la orilla hasta el agua. Figura como Vulnerable (VU) en la Lista Roja de insectos del Ministerio de Medio Ambiente.",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000001_20250914_13.jpg",
+      "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000002_20250914_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/eguri-tamamizumushi.html"
+  },
+  {
+    "id": "hutakiboshi-keshi-gengoro",
+    "name": "Escarabajo buceador minúsculo bimaculado",
+    "category": "aquatic-insects",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      4
+    ],
+    "description": "Familia de los escarabajos buceadores, género Allopachria. *Allopachria bimaculata* (M. Satô, 1972)\n\nUn diminuto escarabajo buceador que, según se dice, presenta dos manchas en los élitros, tal como sugiere su nombre científico (que significa «bimaculado»). Se distinguiría de especies emparentadas por su cuerpo más pequeño y por la microrreticulación incompleta de la cabeza. Las fuentes primarias sobre su ecología detallada, morfología y el alcance de su distribución son escasas, pero figura como Casi Amenazada (NT) en la Lista Roja de insectos del Ministerio de Medio Ambiente.",
+    "photos": [
+      "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000001_20250408_13.jpg",
+      "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000002_20250408_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/hutakiboshi-keshi-gengoro.html"
   },
   {
     "id": "iriomote-kesi-katabiro-amennbo",
@@ -948,6 +1061,21 @@
     "page_path": "creatures/beetles/tokara-mannmaru-kogane.html"
   },
   {
+    "id": "akaharadaka",
+    "name": "Gavilán Chino",
+    "category": "birds",
+    "category_name": "Aves",
+    "months": [
+      9,
+      10
+    ],
+    "description": "Familia de los accipítridos (Accipitridae), género Tachyspiza. *Tachyspiza\nsoloensis* (clasificada como *Accipiter soloensis* antes de una revisión\ntaxonómica de 2024)\n\nUn pequeño halcón de unos 30 cm que no se reproduce en Japón, donde solo se\nle ve de paso en primavera y otoño. Las partes superiores son de color gris\nazulado oscuro y las inferiores de un pardo anaranjado pálido; los ojos son\nrojo oscuro en los machos y amarillos en las hembras. Se reproduce desde el\nnoreste de China hasta la península de Corea e inverna en el sudeste\nasiático. También hay paso en primavera, pero en Amami Oshima se observan\nmayores números en otoño, cuando el paso alcanza su punto máximo de mediados\nde septiembre a octubre, coincidiendo con la abundancia de cigarras y\nlibélulas de las que se alimenta; a veces pueden verse bandadas ascendiendo\nen círculos sobre corrientes térmicas, en lo que se llama una «columna de\nhalcones». Se alimenta de una amplia variedad de animales pequeños, como\nranas, insectos y lagartijas. Está clasificado como Preocupación Menor en la\nLista Roja de la UICN y no está sujeto a ninguna designación en la Lista Roja\ndel Ministerio de Medio Ambiente de Japón ni en la Ley de Conservación de\nEspecies en Peligro.",
+    "photos": [
+      "../images/creatures/birds/akaharadaka/akaharadaka_000001_20250927_20.jpg"
+    ],
+    "page_path": "creatures/birds/akaharadaka.html"
+  },
+  {
     "id": "akahige",
     "name": "Petirrojo de Ryukyu",
     "category": "birds",
@@ -988,6 +1116,32 @@
     "page_path": "creatures/birds/amami-yamashigi.html"
   },
   {
+    "id": "iso-hiyodori",
+    "name": "Roquero Solitario",
+    "category": "birds",
+    "category_name": "Aves",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "Familia de los papamoscas del Viejo Mundo (Muscicapidae), género Monticola.\n*Monticola solitarius*\n\nMide unos 23 cm. Machos y hembras se ven muy distintos: los machos son\nazules desde la cabeza hasta el dorso con las partes inferiores de color\npardo rojizo, mientras que las hembras son de color pardo grisáceo con un\nmoteado escamoso oscuro. Es residente todo el año en Amami Oshima y,\ntradicionalmente, prefiere las costas rocosas y los puertos —tal como\nsugiere su nombre en japonés, «tordo de la costa rocosa»—, pero en los\núltimos años se ha ido extendiendo hacia el interior y las zonas urbanas en\ntodo Japón, y en Amami se le ve cada vez más cerca de las viviendas, en\ntejados, cables eléctricos y aparcamientos. Es un ave muy depredadora que se\nalimenta de crustáceos, insectos, lagartijas e incluso pequeños roedores, y\ncanta con un timbre agudo, claro y muy elaborado. Es solitaria y mantiene un\nterritorio durante todo el año; se cree que la cría comienza hacia marzo.",
+    "photos": [
+      "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000001_20260201_14.jpg",
+      "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000002_20250219_13.jpg"
+    ],
+    "page_path": "creatures/birds/iso-hiyodori.html"
+  },
+  {
     "id": "kawasemi",
     "name": "Martín Pescador Común",
     "category": "birds",
@@ -1009,6 +1163,29 @@
       "../images/creatures/birds/kawasemi/kawasemi_000005_20250314_10.jpg"
     ],
     "page_path": "creatures/birds/kawasemi.html"
+  },
+  {
+    "id": "kurotusraherasagi",
+    "name": "Espátula de Cara Negra",
+    "category": "birds",
+    "category_name": "Aves",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "Familia de los ibis (Threskiornithidae), género Platalea. *Platalea minor*\n\nUn ave acuática grande de unos 70-80 cm. Todo el cuerpo es blanco y, como\nindica su nombre, se caracteriza por un pico negro en forma de espátula y la\npiel negra alrededor de los ojos. Durante la época de cría desarrolla un\npenacho y el pecho adquiere un tono amarillento. Se distingue de la\nespátula común, una especie emparentada, porque la piel negra facial se\nextiende ampliamente hasta la base del pico. Se reproduce en islas frente a\nla costa oeste de la península de Corea y en la costa del noreste de China,\ne inverna en Taiwán, Hong Kong, el sur de China, Japón y otros lugares. La\npoblación mundial descendió a unas 300 aves a principios de la década de\n1990, pero los esfuerzos de conservación han impulsado su recuperación, y el\ncenso internacional de 2025 contó más de 7000 ejemplares. En Japón, el\nnúmero de aves que llegan va en aumento, principalmente en Kyushu, y en\nAmami Oshima también se observa en marismas y zonas similares desde el\ninvierno hasta la primavera. Fue declarada Especie Silvestre Nacional Rara\nen virtud de la Ley de Conservación de Especies en Peligro en 2020, lo que\nprohíbe su captura y traslado (la designación de Monumento Natural no se\naplica a la especie en sí, sino a ciertos sitios de hábitat dentro de la\nprefectura de Kagoshima). Hacia 2025, la Lista Roja de la UICN rebajó su\ncategoría de En Peligro (EN) a Vulnerable (VU).",
+    "photos": [
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000001_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000002_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000003_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000004_20251003_15.jpg"
+    ],
+    "page_path": "creatures/birds/kurotusraherasagi.html"
   },
   {
     "id": "oo-tora-tsugumi",
@@ -1172,6 +1349,27 @@
     "page_path": "creatures/birds/sasiba.html"
   },
   {
+    "id": "seitakashigi",
+    "name": "Cigüeñuela Común",
+    "category": "birds",
+    "category_name": "Aves",
+    "months": [
+      3,
+      4,
+      8,
+      9,
+      10
+    ],
+    "description": "Familia de las cigüeñuelas (Recurvirostridae), género Himantopus.\n*Himantopus himantopus*\n\nMide unos 37-40 cm; es un ave limícola con patas extremadamente largas y\nrojizas y un pico fino y negro. El cuerpo es blanco con las alas y el dorso\nnegros; los machos muestran más negro que se extiende hasta la parte\nposterior de la cabeza, mientras que las hembras son más pálidas. Se\nalimenta de insectos acuáticos, crustáceos, moluscos y peces pequeños. En\nJapón se confirmó su primera cría en tierras ganadas al mar en la\nprefectura de Aichi en 1975, y desde entonces se ha establecido localmente\nen algunas zonas de Honshu, pero en las islas Nansei aparece principalmente\ncomo ave de paso e invernante. Dentro de la prefectura de Kagoshima se ha\nregistrado en Amami Oshima, Tokunoshima y Nakanoshima, en las islas Tokara,\ny se confirmó su cría en la cercana isla de Okinoerabu en 2009, aunque hay\npocos registros de cría en la propia Amami Oshima, o de la época exacta en\nque llega. Prefiere aguas poco profundas como marismas, arrozales y\nbarbechos. Antes se clasificaba como Vulnerable (VU) en la Lista Roja del\nMinisterio de Medio Ambiente, pero ahora figura como Datos Insuficientes\n(DD).",
+    "photos": [
+      "../images/creatures/birds/seitakashigi/seitakashigi_000001_20251003_13.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000002_20251003_13.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000003_20251003_14.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000004_20251003_14.jpg"
+    ],
+    "page_path": "creatures/birds/seitakashigi.html"
+  },
+  {
     "id": "tageri",
     "name": "Avefría Europea",
     "category": "birds",
@@ -1192,6 +1390,24 @@
       "../images/creatures/birds/tageri/tageri_000004_20251221_15.jpg"
     ],
     "page_path": "creatures/birds/tageri.html"
+  },
+  {
+    "id": "torafuzuku",
+    "name": "Búho Chico",
+    "category": "birds",
+    "category_name": "Aves",
+    "months": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "description": "Familia de los búhos (Strigidae), género Asio. *Asio otus*\n\nMide entre 35 y 40 cm, un búho destacado por los largos penachos de plumas\nen forma de orejas sobre la cabeza. Las partes superiores son de color\ngrisáceo a pardo pálido con listas, y los ojos son de color naranja. Se\nreproduce como ave estival en Hokkaido y el norte de Honshu, pero desde el\ncentro de Honshu hacia el sur aparece principalmente como invernante. Los\núnicos búhos residentes todo el año en Amami Oshima son el autillo de\nRyukyu y el mochuelo pardo de Ryukyu; aparte de estos, cada año llegan unos\npocos búhos chicos como aves invernantes, que suelen aparecer a partir de\nnoviembre. Fuera de la época de cría se sabe que forma dormideros\ncomunales, reuniéndose en grupos en árboles de hoja perenne o cañaverales\nde bambú. Se alimenta principalmente de pequeños mamíferos como roedores,\nademás de insectos y aves pequeñas. Llegan pocos ejemplares a Amami Oshima\ny, por ser muy recelosos, son difíciles de observar.",
+    "photos": [
+      "../images/creatures/birds/torafuzuku/torafuzuku_000001_20250207_20.jpg"
+    ],
+    "page_path": "creatures/birds/torafuzuku.html"
   },
   {
     "id": "ba-ba-tokage",

@@ -406,7 +406,7 @@
   },
   {
     "id": "amami-kochibi-mizumusi",
-    "name": "amami-kochibi-mizumusi",
+    "name": "アマミコチビミズムシ",
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
@@ -414,13 +414,13 @@
       9,
       12
     ],
-    "description": "",
+    "description": "チビミズムシ科(旧ミズムシ科)チビミズムシ属の仲間と考えられる、体長1mmほどの極小の水生カメムシ、アマミコチビミズムシ。\n\n学名はまだ特定できていない。個人の観察ブログでは、沖縄本島の河川上流域に未記載のチビミズムシ属の一種がいるとの指摘があるが、本種(アマミコチビミズムシ)と同種かどうかは確認されておらず、両者の関係は分かっていない。普段は砂や落ち葉の下に潜り、驚くと素早く泳いで逃げる。",
     "photos": [
       "images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
       "images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000002_20250324_12.jpg",
       "images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000003_20250914_19.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/aquatic-insects/amami-kochibi-mizumusi.html"
   },
   {
     "id": "amami-mizo-doromushi",
@@ -438,13 +438,13 @@
   },
   {
     "id": "amami-oyogi-katabiro-amennbo",
-    "name": "amami-oyogi-katabiro-amennbo",
+    "name": "アマミオヨギカタビロアメンボ",
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
       2
     ],
-    "description": "",
+    "description": "カタビロアメンボ科オヨギカタビロアメンボ属アマミオヨギカタビロアメンボ *Xiphovelia curvifemur*\n\n奄美大島で記録され、その後沖縄本島からも見つかったとされる小型のカタビロアメンボ。近縁種オヨギカタビロアメンボは、樹林に囲まれた谷池の汀線部にある石礫や岩盤質の場所を好み、水面の植物片や汀線の石礫上で卵越冬することが確認されているが、本種固有の生態についてはまだよく分かっていない。なお、環境省レッドリストで絶滅危惧II類(VU)に指定されているのは近縁種のオヨギカタビロアメンボであり、本種(アマミオヨギカタビロアメンボ)とは別種なので混同しないよう注意が必要である。本種自体は同レッドリストに掲載されていない。",
     "photos": [
       "images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
       "images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000002_20250223_16.jpg",
@@ -452,37 +452,37 @@
       "images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000004_20250223_16.jpg",
       "images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000005_20250223_16.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/aquatic-insects/amami-oyogi-katabiro-amennbo.html"
   },
   {
     "id": "amami-sesuji-daruma-gamushi",
-    "name": "amami-sesuji-daruma-gamushi",
+    "name": "アマミセスジダルマガムシ",
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
       3
     ],
-    "description": "",
+    "description": "ダルマガムシ科セスジダルマガムシ属アマミセスジダルマガムシ *Ochthebius amami* Yoshitomi & Satô, 2001\n\n1997年春に奄美大島で偶然採集された個体をもとに新種記載された、ダルマガムシ科(いわゆる「ガムシ」とは別の科)の小型水生甲虫。体長1.9〜2.3mm。奄美大島と沖縄島に分布し、渓流のやや開けた場所に生息するが、個体数はあまり多くない。河川開発や護岸工事による生息環境の悪化が懸念されており、2010年の環境省レッドリスト改訂で準絶滅危惧(NT)として新規に掲載された。",
     "photos": [
       "images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
       "images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000002_20250323_15.jpg",
       "images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000003_20250323_17.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/aquatic-insects/amami-sesuji-daruma-gamushi.html"
   },
   {
     "id": "amami-shijimi-gamushi",
-    "name": "amami-shijimi-gamushi",
+    "name": "アマミシジミガムシ",
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
       4
     ],
-    "description": "",
+    "description": "ガムシ科シジミガムシ属アマミシジミガムシ *Laccobius (Microlaccobius) satoi* Gentili, 1989\n\n現在のところ奄美大島・徳之島から知られている小型のガムシ科甲虫。日本産シジミガムシ属(シジミガムシ亜属)にはヒメシジミガムシ・オキナワシジミガムシなど近縁種が複数おり、いずれも識別には交尾器の観察が必要とされる。体長や生態についての詳しい記録は少なく、分かっていない点が多い。",
     "photos": [
       "images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/aquatic-insects/amami-shijimi-gamushi.html"
   },
   {
     "id": "amami-yokomizo-doromushi",
@@ -511,20 +511,20 @@
   },
   {
     "id": "ashibutome-mizumushi",
-    "name": "ashibutome-mizumushi",
+    "name": "アシブトメミズムシ",
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
       2
     ],
-    "description": "",
+    "description": "アシブトメミズムシ科アシブトメミズムシ属アシブトメミズムシ *Nerthra macrothorax* (Montrouzier, 1855)\n\n体長約1cm、幅広く扁平な体をした、日本産アシブトメミズムシ科唯一の種。単眼を持たず、太い鎌状の前脚が特徴。名前に「ミズムシ」とあるが池沼の水中に暮らす種ではなく、海岸の砂浜(汀線から海岸林の間)で夜間に活動し、ワラジムシやダンゴムシの仲間を捕食する半陸生の待ち伏せ型捕食者で、成虫のまま冬を越す。南九州から南西諸島、小笠原諸島まで広く分布し、奄美大島だけの固有種ではない。",
     "photos": [
       "images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000001_20260204_20.jpg",
       "images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000002_20260204_20.jpg",
       "images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000003_20250222_15.jpg",
       "images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000004_20250222_15.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/aquatic-insects/ashibutome-mizumushi.html"
   },
   {
     "id": "chairo-kesi-katabiro-amennbo",
@@ -547,33 +547,33 @@
   },
   {
     "id": "eguri-tamamizumushi",
-    "name": "eguri-tamamizumushi",
+    "name": "エグリタマミズムシ",
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
       9
     ],
-    "description": "",
+    "description": "タマミズムシ科タマミズムシ属エグリタマミズムシ *Heterotrephes admorsus*\n\n体長2.5〜3mmほどの半球形の小さな体を持つ、日本産タマミズムシ科唯一の種。マツモムシと同じく腹面を上にして泳ぐ。奄美大島・徳之島にのみ知られる奄美群島固有種で、流れの緩やかな河川で、陸から水中に垂れ下がった植物の根がある場所などに生息する。環境省の昆虫類レッドリストで絶滅危惧II類(VU)に指定されている。",
     "photos": [
       "images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000001_20250914_13.jpg",
       "images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000002_20250914_13.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/aquatic-insects/eguri-tamamizumushi.html"
   },
   {
     "id": "hutakiboshi-keshi-gengoro",
-    "name": "hutakiboshi-keshi-gengoro",
+    "name": "フタキボシケシゲンゴロウ",
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
       4
     ],
-    "description": "",
+    "description": "ゲンゴロウ科キボシケシゲンゴロウ属フタキボシケシゲンゴロウ *Allopachria bimaculata* (M. Satô, 1972)\n\n種小名(「二紋の」の意)の通り上翅に2つの斑紋を持つとされる、極小のゲンゴロウの仲間。近縁種と比べて体が小さく、頭部表面の微細な網目模様が不完全な点で区別されるという。詳しい生態や形態、分布の固有性についての一次資料は乏しいが、環境省の昆虫類レッドリストで準絶滅危惧(NT)に指定されている。",
     "photos": [
       "images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000001_20250408_13.jpg",
       "images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000002_20250408_13.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/aquatic-insects/hutakiboshi-keshi-gengoro.html"
   },
   {
     "id": "iriomote-kesi-katabiro-amennbo",

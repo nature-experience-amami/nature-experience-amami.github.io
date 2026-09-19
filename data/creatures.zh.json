@@ -387,6 +387,24 @@
     "page_path": "creatures/aquatic-insects/amami-hababiro-doromusshi.html"
   },
   {
+    "id": "amami-kochibi-mizumusi",
+    "name": "奄美小水生蝽",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      3,
+      9,
+      12
+    ],
+    "description": "划蝽科(旧分类中的划蝽科)的近缘类群，体长约1毫米的极小型水生蝽，奄美小水生蝽。\n\n学名尚未确定。个人观察博客中提到，冲绳本岛河流上游可能存在一种未记载的该属物种，但尚未确认是否与本种(奄美小水生蝽)为同一物种，两者的关系仍不清楚。平时潜伏在沙子或落叶下，受到惊扰时会迅速游走。",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000002_20250324_12.jpg",
+      "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000003_20250914_19.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-kochibi-mizumusi.html"
+  },
+  {
     "id": "amami-mizo-doromushi",
     "name": "奄美沟泥甲",
     "category": "aquatic-insects",
@@ -399,6 +417,54 @@
       "../images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
     ],
     "page_path": "creatures/aquatic-insects/amami-mizo-doromushi.html"
+  },
+  {
+    "id": "amami-oyogi-katabiro-amennbo",
+    "name": "奄美游宽肩蝽",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      2
+    ],
+    "description": "宽肩蝽科游宽肩蝽属奄美游宽肩蝽 *Xiphovelia curvifemur*\n\n在奄美大岛被记录到，之后也在冲绳本岛发现的小型宽肩蝽。近缘种游宽肩蝽偏好森林环绕的山谷池塘岸边的砾石或岩盘地带，已确认会以卵的形态在水面漂浮的植物碎片或岸边砾石上越冬，但本种自身的具体生态仍不清楚。另外需要注意的是，环境省红色名录中被列为易危(VU)的是近缘种游宽肩蝽，与本种(奄美游宽肩蝽)是不同的物种，不应混淆；本种自身并未列入该红色名录。",
+    "photos": [
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000002_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000003_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000004_20250223_16.jpg",
+      "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000005_20250223_16.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-oyogi-katabiro-amennbo.html"
+  },
+  {
+    "id": "amami-sesuji-daruma-gamushi",
+    "name": "奄美脊纹微甲",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      3
+    ],
+    "description": "脊纹微甲属奄美脊纹微甲 *Ochthebius amami* Yoshitomi & Satô, 2001(中文科名尚无统一译法，与所谓\"牙甲\"并非同一科)\n\n1997年春在奄美大岛偶然采集到的个体为基础记载的新种，是一种小型水生甲虫。体长1.9〜2.3毫米。分布于奄美大岛与冲绳岛，栖息在山区溪流中较为开阔的地方，但个体数量并不多。河川开发与护岸工程导致的栖息环境恶化令人担忧，在2010年环境省红色名录的修订中被新列为近危(NT)。",
+    "photos": [
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000002_20250323_15.jpg",
+      "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000003_20250323_17.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-sesuji-daruma-gamushi.html"
+  },
+  {
+    "id": "amami-shijimi-gamushi",
+    "name": "奄美蚬牙甲",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      4
+    ],
+    "description": "牙甲科蚬牙甲属奄美蚬牙甲 *Laccobius (Microlaccobius) satoi* Gentili, 1989\n\n目前仅从奄美大岛、德之岛记录到的小型牙甲科甲虫。日本产蚬牙甲属(蚬牙甲亚属)中还有姬蚬牙甲、冲绳蚬牙甲等多个近缘种，区分时都需要观察交配器。关于体长与生态的详细记录很少，仍有许多未知之处。",
+    "photos": [
+      "../images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/amami-shijimi-gamushi.html"
   },
   {
     "id": "amami-yokomizo-doromushi",
@@ -426,6 +492,23 @@
     "page_path": "creatures/aquatic-insects/amami-yokomizo-doromushi.html"
   },
   {
+    "id": "ashibutome-mizumushi",
+    "name": "蟾蝽",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      2
+    ],
+    "description": "蟾蝽科蟾蝽属蟾蝽 *Nerthra macrothorax* (Montrouzier, 1855)\n\n日本产蟾蝽科唯一的一种，体长约1厘米，体形宽扁。无单眼，前足粗壮呈镰刀状是其特征。其日文名称Ashibuto-memizumushi，字面意思是\"粗腿水生蝽\"，但尽管如此，它并不生活在池沼水中，而是一种半陆生的伏击型捕食者，夜间活动于海岸沙滩(从水边到海岸林之间)，捕食潮虫和鼠妇，以成虫形态越冬。分布范围广，从南九州经南西诸岛一直到小笠原诸岛，并非奄美大岛的固有种。",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000001_20260204_20.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000002_20260204_20.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000003_20250222_15.jpg",
+      "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000004_20250222_15.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/ashibutome-mizumushi.html"
+  },
+  {
     "id": "chairo-kesi-katabiro-amennbo",
     "name": "褐小宽肩蝽",
     "category": "aquatic-insects",
@@ -443,6 +526,36 @@
       "../images/creatures/aquatic-insects/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg"
     ],
     "page_path": "creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "eguri-tamamizumushi",
+    "name": "凹缘小仰蝽",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      9
+    ],
+    "description": "仰蝽科(暂译)凹缘小仰蝽属凹缘小仰蝽 *Heterotrephes admorsus*\n\n日本产该科唯一的一种，体长2.5〜3毫米左右，呈半球形的小型身体。与仰蝽一样腹面朝上游泳。仅分布于奄美大岛、德之岛，为奄美群岛固有种，栖息在水流平缓的河流中，陆地植物根系垂入水中的场所等处。在环境省昆虫类红色名录中被列为易危(VU)。",
+    "photos": [
+      "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000001_20250914_13.jpg",
+      "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000002_20250914_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/eguri-tamamizumushi.html"
+  },
+  {
+    "id": "hutakiboshi-keshi-gengoro",
+    "name": "二点小龙虱",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      4
+    ],
+    "description": "龙虱科小黄星龙虱属二点小龙虱 *Allopachria bimaculata* (M. Satô, 1972)\n\n正如种小名(意为\"二紋的\")所示，鞘翅上据称有两个斑纹的极小型龙虱。据说与近缘种相比体型更小，且头部表面的微网纹不完整，以此作为区分点。关于其详细生态、形态及分布固有性的一手资料很少，但在环境省昆虫类红色名录中被列为近危(NT)。",
+    "photos": [
+      "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000001_20250408_13.jpg",
+      "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000002_20250408_13.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/hutakiboshi-keshi-gengoro.html"
   },
   {
     "id": "iriomote-kesi-katabiro-amennbo",
@@ -948,6 +1061,21 @@
     "page_path": "creatures/beetles/tokara-mannmaru-kogane.html"
   },
   {
+    "id": "akaharadaka",
+    "name": "赤腹鹰",
+    "category": "birds",
+    "category_name": "鸟类",
+    "months": [
+      9,
+      10
+    ],
+    "description": "鹰科 *Tachyspiza soloensis*(2024年分类调整前归为 *Accipiter soloensis*)\n\n体长约30厘米的小型鹰类，不在日本繁殖，仅在春秋两季迁徙途中经过。上体呈暗青灰色，\n下体为淡橙褐色，虹膜雄鸟为暗红色、雌鸟为黄色。在中国东北至朝鲜半岛一带繁殖，在东\n南亚越冬。春季也有迁徙记录，但奄美大岛观察到较多数量的时期主要在秋季，随着作为食\n物的大岛蝉、黄衣蜻蜓等增多，9月中旬至10月迎来迁徙高峰，有时可看到鸟群乘上升气流盘\n旋而上，形成所谓的\"鹰柱\"。以青蛙、昆虫、蜥蜴等小动物为食，食性广泛。IUCN红色名录\n将其列为无危(LC)，未被列入日本环境省红色名录或《濒危物种保护法》的指定对象。",
+    "photos": [
+      "../images/creatures/birds/akaharadaka/akaharadaka_000001_20250927_20.jpg"
+    ],
+    "page_path": "creatures/birds/akaharadaka.html"
+  },
+  {
     "id": "akahige",
     "name": "琉球歌鸲",
     "category": "birds",
@@ -988,6 +1116,32 @@
     "page_path": "creatures/birds/amami-yamashigi.html"
   },
   {
+    "id": "iso-hiyodori",
+    "name": "蓝矶鸫",
+    "category": "birds",
+    "category_name": "鸟类",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "description": "鹟科矶鸫属 *Monticola solitarius*\n\n体长约23厘米。雄鸟从头部到背部呈蓝色，胸部至尾下覆羽为红褐色；雌鸟则为灰褐色并带\n有黑褐色鳞状斑纹，雌雄外观差异明显。为奄美大岛全年可见的留鸟，正如其日文名(意为\n\"磯鵯\")所示，本来偏好海岸岩礁、港口等磯石环境，但近年来在日本各地都出现向内陆及\n市区扩散的趋势，在奄美也越来越多地出现在民宅屋顶、电线和停车场等生活区域。食性偏\n肉食，捕食甲壳类、昆虫、蜥蜴甚至小型鼠类，鸣声清亮婉转。单独生活，全年占据领地，\n繁殖期一般从3月左右开始。",
+    "photos": [
+      "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000001_20260201_14.jpg",
+      "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000002_20250219_13.jpg"
+    ],
+    "page_path": "creatures/birds/iso-hiyodori.html"
+  },
+  {
     "id": "kawasemi",
     "name": "普通翠鸟",
     "category": "birds",
@@ -1009,6 +1163,29 @@
       "../images/creatures/birds/kawasemi/kawasemi_000005_20250314_10.jpg"
     ],
     "page_path": "creatures/birds/kawasemi.html"
+  },
+  {
+    "id": "kurotusraherasagi",
+    "name": "黑脸琵鹭",
+    "category": "birds",
+    "category_name": "鸟类",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "description": "鹮科琵鹭属 *Platalea minor*\n\n体长约70〜80厘米的大型水鸟。通体白色，正如其名，具有黑色琵琶状的嘴和黑色的眼先。\n繁殖期会长出冠羽，胸部略带黄色。与近缘的白琵鹭的区别在于，其眼先的黑色部分向嘴基\n部大范围延伸。在朝鲜半岛西岸及中国东北沿海岛屿繁殖，在台湾、香港、中国南部、日本\n等地越冬。全球种群数量曾在20世纪90年代初锐减至约300只，此后经保护工作逐步恢复，\n2025年的国际同步调查已确认超过7000只。在日本国内，飞抵数量也呈增加趋势，主要集中\n在九州，奄美大岛在冬季至春季期间也能在干潟等地观察到。2020年被指定为《濒危物种保\n护法》下的国内稀有野生动植物种，禁止捕获、转让(天然纪念物的指定并非针对该物种本\n身，而是针对鹿儿岛县内部分栖息地)。2025年前后，IUCN红色名录已将其等级从濒危(EN)\n下调为易危(VU)。",
+    "photos": [
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000001_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000002_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000003_20251003_14.jpg",
+      "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000004_20251003_15.jpg"
+    ],
+    "page_path": "creatures/birds/kurotusraherasagi.html"
   },
   {
     "id": "oo-tora-tsugumi",
@@ -1172,6 +1349,27 @@
     "page_path": "creatures/birds/sasiba.html"
   },
   {
+    "id": "seitakashigi",
+    "name": "黑翅长脚鹬",
+    "category": "birds",
+    "category_name": "鸟类",
+    "months": [
+      3,
+      4,
+      8,
+      9,
+      10
+    ],
+    "description": "反嘴鹬科长脚鹬属 *Himantopus himantopus*\n\n体长约37〜40厘米，是一种拥有极长的红色腿和细长黑嘴的鹬类。身体白色，翅膀和背部为\n黑色；雄鸟头后部黑色范围更大，雌鸟颜色较浅。以水生昆虫、甲壳类、贝类及小鱼为食。\n在日本，1975年首次在爱知县的围垦地确认繁殖，此后在本州部分地区形成局部定居种群，\n但在南西诸岛主要作为旅鸟、冬候鸟出现。在鹿儿岛县内，奄美大岛、德之岛及吐噶喇群岛\n中之岛均有飞抵记录，邻近的冲永良部岛在2009年曾确认繁殖，但奄美大岛本岛的繁殖记录\n及具体飞抵时期的记录较少。喜好干潟、水田、休耕田等浅水环境。环境省红色名录曾将其\n列为易危(VU)，目前已变更为数据缺乏(DD)。",
+    "photos": [
+      "../images/creatures/birds/seitakashigi/seitakashigi_000001_20251003_13.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000002_20251003_13.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000003_20251003_14.jpg",
+      "../images/creatures/birds/seitakashigi/seitakashigi_000004_20251003_14.jpg"
+    ],
+    "page_path": "creatures/birds/seitakashigi.html"
+  },
+  {
     "id": "tageri",
     "name": "凤头麦鸡",
     "category": "birds",
@@ -1192,6 +1390,24 @@
       "../images/creatures/birds/tageri/tageri_000004_20251221_15.jpg"
     ],
     "page_path": "creatures/birds/tageri.html"
+  },
+  {
+    "id": "torafuzuku",
+    "name": "长耳鸮",
+    "category": "birds",
+    "category_name": "鸟类",
+    "months": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "description": "鸱鸮科耳鸮属 *Asio otus*\n\n体长35〜40厘米左右，头部长有形似耳朵的长耳羽是其显著特征。上体灰褐色至浅褐色并带\n有纵纹，虹膜为橙色。在北海道及本州北部作为夏候鸟繁殖，本州中部以南则主要作为冬候\n鸟飞来。奄美大岛全年栖息的猫头鹰仅有琉球角鸮和琉球鹰鸮两种，长耳鸮与这两种不同，\n每年都有少量个体作为冬候鸟飞来，通常从11月前后开始可见。非繁殖期有集群夜栖的习\n性，会聚集在常绿树或竹丛中。主要捕食老鼠等小型哺乳动物，也吃昆虫和小鸟。飞抵奄美\n大岛的数量很少，且警惕性强，观察难度较高。",
+    "photos": [
+      "../images/creatures/birds/torafuzuku/torafuzuku_000001_20250207_20.jpg"
+    ],
+    "page_path": "creatures/birds/torafuzuku.html"
   },
   {
     "id": "ba-ba-tokage",
