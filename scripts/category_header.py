@@ -15,6 +15,7 @@ import html
 MASTER_CATEGORY_ORDER = [
     "snakes", "amphibians", "stag-beetles", "birds", "mammals",
     "lizards", "aquatic-insects", "beetles", "other-insects", "shellfish", "crustaceans",
+    "other-arthropods",
 ]
 
 

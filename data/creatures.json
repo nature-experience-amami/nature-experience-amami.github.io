@@ -1187,24 +1187,6 @@
     "page_path": "creatures/birds/tageri.html"
   },
   {
-    "id": "amami-sasorimodoki",
-    "name": "amami-sasorimodoki",
-    "category": "crustaceans",
-    "category_name": "甲殻類・汽水域など",
-    "months": [
-      1,
-      4,
-      5
-    ],
-    "description": "",
-    "photos": [
-      "images/creatures/crustaceans/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
-      "images/creatures/crustaceans/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
-      "images/creatures/crustaceans/amami-sasorimodoki/amami-sasorimodoki_000003_20260502_21.jpg"
-    ],
-    "page_path": null
-  },
-  {
     "id": "rurimadara-shiomaneki",
     "name": "rurimadara-shiomaneki",
     "category": "kani",
@@ -1341,6 +1323,24 @@
       "images/creatures/mammals/watase-jinezumi/watase-jinezumi_000004_20241218_19.jpg"
     ],
     "page_path": "creatures/mammals/watase-jinezumi.html"
+  },
+  {
+    "id": "amami-sasorimodoki",
+    "name": "amami-sasorimodoki",
+    "category": "other-arthropods",
+    "category_name": "その他の節足動物",
+    "months": [
+      1,
+      4,
+      5
+    ],
+    "description": "",
+    "photos": [
+      "images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
+      "images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
+      "images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000003_20260502_21.jpg"
+    ],
+    "page_path": null
   },
   {
     "id": "amami-hirata-hishibatta",

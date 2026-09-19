@@ -30,7 +30,7 @@ OUTPUT_DIR = ROOT / "categories"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 # 図鑑形式で作るカテゴリー(ヘビ・カエル・クワガタのようなフルページ形式のものは含めない)
-ZUKAN_CATEGORIES = ["aquatic-insects", "beetles", "other-insects", "kani", "birds"]
+ZUKAN_CATEGORIES = ["aquatic-insects", "beetles", "other-insects", "kani", "birds", "other-arthropods"]
 
 # 翻訳版(generate_zukan_page_i18n.py)が実際に生成しているカテゴリー
 TRANSLATED_ZUKAN_CATEGORIES = {"aquatic-insects", "birds", "beetles", "other-insects"}
@@ -57,6 +57,7 @@ ENGLISH_LABELS = {
     "other-insects": "INSECTS",
     "kani": "CRABS",
     "birds": "BIRDS",
+    "other-arthropods": "OTHER ARTHROPODS",
 }
 
 # カテゴリーごとの紹介文・注意書き。無ければ汎用の文章を使う。
