@@ -414,7 +414,7 @@
       9,
       12
     ],
-    "description": "チビミズムシ科(旧ミズムシ科)チビミズムシ属の仲間と考えられる、体長1mmほどの極小の水生カメムシ、アマミコチビミズムシ。\n\n学名はまだ特定できていない。個人の観察ブログでは、沖縄本島の河川上流域に未記載のチビミズムシ属の一種がいるとの指摘があるが、本種(アマミコチビミズムシ)と同種かどうかは確認されておらず、両者の関係は分かっていない。普段は砂や落ち葉の下に潜り、驚くと素早く泳いで逃げる。",
+    "description": "チビミズムシ科チビミズムシ属アマミコチビミズムシ *Micronecta japonica* Chen, 1960\n\n体長1mm前後の極小の水生カメムシ。南西諸島(奄美大島・徳之島)に分布する日本固有種で、同属には北海道から九州まで広く分布するコチビミズムシ(*Micronecta guttata*)など近縁種が複数知られている。普段は砂や落ち葉の下に潜り、驚くと素早く泳いで逃げる。",
     "photos": [
       "images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
       "images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000002_20250324_12.jpg",
@@ -430,7 +430,7 @@
     "months": [
       7
     ],
-    "description": "ヒメドロムシ科ミゾドロムシ属アマミミゾドロムシ *Ordobrevia amamiensis* (Nomura, 1957)\n\n奄美群島・沖縄諸島・八重山諸島とグアムに分布する小型の水生甲虫。沖縄島の個体群は別亜種オキナワミゾドロムシとして区別されている。ヒメドロムシ科は主に清流に生息するグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科ミゾドロムシ属アマミミゾドロムシ *Ordobrevia amamiensis amamiensis* (Nomura, 1957)\n\n奄美大島に分布する小型の水生甲虫(基亜種)。沖縄島・伊平屋島の個体群は別亜種オキナワミゾドロムシ(*O. a. okinawana*)として区別されており、人為的に移入した個体群がグアムでも見つかっている。ヒメドロムシ科は主に清流に生息するグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
     ],
@@ -444,7 +444,7 @@
     "months": [
       2
     ],
-    "description": "カタビロアメンボ科オヨギカタビロアメンボ属アマミオヨギカタビロアメンボ *Xiphovelia curvifemur*\n\n奄美大島で記録され、その後沖縄本島からも見つかったとされる小型のカタビロアメンボ。近縁種オヨギカタビロアメンボは、樹林に囲まれた谷池の汀線部にある石礫や岩盤質の場所を好み、水面の植物片や汀線の石礫上で卵越冬することが確認されているが、本種固有の生態についてはまだよく分かっていない。なお、環境省レッドリストで絶滅危惧II類(VU)に指定されているのは近縁種のオヨギカタビロアメンボであり、本種(アマミオヨギカタビロアメンボ)とは別種なので混同しないよう注意が必要である。本種自体は同レッドリストに掲載されていない。",
+    "description": "カタビロアメンボ科オヨギカタビロアメンボ属アマミオヨギカタビロアメンボ *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\n奄美大島・徳之島・沖縄島の南西諸島に分布する小型のカタビロアメンボ。近縁種オヨギカタビロアメンボは、樹林に囲まれた谷池の汀線部にある石礫や岩盤質の場所を好み、水面の植物片や汀線の石礫上で卵越冬することが確認されているが、本種固有の生態についてはまだよく分かっていない。なお、環境省レッドリストで絶滅危惧II類(VU)に指定されているのは近縁種のオヨギカタビロアメンボであり、本種(アマミオヨギカタビロアメンボ)とは別種なので混同しないよう注意が必要である。本種自体は同レッドリストに掲載されていない。",
     "photos": [
       "images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
       "images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000002_20250223_16.jpg",
@@ -462,7 +462,7 @@
     "months": [
       3
     ],
-    "description": "ダルマガムシ科セスジダルマガムシ属アマミセスジダルマガムシ *Ochthebius amami* Yoshitomi & Satô, 2001\n\n1997年春に奄美大島で偶然採集された個体をもとに新種記載された、ダルマガムシ科(いわゆる「ガムシ」とは別の科)の小型水生甲虫。体長1.9〜2.3mm。奄美大島と沖縄島に分布し、渓流のやや開けた場所に生息するが、個体数はあまり多くない。河川開発や護岸工事による生息環境の悪化が懸念されており、2010年の環境省レッドリスト改訂で準絶滅危惧(NT)として新規に掲載された。",
+    "description": "ダルマガムシ科セスジダルマガムシ属アマミセスジダルマガムシ *Ochthebius amami* Yoshitomi & M.Satô, 2001\n\n1997年春に奄美大島で偶然採集された個体をもとに新種記載された、ダルマガムシ科(いわゆる「ガムシ」とは別の科)の小型水生甲虫。体長1.9〜2.3mm。奄美大島と沖縄島に分布し、渓流のやや開けた場所に生息するが、個体数はあまり多くない。河川開発や護岸工事による生息環境の悪化が懸念されており、2010年の環境省レッドリスト改訂で準絶滅危惧(NT)として新規に掲載された。",
     "photos": [
       "images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
       "images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000002_20250323_15.jpg",
@@ -478,7 +478,7 @@
     "months": [
       4
     ],
-    "description": "ガムシ科シジミガムシ属アマミシジミガムシ *Laccobius (Microlaccobius) satoi* Gentili, 1989\n\n現在のところ奄美大島・徳之島から知られている小型のガムシ科甲虫。日本産シジミガムシ属(シジミガムシ亜属)にはヒメシジミガムシ・オキナワシジミガムシなど近縁種が複数おり、いずれも識別には交尾器の観察が必要とされる。体長や生態についての詳しい記録は少なく、分かっていない点が多い。",
+    "description": "ガムシ科シジミガムシ属アマミシジミガムシ *Laccobius satoi* Gentili, 1989\n\n奄美大島・徳之島に分布する日本固有種の小型ガムシ科甲虫。日本産シジミガムシ属にはヒメシジミガムシ・オキナワシジミガムシなど近縁種が複数おり、いずれも識別には交尾器の観察が必要とされる。体長や生態についての詳しい記録は少なく、分かっていない点が多い。",
     "photos": [
       "images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
     ],
@@ -553,7 +553,7 @@
     "months": [
       9
     ],
-    "description": "タマミズムシ科タマミズムシ属エグリタマミズムシ *Heterotrephes admorsus*\n\n体長2.5〜3mmほどの半球形の小さな体を持つ、日本産タマミズムシ科唯一の種。マツモムシと同じく腹面を上にして泳ぐ。奄美大島・徳之島にのみ知られる奄美群島固有種で、流れの緩やかな河川で、陸から水中に垂れ下がった植物の根がある場所などに生息する。環境省の昆虫類レッドリストで絶滅危惧II類(VU)に指定されている。",
+    "description": "タマミズムシ科タマミズムシ属エグリタマミズムシ *Heterotrephes admorsus* Esaki & Miyamoto, 1959\n\n体長2.5〜3mmほどの半球形の小さな体を持つ、日本産タマミズムシ科唯一の種。マツモムシと同じく腹面を上にして泳ぐ。奄美大島・徳之島にのみ知られる奄美群島固有種で、流れの緩やかな河川で、陸から水中に垂れ下がった植物の根がある場所などに生息する。環境省の昆虫類レッドリストで絶滅危惧II類(VU)に指定されている。",
     "photos": [
       "images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000001_20250914_13.jpg",
       "images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000002_20250914_13.jpg"
@@ -568,7 +568,7 @@
     "months": [
       4
     ],
-    "description": "ゲンゴロウ科キボシケシゲンゴロウ属フタキボシケシゲンゴロウ *Allopachria bimaculata* (M. Satô, 1972)\n\n種小名(「二紋の」の意)の通り上翅に2つの斑紋を持つとされる、極小のゲンゴロウの仲間。近縁種と比べて体が小さく、頭部表面の微細な網目模様が不完全な点で区別されるという。詳しい生態や形態、分布の固有性についての一次資料は乏しいが、環境省の昆虫類レッドリストで準絶滅危惧(NT)に指定されている。",
+    "description": "ゲンゴロウ科キボシケシゲンゴロウ属フタキボシケシゲンゴロウ *Allopachria bimaculata* (M.Satô, 1972)\n\n種小名(「二紋の」の意)の通り上翅に2つの斑紋を持つとされる、極小のゲンゴロウの仲間。近縁種と比べて体が小さく、頭部表面の微細な網目模様が不完全な点で区別されるという。トカラ列島から奄美群島、沖縄島にかけての南西諸島に分布し、環境省の昆虫類レッドリストで準絶滅危惧(NT)に指定されている。詳しい生態や形態についての一次資料は乏しい。",
     "photos": [
       "images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000001_20250408_13.jpg",
       "images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000002_20250408_13.jpg"
@@ -636,7 +636,7 @@
       4,
       5
     ],
-    "description": "アメンボ科アメンボ属コセアカアメンボ *Gerris (Macrogerris) gracilicornis* (Horvath)\n\n体長11〜16mmほどの、赤褐色を帯びた大型のアメンボ。北海道から九州まで日本各地に広く分布し、池沼や河川、湿地など、特に水温の低い水域を好む。成虫のまま陸上で越冬し、目覚めた後に新たな水辺へ飛んで移動する習性があり、春先の小さな水たまりなどで見られることが多い。",
+    "description": "アメンボ科アメンボ属コセアカアメンボ *Gerris gracilicornis* (Horváth, 1879)\n\n体長11〜16mmほどの、赤褐色を帯びた大型のアメンボ。北海道から本州・四国・九州・南西諸島まで日本各地に広く分布し、池沼や河川、湿地など、特に水温の低い水域を好む。成虫のまま陸上で越冬し、目覚めた後に新たな水辺へ飛んで移動する習性があり、春先の小さな水たまりなどで見られることが多い。",
     "photos": [
       "images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
       "images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000002_20260420_13.jpg"
@@ -772,7 +772,7 @@
       3,
       4
     ],
-    "description": "ヒメドロムシ科ウエノツヤドロムシ属ウエノツヤドロムシ *Urumaelmis uenoi* (Nomura, 1961)\n\n大隅諸島・トカラ列島・奄美群島・沖縄諸島に分布する小型の水生甲虫。ウエノツヤドロムシ属には2020年に九州から新種記載されたカエンツヤドロムシ(Urumaelmis flammea)もおり、日本には本属2種が知られている。トカラ列島口之島の個体群は別亜種トカラツヤドロムシとして区別されている。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
+    "description": "ヒメドロムシ科ウエノツヤドロムシ属ウエノツヤドロムシ *Urumaelmis uenoi uenoi* (Nomura, 1961)\n\n屋久島から奄美群島、沖縄諸島にかけて分布する小型の水生甲虫(基亜種)。ウエノツヤドロムシ属には2020年に九州から新種記載されたカエンツヤドロムシ(Urumaelmis flammea)もおり、日本には本属2種が知られている。トカラ列島口之島の個体群は別亜種トカラツヤドロムシ(*U. u. tokarana*)として区別されている。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
       "images/creatures/aquatic-insects/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000002_20260204_22.jpg",

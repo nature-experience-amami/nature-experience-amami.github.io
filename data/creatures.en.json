@@ -396,7 +396,7 @@
       9,
       12
     ],
-    "description": "A member of the pygmy water boatman family (formerly treated within the water boatman family), a tiny aquatic true bug about 1mm long: the Amami Micro Water Boatman.\n\nIts scientific name has not yet been identified. A personal observation blog notes that an undescribed species of the genus Micronecta may exist in the upper reaches of rivers on Okinawa Island, but whether it is the same species as this one (the Amami Micro Water Boatman) has not been confirmed, and the relationship between the two is unknown. It normally burrows into sand or fallen leaves, and swims away quickly when startled.",
+    "description": "Pygmy water boatman family, genus Micronecta. *Micronecta japonica* Chen, 1960\n\nA tiny aquatic true bug about 1mm long. Endemic to Japan, it is found in the Nansei Islands (Amami Oshima and Tokunoshima). Several related species are known within the same genus, including the more widespread Micronecta guttata, found from Hokkaido to Kyushu. It normally burrows into sand or fallen leaves, and swims away quickly when startled.",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
       "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000002_20250324_12.jpg",
@@ -412,7 +412,7 @@
     "months": [
       7
     ],
-    "description": "Riffle beetle family, genus Ordobrevia. *Ordobrevia amamiensis* (Nomura, 1957)\n\nA small aquatic beetle found in the Amami, Okinawa, and Yaeyama island groups\nand Guam. The population on Okinawa Island is distinguished as a separate\nsubspecies, the Okinawa groove riffle beetle. Riffle beetles mainly live in\nclean streams, but the detailed ecology of this species itself is still\nlargely unknown.",
+    "description": "Riffle beetle family, genus Ordobrevia. *Ordobrevia amamiensis amamiensis* (Nomura, 1957)\n\nA small aquatic beetle found on Amami Oshima (nominate subspecies). The population on Okinawa Island and Iheya Island is distinguished as a separate subspecies, the Okinawa groove riffle beetle (*O. a. okinawana*), and an introduced population is also known from Guam. Riffle beetles mainly live in\nclean streams, but the detailed ecology of this species itself is still\nlargely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
     ],
@@ -426,7 +426,7 @@
     "months": [
       2
     ],
-    "description": "Broad-shouldered water strider family, genus Xiphovelia. *Xiphovelia curvifemur*\n\nA small broad-shouldered water strider recorded on Amami Oshima and later also found on Okinawa Island. The closely related species Xiphovelia japonica favors gravel and bedrock along the shorelines of forest-ringed valley ponds, and has been confirmed to overwinter as eggs on floating plant debris or shoreline gravel, but the specific ecology of this species itself is still poorly understood. It should also be noted that the closely related Xiphovelia japonica is listed as Vulnerable (VU) on the Ministry of the Environment's Red List, whereas that designation concerns a different species and should not be confused with this one; this species itself is not listed on the Red List.",
+    "description": "Broad-shouldered water strider family, genus Xiphovelia. *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\nA small broad-shouldered water strider found across the Nansei Islands, on Amami Oshima, Tokunoshima, and Okinawa Island. The closely related species Xiphovelia japonica favors gravel and bedrock along the shorelines of forest-ringed valley ponds, and has been confirmed to overwinter as eggs on floating plant debris or shoreline gravel, but the specific ecology of this species itself is still poorly understood. It should also be noted that the closely related Xiphovelia japonica is listed as Vulnerable (VU) on the Ministry of the Environment's Red List, whereas that designation concerns a different species and should not be confused with this one; this species itself is not listed on the Red List.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
       "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000002_20250223_16.jpg",
@@ -444,7 +444,7 @@
     "months": [
       3
     ],
-    "description": "Minute moss beetle family, genus Ochthebius. *Ochthebius amami* Yoshitomi & Satô, 2001\n\nA tiny aquatic beetle described as a new species from an individual collected by chance on Amami Oshima in spring 1997, belonging to the minute moss beetle family (a different family from the \"gamushi\" water scavenger beetles despite the similar Japanese name). About 1.9-2.3mm long. Found on Amami Oshima and Okinawa Island, it lives in relatively open sections of mountain streams, though it is not very abundant. Habitat degradation from river development and bank reinforcement work is a concern, and it was newly listed as Near Threatened (NT) in the 2010 revision of the Ministry of the Environment's Red List.",
+    "description": "Minute moss beetle family, genus Ochthebius. *Ochthebius amami* Yoshitomi & M.Satô, 2001\n\nA tiny aquatic beetle described as a new species from an individual collected by chance on Amami Oshima in spring 1997, belonging to the minute moss beetle family (a different family from the \"gamushi\" water scavenger beetles despite the similar Japanese name). About 1.9-2.3mm long. Found on Amami Oshima and Okinawa Island, it lives in relatively open sections of mountain streams, though it is not very abundant. Habitat degradation from river development and bank reinforcement work is a concern, and it was newly listed as Near Threatened (NT) in the 2010 revision of the Ministry of the Environment's Red List.",
     "photos": [
       "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
       "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000002_20250323_15.jpg",
@@ -460,7 +460,7 @@
     "months": [
       4
     ],
-    "description": "Water scavenger beetle family, genus Laccobius. *Laccobius (Microlaccobius) satoi* Gentili, 1989\n\nA small water scavenger beetle currently known only from Amami Oshima and Tokunoshima. Several closely related species exist within the Japanese subgenus Microlaccobius of Laccobius, including L. fragilis and L. nakanei, and telling them apart requires examining the genitalia. Detailed records of its body length and ecology are scarce, and much remains unknown.",
+    "description": "Water scavenger beetle family, genus Laccobius. *Laccobius satoi* Gentili, 1989\n\nA small water scavenger beetle endemic to Japan, found in Amami Oshima and Tokunoshima. Several closely related species exist within the genus Laccobius in Japan, including L. fragilis and L. nakanei, and telling them apart requires examining the genitalia. Detailed records of its body length and ecology are scarce, and much remains unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
     ],
@@ -535,7 +535,7 @@
     "months": [
       9
     ],
-    "description": "Pygmy backswimmer family, genus Heterotrephes. *Heterotrephes admorsus*\n\nThe only species of the pygmy backswimmer family found in Japan, with a small, hemispherical body about 2.5-3mm long. Like the water boatman-relative backswimmers, it swims upside down. Known only from Amami Oshima and Tokunoshima, it is endemic to the Amami Islands, and lives in slow-flowing rivers, in spots where plant roots hang down from the bank into the water. It is listed as Vulnerable (VU) on the Ministry of the Environment's insect Red List.",
+    "description": "Pygmy backswimmer family, genus Heterotrephes. *Heterotrephes admorsus* Esaki & Miyamoto, 1959\n\nThe only species of the pygmy backswimmer family found in Japan, with a small, hemispherical body about 2.5-3mm long. Like the water boatman-relative backswimmers, it swims upside down. Known only from Amami Oshima and Tokunoshima, it is endemic to the Amami Islands, and lives in slow-flowing rivers, in spots where plant roots hang down from the bank into the water. It is listed as Vulnerable (VU) on the Ministry of the Environment's insect Red List.",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000001_20250914_13.jpg",
       "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000002_20250914_13.jpg"
@@ -550,7 +550,7 @@
     "months": [
       4
     ],
-    "description": "Diving beetle family, genus Allopachria. *Allopachria bimaculata* (M. Satô, 1972)\n\nA tiny diving beetle said to bear two spots on its elytra, as its species name (meaning \"two-spotted\") suggests. It is said to be distinguished from closely related species by its smaller body and the incomplete microreticulation on its head. Primary sources on its detailed ecology, morphology, and the extent of its distribution are scarce, but it is listed as Near Threatened (NT) on the Ministry of the Environment's insect Red List.",
+    "description": "Diving beetle family, genus Allopachria. *Allopachria bimaculata* (M.Satô, 1972)\n\nA tiny diving beetle said to bear two spots on its elytra, as its species name (meaning \"two-spotted\") suggests. It is said to be distinguished from closely related species by its smaller body and the incomplete microreticulation on its head. It is found across the Nansei Islands, from the Tokara Islands through the Amami island group to Okinawa Island, and is listed as Near Threatened (NT) on the Ministry of the Environment's insect Red List. Primary sources on its detailed ecology and morphology are scarce.",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000001_20250408_13.jpg",
       "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000002_20250408_13.jpg"
@@ -618,7 +618,7 @@
       4,
       5
     ],
-    "description": "Water strider family, genus Gerris. *Gerris (Macrogerris) gracilicornis* (Horvath)\n\nA large, reddish-brown water strider about 11-16mm long. Widely distributed across Japan from Hokkaido to Kyushu, it favors ponds, rivers, and marshes, especially cooler bodies of water. It overwinters as an adult on land and, after waking, flies off to find new water bodies, so it is often seen at small puddles in early spring.",
+    "description": "Water strider family, genus Gerris. *Gerris gracilicornis* (Horváth, 1879)\n\nA large, reddish-brown water strider about 11-16mm long. Widely distributed across Japan, from Hokkaido through Honshu, Shikoku, Kyushu, and the Nansei Islands, it favors ponds, rivers, and marshes, especially cooler bodies of water. It overwinters as an adult on land and, after waking, flies off to find new water bodies, so it is often seen at small puddles in early spring.",
     "photos": [
       "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
       "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000002_20260420_13.jpg"
@@ -754,7 +754,7 @@
       3,
       4
     ],
-    "description": "Riffle beetle family, genus Urumaelmis. *Urumaelmis uenoi* (Nomura, 1961)\n\nA small aquatic beetle found in the Osumi Islands, Tokara Islands, Amami\nisland group, and Okinawa island group. The genus Urumaelmis also includes a\nsecond species newly described from Kyushu in 2020, bringing the number of\nknown species in Japan to two. The population on Kuchinoshima in the Tokara\nIslands is distinguished as a separate subspecies. The detailed ecology of\nthis species itself is still largely unknown.",
+    "description": "Riffle beetle family, genus Urumaelmis. *Urumaelmis uenoi uenoi* (Nomura, 1961)\n\nA small aquatic beetle found from Yakushima through the Amami\nisland group to the Okinawa island group (nominate subspecies). The genus Urumaelmis also includes a\nsecond species newly described from Kyushu in 2020, bringing the number of\nknown species in Japan to two. The population on Kuchinoshima in the Tokara\nIslands is distinguished as a separate subspecies (*U. u. tokarana*). The detailed ecology of\nthis species itself is still largely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
       "../images/creatures/aquatic-insects/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000002_20260204_22.jpg",
