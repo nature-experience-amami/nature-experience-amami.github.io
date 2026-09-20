@@ -3,8 +3,8 @@ id: amami-kochibi-mizumusi
 name: Amami Micro Water Boatman
 category: aquatic-insects
 group: mizumushi
-source: note by "Amaneya-san" https://note.com/amaneya_san/n/ne4b74783262f; Kuma Jiro's Yanbaru Diary https://kuma58.exblog.jp/29201438/ (neither is an academic primary source, and the scientific name has not been confirmed). The closely related lesser water boatman (Micronecta guttata) belongs to the pygmy water boatman family (Micronectidae), a family only recently split off from the water boatman family (Corixidae).
+source: Kuromushiya "List of Japanese Aquatic Insects," Micronectidae http://kuromushiya.com/mlist/mlist.html#micronectidae, confirming the scientific name and distribution (Nansei Islands: Amami Oshima, Tokunoshima)
 ---
-A member of the pygmy water boatman family (formerly treated within the water boatman family), a tiny aquatic true bug about 1mm long: the Amami Micro Water Boatman.
+Pygmy water boatman family, genus Micronecta. *Micronecta japonica* Chen, 1960
 
-Its scientific name has not yet been identified. A personal observation blog notes that an undescribed species of the genus Micronecta may exist in the upper reaches of rivers on Okinawa Island, but whether it is the same species as this one (the Amami Micro Water Boatman) has not been confirmed, and the relationship between the two is unknown. It normally burrows into sand or fallen leaves, and swims away quickly when startled.
+A tiny aquatic true bug about 1mm long. Endemic to Japan, it is found in the Nansei Islands (Amami Oshima and Tokunoshima). Several related species are known within the same genus, including the more widespread Micronecta guttata, found from Hokkaido to Kyushu. It normally burrows into sand or fallen leaves, and swims away quickly when startled.
