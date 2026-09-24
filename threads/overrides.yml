@@ -5,20 +5,16 @@
 # 書き方:
 #   生き物ID:
 #     months: [5, 6, 7]   # 見られる時期。Markdownの months の代わりに使う(一年中は 1〜12 を全部書く)
-#     diurnal: true       # 昼行性の印。ツアー案内では名前にも写真にも使わない
 #     tour_exclude: true  # 見るのが難しい種の印。ツアー案内では名前にも写真にも使わない
-#   ※ diurnal / tour_exclude の種も、生き物紹介・クイズには今まで通り出る
+#     diurnal: true/false # (通常は書かない)昼行性の扱いをThreadsだけで変えたいときに使う
+#   ※ tour_exclude の種も、生き物紹介・クイズには今まで通り出る
 #
-#   _categories: カテゴリー単位の既定値。種ごとに書いた値(diurnal: false など)が優先される
-
-# ===== カテゴリー単位の既定値 =====
-_categories:
-  lizards:                        # トカゲの仲間は基本的に昼行性
-    diurnal: true
-# トカゲの例外(夜も観察できる種)は、Markdownが追加されたら種ごとに diurnal: false を書く
-#   - オキナワキノボリトカゲ: 夜に寝ている姿を観察できるので印なし
-#     (写真フォルダ okinawa-kinobori-tokage はあるが、Markdownがまだない。IDはMarkdownを作ってから確定)
-#   - ヤモリの仲間: 夜行性なので印なし(サイトにまだ種がない)
+#   _categories: カテゴリー単位の既定値(Markdownに activity がない種だけに効く)。種ごとの値が優先
+#
+# 昼行性かどうかは、2026-09-24からサイト側のMarkdown(日本語版)で管理している:
+#   activity: diurnal         → 昼行性。ツアー案内では名前にも写真にも使わない
+#   night_observable: true    → 昼行性でも夜に観察できる(寝姿・越冬集団など)。ツアー案内に出る
+# 新しい種(例: オキナワキノボリトカゲ・ヤモリ)のMarkdownを作るときは、そちらに書く
 
 # ===== 月の上書き =====
 
@@ -77,19 +73,16 @@ tokara-mannmaru-kogane:           # トカラマンマルコガネ
   months: [3, 4, 5, 6, 7, 8, 9, 10]
 ruri-nakaboso-tamamushi:          # ルリナカボソタマムシ
   months: [5, 6, 7]
-  diurnal: true
 amami-semadara-magusokogane:      # アマミセマダラマグソコガネ
   months: [10, 11, 12, 1, 2, 3, 4]
 
 # --- トカゲ ---
-ba-ba-tokage:                     # バーバートカゲ(昼行性の印は上の _categories でも付く)
+ba-ba-tokage:                     # バーバートカゲ
   months: [5, 6, 7, 8, 9, 10]
-  diurnal: true
 
 # --- その他の昆虫 ---
 hanenaga-tyou-tombo:              # ハネナガチョウトンボ
   months: [6, 7]
-  diurnal: true
 
 # --- 水生昆虫 ---
 amami-mizo-doromushi:             # アマミミゾドロムシ
@@ -136,48 +129,12 @@ koseaka-amennbo:                  # コセアカアメンボ(Markdownは 4, 5月
 tsutsui-nagare-katabiro-amennbo:  # ツツイナガレカタビロアメンボ
   months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-# ===== 昼行性の印(ツアー案内に出さない) =====
-# ルリナカボソタマムシ・バーバートカゲは上の月の上書きと一緒に書いてある
-# ルリカケス・アカハラダカは印なし(夜に寝ている姿を観察できるため)
-kawasemi:                         # カワセミ
-  diurnal: true
-tageri:                           # タゲリ
-  diurnal: true
-  tour_exclude: true
-akahige:                          # アカヒゲ
-  diurnal: true
-midori-nakaboso-tamamushi:        # ミドリナカボソタマムシ
-  diurnal: true
-ryukyu-akashobin:                 # リュウキュウアカショウビン
-  diurnal: true
-sankoutyou:                       # リュウキュウサンコウチョウ
-  diurnal: true
-oomidor-isaru-hamshi:             # オオミドリサルハムシ
-  diurnal: true
-iso-hiyodori:                     # イソヒヨドリ
-  diurnal: true
-seitakashigi:                     # セイタカシギ
-  diurnal: true
-oosuton-ooakagera:                # オーストンオオアカゲラ
-  diurnal: true
-kurotusraherasagi:                # クロツラヘラサギ
-  diurnal: true
-sasiba:                           # サシバ
-  diurnal: true
-ryukyu-zuaka-aobato:              # リュウキュウズアカアオバト
-  diurnal: true
-okinawa-tyou-tombo:               # オキナワチョウトンボ
-  diurnal: true
-ferie-beniboshi-kamikiri:         # フェリエベニボシカミキリ
-  diurnal: true
-# 蝶の仲間(Markdownの group: tyou)
-# リュウキュウアサギマダラは印なし(越冬中の集団をツアーで観察できるため)
-aosuji-ageha:                     # アオスジアゲハ
-  diurnal: true
-ishigake-tyou:                    # イシガケチョウ
-  diurnal: true
+# ===== 昼行性の印 =====
+# 2026-09-24にサイト側のMarkdownの activity / night_observable へ移したため、ここには書かない
 
 # ===== ツアー案内に出さない印(見るのが難しい種) =====
-# ワタセジネズミ・タゲリ・サトウカラヒメドロムシは上に書いてある
+# ワタセジネズミ・サトウカラヒメドロムシは上の月の上書きと一緒に書いてある
+tageri:                           # タゲリ
+  tour_exclude: true
 amami-hababiro-doromusshi:        # アマミハバビロドロムシ
   tour_exclude: true

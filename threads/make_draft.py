@@ -124,7 +124,7 @@ def parse_front_matter(text):
         return yaml.safe_load(text) or {}
     except yaml.YAMLError:
         # YAMLとして読めない行(「: 」を含むsourceなど)がある場合は、必要な項目だけ1行ずつ読む
-        meta = dict(re.findall(r"^(id|name|category|danger):\s*(.+?)\s*$", text, re.M))
+        meta = dict(re.findall(r"^(id|name|category|danger|activity|night_observable):\s*(.+?)\s*$", text, re.M))
         m = re.search(r"^months:\s*\[(.*?)\]", text, re.M)
         if m:
             meta["months"] = [int(x) for x in m.group(1).split(",") if x.strip().isdigit()]
@@ -161,10 +161,19 @@ def apply_overrides(items):
         if cid not in ids:
             print(f"overrides.yml: 生き物ID {cid} のMarkdownが見つかりません(無視)")
     for c in items:
-        o = {**(cat_default.get(c.get("category")) or {}), **(ov.get(c["id"]) or {})}
+        o_cat, o_sp = cat_default.get(c.get("category")) or {}, ov.get(c["id"]) or {}
+        o = {**o_cat, **o_sp}
         if o.get("months"):
             c["months"] = o["months"]
-        c["diurnal"] = bool(o.get("diurnal"))
+        # 昼行性: Markdownの activity: diurnal(night_observable: true の種は夜も観察できるので除く)。
+        # overrides.yml の種ごとの diurnal があればそれを優先、activity がない種だけカテゴリーの既定値
+        c["night_observable"] = str(c.get("night_observable", "")).lower() == "true"
+        if "diurnal" in o_sp:
+            c["diurnal"] = bool(o_sp["diurnal"])
+        elif c.get("activity"):
+            c["diurnal"] = c["activity"] == "diurnal" and not c["night_observable"]
+        else:
+            c["diurnal"] = bool(o_cat.get("diurnal"))
         c["tour_exclude"] = bool(o.get("tour_exclude"))
 
 
