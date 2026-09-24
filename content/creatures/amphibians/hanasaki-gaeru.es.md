@@ -3,7 +3,7 @@ id: hanasaki-gaeru
 name: Rana de Nariz Puntiaguda de Amami
 category: amphibians
 danger: Prohibida su captura y traslado (Monumento Natural)
-months: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+months: [11, 12, 1, 2]
 ---
 Familia de las ranas pardas, género Odorrana. *Odorrana amamiensis*
 

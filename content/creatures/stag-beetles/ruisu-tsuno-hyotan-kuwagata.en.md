@@ -3,7 +3,7 @@ id: ruisu-tsuno-hyotan-kuwagata
 name: Lewis's Horned Stag Beetle
 category: stag-beetles
 danger: Collecting permitted (rare)
-months: [8, 9]
+months: [6, 7, 8, 9, 10]
 ---
 Stag beetle family, subfamily Aesalinae (minute stag beetles), genus Nigidius
 (horned gourd stag beetles). *Nigidius lewisi*

@@ -3,7 +3,7 @@ id: nokogiri-kuwagata
 name: Amami Sawtooth Stag Beetle
 category: stag-beetles
 danger: Collecting permitted
-months: [7, 8, 9]
+months: [7, 8]
 ---
 Stag beetle family, genus Prosopocoilus (sawtooth stag beetles); Amami
 subspecies. *Prosopocoilus dissimilis*

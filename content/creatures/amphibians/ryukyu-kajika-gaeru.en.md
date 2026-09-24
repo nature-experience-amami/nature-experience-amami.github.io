@@ -3,7 +3,7 @@ id: ryukyu-kajika-gaeru
 name: Ryukyu Kajika Frog
 category: amphibians
 danger: Non-venomous
-months: [4, 5, 6, 7, 8, 9, 10]
+months: [3, 4, 5, 6, 7, 8, 9, 10, 11]
 ---
 Tree frog family, genus Buergeria. *Buergeria japonica*
 

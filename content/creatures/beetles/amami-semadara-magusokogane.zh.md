@@ -3,7 +3,7 @@ id: amami-semadara-magusokogane
 name: 奄美斑纹粪金龟
 category: beetles
 group: funchu
-months: [9, 10, 11, 12, 1, 2, 3, 4]
+months: [10, 11, 12, 1, 2, 3, 4]
 ---
 金龟科粪金龟亚科奄美斑纹粪金龟 *Chilothorax ohishii* (Masumoto, 1975)
 

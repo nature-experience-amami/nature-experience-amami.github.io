@@ -3,7 +3,7 @@ id: shika-kuwagata
 name: 奄美鹿角锹甲
 category: stag-beetles
 danger: 禁止采集(条例规定)
-months: [5, 6, 7, 8, 9]
+months: [7, 8]
 ---
 锹甲科鹿角锹甲属 *Rhaetulus recticrnis*
 

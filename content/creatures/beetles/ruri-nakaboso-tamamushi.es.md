@@ -3,7 +3,7 @@ id: ruri-nakaboso-tamamushi
 name: Escarabajo Joya Azur Angosto
 category: beetles
 group: tamamushi
-months: [6, 7, 8, 9]
+months: [5, 6, 7]
 ---
 Buprestidae, escarabajo joya azur angosto *Coraebus niponicus* Lewis, 1894
 

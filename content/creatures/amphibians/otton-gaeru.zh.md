@@ -3,7 +3,7 @@ id: otton-gaeru
 name: 奥顿蛙
 category: amphibians
 danger: 禁止捕获、转让(天然纪念物)
-months: [5, 6, 7]
+months: [6, 7, 8, 9]
 ---
 赤蛙科棘蛙属 *Babina subaspera*
 

@@ -4,6 +4,7 @@ name: ケシカタビロアメンボ
 category: aquatic-insects
 group: amenbo
 source: くろむし屋「日本の水生昆虫リスト」http://kuromushiya.com/mlist/veliidae/keshikatabiro.html(2023年11月25日更新)、虫ナビ「ケシカタビロアメンボ」https://mushinavi.com/navi-insect/data-amenbo_katabiro_kesi.htm
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 カタビロアメンボ科ケシカタビロアメンボ属ケシカタビロアメンボ *Microvelia douglasi* Scott, 1874
 

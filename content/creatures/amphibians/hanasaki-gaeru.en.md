@@ -3,7 +3,7 @@ id: hanasaki-gaeru
 name: Amami Tip-nosed Frog
 category: amphibians
 danger: Capture and transfer prohibited (Natural Monument)
-months: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+months: [11, 12, 1, 2]
 ---
 Brown frog family, genus Odorrana. *Odorrana amamiensis*
 

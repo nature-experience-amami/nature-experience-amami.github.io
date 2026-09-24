@@ -3,7 +3,7 @@ id: iriomote-kesi-katabiro-amennbo
 name: 西表小宽肩蝽
 category: aquatic-insects
 group: amenbo
-months: [2]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 宽肩蝽科宽肩蝽属 *Microvelia iriomotensis* Miyamoto, 1964
 

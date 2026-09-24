@@ -3,7 +3,7 @@ id: miyama-kuwagata
 name: Ciervo Volante de Montaña de Amami
 category: stag-beetles
 danger: Recolección prohibida (por ordenanza)
-months: [7, 8, 9]
+months: [8]
 ---
 Familia de los ciervos volantes, género Lucanus (ciervos volantes verdaderos).
 *Lucanus ferriei*

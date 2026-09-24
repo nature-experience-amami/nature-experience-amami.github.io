@@ -3,7 +3,7 @@ id: amami-aka-gaeru
 name: Rana Parda de Amami
 category: amphibians
 danger: No venenosa
-months: [11, 12, 1]
+months: [11, 12, 1, 2]
 ---
 Familia de las ranas pardas, género Rana. *Rana kobai*
 

@@ -3,7 +3,7 @@ id: ao-uba-tamamushi
 name: Escarabajo Joya Verde de Amami
 category: beetles
 group: tamamushi
-months: [6, 7, 8]
+months: [4, 5]
 ---
 Buprestidae, escarabajo joya verde de Amami *Chalcophora japonica oshimana* Schönfeldt, 1890
 

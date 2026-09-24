@@ -3,7 +3,7 @@ id: nebuto-kuwagata
 name: Amami Root Stag Beetle
 category: stag-beetles
 danger: Collecting permitted
-months: [5, 6, 7, 10, 11]
+months: [6, 7, 8, 9, 10]
 ---
 Stag beetle family, genus Aegus (root stag beetles). *Aegus laevicolis subnitidus*
 

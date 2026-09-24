@@ -3,7 +3,7 @@ id: kesi-katabiro-amennbo
 name: Common Micro Water Strider
 category: aquatic-insects
 group: amenbo
-months: [3]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Broad-shouldered water strider family, genus Microvelia. *Microvelia douglasi*
 Scott, 1874

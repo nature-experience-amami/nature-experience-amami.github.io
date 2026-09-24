@@ -3,7 +3,7 @@ id: tsutsui-nagare-katabiro-amennbo
 name: Zapatero de Corriente de Tsutsui
 category: aquatic-insects
 group: amenbo
-months: [3, 4]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Familia de los zapateros de hombros anchos, género Pseudovelia (zapateros de
 corriente). *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955

@@ -3,7 +3,7 @@ id: ryukyu-kajika-gaeru
 name: Rana Kajika de Ryukyu
 category: amphibians
 danger: No venenosa
-months: [4, 5, 6, 7, 8, 9, 10]
+months: [3, 4, 5, 6, 7, 8, 9, 10, 11]
 ---
 Familia de las ranas arborícolas, género Buergeria. *Buergeria japonica*
 

@@ -3,6 +3,7 @@ id: ruisu-tsuno-hyotan-kuwagata
 name: ルイスツノヒョウタンクワガタ
 category: stag-beetles
 danger: 採集可(稀少)
+months: [6, 7, 8, 9, 10]
 ---
 クワガタムシ科チビクワガタ亜科ツノヒョウタンクワガタ属 *Nigidius lewisi*
 

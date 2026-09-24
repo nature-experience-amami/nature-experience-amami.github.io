@@ -3,7 +3,7 @@ id: miyama-kuwagata
 name: Amami Mountain Stag Beetle
 category: stag-beetles
 danger: Collecting prohibited (by ordinance)
-months: [7, 8, 9]
+months: [8]
 ---
 Stag beetle family, genus Lucanus (true stag beetles). *Lucanus ferriei*
 

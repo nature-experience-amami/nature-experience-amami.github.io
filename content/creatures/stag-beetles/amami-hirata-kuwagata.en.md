@@ -3,7 +3,7 @@ id: amami-hirata-kuwagata
 name: Amami Flat Stag Beetle
 category: stag-beetles
 danger: Collecting permitted
-months: [7, 8, 9]
+months: [7, 8]
 ---
 Stag beetle family, genus Dorcus (a subspecies of the flat stag beetle).
 *Dorcus titanusu elegans*

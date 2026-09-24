@@ -3,7 +3,7 @@ id: iriomote-kesi-katabiro-amennbo
 name: Zapatero Diminuto de Iriomote
 category: aquatic-insects
 group: amenbo
-months: [2]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Familia de los zapateros de hombros anchos, género Microvelia.
 *Microvelia iriomotensis* Miyamoto, 1964

@@ -3,7 +3,7 @@ id: amami-mizo-doromushi
 name: Escarabajo de Rabión Acanalado de Amami
 category: aquatic-insects
 group: doromushi
-months: [7]
+months: [7, 8]
 source: Kuromushiya «Lista de insectos acuáticos de Japón», Elmidae http://kuromushiya.com/mlist/mlist.html#elmidae, que confirma el nombre científico (subespecie nominal) y la distribución (islas Nansei: Amami Oshima)
 ---
 Familia de los escarabajos de rabión, género Ordobrevia. *Ordobrevia amamiensis amamiensis* (Nomura, 1957)

@@ -3,6 +3,7 @@ id: ryukyu-ao-hebi
 name: リュウキュウアオヘビ
 category: snakes
 danger: 無毒
+months: [5, 6, 7, 8, 9, 10]
 ---
 ナミヘビ科アオヘビ属 *Cycophuops semicarinatus*
 

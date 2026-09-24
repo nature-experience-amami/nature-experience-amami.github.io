@@ -3,7 +3,7 @@ id: satou-kara-himedoromushi
 name: Sato's Riffle Beetle
 category: aquatic-insects
 group: doromushi
-months: [5]
+months: [4]
 ---
 Riffle beetle family, genus Sinonychus. *Sinonychus satoi* Yoshitomi & Nakajima, 2007
 

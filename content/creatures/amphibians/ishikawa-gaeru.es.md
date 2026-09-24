@@ -3,7 +3,7 @@ id: ishikawa-gaeru
 name: Rana de Ishikawa de Amami
 category: amphibians
 danger: Prohibida su captura y traslado (Monumento Natural)
-months: [12, 1, 2, 3, 4, 5, 6]
+months: [11, 12, 1, 2, 3, 4]
 ---
 Familia de las ranas pardas, género Odorrana. *Odorrana splendida*
 

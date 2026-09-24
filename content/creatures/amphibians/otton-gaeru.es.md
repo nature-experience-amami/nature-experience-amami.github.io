@@ -3,7 +3,7 @@ id: otton-gaeru
 name: Rana Otton
 category: amphibians
 danger: Prohibida su captura y traslado (Monumento Natural)
-months: [5, 6, 7]
+months: [6, 7, 8, 9]
 ---
 Familia de las ranas pardas, género Babina. *Babina subaspera*
 

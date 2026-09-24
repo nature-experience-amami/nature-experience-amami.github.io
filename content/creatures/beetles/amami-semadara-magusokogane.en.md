@@ -3,7 +3,7 @@ id: amami-semadara-magusokogane
 name: Amami Mottled Dung Beetle
 category: beetles
 group: funchu
-months: [9, 10, 11, 12, 1, 2, 3, 4]
+months: [10, 11, 12, 1, 2, 3, 4]
 ---
 Scarabaeidae, subfamily Aphodiinae, Amami Mottled Dung Beetle *Chilothorax ohishii* (Masumoto, 1975)
 

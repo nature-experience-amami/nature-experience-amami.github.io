@@ -3,7 +3,7 @@ id: amami-aka-gaeru
 name: Amami Brown Frog
 category: amphibians
 danger: Non-venomous
-months: [11, 12, 1]
+months: [11, 12, 1, 2]
 ---
 Brown frog family, genus Rana. *Rana kobai*
 

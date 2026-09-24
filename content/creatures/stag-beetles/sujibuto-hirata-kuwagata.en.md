@@ -3,7 +3,7 @@ id: sujibuto-hirata-kuwagata
 name: Amami Ridged Flat Stag Beetle
 category: stag-beetles
 danger: Collecting permitted
-months: [10]
+months: [7, 9, 10, 11]
 ---
 Stag beetle family, subgenus Dorcus (flat stag beetles). *Dorcus metacostatus*
 

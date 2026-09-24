@@ -3,7 +3,7 @@ id: ueno-tsuya-doromushi
 name: Escarabajo de Rabión Brillante de Ueno
 category: aquatic-insects
 group: doromushi
-months: [1, 2, 3, 4]
+months: [12, 1, 2]
 source: Kuromushiya «Lista de insectos acuáticos de Japón», Elmidae http://kuromushiya.com/mlist/mlist.html#elmidae, que confirma el nombre científico (subespecie nominal) y la distribución (islas Nansei: Yakushima, del archipiélago de Amami al archipiélago de Okinawa); Nakajima, J. & Kamite, Y. (2020) A new species of the genus Urumaelmis Satô (Coleoptera, Elmidae, Macronychini) from Kyushu Island, Japan. Zootaxa, 4853(3), 421-428.
 ---
 Familia de los escarabajos de rabión, género Urumaelmis. *Urumaelmis uenoi uenoi* (Nomura, 1961)

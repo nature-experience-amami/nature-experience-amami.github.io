@@ -4,7 +4,7 @@ name: Amami Longwing Dragonfly
 category: other-insects
 group: tombo
 danger: Collecting prohibited (Act on Conservation of Endangered Species, Nationally Rare Species of Wild Fauna and Flora), Ministry of the Environment Red List: Endangered (EN)
-months: [5, 6, 7, 8, 9]
+months: [6, 7]
 ---
 Skimmer family, Amami Longwing Dragonfly *Rhyothemis severini* Ris, 1913
 

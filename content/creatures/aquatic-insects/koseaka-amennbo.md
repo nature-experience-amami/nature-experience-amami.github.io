@@ -3,7 +3,7 @@ id: koseaka-amennbo
 name: コセアカアメンボ
 category: aquatic-insects
 group: amenbo
-months: [4, 5]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 source: くろむし屋「日本産水生昆虫リスト」アメンボ科 http://kuromushiya.com/mlist/mlist.html#gerridae で学名((Horváth, 1879))・分布(北海道，本州，四国，九州，対馬，南西諸島，伊豆諸島)を確認、虫ナビ「コセアカアメンボ」https://mushinavi.com/navi-insect/data-amenbo_koseaka.htm
 ---
 アメンボ科アメンボ属コセアカアメンボ *Gerris gracilicornis* (Horváth, 1879)

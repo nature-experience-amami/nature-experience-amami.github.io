@@ -3,7 +3,7 @@ id: hanasaki-gaeru
 name: 奄美臭蛙
 category: amphibians
 danger: 禁止捕获、转让(天然纪念物)
-months: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+months: [11, 12, 1, 2]
 ---
 赤蛙科臭蛙属 *Odorrana amamiensis*
 

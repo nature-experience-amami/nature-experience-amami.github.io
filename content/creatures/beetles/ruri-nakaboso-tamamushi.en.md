@@ -3,7 +3,7 @@ id: ruri-nakaboso-tamamushi
 name: Azure Narrow Jewel Beetle
 category: beetles
 group: tamamushi
-months: [6, 7, 8, 9]
+months: [5, 6, 7]
 ---
 Buprestidae, Azure Narrow Jewel Beetle *Coraebus niponicus* Lewis, 1894
 

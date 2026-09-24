@@ -4,6 +4,7 @@ name: ツツイナガレカタビロアメンボ
 category: aquatic-insects
 group: amenbo
 source: くろむし屋「日本の水生昆虫リスト」http://kuromushiya.com/mlist/mlist.html#veliidae
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 カタビロアメンボ科ナガレカタビロアメンボ属ツツイナガレカタビロアメンボ *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955
 

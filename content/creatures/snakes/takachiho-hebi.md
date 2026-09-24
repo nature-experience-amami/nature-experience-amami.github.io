@@ -3,6 +3,7 @@ id: takachiho-hebi
 name: アマミタカチホヘビ
 category: snakes
 danger: 無毒・希少
+months: [5, 6]
 ---
 タカチホヘビ科タカチホヘビ族 *Achalinus werneri*
 

@@ -3,7 +3,7 @@ id: haroweru-amagaeru
 name: 哈氏雨蛙
 category: amphibians
 danger: 无毒
-months: [3, 4, 5, 6]
+months: [2, 3, 4, 5, 6, 7]
 ---
 雨蛙科雨蛙属 *Hyla hallowellii*
 

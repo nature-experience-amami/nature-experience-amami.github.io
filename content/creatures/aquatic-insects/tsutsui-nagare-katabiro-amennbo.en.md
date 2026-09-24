@@ -3,7 +3,7 @@ id: tsutsui-nagare-katabiro-amennbo
 name: Tsutsui's Stream Water Strider
 category: aquatic-insects
 group: amenbo
-months: [3, 4]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Broad-shouldered water strider family, genus Pseudovelia (stream water
 striders). *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955

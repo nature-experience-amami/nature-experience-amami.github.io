@@ -3,7 +3,7 @@ id: ruisu-tsuno-hyotan-kuwagata
 name: Ciervo Volante Cornudo de Lewis
 category: stag-beetles
 danger: Recolección permitida (especie rara)
-months: [8, 9]
+months: [6, 7, 8, 9, 10]
 ---
 Familia de los ciervos volantes, subfamilia Aesalinae (ciervos volantes
 diminutos), género Nigidius (ciervos volantes cornudos). *Nigidius lewisi*

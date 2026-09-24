@@ -3,7 +3,7 @@ id: ao-uba-tamamushi
 name: 奄美青姥吉丁虫
 category: beetles
 group: tamamushi
-months: [6, 7, 8]
+months: [4, 5]
 ---
 吉丁虫科奄美青姥吉丁虫 *Chalcophora japonica oshimana* Schönfeldt, 1890
 

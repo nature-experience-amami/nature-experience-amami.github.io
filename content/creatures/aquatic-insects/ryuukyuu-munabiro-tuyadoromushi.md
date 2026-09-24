@@ -4,6 +4,7 @@ name: リュウキュウムナビロツヤドロムシ
 category: aquatic-insects
 group: doromushi
 source: J-GLOBAL「日本産ムナビロツヤドロムシ属Elmomorphusの分子系統地理~沖永良部島からのリュウキュウムナビロツヤドロムシElmomorphus amamiensisの初記録~」(JGLOBAL_ID: 202302259205432349)、Jung, S.W. & Bae, Y.J. (2014) First record of the family Dryopidae (Coleoptera) in Korea with taxonomic notes on Elmomorphus brevicornis and Elmomorphus amamiensis. Animal Systematics, Evolution and Diversity, 30(1), 1-8.(COI遺伝子解析等により本種を独立種に格上げ)
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 ドロムシ科ムナビロツヤドロムシ属リュウキュウムナビロツヤドロムシ *Elmomorphus amamiensis* Nomura, 1959
 

@@ -3,7 +3,7 @@ id: amami-mizo-doromushi
 name: 奄美沟泥甲
 category: aquatic-insects
 group: doromushi
-months: [7]
+months: [7, 8]
 source: 虫屋(kuromushiya)「日本产水生昆虫名录」长角泥甲科(Elmidae) http://kuromushiya.com/mlist/mlist.html#elmidae，确认学名(指名亚种)及分布(南西诸岛:奄美大岛)
 ---
 长角泥甲科沟泥甲属 *Ordobrevia amamiensis amamiensis* (Nomura, 1957)

@@ -3,7 +3,7 @@ id: ruisu-tsuno-hyotan-kuwagata
 name: 路易斯角葫芦锹甲
 category: stag-beetles
 danger: 允许采集(稀有种)
-months: [8, 9]
+months: [6, 7, 8, 9, 10]
 ---
 锹甲科锹甲亚科角葫芦锹甲属 *Nigidius lewisi*
 

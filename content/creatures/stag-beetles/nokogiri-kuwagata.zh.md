@@ -3,7 +3,7 @@ id: nokogiri-kuwagata
 name: 奄美锯锹甲
 category: stag-beetles
 danger: 允许采集
-months: [7, 8, 9]
+months: [7, 8]
 ---
 锹甲科奥锹甲属锯锹甲奄美亚种 *Prosopocoilus dissimilis*
 

@@ -4,6 +4,7 @@ name: ノムラヒメドロムシ
 category: aquatic-insects
 group: doromushi
 source: 上手雄貴・中島淳・林成多・吉富博之(2018)「日本産ヒメドロムシ科の目録と分類学的な問題点」さやばねニューシリーズNo.29、Kobayashi, T., Hayashi, M., Kamite, Y. & Sota, T. (2021) Molecular phylogeny of Elmidae (Coleoptera: Byrrhoidea) with a focus on Japanese species: Implications for intrafamilial classification. Systematic Entomology, 46, 870-886.(ノムラヒメドロムシ属をアシナガミゾドロムシ属に統合した分子系統論文)、Yoshitomi, H. & Hayashi, M. (2021) New name for Stenelmis amamiensis (Satô, 1964) (Coleoptera: Elmidae). Japanese Journal of Systematic Entomology, 27, 269.
+months: [12, 1, 2]
 ---
 ヒメドロムシ科アシナガミゾドロムシ属ノムラヒメドロムシ *Stenelmis amami* Yoshitomi et Hayashi, 2021
 

@@ -4,7 +4,7 @@ name: アマミアカガエル
 category: amphibians
 danger: 無毒
 group: frog
-months: [11, 12, 1]
+months: [11, 12, 1, 2]
 ---
 アカガエル科アカガエル属 *Rana kobai*
 

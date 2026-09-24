@@ -3,7 +3,7 @@ id: hime-amagaeru
 name: 冲绳姬蛙
 category: amphibians
 danger: 无毒
-months: [3, 4, 5, 6, 7]
+months: [2, 3, 4, 5, 6, 7, 8]
 ---
 姬蛙科姬蛙属 *Microhyla okinavensis*
 

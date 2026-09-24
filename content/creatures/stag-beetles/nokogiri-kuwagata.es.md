@@ -3,7 +3,7 @@ id: nokogiri-kuwagata
 name: Ciervo Volante Serrado de Amami
 category: stag-beetles
 danger: Recolección permitida
-months: [7, 8, 9]
+months: [7, 8]
 ---
 Familia de los ciervos volantes, género Prosopocoilus (ciervos volantes
 serrados); subespecie de Amami. *Prosopocoilus dissimilis*

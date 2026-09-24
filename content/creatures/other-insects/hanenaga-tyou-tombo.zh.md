@@ -4,7 +4,7 @@ name: 长翅蝶蜻
 category: other-insects
 group: tombo
 danger: 禁止采集(《濒危物种保护法》・国内稀有野生动植物种指定)，环境省红色名录 濒危(EN)
-months: [5, 6, 7, 8, 9]
+months: [6, 7]
 ---
 蜻科长翅蝶蜻 *Rhyothemis severini* Ris, 1913
 

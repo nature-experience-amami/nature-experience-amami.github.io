@@ -3,7 +3,7 @@ id: satou-kara-himedoromushi
 name: 佐藤华爪泥甲
 category: aquatic-insects
 group: doromushi
-months: [5]
+months: [4]
 ---
 长角泥甲科华爪泥甲属 *Sinonychus satoi* Yoshitomi & Nakajima, 2007
 

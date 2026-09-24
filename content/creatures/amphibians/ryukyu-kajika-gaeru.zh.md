@@ -3,7 +3,7 @@ id: ryukyu-kajika-gaeru
 name: 琉球树蟾
 category: amphibians
 danger: 无毒
-months: [4, 5, 6, 7, 8, 9, 10]
+months: [3, 4, 5, 6, 7, 8, 9, 10, 11]
 ---
 树蟾科树蟾属 *Buergeria japonica*
 

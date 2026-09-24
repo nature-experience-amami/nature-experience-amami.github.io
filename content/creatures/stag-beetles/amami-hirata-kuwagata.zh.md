@@ -3,7 +3,7 @@ id: amami-hirata-kuwagata
 name: 奄美扁锹甲
 category: stag-beetles
 danger: 允许采集
-months: [7, 8, 9]
+months: [7, 8]
 ---
 锹甲科奥锹甲属扁锹甲亚种 *Dorcus titanusu elegans*
 

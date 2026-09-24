@@ -4,7 +4,7 @@ name: ハネナガチョウトンボ
 category: other-insects
 group: tombo
 danger: 採集禁止(種の保存法・国内希少野生動植物種指定)、環境省レッドリスト絶滅危惧IB類(EN)
-months: [5, 6, 7, 8, 9]
+months: [6, 7]
 ---
 トンボ科 ハネナガチョウトンボ *Rhyothemis severini* Ris, 1913
 

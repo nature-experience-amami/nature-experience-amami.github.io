@@ -3,7 +3,7 @@ id: kesi-katabiro-amennbo
 name: 小宽肩蝽
 category: aquatic-insects
 group: amenbo
-months: [3]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 宽肩蝽科宽肩蝽属 *Microvelia douglasi* Scott, 1874
 

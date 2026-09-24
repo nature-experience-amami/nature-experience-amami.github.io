@@ -3,7 +3,7 @@ id: chairo-kesi-katabiro-amennbo
 name: Brown Micro Water Strider
 category: aquatic-insects
 group: amenbo
-months: [2, 12]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Broad-shouldered water strider family, genus Microvelia. *Microvelia japonica*
 Esaki & Miyamoto, 1955

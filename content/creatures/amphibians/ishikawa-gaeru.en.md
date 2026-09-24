@@ -3,7 +3,7 @@ id: ishikawa-gaeru
 name: Amami Ishikawa's Frog
 category: amphibians
 danger: Capture and transfer prohibited (Natural Monument)
-months: [12, 1, 2, 3, 4, 5, 6]
+months: [11, 12, 1, 2, 3, 4]
 ---
 Brown frog family, genus Odorrana. *Odorrana splendida*
 

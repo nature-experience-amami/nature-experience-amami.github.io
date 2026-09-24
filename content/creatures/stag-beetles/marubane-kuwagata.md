@@ -3,6 +3,7 @@ id: marubane-kuwagata
 name: アマミマルバネクワガタ
 category: stag-beetles
 danger: 採集禁止(条例)
+months: [10]
 ---
 クワガタムシ科マルバネクワガタ属 *Neolucanus protogenetivus*
 

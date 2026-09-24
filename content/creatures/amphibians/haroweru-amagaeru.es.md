@@ -3,7 +3,7 @@ id: haroweru-amagaeru
 name: Ranita de Hallowell
 category: amphibians
 danger: No venenosa
-months: [3, 4, 5, 6]
+months: [2, 3, 4, 5, 6, 7]
 ---
 Familia de las ranitas de árbol, género Hyla. *Hyla hallowellii*
 

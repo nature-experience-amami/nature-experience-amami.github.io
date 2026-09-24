@@ -3,7 +3,7 @@ id: sujibuto-hirata-kuwagata
 name: Ciervo Volante Plano Acanalado de Amami
 category: stag-beetles
 danger: Recolección permitida
-months: [10]
+months: [7, 9, 10, 11]
 ---
 Familia de los ciervos volantes, subgénero Dorcus (ciervos volantes planos).
 *Dorcus metacostatus*

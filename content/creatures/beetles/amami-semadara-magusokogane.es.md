@@ -3,7 +3,7 @@ id: amami-semadara-magusokogane
 name: Escarabajo Moteado del Estiércol de Amami
 category: beetles
 group: funchu
-months: [9, 10, 11, 12, 1, 2, 3, 4]
+months: [10, 11, 12, 1, 2, 3, 4]
 ---
 Scarabaeidae, subfamilia Aphodiinae, escarabajo moteado del estiércol de Amami *Chilothorax ohishii* (Masumoto, 1975)
 

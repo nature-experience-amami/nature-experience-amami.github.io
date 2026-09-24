@@ -3,7 +3,7 @@ id: shika-kuwagata
 name: Amami Deer Stag Beetle
 category: stag-beetles
 danger: Collecting prohibited (by ordinance)
-months: [5, 6, 7, 8, 9]
+months: [7, 8]
 ---
 Stag beetle family, genus Rhaetulus (deer stag beetles). *Rhaetulus recticrnis*
 

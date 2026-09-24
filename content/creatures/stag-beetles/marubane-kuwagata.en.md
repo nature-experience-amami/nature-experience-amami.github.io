@@ -3,7 +3,7 @@ id: marubane-kuwagata
 name: Amami Roundwing Stag Beetle
 category: stag-beetles
 danger: Collecting prohibited (by ordinance)
-months: [9, 10]
+months: [10]
 ---
 Stag beetle family, genus Neolucanus (roundwing stag beetles).
 *Neolucanus protogenetivus*

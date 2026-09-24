@@ -3,7 +3,7 @@ id: marubane-kuwagata
 name: Ciervo Volante de Ala Redonda de Amami
 category: stag-beetles
 danger: Recolección prohibida (por ordenanza)
-months: [9, 10]
+months: [10]
 ---
 Familia de los ciervos volantes, género Neolucanus (ciervos volantes de ala
 redonda). *Neolucanus protogenetivus*

@@ -3,7 +3,7 @@ id: ueno-tsuya-doromushi
 name: 上野光泽泥甲
 category: aquatic-insects
 group: doromushi
-months: [1, 2, 3, 4]
+months: [12, 1, 2]
 source: 虫屋(kuromushiya)「日本产水生昆虫名录」长角泥甲科(Elmidae) http://kuromushiya.com/mlist/mlist.html#elmidae，确认学名(指名亚种)及分布(南西诸岛:屋久岛、奄美群岛至冲绳诸岛)、Nakajima, J. & Kamite, Y. (2020) A new species of the genus Urumaelmis Satô (Coleoptera, Elmidae, Macronychini) from Kyushu Island, Japan. Zootaxa, 4853(3), 421-428.
 ---
 长角泥甲科光泽泥甲属 *Urumaelmis uenoi uenoi* (Nomura, 1961)

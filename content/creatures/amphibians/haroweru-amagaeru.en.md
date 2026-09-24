@@ -3,7 +3,7 @@ id: haroweru-amagaeru
 name: Hallowell's Tree Frog
 category: amphibians
 danger: Non-venomous
-months: [3, 4, 5, 6]
+months: [2, 3, 4, 5, 6, 7]
 ---
 Tree frog family, genus Hyla. *Hyla hallowellii*
 

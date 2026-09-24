@@ -3,6 +3,7 @@ id: miyama-kuwagata
 name: アマミミヤマクワガタ
 category: stag-beetles
 danger: 採集禁止(条例)
+months: [8]
 ---
 クワガタムシ科ミヤマクワガタ属 *Lucanus ferriei*
 

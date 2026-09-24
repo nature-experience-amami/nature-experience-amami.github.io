@@ -3,7 +3,7 @@ id: marubane-kuwagata
 name: 奄美圆翅锹甲
 category: stag-beetles
 danger: 禁止采集(条例规定)
-months: [9, 10]
+months: [10]
 ---
 锹甲科圆翅锹甲属 *Neolucanus protogenetivus*
 

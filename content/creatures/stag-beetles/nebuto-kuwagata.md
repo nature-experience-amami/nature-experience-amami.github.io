@@ -3,7 +3,7 @@ id: nebuto-kuwagata
 name: アマミネブトクワガタ
 category: stag-beetles
 danger: 採集可
-months: [5, 6, 7, 10, 11]
+months: [6, 7, 8, 9, 10]
 ---
 クワガタムシ科ネブトクワガタ属 *Aegus laevicolis subnitidus*
 

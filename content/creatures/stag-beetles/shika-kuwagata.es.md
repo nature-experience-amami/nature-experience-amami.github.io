@@ -3,7 +3,7 @@ id: shika-kuwagata
 name: Ciervo Volante Cérvido de Amami
 category: stag-beetles
 danger: Recolección prohibida (por ordenanza)
-months: [5, 6, 7, 8, 9]
+months: [7, 8]
 ---
 Familia de los ciervos volantes, género Rhaetulus (ciervos volantes cérvidos).
 *Rhaetulus recticrnis*

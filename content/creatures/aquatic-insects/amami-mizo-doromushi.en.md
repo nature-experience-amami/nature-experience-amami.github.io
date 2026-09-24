@@ -3,7 +3,7 @@ id: amami-mizo-doromushi
 name: Amami Groove Riffle Beetle
 category: aquatic-insects
 group: doromushi
-months: [7]
+months: [7, 8]
 source: Kuromushiya "List of Japanese Aquatic Insects," Elmidae http://kuromushiya.com/mlist/mlist.html#elmidae, confirming the scientific name (nominate subspecies) and distribution (Nansei Islands: Amami Oshima)
 ---
 Riffle beetle family, genus Ordobrevia. *Ordobrevia amamiensis amamiensis* (Nomura, 1957)

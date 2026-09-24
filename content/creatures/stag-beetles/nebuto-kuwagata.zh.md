@@ -3,7 +3,7 @@ id: nebuto-kuwagata
 name: 奄美肥角锹甲
 category: stag-beetles
 danger: 允许采集
-months: [5, 6, 7, 10, 11]
+months: [6, 7, 8, 9, 10]
 ---
 锹甲科肥角锹甲属 *Aegus laevicolis subnitidus*
 

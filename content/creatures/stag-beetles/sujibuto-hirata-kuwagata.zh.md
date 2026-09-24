@@ -3,7 +3,7 @@ id: sujibuto-hirata-kuwagata
 name: 条纹扁锹甲
 category: stag-beetles
 danger: 允许采集
-months: [10]
+months: [7, 9, 10, 11]
 ---
 锹甲科奥锹甲属扁锹甲亚属 *Dorcus metacostatus*
 

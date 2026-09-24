@@ -3,7 +3,7 @@ id: hime-amagaeru
 name: Rana de Arroz de Okinawa
 category: amphibians
 danger: No venenosa
-months: [3, 4, 5, 6, 7]
+months: [2, 3, 4, 5, 6, 7, 8]
 ---
 Familia de las ranas de boca estrecha, género Microhyla. *Microhyla okinavensis*
 

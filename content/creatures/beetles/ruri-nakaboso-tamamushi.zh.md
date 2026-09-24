@@ -3,7 +3,7 @@ id: ruri-nakaboso-tamamushi
 name: 琉璃窄吉丁虫
 category: beetles
 group: tamamushi
-months: [6, 7, 8, 9]
+months: [5, 6, 7]
 ---
 吉丁虫科琉璃窄吉丁虫 *Coraebus niponicus* Lewis, 1894
 

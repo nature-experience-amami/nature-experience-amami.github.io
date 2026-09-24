@@ -3,7 +3,7 @@ id: nebuto-kuwagata
 name: Ciervo Volante de Raíz de Amami
 category: stag-beetles
 danger: Recolección permitida
-months: [5, 6, 7, 10, 11]
+months: [6, 7, 8, 9, 10]
 ---
 Familia de los ciervos volantes, género Aegus (ciervos volantes de raíz).
 *Aegus laevicolis subnitidus*

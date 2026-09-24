@@ -3,7 +3,7 @@ id: ueno-tsuya-doromushi
 name: Ueno's Glossy Riffle Beetle
 category: aquatic-insects
 group: doromushi
-months: [1, 2, 3, 4]
+months: [12, 1, 2]
 source: Kuromushiya "List of Japanese Aquatic Insects," Elmidae http://kuromushiya.com/mlist/mlist.html#elmidae, confirming the scientific name (nominate subspecies) and distribution (Nansei Islands: Yakushima, the Amami island group to the Okinawa island group); Nakajima, J. & Kamite, Y. (2020) A new species of the genus Urumaelmis Satô (Coleoptera, Elmidae, Macronychini) from Kyushu Island, Japan. Zootaxa, 4853(3), 421-428.
 ---
 Riffle beetle family, genus Urumaelmis. *Urumaelmis uenoi uenoi* (Nomura, 1961)

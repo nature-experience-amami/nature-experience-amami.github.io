@@ -5,6 +5,7 @@ category: beetles
 group: kabuto
 danger: 外来種(1991年奄美大島・徳之島で初確認、ヤシ・パイナップル・サトウキビの害虫)
 source: Wikipedia「サイカブト」(原産地・侵入経緯・奄美大島での確認年の記述)。沖縄県「サイカブト（タイワンカブトムシ）防除計画」(令和2年3月)。専門サイト「insects.jp」の記録(形態・分布等)。
+months: [4, 5]
 ---
 コガネムシ科カブトムシ亜科サイカブト(タイワンサイカブト) *Oryctes rhinoceros* (Linnaeus, 1758)
 

@@ -3,7 +3,7 @@ id: koseaka-amennbo
 name: Zapatero de Agua Grácil
 category: aquatic-insects
 group: amenbo
-months: [4, 5]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 source: Kuromushiya «Lista de insectos acuáticos de Japón», Gerridae http://kuromushiya.com/mlist/mlist.html#gerridae, que confirma el nombre científico y la distribución (Hokkaido, Honshu, Shikoku, Kyushu, Tsushima, islas Nansei, islas Izu); Mushinavi «Koseaka-amenbo» https://mushinavi.com/navi-insect/data-amenbo_koseaka.htm
 ---
 Familia de los zapateros de agua, género Gerris. *Gerris gracilicornis* (Horváth, 1879)

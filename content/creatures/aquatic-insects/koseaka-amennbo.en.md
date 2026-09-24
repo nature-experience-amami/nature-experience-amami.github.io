@@ -3,7 +3,7 @@ id: koseaka-amennbo
 name: Gracile Water Strider
 category: aquatic-insects
 group: amenbo
-months: [4, 5]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 source: Kuromushiya "List of Japanese Aquatic Insects," Gerridae http://kuromushiya.com/mlist/mlist.html#gerridae, confirming the scientific name and distribution (Hokkaido, Honshu, Shikoku, Kyushu, Tsushima, the Nansei Islands, the Izu Islands); Mushinavi "Koseaka-amenbo" https://mushinavi.com/navi-insect/data-amenbo_koseaka.htm
 ---
 Water strider family, genus Gerris. *Gerris gracilicornis* (Horváth, 1879)

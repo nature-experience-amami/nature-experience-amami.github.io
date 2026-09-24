@@ -3,7 +3,7 @@ id: hime-amagaeru
 name: Okinawa Rice Frog
 category: amphibians
 danger: Non-venomous
-months: [3, 4, 5, 6, 7]
+months: [2, 3, 4, 5, 6, 7, 8]
 ---
 Narrow-mouthed frog family, genus Microhyla. *Microhyla okinavensis*
 

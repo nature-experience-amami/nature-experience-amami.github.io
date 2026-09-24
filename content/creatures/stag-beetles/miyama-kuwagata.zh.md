@@ -3,7 +3,7 @@ id: miyama-kuwagata
 name: 奄美深山锹甲
 category: stag-beetles
 danger: 禁止采集(条例规定)
-months: [7, 8, 9]
+months: [8]
 ---
 锹甲科锹甲属 *Lucanus ferriei*
 

@@ -3,7 +3,7 @@ id: koseaka-amennbo
 name: 细角水黾
 category: aquatic-insects
 group: amenbo
-months: [4, 5]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 source: 虫屋(kuromushiya)「日本产水生昆虫名录」水黾科(Gerridae) http://kuromushiya.com/mlist/mlist.html#gerridae，确认学名及分布(北海道、本州、四国、九州、对马、南西诸岛、伊豆诸岛)、虫Navi「コセアカアメンボ」https://mushinavi.com/navi-insect/data-amenbo_koseaka.htm
 ---
 水黾科水黾属细角水黾 *Gerris gracilicornis* (Horváth, 1879)

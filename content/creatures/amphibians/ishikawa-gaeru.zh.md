@@ -3,7 +3,7 @@ id: ishikawa-gaeru
 name: 奄美石川蛙
 category: amphibians
 danger: 禁止捕获、转让(天然纪念物)
-months: [12, 1, 2, 3, 4, 5, 6]
+months: [11, 12, 1, 2, 3, 4]
 ---
 赤蛙科臭蛙属 *Odorrana splendida*
 

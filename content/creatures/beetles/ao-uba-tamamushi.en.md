@@ -3,7 +3,7 @@ id: ao-uba-tamamushi
 name: Amami Green Jewel Beetle
 category: beetles
 group: tamamushi
-months: [6, 7, 8]
+months: [4, 5]
 ---
 Buprestidae, Amami Green Jewel Beetle *Chalcophora japonica oshimana* Schönfeldt, 1890
 

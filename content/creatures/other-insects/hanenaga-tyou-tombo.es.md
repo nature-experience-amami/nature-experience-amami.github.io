@@ -4,7 +4,7 @@ name: Libélula Alilarga de Amami
 category: other-insects
 group: tombo
 danger: Recolección prohibida (Ley de Conservación de Especies en Peligro, Especie Silvestre Rara Nacional), Lista Roja del Ministerio de Medio Ambiente: En Peligro (EN)
-months: [5, 6, 7, 8, 9]
+months: [6, 7]
 ---
 Familia Libellulidae, Libélula Alilarga de Amami *Rhyothemis severini* Ris, 1913
 

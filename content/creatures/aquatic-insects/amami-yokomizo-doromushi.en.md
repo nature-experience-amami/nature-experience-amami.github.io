@@ -3,7 +3,7 @@ id: amami-yokomizo-doromushi
 name: Amami Sidegroove Riffle Beetle
 category: aquatic-insects
 group: doromushi
-months: [4, 5]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 source: Kamite, Y., Yoshitomi, H. & Hayashi, M. (2017) A remarkable new species of the genus Leptelmis Sharp from Amami-Ôshima, with redescription of the larva of Leptelmis gracilis Sharp (Coleoptera, Elmidae, Elminae). Elytra, Tokyo, New Series, 7(2), 395-408.
 ---
 Riffle beetle family, genus Leptelmis. *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017

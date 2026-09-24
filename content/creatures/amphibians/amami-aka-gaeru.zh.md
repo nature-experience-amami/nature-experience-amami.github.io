@@ -3,7 +3,7 @@ id: amami-aka-gaeru
 name: 奄美赤蛙
 category: amphibians
 danger: 无毒
-months: [11, 12, 1]
+months: [11, 12, 1, 2]
 ---
 赤蛙科赤蛙属 *Rana kobai*
 

@@ -3,7 +3,7 @@ id: otton-gaeru
 name: Otton Frog
 category: amphibians
 danger: Capture and transfer prohibited (Natural Monument)
-months: [5, 6, 7]
+months: [6, 7, 8, 9]
 ---
 Brown frog family, genus Babina. *Babina subaspera*
 
