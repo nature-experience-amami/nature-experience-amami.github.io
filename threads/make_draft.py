@@ -31,6 +31,7 @@ ALIAS_SOURCE = SITE_DIR / "scripts" / "generate_creatures_json.py"  # 写真フ�
 LANG_MD = re.compile(r"\.(en|es|zh)\.md$")   # 翻訳ファイルは読まない
 LINE_URL = "https://line.me/R/ti/p/@701eehfz" # 公式LINE(友だち追加)
 TIPS_FILE = Path("threads/tips.yml")
+OVERRIDES_FILE = Path("threads/overrides.yml")  # 生き物ごとの月・昼行性の上書き(Markdownより優先)
 TOPIC_TAG = "#奄美大島"
 DRAFT_LABEL = "threads-draft"
 AMAMI_LATLON = (28.38, 129.49)
@@ -144,7 +145,24 @@ def load_creatures():
         meta["photos"] = find_photos(meta["id"], meta.get("category"))
         meta["name_en"] = english_name(md)
         items.append(meta)
+    apply_overrides(items)
     return items
+
+
+def apply_overrides(items):
+    try:
+        ov = yaml.safe_load(OVERRIDES_FILE.read_text(encoding="utf-8")) or {}
+    except FileNotFoundError:
+        return
+    ids = {c["id"] for c in items}
+    for cid in ov:
+        if cid not in ids:
+            print(f"overrides.yml: 生き物ID {cid} のMarkdownが見つかりません(無視)")
+    for c in items:
+        o = ov.get(c["id"]) or {}
+        if o.get("months"):
+            c["months"] = o["months"]
+        c["diurnal"] = bool(o.get("diurnal"))
 
 
 def english_name(md):
@@ -431,9 +449,11 @@ def draft_tip(creatures, hist, weather):
 
 
 def draft_tour(creatures, hist, weather):
-    season = [c for c in creatures if c["photos"] and c.get("months") and NOW.month in c["months"]]
+    # 夜のツアーの案内なので、昼行性の印がある生き物は名前にも写真にも使わない
+    night = [c for c in creatures if c["photos"] and not c.get("diurnal")]
+    season = [c for c in night if c.get("months") and NOW.month in c["months"]]
     names = "・".join(c["name"] for c in random.sample(season, min(3, len(season))))
-    pool = season or [c for c in creatures if c["photos"]]
+    pool = season or night
     week = shown_this_week(hist)
     c = random.choice([c for c in pool if c["id"] not in week] or pool)
     post = ("奄美大島の夜の森を、ガイドと一緒に歩いてみませんか？\n"

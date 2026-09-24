@@ -1,0 +1,18 @@
+# 生き物ごとの上書き設定(サイト側のMarkdownは変更しない)
+# ここに書いた内容は、Threads投稿の下書きを作るときだけMarkdownより優先される
+# 値はオーナーの現場の感覚で決めたもの
+#
+# 書き方:
+#   生き物ID:
+#     months: [5, 6, 7]   # 見られる時期。Markdownの months の代わりに使う
+#     diurnal: true       # 昼行性の印。ツアー案内では名前にも写真にも使わない
+#                         # (生き物紹介・クイズには今まで通り出る)
+
+ruri-nakaboso-tamamushi:        # ルリナカボソタマムシ(Markdownは 6〜9月)
+  months: [5, 6, 7]
+
+hanenaga-tyou-tombo:            # ハネナガチョウトンボ(Markdownは 5〜9月)
+  months: [6, 7]
+
+amami-semadara-magusokogane:    # アマミセマダラマグソコガネ(Markdownは 9〜4月)
+  months: [10, 11, 12, 1, 2, 3, 4]
