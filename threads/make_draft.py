@@ -68,6 +68,7 @@ RULES = """
   - 資料に根拠がなければ、天気そのものを伝えるだけにする(例: 「今夜の奄美は雨の心配もなく、夜の散策日和です」)
   - 注意を書くのは、理由と注意が自然につながるときだけ。何に注意するかを具体的に書く
     (例: 「雨上がりで道がぬかるみやすいので、歩きやすい靴で」)。「足元にお気をつけて」のような曖昧な注意は書かない
+  - 上の例文は書き方の参考。そのまま使わず、今夜の実際の天気に合わせて毎回言い回しを変える
 - english: 本文の要点を短い英語1文で
 """
 
@@ -115,8 +116,18 @@ def load_creatures():
             continue
         meta["body"] = m.group(2).strip()
         meta["photos"] = find_photos(meta["id"], meta.get("category"))
+        meta["name_en"] = english_name(md)
         items.append(meta)
     return items
+
+
+def english_name(md):
+    # サイトの英語版(id.en.md)の name を英名として使う。なければ空
+    en = md.with_name(md.stem + ".en.md")
+    if not en.exists():
+        return ""
+    m = re.match(r"^---\s*\n(.*?)\n---", en.read_text(encoding="utf-8"), re.S)
+    return str(parse_front_matter(m.group(1)).get("name") or "") if m else ""
 
 
 def find_photos(cid, category=None):
@@ -209,7 +220,7 @@ def gemini(prompt):
 
 
 def creature_info(c):
-    return f"名前: {c.get('name')}\n危険度・保護: {c.get('danger', '')}\n資料:\n{c['body']}"
+    return f"名前: {c.get('name')}\n英名: {c.get('name_en') or '(資料になし)'}\n危険度・保護: {c.get('danger', '')}\n資料:\n{c['body']}"
 
 
 # ===== 投稿タイプごとの下書き作成 =====
@@ -248,7 +259,8 @@ def draft_quiz(creatures, hist, weather):
 {RULES}
 - post には生き物の名前を絶対に出さず、資料から分かるヒントを1〜2個入れる。最後に「答えはコメントで！」のように呼びかける
 - answer には正解の名前と、一言解説(100字以内)
-出力はJSON: {{"post": "...", "weather_line": "...", "english": "...", "answer": "..."}}
+- answer_en には英語の答えを1文で。形式は「Answer: 英名, 短い解説」。英名は資料にあればそれを使い、なければ一般的な英名にする
+出力はJSON: {{"post": "...", "weather_line": "...", "english": "...", "answer": "...", "answer_en": "..."}}
 
 【生き物】
 {creature_info(c)}
@@ -318,7 +330,8 @@ def create_issue(ptype, c, out, tip_index):
     lines = [f"## 投稿文（{len(text)}字）", "```text", text, "```"]
     if out.get("answer"):
         lines += ["", "## クイズの答え（数時間後に自分でコメント）", "```text",
-                  f"{out['answer'].strip()}\n詳しくはこちら→ {page_url(c)}", "```"]
+                  "\n".join(filter(None, [out["answer"].strip(), (out.get("answer_en") or "").strip(),
+                                          f"詳しくはこちら→ {page_url(c)}"])), "```"]
     lines += ["", "## 写真（長押しで保存 → Threadsに添付）"]
     lines += [f"![{c.get('name')}]({to_url(p)})" for p in photos]
     meta = {"type": ptype, "creature": c["id"], "tip": tip_index, "date": NOW.date().isoformat()}
