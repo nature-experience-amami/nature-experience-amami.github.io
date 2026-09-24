@@ -1,0 +1,42 @@
+# Threads投稿の下書きをIssueに作るだけのワークフロー
+# サイトのファイルは読むだけで、commit/pushは一切しない
+name: Threads draft
+
+on:
+  schedule:
+    - cron: "17 21 * * *"   # 毎朝 6:17 JST
+  workflow_dispatch:
+    inputs:
+      post_type:
+        description: "投稿タイプ(autoは曜日で自動)"
+        type: choice
+        options: [auto, creature, tip, quiz, tour]
+        default: auto
+
+permissions:
+  issues: write      # Issue作成のみ
+  contents: read     # ファイルは読むだけ(書き込み権限なし)
+
+concurrency:
+  group: threads-draft
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: threads/requirements.txt
+
+      - run: pip install -r threads/requirements.txt
+
+      - run: python threads/make_draft.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          POST_TYPE: ${{ inputs.post_type != 'auto' && inputs.post_type || '' }}
