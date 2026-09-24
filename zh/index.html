@@ -430,9 +430,10 @@
     const heroLink = document.getElementById('hero-photo-link');
     const heroPhotoName = document.getElementById('hero-photo-name');
     const candidates = creatures.filter(function (creature) {
-      // ナイトツアーで出会える生き物だけ: 個別ページのない種と、昼行性(夜に観察できる印のある種を除く)を外す
+      // ナイトツアーで出会える生き物だけ: 個別ページのない種、ナイトツアーでは出会えない種(night_observable: false)、
+      // 昼行性(夜に観察できる印 night_observable: true のある種を除く)を外す
       return Array.isArray(creature.photos) && creature.photos.length && creature.page_path &&
-        !(creature.activity === 'diurnal' && !creature.night_observable);
+        creature.night_observable !== false && !(creature.activity === 'diurnal' && !creature.night_observable);
     });
     if (!candidates.length) return;
 
