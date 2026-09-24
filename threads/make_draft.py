@@ -6,6 +6,7 @@ Threads投稿の下書きを作ってGitHub Issueに置くスクリプト
 - 投稿履歴は過去のIssue(ラベル threads-draft)から読み取り、同じ生き物・ネタの連続を避ける
 - Geminiの呼び出しは1日1回(ツアー案内の日は0回)
 """
+import ast
 import datetime
 import json
 import os
@@ -25,6 +26,8 @@ SITE_DIR = Path(".")                         # サイトのリポジトリ直下
 CONTENT_DIR = SITE_DIR / "content" / "creatures"
 PHOTO_ROOT = SITE_DIR / "images" / "creatures"   # 処理済み(透かし入り)写真のフォルダ
 PAGE_DIR = SITE_DIR / "creatures"            # 個別ページ creatures/カテゴリー/id.html
+ALIAS_SOURCE = SITE_DIR / "scripts" / "generate_creatures_json.py"  # 写真フォルダ名とidの対応表(読むだけ)
+LANG_MD = re.compile(r"\.(en|es|zh)\.md$")   # 翻訳ファイルは読まない
 LINE_URL = "https://line.me/R/ti/p/@701eehfz" # 公式LINE(友だち追加)
 TIPS_FILE = Path("threads/tips.yml")
 TOPIC_TAG = "#奄美大島"
@@ -52,24 +55,56 @@ RULES = """
 
 
 # ===== データ読み込み =====
+def load_photo_aliases():
+    # サイト側の MARKDOWN_ID_ALIASES をテキストとして解析するだけ(importしないので処理は走らない)
+    # {(カテゴリー, 写真フォルダ名): id} → {(カテゴリー, id): 写真フォルダ名}
+    try:
+        tree = ast.parse(ALIAS_SOURCE.read_text(encoding="utf-8"))
+        for node in tree.body:
+            if (isinstance(node, ast.Assign)
+                    and any(isinstance(t, ast.Name) and t.id == "MARKDOWN_ID_ALIASES" for t in node.targets)):
+                return {(cat, cid): folder for (cat, folder), cid in ast.literal_eval(node.value).items()}
+    except Exception as e:
+        print("写真フォルダの対応表を読めませんでした(対応表なしで続行):", e)
+    return {}
+
+
+PHOTO_ALIASES = load_photo_aliases()
+
+
+def parse_front_matter(text):
+    try:
+        return yaml.safe_load(text) or {}
+    except yaml.YAMLError:
+        # YAMLとして読めない行(「: 」を含むsourceなど)がある場合は、必要な項目だけ1行ずつ読む
+        meta = dict(re.findall(r"^(id|name|category|danger):\s*(.+?)\s*$", text, re.M))
+        m = re.search(r"^months:\s*\[(.*?)\]", text, re.M)
+        if m:
+            meta["months"] = [int(x) for x in m.group(1).split(",") if x.strip().isdigit()]
+        return meta
+
+
 def load_creatures():
     items = []
     for md in CONTENT_DIR.rglob("*.md"):
+        if LANG_MD.search(md.name):
+            continue
         m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", md.read_text(encoding="utf-8"), re.S)
         if not m:
             continue
-        meta = yaml.safe_load(m.group(1)) or {}
+        meta = parse_front_matter(m.group(1))
         if not meta.get("id"):
             continue
         meta["body"] = m.group(2).strip()
-        meta["photos"] = find_photos(meta["id"])
+        meta["photos"] = find_photos(meta["id"], meta.get("category"))
         items.append(meta)
     return items
 
 
-def find_photos(cid):
-    # Markdownのidと写真フォルダ名がズレている種(amami-付き)にも対応
-    for name in (cid, f"amami-{cid}"):
+def find_photos(cid, category=None):
+    # Markdownのidと写真フォルダ名がズレている種(サイト側の対応表・amami-付き)にも対応
+    names = [PHOTO_ALIASES.get((category, cid)), cid, f"amami-{cid}"]
+    for name in filter(None, names):
         photos = sorted(
             p for d in PHOTO_ROOT.rglob(name) if d.is_dir()
             for p in d.iterdir() if p.suffix.lower() in IMAGE_EXT

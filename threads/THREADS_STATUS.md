@@ -127,3 +127,19 @@
 - Push：`claude/connection-check-f9140f` ブランチへ（mainへのマージは未実施）
 
 （担当: Claude Code）
+
+### 2026-09-24 load_creatures() の読み込み不具合を修正
+
+- `make_draft.py` の読み込み部分を修正（サイト側のファイルは変更なし）
+  1. 翻訳ファイル（`.en.md` / `.es.md` / `.zh.md`）を読み込み対象から除外
+  2. YAMLとして読めないMarkdownは、`id` / `name` / `category` / `danger` / `months` だけを1行ずつ読むように変更（エラーで止まらない）
+  3. 写真フォルダ名とidの対応表として、サイト側 `scripts/generate_creatures_json.py` の `MARKDOWN_ID_ALIASES` を使用。`ast` でファイルの文字列を解析するだけで、importや実行はしない（読めない場合は対応表なしで続行）。従来の「amami-付き」の対応も残した
+- 修正後に `load_creatures()` を実行（Gemini・GitHub APIは呼ばない）：日本語98種のうち96種で写真が見つかった（計798枚）。ID重複なし、透かしなし・failed内の写真の混入なし、全種に個別ページあり
+  - iboimori（24枚）と ryukyu-ao-hebi（20枚）は対応表で見つかるようになった
+  - 写真が見つからないのは tobiiro-gengoro（トビイロゲンゴロウ）と toge-nezumi（アマミトゲネズミ）の2種のみ。写真フォルダがないためで、この2種は投稿の対象外になる（写真を追加すれば自動で対象になる）
+  - `danger` は57種に設定あり。YAMLで読めなかった2種（nomura-himedoromushi・ryuukyuu-munabiro-tuyadoromushi）は元々 `danger` の行がない
+- 未完了事項：mainへのマージ、Secrets登録、Actionsでのテスト実行
+- Commit SHA：（このcommit）
+- Push：`claude/connection-check-f9140f` ブランチへ（mainへのマージは未実施）
+
+（担当: Claude Code）
