@@ -69,7 +69,7 @@
 
 ### 設置
 
-- [ ] GitHub Desktopで `threads/` フォルダと `.github/workflows/threads-draft.yml` を追加し、1回だけcommit・push
+- [x] `threads/` フォルダと `.github/workflows/threads-draft.yml` をmainに追加（2026-09-24、`claude/connection-check-f9140f` ブランチをマージ）
 - [x] リポジトリの Settings → Secrets に `THREADS_GEMINI_API_KEY` を登録（株式レポート用の `GEMINI_API_KEY` と名前が重なるため別名。ワークフローで環境変数 `GEMINI_API_KEY` として `make_draft.py` に渡す）
 - [ ] （任意）Settings → Variables に `GEMINI_MODEL` を登録（株式レポートと同じモデル名）
 - [ ] Actionsタブから手動実行し、creature / tip / quiz / tour の4タイプを1回ずつテスト
@@ -152,5 +152,19 @@
 - TODOの「Secrets登録」を完了に更新
 - 未完了事項：mainへのマージ、Actionsでのテスト実行
 - Push：`claude/connection-check-f9140f` ブランチへ（mainへのマージは未実施）
+
+（担当: Claude Code）
+
+### 2026-09-24 mainへマージ
+
+- `claude/connection-check-f9140f` ブランチをmainにマージして push（fast-forward、マージ先：commit `c2274bb`）
+- マージ前にmainとの差分を確認：次の5ファイルの新規追加のみ。サイト側のファイルの変更なし、コンフリクトなし
+  - `.github/workflows/threads-draft.yml`
+  - `threads/THREADS_STATUS.md`
+  - `threads/make_draft.py`
+  - `threads/requirements.txt`
+  - `threads/tips.yml`
+- Actionsは実行していない（テストはオーナーが実施予定）
+- 未完了事項：Actionsでのテスト実行（creature / tip / quiz / tour の4タイプ）
 
 （担当: Claude Code）
