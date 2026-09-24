@@ -5,6 +5,7 @@ category: birds
 group: chidori
 danger: 捕獲・譲渡禁止(国内希少野生動植物種)
 months: [2, 3, 4, 5]
+activity: nocturnal
 ---
 チドリ目シギ科アマミヤマシギ *Scolopax mira*
 

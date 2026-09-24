@@ -5,6 +5,8 @@ category: birds
 group: taka
 danger: 観察できる生き物
 months: [9, 10]
+activity: diurnal
+night_observable: true
 ---
 タカ目タカ科アカハラダカ *Tachyspiza soloensis*(2024年の分類見直し前は *Accipiter soloensis*)
 

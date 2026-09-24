@@ -5,6 +5,7 @@ category: birds
 group: suzume
 danger: 観察できる生き物
 months: [4, 5, 6, 7, 8, 9]
+activity: diurnal
 ---
 スズメ目カササギヒタキ科サンコウチョウ属 リュウキュウサンコウチョウ *Terpsiphone atrocaudata illex*
 

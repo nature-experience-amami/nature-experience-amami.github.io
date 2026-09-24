@@ -5,6 +5,7 @@ category: beetles
 group: tamamushi
 months: [5, 6, 7]
 source: Lewis(1894)による記載(Coraebus niponicus Lewis, 1894)。専門サイト・標本販売サイトの記録(奄美大島での確認)。ナカボソタマムシ属(Coraebus)の一般的な発生時期に関する記録(夏の強い日差しの下で活発に活動する旨)。
+activity: diurnal
 ---
 タマムシ科ルリナカボソタマムシ *Coraebus niponicus* Lewis, 1894
 

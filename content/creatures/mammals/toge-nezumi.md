@@ -3,6 +3,7 @@ id: toge-nezumi
 name: アマミトゲネズミ
 category: mammals
 danger: 天然記念物
+activity: nocturnal
 ---
 ネズミ科トゲネズミ属 *Tokudaia osimensis*
 

@@ -5,6 +5,8 @@ category: birds
 group: suzume
 danger: 捕獲・譲渡禁止(天然記念物)
 months: [2, 3, 4]
+activity: diurnal
+night_observable: true
 ---
 スズメ目ヒタキ科オオトラツグミ *Zoothera dauma major*
 

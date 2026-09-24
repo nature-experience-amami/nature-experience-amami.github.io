@@ -5,6 +5,7 @@ category: beetles
 group: kabuto
 months: [5, 6, 7, 8, 9, 10, 11]
 source: Prell(1913)による記載(Eophileurus chinensis irregularis Prell, 1913)。Wikipedia「コカブト」(亜種構成・分布の確認)。専門サイト「国産カブトムシ標本写真館」「アマミコカブトムシ」の記録(体長・分布・活動時期等)。
+activity: nocturnal
 ---
 コガネムシ科カブトムシ亜科アマミコカブト *Eophileurus chinensis irregularis* Prell, 1913
 

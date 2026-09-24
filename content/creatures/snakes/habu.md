@@ -4,6 +4,7 @@ name: ハブ
 category: snakes
 danger: 猛毒・要最大限の注意
 months: [5, 6, 7, 8, 9, 10, 11]
+activity: nocturnal
 ---
 クサリヘビ科ハブ属 *Protobothrops flavoviridis*
 

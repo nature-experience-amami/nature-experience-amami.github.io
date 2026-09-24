@@ -5,6 +5,7 @@ category: snakes
 danger: 毒あり・特定動物
 danger_level: 30
 months: [5, 6, 11]
+activity: nocturnal
 ---
 コブラ科ワモンベニヘビ属(別名:リュウキュウベニヘビ) *Sinomicrurus japonicus*
 

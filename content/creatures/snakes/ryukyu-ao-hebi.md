@@ -4,6 +4,8 @@ name: リュウキュウアオヘビ
 category: snakes
 danger: 無毒
 months: [5, 6, 7, 8, 9, 10]
+activity: diurnal
+night_observable: true
 ---
 ナミヘビ科アオヘビ属 *Cycophuops semicarinatus*
 

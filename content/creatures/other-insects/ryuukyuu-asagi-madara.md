@@ -4,6 +4,8 @@ name: リュウキュウアサギマダラ
 category: other-insects
 group: tyou
 months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+activity: diurnal
+night_observable: true
 ---
 タテハチョウ科 リュウキュウアサギマダラ *Ideopsis similis* (Linnaeus, 1758)
 

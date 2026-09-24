@@ -4,6 +4,7 @@ name: オキナワチョウトンボ
 category: other-insects
 group: tombo
 months: [5, 6, 7, 8, 9, 10]
+activity: diurnal
 ---
 トンボ科 オキナワチョウトンボ *Rhyothemis variegata imperatrix* Selys, 1887
 

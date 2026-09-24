@@ -5,6 +5,7 @@ category: birds
 group: taka
 danger: 環境省レッドリスト:絶滅危惧II類(VU)
 months: [10, 11, 12, 1, 2, 3]
+activity: diurnal
 ---
 タカ目タカ科サシバ属サシバ *Butastur indicus*
 

@@ -4,6 +4,7 @@ name: マルモンコロギス
 category: other-insects
 group: tyokushi
 months: [5, 6, 7]
+activity: nocturnal
 ---
 コロギス科 マルモンコロギス *Prosopogryllacris okadai* Ichikawa, 2001
 

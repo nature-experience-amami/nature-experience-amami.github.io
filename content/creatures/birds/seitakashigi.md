@@ -5,6 +5,7 @@ category: birds
 group: chidori
 danger: 環境省レッドリスト:情報不足(DD)
 months: [3, 4, 8, 9, 10]
+activity: diurnal
 ---
 チドリ目セイタカシギ科セイタカシギ属セイタカシギ *Himantopus himantopus*
 

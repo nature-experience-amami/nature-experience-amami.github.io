@@ -5,6 +5,7 @@ category: beetles
 group: kamikiri
 months: [6, 7, 8]
 source: Gahan(1894)による記載(Eurypoda batesi Gahan, 1894)。Wikipedia「ベーツヒラタカミキリ」(分布域)。虫ナビの記録(体長・発生時期・食樹等)。
+activity: nocturnal
 ---
 カミキリムシ科ベーツヒラタカミキリ *Eurypoda batesi* Gahan, 1894
 

@@ -4,6 +4,7 @@ name: マダラコオロギ
 category: other-insects
 group: tyokushi
 months: [8, 9, 10, 11]
+activity: nocturnal
 ---
 マツムシ科 マダラコオロギ *Cardiodactylus guttulus*
 

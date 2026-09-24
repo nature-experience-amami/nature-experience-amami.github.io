@@ -4,6 +4,7 @@ name: アマミタカチホヘビ
 category: snakes
 danger: 無毒・希少
 months: [5, 6]
+activity: nocturnal
 ---
 タカチホヘビ科タカチホヘビ族 *Achalinus werneri*
 

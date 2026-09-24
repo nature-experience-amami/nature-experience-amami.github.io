@@ -5,6 +5,7 @@ category: amphibians
 danger: 無毒
 group: frog
 months: [2, 3, 4, 5, 6, 7]
+activity: nocturnal
 ---
 アマガエル科アマガエル属 *Hyla hallowellii*
 

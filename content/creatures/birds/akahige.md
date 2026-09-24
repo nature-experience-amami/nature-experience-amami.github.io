@@ -5,6 +5,7 @@ category: birds
 group: suzume
 danger: 捕獲・譲渡禁止(天然記念物)
 months: [3, 4, 5, 6]
+activity: diurnal
 ---
 スズメ目ヒタキ科Larvivora属アカヒゲ *Larvivora komadori*
 

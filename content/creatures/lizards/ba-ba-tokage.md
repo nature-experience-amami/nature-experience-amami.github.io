@@ -4,6 +4,7 @@ name: バーバートカゲ
 category: lizards
 danger: 捕獲禁止(鹿児島県希少野生動植物)
 months: [5, 6, 7, 8, 9, 10]
+activity: diurnal
 ---
 トカゲ科トカゲ属バーバートカゲ *Plestiodon barbouri*
 

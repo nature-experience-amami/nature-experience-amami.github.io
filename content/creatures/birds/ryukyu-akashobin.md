@@ -5,6 +5,7 @@ category: birds
 group: buppousou
 danger: 観察できる生き物
 months: [4, 5, 6, 7, 8, 9]
+activity: diurnal
 ---
 ブッポウソウ目カワセミ科アカショウビン属 リュウキュウアカショウビン *Halcyon coromanda bangsi*
 

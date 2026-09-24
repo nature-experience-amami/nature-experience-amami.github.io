@@ -4,6 +4,7 @@ name: イシガケチョウ
 category: other-insects
 group: tyou
 months: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+activity: diurnal
 ---
 タテハチョウ科 イシガケチョウ *Cyrestis thyodamas* Boisduval, 1836
 

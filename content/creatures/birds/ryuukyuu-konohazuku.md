@@ -5,6 +5,7 @@ category: birds
 group: fukurou
 danger: IUCNレッドリスト:準絶滅危惧(NT)
 months: [4, 5, 6, 7]
+activity: nocturnal
 ---
 フクロウ目フクロウ科コノハズク属 リュウキュウコノハズク *Otus elegans elegans*
 
