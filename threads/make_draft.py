@@ -40,12 +40,14 @@ GEMINI_MODELS = list(dict.fromkeys(
 
 # 生き物を選ぶときのカテゴリーの重み(夜に出会える主役級を多めに)。表にないカテゴリーは1
 CATEGORY_WEIGHT = {
-    "snakes": 3, "amphibians": 3, "stag-beetles": 3, "mammals": 3, "birds": 3,
+    "snakes": 4, "amphibians": 4, "stag-beetles": 3, "mammals": 3, "birds": 3,
     "lizards": 2, "aquatic-insects": 0.5,
 }
 # 同じ種を避ける期間(直近の投稿件数)。重み3のカテゴリーは種数が少ないので短め
 AVOID_RECENT = 30
 AVOID_RECENT_MAIN = 14
+# 同じ種は、最後に出た日から最低この日数をあける(投稿タイプを問わず。候補が足りなくても破らない)
+MIN_GAP_DAYS = 7
 
 # 天気の判定の目安(仮の数値。現場の感覚に合わせて変えてよい)。「今夜」は19〜23時
 HEAVY_RAIN_MM = 5      # 大雨: 今夜の1時間雨量の最大がこれ以上(mm)
@@ -289,10 +291,24 @@ def weighted_choice(pool):
     return random.choices(pool, weights=[CATEGORY_WEIGHT.get(c.get("category"), 1) for c in pool])[0]
 
 
+def shown_this_week(hist):
+    # 直近 MIN_GAP_DAYS 日以内に投稿(下書き)に出た生き物のID
+    ids = set()
+    for h in hist:
+        try:
+            if (NOW.date() - datetime.date.fromisoformat(h["date"])).days < MIN_GAP_DAYS:
+                ids.add(h.get("creature"))
+        except (KeyError, TypeError, ValueError):
+            pass
+    return ids
+
+
 def pick(pool, hist):
     # hist は新しい順
     recent = {h.get("creature") for h in hist[:AVOID_RECENT]}
     recent_main = {h.get("creature") for h in hist[:AVOID_RECENT_MAIN]}
+    week = shown_this_week(hist)
+    pool = [c for c in pool if c["id"] not in week] or pool
     fresh = [c for c in pool
              if c["id"] not in (recent_main if CATEGORY_WEIGHT.get(c.get("category"), 1) >= 3 else recent)]
     return weighted_choice(fresh or pool)
@@ -364,19 +380,31 @@ def draft_tip(creatures, hist, weather):
     conds = weather_conditions(weather)
     in_month = [i for i, t in enumerate(tips) if tip_available(t, conds)]
     in_month = in_month or list(range(len(tips)))
-    fresh = [i for i in in_month if i not in used]
-    ti = random.choice(fresh or in_month)
-    tip = tips[ti]
     by_id = {c["id"]: c for c in creatures if c["photos"]}
-    related = [by_id[cid] for cid, months in tip_creatures(tip)
-               if cid in by_id and (not months or NOW.month in months)
-               and (not tip.get("creature_season") or is_season(by_id[cid]))]
+    week = shown_this_week(hist)
+
+    def related_of(t):
+        return [by_id[cid] for cid, months in tip_creatures(t)
+                if cid in by_id and (not months or NOW.month in months)
+                and (not t.get("creature_season") or is_season(by_id[cid]))]
+
+    def blocked(i):
+        # 関係する生き物が全部1週間以内に出ている(同じ種の写真が続いてしまう)コツ
+        rel = related_of(tips[i])
+        return bool(rel) and all(c["id"] in week for c in rel)
+
+    ok = [i for i in in_month if not blocked(i)] or in_month
+    fresh = [i for i in ok if i not in used]
+    ti = random.choice(fresh or ok)
+    tip = tips[ti]
+    related = related_of(tip)
     if related:
-        c = random.choice(related)
+        c = random.choice([c for c in related if c["id"] not in week] or related)
         photo_note = ("【添える写真の生き物】(このコツに関係する生き物)\n"
                       "- コツと結びつけて紹介してよい。ただし資料の範囲で")
     else:
-        c = weighted_choice([c for c in by_id.values() if is_season(c)] or list(by_id.values()))
+        pool = [c for c in by_id.values() if is_season(c)] or list(by_id.values())
+        c = weighted_choice([c for c in pool if c["id"] not in week] or pool)
         photo_note = ("【添える写真の生き物】(コツとは関係なく、写真のためにランダムに選んだ生き物)\n"
                       "- コツと写真の生き物を結びつけない。コツの説明にこの生き物を使わない\n"
                       "- 本文の最後に「写真は○○」のように名前を簡単に紹介するだけにする")
@@ -399,7 +427,9 @@ def draft_tip(creatures, hist, weather):
 def draft_tour(creatures, hist, weather):
     season = [c for c in creatures if c["photos"] and c.get("months") and NOW.month in c["months"]]
     names = "・".join(c["name"] for c in random.sample(season, min(3, len(season))))
-    c = random.choice(season or [c for c in creatures if c["photos"]])
+    pool = season or [c for c in creatures if c["photos"]]
+    week = shown_this_week(hist)
+    c = random.choice([c for c in pool if c["id"] not in week] or pool)
     post = ("奄美大島の夜の森を、ガイドと一緒に歩いてみませんか？\n"
             + (f"今の時期は{names}などに出会えるチャンスがあります。\n" if names else "")
             + "その日の天気や季節に合わせて、生き物を探しに行きます。\n\n"
