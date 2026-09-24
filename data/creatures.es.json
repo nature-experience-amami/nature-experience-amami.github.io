@@ -7,7 +7,8 @@
     "months": [
       11,
       12,
-      1
+      1,
+      2
     ],
     "description": "Familia de las ranas pardas, género Rana. *Rana kobai*\n\nAlcanza unos 3.2-4.6 cm. Se reproduce de noviembre a enero. Vive en bosques y a lo\nlargo de ríos, desde las tierras bajas hasta las montañas. Se activa en días\nhúmedos o lluviosos, y durante la época de reproducción se reúne en pequeños\nestanques y charcas de manantial. También se ven ejemplares a lo largo de caminos\nforestales. Es delgada y de color pardo rojizo, y emite un canto agudo, «kyok-kyok».",
     "photos": [
@@ -86,16 +87,10 @@
     "category": "amphibians",
     "category_name": "Anfibios",
     "months": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      9,
-      10,
       11,
-      12
+      12,
+      1,
+      2
     ],
     "description": "Familia de las ranas pardas, género Odorrana. *Odorrana amamiensis*\n\nAlcanza unos 5.6-10.1 cm. Se reproduce de octubre a mayo. Vive alrededor de\narroyos de montaña. Es esbelta y de buena postura, y una vez que aprendes a\nreconocerla, puedes distinguirla incluso de lejos. Su coloración es rica y varía\nentre individuos. Está declarada Monumento Natural en la prefectura de Kagoshima,\npor lo que está prohibido capturarla o trasladarla, incluidos sus huevos. Cuando\nllueve, salen muchas a los caminos forestales, así que hay que conducir con cuidado.",
     "photos": [
@@ -166,13 +161,12 @@
     "category": "amphibians",
     "category_name": "Anfibios",
     "months": [
+      11,
       12,
       1,
       2,
       3,
-      4,
-      5,
-      6
+      4
     ],
     "description": "Familia de las ranas pardas, género Odorrana. *Odorrana splendida*\n\nAlcanza unos 7.4-13.7 cm. Se reproduce desde finales de febrero hasta junio\naproximadamente. Vive junto a los suaves arroyos de cabecera de las zonas\nmontañosas. Considerada la rana más hermosa de Japón, está declarada Monumento\nNatural y Especie Silvestre Rara Nacional en la prefectura de Kagoshima, por lo\nque está prohibido capturarla o trasladarla, incluidos sus huevos. En algunos\npuntos cerca de arroyos de mayor altitud se puede oír su canto al anochecer, e\nincluso en verano puede verse en ciertos lugares cuando llueve.",
     "photos": [
@@ -252,10 +246,12 @@
     "category": "amphibians",
     "category_name": "Anfibios",
     "months": [
+      2,
       3,
       4,
       5,
-      6
+      6,
+      7
     ],
     "description": "Familia de las ranitas de árbol, género Hyla. *Hyla hallowellii*\n\nAlcanza unos 3-4 cm. Se reproduce de marzo a junio. Vive en bosques de tierras\nbajas, matorrales y campos de cultivo, y pone sus huevos en arrozales y otras\naguas quietas. Se activa en días húmedos y noches lluviosas, y durante la época\nde reproducción forma grandes coros cerca de los arrozales. Se posa un poco en\nalto, como en la punta de las ramas, y aunque cante mucho es difícil de localizar.\nEs de un verde uniforme y muy hermosa. Su canto se parece al de la ranita japonesa.",
     "photos": [
@@ -282,11 +278,13 @@
     "category": "amphibians",
     "category_name": "Anfibios",
     "months": [
+      2,
       3,
       4,
       5,
       6,
-      7
+      7,
+      8
     ],
     "description": "Familia de las ranas de boca estrecha, género Microhyla. *Microhyla okinavensis*\n\nAlcanza unos 2.2-3.2 cm. Se reproduce todo el año (principalmente de marzo a\njulio). Se encuentra en una amplia variedad de hábitats, desde las tierras bajas\ncosteras hasta las montañas, incluyendo bordes de bosque, praderas y alrededores\nde viviendas. Se activa en días húmedos o lluviosos. Tiene la cabeza pequeña y\nlas patas gruesas, lo que le da una forma triangular vista desde arriba. Es la\nrana más pequeña de Japón, pero canta con una voz sorprendentemente fuerte.",
     "photos": [
@@ -305,9 +303,10 @@
     "category": "amphibians",
     "category_name": "Anfibios",
     "months": [
-      5,
       6,
-      7
+      7,
+      8,
+      9
     ],
     "description": "Familia de las ranas pardas, género Babina. *Babina subaspera*\n\nAlcanza unos 9-14 cm. Se reproduce de abril a octubre. Vive principalmente en\nzonas montañosas, pero también puede verse en tierras de cultivo y parques. Se\nactiva en días húmedos o lluviosos y suele salir a los caminos. Los machos son\nmás grandes, lo que la convierte en la rana más grande de Japón, dejando aparte\nla rana toro americana introducida. Tiene cinco dedos, con una espina afilada en\nel que corresponde al pulgar, que se cree que los machos usan al pelear entre sí\no durante el amplexo. Declarada Monumento Natural y Especie Silvestre Rara\nNacional en la prefectura de Kagoshima, está prohibido capturarla o trasladarla,\nincluidos sus huevos. Es muy grande e impresionante, y fácil de localizar cuando\nsale a un camino. Se dice que su nombre proviene de su canto.",
     "photos": [
@@ -331,13 +330,15 @@
     "category": "amphibians",
     "category_name": "Anfibios",
     "months": [
+      3,
       4,
       5,
       6,
       7,
       8,
       9,
-      10
+      10,
+      11
     ],
     "description": "Familia de las ranas arborícolas, género Buergeria. *Buergeria japonica*\n\nAlcanza unos 2.5-4 cm. Se reproduce de abril a octubre. Adaptable a hábitats que\nvan desde arroyos de montaña hasta charcos en zonas urbanizadas, es la rana que\nmás se ve en Amami Oshima. Canta con especial intensidad en días húmedos o\nlluviosos. Los machos son de un amarillo precioso, y su canto también es hermoso.",
     "photos": [
@@ -412,7 +413,8 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      7
+      7,
+      8
     ],
     "description": "Familia de los escarabajos de rabión, género Ordobrevia. *Ordobrevia amamiensis amamiensis* (Nomura, 1957)\n\nUn pequeño escarabajo acuático que se encuentra en Amami Oshima (subespecie nominal). La población de la isla de Okinawa y de la isla de Iheya se distingue\ncomo una subespecie separada, el escarabajo de rabión acanalado de Okinawa (*O. a. okinawana*), y también se conoce una población introducida en Guam. Los escarabajos de rabión viven principalmente\nen corrientes limpias, pero la ecología detallada de esta especie en concreto\nsigue siendo, en gran parte, desconocida.",
     "photos": [
@@ -474,8 +476,18 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
+      1,
+      2,
+      3,
       4,
-      5
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Familia de los escarabajos de rabión, género Leptelmis. *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017\n\nEndémica de Amami Oshima, una especie descrita tan recientemente como 2017. Su\nforma difiere de otras especies del mismo género que se encuentran en la isla\nprincipal de Japón y en Taiwán, mientras que la forma de sus genitales, entre\notros rasgos, se asemeja mucho a una especie distribuida en el sur de China,\nlo que indica un parentesco cercano. Se la considera un ejemplo de especie\nendémica relicta: se cree que su especie ancestral estuvo en su día\nampliamente distribuida por el continente eurasiático, y que tras el\naislamiento de Amami Oshima, las poblaciones emparentadas de otras regiones se\nextinguieron, quedando solo esta especie con vida. Los escarabajos de rabión\nson en su mayoría pequeños escarabajos acuáticos que viven en corrientes\nlimpias, pero la ecología detallada de esta especie en concreto sigue siendo,\nen gran parte, desconocida.",
     "photos": [
@@ -516,7 +528,17 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
+      1,
       2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
     "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia japonica* Esaki & Miyamoto, 1955\n\nUn pequeño insecto acuático de unos 1.5-2.1 mm de longitud. Se encuentra en\nHonshu (al oeste de la prefectura de Fukushima), Shikoku y Kyushu, y en las\nislas Ryukyu desde Kikaijima hasta la isla de Okinawa. Se ve habitualmente en\ncharcas en penumbra junto a pequeños arroyos y a la sombra de las rocas, donde\ncaptura pequeños insectos que caen a la superficie del agua.",
@@ -565,7 +587,18 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      2
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia iriomotensis* Miyamoto, 1964\n\nUn pequeño insecto acuático de unos 1.7-1.9 mm de longitud. Se encuentra en\nlas islas Ryukyu (desde el archipiélago de Amami hasta las islas Yaeyama) y en\nTaiwán. Se ve en charcas formadas por filtraciones junto a caminos forestales\nde montaña; investigaciones académicas han descrito un comportamiento de\napareamiento en el que el macho custodia a la hembra durante un tiempo\nprolongado.",
     "photos": [
@@ -579,7 +612,18 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      3
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia douglasi* Scott, 1874\n\nCon unos 1.5-2 mm de longitud, es uno de los zapateros de hombros anchos más\npequeños. Se encuentra en Honshu, Shikoku, Kyushu, Tsushima, las islas Ryukyu\ny las islas Daito (Minami Daito-jima), y de forma más amplia en el extranjero,\ndesde la península de Corea hasta China, el Sudeste Asiático, Taiwán y\nOceanía. Prefiere aguas en movimiento, como pequeños arrozales y arroyos, y\ncaptura pequeños insectos que caen a la superficie del agua. La familia\nincluye tanto formas sin alas que no pueden volar como formas de alas largas\nque sí pueden.",
     "photos": [
@@ -617,8 +661,18 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
+      1,
+      2,
+      3,
       4,
-      5
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Familia de los zapateros de agua, género Gerris. *Gerris gracilicornis* (Horváth, 1879)\n\nUn zapatero de agua grande, de color pardo rojizo, de unos 11-16 mm. Ampliamente distribuido en Japón, desde Hokkaido hasta Honshu, Shikoku, Kyushu y las islas Nansei, prefiere estanques, ríos y marismas, especialmente aguas más frías. Pasa el invierno en tierra como adulto y, al despertar, vuela en busca de nuevas masas de agua, por lo que suele verse en pequeños charcos a principios de primavera.",
     "photos": [
@@ -717,7 +771,7 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      5
+      4
     ],
     "description": "Familia de los escarabajos de rabión, género Sinonychus. *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa (sin registros en la propia isla de Okinawa), descrito en 2007. En\nJapón solo se conocen dos especies del género Sinonychus; la otra se\nencuentra en Kyushu. La ecología detallada de esta especie en concreto sigue\nsiendo, en gran parte, desconocida.",
     "photos": [
@@ -733,8 +787,18 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
+      1,
+      2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Familia de los zapateros de hombros anchos, género Pseudovelia (zapateros de\ncorriente). *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\nSe encuentra en las islas Ryukyu (desde Takarajima hasta la isla de Okinawa).\nEn Japón se conocen varias especies del género Pseudovelia, un grupo que vive\nen las orillas de ríos y estanques. Todavía no se ha confirmado información\nsuficiente sobre la ecología detallada de esta especie en concreto.",
     "photos": [
@@ -751,10 +815,9 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
+      12,
       1,
-      2,
-      3,
-      4
+      2
     ],
     "description": "Familia de los escarabajos de rabión, género Urumaelmis. *Urumaelmis uenoi uenoi* (Nomura, 1961)\n\nUn pequeño escarabajo acuático que se encuentra desde Yakushima hasta el\narchipiélago de Amami y el archipiélago de Okinawa (subespecie nominal). El género\nUrumaelmis también incluye una segunda especie descrita en Kyushu en 2020, con\nlo que en Japón se conocen dos especies de este género. La población de\nKuchinoshima, en las islas Tokara, se distingue como una subespecie separada (*U. u. tokarana*).\nLa ecología detallada de esta especie en concreto sigue siendo, en gran parte,\ndesconocida.",
     "photos": [
@@ -839,7 +902,6 @@
     "category": "beetles",
     "category_name": "Escarabajos",
     "months": [
-      9,
       10,
       11,
       12,
@@ -866,9 +928,8 @@
     "category": "beetles",
     "category_name": "Escarabajos",
     "months": [
-      6,
-      7,
-      8
+      4,
+      5
     ],
     "description": "Buprestidae, escarabajo joya verde de Amami *Chalcophora japonica oshimana* Schönfeldt, 1890\n\nLongitud corporal de 24 a 40mm. Subespecie, presente en los archipiélagos de Amami y Okinawa, del escarabajo joya *Chalcophora japonica*, ampliamente distribuido desde Hokkaido hasta Okinawa. Prefiere pinos muertos o debilitados, y las larvas se alimentan y crecen dentro de la madera. Los adultos se observan desde principios de verano hasta el verano.",
     "photos": [
@@ -1028,10 +1089,9 @@
     "category": "beetles",
     "category_name": "Escarabajos",
     "months": [
+      5,
       6,
-      7,
-      8,
-      9
+      7
     ],
     "description": "Buprestidae, escarabajo joya azur angosto *Coraebus niponicus* Lewis, 1894\n\nUn pequeño escarabajo joya con un brillo azur, registrado en Amami Oshima. Se sabe que los miembros del género Coraebus son más activos bajo la intensa luz solar del verano, y esta especie también se observa de junio a septiembre aproximadamente.",
     "photos": [
@@ -1557,11 +1617,8 @@
     "category": "other-insects",
     "category_name": "Insectos",
     "months": [
-      5,
       6,
-      7,
-      8,
-      9
+      7
     ],
     "description": "Familia Libellulidae, Libélula Alilarga de Amami *Rhyothemis severini* Ris, 1913\n\nUna libélula rara confirmada en Japón únicamente en Amami Oshima. Su cuerpo es negro con un brillo verde intenso, y sus alas transparentes presentan manchas de color añil. Prefiere estanques con abundante vegetación emergente, donde los machos patrullan cerca de la superficie del agua esperando a las hembras. Debido a que su hábitat y su población son extremadamente limitados, está designada como Especie Silvestre Rara Nacional según la Ley de Conservación de Especies en Peligro de Japón, y su captura está prohibida.",
     "photos": [
@@ -2122,8 +2179,7 @@
     "category_name": "Escarabajos ciervo",
     "months": [
       7,
-      8,
-      9
+      8
     ],
     "description": "Familia de los ciervos volantes, género Dorcus (subespecie del ciervo volante\nplano). *Dorcus titanusu elegans*\n\nUna subespecie del ciervo volante plano que se encuentra en las islas Amami. Es\nel ciervo volante más numeroso de Amami Oshima. Una especie popular que alcanza\nun gran tamaño en cautividad. Se reúne en la savia de los cítricos, el machilus,\nel castaño de Japón y el mallotus. En estado silvestre, la mayoría de los\nejemplares miden menos de 50 mm, y a partir de 65 mm ya se considera grande. El\nobjetivo: superar los 70 mm.",
     "photos": [
@@ -2168,7 +2224,6 @@
     "category": "stag-beetles",
     "category_name": "Escarabajos ciervo",
     "months": [
-      9,
       10
     ],
     "description": "Familia de los ciervos volantes, género Neolucanus (ciervos volantes de ala\nredonda). *Neolucanus protogenetivus*\n\nActivo desde alrededor de septiembre hasta octubre, puede observarse en lo\nprofundo de bosques densos con grandes ejemplares de Castanopsis sieboldii. Su\nrecolección está prohibida por las ordenanzas de protección de vida silvestre\nrara de cinco municipios de Amami Oshima (incluidas sus islas periféricas) y\ntres localidades de Tokunoshima. Para prevenir la caza furtiva, se han\ninstalado cámaras en las montañas, y durante la temporada patrullas de\nvigilancia de insectos recorren la zona. Nota: solo tomar fotografías no supone\nningún problema, pero si es necesario entrar en una zona que requiere permiso,\nhay que solicitarlo debidamente.",
@@ -2196,9 +2251,7 @@
     "category": "stag-beetles",
     "category_name": "Escarabajos ciervo",
     "months": [
-      7,
-      8,
-      9
+      8
     ],
     "description": "Familia de los ciervos volantes, género Lucanus (ciervos volantes verdaderos).\n*Lucanus ferriei*\n\nActivo desde alrededor de julio hasta septiembre. Especie rara que solo se\nencuentra en Amami Oshima. Su recolección está prohibida por ordenanza. Vive en\nbosque primario por encima de unos 300 m de altitud. Es nocturno; se pueden ver\nmachos esperando a las hembras en lo alto de los árboles, pero son difíciles de\nlocalizar a simple vista. También se los ve a menudo cerca de la parte superior\nde los postes eléctricos. Acuden a la savia de los árboles, a trampas de fruta\ny a las luces, pero está prohibido recolectarlos.",
     "photos": [
@@ -2220,11 +2273,11 @@
     "category": "stag-beetles",
     "category_name": "Escarabajos ciervo",
     "months": [
-      5,
       6,
       7,
-      10,
-      11
+      8,
+      9,
+      10
     ],
     "description": "Familia de los ciervos volantes, género Aegus (ciervos volantes de raíz).\n*Aegus laevicolis subnitidus*\n\nUna subespecie del ciervo volante de raíz que se encuentra en las islas Amami,\ny la de mayor tamaño entre las subespecies japonesas de este ciervo volante.\nActivo desde alrededor de mayo hasta octubre. A veces acude a la savia del\nmachilus, el castaño de Japón, el mallotus y la albizia. En estado silvestre la\nmayoría de los ejemplares miden unos 20 mm, y 28 mm ya se considera grande. El\nobjetivo: superar los 30 mm.",
     "photos": [
@@ -2245,8 +2298,7 @@
     "category_name": "Escarabajos ciervo",
     "months": [
       7,
-      8,
-      9
+      8
     ],
     "description": "Familia de los ciervos volantes, género Prosopocoilus (ciervos volantes\nserrados); subespecie de Amami. *Prosopocoilus dissimilis*\n\nActivo desde mediados de junio hasta principios de septiembre. Entre los\nciervos volantes serrados de Japón, los de Amami Oshima son especialmente\ngrandes, con mandíbulas largas, gruesas e imponentes. Acude con frecuencia a\nlos cítricos, el mallotus, el machilus, el castaño de Japón, los frutos\nmaduros de pandano, trampas de plátano y las farolas. La mayoría de los\nejemplares miden unos 60 mm, y a partir de 75 mm ya se considera grande. El\nobjetivo: alcanzar los 80 mm.",
     "photos": [
@@ -2279,11 +2331,8 @@
     "category": "stag-beetles",
     "category_name": "Escarabajos ciervo",
     "months": [
-      5,
-      6,
       7,
-      8,
-      9
+      8
     ],
     "description": "Familia de los ciervos volantes, género Rhaetulus (ciervos volantes cérvidos).\n*Rhaetulus recticrnis*\n\nActivo desde alrededor de mayo hasta septiembre, y se observa con más facilidad\nhacia agosto. Su recolección está prohibida por ordenanza. Las zonas de\naltitud relativamente mayor ofrecen más posibilidades de encontrarlo. Suele\nencontrarse en ramas delgadas de Castanopsis sieboldii o de cítricos. En los\nejemplares grandes, las mandíbulas se curvan fuertemente, como la cornamenta de\nun ciervo. Ten cuidado de no confundirlo con un ejemplar pequeño del ciervo\nvolante menor o del ciervo volante serrado y llevártelo por error (nunca te\nlleves un ejemplar que no puedas identificar tú mismo).",
     "photos": [
@@ -2312,8 +2361,11 @@
     "category": "stag-beetles",
     "category_name": "Escarabajos ciervo",
     "months": [
+      6,
+      7,
       8,
-      9
+      9,
+      10
     ],
     "description": "Familia de los ciervos volantes, subfamilia Aesalinae (ciervos volantes\ndiminutos), género Nigidius (ciervos volantes cornudos). *Nigidius lewisi*\n\nCon el cuerpo brillante por completo y unas mandíbulas de forma peculiar, pasa\ntodo el año dentro de madera podrida. Puede encontrarse durante todo el año en\ntroncos caídos de roble y castaño de Japón, y bajo la hojarasca. Distinguir\nmachos de hembras es difícil. En Amami tiene una distribución muy localizada y\nrara vez acude a la savia de los árboles, lo que lo hace difícil de encontrar.",
     "photos": [
@@ -2329,7 +2381,10 @@
     "category": "stag-beetles",
     "category_name": "Escarabajos ciervo",
     "months": [
-      10
+      7,
+      9,
+      10,
+      11
     ],
     "description": "Familia de los ciervos volantes, subgénero Dorcus (ciervos volantes planos).\n*Dorcus metacostatus*\n\nActivo desde finales de abril hasta alrededor de octubre, con un pico en julio.\nUna especie rara endémica de Japón, que solo se encuentra en las islas Amami,\ncon ocho surcos bien marcados en los élitros. Acude con frecuencia a los\ncítricos, el machilus, el mallotus, el castaño de Japón, trampas de plátano y\nlas farolas. A partir de 60 mm ya se considera grande: el objetivo es superar\nlos 70 mm.",
     "photos": [

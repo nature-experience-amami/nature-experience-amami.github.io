@@ -7,7 +7,8 @@
     "months": [
       11,
       12,
-      1
+      1,
+      2
     ],
     "description": "Brown frog family, genus Rana. *Rana kobai*\n\nGrows to about 3.2-4.6 cm. Breeds from November through January. Lives in forests\nand along rivers from lowlands to mountains. Becomes active on humid or rainy days,\nand gathers around small ponds and spring-fed pools during the breeding season.\nIndividuals can also be seen along forest roads. Slender-bodied and reddish brown,\nit calls with a sharp \"kyok-kyok\" note.",
     "photos": [
@@ -86,16 +87,10 @@
     "category": "amphibians",
     "category_name": "Amphibians",
     "months": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      9,
-      10,
       11,
-      12
+      12,
+      1,
+      2
     ],
     "description": "Brown frog family, genus Odorrana. *Odorrana amamiensis*\n\nGrows to about 5.6-10.1 cm. Breeds from October through May. Lives around\nmountain streams. Slender with good posture, and once you get an eye for it, it\ncan be recognized even from a distance. Its coloring is rich and varies between\nindividuals. Designated a Natural Monument in Kagoshima Prefecture, so capturing\nor transferring it — including its eggs — is prohibited. Many come out onto\nforest roads when it rains, so drive carefully.",
     "photos": [
@@ -166,13 +161,12 @@
     "category": "amphibians",
     "category_name": "Amphibians",
     "months": [
+      11,
       12,
       1,
       2,
       3,
-      4,
-      5,
-      6
+      4
     ],
     "description": "Brown frog family, genus Odorrana. *Odorrana splendida*\n\nGrows to about 7.4-13.7 cm. Breeds from late February through around June. Lives\nalong the gentle headwater streams of mountain areas. Said to be Japan's most\nbeautiful frog, it is designated a Natural Monument and a Nationally Rare Wild\nSpecies in Kagoshima Prefecture, and capturing or transferring it — including\nits eggs — is prohibited. In some spots near higher-elevation streams, its call\ncan be heard after dark, and at certain locations it can even be seen in summer\nwhen it rains.",
     "photos": [
@@ -252,10 +246,12 @@
     "category": "amphibians",
     "category_name": "Amphibians",
     "months": [
+      2,
       3,
       4,
       5,
-      6
+      6,
+      7
     ],
     "description": "Tree frog family, genus Hyla. *Hyla hallowellii*\n\nGrows to about 3-4 cm. Breeds from March through June. Lives in lowland forests,\nthickets, and farmland, and lays eggs in rice paddies and other still water. It\nbecomes active on humid days and rainy nights, and during the breeding season\nforms large chorus gatherings near rice paddies. It perches a little way up, such\nas on the tips of branches, and even when calling loudly is hard to spot. Solid\ngreen and very beautiful. Its call resembles that of the Japanese tree frog.",
     "photos": [
@@ -282,11 +278,13 @@
     "category": "amphibians",
     "category_name": "Amphibians",
     "months": [
+      2,
       3,
       4,
       5,
       6,
-      7
+      7,
+      8
     ],
     "description": "Narrow-mouthed frog family, genus Microhyla. *Microhyla okinavensis*\n\nGrows to about 2.2-3.2 cm. Breeds year-round (mainly March through July). Found\nin a wide range of habitats from coastal lowlands to mountains, including forest\nedges, grasslands, and around houses. Becomes active on humid or rainy days. Its\nhead is small and its legs are thick, giving it a triangular shape when viewed\nfrom above. Japan's smallest frog, but it calls with a surprisingly loud voice.",
     "photos": [
@@ -305,9 +303,10 @@
     "category": "amphibians",
     "category_name": "Amphibians",
     "months": [
-      5,
       6,
-      7
+      7,
+      8,
+      9
     ],
     "description": "Brown frog family, genus Babina. *Babina subaspera*\n\nGrows to about 9-14 cm. Breeds from April through October. Lives mainly in\nmountainous areas, but can also be seen in farmland and parks. It becomes active\non humid or rainy days and often comes out onto roads. Males grow larger, making\nthis Japan's biggest frog aside from the introduced American bullfrog. It has\nfive toes with a sharp spur on what corresponds to the thumb, thought to be used\nby males when fighting each other or during amplexus. Designated a Natural\nMonument and a Nationally Rare Wild Species in Kagoshima Prefecture, capturing\nor transferring it — including its eggs — is prohibited. It is very large and\nimpressive, and easy to spot when it comes out onto a road. Its name is said to\ncome from its call.",
     "photos": [
@@ -331,13 +330,15 @@
     "category": "amphibians",
     "category_name": "Amphibians",
     "months": [
+      3,
       4,
       5,
       6,
       7,
       8,
       9,
-      10
+      10,
+      11
     ],
     "description": "Tree frog family, genus Buergeria. *Buergeria japonica*\n\nGrows to about 2.5-4 cm. Breeds from April through October. Adaptable to\nhabitats ranging from mountain streams to puddles in built-up areas, it is the\nmost commonly seen frog on Amami Oshima. It calls especially vigorously on\nhumid or rainy days. Males are a beautiful yellow, and their call is beautiful\ntoo.",
     "photos": [
@@ -412,7 +413,8 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      7
+      7,
+      8
     ],
     "description": "Riffle beetle family, genus Ordobrevia. *Ordobrevia amamiensis amamiensis* (Nomura, 1957)\n\nA small aquatic beetle found on Amami Oshima (nominate subspecies). The population on Okinawa Island and Iheya Island is distinguished as a separate subspecies, the Okinawa groove riffle beetle (*O. a. okinawana*), and an introduced population is also known from Guam. Riffle beetles mainly live in\nclean streams, but the detailed ecology of this species itself is still\nlargely unknown.",
     "photos": [
@@ -474,8 +476,18 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
+      1,
+      2,
+      3,
       4,
-      5
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Riffle beetle family, genus Leptelmis. *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017\n\nEndemic to Amami Oshima, a species described as recently as 2017. Its form\ndiffers from other species in the same genus found on mainland Japan and\nTaiwan, while the shape of its genitalia, among other features, closely\nresembles a species distributed in southern China, indicating a close\nrelationship. It is regarded as an example of a relict endemic species: its\nancestral species is thought to have once been widespread across the Eurasian\ncontinent, and after Amami Oshima became isolated, related populations\nelsewhere died out, leaving only this species surviving. Riffle beetles are\nmainly small aquatic beetles living in clean streams, but the detailed ecology\nof this species itself is still largely unknown.",
     "photos": [
@@ -516,7 +528,17 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
+      1,
       2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
     "description": "Broad-shouldered water strider family, genus Microvelia. *Microvelia japonica*\nEsaki & Miyamoto, 1955\n\nA small aquatic insect about 1.5-2.1mm long. Found on Honshu (west of\nFukushima Prefecture), Shikoku, and Kyushu, and in the Ryukyu Islands from\nKikaijima to Okinawa Island. Commonly seen in dim pools beside small streams\nand in the shade of rocks, where it preys on small insects that fall onto the\nwater's surface.",
@@ -565,7 +587,18 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      2
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Broad-shouldered water strider family, genus Microvelia.\n*Microvelia iriomotensis* Miyamoto, 1964\n\nA small aquatic insect about 1.7-1.9mm long. Found in the Ryukyu Islands\n(from the Amami group to the Yaeyama Islands) and Taiwan. Seen in pools formed\nby seepage beside mountain forest roads; a mating behavior in which males\nguard females for extended periods has been reported in academic research.",
     "photos": [
@@ -579,7 +612,18 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      3
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Broad-shouldered water strider family, genus Microvelia. *Microvelia douglasi*\nScott, 1874\n\nAbout 1.5-2mm long, one of the smallest of the broad-shouldered water\nstriders. Found on Honshu, Shikoku, Kyushu, Tsushima, the Ryukyu Islands, and\nthe Daito Islands (Minami Daito-jima), and more widely abroad from the Korean\nPeninsula through China, Southeast Asia, Taiwan, and Oceania. It prefers\nflowing water such as small rice paddies and streams, and preys on small\ninsects that fall onto the water's surface. The family includes both wingless\nforms that cannot fly and long-winged forms that can.",
     "photos": [
@@ -617,8 +661,18 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
+      1,
+      2,
+      3,
       4,
-      5
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Water strider family, genus Gerris. *Gerris gracilicornis* (Horváth, 1879)\n\nA large, reddish-brown water strider about 11-16mm long. Widely distributed across Japan, from Hokkaido through Honshu, Shikoku, Kyushu, and the Nansei Islands, it favors ponds, rivers, and marshes, especially cooler bodies of water. It overwinters as an adult on land and, after waking, flies off to find new water bodies, so it is often seen at small puddles in early spring.",
     "photos": [
@@ -717,7 +771,7 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      5
+      4
     ],
     "description": "Riffle beetle family, genus Sinonychus. *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\nA small aquatic beetle found in the Amami and Okinawa island groups (no record\nfrom Okinawa Island itself), described in 2007. Only two species of the genus\nSinonychus are known in Japan; the other is found in Kyushu. The detailed\necology of this species itself is still largely unknown.",
     "photos": [
@@ -733,8 +787,18 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
+      1,
+      2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "description": "Broad-shouldered water strider family, genus Pseudovelia (stream water\nstriders). *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\nFound in the Ryukyu Islands (from Takarajima to Okinawa Island). Several\nspecies of the genus Pseudovelia are known in Japan, a group that lives along\nthe banks of rivers and ponds. Sufficient information on the detailed ecology\nof this species itself has not yet been confirmed.",
     "photos": [
@@ -751,10 +815,9 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
+      12,
       1,
-      2,
-      3,
-      4
+      2
     ],
     "description": "Riffle beetle family, genus Urumaelmis. *Urumaelmis uenoi uenoi* (Nomura, 1961)\n\nA small aquatic beetle found from Yakushima through the Amami\nisland group to the Okinawa island group (nominate subspecies). The genus Urumaelmis also includes a\nsecond species newly described from Kyushu in 2020, bringing the number of\nknown species in Japan to two. The population on Kuchinoshima in the Tokara\nIslands is distinguished as a separate subspecies (*U. u. tokarana*). The detailed ecology of\nthis species itself is still largely unknown.",
     "photos": [
@@ -839,7 +902,6 @@
     "category": "beetles",
     "category_name": "Beetles",
     "months": [
-      9,
       10,
       11,
       12,
@@ -866,9 +928,8 @@
     "category": "beetles",
     "category_name": "Beetles",
     "months": [
-      6,
-      7,
-      8
+      4,
+      5
     ],
     "description": "Buprestidae, Amami Green Jewel Beetle *Chalcophora japonica oshimana* Schönfeldt, 1890\n\nBody length 24–40mm. A subspecies, found in the Amami and Okinawa island groups, of the jewel beetle *Chalcophora japonica*, which is widely distributed from Hokkaido to Okinawa. It favors dead or weakened pine trees, and the larvae feed and grow inside the wood. Adults are seen from early summer into summer.",
     "photos": [
@@ -1028,10 +1089,9 @@
     "category": "beetles",
     "category_name": "Beetles",
     "months": [
+      5,
       6,
-      7,
-      8,
-      9
+      7
     ],
     "description": "Buprestidae, Azure Narrow Jewel Beetle *Coraebus niponicus* Lewis, 1894\n\nA small jewel beetle with an azure sheen, recorded on Amami Oshima. Members of the genus Coraebus are known to be most active during the strong sunlight of summer, and this species too is seen from around June to September.",
     "photos": [
@@ -1557,11 +1617,8 @@
     "category": "other-insects",
     "category_name": "Insects",
     "months": [
-      5,
       6,
-      7,
-      8,
-      9
+      7
     ],
     "description": "Skimmer family, Amami Longwing Dragonfly *Rhyothemis severini* Ris, 1913\n\nA rare dragonfly confirmed in Japan only on Amami Oshima. Its body is black with a deep green sheen, and its clear wings carry indigo markings. It favors ponds thick with emergent vegetation, where males patrol low over the water waiting for females. Because its habitat and population are extremely limited, it is designated a Nationally Rare Species of Wild Fauna and Flora under Japan's Act on Conservation of Endangered Species, and capture is prohibited.",
     "photos": [
@@ -2122,8 +2179,7 @@
     "category_name": "Stag Beetles",
     "months": [
       7,
-      8,
-      9
+      8
     ],
     "description": "Stag beetle family, genus Dorcus (a subspecies of the flat stag beetle).\n*Dorcus titanusu elegans*\n\nA subspecies of the flat stag beetle found in the Amami Islands. It is the most\nnumerous stag beetle on Amami Oshima. A popular species that grows quite large\nin captivity. It gathers at the sap of citrus trees, machilus, chinquapin, and\nmallotus trees. In the wild most individuals are under 50mm, and anything over\n65mm is quite large. Aim for 70mm+.",
     "photos": [
@@ -2168,7 +2224,6 @@
     "category": "stag-beetles",
     "category_name": "Stag Beetles",
     "months": [
-      9,
       10
     ],
     "description": "Stag beetle family, genus Neolucanus (roundwing stag beetles).\n*Neolucanus protogenetivus*\n\nActive from around September through October, it can be observed deep in\nforests dense with giant Castanopsis sieboldii trees. Collecting is prohibited\nunder the rare wildlife protection ordinances of five municipalities on Amami\nOshima (including its outlying islands) and three towns on Tokunoshima. To\nprevent poaching, cameras have been set up in the mountains, and insect patrols\nmake rounds during the season. Note: simply taking photographs is fine, but if\nyou need to enter an area that requires a permit, be sure to apply properly.",
@@ -2196,9 +2251,7 @@
     "category": "stag-beetles",
     "category_name": "Stag Beetles",
     "months": [
-      7,
-      8,
-      9
+      8
     ],
     "description": "Stag beetle family, genus Lucanus (true stag beetles). *Lucanus ferriei*\n\nActive from around July through September. A rare species found only on Amami\nOshima. Collecting is prohibited by ordinance. Lives in primeval forest above\nabout 300m elevation. Nocturnal; males can be seen waiting for females high in\ntrees, but they are hard to spot visually. They are also often seen near the\ntops of utility poles. They come to tree sap, fruit traps, and lights, but\ncollecting them is prohibited.",
     "photos": [
@@ -2220,11 +2273,11 @@
     "category": "stag-beetles",
     "category_name": "Stag Beetles",
     "months": [
-      5,
       6,
       7,
-      10,
-      11
+      8,
+      9,
+      10
     ],
     "description": "Stag beetle family, genus Aegus (root stag beetles). *Aegus laevicolis subnitidus*\n\nA subspecies of the root stag beetle found in the Amami Islands, and the\nlargest-growing of Japan's root stag beetle subspecies. Active from around May\nthrough October. It sometimes comes to the sap of machilus, chinquapin,\nmallotus, and Albizia trees. In the wild most individuals are around 20mm, and\n28mm is considered large. Aim for 30mm+.",
     "photos": [
@@ -2245,8 +2298,7 @@
     "category_name": "Stag Beetles",
     "months": [
       7,
-      8,
-      9
+      8
     ],
     "description": "Stag beetle family, genus Prosopocoilus (sawtooth stag beetles); Amami\nsubspecies. *Prosopocoilus dissimilis*\n\nActive from mid-June through early September. Among Japan's sawtooth stag\nbeetles, those from Amami Oshima are especially large, with long, thick,\nimposing mandibles. It frequently flies to citrus trees, mallotus, machilus,\nchinquapin, ripe Pandanus fruit and banana traps, and streetlights. Most\nindividuals are around 60mm, and anything over 75mm is large. Aim for 80mm.",
     "photos": [
@@ -2279,11 +2331,8 @@
     "category": "stag-beetles",
     "category_name": "Stag Beetles",
     "months": [
-      5,
-      6,
       7,
-      8,
-      9
+      8
     ],
     "description": "Stag beetle family, genus Rhaetulus (deer stag beetles). *Rhaetulus recticrnis*\n\nActive from around May through September, most easily seen around August.\nCollecting is prohibited by ordinance. Areas of relatively higher elevation\noffer a better chance of finding it. It is often found on thin branches of\nCastanopsis sieboldii or citrus trees. In large individuals the mandibles curve\nstrongly, like a deer's antlers. Take care not to mistake it for a small\nindividual of the lesser stag beetle or sawtooth stag beetle and take it home\nby accident (never take home an individual you can't identify yourself).",
     "photos": [
@@ -2312,8 +2361,11 @@
     "category": "stag-beetles",
     "category_name": "Stag Beetles",
     "months": [
+      6,
+      7,
       8,
-      9
+      9,
+      10
     ],
     "description": "Stag beetle family, subfamily Aesalinae (minute stag beetles), genus Nigidius\n(horned gourd stag beetles). *Nigidius lewisi*\n\nGlossy all over the body, with distinctively shaped mandibles, it spends the\nwhole year inside rotten wood. It can be found year-round in fallen oak and\nchinquapin logs and under leaf litter. Telling males and females apart is\ndifficult. On Amami it has a very localized distribution and rarely comes to\ntree sap, making it hard to find.",
     "photos": [
@@ -2329,7 +2381,10 @@
     "category": "stag-beetles",
     "category_name": "Stag Beetles",
     "months": [
-      10
+      7,
+      9,
+      10,
+      11
     ],
     "description": "Stag beetle family, subgenus Dorcus (flat stag beetles). *Dorcus metacostatus*\n\nActive from late April through around October, peaking in July. A rare species\nendemic to Japan, found only in the Amami Islands, with eight distinct ridges\non its elytra. It frequently flies to citrus trees, machilus, mallotus,\nchinquapin, banana traps, and streetlights. Anything over 60mm is large — aim\nfor 70mm+.",
     "photos": [
