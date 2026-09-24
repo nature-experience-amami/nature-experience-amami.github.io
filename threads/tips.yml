@@ -1,6 +1,14 @@
 # ガイドの観察のコツ(ネタ帳)
 # type: 安全 / マナー・保護 / 楽しみ方
-# creature: 添える写真の生き物ID(空欄なら季節の生き物からランダム)
+# creature: 添える写真の生き物ID。コツに関係する生き物を指定する
+#   - 1種だけなら  creature: habu
+#   - 複数なら候補の中から1つ選ぶ:
+#       creature:
+#         - ruri-kakesu
+#         - id: ryuukyuu-konohazuku
+#           months: [4, 5, 6, 7]   # この月だけ候補にする(省略すると通年)
+#   - 空欄、または候補が全部対象外の月は、季節の生き物からランダム
+#     (その場合はコツと結びつけず「写真は○○」と紹介するだけ)
 
 - text: 奄美の夜はハブやヒメハブなどの毒蛇に要注意
   type: 安全
@@ -8,7 +16,10 @@
 
 - text: 生き物の鳴き声や方向に敏感になろう
   type: 楽しみ方
-  creature:
+  creature:   # カエル類は繁殖期の月を確認してから追加する
+    - ryuukyuu-konohazuku
+    - taiwan-kutsuwamushi
+    - kenaga-nezumi
 
 - text: 特別保護区内や天然記念物など、触ってはいけない場所や生き物がいます
   type: マナー・保護
@@ -41,3 +52,22 @@
 - text: どんな所にどんな生き物がいるのか、周りの環境をよく観察してみよう
   type: 楽しみ方
   creature:
+
+- text: ナイトツアーで聞こえる鳴き声は、リュウキュウコノハズクやタイワンクツワムシ、ケナガネズミ。カエル類は繁殖期によく鳴きます
+  type: 楽しみ方
+  creature:   # カエル類は繁殖期の月を確認してから追加する
+    - ryuukyuu-konohazuku
+    - taiwan-kutsuwamushi
+    - kenaga-nezumi
+
+- text: 昼間に生き物を探すなら鳥の声に注目。リュウキュウアカショウビン、アカヒゲ、リュウキュウサンコウチョウ、ルリカケスなど
+  type: 楽しみ方
+  creature:
+    - ryukyu-akashobin
+    - akahige
+    - sankoutyou
+    - ruri-kakesu
+
+- text: オオトラツグミは早朝と夕方に鳴きます
+  type: 楽しみ方
+  creature: oo-tora-tsugumi

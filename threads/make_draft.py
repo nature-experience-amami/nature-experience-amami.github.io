@@ -63,6 +63,8 @@ RULES = """
 - 採集や持ち帰り、生き物に触る・追い回すことを勧める表現は使わない
 - 本文(post)は日本語で250字以内。絵文字は2つまで。ハッシュタグとURLは付けない
 - weather_line: 天気情報があれば、今夜の天気についての一言(40字以内)。天気情報がなければ空文字
+  - 天気は渡したデータ(今夜の気温・湿度・降水確率、昨日の降水量)にあることだけを書く。
+    「雨の降らない日が続いている」「週末は晴れ」など、データにないことを推測で補わない
   - 資料に天気との関係が書いてある場合だけ、今夜の天気がその生き物の見つけやすさにどう関係するかを書く
     (例: 資料に「雨の日に活発」→「雨上がりの今夜は出てきてくれそうです」)
   - 資料に根拠がなければ、天気そのものを伝えるだけにする(例: 「今夜の奄美は雨の心配もなく、夜の散策日和です」)
@@ -270,6 +272,20 @@ def draft_quiz(creatures, hist, weather):
     return c, out, None
 
 
+def tip_creatures(tip):
+    # creature は「id」1つ、またはリスト(要素は「id」か「{id, months}」) → [(id, 月のリスト or None)]
+    items = tip.get("creature") or []
+    if not isinstance(items, list):
+        items = [items]
+    out = []
+    for it in items:
+        if isinstance(it, dict):
+            out.append((str(it.get("id") or ""), it.get("months")))
+        elif it:
+            out.append((str(it), None))
+    return out
+
+
 def draft_tip(creatures, hist, weather):
     tips = yaml.safe_load(TIPS_FILE.read_text(encoding="utf-8"))
     used = {h.get("tip") for h in hist}
@@ -277,8 +293,17 @@ def draft_tip(creatures, hist, weather):
     ti = random.choice(fresh or list(range(len(tips))))
     tip = tips[ti]
     by_id = {c["id"]: c for c in creatures if c["photos"]}
-    c = by_id.get(tip.get("creature")) or weighted_choice(
-        [c for c in by_id.values() if is_season(c)] or list(by_id.values()))
+    related = [by_id[cid] for cid, months in tip_creatures(tip)
+               if cid in by_id and (not months or NOW.month in months)]
+    if related:
+        c = random.choice(related)
+        photo_note = ("【添える写真の生き物】(このコツに関係する生き物)\n"
+                      "- コツと結びつけて紹介してよい。ただし資料の範囲で")
+    else:
+        c = weighted_choice([c for c in by_id.values() if is_season(c)] or list(by_id.values()))
+        photo_note = ("【添える写真の生き物】(コツとは関係なく、写真のためにランダムに選んだ生き物)\n"
+                      "- コツと写真の生き物を結びつけない。コツの説明にこの生き物を使わない\n"
+                      "- 本文の最後に「写真は○○」のように名前を簡単に紹介するだけにする")
     out = gemini(f"""ガイドが書いた「観察のコツ」を、Threads投稿に整えてください。
 {RULES}
 - ガイドの言葉の意味を変えない。ガイドが書いていない知識を足さない(生き物資料は写真の説明に使う程度)
@@ -287,7 +312,7 @@ def draft_tip(creatures, hist, weather):
 【ガイドのコツ】({tip.get('type', '')})
 {tip['text']}
 
-【添える写真の生き物】
+{photo_note}
 {creature_info(c)}
 
 【今夜の天気】
