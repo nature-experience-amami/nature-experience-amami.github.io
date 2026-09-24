@@ -45,6 +45,8 @@
     font-weight:700; letter-spacing:.06em; line-height:1.4; white-space:nowrap;
   }
   .hero-photo-scientific{ font-family:'Space Mono', monospace; font-size:.9em; font-style:italic; font-weight:400; letter-spacing:.02em; }
+  .hero-photo-name{ display:grid; grid-template-columns:auto auto; justify-content:start; row-gap:.15rem; }
+  .hero-photo-label{ grid-column:1 / -1; font-size:.8em; font-weight:400; letter-spacing:.08em; opacity:.8; }
 
   .hero::after{
     content:""; position:absolute; inset:0; z-index:4; pointer-events:none;
@@ -566,6 +568,7 @@
         heroPhoto.src = photoData.photo;
         heroPhoto.alt = '奄美大島の' + photoData.creature.name;
         heroPhotoName.replaceChildren();
+        heroPhotoName.append(Object.assign(document.createElement('span'), { className: 'hero-photo-label', textContent: '奄美で見られる生き物' }));
         const commonName = document.createElement('span');
         commonName.textContent = photoData.creature.name;
         heroPhotoName.append(commonName);
