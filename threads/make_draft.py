@@ -167,14 +167,16 @@ def apply_overrides(items):
             c["months"] = o["months"]
         # 昼行性: Markdownの activity: diurnal(night_observable: true の種は夜も観察できるので除く)。
         # overrides.yml の種ごとの diurnal があればそれを優先、activity がない種だけカテゴリーの既定値
-        c["night_observable"] = str(c.get("night_observable", "")).lower() == "true"
+        night = str(c.get("night_observable", "")).lower()
+        c["night_observable"] = night == "true"
         if "diurnal" in o_sp:
             c["diurnal"] = bool(o_sp["diurnal"])
         elif c.get("activity"):
             c["diurnal"] = c["activity"] == "diurnal" and not c["night_observable"]
         else:
             c["diurnal"] = bool(o_cat.get("diurnal"))
-        c["tour_exclude"] = bool(o.get("tour_exclude"))
+        # night_observable: false(ナイトツアーでは出会えない種)もツアー案内には使わない
+        c["tour_exclude"] = bool(o.get("tour_exclude")) or night == "false"
 
 
 def english_name(md):
