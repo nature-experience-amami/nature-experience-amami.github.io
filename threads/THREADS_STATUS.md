@@ -70,7 +70,7 @@
 ### 設置
 
 - [ ] GitHub Desktopで `threads/` フォルダと `.github/workflows/threads-draft.yml` を追加し、1回だけcommit・push
-- [ ] リポジトリの Settings → Secrets に `GEMINI_API_KEY` を登録
+- [x] リポジトリの Settings → Secrets に `THREADS_GEMINI_API_KEY` を登録（株式レポート用の `GEMINI_API_KEY` と名前が重なるため別名。ワークフローで環境変数 `GEMINI_API_KEY` として `make_draft.py` に渡す）
 - [ ] （任意）Settings → Variables に `GEMINI_MODEL` を登録（株式レポートと同じモデル名）
 - [ ] Actionsタブから手動実行し、creature / tip / quiz / tour の4タイプを1回ずつテスト
 - [ ] 下書きの文章・写真・リンクが正しいか確認し、必要ならプロンプトを調整
@@ -140,6 +140,17 @@
   - `danger` は57種に設定あり。YAMLで読めなかった2種（nomura-himedoromushi・ryuukyuu-munabiro-tuyadoromushi）は元々 `danger` の行がない
 - 未完了事項：mainへのマージ、Secrets登録、Actionsでのテスト実行
 - Commit SHA：（このcommit）
+- Push：`claude/connection-check-f9140f` ブランチへ（mainへのマージは未実施）
+
+（担当: Claude Code）
+
+### 2026-09-24 GeminiのSecret名を THREADS_GEMINI_API_KEY に変更
+
+- 既存のSecret `GEMINI_API_KEY`（株式レポート用）と名前が重なるため、Threads用のキーは `THREADS_GEMINI_API_KEY` という名前で登録された（登録済み）
+- `.github/workflows/threads-draft.yml` の `GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}` を `GEMINI_API_KEY: ${{ secrets.THREADS_GEMINI_API_KEY }}` に変更
+  - 左側の `GEMINI_API_KEY` は `make_draft.py` が読む環境変数名なのでそのまま。`make_draft.py` は変更なし
+- TODOの「Secrets登録」を完了に更新
+- 未完了事項：mainへのマージ、Actionsでのテスト実行
 - Push：`claude/connection-check-f9140f` ブランチへ（mainへのマージは未実施）
 
 （担当: Claude Code）

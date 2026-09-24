@@ -36,7 +36,7 @@ jobs:
 
       - run: python threads/make_draft.py
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.THREADS_GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           POST_TYPE: ${{ inputs.post_type != 'auto' && inputs.post_type || '' }}
