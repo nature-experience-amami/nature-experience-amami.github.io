@@ -41,8 +41,11 @@ GEMINI_MODELS = list(dict.fromkeys(
 # 生き物を選ぶときのカテゴリーの重み(夜に出会える主役級を多めに)。表にないカテゴリーは1
 CATEGORY_WEIGHT = {
     "snakes": 3, "amphibians": 3, "stag-beetles": 3, "mammals": 3, "birds": 3,
-    "lizards": 2,
+    "lizards": 2, "aquatic-insects": 0.5,
 }
+# 同じ種を避ける期間(直近の投稿件数)。重み3のカテゴリーは種数が少ないので短め
+AVOID_RECENT = 30
+AVOID_RECENT_MAIN = 14
 
 # 0=月 … 6=日
 ROTATION = {0: "creature", 1: "tip", 2: "quiz", 3: "creature", 4: "tip", 5: "creature", 6: "tour"}
@@ -214,15 +217,18 @@ def weighted_choice(pool):
     return random.choices(pool, weights=[CATEGORY_WEIGHT.get(c.get("category"), 1) for c in pool])[0]
 
 
-def pick(pool, used):
-    fresh = [c for c in pool if c["id"] not in used]
+def pick(pool, hist):
+    # hist は新しい順
+    recent = {h.get("creature") for h in hist[:AVOID_RECENT]}
+    recent_main = {h.get("creature") for h in hist[:AVOID_RECENT_MAIN]}
+    fresh = [c for c in pool
+             if c["id"] not in (recent_main if CATEGORY_WEIGHT.get(c.get("category"), 1) >= 3 else recent)]
     return weighted_choice(fresh or pool)
 
 
 def draft_creature(creatures, hist, weather):
-    used = {h.get("creature") for h in hist}
     pool = [c for c in creatures if c["photos"] and is_season(c)] or [c for c in creatures if c["photos"]]
-    c = pick(pool, used)
+    c = pick(pool, hist)
     out = gemini(f"""以下の生き物を紹介するThreads投稿を作ってください。
 {RULES}
 出力はJSON: {{"post": "...", "weather_line": "...", "english": "..."}}
@@ -236,9 +242,8 @@ def draft_creature(creatures, hist, weather):
 
 
 def draft_quiz(creatures, hist, weather):
-    used = {h.get("creature") for h in hist}
     pool = [c for c in creatures if c["photos"] and is_season(c)] or [c for c in creatures if c["photos"]]
-    c = pick(pool, used)
+    c = pick(pool, hist)
     out = gemini(f"""以下の生き物の写真を使った「この生き物の名前は？」クイズのThreads投稿を作ってください。
 {RULES}
 - post には生き物の名前を絶対に出さず、資料から分かるヒントを1〜2個入れる。最後に「答えはコメントで！」のように呼びかける
