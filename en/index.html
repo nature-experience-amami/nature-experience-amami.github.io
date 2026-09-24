@@ -472,8 +472,24 @@
       );
     }
 
+    // カテゴリーの重み(Threads投稿の下書きと同じ)。ヘビ・両生類・クワガタなどの主役級を多めに、種数の多い水生昆虫は少なめに
+    const CATEGORY_WEIGHT = { 'snakes': 4, 'amphibians': 4, 'stag-beetles': 3, 'mammals': 3, 'birds': 3, 'lizards': 2, 'aquatic-insects': 0.5 };
+    function weightOf(creature) {
+      return CATEGORY_WEIGHT[creature.category] || 1;
+    }
+    const totalWeight = candidates.reduce(function (sum, c) { return sum + weightOf(c); }, 0);
+
+    function chooseCreature() {
+      let r = Math.random() * totalWeight;
+      for (let i = 0; i < candidates.length; i++) {
+        r -= weightOf(candidates[i]);
+        if (r < 0) return candidates[i];
+      }
+      return candidates[candidates.length - 1];
+    }
+
     function choosePhoto() {
-      const creature = candidates[Math.floor(Math.random() * candidates.length)];
+      const creature = chooseCreature();
       const photo = creature.photos[Math.floor(Math.random() * creature.photos.length)];
       return { creature: creature, photo: photo };
     }
