@@ -437,3 +437,11 @@
   - 7月（候補41種）：両生類23.1%・クワガタ22.3%・ヘビ16.7%・水生昆虫12.0%・哺乳類9.3%・甲虫6.5%・その他昆虫5.9%・鳥4.2%
 
 （担当: Claude Code）
+
+### 2026-09-24 サイト側Markdownへの観察月の反映（3段階の1段階目）
+
+- `overrides.yml` の月（オーナーの現場の感覚）を、サイト側の `content/creatures/` の45種の `months` 行に反映（commit `eb9b456`、日本語版45・翻訳版84ファイル）。本文は変更なし
+- `make_draft.py`・`overrides.yml` は今回は変更なし。反映後も `overrides.yml` の月は残っているため、Threadsの動作は変わらない（3段階目で、Markdownと同じ値になった月の上書きを整理する予定）
+- サイト側の記録は `PROJECT_STATUS_updated.md` に追記
+
+（担当: Claude Code）
