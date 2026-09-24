@@ -67,7 +67,7 @@ def scan(lang):
                 "category_name": category_name,
                 "months": frontmatter.get("months") or months_from_text(description) or sorted(months),
                 "activity": ja_frontmatter.get("activity", ""),
-                "night_observable": ja_frontmatter.get("night_observable", False),
+                "night_observable": ja_frontmatter.get("night_observable"),
                 "description": description,
                 "photos": photos,
                 "page_path": page_path,

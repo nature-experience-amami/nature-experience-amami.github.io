@@ -138,10 +138,11 @@ def scan():
                     "category": category_dir.name,
                     "category_name": category_name,
                     "months": frontmatter.get("months") or months_from_text(description) or sorted(months),
-                    # 活動時間帯(nocturnal / diurnal / crepuscular、空欄は不明)と、
-                    # 昼行性でもナイトツアーで観察できる種の印。トップページの写真選びに使う
+                    # 活動時間帯(nocturnal / diurnal / crepuscular、空欄は不明)と、ナイトツアーでの観察可否
+                    # (true=昼行性でも夜に観察できる / false=ナイトツアーでは出会えない / null=未記入)。
+                    # トップページの写真選びに使う
                     "activity": frontmatter.get("activity", ""),
-                    "night_observable": frontmatter.get("night_observable", False),
+                    "night_observable": frontmatter.get("night_observable"),
                     "description": description,
                     "photos": photos,
                     "page_path": (
