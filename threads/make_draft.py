@@ -14,6 +14,7 @@ import random
 import re
 import sys
 import time
+from collections import Counter
 from pathlib import Path
 from urllib.parse import quote
 
@@ -188,18 +189,23 @@ def gh_headers():
             "Accept": "application/vnd.github+json"}
 
 
-def recent_history(n=30):
-    r = requests.get(
-        f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/issues",
-        params={"labels": DRAFT_LABEL, "state": "all", "per_page": n},
-        headers=gh_headers(), timeout=30)
-    r.raise_for_status()
+def recent_history(n=365):
+    # 新しい順。種・コツの重複チェックは直近30件、写真の使い回しチェックは直近365件(約1年)を見る
     hist = []
-    for issue in r.json():
-        m = re.search(r"<!-- meta: (.*?) -->", issue.get("body") or "")
-        if m:
-            hist.append(json.loads(m.group(1)))
-    return hist
+    for page in range(1, (n + 99) // 100 + 1):
+        r = requests.get(
+            f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/issues",
+            params={"labels": DRAFT_LABEL, "state": "all", "per_page": 100, "page": page},
+            headers=gh_headers(), timeout=30)
+        r.raise_for_status()
+        issues = r.json()
+        for issue in issues:
+            m = re.search(r"<!-- meta: (.*?) -->", issue.get("body") or "")
+            if m:
+                hist.append(json.loads(m.group(1)))
+        if len(issues) < 100:
+            break
+    return hist[:n]
 
 
 # ===== 天気 =====
@@ -455,9 +461,15 @@ def build_text(ptype, c, out):
     return text
 
 
-def create_issue(ptype, c, out, tip_index):
+def pick_photos(c, hist, k=3):
+    # その種で過去に使った回数が少ない写真から選ぶ(同じ回数ならランダム)。全部使い切ったら一巡して繰り返す
+    used = Counter(name for h in hist if h.get("creature") == c["id"] for name in h.get("photos") or [])
+    return sorted(c["photos"], key=lambda p: (used[p.name], random.random()))[:k]
+
+
+def create_issue(ptype, c, out, tip_index, hist):
     text = build_text(ptype, c, out)
-    photos = random.sample(c["photos"], min(3, len(c["photos"])))
+    photos = pick_photos(c, hist)
     lines = [f"## 投稿文（{len(text)}字）", "```text", text, "```"]
     if out.get("answer"):
         lines += ["", "## クイズの答え（数時間後に自分でコメント）", "```text",
@@ -465,7 +477,8 @@ def create_issue(ptype, c, out, tip_index):
                                           f"詳しくはこちら→ {page_url(c)}"])), "```"]
     lines += ["", "## 写真（長押しで保存 → Threadsに添付）"]
     lines += [f"![{c.get('name')}]({to_url(p)})" for p in photos]
-    meta = {"type": ptype, "creature": c["id"], "tip": tip_index, "date": NOW.date().isoformat()}
+    meta = {"type": ptype, "creature": c["id"], "tip": tip_index, "date": NOW.date().isoformat(),
+            "photos": [p.name for p in photos]}
     lines += ["", f"<!-- meta: {json.dumps(meta, ensure_ascii=False)} -->"]
 
     title = f"{NOW:%m/%d} {TYPE_LABEL[ptype]}：{c.get('name')}"
@@ -485,8 +498,8 @@ def main():
     hist = recent_history()
     weather = tonight_weather() if ptype != "tour" else None
     maker = {"creature": draft_creature, "quiz": draft_quiz, "tip": draft_tip, "tour": draft_tour}[ptype]
-    c, out, tip_index = maker(creatures, hist, weather)
-    create_issue(ptype, c, out, tip_index)
+    c, out, tip_index = maker(creatures, hist[:30], weather)
+    create_issue(ptype, c, out, tip_index, hist)
 
 
 if __name__ == "__main__":
