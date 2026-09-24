@@ -49,7 +49,7 @@ def read_creature_content(md_path: Path):
         if len(parts) == 3:
             body = parts[2]
     values = {}
-    for key in ("name", "months"):
+    for key in ("name", "months", "activity", "night_observable"):
         m = re.search(rf"^{key}:\s*(.+)$", text, re.MULTILINE)
         if not m:
             continue
@@ -59,6 +59,8 @@ def read_creature_content(md_path: Path):
                 values[key] = [int(item.strip()) for item in value[1:-1].split(",") if item.strip()]
             except ValueError:
                 continue
+        elif key == "night_observable":
+            values[key] = value.lower() == "true"
         else:
             values[key] = value
     return values, body.strip()
@@ -136,6 +138,10 @@ def scan():
                     "category": category_dir.name,
                     "category_name": category_name,
                     "months": frontmatter.get("months") or months_from_text(description) or sorted(months),
+                    # 活動時間帯(nocturnal / diurnal / crepuscular、空欄は不明)と、
+                    # 昼行性でもナイトツアーで観察できる種の印。トップページの写真選びに使う
+                    "activity": frontmatter.get("activity", ""),
+                    "night_observable": frontmatter.get("night_observable", False),
                     "description": description,
                     "photos": photos,
                     "page_path": (

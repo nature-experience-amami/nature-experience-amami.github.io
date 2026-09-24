@@ -56,6 +56,8 @@ def scan(lang):
             page_path = f"creatures/{category_dir.name}/{markdown_id}.html"
 
             frontmatter, description = read_creature_content(translated_path)
+            # activity / night_observable は日本語版Markdownにだけ書くので、そちらから読む
+            ja_frontmatter, _ = read_creature_content(CONTENT_DIR / category_dir.name / f"{markdown_id}.md")
             name = frontmatter.get("name") or markdown_id
             category_name = category_names.get(category_dir.name, category_dir.name)
             creatures.append({
@@ -64,6 +66,8 @@ def scan(lang):
                 "category": category_dir.name,
                 "category_name": category_name,
                 "months": frontmatter.get("months") or months_from_text(description) or sorted(months),
+                "activity": ja_frontmatter.get("activity", ""),
+                "night_observable": ja_frontmatter.get("night_observable", False),
                 "description": description,
                 "photos": photos,
                 "page_path": page_path,
