@@ -10,6 +10,8 @@
       1,
       2
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Brown frog family, genus Rana. *Rana kobai*\n\nGrows to about 3.2-4.6 cm. Breeds from November through January. Lives in forests\nand along rivers from lowlands to mountains. Becomes active on humid or rainy days,\nand gathers around small ponds and spring-fed pools during the breeding season.\nIndividuals can also be seen along forest roads. Slender-bodied and reddish brown,\nit calls with a sharp \"kyok-kyok\" note.",
     "photos": [
       "../images/creatures/amphibians/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
@@ -39,6 +41,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Tree frog family (Rhacophoridae), genus Zhangixalus. *Zhangixalus amamiensis*\n\nGrows to about 4.5-7.7 cm. Breeds from late December through around May. Found\nfrom lowlands to mountains, in forests around ponds, rice paddies, and other still\nwater. It calls vigorously on humid or rainy days and lays white, foam-covered egg\nmasses on branches overhead or in streamside vegetation. Even when calling loudly,\nit is very hard to spot. Larger than Hallowell's tree frog, which makes the two\neasier to tell apart.",
     "photos": [
       "../images/creatures/amphibians/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg",
@@ -92,6 +96,8 @@
       1,
       2
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Brown frog family, genus Odorrana. *Odorrana amamiensis*\n\nGrows to about 5.6-10.1 cm. Breeds from October through May. Lives around\nmountain streams. Slender with good posture, and once you get an eye for it, it\ncan be recognized even from a distance. Its coloring is rich and varies between\nindividuals. Designated a Natural Monument in Kagoshima Prefecture, so capturing\nor transferring it — including its eggs — is prohibited. Many come out onto\nforest roads when it rains, so drive carefully.",
     "photos": [
       "../images/creatures/amphibians/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg",
@@ -126,6 +132,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Newt family (Salamandridae), genus Echinotriton. *Echinotriton raffaellii*\n\nGrows to about 14-20 cm in total length. Breeds from around January through\nApril. Endemic to Amami Oshima, Uke-jima, and Tokunoshima, it lives around\nforests and farmland. It becomes active on warm winter days, and during the\nbreeding season lays eggs under fallen leaves near water. It has a rugged,\nblackish-brown body, with orange tints on its rib-tip projections and the ends\nof its limbs.",
     "photos": [
       "../images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
@@ -168,6 +176,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Brown frog family, genus Odorrana. *Odorrana splendida*\n\nGrows to about 7.4-13.7 cm. Breeds from late February through around June. Lives\nalong the gentle headwater streams of mountain areas. Said to be Japan's most\nbeautiful frog, it is designated a Natural Monument and a Nationally Rare Wild\nSpecies in Kagoshima Prefecture, and capturing or transferring it — including\nits eggs — is prohibited. In some spots near higher-elevation streams, its call\ncan be heard after dark, and at certain locations it can even be seen in summer\nwhen it rains.",
     "photos": [
       "../images/creatures/amphibians/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
@@ -232,6 +242,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Newt family, genus Cynops. *Cynops ensicauda ensicauda*\n\nMales reach about 14 cm and females about 18 cm in total length. Found on Amami\nOshima, Uke-jima, Kakeromajima, Yoro-jima, and other nearby islands, it breeds\nin ponds, rice paddies,\nand gentle stretches of streams. After September most individuals leave the\nwater, and around December, during the breeding season, large numbers can be\nobserved at the water's edge. It has a black body with yellow or orange spots,\nand individual variation is considerable. Okinawa is home to the related\nOkinawa sword-tailed newt.",
     "photos": [
       "../images/creatures/amphibians/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
@@ -253,6 +265,8 @@
       6,
       7
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Tree frog family, genus Hyla. *Hyla hallowellii*\n\nGrows to about 3-4 cm. Breeds from March through June. Lives in lowland forests,\nthickets, and farmland, and lays eggs in rice paddies and other still water. It\nbecomes active on humid days and rainy nights, and during the breeding season\nforms large chorus gatherings near rice paddies. It perches a little way up, such\nas on the tips of branches, and even when calling loudly is hard to spot. Solid\ngreen and very beautiful. Its call resembles that of the Japanese tree frog.",
     "photos": [
       "../images/creatures/amphibians/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
@@ -286,6 +300,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Narrow-mouthed frog family, genus Microhyla. *Microhyla okinavensis*\n\nGrows to about 2.2-3.2 cm. Breeds year-round (mainly March through July). Found\nin a wide range of habitats from coastal lowlands to mountains, including forest\nedges, grasslands, and around houses. Becomes active on humid or rainy days. Its\nhead is small and its legs are thick, giving it a triangular shape when viewed\nfrom above. Japan's smallest frog, but it calls with a surprisingly loud voice.",
     "photos": [
       "../images/creatures/amphibians/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
@@ -308,6 +324,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Brown frog family, genus Babina. *Babina subaspera*\n\nGrows to about 9-14 cm. Breeds from April through October. Lives mainly in\nmountainous areas, but can also be seen in farmland and parks. It becomes active\non humid or rainy days and often comes out onto roads. Males grow larger, making\nthis Japan's biggest frog aside from the introduced American bullfrog. It has\nfive toes with a sharp spur on what corresponds to the thumb, thought to be used\nby males when fighting each other or during amplexus. Designated a Natural\nMonument and a Nationally Rare Wild Species in Kagoshima Prefecture, capturing\nor transferring it — including its eggs — is prohibited. It is very large and\nimpressive, and easy to spot when it comes out onto a road. Its name is said to\ncome from its call.",
     "photos": [
       "../images/creatures/amphibians/otton-gaeru/otton-gaeru_000001_20250228_22.jpg",
@@ -340,6 +358,8 @@
       10,
       11
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Tree frog family, genus Buergeria. *Buergeria japonica*\n\nGrows to about 2.5-4 cm. Breeds from April through October. Adaptable to\nhabitats ranging from mountain streams to puddles in built-up areas, it is the\nmost commonly seen frog on Amami Oshima. It calls especially vigorously on\nhumid or rainy days. Males are a beautiful yellow, and their call is beautiful\ntoo.",
     "photos": [
       "../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
@@ -363,6 +383,8 @@
       5,
       7
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Riffle beetle family, genus Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960\n\nA small aquatic beetle found in the Amami and Okinawa island groups and Guam.\nRiffle beetles live mainly in clean streams; both larvae and adults spend their\nlives in the water, growing to about 5mm at most, and the family is watched as\nan indicator of clean rivers. The detailed ecology of this species itself is\nstill largely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
@@ -380,6 +402,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Riffle beetle family, genus Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\nAn endemic species found only on Amami Oshima, described in 2005. The genus\nDryopomorphus also includes a widespread relative found on Honshu, Shikoku,\nand Kyushu along with a smaller species, plus another species endemic to the\nOsumi Islands. Riffle beetles are mainly small aquatic beetles living in clean\nstreams, but the detailed ecology of this species itself is still largely\nunknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg",
@@ -399,6 +423,8 @@
       9,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Pygmy water boatman family, genus Micronecta. *Micronecta japonica* Chen, 1960\n\nA tiny aquatic true bug about 1mm long. Endemic to Japan, it is found in the Nansei Islands (Amami Oshima and Tokunoshima). Several related species are known within the same genus, including the more widespread Micronecta guttata, found from Hokkaido to Kyushu. It normally burrows into sand or fallen leaves, and swims away quickly when startled.",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
@@ -416,6 +442,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Riffle beetle family, genus Ordobrevia. *Ordobrevia amamiensis amamiensis* (Nomura, 1957)\n\nA small aquatic beetle found on Amami Oshima (nominate subspecies). The population on Okinawa Island and Iheya Island is distinguished as a separate subspecies, the Okinawa groove riffle beetle (*O. a. okinawana*), and an introduced population is also known from Guam. Riffle beetles mainly live in\nclean streams, but the detailed ecology of this species itself is still\nlargely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
@@ -430,6 +458,8 @@
     "months": [
       2
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Broad-shouldered water strider family, genus Xiphovelia. *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\nA small broad-shouldered water strider found across the Nansei Islands, on Amami Oshima, Tokunoshima, and Okinawa Island. The closely related species Xiphovelia japonica favors gravel and bedrock along the shorelines of forest-ringed valley ponds, and has been confirmed to overwinter as eggs on floating plant debris or shoreline gravel, but the specific ecology of this species itself is still poorly understood. It should also be noted that the closely related Xiphovelia japonica is listed as Vulnerable (VU) on the Ministry of the Environment's Red List, whereas that designation concerns a different species and should not be confused with this one; this species itself is not listed on the Red List.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
@@ -448,6 +478,8 @@
     "months": [
       3
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Minute moss beetle family, genus Ochthebius. *Ochthebius amami* Yoshitomi & M.Satô, 2001\n\nA tiny aquatic beetle described as a new species from an individual collected by chance on Amami Oshima in spring 1997, belonging to the minute moss beetle family (a different family from the \"gamushi\" water scavenger beetles despite the similar Japanese name). About 1.9-2.3mm long. Found on Amami Oshima and Okinawa Island, it lives in relatively open sections of mountain streams, though it is not very abundant. Habitat degradation from river development and bank reinforcement work is a concern, and it was newly listed as Near Threatened (NT) in the 2010 revision of the Ministry of the Environment's Red List.",
     "photos": [
       "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
@@ -464,6 +496,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Water scavenger beetle family, genus Laccobius. *Laccobius satoi* Gentili, 1989\n\nA small water scavenger beetle endemic to Japan, found in Amami Oshima and Tokunoshima. Several closely related species exist within the genus Laccobius in Japan, including L. fragilis and L. nakanei, and telling them apart requires examining the genitalia. Detailed records of its body length and ecology are scarce, and much remains unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
@@ -489,6 +523,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Riffle beetle family, genus Leptelmis. *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017\n\nEndemic to Amami Oshima, a species described as recently as 2017. Its form\ndiffers from other species in the same genus found on mainland Japan and\nTaiwan, while the shape of its genitalia, among other features, closely\nresembles a species distributed in southern China, indicating a close\nrelationship. It is regarded as an example of a relict endemic species: its\nancestral species is thought to have once been widespread across the Eurasian\ncontinent, and after Amami Oshima became isolated, related populations\nelsewhere died out, leaving only this species surviving. Riffle beetles are\nmainly small aquatic beetles living in clean streams, but the detailed ecology\nof this species itself is still largely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000001_20260425_10.jpg",
@@ -513,6 +549,8 @@
     "months": [
       2
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Toad bug family, genus Nerthra. *Nerthra macrothorax* (Montrouzier, 1855)\n\nThe only species of toad bug family found in Japan, about 1cm long, with a broad, flattened body. It has no ocelli and is distinguished by its thick, sickle-shaped front legs. Its Japanese name, Ashibuto-memizumushi, literally means \"thick-legged water bug,\" but despite that name it does not live underwater in ponds; rather, it is a semi-terrestrial ambush predator active at night on sandy beaches (from the shoreline to the coastal forest), preying on pill bugs and woodlice, and overwintering as an adult. It is widely distributed from southern Kyushu through the Nansei Islands to the Ogasawara Islands, and is not endemic to Amami Oshima alone.",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000001_20260204_20.jpg",
@@ -541,6 +579,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Broad-shouldered water strider family, genus Microvelia. *Microvelia japonica*\nEsaki & Miyamoto, 1955\n\nA small aquatic insect about 1.5-2.1mm long. Found on Honshu (west of\nFukushima Prefecture), Shikoku, and Kyushu, and in the Ryukyu Islands from\nKikaijima to Okinawa Island. Commonly seen in dim pools beside small streams\nand in the shade of rocks, where it preys on small insects that fall onto the\nwater's surface.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg",
@@ -559,6 +599,8 @@
     "months": [
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Pygmy backswimmer family, genus Heterotrephes. *Heterotrephes admorsus* Esaki & Miyamoto, 1959\n\nThe only species of the pygmy backswimmer family found in Japan, with a small, hemispherical body about 2.5-3mm long. Like the water boatman-relative backswimmers, it swims upside down. Known only from Amami Oshima and Tokunoshima, it is endemic to the Amami Islands, and lives in slow-flowing rivers, in spots where plant roots hang down from the bank into the water. It is listed as Vulnerable (VU) on the Ministry of the Environment's insect Red List.",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000001_20250914_13.jpg",
@@ -574,6 +616,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Diving beetle family, genus Allopachria. *Allopachria bimaculata* (M.Satô, 1972)\n\nA tiny diving beetle said to bear two spots on its elytra, as its species name (meaning \"two-spotted\") suggests. It is said to be distinguished from closely related species by its smaller body and the incomplete microreticulation on its head. It is found across the Nansei Islands, from the Tokara Islands through the Amami island group to Okinawa Island, and is listed as Near Threatened (NT) on the Ministry of the Environment's insect Red List. Primary sources on its detailed ecology and morphology are scarce.",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000001_20250408_13.jpg",
@@ -600,6 +644,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Broad-shouldered water strider family, genus Microvelia.\n*Microvelia iriomotensis* Miyamoto, 1964\n\nA small aquatic insect about 1.7-1.9mm long. Found in the Ryukyu Islands\n(from the Amami group to the Yaeyama Islands) and Taiwan. Seen in pools formed\nby seepage beside mountain forest roads; a mating behavior in which males\nguard females for extended periods has been reported in academic research.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
@@ -625,6 +671,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Broad-shouldered water strider family, genus Microvelia. *Microvelia douglasi*\nScott, 1874\n\nAbout 1.5-2mm long, one of the smallest of the broad-shouldered water\nstriders. Found on Honshu, Shikoku, Kyushu, Tsushima, the Ryukyu Islands, and\nthe Daito Islands (Minami Daito-jima), and more widely abroad from the Korean\nPeninsula through China, Southeast Asia, Taiwan, and Oceania. It prefers\nflowing water such as small rice paddies and streams, and preys on small\ninsects that fall onto the water's surface. The family includes both wingless\nforms that cannot fly and long-winged forms that can.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg",
@@ -646,6 +694,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Diving beetle family, genus Cybister. *Cybister tripunctatus orientalis*\nGschwendtner, 1931\n\nGrows to about 24-29mm. Found on Honshu, Shikoku, Kyushu, the Ryukyu Islands,\nand the Ogasawara Islands, and abroad in China, the Korean Peninsula, and\nTaiwan. Elongate-oval and somewhat flattened, with a strongly glossy back\nranging from green to brownish black; a yellow rim along the edge of the\nelytra is the key point for telling it apart from the tawny diving beetle. It\nlives in ponds and marshes rich in aquatic plants, rice paddies and nearby\npuddles, fallow fields, and slow-moving channels. Since the 1960s it has\ndeclined sharply on Honshu and further south due to pesticide use and field\nconsolidation, and is listed as Vulnerable on the Ministry of the\nEnvironment's Red List, but it is still relatively commonly seen in the\nRyukyu Islands. It closely resembles the tawny diving beetle in shape and\ncoloring, making the two difficult to tell apart from photographs alone.",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
@@ -674,6 +724,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Water strider family, genus Gerris. *Gerris gracilicornis* (Horváth, 1879)\n\nA large, reddish-brown water strider about 11-16mm long. Widely distributed across Japan, from Hokkaido through Honshu, Shikoku, Kyushu, and the Nansei Islands, it favors ponds, rivers, and marshes, especially cooler bodies of water. It overwinters as an adult on land and, after waking, flies off to find new water bodies, so it is often seen at small puddles in early spring.",
     "photos": [
       "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
@@ -691,6 +743,8 @@
       5,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Riffle beetle family, genus Zaitzevia. *Zaitzevia elongata* Nomura, 1962\n\nA small aquatic beetle found in the Amami and Okinawa island groups. Eight\nspecies of the genus Zaitzevia are known in Japan, with different species\ndistributed from Honshu to the Yaeyama Islands. Riffle beetles mainly live in\nclean streams, but the detailed ecology of this species itself is still\nlargely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg",
@@ -709,6 +763,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Riffle beetle family, genus Stenelmis. *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\nA small aquatic beetle found in the Amami and Okinawa island groups. It was\noriginally treated as the sole species of its own genus, but a 2021 molecular\nphylogenetic study (Kobayashi et al., 2021) placed it in the genus Stenelmis.\nThe genus name (Nomuraelmis) and the Japanese common name were coined in\n1964 by Dr. Masataka Satô, and are thought to honor Dr. Nomura, who helped\npioneer riffle beetle research in Japan during that same era.\nThe detailed ecology of this species itself is still largely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg",
@@ -735,6 +791,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Diving beetle family, genus Hydaticus. *Hydaticus vittatus* (Fabricius, 1775)\n\nGrows to about 11-14mm. A southern-type diving beetle found in the Ryukyu\nIslands south of Yakushima, and abroad in Taiwan, China, and Southeast Asia.\nLives in still water such as ponds and rice paddies rich in aquatic plants.\nIn addition to habitat decline, many diving beetles, including this species,\nhave recently been found being sold for what appears to be the pet trade, so\nin January 2023 it was designated, along with other diving beetles, a\nSpecified Second-Class Nationally Rare Wild Species. This designation only\nregulates capture and transfer for the purpose of sale or distribution;\ncapturing it for observation is not restricted. It closely resembles a\nrelated species of the same genus distributed west of Honshu, but the two\nare easy to tell apart since their ranges do not overlap.",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
@@ -755,6 +813,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Long-toed water beetle family (Dryopidae), genus Elmomorphus.\n*Elmomorphus amamiensis* Nomura, 1959\n\nA small aquatic beetle recorded on Amami Oshima and Okinoerabujima. It was\nformerly treated as a Ryukyu-island subspecies of a mainland species, but in\n2014 a study using COI gene sequencing and morphological comparison found a\nmajor genetic divergence at the species level between the two, and it was\nelevated to full species status. It is now generally accepted as a distinct\nspecies. The Dryopidae are a family closely related to the riffle beetles\n(Elmidae) and likewise live in clean streams. The detailed ecology of this\nspecies itself is still largely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg",
@@ -773,6 +833,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Riffle beetle family, genus Sinonychus. *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\nA small aquatic beetle found in the Amami and Okinawa island groups (no record\nfrom Okinawa Island itself), described in 2007. Only two species of the genus\nSinonychus are known in Japan; the other is found in Kyushu. The detailed\necology of this species itself is still largely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg",
@@ -800,6 +862,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Broad-shouldered water strider family, genus Pseudovelia (stream water\nstriders). *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\nFound in the Ryukyu Islands (from Takarajima to Okinawa Island). Several\nspecies of the genus Pseudovelia are known in Japan, a group that lives along\nthe banks of rivers and ponds. Sufficient information on the detailed ecology\nof this species itself has not yet been confirmed.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg",
@@ -819,6 +883,8 @@
       1,
       2
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Riffle beetle family, genus Urumaelmis. *Urumaelmis uenoi uenoi* (Nomura, 1961)\n\nA small aquatic beetle found from Yakushima through the Amami\nisland group to the Okinawa island group (nominate subspecies). The genus Urumaelmis also includes a\nsecond species newly described from Kyushu in 2020, bringing the number of\nknown species in Japan to two. The population on Kuchinoshima in the Tokara\nIslands is distinguished as a separate subspecies (*U. u. tokarana*). The detailed ecology of\nthis species itself is still largely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
@@ -849,6 +915,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Diving beetle family, genus Hydaticus (striped diving beetles).\n*Hydaticus rhantoides* Sharp, 1882\n\nA small diving beetle about 10-11mm long. The elytra are overall yellowish\nbrown with no conspicuous striping. Found on Honshu (west of the Kanto\nregion), Shikoku, Kyushu, Tsushima, the Ryukyu Islands, and the Daito Islands,\nand abroad in China, Taiwan, and Southeast Asia. Lives in open still water\nsuch as rice paddies and ponds. Among the diving beetles of the Ryukyu\nIslands, it is considered, along with the tawny diving beetle and the lesser\ndiving beetle, to be relatively holding its own in numbers.",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg",
@@ -865,6 +933,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Scarabaeidae, subfamily Aphodiinae, Amami Hairy Dung Beetle *Gilletianus atsushii* (Ochi, 1986)\n\nA rare dung beetle found on Amami Oshima, with very few collection records. It was described in 1986 by Teruo Ochi as *Aphodius (Trichaphodius) atsushii*, but later taxonomic revisions placed it in the genus Gilletianus. It is thought to live off the droppings of the Amami rabbit, but much about its ecology remains unknown, and records of it are limited.",
     "photos": [
       "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
@@ -888,6 +958,8 @@
       10,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Scarabaeidae, subfamily Dynastinae, Amami Small Rhinoceros Beetle *Eophileurus chinensis irregularis* Prell, 1913\n\nA subspecies of the small rhinoceros beetle *Eophileurus chinensis*, found on Amami Oshima, Tokunoshima, Yoro, and Uke. Males reach about 20–25mm and females about 15–20mm. It lives in forests from lowlands to mountains, and is nocturnal, often seen walking on the forest floor or along forest roads; from early summer to late autumn it also comes to sap and lights. Adults can be seen nearly year-round, though it is not a particularly abundant species.",
     "photos": [
       "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
@@ -910,6 +982,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Scarabaeidae, subfamily Aphodiinae, Amami Mottled Dung Beetle *Chilothorax ohishii* (Masumoto, 1975)\n\nAn endemic species found only on Amami Oshima and Tokunoshima. It was described in 1975 by Toshiya Masumoto as *Aphodius ohishii*, but is now placed in the genus Chilothorax. It feeds mainly on the droppings of the Amami rabbit, and is commonly seen from autumn through spring, while rarely appearing in summer.",
     "photos": [
       "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
@@ -931,6 +1005,8 @@
       4,
       5
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Buprestidae, Amami Green Jewel Beetle *Chalcophora japonica oshimana* Schönfeldt, 1890\n\nBody length 24–40mm. A subspecies, found in the Amami and Okinawa island groups, of the jewel beetle *Chalcophora japonica*, which is widely distributed from Hokkaido to Okinawa. It favors dead or weakened pine trees, and the larvae feed and grow inside the wood. Adults are seen from early summer into summer.",
     "photos": [
       "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
@@ -951,6 +1027,8 @@
       7,
       8
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Cerambycidae, Bates's Flat Longhorn Beetle *Eurypoda batesi* Gahan, 1894\n\nBody length 26–34mm. Widely distributed from Honshu (south of the Kanto and Chubu regions) through Shikoku, Kyushu, and the Nansei Islands north of Okinawa Island (including Amami Oshima and Tokunoshima), and also found outside Japan on the Korean Peninsula and in southwestern China. It gathers on camphor, chinquapin, and machilus trees, is nocturnal, and also comes to lights. Commonly seen from around June to August.",
     "photos": [
       "../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg",
@@ -966,6 +1044,8 @@
     "months": [
       7
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Cerambycidae, Ferrié's Red Longhorn Beetle *Rosalia (Eurybatus) ferriei* Vuillet, 1911\n\nAn endemic species found only on Amami Oshima. It has a beautiful red body marked with black patterns, and appears on standing dead trees deep in the forest around July. It is named after Father Ferrié, who collected the species on Amami Oshima. It is designated a Rare Wild Species under Kagoshima Prefecture's ordinance for the protection of rare wildlife, and its capture or collection is prohibited.",
     "photos": [
       "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
@@ -991,6 +1071,8 @@
       10,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Scarabaeidae, subfamily Coprinae, Amami Round Dung Beetle *Copris brachypterus* Nomura, 1964\n\nBody length 13–20mm. An endemic species found only on Amami Oshima and Tokunoshima (a different subspecies occurs on Tokunoshima); its hind wings are reduced, so it cannot fly. At night it walks through mountain forests searching for the droppings of the Amami rabbit, and has the habit of digging a hole beneath a dung ball and dragging it in backwards with its front legs. Because its range is extremely limited, it has poor mobility, and past collection pressure has significantly reduced its numbers, it is listed as Vulnerable (VU) on the Ministry of the Environment's Red List.",
     "photos": [
       "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
@@ -1017,6 +1099,8 @@
       8,
       9
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Buprestidae, Green Narrow Jewel Beetle *Coraebus hastanus oberthueri*\n\nA small jewel beetle about 11mm long, found from Amami Oshima southward. Members of the genus Coraebus are known to be most active during the strong sunlight of summer, and this species too is seen from around June to September.",
     "photos": [
       "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
@@ -1039,6 +1123,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Chrysomelidae, Large Green Leaf Beetle *Platycorynus japonicus*\n\nBody length about 10mm. A small leaf beetle with a metallic green sheen, found in the Nansei Islands (from Amami Oshima southward). It feeds on plants of the star jasmine group, and is seen from around April to October.",
     "photos": [
       "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
@@ -1058,6 +1144,8 @@
       12,
       1
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Geotrupidae, Oshima Earth-boring Dung Beetle *Phelotrupes oshimanus* Fairmaire, 1895\n\nReaching 20mm in length, this is the largest species of Geotrupidae found in Japan. An endemic species found only on Amami Oshima and Tokunoshima, it is active from autumn into winter and gathers at the droppings of the Amami rabbit and wild boar. It has the distinctive habit of cradling dung with its front legs and dragging it backwards into its own burrow. It is listed as Near Threatened on the Kagoshima Prefecture Red List.",
     "photos": [
       "../images/creatures/beetles/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg"
@@ -1073,6 +1161,8 @@
       4,
       5
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Scarabaeidae, Oshima Tiger Flower Chafer *Paratrichius duplicatus duplicatus* Lewis, 1895\n\nBody length 11.8–15.6mm. The nominate subspecies (P. d. duplicatus), found on Amami Oshima and Tokunoshima; a different subspecies, the Okinawa Tiger Flower Chafer (P. d. okinawanus), occurs in the Okinawa island group. Compared with related tiger flower chafers, its wing covers are tinged darker, giving it a distinctive sheen. It appears from April to May.",
     "photos": [
       "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
@@ -1093,6 +1183,8 @@
       6,
       7
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Buprestidae, Azure Narrow Jewel Beetle *Coraebus niponicus* Lewis, 1894\n\nA small jewel beetle with an azure sheen, recorded on Amami Oshima. Members of the genus Coraebus are known to be most active during the strong sunlight of summer, and this species too is seen from around June to September.",
     "photos": [
       "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
@@ -1110,6 +1202,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Scarabaeidae, subfamily Dynastinae, Coconut Rhinoceros Beetle *Oryctes rhinoceros* (Linnaeus, 1758)\n\nAn invasive species native to the Indochina Peninsula region. The first record in Japan is believed to be its introduction to Ishigaki Island in imported materials from Taiwan in the early 20th century; it subsequently spread northward, and was confirmed on Amami Oshima and Tokunoshima in 1991. It is now established and breeding naturally across nearly the entire Nansei Islands. It is known as an agricultural pest that bores into the stems and cores of palms, pineapple, and sugarcane, and there is concern about competition with native rhinoceros beetle species.",
     "photos": [
       "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
@@ -1125,6 +1219,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Ceratocanthidae, subfamily Ceratocanthinae, Tokara Pill Scarab *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\nA small beetle about 5.0–5.8mm long, found in the Tokara Islands (the type locality is Nakanoshima) and on Amami Oshima. It is distinguished by range from the closely related Sakishima Pill Scarab (*M. kazumai hisamatsui* Ochi, 1990), found in the Yaeyama Islands. It is considered a myrmecophilous species — found in environments close to ant nests, such as inside rotten wood or in the leaf litter layer around it — and the original description's paper title itself uses the word \"myrmecophilous.\" When disturbed, it withdraws its antennae and legs into its body and rolls up into a perfect ball, like a pill bug, to protect itself.",
     "photos": [
       "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
@@ -1147,6 +1243,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "Hawk family (Accipitridae), genus Tachyspiza. *Tachyspiza soloensis* (until a\n2024 taxonomic revision, classified as *Accipiter soloensis*)\n\nA small hawk about 30 cm long that does not breed in Japan, passing through\nonly in spring and autumn as a migrant. The upperparts are dark bluish-gray\nand the underparts pale orange-brown, with reddish-brown eyes in males and\nyellow eyes in females. It breeds from northeastern China through the Korean\nPeninsula and winters in Southeast Asia. Spring passage also occurs, but\nAmami Oshima sees its largest numbers in autumn, when the passage peaks from\nmid-September through October as cicadas and dragonflies that serve as prey\nbecome abundant; flocks can sometimes be seen circling upward together on\nrising air currents in what is called a \"hawk pillar.\" It preys widely on\nsmall animals such as frogs, insects, and lizards. It is listed as Least\nConcern on the IUCN Red List and is not subject to designation under Japan's\nMinistry of the Environment Red List or Act on Conservation of Endangered\nSpecies.",
     "photos": [
       "../images/creatures/birds/akaharadaka/akaharadaka_000001_20250927_20.jpg"
@@ -1164,6 +1262,8 @@
       5,
       6
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Old World flycatcher family (Muscicapidae), genus Larvivora.\n*Larvivora komadori*\n\nAbout 14 cm long, weighing about 18 g. A species endemic to Japan that\nbreeds from the Danjo Islands through the Tokara Islands, Amami Oshima and\nits surrounding islets, to Tokunoshima; designated a Natural Monument in\n1970. It is a year-round resident on Amami Oshima, but males sing especially\noften to proclaim territory during the breeding season from March to June,\nso following the song early in the morning is the best way to find one at\nthat time of year. Males have a vivid orange-red head, back, and tail, and\nthe black patches on the breast and flanks look like a \"beard,\" which gives\nthe species its Japanese name. Females are overall plainer in color. It\nforages for insects on the forest floor of evergreen broadleaf forest. A\ndifferent species lives in northern Okinawa Island, but the two ranges do\nnot overlap.",
     "photos": [
       "../images/creatures/birds/akahige/akahige_000001_20250120_14.jpg",
@@ -1187,6 +1287,8 @@
       4,
       5
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Sandpiper family (Scolopacidae), genus Scolopax. *Scolopax mira*\n\nAbout 35-36 cm long. A species endemic to Japan found only in the Amami and\nOkinawa island groups, with breeding confirmed on Amami Oshima, Kakeromajima,\nUke-jima, Yoro-jima, and Tokunoshima. It resembles the closely related\nEurasian woodcock but has longer legs, an overall blacker tone, and a\nstockier build than other sandpipers. It prefers the dim forest floor of\nevergreen broadleaf forest, is most active from dusk to dawn, and forages on\nthe ground for earthworms and insects. It becomes especially active in the\ndim light of early morning and evening, and on moonlit nights. The breeding\nseason runs from around February to May, and at dusk males perform a\ncourtship and territorial \"roding\" display flight, making this the easiest\ntime of year to spot one. It nests on the ground within forests and lays\n2-4 eggs from around March through May. Designated a Nationally Rare Wild\nSpecies in 1993. Following the eradication of the small Indian mongoose and\nforest recovery as logging has declined, its population has been gradually\nrecovering, and in March 2026 the Ministry of the Environment's 5th Red List\ndowngraded its status from Vulnerable (VU) to Near Threatened (NT). Predation\nby feral cats remains an ongoing concern.",
     "photos": [
       "../images/creatures/birds/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
@@ -1212,6 +1314,8 @@
       11,
       12
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Old World flycatcher family (Muscicapidae), genus Monticola. *Monticola\nsolitarius*\n\nAbout 23 cm long. Males and females look very different: males are blue from\nthe head to the back with reddish-brown underparts, while females are\ngrayish-brown with dark scaly barring. A year-round resident on Amami\nOshima, it traditionally favors rocky coastlines and harbors — as its\nJapanese name (\"rocky shore thrush\") suggests — but in recent years it has\nbeen spreading inland and into towns across Japan, and on Amami it is\nincreasingly seen around houses, on rooftops, power lines, and in parking\nlots. A strongly predatory bird, it feeds on crustaceans, insects, lizards,\nand even small rodents, and sings a high, clear, elaborate song. It is\nsolitary and holds a year-round territory; breeding is thought to begin\naround March.",
     "photos": [
       "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000001_20260201_14.jpg",
@@ -1232,6 +1336,8 @@
       7,
       8
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Kingfisher family (Alcedinidae), genus Alcedo. *Alcedo atthis bengalensis*\n\nAbout 17 cm long and weighing 19-40 g, a small kingfisher. The head and\nback have a glossy blue-green sheen and the underparts are a vivid orange,\nearning it the nickname \"jewel of the water's edge.\" On Amami Oshima it is\na year-round resident found along rivers, irrigation channels beside rice\npaddies, and ponds of many kinds. It watches the water from a perch on an\noverhanging branch or post, then plunges in to catch small fish or shrimp\nas soon as it spots one. Strongly territorial, it lives alone or in pairs\nand digs a tunnel nest into a riverbank or eroded slope. The breeding\nseason runs from around March to August, and pairs may raise more than one\nbrood; courtship includes the male passing a small fish to the female,\nknown as courtship feeding, and the birds are especially active and easy\nto watch during this period. Unlike most of the birds on this site, it can\nbe watched by daylight at the water's edge rather than in the night\nforest.",
     "photos": [
       "../images/creatures/birds/kawasemi/kawasemi_000001_20250207_10.jpg",
@@ -1256,6 +1362,8 @@
       3,
       4
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Ibis family (Threskiornithidae), genus Platalea. *Platalea minor*\n\nA large waterbird about 70-80 cm long. The whole body is white, and, as its\nname suggests, it has a distinctive black, spoon-shaped bill and black skin\naround the eyes. During the breeding season it grows a crest and its breast\ntakes on a yellowish tinge. It can be told apart from the closely related\nEurasian Spoonbill by the black facial skin, which extends broadly to the\nbase of the bill. It breeds on islands off the west coast of the Korean\nPeninsula and the coast of northeastern China, and winters in Taiwan, Hong\nKong, southern China, Japan, and elsewhere. The world population fell to\naround 300 birds in the early 1990s, but conservation efforts have driven a\nrecovery, and the 2025 international census counted more than 7,000. In\nJapan, numbers arriving are on the rise, mainly in Kyushu, and on Amami\nOshima it too is observed on tidal flats and similar sites from winter\nthrough spring. It was designated a Nationally Rare Wild Species under the\nAct on Conservation of Endangered Species in 2020, prohibiting capture and\ntransfer (the Natural Monument designation applies not to the species\nitself but to certain habitat sites within Kagoshima Prefecture). Around\n2025 the IUCN Red List downgraded its status from Endangered (EN) to\nVulnerable (VU).",
     "photos": [
       "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000001_20251003_14.jpg",
@@ -1275,6 +1383,8 @@
       3,
       4
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "Old World flycatcher family (Muscicapidae), genus Zoothera.\n*Zoothera dauma major*\n\nAbout 30 cm long. A resident bird found only on Amami Oshima, with a\nyellowish-brown ground color marked with black, tiger-like blotches.\nDesignated a national Natural Monument and a Nationally Rare Wild Species.\nIt prefers the dim forest floor of mature broadleaf forest and feeds on\nearthworms and the like. During the breeding season from February to early\nApril, it sings a clear, beautiful \"kyoroon, tsi-i\" call in the dim light\nbefore dawn and at dusk. It once declined so sharply due to logging and the\nimpact of invasive species that it was called a \"phantom bird,\" but as the\nforest has recovered, its population has been on a recovering trend in\nrecent years, and in March 2026 the Ministry of the Environment's 5th Red\nList downgraded its status from Vulnerable (VU) to Near Threatened (NT).",
     "photos": [
       "../images/creatures/birds/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg"
@@ -1292,6 +1402,8 @@
       4,
       5
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Woodpecker family (Picidae), genus Dendrocopos.\n*Dendrocopos leucotos owstoni*\n\nAbout 28 cm long, a medium-sized woodpecker. An endemic subspecies found\nonly on Amami Oshima; the upper body is almost entirely black with white\nspots, and the underside is a stronger brown than in other subspecies. The\ncrown is red in males and black in females, making the sexes easy to tell\napart. It lives mainly in mature laurel forest and excavates nest holes in\nthe trunks of large broadleaf trees. It feeds mainly on longhorn beetle\nlarvae hidden in rotten wood. Territorial proclamations and courtship\ndisplays begin around winter, and from February through May its\n\"drumming\" — rapid pecking at a trunk with its bill — and calls are easiest\nto hear. In recent years its range has expanded across the whole of Amami\nOshima, partly due to the effects of pine wilt disease. Since the only\nother woodpecker on Amami Oshima is the Amami pygmy woodpecker, the two can\nbe told apart by size alone. Designated a national Natural Monument in 1971\nand a Nationally Rare Wild Species in 1993; capture and transfer are\nprohibited.",
     "photos": [
       "../images/creatures/birds/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
@@ -1311,6 +1423,8 @@
       4,
       5
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "Crow family (Corvidae), genus Garrulus. *Garrulus lidthi*\n\nAbout 38 cm long. A species endemic to Japan found only on Amami Oshima,\nKakeromajima, and Uke-jima, beautiful with its azure-blue body, reddish-brown\nwings, and white bill and wingtips. Designated a Natural Monument in 1921.\nIt prefers evergreen broadleaf forest and is omnivorous, feeding on\nchinquapin and oak acorns. Nest-building begins around December, and during\nthe breeding season from around February through May it lays 3-7 eggs in a\ntree hollow or similar site; late February through early April, when\nparent birds move about actively near the nest, is an especially good time\nto spot one. Its numbers once declined due to\npredation by feral cats and the introduced small Indian mongoose, but\nconservation efforts have paid off — including the 2024 declaration of\nmongoose eradication — and its population has been recovering in recent\nyears. It flies about actively during the day, but at night it can be\nobserved resting on power lines or branch tips along forest roads.",
     "photos": [
       "../images/creatures/birds/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
@@ -1335,6 +1449,8 @@
       8,
       9
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Kingfisher family (Alcedinidae), genus Halcyon. *Halcyon coromanda bangsi*\n\nAbout 27 cm long, its whole body a glossy reddish-brown, with a pale-blue\npatch on the rump that stands out clearly in flight. Locally on Amami\nOshima it is also known as \"Kukkaru,\" and is loved for its far-carrying\n\"kyororororo\" call. It is a summer migrant that arrives from its\nSoutheast Asian wintering grounds around the end of April, near Japan's\nGolden Week holidays, and heads south again by around September. Despite\nbelonging to the kingfisher family, it eats relatively little fish,\npreying widely on crabs, frogs, lizards, and insects of the forest. During\nthe breeding season from June to July it lays around five eggs in a tree\nhollow or an old woodpecker nest, and the chicks fledge around July. Parent\nbirds become especially nervous during this period; approaching the nest\ntree, making noise, or using flash photography can cause them to abandon\nthe nest or force the chicks to fledge early, so it is best to watch\nquietly from a distance and for only a short time.",
     "photos": [
       "../images/creatures/birds/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
@@ -1356,6 +1472,8 @@
       6,
       7
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Pigeon family (Columbidae), genus Treron. *Treron permagnus*\n\nAbout 35 cm long, somewhat larger than the White-bellied Green-Pigeon, and\na year-round resident. Its whole body is a vivid green. The Japanese name,\nmeaning \"red-headed green-pigeon,\" comes from the reddish head of its\nclose relative the Taiwan Whistling Green-Pigeon (Treron formosae), but\nthis species, found on Amami Oshima and elsewhere, is green even on the\nhead. It lives in laurel forest from lowlands to mountains and feeds in\nthe trees on fruit and seeds, including that of Ficus erecta. It gives a\ndistinctive shakuhachi-like call, \"oo-ao, pe, hepo.\" It breeds around May,\nlaying two eggs. Due to habitat fragmentation and decline, it is listed as\nNear Threatened on the IUCN Red List.",
     "photos": [
       "../images/creatures/birds/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg",
@@ -1374,6 +1492,8 @@
       6,
       7
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Owl family (Strigidae), genus Otus. *Otus elegans elegans*\n\nAbout 22 cm long, one of the smallest owls found in Japan. The whole body\nis brown with fine, moth-eaten-looking mottling. It is a year-round\nresident found from Amami Oshima southward through the Ryukyu Islands,\noccurring not only in mature forest but also in woodland near houses.\nNocturnal, after sunset it repeats a low \"koho, koho\" call, and the female\nsometimes answers with a \"nya.\" It preys on insects, spiders, and geckos.\nIt nests in tree hollows, old woodpecker holes, or among the fronds of\nbird's-nest fern, and lays 4-5 eggs during the breeding season from April\nto around July. Only the female incubates, but both parents share the\nwork of feeding the chicks, and most fledge around July. Around the time\nof fledging, chicks are still unsteady in flight and may be found perched\non branches close to the ground; rather than picking them up or shining\na light on them for long periods, it is best to quietly leave the area.\nThe call itself can be heard year-round, not only during the breeding\nseason.",
     "photos": [
       "../images/creatures/birds/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg",
@@ -1395,6 +1515,8 @@
       8,
       9
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Monarch flycatcher family (Monarchidae), genus Terpsiphone.\n*Terpsiphone atrocaudata illex*\n\nMales measure about 45 cm including the tail streamers, females about 18\ncm. The whole body has a black-purple sheen, and the eye-ring and bill are\na vivid cobalt blue. Males have tail feathers nearly three times the\nlength of the body, giving them a striking silhouette in flight. On Amami\nOshima it arrives as a summer migrant around April and, in the dim\ninterior of the forest, flits from branch to branch catching flying\ninsects such as small flies, wasps, and butterflies in mid-air. Its call\nis said to sound like \"tsuki-hi-hoshi, hoi-hoi-hoi\" (\"moon, sun, stars,\nhoi-hoi-hoi\"), which is why it is named the \"three-light bird\" after these\nthree lights. From May to July it builds a cup-shaped nest of moss in the\nfork of a tree and shares incubation and chick-rearing duties. While\nunfledged chicks are in the nest, lingering close by or shaking the\nbranch can cause the parents to abandon it, so it is best to watch briefly\nthrough binoculars from a distance. It heads back to its Southeast Asian\nwintering grounds around September.",
     "photos": [
       "../images/creatures/birds/sankoutyou/sankoutyou_000001_20260708_13.jpg"
@@ -1414,6 +1536,8 @@
       2,
       3
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Hawk family (Accipitridae), genus Butastur. *Butastur indicus*\n\nMales are about 47 cm long and females about 51 cm, with a wingspan of\n105-115 cm; a medium-sized hawk. The head is grayish-brown, the upperparts\nand breast are brown, and the throat is white with a black central streak.\nIt preys mainly on small animals such as snakes, lizards, and frogs, as\nwell as insects like cicadas and grasshoppers. It breeds in Kyushu and\nnorthward through Honshu and Shikoku, and once breeding is finished, birds\nmigrate south from early September through the Nansei Islands toward\nSoutheast Asia. Amami Oshima is known as Japan's largest wintering ground\nfor the species, with the passage peaking around mid-October, when large\nnumbers of birds can be seen circling and rising together in what is\ncalled a \"hawk pillar.\" Many birds do not complete the journey south and\ninstead winter on the island; an estimated 2,000 or so stay from November\nthrough around March. It is listed as Vulnerable on the Ministry of the\nEnvironment's Red List and on Appendix II of CITES. Around the forests\nused as roosts, avoid loud noises, sudden movements, and flash photography\nthat could startle the birds into unnecessary flight, and observe quietly\nfrom a distance.",
     "photos": [
       "../images/creatures/birds/sasiba/sasiba_000001_20240119_16.jpg",
@@ -1438,6 +1562,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Stilt family (Recurvirostridae), genus Himantopus. *Himantopus himantopus*\n\nAbout 37-40 cm long, a shorebird with extremely long, reddish legs and a\nthin black bill. The body is white with black wings and back; males show\nmore black extending to the back of the head, while females are paler. It\nfeeds on aquatic insects, crustaceans, shellfish, and small fish. In Japan\nit was first confirmed breeding at reclaimed land in Aichi Prefecture in\n1975 and has since become locally established in parts of Honshu, but in\nthe Nansei Islands it occurs mainly as a passage migrant and winter\nvisitor. Within Kagoshima Prefecture it has been recorded on Amami Oshima,\nTokunoshima, and Nakanoshima in the Tokara Islands, and breeding was\nconfirmed on nearby Okinoerabujima in 2009, though there are few records of\nbreeding on Amami Oshima itself, or of exactly when it arrives there. It\nfavors shallow water such as tidal flats, rice paddies, and fallow fields.\nIt was previously classified as Vulnerable (VU) on the Ministry of the\nEnvironment Red List but is now listed as Data Deficient (DD).",
     "photos": [
       "../images/creatures/birds/seitakashigi/seitakashigi_000001_20251003_13.jpg",
@@ -1460,6 +1586,8 @@
       2,
       3
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Plover family (Charadriidae), genus Vanellus. *Vanellus vanellus*\n\nAbout 32 cm long, with a long crest on the head, a back with a glossy\ngreenish-black sheen, and a white belly. Its elegant appearance has earned\nit the nickname \"winter lady.\" It breeds across Eurasia and visits Japan\nas a winter migrant. On Amami Oshima it begins to appear in open farmland\nsuch as rice paddies and fields from around late October, staying through\nthe winter until around late March or April of the following year. It\nmoves in flocks, foraging in the soil for earthworms and insects. Unlike\nthe creatures of the night forest that this site mainly features, it is a\nmessenger of winter that is easy to observe by day in open farmland.",
     "photos": [
       "../images/creatures/birds/tageri/tageri_000001_20251221_15.jpg",
@@ -1481,6 +1609,8 @@
       2,
       3
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Owl family (Strigidae), genus Asio. *Asio otus*\n\nAbout 35-40 cm long, an owl notable for the long, ear-like tufts of\nfeathers on its head. The upperparts are grayish to pale brown with\nstreaking, and the eyes are orange. It breeds as a summer visitor in\nHokkaido and northern Honshu, but from central Honshu southward it occurs\nmainly as a winter visitor. The only owls resident year-round on Amami\nOshima are the Ryukyu Scops Owl and the Ryukyu Brown Hawk-Owl; aside from\nthese, a small number of Long-eared Owls arrive as winter visitors each\nyear, typically appearing from around November. Outside the breeding\nseason it is known to form communal roosts, gathering in groups in\nevergreen trees or bamboo thickets. It preys mainly on small mammals such\nas rodents, as well as insects and small birds. Few individuals reach Amami\nOshima, and because they are quite wary, they can be difficult to observe.",
     "photos": [
       "../images/creatures/birds/torafuzuku/torafuzuku_000001_20250207_20.jpg"
@@ -1496,6 +1626,8 @@
       4,
       9
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Skink family (Scincidae), genus Plestiodon. *Plestiodon barbouri*\n\nTotal length 15.5-20 cm (snout-vent length 5.2-7.3 cm). A species endemic to\nJapan, distributed on Amami Oshima, Kakeromajima, Uke-jima, Yoro-jima,\nTokunoshima, and the Okinawa Islands. Juveniles are blackish brown with five\nbright longitudinal stripes, and a vivid blue tail that makes up more than\ntwo-thirds of the total tail length. As they grow, the blue fades; males\nbecome overall dark brown to brown, while many females retain coloring\ncloser to that of juveniles. It prefers the forest floor and edges of\nnatural evergreen broadleaf forest or well-recovered secondary forest,\nbasking in the sun to regulate its body temperature while feeding on\nspiders and land snails. It becomes sluggish in winter but does not\nhibernate. Its numbers have declined due to drying of habitat from logging\nand undergrowth clearance, and predation by feral cats and the introduced\nsmall Indian mongoose. It is listed as Vulnerable on the Ministry of the\nEnvironment's Red List, and in 2019 was also designated a Kagoshima\nPrefecture Rare Wildlife Species, making unauthorized capture or collection\nsubject to penalties.",
     "photos": [
       "../images/creatures/lizards/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
@@ -1523,6 +1655,8 @@
       11,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Rabbit family (Leporidae), genus Pentalagus. *Pentalagus furnessi*\n\nGrows to about 41-51 cm and weighs 1.3-2.7 kg. A species endemic to Japan,\nfound only on Amami Oshima and Tokunoshima, and often called a \"living\nfossil\" for retaining strongly primitive features. Designated a Natural\nMonument in 1921 and a Special Natural Monument in 1963. Nocturnal, it bases\nits activity around burrows dug in rock crevices or tree hollows, feeding on\nchinquapin nuts and young shoots. Breeding occurs mainly in spring and\nautumn, with one young born per litter. Its numbers once declined due to\npredation by feral cats and the introduced small Indian mongoose, but as\nmongoose eradication efforts have progressed, the population has been\nrecovering in recent years. It is the emblematic animal of night tours, and\nit is not uncommon to encounter one hopping along a forest road.",
     "photos": [
       "../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
@@ -1543,6 +1677,8 @@
       4,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Rat family (Muridae), genus Diplothrix. *Diplothrix legata*\n\nBody length 22-33 cm, tail length 25-35 cm. Japan's largest rat, found only\non Amami Oshima, Tokunoshima, and the northern part of Okinawa Island, with\nlong bristle-like hairs of 5-6 cm mixed into its coat. Designated a Natural\nMonument in 1972 and a Nationally Rare Wild Species in 2016. Nocturnal and\nstrongly arboreal, it rests during the day in tree-hollow nests lined with\ndead leaves. Omnivorous, feeding on chinquapin nuts and insects among other\nthings. Breeds from autumn into early winter, giving birth to 2-5 young per\nlitter. It is not very wary, and since it does not flee much even when a\nflashlight is shone on it, it can sometimes be observed at leisure along\nforest roads.",
     "photos": [
       "../images/creatures/mammals/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
@@ -1564,6 +1700,8 @@
     "months": [
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Shrew family (Soricidae), genus Crocidura. *Crocidura watasei*\n\nOne of the world's smallest mammals, about 5.5 cm long and weighing just 5-8\ng. A species endemic to Japan, found only in the Amami island group (Amami\nOshima, Kakeromajima, Tokunoshima, and others) and the Okinawa Islands. It\nprefers open environments such as grassland and farmland, and feeds on small\ninsects and spiders. Nocturnal, it can sometimes be seen darting quickly\nthrough grassy patches beside forest roads. It differs in habitat from a\nforest-dwelling relative of the same genus, and the two are sometimes\nconfused. It carries no legal capture restriction like a Natural Monument\ndesignation, but it is listed as Near Threatened by the Ministry of the\nEnvironment.",
     "photos": [
       "../images/creatures/mammals/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
@@ -1581,6 +1719,8 @@
     "months": [
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Pygmy grasshopper family, Amami Flat Pygmy Grasshopper *Austrohancockia amamiensis* Yamasaki, 1994\n\nA species endemic to Japan, found on Amami Oshima and Tokunoshima. Body length is about 10mm in males and about 14.5mm in females. Its flattened, broadly spread pronotum is distinctive, and it lives on the leaf-littered forest floor, camouflaged to match its surroundings. It moves quickly and leaps away when startled.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
@@ -1604,6 +1744,8 @@
       11,
       12
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Swallowtail family, Common Bluebottle *Graphium sarpedon nipponum* Fruhstorfer, 1903\n\nA fast-flying, striking swallowtail with a band of blue-green running across both wings on an otherwise black background. It feeds on camphor-family trees such as camphor and machilus, and is seen island-wide on Amami Oshima. With several generations a year, it remains on the wing for a long stretch of the warmer months.",
     "photos": [
       "../images/creatures/other-insects/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg",
@@ -1620,6 +1762,8 @@
       6,
       7
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Skimmer family, Amami Longwing Dragonfly *Rhyothemis severini* Ris, 1913\n\nA rare dragonfly confirmed in Japan only on Amami Oshima. Its body is black with a deep green sheen, and its clear wings carry indigo markings. It favors ponds thick with emergent vegetation, where males patrol low over the water waiting for females. Because its habitat and population are extremely limited, it is designated a Nationally Rare Species of Wild Fauna and Flora under Japan's Act on Conservation of Endangered Species, and capture is prohibited.",
     "photos": [
       "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000001_20250731_17.jpg",
@@ -1643,6 +1787,8 @@
       10,
       11
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Brush-footed butterfly family, Common Map Butterfly *Cyrestis thyodamas* Boisduval, 1836\n\nA butterfly with truly distinctive wings — a white ground crossed by a dark brown, tortoiseshell-like pattern. Found from the Kii Peninsula westward through the Nansei Islands, including Amami Oshima. Larvae feed on fig-family plants such as Ficus erecta and banyan. It overwinters as an adult and produces repeated generations from spring into late autumn during the warmer months.",
     "photos": [
       "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000001_20250605_22.jpg",
@@ -1670,6 +1816,8 @@
       11,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Bush cricket family (Eneopteridae) Rotten Wood Cricket *Duolandrevus ivani*\n\nA somewhat large cricket-like insect, 31–35mm long. Widely distributed across the Nansei Islands, including Amami Oshima and Tokunoshima, it lives hidden beneath the bark of rotting wood, as its Japanese name suggests. At night it calls with a distinctive \"gwiii, gwiii.\" In warm regions, adults can be seen year-round regardless of season.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg",
@@ -1688,6 +1836,8 @@
       10,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Bush cricket family (Eneopteridae) Spotted Bush Cricket *Cardiodactylus guttulus*\n\nAlthough its Japanese name means \"cricket,\" it is taxonomically a bush cricket. It lives in the forests of the Nansei Islands south of the Tokara Islands, and in the Amami Islands adults appear from around late August. It often gathers on tree trunks day and night, calling with a sharp \"chit, chit\" sound. It is abundant and serves as an important food source for reptiles and birds.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/madara-kourogi/madara-kourogi_000001_20250914_12.jpg"
@@ -1704,6 +1854,8 @@
       6,
       7
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Raspy cricket family (Gryllacrididae) Round-spot Raspy Cricket *Prosopogryllacris okadai* Ichikawa, 2001\n\nAn arboreal raspy cricket found on Takara Island, Amami Oshima, and Kakeroma Island. Its antennae are far longer than its body. By day it hides in a nest of leaves bound together with its own silk, emerging at night to be active. Strongly carnivorous, it preys on other insects. It is very wary and difficult to spot.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
@@ -1726,6 +1878,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "Skimmer family, Okinawa Variegated Flutterer *Rhyothemis variegata imperatrix* Selys, 1887\n\nA subspecies of the Variegated Flutterer found across the Nansei Islands, seen widely from Amami Oshima through Okinawa, Miyako, and the Yaeyama Islands. About 40mm long, with dark brown wing markings that vary considerably in size and shape between individuals. Fluttering around ponds and rice paddies, it flies with a butterfly-like, flitting motion.",
     "photos": [
       "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000001_20250731_16.jpg",
@@ -1746,6 +1900,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Owlet moth family (Erebidae in recent classification) Great Ring-spot Moth *Erebus ephesperis* (Hübner, [1823])\n\nThe largest of the tomoe moths, with a wingspan reaching 90–100mm. Its brown wings have a wavy, undulating edge and a ring-shaped white marking on the forewing — the source of its Japanese name, meaning \"great comma.\" The larvae feed on Smilax (catbrier) plants, and the adults also come to lights. On Amami Oshima, it has also been documented academically as a pollinator of Hoya (wax vine) flowers.",
     "photos": [
       "../images/creatures/other-insects/ga/ootomoe/ootomoe_000001_20250808_01.jpg",
@@ -1772,6 +1928,8 @@
       11,
       12
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "Brush-footed butterfly family, Blue Tiger *Ideopsis similis* (Linnaeus, 1758)\n\nA milkweed butterfly with pale blue markings, gliding gracefully and unhurriedly through the air. Found from Amami Oshima southward, its larvae feed on Marsdenia tinctoria. On winter days when the temperature drops below 15°C, hundreds can be seen clustering together to overwinter in the forests of the island's valleys — a well-known winter scene on Amami Oshima.",
     "photos": [
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
@@ -1798,6 +1956,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Katydid family (Tettigoniidae) Giant Katydid *Mecopoda elongata* (Linnaeus, 1758)\n\nA katydid found in warm regions from the Izu Peninsula southward, including Amami Oshima and the rest of the Nansei Islands. It begins calling in late summer, and as autumn deepens it sings loudly with a rattling \"gyururururu.\" Its early calls are spaced apart — \"gyuu, gyuu\" — before gradually becoming one continuous, unbroken sound.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg",
@@ -1821,6 +1981,8 @@
       9,
       10
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Colubrid snake family, genus Dinodon. *Dinodon semicarinatum*\n\nGrows up to about 200 cm. Most easily observed from May through November. The body is\nyellowish brown with red-and-black oval crossbands. It has no venom but is aggressive,\nhissing and striking if you enter its territory. It feeds on mammals, birds, reptiles,\namphibians, and fish, and even eats sea turtle eggs; it sometimes preys on its natural\nenemy, the Habu pit viper. Nocturnal, it can be seen along forest roads and around water,\nall the way to the coast. Smaller individuals show stronger red coloring and are very\nbeautiful, but even a small one gives a painful bite, so take care.",
     "photos": [
       "../images/creatures/snakes/akamata/akamata_000001_20250921_22.jpg",
@@ -1885,6 +2047,8 @@
     "months": [
       4
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Takachiho snake family, Takachiho tribe. *Achalinus werneri*\n\nGrows up to about 55 cm. The back is blackish brown or dark brown with a black stripe\nrunning along the midline; the belly is yellow. On Amami it is a legendary snake that you\nonly encounter under just the right conditions. It sometimes comes to the surface on days\nof heavy rain. Nocturnal and subterranean, it lives in forests, grassy areas near water,\nand farmland. It feeds on earthworms. It is scarcer and harder to find here than the\nAmami odd-scaled snakes on other islands. It is very slender and small, so you may not\nnotice it even if you drive right past.",
     "photos": [
       "../images/creatures/snakes/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg",
@@ -1907,6 +2071,8 @@
       5,
       6
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Colubrid snake family, genus Hebius. *Hebius pryeri*\n\nGrows up to about 110 cm. Most easily observed from May through November. Slender-bodied,\nwith a black or blackish-brown color and yellow or brown banding along the body. It\nprefers watery habitats and is often found around rice paddies and other spots with\nplenty of small frogs. It is venomous, but its fangs for injecting venom are small, and a\nbite alone is said not to introduce much venom into the body — even so, the venom itself\nis quite potent, so caution is needed. It feeds on frogs, fish, geckos, and small lizards.\nIt moves quickly, but will threaten you if it senses danger.",
     "photos": [
       "../images/creatures/snakes/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
@@ -1945,6 +2111,8 @@
       10,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Pit viper family, genus Protobothrops. *Protobothrops flavoviridis*\n\nGrows up to about 226 cm, one of the largest snakes on the island. Most active and easiest to\nobserve from May through November (it may also move on warm days even in winter). Nocturnal,\nresting in burrows and crevices during the day. Found from lowland forests to mountain forests,\ngrasslands, wetlands, farmland, and even trees, and it sometimes enters areas near houses while\nhunting rats. Feeds mainly on rats, as well as reptiles, frogs, mammals, and birds. Natural\nenemies include the Akamata snake and human hunters. Venomous and highly aggressive. Always\nkeep a distance of at least 2-3 meters when observing or photographing. If approached, it does\nnot flee — it immediately takes a striking posture and can lunge roughly two-thirds of its own\nbody length. A bite deep in the mountains, where there is no phone signal, can become a serious\nemergency. Its pattern blends into the forest floor and is very hard to spot; it may be hiding\nnearby even when you can't see it. You cannot be too careful.",
     "photos": [
       "../images/creatures/snakes/habu/habu_000002_20250228_00.jpg",
@@ -2059,6 +2227,8 @@
       6,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Pit viper family, genus Ovophis. *Ovophis okinavensis*\n\nGrows up to about 80 cm. Cold-tolerant, and on Amami Oshima it can be observed\nyear-round. Once the rainy season ends and the weather turns hot, it is often seen at\nhigher elevations. It feeds on small to medium-sized frogs, small mammals, and birds. It\nis commonly observed in places with plenty of frogs, such as rice paddies and\nslow-flowing streams. A coiled individual barely moves, but it will threaten you if you\nenter its territory. It is a venomous snake, so if bitten, go to a hospital immediately.\nBe careful not to step on it.",
     "photos": [
       "../images/creatures/snakes/hime-habu/hime-habu_000002_20250429_20.jpg",
@@ -2101,6 +2271,8 @@
       6,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Cobra family, genus Sinomicrurus (also known as the Ryukyu coral snake). *Sinomicrurus\njaponicus*\n\nGrows up to about 50 cm. Most easily observed around May and around September. The back\nis reddish-brown or orange with five dark brown longitudinal stripes. It is designated a\n\"Specified Dangerous Animal,\" a legal category for species considered capable of harming\npeople. Its venom is neurotoxic and stronger than the Habu's, but its head is small and\nits temperament is docile. If picked up, it will jab you with its tail, which is as hard\nas bone. It is nocturnal and scarce, so sightings are rare. It is popular enough that some\npeople visit Amami Oshima specifically hoping to see one.",
     "photos": [
       "../images/creatures/snakes/hyan/hyan_000001_20250515_20.jpg",
@@ -2147,6 +2319,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "Colubrid snake family, genus Cycophuops. *Cycophuops semicarinatus*\n\nGrows up to about 100 cm. Most easily observed from May through November. Mainly\ndiurnal, though many individuals are also active at night. It has a small head and feeds\nmainly on earthworms, as well as frogs. It is the most numerous snake on Amami Oshima and\ncan be seen in forests during the day and along forest roads at night. Larger individuals\nwill sometimes threaten you, but they flee very quickly, sliding down slopes to escape.",
     "photos": [
       "../images/creatures/snakes/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg",
@@ -2181,6 +2355,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Stag beetle family, genus Dorcus (a subspecies of the flat stag beetle).\n*Dorcus titanusu elegans*\n\nA subspecies of the flat stag beetle found in the Amami Islands. It is the most\nnumerous stag beetle on Amami Oshima. A popular species that grows quite large\nin captivity. It gathers at the sap of citrus trees, machilus, chinquapin, and\nmallotus trees. In the wild most individuals are under 50mm, and anything over\n65mm is quite large. Aim for 70mm+.",
     "photos": [
       "../images/creatures/stag-beetles/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg",
@@ -2206,6 +2382,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Stag beetle family, subgenus Dorcus (lesser stag beetles). *Dorcus amamianus*\n\nAlthough its name means \"lesser stag beetle,\" it resembles the Himeoo stag\nbeetle in many respects. Its mandibles are short and strongly curved, while its\nlegs and tarsi are long. Active from late May through October. Less numerous\nthan the lesser stag beetle found on mainland Japan.",
     "photos": [
       "../images/creatures/stag-beetles/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
@@ -2226,6 +2404,8 @@
     "months": [
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Stag beetle family, genus Neolucanus (roundwing stag beetles).\n*Neolucanus protogenetivus*\n\nActive from around September through October, it can be observed deep in\nforests dense with giant Castanopsis sieboldii trees. Collecting is prohibited\nunder the rare wildlife protection ordinances of five municipalities on Amami\nOshima (including its outlying islands) and three towns on Tokunoshima. To\nprevent poaching, cameras have been set up in the mountains, and insect patrols\nmake rounds during the season. Note: simply taking photographs is fine, but if\nyou need to enter an area that requires a permit, be sure to apply properly.",
     "photos": [
       "../images/creatures/stag-beetles/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250906_21.jpg",
@@ -2253,6 +2433,8 @@
     "months": [
       8
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "Stag beetle family, genus Lucanus (true stag beetles). *Lucanus ferriei*\n\nActive from around July through September. A rare species found only on Amami\nOshima. Collecting is prohibited by ordinance. Lives in primeval forest above\nabout 300m elevation. Nocturnal; males can be seen waiting for females high in\ntrees, but they are hard to spot visually. They are also often seen near the\ntops of utility poles. They come to tree sap, fruit traps, and lights, but\ncollecting them is prohibited.",
     "photos": [
       "../images/creatures/stag-beetles/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
@@ -2279,6 +2461,8 @@
       9,
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Stag beetle family, genus Aegus (root stag beetles). *Aegus laevicolis subnitidus*\n\nA subspecies of the root stag beetle found in the Amami Islands, and the\nlargest-growing of Japan's root stag beetle subspecies. Active from around May\nthrough October. It sometimes comes to the sap of machilus, chinquapin,\nmallotus, and Albizia trees. In the wild most individuals are around 20mm, and\n28mm is considered large. Aim for 30mm+.",
     "photos": [
       "../images/creatures/stag-beetles/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
@@ -2300,6 +2484,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Stag beetle family, genus Prosopocoilus (sawtooth stag beetles); Amami\nsubspecies. *Prosopocoilus dissimilis*\n\nActive from mid-June through early September. Among Japan's sawtooth stag\nbeetles, those from Amami Oshima are especially large, with long, thick,\nimposing mandibles. It frequently flies to citrus trees, mallotus, machilus,\nchinquapin, ripe Pandanus fruit and banana traps, and streetlights. Most\nindividuals are around 60mm, and anything over 75mm is large. Aim for 80mm.",
     "photos": [
       "../images/creatures/stag-beetles/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000001_20250620_21.jpg",
@@ -2334,6 +2520,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Stag beetle family, genus Rhaetulus (deer stag beetles). *Rhaetulus recticrnis*\n\nActive from around May through September, most easily seen around August.\nCollecting is prohibited by ordinance. Areas of relatively higher elevation\noffer a better chance of finding it. It is often found on thin branches of\nCastanopsis sieboldii or citrus trees. In large individuals the mandibles curve\nstrongly, like a deer's antlers. Take care not to mistake it for a small\nindividual of the lesser stag beetle or sawtooth stag beetle and take it home\nby accident (never take home an individual you can't identify yourself).",
     "photos": [
       "../images/creatures/stag-beetles/amami-shika-kuwagata/amami-shika-kuwagata_000001_20250627_21.jpg",
@@ -2367,6 +2555,8 @@
       9,
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Stag beetle family, subfamily Aesalinae (minute stag beetles), genus Nigidius\n(horned gourd stag beetles). *Nigidius lewisi*\n\nGlossy all over the body, with distinctively shaped mandibles, it spends the\nwhole year inside rotten wood. It can be found year-round in fallen oak and\nchinquapin logs and under leaf litter. Telling males and females apart is\ndifficult. On Amami it has a very localized distribution and rarely comes to\ntree sap, making it hard to find.",
     "photos": [
       "../images/creatures/stag-beetles/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
@@ -2386,6 +2576,8 @@
       10,
       11
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "Stag beetle family, subgenus Dorcus (flat stag beetles). *Dorcus metacostatus*\n\nActive from late April through around October, peaking in July. A rare species\nendemic to Japan, found only in the Amami Islands, with eight distinct ridges\non its elytra. It frequently flies to citrus trees, machilus, mallotus,\nchinquapin, banana traps, and streetlights. Anything over 60mm is large — aim\nfor 70mm+.",
     "photos": [
       "../images/creatures/stag-beetles/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",

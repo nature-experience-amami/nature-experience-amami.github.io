@@ -10,6 +10,8 @@
       1,
       2
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "アカガエル科アカガエル属 *Rana kobai*\n\n大きさ3.2〜4.6cm 繁殖時期11月から1月。平地から山地までの森林、河川周辺に生息。湿度の高い日や雨が降ると活発になり、繁殖時期になると小さな池や湧水の溜まり場などに集まる。林道にも出てくる個体が見られる。赤褐色でスマート、キョッキョッと鳴く。",
     "photos": [
       "images/creatures/amphibians/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
@@ -39,6 +41,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "アオガエル科アオガエル属 *Zhangixalus amamiensis*\n\n大きさ4.5〜7.7cm 繁殖時期12月下旬から5月頃。低地から山地まで分布し、池や水田などの止水域周辺の森に生息。湿度の高い日や雨が降ると活発に鳴き、樹上の枝の上や岸辺の草などに白い泡状の卵塊を産み付ける。沢山鳴いていても見つけるのがとても難しいカエル。ハロウェルアマガエルより大きく見分けはつきやすい。",
     "photos": [
       "images/creatures/amphibians/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg",
@@ -92,6 +96,8 @@
       1,
       2
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "アカガエル科ニオイガエル属 *Odorrana amamiensis*\n\n大きさ5.6〜10.1cm 繁殖時期10月から5月。山地にある渓流の周辺に生息。スマートで姿勢がよく、慣れてくると遠目からでも判別できるようになる。色彩も豊かでバリエーションがある。鹿児島県で天然記念物に指定され、卵を含め捕獲、譲渡は禁止。雨が降ると林道にたくさん出てくるので運転には気をつける。",
     "photos": [
       "images/creatures/amphibians/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg",
@@ -126,6 +132,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "イモリ科イボイモリ属 *Echinotriton raffaellii*\n\n全長14〜20cm 繁殖期1月から4月頃。奄美大島・請島・徳之島の固有種で、森林や畑の周辺に生息する。冬の暖かい日に活発になり、繁殖期には水場近くの落ち葉の下などに産卵する。黒褐色でごつごつした体つきをしており、肋骨の突起や四肢の先端が橙色を帯びる。",
     "photos": [
       "images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
@@ -168,6 +176,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "アカガエル科ニオイガエル属 *Odorrana splendida*\n\n大きさ7.4〜13.7cm 繁殖時期2月末から6月頃。山地の源流の穏やかな流れの沢に生息。日本一美しいカエルと言われ、鹿児島県の天然記念物・国内希少野生動物種に指定。卵を含め捕獲、譲渡が禁止。標高が高めの沢の近くで暗くなると鳴き声が聞こえる場所もある。ポイントによっては、夏でも雨が降ると見られることがあります。",
     "photos": [
       "images/creatures/amphibians/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
@@ -232,6 +242,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "イモリ科イモリ属 *Cynops ensicauda ensicauda*\n\n全長はオス14cm・メス18cmほど。奄美大島・請島・加計呂麻島・与路島等に生息し、池や水田、渓流沿いの緩やかな流れなどで繁殖する。9月を過ぎるとほとんどの個体が水場を離れ、繁殖期の12月頃には水辺で数多く観察できる。黒色の体に黄色や橙色の斑点が入り、個体差が大きい。沖縄にはオキナワシリケンイモリが生息する。",
     "photos": [
       "images/creatures/amphibians/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
@@ -253,6 +265,8 @@
       6,
       7
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "アマガエル科アマガエル属 *Hyla hallowellii*\n\n大きさ3〜4cm 繁殖時期3月から6月。平地の森林、藪、畑に生息し水田などの止水域に産卵。湿度の高い日や雨の降る夜に活発になり、産卵時期になると水田近くで大合唱する。木の枝先など少し高い所にいて、たくさん鳴いていてもなかなか見つけられない。緑一色でとても美しい。鳴き声はニホンアマガエルに似る。",
     "photos": [
       "images/creatures/amphibians/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
@@ -286,6 +300,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメアマガエル科ヒメアマガエル属 *Microhyla okinavensis*\n\n大きさ2.2〜3.2cm 周年繁殖(主に3月から7月)。海岸近くの低地から山地、林縁部や草地、人家周辺など幅広く生息。湿度の高い日や雨が降ると活発になる。頭が小さく足が太いので上から見ると三角形。日本で1番小さなカエルだがとても大きな声で鳴く。",
     "photos": [
       "images/creatures/amphibians/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
@@ -305,6 +321,8 @@
     "months": [
       3
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/amphibians/numa-gaeru/numa-gaeru_000001_20250324_11.jpg",
@@ -326,6 +344,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "アカガエル科バビナ属 *Babina subaspera*\n\n大きさ9〜14cm 繁殖時期4月から10月。主に山地に生息するが、農地や公園などで見られることもある。湿度の高い日や雨が降ると活発になり、道路にもよく出てくる。オスの方が大きくなり、国内に移入されたウシガエルを除けば日本で1番大きなカエル。5本の指があり親指が鋭く、オス同士の喧嘩や包接の際に用いると考えられる。鹿児島県の天然記念物、国内希少野生動物種に指定され、卵を含め捕獲、譲渡が禁止。とても大きく迫力があり、道に出て来ていれば見つけやすい。名前は鳴き声から付けられたそう。",
     "photos": [
       "images/creatures/amphibians/otton-gaeru/otton-gaeru_000001_20250228_22.jpg",
@@ -358,6 +378,8 @@
       10,
       11
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "アオガエル科カジカガエル属 *Buergeria japonica*\n\n大きさ2.5〜4cm 繁殖時期4月から10月。渓流から市街地の水たまりでも適応し、奄美大島では1番見かけるカエル。湿度の高い日や雨が降ると特に活発に鳴く。オスはとても美しい黄色で鳴き声も美しい。",
     "photos": [
       "images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
@@ -381,6 +403,8 @@
       5,
       7
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメドロムシ科アシナガミゾドロムシ属アカハラアシナガミゾドロムシ *Stenelmis hisamatsui* M. Satô, 1960\n\n奄美群島・沖縄諸島とグアムに分布する小型の水生甲虫。ヒメドロムシ科は主に清流に生息し、幼虫・成虫ともに水中で暮らす体長5mm前後までの甲虫のグループで、水のきれいな川の指標としても注目される。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
@@ -398,6 +422,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメドロムシ科ハバビロドロムシ属アマミハバビロドロムシ *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\n奄美大島だけに分布する固有種で、2005年に記載された。同じハバビロドロムシ属には、本州・四国・九州のハバビロドロムシとヒメハバビロドロムシ、大隅諸島のヤクハバビロドロムシがいる。ヒメドロムシ科は主に清流に生息する小型の水生甲虫のグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg",
@@ -426,6 +452,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "チビミズムシ科チビミズムシ属アマミコチビミズムシ *Micronecta japonica* Chen, 1960\n\n体長1mm前後の極小の水生カメムシ。南西諸島(奄美大島・徳之島)に分布する日本固有種で、同属には北海道から九州まで広く分布するコチビミズムシ(*Micronecta guttata*)など近縁種が複数知られている。普段は砂や落ち葉の下に潜り、驚くと素早く泳いで逃げる。",
     "photos": [
       "images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
@@ -443,6 +471,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメドロムシ科ミゾドロムシ属アマミミゾドロムシ *Ordobrevia amamiensis amamiensis* (Nomura, 1957)\n\n奄美大島に分布する小型の水生甲虫(基亜種)。沖縄島・伊平屋島の個体群は別亜種オキナワミゾドロムシ(*O. a. okinawana*)として区別されており、人為的に移入した個体群がグアムでも見つかっている。ヒメドロムシ科は主に清流に生息するグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
@@ -468,6 +498,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "カタビロアメンボ科オヨギカタビロアメンボ属アマミオヨギカタビロアメンボ *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\n奄美大島・徳之島・沖縄島の南西諸島に分布する小型のカタビロアメンボ。近縁種オヨギカタビロアメンボは、樹林に囲まれた谷池の汀線部にある石礫や岩盤質の場所を好み、水面の植物片や汀線の石礫上で卵越冬することが確認されているが、本種固有の生態についてはまだよく分かっていない。なお、環境省レッドリストで絶滅危惧II類(VU)に指定されているのは近縁種のオヨギカタビロアメンボであり、本種(アマミオヨギカタビロアメンボ)とは別種なので混同しないよう注意が必要である。本種自体は同レッドリストに掲載されていない。",
     "photos": [
       "images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
@@ -486,6 +518,8 @@
     "months": [
       3
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ダルマガムシ科セスジダルマガムシ属アマミセスジダルマガムシ *Ochthebius amami* Yoshitomi & M.Satô, 2001\n\n1997年春に奄美大島で偶然採集された個体をもとに新種記載された、ダルマガムシ科(いわゆる「ガムシ」とは別の科)の小型水生甲虫。体長1.9〜2.3mm。奄美大島と沖縄島に分布し、渓流のやや開けた場所に生息するが、個体数はあまり多くない。河川開発や護岸工事による生息環境の悪化が懸念されており、2010年の環境省レッドリスト改訂で準絶滅危惧(NT)として新規に掲載された。",
     "photos": [
       "images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
@@ -502,6 +536,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ガムシ科シジミガムシ属アマミシジミガムシ *Laccobius satoi* Gentili, 1989\n\n奄美大島・徳之島に分布する日本固有種の小型ガムシ科甲虫。日本産シジミガムシ属にはヒメシジミガムシ・オキナワシジミガムシなど近縁種が複数おり、いずれも識別には交尾器の観察が必要とされる。体長や生態についての詳しい記録は少なく、分かっていない点が多い。",
     "photos": [
       "images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
@@ -527,6 +563,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメドロムシ科ヨコミゾドロムシ属アマミヨコミゾドロムシ *Leptelmis torikaii* Kamite, Yoshitomi & Hayashi, 2017\n\n奄美大島だけに分布する固有種で、2017年に記載されたばかりの新しい種。日本本土や台湾にいる同属他種とは形態が異なる一方、交尾器の形状などが中国南部に分布する種と酷似しており近縁関係にあることがわかっている。もともとユーラシア大陸に広く分布していた祖先種のうち、奄美大島の孤立後に他地域の近縁個体群が絶滅し、本種だけが生き残ったと考えられる「遺存固有種」の一例とされる。ヒメドロムシ科は主に清流に生息する小型の水生甲虫のグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/amami-yokomizo-doromushi/amami-yokomizo-doromushi_000001_20260425_10.jpg",
@@ -562,6 +600,8 @@
       11,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "アシブトメミズムシ科アシブトメミズムシ属アシブトメミズムシ *Nerthra macrothorax* (Montrouzier, 1855)\n\n体長約1cm、幅広く扁平な体をした、日本産アシブトメミズムシ科唯一の種。単眼を持たず、太い鎌状の前脚が特徴。名前に「ミズムシ」とあるが池沼の水中に暮らす種ではなく、海岸の砂浜(汀線から海岸林の間)で夜間に活動し、ワラジムシやダンゴムシの仲間を捕食する半陸生の待ち伏せ型捕食者で、成虫のまま冬を越す。南九州から南西諸島、小笠原諸島まで広く分布し、奄美大島だけの固有種ではない。",
     "photos": [
       "images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000001_20260204_20.jpg",
@@ -590,6 +630,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "カタビロアメンボ科ケシカタビロアメンボ属チャイロケシカタビロアメンボ *Microvelia japonica* Esaki & Miyamoto, 1955\n\n体長1.5〜2.1mmほどの小型の水生昆虫。本州(福島県以西)・四国・九州、南西諸島では喜界島から沖縄島にかけて分布する。細流脇の薄暗い水たまりや石の陰などでよく見られ、水面に落ちた小さな昆虫を捕食する。",
     "photos": [
       "images/creatures/aquatic-insects/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg",
@@ -619,6 +661,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "タマミズムシ科タマミズムシ属エグリタマミズムシ *Heterotrephes admorsus* Esaki & Miyamoto, 1959\n\n体長2.5〜3mmほどの半球形の小さな体を持つ、日本産タマミズムシ科唯一の種。マツモムシと同じく腹面を上にして泳ぐ。奄美大島・徳之島にのみ知られる奄美群島固有種で、流れの緩やかな河川で、陸から水中に垂れ下がった植物の根がある場所などに生息する。環境省の昆虫類レッドリストで絶滅危惧II類(VU)に指定されている。",
     "photos": [
       "images/creatures/aquatic-insects/sonota/eguri-tamamizumushi/eguri-tamamizumushi_000001_20250914_13.jpg",
@@ -634,6 +678,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ゲンゴロウ科キボシケシゲンゴロウ属フタキボシケシゲンゴロウ *Allopachria bimaculata* (M.Satô, 1972)\n\n種小名(「二紋の」の意)の通り上翅に2つの斑紋を持つとされる、極小のゲンゴロウの仲間。近縁種と比べて体が小さく、頭部表面の微細な網目模様が不完全な点で区別されるという。トカラ列島から奄美群島、沖縄島にかけての南西諸島に分布し、環境省の昆虫類レッドリストで準絶滅危惧(NT)に指定されている。詳しい生態や形態についての一次資料は乏しい。",
     "photos": [
       "images/creatures/aquatic-insects/gengoro/hutakiboshi-keshi-gengoro/hutakiboshi-keshi-gengoro_000001_20250408_13.jpg",
@@ -660,6 +706,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "カタビロアメンボ科ケシカタビロアメンボ属イリオモテケシカタビロアメンボ *Microvelia iriomotensis* Miyamoto, 1964\n\n体長1.7〜1.9mmほどの小型の水生昆虫。南西諸島(奄美群島〜八重山諸島)と台湾に分布する。山間の林道脇の染み出しでできた水たまりなどで見られ、オスがメスを長時間ガードする配偶行動が学術研究で報告されている。",
     "photos": [
       "images/creatures/aquatic-insects/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
@@ -685,6 +733,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "カタビロアメンボ科ケシカタビロアメンボ属ケシカタビロアメンボ *Microvelia douglasi* Scott, 1874\n\n体長1.5〜2mmほどで、カタビロアメンボの仲間の中でも最小クラスの水生昆虫。本州・四国・九州・対馬・南西諸島・大東諸島(南大東島)に分布し、国外でも朝鮮半島から中国・東南アジア・台湾・オセアニアまで広く見られる。小さな水田や細流など流れのある水辺を好み、水面に落ちた小さな昆虫を捕食する。カタビロアメンボ科には飛べない無翅型と飛べる長翅型がいる。",
     "photos": [
       "images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg",
@@ -706,6 +756,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ゲンゴロウ科ゲンゴロウ属コガタノゲンゴロウ *Cybister tripunctatus lateralis*\n(Fabricius, 1798)（日本産には*orientalis* Gschwendtner, 1931の名も長く使われてきた）\n\n体長24〜29mm。本州、四国、九州、南西諸島、小笠原諸島に分布し、国外では中国、朝鮮半島、台湾にも生息する。長卵形でやや扁平、背面は緑色から褐色を帯びた黒色で強い光沢があり、上翅の縁に黄色いふちどりが入るのがトビイロゲンゴロウとの見分けのポイント。水草の豊富な池沼や湿地、水田やその周辺の水たまり、休耕田、流れの緩やかな水路に生息する。1960年代以降、農薬の使用や圃場整備によって本州以南で激減し環境省レッドリストの絶滅危惧II類に指定されているが、南西諸島では比較的普通に見られる。",
     "photos": [
       "images/creatures/aquatic-insects/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
@@ -734,6 +786,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "アメンボ科アメンボ属コセアカアメンボ *Gerris gracilicornis* (Horváth, 1879)\n\n体長11〜16mmほどの、赤褐色を帯びた大型のアメンボ。北海道から本州・四国・九州・南西諸島まで日本各地に広く分布し、池沼や河川、湿地など、特に水温の低い水域を好む。成虫のまま陸上で越冬し、目覚めた後に新たな水辺へ飛んで移動する習性があり、春先の小さな水たまりなどで見られることが多い。",
     "photos": [
       "images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
@@ -751,6 +805,8 @@
       5,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメドロムシ科ツヤドロムシ属ナガツヤドロムシ *Zaitzevia elongata* Nomura, 1962\n\n奄美群島と沖縄諸島に分布する小型の水生甲虫。ツヤドロムシ属は日本に8種が知られ、種によって本州から八重山諸島まで分布域が異なる。ヒメドロムシ科は主に清流に生息するグループだが、本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg",
@@ -770,6 +826,8 @@
       1,
       2
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメドロムシ科アシナガミゾドロムシ属ノムラヒメドロムシ *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\n奄美群島・沖縄諸島に分布する小型の水生甲虫。もともとはノムラヒメドロムシ属(Nomuraelmis)の唯一種とされていたが、2021年の分子系統解析(Kobayashi et al., 2021)によりアシナガミゾドロムシ属(Stenelmis)に統合された。属名(Nomuraelmis)および和名は、佐藤正孝博士が1964年に命名したもので、同時代に日本のヒメドロムシ科研究を切り拓いた野村鎮博士にちなむと考えられている。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg",
@@ -796,6 +854,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ゲンゴロウ科シマゲンゴロウ属オキナワスジゲンゴロウ *Hydaticus vittatus* (Fabricius, 1775)\n\n体長11〜14mm。屋久島以南の南西諸島に分布し、国外では台湾、中国、東南アジアにも生息する南方系のゲンゴロウ。水生植物の豊富な池沼や水田などの止水域に生息する。生息環境の減少に加え、ゲンゴロウ類は近年飼育目的とみられる販売が多く確認されていたことから、2023年1月に他のゲンゴロウ類とあわせて特定第二種国内希少野生動植物種に指定された。この区分は販売・頒布目的の捕獲・譲渡のみを規制するもので、観察目的の採集そのものは規制対象外。同属のスジゲンゴロウ(本州以西に分布)によく似るが、分布域が異なるため見分けやすい。",
     "photos": [
       "images/creatures/aquatic-insects/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
@@ -827,6 +887,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ドロムシ科ムナビロツヤドロムシ属リュウキュウムナビロツヤドロムシ *Elmomorphus amamiensis* Nomura, 1959\n\n奄美大島・沖永良部島に記録がある小型の水生甲虫。かつては本州以西に分布するムナビロツヤドロムシの琉球列島亜種 *Elmomorphus brevicornis amamiensis* として扱われていたが、2014年にCOI遺伝子解析と形態比較による研究で両者の間に種レベルの大きな遺伝的分岐が確認され、独立種に格上げされた。現在はムナビロツヤドロムシとは別種とする見解が定着している。ドロムシ科はヒメドロムシ科と近縁なグループで、同じく清流に生息する。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg",
@@ -845,6 +907,8 @@
     "months": [
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメドロムシ科カラヒメドロムシ属サトウカラヒメドロムシ *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\n奄美群島・沖縄諸島(沖縄島では記録なし)に分布する小型の水生甲虫で、2007年に記載された。カラヒメドロムシ属は日本に2種のみが知られ、もう1種のキュウシュウカラヒメドロムシは九州に分布する。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg",
@@ -872,6 +936,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "カタビロアメンボ科ナガレカタビロアメンボ属ツツイナガレカタビロアメンボ *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\n南西諸島(宝島〜沖縄島)に分布する。ナガレカタビロアメンボ属は日本に数種が知られ、河川や池の岸辺に生息するグループ。本種自体の詳しい生態についてはまだ十分な情報が確認できていない。",
     "photos": [
       "images/creatures/aquatic-insects/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg",
@@ -891,6 +957,8 @@
       1,
       2
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒメドロムシ科ウエノツヤドロムシ属ウエノツヤドロムシ *Urumaelmis uenoi uenoi* (Nomura, 1961)\n\n屋久島から奄美群島、沖縄諸島にかけて分布する小型の水生甲虫(基亜種)。ウエノツヤドロムシ属には2020年に九州から新種記載されたカエンツヤドロムシ(Urumaelmis flammea)もおり、日本には本属2種が知られている。トカラ列島口之島の個体群は別亜種トカラツヤドロムシ(*U. u. tokarana*)として区別されている。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
@@ -921,6 +989,8 @@
       8,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ゲンゴロウ科シマゲンゴロウ属ウスイロシマゲンゴロウ *Hydaticus rhantoides* Sharp, 1882\n\n体長10〜11mm程度の小型のゲンゴロウ。前翅は全体的に黄褐色で、目立つ縞模様は無い。本州(関東地方以西)・四国・九州・対馬・南西諸島・大東諸島に分布し、国外では中国、台湾、東南アジアにも生息する。水田や池沼などの開けた止水域に生息する。南西諸島のゲンゴロウの中では、トビイロゲンゴロウ・コガタノゲンゴロウとともに比較的健在な種とされる。",
     "photos": [
       "images/creatures/aquatic-insects/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg",
@@ -937,6 +1007,8 @@
     "months": [
       5
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000001_20250517_23.jpg",
@@ -955,6 +1027,8 @@
       5,
       6
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "コガネムシ科マグソコガネ亜科アマミヒメケブカマグソコガネ *Gilletianus atsushii* (Ochi, 1986)\n\n奄美大島に生息する、採集記録が非常に少ない希少なマグソコガネの仲間。1986年に越智輝夫によって *Aphodius (Trichaphodius) atsushii* として記載されたが、その後の分類の見直しによって現在はGilletianus属として扱われている。アマミノクロウサギの糞を利用して暮らしていると考えられているが、生態についてはまだ分かっていないことが多く、採集例も限られる。",
     "photos": [
       "images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
@@ -978,6 +1052,8 @@
       10,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "コガネムシ科カブトムシ亜科アマミコカブト *Eophileurus chinensis irregularis* Prell, 1913\n\nコカブト *Eophileurus chinensis* の奄美大島・徳之島・与路島・請島に分布する亜種。体長はオス20〜25mm、メス15〜20mmほど。平地から山地の森林に生息し、夜行性で林床や林道を歩く姿がよく見られるほか、初夏から秋の終わり頃にかけては樹液や灯火にも飛来する。成虫はほぼ通年見られるが、あまり個体数の多い種ではない。",
     "photos": [
       "images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
@@ -1000,6 +1076,8 @@
       3,
       4
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "コガネムシ科マグソコガネ亜科アマミセマダラマグソコガネ *Chilothorax ohishii* (Masumoto, 1975)\n\n奄美大島・徳之島にのみ分布する固有種。1975年に桝元敏也によって *Aphodius ohishii* として記載されたが、現在はChilothorax属に含められている。アマミノクロウサギの糞を主な餌とし、秋から春にかけてよく見られる一方、夏場はほとんど姿を見せない。",
     "photos": [
       "images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
@@ -1021,6 +1099,8 @@
       4,
       5
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "タマムシ科アオウバタマムシ *Chalcophora japonica oshimana* Schönfeldt, 1890\n\n体長24〜40mm。北海道から沖縄まで広く分布するウバタマムシの、奄美群島・沖縄諸島に分布する亜種。マツ類の枯れ木や弱った木を好み、幼虫はその材を食べて育つ。成虫は初夏から夏にかけて見られる。",
     "photos": [
       "images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
@@ -1041,6 +1121,8 @@
       7,
       8
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "カミキリムシ科ベーツヒラタカミキリ *Eurypoda batesi* Gahan, 1894\n\n体長26〜34mm。関東・中部地方以南の本州から四国、九州、沖縄島以北の南西諸島(奄美大島・徳之島を含む)にかけて広く分布し、国外では朝鮮半島や中国南西部にも生息する。クスノキ、シイノキ、タブノキなどの樹木に集まり、夜行性で灯火にも飛来する。6月から8月頃によく見られる。",
     "photos": [
       "images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg",
@@ -1056,6 +1138,8 @@
     "months": [
       7
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "カミキリムシ科フェリエベニボシカミキリ *Rosalia (Eurybatus) ferriei* Vuillet, 1911\n\n奄美大島にのみ分布する固有種。赤地に黒紋の美しい体色を持ち、深い森の中の立ち枯れ木に7月頃現れる。奄美大島で本種を採集したフェリエ神父にちなんで名付けられた。鹿児島県希少野生動植物の保護に関する条例により指定希少野生動植物に指定されており、捕獲・採集が禁止されている。",
     "photos": [
       "images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
@@ -1091,6 +1175,8 @@
       11,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "コガネムシ科ダイコクコガネ亜科マルダイコクコガネ *Copris brachypterus* Nomura, 1964\n\n体長13〜20mm。奄美大島・徳之島にのみ分布する固有種で、後翅が退化しており飛ぶことができない(徳之島には別亜種が分布)。夜間、山地の森の中を歩き回ってアマミノクロウサギの糞を探し、糞玉の下に穴を掘って前脚で後ずさりしながら引きずり込む習性を持つ。分布域がごく限られる上、移動性に乏しく過去の採集圧による個体数減少が大きいことから、環境省レッドリストで絶滅危惧II類(VU)に指定されている。",
     "photos": [
       "images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
@@ -1117,6 +1203,8 @@
       8,
       9
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "タマムシ科ミドリナカボソタマムシ *Coraebus hastanus oberthueri*\n\n体長約11mmの小型のタマムシ。奄美大島以南に分布する。ナカボソタマムシ属の仲間は日差しの強い夏場によく活動することが知られ、本種も6月から9月頃にかけて見られる。",
     "photos": [
       "images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
@@ -1139,6 +1227,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "ハムシ科オオミドリサルハムシ *Platycorynus japonicus*\n\n体長約10mm。金属光沢のある緑色の体を持つ小型のハムシで、南西諸島(奄美大島以南)に分布する。テイカカズラの仲間を食草とし、4月から10月頃にかけて見られる。",
     "photos": [
       "images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
@@ -1158,6 +1248,8 @@
       12,
       1
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "センチコガネ科オオシマセンチコガネ *Phelotrupes oshimanus* Fairmaire, 1895\n\n体長20mmに達する、日本産センチコガネ科最大種。奄美大島・徳之島にのみ分布する固有種で、秋から冬にかけて活動し、アマミノクロウサギやイノシシの糞に集まる。糞を前脚で抱えるようにして後ずさりしながら引きずり、自分の巣穴まで運び込む独特の習性を持つ。鹿児島県レッドリストで準絶滅危惧に選定されている。",
     "photos": [
       "images/creatures/beetles/oshima-senchi-kogane/oshima-senchi-kogane_000001_20241121_20.jpg"
@@ -1173,6 +1265,8 @@
       4,
       5
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "コガネムシ科オオシマトラフハナムグリ *Paratrichius duplicatus duplicatus* Lewis, 1895\n\n体長11.8〜15.6mm。奄美大島・徳之島に分布する原名亜種(P. d. duplicatus)。沖縄諸島には別亜種のオキナワトラフハナムグリ(P. d. okinawanus)が分布する。近縁のトラフハナムグリ類と比べて翅の色合いが黒みを帯びるのが特徴で、独特の光沢を持つ。4月から5月にかけて出現する。",
     "photos": [
       "images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
@@ -1193,6 +1287,8 @@
       6,
       7
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "タマムシ科ルリナカボソタマムシ *Coraebus niponicus* Lewis, 1894\n\n瑠璃色の光沢を持つ小型のタマムシで、奄美大島で確認されている。ナカボソタマムシ属の仲間は日差しの強い夏場によく活動することが知られ、本種も6月から9月頃にかけて見られる。",
     "photos": [
       "images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
@@ -1211,6 +1307,8 @@
       4,
       5
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "コガネムシ科カブトムシ亜科サイカブト(タイワンサイカブト) *Oryctes rhinoceros* (Linnaeus, 1758)\n\nインドシナ半島周辺を原産とする外来種。20世紀初頭に台湾からの輸入資材に紛れて石垣島に侵入したのが日本国内での最初の記録とされ、その後分布を北上させ、1991年には奄美大島・徳之島でも確認された。現在は南西諸島のほぼ全域で定着・自然繁殖している。ヤシ類やパイナップル、サトウキビなどの茎や芯に穿孔して加害する農業害虫として知られ、在来のカブトムシ類との競合も懸念されている。",
     "photos": [
       "images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
@@ -1233,6 +1331,8 @@
       9,
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "アツバコガネ科マンマルコガネ亜科トカラマンマルコガネ *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\n体長5.0〜5.8mmほどの小型の甲虫で、トカラ列島(タイプ産地は中之島)と奄美大島に分布する。八重山諸島に分布する近縁のサキシママンマルコガネ(*M. kazumai hisamatsui* Ochi, 1990)とは分布域で区別される。朽ち木の中やその周辺の落ち葉の層など、アリの巣に近い環境で見つかる好蟻性の種とされ、原記載の論文名にも「myrmecophilous(好蟻性)」と記されている。刺激を受けると触角や脚を体内に収め、ダンゴムシのように完全な球状に丸まって身を守る。",
     "photos": [
       "images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
@@ -1255,6 +1355,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "タカ目タカ科アカハラダカ *Tachyspiza soloensis*(2024年の分類見直し前は *Accipiter soloensis*)\n\n全長約30cm前後の小型のタカ。日本では繁殖せず、春と秋に通過する旅鳥である。上面は暗い青灰色、下面は淡い橙褐色で、虹彩はオスが暗赤色、メスが黄色。中国東北部から朝鮮半島にかけて繁殖し、東南アジアで越冬する。春にも渡りが見られるが、奄美大島でまとまった数が観察されるのは主に秋で、餌となるオオシマゼミやウスバキトンボが増える9月中旬から10月にかけて渡りのピークを迎え、上昇気流に乗って群れが旋回する「鷹柱」が見られることもある。カエルや昆虫、トカゲなど小動物を幅広く捕食する。IUCNレッドリストでは軽度懸念(LC)で、環境省レッドリスト・種の保存法の指定対象にはなっていない。",
     "photos": [
       "images/creatures/birds/akaharadaka/akaharadaka_000001_20250927_20.jpg"
@@ -1272,6 +1374,8 @@
       5,
       6
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "スズメ目ヒタキ科Larvivora属アカヒゲ *Larvivora komadori*\n\n全長約14cm 体重約18g。男女群島からトカラ列島、奄美大島とその周辺島、徳之島にかけて繁殖する日本固有種で、1970年に天然記念物に指定。奄美大島には周年生息するが、繁殖期の3月から6月頃はオスが縄張りを主張して特によくさえずるため、この時期の早朝にさえずりを頼りに探すと見つけやすい。オスは頭部・背・尾が鮮やかな橙赤色で、胸と脇の黒い部分が名前の由来である「ヒゲ」のように見える。メスは全体に地味な色合い。常緑広葉樹林の林床で昆虫などを採餌する。沖縄島北部には別種のホントウアカヒゲが生息するが、分布域は重ならない。",
     "photos": [
       "images/creatures/birds/akahige/akahige_000001_20250120_14.jpg",
@@ -1295,6 +1399,8 @@
       4,
       5
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "チドリ目シギ科アマミヤマシギ *Scolopax mira*\n\n全長約35〜36cm。奄美群島と沖縄諸島にのみ生息する日本固有種で、奄美大島・加計呂麻島・請島・与路島・徳之島で繁殖が確認されている。近縁のヤマシギに似るが、脚が長く全体的に黒みがかり、他のシギ類よりずんぐりとした体つき。常緑広葉樹林の薄暗い林床を好み、日没から日の出にかけて活発に活動し、地面でミミズや昆虫を採る。朝夕の薄暗い時間帯や満月の夜に特に活発になる。繁殖期は2月から5月頃で、夕暮れ時にはオスが縄張りや求愛のために飛び回る「ディスプレイフライト」を行うため、この時期は姿を見つけやすい。林内の地上に営巣し、3月から5月頃に2〜4個の卵を産む。1993年に国内希少野生動植物種に指定された。フイリマングースの根絶や森林伐採量の減少に伴う森林の回復により個体数は緩やかな回復傾向にあり、2026年3月の環境省第5次レッドリストでは絶滅危惧II類(VU)から準絶滅危惧(NT)に引き下げられた。ただしノネコによる捕食などの課題は残っている。",
     "photos": [
       "images/creatures/birds/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
@@ -1320,6 +1426,8 @@
       11,
       12
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "スズメ目ヒタキ科イソヒヨドリ属イソヒヨドリ *Monticola solitarius*\n\n全長約23cm。オスは頭から背が青色、胸から下尾筒が赤褐色、メスは灰褐色地に黒褐色の鱗状斑と、雌雄で見た目が大きく異なる。奄美大島に一年を通じて生息する留鳥で、和名の通り本来は海岸の岩場や港などの磯環境を好むが、近年は日本各地で内陸部や市街地への進出が進んでおり、奄美でも人家の屋根や電線、駐車場など生活圏で見かける機会が増えている。甲殻類や昆虫、トカゲ、小型のネズミまで捕食する肉食性の強い鳥で、高く澄んだ複雑な節回しでさえずる。単独性で周年縄張りを持ち、繁殖期は3月頃から始まるとみられる。",
     "photos": [
       "images/creatures/birds/iso-hiyodori/iso-hiyodori_000001_20260201_14.jpg",
@@ -1340,6 +1448,8 @@
       7,
       8
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "ブッポウソウ目カワセミ科カワセミ属カワセミ *Alcedo atthis bengalensis*\n\n全長17cm、体重19〜40g程度の小型のカワセミ。頭部から背にかけて光沢のある青緑色、腹部は鮮やかな橙色で、「水辺の宝石」とも呼ばれる。奄美大島では周年生息する留鳥で、河川や水田脇の水路、ため池など様々な淡水域に現れる。水辺に張り出した枝や杭にとまって水面を見つめ、小魚やエビを見つけると勢いよく飛び込んで捕らえる。縄張り意識が強く、単独かつがいで行動し、土手や崩れた斜面の土中に横穴を掘って営巣する。繁殖期は3月から8月頃で、複数回子育てをすることもある。求愛の際にはオスがメスへ小魚を渡す「求愛給餌」が見られ、この時期は行動が活発でより観察しやすい。他の多くの鳥のように夜の森ではなく、明るい時間帯の水辺で観察しやすい数少ない鳥。",
     "photos": [
       "images/creatures/birds/kawasemi/kawasemi_000001_20250207_10.jpg",
@@ -1364,6 +1474,8 @@
       3,
       4
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "ペリカン目トキ科ヘラサギ属クロツラヘラサギ *Platalea minor*\n\n全長約70〜80cmの大型の水鳥。全身白色で、名前の通りへら状の黒い嘴と黒い眼先が特徴。繁殖期には冠羽と胸が黄色みを帯びる。近縁のヘラサギとは、眼先の黒い部分が嘴の付け根まで広くつながる点で見分けられる。朝鮮半島西岸や中国東北部沿岸の離島で繁殖し、台湾・香港・中国南部・日本などで越冬する。世界的な生息数は1990年代初頭に300羽ほどまで減少したが、保護の取り組みにより回復が進み、2025年の国際一斉調査では7000羽を超えた。日本国内でも九州を中心に飛来数が増加傾向にあり、奄美大島でも冬から春にかけて干潟などで観察されている。2020年に種の保存法の国内希少野生動植物種に指定され、捕獲・譲渡が禁止されている(天然記念物の指定は種そのものではなく、鹿児島県内の一部生息地に対するもの)。IUCNレッドリストでは2025年前後に絶滅危惧IB類(EN)から危急種(VU)へ引き下げられた。",
     "photos": [
       "images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000001_20251003_14.jpg",
@@ -1383,6 +1495,8 @@
       3,
       4
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "スズメ目ヒタキ科オオトラツグミ *Zoothera dauma major*\n\n全長約30cm。奄美大島にのみ生息する留鳥で、黄褐色の地に虎柄のような黒い斑紋が入る。国の天然記念物、国内希少野生動植物種に指定。林齢の高い広葉樹林の薄暗い林床を好み、ミミズなどを食べる。繁殖期の2月から4月初旬には、夜明け前や夕暮れどきの薄暗い時間帯に「キョローン、ツィーッ」という澄んだ美しい声でさえずる。かつては森林伐採や外来種の影響で「幻の鳥」と言われるほど数を減らしたが、近年は森林の回復とともに生息数が回復傾向にあり、2026年3月の環境省第5次レッドリストでは絶滅危惧II類(VU)から準絶滅危惧(NT)に引き下げられた。",
     "photos": [
       "images/creatures/birds/oo-tora-tsugumi/oo-tora-tsugumi_000001_20250809_22.jpg"
@@ -1400,6 +1514,8 @@
       4,
       5
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "キツツキ科アカゲラ属 *Dendrocopos leucotos owstoni*\n\n全長約28cm、キツツキの仲間では中型。奄美大島のみに分布する固有亜種で、体の上面はほぼ黒く白い斑が入り、他の亜種に比べて体下面の褐色味が強い。頭頂部はオスが赤く、メスは黒いので雌雄の見分けは簡単。成熟した照葉樹林を中心に生息し、広葉樹の大木の幹に穴を掘って営巣する。食性は朽木に潜むカミキリムシの幼虫など。冬頃から縄張りの主張や繁殖相手へのアピールが始まり、2月から5月頃はくちばしで幹を連続して叩く「ドラミング」や鳴き声が聞こえやすい時期。近年はマツ枯れなどの影響で分布が奄美大島の全域に拡大している。奄美大島に生息するキツツキはアマミコゲラのみなので、大きさで区別できる。1971年に国指定天然記念物、1993年に国内希少野生動植物種に指定され、捕獲・譲渡は禁止。",
     "photos": [
       "images/creatures/birds/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
@@ -1419,6 +1535,8 @@
       4,
       5
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "スズメ目カラス科カケス属ルリカケス *Garrulus lidthi*\n\n全長約38cm。奄美大島・加計呂麻島・請島にのみ生息する日本固有種で、瑠璃色の体に赤褐色の翼、白いくちばしと羽先が美しい。1921年に天然記念物に指定。常緑広葉樹林を好み、シイやカシの実を食べる雑食性。12月頃から巣作りの準備を始め、繁殖期の2月から5月頃には樹洞などに3〜7個の卵を産む。特に2月後半から4月上旬は親鳥が巣の周辺で活発に動き回るため観察のチャンスが増える。かつてはノネコやフイリマングースの捕食で数を減らしたが、2024年にマングースの根絶が宣言されるなど保護の成果が実り、近年は生息数が回復している。日中は活発に飛び回るが、夜は林道沿いの電線や枝先で休む姿を観察できる。",
     "photos": [
       "images/creatures/birds/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
@@ -1443,6 +1561,8 @@
       8,
       9
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "ブッポウソウ目カワセミ科アカショウビン属 リュウキュウアカショウビン *Halcyon coromanda bangsi*\n\n全長約27cm。全身が光沢のある赤褐色で、腰の水色の斑が飛翔時によく目立つ。奄美大島では地元で「クッカル」とも呼ばれ、「キョロロロロー」とよく通る鳴き声で親しまれている渡り鳥(夏鳥)。東南アジアの越冬地から例年4月末のゴールデンウィーク前後に渡ってきて、9月頃までに再び南へ渡っていく。カワセミの仲間だが魚はあまり食べず、カニやカエル、トカゲ、昆虫など森の生き物を幅広く捕食する。繁殖期の6月から7月にかけて樹洞やキツツキの古巣に5個ほどの卵を産み、雛は7月頃に巣立つ。この時期は親鳥が神経質になっており、営巣木に近づいたり物音を立てたり、フラッシュ撮影をしたりすると抱卵放棄や早期の巣立ちにつながるおそれがあるため、離れた場所から静かに、短時間の観察にとどめる。",
     "photos": [
       "images/creatures/birds/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
@@ -1464,6 +1584,8 @@
       6,
       7
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "ハト目ハト科アオバト属 リュウキュウズアカアオバト *Treron permagnus*\n\n全長35cmほどで、アオバトよりやや大きい留鳥。全身が鮮やかな緑色をしている。和名の「頭赤」は、近縁種であるタイワンズアカアオバト(Treron formosae)の頭部が赤みを帯びることに由来するが、奄美大島などに生息する本種は頭部まで緑色。低地から山地の照葉樹林に生息し、樹上でイヌビワなどの木の実や種子を食べる。「ウーアオー、ペー、ヘポー」と尺八のような独特の声で鳴く。5月頃に2個の卵を産んで繁殖する。生息地の分断や減少により、IUCNレッドリストで準絶滅危惧(NT)に指定されている。",
     "photos": [
       "images/creatures/birds/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg",
@@ -1482,6 +1604,8 @@
       6,
       7
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "フクロウ目フクロウ科コノハズク属 リュウキュウコノハズク *Otus elegans elegans*\n\n全長22cm、日本最小級のフクロウの仲間。全身が褐色で細かな虫食い状の斑が入る。奄美大島以南の南西諸島に周年生息する留鳥で、成熟した森だけでなく人家近くの林でも見られる。夜行性で、日没後に「コホッ、コホッ」という低い声を繰り返し、メスが「ニャッ」と応えるように鳴くこともある。昆虫やクモ、ヤモリなどを捕食する。樹洞やキツツキの古巣、オオタニワタリの葉陰などに営巣し、繁殖期の4月から7月頃に4〜5個の卵を産む。抱卵はメスのみが行い、雛への給餌は雌雄で協力して行い、7月頃に巣立ちを迎える個体が多い。巣立ち前後のヒナは飛翔がまだ不安定で、地面近くの枝に降りていることがあるが、拾い上げたり長時間ライトを当て続けたりせず、そっとその場を離れる。鳴き声自体は繁殖期に限らず一年を通じて聞こえる。IUCNレッドリストでは準絶滅危惧(NT)に指定されている。",
     "photos": [
       "images/creatures/birds/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg",
@@ -1503,6 +1627,8 @@
       8,
       9
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "スズメ目カササギヒタキ科サンコウチョウ属 リュウキュウサンコウチョウ *Terpsiphone atrocaudata illex*\n\n全長はオスが尾羽を含め約45cm、メスは約18cm。全体に黒紫色の光沢があり、目の周りとくちばしは鮮やかなコバルトブルー。オスは体長の3倍近い長い尾羽を持ち、飛翔する姿は独特。奄美大島には夏鳥として4月頃に渡来し、薄暗い林内で枝から枝へ飛び移りながら、羽虫やハチ、チョウなど飛んでいる昆虫を空中で捕らえる。鳴き声が「ツキ・ヒ・ホシ、ホイホイホイ(月・日・星、ホイホイホイ)」と聞こえることから、三つの光にちなんで「三光鳥」と名付けられた。5月から7月にかけてコケなどを使ったお椀型の巣を木の股に作り、抱卵・育雛を行う。巣立ち前のヒナがいる時期は、巣のすぐそばに長時間留まったり枝を揺らしたりすると抱卵放棄につながるおそれがあるため、双眼鏡越しに短時間観察するにとどめる。9月頃には東南アジアの越冬地へ再び渡っていく。",
     "photos": [
       "images/creatures/birds/sankoutyou/sankoutyou_000001_20260708_13.jpg"
@@ -1522,6 +1648,8 @@
       2,
       3
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "タカ目タカ科サシバ属サシバ *Butastur indicus*\n\n全長はオス約47cm、メス約51cm、翼を広げると105〜115cmになる中型のタカ。頭部は灰褐色、体の上面と胸は茶褐色で、喉は白地に黒い縦線が入る。ヘビやトカゲ、カエルなどの小動物やセミ、バッタといった昆虫を主に捕食する。九州以北の本州・四国で繁殖し、繁殖を終えた個体が9月上旬から南西諸島を経由して東南アジアへ渡っていく。奄美大島は国内最大級の越冬地として知られ、10月中旬頃に渡りのピークを迎え、上空で多数の個体が輪を描いて上昇する「鷹柱」が観察できる。渡りきれずに越冬する個体も多く、例年約2000羽が11月から翌年3月頃にかけて滞在する。環境省レッドリストで絶滅危惧II類(VU)、ワシントン条約付属書IIに掲載されている。ねぐらにしている林の周辺では、大声や急な動き、フラッシュ撮影で個体を驚かせて余計な飛行をさせないよう、離れた場所から静かに観察する。",
     "photos": [
       "images/creatures/birds/sasiba/sasiba_000001_20240119_16.jpg",
@@ -1546,6 +1674,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "チドリ目セイタカシギ科セイタカシギ属セイタカシギ *Himantopus himantopus*\n\n全長約37〜40cm。赤みを帯びた非常に長い脚と、細く黒い嘴を持つシギ・チドリの仲間。体は白く、翼と背は黒い。オスは頭部後方まで黒みが強く出るが、メスは淡い。水生昆虫や甲殻類、貝類、小魚などを食べる。日本では1975年に愛知県の干拓地で初めて繁殖が確認されて以降、本州の一部地域で局地的に定着しているが、南西諸島では旅鳥・冬鳥としての飛来が中心である。鹿児島県内では奄美大島・徳之島・トカラ列島中之島などで飛来記録があり、近隣の沖永良部島では2009年に繁殖が確認された例もあるが、奄美大島そのものでの繁殖記録や、飛来時期を具体的に示す記録は少ない。干潟や水田、休耕田など浅い水辺を好む。環境省レッドリストでは、以前は絶滅危惧II類(VU)に区分されていたが、現在は情報不足(DD)に変更されている。",
     "photos": [
       "images/creatures/birds/seitakashigi/seitakashigi_000001_20251003_13.jpg",
@@ -1568,6 +1698,8 @@
       2,
       3
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "チドリ目チドリ科タゲリ属タゲリ *Vanellus vanellus*\n\n全長32cm。頭には長く伸びた冠羽があり、背は光沢のある緑黒色、腹は白い。優雅な姿から「冬の貴婦人」とも呼ばれる。ユーラシア大陸で繁殖し、日本には冬鳥として飛来する。奄美大島には例年10月下旬頃から水田や畑などの開けた農耕地に姿を見せ始め、翌年3月末から4月頃まで越冬する。群れで行動し、ミミズや昆虫を土の中から探して捕食する。奄美大島の代表的な夜の森の生き物とは異なり、日中の農耕地で観察しやすい冬の使者。",
     "photos": [
       "images/creatures/birds/tageri/tageri_000001_20251221_15.jpg",
@@ -1589,6 +1721,8 @@
       2,
       3
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "フクロウ目フクロウ科トラフズク属トラフズク *Asio otus*\n\n全長35〜40cmほどで、頭に長く伸びた羽角(耳のように見える羽毛の房)が特徴のフクロウの仲間。上面は灰褐色〜淡褐色で縦縞が入り、虹彩はオレンジ色。北海道や本州北部では夏鳥として繁殖するが、本州中部以南では主に冬鳥として飛来する。奄美大島に周年生息するフクロウの仲間はリュウキュウコノハズクとリュウキュウアオバズクの2種のみで、トラフズクはこれらとは別に、毎年少数が冬鳥として飛来し、例年11月頃から見られる。非繁殖期には常緑樹や竹藪などに複数羽が集まって集団ねぐらを形成する習性が知られている。ネズミなど小型哺乳類を中心に、昆虫や小鳥も捕食する。奄美大島での飛来数は少なく、警戒心が強いため観察はやや難しい。",
     "photos": [
       "images/creatures/birds/torafuzuku/torafuzuku_000001_20250207_20.jpg"
@@ -1604,6 +1738,8 @@
       5,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/kani/okayadokari/okayadokari_000001_20250501_22.jpg",
@@ -1620,6 +1756,8 @@
       5,
       7
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/kani/rurimadara-shiomaneki/rurimadara-shiomaneki_000001_20260505_15.jpg",
@@ -1638,6 +1776,8 @@
     "months": [
       6
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000001_20250602_22.jpg",
@@ -1660,6 +1800,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "トカゲ科トカゲ属バーバートカゲ *Plestiodon barbouri*\n\n全長15.5〜20cm(頭胴長5.2〜7.3cm)。奄美大島・加計呂麻島・請島・与路島・徳之島と沖縄諸島に分布する日本固有種。幼体は黒褐色の体に5本の明るい縦縞が入り、尾は鮮やかな青色で尾全体の2/3以上を占める。成長すると青みは薄れ、オスは全体的に暗褐色〜褐色になる一方、メスは幼体に近い色彩を保つ個体が多い。常緑広葉樹の自然林や回復の進んだ二次林の林床・林縁部を好み、日光浴で体温を調節しながらクモ類や陸貝などを食べる。冬は動きが鈍くなるが冬眠はしない。森林伐採や下草刈りによる乾燥化、ノネコやフイリマングースによる捕食で数を減らし、環境省レッドリストで絶滅危惧II類、2019年には鹿児島県の希少野生動植物にも指定され、無許可の捕獲・採取は罰則の対象となっている。",
     "photos": [
       "images/creatures/lizards/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
@@ -1681,6 +1823,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
@@ -1712,6 +1856,8 @@
       11,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "ウサギ目ウサギ科アマミノクロウサギ *Pentalagus furnessi*\n\n体長41〜51cm 体重1.3〜2.7kg。奄美大島と徳之島にのみ生息する日本固有種で、原始的な特徴を色濃く残すことから「生きた化石」とも呼ばれる。1921年に天然記念物、1963年に特別天然記念物に指定。夜行性で、岩穴や木の洞に掘った巣穴を拠点に行動し、シイの実や若芽などを食べる。繁殖期は春と秋頃で、1回に1頭を出産する。かつて野生化したネコやフイリマングースによる捕食で数を減らしたが、マングースの防除事業が進み、近年は生息数が回復傾向にある。ナイトツアーを象徴する生き物で、林道でひょいと跳ねる姿に出会えることも少なくない。",
     "photos": [
       "images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
@@ -1740,6 +1886,8 @@
       11,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "ネズミ科ケナガネズミ属ケナガネズミ *Diplothrix legata*\n\n体長22〜33cm 尾長25〜35cm。奄美大島・徳之島・沖縄島北部にのみ生息する日本最大のネズミで、背中には5〜6cmの長い剛毛が混じる。1972年に天然記念物、2016年に国内希少野生動植物種に指定。夜行性で樹上性が強く、昼間は樹洞に枯れ葉を運び込んだ巣で休む。シイの実や昆虫などを食べる雑食性。繁殖期は秋から初冬で、1回に2〜5頭を出産する。警戒心が薄く、懐中電灯の光を当ててもあまり逃げないため、林道でゆっくり観察できることもある。",
     "photos": [
       "images/creatures/mammals/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
@@ -1772,6 +1920,8 @@
       11,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "トガリネズミ科ジネズミ属ワタセジネズミ *Crocidura watasei*\n\n体長約5.5cm 体重5〜8gほどの、世界最小級の哺乳類の一つ。奄美群島(奄美大島、加計呂麻島、徳之島など)と沖縄諸島にのみ分布する日本固有種。草地や畑など開けた環境を好み、小型昆虫やクモなどを食べる。夜行性で、林道脇の草むらなどを素早く動き回る姿を見かけることがある。同属で森林性のオリイジネズミとは生息環境が異なり、混同されることもある。天然記念物のような法的な捕獲制限は無いが、環境省の準絶滅危惧に指定されている。",
     "photos": [
       "images/creatures/mammals/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
@@ -1793,6 +1943,8 @@
       8,
       11
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
@@ -1812,6 +1964,8 @@
       2,
       3
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000001_20260204_20.jpg",
@@ -1832,6 +1986,8 @@
       3,
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000001_20260301_15.jpg",
@@ -1854,6 +2010,8 @@
       7,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-arthropods/oo-geji/oo-geji_000001_20250427_20.jpg",
@@ -1874,6 +2032,8 @@
       5,
       6
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-arthropods/oohirata-zatoumushi/oohirata-zatoumushi_000001_20250520_21.jpg",
@@ -1890,6 +2050,8 @@
     "months": [
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヒシバッタ科 アマミヒラタヒシバッタ *Austrohancockia amamiensis* Yamasaki, 1994\n\n奄美大島・徳之島に分布する日本固有種。体長は雄で10mm前後、雌で14.5mm前後。前胸背板が扁平に広がった姿が特徴で、落ち葉の積もる林床などに生息し、周囲の色合いに紛れる保護色を持つ。動きは素早く、驚くと跳ねて逃げる。",
     "photos": [
       "images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
@@ -1904,6 +2066,8 @@
     "months": [
       7
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-insects/tyokushi/amami-madara-kamadouma/amami-madara-kamadouma_000001_20250712_09.jpg"
@@ -1927,6 +2091,8 @@
       11,
       12
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "アゲハチョウ科 アオスジアゲハ *Graphium sarpedon nipponum* Fruhstorfer, 1903\n\n黒い翅に青緑色の帯が前後の翅を貫くように入る、飛翔の速い美しいアゲハチョウ。クスノキやタブノキなどクスノキ科の樹木を食草とし、奄美大島の島内各地で見られる。年に数回世代を繰り返す多化性で、暖かい時期は長期間にわたって姿を見せる。",
     "photos": [
       "images/creatures/other-insects/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg",
@@ -1943,6 +2109,8 @@
       6,
       7
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "トンボ科 ハネナガチョウトンボ *Rhyothemis severini* Ris, 1913\n\n国内では奄美大島にのみ生息が確認されている希少なトンボ。黒い体に深緑色の光沢を持ち、透明な翅には藍色の紋様が入る。抽水植物の茂る池を好み、オスは水面近くを飛びながらメスを待つ。生息地・個体数が極めて限られることから、種の保存法により国内希少野生動植物種に指定され、捕獲が禁止されている。",
     "photos": [
       "images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000001_20250731_17.jpg",
@@ -1966,6 +2134,8 @@
       10,
       11
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "タテハチョウ科 イシガケチョウ *Cyrestis thyodamas* Boisduval, 1836\n\n白地に黒褐色の亀甲状の模様が広がる、他に類を見ない翅を持つチョウ。紀伊半島以西から南西諸島にかけて分布し、奄美大島でも見られる。幼虫はイヌビワやガジュマルなどクワ科の植物を食べる。成虫のまま越冬し、暖かい時期は春から秋遅くまで世代を繰り返しながら姿を見せる。",
     "photos": [
       "images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000001_20250605_22.jpg",
@@ -1982,6 +2152,8 @@
     "months": [
       5
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000001_20250524_00.jpg",
@@ -2008,6 +2180,8 @@
       11,
       12
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "マツムシ科 クチキコオロギ *Duolandrevus ivani*\n\n体長31〜35mmとやや大型のコオロギに似た仲間。奄美大島・徳之島をはじめ南西諸島に広く分布し、名前の通り朽木の樹皮の下などに潜んで暮らす。夜になると「グィーー、グィーー」という特徴的な声で鳴く。暖かい地域では季節を問わず、一年を通して成虫の姿が見られる。",
     "photos": [
       "images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg",
@@ -2023,6 +2197,8 @@
     "months": [
       6
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000001_20250617_13.jpg",
@@ -2041,6 +2217,8 @@
       10,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "マツムシ科 マダラコオロギ *Cardiodactylus guttulus*\n\n名前に「コオロギ」とあるが、分類上はマツムシの仲間。トカラ列島以南の南西諸島の森林に生息し、奄美群島では8月下旬頃から成虫が現れる。樹の幹に昼夜を問わず群れることが多く、「シッ、シッ」という声で鳴く。個体数が多く、爬虫類や鳥類にとって重要な餌にもなっている。",
     "photos": [
       "images/creatures/other-insects/tyokushi/madara-kourogi/madara-kourogi_000001_20250914_12.jpg"
@@ -2057,6 +2235,8 @@
       6,
       7
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "コロギス科 マルモンコロギス *Prosopogryllacris okadai* Ichikawa, 2001\n\n宝島・奄美大島・加計呂麻島に分布する樹上性のコロギスの仲間。体長よりはるかに長い触角を持ち、昼間は自分の出す糸で葉を綴り合わせた巣に潜み、夜になると這い出して活動する夜行性。肉食性が強く、他の昆虫を捕食する。警戒心が強く、なかなか見つけることができない。",
     "photos": [
       "images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
@@ -2079,6 +2259,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": false,
     "description": "トンボ科 オキナワチョウトンボ *Rhyothemis variegata imperatrix* Selys, 1887\n\nチョウトンボの南西諸島に分布する亜種で、奄美大島から沖縄・宮古・八重山諸島にかけて広く見られる。体長は約40mmで、翅にある濃い褐色の斑紋の大きさや形には個体差が大きい。池や水田の周辺を、翅をひらひらとさせながら飛ぶ姿はチョウのようにも見える。",
     "photos": [
       "images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000001_20250731_16.jpg",
@@ -2099,6 +2281,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ヤガ科(近年の分類ではエレビダエ科) オオトモエ *Erebus ephesperis* (Hübner, [1823])\n\n開張90〜100mmに達するトモエガ類最大種。茶褐色の翅に波打つ縁取りと、前翅にある輪状の白い斑紋を持ち、これが「巴」の名の由来になっている。幼虫はサルトリイバラなどユリ科植物を食べ、成虫は灯火にも飛来する。奄美大島ではサクララン(ホヤ)の花を訪れる送粉者としても学術的に記録されている。",
     "photos": [
       "images/creatures/other-insects/ga/ootomoe/ootomoe_000001_20250808_01.jpg",
@@ -2125,6 +2309,8 @@
       11,
       12
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "タテハチョウ科 リュウキュウアサギマダラ *Ideopsis similis* (Linnaeus, 1758)\n\n淡い水色(浅葱色)の斑紋を持つ、ふわふわと優雅に飛ぶマダラチョウの仲間。奄美大島以南に分布し、幼虫はツルモウリンカを食草とする。気温15度を下回る冬の日には、谷間の樹林内に数百頭単位で集まって集団で越冬する姿が見られ、奄美大島の冬の風物詩として知られている。",
     "photos": [
       "images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
@@ -2149,6 +2335,8 @@
       9,
       11
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000001_20250914_13.jpg",
@@ -2167,6 +2355,8 @@
       11,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "キリギリス科 タイワンクツワムシ *Mecopoda elongata* (Linnaeus, 1758)\n\n伊豆半島以南の暖かい地域に分布するキリギリスの仲間で、奄美大島をはじめ南西諸島でも見られる。夏の終わりから鳴き始め、秋が深まるにつれて「ギュルルルルルー」という騒々しい声で盛んに鳴くようになる。鳴き始めは「ギューッ、ギューッ」と間隔を空けた声だが、次第に途切れない連続音になっていく。",
     "photos": [
       "images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg",
@@ -2190,6 +2380,8 @@
       9,
       10
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "ナミヘビ科マダラヘビ属 *Dinodon semicarinatum*\n\n全長〜200cm。5月から11月頃に良く観察できる。黄褐色の体に赤と黒の楕円形の横じまが入る。毒は無いが攻撃的でテリトリーに入れば威嚇して攻撃してくる。食性は哺乳類、鳥類、爬虫類、両生類、魚類やウミガメの卵も食べ、天敵のハブを食べることもある。夜行性で林道や水辺周りから海岸付近まで観察できる。小型の個体は赤みが強くとても美しいが、小さくても噛まれると痛いので注意。",
     "photos": [
       "images/creatures/snakes/akamata/akamata_000001_20250921_22.jpg",
@@ -2255,6 +2447,8 @@
       5,
       6
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "タカチホヘビ科タカチホヘビ族 *Achalinus werneri*\n\n全長〜55cm。背面は黒褐色や暗褐色で正中線に沿って黒い縦縞が入る。腹面は黄色。奄美ではよっぽど条件の良い日にしか出会えない幻のヘビ。大雨の日に地表に出てくることがある。夜行性で森林や水辺の草原、農耕地などに生息し地中性。食性はミミズ類。他の島のアマミタカチホヘビよりも個体数が少なく見つけにくい。とても細長く小さいので車で流していては認識できないかもしれない。",
     "photos": [
       "images/creatures/snakes/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg",
@@ -2277,6 +2471,8 @@
       5,
       6
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "ナミヘビ科ヒバカリ属 *Hebius pryeri*\n\n全長〜110cm。5月から11月頃に良く観察できる。体型は細長く体色は黒や黒褐色で、胴に黄色や褐色の帯模様が入る。水辺を好み水田や小型のカエルが多い場所で良く見られる。毒はあるが毒を分泌する牙が小さく、噛まれただけでは体内に浸透しないと言われるが毒性は強いので注意。食性はカエル、魚、ヤモリ、小型のトカゲ。動きは俊敏だが危険を察知すると威嚇してくる。",
     "photos": [
       "images/creatures/snakes/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
@@ -2315,6 +2511,8 @@
       10,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "クサリヘビ科ハブ属 *Protobothrops flavoviridis*\n\n全長〜226cm、大型のヘビ。5月から11月頃が良く観察できる(冬でも暖かい日には活動)。夜行性で昼間は穴の中などで休む。平地から山地の森林、草原、水辺、農地や樹上にも生息し、ネズミを追って人家周辺にも入り込む。主食はネズミの他、爬虫類、カエル、哺乳類、鳥類。天敵はアカマタとハブ取り。毒がある上にかなり攻撃的。2〜3mは必ず離れて観察・撮影する。近づくと逃げずにすぐ攻撃体制に入り、体長の3分の2近く飛びかかることが可能。電波の通じない山奥で噛まれると大変なことになる。模様は自然に溶け込んでかなり見つけにくく、見えていないだけでいろんな所に潜んでいる。注意しすぎるくらい注意。",
     "photos": [
       "images/creatures/snakes/habu/habu_000002_20250228_00.jpg",
@@ -2429,6 +2627,8 @@
       6,
       12
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クサリヘビ科ヤマハブ属 *Ovophis okinavensis*\n\n全長〜80cm。寒さに強く奄美大島では年中観察できる。梅雨を過ぎて暑くなると標高の高い場所でよく観察できる。食性は小型から中型のカエル、小型哺乳類、鳥類。水田や流れの緩やかな沢などカエルが多く棲む場所でよく観察できる。トグロを巻いている個体は殆ど動かないがテリトリーに入ると威嚇してくる。毒ヘビなので噛まれた場合は直ぐに病院へ。踏んづけないように気をつける。",
     "photos": [
       "images/creatures/snakes/hime-habu/hime-habu_000002_20250429_20.jpg",
@@ -2471,6 +2671,8 @@
       6,
       11
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "コブラ科ワモンベニヘビ属(別名:リュウキュウベニヘビ) *Sinomicrurus japonicus*\n\n全長〜50cm。5月頃と9月頃に良く観察できる。背面は赤褐色や橙色で5本の暗褐色の縦縞が入る。「特定動物」に指定され、人に危害を与える可能性のある動物とされる。毒性は神経毒でハブよりも強いが、頭は小さく大人しい。手に取ると骨のように硬い尾で突き刺してくる。夜行性で数が少なく見かけるのは稀。ヒャンを見るために奄美大島へ訪れる人もいるくらい人気がある。",
     "photos": [
       "images/creatures/snakes/hyan/hyan_000001_20250515_20.jpg",
@@ -2511,6 +2713,8 @@
       3,
       9
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "",
     "photos": [
       "images/creatures/snakes/mekura-hebi/mekura-hebi_000001_20260301_15.jpg",
@@ -2534,6 +2738,8 @@
       9,
       10
     ],
+    "activity": "diurnal",
+    "night_observable": true,
     "description": "ナミヘビ科アオヘビ属 *Cycophuops semicarinatus*\n\n全長〜100cm。5月から11月頃によく観察できる。昼行性だが夜間活動する個体も多い。頭部は小さく食性は主にミミズ、カエルも食べる。奄美大島では1番個体数が多く、昼間の林内や夜間林道でも見られる。大きくなると威嚇してくる個体もいるが、逃げるのはとても早く斜面を滑り降りていく。",
     "photos": [
       "images/creatures/snakes/ryuukyuu-aohebi/ryuukyuu-aohebi_000001_20250326_22.jpg",
@@ -2568,6 +2774,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クワガタムシ科オオクワガタ属ヒラタクワガタ亜種 *Dorcus titanusu elegans*\n\n奄美諸島に生息するヒラタクワガタの亜種。奄美大島では一番生息数が多いクワガタ。飼育するとかなり大型になる人気種。みかんの木、タブ、シイ、アカメガシワの樹液に集まる。野外では50mm以下が多く、65mm超えるとかなり大きい。目指せ70mm UP。",
     "photos": [
       "images/creatures/stag-beetles/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg",
@@ -2593,6 +2801,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クワガタムシ科オオクワガタ属コクワガタ亜属 *Dorcus amamianus*\n\nコクワガタの名が付くがヒメオオクワガタに似ている点が多い。大あごは短く強く湾曲し、足やフセツは長い。発生時期5月下旬から10月。本土のコクワガタほど個体数は多くない。",
     "photos": [
       "images/creatures/stag-beetles/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
@@ -2613,6 +2823,8 @@
     "months": [
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クワガタムシ科マルバネクワガタ属 *Neolucanus protogenetivus*\n\n発生時期9月から10月頃、スダジイの巨木が密集する深い森の中で観察できる。奄美大島（付属島含む）5市町村・徳之島3町の希少野生動植物保護条例により採集禁止。密猟防止のため山中にカメラが仕掛けられ、シーズン時には昆虫パトロールが見回っている。※写真を撮るだけなら問題ないが、許可が必要な場所に入る場合はしっかり申請すること。",
     "photos": [
       "images/creatures/stag-beetles/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250906_21.jpg",
@@ -2640,6 +2852,8 @@
     "months": [
       8
     ],
+    "activity": "nocturnal",
+    "night_observable": false,
     "description": "クワガタムシ科ミヤマクワガタ属 *Lucanus ferriei*\n\n発生時期7月から9月頃。奄美大島のみに分布する希少種。条例により採集禁止。標高300m以上の原生林に生息。夜行性で木の上部でメスを待つオスが見られるが目視では確認しづらい。しばしば電柱の上部で見かけることも。樹液や果実トラップ、ライトにも来るが採集は禁止。",
     "photos": [
       "images/creatures/stag-beetles/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
@@ -2666,6 +2880,8 @@
       9,
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クワガタムシ科ネブトクワガタ属 *Aegus laevicolis subnitidus*\n\nネブトクワガタの奄美諸島亜種で、国内産ネブトクワガタの亜種では最も大型になる。発生時期5月から10月頃。タブ、シイ、アカメガシワ、ソウシジュの樹液に来ることがある。野外では20mm程が多く、28mmあると大きい。目指せ30mm up。",
     "photos": [
       "images/creatures/stag-beetles/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
@@ -2687,6 +2903,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クワガタムシ科ノコギリクワガタ属の奄美亜種 *Prosopocoilus dissimilis*\n\n発生時期6月中旬から9月上旬。日本のノコギリクワガタの中では奄美大島産のものが特に大型で、大顎が長く太く立派。みかんの木、アカメガシワ、タブ、シイ、熟したアダンの実やバナナトラップ、街灯にもよく飛来する。60mm前後が多く、75mmを超えると大きい。目指せ80mm。",
     "photos": [
       "images/creatures/stag-beetles/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000001_20250620_21.jpg",
@@ -2721,6 +2939,8 @@
       7,
       8
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クワガタムシ科シカクワガタ属 *Rhaetulus recticrnis*\n\n5月から9月頃活動、8月頃が一番よく見られる。条例により採集禁止。比較的標高が高い地域の方が可能性は高い。スダジイやみかんの木の細枝についていることが多い。大型個体は大あごがシカのように強く湾曲する。コクワガタやノコギリクワガタの小型個体と間違えて持ち帰らないよう注意(自分で種類を判別できない個体は持ち帰らない)。",
     "photos": [
       "images/creatures/stag-beetles/amami-shika-kuwagata/amami-shika-kuwagata_000001_20250627_21.jpg",
@@ -2754,6 +2974,8 @@
       9,
       10
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クワガタムシ科チビクワガタ亜科ツノヒョウタンクワガタ属 *Nigidius lewisi*\n\n全身つやがあり独特の大あごを持ち、一年中朽木の中で過ごす。カシ・シイ類の倒木、落ち葉の下から通年見つかる。雌雄判別が難しい。奄美では局所的に分布し、ほとんど樹液に来ないので見つけるのは難しい。",
     "photos": [
       "images/creatures/stag-beetles/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
@@ -2773,6 +2995,8 @@
       10,
       11
     ],
+    "activity": "",
+    "night_observable": false,
     "description": "クワガタムシ科オオクワガタ属ヒラタクワガタ亜属 *Dorcus metacostatus*\n\n発生時期4月下旬から10月頃、ピークは7月。上翅に明確なスジが8本ある珍しい日本固有種で奄美諸島にしか生息していない。みかんの木やタブ、アカメガシワ、シイ、バナナトラップや街灯にもよく飛来する。60mmを超えると大きい、目指せ70mm UP。",
     "photos": [
       "images/creatures/stag-beetles/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",
