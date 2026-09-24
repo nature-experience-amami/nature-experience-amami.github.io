@@ -38,6 +38,12 @@ IMAGE_EXT = {".jpg", ".jpeg", ".png", ".webp"}
 GEMINI_MODELS = list(dict.fromkeys(
     m for m in (os.environ.get("GEMINI_MODEL"), "gemini-3.1-flash-lite", "gemini-flash-latest") if m))
 
+# 生き物を選ぶときのカテゴリーの重み(夜に出会える主役級を多めに)。表にないカテゴリーは1
+CATEGORY_WEIGHT = {
+    "snakes": 3, "amphibians": 3, "stag-beetles": 3, "mammals": 3, "birds": 3,
+    "lizards": 2,
+}
+
 # 0=月 … 6=日
 ROTATION = {0: "creature", 1: "tip", 2: "quiz", 3: "creature", 4: "tip", 5: "creature", 6: "tour"}
 TYPE_LABEL = {"creature": "生き物紹介", "tip": "観察のコツ", "quiz": "クイズ", "tour": "ツアー案内"}
@@ -48,10 +54,17 @@ NOW = datetime.datetime.now(JST)
 RULES = """
 - 奄美大島のナイトツアーガイド「Nature Experience Amami」の公式アカウントとして書く
 - 親しみやすく、でも誇張しない。事実は与えた資料の範囲だけで書き、資料にないことを付け足さない
+- 「夜に見られる」「ツアーで会える」など、資料にない活動時間帯・出会いやすさ・見られる場所は書かない
+- 学名は資料に書いてあるときだけ使う
 - 具体的な観察場所(地名・林道名・集落名など)は絶対に書かない。「奄美大島」までにとどめる
 - 採集や持ち帰り、生き物に触る・追い回すことを勧める表現は使わない
 - 本文(post)は日本語で250字以内。絵文字は2つまで。ハッシュタグとURLは付けない
-- weather_line: 天気情報があれば、今夜の観察と結びつけた一言(40字以内)。自然に結びつかなければ空文字
+- weather_line: 天気情報があれば、今夜の天気についての一言(40字以内)。天気情報がなければ空文字
+  - 資料に天気との関係が書いてある場合だけ、今夜の天気がその生き物の見つけやすさにどう関係するかを書く
+    (例: 資料に「雨の日に活発」→「雨上がりの今夜は出てきてくれそうです」)
+  - 資料に根拠がなければ、天気そのものを伝えるだけにする(例: 「今夜の奄美は雨の心配もなく、夜の散策日和です」)
+  - 注意を書くのは、理由と注意が自然につながるときだけ。何に注意するかを具体的に書く
+    (例: 「雨上がりで道がぬかるみやすいので、歩きやすい靴で」)。「足元にお気をつけて」のような曖昧な注意は書かない
 - english: 本文の要点を短い英語1文で
 """
 
@@ -197,9 +210,13 @@ def creature_info(c):
 
 
 # ===== 投稿タイプごとの下書き作成 =====
+def weighted_choice(pool):
+    return random.choices(pool, weights=[CATEGORY_WEIGHT.get(c.get("category"), 1) for c in pool])[0]
+
+
 def pick(pool, used):
     fresh = [c for c in pool if c["id"] not in used]
-    return random.choice(fresh or pool)
+    return weighted_choice(fresh or pool)
 
 
 def draft_creature(creatures, hist, weather):
@@ -243,7 +260,7 @@ def draft_tip(creatures, hist, weather):
     ti = random.choice(fresh or list(range(len(tips))))
     tip = tips[ti]
     by_id = {c["id"]: c for c in creatures if c["photos"]}
-    c = by_id.get(tip.get("creature")) or random.choice(
+    c = by_id.get(tip.get("creature")) or weighted_choice(
         [c for c in by_id.values() if is_season(c)] or list(by_id.values()))
     out = gemini(f"""ガイドが書いた「観察のコツ」を、Threads投稿に整えてください。
 {RULES}
