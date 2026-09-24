@@ -8,6 +8,17 @@
 #     diurnal: true       # 昼行性の印。ツアー案内では名前にも写真にも使わない
 #     tour_exclude: true  # 見るのが難しい種の印。ツアー案内では名前にも写真にも使わない
 #   ※ diurnal / tour_exclude の種も、生き物紹介・クイズには今まで通り出る
+#
+#   _categories: カテゴリー単位の既定値。種ごとに書いた値(diurnal: false など)が優先される
+
+# ===== カテゴリー単位の既定値 =====
+_categories:
+  lizards:                        # トカゲの仲間は基本的に昼行性
+    diurnal: true
+# トカゲの例外(夜も観察できる種)は、Markdownが追加されたら種ごとに diurnal: false を書く
+#   - オキナワキノボリトカゲ: 夜に寝ている姿を観察できるので印なし
+#     (写真フォルダ okinawa-kinobori-tokage はあるが、Markdownがまだない。IDはMarkdownを作ってから確定)
+#   - ヤモリの仲間: 夜行性なので印なし(サイトにまだ種がない)
 
 # ===== 月の上書き =====
 
@@ -71,7 +82,7 @@ amami-semadara-magusokogane:      # アマミセマダラマグソコガネ
   months: [10, 11, 12, 1, 2, 3, 4]
 
 # --- トカゲ ---
-ba-ba-tokage:                     # バーバートカゲ
+ba-ba-tokage:                     # バーバートカゲ(昼行性の印は上の _categories でも付く)
   months: [5, 6, 7, 8, 9, 10]
   diurnal: true
 
@@ -142,7 +153,9 @@ sankoutyou:                       # リュウキュウサンコウチョウ
   diurnal: true
 oomidor-isaru-hamshi:             # オオミドリサルハムシ
   diurnal: true
-# 蝶の仲間(Markdownの group: tyou)。リュウキュウアサギマダラは除く
+# 蝶の仲間(Markdownの group: tyou)
+ryuukyuu-asagi-madara:            # リュウキュウアサギマダラ(夜は見られない。2月の15℃を下回る日に集団越冬する)
+  diurnal: true
 aosuji-ageha:                     # アオスジアゲハ
   diurnal: true
 ishigake-tyou:                    # イシガケチョウ

@@ -155,12 +155,13 @@ def apply_overrides(items):
         ov = yaml.safe_load(OVERRIDES_FILE.read_text(encoding="utf-8")) or {}
     except FileNotFoundError:
         return
+    cat_default = ov.pop("_categories", None) or {}   # カテゴリー単位の既定値(種ごとの設定が優先)
     ids = {c["id"] for c in items}
     for cid in ov:
         if cid not in ids:
             print(f"overrides.yml: 生き物ID {cid} のMarkdownが見つかりません(無視)")
     for c in items:
-        o = ov.get(c["id"]) or {}
+        o = {**(cat_default.get(c.get("category")) or {}), **(ov.get(c["id"]) or {})}
         if o.get("months"):
             c["months"] = o["months"]
         c["diurnal"] = bool(o.get("diurnal"))
