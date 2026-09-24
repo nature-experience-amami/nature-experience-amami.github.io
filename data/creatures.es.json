@@ -11,7 +11,7 @@
       2
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ranas pardas, género Rana. *Rana kobai*\n\nAlcanza unos 3.2-4.6 cm. Se reproduce de noviembre a enero. Vive en bosques y a lo\nlargo de ríos, desde las tierras bajas hasta las montañas. Se activa en días\nhúmedos o lluviosos, y durante la época de reproducción se reúne en pequeños\nestanques y charcas de manantial. También se ven ejemplares a lo largo de caminos\nforestales. Es delgada y de color pardo rojizo, y emite un canto agudo, «kyok-kyok».",
     "photos": [
       "../images/creatures/amphibians/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
@@ -42,7 +42,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ranas arborícolas (Rhacophoridae), género Zhangixalus.\n*Zhangixalus amamiensis*\n\nAlcanza unos 4.5-7.7 cm. Se reproduce desde finales de diciembre hasta mayo\naproximadamente. Se encuentra desde las tierras bajas hasta las montañas, en\nbosques alrededor de estanques, arrozales y otras aguas quietas. Canta con fuerza\nen días húmedos o lluviosos, y deposita masas de huevos blancas y espumosas sobre\nramas o entre la vegetación junto al agua. Aunque cante mucho, es muy difícil de\nlocalizar. Es más grande que la ranita de Hallowell, lo que facilita distinguir a\nambas especies.",
     "photos": [
       "../images/creatures/amphibians/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg",
@@ -97,7 +97,7 @@
       2
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ranas pardas, género Odorrana. *Odorrana amamiensis*\n\nAlcanza unos 5.6-10.1 cm. Se reproduce de octubre a mayo. Vive alrededor de\narroyos de montaña. Es esbelta y de buena postura, y una vez que aprendes a\nreconocerla, puedes distinguirla incluso de lejos. Su coloración es rica y varía\nentre individuos. Está declarada Monumento Natural en la prefectura de Kagoshima,\npor lo que está prohibido capturarla o trasladarla, incluidos sus huevos. Cuando\nllueve, salen muchas a los caminos forestales, así que hay que conducir con cuidado.",
     "photos": [
       "../images/creatures/amphibians/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg",
@@ -133,7 +133,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los tritones (Salamandridae), género Echinotriton.\n*Echinotriton raffaellii*\n\nAlcanza unos 14-20 cm de longitud total. Se reproduce desde enero hasta abril\naproximadamente. Endémico de Amami Oshima, Uke-jima y Tokunoshima, vive alrededor\nde bosques y campos de cultivo. Se activa en los días cálidos de invierno, y\ndurante la época de reproducción pone sus huevos bajo las hojas caídas cerca del\nagua. Tiene un cuerpo robusto y de color pardo negruzco, con las puntas de las\ncostillas y los extremos de las extremidades teñidos de naranja.",
     "photos": [
       "../images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
@@ -177,7 +177,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ranas pardas, género Odorrana. *Odorrana splendida*\n\nAlcanza unos 7.4-13.7 cm. Se reproduce desde finales de febrero hasta junio\naproximadamente. Vive junto a los suaves arroyos de cabecera de las zonas\nmontañosas. Considerada la rana más hermosa de Japón, está declarada Monumento\nNatural y Especie Silvestre Rara Nacional en la prefectura de Kagoshima, por lo\nque está prohibido capturarla o trasladarla, incluidos sus huevos. En algunos\npuntos cerca de arroyos de mayor altitud se puede oír su canto al anochecer, e\nincluso en verano puede verse en ciertos lugares cuando llueve.",
     "photos": [
       "../images/creatures/amphibians/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
@@ -243,7 +243,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los tritones, género Cynops. *Cynops ensicauda ensicauda*\n\nLos machos alcanzan unos 14 cm y las hembras unos 18 cm de longitud total. Se\nencuentra en Amami Oshima, Uke-jima, Kakeromajima, Yoro-jima y otras islas\ncercanas, y se reproduce en\nestanques, arrozales y tramos de corriente suave de los arroyos. Después de\nseptiembre, la mayoría de los ejemplares abandonan el agua, y hacia diciembre,\ndurante la época de reproducción, se pueden observar muchos junto al agua. Tiene\nel cuerpo negro con manchas amarillas o anaranjadas, y la variación individual\nes considerable. En Okinawa vive el tritón de cola de espada de Okinawa, una\nforma emparentada.",
     "photos": [
       "../images/creatures/amphibians/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
@@ -266,7 +266,7 @@
       7
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ranitas de árbol, género Hyla. *Hyla hallowellii*\n\nAlcanza unos 3-4 cm. Se reproduce de marzo a junio. Vive en bosques de tierras\nbajas, matorrales y campos de cultivo, y pone sus huevos en arrozales y otras\naguas quietas. Se activa en días húmedos y noches lluviosas, y durante la época\nde reproducción forma grandes coros cerca de los arrozales. Se posa un poco en\nalto, como en la punta de las ramas, y aunque cante mucho es difícil de localizar.\nEs de un verde uniforme y muy hermosa. Su canto se parece al de la ranita japonesa.",
     "photos": [
       "../images/creatures/amphibians/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
@@ -301,7 +301,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ranas de boca estrecha, género Microhyla. *Microhyla okinavensis*\n\nAlcanza unos 2.2-3.2 cm. Se reproduce todo el año (principalmente de marzo a\njulio). Se encuentra en una amplia variedad de hábitats, desde las tierras bajas\ncosteras hasta las montañas, incluyendo bordes de bosque, praderas y alrededores\nde viviendas. Se activa en días húmedos o lluviosos. Tiene la cabeza pequeña y\nlas patas gruesas, lo que le da una forma triangular vista desde arriba. Es la\nrana más pequeña de Japón, pero canta con una voz sorprendentemente fuerte.",
     "photos": [
       "../images/creatures/amphibians/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
@@ -325,7 +325,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ranas pardas, género Babina. *Babina subaspera*\n\nAlcanza unos 9-14 cm. Se reproduce de abril a octubre. Vive principalmente en\nzonas montañosas, pero también puede verse en tierras de cultivo y parques. Se\nactiva en días húmedos o lluviosos y suele salir a los caminos. Los machos son\nmás grandes, lo que la convierte en la rana más grande de Japón, dejando aparte\nla rana toro americana introducida. Tiene cinco dedos, con una espina afilada en\nel que corresponde al pulgar, que se cree que los machos usan al pelear entre sí\no durante el amplexo. Declarada Monumento Natural y Especie Silvestre Rara\nNacional en la prefectura de Kagoshima, está prohibido capturarla o trasladarla,\nincluidos sus huevos. Es muy grande e impresionante, y fácil de localizar cuando\nsale a un camino. Se dice que su nombre proviene de su canto.",
     "photos": [
       "../images/creatures/amphibians/otton-gaeru/otton-gaeru_000001_20250228_22.jpg",
@@ -359,7 +359,7 @@
       11
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ranas arborícolas, género Buergeria. *Buergeria japonica*\n\nAlcanza unos 2.5-4 cm. Se reproduce de abril a octubre. Adaptable a hábitats que\nvan desde arroyos de montaña hasta charcos en zonas urbanizadas, es la rana que\nmás se ve en Amami Oshima. Canta con especial intensidad en días húmedos o\nlluviosos. Los machos son de un amarillo precioso, y su canto también es hermoso.",
     "photos": [
       "../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
@@ -384,7 +384,7 @@
       7
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami y\nOkinawa y en Guam. Los escarabajos de rabión viven principalmente en corrientes\nlimpias; tanto las larvas como los adultos pasan su vida en el agua y alcanzan\ncomo máximo unos 5 mm, por lo que la familia se observa como indicador de ríos\nlimpios. La ecología detallada de esta especie en concreto sigue siendo, en\ngran parte, desconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
@@ -403,7 +403,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\nUna especie endémica que solo se encuentra en Amami Oshima, descrita en 2005.\nEl género Dryopomorphus también incluye una especie emparentada de amplia\ndistribución en Honshu, Shikoku y Kyushu junto con una especie más pequeña, así\ncomo otra especie endémica de las islas Osumi. Los escarabajos de rabión son\nen su mayoría pequeños escarabajos acuáticos que viven en corrientes limpias,\npero la ecología detallada de esta especie en concreto sigue siendo, en gran\nparte, desconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg",
@@ -424,7 +424,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los chinches de agua pigmeos, género Micronecta. *Micronecta japonica* Chen, 1960\n\nUna diminuta chinche de agua de aproximadamente 1 mm. Endémica de Japón, se encuentra en las islas Nansei (Amami Oshima y Tokunoshima). Dentro del mismo género se conocen varias especies emparentadas, entre ellas Micronecta guttata, más extendida, presente desde Hokkaido hasta Kyushu. Normalmente se entierra en la arena o entre las hojas caídas, y nada rápidamente para escapar cuando se la sobresalta.",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
@@ -443,7 +443,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Ordobrevia. *Ordobrevia amamiensis amamiensis* (Nomura, 1957)\n\nUn pequeño escarabajo acuático que se encuentra en Amami Oshima (subespecie nominal). La población de la isla de Okinawa y de la isla de Iheya se distingue\ncomo una subespecie separada, el escarabajo de rabión acanalado de Okinawa (*O. a. okinawana*), y también se conoce una población introducida en Guam. Los escarabajos de rabión viven principalmente\nen corrientes limpias, pero la ecología detallada de esta especie en concreto\nsigue siendo, en gran parte, desconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
@@ -459,7 +459,7 @@
       2
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los zapateros de agua de hombros anchos, género Xiphovelia. *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\nUn pequeño zapatero de agua de hombros anchos presente en las islas Nansei, en Amami Oshima, Tokunoshima y la isla de Okinawa. La especie emparentada Xiphovelia japonica prefiere zonas de guijarros y roca en las orillas de estanques de valle rodeados de bosque, y se ha confirmado que sus huevos pasan el invierno sobre restos de plantas flotantes o guijarros de la orilla, pero la ecología concreta de esta especie sigue siendo poco conocida. Cabe señalar además que la especie emparentada Xiphovelia japonica figura como Vulnerable (VU) en la Lista Roja del Ministerio de Medio Ambiente, pero esa designación corresponde a una especie distinta y no debe confundirse con esta; esta especie en sí no figura en la Lista Roja.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
@@ -479,7 +479,7 @@
       3
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos de musgo diminutos, género Ochthebius. *Ochthebius amami* Yoshitomi & M.Satô, 2001\n\nUn diminuto escarabajo acuático descrito como especie nueva a partir de un ejemplar recogido por casualidad en Amami Oshima en la primavera de 1997, perteneciente a la familia de los escarabajos de musgo diminutos (una familia distinta de los «gamushi», a pesar del nombre japonés similar). Mide entre 1.9 y 2.3 mm. Se encuentra en Amami Oshima y en la isla de Okinawa, y vive en tramos relativamente abiertos de arroyos de montaña, aunque no es muy abundante. La degradación del hábitat por obras fluviales y de refuerzo de las orillas es motivo de preocupación, y en la revisión de 2010 de la Lista Roja del Ministerio de Medio Ambiente se incluyó por primera vez como Casi Amenazada (NT).",
     "photos": [
       "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
@@ -497,7 +497,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos acuáticos (Hydrophilidae), género Laccobius. *Laccobius satoi* Gentili, 1989\n\nUn pequeño escarabajo acuático endémico de Japón, presente en Amami Oshima y Tokunoshima. Dentro del género Laccobius en Japón existen varias especies emparentadas, como L. fragilis y L. nakanei, y para distinguirlas es necesario examinar la genitalia. Los registros detallados de su longitud corporal y ecología son escasos, y todavía se desconocen muchos aspectos.",
     "photos": [
       "../images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
@@ -550,7 +550,7 @@
       2
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las chinches sapo, género Nerthra. *Nerthra macrothorax* (Montrouzier, 1855)\n\nLa única especie de la familia de las chinches sapo presente en Japón, de aproximadamente 1 cm, con un cuerpo ancho y aplanado. Carece de ocelos y se distingue por sus patas delanteras gruesas y en forma de hoz. Su nombre japonés, Ashibuto-memizumushi, significa literalmente «chinche de agua de patas gruesas», pero a pesar de ese nombre no vive bajo el agua en estanques, sino que es un depredador semiterrestre de emboscada, activo de noche en playas de arena (desde la orilla hasta el bosque costero), que caza cochinillas de la humedad, y pasa el invierno en estado adulto. Está ampliamente distribuida desde el sur de Kyushu, pasando por las islas Nansei, hasta las islas Ogasawara, y no es endémica solo de Amami Oshima.",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000001_20260204_20.jpg",
@@ -580,7 +580,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia japonica* Esaki & Miyamoto, 1955\n\nUn pequeño insecto acuático de unos 1.5-2.1 mm de longitud. Se encuentra en\nHonshu (al oeste de la prefectura de Fukushima), Shikoku y Kyushu, y en las\nislas Ryukyu desde Kikaijima hasta la isla de Okinawa. Se ve habitualmente en\ncharcas en penumbra junto a pequeños arroyos y a la sombra de las rocas, donde\ncaptura pequeños insectos que caen a la superficie del agua.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg",
@@ -645,7 +645,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia iriomotensis* Miyamoto, 1964\n\nUn pequeño insecto acuático de unos 1.7-1.9 mm de longitud. Se encuentra en\nlas islas Ryukyu (desde el archipiélago de Amami hasta las islas Yaeyama) y en\nTaiwán. Se ve en charcas formadas por filtraciones junto a caminos forestales\nde montaña; investigaciones académicas han descrito un comportamiento de\napareamiento en el que el macho custodia a la hembra durante un tiempo\nprolongado.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
@@ -672,7 +672,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los zapateros de hombros anchos, género Microvelia.\n*Microvelia douglasi* Scott, 1874\n\nCon unos 1.5-2 mm de longitud, es uno de los zapateros de hombros anchos más\npequeños. Se encuentra en Honshu, Shikoku, Kyushu, Tsushima, las islas Ryukyu\ny las islas Daito (Minami Daito-jima), y de forma más amplia en el extranjero,\ndesde la península de Corea hasta China, el Sudeste Asiático, Taiwán y\nOceanía. Prefiere aguas en movimiento, como pequeños arrozales y arroyos, y\ncaptura pequeños insectos que caen a la superficie del agua. La familia\nincluye tanto formas sin alas que no pueden volar como formas de alas largas\nque sí pueden.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg",
@@ -695,7 +695,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos buceadores, género Cybister.\n*Cybister tripunctatus orientalis* Gschwendtner, 1931\n\nAlcanza unos 24-29 mm. Se encuentra en Honshu, Shikoku, Kyushu, las islas\nRyukyu y las islas Ogasawara, y en el extranjero en China, la península de\nCorea y Taiwán. De forma ovalada alargada y algo aplanada, con el dorso muy\nbrillante que va del verde al pardo negruzco; un reborde amarillo en el borde\nde los élitros es la clave para distinguirlo del escarabajo buceador leonado.\nVive en estanques y marismas ricos en plantas acuáticas y en arrozales\nabandonados, campos en barbecho y canales de corriente lenta. Desde la década\nde 1960 ha disminuido drásticamente en Honshu y más al sur debido al uso de\npesticidas y la consolidación de parcelas, y figura como Vulnerable en la\nLista Roja del Ministerio de Medio Ambiente, aunque todavía se ve con\nrelativa frecuencia en las islas Ryukyu. Se parece mucho al escarabajo\nbuceador leonado en forma y color, lo que dificulta distinguirlos solo con\nfotografías.",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
@@ -725,7 +725,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los zapateros de agua, género Gerris. *Gerris gracilicornis* (Horváth, 1879)\n\nUn zapatero de agua grande, de color pardo rojizo, de unos 11-16 mm. Ampliamente distribuido en Japón, desde Hokkaido hasta Honshu, Shikoku, Kyushu y las islas Nansei, prefiere estanques, ríos y marismas, especialmente aguas más frías. Pasa el invierno en tierra como adulto y, al despertar, vuela en busca de nuevas masas de agua, por lo que suele verse en pequeños charcos a principios de primavera.",
     "photos": [
       "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
@@ -744,7 +744,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Zaitzevia. *Zaitzevia elongata* Nomura, 1962\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa. En Japón se conocen ocho especies del género Zaitzevia, cada una\ndistribuida en una zona distinta, desde Honshu hasta las islas Yaeyama. Los\nescarabajos de rabión viven principalmente en corrientes limpias, pero la\necología detallada de esta especie en concreto sigue siendo, en gran parte,\ndesconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg",
@@ -764,7 +764,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Stenelmis.\n*Stenelmis amami* Yoshitomi et Hayashi, 2021\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa. Originalmente se consideraba la única especie de su propio género,\npero un estudio de filogenia molecular de 2021 (Kobayashi et al., 2021) la\nsituó en el género Stenelmis. El nombre del género (Nomuraelmis) y el nombre común japonés fueron acuñados\nen 1964 por el Dr. Masataka Satô, y se cree que honran al Dr. Nomura, quien\ncontribuyó a ser pionero en la investigación de los escarabajos de rabión en\nJapón durante esa misma época. La ecología\ndetallada de esta especie en concreto sigue siendo, en gran parte, desconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg",
@@ -792,7 +792,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos buceadores, género Hydaticus. *Hydaticus vittatus* (Fabricius, 1775)\n\nAlcanza unos 11-14 mm. Un escarabajo buceador de tipo meridional que se\nencuentra en las islas Ryukyu al sur de Yakushima, y en el extranjero en\nTaiwán, China y el Sudeste Asiático. Vive en aguas quietas ricas en plantas\nacuáticas, como estanques y arrozales. Además del declive de su hábitat, en\nlos últimos años se ha detectado que muchos escarabajos buceadores, incluida\nesta especie, se venden aparentemente con fines de cría en cautividad, por lo\nque en enero de 2023 fue designada, junto con otros escarabajos buceadores,\nEspecie Silvestre Nacional Rara de Segunda Clase Especificada. Esta\ndesignación solo regula la captura y el traslado con fines de venta o\ndistribución; la captura con fines de observación no está restringida. Se\nparece mucho a una especie emparentada del mismo género distribuida al oeste\nde Honshu, pero como sus áreas de distribución no se solapan, resulta fácil\ndistinguirlas.",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
@@ -814,7 +814,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos acuáticos de dedos largos (Dryopidae), género\nElmomorphus. *Elmomorphus amamiensis* Nomura, 1959\n\nUn pequeño escarabajo acuático registrado en Amami Oshima y Okinoerabujima.\nAnteriormente se trataba como una subespecie de las islas Ryukyu de una\nespecie continental, pero en 2014 un estudio mediante secuenciación del gen\nCOI y comparación morfológica encontró una gran divergencia genética a nivel\nde especie entre ambas, por lo que fue elevada a especie plena. Actualmente\nse acepta de forma generalizada como una especie distinta. Los Dryopidae son\nuna familia emparentada con los escarabajos de rabión (Elmidae) y viven\nigualmente en corrientes limpias. La ecología detallada de esta especie en\nconcreto sigue siendo, en gran parte, desconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg",
@@ -834,7 +834,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Sinonychus. *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa (sin registros en la propia isla de Okinawa), descrito en 2007. En\nJapón solo se conocen dos especies del género Sinonychus; la otra se\nencuentra en Kyushu. La ecología detallada de esta especie en concreto sigue\nsiendo, en gran parte, desconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg",
@@ -863,7 +863,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los zapateros de hombros anchos, género Pseudovelia (zapateros de\ncorriente). *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\nSe encuentra en las islas Ryukyu (desde Takarajima hasta la isla de Okinawa).\nEn Japón se conocen varias especies del género Pseudovelia, un grupo que vive\nen las orillas de ríos y estanques. Todavía no se ha confirmado información\nsuficiente sobre la ecología detallada de esta especie en concreto.",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg",
@@ -884,7 +884,7 @@
       2
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Urumaelmis. *Urumaelmis uenoi uenoi* (Nomura, 1961)\n\nUn pequeño escarabajo acuático que se encuentra desde Yakushima hasta el\narchipiélago de Amami y el archipiélago de Okinawa (subespecie nominal). El género\nUrumaelmis también incluye una segunda especie descrita en Kyushu en 2020, con\nlo que en Japón se conocen dos especies de este género. La población de\nKuchinoshima, en las islas Tokara, se distingue como una subespecie separada (*U. u. tokarana*).\nLa ecología detallada de esta especie en concreto sigue siendo, en gran parte,\ndesconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
@@ -916,7 +916,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los escarabajos buceadores, género Hydaticus (escarabajos\nbuceadores rayados). *Hydaticus rhantoides* Sharp, 1882\n\nUn pequeño escarabajo buceador de unos 10-11 mm de longitud. Los élitros son\nde color pardo amarillento en general, sin rayas llamativas. Se encuentra en\nHonshu (al oeste de la región de Kanto), Shikoku, Kyushu, Tsushima, las islas\nRyukyu y las islas Daito, y en el extranjero en China, Taiwán y el Sudeste\nAsiático. Vive en aguas quietas abiertas, como arrozales y estanques. Entre\nlos escarabajos buceadores de las islas Ryukyu, se considera que, junto con el\nescarabajo buceador leonado y el escarabajo buceador menor, mantiene una\npoblación relativamente estable.",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg",
@@ -934,7 +934,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Scarabaeidae, subfamilia Aphodiinae, escarabajo peludo del estiércol de Amami *Gilletianus atsushii* (Ochi, 1986)\n\nUn raro escarabajo del estiércol que se encuentra en Amami Oshima, con muy pocos registros de recolección. Fue descrito en 1986 por Teruo Ochi como *Aphodius (Trichaphodius) atsushii*, pero revisiones taxonómicas posteriores lo situaron en el género Gilletianus. Se cree que vive de los excrementos del conejo de Amami, pero aún se desconoce mucho sobre su ecología, y los registros son limitados.",
     "photos": [
       "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
@@ -959,7 +959,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Scarabaeidae, subfamilia Dynastinae, escarabajo rinoceronte pequeño de Amami *Eophileurus chinensis irregularis* Prell, 1913\n\nUna subespecie del escarabajo rinoceronte pequeño *Eophileurus chinensis*, que se encuentra en Amami Oshima, Tokunoshima, Yoro y Uke. Los machos alcanzan unos 20–25mm y las hembras unos 15–20mm. Vive en bosques desde las tierras bajas hasta las montañas, es de hábitos nocturnos y suele verse caminando por el suelo del bosque o por los caminos forestales; desde principios de verano hasta finales de otoño también acude a la savia y a las luces. Los adultos pueden verse casi todo el año, aunque no es una especie especialmente abundante.",
     "photos": [
       "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
@@ -983,7 +983,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Scarabaeidae, subfamilia Aphodiinae, escarabajo moteado del estiércol de Amami *Chilothorax ohishii* (Masumoto, 1975)\n\nEspecie endémica que solo se encuentra en Amami Oshima y Tokunoshima. Fue descrita en 1975 por Toshiya Masumoto como *Aphodius ohishii*, pero actualmente se incluye en el género Chilothorax. Se alimenta principalmente de los excrementos del conejo de Amami, y se observa con frecuencia de otoño a primavera, mientras que rara vez aparece en verano.",
     "photos": [
       "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
@@ -1006,7 +1006,7 @@
       5
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Buprestidae, escarabajo joya verde de Amami *Chalcophora japonica oshimana* Schönfeldt, 1890\n\nLongitud corporal de 24 a 40mm. Subespecie, presente en los archipiélagos de Amami y Okinawa, del escarabajo joya *Chalcophora japonica*, ampliamente distribuido desde Hokkaido hasta Okinawa. Prefiere pinos muertos o debilitados, y las larvas se alimentan y crecen dentro de la madera. Los adultos se observan desde principios de verano hasta el verano.",
     "photos": [
       "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
@@ -1028,7 +1028,7 @@
       8
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Cerambycidae, escarabajo longicornio plano de Bates *Eurypoda batesi* Gahan, 1894\n\nLongitud corporal de 26 a 34mm. Ampliamente distribuido desde Honshu (al sur de las regiones de Kanto y Chubu) hasta Shikoku, Kyushu y las islas Nansei al norte de la isla de Okinawa (incluidas Amami Oshima y Tokunoshima), y también presente fuera de Japón en la península de Corea y en el suroeste de China. Se reúne en árboles de alcanforero, castaño de Japón y machilus, es de hábitos nocturnos y también acude a las luces. Se observa con frecuencia de junio a agosto aproximadamente.",
     "photos": [
       "../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg",
@@ -1045,7 +1045,7 @@
       7
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Cerambycidae, escarabajo longicornio rojo de Ferrié *Rosalia (Eurybatus) ferriei* Vuillet, 1911\n\nEspecie endémica que solo se encuentra en Amami Oshima. Tiene un hermoso cuerpo rojo con manchas negras, y aparece en árboles muertos en pie en lo profundo del bosque hacia el mes de julio. Recibe su nombre en honor al padre Ferrié, quien recolectó la especie en Amami Oshima. Está designada como Especie Silvestre Rara según la ordenanza de la prefectura de Kagoshima para la protección de la fauna y flora silvestre rara, y su captura o recolección está prohibida.",
     "photos": [
       "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
@@ -1072,7 +1072,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Scarabaeidae, subfamilia Coprinae, escarabajo redondo del estiércol de Amami *Copris brachypterus* Nomura, 1964\n\nLongitud corporal de 13 a 20mm. Especie endémica que solo se encuentra en Amami Oshima y Tokunoshima (en Tokunoshima habita una subespecie diferente); sus alas posteriores están reducidas, por lo que no puede volar. Por la noche recorre los bosques de montaña buscando los excrementos del conejo de Amami, y tiene el hábito de cavar un agujero bajo la bola de estiércol y arrastrarla hacia atrás con las patas delanteras. Debido a que su área de distribución es extremadamente limitada, tiene poca movilidad, y la presión de recolección del pasado ha reducido considerablemente su número, está incluida como Vulnerable (VU) en la Lista Roja del Ministerio de Medio Ambiente.",
     "photos": [
       "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
@@ -1100,7 +1100,7 @@
       9
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Buprestidae, escarabajo joya verde angosto *Coraebus hastanus oberthueri*\n\nUn pequeño escarabajo joya de unos 11mm de longitud, que se encuentra desde Amami Oshima hacia el sur. Se sabe que los miembros del género Coraebus son más activos bajo la intensa luz solar del verano, y esta especie también se observa de junio a septiembre aproximadamente.",
     "photos": [
       "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
@@ -1124,7 +1124,7 @@
       10
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Chrysomelidae, escarabajo hoja verde grande *Platycorynus japonicus*\n\nLongitud corporal de unos 10mm. Un pequeño escarabajo de hoja con un brillo metálico verde, que se encuentra en las islas Nansei (desde Amami Oshima hacia el sur). Se alimenta de plantas del grupo del jazmín de estrella, y se observa de abril a octubre aproximadamente.",
     "photos": [
       "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
@@ -1162,7 +1162,7 @@
       5
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Scarabaeidae, escarabajo flor tigre de Oshima *Paratrichius duplicatus duplicatus* Lewis, 1895\n\nLongitud corporal de 11.8 a 15.6mm. La subespecie nominal (P. d. duplicatus), que se encuentra en Amami Oshima y Tokunoshima; una subespecie diferente, el escarabajo flor tigre de Okinawa (P. d. okinawanus), habita en el archipiélago de Okinawa. En comparación con los escarabajos flor tigre emparentados, sus élitros presentan un tono más oscuro, lo que le da un brillo característico. Aparece de abril a mayo.",
     "photos": [
       "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
@@ -1184,7 +1184,7 @@
       7
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Buprestidae, escarabajo joya azur angosto *Coraebus niponicus* Lewis, 1894\n\nUn pequeño escarabajo joya con un brillo azur, registrado en Amami Oshima. Se sabe que los miembros del género Coraebus son más activos bajo la intensa luz solar del verano, y esta especie también se observa de junio a septiembre aproximadamente.",
     "photos": [
       "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
@@ -1203,7 +1203,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Scarabaeidae, subfamilia Dynastinae, escarabajo rinoceronte del cocotero *Oryctes rhinoceros* (Linnaeus, 1758)\n\nEspecie invasora originaria de la región de la península de Indochina. Se cree que el primer registro en Japón fue su introducción en la isla de Ishigaki a través de materiales importados de Taiwán a principios del siglo XX; posteriormente se extendió hacia el norte, y fue confirmada en Amami Oshima y Tokunoshima en 1991. Actualmente está establecida y se reproduce de forma natural en casi todo el archipiélago Nansei. Es conocida como una plaga agrícola que perfora los tallos y el corazón de palmeras, piña y caña de azúcar, y existe preocupación por la competencia con las especies nativas de escarabajos rinoceronte.",
     "photos": [
       "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
@@ -1220,7 +1220,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Ceratocanthidae, subfamilia Ceratocanthinae, escarabajo píldora de Tokara *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\nUn pequeño escarabajo de unos 5.0 a 5.8mm de longitud, que se encuentra en las islas Tokara (la localidad tipo es Nakanoshima) y en Amami Oshima. Se distingue por su área de distribución del escarabajo píldora de Sakishima, estrechamente emparentado (*M. kazumai hisamatsui* Ochi, 1990), que se encuentra en las islas Yaeyama. Se considera una especie mirmecófila, hallada en ambientes cercanos a nidos de hormigas, como el interior de madera podrida o la capa de hojarasca a su alrededor, y el propio título del artículo de la descripción original utiliza la palabra \"mirmecófilo\". Cuando es perturbado, retrae las antenas y las patas dentro de su cuerpo y se enrolla formando una esfera perfecta, como una cochinilla, para protegerse.",
     "photos": [
       "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
@@ -1263,7 +1263,7 @@
       6
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los papamoscas del Viejo Mundo (Muscicapidae), género Larvivora.\n*Larvivora komadori*\n\nMide unos 14 cm y pesa unos 18 g. Una especie endémica de Japón que se\nreproduce desde las islas Danjo, pasando por las islas Tokara, Amami Oshima\ny sus islotes circundantes, hasta Tokunoshima; fue declarada Monumento\nNatural en 1970. Es residente todo el año en Amami Oshima, pero los machos\ncantan con especial frecuencia para proclamar su territorio durante la\népoca de cría, de marzo a junio, así que seguir su canto temprano por la\nmañana es la mejor manera de encontrarlo en esa temporada. Los machos\ntienen la cabeza, el dorso y la cola de un vivo color rojo anaranjado, y\nlas manchas negras del pecho y los costados parecen una «barba», de donde\nprocede el nombre japonés de la especie. Las hembras son, en general, de\ncolores más discretos. Busca insectos en el suelo del bosque de hoja\nperenne. En el norte de la isla de Okinawa vive una especie distinta, pero\nsus áreas de distribución no se solapan.",
     "photos": [
       "../images/creatures/birds/akahige/akahige_000001_20250120_14.jpg",
@@ -1288,7 +1288,7 @@
       5
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los correlimos (Scolopacidae), género Scolopax. *Scolopax mira*\n\nMide unos 35-36 cm. Una especie endémica de Japón que solo se encuentra en\nlos archipiélagos de Amami y Okinawa, con reproducción confirmada en Amami\nOshima, Kakeromajima, Uke-jima, Yoro-jima y Tokunoshima. Se parece a la\nchocha perdiz, una especie emparentada, pero tiene las patas más largas, un\ntono general más negruzco y un cuerpo más rechoncho que otros correlimos.\nPrefiere el suelo en penumbra del bosque de hoja perenne, está más activa\ndesde el atardecer hasta el amanecer, y busca lombrices e insectos en el\nsuelo. Se vuelve especialmente activa en la penumbra de la madrugada y el\natardecer, y en las noches de luna llena. La época de cría va de febrero a\nmayo aproximadamente, y al anochecer los machos realizan un vuelo de\ncortejo y exhibición territorial, lo que hace de esta la mejor época del\naño para verla. Anida en el suelo dentro del bosque y pone de 2 a 4 huevos\ndesde marzo hasta mayo aproximadamente. Fue declarada Especie Silvestre\nNacional Rara en 1993. Tras la erradicación de la mangosta pequeña india y la\nrecuperación del bosque a medida que ha disminuido la tala, su población se\nha ido recuperando gradualmente, y en marzo de 2026 la 5.ª Lista Roja del\nMinisterio de Medio Ambiente rebajó su categoría de Vulnerable (VU) a Casi\nAmenazada (NT). La depredación por gatos asilvestrados sigue siendo un\nproblema persistente.",
     "photos": [
       "../images/creatures/birds/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
@@ -1315,7 +1315,7 @@
       12
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los papamoscas del Viejo Mundo (Muscicapidae), género Monticola.\n*Monticola solitarius*\n\nMide unos 23 cm. Machos y hembras se ven muy distintos: los machos son\nazules desde la cabeza hasta el dorso con las partes inferiores de color\npardo rojizo, mientras que las hembras son de color pardo grisáceo con un\nmoteado escamoso oscuro. Es residente todo el año en Amami Oshima y,\ntradicionalmente, prefiere las costas rocosas y los puertos —tal como\nsugiere su nombre en japonés, «tordo de la costa rocosa»—, pero en los\núltimos años se ha ido extendiendo hacia el interior y las zonas urbanas en\ntodo Japón, y en Amami se le ve cada vez más cerca de las viviendas, en\ntejados, cables eléctricos y aparcamientos. Es un ave muy depredadora que se\nalimenta de crustáceos, insectos, lagartijas e incluso pequeños roedores, y\ncanta con un timbre agudo, claro y muy elaborado. Es solitaria y mantiene un\nterritorio durante todo el año; se cree que la cría comienza hacia marzo.",
     "photos": [
       "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000001_20260201_14.jpg",
@@ -1337,7 +1337,7 @@
       8
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los martines pescadores (Alcedinidae), género Alcedo.\n*Alcedo atthis bengalensis*\n\nMide unos 17 cm y pesa entre 19 y 40 g; es un martín pescador pequeño. La\ncabeza y el dorso tienen un brillo azul verdoso, y el vientre es de un\nnaranja vivo, por lo que se le llama «la joya de la orilla del agua». En\nAmami Oshima es residente todo el año y se encuentra junto a ríos, canales\nde riego junto a los arrozales y todo tipo de estanques. Observa el agua\nposado en una rama o poste que sobresale, y se lanza en picado para atrapar\npeces pequeños o camarones en cuanto los localiza. Es muy territorial, vive\nsolo o en pareja, y excava un túnel para anidar en las orillas o taludes\nerosionados. La época de cría va de marzo a agosto aproximadamente, y una\npareja puede criar más de una nidada; en el cortejo el macho ofrece un\npececillo a la hembra, un gesto llamado alimentación de cortejo, y las\naves están especialmente activas y son más fáciles de observar en este\nperiodo. A diferencia de la mayoría de las aves de este sitio, puede\nobservarse de día junto al agua en lugar de en el bosque nocturno.",
     "photos": [
       "../images/creatures/birds/kawasemi/kawasemi_000001_20250207_10.jpg",
@@ -1363,7 +1363,7 @@
       4
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ibis (Threskiornithidae), género Platalea. *Platalea minor*\n\nUn ave acuática grande de unos 70-80 cm. Todo el cuerpo es blanco y, como\nindica su nombre, se caracteriza por un pico negro en forma de espátula y la\npiel negra alrededor de los ojos. Durante la época de cría desarrolla un\npenacho y el pecho adquiere un tono amarillento. Se distingue de la\nespátula común, una especie emparentada, porque la piel negra facial se\nextiende ampliamente hasta la base del pico. Se reproduce en islas frente a\nla costa oeste de la península de Corea y en la costa del noreste de China,\ne inverna en Taiwán, Hong Kong, el sur de China, Japón y otros lugares. La\npoblación mundial descendió a unas 300 aves a principios de la década de\n1990, pero los esfuerzos de conservación han impulsado su recuperación, y el\ncenso internacional de 2025 contó más de 7000 ejemplares. En Japón, el\nnúmero de aves que llegan va en aumento, principalmente en Kyushu, y en\nAmami Oshima también se observa en marismas y zonas similares desde el\ninvierno hasta la primavera. Fue declarada Especie Silvestre Nacional Rara\nen virtud de la Ley de Conservación de Especies en Peligro en 2020, lo que\nprohíbe su captura y traslado (la designación de Monumento Natural no se\naplica a la especie en sí, sino a ciertos sitios de hábitat dentro de la\nprefectura de Kagoshima). Hacia 2025, la Lista Roja de la UICN rebajó su\ncategoría de En Peligro (EN) a Vulnerable (VU).",
     "photos": [
       "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000001_20251003_14.jpg",
@@ -1403,7 +1403,7 @@
       5
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los pájaros carpinteros (Picidae), género Dendrocopos.\n*Dendrocopos leucotos owstoni*\n\nMide unos 28 cm, un pájaro carpintero de tamaño medio. Una subespecie\nendémica que solo se encuentra en Amami Oshima; la parte superior del\ncuerpo es casi toda negra con manchas blancas, y la parte inferior es de un\npardo más intenso que en otras subespecies. La coronilla es roja en los\nmachos y negra en las hembras, lo que facilita distinguir el sexo. Vive\nprincipalmente en bosques laurifolios maduros y excava agujeros de nido en\nlos troncos de grandes árboles de hoja ancha. Se alimenta sobre todo de\nlarvas de escarabajo longicornio ocultas en madera podrida. Las\nproclamaciones territoriales y los cortejos comienzan hacia el invierno, y\nde febrero a mayo es cuando más fácilmente se oye su «tamborileo»\n—golpeteo rápido del pico contra el tronco— y sus reclamos. En los\núltimos años su área de distribución se ha extendido por toda Amami\nOshima, en parte por los efectos de la marchitez del pino. Como el único\notro pájaro carpintero de Amami Oshima es el pico pigmeo de Amami, ambos se\ndistinguen fácilmente por el tamaño. Fue declarada Monumento Natural\nnacional en 1971 y Especie Silvestre Nacional Rara en 1993; su captura y\ntraslado están prohibidos.",
     "photos": [
       "../images/creatures/birds/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
@@ -1450,7 +1450,7 @@
       9
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los martines pescadores (Alcedinidae), género Halcyon.\n*Halcyon coromanda bangsi*\n\nMide unos 27 cm; todo su cuerpo es de un marrón rojizo brillante, con una\nmancha azul pálido en la rabadilla muy visible en vuelo. En Amami Oshima\ntambién se le conoce localmente como «Kukkaru», y es muy apreciado por su\ncanto potente, un «kyororororo» que se oye a lo lejos. Es un ave migratoria\nestival que llega desde sus zonas de invernada en el sudeste asiático hacia\nfinales de abril, alrededor de la Semana Dorada japonesa, y vuelve a\nemigrar hacia el sur en torno a septiembre. Aunque pertenece a la familia de\nlos martines pescadores, apenas come pescado y captura sobre todo cangrejos,\nranas, lagartijas e insectos del bosque. Durante la época de reproducción,\nde junio a julio, pone unos cinco huevos en un hueco de árbol o en un nido\nabandonado de pájaro carpintero, y los polluelos suelen abandonar el nido\nhacia julio. En este periodo los progenitores se vuelven especialmente\nnerviosos: acercarse al árbol del nido, hacer ruido o usar flash puede\nprovocar que abandonen la puesta o que los polluelos salgan antes de\ntiempo, así que conviene observar en silencio, desde lejos y solo durante\nun rato breve.",
     "photos": [
       "../images/creatures/birds/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
@@ -1473,7 +1473,7 @@
       7
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las palomas (Columbidae), género Treron. *Treron permagnus*\n\nMide unos 35 cm, algo más grande que la vinago de vientre blanco, y es\nresidente todo el año. Todo su cuerpo es de un verde intenso. Su nombre\njaponés, que significa «vinago de cabeza roja», procede de la cabeza\nrojiza de su pariente cercano, el vinago silbador de Taiwán (Treron\nformosae), pero esta especie, presente en Amami Oshima y otros lugares,\ntiene la cabeza igualmente verde. Vive en bosques laurifolios desde las\ntierras bajas hasta las montañas y se alimenta en los árboles de frutos y\nsemillas, incluidos los del higo de playa (Ficus erecta). Emite un canto\npeculiar parecido al de un shakuhachi: «oo-ao, pe, hepo». Se reproduce\nhacia mayo y pone dos huevos. Debido a la fragmentación y reducción de su\nhábitat, figura como Casi Amenazada en la Lista Roja de la UICN.",
     "photos": [
       "../images/creatures/birds/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg",
@@ -1493,7 +1493,7 @@
       7
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los búhos (Strigidae), género Otus. *Otus elegans elegans*\n\nMide unos 22 cm, uno de los búhos más pequeños que existen en Japón. Todo\nel cuerpo es de color pardo con un moteado fino que recuerda a tela\napolillada. Es residente todo el año desde Amami Oshima hacia el sur por\nlas islas Ryukyu, y se encuentra tanto en bosques maduros como en\narboledas cercanas a las viviendas. Es nocturno: tras la puesta de sol\nrepite un «koho, koho» grave, y a veces la hembra responde con un «nya».\nSe alimenta de insectos, arañas y salamanquesas. Anida en huecos de\nárboles, agujeros abandonados de pájaros carpinteros o entre las frondas\ndel helecho nido de ave, y pone de 4 a 5 huevos durante la época de cría,\nde abril a julio aproximadamente. Solo la hembra incuba, pero ambos\nprogenitores comparten la alimentación de las crías, que en su mayoría\nabandonan el nido hacia julio. En torno a esa fecha, los polluelos todavía\nvuelan con torpeza y pueden encontrarse posados en ramas cercanas al\nsuelo; en lugar de recogerlos o iluminarlos con una luz durante mucho\ntiempo, lo mejor es alejarse tranquilamente. Su canto puede oírse durante\ntodo el año, no solo en la época de cría.",
     "photos": [
       "../images/creatures/birds/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg",
@@ -1516,7 +1516,7 @@
       9
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los monarcas (Monarchidae), género Terpsiphone.\n*Terpsiphone atrocaudata illex*\n\nLos machos miden unos 45 cm incluyendo las largas plumas de la cola, y las\nhembras unos 18 cm. Todo el cuerpo tiene un brillo negro violáceo, y el\nanillo ocular y el pico son de un azul cobalto vivo. Los machos tienen\nplumas de la cola casi tres veces más largas que el cuerpo, lo que les da\nuna silueta llamativa en vuelo. En Amami Oshima llega como ave migratoria\nestival hacia abril y, en la penumbra del interior del bosque, salta de\nrama en rama capturando en el aire pequeñas moscas, avispas y mariposas.\nSu canto se describe como «tsuki-hi-hoshi, hoi-hoi-hoi» («luna, sol,\nestrellas, hoi-hoi-hoi»), de donde procede su nombre japonés, «ave de las\ntres luces». De mayo a julio construye un nido en forma de copa hecho de\nmusgo en la horquilla de un árbol, y ambos progenitores se turnan para\nincubar y alimentar a las crías. Mientras hay polluelos aún sin volar en\nel nido, permanecer mucho tiempo cerca o sacudir la rama puede provocar\nque los padres lo abandonen, así que conviene observar brevemente con\nprismáticos desde lejos. Hacia septiembre regresa a sus zonas de invernada\nen el sudeste asiático.",
     "photos": [
       "../images/creatures/birds/sankoutyou/sankoutyou_000001_20260708_13.jpg"
@@ -1537,7 +1537,7 @@
       3
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los accipítridos (Accipitridae), género Butastur.\n*Butastur indicus*\n\nLos machos miden unos 47 cm y las hembras unos 51 cm, con una envergadura\nde 105 a 115 cm; es un ave rapaz de tamaño medio. La cabeza es de color\npardo grisáceo, el dorso y el pecho son pardos, y la garganta es blanca\ncon una línea negra central. Se alimenta principalmente de animales\npequeños como serpientes, lagartijas y ranas, además de insectos como\ncigarras y saltamontes. Se reproduce en Kyushu y hacia el norte en Honshu\ny Shikoku, y una vez terminada la cría, los individuos migran hacia el sur\ndesde principios de septiembre a través de las islas Nansei rumbo al\nsudeste asiático. Amami Oshima es conocida como la mayor zona de\ninvernada del país para esta especie: el paso migratorio alcanza su punto\nmáximo a mediados de octubre, cuando pueden verse grandes números de aves\ngirando y ascendiendo juntas en lo que se llama una «columna de\nhalcones». Muchas aves no completan el viaje hacia el sur y pasan el\ninvierno en la isla; se calcula que unas 2000 permanecen desde noviembre\nhasta marzo aproximadamente. Figura como especie Vulnerable en la Lista\nRoja del Ministerio de Medio Ambiente y en el Apéndice II de CITES.\nAlrededor de los bosques que usan como dormidero, hay que evitar ruidos fuertes, movimientos bruscos y el uso de\nflash que puedan asustarlas y provocarles vuelos innecesarios, y\nobservarlas en silencio desde lejos.",
     "photos": [
       "../images/creatures/birds/sasiba/sasiba_000001_20240119_16.jpg",
@@ -1563,7 +1563,7 @@
       10
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las cigüeñuelas (Recurvirostridae), género Himantopus.\n*Himantopus himantopus*\n\nMide unos 37-40 cm; es un ave limícola con patas extremadamente largas y\nrojizas y un pico fino y negro. El cuerpo es blanco con las alas y el dorso\nnegros; los machos muestran más negro que se extiende hasta la parte\nposterior de la cabeza, mientras que las hembras son más pálidas. Se\nalimenta de insectos acuáticos, crustáceos, moluscos y peces pequeños. En\nJapón se confirmó su primera cría en tierras ganadas al mar en la\nprefectura de Aichi en 1975, y desde entonces se ha establecido localmente\nen algunas zonas de Honshu, pero en las islas Nansei aparece principalmente\ncomo ave de paso e invernante. Dentro de la prefectura de Kagoshima se ha\nregistrado en Amami Oshima, Tokunoshima y Nakanoshima, en las islas Tokara,\ny se confirmó su cría en la cercana isla de Okinoerabu en 2009, aunque hay\npocos registros de cría en la propia Amami Oshima, o de la época exacta en\nque llega. Prefiere aguas poco profundas como marismas, arrozales y\nbarbechos. Antes se clasificaba como Vulnerable (VU) en la Lista Roja del\nMinisterio de Medio Ambiente, pero ahora figura como Datos Insuficientes\n(DD).",
     "photos": [
       "../images/creatures/birds/seitakashigi/seitakashigi_000001_20251003_13.jpg",
@@ -1587,7 +1587,7 @@
       3
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los chorlitos (Charadriidae), género Vanellus.\n*Vanellus vanellus*\n\nMide unos 32 cm, tiene un largo penacho en la cabeza, el dorso con un\nbrillo verde negruzco y el vientre blanco. Su aspecto elegante le ha\nvalido el apodo de «dama del invierno». Se reproduce en Eurasia y visita\nJapón como ave migratoria invernal. En Amami Oshima empieza a aparecer en\ncampos abiertos, como arrozales y huertas, desde finales de octubre, y\npermanece durante el invierno hasta finales de marzo o abril del año\nsiguiente. Se desplaza en bandadas y busca lombrices e insectos en la\ntierra. A diferencia de las criaturas del bosque nocturno que son el\ntema principal de este sitio, es una mensajera del invierno fácil de\nobservar de día en los campos de cultivo abiertos.",
     "photos": [
       "../images/creatures/birds/tageri/tageri_000001_20251221_15.jpg",
@@ -1610,7 +1610,7 @@
       3
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los búhos (Strigidae), género Asio. *Asio otus*\n\nMide entre 35 y 40 cm, un búho destacado por los largos penachos de plumas\nen forma de orejas sobre la cabeza. Las partes superiores son de color\ngrisáceo a pardo pálido con listas, y los ojos son de color naranja. Se\nreproduce como ave estival en Hokkaido y el norte de Honshu, pero desde el\ncentro de Honshu hacia el sur aparece principalmente como invernante. Los\núnicos búhos residentes todo el año en Amami Oshima son el autillo de\nRyukyu y el mochuelo pardo de Ryukyu; aparte de estos, cada año llegan unos\npocos búhos chicos como aves invernantes, que suelen aparecer a partir de\nnoviembre. Fuera de la época de cría se sabe que forma dormideros\ncomunales, reuniéndose en grupos en árboles de hoja perenne o cañaverales\nde bambú. Se alimenta principalmente de pequeños mamíferos como roedores,\nademás de insectos y aves pequeñas. Llegan pocos ejemplares a Amami Oshima\ny, por ser muy recelosos, son difíciles de observar.",
     "photos": [
       "../images/creatures/birds/torafuzuku/torafuzuku_000001_20250207_20.jpg"
@@ -1627,7 +1627,7 @@
       9
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los eslizones (Scincidae), género Plestiodon. *Plestiodon barbouri*\n\nLongitud total 15.5-20 cm (longitud hocico-cloaca 5.2-7.3 cm). Una especie\nendémica de Japón distribuida en Amami Oshima, Kakeromajima, Uke-jima,\nYoro-jima, Tokunoshima y las islas Okinawa. Los juveniles son de color\npardo negruzco con cinco franjas longitudinales brillantes, y una cola de\nun azul intenso que ocupa más de dos tercios de su longitud total. Al\ncrecer, el azul se desvanece; los machos se vuelven de un pardo oscuro a\npardo en general, mientras que muchas hembras conservan una coloración más\ncercana a la de los juveniles. Prefiere el suelo y los bordes de bosque\nnatural de hoja perenne o de bosque secundario bien recuperado, tomando el\nsol para regular su temperatura corporal mientras se alimenta de arañas y\ncaracoles terrestres. Se vuelve lento en invierno pero no hiberna. Su\nnúmero ha disminuido por la desecación del hábitat debida a la tala y el\ndesbroce del sotobosque, y por la depredación de gatos asilvestrados y la\nmangosta pequeña introducida. Figura como Vulnerable en la Lista Roja del\nMinisterio de Medio Ambiente, y en 2019 fue también designada Especie\nSilvestre Rara de la Prefectura de Kagoshima, por lo que su captura o\nrecolección sin autorización está sujeta a sanciones.",
     "photos": [
       "../images/creatures/lizards/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
@@ -1656,7 +1656,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los conejos (Leporidae), género Pentalagus. *Pentalagus furnessi*\n\nAlcanza unos 41-51 cm y pesa entre 1.3 y 2.7 kg. Una especie endémica de\nJapón que solo se encuentra en Amami Oshima y Tokunoshima, a menudo llamada\n«fósil viviente» por conservar rasgos marcadamente primitivos. Fue declarada\nMonumento Natural en 1921 y Monumento Natural Especial en 1963. Es nocturno y\nbasa su actividad en madrigueras excavadas en grietas rocosas o huecos de\nárboles, alimentándose de bellotas de castaño de Japón y brotes tiernos. Se\nreproduce principalmente en primavera y otoño, con una cría por parto. Su\nnúmero disminuyó en su día por la depredación de gatos asilvestrados y la\nmangosta pequeña introducida, pero gracias a los esfuerzos de erradicación de\nla mangosta, la población se recupera en los últimos años. Es el animal\nemblemático de los tours nocturnos, y no es raro encontrarse con uno dando\nsaltos por un camino forestal.",
     "photos": [
       "../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
@@ -1678,7 +1678,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las ratas (Muridae), género Diplothrix. *Diplothrix legata*\n\nLongitud del cuerpo 22-33 cm, cola 25-35 cm. La rata más grande de Japón, que\nsolo se encuentra en Amami Oshima, Tokunoshima y el norte de la isla de\nOkinawa, con largos pelos rígidos de 5-6 cm mezclados en su pelaje. Fue\ndeclarada Monumento Natural en 1972 y Especie Silvestre Nacional Rara en\n2016. Es nocturna y marcadamente arborícola, y descansa de día en nidos de\nhuecos de árboles forrados con hojas secas. Es omnívora, y se alimenta entre\notras cosas de bellotas de castaño de Japón e insectos. Se reproduce desde\notoño hasta principios de invierno, con 2 a 5 crías por parto. No es muy\nasustadiza, y como apenas huye aunque se le enfoque con una linterna, a veces\nse la puede observar con calma a lo largo de los caminos forestales.",
     "photos": [
       "../images/creatures/mammals/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
@@ -1701,7 +1701,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las musarañas (Soricidae), género Crocidura. *Crocidura watasei*\n\nUno de los mamíferos más pequeños del mundo, de unos 5.5 cm de longitud y\napenas 5-8 g de peso. Una especie endémica de Japón que solo se encuentra en\nel archipiélago de Amami (Amami Oshima, Kakeromajima, Tokunoshima y otras) y\nlas islas Okinawa. Prefiere ambientes abiertos como praderas y campos de\ncultivo, y se alimenta de pequeños insectos y arañas. Es nocturna, y a veces\nse la puede ver moviéndose rápidamente entre la hierba junto a los caminos\nforestales. Difiere en hábitat de una especie emparentada del mismo género\nque vive en el bosque, con la que a veces se la confunde. No tiene una\nrestricción legal de captura como la de un Monumento Natural, pero está\ncatalogada como Casi Amenazada por el Ministerio de Medio Ambiente.",
     "photos": [
       "../images/creatures/mammals/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
@@ -1720,7 +1720,7 @@
       10
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia Tetrigidae, Saltamontes Pigmeo Plano de Amami *Austrohancockia amamiensis* Yamasaki, 1994\n\nUna especie endémica de Japón, presente en Amami Oshima y Tokunoshima. La longitud corporal es de unos 10mm en los machos y unos 14,5mm en las hembras. Su pronoto aplanado y ampliamente extendido es característico, y vive en el suelo del bosque cubierto de hojarasca, camuflado para mezclarse con su entorno. Se mueve rápidamente y salta para huir cuando se le sobresalta.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
@@ -1745,7 +1745,7 @@
       12
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia Papilionidae, Mariposa Azulada Común *Graphium sarpedon nipponum* Fruhstorfer, 1903\n\nUna mariposa vistosa y de vuelo rápido, con una banda azul verdosa que atraviesa ambas alas sobre un fondo negro. Se alimenta de árboles de la familia del alcanforero, como el alcanforero y el machilus, y se encuentra por toda la isla de Amami Oshima. Con varias generaciones al año, permanece en vuelo durante gran parte de la temporada cálida.",
     "photos": [
       "../images/creatures/other-insects/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg",
@@ -1763,7 +1763,7 @@
       7
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia Libellulidae, Libélula Alilarga de Amami *Rhyothemis severini* Ris, 1913\n\nUna libélula rara confirmada en Japón únicamente en Amami Oshima. Su cuerpo es negro con un brillo verde intenso, y sus alas transparentes presentan manchas de color añil. Prefiere estanques con abundante vegetación emergente, donde los machos patrullan cerca de la superficie del agua esperando a las hembras. Debido a que su hábitat y su población son extremadamente limitados, está designada como Especie Silvestre Rara Nacional según la Ley de Conservación de Especies en Peligro de Japón, y su captura está prohibida.",
     "photos": [
       "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000001_20250731_17.jpg",
@@ -1788,7 +1788,7 @@
       11
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia Nymphalidae, Mapa Común *Cyrestis thyodamas* Boisduval, 1836\n\nUna mariposa de alas verdaderamente singulares, con un fondo blanco recorrido por un patrón de líneas pardo oscuro que recuerda a un caparazón de tortuga. Se distribuye desde la península de Kii hacia el oeste, a través de las islas Nansei, incluida Amami Oshima. Las larvas se alimentan de plantas de la familia de la higuera, como Ficus erecta y el baniano. Pasa el invierno como adulto y produce generaciones sucesivas desde la primavera hasta finales del otoño.",
     "photos": [
       "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000001_20250605_22.jpg",
@@ -1817,7 +1817,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de grillos arbóreos (Eneopteridae) Grillo de la Madera Podrida *Duolandrevus ivani*\n\nUn insecto parecido a un grillo, de tamaño algo grande, de 31 a 35mm de longitud. Ampliamente distribuido por las islas Nansei, incluidas Amami Oshima y Tokunoshima, vive oculto bajo la corteza de madera podrida, tal como sugiere su nombre en japonés. Por la noche emite un canto característico, \"gwiii, gwiii\". En las regiones cálidas, los adultos pueden verse durante todo el año, sin importar la estación.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg",
@@ -1837,7 +1837,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de grillos arbóreos (Eneopteridae) Grillo Arbóreo Moteado *Cardiodactylus guttulus*\n\nAunque su nombre japonés significa \"grillo\", taxonómicamente es un grillo arbóreo. Vive en los bosques de las islas Nansei al sur de las islas Tokara, y en las islas Amami los adultos aparecen desde finales de agosto aproximadamente. Suele agruparse en los troncos de los árboles de día y de noche, y canta con un sonido agudo, \"chit, chit\". Es abundante y constituye una importante fuente de alimento para reptiles y aves.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/madara-kourogi/madara-kourogi_000001_20250914_12.jpg"
@@ -1855,7 +1855,7 @@
       7
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de grillos ásperos (Gryllacrididae) Grillo Áspero de Manchas Redondas *Prosopogryllacris okadai* Ichikawa, 2001\n\nUn grillo áspero arborícola que se encuentra en la isla Takara, Amami Oshima y la isla Kakeroma. Sus antenas son mucho más largas que su cuerpo. Durante el día se oculta en un nido hecho de hojas unidas con su propia seda, y sale de noche para estar activo. Es fuertemente carnívoro y captura otros insectos. Es muy cauteloso y difícil de encontrar.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
@@ -1879,7 +1879,7 @@
       10
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia Libellulidae, Aleteadora Variegada de Okinawa *Rhyothemis variegata imperatrix* Selys, 1887\n\nUna subespecie de la libélula aleteadora variegada que se encuentra en todo el archipiélago Nansei, vista ampliamente desde Amami Oshima hasta Okinawa, Miyako y las islas Yaeyama. Mide unos 40mm, y las manchas pardo oscuras de sus alas varían considerablemente en tamaño y forma entre individuos. Revoloteando alrededor de estanques y arrozales, vuela con un movimiento aleteante que recuerda al de una mariposa.",
     "photos": [
       "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000001_20250731_16.jpg",
@@ -1901,7 +1901,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia Erebidae (clasificación reciente) Polilla del Gran Anillo *Erebus ephesperis* (Hübner, [1823])\n\nLa mayor de las polillas tomoe, con una envergadura de 90 a 100mm. Sus alas de color marrón tienen un borde ondulado y una marca blanca en forma de anillo en el ala anterior, origen de su nombre japonés, que significa \"gran coma\". Las larvas se alimentan de plantas del género Smilax (zarzaparrilla), y los adultos también acuden a las luces. En Amami Oshima, también se ha documentado académicamente como polinizador de las flores de Hoya.",
     "photos": [
       "../images/creatures/other-insects/ga/ootomoe/ootomoe_000001_20250808_01.jpg",
@@ -1957,7 +1957,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de saltamontes longicornios (Tettigoniidae) Saltamontes Gigante *Mecopoda elongata* (Linnaeus, 1758)\n\nUn saltamontes longicornio que se encuentra en regiones cálidas desde la península de Izu hacia el sur, incluidas Amami Oshima y el resto de las islas Nansei. Comienza a cantar a finales del verano, y a medida que avanza el otoño canta con fuerza, con un sonido estridente parecido a \"gyururururu\". Sus primeros cantos están espaciados —\"gyuu, gyuu\"— antes de convertirse gradualmente en un sonido continuo e ininterrumpido.",
     "photos": [
       "../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg",
@@ -1982,7 +1982,7 @@
       10
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de culebras, género Dinodon. *Dinodon semicarinatum*\n\nAlcanza hasta unos 200 cm. Se observa con más facilidad entre mayo y noviembre. Tiene el\ncuerpo pardo amarillento con bandas ovaladas rojas y negras. No es venenosa, pero es\nagresiva: si entras en su territorio, amenaza y ataca. Se alimenta de mamíferos, aves,\nreptiles, anfibios y peces, e incluso come huevos de tortuga marina; a veces se alimenta\nde su enemigo natural, la víbora Habu. Es nocturna y puede verse a lo largo de caminos\nforestales y zonas de agua, hasta cerca de la costa. Los ejemplares pequeños tienen un\ntono rojizo más intenso y son muy hermosos, pero aunque sean pequeños, su mordedura\nduele, así que hay que tener cuidado.",
     "photos": [
       "../images/creatures/snakes/akamata/akamata_000001_20250921_22.jpg",
@@ -2048,7 +2048,7 @@
       4
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las culebras Takachiho, tribu Takachiho. *Achalinus werneri*\n\nAlcanza hasta unos 55 cm. El dorso es de color pardo negruzco o pardo oscuro, con una\nfranja negra a lo largo de la línea media; el vientre es amarillo. En Amami es una\nserpiente legendaria que solo se encuentra en condiciones muy concretas. A veces sale a la\nsuperficie en días de lluvia intensa. Es nocturna y de hábitos subterráneos, y vive en\nbosques, praderas cerca del agua y tierras de cultivo. Se alimenta de lombrices. Es más\nescasa y difícil de encontrar aquí que en otras islas donde también habita esta especie.\nEs muy delgada y pequeña, así que puede que no la notes ni pasando en coche a su lado.",
     "photos": [
       "../images/creatures/snakes/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg",
@@ -2072,7 +2072,7 @@
       6
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de culebras, género Hebius. *Hebius pryeri*\n\nAlcanza hasta unos 110 cm. Se observa con más facilidad entre mayo y noviembre. Tiene el\ncuerpo delgado y alargado, de color negro o marrón negruzco, con bandas amarillas o\nmarrones a lo largo del cuerpo. Prefiere ambientes acuáticos y se ve a menudo en\narrozales y otros lugares con muchas ranas pequeñas. Es venenosa, aunque sus colmillos\ninoculadores son pequeños y se dice que una simple mordedura no introduce mucho veneno en\nel cuerpo; aun así, su veneno es bastante potente, así que hay que tener cuidado. Se\nalimenta de ranas, peces, gecos y lagartijas pequeñas. Se mueve con rapidez, pero amenaza\nsi percibe peligro.",
     "photos": [
       "../images/creatures/snakes/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
@@ -2112,7 +2112,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de víboras de foseta, género Protobothrops. *Protobothrops flavoviridis*\n\nAlcanza hasta unos 226 cm de longitud, una de las serpientes más grandes de la isla. Se observa\ncon más facilidad entre mayo y noviembre (aunque también puede activarse en días cálidos de\ninvierno). Es nocturna y descansa de día en madrigueras y grietas. Vive desde bosques de tierras\nbajas hasta bosques de montaña, praderas, zonas húmedas, tierras de cultivo e incluso árboles, y\na veces se acerca a viviendas siguiendo a los ratones. Se alimenta principalmente de ratones,\nademás de reptiles, ranas, mamíferos y aves. Sus depredadores naturales son la serpiente Akamata\ny los cazadores de habu. Es venenosa y muy agresiva. Mantenga siempre una distancia de al menos\n2 a 3 metros al observarla o fotografiarla. Si se acerca, no huye: adopta de inmediato una\npostura de ataque y puede lanzarse casi dos tercios de la longitud de su cuerpo. Una mordedura en\nzonas montañosas sin cobertura telefónica puede convertirse en una emergencia grave. Su diseño se\nmezcla con el entorno y es muy difícil de detectar, así que puede estar oculta cerca sin que se\nnote. Nunca está de más tener cuidado.",
     "photos": [
       "../images/creatures/snakes/habu/habu_000002_20250228_00.jpg",
@@ -2228,7 +2228,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de víboras de foseta, género Ovophis. *Ovophis okinavensis*\n\nAlcanza hasta unos 80 cm. Resistente al frío, en Amami Oshima puede observarse durante\ntodo el año. Cuando termina la temporada de lluvias y sube la temperatura, se ve con\nfrecuencia en zonas de mayor altitud. Se alimenta de ranas pequeñas y medianas, pequeños\nmamíferos y aves. Se observa a menudo en lugares con muchas ranas, como arrozales y\narroyos de corriente suave. Un ejemplar enroscado apenas se mueve, pero amenazará si\nentras en su territorio. Es una serpiente venenosa, así que si te muerde, acude de\ninmediato a un hospital. Ten cuidado de no pisarla.",
     "photos": [
       "../images/creatures/snakes/hime-habu/hime-habu_000002_20250429_20.jpg",
@@ -2272,7 +2272,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de las cobras, género Sinomicrurus (también llamada serpiente coral de Ryukyu).\n*Sinomicrurus japonicus*\n\nAlcanza hasta unos 50 cm. Se observa con más facilidad hacia mayo y hacia septiembre. El\ndorso es de color pardo rojizo o anaranjado, con cinco franjas longitudinales de color\npardo oscuro. Está clasificada como \"animal peligroso designado\", una categoría legal\npara especies consideradas capaces de causar daño a las personas. Su veneno es\nneurotóxico y más potente que el de la víbora Habu, pero tiene la cabeza pequeña y un\ntemperamento dócil. Si se la coge en la mano, clava la cola, dura como un hueso. Es\nnocturna y escasa, por lo que verla es poco frecuente. Es tan popular que algunas personas\nvisitan Amami Oshima solo con la esperanza de verla.",
     "photos": [
       "../images/creatures/snakes/hyan/hyan_000001_20250515_20.jpg",
@@ -2356,7 +2356,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, género Dorcus (subespecie del ciervo volante\nplano). *Dorcus titanusu elegans*\n\nUna subespecie del ciervo volante plano que se encuentra en las islas Amami. Es\nel ciervo volante más numeroso de Amami Oshima. Una especie popular que alcanza\nun gran tamaño en cautividad. Se reúne en la savia de los cítricos, el machilus,\nel castaño de Japón y el mallotus. En estado silvestre, la mayoría de los\nejemplares miden menos de 50 mm, y a partir de 65 mm ya se considera grande. El\nobjetivo: superar los 70 mm.",
     "photos": [
       "../images/creatures/stag-beetles/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg",
@@ -2383,7 +2383,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, subgénero Dorcus (ciervos volantes menores).\n*Dorcus amamianus*\n\nAunque su nombre significa \"ciervo volante menor\", se parece en muchos aspectos\nal ciervo volante Himeoo. Sus mandíbulas son cortas y muy curvadas, mientras que\nsus patas y tarsos son largos. Activo desde finales de mayo hasta octubre. Menos\nnumeroso que el ciervo volante menor de la isla principal de Japón.",
     "photos": [
       "../images/creatures/stag-beetles/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
@@ -2405,7 +2405,7 @@
       10
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, género Neolucanus (ciervos volantes de ala\nredonda). *Neolucanus protogenetivus*\n\nActivo desde alrededor de septiembre hasta octubre, puede observarse en lo\nprofundo de bosques densos con grandes ejemplares de Castanopsis sieboldii. Su\nrecolección está prohibida por las ordenanzas de protección de vida silvestre\nrara de cinco municipios de Amami Oshima (incluidas sus islas periféricas) y\ntres localidades de Tokunoshima. Para prevenir la caza furtiva, se han\ninstalado cámaras en las montañas, y durante la temporada patrullas de\nvigilancia de insectos recorren la zona. Nota: solo tomar fotografías no supone\nningún problema, pero si es necesario entrar en una zona que requiere permiso,\nhay que solicitarlo debidamente.",
     "photos": [
       "../images/creatures/stag-beetles/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250906_21.jpg",
@@ -2434,7 +2434,7 @@
       8
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, género Lucanus (ciervos volantes verdaderos).\n*Lucanus ferriei*\n\nActivo desde alrededor de julio hasta septiembre. Especie rara que solo se\nencuentra en Amami Oshima. Su recolección está prohibida por ordenanza. Vive en\nbosque primario por encima de unos 300 m de altitud. Es nocturno; se pueden ver\nmachos esperando a las hembras en lo alto de los árboles, pero son difíciles de\nlocalizar a simple vista. También se los ve a menudo cerca de la parte superior\nde los postes eléctricos. Acuden a la savia de los árboles, a trampas de fruta\ny a las luces, pero está prohibido recolectarlos.",
     "photos": [
       "../images/creatures/stag-beetles/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
@@ -2462,7 +2462,7 @@
       10
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, género Aegus (ciervos volantes de raíz).\n*Aegus laevicolis subnitidus*\n\nUna subespecie del ciervo volante de raíz que se encuentra en las islas Amami,\ny la de mayor tamaño entre las subespecies japonesas de este ciervo volante.\nActivo desde alrededor de mayo hasta octubre. A veces acude a la savia del\nmachilus, el castaño de Japón, el mallotus y la albizia. En estado silvestre la\nmayoría de los ejemplares miden unos 20 mm, y 28 mm ya se considera grande. El\nobjetivo: superar los 30 mm.",
     "photos": [
       "../images/creatures/stag-beetles/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
@@ -2485,7 +2485,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, género Prosopocoilus (ciervos volantes\nserrados); subespecie de Amami. *Prosopocoilus dissimilis*\n\nActivo desde mediados de junio hasta principios de septiembre. Entre los\nciervos volantes serrados de Japón, los de Amami Oshima son especialmente\ngrandes, con mandíbulas largas, gruesas e imponentes. Acude con frecuencia a\nlos cítricos, el mallotus, el machilus, el castaño de Japón, los frutos\nmaduros de pandano, trampas de plátano y las farolas. La mayoría de los\nejemplares miden unos 60 mm, y a partir de 75 mm ya se considera grande. El\nobjetivo: alcanzar los 80 mm.",
     "photos": [
       "../images/creatures/stag-beetles/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000001_20250620_21.jpg",
@@ -2521,7 +2521,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, género Rhaetulus (ciervos volantes cérvidos).\n*Rhaetulus recticrnis*\n\nActivo desde alrededor de mayo hasta septiembre, y se observa con más facilidad\nhacia agosto. Su recolección está prohibida por ordenanza. Las zonas de\naltitud relativamente mayor ofrecen más posibilidades de encontrarlo. Suele\nencontrarse en ramas delgadas de Castanopsis sieboldii o de cítricos. En los\nejemplares grandes, las mandíbulas se curvan fuertemente, como la cornamenta de\nun ciervo. Ten cuidado de no confundirlo con un ejemplar pequeño del ciervo\nvolante menor o del ciervo volante serrado y llevártelo por error (nunca te\nlleves un ejemplar que no puedas identificar tú mismo).",
     "photos": [
       "../images/creatures/stag-beetles/amami-shika-kuwagata/amami-shika-kuwagata_000001_20250627_21.jpg",
@@ -2556,7 +2556,7 @@
       10
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, subfamilia Aesalinae (ciervos volantes\ndiminutos), género Nigidius (ciervos volantes cornudos). *Nigidius lewisi*\n\nCon el cuerpo brillante por completo y unas mandíbulas de forma peculiar, pasa\ntodo el año dentro de madera podrida. Puede encontrarse durante todo el año en\ntroncos caídos de roble y castaño de Japón, y bajo la hojarasca. Distinguir\nmachos de hembras es difícil. En Amami tiene una distribución muy localizada y\nrara vez acude a la savia de los árboles, lo que lo hace difícil de encontrar.",
     "photos": [
       "../images/creatures/stag-beetles/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
@@ -2577,7 +2577,7 @@
       11
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "Familia de los ciervos volantes, subgénero Dorcus (ciervos volantes planos).\n*Dorcus metacostatus*\n\nActivo desde finales de abril hasta alrededor de octubre, con un pico en julio.\nUna especie rara endémica de Japón, que solo se encuentra en las islas Amami,\ncon ocho surcos bien marcados en los élitros. Acude con frecuencia a los\ncítricos, el machilus, el mallotus, el castaño de Japón, trampas de plátano y\nlas farolas. A partir de 60 mm ya se considera grande: el objetivo es superar\nlos 70 mm.",
     "photos": [
       "../images/creatures/stag-beetles/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",

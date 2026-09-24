@@ -11,7 +11,7 @@
       2
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "赤蛙科赤蛙属 *Rana kobai*\n\n体长约3.2〜4.6厘米。11月至1月为繁殖期。栖息于平地到山地的森林及河流周边。湿度较高或\n下雨时会变得活跃，繁殖期会聚集在小池塘、涌泉水潭等处。林道上也能见到它的身影。体色为红\n褐色，体形纤细，鸣声为\"叩叩\"声。",
     "photos": [
       "../images/creatures/amphibians/amami-aka-gaeru/amami-aka-gaeru_000002_20250126_21.jpg",
@@ -42,7 +42,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "树蛙科树蛙属 *Zhangixalus amamiensis*\n\n体长约4.5〜7.7厘米。12月下旬至5月左右为繁殖期。分布于低地至山地，栖息在池塘、水田等\n静水域周边的森林中。湿度较高或下雨时会活跃地鸣叫，并在树枝上或岸边的草丛中产下白色泡沫\n状卵块。即使叫声很响，也很难发现它的踪影。体型比哈氏雨蛙更大，因此比较容易区分。",
     "photos": [
       "../images/creatures/amphibians/amami-ao-gaeru/amami-ao-gaeru_000001_20250126_20.jpg",
@@ -97,7 +97,7 @@
       2
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "赤蛙科臭蛙属 *Odorrana amamiensis*\n\n体长约5.6〜10.1厘米。10月至5月为繁殖期。栖息于山地溪流周边。体形纤细、姿态优美，熟\n悉之后即使远远望去也能辨认出来。体色丰富多样，个体间差异较大。已被鹿儿岛县指定为天然纪\n念物，包括卵在内均禁止捕获、转让。下雨天会大量出现在林道上，开车时需多加注意。",
     "photos": [
       "../images/creatures/amphibians/amami-hanasaki-gaeru/amami-hanasaki-gaeru_000001_20250119_21.jpg",
@@ -133,7 +133,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蝾螈科棘螈属 *Echinotriton raffaellii*\n\n全长约14〜20厘米。1月至4月左右为繁殖期。为奄美大岛、请岛、德之岛的特有种，栖息于森\n林及农田周边。冬季温暖的日子里会变得活跃，繁殖期会在水边的落叶下产卵。体色为黑褐色，体\n表粗糙不平，肋骨突起和四肢末端带有橙色。",
     "photos": [
       "../images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000001_20260907_19.jpg",
@@ -177,7 +177,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "赤蛙科臭蛙属 *Odorrana splendida*\n\n体长约7.4〜13.7厘米。2月末至6月左右为繁殖期。栖息于山地源头水流平缓的溪谷。被誉为日\n本最美丽的蛙类，已被鹿儿岛县指定为天然纪念物及国内稀有野生动物种，包括卵在内均禁止捕\n获、转让。在海拔较高的溪流附近，天黑后有些地方能听到它的鸣叫声。在某些地点，即使是夏天\n下雨时也有可能见到它。",
     "photos": [
       "../images/creatures/amphibians/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000001_20250228_00.jpg",
@@ -243,7 +243,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蝾螈科蝾螈属 *Cynops ensicauda ensicauda*\n\n雄性全长约14厘米，雌性约18厘米。分布于奄美大岛、请岛、加计吕麻岛、与路岛等岛屿，在池塘、水\n田及溪流缓流处繁殖。9月过后大多数个体会离开水域，到了12月左右的繁殖期，水边能观察到大\n量个体。体色为黑色，带有黄色或橙色斑点，个体差异较大。冲绳分布有近缘的冲绳剑尾蝾螈。",
     "photos": [
       "../images/creatures/amphibians/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg",
@@ -266,7 +266,7 @@
       7
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "雨蛙科雨蛙属 *Hyla hallowellii*\n\n体长约3〜4厘米。3月至6月为繁殖期。栖息于平地森林、灌木丛和农田，在水田等静水域产卵。\n湿度较高的白天和下雨的夜晚会变得活跃，产卵期会在水田附近大合唱。它常待在树枝顶端等稍高\n处，即使叫声很响也很难被发现。通体翠绿，非常美丽。鸣声与日本雨蛙相似。",
     "photos": [
       "../images/creatures/amphibians/haroweru-amagaeru/haroweru-amagaeru_000001_20250312_21.jpg",
@@ -301,7 +301,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "姬蛙科姬蛙属 *Microhyla okinavensis*\n\n体长约2.2〜3.2厘米。全年均可繁殖(主要集中在3月至7月)。栖息范围很广，从沿海低地到山\n地、林缘草地乃至民宅周边都能见到。湿度较高或下雨时会变得活跃。头部小而四肢粗壮，从上方\n看呈三角形。是日本体型最小的蛙类，但叫声却出奇地响亮。",
     "photos": [
       "../images/creatures/amphibians/hime-amagaeru/hime-amagaeru_000001_20250228_21.jpg",
@@ -325,7 +325,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "赤蛙科棘蛙属 *Babina subaspera*\n\n体长约9〜14厘米。4月至10月为繁殖期。主要栖息于山地，但在农田和公园等地也能见到。湿\n度较高或下雨时会变得活跃，也常出现在道路上。雄性体型更大，除外来引入的牛蛙外，是日本体\n型最大的蛙类。它有5根脚趾，相当于拇指的部位有一根锋利的棘刺，据认为是雄性之间争斗或抱\n对时使用的。已被鹿儿岛县指定为天然纪念物及国内稀有野生动物种，包括卵在内均禁止捕获、转\n让。体型硕大、气势十足，一旦出现在路上很容易被发现。据说它的名字来源于它的叫声。",
     "photos": [
       "../images/creatures/amphibians/otton-gaeru/otton-gaeru_000001_20250228_22.jpg",
@@ -359,7 +359,7 @@
       11
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "树蟾科树蟾属 *Buergeria japonica*\n\n体长约2.5〜4厘米。4月至10月为繁殖期。从山间溪流到市区的积水都能适应，是奄美大岛最常\n见的蛙类。湿度较高或下雨时鸣叫尤为活跃。雄性呈美丽的黄色，叫声也十分动听。",
     "photos": [
       "../images/creatures/amphibians/ryukyu-kajika-gaeru/ryukyu-kajika-gaeru_000001_20250308_19.jpg",
@@ -384,7 +384,7 @@
       7
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "长角泥甲科长足沟泥甲属 *Stenelmis hisamatsui* M. Satô, 1960\n\n分布于奄美群岛、冲绳诸岛及关岛的小型水生甲虫。长角泥甲科主要栖息于清澈溪流，幼虫和成\n虫都在水中生活，体长最大约5毫米，也因此作为清澈河流的指标而受到关注。本种自身的详细\n生态目前仍有许多未解之谜。",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
@@ -403,7 +403,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "长角泥甲科宽体泥甲属 *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\n仅分布于奄美大岛的特有种，2005年被记载。同属(宽体泥甲属)还包括分布于本州、四国、九\n州的宽体泥甲及其近缘小型种，以及分布于大隅群岛的另一特有种。长角泥甲科主要是栖息于清\n澈溪流的小型水生甲虫，但本种自身的详细生态目前仍有许多未解之谜。",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/amami-hababiro-doromusshi/amami-hababiro-doromusshi_000001_20250705_14.jpg",
@@ -424,7 +424,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "划蝽科小划蝽属奄美小水生蝽 *Micronecta japonica* Chen, 1960\n\n体长约1毫米的极小型水生蝽，日本固有种，分布于南西诸岛(奄美大岛、德之岛)。同属近缘种中，分布更广的小划蝽(Micronecta guttata)遍布北海道至九州。平时潜伏在沙子或落叶下，受到惊扰时会迅速游走。",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/amami-kochibi-mizumusi/amami-kochibi-mizumusi_000001_20241223_14.jpg",
@@ -443,7 +443,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "长角泥甲科沟泥甲属 *Ordobrevia amamiensis amamiensis* (Nomura, 1957)\n\n分布于奄美大岛的小型水生甲虫(指名亚种)。冲绳岛、伊平屋岛的种群被区分为独立亚\n种(冲绳沟泥甲，*O. a. okinawana*)，另有人为引入关岛的种群。长角泥甲科主要栖息于清澈溪流，但本种自身的详细生态目前仍有许多未解之\n谜。",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/amami-mizo-doromushi/amami-mizo-doromushi_000001_20250706_14.jpg"
@@ -459,7 +459,7 @@
       2
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "宽肩蝽科游宽肩蝽属奄美游宽肩蝽 *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\n分布于奄美大岛、德之岛、冲绳岛等南西诸岛的小型宽肩蝽。近缘种游宽肩蝽偏好森林环绕的山谷池塘岸边的砾石或岩盘地带，已确认会以卵的形态在水面漂浮的植物碎片或岸边砾石上越冬，但本种自身的具体生态仍不清楚。另外需要注意的是，环境省红色名录中被列为易危(VU)的是近缘种游宽肩蝽，与本种(奄美游宽肩蝽)是不同的物种，不应混淆；本种自身并未列入该红色名录。",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/amami-oyogi-katabiro-amennbo/amami-oyogi-katabiro-amennbo_000001_20250223_16.jpg",
@@ -479,7 +479,7 @@
       3
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "脊纹微甲属奄美脊纹微甲 *Ochthebius amami* Yoshitomi & M.Satô, 2001(中文科名尚无统一译法，与所谓\"牙甲\"并非同一科)\n\n1997年春在奄美大岛偶然采集到的个体为基础记载的新种，是一种小型水生甲虫。体长1.9〜2.3毫米。分布于奄美大岛与冲绳岛，栖息在山区溪流中较为开阔的地方，但个体数量并不多。河川开发与护岸工程导致的栖息环境恶化令人担忧，在2010年环境省红色名录的修订中被新列为近危(NT)。",
     "photos": [
       "../images/creatures/aquatic-insects/gamushi/amami-sesuji-daruma-gamushi/amami-sesuji-daruma-gamushi_000001_20250323_15.jpg",
@@ -497,7 +497,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "牙甲科蚬牙甲属奄美蚬牙甲 *Laccobius satoi* Gentili, 1989\n\n日本固有种小型牙甲科甲虫，分布于奄美大岛、德之岛。日本产蚬牙甲属中还有姬蚬牙甲、冲绳蚬牙甲等多个近缘种，区分时都需要观察交配器。关于体长与生态的详细记录很少，仍有许多未知之处。",
     "photos": [
       "../images/creatures/aquatic-insects/gamushi/amami-shijimi-gamushi/amami-shijimi-gamushi_000001_20250405_22.jpg"
@@ -550,7 +550,7 @@
       2
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蟾蝽科蟾蝽属蟾蝽 *Nerthra macrothorax* (Montrouzier, 1855)\n\n日本产蟾蝽科唯一的一种，体长约1厘米，体形宽扁。无单眼，前足粗壮呈镰刀状是其特征。其日文名称Ashibuto-memizumushi，字面意思是\"粗腿水生蝽\"，但尽管如此，它并不生活在池沼水中，而是一种半陆生的伏击型捕食者，夜间活动于海岸沙滩(从水边到海岸林之间)，捕食潮虫和鼠妇，以成虫形态越冬。分布范围广，从南九州经南西诸岛一直到小笠原诸岛，并非奄美大岛的固有种。",
     "photos": [
       "../images/creatures/aquatic-insects/sonota/ashibutome-mizumushi/ashibutome-mizumushi_000001_20260204_20.jpg",
@@ -580,7 +580,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "宽肩蝽科宽肩蝽属 *Microvelia japonica* Esaki & Miyamoto, 1955\n\n体长约1.5〜2.1毫米的小型水生昆虫。分布于本州(福岛县以西)、四国、九州，在南西诸岛则\n分布于喜界岛至冲绳岛一带。常见于细流旁阴暗的水洼及岩石背阴处，捕食落在水面上的小型昆\n虫。",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000001_20250206_23.jpg",
@@ -645,7 +645,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "宽肩蝽科宽肩蝽属 *Microvelia iriomotensis* Miyamoto, 1964\n\n体长约1.7〜1.9毫米的小型水生昆虫。分布于南西诸岛(奄美群岛至八重山诸岛)及台湾。常见\n于山间林道旁渗水形成的小水洼，学术研究曾报道其雄性长时间守护雌性的配偶行为。",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/iriomote-kesi-katabiro-amennbo/iriomote-kesi-katabiro-amennbo_000001_20250227_18.jpg"
@@ -672,7 +672,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "宽肩蝽科宽肩蝽属 *Microvelia douglasi* Scott, 1874\n\n体长约1.5〜2毫米，是宽肩蝽科中体型最小的一类。分布于本州、四国、九州、对马、南西诸\n岛及大东诸岛(南大东岛)，国外也广泛分布于朝鲜半岛、中国、东南亚、台湾乃至大洋洲。喜欢\n栖息在小水田、细流等有水流的水边，捕食落在水面上的小型昆虫。宽肩蝽科中既有不能飞的无\n翅型，也有能飞的长翅型。",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/kesi-katabiro-amennbo/kesi-katabiro-amennbo_000001_20260327_11.jpg",
@@ -695,7 +695,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "龙虱科真龙虱属 *Cybister tripunctatus orientalis* Gschwendtner, 1931\n\n体长约24〜29毫米。分布于本州、四国、九州、南西诸岛及小笠原诸岛，国外见于中国、朝鲜\n半岛及台湾。体形呈长卵形、略扁平，背面光泽强烈，呈绿色至带褐色的黑色，鞘翅边缘有一圈\n黄色镶边，是与褐色龙虱区分的要点。栖息于水生植物丰富的池沼、湿地，以及水田及其周边水\n洼、休耕田、水流平缓的水渠。自1960年代以来，由于农药使用及圃场整备，本州以南地区数\n量急剧减少，已被列入环境省红色名录的易危(VU)等级，但在南西诸岛仍相对常见。其体形和\n色调与褐色龙虱非常相似，仅凭照片很难区分。",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
@@ -725,7 +725,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "水黾科水黾属细角水黾 *Gerris gracilicornis* (Horváth, 1879)\n\n体长11〜16毫米左右，带红褐色的大型水黾。分布广泛，从北海道经本州、四国、九州到南西诸岛均有分布，偏好池沼、河流、湿地等水域，尤其喜欢水温较低的地方。以成虫形态在陆地上越冬，苏醒后会飞往新的水域，因此早春时节常在小水洼中见到。",
     "photos": [
       "../images/creatures/aquatic-insects/amenbo/koseaka-amennbo/koseaka-amennbo_000001_20260420_13.jpg",
@@ -744,7 +744,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "长角泥甲科泽泥甲属 *Zaitzevia elongata* Nomura, 1962\n\n分布于奄美群岛及冲绳诸岛的小型水生甲虫。泽泥甲属在日本已知有8种，各种分布范围从本州\n到八重山诸岛不等。长角泥甲科主要栖息于清澈溪流，但本种自身的详细生态目前仍有许多未解\n之谜。",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/naga-tsuya-doromushi/naga-tsuya-doromushi_000001_20260222_09.jpg",
@@ -764,7 +764,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "长角泥甲科长足沟泥甲属 *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\n分布于奄美群岛及冲绳诸岛的小型水生甲虫。原本被视为独立属中的唯一种，但2021年的分子\n系统学研究(Kobayashi et al., 2021)将其归入长足沟泥甲属。属名(Nomuraelmis)及日文俗名由佐藤正孝博士于1964年命名，据信是为纪念同时代开拓日\n本长角泥甲科研究的野村镇博士而得名。本种自身的详细生态目前仍有许多未解之谜。",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/nomura-himedoromushi/nomura-himedoromushi_000001_20250322_00.jpg",
@@ -792,7 +792,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "龙虱科斑龙虱属 *Hydaticus vittatus* (Fabricius, 1775)\n\n体长约11〜14毫米。分布于屋久岛以南的南西诸岛，国外见于台湾、中国及东南亚的南方型龙\n虱。栖息于水生植物丰富的池沼、水田等静水域。除了栖息环境减少外，近年发现包括本种在内\n的多种龙虱因疑似以饲养为目的而被大量贩卖，因此2023年1月与其他龙虱一同被指定为特定第\n二种国内稀有野生动植物种。该指定仅限制以贩卖、分发为目的的捕获及转让，以观察为目的的\n采集不在限制范围内。与分布于本州以西的同属近缘种十分相似，但由于分布范围不同，比较容\n易区分。",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/okinawa-suji-gengoro/okinawa-suji-gengoro_000001_20250406_23.jpg",
@@ -814,7 +814,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "扁泥甲科宽胸扁泥甲属 *Elmomorphus amamiensis* Nomura, 1959\n\n为奄美大岛、冲永良部岛有记录的小型水生甲虫。过去曾被视为分布于本州以西近缘种的琉球列\n岛亚种，但2014年一项通过COI基因分析及形态比较的研究确认两者之间存在种级水平的巨大\n遗传分歧，因而被提升为独立种。目前已普遍认定其为独立物种。扁泥甲科与长角泥甲科为近缘\n类群，同样栖息于清澈溪流。本种自身的详细生态目前仍有许多未解之谜。",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/ryuukyuu-munabiro-tuyadoromushi/ryuukyuu-munabiro-tuyadoromushi_000001_20250405_17.jpg",
@@ -834,7 +834,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "长角泥甲科华爪泥甲属 *Sinonychus satoi* Yoshitomi & Nakajima, 2007\n\n分布于奄美群岛、冲绳诸岛(冲绳岛本身无记录)的小型水生甲虫，2007年被记载。华爪泥甲属\n在日本仅知2种，另一种分布于九州。本种自身的详细生态目前仍有许多未解之谜。",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/satou-kara-himedoromushi/satou-kara-himedoromushi_000001_20250501_11.jpg",
@@ -863,7 +863,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "宽肩蝽科溪宽肩蝽属 *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955\n\n分布于南西诸岛(宝岛至冲绳岛)。溪宽肩蝽属在日本已知有数种，是栖息于河流及池塘岸边的\n类群。本种自身的详细生态目前尚未获得充分的资料确认。",
     "photos": [
       "../images/creatures/aquatic-insects/katabiro-amennbo/tsutsui-nagare-katabiro-amennbo/tsutsui-nagare-katabiro-amennbo_000001_20250322_00.jpg",
@@ -884,7 +884,7 @@
       2
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "长角泥甲科光泽泥甲属 *Urumaelmis uenoi uenoi* (Nomura, 1961)\n\n分布于屋久岛至奄美群岛、冲绳诸岛一带的小型水生甲虫(指名亚种)。光泽泥甲属中，2020年\n又从九州新记载了第二个种，使日本已知的本属种类增至2种。吐噶喇列岛口之岛的种群被区分\n为独立亚种(*U. u. tokarana*)。本种自身的详细生态目前仍有许多未解之谜。",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/ueno-tsuya-doromushi/ueno-tsuya-doromushi_000001_20260126_23.jpg",
@@ -916,7 +916,7 @@
       9
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "龙虱科斑龙虱属 *Hydaticus rhantoides* Sharp, 1882\n\n体长约10〜11毫米的小型龙虱。鞘翅整体呈黄褐色，没有明显的条纹。分布于本州(关东地方以\n西)、四国、九州、对马、南西诸岛及大东诸岛，国外见于中国、台湾及东南亚。栖息于水田、池\n沼等开阔的静水域。在南西诸岛的龙虱中，与褐色龙虱、小龙虱一起，被认为是数量相对稳定的\n种类。",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000001_20250403_00.jpg",
@@ -934,7 +934,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "金龟科粪金龟亚科奄美毛粪金龟 *Gilletianus atsushii* (Ochi, 1986)\n\n分布于奄美大岛的稀有粪金龟，采集记录非常稀少。1986年由越智辉夫以 *Aphodius (Trichaphodius) atsushii* 之名记载，后经分类修订，现归入Gilletianus属。据推测以奄美黑兔的粪便为食，但其生态尚有许多未知之处，采集实例也十分有限。",
     "photos": [
       "../images/creatures/beetles/amami-himekebuka-magusokogane/amami-himekebuka-magusokogane_000001_20260427_12.jpg",
@@ -959,7 +959,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "金龟科犀金龟亚科奄美小犀金龟 *Eophileurus chinensis irregularis* Prell, 1913\n\n小犀金龟 *Eophileurus chinensis* 分布于奄美大岛、德之岛、与路岛及请岛的亚种。体长雄性约20〜25毫米，雌性约15〜20毫米。栖息于平地到山地的森林中，夜行性，常见于林地地面或林道上行走，初夏至晚秋期间也会飞向树液及灯光。成虫几乎全年可见，但并非个体数量很多的物种。",
     "photos": [
       "../images/creatures/beetles/amami-ko-kabuto/amami-ko-kabuto_000001_20250312_22.jpg",
@@ -983,7 +983,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "金龟科粪金龟亚科奄美斑纹粪金龟 *Chilothorax ohishii* (Masumoto, 1975)\n\n仅分布于奄美大岛、德之岛的固有种。1975年由桝元敏也以 *Aphodius ohishii* 之名记载，现归入Chilothorax属。主要以奄美黑兔的粪便为食，秋季至春季常可见到，夏季则几乎难觅踪影。",
     "photos": [
       "../images/creatures/beetles/amami-semadara-magusokogane/amami-semadara-magusokogane_000001_20260427_12.jpg",
@@ -1006,7 +1006,7 @@
       5
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "吉丁虫科奄美青姥吉丁虫 *Chalcophora japonica oshimana* Schönfeldt, 1890\n\n体长24〜40毫米。分布于北海道至冲绳的姥吉丁虫 *Chalcophora japonica* 在奄美群岛、冲绳诸岛的亚种。偏好松树的枯木或衰弱木，幼虫在木材中取食成长。成虫在初夏至夏季可见。",
     "photos": [
       "../images/creatures/beetles/ao-uba-tamamushi/ao-uba-tamamushi_000001_20250612_23.jpg",
@@ -1028,7 +1028,7 @@
       8
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "天牛科贝茨扁天牛 *Eurypoda batesi* Gahan, 1894\n\n体长26〜34毫米。广泛分布于关东、中部地方以南的本州，以及四国、九州、冲绳岛以北的南西诸岛(含奄美大岛、德之岛)，国外见于朝鲜半岛及中国西南部。常聚集于樟树、椎树、红楠等树木，夜行性，也会飞向灯光。6月至8月前后常见。",
     "photos": [
       "../images/creatures/beetles/be-tsu-hirata-kamikiri/be-tsu-hirata-kamikiri_000001_20250907_03.jpg",
@@ -1045,7 +1045,7 @@
       7
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "天牛科费氏红星天牛 *Rosalia (Eurybatus) ferriei* Vuillet, 1911\n\n仅分布于奄美大岛的固有种。体色红底黑纹，十分美丽，7月前后出现在深山森林中的枯立木上。因在奄美大岛采集到本种的费里耶神父而得名。根据鹿儿岛县稀有野生动植物保护条例被指定为稀有野生动植物，禁止捕获、采集。",
     "photos": [
       "../images/creatures/beetles/ferie-beniboshi-kamikiri/ferie-beniboshi-kamikiri_000001_20250628_13.jpg",
@@ -1072,7 +1072,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "金龟科大黑金龟亚科奄美圆大黑金龟 *Copris brachypterus* Nomura, 1964\n\n体长13〜20毫米。仅分布于奄美大岛、德之岛的固有种(德之岛分布有另一亚种)，后翅退化，无法飞行。夜间在山地森林中四处走动寻找奄美黑兔的粪便，具有在粪球下方挖洞、用前脚一边后退一边将粪球拖入洞中的习性。由于分布范围极为有限、迁移能力弱，加之过去采集压力导致个体数量大幅减少，被环境省红色名录列为濒危II类(VU)。",
     "photos": [
       "../images/creatures/beetles/marudaikoku-kogane/marudaikoku-kogane_000001_20251126_22.jpg",
@@ -1100,7 +1100,7 @@
       9
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "吉丁虫科绿窄吉丁虫 *Coraebus hastanus oberthueri*\n\n体长约11毫米的小型吉丁虫，分布于奄美大岛以南地区。窄吉丁虫属的成员以夏季强烈日照下活跃著称，本种也大致在6月至9月间可见。",
     "photos": [
       "../images/creatures/beetles/midori-nakaboso-tamamushi/midori-nakaboso-tamamushi_000001_20250611_10.jpg",
@@ -1124,7 +1124,7 @@
       10
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "叶甲科大绿猿叶甲 *Platycorynus japonicus*\n\n体长约10毫米。体具金属光泽的绿色小型叶甲，分布于南西诸岛(奄美大岛以南)。以络石类植物为食草，大致在4月至10月间可见。",
     "photos": [
       "../images/creatures/beetles/oomidor-isaru-hamshi/oomidor-isaru-hamshi_000001_20260708_12.jpg",
@@ -1162,7 +1162,7 @@
       5
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "金龟科大岛虎纹花金龟 *Paratrichius duplicatus duplicatus* Lewis, 1895\n\n体长11.8〜15.6毫米。分布于奄美大岛、德之岛的指名亚种(P. d. duplicatus)。冲绳诸岛则分布着另一亚种冲绳虎纹花金龟(P. d. okinawanus)。与近缘的虎纹花金龟类相比，翅色偏黑，具有独特光泽为其特征。4月至5月间出现。",
     "photos": [
       "../images/creatures/beetles/oshima-torafu-hanamuguri/oshima-torafu-hanamuguri_000001_20250503_13.jpg",
@@ -1184,7 +1184,7 @@
       7
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "吉丁虫科琉璃窄吉丁虫 *Coraebus niponicus* Lewis, 1894\n\n具琉璃色光泽的小型吉丁虫，已在奄美大岛确认分布。窄吉丁虫属的成员以夏季强烈日照下活跃著称，本种也大致在6月至9月间可见。",
     "photos": [
       "../images/creatures/beetles/ruri-nakaboso-tamamushi/ruri-nakaboso-tamamushi_000001_20250403_10.jpg",
@@ -1203,7 +1203,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "金龟科犀金龟亚科椰子犀金龟(台湾犀角金龟) *Oryctes rhinoceros* (Linnaeus, 1758)\n\n原产于中南半岛周边的外来种。据信20世纪初随从台湾进口的资材混入侵入石垣岛，为日本国内最早记录，此后分布逐渐北扩，1991年在奄美大岛、德之岛也被确认。目前已在南西诸岛几乎全境定着并自然繁殖。作为在椰子类、菠萝、甘蔗等植物的茎部及芯部钻孔为害的农业害虫而为人所知，也有人担忧其与本地犀金龟类之间的竞争关系。",
     "photos": [
       "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
@@ -1220,7 +1220,7 @@
       4
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "厚甲金龟科球金龟亚科吐噶喇球金龟 *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\n体长约5.0〜5.8毫米的小型甲虫，分布于吐噶喇列岛(模式产地为中之岛)及奄美大岛。与分布于八重山诸岛的近缘种先岛球金龟(*M. kazumai hisamatsui* Ochi, 1990)以分布区域区分。被认为是一种好蚁性昆虫，多见于朽木内部及其周围落叶层等靠近蚁巢的环境中，原始记载论文的题名中也使用了\"myrmecophilous(好蚁性)\"一词。受到刺激时会将触角与足收入体内，蜷缩成完整的球状，如同鼠妇一般保护自己。",
     "photos": [
       "../images/creatures/beetles/tokara-mannmaru-kogane/tokara-mannmaru-kogane_000001_20260415_20.jpg",
@@ -1263,7 +1263,7 @@
       6
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鹟科歌鸲属 *Larvivora komadori*\n\n全长约14厘米，体重约18克。从男女群岛经吐噶喇列岛、奄美大岛及其周边岛屿到德之岛一带\n繁殖的日本固有种，1970年被指定为天然纪念物。它是奄美大岛的留鸟，一年四季都能见到，\n但在3月至6月的繁殖期，雄鸟会格外频繁地鸣叫以宣示领地，这一时期清晨循着鸣声寻找最容\n易发现它。雄鸟头部、背部及尾部呈鲜艳的橙红色，胸部和体侧的黑色部分看起来像\"胡须\"，\n这也是其日文名称的由来。雌鸟整体色调较为朴素。常在常绿阔叶林的林下取食昆虫。冲绳岛\n北部栖息着另一近缘种，但两者的分布范围并不重叠。",
     "photos": [
       "../images/creatures/birds/akahige/akahige_000001_20250120_14.jpg",
@@ -1288,7 +1288,7 @@
       5
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鹬科丘鹬属 *Scolopax mira*\n\n全长约35〜36厘米。仅分布于奄美群岛和冲绳诸岛的日本固有种，已在奄美大岛、加计吕麻\n岛、请岛、与路岛及德之岛确认有繁殖记录。外形与近缘的丘鹬相似，但腿更长、通体偏黑，体\n型比其他鹬类更为敦实。喜欢栖息在常绿阔叶林阴暗的林下地面，从日落到日出期间活动活跃，\n在地面觅食蚯蚓和昆虫。在晨昏的昏暗时段及满月之夜尤为活跃。繁殖期约为2月至5月，黄昏\n时分雄鸟会进行求偶及宣示领地的\"展示飞行\"，这段时期是全年最容易发现它的时候。在林内\n地面筑巢，3月至5月左右产卵2〜4枚。1993年被指定为国内稀有野生动植物种。随着獴类的根除和森林砍伐减少带来的森林恢复，\n其种群数量呈缓慢回升趋势，2026年3月环境省第5次红色名录已将其等级从易危(VU)下调为\n近危(NT)。不过野猫的捕食等问题依然存在。",
     "photos": [
       "../images/creatures/birds/amami-yamashigi/amami-yamashigi_000001_20260624_22.jpg"
@@ -1315,7 +1315,7 @@
       12
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鹟科矶鸫属 *Monticola solitarius*\n\n体长约23厘米。雄鸟从头部到背部呈蓝色，胸部至尾下覆羽为红褐色；雌鸟则为灰褐色并带\n有黑褐色鳞状斑纹，雌雄外观差异明显。为奄美大岛全年可见的留鸟，正如其日文名(意为\n\"磯鵯\")所示，本来偏好海岸岩礁、港口等磯石环境，但近年来在日本各地都出现向内陆及\n市区扩散的趋势，在奄美也越来越多地出现在民宅屋顶、电线和停车场等生活区域。食性偏\n肉食，捕食甲壳类、昆虫、蜥蜴甚至小型鼠类，鸣声清亮婉转。单独生活，全年占据领地，\n繁殖期一般从3月左右开始。",
     "photos": [
       "../images/creatures/birds/iso-hiyodori/iso-hiyodori_000001_20260201_14.jpg",
@@ -1337,7 +1337,7 @@
       8
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "翠鸟科翠鸟属 *Alcedo atthis bengalensis*\n\n体长约17厘米，体重19〜40克左右的小型翠鸟。头部至背部呈带光泽的青绿色，腹部为鲜艳\n的橙色，因而被称为\"水边的宝石\"。在奄美大岛为留鸟，一年四季都能见到，常出没于河\n流、水田边的水渠以及各种池塘等淡水环境。它会停在水边伸出的树枝或木桩上注视水面，\n一旦发现小鱼或虾便会猛地扎入水中捕食。领地意识很强，多单独或成对活动，在河岸或崩\n塌的斜坡土中挖掘横穴筑巢。繁殖期大约在3月至8月，一对繁殖鸟有时会连续育雏数次；求\n偶时雄鸟会将小鱼递给雌鸟，称为\"求爱喂食\"，这一时期活动格外活跃，也更容易观察到。\n与本网站介绍的大多数鸟类不同，它并非夜间森林的居民，而是少数可以在白天的水边轻松\n观察到的鸟类。",
     "photos": [
       "../images/creatures/birds/kawasemi/kawasemi_000001_20250207_10.jpg",
@@ -1363,7 +1363,7 @@
       4
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鹮科琵鹭属 *Platalea minor*\n\n体长约70〜80厘米的大型水鸟。通体白色，正如其名，具有黑色琵琶状的嘴和黑色的眼先。\n繁殖期会长出冠羽，胸部略带黄色。与近缘的白琵鹭的区别在于，其眼先的黑色部分向嘴基\n部大范围延伸。在朝鲜半岛西岸及中国东北沿海岛屿繁殖，在台湾、香港、中国南部、日本\n等地越冬。全球种群数量曾在20世纪90年代初锐减至约300只，此后经保护工作逐步恢复，\n2025年的国际同步调查已确认超过7000只。在日本国内，飞抵数量也呈增加趋势，主要集中\n在九州，奄美大岛在冬季至春季期间也能在干潟等地观察到。2020年被指定为《濒危物种保\n护法》下的国内稀有野生动植物种，禁止捕获、转让(天然纪念物的指定并非针对该物种本\n身，而是针对鹿儿岛县内部分栖息地)。2025年前后，IUCN红色名录已将其等级从濒危(EN)\n下调为易危(VU)。",
     "photos": [
       "../images/creatures/birds/kurotusraherasagi/kurotusraherasagi_000001_20251003_14.jpg",
@@ -1403,7 +1403,7 @@
       5
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "啄木鸟科啄木鸟属 *Dendrocopos leucotos owstoni*\n\n全长约28厘米，在啄木鸟中属中型。仅分布于奄美大岛的特有亚种，体背几乎全黑并带白斑，\n腹面的褐色调比其他亚种更浓。雄鸟头顶为红色，雌鸟为黑色，因此雌雄很容易区分。主要栖息\n于成熟的照叶林，在阔叶大树的树干上凿洞筑巢。食性以潜伏在朽木中的天牛幼虫等为主。从冬\n季前后开始出现宣示领地及向配偶示爱的行为，2月至5月左右是最容易听到其用喙连续敲击树\n干的\"敲击声\"及鸣叫的时期。近年来因松树枯死等影响，分布已扩展至奄美大岛全岛。由于奄美\n大岛栖息的啄木鸟只有奄美小星头啄木鸟，可以通过体型大小加以区分。1971年被指定为国家\n天然纪念物，1993年被指定为国内稀有野生动植物种，禁止捕获、转让。",
     "photos": [
       "../images/creatures/birds/oosuton-ooakagera/oosuton-ooakagera_000001_20260325_10.jpg",
@@ -1450,7 +1450,7 @@
       9
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "翠鸟科翡翠属 *Halcyon coromanda bangsi*\n\n全长约27厘米，通体呈带光泽的红褐色，飞行时腰部的浅蓝色斑纹十分显眼。在奄美大岛当\n地也被称为\"库卡鲁(Kukkaru)\"，因\"叽哦哦哦哦——\"般响亮的鸣声而深受喜爱。它是一种\n夏候鸟，通常在黄金周前后的4月末从东南亚的越冬地飞来，9月前后再度南迁离开。虽属翠\n鸟科，但它并不太吃鱼，而是广泛捕食螃蟹、青蛙、蜥蜴及森林中的各种昆虫。6月至7月的\n繁殖期，它会在树洞或啄木鸟废弃的旧巢中产下约5枚卵，雏鸟多在7月前后离巢。此时亲鸟\n会变得格外敏感，靠近巢树、制造噪音或使用闪光灯拍摄都可能导致弃巢或雏鸟提前离巢，\n因此应保持距离、安静观察，且不宜逗留太久。",
     "photos": [
       "../images/creatures/birds/ryukyu-akashobin/ryukyu-akashobin_000001_20260615_00.jpg",
@@ -1473,7 +1473,7 @@
       7
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鸠鸽科绿鸠属 *Treron permagnus*\n\n体长约35厘米，体型比小绿鸠稍大，为留鸟。通体呈鲜艳的绿色。其日文名\"头赤\"(意为红\n头)源自近缘种台湾绿鸠(Treron formosae)头部带有红色，而分布于奄美大岛等地的本种\n则连头部也是绿色。栖息于低地到山地的照叶林中，在树上取食薜荔等植物的果实与种子。\n鸣声独特，如尺八般\"呜——奥、佩、黑波\"作响。约在5月繁殖，产卵2枚。由于栖息地的\n分割与减少，IUCN红色名录将其列为近危(NT)物种。",
     "photos": [
       "../images/creatures/birds/ryukyu-zuaka-aobato/ryukyu-zuaka-aobato_000001_20260517_09.jpg",
@@ -1493,7 +1493,7 @@
       7
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鸱鸮科角鸮属 *Otus elegans elegans*\n\n体长22厘米，是日本体型最小的猫头鹰之一。通体呈褐色，带有细密的虫蚀状斑纹。为留\n鸟，分布于奄美大岛以南的南西诸岛，一年四季都能见到，不仅栖息于成熟的森林，也常见\n于人家附近的树林。夜行性，日落后会反复发出低沉的\"科霍、科霍\"叫声，雌鸟有时会以\n\"喵\"声应和。以昆虫、蜘蛛、壁虎等为食。营巢于树洞、啄木鸟废弃的旧巢或山苏花的叶\n间，在4月至7月左右的繁殖期产卵4〜5枚。抱卵仅由雌鸟负责，但雌雄会共同承担育雏的\n喂食工作，多数雏鸟在7月前后离巢。离巢前后，雏鸟的飞行能力尚不稳定，有时会停在靠\n近地面的树枝上，此时不应将其捡起或用灯光长时间照射，而应悄悄离开现场。其鸣声本身\n并不限于繁殖期，一年四季均可听到。",
     "photos": [
       "../images/creatures/birds/ryuukyuu-konohazuku/ryuukyuu-konohazuku_000001_20250301_19.jpg",
@@ -1516,7 +1516,7 @@
       9
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "王鹟科寿带属 *Terpsiphone atrocaudata illex*\n\n雄鸟连尾羽全长约45厘米，雌鸟约18厘米。通体带黑紫色光泽，眼周和喙呈鲜艳的钴蓝色。\n雄鸟拥有近乎体长三倍的长尾羽，飞行姿态十分独特。在奄美大岛作为夏候鸟于4月前后飞\n来，常在昏暗的林内枝头间穿梭跳跃，在空中捕食小虫、蜂类、蝴蝶等飞行昆虫。其鸣声听\n起来像\"月、日、星，嗬伊嗬伊嗬伊\"，因而以日、月、星三种光芒之意被称为\"三光鸟\"。5月\n至7月间，它会用苔藓等材料在树杈间筑成碗状巢，雌雄共同抱卵育雏。雏鸟离巢前，如在巢\n附近长时间逗留或摇晃树枝，可能导致亲鸟弃巢，因此应隔着望远镜进行短时间观察。9月前\n后，它会再次飞往东南亚的越冬地。",
     "photos": [
       "../images/creatures/birds/sankoutyou/sankoutyou_000001_20260708_13.jpg"
@@ -1537,7 +1537,7 @@
       3
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鹰科灰脸鵟鹰属 *Butastur indicus*\n\n雄鸟全长约47厘米，雌鸟约51厘米，翼展105〜115厘米，属中型猛禽。头部灰褐色，背部及\n胸部呈茶褐色，喉部为白色并带有黑色纵纹。主要捕食蛇、蜥蜴、青蛙等小型动物，也吃蝉、\n蚱蜢等昆虫。在九州以北至本州、四国一带繁殖，繁殖结束后，个体会从9月上旬开始经由西\n南诸岛南迁前往东南亚。奄美大岛作为日本国内最大规模的越冬地而闻名，每年10月中旬前\n后迎来迁徙高峰，届时可看到大量个体在空中盘旋上升、形成所谓的\"鹰柱\"景观。许多个体\n并未继续南迁而选择在岛上越冬，据估计每年约有2000只在11月至翌年3月左右停留。该物种\n被环境省红色名录列为易危(VU)物种，并列入《濒危野生动植物种国际贸易公约》附录II。在\n其栖息的林地周边，应避免大声喧哗、突然移动及使用闪光灯拍摄等惊扰个体、致其无谓飞\n离的行为，宜在远处安静观察。",
     "photos": [
       "../images/creatures/birds/sasiba/sasiba_000001_20240119_16.jpg",
@@ -1563,7 +1563,7 @@
       10
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "反嘴鹬科长脚鹬属 *Himantopus himantopus*\n\n体长约37〜40厘米，是一种拥有极长的红色腿和细长黑嘴的鹬类。身体白色，翅膀和背部为\n黑色；雄鸟头后部黑色范围更大，雌鸟颜色较浅。以水生昆虫、甲壳类、贝类及小鱼为食。\n在日本，1975年首次在爱知县的围垦地确认繁殖，此后在本州部分地区形成局部定居种群，\n但在南西诸岛主要作为旅鸟、冬候鸟出现。在鹿儿岛县内，奄美大岛、德之岛及吐噶喇群岛\n中之岛均有飞抵记录，邻近的冲永良部岛在2009年曾确认繁殖，但奄美大岛本岛的繁殖记录\n及具体飞抵时期的记录较少。喜好干潟、水田、休耕田等浅水环境。环境省红色名录曾将其\n列为易危(VU)，目前已变更为数据缺乏(DD)。",
     "photos": [
       "../images/creatures/birds/seitakashigi/seitakashigi_000001_20251003_13.jpg",
@@ -1587,7 +1587,7 @@
       3
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鸻科麦鸡属 *Vanellus vanellus*\n\n体长32厘米，头上有长长的冠羽，背部呈带光泽的绿黑色，腹部为白色。因姿态优雅而被\n称为\"冬日贵妇\"。在欧亚大陆繁殖，作为冬候鸟飞抵日本。在奄美大岛，它通常从10月下\n旬前后开始出现在水田、旱地等开阔的农耕地，一直停留越冬至翌年3月末至4月左右。常成\n群活动，在泥土中觅食蚯蚓和昆虫。与本网站主要介绍的夜间森林生物不同，它是在白天的\n农耕地里就能轻松观察到的冬季使者。",
     "photos": [
       "../images/creatures/birds/tageri/tageri_000001_20251221_15.jpg",
@@ -1610,7 +1610,7 @@
       3
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鸱鸮科耳鸮属 *Asio otus*\n\n体长35〜40厘米左右，头部长有形似耳朵的长耳羽是其显著特征。上体灰褐色至浅褐色并带\n有纵纹，虹膜为橙色。在北海道及本州北部作为夏候鸟繁殖，本州中部以南则主要作为冬候\n鸟飞来。奄美大岛全年栖息的猫头鹰仅有琉球角鸮和琉球鹰鸮两种，长耳鸮与这两种不同，\n每年都有少量个体作为冬候鸟飞来，通常从11月前后开始可见。非繁殖期有集群夜栖的习\n性，会聚集在常绿树或竹丛中。主要捕食老鼠等小型哺乳动物，也吃昆虫和小鸟。飞抵奄美\n大岛的数量很少，且警惕性强，观察难度较高。",
     "photos": [
       "../images/creatures/birds/torafuzuku/torafuzuku_000001_20250207_20.jpg"
@@ -1627,7 +1627,7 @@
       9
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "石龙子科石龙子属 *Plestiodon barbouri*\n\n全长15.5〜20厘米(吻肛长5.2〜7.3厘米)。分布于奄美大岛、加计吕麻岛、请岛、与路岛、\n德之岛及冲绳诸岛的日本固有种。幼体呈黑褐色，带有5条明亮的纵纹，尾巴呈鲜艳的蓝色，占\n尾部全长的三分之二以上。随着成长，蓝色逐渐褪去，雄性整体变为暗褐色至褐色，而雌性则多\n保持接近幼体的色彩。喜欢栖息在常绿阔叶天然林或恢复良好的次生林的林下及林缘，通过日光\n浴调节体温，以蜘蛛类和陆生贝类为食。冬季活动迟缓但不冬眠。因森林砍伐及割除下层植被导\n致的干燥化，以及野猫和外来入侵种爪哇獴的捕食，其数量有所减少。已被环境省红色名录列为\n易危(VU)，2019年又被指定为鹿儿岛县稀有野生动植物，未经许可的捕获、采集将受到处罚。",
     "photos": [
       "../images/creatures/lizards/ba-ba-tokage/ba-ba-tokage_000001_20250910_12.jpg",
@@ -1656,7 +1656,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "兔科奄美兔属 *Pentalagus furnessi*\n\n体长约41〜51厘米，体重1.3〜2.7千克。仅分布于奄美大岛和德之岛的日本固有种，因保留\n了浓厚的原始特征而被称为\"活化石\"。1921年被指定为天然纪念物，1963年升格为特别天然\n纪念物。夜行性，以岩洞或树洞中挖掘的巢穴为据点活动，以椎树果实和嫩芽为食。繁殖期为春\n季和秋季前后，每胎产1只幼崽。曾因野化家猫及外来入侵种爪哇獴的捕食而数量减少，但随着\n灭獴工作的推进，近年来种群数量呈恢复趋势。它是夜间生态之旅的象征性动物，在林道上不时\n能与蹦跳而过的它不期而遇。",
     "photos": [
       "../images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000001_20260221_21.jpg",
@@ -1678,7 +1678,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鼠科长毛鼠属 *Diplothrix legata*\n\n体长22〜33厘米，尾长25〜35厘米。是日本体型最大的老鼠，仅分布于奄美大岛、德之岛及\n冲绳岛北部，毛发中混有5〜6厘米的长刚毛。1972年被指定为天然纪念物，2016年被指定为\n国内稀有野生动植物种。夜行性且树栖性极强，白天在树洞中铺满枯叶的巢里休息。食性为杂\n食，以椎树果实和昆虫等为食。繁殖期为秋季至初冬，每胎产2〜5只幼崽。警戒心较弱，即使\n用手电筒照射也不太会逃跑，因此有时能在林道上从容地观察到它。",
     "photos": [
       "../images/creatures/mammals/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
@@ -1701,7 +1701,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "鼩鼱科麝鼩属 *Crocidura watasei*\n\n体长约5.5厘米，体重仅5〜8克，是世界上体型最小的哺乳动物之一。仅分布于奄美群岛(奄\n美大岛、加计吕麻岛、德之岛等)和冲绳诸岛的日本固有种。喜欢草地、农田等开阔环境，以小\n型昆虫和蜘蛛等为食。夜行性，有时能看到它在林道旁的草丛中快速穿梭的身影。与同属栖息于\n森林的近缘种生活环境不同，有时会被混淆。虽然没有像天然纪念物那样的法律捕获限制，但已\n被环境省列为准绝灭危惧种。",
     "photos": [
       "../images/creatures/mammals/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
@@ -1720,7 +1720,7 @@
       10
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蚱科奄美扁蚱 *Austrohancockia amamiensis* Yamasaki, 1994\n\n分布于奄美大岛、德之岛的日本固有种。体长雄性约10毫米，雌性约14.5毫米。前胸背板扁平宽展为其特征，栖息于堆积落叶的林地地面，具有融入周围环境的保护色。行动敏捷，受惊时会跳跃逃走。",
     "photos": [
       "../images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
@@ -1745,7 +1745,7 @@
       12
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "凤蝶科青凤蝶 *Graphium sarpedon nipponum* Fruhstorfer, 1903\n\n黑色翅膀上有一道贯穿前后翅的青绿色宽带，飞行迅速，外形美丽。以樟树、红楠等樟科植物为食草，在奄美大岛全岛各地均可见。一年可发生多代，温暖时节长期可见其身影。",
     "photos": [
       "../images/creatures/other-insects/tyou/aosuji-ageha/aosuji-ageha_000001_20250325_10.jpg",
@@ -1763,7 +1763,7 @@
       7
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蜻科长翅蝶蜻 *Rhyothemis severini* Ris, 1913\n\n日本国内仅确认分布于奄美大岛的稀有蜻蜓。体色黑而带深绿色光泽，透明的翅膀上有藏青色斑纹。偏好挺水植物茂密的池塘，雄性会在水面附近低飞等待雌性。由于栖息地与个体数量都极为有限，根据《濒危物种保护法》被指定为国内稀有野生动植物种，禁止捕获。",
     "photos": [
       "../images/creatures/other-insects/tombo/hanenaga-tyou-tombo/hanenaga-tyou-tombo_000001_20250731_17.jpg",
@@ -1788,7 +1788,7 @@
       11
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蛱蝶科网蛱蝶 *Cyrestis thyodamas* Boisduval, 1836\n\n翅膀纹路独特，白色底色上分布着深褐色的龟甲状花纹。分布于纪伊半岛以西至南西诸岛，奄美大岛也可见其踪影。幼虫以对叶榕、榕树等桑科植物为食。成虫可越冬，温暖时节从春季到深秋反复繁殖出现。",
     "photos": [
       "../images/creatures/other-insects/tyou/ishigake-tyou/ishigake-tyou_000001_20250605_22.jpg",
@@ -1817,7 +1817,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "树蟋科(松虫科) 朽木蟋蟀 *Duolandrevus ivani*\n\n体长31〜35毫米，体型偏大，外形近似蟋蟀。广泛分布于奄美大岛、德之岛等南西诸岛，如其名所示，栖息于朽木树皮下等隐蔽处。夜间会发出\"咕依——咕依——\"的特有鸣声。在温暖地区，无论季节，全年皆可见成虫身影。",
     "photos": [
       "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000001_20241123_22.jpg",
@@ -1837,7 +1837,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "树蟋科(松虫科) 斑树蟋 *Cardiodactylus guttulus*\n\n名字虽带\"蟋蟀\"二字，但分类上属于树蟋类。栖息于吐噶喇列岛以南南西诸岛的森林中，在奄美群岛约从8月下旬开始出现成虫。常不分昼夜地群集于树干上，发出\"嘶、嘶\"的鸣声。个体数量众多，也是爬行类与鸟类的重要食物来源。",
     "photos": [
       "../images/creatures/other-insects/tyokushi/madara-kourogi/madara-kourogi_000001_20250914_12.jpg"
@@ -1855,7 +1855,7 @@
       7
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "树蟋螽科 圆斑树蟋螽 *Prosopogryllacris okadai* Ichikawa, 2001\n\n分布于宝岛、奄美大岛、加计吕麻岛的树栖性树蟋螽类。触角远长于体长。白天躲藏在自己吐丝缀合树叶做成的巢中，夜晚才爬出活动，属夜行性昆虫。肉食性强，捕食其他昆虫。警戒心强，很难被发现。",
     "photos": [
       "../images/creatures/other-insects/tyokushi/marumon-korogisu/marumon-korogisu_000001_20250928_02.jpg",
@@ -1879,7 +1879,7 @@
       10
     ],
     "activity": "diurnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蜻科冲绳斑丽蜻 *Rhyothemis variegata imperatrix* Selys, 1887\n\n斑丽蜻分布于南西诸岛的亚种，从奄美大岛到冲绳、宫古、八重山诸岛都能广泛见到。体长约40毫米，翅上深褐色斑纹的大小与形状因个体而异，差异较大。在池塘与水田周围振翅飞舞，姿态犹如蝴蝶一般。",
     "photos": [
       "../images/creatures/other-insects/tombo/okinawa-tyou-tombo/okinawa-tyou-tombo_000001_20250731_16.jpg",
@@ -1901,7 +1901,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "夜蛾科(近期分类归入裳蛾科) 大巴纹裳蛾 *Erebus ephesperis* (Hübner, [1823])\n\n翼展可达90〜100毫米，是巴纹蛾类中体型最大的物种。茶褐色的翅膀边缘呈波浪状，前翅上有环状白色斑纹，这正是其日文名\"巴\"字的由来。幼虫以菝葜等百合科植物为食，成虫也会飞向灯光。在奄美大岛，本种还被学术记录为球兰(马蹄铃)花朵的传粉者。",
     "photos": [
       "../images/creatures/other-insects/ga/ootomoe/ootomoe_000001_20250808_01.jpg",
@@ -1957,7 +1957,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "螽斯科台湾树螽 *Mecopoda elongata* (Linnaeus, 1758)\n\n分布于伊豆半岛以南温暖地区的螽斯类，奄美大岛及南西诸岛其他地区也可见到。从夏末开始鸣叫，随着秋意渐浓，会发出\"咕噜噜噜噜\"般响亮嘈杂的鸣声。刚开始鸣叫时是\"咕——、咕——\"般间隔的声音，随后逐渐变为不间断的连续音。",
     "photos": [
       "../images/creatures/other-insects/tyokushi/taiwan-kutsuwamushi/taiwan-kutsuwamushi_000001_20250325_22.jpg",
@@ -1982,7 +1982,7 @@
       10
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "游蛇科赤楝蛇属 *Dinodon semicarinatum*\n\n体长可达约200厘米。5月至11月是最容易观察到它的时期。体色为黄褐色，身上带有红黑相间的椭\n圆形横纹。虽然无毒，但性情好斗，一旦进入其领地就会发出威吓并主动攻击。食性广泛，捕食哺乳\n类、鸟类、爬行类、两栖类和鱼类，也会吃海龟蛋，甚至会捕食天敌波布蛇。夜行性，从林道、水边\n到海岸附近都能观察到它的踪迹。体型较小的个体红色更为鲜艳、十分美丽，但即使体型小，被咬到\n也会很疼，需多加注意。",
     "photos": [
       "../images/creatures/snakes/akamata/akamata_000001_20250921_22.jpg",
@@ -2048,7 +2048,7 @@
       4
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "脊蛇科脊蛇族 *Achalinus werneri*\n\n体长可达约55厘米。背部呈黑褐色或暗褐色，沿正中线有一条黑色纵纹，腹面为黄色。在奄美，只有\n在条件极为理想的日子里才能遇见它，堪称\"幻之蛇\"。大雨天有时会爬到地表活动。夜行性且营地下\n生活，栖息于森林、水边草地和农耕地。食性以蚯蚓为主。比其他岛屿上的奄美脊蛇数量更少，更难\n发现。由于体形极其细小，开车经过时可能根本无法察觉到它。",
     "photos": [
       "../images/creatures/snakes/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg",
@@ -2072,7 +2072,7 @@
       6
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "游蛇科渔游蛇属 *Hebius pryeri*\n\n体长可达约110厘米。5月至11月是最容易观察到它的时期。体形细长，体色为黑色或黑褐色，身体\n上带有黄色或褐色的条纹。喜欢栖息在水边，常见于水田等青蛙较多的场所。虽然有毒，但注入毒液\n的毒牙较小，据说仅被咬一下毒液难以渗入体内，不过其毒性本身较强，仍需注意。食性以青蛙、鱼\n类、壁虎和小型蜥蜴为主。动作敏捷，一旦察觉危险便会做出威吓姿态。",
     "photos": [
       "../images/creatures/snakes/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
@@ -2112,7 +2112,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蝮蛇科奄美烙铁头属 *Protobothrops flavoviridis*\n\n体长可达约226厘米，是岛上体型最大的蛇类之一。5月至11月是最容易观察到它的时期(即使在冬天，\n气温较高的日子里它也可能活动)。夜行性，白天多藏身于洞穴等处休息。栖息范围从低地森林到山地\n森林、草地、水边、农田乃至树上都有，有时会为了捕食老鼠而进入民宅周边。主要以老鼠为食，也捕\n食爬行类、青蛙、哺乳类和鸟类。天敌包括赤楝蛇以及猎捕波布蛇的人。有毒且性情相当好斗。观察或\n拍摄时务必保持2〜3米以上的距离。一旦靠近，它不会逃跑，而是立刻摆出攻击姿势，扑咬距离可达体\n长的三分之二左右。如果在手机没有信号的深山中被咬伤，后果会非常严重。它的花纹与周围环境融为\n一体，很难被发现，即使看不到，也可能就潜伏在附近。无论怎样小心都不为过。",
     "photos": [
       "../images/creatures/snakes/habu/habu_000002_20250228_00.jpg",
@@ -2228,7 +2228,7 @@
       12
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "蝮蛇科山烙铁头属 *Ovophis okinavensis*\n\n体长可达约80厘米。耐寒性强，在奄美大岛可全年观察到。梅雨季节结束、天气转热后，常在海拔\n较高的地方观察到它。食性以中小型青蛙、小型哺乳类和鸟类为主。在水田和流速缓慢的溪流等青蛙\n较多的场所很容易观察到。盘卷不动时几乎一动不动，但一旦进入其领地就会发出威吓。由于是毒\n蛇，被咬后应立即就医。请注意避免踩到它。",
     "photos": [
       "../images/creatures/snakes/hime-habu/hime-habu_000002_20250429_20.jpg",
@@ -2272,7 +2272,7 @@
       11
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "眼镜蛇科华珊瑚蛇属(别名：琉球赤蛇) *Sinomicrurus japonicus*\n\n体长可达约50厘米。5月前后和9月前后是最容易观察到它的时期。背部呈红褐色或橙色，带有5条暗\n褐色纵纹。被指定为\"特定动物\"，属于被认为可能对人造成伤害的物种类别。其毒性为神经毒，比波\n布蛇更强，但头部较小，性情温顺。若被拿在手中，它会用如骨头般坚硬的尾巴刺人。夜行性且数量\n稀少，很难遇见。其人气之高，甚至有人专程为了一睹其风采而造访奄美大岛。",
     "photos": [
       "../images/creatures/snakes/hyan/hyan_000001_20250515_20.jpg",
@@ -2356,7 +2356,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科奥锹甲属扁锹甲亚种 *Dorcus titanusu elegans*\n\n分布于奄美群岛的扁锹甲亚种。是奄美大岛数量最多的锹形虫。人工饲养下能长得相当大，是很\n受欢迎的种类。常聚集在橘树、红楠、椎树、野桐等的树液上。野外个体多在50毫米以下，超过\n65毫米就算相当大了。目标是突破70毫米。",
     "photos": [
       "../images/creatures/stag-beetles/amami-hirata-kuwagata/amami-hirata-kuwagata_000001_20250814_20.jpg",
@@ -2383,7 +2383,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科奥锹甲属小锹甲亚属 *Dorcus amamianus*\n\n虽然名字带有\"小锹甲\"，但许多特征与姬大锹形虫相似。大颚短而弯曲有力，足和跗节较长。\n活动期为5月下旬至10月。数量不如日本本土的小锹甲多。",
     "photos": [
       "../images/creatures/stag-beetles/amami-ko-kuwagata/amami-ko-kuwagata_000001_20250720_23.jpg",
@@ -2405,7 +2405,7 @@
       10
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科圆翅锹甲属 *Neolucanus protogenetivus*\n\n活动期为9月至10月左右，可在长满高大椎树的深山密林中观察到。根据奄美大岛(含附属岛\n屿)5个市町村及德之岛3个町的稀有野生动植物保护条例，禁止采集。为防止盗猎，山中设有监\n控相机，季节期间还有昆虫巡逻队巡查。※仅拍照留念没有问题，但若需进入需要许可的区域，请\n务必依规申请。",
     "photos": [
       "../images/creatures/stag-beetles/amami-marubane-kuwagata/amami-marubane-kuwagata_000001_20250906_21.jpg",
@@ -2434,7 +2434,7 @@
       8
     ],
     "activity": "nocturnal",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科锹甲属 *Lucanus ferriei*\n\n活动期为7月至9月左右。是仅分布于奄美大岛的稀有种。根据条例禁止采集。栖息于海拔300米\n以上的原始森林。夜行性，可见雄虫在树木高处等待雌虫，但肉眼很难确认。也常在电线杆顶部一\n带见到它的身影。它会飞来树液、水果诱饵和灯光处，但禁止采集。",
     "photos": [
       "../images/creatures/stag-beetles/amami-miyama-kuwagata/amami-miyama-kuwagata_000001_20250827_00.jpg",
@@ -2462,7 +2462,7 @@
       10
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科肥角锹甲属 *Aegus laevicolis subnitidus*\n\n为肥角锹甲的奄美群岛亚种，是国产肥角锹甲各亚种中体型最大的。活动期为5月至10月左右。\n有时会飞到红楠、椎树、野桐、楹树等的树液上。野外个体多为20毫米左右，达到28毫米就算大\n型。目标是突破30毫米。",
     "photos": [
       "../images/creatures/stag-beetles/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
@@ -2485,7 +2485,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科奥锹甲属锯锹甲奄美亚种 *Prosopocoilus dissimilis*\n\n活动期为6月中旬至9月上旬。在日本各地的锯锹甲中，奄美大岛产的个体体型尤其大，大颚长而\n粗壮、十分气派。常飞到橘树、野桐、红楠、椎树、成熟的露兜树果实、香蕉诱饵以及路灯处。个\n体多在60毫米左右，超过75毫米即为大型。目标是突破80毫米。",
     "photos": [
       "../images/creatures/stag-beetles/amami-nokogiri-kuwagata/amami-nokogiri-kuwagata_000001_20250620_21.jpg",
@@ -2521,7 +2521,7 @@
       8
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科鹿角锹甲属 *Rhaetulus recticrnis*\n\n5月至9月左右活动，8月前后最容易见到。根据条例禁止采集。海拔相对较高的地区发现几率更\n高。多附着在椎树或橘树的细枝上。大型个体的大颚会像鹿角一样强烈弯曲。请注意不要将其误认\n为小型个体的小锹甲或锯锹甲而误带回家(无法自行判断种类的个体请勿带走)。",
     "photos": [
       "../images/creatures/stag-beetles/amami-shika-kuwagata/amami-shika-kuwagata_000001_20250627_21.jpg",
@@ -2556,7 +2556,7 @@
       10
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科锹甲亚科角葫芦锹甲属 *Nigidius lewisi*\n\n全身具光泽，拥有独特形状的大颚，全年都在朽木中度过。全年都能在栎树、椎树等的倒木及落\n叶下发现它的踪迹。雌雄难以区分。在奄美分布局限，且几乎不飞到树液上，因此很难被发现。",
     "photos": [
       "../images/creatures/stag-beetles/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
@@ -2577,7 +2577,7 @@
       11
     ],
     "activity": "",
-    "night_observable": false,
+    "night_observable": null,
     "description": "锹甲科奥锹甲属扁锹甲亚属 *Dorcus metacostatus*\n\n活动期为4月下旬至10月左右，7月为高峰期。是日本珍稀的固有种，仅分布于奄美群岛，鞘翅\n上有8条明显的纵纹。常飞到橘树、红楠、野桐、椎树、香蕉诱饵及路灯处。体长超过60毫米即\n为大型，目标是突破70毫米。",
     "photos": [
       "../images/creatures/stag-beetles/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",
