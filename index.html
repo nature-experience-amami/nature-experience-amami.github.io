@@ -38,7 +38,7 @@
     filter:brightness(.60); opacity:0; transition:opacity 1s ease;
   }
   .hero-photo.is-visible{ opacity:1; }
-  .hero-photo.is-changing{ opacity:.2; }
+  .hero-photo.is-changing{ opacity:0; }
   .hero-photo-name{
     position:absolute; z-index:7; color:var(--moonlight);
     display:flex; align-items:baseline; gap:.6rem; font-size:clamp(.7rem, 1.1vw, .85rem);
@@ -46,6 +46,8 @@
   }
   .hero-photo-scientific{ font-family:'Space Mono', monospace; font-size:.9em; font-style:italic; font-weight:400; letter-spacing:.02em; }
   .hero-photo-name{ display:grid; grid-template-columns:auto auto; justify-content:start; row-gap:.15rem; }
+  .hero-photo-name{ transition:opacity 1s ease; }
+  .hero-photo-name.is-changing{ opacity:0; }
   .hero-photo-label{ grid-column:1 / -1; font-size:.8em; font-weight:400; letter-spacing:.08em; opacity:.8; }
 
   .hero::after{
@@ -394,7 +396,7 @@
   }
 
   @media (prefers-reduced-motion:reduce){
-    .hero-photo{ transition:none; }
+    .hero-photo, .hero-photo-name{ transition:none; }
     .eyebrow, .hero h1, .hero p, .btn{ animation:none; opacity:1; transform:none; }
   }
 </style>
@@ -613,12 +615,15 @@
       }
       const nextImage = new Image();
       nextImage.onload = function () {
+        // 写真と名前を完全に暗くしてから(CSSのフェード1秒)切り替え、また明るくする
         heroPhoto.classList.add('is-changing');
+        heroPhotoName.classList.add('is-changing');
         window.setTimeout(function () {
           updatePhoto(next, function () {
             heroPhoto.classList.remove('is-changing');
+            heroPhotoName.classList.remove('is-changing');
           });
-        }, 500);
+        }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1000);
       };
       nextImage.onerror = function () {
         console.error('ヒーロー写真の読み込みに失敗しました:', next.photo);
