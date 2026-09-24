@@ -757,3 +757,27 @@ Threads投稿の仕組み（`threads/`、詳細は`threads/THREADS_STATUS.md`）
 - 未完了事項: Actionsの「process-creature-photos」を手動実行して`data/creatures*.json`を再生成（オーナーが実施）。再生成後にトップの大きな写真から昼行性の種が外れる
 
 （担当: Claude／くろちゃん）
+
+### 2026-09-24 ナイトツアーから外す種の追加と、トップの大きな写真の切り替え表示の不具合修正
+
+#### ナイトツアーから外す種（オーナーの判断）
+
+- オーナーから8種をナイトツアーから外すよう依頼があった。そのうちフェリエベニボシカミキリ・ミドリナカボソタマムシ・オーストンオオアカゲラ・アオスジアゲハの4種は既に`activity: diurnal`で、再生成済みの`data/creatures.json`でもトップの大きな写真・Threadsのツアー案内から外れていた（変更なし）
+- 残る4種（エグリタマミズムシ・フタキボシケシゲンゴロウ・オオシマセンチコガネ・アマミヨコミゾドロムシ）は`activity`が空欄だったため、日本語版Markdownに`night_observable: false`（ナイトツアーでは出会えない）を追加（commit `8a17a0b`）。`night_observable`は true＝昼行性でも夜に観察できる／false＝ナイトツアーでは出会えない／未記入、の3通りになった
+- `generate_creatures_json.py`・`generate_creatures_json_i18n.py`：未記入を`null`として出力し、`false`と区別できるようにした（commit `15e2554`）。作業用コピーで実行し、`night_observable`以外の出力は変わらないことを確認
+- `index.html`×4言語：トップの大きな写真の候補から`night_observable: false`の種も外す（commit `99d95a8`）。再生成後のデータで確認し、候補は76→72種。4言語×スマホ・PCで、外した種が表示されないことを確認
+- `threads/make_draft.py`：`night_observable: false`の種はツアー案内に使わない（`tour_exclude`と同じ扱い、commit `99fdff6`）
+
+#### トップの大きな写真の8秒ごとの切り替えが不自然だった件
+
+- 原因: 写真を暗くするフェード（CSSで1秒）の途中、0.5秒の時点で次の写真に差し替えていた。計測すると、差し替えの瞬間に前の写真がまだ約40%の明るさで見えており、写真がパッと入れ替わって見えていた。名前のラベルもフェードせず一瞬で切り替わっていた
+- 修正（commit `c06317f`、4言語の`index.html`）: 写真と名前ラベルを完全に消してから（1秒）差し替え、また1秒かけて表示する。「視差効果を減らす」設定の端末ではフェードなしで切り替える
+- 検証: ブラウザで透明度を50msごとに計測し、差し替えが写真・名前とも透明度0の時点で起きることを確認
+
+#### 結果
+
+- Commit SHA: `c06317f`（スライドショー修正）、`8a17a0b`（Markdown）、`15e2554`（スクリプト）、`99d95a8`（トップページ）、`99fdff6`（Threads）。この記録は別commit
+- Push: 済み（main）
+- 未完了事項: Actionsの「process-creature-photos」を手動実行して`data/creatures*.json`を再生成（4種がトップの写真から外れるのは再生成後）
+
+（担当: Claude／くろちゃん）
