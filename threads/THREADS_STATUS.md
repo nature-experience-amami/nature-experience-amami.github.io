@@ -90,7 +90,7 @@
 
 - [x] Markdownに `months` がない種の月を決める（2026-09-24、34種を設定。一年中と確定した種は1〜12月を明記）
 - [ ] 残り6種（写真あり）の月を決めるか確認：ナガツヤドロムシ・アマミシジミガムシ・フタキボシケシゲンゴロウ・アマミハバビロドロムシ・アカハラアシナガミゾドロムシ・アマミヒラタヒシバッタ（今は生き物紹介では一年中、ツアー案内では名前に使わない）
-- [x] 昼行性の印（`diurnal: true`）を付ける（2026-09-24、20種＋トカゲはカテゴリー単位）。見るのが難しい種の印（`tour_exclude: true`）も4種に付けた
+- [x] 昼行性の印を付ける（2026-09-24、20種）。同日、サイト側Markdownの `activity` / `night_observable` に移した（`overrides.yml` からは削除）。見るのが難しい種の印（`tour_exclude: true`）も4種に付けた
 
 ### 今後の拡張（後回し）
 
@@ -443,5 +443,15 @@
 - `overrides.yml` の月（オーナーの現場の感覚）を、サイト側の `content/creatures/` の45種の `months` 行に反映（commit `eb9b456`、日本語版45・翻訳版84ファイル）。本文は変更なし
 - `make_draft.py`・`overrides.yml` は今回は変更なし。反映後も `overrides.yml` の月は残っているため、Threadsの動作は変わらない（3段階目で、Markdownと同じ値になった月の上書きを整理する予定）
 - サイト側の記録は `PROJECT_STATUS_updated.md` に追記
+
+（担当: Claude Code）
+
+### 2026-09-24 昼行性の判定をサイト側Markdownの activity に移行
+
+- サイト側の日本語版Markdownに `activity`（nocturnal / diurnal / crepuscular）と `night_observable: true`（昼行性でも夜に観察できる）を追加（commit `7da3285`）。詳細は `PROJECT_STATUS_updated.md`
+- `make_draft.py`（commit `fa18f1b`）：昼行性の判定を「Markdownの `activity: diurnal` で、`night_observable` でない種」に変更。`overrides.yml` に種ごとの `diurnal` を書けばそれを優先、`activity` がない種だけ `_categories` の既定値が効く。YAMLとして読めないMarkdown用の読み取りにも2項目を追加
+- `overrides.yml`：昼行性の印（20種）とトカゲのカテゴリー既定値を削除。月の上書き（46種）と `tour_exclude`（4種）は残した
+- 確認：昼行性と判定される種は変更前と同じ20種、月・`tour_exclude` も変化なし。2月・9月のツアー案内で昼行性の混入なし、`night_observable` の種（ルリカケス・アカハラダカ・オオトラツグミ・リュウキュウアサギマダラ・リュウキュウアオヘビ）は出る
+- 記録の訂正：リュウキュウアサギマダラの扱いの根拠は「越冬集団を夜に観察できる」（オーナーの説明）。2026-09-24「トカゲを昼行性に、リュウキュウアサギマダラの扱いを修正」の記録にある「夜は見られず」は、その後の同日の修正で「越冬中の集団をツアーで観察できる」に改められている
 
 （担当: Claude Code）
