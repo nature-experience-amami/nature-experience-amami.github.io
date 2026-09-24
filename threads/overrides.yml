@@ -89,6 +89,7 @@ ba-ba-tokage:                     # バーバートカゲ(昼行性の印は上�
 # --- その他の昆虫 ---
 hanenaga-tyou-tombo:              # ハネナガチョウトンボ
   months: [6, 7]
+  diurnal: true
 
 # --- 水生昆虫 ---
 amami-mizo-doromushi:             # アマミミゾドロムシ
@@ -137,7 +138,7 @@ tsutsui-nagare-katabiro-amennbo:  # ツツイナガレカタビロアメンボ
 
 # ===== 昼行性の印(ツアー案内に出さない) =====
 # ルリナカボソタマムシ・バーバートカゲは上の月の上書きと一緒に書いてある
-# ルリカケスは印なし(夜に寝ている姿を観察できるため)
+# ルリカケス・アカハラダカは印なし(夜に寝ている姿を観察できるため)
 kawasemi:                         # カワセミ
   diurnal: true
 tageri:                           # タゲリ
@@ -153,9 +154,24 @@ sankoutyou:                       # リュウキュウサンコウチョウ
   diurnal: true
 oomidor-isaru-hamshi:             # オオミドリサルハムシ
   diurnal: true
-# 蝶の仲間(Markdownの group: tyou)
-ryuukyuu-asagi-madara:            # リュウキュウアサギマダラ(夜は見られない。2月の15℃を下回る日に集団越冬する)
+iso-hiyodori:                     # イソヒヨドリ
   diurnal: true
+seitakashigi:                     # セイタカシギ
+  diurnal: true
+oosuton-ooakagera:                # オーストンオオアカゲラ
+  diurnal: true
+kurotusraherasagi:                # クロツラヘラサギ
+  diurnal: true
+sasiba:                           # サシバ
+  diurnal: true
+ryukyu-zuaka-aobato:              # リュウキュウズアカアオバト
+  diurnal: true
+okinawa-tyou-tombo:               # オキナワチョウトンボ
+  diurnal: true
+ferie-beniboshi-kamikiri:         # フェリエベニボシカミキリ
+  diurnal: true
+# 蝶の仲間(Markdownの group: tyou)
+# リュウキュウアサギマダラは印なし(越冬中の集団をツアーで観察できるため)
 aosuji-ageha:                     # アオスジアゲハ
   diurnal: true
 ishigake-tyou:                    # イシガケチョウ

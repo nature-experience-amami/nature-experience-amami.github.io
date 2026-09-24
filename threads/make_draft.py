@@ -453,14 +453,29 @@ def draft_tip(creatures, hist, weather):
     return c, out, ti
 
 
+def pick_tour_names(season, k=3):
+    # カテゴリーの重みで選ぶ。なるべく別々のカテゴリーから(足りなければ同じカテゴリーからも)
+    picked, rest = [], list(season)
+    while rest and len(picked) < k:
+        used_cats = {c.get("category") for c in picked}
+        other = [c for c in rest if c.get("category") not in used_cats]
+        c = weighted_choice(other or rest)
+        picked.append(c)
+        rest.remove(c)
+    return picked
+
+
 def draft_tour(creatures, hist, weather):
     # 夜のツアーの案内なので、昼行性・見るのが難しい種の印がある生き物は名前にも写真にも使わない
     night = [c for c in creatures if c["photos"] and not c.get("diurnal") and not c.get("tour_exclude")]
     season = [c for c in night if c.get("months") and NOW.month in c["months"]]
-    names = "・".join(c["name"] for c in random.sample(season, min(3, len(season))))
-    pool = season or night
+    picked = pick_tour_names(season)
+    names = "・".join(c["name"] for c in picked)
+    # 写真は名前に出した種から(1週間以内に出た種は避ける)。無理なら同じ重みで季節の生き物から
     week = shown_this_week(hist)
-    c = random.choice([c for c in pool if c["id"] not in week] or pool)
+    fresh = [c for c in picked if c["id"] not in week]
+    pool = season or night
+    c = weighted_choice(fresh) if fresh else weighted_choice([c for c in pool if c["id"] not in week] or pool)
     post = ("奄美大島の夜の森を、ガイドと一緒に歩いてみませんか？\n"
             + (f"今の時期は{names}などに出会えるチャンスがあります。\n" if names else "")
             + "その日の天気や季節に合わせて、生き物を探しに行きます。\n\n"
