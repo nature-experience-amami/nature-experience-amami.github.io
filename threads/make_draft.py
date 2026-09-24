@@ -34,7 +34,9 @@ TOPIC_TAG = "#奄美大島"
 DRAFT_LABEL = "threads-draft"
 AMAMI_LATLON = (28.38, 129.49)
 IMAGE_EXT = {".jpg", ".jpeg", ".png", ".webp"}
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash"
+# 上から順に試し、404(モデルが見つからない)なら次へ。GEMINI_MODEL(リポジトリ変数)があれば最優先
+GEMINI_MODELS = list(dict.fromkeys(
+    m for m in (os.environ.get("GEMINI_MODEL"), "gemini-3.1-flash-lite", "gemini-flash-latest") if m))
 
 # 0=月 … 6=日
 ROTATION = {0: "creature", 1: "tip", 2: "quiz", 3: "creature", 4: "tip", 5: "creature", 6: "tour"}
@@ -171,15 +173,22 @@ def tonight_weather():
 
 # ===== Gemini =====
 def gemini(prompt):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0.8}}
-    for attempt in range(3):
-        r = requests.post(url, params={"key": os.environ["GEMINI_API_KEY"]}, json=body, timeout=90)
-        if r.ok:
-            return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
-        print(f"Gemini失敗({r.status_code}) 再試行 {attempt + 1}/3")
-        time.sleep(15)
+    for model in GEMINI_MODELS:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        for attempt in range(3):
+            r = requests.post(url, params={"key": os.environ["GEMINI_API_KEY"]}, json=body, timeout=90)
+            if r.ok:
+                print(f"Geminiモデル: {model}")
+                return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+            if r.status_code == 404:
+                print(f"Geminiモデル {model} が見つからない(404) → 次の候補へ")
+                break
+            print(f"Gemini失敗({r.status_code}, {model}) 再試行 {attempt + 1}/3")
+            time.sleep(15)
+        else:
+            r.raise_for_status()
     r.raise_for_status()
 
 

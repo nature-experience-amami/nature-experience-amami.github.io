@@ -16,7 +16,7 @@
 - 動き：毎朝 6:17 JST にGitHub Actionsが起動 → 下書きをGitHub Issue（ラベル `threads-draft`）に作成 → 内容を確認してThreadsアプリに手動でコピペ投稿
 - 手動実行：Actionsタブの「Threads draft」から、投稿タイプ（auto / creature / tip / quiz / tour）を選んで実行できる
 - 投稿履歴：過去30件のIssueに埋め込んだ記録から読み取る（自動commitなし、外部データベースなし）
-- Gemini呼び出し：1日1回（ツアー案内の日は0回）。モデル名はリポジトリ変数 `GEMINI_MODEL` で指定、未設定なら `gemini-2.5-flash`
+- Gemini呼び出し：1日1回（ツアー案内の日は0回）。モデルは `GEMINI_MODEL`（リポジトリ変数、設定時は最優先）→ `gemini-3.1-flash-lite` → `gemini-flash-latest` の順に試し、404（モデルが見つからない）なら次の候補へ。使ったモデル名はログに出る
 - 天気：Open-Meteo（APIキー不要）で奄美の今夜（19〜23時）の気温・湿度・降水確率と昨日の雨量を取得
 
 ## ホームページと干渉しないためのルール
@@ -166,5 +166,19 @@
   - `threads/tips.yml`
 - Actionsは実行していない（テストはオーナーが実施予定）
 - 未完了事項：Actionsでのテスト実行（creature / tip / quiz / tour の4タイプ）
+
+（担当: Claude Code）
+
+### 2026-09-24 Geminiモデルの初期設定と404時の切り替え
+
+- Actionsでの実行時、Geminiが404を返して失敗。`gemini-2.5-flash` がこのキー（新しいプロジェクト）では使えないため
+- `make_draft.py` を修正（他のファイルは変更なし）
+  1. 初期設定のモデルを `gemini-3.1-flash-lite` に変更
+  2. 404（モデルが見つからない）のときは次の候補を順に試す：`GEMINI_MODEL`（リポジトリ変数、設定されていれば最優先）→ `gemini-3.1-flash-lite` → `gemini-flash-latest`。重複は除く。全部404ならエラーで止まる
+  3. 404以外のエラー（429の上限超過など）は、今まで通り同じモデルで15秒おきに最大3回試し、だめならエラーで止まる（別モデルには切り替えない）
+  4. 成功したモデル名をログに `Geminiモデル: ○○` と出す
+- 構文チェック（`py_compile`）OK。Gemini APIは呼ばず、応答を模擬して「404→次の候補で成功」「429→同じモデルで再試行」「全部404→停止」「429が3回→停止」の4通りを確認
+- 「現在の構成」のモデルの説明も更新
+- Actionsは実行していない（テストはオーナーが実施予定）
 
 （担当: Claude Code）
