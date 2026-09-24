@@ -16,10 +16,12 @@
 
 - text: 生き物の鳴き声や方向に敏感になろう
   type: 楽しみ方
-  creature:   # カエル類の月はナイトツアーで鳴き声がよく聞こえる時期(現場の感覚。繁殖期とは別)
-    - ryuukyuu-konohazuku
-    - taiwan-kutsuwamushi
-    - kenaga-nezumi
+  creature:   # 月はナイトツアーで鳴き声がよく聞こえる時期(現場の感覚。繁殖期とは別)
+    - ryuukyuu-konohazuku        # リュウキュウコノハズク(1年中鳴くので月指定なし)
+    - id: taiwan-kutsuwamushi    # タイワンクツワムシ
+      months: [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]
+    - id: kenaga-nezumi          # ケナガネズミ
+      months: [9, 10, 11]
     - id: amami-aka-gaeru        # アマミアカガエル
       months: [12, 1]
     - id: amami-ao-gaeru         # アマミアオガエル
@@ -71,10 +73,12 @@
 
 - text: ナイトツアーで聞こえる鳴き声は、リュウキュウコノハズクやタイワンクツワムシ、ケナガネズミ。カエル類は繁殖期によく鳴きます
   type: 楽しみ方
-  creature:   # カエル類の月はナイトツアーで鳴き声がよく聞こえる時期(現場の感覚。繁殖期とは別)
-    - ryuukyuu-konohazuku
-    - taiwan-kutsuwamushi
-    - kenaga-nezumi
+  creature:   # 月はナイトツアーで鳴き声がよく聞こえる時期(現場の感覚。繁殖期とは別)
+    - ryuukyuu-konohazuku        # リュウキュウコノハズク(1年中鳴くので月指定なし)
+    - id: taiwan-kutsuwamushi    # タイワンクツワムシ
+      months: [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]
+    - id: kenaga-nezumi          # ケナガネズミ
+      months: [9, 10, 11]
     - id: amami-aka-gaeru        # アマミアカガエル
       months: [12, 1]
     - id: amami-ao-gaeru         # アマミアオガエル
