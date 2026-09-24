@@ -59,6 +59,7 @@ AFTER_RAIN_MM = 1      # 雨上がり: 昨日の降水量がこれ以上(mm)で�
 AFTER_RAIN_POP = 30    #           今夜の降水確率の最大がこれ以下(%)
 CLEAR_POP = 20         # 晴れ: 今夜の降水確率の最大がこれ以下(%)で、雨上がり・小雨ではない
 WARM_C = 20            # 暖かい: 今夜の平均気温がこれ以上(℃)
+COLD_C = 15            # 寒い: 今夜の平均気温がこれ未満(℃)
 CALM_BREAKERS = {"大雨", "強風"}   # この日は、天気条件付きのコツ(大雨・強風が条件のものを除く)を選ばない
 
 # ガイドの経験則(オーナーの現場の感覚)。当てはまる天気の日にプロンプトへ渡す
@@ -163,6 +164,7 @@ def apply_overrides(items):
         if o.get("months"):
             c["months"] = o["months"]
         c["diurnal"] = bool(o.get("diurnal"))
+        c["tour_exclude"] = bool(o.get("tour_exclude"))
 
 
 def english_name(md):
@@ -250,7 +252,7 @@ def tonight_weather():
 
 
 def weather_conditions(w):
-    # 天気データ → {"大雨", "強風", "小雨", "雨上がり", "晴れ", "暖かい"} のうち当てはまるもの
+    # 天気データ → {"大雨", "強風", "小雨", "雨上がり", "晴れ", "暖かい", "寒い"} のうち当てはまるもの
     if not w:
         return set()
     conds = set()
@@ -267,6 +269,8 @@ def weather_conditions(w):
         conds.add("晴れ")
     if (w["今夜の気温(平均℃)"] or 0) >= WARM_C:
         conds.add("暖かい")
+    if w["今夜の気温(平均℃)"] is not None and w["今夜の気温(平均℃)"] < COLD_C:
+        conds.add("寒い")
     return conds
 
 
@@ -275,7 +279,7 @@ def weather_block(w):
     if not w:
         return "なし"
     conds = weather_conditions(w)
-    order = ["大雨", "強風", "小雨", "雨上がり", "晴れ", "暖かい"]
+    order = ["大雨", "強風", "小雨", "雨上がり", "晴れ", "暖かい", "寒い"]
     lines = [json.dumps(w, ensure_ascii=False),
              "天気の判定: " + ("、".join(c for c in order if c in conds) or "特になし")]
     wisdom = list(dict.fromkeys(WEATHER_WISDOM[c] for c in order if c in conds and c in WEATHER_WISDOM))
@@ -449,8 +453,8 @@ def draft_tip(creatures, hist, weather):
 
 
 def draft_tour(creatures, hist, weather):
-    # 夜のツアーの案内なので、昼行性の印がある生き物は名前にも写真にも使わない
-    night = [c for c in creatures if c["photos"] and not c.get("diurnal")]
+    # 夜のツアーの案内なので、昼行性・見るのが難しい種の印がある生き物は名前にも写真にも使わない
+    night = [c for c in creatures if c["photos"] and not c.get("diurnal") and not c.get("tour_exclude")]
     season = [c for c in night if c.get("months") and NOW.month in c["months"]]
     names = "・".join(c["name"] for c in random.sample(season, min(3, len(season))))
     pool = season or night

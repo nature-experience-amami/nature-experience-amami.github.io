@@ -1,18 +1,154 @@
 # 生き物ごとの上書き設定(サイト側のMarkdownは変更しない)
 # ここに書いた内容は、Threads投稿の下書きを作るときだけMarkdownより優先される
-# 値はオーナーの現場の感覚で決めたもの
+# 値はすべてオーナーの現場の感覚で決めたもの
 #
 # 書き方:
 #   生き物ID:
-#     months: [5, 6, 7]   # 見られる時期。Markdownの months の代わりに使う
+#     months: [5, 6, 7]   # 見られる時期。Markdownの months の代わりに使う(一年中は 1〜12 を全部書く)
 #     diurnal: true       # 昼行性の印。ツアー案内では名前にも写真にも使わない
-#                         # (生き物紹介・クイズには今まで通り出る)
+#     tour_exclude: true  # 見るのが難しい種の印。ツアー案内では名前にも写真にも使わない
+#   ※ diurnal / tour_exclude の種も、生き物紹介・クイズには今まで通り出る
 
-ruri-nakaboso-tamamushi:        # ルリナカボソタマムシ(Markdownは 6〜9月)
+# ===== 月の上書き =====
+
+# --- 両生類(鳴き声の時期の前後1か月) ---
+amami-aka-gaeru:                  # アマミアカガエル
+  months: [11, 12, 1, 2]
+amami-ao-gaeru:                   # アマミアオガエル
+  months: [12, 1, 2, 3, 4]
+hanasaki-gaeru:                   # アマミハナサキガエル
+  months: [11, 12, 1, 2]
+haroweru-amagaeru:                # ハロウェルアマガエル
+  months: [2, 3, 4, 5, 6, 7]
+hime-amagaeru:                    # ヒメアマガエル
+  months: [2, 3, 4, 5, 6, 7, 8]
+ishikawa-gaeru:                   # アマミイシカワガエル
+  months: [11, 12, 1, 2, 3, 4]
+otton-gaeru:                      # オットンガエル
+  months: [6, 7, 8, 9]
+ryukyu-kajika-gaeru:              # リュウキュウカジカガエル
+  months: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+# --- ヘビ ---
+ryukyu-ao-hebi:                   # リュウキュウアオヘビ
+  months: [5, 6, 7, 8, 9, 10]
+takachiho-hebi:                   # アマミタカチホヘビ
+  months: [5, 6]
+
+# --- クワガタ ---
+nokogiri-kuwagata:                # アマミノコギリクワガタ
+  months: [7, 8]
+shika-kuwagata:                   # アマミシカクワガタ
+  months: [7, 8]
+ko-kuwagata:                      # アマミコクワガタ
+  months: [7, 8]
+nebuto-kuwagata:                  # アマミネブトクワガタ
+  months: [6, 7, 8, 9, 10]
+amami-hirata-kuwagata:            # アマミヒラタクワガタ
+  months: [7, 8]
+sujibuto-hirata-kuwagata:         # スジブトヒラタクワガタ
+  months: [7, 9, 10, 11]
+miyama-kuwagata:                  # アマミミヤマクワガタ
+  months: [8]
+marubane-kuwagata:                # アマミマルバネクワガタ
+  months: [10]
+ruisu-tsuno-hyotan-kuwagata:      # ルイスツノヒョウタンクワガタ
+  months: [6, 7, 8, 9, 10]
+
+# --- 甲虫 ---
+ao-uba-tamamushi:                 # アオウバタマムシ
+  months: [4, 5]
+amami-himekebuka-magusokogane:    # アマミヒメケブカマグソコガネ
+  months: [4, 5, 6]
+taiwan-saikabuto:                 # タイワンサイカブト
+  months: [4, 5]
+tokara-mannmaru-kogane:           # トカラマンマルコガネ
+  months: [3, 4, 5, 6, 7, 8, 9, 10]
+ruri-nakaboso-tamamushi:          # ルリナカボソタマムシ
   months: [5, 6, 7]
+  diurnal: true
+amami-semadara-magusokogane:      # アマミセマダラマグソコガネ
+  months: [10, 11, 12, 1, 2, 3, 4]
 
-hanenaga-tyou-tombo:            # ハネナガチョウトンボ(Markdownは 5〜9月)
+# --- トカゲ ---
+ba-ba-tokage:                     # バーバートカゲ
+  months: [5, 6, 7, 8, 9, 10]
+  diurnal: true
+
+# --- その他の昆虫 ---
+hanenaga-tyou-tombo:              # ハネナガチョウトンボ
   months: [6, 7]
 
-amami-semadara-magusokogane:    # アマミセマダラマグソコガネ(Markdownは 9〜4月)
-  months: [10, 11, 12, 1, 2, 3, 4]
+# --- 水生昆虫 ---
+amami-mizo-doromushi:             # アマミミゾドロムシ
+  months: [7, 8]
+ueno-tsuya-doromushi:             # ウエノツヤドロムシ
+  months: [12, 1, 2]
+nomura-himedoromushi:             # ノムラヒメドロムシ
+  months: [12, 1, 2]
+satou-kara-himedoromushi:         # サトウカラヒメドロムシ
+  months: [4]
+  tour_exclude: true
+amami-sesuji-daruma-gamushi:      # アマミセスジダルマガムシ
+  months: [3]
+
+# --- 一年中(オーナーが確認して確定) ---
+kenaga-nezumi:                    # ケナガネズミ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+watase-jinezumi:                  # ワタセジネズミ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  tour_exclude: true
+marudaikoku-kogane:               # マルダイコクコガネ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+ryuukyuu-munabiro-tuyadoromushi:  # リュウキュウムナビロツヤドロムシ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+amami-yokomizo-doromushi:         # アマミヨコミゾドロムシ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+amami-kochibi-mizumusi:           # アマミコチビミズムシ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+eguri-tamamizumushi:              # エグリタマミズムシ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+ashibutome-mizumushi:             # アシブトメミズムシ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# アメンボ類全種
+amami-oyogi-katabiro-amennbo:     # アマミオヨギカタビロアメンボ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+chairo-kesi-katabiro-amennbo:     # チャイロケシカタビロアメンボ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+iriomote-kesi-katabiro-amennbo:   # イリオモテケシカタビロアメンボ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+kesi-katabiro-amennbo:            # ケシカタビロアメンボ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+koseaka-amennbo:                  # コセアカアメンボ(Markdownは 4, 5月)
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+tsutsui-nagare-katabiro-amennbo:  # ツツイナガレカタビロアメンボ
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+# ===== 昼行性の印(ツアー案内に出さない) =====
+# ルリナカボソタマムシ・バーバートカゲは上の月の上書きと一緒に書いてある
+# ルリカケスは印なし(夜に寝ている姿を観察できるため)
+kawasemi:                         # カワセミ
+  diurnal: true
+tageri:                           # タゲリ
+  diurnal: true
+  tour_exclude: true
+akahige:                          # アカヒゲ
+  diurnal: true
+midori-nakaboso-tamamushi:        # ミドリナカボソタマムシ
+  diurnal: true
+ryukyu-akashobin:                 # リュウキュウアカショウビン
+  diurnal: true
+sankoutyou:                       # リュウキュウサンコウチョウ
+  diurnal: true
+oomidor-isaru-hamshi:             # オオミドリサルハムシ
+  diurnal: true
+# 蝶の仲間(Markdownの group: tyou)。リュウキュウアサギマダラは除く
+aosuji-ageha:                     # アオスジアゲハ
+  diurnal: true
+ishigake-tyou:                    # イシガケチョウ
+  diurnal: true
+
+# ===== ツアー案内に出さない印(見るのが難しい種) =====
+# ワタセジネズミ・タゲリ・サトウカラヒメドロムシは上に書いてある
+amami-hababiro-doromusshi:        # アマミハバビロドロムシ
+  tour_exclude: true

@@ -2,7 +2,7 @@
 # type: 安全 / マナー・保護 / 楽しみ方
 # months: (任意)このコツを選ぶ月。月の外は観察のコツの日の選択肢から外す(省略すると通年)
 # weather: (任意)このコツを選ぶ天気。[小雨, 雨上がり] のように書くと、どれか1つに当てはまる日だけ選ぶ
-#   使える値: 大雨 / 強風 / 小雨 / 雨上がり / 晴れ / 暖かい(判定の目安は make_draft.py の定数)
+#   使える値: 大雨 / 強風 / 小雨 / 雨上がり / 晴れ / 暖かい / 寒い(判定の目安は make_draft.py の定数)
 #   months と両方あるときは両方を満たす日だけ。大雨・強風の日は、weather付きのコツは選ばない
 #   (大雨・強風を条件にしたコツは除く)
 # creature_season: true にすると、creature の候補を「Markdownの見られる時期(months)」に合うものだけにする
@@ -171,3 +171,9 @@
   type: 楽しみ方
   weather: [小雨, 雨上がり]
   creature: takachiho-hebi
+
+- text: 2月の気温が15℃を下回る日は、リュウキュウアサギマダラがたくさん見られます
+  type: 楽しみ方
+  months: [2]
+  weather: [寒い]
+  creature: ryuukyuu-asagi-madara
