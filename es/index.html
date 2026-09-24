@@ -428,7 +428,9 @@
     const heroLink = document.getElementById('hero-photo-link');
     const heroPhotoName = document.getElementById('hero-photo-name');
     const candidates = creatures.filter(function (creature) {
-      return Array.isArray(creature.photos) && creature.photos.length;
+      // ナイトツアーで出会える生き物だけ: 個別ページのない種と、昼行性(夜に観察できる印のある種を除く)を外す
+      return Array.isArray(creature.photos) && creature.photos.length && creature.page_path &&
+        !(creature.activity === 'diurnal' && !creature.night_observable);
     });
     if (!candidates.length) return;
 
@@ -439,7 +441,7 @@
         heroPhoto.src = photoData.photo;
         heroPhoto.alt = 'Amami Oshima — ' + photoData.creature.name;
         heroPhotoName.replaceChildren();
-        heroPhotoName.append(Object.assign(document.createElement('span'), { className: 'hero-photo-label', textContent: 'Fauna de Amami' }));
+        heroPhotoName.append(Object.assign(document.createElement('span'), { className: 'hero-photo-label', textContent: 'Fauna de nuestros tours nocturnos' }));
         const commonName = document.createElement('span');
         commonName.textContent = photoData.creature.name;
         heroPhotoName.append(commonName);
