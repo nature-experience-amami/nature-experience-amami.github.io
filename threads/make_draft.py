@@ -47,6 +47,24 @@ CATEGORY_WEIGHT = {
 AVOID_RECENT = 30
 AVOID_RECENT_MAIN = 14
 
+# 天気の判定の目安(仮の数値。現場の感覚に合わせて変えてよい)。「今夜」は19〜23時
+HEAVY_RAIN_MM = 5      # 大雨: 今夜の1時間雨量の最大がこれ以上(mm)
+STRONG_WIND_MS = 8     # 強風: 今夜の風速の最大がこれ以上(m/s)
+LIGHT_RAIN_MM = 0.1    # 小雨: 今夜の1時間雨量の最大がこれ以上で、大雨ではない(=雨が降る予報)
+AFTER_RAIN_MM = 1      # 雨上がり: 昨日の降水量がこれ以上(mm)で、
+AFTER_RAIN_POP = 30    #           今夜の降水確率の最大がこれ以下(%)
+CLEAR_POP = 20         # 晴れ: 今夜の降水確率の最大がこれ以下(%)で、雨上がり・小雨ではない
+WARM_C = 20            # 暖かい: 今夜の平均気温がこれ以上(℃)
+CALM_BREAKERS = {"大雨", "強風"}   # この日は、天気条件付きのコツ(大雨・強風が条件のものを除く)を選ばない
+
+# ガイドの経験則(オーナーの現場の感覚)。当てはまる天気の日にプロンプトへ渡す
+WEATHER_WISDOM = {
+    "大雨": "大雨や風が強すぎる日は、生き物はほとんど動かない",
+    "強風": "大雨や風が強すぎる日は、生き物はほとんど動かない",
+    "小雨": "小雨や雨上がりは、カエルやヘビがよく活動する",
+    "雨上がり": "小雨や雨上がりは、カエルやヘビがよく活動する",
+}
+
 # 0=月 … 6=日
 ROTATION = {0: "creature", 1: "tip", 2: "quiz", 3: "creature", 4: "tip", 5: "creature", 6: "tour"}
 TYPE_LABEL = {"creature": "生き物紹介", "tip": "観察のコツ", "quiz": "クイズ", "tour": "ツアー案内"}
@@ -63,11 +81,14 @@ RULES = """
 - 採集や持ち帰り、生き物に触る・追い回すことを勧める表現は使わない
 - 本文(post)は日本語で250字以内。絵文字は2つまで。ハッシュタグとURLは付けない
 - weather_line: 天気情報があれば、今夜の天気についての一言(40字以内)。天気情報がなければ空文字
-  - 天気は渡したデータ(今夜の気温・湿度・降水確率、昨日の降水量)にあることだけを書く。
+  - 天気は渡したデータ(今夜の気温・湿度・降水確率・1時間雨量・風速、昨日の降水量)と天気の判定にあることだけを書く。
     「雨の降らない日が続いている」「週末は晴れ」など、データにないことを推測で補わない
   - 資料に天気との関係が書いてある場合だけ、今夜の天気がその生き物の見つけやすさにどう関係するかを書く
     (例: 資料に「雨の日に活発」→「雨上がりの今夜は出てきてくれそうです」)
-  - 資料に根拠がなければ、天気そのものを伝えるだけにする(例: 「今夜の奄美は雨の心配もなく、夜の散策日和です」)
+  - 【ガイドの経験則】が渡されたときは、それも資料の根拠とみなしてよい
+  - 天気の判定に「大雨」か「強風」があるときは、「今夜は生き物があまり動かない夜になりそう」という趣旨を書く
+  - 天気の判定に「小雨」か「雨上がり」があるときは、カエルやヘビが活動しやすい夜であることに触れてよい
+  - 資料にも経験則にも根拠がなければ、天気そのものを伝えるだけにする(例: 「今夜の奄美は雨の心配もなく、夜の散策日和です」)
   - 注意を書くのは、理由と注意が自然につながるときだけ。何に注意するかを具体的に書く
     (例: 「雨上がりで道がぬかるみやすいので、歩きやすい靴で」)。「足元にお気をつけて」のような曖昧な注意は書かない
   - 上の例文は書き方の参考。そのまま使わず、今夜の実際の天気に合わせて毎回言い回しを変える
@@ -184,20 +205,58 @@ def tonight_weather():
     try:
         d = requests.get("https://api.open-meteo.com/v1/forecast", params={
             "latitude": AMAMI_LATLON[0], "longitude": AMAMI_LATLON[1],
-            "hourly": "temperature_2m,relative_humidity_2m,precipitation_probability",
+            "hourly": "temperature_2m,relative_humidity_2m,precipitation_probability,precipitation,wind_speed_10m",
             "daily": "precipitation_sum", "past_days": 1, "forecast_days": 1,
-            "timezone": "Asia/Tokyo"}, timeout=20).json()
+            "wind_speed_unit": "ms", "timezone": "Asia/Tokyo"}, timeout=20).json()
         h, today = d["hourly"], NOW.date().isoformat()
         idx = [i for i, t in enumerate(h["time"]) if t.startswith(today) and 19 <= int(t[11:13]) <= 23]
         return {
             "今夜の気温(平均℃)": round(sum(h["temperature_2m"][i] for i in idx) / len(idx), 1),
             "今夜の湿度(平均%)": round(sum(h["relative_humidity_2m"][i] for i in idx) / len(idx)),
             "今夜の降水確率(最大%)": max(h["precipitation_probability"][i] for i in idx),
+            "今夜の1時間雨量(最大mm)": max(h["precipitation"][i] for i in idx),
+            "今夜の風速(最大m/s)": round(max(h["wind_speed_10m"][i] for i in idx), 1),
             "昨日の降水量(mm)": d["daily"]["precipitation_sum"][0],
         }
     except Exception as e:
         print("天気の取得に失敗(天気なしで続行):", e)
         return None
+
+
+def weather_conditions(w):
+    # 天気データ → {"大雨", "強風", "小雨", "雨上がり", "晴れ", "暖かい"} のうち当てはまるもの
+    if not w:
+        return set()
+    conds = set()
+    rain, pop = w["今夜の1時間雨量(最大mm)"] or 0, w["今夜の降水確率(最大%)"] or 0
+    if rain >= HEAVY_RAIN_MM:
+        conds.add("大雨")
+    elif rain >= LIGHT_RAIN_MM:
+        conds.add("小雨")
+    if (w["今夜の風速(最大m/s)"] or 0) >= STRONG_WIND_MS:
+        conds.add("強風")
+    if (w["昨日の降水量(mm)"] or 0) >= AFTER_RAIN_MM and pop <= AFTER_RAIN_POP:
+        conds.add("雨上がり")
+    if pop <= CLEAR_POP and not conds & {"雨上がり", "小雨", "大雨"}:
+        conds.add("晴れ")
+    if (w["今夜の気温(平均℃)"] or 0) >= WARM_C:
+        conds.add("暖かい")
+    return conds
+
+
+def weather_block(w):
+    # プロンプトに渡す【今夜の天気】の中身
+    if not w:
+        return "なし"
+    conds = weather_conditions(w)
+    order = ["大雨", "強風", "小雨", "雨上がり", "晴れ", "暖かい"]
+    lines = [json.dumps(w, ensure_ascii=False),
+             "天気の判定: " + ("、".join(c for c in order if c in conds) or "特になし")]
+    wisdom = list(dict.fromkeys(WEATHER_WISDOM[c] for c in order if c in conds and c in WEATHER_WISDOM))
+    if wisdom:
+        lines.append("【ガイドの経験則】(オーナーの現場の感覚。資料の根拠とみなしてよい)")
+        lines += [f"- {x}" for x in wisdom]
+    return "\n".join(lines)
 
 
 # ===== Gemini =====
@@ -250,7 +309,7 @@ def draft_creature(creatures, hist, weather):
 {creature_info(c)}
 
 【今夜の天気】
-{json.dumps(weather, ensure_ascii=False) if weather else "なし"}""")
+{weather_block(weather)}""")
     return c, out, None
 
 
@@ -268,7 +327,7 @@ def draft_quiz(creatures, hist, weather):
 {creature_info(c)}
 
 【今夜の天気】
-{json.dumps(weather, ensure_ascii=False) if weather else "なし"}""")
+{weather_block(weather)}""")
     return c, out, None
 
 
@@ -286,18 +345,32 @@ def tip_creatures(tip):
     return out
 
 
+def tip_available(tip, conds):
+    # months: その月だけ / weather: どれか1つに当てはまる日だけ(両方あれば両方)
+    if tip.get("months") and NOW.month not in tip["months"]:
+        return False
+    need = set(tip.get("weather") or [])
+    if not need:
+        return True
+    if conds & CALM_BREAKERS and not need & CALM_BREAKERS:
+        return False   # 大雨・強風の日は、天気条件付きのコツを選ばない
+    return bool(need & conds)
+
+
 def draft_tip(creatures, hist, weather):
     tips = yaml.safe_load(TIPS_FILE.read_text(encoding="utf-8"))
     used = {h.get("tip") for h in hist}
-    # コツ単位の months があれば、その月だけ選択肢に入れる
-    in_month = [i for i, t in enumerate(tips) if not t.get("months") or NOW.month in t["months"]]
+    # コツ単位の months / weather を満たすものだけ選択肢に入れる
+    conds = weather_conditions(weather)
+    in_month = [i for i, t in enumerate(tips) if tip_available(t, conds)]
     in_month = in_month or list(range(len(tips)))
     fresh = [i for i in in_month if i not in used]
     ti = random.choice(fresh or in_month)
     tip = tips[ti]
     by_id = {c["id"]: c for c in creatures if c["photos"]}
     related = [by_id[cid] for cid, months in tip_creatures(tip)
-               if cid in by_id and (not months or NOW.month in months)]
+               if cid in by_id and (not months or NOW.month in months)
+               and (not tip.get("creature_season") or is_season(by_id[cid]))]
     if related:
         c = random.choice(related)
         photo_note = ("【添える写真の生き物】(このコツに関係する生き物)\n"
@@ -319,7 +392,7 @@ def draft_tip(creatures, hist, weather):
 {creature_info(c)}
 
 【今夜の天気】
-{json.dumps(weather, ensure_ascii=False) if weather else "なし"}""")
+{weather_block(weather)}""")
     return c, out, ti
 
 

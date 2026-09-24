@@ -1,6 +1,11 @@
 # ガイドの観察のコツ(ネタ帳)
 # type: 安全 / マナー・保護 / 楽しみ方
 # months: (任意)このコツを選ぶ月。月の外は観察のコツの日の選択肢から外す(省略すると通年)
+# weather: (任意)このコツを選ぶ天気。[小雨, 雨上がり] のように書くと、どれか1つに当てはまる日だけ選ぶ
+#   使える値: 大雨 / 強風 / 小雨 / 雨上がり / 晴れ / 暖かい(判定の目安は make_draft.py の定数)
+#   months と両方あるときは両方を満たす日だけ。大雨・強風の日は、weather付きのコツは選ばない
+#   (大雨・強風を条件にしたコツは除く)
+# creature_season: true にすると、creature の候補を「Markdownの見られる時期(months)」に合うものだけにする
 # creature: 添える写真の生き物ID。コツに関係する生き物を指定する
 #   - 1種だけなら  creature: habu
 #   - 複数なら候補の中から1つ選ぶ:
@@ -114,3 +119,55 @@
   type: 楽しみ方
   months: [2, 3, 4]   # コツの月(一番よく鳴く時期。現場の感覚)
   creature: oo-tora-tsugumi
+
+- text: 大雨や風が強すぎる日は、生き物はほとんど動きません。小雨や雨上がりの夜は、カエルやヘビがよく活動します
+  type: 楽しみ方
+  creature_season: true   # カエル類とヘビ類から、Markdownの見られる時期に合うもの(イモリは除く)
+  creature:
+    - amami-aka-gaeru       # アマミアカガエル
+    - amami-ao-gaeru        # アマミアオガエル
+    - hanasaki-gaeru        # アマミハナサキガエル
+    - haroweru-amagaeru     # ハロウェルアマガエル
+    - hime-amagaeru         # ヒメアマガエル
+    - ishikawa-gaeru        # アマミイシカワガエル
+    - otton-gaeru           # オットンガエル
+    - ryukyu-kajika-gaeru   # リュウキュウカジカガエル
+    - akamata               # アカマタ
+    - garasu-hibaa          # ガラスヒバァ
+    - habu                  # ハブ
+    - hime-habu             # ヒメハブ
+    - hyan                  # ヒャン
+    - ryukyu-ao-hebi        # リュウキュウアオヘビ
+    - takachiho-hebi        # アマミタカチホヘビ
+
+- text: ハブは4〜6月と9〜10月に活動が盛んになります。夜道では足元に注意しましょう
+  type: 安全
+  months: [4, 5, 6, 9, 10]
+  creature: habu
+
+- text: ヒメハブは秋から春にかけて、カエルの繁殖地に集まります
+  type: 楽しみ方
+  months: [10, 11, 12, 1, 2, 3, 4]
+  creature: hime-habu
+
+- text: アカマタは一年中活動しますが、5〜11月は特に活発です
+  type: 楽しみ方
+  months: [5, 6, 7, 8, 9, 10, 11]
+  creature: akamata
+
+- text: ヒャンは晴れた日に出会いやすいヘビです
+  type: 楽しみ方
+  months: [5, 6, 10, 11]
+  weather: [晴れ]
+  creature: hyan
+
+- text: リュウキュウアオヘビは暖かい日によく活動します
+  type: 楽しみ方
+  months: [5, 6, 7, 8, 9, 10]
+  weather: [暖かい]
+  creature: ryukyu-ao-hebi
+
+- text: アマミタカチホヘビは、大雨の後の小雨や雨上がりの夜に出てくることがあります
+  type: 楽しみ方
+  weather: [小雨, 雨上がり]
+  creature: takachiho-hebi
