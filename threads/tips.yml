@@ -1,5 +1,6 @@
 # ガイドの観察のコツ(ネタ帳)
 # type: 安全 / マナー・保護 / 楽しみ方
+# months: (任意)このコツを選ぶ月。月の外は観察のコツの日の選択肢から外す(省略すると通年)
 # creature: 添える写真の生き物ID。コツに関係する生き物を指定する
 #   - 1種だけなら  creature: habu
 #   - 複数なら候補の中から1つ選ぶ:
@@ -96,13 +97,18 @@
     - id: ryukyu-kajika-gaeru    # リュウキュウカジカガエル
       months: [4, 5, 6, 7, 8, 9, 10]
 
-- text: 昼間に生き物を探すなら鳥の声に注目。リュウキュウアカショウビン、アカヒゲ、リュウキュウサンコウチョウ、ルリカケスなど
+- text: 昼間に生き物を探すなら、鳥の鳴き声に注目。春から初夏の繁殖期は、よく鳴く鳥が増えます
   type: 楽しみ方
+  months: [2, 3, 4, 5, 6, 7]   # コツの月(鳥の鳴き声が聞ける時期。現場の感覚)
   creature:
-    - ryukyu-akashobin
-    - akahige
-    - sankoutyou
-    - ruri-kakesu
+    - id: ruri-kakesu            # ルリカケス
+      months: [2, 3, 4, 5]
+    - id: akahige                # アカヒゲ
+      months: [3, 4, 5, 6]
+    - id: ryukyu-akashobin       # リュウキュウアカショウビン
+      months: [5, 6, 7]
+    - id: sankoutyou             # リュウキュウサンコウチョウ
+      months: [5, 6]
 
 - text: オオトラツグミは早朝と夕方に鳴きます
   type: 楽しみ方

@@ -289,8 +289,11 @@ def tip_creatures(tip):
 def draft_tip(creatures, hist, weather):
     tips = yaml.safe_load(TIPS_FILE.read_text(encoding="utf-8"))
     used = {h.get("tip") for h in hist}
-    fresh = [i for i in range(len(tips)) if i not in used]
-    ti = random.choice(fresh or list(range(len(tips))))
+    # コツ単位の months があれば、その月だけ選択肢に入れる
+    in_month = [i for i, t in enumerate(tips) if not t.get("months") or NOW.month in t["months"]]
+    in_month = in_month or list(range(len(tips)))
+    fresh = [i for i in in_month if i not in used]
+    ti = random.choice(fresh or in_month)
     tip = tips[ti]
     by_id = {c["id"]: c for c in creatures if c["photos"]}
     related = [by_id[cid] for cid, months in tip_creatures(tip)
