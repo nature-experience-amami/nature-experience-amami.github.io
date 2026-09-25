@@ -477,3 +477,26 @@
 - commit：（このcommitの直前） Push：済み（main）
 
 （担当: Claude Code）
+
+### 2026-09-25 下書きをLINEにも送信
+
+- `make_draft.py`：Issue作成後に、LINE Messaging API の push で同じ下書きを送る（commit `5511375`）。Threads専用の新しいLINE公式アカウントを使用（株式レポートとは別で、無料枠の月200通も共有しない）
+  - Secrets：`THREADS_LINE_TOKEN`（チャネルアクセストークン）、`THREADS_LINE_USER_ID`（送り先のユーザーID。「U」で始まる33文字。LINE Developers →チャネル基本設定→「あなたのユーザーID」）。`threads-draft.yml` に環境変数として2行追加
+  - 全部の案のIssueを作り終えてから、2案分の文章を1回のpush（吹き出し2つ）、写真をまとめて1回のpush（5枚を超えるときだけ分割）で送る。1日2〜3回、月60〜90通程度
+  - 各案の文章：タイトル・投稿文・（クイズの日は答え）・「写真：このあと届く1枚目〜3枚目」・下書きIssueのURL
+  - LINEのプレビュー画像は1MBまでのため、1MBを超える写真はLINEには送らず、文章に「ほか◯枚は1MBを超えるためIssueで」と添える（Issueの写真は従来どおり）
+  - 文章のpushが失敗したら写真は送らない。LINE側の失敗はすべてログに出すだけで、ワークフローは成功扱い（Issueは残る）
+- 初回は `THREADS_LINE_USER_ID` の値が違っていて `'to' is invalid (400)` になった。オーナーがユーザーIDを登録し直し、LINEに届くことを確認済み
+
+### 2026-09-25 Geminiの混雑（503）対策
+
+- 手動実行で Gemini が `503 Service Unavailable`（Google側の混雑）を返し続け、下書きが作れなかった。上限超過（429）ではない。Google AI Studio の使用状況でも、9/24〜25に503が複数回出ていた
+- `make_draft.py`（commit `e2bf013`）：
+  - 503などのサーバーエラー・通信エラー → 同じモデルで15秒・30秒・60秒待って最大4回試し、それでもだめなら次の候補（`gemini-flash-latest`）に切り替える
+  - 429（上限超過）→ 同じモデルで粘り、だめならエラー（切り替えない）
+  - 404（モデルなし）→ すぐ次の候補へ（従来どおり）
+- Google AI Studio で確認：Threads のキー（threads-draft）と同じプロジェクトで Gemini 3.5 Flash の利用実績があるため、予備の `gemini-flash-latest` も使える見込み。無料枠はモデルごと・プロジェクト全体で数えられる
+- 確認：Geminiを模擬して、成功・同じモデルで回復・切り替えて成功・429で停止・404・両方混雑で停止の各ケースを確認。その後の手動実行で、Issue作成とLINE到着をオーナーが確認
+
+（担当: Claude Code）
+
