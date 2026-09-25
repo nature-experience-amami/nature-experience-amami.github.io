@@ -302,24 +302,43 @@ def weather_block(w):
 
 
 # ===== Gemini =====
+GEMINI_RETRY_WAITS = [15, 30, 60]   # 同じモデルでやり直すまでの待ち時間(秒)。最大4回試す
+
+
 def gemini(prompt):
+    # 404(モデルなし)→すぐ次の候補へ。503などの混雑(5xx・通信エラー)→同じモデルで待ちながら粘り、
+    # それでもだめなら次の候補へ。429(上限超過)などそれ以外→同じモデルで粘ってだめならエラー
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0.8}}
+    last_error = None
     for model in GEMINI_MODELS:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        for attempt in range(3):
-            r = requests.post(url, params={"key": os.environ["GEMINI_API_KEY"]}, json=body, timeout=90)
-            if r.ok:
-                print(f"Geminiモデル: {model}")
-                return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
-            if r.status_code == 404:
-                print(f"Geminiモデル {model} が見つからない(404) → 次の候補へ")
-                break
-            print(f"Gemini失敗({r.status_code}, {model}) 再試行 {attempt + 1}/3")
-            time.sleep(15)
+        busy = False
+        for attempt in range(len(GEMINI_RETRY_WAITS) + 1):
+            try:
+                r = requests.post(url, params={"key": os.environ["GEMINI_API_KEY"]}, json=body, timeout=90)
+            except requests.RequestException as e:
+                r, last_error = None, e
+                status = f"通信エラー: {type(e).__name__}"
+            else:
+                if r.ok:
+                    print(f"Geminiモデル: {model}")
+                    return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+                if r.status_code == 404:
+                    print(f"Geminiモデル {model} が見つからない(404) → 次の候補へ")
+                    break
+                last_error = requests.HTTPError(f"{r.status_code} Error ({model})", response=r)
+                status = r.status_code
+            busy = r is None or r.status_code >= 500
+            if attempt < len(GEMINI_RETRY_WAITS):
+                wait = GEMINI_RETRY_WAITS[attempt]
+                print(f"Gemini失敗({status}, {model}) {wait}秒待って再試行 {attempt + 1}/{len(GEMINI_RETRY_WAITS)}")
+                time.sleep(wait)
         else:
-            r.raise_for_status()
-    r.raise_for_status()
+            if not busy:
+                raise last_error    # 429など: 別モデルに切り替えても解決しないのでここで止める
+            print(f"Geminiモデル {model} が混雑のため次の候補へ")
+    raise last_error or RuntimeError("使えるGeminiモデルがありません")
 
 
 def creature_info(c):
