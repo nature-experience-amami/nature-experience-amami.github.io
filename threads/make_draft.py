@@ -518,7 +518,7 @@ def pick_photos(c, hist, k=3):
     return sorted(c["photos"], key=lambda p: (used[p.name], random.random()))[:k]
 
 
-def create_issue(ptype, c, out, tip_index, hist):
+def create_issue(ptype, c, out, tip_index, hist, variant=""):
     text = build_text(ptype, c, out)
     photos = pick_photos(c, hist)
     lines = [f"## 投稿文（{len(text)}字）", "```text", text, "```"]
@@ -532,13 +532,14 @@ def create_issue(ptype, c, out, tip_index, hist):
             "photos": [p.name for p in photos]}
     lines += ["", f"<!-- meta: {json.dumps(meta, ensure_ascii=False)} -->"]
 
-    title = f"{NOW:%m/%d} {TYPE_LABEL[ptype]}：{c.get('name')}"
+    title = f"{NOW:%m/%d} {TYPE_LABEL[ptype]}{variant}：{c.get('name')}"
     r = requests.post(
         f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/issues",
         json={"title": title, "body": "\n".join(lines), "labels": [DRAFT_LABEL]},
         headers=gh_headers(), timeout=30)
     r.raise_for_status()
     print("下書き作成:", r.json()["html_url"])
+    return meta
 
 
 def main():
@@ -549,8 +550,13 @@ def main():
     hist = recent_history()
     weather = tonight_weather() if ptype != "tour" else None
     maker = {"creature": draft_creature, "quiz": draft_quiz, "tip": draft_tip, "tour": draft_tour}[ptype]
-    c, out, tip_index = maker(creatures, hist[:30], weather)
-    create_issue(ptype, c, out, tip_index, hist)
+    # 1回の実行で count 個の下書きを作る。作った下書きはすぐ履歴の先頭に加えるので、
+    # 2つ目以降は1つ目と別の生き物・別のコツになる(同じ種は7日あける等のルールがそのまま効く)
+    count = max(1, int(os.environ.get("DRAFT_COUNT") or 1))
+    for i in range(count):
+        c, out, tip_index = maker(creatures, hist[:30], weather)
+        meta = create_issue(ptype, c, out, tip_index, hist, f"（案{i + 1}）" if count > 1 else "")
+        hist.insert(0, meta)
 
 
 if __name__ == "__main__":
