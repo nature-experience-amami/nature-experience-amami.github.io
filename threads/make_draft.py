@@ -522,10 +522,11 @@ def create_issue(ptype, c, out, tip_index, hist, variant=""):
     text = build_text(ptype, c, out)
     photos = pick_photos(c, hist)
     lines = [f"## 投稿文（{len(text)}字）", "```text", text, "```"]
+    answer = ""
     if out.get("answer"):
-        lines += ["", "## クイズの答え（数時間後に自分でコメント）", "```text",
-                  "\n".join(filter(None, [out["answer"].strip(), (out.get("answer_en") or "").strip(),
-                                          f"詳しくはこちら→ {page_url(c)}"])), "```"]
+        answer = "\n".join(filter(None, [out["answer"].strip(), (out.get("answer_en") or "").strip(),
+                                         f"詳しくはこちら→ {page_url(c)}"]))
+        lines += ["", "## クイズの答え（数時間後に自分でコメント）", "```text", answer, "```"]
     lines += ["", "## 写真（長押しで保存 → Threadsに添付）"]
     lines += [f"![{c.get('name')}]({to_url(p)})" for p in photos]
     meta = {"type": ptype, "creature": c["id"], "tip": tip_index, "date": NOW.date().isoformat(),
@@ -538,8 +539,68 @@ def create_issue(ptype, c, out, tip_index, hist, variant=""):
         json={"title": title, "body": "\n".join(lines), "labels": [DRAFT_LABEL]},
         headers=gh_headers(), timeout=30)
     r.raise_for_status()
-    print("下書き作成:", r.json()["html_url"])
-    return meta
+    issue_url = r.json()["html_url"]
+    print("下書き作成:", issue_url)
+    # LINEへは、全部の案のIssueを作り終えてからまとめて送る(send_line)
+    return meta, {"title": title, "text": text, "answer": answer, "photos": photos, "issue_url": issue_url}
+
+
+# ===== LINE通知 =====
+LINE_PUSH_URL = "https://api.line.me/v2/bot/message/push"
+
+
+def line_push(messages, what):
+    # 1回分のpush。失敗してもログに出すだけで、例外は投げない(Issue作成は成功扱いのまま)
+    token, to = os.environ.get("THREADS_LINE_TOKEN"), os.environ.get("THREADS_LINE_USER_ID")
+    if not token or not to:
+        print(f"LINE送信({what}): トークンか宛先が未設定のためスキップ")
+        return False
+    try:
+        r = requests.post(LINE_PUSH_URL, headers={"Authorization": f"Bearer {token}"},
+                          json={"to": to, "messages": messages}, timeout=30)
+    except Exception as e:
+        print(f"LINE送信({what})に失敗:", e)
+        return False
+    if not r.ok:
+        print(f"LINE送信({what})に失敗({r.status_code}): {r.text[:300]}")
+        return False
+    print(f"LINE送信({what}): OK")
+    return True
+
+
+LINE_MAX_MESSAGES = 5               # 1回のpushで送れる吹き出しの数
+LINE_PREVIEW_MAX = 1024 * 1024      # LINEのプレビュー画像の上限(1MB)。超える写真はLINEには送らない
+
+
+def send_line(drafts):
+    # 全部の案の文章を1回のpushで、写真をまとめて1回のpushで送る(5枚を超えるときだけ分割)。
+    # 文章が届かなかったときは写真は送らない。写真の失敗はログに出すだけ
+    if not drafts:
+        return
+    texts, images = [], []
+    for d in drafts:
+        ok = [p for p in d["photos"] if p.stat().st_size <= LINE_PREVIEW_MAX]
+        skipped = len(d["photos"]) - len(ok)
+        body = f"【{d['title']}】\n\n{d['text']}"
+        if d["answer"]:
+            body += f"\n\n―― クイズの答え（数時間後にコメント） ――\n{d['answer']}"
+        if ok:
+            first, last = len(images) + 1, len(images) + len(ok)
+            body += f"\n\n写真：このあと届く{first}枚目" + (f"〜{last}枚目" if last > first else "")
+            if skipped:
+                body += f"（ほか{skipped}枚は1MBを超えるためIssueで）"
+        elif skipped:
+            body += f"\n\n写真：{skipped}枚とも1MBを超えるため、Issueで見てください"
+        body += f"\n下書きIssue: {d['issue_url']}"
+        texts.append({"type": "text", "text": body[:5000]})
+        images += [{"type": "image", "originalContentUrl": to_url(p), "previewImageUrl": to_url(p)} for p in ok]
+
+    chunks = lambda ms: [ms[i:i + LINE_MAX_MESSAGES] for i in range(0, len(ms), LINE_MAX_MESSAGES)]
+    if not all([line_push(ch, "文章") for ch in chunks(texts)]):
+        print("LINE送信: 文章が届かなかったため、写真は送らない")
+        return
+    for n, ch in enumerate(chunks(images), 1):
+        line_push(ch, f"写真{n}")
 
 
 def main():
@@ -553,10 +614,19 @@ def main():
     # 1回の実行で count 個の下書きを作る。作った下書きはすぐ履歴の先頭に加えるので、
     # 2つ目以降は1つ目と別の生き物・別のコツになる(同じ種は7日あける等のルールがそのまま効く)
     count = max(1, int(os.environ.get("DRAFT_COUNT") or 1))
-    for i in range(count):
-        c, out, tip_index = maker(creatures, hist[:30], weather)
-        meta = create_issue(ptype, c, out, tip_index, hist, f"（案{i + 1}）" if count > 1 else "")
-        hist.insert(0, meta)
+    drafts = []
+    try:
+        for i in range(count):
+            c, out, tip_index = maker(creatures, hist[:30], weather)
+            meta, draft = create_issue(ptype, c, out, tip_index, hist, f"（案{i + 1}）" if count > 1 else "")
+            hist.insert(0, meta)
+            drafts.append(draft)
+    finally:
+        # 途中の案で失敗しても、作れた分のIssueはLINEに送る。LINE側の失敗でワークフローは失敗させない
+        try:
+            send_line(drafts)
+        except Exception as e:
+            print("LINE送信で想定外のエラー(Issue作成は成功扱い):", e)
 
 
 if __name__ == "__main__":

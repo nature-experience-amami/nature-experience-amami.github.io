@@ -46,3 +46,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           POST_TYPE: ${{ inputs.post_type != 'auto' && inputs.post_type || '' }}
           DRAFT_COUNT: ${{ inputs.count || '2' }}
+          THREADS_LINE_TOKEN: ${{ secrets.THREADS_LINE_TOKEN }}
+          THREADS_LINE_USER_ID: ${{ secrets.THREADS_LINE_USER_ID }}
