@@ -16,7 +16,7 @@
 - 動き：毎朝 6:17 JST にGitHub Actionsが起動 → 下書きをGitHub Issue（ラベル `threads-draft`）に作成 → 内容を確認してThreadsアプリに手動でコピペ投稿
 - 手動実行：Actionsタブの「Threads draft」から、投稿タイプ（auto / creature / tip / quiz / tour）を選んで実行できる
 - 投稿履歴：過去のIssueに埋め込んだ記録から読み取る（種・コツの重複チェックは直近30件、写真の使い回しチェックは直近365件）（自動commitなし、外部データベースなし）
-- Gemini呼び出し：1日1回（ツアー案内の日は0回）。モデルは `GEMINI_MODEL`（リポジトリ変数、設定時は最優先）→ `gemini-3.1-flash-lite` → `gemini-flash-latest` の順に試し、404（モデルが見つからない）なら次の候補へ。使ったモデル名はログに出る
+- Gemini呼び出し：1日2回（下書き2案。ツアー案内の日は0回）。モデルは `GEMINI_MODEL`（リポジトリ変数、設定時は最優先）→ `gemini-3.1-flash-lite` → `gemini-flash-latest` の順に試し、404（モデルが見つからない）なら次の候補へ。使ったモデル名はログに出る
 - 天気：Open-Meteo（APIキー不要）で奄美の今夜（19〜23時）の気温・湿度・降水確率と昨日の雨量を取得
 
 ## ホームページと干渉しないためのルール
@@ -462,5 +462,18 @@
 - `make_draft.py`（commit `99fdff6`）：`night_observable: false` の種は `tour_exclude` と同じ扱い（ツアー案内の名前・写真に使わない。生き物紹介・クイズには出る）
 - 同時に依頼のあったフェリエベニボシカミキリ・ミドリナカボソタマムシ・オーストンオオアカゲラ・アオスジアゲハは既に昼行性でツアー案内に出ないため変更なし
 - 確認：1〜12月×200回のツアー案内で4種の混入なし。ツアー案内に使わない種は、昼行性20種と、tour_exclude相当8種（従来の4種＋今回の4種）
+
+（担当: Claude Code）
+
+### 2026-09-25 定時実行を外部タイマー（cron-job.org）に移し、毎回2案作るように変更
+
+- GitHub Actions の schedule（cron）は混雑時に遅れる（例：6:17予定の実行が 8:52 に開始）。株式レポートでも同じ遅れが出ていた
+- オーナーが cron-job.org にジョブ「Threads下書き」を登録。GitHub API（`/actions/workflows/threads-draft.yml/dispatches`）に合図を送り、`workflow_dispatch` で起動する方式。トークンは対象リポジトリだけ・Actions の読み書き権限のみの Fine-grained token（**有効期限 2026-12-23。期限前に作り直して cron-job.org のヘッダーを差し替える**）。テスト実行で 204 が返り、即座に実行が始まることを確認
+- `threads-draft.yml`：GitHub の `schedule` を削除。入力 `count`（1 または 2、既定 2）を追加し、環境変数 `DRAFT_COUNT` で渡す
+- `make_draft.py`：1回の実行で `count` 個の下書きを作る。作った下書きはすぐ履歴の先頭に加えるので、2つ目は1つ目と別の生き物・別のコツになる。タイトルに「（案1）」「（案2）」を付ける（1個のときは付かない）
+- 確認：Gemini・GitHub を模擬して全投稿タイプで count=2 / 1 を実行し、タイトルと選ばれ方を確認。300回×2案で同じ生き物・コツになった回数は0
+- 注意：選ばなかった案も履歴上は「使った」扱いになる（その生き物・写真はしばらく出にくくなる）。気になるようなら「不採用」ラベルで履歴から外す仕組みを検討
+- 注意：GitHub の schedule をやめたので、cron-job.org が止まると下書きが来ない。cron-job.org の失敗通知メールをオンにしておく
+- commit：（このcommitの直前） Push：済み（main）
 
 （担当: Claude Code）
