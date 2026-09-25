@@ -5,6 +5,7 @@ category: birds
 group: chidori
 danger: 観察できる生き物
 months: [10, 11, 12, 1, 2, 3]
+night_tour: false
 ---
 チドリ目チドリ科タゲリ属タゲリ *Vanellus vanellus*
 

@@ -5,6 +5,7 @@ category: aquatic-insects
 group: mizumushi
 danger: 環境省レッドリスト:絶滅危惧II類(VU)
 source: くろむし屋「日本産水生昆虫リスト」タマミズムシ科 http://kuromushiya.com/mlist/mlist.html#helotrephidae で学名(Esaki & Miyamoto, 1959)・分布(南西諸島:奄美群島)を確認、環境省レッドリスト(昆虫類)一覧 https://www.env.go.jp/content/900527442.pdf で絶滅危惧II類(VU)掲載を確認、コトバンク(日本大百科全書)「エグリタマミズムシ」https://kotobank.jp/word/エグリタマミズムシ-1276527
+night_tour: false
 ---
 タマミズムシ科タマミズムシ属エグリタマミズムシ *Heterotrephes admorsus* Esaki & Miyamoto, 1959
 

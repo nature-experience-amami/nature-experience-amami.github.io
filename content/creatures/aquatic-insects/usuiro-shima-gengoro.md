@@ -5,6 +5,7 @@ category: aquatic-insects
 group: gengoro
 months: [4, 5, 6, 7, 8, 9]
 source: くろむし屋「日本の水生昆虫リスト」http://kuromushiya.com/mlist/dytiscidae/usuiroshima.html(2024年1月13日更新)
+night_tour: false
 ---
 ゲンゴロウ科シマゲンゴロウ属ウスイロシマゲンゴロウ *Hydaticus rhantoides* Sharp, 1882
 

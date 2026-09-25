@@ -5,6 +5,7 @@ category: birds
 group: suzume
 danger: 観察できる生き物
 months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+night_tour: false
 ---
 スズメ目ヒタキ科イソヒヨドリ属イソヒヨドリ *Monticola solitarius*
 

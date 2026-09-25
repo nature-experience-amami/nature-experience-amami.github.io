@@ -4,6 +4,7 @@ name: アシブトメミズムシ
 category: aquatic-insects
 group: mizumushi
 source: 日本語版Wikipedia「アシブトメミズムシ」https://ja.wikipedia.org/wiki/アシブトメミズムシ、日本分類学会連合 https://www.ujssb.org/biospnum/search.php、J-STAGE小笠原諸島カメムシ目録(2023) https://www.jstage.jst.go.jp/article/kontyu/26/2/26_23-012/_pdf
+night_tour: false
 ---
 アシブトメミズムシ科アシブトメミズムシ属アシブトメミズムシ *Nerthra macrothorax* (Montrouzier, 1855)
 

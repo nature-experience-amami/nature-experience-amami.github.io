@@ -5,6 +5,7 @@ category: birds
 group: hato
 danger: IUCNレッドリスト:準絶滅危惧(NT)
 months: [5, 6, 7]
+night_tour: false
 ---
 ハト目ハト科アオバト属 リュウキュウズアカアオバト *Treron permagnus*
 

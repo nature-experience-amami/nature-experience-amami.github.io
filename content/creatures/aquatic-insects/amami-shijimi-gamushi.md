@@ -4,6 +4,7 @@ name: アマミシジミガムシ
 category: aquatic-insects
 group: gamushi
 source: くろむし屋「日本産水生昆虫リスト」ガムシ科 http://kuromushiya.com/mlist/mlist.html#hydrophilidae で学名(Gentili, 1989)・分布(南西諸島:奄美大島，徳之島)を確認、Water Beetles of Japanデータベース(シジミガムシ属一覧) https://sites.google.com/site/waterbeetlesofjapan/home/database/polyphaga/hydrophilidlist
+night_tour: false
 ---
 ガムシ科シジミガムシ属アマミシジミガムシ *Laccobius satoi* Gentili, 1989
 

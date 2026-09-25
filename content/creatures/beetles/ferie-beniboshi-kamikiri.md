@@ -6,6 +6,7 @@ group: kamikiri
 danger: 採集禁止(鹿児島県希少野生動植物保護条例・指定希少野生動植物)
 months: [7]
 source: Vuillet(1911)による記載(Rosalia (Eurybatus) ferriei Vuillet, 1911)。鹿児島県希少野生動植物の保護に関する条例(指定希少野生動植物一覧)。専門サイト・観察ブログの記録(奄美大島固有、7月頃に深い森の立ち枯れで見られる旨)。
+night_tour: false
 ---
 カミキリムシ科フェリエベニボシカミキリ *Rosalia (Eurybatus) ferriei* Vuillet, 1911
 

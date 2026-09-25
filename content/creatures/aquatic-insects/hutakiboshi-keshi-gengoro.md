@@ -5,6 +5,7 @@ category: aquatic-insects
 group: gengoro
 danger: 環境省レッドリスト:準絶滅危惧(NT)
 source: くろむし屋「日本産水生昆虫リスト」ゲンゴロウ科 http://kuromushiya.com/mlist/mlist.html#dytiscidae で学名((M.Satô, 1972))・分布(南西諸島:トカラ列島，奄美群島，沖縄島)を確認、gengology.com「日本産ゲンゴロウ科一覧」https://gengology.com/dyt_jpn.html、全国レッドデータ検索システム(jpnrdb.com)で準絶滅危惧(NT)を確認
+night_tour: false
 ---
 ゲンゴロウ科キボシケシゲンゴロウ属フタキボシケシゲンゴロウ *Allopachria bimaculata* (M.Satô, 1972)
 

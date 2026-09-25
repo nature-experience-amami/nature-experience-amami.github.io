@@ -4,6 +4,7 @@ name: アマミコチビミズムシ
 category: aquatic-insects
 group: mizumushi
 source: くろむし屋「日本産水生昆虫リスト」チビミズムシ科 http://kuromushiya.com/mlist/mlist.html#micronectidae で学名・分布を確認(日本産チビミズムシ科は1属10種。同科は最近までミズムシ科(Corixidae)の亜科として扱われていた)
+night_tour: false
 ---
 チビミズムシ科チビミズムシ属アマミコチビミズムシ *Micronecta japonica* Chen, 1960
 

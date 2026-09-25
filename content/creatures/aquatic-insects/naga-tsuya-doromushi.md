@@ -4,6 +4,7 @@ name: ナガツヤドロムシ
 category: aquatic-insects
 group: doromushi
 source: 上手雄貴・中島淳・林成多・吉富博之(2018)「日本産ヒメドロムシ科の目録と分類学的な問題点」さやばねニューシリーズNo.29
+night_tour: false
 ---
 ヒメドロムシ科ツヤドロムシ属ナガツヤドロムシ *Zaitzevia elongata* Nomura, 1962
 

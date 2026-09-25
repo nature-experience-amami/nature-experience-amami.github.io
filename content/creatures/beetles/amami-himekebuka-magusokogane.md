@@ -4,6 +4,7 @@ name: アマミヒメケブカマグソコガネ
 category: beetles
 group: funchu
 source: 越智輝夫(1986)による記載(原記載時はAphodius (Trichaphodius) atsushii)。西真弘・森田秀一・山室一樹・後藤義仁(2011)「アマミヒメケブカマグソコガネの採集例と生態に関する若干の知見」鰓角通信第22号3-8頁。Wikispecies「Gilletianus」属種リスト(2024年12月更新、現行属Gilletianusへの帰属を確認)。
+night_tour: false
 ---
 コガネムシ科マグソコガネ亜科アマミヒメケブカマグソコガネ *Gilletianus atsushii* (Ochi, 1986)
 

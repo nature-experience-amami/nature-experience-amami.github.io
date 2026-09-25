@@ -4,6 +4,7 @@ name: チャイロケシカタビロアメンボ
 category: aquatic-insects
 group: amenbo
 source: くろむし屋「日本の水生昆虫リスト」http://kuromushiya.com/mlist/veliidae/chairokeshikatabiro.html(2020年12月26日更新)、しみじみ牙蟲「Microvelia japonica Esaki & Miyamoto, 1955」https://shuimian-gamushi.blogspot.com/2019/09/microvelia-japonica-esaki-miyamoto-1955.html
+night_tour: false
 ---
 カタビロアメンボ科ケシカタビロアメンボ属チャイロケシカタビロアメンボ *Microvelia japonica* Esaki & Miyamoto, 1955
 

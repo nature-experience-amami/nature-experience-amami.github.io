@@ -5,6 +5,7 @@ category: birds
 group: suzume
 danger: 捕獲・譲渡禁止(天然記念物)
 months: [2, 3, 4, 5]
+night_tour: false
 ---
 スズメ目カラス科カケス属ルリカケス *Garrulus lidthi*
 

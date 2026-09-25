@@ -3,6 +3,7 @@ id: ko-iso-kanimushi
 name: コイソカニムシ
 category: other-arthropods
 danger: 採集自由
+night_tour: false
 ---
 サバクカニムシ科 *Nipponogarypus enoshimaensis*
 

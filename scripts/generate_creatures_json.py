@@ -23,6 +23,15 @@ IGNORED_DIR_NAMES = {"failed"}
 IGNORED_SPECIES_DIRS = {
     ("amphibians", "ishikawa-gaeru"),
 }
+# 紹介文(md)がまだ無く、frontmatterにnight_tour:falseを書けない種
+# （(カテゴリ, id)）→ ナイトツアーで見れる生き物から除外
+NIGHT_TOUR_FALSE_NO_MD = {
+    ("beetles", "amami-aojyoukai"),
+    ("lizards", "amami-hime-tokage"),
+    ("other-insects", "kuromadara-sotetsu-shijimi"),
+    ("other-insects", "ryuukyuu-haguro-tombo"),
+    ("kani", "rurimadara-shiomaneki"),
+}
 MARKDOWN_ID_ALIASES = {
     ("snakes", "ryuukyuu-aohebi"): "ryukyu-ao-hebi",
     ("snakes", "amami-takachiho-hebi"): "takachiho-hebi",
@@ -49,7 +58,7 @@ def read_creature_content(md_path: Path):
         if len(parts) == 3:
             body = parts[2]
     values = {}
-    for key in ("name", "months"):
+    for key in ("name", "months", "night_tour"):
         m = re.search(rf"^{key}:\s*(.+)$", text, re.MULTILINE)
         if not m:
             continue
@@ -59,6 +68,8 @@ def read_creature_content(md_path: Path):
                 values[key] = [int(item.strip()) for item in value[1:-1].split(",") if item.strip()]
             except ValueError:
                 continue
+        elif key == "night_tour":
+            values[key] = value.lower() not in ("false", "no", "0")
         else:
             values[key] = value
     return values, body.strip()
@@ -130,12 +141,16 @@ def scan():
                 frontmatter, description = read_creature_content(md_path)
                 name = frontmatter.get("name") or species_dir.name
                 category_name = category_names.get(category_dir.name, category_dir.name)
+                night_tour = frontmatter.get("night_tour", True)
+                if (category_dir.name, markdown_id) in NIGHT_TOUR_FALSE_NO_MD:
+                    night_tour = False
                 creatures.append({
                     "id": markdown_id,
                     "name": name,
                     "category": category_dir.name,
                     "category_name": category_name,
                     "months": frontmatter.get("months") or months_from_text(description) or sorted(months),
+                    "night_tour": night_tour,
                     "description": description,
                     "photos": photos,
                     "page_path": (

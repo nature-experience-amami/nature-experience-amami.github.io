@@ -5,6 +5,7 @@ category: birds
 group: other
 danger: 捕獲・譲渡禁止(国内希少野生動植物種)
 months: [10, 11, 12, 1, 2, 3, 4]
+night_tour: false
 ---
 ペリカン目トキ科ヘラサギ属クロツラヘラサギ *Platalea minor*
 

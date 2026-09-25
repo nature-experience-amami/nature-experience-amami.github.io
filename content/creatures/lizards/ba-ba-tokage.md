@@ -3,6 +3,7 @@ id: ba-ba-tokage
 name: バーバートカゲ
 category: lizards
 danger: 捕獲禁止(鹿児島県希少野生動植物)
+night_tour: false
 ---
 トカゲ科トカゲ属バーバートカゲ *Plestiodon barbouri*
 

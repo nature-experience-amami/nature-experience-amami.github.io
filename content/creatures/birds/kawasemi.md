@@ -5,6 +5,7 @@ category: birds
 group: buppousou
 danger: 観察できる生き物
 months: [3, 4, 5, 6, 7, 8]
+night_tour: false
 ---
 ブッポウソウ目カワセミ科カワセミ属カワセミ *Alcedo atthis bengalensis*
 

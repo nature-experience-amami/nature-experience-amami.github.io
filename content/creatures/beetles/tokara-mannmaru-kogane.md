@@ -4,6 +4,7 @@ name: トカラマンマルコガネ
 category: beetles
 group: manmaru
 source: Ochi・Johki・Nakata(1990)による原記載("A New Myrmecophilous Lamellicorn Beetle (Coleoptera, Ceratocanthidae) from Japan"、日本昆虫学会誌)。大阪市立自然史博物館所蔵タイプ標本記録(タイプ産地：鹿児島県トカラ列島中之島)。Wikipedia「マンマルコガネ」(近縁のサキシママンマルコガネとの分布の違い等)。
+night_tour: false
 ---
 アツバコガネ科マンマルコガネ亜科トカラマンマルコガネ *Madrasostes kazumai* Ochi, Johki et Nakata, 1990
 

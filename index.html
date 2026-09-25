@@ -555,7 +555,7 @@
     const heroLink = document.getElementById('hero-photo-link');
     const heroPhotoName = document.getElementById('hero-photo-name');
     const candidates = creatures.filter(function (creature) {
-      return Array.isArray(creature.photos) && creature.photos.length;
+      return Array.isArray(creature.photos) && creature.photos.length && creature.night_tour !== false;
     });
     if (!candidates.length) return;
 
@@ -641,7 +641,7 @@
     monthEl.textContent = month + '月';
     titleEl.textContent = month + '月、森はこんな顔をしている';
     const matches = creatures.filter(function (creature) {
-      return Array.isArray(creature.months) && creature.months.includes(month);
+      return Array.isArray(creature.months) && creature.months.includes(month) && creature.night_tour !== false;
     });
     if (!matches.length) {
       gridEl.innerHTML = '<p>この月の観察データを準備中です。</p>';

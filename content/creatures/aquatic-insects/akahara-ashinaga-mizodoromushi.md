@@ -3,6 +3,7 @@ id: akahara-ashinaga-mizodoromushi
 name: アカハラアシナガミゾドロムシ
 category: aquatic-insects
 group: doromushi
+night_tour: false
 source: 上手雄貴・中島淳・林成多・吉富博之(2018)「日本産ヒメドロムシ科の目録と分類学的な問題点」さやばねニューシリーズNo.29
 ---
 ヒメドロムシ科アシナガミゾドロムシ属アカハラアシナガミゾドロムシ *Stenelmis hisamatsui* M. Satô, 1960

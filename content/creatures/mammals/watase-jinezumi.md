@@ -3,6 +3,7 @@ id: watase-jinezumi
 name: ワタセジネズミ
 category: mammals
 danger: 
+night_tour: false
 ---
 トガリネズミ科ジネズミ属ワタセジネズミ *Crocidura watasei*
 
