@@ -384,7 +384,7 @@
       7
     ],
     "activity": "",
-    "night_observable": null,
+    "night_observable": false,
     "description": "Riffle beetle family, genus Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960\n\nA small aquatic beetle found in the Amami and Okinawa island groups and Guam.\nRiffle beetles live mainly in clean streams; both larvae and adults spend their\nlives in the water, growing to about 5mm at most, and the family is watched as\nan indicator of clean rivers. The detailed ecology of this species itself is\nstill largely unknown.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
