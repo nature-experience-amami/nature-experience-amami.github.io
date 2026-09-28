@@ -622,6 +622,24 @@ def send_line(drafts):
         line_push(ch, f"写真{n}")
 
 
+DRAFT_RETRY_WAITS = [180, 300]      # 下書きが作れなかったとき、3分後・さらに5分後にもう一度作り直す(秒)
+
+
+def make_with_retry(maker, creatures, hist, weather):
+    # Geminiの混雑などで1案が作れなかったとき、少し時間をおいて作り直す。
+    # (gemini()の中の再試行は数分でおさまる混雑向け。こちらはそれでもだめだったとき用)
+    # 作り直すのは文章づくり(maker)だけで、Issue作成は含めない(二重にIssueを作らないため)
+    for attempt in range(len(DRAFT_RETRY_WAITS) + 1):
+        try:
+            return maker(creatures, hist, weather)
+        except Exception as e:
+            if attempt == len(DRAFT_RETRY_WAITS):
+                raise
+            wait = DRAFT_RETRY_WAITS[attempt]
+            print(f"下書きを作れなかった({e})。{wait // 60}分後にもう一度作り直す {attempt + 1}/{len(DRAFT_RETRY_WAITS)}")
+            time.sleep(wait)
+
+
 def main():
     ptype = os.environ.get("POST_TYPE") or ROTATION[NOW.weekday()]
     creatures = load_creatures()
@@ -636,7 +654,7 @@ def main():
     drafts = []
     try:
         for i in range(count):
-            c, out, tip_index = maker(creatures, hist[:30], weather)
+            c, out, tip_index = make_with_retry(maker, creatures, hist[:30], weather)
             meta, draft = create_issue(ptype, c, out, tip_index, hist, f"（案{i + 1}）" if count > 1 else "")
             hist.insert(0, meta)
             drafts.append(draft)
