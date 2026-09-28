@@ -293,8 +293,10 @@
     }
     .hero-photo-name{
       position: absolute;
-      bottom: calc(100svh - var(--desktop-photo-top) - var(--desktop-photo-height) + 1rem);
-      right: calc(50% - var(--desktop-photo-width) / 2 + 1rem);
+      /* 名前ラベルは写真のリンク(.hero-photo-link)の中にあるので、写真の枠から測る。
+         以前は画面の高さから計算していたため、縦に大きい画面ほど写真の中央〜上へずれていた */
+      bottom: 1rem;
+      right: 1rem;
       top: auto;
       z-index: 10;
       background: rgba(10, 22, 19, 0.85);
