@@ -1921,7 +1921,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": null,
+    "night_observable": false,
     "description": "トガリネズミ科ジネズミ属ワタセジネズミ *Crocidura watasei*\n\n体長約5.5cm 体重5〜8gほどの、世界最小級の哺乳類の一つ。奄美群島(奄美大島、加計呂麻島、徳之島など)と沖縄諸島にのみ分布する日本固有種。草地や畑など開けた環境を好み、小型昆虫やクモなどを食べる。夜行性で、林道脇の草むらなどを素早く動き回る姿を見かけることがある。同属で森林性のオリイジネズミとは生息環境が異なり、混同されることもある。天然記念物のような法的な捕獲制限は無いが、環境省の準絶滅危惧に指定されている。",
     "photos": [
       "images/creatures/mammals/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
