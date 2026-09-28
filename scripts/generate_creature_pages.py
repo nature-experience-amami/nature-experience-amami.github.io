@@ -191,36 +191,75 @@ def all_creatures(categories):
     return result
 
 
+RELATED_TOTAL = 8
+RELATED_SAME_CATEGORY = 4
+
+
+def spread_by_category(items):
+    """各カテゴリーの種を全体に均等な間隔で散らして1列に並べる。
+    続けて取り出すとカテゴリーが混ざり、種の少ないカテゴリーだけが何度も出ることもない。"""
+    groups = {}
+    for item in items:
+        groups.setdefault(item["category"], []).append(item)
+    keyed = []
+    for name, group in groups.items():
+        for i, item in enumerate(group):
+            keyed.append(((i + 0.5) / len(group), name, i, item))
+    return [entry[3] for entry in sorted(keyed, key=lambda entry: entry[:3])]
+
+
+def rotate(items, start):
+    if not items:
+        return []
+    start %= len(items)
+    return items[start:] + items[:start]
+
+
 def related_cards(current, creatures):
+    # 関連カードは8件。related の指定 → 同じカテゴリー最大4件 → 他のカテゴリー、の順に選ぶ。
+    # 乱数は使わず、ページの位置で開始位置をずらす(再生成しても同じ結果になり、
+    # ページごとに違う種が出る)。
     by_id = {item["id"]: item for item in creatures}
     selected = []
     for item_id in current["related"]:
         candidate = by_id.get(item_id)
         if candidate and candidate["id"] != current["id"] and candidate not in selected:
             selected.append(candidate)
-    same_category = []
-    other_categories = []
-    for item in creatures:
-        if item["id"] != current["id"] and item["category"] == current["category"] and item not in selected:
-            same_category.append(item)
-        elif item["id"] != current["id"] and item not in selected:
-            other_categories.append(item)
-    for item in same_category:
-        selected.append(item)
-    month_matches = []
-    for item in other_categories:
-        if set(item["months"]) & set(current["months"]):
-            month_matches.append(item)
-    for item in month_matches[:3]:
-        selected.append(item)
-    for item in other_categories:
-        if item in month_matches[:3]:
-            continue
-        if len(selected) >= len(same_category) + 3:
+
+    position = next(
+        (i for i, item in enumerate(creatures) if item["id"] == current["id"] and item["category"] == current["category"]),
+        0,
+    )
+    same_category = [item for item in creatures if item["category"] == current["category"]]
+    index = next((i for i, item in enumerate(same_category) if item["id"] == current["id"]), -1)
+    # 同じカテゴリーは、今のページの次の種から順に選ぶ
+    same_rotated = [
+        item for item in same_category[index + 1:] + same_category[:index + 1]
+        if item["id"] != current["id"] and item not in selected
+    ]
+    same_picked = same_rotated[:RELATED_SAME_CATEGORY]
+    selected.extend(same_picked)
+
+    # 他のカテゴリーは写真のある種から、観察時期が重なる種を優先し、カテゴリーが偏らないように選ぶ。
+    # ページごとに開始位置を4種ずつずらすので、どの種もほぼ同じ回数だけ出る
+    others = [
+        item for item in spread_by_category([item for item in creatures if item["photos"]])
+        if item["category"] != current["category"] and item not in selected
+    ]
+    month_matches = [item for item in others if set(item["months"]) & set(current["months"])]
+    rest = [item for item in others if item not in month_matches]
+    start = position * (RELATED_TOTAL - RELATED_SAME_CATEGORY)
+    for item in rotate(month_matches, start) + rotate(rest, start):
+        if len(selected) >= RELATED_TOTAL:
             break
-        if item not in selected:
-            selected.append(item)
-    return selected[:8]
+        selected.append(item)
+
+    # 他のカテゴリーで埋まらなかった分は、同じカテゴリーの残りで埋める
+    for item in same_rotated[len(same_picked):]:
+        if len(selected) >= RELATED_TOTAL:
+            break
+        selected.append(item)
+    return selected[:RELATED_TOTAL]
 
 
 def render_card(item, current, generated_keys):
