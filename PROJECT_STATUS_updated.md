@@ -1,6 +1,6 @@
 # Nature Experience Amami - Project Status
 
-最終更新: 2026-09-14（日本時間）
+最終更新: 2026-09-28（日本時間）
 
 このファイルは、Nature Experience Amami の作業状況と判断事項を、ChatGPT（ちゃっぴー）、Claude（くろちゃん）、Copilotなど、誰でも引き継げるように記録するためのメモです。
 
@@ -195,6 +195,7 @@ MARKDOWN_ID_ALIASES = {
 - `content/creatures/**/*.md`は個別ページの内容の基礎資料。写真が0枚でもMarkdownがあればページを生成する。
 - 個別ページは`creatures/カテゴリ/`以下に置くため、画像・共通ページへのリンクは`../../`から始める。
 - 写真フォルダ名はMarkdownのIDと必ずしも一致しない。実際のフォルダを確認する（アリアス対応表を参照）。
+- （2026-09-28追記）写真フォルダは`images/creatures/カテゴリー/生き物ID/`の直下になければ、`images/creatures/カテゴリー/グループ名/生き物ID/`（例: `aquatic-insects/sonota/ashibutome-mizumushi/`）も自動で探す。`generate_creature_pages.py`・`generate_category_pages.py`・`generate_zukan_page.py`の`photo_files()`は同じ探し方に揃えてある。グループフォルダに種を追加するときは対応表への追記は不要（IDとフォルダ名が違う場合だけ追記する）。
 - 処理済みJPEGの透かしを二重表示しない。個別ページにHTML/CSSの透かしを追加しない。
 - 危険度メーター・観察時期タイムラインは、カテゴリーをまたいで使い回せる共通パーツとして設計している（ただし危険度の見せ方はヘビとそれ以外で分岐）。
 
@@ -239,6 +240,7 @@ Copy-Item generated-creatures\kuwagata\* creatures\kuwagata\ -Force
 - 生き物ごとの詳しい注意事項（特別保護区内でよく見られる、等）をMarkdownに追記
 - ~~（2026-09-24追加）トップページの大きな写真から昼行性の種を除外する~~ → 2026-09-24に対応済み（`activity` / `night_observable` をMarkdownに追加し、トップの写真選びに反映。変更履歴参照）
 - オキナワキノボリトカゲ・アマミヒメトカゲなど、写真フォルダだけあってMarkdownがない種は、Markdownを作るときに`activity`（キノボリトカゲは`diurnal`＋`night_observable: true`、ヤモリの仲間は`nocturnal`）も書く
+- （2026-09-28追加）個別ページの「この生き物に興味がある方へ」（関連カード）が、種の多いカテゴリーではどのページでも同じ顔ぶれになる。`generate_creature_pages.py`の`related_cards()`が同じカテゴリーの種をID順に先頭から並べて8件で打ち切るため。水生昆虫では25ページすべてに同じ8種が出て、15種は一度も出ない。鳥・甲虫・昆虫その他も同じ可能性あり（未確認）。直し方の案（オーナー未決定）: A「今のページの次の種から順に選ぶ」、B「同じカテゴリーは4〜5件にして残りを他カテゴリーにする」。あわせて`night_observable: false`の種を関連カードでどう扱うかも決める
 
 ## 現在のGit状態
 
@@ -801,5 +803,42 @@ Threads投稿の仕組み（`threads/`、詳細は`threads/THREADS_STATUS.md`）
 - Commit SHA: `3b9d8dd`（データ再生成）、`74b27bd`（重み付け）。この記録は別commit
 - Push: 済み（main）
 - 注意: 今後`night_observable`や`activity`の扱いを変えるときは、公開中の`data/creatures*.json`がどのスクリプトで作られたかを確認し、必要ならページ側の変更と同時にデータも再生成すること
+
+（担当: Claude／くろちゃん）
+
+### 2026-09-28 水生昆虫の個別ページで写真が「写真準備中」になる不具合の修正と、アシナガミゾドロムシのトップ写真からの除外
+
+#### 不具合（水生昆虫8種の個別ページに写真が出ていなかった）
+
+- オーナーから「水生昆虫のカテゴリーページと個別ページの写真が『写真準備中』になっている」と指摘があった
+- 調査で分かったこと:
+  - `data/creatures.json`の水生昆虫24種はすべて写真の情報が入っており、9/22以降変化なし。写真ファイルもすべて実在した
+  - 写真フォルダ名（`images/creatures/aquatic-insects/`）・`content/categories.json`のキー・Markdownの`category`は、すべて`aquatic-insects`で一致していた
+  - カテゴリーページ（図鑑形式、`generate_zukan_page.py`で生成）は正常で、「写真準備中」は写真フォルダのないトビイロゲンゴロウだけ
+  - ここ数日の変更（トップ写真・`night_observable`関係）とは無関係。`generate_creature_pages.py`は9/17以降変更されておらず、以前から写真が出ていなかったと考えられる
+- 原因: 水生昆虫の写真はグループフォルダ（`amenbo/` `gamushi/` `gengoro/` `himedoromushi/` `katabiro-amennbo/` `sonota/`）の下に1段深く置かれている。`generate_creature_pages.py`の`photo_files()`はカテゴリー直下か`PHOTO_DIR_ALIASES`の対応表でしか写真フォルダを探さず、対応表に載っていない8種（コセアカアメンボ・アマミセスジダルマガムシ・アマミシジミガムシ・フタキボシケシゲンゴロウ・アマミオヨギカタビロアメンボ・アマミコチビミズムシ・アシブトメミズムシ・エグリタマミズムシ）が写真0枚と判定されていた。同じ関数を使う翻訳版（en/es/zh）の個別ページと、関連カード（この生き物に興味がある方へ）の写真も同じ症状だった
+- 修正: `generate_creature_pages.py`の`photo_files()`を、`generate_zukan_page.py`と同じく「直下になければグループフォルダの下も探す」形に変更。`generate_category_pages.py`の`photo_files()`も同じ探し方に揃えた（こちらは水生昆虫の対応表が1件もなかったが、出力は図鑑ページで上書きされていたため表には出ていなかった）。水生昆虫の個別ページ（ja/en/es/zh 各25件）を再生成
+
+#### アシナガミゾドロムシをトップ写真の候補から外す（オーナーの判断）
+
+- `content/creatures/aquatic-insects/akahara-ashinaga-mizodoromushi.md`に`night_observable: false`を追加し、`data/creatures*.json`（4言語）を再生成。JSONの変化は本種の`null`→`false`の1行だけ
+- これで`night_observable: false`の種は5種（アカハラアシナガミゾドロムシ・アマミヨコミゾドロムシ・エグリタマミズムシ・フタキボシケシゲンゴロウ・オオシマセンチコガネ）
+
+#### 検証
+
+- ブラウザ（Chromium）で水生昆虫の個別ページ100件（4言語×25種）を開き、大きな写真・ギャラリー・関連カードの画像がすべて読み込まれることを確認（読み込めない画像0件）。「写真準備中」はトビイロゲンゴロウのみ。PC幅・スマホ幅（390px）でも表示を確認
+- Actionsと同じ手順（`creatures/`を消してから再生成）でも同じ結果。カテゴリー・図鑑・ハイライトページ、他カテゴリーの出力には変化なし
+- トップ写真の候補の条件を`data/creatures*.json`に当てはめ、アシナガミゾドロムシが外れることを確認（トップページのブラウザ表示は未確認）
+- マージ後の`main`で、関連カードに「写真準備中」がないことを確認
+
+#### 調査中に見つけた別の問題（未対応）
+
+- 関連カード（この生き物に興味がある方へ）が、水生昆虫ではどのページでも同じ8種になり、15種は一度も出ない。詳細と直し方の案は「あとでやることリスト」に記載
+
+#### 結果
+
+- Commit SHA: `5c3af92`（写真表示の修正、102ファイル）、`95ea59f`（アシナガミゾドロムシ、5ファイル）。プルリクエスト #18 でmainにマージ（マージcommit `7e1c608`）。この記録は別commit
+- Push: 済み（main）
+- 未完了事項: 関連カードの選び方の見直し（案の決定待ち）。トビイロゲンゴロウの写真追加
 
 （担当: Claude／くろちゃん）
