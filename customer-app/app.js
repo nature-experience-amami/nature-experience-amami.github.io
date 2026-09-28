@@ -217,7 +217,21 @@ function cardHtml(r){
       ${r.status==="cancelled"?`<div class="meta">理由: ${esc(r.cancelReason||"未記入")}</div>`:""}
     </article>`;
 }
+// 日付が過ぎた自分の予定は、ボタンを押さなくても翌日から自動で「終了」にして履歴へ移す。
+// (履歴で「終了を取り消す」を押した予定は keepOpen を付けて、自動では戻さない)
+function autoCompletePastSchedules(){
+  const t=today();
+  let changed=false;
+  records.forEach(r=>{
+    if(r.status==="personal"&&r.desiredDate&&r.desiredDate<t&&!r.keepOpen){
+      r.kind="personal";r.status="completed";r.completedAt=t;r.autoCompleted=true;
+      changed=true;
+    }
+  });
+  if(changed) save();
+}
 function render(){
+  autoCompletePastSchedules();
   updateStats();
   const q=$("search").value.trim().toLowerCase(), f=$("statusFilter").value;
   // 終了・キャンセル済みは、通常の一覧からは消えて「履歴」の専用画面でだけ管理する
@@ -634,7 +648,7 @@ function showScheduleDetail(r,id){
       ${r.status==="cancelled"?'<button class="ghost" id="restoreSchedule">キャンセルを取り消す</button>':""}
       <button class="ghost" id="deleteRecord">削除</button>
     </div>
-    ${!done?'<p class="hint" style="margin-top:8px">終了・キャンセルにすると、一覧から消えて「履歴」に移ります。</p>':""}`;
+    ${!done?'<p class="hint" style="margin-top:8px">終了・キャンセルにすると、一覧から消えて「履歴」に移ります。日付が過ぎた予定は、翌日から自動で「終了」として履歴に移ります。</p>':""}`;
   $("detailModal").classList.remove("hidden");
   $("scheduleDetailNotes").onchange=()=>{r.notes=$("scheduleDetailNotes").value;save();refreshAll();};
   // 終了・キャンセルにしても自分の予定だと分かるよう、kind を付けてから status を変える
@@ -650,6 +664,8 @@ function showScheduleDetail(r,id){
   };
   if($("restoreSchedule")) $("restoreSchedule").onclick=()=>{
     r.status="personal";
+    // 日付が過ぎた予定を手で一覧に戻した時は、次の表示でまた自動終了させない
+    if(r.desiredDate&&r.desiredDate<today()) r.keepOpen=true;
     save();refreshAll();showScheduleDetail(r,id);
   };
   $("deleteRecord").onclick=()=>{if(confirm("この予定を削除しますか？")){records=records.filter(x=>x.id!==id);save();refreshAll();$("detailModal").classList.add("hidden")}};
