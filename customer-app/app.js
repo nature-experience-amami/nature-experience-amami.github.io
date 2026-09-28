@@ -184,6 +184,10 @@ function fmt(d){if(!d)return "未入力"; const [y,m,day]=d.split("-"); return `
 const WEEKDAYS=["日","月","火","水","木","金","土"];
 function fmtWithWeekday(d){return `${fmt(d)}(${WEEKDAYS[new Date(d+"T00:00:00").getDay()]})`}
 function statusLabel(status){return {pending:"未確定",confirmed:"予約確定",completed:"終了",cancelled:"キャンセル",personal:"予定あり"}[status]||status}
+// 「自分の予定」は、終了・キャンセルで履歴へ移した後も自分の予定として表示する。
+// (status は completed/cancelled に変わるため、kind:"personal" で見分ける)
+function isPersonal(r){return r.status==="personal"||r.kind==="personal"}
+function isHistory(r){return r.status==="completed"||r.status==="cancelled"}
 function updateStats(){
   // 「自分の予定」は問い合わせではないので、集計には含めない。
   // 「全件」は終了・キャンセルを含めず、未確定+予約確定の合計とする。
@@ -195,12 +199,14 @@ function updateStats(){
   $("confirmedCount").textContent=confirmed;
 }
 function cardHtml(r){
-  if(r.status==="personal"){
+  if(isPersonal(r)){
+    const done=isHistory(r);
     return `
-    <article class="card personal" data-id="${r.id}">
+    <article class="card personal${r.status==="completed"?" completed":""}${r.status==="cancelled"?" cancelled":""}" data-id="${r.id}">
       <div class="card-top"><div><div class="name">自分の予定</div><div class="date">${fmt(r.desiredDate)}</div></div>
-      <span class="tag personal">予定あり</span></div>
+      <span class="tag ${done?r.status:"personal"}">${done?statusLabel(r.status):"予定あり"}</span></div>
       <div class="meta">${esc(r.notes||"内容未入力")}</div>
+      ${r.status==="cancelled"&&r.cancelReason?`<div class="meta">理由: ${esc(r.cancelReason)}</div>`:""}
     </article>`;
   }
   return `
@@ -216,22 +222,46 @@ function render(){
   const q=$("search").value.trim().toLowerCase(), f=$("statusFilter").value;
   // 終了・キャンセル済みは、通常の一覧からは消えて「履歴」の専用画面でだけ管理する
   const rows=records.filter(r=>{
-    if(r.status==="completed"||r.status==="cancelled") return false;
+    if(isHistory(r)) return false;
     const text=[r.name,r.hotel,r.creatures,r.phone,r.email,r.notes].join(" ").toLowerCase();
     return (!q||text.includes(q))&&(f==="all"||r.status===f);
   }).sort((a,b)=>(a.desiredDate||"").localeCompare(b.desiredDate||""));
   $("list").innerHTML=rows.length?rows.map(cardHtml).join(""):"<div class='card'>まだ問い合わせはありません。「＋ 新規問い合わせ」から試せます。</div>";
   document.querySelectorAll("#list .card[data-id]").forEach(el=>el.onclick=()=>showDetail(el.dataset.id));
 }
+function monthLabel(ym){const [y,m]=ym.split("-");return `${y}年${parseInt(m,10)}月`}
 function renderHistory(){
   const q=$("historySearch").value.trim().toLowerCase(), d=$("historyDate").value;
-  // 終了・キャンセルになった問い合わせだけを、氏名・日付で絞り込んで表示する
+  const filtering=!!(q||d);
+  // 終了・キャンセルになった問い合わせ・自分の予定を、氏名・日付で絞り込んで表示する
   const rows=records.filter(r=>{
-    if(r.status!=="completed"&&r.status!=="cancelled") return false;
-    const text=[r.name,r.hotel,r.creatures,r.cancelReason].join(" ").toLowerCase();
+    if(!isHistory(r)) return false;
+    const text=[r.name,r.hotel,r.creatures,r.cancelReason,r.notes].join(" ").toLowerCase();
     return (!q||text.includes(q))&&(!d||r.desiredDate===d);
-  }).sort((a,b)=>(b.desiredDate||"").localeCompare(a.desiredDate||""));
-  $("historyList").innerHTML=rows.length?rows.map(cardHtml).join(""):"<div class='card'>該当する履歴はありません。</div>";
+  }).sort((a,b)=>(a.desiredDate||"").localeCompare(b.desiredDate||""));
+  if(!rows.length){
+    $("historyList").innerHTML="<div class='card'>該当する履歴はありません。</div>";
+    return;
+  }
+  // 今月・これから先の日付(と日付なし)はそのまま並べ、終わった月は「2026年9月」のようなフォルダにまとめる
+  const thisMonth=today().slice(0,7);
+  const current=[], byMonth={};
+  rows.forEach(r=>{
+    const ym=(r.desiredDate||"").slice(0,7);
+    if(!ym||ym>=thisMonth) current.push(r);
+    else (byMonth[ym]=byMonth[ym]||[]).push(r);
+  });
+  const months=Object.keys(byMonth).sort().reverse();
+  let html="";
+  if(current.length){
+    html+=`<h3 class="history-heading">今月（${monthLabel(thisMonth)}）以降</h3>`+current.map(cardHtml).join("");
+  }
+  html+=months.map(ym=>`
+    <details class="month-folder"${filtering?" open":""}>
+      <summary><span>📁 ${monthLabel(ym)}</span><span class="month-count">${byMonth[ym].length}件</span></summary>
+      <div class="cards">${byMonth[ym].map(cardHtml).join("")}</div>
+    </details>`).join("");
+  $("historyList").innerHTML=html;
   document.querySelectorAll("#historyList .card[data-id]").forEach(el=>el.onclick=()=>showDetail(el.dataset.id));
 }
 function refreshAll(){
@@ -252,7 +282,7 @@ $("newScheduleBtn").onclick=openScheduleEditor;
 $("closeScheduleEditor").onclick=closeScheduleEditor;
 $("saveScheduleBtn").onclick=()=>{
   if(!$("scheduleDate").value){alert("日付を入力してください。");return;}
-  const r={id:Date.now().toString(),createdAt:today(),desiredDate:$("scheduleDate").value,notes:$("scheduleNotes").value,status:"personal"};
+  const r={id:Date.now().toString(),createdAt:today(),desiredDate:$("scheduleDate").value,notes:$("scheduleNotes").value,status:"personal",kind:"personal"};
   records.push(r);save();render();closeScheduleEditor();
 };
 function resetEditor(){
@@ -588,17 +618,41 @@ bindParticipantTabs($("detail"),"p",
 );
 function showScheduleDetail(r,id){
   $("detailTitle").textContent="自分の予定";
+  const done=isHistory(r);
   $("detail").innerHTML=`
     <div class="detail-grid">
       <div class="detail-item"><b>日付</b>${fmt(r.desiredDate)}</div>
+      <div class="detail-item"><b>状態</b>${done?statusLabel(r.status):"予定あり"}</div>
+      ${r.status==="cancelled"?`<div class="detail-item" style="grid-column:1/-1;background:#fdeaea"><b>キャンセル理由</b>${esc(r.cancelReason||"理由未記入")}</div>`:""}
     </div>
     <h3>内容</h3>
     <textarea id="scheduleDetailNotes" rows="4">${esc(r.notes||"")}</textarea>
     <h3>操作</h3>
-    <div class="actions"><button class="ghost" id="deleteRecord">削除</button></div>`;
+    <div class="actions">
+      ${!done?'<button class="primary" id="completeSchedule">終了にする</button><button class="ghost" id="cancelSchedule">キャンセル</button>':""}
+      ${r.status==="completed"?'<button class="ghost" id="restoreSchedule">終了を取り消す</button>':""}
+      ${r.status==="cancelled"?'<button class="ghost" id="restoreSchedule">キャンセルを取り消す</button>':""}
+      <button class="ghost" id="deleteRecord">削除</button>
+    </div>
+    ${!done?'<p class="hint" style="margin-top:8px">終了・キャンセルにすると、一覧から消えて「履歴」に移ります。</p>':""}`;
   $("detailModal").classList.remove("hidden");
-  $("scheduleDetailNotes").onchange=()=>{r.notes=$("scheduleDetailNotes").value;save();render();};
-  $("deleteRecord").onclick=()=>{if(confirm("この予定を削除しますか？")){records=records.filter(x=>x.id!==id);save();render();$("detailModal").classList.add("hidden")}};
+  $("scheduleDetailNotes").onchange=()=>{r.notes=$("scheduleDetailNotes").value;save();refreshAll();};
+  // 終了・キャンセルにしても自分の予定だと分かるよう、kind を付けてから status を変える
+  if($("completeSchedule")) $("completeSchedule").onclick=()=>{
+    r.kind="personal";r.status="completed";r.completedAt=today();
+    save();refreshAll();$("detailModal").classList.add("hidden");
+  };
+  if($("cancelSchedule")) $("cancelSchedule").onclick=()=>{
+    const reason=prompt("キャンセルの理由があれば入力してください(空欄でもかまいません)");
+    if(reason===null) return;
+    r.kind="personal";r.status="cancelled";r.cancelReason=reason;r.cancelledAt=today();
+    save();refreshAll();$("detailModal").classList.add("hidden");
+  };
+  if($("restoreSchedule")) $("restoreSchedule").onclick=()=>{
+    r.status="personal";
+    save();refreshAll();showScheduleDetail(r,id);
+  };
+  $("deleteRecord").onclick=()=>{if(confirm("この予定を削除しますか？")){records=records.filter(x=>x.id!==id);save();refreshAll();$("detailModal").classList.add("hidden")}};
 }
 const CONTACT_METHODS=["公式LINE","メール","電話","SNSのDM","SIMDEF","その他"];
 // 予約確定にすると基本情報は編集できないようにし、「未確定に戻す」で編集を解禁する。
@@ -641,7 +695,7 @@ function detailInfoHtml(r){
 function showDetail(id){
   const r=records.find(x=>x.id===id);if(!r)return;
   currentDetailId=id;
-  if(r.status==="personal"){showScheduleDetail(r,id);return;}
+  if(isPersonal(r)){showScheduleDetail(r,id);return;}
   $("detailTitle").textContent=r.name||"問い合わせ詳細";
   // 新しい返信ほど上に来るように、最新のものから順に並べる
   const history=[{date:r.createdAt,text:r.raw}].concat(Array.isArray(r.followups)?r.followups:[]).reverse();
