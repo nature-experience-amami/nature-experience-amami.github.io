@@ -1701,7 +1701,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": null,
+    "night_observable": false,
     "description": "Shrew family (Soricidae), genus Crocidura. *Crocidura watasei*\n\nOne of the world's smallest mammals, about 5.5 cm long and weighing just 5-8\ng. A species endemic to Japan, found only in the Amami island group (Amami\nOshima, Kakeromajima, Tokunoshima, and others) and the Okinawa Islands. It\nprefers open environments such as grassland and farmland, and feeds on small\ninsects and spiders. Nocturnal, it can sometimes be seen darting quickly\nthrough grassy patches beside forest roads. It differs in habitat from a\nforest-dwelling relative of the same genus, and the two are sometimes\nconfused. It carries no legal capture restriction like a Natural Monument\ndesignation, but it is listed as Near Threatened by the Ministry of the\nEnvironment.",
     "photos": [
       "../images/creatures/mammals/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
