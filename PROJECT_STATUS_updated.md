@@ -842,3 +842,14 @@ Threads投稿の仕組み（`threads/`、詳細は`threads/THREADS_STATUS.md`）
 - 未完了事項: 関連カードの選び方の見直し（案の決定待ち）。トビイロゲンゴロウの写真追加
 
 （担当: Claude／くろちゃん）
+
+### 2026-09-28 ワタセジネズミをナイトツアーで出会える生き物から外す
+
+- オーナーの判断で、ワタセジネズミ（`content/creatures/mammals/watase-jinezumi.md`）に`night_observable: false`を追加し、`data/creatures*.json`（4言語）を再生成。JSONの変化は本種の`null`→`false`の1行だけで、個別ページなどの出力は変化なし
+- トップページの大きな写真の候補から外れる。`night_observable: false`の種は6種になった（アカハラアシナガミゾドロムシ・アマミヨコミゾドロムシ・エグリタマミズムシ・フタキボシケシゲンゴロウ・オオシマセンチコガネ・ワタセジネズミ）
+- Threadsは`threads/overrides.yml`で既に`tour_exclude: true`になっていたため、動作は変わらない
+- `activity: nocturnal`（夜行性）はそのまま残した（生き物としての情報のため）
+- Commit SHA: `1ebfab7`。この記録は別commit
+- Push: 作業用ブランチ`claude/exciting-brown-j33kwg`にpush済み。mainへのマージ待ち
+
+（担当: Claude／くろちゃん）
