@@ -806,18 +806,29 @@ $("refreshBtn").onclick=async()=>{
   location.href=url.toString();
 };
 
+// バックアップ・復元のときに、中身の件数を内訳つきで見せる。
+// (ホーム画面のアプリとSafariは保存場所が別なので、違う方で取ると件数が合わないことがある)
+function countSummary(list){
+  const reservations=list.filter(r=>!isPersonal(r)), personal=list.filter(isPersonal);
+  const open=reservations.filter(r=>!isHistory(r)).length, personalOpen=personal.filter(r=>!isHistory(r)).length;
+  return `予約 ${reservations.length}件（うち履歴 ${reservations.length-open}件）・自分の予定 ${personal.length}件（うち履歴 ${personal.length-personalOpen}件）`;
+}
 $("backupBtn").onclick=async()=>{
   if(!records.length){alert("バックアップするデータがありません。");return;}
-  const password=prompt("バックアップ用のパスワードを決めてください(復元時に同じパスワードが必要です)");
+  const password=prompt(`この画面のデータをバックアップします。\n${countSummary(records)}\n\n件数が合っているか確かめてから、バックアップ用のパスワードを決めてください(復元時に同じパスワードが必要です)`);
   if(!password) return;
   const backup=await encryptBackup(password,records);
   const blob=new Blob([JSON.stringify(backup)],{type:"application/json"});
   const url=URL.createObjectURL(blob);
   const a=document.createElement("a");
   a.href=url;
-  a.download=`nea-customer-backup-${today().replace(/-/g,"")}.json`;
+  // 同じ日に何度取っても区別できるよう、ファイル名に時刻も入れる
+  const now=new Date();
+  const hhmm=`${String(now.getHours()).padStart(2,"0")}${String(now.getMinutes()).padStart(2,"0")}`;
+  a.download=`nea-customer-backup-${today().replace(/-/g,"")}-${hhmm}.json`;
   document.body.appendChild(a);a.click();document.body.removeChild(a);
   URL.revokeObjectURL(url);
+  alert(`バックアップを作成しました。\n${countSummary(records)}\nファイル名: ${a.download}`);
 };
 $("restoreBtn").onclick=()=>$("restoreFile").click();
 $("restoreFile").onchange=async(e)=>{
@@ -829,7 +840,7 @@ $("restoreFile").onchange=async(e)=>{
     const obj=JSON.parse(await file.text());
     const restored=await decryptBackup(obj,password);
     if(!Array.isArray(restored)) throw new Error("invalid backup");
-    if(!confirm(`${restored.length}件のデータが見つかりました。今のデータをこれで置き換えます。よろしいですか？`)){e.target.value="";return;}
+    if(!confirm(`バックアップの中身: ${countSummary(restored)}\n今のデータ: ${countSummary(records)}\n\n今のデータを、バックアップの中身で置き換えます(今のデータは消えます)。よろしいですか？`)){e.target.value="";return;}
     records=restored;save();render();
     alert("復元しました。");
   }catch(err){
