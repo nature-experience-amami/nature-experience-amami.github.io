@@ -1,0 +1,10 @@
+---
+id: chinmeruman-sesuji-gengoro
+name: Escarabajo Buceador de Zimmermann
+category: aquatic-insects
+group: gengoro
+source: Watanabe, Kato, Ueda y Shaverdo (2026), European Journal of Taxonomy, "Austrelatus zimmermanni (Gschwendtner, 1934) comb. nov. (Coleoptera: Dytiscidae: Copelatinae) with two new subspecies from Japan, and notes on the species biology and ecology" (https://europeanjournaloftaxonomy.eu/index.php/ejt/article/view/3329), donde se confirman el traslado a un nuevo género, las nuevas subespecies de Minamidaito-jima y Miyako-jima y el nuevo registro de Amami Oshima; Watanabe y Ohba (2022), Entomological Science 25(2): e12505, donde se confirma el ciclo de vida (39-61 días de huevo a adulto; recolectado en un charco temporal de lluvia); longitud corporal, distribución y estatus en listas rojas prefecturales confirmados mediante el Museo de Insectos de Ishikawa, la Lista Roja 2023 de la prefectura de Saga y registros de trampas de luz de la prefectura de Akita
+---
+Familia de los escarabajos buceadores (Dytiscidae), subfamilia Copelatinae. *Austrelatus zimmermanni* (Gschwendtner, 1934)
+
+Un pequeño escarabajo buceador de unos 5.3-5.5mm de longitud. Se distribuye en Japón, la península de Corea y China, pero solo aparece de forma local, y figura como Vulnerable en las listas rojas de Saga, Akita y otras prefecturas. Durante mucho tiempo se incluyó en el género *Copelatus*, pero un artículo publicado en 2026 lo trasladó, a partir de análisis de ADN y de la comparación de su forma, al género *Austrelatus*, centrado en la región australasiática, y al mismo tiempo lo registró por primera vez en Amami Oshima. El mismo artículo describió las poblaciones de Minamidaito-jima y Miyako-jima como subespecies distintas. También vive en pequeñas masas de agua que se secan pronto, como los charcos que se forman tras la lluvia. Tarda solo 39-61 días en pasar de huevo a adulto, lo que se cree que le permite completar su ciclo de vida incluso en aguas tan inestables.
