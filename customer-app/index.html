@@ -15,7 +15,7 @@
   <meta name="apple-mobile-web-app-title" content="予約管理">
   <!-- app.js・style.cssを更新したら、この?v=の数字を上げること
        (ホーム画面に追加したアプリでも「🔄 更新を確認」ボタンで最新版に切り替わる) -->
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 <header>
@@ -31,6 +31,10 @@
 
 <main>
   <div id="mainView">
+    <section id="unsavedBanner" class="unsaved-banner hidden">
+      <span id="unsavedText"></span>
+      <button id="bannerBackupBtn" class="primary">💾 今すぐバックアップ</button>
+    </section>
     <section class="stats">
       <div class="stat"><span id="allCount">0</span><small>全件</small></div>
       <div class="stat"><span id="pendingCount">0</span><small>未確定</small></div>
@@ -41,6 +45,7 @@
       <button id="refreshBtn" class="ghost">🔄 更新を確認</button>
       <button id="backupBtn" class="ghost">⬇ バックアップ</button>
       <button id="restoreBtn" class="ghost">⬆ 復元</button>
+      <button id="passwordBtn" class="ghost">🔑 保存パスワード</button>
       <button id="historyBtn" class="tint">📋 履歴（終了・キャンセル）</button>
       <input type="file" id="restoreFile" accept="application/json" hidden>
     </section>
@@ -165,6 +170,6 @@
   </div>
 </section>
 
-<script src="app.js?v=16"></script>
+<script src="app.js?v=17"></script>
 </body>
 </html>
