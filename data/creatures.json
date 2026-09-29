@@ -315,15 +315,18 @@
   },
   {
     "id": "numa-gaeru",
-    "name": "numa-gaeru",
+    "name": "ヌマガエル",
     "category": "amphibians",
     "category_name": "両生類(カエル・イモリ)",
     "months": [
-      3
+      5,
+      6,
+      7,
+      8
     ],
-    "activity": "",
+    "activity": "nocturnal",
     "night_observable": null,
-    "description": "",
+    "description": "ヌマガエル科ヌマガエル属 *Fejervarya kawamurai*\n\n体長3〜5cm(オス2.9〜4.5cm、メス3.2〜5.4cm)。本州中部以西・四国・九州と南西諸島に分布し、奄美大島では田んぼや畑、湿地、水たまりなど、人里近くの開けた水辺に多い。背中は灰褐色から褐色で、暗色のまだら模様がある。背中の真ん中に白い筋(背中線)が入る個体もいる。繁殖期は本州(5月から8月)より長い。夜、雨の後などに水辺で鳴き声を上げる。",
     "photos": [
       "images/creatures/amphibians/numa-gaeru/numa-gaeru_000001_20250324_11.jpg",
       "images/creatures/amphibians/numa-gaeru/numa-gaeru_000002_20250324_11.jpg",
@@ -331,7 +334,7 @@
       "images/creatures/amphibians/numa-gaeru/numa-gaeru_000004_20250324_11.jpg",
       "images/creatures/amphibians/numa-gaeru/numa-gaeru_000005_20250324_11.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/amphibians/numa-gaeru.html"
   },
   {
     "id": "otton-gaeru",
@@ -404,7 +407,7 @@
       7
     ],
     "activity": "",
-    "night_observable": null,
+    "night_observable": false,
     "description": "ヒメドロムシ科アシナガミゾドロムシ属アカハラアシナガミゾドロムシ *Stenelmis hisamatsui* M. Satô, 1960\n\n奄美群島・沖縄諸島とグアムに分布する小型の水生甲虫。ヒメドロムシ科は主に清流に生息し、幼虫・成虫ともに水中で暮らす体長5mm前後までの甲虫のグループで、水のきれいな川の指標としても注目される。本種自体の詳しい生態についてはまだ分かっていないことが多い。",
     "photos": [
       "images/creatures/aquatic-insects/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
@@ -641,6 +644,25 @@
       "images/creatures/aquatic-insects/katabiro-amennbo/chairo-kesi-katabiro-amennbo/chairo-kesi-katabiro-amennbo_000005_20241204_10.jpg"
     ],
     "page_path": "creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html"
+  },
+  {
+    "id": "chinmeruman-sesuji-gengoro",
+    "name": "chinmeruman-sesuji-gengoro",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      2,
+      11
+    ],
+    "activity": "",
+    "night_observable": null,
+    "description": "",
+    "photos": [
+      "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000001_20260228_12.jpg",
+      "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000002_20251118_12.jpg",
+      "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000003_20251118_12.jpg"
+    ],
+    "page_path": null
   },
   {
     "id": "eguri-tamamizumushi",
@@ -1001,21 +1023,23 @@
   },
   {
     "id": "amami-aojyoukai",
-    "name": "amami-aojyoukai",
+    "name": "アマミアオジョウカイ",
     "category": "beetles",
     "category_name": "甲虫",
     "months": [
+      3,
+      4,
       5
     ],
-    "activity": "",
+    "activity": "diurnal",
     "night_observable": null,
-    "description": "",
+    "description": "ジョウカイボン科アマミアオジョウカイ *Themus kazuoi*\n\n体長15mm弱。青い金属光沢をもつジョウカイボンの仲間で、奄美大島・徳之島・沖縄島に分布する(沖縄島のものは別亜種とされる)。成虫は春に現れ、シイの花が咲く頃に花の上などで見られる。ジョウカイボンの仲間は肉食性で、小さな昆虫を捕まえて食べる。",
     "photos": [
       "images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000001_20250517_23.jpg",
       "images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000002_20250520_11.jpg",
       "images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000003_20250520_11.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/beetles/amami-aojyoukai.html"
   },
   {
     "id": "amami-himekebuka-magusokogane",
@@ -1770,22 +1794,22 @@
   },
   {
     "id": "amami-hime-tokage",
-    "name": "amami-hime-tokage",
+    "name": "アマミヒメトカゲ",
     "category": "lizards",
     "category_name": "トカゲ",
     "months": [
       6
     ],
-    "activity": "",
+    "activity": "diurnal",
     "night_observable": null,
-    "description": "",
+    "description": "トカゲ科ヘリグロヒメトカゲ属 *Ateuchosaurus pellopleurus*\n\n全長9〜12cm(頭胴長4.2〜6.9cm)。大隅諸島の竹島・硫黄島・黒島、トカラ列島、奄美諸島に分布する日本固有種。胴が長く足が短い小型のトカゲで、尾が全長のおよそ半分を占める。湿った林床にすみ、落ち葉や石のすき間をすばやく動き回る。春から秋にかけての晴れた日の昼間に見かけることが多い。以前はヘリグロヒメトカゲの名で呼ばれていた。",
     "photos": [
       "images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000001_20250602_22.jpg",
       "images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000002_20250602_22.jpg",
       "images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000003_20250602_22.jpg",
       "images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000004_20250602_22.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/lizards/amami-hime-tokage.html"
   },
   {
     "id": "ba-ba-tokage",
@@ -1812,7 +1836,7 @@
   },
   {
     "id": "okinawa-kinobori-tokage",
-    "name": "okinawa-kinobori-tokage",
+    "name": "オキナワキノボリトカゲ",
     "category": "lizards",
     "category_name": "トカゲ",
     "months": [
@@ -1823,9 +1847,9 @@
       11,
       12
     ],
-    "activity": "",
-    "night_observable": null,
-    "description": "",
+    "activity": "diurnal",
+    "night_observable": true,
+    "description": "アガマ科キノボリトカゲ属 *Diploderma polygonatum polygonatum*\n\n全長20〜30cm(最大でオス31cm、メス24cm)。奄美諸島と沖縄諸島に分布する日本固有亜種。緑色がかった体色の大型のトカゲで、名前のとおり木の上で暮らし、オスはなわばりを持つ。広葉樹林の林縁や二次林、公園や庭の木など、やや開けた環境を好み、昼間に昆虫などを捕まえて食べる。夜は枝や葉の上で眠っており、ナイトツアーでは眠っている姿を観察できることがある。森林伐採やマングースなどによる捕食、ペット目的の採集で数を減らし、環境省レッドリストで絶滅危惧II類に選定されている。",
     "photos": [
       "images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
       "images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000002_20250424_13.jpg",
@@ -1835,7 +1859,7 @@
       "images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000006_20241126_21.jpg",
       "images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000007_20250708_11.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/lizards/okinawa-kinobori-tokage.html"
   },
   {
     "id": "amami-kuro-usagi",
@@ -1921,7 +1945,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": null,
+    "night_observable": false,
     "description": "トガリネズミ科ジネズミ属ワタセジネズミ *Crocidura watasei*\n\n体長約5.5cm 体重5〜8gほどの、世界最小級の哺乳類の一つ。奄美群島(奄美大島、加計呂麻島、徳之島など)と沖縄諸島にのみ分布する日本固有種。草地や畑など開けた環境を好み、小型昆虫やクモなどを食べる。夜行性で、林道脇の草むらなどを素早く動き回る姿を見かけることがある。同属で森林性のオリイジネズミとは生息環境が異なり、混同されることもある。天然記念物のような法的な捕獲制限は無いが、環境省の準絶滅危惧に指定されている。",
     "photos": [
       "images/creatures/mammals/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
@@ -2060,19 +2084,22 @@
   },
   {
     "id": "amami-madara-kamadouma",
-    "name": "amami-madara-kamadouma",
+    "name": "アマミマダラカマドウマ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      7
+      7,
+      8,
+      9,
+      10
     ],
-    "activity": "",
+    "activity": "nocturnal",
     "night_observable": null,
-    "description": "",
+    "description": "カマドウマ科 アマミマダラカマドウマ *Diestrammena gigas*\n\n奄美大島と徳之島にすむマダラカマドウマの仲間。本土のマダラカマドウマ(体長20〜34mm)より大きく、体のまだら模様ははっきりしない。翅はなく、長い触角とよく発達した後ろ脚をもつ。歩き回るよりも、小さく跳ねて移動することが多い。夜の森で見られ、成虫は夏から秋にかけて姿を見せる。",
     "photos": [
       "images/creatures/other-insects/tyokushi/amami-madara-kamadouma/amami-madara-kamadouma_000001_20250712_09.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/amami-madara-kamadouma.html"
   },
   {
     "id": "aosuji-ageha",
@@ -2146,20 +2173,20 @@
   },
   {
     "id": "kobane-korogisu",
-    "name": "kobane-korogisu",
+    "name": "コバネコロギス",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
       5
     ],
-    "activity": "",
+    "activity": "nocturnal",
     "night_observable": null,
-    "description": "",
+    "description": "コロギス科 コバネコロギス *Metriogryllacris magna*\n\n体長はオス12〜24mm、メス17〜27mm。名前のとおり翅がごく小さく目立たない、中型のコロギスの仲間。静岡県以西の暖かい地域から南西諸島にかけて分布する。体はだいだい色がかった褐色。昼間は口から出す糸で葉を綴り合わせた巣に潜み、夜になると出てきて、ほかの昆虫などを捕まえて食べる。",
     "photos": [
       "images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000001_20250524_00.jpg",
       "images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000002_20250524_00.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/kobane-korogisu.html"
   },
   {
     "id": "kuchiki-koorogi",
@@ -2191,20 +2218,25 @@
   },
   {
     "id": "kuromadara-sotetsu-shijimi",
-    "name": "kuromadara-sotetsu-shijimi",
+    "name": "クロマダラソテツシジミ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      6
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
     ],
-    "activity": "",
+    "activity": "diurnal",
     "night_observable": null,
-    "description": "",
+    "description": "シジミチョウ科 クロマダラソテツシジミ *Chilades pandava*\n\n翅の表は青紫色、裏は灰褐色の地に白い筋と黒い斑紋が並ぶ、小型のシジミチョウ。台湾や東南アジアなどに分布し、日本では2000年代から南西諸島、さらに九州・本州へと広がった。奄美大島には2007年に侵入して定着し、幼虫がソテツの若葉を食べるため、島内各地のソテツに大きな被害が出た。成虫は6月から11月頃に多く見られる。",
     "photos": [
       "images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000001_20250617_13.jpg",
       "images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000002_20250617_13.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/kuromadara-sotetsu-shijimi.html"
   },
   {
     "id": "madara-kourogi",
@@ -2328,21 +2360,30 @@
   },
   {
     "id": "ryuukyuu-haguro-tombo",
-    "name": "ryuukyuu-haguro-tombo",
+    "name": "リュウキュウハグロトンボ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
       9,
-      11
+      10,
+      11,
+      12
     ],
-    "activity": "",
+    "activity": "diurnal",
     "night_observable": null,
-    "description": "",
+    "description": "カワトンボ科 リュウキュウハグロトンボ *Matrona japonica*\n\n体長およそ65mm。奄美大島・徳之島・沖縄島に分布し、山地の森に囲まれた薄暗い渓流の上流から中流にすむ。体は青緑色の金属光沢をもち、黒い翅は光の加減で青く輝く。奄美大島のものは沖縄島のものより、翅の青く光る部分が広い。成虫は2月下旬から12月頃まで、長い期間見られる。",
     "photos": [
       "images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000001_20250914_13.jpg",
       "images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000002_20251106_12.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/ryuukyuu-haguro-tombo.html"
   },
   {
     "id": "taiwan-kutsuwamushi",
@@ -2706,16 +2747,16 @@
   },
   {
     "id": "mekura-hebi",
-    "name": "mekura-hebi",
+    "name": "ブラーミニメクラヘビ",
     "category": "snakes",
     "category_name": "ヘビ",
     "months": [
       3,
       9
     ],
-    "activity": "",
+    "activity": "nocturnal",
     "night_observable": null,
-    "description": "",
+    "description": "メクラヘビ科 *Indotyphlops braminus*\n\n全長15〜20cmほどの、日本でいちばん小さなヘビ。体はミミズのような細い円筒形で黒褐色、目は鱗の下に退化してほとんど見えない。南アジア原産とされ、植木鉢の土などにまぎれて世界中に広がった外来種で、奄美大島でも人家まわりの畑や庭などで見られる。ふだんは土の中や石・落ち葉の下にすみ、アリやシロアリの卵や幼虫を食べる。オスが見つかっておらず、メスだけで卵を産んで増える(単為生殖)めずらしいヘビ。雨の夜などに地表に出てくることがある。",
     "photos": [
       "images/creatures/snakes/mekura-hebi/mekura-hebi_000001_20260301_15.jpg",
       "images/creatures/snakes/mekura-hebi/mekura-hebi_000002_20260301_15.jpg",
@@ -2723,7 +2764,7 @@
       "images/creatures/snakes/mekura-hebi/mekura-hebi_000004_20260301_15.jpg",
       "images/creatures/snakes/mekura-hebi/mekura-hebi_000005_20260922_19.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/snakes/mekura-hebi.html"
   },
   {
     "id": "ryukyu-ao-hebi",

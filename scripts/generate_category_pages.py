@@ -50,9 +50,23 @@ def paragraphs(body):
 
 
 def photo_files(category, creature_id):
-    directory = IMAGES_DIR / category / PHOTO_DIR_ALIASES.get((category, creature_id), creature_id)
-    if not directory.is_dir():
+    directory_name = PHOTO_DIR_ALIASES.get((category, creature_id), creature_id)
+    category_dir = IMAGES_DIR / category
+    if not category_dir.is_dir():
         return []
+
+    # 1階層: images/creatures/カテゴリー/生き物ID/
+    directory = category_dir / directory_name
+    if not directory.is_dir():
+        # 2階層: images/creatures/カテゴリー/グループ名/生き物ID/
+        directory = None
+        for sub in sorted(category_dir.iterdir()):
+            if sub.is_dir() and (sub / directory_name).is_dir():
+                directory = sub / directory_name
+                break
+        if directory is None:
+            return []
+
     return sorted(
         path.relative_to(ROOT).as_posix()
         for path in directory.iterdir()

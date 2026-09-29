@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nature Experience Amami｜奄美大島の夜の森ナイトツアー</title>
+<!-- iPhoneのホーム画面に追加したときのアイコンと名前 -->
+<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icons/icon-192.png">
+<meta name="apple-mobile-web-app-title" content="奄美ナイト">
 <meta name="description" content="奄美大島の夜の森でアマミノクロウサギ、ハブ、奄美固有のカエルたちを観察するナイトツアー。名瀬近辺ホテル送迎あり、おひとり様歓迎。">
 <meta name="google-site-verification" content="KD6Qtmpo_RhjSlJyvC1_JIyZ_wXBkQQxvMlc5gbcHGs">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -293,8 +297,10 @@
     }
     .hero-photo-name{
       position: absolute;
-      bottom: calc(100svh - var(--desktop-photo-top) - var(--desktop-photo-height) + 1rem);
-      right: calc(50% - var(--desktop-photo-width) / 2 + 1rem);
+      /* 名前ラベルは写真のリンク(.hero-photo-link)の中にあるので、写真の枠から測る。
+         以前は画面の高さから計算していたため、縦に大きい画面ほど写真の中央〜上へずれていた */
+      bottom: 1rem;
+      right: 1rem;
       top: auto;
       z-index: 10;
       background: rgba(10, 22, 19, 0.85);

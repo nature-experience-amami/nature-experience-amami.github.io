@@ -314,6 +314,26 @@
     "page_path": "creatures/amphibians/hime-amagaeru.html"
   },
   {
+    "id": "numa-gaeru",
+    "name": "Rana de Arroz de Kawamura",
+    "category": "amphibians",
+    "category_name": "Anfibios",
+    "months": [
+      3
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Familia Dicroglossidae, género Fejervarya. *Fejervarya kawamurai*\n\nLongitud corporal de 3-5 cm (machos 2.9-4.5 cm, hembras 3.2-5.4 cm). Se distribuye desde el centro de Honshu hacia el oeste, Shikoku, Kyushu y las islas Nansei. En Amami Oshima es común en zonas húmedas abiertas cerca de asentamientos humanos, como arrozales, campos, pantanos y charcos. El dorso es de color pardo grisáceo a pardo, con manchas oscuras. Algunos individuos tienen una franja blanca en el centro del dorso (franja vertebral). Su temporada de reproducción es más larga que en Honshu (de mayo a agosto). De noche, sobre todo después de la lluvia, canta junto al agua.",
+    "photos": [
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000001_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000002_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000003_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000004_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000005_20250324_11.jpg"
+    ],
+    "page_path": "creatures/amphibians/numa-gaeru.html"
+  },
+  {
     "id": "otton-gaeru",
     "name": "Rana Otton",
     "category": "amphibians",
@@ -384,7 +404,7 @@
       7
     ],
     "activity": "",
-    "night_observable": null,
+    "night_observable": false,
     "description": "Familia de los escarabajos de rabión, género Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami y\nOkinawa y en Guam. Los escarabajos de rabión viven principalmente en corrientes\nlimpias; tanto las larvas como los adultos pasan su vida en el agua y alcanzan\ncomo máximo unos 5 mm, por lo que la familia se observa como indicador de ríos\nlimpios. La ecología detallada de esta especie en concreto sigue siendo, en\ngran parte, desconocida.",
     "photos": [
       "../images/creatures/aquatic-insects/himedoromushi/akahara-ashinaga-mizodoromushi/akahara-ashinaga-mizodoromushi_000001_20260222_10.jpg",
@@ -924,6 +944,26 @@
       "../images/creatures/aquatic-insects/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000003_20250403_00.jpg"
     ],
     "page_path": "creatures/aquatic-insects/usuiro-shima-gengoro.html"
+  },
+  {
+    "id": "amami-aojyoukai",
+    "name": "Escarabajo Soldado Azul de Amami",
+    "category": "beetles",
+    "category_name": "Escarabajos",
+    "months": [
+      3,
+      4,
+      5
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "Cantharidae, escarabajo soldado azul de Amami *Themus kazuoi*\n\nLongitud corporal de algo menos de 15mm. Un escarabajo soldado con brillo metálico azul, distribuido en Amami Oshima, Tokunoshima y la isla de Okinawa (la población de la isla de Okinawa se considera una subespecie distinta). Los adultos aparecen en primavera y se ven sobre las flores en la época en que florecen los árboles de Castanopsis. Los escarabajos soldado son carnívoros y capturan y comen insectos pequeños.",
+    "photos": [
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000001_20250517_23.jpg",
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000002_20250520_11.jpg",
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000003_20250520_11.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-aojyoukai.html"
   },
   {
     "id": "amami-himekebuka-magusokogane",
@@ -1618,6 +1658,25 @@
     "page_path": "creatures/birds/torafuzuku.html"
   },
   {
+    "id": "amami-hime-tokage",
+    "name": "Eslizón de Patas Cortas de Amami",
+    "category": "lizards",
+    "category_name": "Lagartos",
+    "months": [
+      6
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "Familia de los eslizones (Scincidae), género Ateuchosaurus. *Ateuchosaurus pellopleurus*\n\nLongitud total 9-12 cm (longitud hocico-cloaca 4.2-6.9 cm). Una especie endémica de Japón distribuida en Takeshima, Iojima y Kuroshima de las islas Osumi, las islas Tokara y las islas Amami. Es un eslizón pequeño de cuerpo largo y patas cortas; la cola ocupa aproximadamente la mitad de su longitud total. Vive en el suelo húmedo del bosque y se mueve con rapidez entre la hojarasca y las rendijas de las piedras. Se ve con más frecuencia de día, en jornadas soleadas de primavera a otoño. Antes se le conocía en japonés como Heriguro-hime-tokage.",
+    "photos": [
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000001_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000002_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000003_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000004_20250602_22.jpg"
+    ],
+    "page_path": "creatures/lizards/amami-hime-tokage.html"
+  },
+  {
     "id": "ba-ba-tokage",
     "name": "Eslizón de Barbour",
     "category": "lizards",
@@ -1635,6 +1694,33 @@
       "../images/creatures/lizards/ba-ba-tokage/ba-ba-tokage_000003_20250910_11.jpg"
     ],
     "page_path": "creatures/lizards/ba-ba-tokage.html"
+  },
+  {
+    "id": "okinawa-kinobori-tokage",
+    "name": "Lagarto Arborícola de Okinawa",
+    "category": "lizards",
+    "category_name": "Lagartos",
+    "months": [
+      1,
+      4,
+      7,
+      8,
+      11,
+      12
+    ],
+    "activity": "diurnal",
+    "night_observable": true,
+    "description": "Familia de los agámidos (Agamidae), género Diploderma. *Diploderma polygonatum polygonatum*\n\nLongitud total 20-30 cm (hasta 31 cm en machos y 24 cm en hembras). Una subespecie endémica de Japón distribuida en las islas Amami y Okinawa. Es un lagarto grande de cuerpo verdoso; como indica su nombre, vive en los árboles, y los machos defienden territorios. Prefiere ambientes algo abiertos, como los bordes de bosque de hoja ancha, bosques secundarios y árboles de parques y jardines, donde caza insectos y otras presas durante el día. De noche duerme sobre ramas y hojas, y en las excursiones nocturnas a veces se le puede observar dormido. Su número ha disminuido por la tala, la depredación de mangostas y otros animales, y la captura para el comercio de mascotas, y figura como Vulnerable en la Lista Roja del Ministerio de Medio Ambiente.",
+    "photos": [
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000002_20250424_13.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000003_20250828_12.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000004_20250828_13.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000005_20241218_19.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000006_20241126_21.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000007_20250708_11.jpg"
+    ],
+    "page_path": "creatures/lizards/okinawa-kinobori-tokage.html"
   },
   {
     "id": "amami-kuro-usagi",
@@ -1701,7 +1787,7 @@
       12
     ],
     "activity": "nocturnal",
-    "night_observable": null,
+    "night_observable": false,
     "description": "Familia de las musarañas (Soricidae), género Crocidura. *Crocidura watasei*\n\nUno de los mamíferos más pequeños del mundo, de unos 5.5 cm de longitud y\napenas 5-8 g de peso. Una especie endémica de Japón que solo se encuentra en\nel archipiélago de Amami (Amami Oshima, Kakeromajima, Tokunoshima y otras) y\nlas islas Okinawa. Prefiere ambientes abiertos como praderas y campos de\ncultivo, y se alimenta de pequeños insectos y arañas. Es nocturna, y a veces\nse la puede ver moviéndose rápidamente entre la hierba junto a los caminos\nforestales. Difiere en hábitat de una especie emparentada del mismo género\nque vive en el bosque, con la que a veces se la confunde. No tiene una\nrestricción legal de captura como la de un Monumento Natural, pero está\ncatalogada como Casi Amenazada por el Ministerio de Medio Ambiente.",
     "photos": [
       "../images/creatures/mammals/watase-jinezumi/watase-jinezumi_000001_20241218_18.jpg",
@@ -1726,6 +1812,25 @@
       "../images/creatures/other-insects/tyokushi/amami-hirata-hishibatta/amami-hirata-hishibatta_000001_20251015_00.jpg"
     ],
     "page_path": "creatures/other-insects/amami-hirata-hishibatta.html"
+  },
+  {
+    "id": "amami-madara-kamadouma",
+    "name": "Grillo Camello Moteado de Amami",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Familia de los grillos camello (Rhaphidophoridae), grillo camello moteado de Amami *Diestrammena gigas*\n\nUn grillo camello moteado que se encuentra en Amami Oshima y Tokunoshima. Es más grande que el grillo camello moteado del Japón continental (longitud corporal de 20-34mm), y su dibujo moteado es poco nítido. No tiene alas, y posee antenas largas y patas traseras bien desarrolladas. Más que caminar, suele desplazarse dando pequeños saltos. Se puede ver en el bosque de noche, y los adultos aparecen de verano a otoño.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/amami-madara-kamadouma/amami-madara-kamadouma_000001_20250712_09.jpg"
+    ],
+    "page_path": "creatures/other-insects/amami-madara-kamadouma.html"
   },
   {
     "id": "aosuji-ageha",
@@ -1798,6 +1903,23 @@
     "page_path": "creatures/other-insects/ishigake-tyou.html"
   },
   {
+    "id": "kobane-korogisu",
+    "name": "Grillo Áspero de Alas Cortas",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      5
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Familia de grillos ásperos (Gryllacrididae), grillo áspero de alas cortas *Metriogryllacris magna*\n\nLongitud corporal de 12-24mm en machos y 17-27mm en hembras. Un grillo áspero de tamaño mediano cuyas alas, como indica su nombre, son muy pequeñas y poco visibles. Se distribuye en las regiones cálidas desde la prefectura de Shizuoka hacia el oeste hasta las islas Nansei. Su cuerpo es pardo con tonos anaranjados. Durante el día se oculta en un nido de hojas unidas con la seda que produce por la boca, y de noche sale para capturar y comer otros insectos.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000001_20250524_00.jpg",
+      "../images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000002_20250524_00.jpg"
+    ],
+    "page_path": "creatures/other-insects/kobane-korogisu.html"
+  },
+  {
     "id": "kuchiki-koorogi",
     "name": "Grillo de la Madera Podrida",
     "category": "other-insects",
@@ -1824,6 +1946,28 @@
       "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000002_20250821_21.jpg"
     ],
     "page_path": "creatures/other-insects/kuchiki-koorogi.html"
+  },
+  {
+    "id": "kuromadara-sotetsu-shijimi",
+    "name": "Cupido de las Llanuras",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "Familia de las mariposas de alas de gasa (Lycaenidae), cupido de las llanuras *Chilades pandava*\n\nUna pequeña mariposa azul con el anverso de las alas de color púrpura azulado y el reverso pardo grisáceo con hileras de líneas blancas y manchas negras. Se distribuye en Taiwán, el sudeste asiático y otras zonas; en Japón se extendió a partir de los años 2000 por las islas Nansei y después hacia Kyushu y Honshu. Llegó a Amami Oshima en 2007 y se estableció, y como sus larvas se alimentan de las hojas jóvenes de las cícadas, las cícadas de toda la isla sufrieron graves daños. Los adultos se ven con más frecuencia de junio a noviembre aproximadamente.",
+    "photos": [
+      "../images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000001_20250617_13.jpg",
+      "../images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000002_20250617_13.jpg"
+    ],
+    "page_path": "creatures/other-insects/kuromadara-sotetsu-shijimi.html"
   },
   {
     "id": "madara-kourogi",
@@ -1944,6 +2088,33 @@
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000010_20251219_11.jpg"
     ],
     "page_path": "creatures/other-insects/ryuukyuu-asagi-madara.html"
+  },
+  {
+    "id": "ryuukyuu-haguro-tombo",
+    "name": "Caballito del Diablo de Alas Negras de Ryukyu",
+    "category": "other-insects",
+    "category_name": "Insectos",
+    "months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "Familia de los caballitos del diablo de alas anchas (Calopterygidae), caballito del diablo de alas negras de Ryukyu *Matrona japonica*\n\nLongitud corporal de unos 65mm. Se distribuye en Amami Oshima, Tokunoshima y la isla de Okinawa, y vive en los tramos altos y medios de arroyos de montaña sombríos rodeados de bosque. Su cuerpo tiene un brillo metálico verde azulado, y sus alas negras brillan en azul según la luz. En los individuos de Amami Oshima, la zona azul brillante de las alas es más amplia que en los de la isla de Okinawa. Los adultos se pueden ver durante un largo periodo, desde finales de febrero hasta aproximadamente diciembre.",
+    "photos": [
+      "../images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000001_20250914_13.jpg",
+      "../images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000002_20251106_12.jpg"
+    ],
+    "page_path": "creatures/other-insects/ryuukyuu-haguro-tombo.html"
   },
   {
     "id": "taiwan-kutsuwamushi",
@@ -2303,6 +2474,27 @@
       "../images/creatures/snakes/hyan/hyan_000023_20251025_23.jpg"
     ],
     "page_path": "creatures/snakes/hyan.html"
+  },
+  {
+    "id": "mekura-hebi",
+    "name": "Serpiente Ciega Brahminy",
+    "category": "snakes",
+    "category_name": "Serpientes",
+    "months": [
+      3,
+      9
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Familia de las serpientes ciegas (Typhlopidae). *Indotyphlops braminus*\n\nLa serpiente más pequeña de Japón, con unos 15-20 cm de longitud total. Su cuerpo es un cilindro delgado parecido a una lombriz, de color pardo negruzco, y sus ojos están reducidos bajo las escamas y apenas se ven. Se cree que es originaria del sur de Asia y se ha extendido por todo el mundo oculta en la tierra de macetas y materiales similares; es una especie introducida, y en Amami Oshima se encuentra en campos y jardines alrededor de las casas. Suele vivir en el suelo o bajo piedras y hojarasca, alimentándose de huevos y larvas de hormigas y termitas. No se han encontrado machos: es una serpiente singular que se reproduce solo con hembras que ponen huevos (partenogénesis). A veces sale a la superficie en noches de lluvia.",
+    "photos": [
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000001_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000002_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000003_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000004_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000005_20260922_19.jpg"
+    ],
+    "page_path": "creatures/snakes/mekura-hebi.html"
   },
   {
     "id": "ryukyu-ao-hebi",
