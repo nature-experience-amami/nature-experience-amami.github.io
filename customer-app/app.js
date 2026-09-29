@@ -5,7 +5,17 @@ let parsedParticipants=[];
 
 const $=id=>document.getElementById(id);
 const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
-const save=()=>localStorage.setItem(KEY,JSON.stringify(records));
+// バックアップの状態(最後に取った日時・その後の変更の数・覚えたパスワード)。
+// どれもこのアプリの中だけに保存する。読めない環境でも本体の動きは止めない
+const UNSAVED_KEY="nea_customer_app_unsaved", LAST_BACKUP_KEY="nea_customer_app_last_backup", PASS_KEY="nea_customer_app_backup_pass";
+function storeGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function storeSet(k,v){try{v===null?localStorage.removeItem(k):localStorage.setItem(k,v)}catch(e){}}
+// データを保存するたびに「まだバックアップしていない変更」を1つ数える
+const save=()=>{
+  localStorage.setItem(KEY,JSON.stringify(records));
+  storeSet(UNSAVED_KEY,String((parseInt(storeGet(UNSAVED_KEY),10)||0)+1));
+  updateBackupBanner();
+};
 
 // --- AI連携(サイト本体と同じCloudflare Worker + Geminiを共用) ---
 const WORKER_URL="https://nature-experience-ai.aegusaegus.workers.dev/";
@@ -813,10 +823,32 @@ function countSummary(list){
   const open=reservations.filter(r=>!isHistory(r)).length, personalOpen=personal.filter(r=>!isHistory(r)).length;
   return `予約 ${reservations.length}件（うち履歴 ${reservations.length-open}件）・自分の予定 ${personal.length}件（うち履歴 ${personal.length-personalOpen}件）`;
 }
-$("backupBtn").onclick=async()=>{
+function fmtDateTime(iso){
+  const d=new Date(iso);
+  return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`;
+}
+// 画面の上の「未保存の変更」のお知らせ。変更があるか、まだ一度もバックアップしていない時に出す
+function updateBackupBanner(){
+  const el=$("unsavedBanner");
+  if(!el) return;
+  const unsaved=parseInt(storeGet(UNSAVED_KEY),10)||0, last=storeGet(LAST_BACKUP_KEY);
+  const show=records.length>0&&(unsaved>0||!last);
+  el.classList.toggle("hidden",!show);
+  if(!show) return;
+  $("unsavedText").textContent=last
+    ?`バックアップしていない変更が${unsaved}件あります（最後のバックアップ: ${fmtDateTime(last)}）`
+    :"このアプリでは、まだバックアップを取っていません";
+}
+async function doBackup(){
   if(!records.length){alert("バックアップするデータがありません。");return;}
-  const password=prompt(`この画面のデータをバックアップします。\n${countSummary(records)}\n\n件数が合っているか確かめてから、バックアップ用のパスワードを決めてください(復元時に同じパスワードが必要です)`);
-  if(!password) return;
+  // 覚えているパスワードがあれば入力は省き、件数の確認だけする
+  let password=storeGet(PASS_KEY), remembered=!!password;
+  if(remembered){
+    if(!confirm(`この画面のデータをバックアップします。\n${countSummary(records)}\n\n件数が合っていれば「OK」を押してください(覚えているパスワードで暗号化します)`)) return;
+  }else{
+    password=prompt(`この画面のデータをバックアップします。\n${countSummary(records)}\n\n件数が合っているか確かめてから、バックアップ用のパスワードを決めてください(復元時に同じパスワードが必要です)`);
+    if(!password) return;
+  }
   const backup=await encryptBackup(password,records);
   const blob=new Blob([JSON.stringify(backup)],{type:"application/json"});
   const url=URL.createObjectURL(blob);
@@ -828,20 +860,45 @@ $("backupBtn").onclick=async()=>{
   a.download=`nea-customer-backup-${today().replace(/-/g,"")}-${hhmm}.json`;
   document.body.appendChild(a);a.click();document.body.removeChild(a);
   URL.revokeObjectURL(url);
-  alert(`バックアップを作成しました。\n${countSummary(records)}\nファイル名: ${a.download}`);
+  // ファイルが本当に保存されたかはアプリからは分からないので、本人に確かめてから「保存済み」にする
+  if(confirm(`バックアップのファイルを作りました。\n${countSummary(records)}\nファイル名: ${a.download}\n\n「ファイル」アプリへの保存まで済んだら「OK」を押してください。保存をやめた時は「キャンセル」(未保存のお知らせが残ります)`)){
+    storeSet(UNSAVED_KEY,"0");
+    storeSet(LAST_BACKUP_KEY,new Date().toISOString());
+    updateBackupBanner();
+    if(!remembered&&confirm("このパスワードをアプリに覚えさせますか？\n次回からパスワードの入力が要らなくなります(iPhoneのパスコードロックがかかっていることが前提です)。\n「🔑 保存パスワード」でいつでも消せます。")){
+      storeSet(PASS_KEY,password);
+    }
+  }
+}
+$("backupBtn").onclick=doBackup;
+$("bannerBackupBtn").onclick=doBackup;
+$("passwordBtn").onclick=()=>{
+  if(storeGet(PASS_KEY)){
+    if(confirm("覚えているバックアップのパスワードを消しますか？\n(次のバックアップで、もう一度入力して覚えさせられます)")){storeSet(PASS_KEY,null);alert("消しました。");}
+  }else{
+    alert("パスワードはまだ覚えていません。バックアップのあとに「覚えさせますか？」で「OK」を押すと、次回から入力が要らなくなります。");
+  }
 };
 $("restoreBtn").onclick=()=>$("restoreFile").click();
 $("restoreFile").onchange=async(e)=>{
   const file=e.target.files[0];
   if(!file){return;}
-  const password=prompt("バックアップ作成時に設定したパスワードを入力してください");
-  if(!password){e.target.value="";return;}
   try{
     const obj=JSON.parse(await file.text());
-    const restored=await decryptBackup(obj,password);
+    // 覚えているパスワードでまず試し、合わなければ入力してもらう
+    let restored=null;
+    const saved=storeGet(PASS_KEY);
+    if(saved){try{restored=await decryptBackup(obj,saved)}catch(err){restored=null}}
+    if(!restored){
+      const password=prompt("バックアップ作成時に設定したパスワードを入力してください");
+      if(!password){e.target.value="";return;}
+      restored=await decryptBackup(obj,password);
+    }
     if(!Array.isArray(restored)) throw new Error("invalid backup");
     if(!confirm(`バックアップの中身: ${countSummary(restored)}\n今のデータ: ${countSummary(records)}\n\n今のデータを、バックアップの中身で置き換えます(今のデータは消えます)。よろしいですか？`)){e.target.value="";return;}
     records=restored;save();render();
+    // 復元した直後は、中身がバックアップのファイルと同じなので「未保存の変更」は0にする
+    storeSet(UNSAVED_KEY,"0");updateBackupBanner();
     alert("復元しました。");
   }catch(err){
     alert("復元に失敗しました。パスワードが違うか、ファイルが壊れている可能性があります。");
@@ -851,3 +908,4 @@ $("restoreFile").onchange=async(e)=>{
 
 $("todayLabel").textContent=`本日 ${fmtWithWeekday(today())}`;
 render();
+updateBackupBanner();
