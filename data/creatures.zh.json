@@ -612,6 +612,25 @@
     "page_path": "creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html"
   },
   {
+    "id": "chinmeruman-sesuji-gengoro",
+    "name": "齐氏背线龙虱",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      2,
+      11
+    ],
+    "activity": "",
+    "night_observable": false,
+    "description": "龙虱科背线龙虱亚科 *Austrelatus zimmermanni* (Gschwendtner, 1934)\n\n体长约5.3〜5.5毫米的小型龙虱。分布于日本、朝鲜半岛和中国，但产地较为局限，已被佐贺县、秋田县等地的红色名录列为易危。长期以来被归入背线龙虱属(*Copelatus*)，但2026年发表的论文根据DNA分析和形态比较，将其移入以澳洲区为分布中心的 *Austrelatus* 属，同时首次记录了其在奄美大岛的分布。同一论文还将南大东岛和宫古岛的种群描述为不同的亚种。它也栖息在雨后形成的水洼等很快就会干涸的小水体中。从卵到成虫只需39〜61天，一般认为这使它即使在这种不稳定的水域中也能完成一生。",
+    "photos": [
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000001_20250228_12.jpg",
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000002_20251118_12.jpg",
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000003_20251118_12.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/chinmeruman-sesuji-gengoro.html"
+  },
+  {
     "id": "eguri-tamamizumushi",
     "name": "凹缘小仰蝽",
     "category": "aquatic-insects",

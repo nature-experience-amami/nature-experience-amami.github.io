@@ -612,6 +612,25 @@
     "page_path": "creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html"
   },
   {
+    "id": "chinmeruman-sesuji-gengoro",
+    "name": "Zimmermann's Diving Beetle",
+    "category": "aquatic-insects",
+    "category_name": "Aquatic Insects",
+    "months": [
+      2,
+      11
+    ],
+    "activity": "",
+    "night_observable": false,
+    "description": "Diving beetle family (Dytiscidae), subfamily Copelatinae. *Austrelatus zimmermanni* (Gschwendtner, 1934)\n\nA small diving beetle about 5.3-5.5mm long. It is distributed in Japan, the Korean Peninsula, and China, but occurs only locally, and is listed as Vulnerable on the Red Lists of Saga, Akita, and other prefectures. It was long placed in the genus *Copelatus*, but a paper published in 2026 moved it, based on DNA analysis and comparison of body form, to the genus *Austrelatus*, which is centered on the Australasian region, and at the same time recorded it from Amami Oshima for the first time. The same paper described the populations on Minamidaito-jima and Miyako-jima as separate subspecies. It also lives in small bodies of water that dry up quickly, such as puddles that form after rain. It takes only 39-61 days to develop from egg to adult, which is thought to allow it to complete its life cycle even in such unstable waters.",
+    "photos": [
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000001_20250228_12.jpg",
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000002_20251118_12.jpg",
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000003_20251118_12.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/chinmeruman-sesuji-gengoro.html"
+  },
+  {
     "id": "eguri-tamamizumushi",
     "name": "Notched Pygmy Backswimmer",
     "category": "aquatic-insects",

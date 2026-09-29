@@ -1023,3 +1023,17 @@ Threads投稿の仕組み（`threads/`、詳細は`threads/THREADS_STATUS.md`）
 - Push: 済み（プルリクエスト経由）
 
 （担当: Claude／くろちゃん）
+
+### 2026-09-29 チンメルマンセスジゲンゴロウの写真の日付修正とMarkdown作成
+
+- 写真: オーナーがX(旧Twitter)から保存した写真に撮影日を入れ直してアップした際の打ち間違いで、`chinmeruman-sesuji-gengoro_000001_20260228_12.jpg` になっていたのを `..._20250228_12.jpg` に直した（処理済みの写真はEXIFが消えているので、日付はファイル名だけ）。間違えてアップした `failed/IMG_9015.jpg` は削除（プルリクエスト #35）
+- Markdown: `content/creatures/aquatic-insects/chinmeruman-sesuji-gengoro.md` を作成（グループ `gengoro`）。オーナーの指示で `night_observable: false`（トップのナイトツアーの写真には出さない）
+  - 学名は2026年の論文 Watanabe, Kato, Ueda & Shaverdo（European Journal of Taxonomy）に従い、*Copelatus zimmermanni* から *Austrelatus zimmermanni* (Gschwendtner, 1934) に変更。同じ論文で奄美大島から初めて記録され、南大東島・宮古島の個体群が新亜種として記載された
+  - 生活史（卵から成虫まで39〜61日、雨水の一時的な水たまりにもすむ）は Watanabe & Ohba (2022) Entomological Science による
+  - 論文のページはこの作業環境から開けず、検索で出る要旨で確認した。奄美大島の個体の亜種の扱い（原亜種とみられる）、正確な発表日、奄美での採集環境は未確認。環境省・鹿児島県のランクも未確認のため `danger` は書いていない
+- 翻訳（`.en.md`・`.es.md`・`.zh.md`）も作成。名前は Zimmermann's Diving Beetle／Escarabajo Buceador de Zimmermann／齐氏背线龙虱
+- ページを作り直し、`scripts/check_translations.py` でリンク切れ0件・翻訳ファイル抜け0件を確認
+- Push: 済み（プルリクエスト経由）
+
+（担当: Claude／くろちゃん）
+
