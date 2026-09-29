@@ -646,6 +646,25 @@
     "page_path": "creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html"
   },
   {
+    "id": "chinmeruman-sesuji-gengoro",
+    "name": "chinmeruman-sesuji-gengoro",
+    "category": "aquatic-insects",
+    "category_name": "水生昆虫",
+    "months": [
+      2,
+      11
+    ],
+    "activity": "",
+    "night_observable": null,
+    "description": "",
+    "photos": [
+      "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000001_20260228_12.jpg",
+      "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000002_20251118_12.jpg",
+      "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000003_20251118_12.jpg"
+    ],
+    "page_path": null
+  },
+  {
     "id": "eguri-tamamizumushi",
     "name": "エグリタマミズムシ",
     "category": "aquatic-insects",
