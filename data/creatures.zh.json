@@ -314,6 +314,26 @@
     "page_path": "creatures/amphibians/hime-amagaeru.html"
   },
   {
+    "id": "numa-gaeru",
+    "name": "泽蛙",
+    "category": "amphibians",
+    "category_name": "两栖类",
+    "months": [
+      3
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "叉舌蛙科陆蛙属 *Fejervarya kawamurai*\n\n体长3〜5厘米(雄性2.9〜4.5厘米，雌性3.2〜5.4厘米)。分布于本州中部以西、四国、九州及南西诸岛。在奄美大岛多见于稻田、旱地、湿地、水洼等靠近人类聚居地的开阔水边。背部呈灰褐色至褐色，带有暗色斑驳花纹。部分个体背部正中有一条白色细线(背中线)。繁殖期比本州(5月至8月)更长。夜晚，尤其是雨后，会在水边鸣叫。",
+    "photos": [
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000001_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000002_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000003_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000004_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000005_20250324_11.jpg"
+    ],
+    "page_path": "creatures/amphibians/numa-gaeru.html"
+  },
+  {
     "id": "otton-gaeru",
     "name": "奥顿蛙",
     "category": "amphibians",
@@ -924,6 +944,26 @@
       "../images/creatures/aquatic-insects/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000003_20250403_00.jpg"
     ],
     "page_path": "creatures/aquatic-insects/usuiro-shima-gengoro.html"
+  },
+  {
+    "id": "amami-aojyoukai",
+    "name": "奄美青花萤",
+    "category": "beetles",
+    "category_name": "甲虫",
+    "months": [
+      3,
+      4,
+      5
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "花萤科奄美青花萤 *Themus kazuoi*\n\n体长不足15毫米。带有蓝色金属光泽的花萤类，分布于奄美大岛、德之岛及冲绳岛(冲绳岛的种群被视为另一亚种)。成虫于春季出现，在栲树(锥属)开花时节可在花上等处见到。花萤类为肉食性，捕食小型昆虫。",
+    "photos": [
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000001_20250517_23.jpg",
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000002_20250520_11.jpg",
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000003_20250520_11.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-aojyoukai.html"
   },
   {
     "id": "amami-himekebuka-magusokogane",
@@ -1618,6 +1658,25 @@
     "page_path": "creatures/birds/torafuzuku.html"
   },
   {
+    "id": "amami-hime-tokage",
+    "name": "奄美光蜥",
+    "category": "lizards",
+    "category_name": "蜧虔",
+    "months": [
+      6
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "石龙子科光蜥属 *Ateuchosaurus pellopleurus*\n\n全长9〜12厘米(吻肛长4.2〜6.9厘米)。分布于大隅诸岛的竹岛、硫黄岛、黑岛以及吐噶喇列岛、奄美诸岛的日本固有种。身体细长、四肢短小的小型石龙子，尾巴约占全长的一半。栖息在潮湿的林下，在落叶和石缝间快速穿梭。多在春季至秋季晴朗日子的白天见到。以前的日文名为“Heriguro-hime-tokage”(黑缘光蜥)。",
+    "photos": [
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000001_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000002_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000003_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000004_20250602_22.jpg"
+    ],
+    "page_path": "creatures/lizards/amami-hime-tokage.html"
+  },
+  {
     "id": "ba-ba-tokage",
     "name": "巴氏石龙子",
     "category": "lizards",
@@ -1635,6 +1694,33 @@
       "../images/creatures/lizards/ba-ba-tokage/ba-ba-tokage_000003_20250910_11.jpg"
     ],
     "page_path": "creatures/lizards/ba-ba-tokage.html"
+  },
+  {
+    "id": "okinawa-kinobori-tokage",
+    "name": "冲绳攀蜥",
+    "category": "lizards",
+    "category_name": "蜧虔",
+    "months": [
+      1,
+      4,
+      7,
+      8,
+      11,
+      12
+    ],
+    "activity": "diurnal",
+    "night_observable": true,
+    "description": "鬣蜥科攀蜥属 *Diploderma polygonatum polygonatum*\n\n全长20〜30厘米(雄性最长31厘米，雌性最长24厘米)。分布于奄美诸岛和冲绳诸岛的日本固有亚种。体色偏绿的大型蜥蜴，正如其名生活在树上，雄性拥有领地。偏好阔叶林林缘、次生林以及公园和庭院中的树木等较为开阔的环境，白天捕食昆虫等。夜晚在树枝和叶片上睡觉，夜间导览时有时能观察到它熟睡的样子。因森林砍伐、獴等动物的捕食以及作为宠物被捕捉，数量有所减少，已被环境省红色名录列为易危(VU)。",
+    "photos": [
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000002_20250424_13.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000003_20250828_12.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000004_20250828_13.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000005_20241218_19.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000006_20241126_21.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000007_20250708_11.jpg"
+    ],
+    "page_path": "creatures/lizards/okinawa-kinobori-tokage.html"
   },
   {
     "id": "amami-kuro-usagi",
@@ -1728,6 +1814,25 @@
     "page_path": "creatures/other-insects/amami-hirata-hishibatta.html"
   },
   {
+    "id": "amami-madara-kamadouma",
+    "name": "奄美斑灶马",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "驼螽科 奄美斑灶马 *Diestrammena gigas*\n\n栖息于奄美大岛和德之岛的斑灶马类。比日本本土的斑灶马(体长20〜34毫米)更大，身上的斑驳花纹不太清晰。没有翅膀，拥有长长的触角和发达的后足。与其说是四处爬行，不如说多以小幅跳跃的方式移动。夜晚可在森林中见到，成虫在夏季至秋季出现。",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/amami-madara-kamadouma/amami-madara-kamadouma_000001_20250712_09.jpg"
+    ],
+    "page_path": "creatures/other-insects/amami-madara-kamadouma.html"
+  },
+  {
     "id": "aosuji-ageha",
     "name": "青凤蝶",
     "category": "other-insects",
@@ -1798,6 +1903,23 @@
     "page_path": "creatures/other-insects/ishigake-tyou.html"
   },
   {
+    "id": "kobane-korogisu",
+    "name": "短翅蟋螽",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      5
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "蟋螽科 短翅蟋螽 *Metriogryllacris magna*\n\n雄性体长12〜24毫米，雌性17〜27毫米。正如其名，翅膀非常小且不显眼，是中型的蟋螽类。分布于静冈县以西的温暖地区直至南西诸岛。身体呈带橙色调的褐色。白天躲在用口中吐出的丝缀合树叶做成的巢中，夜晚出来捕食其他昆虫等。",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000001_20250524_00.jpg",
+      "../images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000002_20250524_00.jpg"
+    ],
+    "page_path": "creatures/other-insects/kobane-korogisu.html"
+  },
+  {
     "id": "kuchiki-koorogi",
     "name": "朽木蟋蟀",
     "category": "other-insects",
@@ -1824,6 +1946,28 @@
       "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000002_20250821_21.jpg"
     ],
     "page_path": "creatures/other-insects/kuchiki-koorogi.html"
+  },
+  {
+    "id": "kuromadara-sotetsu-shijimi",
+    "name": "苏铁绮灰蝶",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "灰蝶科 苏铁绮灰蝶 *Chilades pandava*\n\n翅膀正面为蓝紫色，反面为灰褐色，排列着白色线条和黑色斑点的小型灰蝶。分布于台湾及东南亚等地，在日本自2000年代起扩散至南西诸岛，进而扩展到九州和本州。2007年侵入奄美大岛并定居下来，由于幼虫以苏铁的嫩叶为食，岛内各地的苏铁受到了严重危害。成虫在6月至11月前后最为常见。",
+    "photos": [
+      "../images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000001_20250617_13.jpg",
+      "../images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000002_20250617_13.jpg"
+    ],
+    "page_path": "creatures/other-insects/kuromadara-sotetsu-shijimi.html"
   },
   {
     "id": "madara-kourogi",
@@ -1944,6 +2088,33 @@
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000010_20251219_11.jpg"
     ],
     "page_path": "creatures/other-insects/ryuukyuu-asagi-madara.html"
+  },
+  {
+    "id": "ryuukyuu-haguro-tombo",
+    "name": "琉球单脉色蟌",
+    "category": "other-insects",
+    "category_name": "昆虫",
+    "months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "色蟌科 琉球单脉色蟌 *Matrona japonica*\n\n体长约65毫米。分布于奄美大岛、德之岛及冲绳岛，栖息在被森林环绕的昏暗山地溪流的上游至中游。身体带有青绿色金属光泽，黑色的翅膀随光线变化会闪出蓝色光芒。奄美大岛的个体比冲绳岛的个体翅膀上闪蓝光的部分更宽。成虫从2月下旬到12月前后，在很长一段时间内都能见到。",
+    "photos": [
+      "../images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000001_20250914_13.jpg",
+      "../images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000002_20251106_12.jpg"
+    ],
+    "page_path": "creatures/other-insects/ryuukyuu-haguro-tombo.html"
   },
   {
     "id": "taiwan-kutsuwamushi",
@@ -2303,6 +2474,27 @@
       "../images/creatures/snakes/hyan/hyan_000023_20251025_23.jpg"
     ],
     "page_path": "creatures/snakes/hyan.html"
+  },
+  {
+    "id": "mekura-hebi",
+    "name": "钩盲蛇",
+    "category": "snakes",
+    "category_name": "蛇类",
+    "months": [
+      3,
+      9
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "盲蛇科 *Indotyphlops braminus*\n\n全长约15〜20厘米，是日本最小的蛇。身体呈蚯蚓般细长的圆筒形，黑褐色，眼睛退化藏于鳞片之下，几乎看不见。一般认为原产于南亚，随盆栽土壤等传播到世界各地，属于外来种，在奄美大岛也可见于民宅周边的旱地和庭院等处。平时生活在土中或石块、落叶下，以蚂蚁和白蚁的卵及幼虫为食。至今未发现雄性，是仅靠雌性产卵繁殖(孤雌生殖)的奇特蛇类。雨夜等时候会爬到地面上来。",
+    "photos": [
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000001_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000002_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000003_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000004_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000005_20260922_19.jpg"
+    ],
+    "page_path": "creatures/snakes/mekura-hebi.html"
   },
   {
     "id": "ryukyu-ao-hebi",

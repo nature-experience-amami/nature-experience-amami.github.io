@@ -1009,7 +1009,17 @@ Threads投稿の仕組み（`threads/`、詳細は`threads/THREADS_STATUS.md`）
 - 内容はWeb検索で複数の情報源を突き合わせて作成。ヌマガエルの背中線は、オーナーの確認（WEB両爬図鑑の記述、手元の写真に白い線がない）を受けて「入る個体もいる」に修正した（WEB両爬図鑑の「奄美・沖縄では見られない」は背中の両脇の背側線の話で、背中線とは別）
 - 確かめきれていない点: コバネコロギスは奄美大島での分布をはっきり書いた資料が見つからなかった（写真の種の確認が必要）。アマミマダラカマドウマの体長は資料が見つからず未記載。オキナワキノボリトカゲの条例による捕獲禁止の有無は未確認のため、dangerには環境省レッドリストのみ記載
 - 生成スクリプトを実行してページを作り直した（新しい9ページ、関連カード、図鑑・カテゴリーページ、`data/creatures.json`）
-- 未完了事項: 9種類の翻訳（`.en.md`・`.es.md`・`.zh.md`）は未作成のため、翻訳版のページにはまだ出ない。カニ（`kani`）とその他の節足動物（`other-arthropods`）の7種類は、Markdownもカテゴリーページもまだない。`images/creatures/snakes/akamata/failed/` に写真処理の残りらしい画像が1枚ある
+- 未完了事項: ~~9種類の翻訳（`.en.md`・`.es.md`・`.zh.md`）は未作成のため、翻訳版のページにはまだ出ない。~~ → 同日に作成済み（下記）。カニ（`kani`）とその他の節足動物（`other-arthropods`）の7種類は、Markdownもカテゴリーページもまだない。`images/creatures/snakes/akamata/failed/` に写真処理の残りらしい画像が1枚ある
+- Push: 済み（プルリクエスト経由）
+
+（担当: Claude／くろちゃん）
+
+### 2026-09-29 9種類の翻訳（英語・スペイン語・中国語）を作成
+
+- 上の9種類について `.en.md`・`.es.md`・`.zh.md` を作成（計27ファイル）。日本語版の内容をそのまま訳し、`activity`・`night_observable` は日本語版だけに書く決まりに合わせて入れていない
+- 名前（英/西/中）: ヌマガエル Kawamura's Rice Frog／Rana de Arroz de Kawamura／泽蛙、アマミアオジョウカイ Amami Blue Soldier Beetle／Escarabajo Soldado Azul de Amami／奄美青花萤、アマミヒメトカゲ Amami Short-legged Skink／Eslizón de Patas Cortas de Amami／奄美光蜥、オキナワキノボリトカゲ Okinawa Tree Lizard／Lagarto Arborícola de Okinawa／冲绳攀蜥、ブラーミニメクラヘビ Brahminy Blind Snake／Serpiente Ciega Brahminy／钩盲蛇、リュウキュウハグロトンボ Ryukyu Black-winged Damselfly／Caballito del Diablo de Alas Negras de Ryukyu／琉球单脉色蟌、アマミマダラカマドウマ Amami Spotted Camel Cricket／Grillo Camello Moteado de Amami／奄美斑灶马、コバネコロギス Short-winged Raspy Cricket／Grillo Áspero de Alas Cortas／短翅蟋螽、クロマダラソテツシジミ Plains Cupid／Cupido de las Llanuras／苏铁绮灰蝶
+- 英語名・中国語名の多くは定まった通称がなく、既存の訳し方（Amami ○○ など）に合わせて付けた
+- 生成スクリプトで翻訳版のページを作り直し、`scripts/check_translations.py` でリンク切れ0件・翻訳ファイル抜け0件を確認。日本語の残存は `en/es/zh/index.html` の15箇所だけで、今回の変更前からあるもの
 - Push: 済み（プルリクエスト経由）
 
 （担当: Claude／くろちゃん）

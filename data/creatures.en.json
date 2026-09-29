@@ -314,6 +314,26 @@
     "page_path": "creatures/amphibians/hime-amagaeru.html"
   },
   {
+    "id": "numa-gaeru",
+    "name": "Kawamura's Rice Frog",
+    "category": "amphibians",
+    "category_name": "Amphibians",
+    "months": [
+      3
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Fork-tongued frog family (Dicroglossidae), genus Fejervarya. *Fejervarya kawamurai*\n\nBody length 3-5 cm (males 2.9-4.5 cm, females 3.2-5.4 cm). Distributed from central Honshu westward, Shikoku, Kyushu, and the Nansei Islands. On Amami Oshima it is common in open wetlands near human settlements, such as rice paddies, fields, marshes, and puddles. The back is grayish brown to brown with dark mottling. Some individuals have a white stripe running down the middle of the back (a vertebral stripe). Its breeding season is longer than on Honshu (May to August). At night, especially after rain, it calls from the water's edge.",
+    "photos": [
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000001_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000002_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000003_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000004_20250324_11.jpg",
+      "../images/creatures/amphibians/numa-gaeru/numa-gaeru_000005_20250324_11.jpg"
+    ],
+    "page_path": "creatures/amphibians/numa-gaeru.html"
+  },
+  {
     "id": "otton-gaeru",
     "name": "Otton Frog",
     "category": "amphibians",
@@ -924,6 +944,26 @@
       "../images/creatures/aquatic-insects/gengoro/usuiro-shima-gengoro/usuiro-shima-gengoro_000003_20250403_00.jpg"
     ],
     "page_path": "creatures/aquatic-insects/usuiro-shima-gengoro.html"
+  },
+  {
+    "id": "amami-aojyoukai",
+    "name": "Amami Blue Soldier Beetle",
+    "category": "beetles",
+    "category_name": "Beetles",
+    "months": [
+      3,
+      4,
+      5
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "Cantharidae, Amami Blue Soldier Beetle *Themus kazuoi*\n\nBody length just under 15mm. A soldier beetle with a blue metallic sheen, distributed on Amami Oshima, Tokunoshima, and Okinawa Island (the Okinawa Island population is treated as a separate subspecies). Adults appear in spring and can be seen on flowers around the time the chinquapin (Castanopsis) trees bloom. Soldier beetles are carnivorous and catch and eat small insects.",
+    "photos": [
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000001_20250517_23.jpg",
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000002_20250520_11.jpg",
+      "../images/creatures/beetles/amami-aojyoukai/amami-aojyoukai_000003_20250520_11.jpg"
+    ],
+    "page_path": "creatures/beetles/amami-aojyoukai.html"
   },
   {
     "id": "amami-himekebuka-magusokogane",
@@ -1618,6 +1658,25 @@
     "page_path": "creatures/birds/torafuzuku.html"
   },
   {
+    "id": "amami-hime-tokage",
+    "name": "Amami Short-legged Skink",
+    "category": "lizards",
+    "category_name": "Lizards",
+    "months": [
+      6
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "Skink family (Scincidae), genus Ateuchosaurus. *Ateuchosaurus pellopleurus*\n\nTotal length 9-12 cm (snout-vent length 4.2-6.9 cm). A species endemic to Japan, distributed on Takeshima, Iojima, and Kuroshima in the Osumi Islands, the Tokara Islands, and the Amami Islands. A small skink with a long body and short legs; the tail makes up about half of its total length. It lives on the damp forest floor, moving quickly among fallen leaves and the gaps between stones. It is most often seen in the daytime on sunny days from spring to autumn. It was formerly known in Japanese as Heriguro-hime-tokage.",
+    "photos": [
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000001_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000002_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000003_20250602_22.jpg",
+      "../images/creatures/lizards/amami-hime-tokage/amami-hime-tokage_000004_20250602_22.jpg"
+    ],
+    "page_path": "creatures/lizards/amami-hime-tokage.html"
+  },
+  {
     "id": "ba-ba-tokage",
     "name": "Barbour's Skink",
     "category": "lizards",
@@ -1635,6 +1694,33 @@
       "../images/creatures/lizards/ba-ba-tokage/ba-ba-tokage_000003_20250910_11.jpg"
     ],
     "page_path": "creatures/lizards/ba-ba-tokage.html"
+  },
+  {
+    "id": "okinawa-kinobori-tokage",
+    "name": "Okinawa Tree Lizard",
+    "category": "lizards",
+    "category_name": "Lizards",
+    "months": [
+      1,
+      4,
+      7,
+      8,
+      11,
+      12
+    ],
+    "activity": "diurnal",
+    "night_observable": true,
+    "description": "Agamid family (Agamidae), genus Diploderma. *Diploderma polygonatum polygonatum*\n\nTotal length 20-30 cm (up to 31 cm in males and 24 cm in females). A subspecies endemic to Japan, distributed in the Amami and Okinawa Islands. A large lizard with a greenish body; as its name suggests, it lives in trees, and males hold territories. It prefers fairly open environments such as the edges of broadleaf forest, secondary forest, and trees in parks and gardens, catching insects and other prey in the daytime. At night it sleeps on branches and leaves, and on night tours you may be able to see it asleep. Its numbers have declined due to logging, predation by mongooses and other animals, and collection for the pet trade, and it is listed as Vulnerable on the Ministry of the Environment's Red List.",
+    "photos": [
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000001_20250131_22.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000002_20250424_13.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000003_20250828_12.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000004_20250828_13.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000005_20241218_19.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000006_20241126_21.jpg",
+      "../images/creatures/lizards/okinawa-kinobori-tokage/okinawa-kinobori-tokage_000007_20250708_11.jpg"
+    ],
+    "page_path": "creatures/lizards/okinawa-kinobori-tokage.html"
   },
   {
     "id": "amami-kuro-usagi",
@@ -1728,6 +1814,25 @@
     "page_path": "creatures/other-insects/amami-hirata-hishibatta.html"
   },
   {
+    "id": "amami-madara-kamadouma",
+    "name": "Amami Spotted Camel Cricket",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Camel cricket family (Rhaphidophoridae), Amami Spotted Camel Cricket *Diestrammena gigas*\n\nA spotted camel cricket found on Amami Oshima and Tokunoshima. It is larger than the mainland spotted camel cricket (body length 20-34mm), and its mottled pattern is indistinct. It has no wings, and has long antennae and well-developed hind legs. Rather than walking around, it usually moves in small hops. It can be seen in the forest at night, and adults appear from summer to autumn.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/amami-madara-kamadouma/amami-madara-kamadouma_000001_20250712_09.jpg"
+    ],
+    "page_path": "creatures/other-insects/amami-madara-kamadouma.html"
+  },
+  {
     "id": "aosuji-ageha",
     "name": "Common Bluebottle",
     "category": "other-insects",
@@ -1798,6 +1903,23 @@
     "page_path": "creatures/other-insects/ishigake-tyou.html"
   },
   {
+    "id": "kobane-korogisu",
+    "name": "Short-winged Raspy Cricket",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      5
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Raspy cricket family (Gryllacrididae), Short-winged Raspy Cricket *Metriogryllacris magna*\n\nBody length 12-24mm in males and 17-27mm in females. A medium-sized raspy cricket whose wings, as its name suggests, are very small and inconspicuous. It is distributed in warm regions from Shizuoka Prefecture westward to the Nansei Islands. Its body is orange-tinged brown. By day it hides in a nest of leaves bound together with silk spun from its mouth, and at night it comes out to catch and eat other insects.",
+    "photos": [
+      "../images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000001_20250524_00.jpg",
+      "../images/creatures/other-insects/tyokushi/kobane-korogisu/kobane-korogisu_000002_20250524_00.jpg"
+    ],
+    "page_path": "creatures/other-insects/kobane-korogisu.html"
+  },
+  {
     "id": "kuchiki-koorogi",
     "name": "Rotten Wood Cricket",
     "category": "other-insects",
@@ -1824,6 +1946,28 @@
       "../images/creatures/other-insects/tyokushi/kuchiki-koorogi/kuchiki-koorogi_000002_20250821_21.jpg"
     ],
     "page_path": "creatures/other-insects/kuchiki-koorogi.html"
+  },
+  {
+    "id": "kuromadara-sotetsu-shijimi",
+    "name": "Plains Cupid",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "Gossamer-winged butterfly family (Lycaenidae), Plains Cupid *Chilades pandava*\n\nA small blue butterfly whose upper wings are bluish purple, and whose undersides are grayish brown with rows of white lines and black spots. It is distributed in Taiwan, Southeast Asia, and elsewhere; in Japan it spread from the 2000s onward through the Nansei Islands and then into Kyushu and Honshu. It arrived on Amami Oshima in 2007 and became established, and because its larvae feed on the young leaves of cycads, cycads across the island suffered heavy damage. Adults are most often seen from June to around November.",
+    "photos": [
+      "../images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000001_20250617_13.jpg",
+      "../images/creatures/other-insects/tyou/kuromadara-sotetsu-shijimi/kuromadara-sotetsu-shijimi_000002_20250617_13.jpg"
+    ],
+    "page_path": "creatures/other-insects/kuromadara-sotetsu-shijimi.html"
   },
   {
     "id": "madara-kourogi",
@@ -1944,6 +2088,33 @@
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000010_20251219_11.jpg"
     ],
     "page_path": "creatures/other-insects/ryuukyuu-asagi-madara.html"
+  },
+  {
+    "id": "ryuukyuu-haguro-tombo",
+    "name": "Ryukyu Black-winged Damselfly",
+    "category": "other-insects",
+    "category_name": "Insects",
+    "months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "activity": "diurnal",
+    "night_observable": null,
+    "description": "Broad-winged damselfly family (Calopterygidae), Ryukyu Black-winged Damselfly *Matrona japonica*\n\nBody length about 65mm. Distributed on Amami Oshima, Tokunoshima, and Okinawa Island, it lives along the upper to middle reaches of dim mountain streams surrounded by forest. Its body has a blue-green metallic sheen, and its black wings shine blue depending on the light. On Amami Oshima individuals, the blue-shining area of the wings is wider than on those from Okinawa Island. Adults can be seen over a long period, from late February to around December.",
+    "photos": [
+      "../images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000001_20250914_13.jpg",
+      "../images/creatures/other-insects/tombo/ryuukyuu-haguro-tombo/ryuukyuu-haguro-tombo_000002_20251106_12.jpg"
+    ],
+    "page_path": "creatures/other-insects/ryuukyuu-haguro-tombo.html"
   },
   {
     "id": "taiwan-kutsuwamushi",
@@ -2303,6 +2474,27 @@
       "../images/creatures/snakes/hyan/hyan_000023_20251025_23.jpg"
     ],
     "page_path": "creatures/snakes/hyan.html"
+  },
+  {
+    "id": "mekura-hebi",
+    "name": "Brahminy Blind Snake",
+    "category": "snakes",
+    "category_name": "Snakes",
+    "months": [
+      3,
+      9
+    ],
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Blind snake family (Typhlopidae). *Indotyphlops braminus*\n\nJapan's smallest snake, reaching about 15-20 cm in total length. Its body is a thin, worm-like cylinder, blackish brown in color, and its eyes are reduced beneath the scales and barely visible. Thought to be native to South Asia, it has spread around the world hidden in potted-plant soil and similar material, and is an introduced species; on Amami Oshima it is found in fields and gardens around houses. It usually lives in the soil or under stones and fallen leaves, feeding on the eggs and larvae of ants and termites. No males have been found, and it is an unusual snake that reproduces by females alone laying eggs (parthenogenesis). It sometimes comes to the surface on rainy nights.",
+    "photos": [
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000001_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000002_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000003_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000004_20260301_15.jpg",
+      "../images/creatures/snakes/mekura-hebi/mekura-hebi_000005_20260922_19.jpg"
+    ],
+    "page_path": "creatures/snakes/mekura-hebi.html"
   },
   {
     "id": "ryukyu-ao-hebi",
