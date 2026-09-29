@@ -1028,7 +1028,7 @@ Threads投稿の仕組み（`threads/`、詳細は`threads/THREADS_STATUS.md`）
 
 - 写真: オーナーがX(旧Twitter)から保存した写真に撮影日を入れ直してアップした際の打ち間違いで、`chinmeruman-sesuji-gengoro_000001_20260228_12.jpg` になっていたのを `..._20250228_12.jpg` に直した（処理済みの写真はEXIFが消えているので、日付はファイル名だけ）。間違えてアップした `failed/IMG_9015.jpg` は削除（プルリクエスト #35）
 - Markdown: `content/creatures/aquatic-insects/chinmeruman-sesuji-gengoro.md` を作成（グループ `gengoro`）。オーナーの指示で `night_observable: false`（トップのナイトツアーの写真には出さない）
-  - 学名は2026年の論文 Watanabe, Kato, Ueda & Shaverdo（European Journal of Taxonomy）に従い、*Copelatus zimmermanni* から *Austrelatus zimmermanni* (Gschwendtner, 1934) に変更。同じ論文で奄美大島から初めて記録され、南大東島・宮古島の個体群が新亜種として記載された
+  - 学名は2026年の論文 Watanabe, Kato, Ueda & Shaverdo（European Journal of Taxonomy）に従い、*Copelatus zimmermanni* から *Austrelatus zimmermanni* (Gschwendtner, 1934) に変更。南大東島・宮古島の個体群が新亜種として記載された（当初「同じ論文で奄美大島から初めて記録された」と書いたが誤り。奄美大島の最初の記録は Morii (2018)。下記の追記参照）
   - 生活史（卵から成虫まで39〜61日、雨水の一時的な水たまりにもすむ）は Watanabe & Ohba (2022) Entomological Science による
   - 論文のページはこの作業環境から開けず、検索で出る要旨で確認した。奄美大島の個体の亜種の扱い（原亜種とみられる）、正確な発表日、奄美での採集環境は未確認。環境省・鹿児島県のランクも未確認のため `danger` は書いていない
 - 翻訳（`.en.md`・`.es.md`・`.zh.md`）も作成。名前は Zimmermann's Diving Beetle／Escarabajo Buceador de Zimmermann／齐氏背线龙虱
@@ -1037,3 +1037,10 @@ Threads投稿の仕組み（`threads/`、詳細は`threads/THREADS_STATUS.md`）
 
 （担当: Claude／くろちゃん）
 
+### 2026-09-29 チンメルマンセスジゲンゴロウのsourceにMorii (2018)を追記、奄美の初記録の記述を訂正
+
+- オーナーの指示で、4言語の `source` に Morii, T. (2018)「奄美大島からのCopelatus zimmermanni Gschwendtner, 1934の新記録」さやばねニューシリーズ 29: 5.（奄美大島からの最初の記録）を追記
+- あわせて本文の「2026年の論文で…あわせて奄美大島から初めて記録された」を「奄美大島からは2018年に初めて記録されている」に訂正（英・西・中も同様）。2026年の論文の説明（source）も「奄美大島からの新記録」を「奄美大島の記録」に直した
+- Push: 済み（プルリクエスト経由）
+
+（担当: Claude／くろちゃん）
