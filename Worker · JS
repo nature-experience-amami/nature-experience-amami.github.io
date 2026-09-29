@@ -49,8 +49,9 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { headers: cors });
     if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: cors });
 
+    let body = {};
     try {
-      const body = await request.json();
+      body = await request.json();
       // actionが無ければ、これまで通り「訪問者からの質問に答える」動作(ask)として扱う。
       // (index.htmlなど既存のフロント側は今もactionを送ってこないので、後方互換のためのデフォルト)
       const action = body.action || "ask";
@@ -59,6 +60,14 @@ export default {
       if (action === "draftReply") return await handleDraftReply(body, env, cors);
       return await handleAsk(body, env, cors);
     } catch (err) {
+      // 原因をあとで調べられるよう、理由をログに出す(Cloudflareの管理画面のWorkerのログで見られる)。
+      // 質問文やメール本文は個人情報を含むことがあるので出さない。
+      console.error(JSON.stringify({
+        at: new Date().toISOString(),
+        action: body?.action || "ask",
+        lang: body?.lang || "",
+        error: String((err && err.message) || err),
+      }));
       // Gemini側のエラー(APIキー不正・クォータ超過など)を、隠さずそのまま返す。
       return json({ error: String((err && err.message) || err) }, cors, 500);
     }
@@ -73,7 +82,12 @@ async function handleAsk(body, env, cors) {
     return json({ reply: config.tooLong, creature_ids: [] }, cors);
   }
 
-  const creatures = await (await fetch(config.creaturesUrl)).json();
+  // 取得に失敗したとき「JSONとして読めない」だけでは原因が分からないので、URLとHTTPの状態をエラーにする
+  const creaturesRes = await fetch(config.creaturesUrl);
+  if (!creaturesRes.ok) {
+    throw new Error(`creatures.json の取得に失敗 (HTTP ${creaturesRes.status}): ${config.creaturesUrl}`);
+  }
+  const creatures = await creaturesRes.json();
 
   // Geminiには「回答文」と「該当する生き物のID」だけをJSONで返させる。
   // 写真パスそのものは作らせない(捏造防止)。パスは必ずcreatures.jsonから実データを引く。
