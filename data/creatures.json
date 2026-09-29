@@ -647,7 +647,7 @@
   },
   {
     "id": "chinmeruman-sesuji-gengoro",
-    "name": "chinmeruman-sesuji-gengoro",
+    "name": "チンメルマンセスジゲンゴロウ",
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
@@ -655,14 +655,14 @@
       11
     ],
     "activity": "",
-    "night_observable": null,
-    "description": "",
+    "night_observable": false,
+    "description": "ゲンゴロウ科セスジゲンゴロウ亜科チンメルマンセスジゲンゴロウ *Austrelatus zimmermanni* (Gschwendtner, 1934)\n\n体長5.3〜5.5mmほどの小さなゲンゴロウの仲間。日本・朝鮮半島・中国に分布するが、産地は局地的で、佐賀県や秋田県などのレッドリストで絶滅危惧II類に選ばれている。長くセスジゲンゴロウ属(*Copelatus*)に含められてきたが、2026年に発表された論文で、DNAの解析と形の比較からオーストラリア区を中心に分布する *Austrelatus* 属へ移され、あわせて奄美大島から初めて記録された。同じ論文では、南大東島と宮古島の個体群が別の亜種として記載されている。雨の後にできる水たまりのような、すぐに干上がる小さな水場にもすむ。卵から成虫になるまでが39〜61日と短く、そうした不安定な水場でも一生を終えられると考えられている。",
     "photos": [
       "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000001_20250228_12.jpg",
       "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000002_20251118_12.jpg",
       "images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000003_20251118_12.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/aquatic-insects/chinmeruman-sesuji-gengoro.html"
   },
   {
     "id": "eguri-tamamizumushi",

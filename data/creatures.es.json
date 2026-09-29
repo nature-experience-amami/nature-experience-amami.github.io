@@ -612,6 +612,25 @@
     "page_path": "creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html"
   },
   {
+    "id": "chinmeruman-sesuji-gengoro",
+    "name": "Escarabajo Buceador de Zimmermann",
+    "category": "aquatic-insects",
+    "category_name": "Insectos acuáticos",
+    "months": [
+      2,
+      11
+    ],
+    "activity": "",
+    "night_observable": false,
+    "description": "Familia de los escarabajos buceadores (Dytiscidae), subfamilia Copelatinae. *Austrelatus zimmermanni* (Gschwendtner, 1934)\n\nUn pequeño escarabajo buceador de unos 5.3-5.5mm de longitud. Se distribuye en Japón, la península de Corea y China, pero solo aparece de forma local, y figura como Vulnerable en las listas rojas de Saga, Akita y otras prefecturas. Durante mucho tiempo se incluyó en el género *Copelatus*, pero un artículo publicado en 2026 lo trasladó, a partir de análisis de ADN y de la comparación de su forma, al género *Austrelatus*, centrado en la región australasiática, y al mismo tiempo lo registró por primera vez en Amami Oshima. El mismo artículo describió las poblaciones de Minamidaito-jima y Miyako-jima como subespecies distintas. También vive en pequeñas masas de agua que se secan pronto, como los charcos que se forman tras la lluvia. Tarda solo 39-61 días en pasar de huevo a adulto, lo que se cree que le permite completar su ciclo de vida incluso en aguas tan inestables.",
+    "photos": [
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000001_20250228_12.jpg",
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000002_20251118_12.jpg",
+      "../images/creatures/aquatic-insects/chinmeruman-sesuji-gengoro/chinmeruman-sesuji-gengoro_000003_20251118_12.jpg"
+    ],
+    "page_path": "creatures/aquatic-insects/chinmeruman-sesuji-gengoro.html"
+  },
+  {
     "id": "eguri-tamamizumushi",
     "name": "Notonéctido pigmeo dentado",
     "category": "aquatic-insects",
