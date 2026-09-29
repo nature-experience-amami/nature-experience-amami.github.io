@@ -585,6 +585,8 @@ Pushする前にGitHub側の履歴と、未追跡ファイルを必ず確認す�
 
 `Worker · JS`内の`CREATURES_URL`定数が、GitHubユーザー名移行前の旧ドメイン(`https://tetsu5686.github.io/...`)を指したままになっている問題を調査中に発見したが、これは今回のリネーム作業とは無関係のため、ユーザーの指示により今回は修正せず、後日別タスクとして対応予定。
 
+→ **2026-09-15 に解決済み**（2026-09-29 追記）。commit `13e7aad`「AI質問コーナーのWorkerが参照するcreatures.jsonのURLを修正」で、リポジトリの `Worker · JS` は新ドメイン `https://nature-experience-amami.github.io/data/creatures*.json` を参照するようになった（9/14 の多言語対応で `CREATURES_URL` 定数は言語別の `LANG_CONFIG` の `creaturesUrl` に置き換わっている）。ただし Cloudflare で実際に動いているコードがこの版かどうかは、リポジトリからは確認できない。
+
 #### 結果
 
 - commit `a4d3dbc`としてmainにpush済み(246ファイル変更)。
