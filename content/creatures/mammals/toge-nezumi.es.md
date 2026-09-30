@@ -3,6 +3,7 @@ id: toge-nezumi
 name: Rata Espinosa de Amami
 category: mammals
 danger: Monumento Natural
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Familia de las ratas, género Tokudaia (ratas espinosas). *Tokudaia osimensis*
 
@@ -15,4 +16,4 @@ la víbora Habu. Se reproduce de octubre a diciembre, con 1 a 7 crías por
 parto. Es nocturna, y a menudo se observan ejemplares correteando por los
 caminos forestales. Es característico que se enrosque y levante la cola
 mientras da muchos saltos (a diferencia de la rata negra, que estira el
-vientre y camina con pasos cortos).
+vientre y camina con pasos cortos). Se puede ver durante todo el año, pero es especialmente fácil de observar en la época de reproducción (a partir de octubre aproximadamente) y en el periodo posterior a la cría, cuando hay más ejemplares.

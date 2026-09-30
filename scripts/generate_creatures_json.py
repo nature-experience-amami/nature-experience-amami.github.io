@@ -72,18 +72,11 @@ def load_category_names():
     return {}
 
 
-def months_from_text(body):
-    found = set()
-    for match in re.finditer(r"(\d{1,2})月から(\d{1,2})月", body):
-        start, end = int(match.group(1)), int(match.group(2))
-        if start <= end:
-            found.update(range(start, end + 1))
-        else:
-            found.update(range(start, 13))
-            found.update(range(1, end + 1))
-    for match in re.finditer(r"(\d{1,2})月(?:頃|が|に|まで)", body):
-        found.add(int(match.group(1)))
-    return sorted(month for month in found if 1 <= month <= 12)
+def months_source(frontmatter, photo_months):
+    """観察月の出どころ("notes" / "photos" / "")を返す。months の決め方と同じ順番で判定する。"""
+    if frontmatter.get("months"):
+        return "notes"
+    return "photos" if photo_months else ""
 
 
 def species_dirs(category_dir):
@@ -137,7 +130,12 @@ def scan():
                     "name": name,
                     "category": category_dir.name,
                     "category_name": category_name,
-                    "months": frontmatter.get("months") or months_from_text(description) or sorted(months),
+                    # 観察月は「mdのmonths:」か「写真の撮影日」の2つだけから決める。
+                    # (以前は本文の「〇月から〇月」も拾っていたが、繁殖期や本州の時期まで観察月にしてしまうためやめた)
+                    "months": frontmatter.get("months") or sorted(months),
+                    # 観察月の出どころ。"notes" = mdのmonths:、"photos" = 写真の撮影日から数えた月、"" = 分からない。
+                    # AIチャットが「観察しやすい」と「撮影記録がある」を言い分けるのに使う
+                    "months_source": months_source(frontmatter, months),
                     # 活動時間帯(nocturnal / diurnal / crepuscular、空欄は不明)と、ナイトツアーでの観察可否
                     # (true=昼行性でも夜に観察できる / false=ナイトツアーでは出会えない / null=未記入)。
                     # トップページの写真選びに使う

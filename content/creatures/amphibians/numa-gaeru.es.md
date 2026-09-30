@@ -3,6 +3,7 @@ id: numa-gaeru
 name: Rana de Arroz de Kawamura
 category: amphibians
 danger: No venenosa
+months: [5, 6, 7, 8]
 ---
 Familia Dicroglossidae, género Fejervarya. *Fejervarya kawamurai*
 

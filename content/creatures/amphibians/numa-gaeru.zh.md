@@ -3,6 +3,7 @@ id: numa-gaeru
 name: 泽蛙
 category: amphibians
 danger: 无毒
+months: [5, 6, 7, 8]
 ---
 叉舌蛙科陆蛙属 *Fejervarya kawamurai*
 

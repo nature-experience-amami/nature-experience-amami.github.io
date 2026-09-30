@@ -4,6 +4,7 @@ name: ヌマガエル
 category: amphibians
 danger: 無毒
 group: frog
+months: [5, 6, 7, 8]
 activity: nocturnal
 ---
 ヌマガエル科ヌマガエル属 *Fejervarya kawamurai*

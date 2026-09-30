@@ -3,6 +3,7 @@ id: numa-gaeru
 name: Kawamura's Rice Frog
 category: amphibians
 danger: Non-venomous
+months: [5, 6, 7, 8]
 ---
 Fork-tongued frog family (Dicroglossidae), genus Fejervarya. *Fejervarya kawamurai*
 
