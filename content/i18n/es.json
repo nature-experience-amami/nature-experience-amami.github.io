@@ -11,7 +11,8 @@
     "beetles": "Escarabajos",
     "other-insects": "Insectos",
     "shellfish": "Moluscos",
-    "crustaceans": "Crust\u00e1ceos y otros"
+    "crustaceans": "Crust\u00e1ceos y otros",
+    "other-arthropods": "Otros artr\u00f3podos"
   },
   "strings": {
     "home": "Inicio",

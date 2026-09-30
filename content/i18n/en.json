@@ -11,7 +11,8 @@
     "beetles": "Beetles",
     "other-insects": "Insects",
     "shellfish": "Shellfish",
-    "crustaceans": "Crustaceans & Others"
+    "crustaceans": "Crustaceans & Others",
+    "other-arthropods": "Other Arthropods"
   },
   "strings": {
     "home": "Home",

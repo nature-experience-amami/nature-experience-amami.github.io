@@ -11,7 +11,8 @@
     "beetles": "\u7532\u866b",
     "other-insects": "\u6606\u866b",
     "shellfish": "\u8d1d\u7c7b",
-    "crustaceans": "\u7532\u58f3\u7c7b\u7b49"
+    "crustaceans": "\u7532\u58f3\u7c7b\u7b49",
+    "other-arthropods": "\u5176\u4ed6\u8282\u80a2\u52a8\u7269"
   },
   "strings": {
     "home": "\u9996\u9875",
