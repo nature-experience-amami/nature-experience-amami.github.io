@@ -23,7 +23,7 @@ description: Nature Experience Amami(奄美大島のナイトツアーサイト)
 | 情報の入手しやすさ | 種ごとにある程度の情報が見つかる | 専門的すぎて情報が薄い種が混ざる |
 
 - 今のカテゴリーページ方式: `snakes` `amphibians` `stag-beetles` `mammals`
-- 今の図鑑方式: `birds` `aquatic-insects` `beetles` `other-insects`(`ZUKAN_CATEGORIES` には、まだページのない `kani` `other-arthropods` も入っている)
+- 今の図鑑方式: `birds` `aquatic-insects` `beetles` `other-insects`(`ZUKAN_CATEGORIES` には、まだページのない `crustaceans` `other-arthropods` も入っている)
 - `lizards` は生き物ごとのページだけで、一覧ページはまだない
 
 迷ったら、`amami-creature-md`スキルで実際にMarkdownを2〜3種類試作してみて、
@@ -40,7 +40,7 @@ description: Nature Experience Amami(奄美大島のナイトツアーサイト)
 - ステップ3のリスト
 
 写真フォルダ名は、実際のフォルダを確認してから使う。過去に `honyu`(categories.json)と `honyuurui`(写真フォルダ)、
-`shellfish`・`crustaceans`(categories.json)と `kani`(写真フォルダ)のようなズレが起き、表示名が出なかった。
+`shellfish`・`crustaceans`(categories.json)と `kani`(写真フォルダ)のようなズレが起き、表示名が出なかった(カニは2026-09-30に写真フォルダを `crustaceans` にそろえた)。
 
 ## ステップ2: danger(危険度・保護状況)フィールドの意味を決める
 

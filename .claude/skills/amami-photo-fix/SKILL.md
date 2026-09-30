@@ -57,7 +57,7 @@ git mv 生き物フォルダ/ID_000001_20260228_12.jpg 生き物フォルダ/ID_
 
 写真フォルダ(`failed` を除き、写真が入っている一番下のフォルダ)の名前と、`content/creatures/*/*.md` の `id`
 (および `scripts/generate_creature_pages.py` の `PHOTO_DIR_ALIASES`)を突き合わせて一覧にする。
-カテゴリーページがある分類と、`kani`・`other-arthropods` のようにまだカテゴリーページが無い分類は分けて伝える。
+カテゴリーページがある分類と、`crustaceans`(カニ)・`other-arthropods` のようにまだカテゴリーページが無い分類は分けて伝える。
 md を作るときは `amami-creature-md` スキルを使う。
 
 ### 「写真準備中」と出る
