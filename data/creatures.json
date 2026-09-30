@@ -1824,8 +1824,8 @@
   {
     "id": "okayadokari",
     "name": "okayadokari",
-    "category": "kani",
-    "category_name": "kani",
+    "category": "crustaceans",
+    "category_name": "甲殻類・汽水域など",
     "months": [
       5,
       8
@@ -1835,16 +1835,16 @@
     "night_observable": null,
     "description": "",
     "photos": [
-      "images/creatures/kani/okayadokari/okayadokari_000001_20250501_22.jpg",
-      "images/creatures/kani/okayadokari/okayadokari_000002_20250829_23.jpg"
+      "images/creatures/crustaceans/okayadokari/okayadokari_000001_20250501_22.jpg",
+      "images/creatures/crustaceans/okayadokari/okayadokari_000002_20250829_23.jpg"
     ],
     "page_path": null
   },
   {
     "id": "rurimadara-shiomaneki",
     "name": "rurimadara-shiomaneki",
-    "category": "kani",
-    "category_name": "kani",
+    "category": "crustaceans",
+    "category_name": "甲殻類・汽水域など",
     "months": [
       5,
       7
@@ -1854,11 +1854,11 @@
     "night_observable": null,
     "description": "",
     "photos": [
-      "images/creatures/kani/rurimadara-shiomaneki/rurimadara-shiomaneki_000001_20260505_15.jpg",
-      "images/creatures/kani/rurimadara-shiomaneki/rurimadara-shiomaneki_000002_20260505_15.jpg",
-      "images/creatures/kani/rurimadara-shiomaneki/rurimadara-shiomaneki_000003_20250726_14.jpg",
-      "images/creatures/kani/rurimadara-shiomaneki/rurimadara-shiomaneki_000004_20250726_15.jpg",
-      "images/creatures/kani/rurimadara-shiomaneki/rurimadara-shiomaneki_000005_20250726_15.jpg"
+      "images/creatures/crustaceans/rurimadara-shiomaneki/rurimadara-shiomaneki_000001_20260505_15.jpg",
+      "images/creatures/crustaceans/rurimadara-shiomaneki/rurimadara-shiomaneki_000002_20260505_15.jpg",
+      "images/creatures/crustaceans/rurimadara-shiomaneki/rurimadara-shiomaneki_000003_20250726_14.jpg",
+      "images/creatures/crustaceans/rurimadara-shiomaneki/rurimadara-shiomaneki_000004_20250726_15.jpg",
+      "images/creatures/crustaceans/rurimadara-shiomaneki/rurimadara-shiomaneki_000005_20250726_15.jpg"
     ],
     "page_path": null
   },
