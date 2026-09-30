@@ -89,6 +89,16 @@ async function handleAsk(body, env, cors) {
   }
   const creatures = await creaturesRes.json();
 
+  // Geminiに渡すのは回答に使う項目だけにする(写真の一覧やページの場所は使わないのに量が多く、
+  // まるごと渡すとGeminiの返事が遅くなってCloudflareの時間切れ(524)になることがあった)
+  const creaturesForAI = creatures.map((c) => ({
+    id: c.id,
+    name: c.name,
+    category_name: c.category_name,
+    months: c.months,
+    description: c.description,
+  }));
+
   // Geminiには「回答文」と「該当する生き物のID」だけをJSONで返させる。
   // 写真パスそのものは作らせない(捏造防止)。パスは必ずcreatures.jsonから実データを引く。
   const prompt = `You are a night-tour guide on Amami Oshima, Japan.
@@ -106,7 +116,7 @@ Output ONLY the following JSON format, with no extra explanation or code block m
 {"reply": "a natural-sounding answer in ${config.name}, about 2-3 sentences", "creature_ids": ["matching ids only, or an empty array if none"]}
 
 [Creature data]
-${JSON.stringify(creatures)}
+${JSON.stringify(creaturesForAI)}
 
 [Customer's question]
 ${message}`;
