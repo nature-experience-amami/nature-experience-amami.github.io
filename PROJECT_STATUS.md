@@ -50,7 +50,7 @@
 └─ Worker · JS                    Cloudflare Workerの控え（自動では反映されない）
 ```
 
-- カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects`（写真だけ `kani` `other-arthropods` もある）。
+- カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects`（写真だけ `crustaceans`（カニ） `other-arthropods` もある）。
 - 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` は図鑑ページ（`scripts/generate_zukan_page.py`）。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
 - `categories/hebi.html` `kaeru.html` `kuwagata.html` `honyuurui.html` `tori.html` `suisei-konntyuu.html` `koucyu.html` などは、英語名に変える前の古いURLから新しいページへ移動させるための転送ページ。
 
@@ -74,8 +74,7 @@
 ### 生き物データ・ページ
 
 - 生き物ページで、写真の撮影日だけで決まった月（`months_source` が `photos`、日本語版18種）も「観察しやすい時期」として表示されている。オーナーが `months:` を書くか、ページでも「撮影記録」と表示を分けるか決める。
-- カニ（`kani`）とその他の節足動物（`other-arthropods`）の7種類は、Markdownもカテゴリーページもまだない。そのためAIチャットで和名ではなく写真フォルダ名（例: okayadokari）が出る。
-- `content/categories.json` には `shellfish` `crustaceans` があるが、写真フォルダは `kani`。カニのカテゴリーを作るときに、どちらの名前にそろえるか決める。
+- カニ（`crustaceans`）とその他の節足動物（`other-arthropods`）の7種類は、Markdownもカテゴリーページもまだない。そのためAIチャットで和名ではなく写真フォルダ名（例: okayadokari）が出る。
 - トビイロゲンゴロウの写真がない（Markdownはある）。
 - 確かめきれていない内容: コバネコロギスの奄美大島での分布（写真の種の確認が必要）、アマミマダラカマドウマの体長、オキナワキノボリトカゲの条例による捕獲禁止の有無、チンメルマンセスジゲンゴロウの奄美の個体の亜種の扱い・環境省と鹿児島県のランク。
 - Markdownのidを正式名称に合わせて「amami-」付きに統一する（影響が広いので専用の作業として）。

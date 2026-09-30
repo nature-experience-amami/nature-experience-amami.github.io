@@ -85,7 +85,7 @@ source: 情報源               # 図鑑形式の種では書くことが多い�
 | other-insects | 図鑑 | tyou, tombo, ga, tyokushi, other |
 
 グループの正式な一覧は `scripts/generate_zukan_page.py` の `CATEGORY_GROUPS`。
-カニ(`kani`)とその他の節足動物(`other-arthropods`)は写真だけあり、カテゴリーページの形を決めるのが先(`amami-new-category-page` スキル)。
+カニ(`crustaceans`)とその他の節足動物(`other-arthropods`)は写真だけあり、カテゴリーページの形を決めるのが先(`amami-new-category-page` スキル)。
 
 ### 本文
 
