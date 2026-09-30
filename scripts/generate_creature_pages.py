@@ -139,20 +139,6 @@ def photo_files(category, creature_id):
     )
 
 
-def months_from_text(body):
-    found = set()
-    for match in re.finditer(r"(\d{1,2})月から(\d{1,2})月", body):
-        start, end = int(match.group(1)), int(match.group(2))
-        if start <= end:
-            found.update(range(start, end + 1))
-        else:
-            found.update(range(start, 13))
-            found.update(range(1, end + 1))
-    for match in re.finditer(r"(\d{1,2})月(?:頃|が|に|まで)", body):
-        found.add(int(match.group(1)))
-    return sorted(month for month in found if 1 <= month <= 12)
-
-
 def months_from_photos(photos):
     months = set()
     for photo in photos:
@@ -183,7 +169,8 @@ def all_creatures(categories):
                 "category_name": categories.get(category_dir.name, category_dir.name),
                 "danger": data.get("danger", ""),
                 "danger_level": data.get("danger_level"),
-                "months": data.get("months") or months_from_text(body) or months_from_photos(photos),
+                # 観察月は「mdのmonths:」か「写真の撮影日」の2つだけから決める(本文からは拾わない)
+                "months": data.get("months") or months_from_photos(photos),
                 "photos": photos,
                 "body": body,
                 "related": data.get("related", []) if isinstance(data.get("related", []), list) else [],
