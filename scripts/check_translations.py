@@ -9,7 +9,7 @@
      指しているか
   2. 翻訳ファイル抜け: 翻訳対応済みカテゴリー(AVAILABLE_CATEGORY_PAGES)の
      生き物なのに、content/creatures/配下に.en.md/.es.md/.zh.mdが無い
-  3. 日本語の残存: en/es/zh配下のページで、<style>/<script>の外側に
+  3. 日本語の残存: en/es/zh配下のページで、<style>/<script>/HTMLコメントの外側に
      ひらがな・カタカナ(全角中点「・」は除く。区切り文字として正当な
      使い方をされるため)が出てきていないか
 
@@ -30,6 +30,8 @@ LANGS = ["en", "es", "zh"]
 LINK_RE = re.compile(r'(?:href|src)="([^"]+)"')
 STYLE_RE = re.compile(r'<style.*?</style>', re.DOTALL)
 SCRIPT_RE = re.compile(r'<script.*?</script>', re.DOTALL)
+# HTMLコメントは画面に出ないので、日本語の残存チェックでは数えない
+COMMENT_RE = re.compile(r'<!--.*?-->', re.DOTALL)
 # ひらがな・カタカナ(全角中点U+30FBは除く。月の区切りなどに正当に使われる)
 KANA_RE = re.compile(r'[぀-ゟ゠-ヺー-ヿ]')
 
@@ -85,6 +87,7 @@ def check_leftover_japanese():
             text = f.read_text(encoding="utf-8", errors="ignore")
             clean = STYLE_RE.sub("", text)
             clean = SCRIPT_RE.sub("", clean)
+            clean = COMMENT_RE.sub("", clean)
             count = len(KANA_RE.findall(clean))
             if count:
                 leaks.append((f.relative_to(ROOT), count))
