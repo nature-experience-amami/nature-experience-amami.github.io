@@ -48,7 +48,7 @@ AIチャット用の`data/creatures.json`を自動生成している。
    - 翻訳(`.en.md`・`.es.md`・`.zh.md`)も作る → `amami-creature-translation` スキルを使う
    - ページを作り直す(下の「サイトへの反映」)
    - コミットは2つに分ける(mdの追加/ページの再生成と記録)
-   - `PROJECT_STATUS_updated.md` の変更履歴に追記する(`amami-project-status-log` スキル)
+   - `PROJECT_STATUS.md` の変更履歴に追記する(`amami-project-status-log` スキル)
    - プッシュしてプルリクエストを作り、URLを伝える
 4. 「マージして」と言われたらマージする。マージは必ずオーナーの指示を待つ。
 

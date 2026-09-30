@@ -90,4 +90,4 @@ python scripts/generate_zukan_page_i18n.py
 - 何をどう直したか(元のファイル名 → 新しいファイル名、消したファイル)
 - 観察しやすい月などサイトの表示が変わるか
 - プルリクエストのURL。マージはオーナーの「マージして」を待つ
-- 必要なら `PROJECT_STATUS_updated.md` に記録する(`amami-project-status-log` スキル)
+- 必要なら `PROJECT_STATUS.md` の変更履歴に記録する(`amami-project-status-log` スキル)
