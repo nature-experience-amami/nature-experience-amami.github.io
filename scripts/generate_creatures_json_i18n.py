@@ -56,7 +56,7 @@ def scan(lang):
             page_path = f"creatures/{category_dir.name}/{markdown_id}.html"
 
             frontmatter, description = read_creature_content(translated_path)
-            # activity / night_observable は日本語版Markdownにだけ書くので、そちらから読む
+            # activity / night_observable / months は日本語版Markdownから読む
             ja_frontmatter, _ = read_creature_content(CONTENT_DIR / category_dir.name / f"{markdown_id}.md")
             name = frontmatter.get("name") or markdown_id
             category_name = category_names.get(category_dir.name, category_dir.name)
@@ -65,8 +65,10 @@ def scan(lang):
                 "name": name,
                 "category": category_dir.name,
                 "category_name": category_name,
-                "months": frontmatter.get("months") or sorted(months),
-                "months_source": months_source(frontmatter, months),
+                # 観察月は日本語版Markdownのmonths:(無ければ写真の撮影日)から決め、4言語で同じにする
+                # (翻訳mdにだけ書いてあったり、翻訳mdに書き忘れたりして、言語ごとに月がずれていたため)
+                "months": ja_frontmatter.get("months") or sorted(months),
+                "months_source": months_source(ja_frontmatter, months),
                 "activity": ja_frontmatter.get("activity", ""),
                 "night_observable": ja_frontmatter.get("night_observable"),
                 "description": description,

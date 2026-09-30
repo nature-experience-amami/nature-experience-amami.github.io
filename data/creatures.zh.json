@@ -417,7 +417,7 @@
       5,
       7
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": false,
     "description": "长角泥甲科长足沟泥甲属 *Stenelmis hisamatsui* M. Satô, 1960\n\n分布于奄美群岛、冲绳诸岛及关岛的小型水生甲虫。长角泥甲科主要栖息于清澈溪流，幼虫和成\n虫都在水中生活，体长最大约5毫米，也因此作为清澈河流的指标而受到关注。本种自身的详细\n生态目前仍有许多未解之谜。",
@@ -437,7 +437,7 @@
       7,
       8
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": null,
     "description": "长角泥甲科宽体泥甲属 *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\n仅分布于奄美大岛的特有种，2005年被记载。同属(宽体泥甲属)还包括分布于本州、四国、九\n州的宽体泥甲及其近缘小型种，以及分布于大隅群岛的另一特有种。长角泥甲科主要是栖息于清\n澈溪流的小型水生甲虫，但本种自身的详细生态目前仍有许多未解之谜。",
@@ -455,11 +455,20 @@
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
+      1,
+      2,
       3,
+      4,
+      5,
+      6,
+      7,
+      8,
       9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "划蝽科小划蝽属奄美小水生蝽 *Micronecta japonica* Chen, 1960\n\n体长约1毫米的极小型水生蝽，日本固有种，分布于南西诸岛(奄美大岛、德之岛)。同属近缘种中，分布更广的小划蝽(Micronecta guttata)遍布北海道至九州。平时潜伏在沙子或落叶下，受到惊扰时会迅速游走。",
@@ -494,9 +503,20 @@
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
-      2
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "宽肩蝽科游宽肩蝽属奄美游宽肩蝽 *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\n分布于奄美大岛、德之岛、冲绳岛等南西诸岛的小型宽肩蝽。近缘种游宽肩蝽偏好森林环绕的山谷池塘岸边的砾石或岩盘地带，已确认会以卵的形态在水面漂浮的植物碎片或岸边砾石上越冬，但本种自身的具体生态仍不清楚。另外需要注意的是，环境省红色名录中被列为易危(VU)的是近缘种游宽肩蝽，与本种(奄美游宽肩蝽)是不同的物种，不应混淆；本种自身并未列入该红色名录。",
@@ -517,7 +537,7 @@
     "months": [
       3
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "脊纹微甲属奄美脊纹微甲 *Ochthebius amami* Yoshitomi & M.Satô, 2001(中文科名尚无统一译法，与所谓\"牙甲\"并非同一科)\n\n1997年春在奄美大岛偶然采集到的个体为基础记载的新种，是一种小型水生甲虫。体长1.9〜2.3毫米。分布于奄美大岛与冲绳岛，栖息在山区溪流中较为开阔的地方，但个体数量并不多。河川开发与护岸工程导致的栖息环境恶化令人担忧，在2010年环境省红色名录的修订中被新列为近危(NT)。",
@@ -589,9 +609,20 @@
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
-      2
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "蟾蝽科蟾蝽属蟾蝽 *Nerthra macrothorax* (Montrouzier, 1855)\n\n日本产蟾蝽科唯一的一种，体长约1厘米，体形宽扁。无单眼，前足粗壮呈镰刀状是其特征。其日文名称Ashibuto-memizumushi，字面意思是\"粗腿水生蝽\"，但尽管如此，它并不生活在池沼水中，而是一种半陆生的伏击型捕食者，夜间活动于海岸沙滩(从水边到海岸林之间)，捕食潮虫和鼠妇，以成虫形态越冬。分布范围广，从南九州经南西诸岛一直到小笠原诸岛，并非奄美大岛的固有种。",
@@ -661,9 +692,20 @@
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
-      9
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": false,
     "description": "仰蝽科(暂译)凹缘小仰蝽属凹缘小仰蝽 *Heterotrephes admorsus* Esaki & Miyamoto, 1959\n\n日本产该科唯一的一种，体长2.5〜3毫米左右，呈半球形的小型身体。与仰蝽一样腹面朝上游泳。仅分布于奄美大岛、德之岛，为奄美群岛固有种，栖息在水流平缓的河流中，陆地植物根系垂入水中的场所等处。在环境省昆虫类红色名录中被列为易危(VU)。",
@@ -813,7 +855,7 @@
       5,
       8
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": null,
     "description": "长角泥甲科泽泥甲属 *Zaitzevia elongata* Nomura, 1962\n\n分布于奄美群岛及冲绳诸岛的小型水生甲虫。泽泥甲属在日本已知有8种，各种分布范围从本州\n到八重山诸岛不等。长角泥甲科主要栖息于清澈溪流，但本种自身的详细生态目前仍有许多未解\n之谜。",
@@ -831,10 +873,11 @@
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
-      3,
-      4
+      12,
+      1,
+      2
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "长角泥甲科长足沟泥甲属 *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\n分布于奄美群岛及冲绳诸岛的小型水生甲虫。原本被视为独立属中的唯一种，但2021年的分子\n系统学研究(Kobayashi et al., 2021)将其归入长足沟泥甲属。属名(Nomuraelmis)及日文俗名由佐藤正孝博士于1964年命名，据信是为纪念同时代开拓日\n本长角泥甲科研究的野村镇博士而得名。本种自身的详细生态目前仍有许多未解之谜。",
@@ -884,9 +927,20 @@
     "category": "aquatic-insects",
     "category_name": "水生昆虫",
     "months": [
-      4
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "扁泥甲科宽胸扁泥甲属 *Elmomorphus amamiensis* Nomura, 1959\n\n为奄美大岛、冲永良部岛有记录的小型水生甲虫。过去曾被视为分布于本州以西近缘种的琉球列\n岛亚种，但2014年一项通过COI基因分析及形态比较的研究确认两者之间存在种级水平的巨大\n遗传分歧，因而被提升为独立种。目前已普遍认定其为独立物种。扁泥甲科与长角泥甲科为近缘\n类群，同样栖息于清澈溪流。本种自身的详细生态目前仍有许多未解之谜。",
@@ -1030,9 +1084,11 @@
     "category": "beetles",
     "category_name": "甲虫",
     "months": [
-      4
+      4,
+      5,
+      6
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "金龟科粪金龟亚科奄美毛粪金龟 *Gilletianus atsushii* (Ochi, 1986)\n\n分布于奄美大岛的稀有粪金龟，采集记录非常稀少。1986年由越智辉夫以 *Aphodius (Trichaphodius) atsushii* 之名记载，后经分类修订，现归入Gilletianus属。据推测以奄美黑兔的粪便为食，但其生态尚有许多未知之处，采集实例也十分有限。",
@@ -1173,10 +1229,20 @@
     "category": "beetles",
     "category_name": "甲虫",
     "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
       10,
-      11
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "金龟科大黑金龟亚科奄美圆大黑金龟 *Copris brachypterus* Nomura, 1964\n\n体长13〜20毫米。仅分布于奄美大岛、德之岛的固有种(德之岛分布有另一亚种)，后翅退化，无法飞行。夜间在山地森林中四处走动寻找奄美黑兔的粪便，具有在粪球下方挖洞、用前脚一边后退一边将粪球拖入洞中的习性。由于分布范围极为有限、迁移能力弱，加之过去采集压力导致个体数量大幅减少，被环境省红色名录列为濒危II类(VU)。",
@@ -1311,9 +1377,10 @@
     "category": "beetles",
     "category_name": "甲虫",
     "months": [
-      4
+      4,
+      5
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "金龟科犀金龟亚科椰子犀金龟(台湾犀角金龟) *Oryctes rhinoceros* (Linnaeus, 1758)\n\n原产于中南半岛周边的外来种。据信20世纪初随从台湾进口的资材混入侵入石垣岛，为日本国内最早记录，此后分布逐渐北扩，1991年在奄美大岛、德之岛也被确认。目前已在南西诸岛几乎全境定着并自然繁殖。作为在椰子类、菠萝、甘蔗等植物的茎部及芯部钻孔为害的农业害虫而为人所知，也有人担忧其与本地犀金龟类之间的竞争关系。",
@@ -1329,9 +1396,16 @@
     "category": "beetles",
     "category_name": "甲虫",
     "months": [
-      4
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "厚甲金龟科球金龟亚科吐噶喇球金龟 *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\n体长约5.0〜5.8毫米的小型甲虫，分布于吐噶喇列岛(模式产地为中之岛)及奄美大岛。与分布于八重山诸岛的近缘种先岛球金龟(*M. kazumai hisamatsui* Ochi, 1990)以分布区域区分。被认为是一种好蚁性昆虫，多见于朽木内部及其周围落叶层等靠近蚁巢的环境中，原始记载论文的题名中也使用了\"myrmecophilous(好蚁性)\"一词。受到刺激时会将触角与足收入体内，蜷缩成完整的球状，如同鼠妇一般保护自己。",
@@ -1773,10 +1847,14 @@
     "category": "lizards",
     "category_name": "蜧虔",
     "months": [
-      4,
-      9
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "diurnal",
     "night_observable": null,
     "description": "石龙子科石龙子属 *Plestiodon barbouri*\n\n全长15.5〜20厘米(吻肛长5.2〜7.3厘米)。分布于奄美大岛、加计吕麻岛、请岛、与路岛、\n德之岛及冲绳诸岛的日本固有种。幼体呈黑褐色，带有5条明亮的纵纹，尾巴呈鲜艳的蓝色，占\n尾部全长的三分之二以上。随着成长，蓝色逐渐褪去，雄性整体变为暗褐色至褐色，而雌性则多\n保持接近幼体的色彩。喜欢栖息在常绿阔叶天然林或恢复良好的次生林的林下及林缘，通过日光\n浴调节体温，以蜘蛛类和陆生贝类为食。冬季活动迟缓但不冬眠。因森林砍伐及割除下层植被导\n致的干燥化，以及野猫和外来入侵种爪哇獴的捕食，其数量有所减少。已被环境省红色名录列为\n易危(VU)，2019年又被指定为鹿儿岛县稀有野生动植物，未经许可的捕获、采集将受到处罚。",
@@ -1852,12 +1930,20 @@
     "category": "mammals",
     "category_name": "哺乳类",
     "months": [
+      1,
       2,
       3,
       4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "鼠科长毛鼠属 *Diplothrix legata*\n\n体长22〜33厘米，尾长25〜35厘米。是日本体型最大的老鼠，仅分布于奄美大岛、德之岛及\n冲绳岛北部，毛发中混有5〜6厘米的长刚毛。1972年被指定为天然纪念物，2016年被指定为\n国内稀有野生动植物种。夜行性且树栖性极强，白天在树洞中铺满枯叶的巢里休息。食性为杂\n食，以椎树果实和昆虫等为食。繁殖期为秋季至初冬，每胎产2〜5只幼崽。警戒心较弱，即使\n用手电筒照射也不太会逃跑，因此有时能在林道上从容地观察到它。",
@@ -1879,9 +1965,20 @@
     "category": "mammals",
     "category_name": "哺乳类",
     "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": false,
     "description": "鼩鼱科麝鼩属 *Crocidura watasei*\n\n体长约5.5厘米，体重仅5〜8克，是世界上体型最小的哺乳动物之一。仅分布于奄美群岛(奄\n美大岛、加计吕麻岛、德之岛等)和冲绳诸岛的日本固有种。喜欢草地、农田等开阔环境，以小\n型昆虫和蜘蛛等为食。夜行性，有时能看到它在林道旁的草丛中快速穿梭的身影。与同属栖息于\n森林的近缘种生活环境不同，有时会被混淆。虽然没有像天然纪念物那样的法律捕获限制，但已\n被环境省列为准绝灭危惧种。",
@@ -2328,9 +2425,10 @@
     "category": "snakes",
     "category_name": "蛇类",
     "months": [
-      4
+      5,
+      6
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "脊蛇科脊蛇族 *Achalinus werneri*\n\n体长可达约55厘米。背部呈黑褐色或暗褐色，沿正中线有一条黑色纵纹，腹面为黄色。在奄美，只有\n在条件极为理想的日子里才能遇见它，堪称\"幻之蛇\"。大雨天有时会爬到地表活动。夜行性且营地下\n生活，栖息于森林、水边草地和农耕地。食性以蚯蚓为主。比其他岛屿上的奄美脊蛇数量更少，更难\n发现。由于体形极其细小，开车经过时可能根本无法察觉到它。",
@@ -2620,8 +2718,6 @@
     "category": "snakes",
     "category_name": "蛇类",
     "months": [
-      3,
-      4,
       5,
       6,
       7,
@@ -2629,7 +2725,7 @@
       9,
       10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "diurnal",
     "night_observable": true,
     "description": "游蛇科翠青蛇属 *Cycophuops semicarinatus*\n\n体长可达约100厘米。5月至11月是最容易观察到它的时期。虽以昼行性为主，但也有不少个体在夜\n间活动。头部较小，食性以蚯蚓为主，也吃青蛙。它是奄美大岛数量最多的蛇类，白天可在林内、夜\n间可在林道见到它的身影。体型较大的个体有时会发出威吓，但它逃跑速度极快，会顺着斜坡迅速滑\n走。",

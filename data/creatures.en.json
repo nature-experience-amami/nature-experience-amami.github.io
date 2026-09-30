@@ -417,7 +417,7 @@
       5,
       7
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": false,
     "description": "Riffle beetle family, genus Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960\n\nA small aquatic beetle found in the Amami and Okinawa island groups and Guam.\nRiffle beetles live mainly in clean streams; both larvae and adults spend their\nlives in the water, growing to about 5mm at most, and the family is watched as\nan indicator of clean rivers. The detailed ecology of this species itself is\nstill largely unknown.",
@@ -437,7 +437,7 @@
       7,
       8
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": null,
     "description": "Riffle beetle family, genus Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\nAn endemic species found only on Amami Oshima, described in 2005. The genus\nDryopomorphus also includes a widespread relative found on Honshu, Shikoku,\nand Kyushu along with a smaller species, plus another species endemic to the\nOsumi Islands. Riffle beetles are mainly small aquatic beetles living in clean\nstreams, but the detailed ecology of this species itself is still largely\nunknown.",
@@ -455,11 +455,20 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
+      1,
+      2,
       3,
+      4,
+      5,
+      6,
+      7,
+      8,
       9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Pygmy water boatman family, genus Micronecta. *Micronecta japonica* Chen, 1960\n\nA tiny aquatic true bug about 1mm long. Endemic to Japan, it is found in the Nansei Islands (Amami Oshima and Tokunoshima). Several related species are known within the same genus, including the more widespread Micronecta guttata, found from Hokkaido to Kyushu. It normally burrows into sand or fallen leaves, and swims away quickly when startled.",
@@ -494,9 +503,20 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      2
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Broad-shouldered water strider family, genus Xiphovelia. *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\nA small broad-shouldered water strider found across the Nansei Islands, on Amami Oshima, Tokunoshima, and Okinawa Island. The closely related species Xiphovelia japonica favors gravel and bedrock along the shorelines of forest-ringed valley ponds, and has been confirmed to overwinter as eggs on floating plant debris or shoreline gravel, but the specific ecology of this species itself is still poorly understood. It should also be noted that the closely related Xiphovelia japonica is listed as Vulnerable (VU) on the Ministry of the Environment's Red List, whereas that designation concerns a different species and should not be confused with this one; this species itself is not listed on the Red List.",
@@ -517,7 +537,7 @@
     "months": [
       3
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Minute moss beetle family, genus Ochthebius. *Ochthebius amami* Yoshitomi & M.Satô, 2001\n\nA tiny aquatic beetle described as a new species from an individual collected by chance on Amami Oshima in spring 1997, belonging to the minute moss beetle family (a different family from the \"gamushi\" water scavenger beetles despite the similar Japanese name). About 1.9-2.3mm long. Found on Amami Oshima and Okinawa Island, it lives in relatively open sections of mountain streams, though it is not very abundant. Habitat degradation from river development and bank reinforcement work is a concern, and it was newly listed as Near Threatened (NT) in the 2010 revision of the Ministry of the Environment's Red List.",
@@ -589,9 +609,20 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      2
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "Toad bug family, genus Nerthra. *Nerthra macrothorax* (Montrouzier, 1855)\n\nThe only species of toad bug family found in Japan, about 1cm long, with a broad, flattened body. It has no ocelli and is distinguished by its thick, sickle-shaped front legs. Its Japanese name, Ashibuto-memizumushi, literally means \"thick-legged water bug,\" but despite that name it does not live underwater in ponds; rather, it is a semi-terrestrial ambush predator active at night on sandy beaches (from the shoreline to the coastal forest), preying on pill bugs and woodlice, and overwintering as an adult. It is widely distributed from southern Kyushu through the Nansei Islands to the Ogasawara Islands, and is not endemic to Amami Oshima alone.",
@@ -661,9 +692,20 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      9
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": false,
     "description": "Pygmy backswimmer family, genus Heterotrephes. *Heterotrephes admorsus* Esaki & Miyamoto, 1959\n\nThe only species of the pygmy backswimmer family found in Japan, with a small, hemispherical body about 2.5-3mm long. Like the water boatman-relative backswimmers, it swims upside down. Known only from Amami Oshima and Tokunoshima, it is endemic to the Amami Islands, and lives in slow-flowing rivers, in spots where plant roots hang down from the bank into the water. It is listed as Vulnerable (VU) on the Ministry of the Environment's insect Red List.",
@@ -813,7 +855,7 @@
       5,
       8
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": null,
     "description": "Riffle beetle family, genus Zaitzevia. *Zaitzevia elongata* Nomura, 1962\n\nA small aquatic beetle found in the Amami and Okinawa island groups. Eight\nspecies of the genus Zaitzevia are known in Japan, with different species\ndistributed from Honshu to the Yaeyama Islands. Riffle beetles mainly live in\nclean streams, but the detailed ecology of this species itself is still\nlargely unknown.",
@@ -831,10 +873,11 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      3,
-      4
+      12,
+      1,
+      2
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Riffle beetle family, genus Stenelmis. *Stenelmis amami* Yoshitomi et Hayashi, 2021\n\nA small aquatic beetle found in the Amami and Okinawa island groups. It was\noriginally treated as the sole species of its own genus, but a 2021 molecular\nphylogenetic study (Kobayashi et al., 2021) placed it in the genus Stenelmis.\nThe genus name (Nomuraelmis) and the Japanese common name were coined in\n1964 by Dr. Masataka Satô, and are thought to honor Dr. Nomura, who helped\npioneer riffle beetle research in Japan during that same era.\nThe detailed ecology of this species itself is still largely unknown.",
@@ -884,9 +927,20 @@
     "category": "aquatic-insects",
     "category_name": "Aquatic Insects",
     "months": [
-      4
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Long-toed water beetle family (Dryopidae), genus Elmomorphus.\n*Elmomorphus amamiensis* Nomura, 1959\n\nA small aquatic beetle recorded on Amami Oshima and Okinoerabujima. It was\nformerly treated as a Ryukyu-island subspecies of a mainland species, but in\n2014 a study using COI gene sequencing and morphological comparison found a\nmajor genetic divergence at the species level between the two, and it was\nelevated to full species status. It is now generally accepted as a distinct\nspecies. The Dryopidae are a family closely related to the riffle beetles\n(Elmidae) and likewise live in clean streams. The detailed ecology of this\nspecies itself is still largely unknown.",
@@ -1030,9 +1084,11 @@
     "category": "beetles",
     "category_name": "Beetles",
     "months": [
-      4
+      4,
+      5,
+      6
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Scarabaeidae, subfamily Aphodiinae, Amami Hairy Dung Beetle *Gilletianus atsushii* (Ochi, 1986)\n\nA rare dung beetle found on Amami Oshima, with very few collection records. It was described in 1986 by Teruo Ochi as *Aphodius (Trichaphodius) atsushii*, but later taxonomic revisions placed it in the genus Gilletianus. It is thought to live off the droppings of the Amami rabbit, but much about its ecology remains unknown, and records of it are limited.",
@@ -1173,10 +1229,20 @@
     "category": "beetles",
     "category_name": "Beetles",
     "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
       10,
-      11
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "Scarabaeidae, subfamily Coprinae, Amami Round Dung Beetle *Copris brachypterus* Nomura, 1964\n\nBody length 13–20mm. An endemic species found only on Amami Oshima and Tokunoshima (a different subspecies occurs on Tokunoshima); its hind wings are reduced, so it cannot fly. At night it walks through mountain forests searching for the droppings of the Amami rabbit, and has the habit of digging a hole beneath a dung ball and dragging it in backwards with its front legs. Because its range is extremely limited, it has poor mobility, and past collection pressure has significantly reduced its numbers, it is listed as Vulnerable (VU) on the Ministry of the Environment's Red List.",
@@ -1311,9 +1377,10 @@
     "category": "beetles",
     "category_name": "Beetles",
     "months": [
-      4
+      4,
+      5
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Scarabaeidae, subfamily Dynastinae, Coconut Rhinoceros Beetle *Oryctes rhinoceros* (Linnaeus, 1758)\n\nAn invasive species native to the Indochina Peninsula region. The first record in Japan is believed to be its introduction to Ishigaki Island in imported materials from Taiwan in the early 20th century; it subsequently spread northward, and was confirmed on Amami Oshima and Tokunoshima in 1991. It is now established and breeding naturally across nearly the entire Nansei Islands. It is known as an agricultural pest that bores into the stems and cores of palms, pineapple, and sugarcane, and there is concern about competition with native rhinoceros beetle species.",
@@ -1329,9 +1396,16 @@
     "category": "beetles",
     "category_name": "Beetles",
     "months": [
-      4
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Ceratocanthidae, subfamily Ceratocanthinae, Tokara Pill Scarab *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\nA small beetle about 5.0–5.8mm long, found in the Tokara Islands (the type locality is Nakanoshima) and on Amami Oshima. It is distinguished by range from the closely related Sakishima Pill Scarab (*M. kazumai hisamatsui* Ochi, 1990), found in the Yaeyama Islands. It is considered a myrmecophilous species — found in environments close to ant nests, such as inside rotten wood or in the leaf litter layer around it — and the original description's paper title itself uses the word \"myrmecophilous.\" When disturbed, it withdraws its antennae and legs into its body and rolls up into a perfect ball, like a pill bug, to protect itself.",
@@ -1773,10 +1847,14 @@
     "category": "lizards",
     "category_name": "Lizards",
     "months": [
-      4,
-      9
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "diurnal",
     "night_observable": null,
     "description": "Skink family (Scincidae), genus Plestiodon. *Plestiodon barbouri*\n\nTotal length 15.5-20 cm (snout-vent length 5.2-7.3 cm). A species endemic to\nJapan, distributed on Amami Oshima, Kakeromajima, Uke-jima, Yoro-jima,\nTokunoshima, and the Okinawa Islands. Juveniles are blackish brown with five\nbright longitudinal stripes, and a vivid blue tail that makes up more than\ntwo-thirds of the total tail length. As they grow, the blue fades; males\nbecome overall dark brown to brown, while many females retain coloring\ncloser to that of juveniles. It prefers the forest floor and edges of\nnatural evergreen broadleaf forest or well-recovered secondary forest,\nbasking in the sun to regulate its body temperature while feeding on\nspiders and land snails. It becomes sluggish in winter but does not\nhibernate. Its numbers have declined due to drying of habitat from logging\nand undergrowth clearance, and predation by feral cats and the introduced\nsmall Indian mongoose. It is listed as Vulnerable on the Ministry of the\nEnvironment's Red List, and in 2019 was also designated a Kagoshima\nPrefecture Rare Wildlife Species, making unauthorized capture or collection\nsubject to penalties.",
@@ -1852,12 +1930,20 @@
     "category": "mammals",
     "category_name": "Mammals",
     "months": [
+      1,
       2,
       3,
       4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "Rat family (Muridae), genus Diplothrix. *Diplothrix legata*\n\nBody length 22-33 cm, tail length 25-35 cm. Japan's largest rat, found only\non Amami Oshima, Tokunoshima, and the northern part of Okinawa Island, with\nlong bristle-like hairs of 5-6 cm mixed into its coat. Designated a Natural\nMonument in 1972 and a Nationally Rare Wild Species in 2016. Nocturnal and\nstrongly arboreal, it rests during the day in tree-hollow nests lined with\ndead leaves. Omnivorous, feeding on chinquapin nuts and insects among other\nthings. Breeds from autumn into early winter, giving birth to 2-5 young per\nlitter. It is not very wary, and since it does not flee much even when a\nflashlight is shone on it, it can sometimes be observed at leisure along\nforest roads.",
@@ -1879,9 +1965,20 @@
     "category": "mammals",
     "category_name": "Mammals",
     "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": false,
     "description": "Shrew family (Soricidae), genus Crocidura. *Crocidura watasei*\n\nOne of the world's smallest mammals, about 5.5 cm long and weighing just 5-8\ng. A species endemic to Japan, found only in the Amami island group (Amami\nOshima, Kakeromajima, Tokunoshima, and others) and the Okinawa Islands. It\nprefers open environments such as grassland and farmland, and feeds on small\ninsects and spiders. Nocturnal, it can sometimes be seen darting quickly\nthrough grassy patches beside forest roads. It differs in habitat from a\nforest-dwelling relative of the same genus, and the two are sometimes\nconfused. It carries no legal capture restriction like a Natural Monument\ndesignation, but it is listed as Near Threatened by the Ministry of the\nEnvironment.",
@@ -2328,9 +2425,10 @@
     "category": "snakes",
     "category_name": "Snakes",
     "months": [
-      4
+      5,
+      6
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "Takachiho snake family, Takachiho tribe. *Achalinus werneri*\n\nGrows up to about 55 cm. The back is blackish brown or dark brown with a black stripe\nrunning along the midline; the belly is yellow. On Amami it is a legendary snake that you\nonly encounter under just the right conditions. It sometimes comes to the surface on days\nof heavy rain. Nocturnal and subterranean, it lives in forests, grassy areas near water,\nand farmland. It feeds on earthworms. It is scarcer and harder to find here than the\nAmami odd-scaled snakes on other islands. It is very slender and small, so you may not\nnotice it even if you drive right past.",
@@ -2620,8 +2718,6 @@
     "category": "snakes",
     "category_name": "Snakes",
     "months": [
-      3,
-      4,
       5,
       6,
       7,
@@ -2629,7 +2725,7 @@
       9,
       10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "diurnal",
     "night_observable": true,
     "description": "Colubrid snake family, genus Cycophuops. *Cycophuops semicarinatus*\n\nGrows up to about 100 cm. Most easily observed from May through November. Mainly\ndiurnal, though many individuals are also active at night. It has a small head and feeds\nmainly on earthworms, as well as frogs. It is the most numerous snake on Amami Oshima and\ncan be seen in forests during the day and along forest roads at night. Larger individuals\nwill sometimes threaten you, but they flee very quickly, sliding down slopes to escape.",

@@ -417,7 +417,7 @@
       5,
       7
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": false,
     "description": "Familia de los escarabajos de rabión, género Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami y\nOkinawa y en Guam. Los escarabajos de rabión viven principalmente en corrientes\nlimpias; tanto las larvas como los adultos pasan su vida en el agua y alcanzan\ncomo máximo unos 5 mm, por lo que la familia se observa como indicador de ríos\nlimpios. La ecología detallada de esta especie en concreto sigue siendo, en\ngran parte, desconocida.",
@@ -437,7 +437,7 @@
       7,
       8
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005\n\nUna especie endémica que solo se encuentra en Amami Oshima, descrita en 2005.\nEl género Dryopomorphus también incluye una especie emparentada de amplia\ndistribución en Honshu, Shikoku y Kyushu junto con una especie más pequeña, así\ncomo otra especie endémica de las islas Osumi. Los escarabajos de rabión son\nen su mayoría pequeños escarabajos acuáticos que viven en corrientes limpias,\npero la ecología detallada de esta especie en concreto sigue siendo, en gran\nparte, desconocida.",
@@ -455,11 +455,20 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
+      1,
+      2,
       3,
+      4,
+      5,
+      6,
+      7,
+      8,
       9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Familia de los chinches de agua pigmeos, género Micronecta. *Micronecta japonica* Chen, 1960\n\nUna diminuta chinche de agua de aproximadamente 1 mm. Endémica de Japón, se encuentra en las islas Nansei (Amami Oshima y Tokunoshima). Dentro del mismo género se conocen varias especies emparentadas, entre ellas Micronecta guttata, más extendida, presente desde Hokkaido hasta Kyushu. Normalmente se entierra en la arena o entre las hojas caídas, y nada rápidamente para escapar cuando se la sobresalta.",
@@ -494,9 +503,20 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      2
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Familia de los zapateros de agua de hombros anchos, género Xiphovelia. *Xiphovelia curvifemur* Esaki & Miyamoto, 1959\n\nUn pequeño zapatero de agua de hombros anchos presente en las islas Nansei, en Amami Oshima, Tokunoshima y la isla de Okinawa. La especie emparentada Xiphovelia japonica prefiere zonas de guijarros y roca en las orillas de estanques de valle rodeados de bosque, y se ha confirmado que sus huevos pasan el invierno sobre restos de plantas flotantes o guijarros de la orilla, pero la ecología concreta de esta especie sigue siendo poco conocida. Cabe señalar además que la especie emparentada Xiphovelia japonica figura como Vulnerable (VU) en la Lista Roja del Ministerio de Medio Ambiente, pero esa designación corresponde a una especie distinta y no debe confundirse con esta; esta especie en sí no figura en la Lista Roja.",
@@ -517,7 +537,7 @@
     "months": [
       3
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Familia de los escarabajos de musgo diminutos, género Ochthebius. *Ochthebius amami* Yoshitomi & M.Satô, 2001\n\nUn diminuto escarabajo acuático descrito como especie nueva a partir de un ejemplar recogido por casualidad en Amami Oshima en la primavera de 1997, perteneciente a la familia de los escarabajos de musgo diminutos (una familia distinta de los «gamushi», a pesar del nombre japonés similar). Mide entre 1.9 y 2.3 mm. Se encuentra en Amami Oshima y en la isla de Okinawa, y vive en tramos relativamente abiertos de arroyos de montaña, aunque no es muy abundante. La degradación del hábitat por obras fluviales y de refuerzo de las orillas es motivo de preocupación, y en la revisión de 2010 de la Lista Roja del Ministerio de Medio Ambiente se incluyó por primera vez como Casi Amenazada (NT).",
@@ -589,9 +609,20 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      2
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "Familia de las chinches sapo, género Nerthra. *Nerthra macrothorax* (Montrouzier, 1855)\n\nLa única especie de la familia de las chinches sapo presente en Japón, de aproximadamente 1 cm, con un cuerpo ancho y aplanado. Carece de ocelos y se distingue por sus patas delanteras gruesas y en forma de hoz. Su nombre japonés, Ashibuto-memizumushi, significa literalmente «chinche de agua de patas gruesas», pero a pesar de ese nombre no vive bajo el agua en estanques, sino que es un depredador semiterrestre de emboscada, activo de noche en playas de arena (desde la orilla hasta el bosque costero), que caza cochinillas de la humedad, y pasa el invierno en estado adulto. Está ampliamente distribuida desde el sur de Kyushu, pasando por las islas Nansei, hasta las islas Ogasawara, y no es endémica solo de Amami Oshima.",
@@ -661,9 +692,20 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      9
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": false,
     "description": "Familia de los notonéctidos pigmeos, género Heterotrephes. *Heterotrephes admorsus* Esaki & Miyamoto, 1959\n\nLa única especie de la familia de los notonéctidos pigmeos presente en Japón, con un cuerpo pequeño y hemisférico de unos 2.5-3 mm. Al igual que los notonectos, nada boca arriba. Conocida solo en Amami Oshima y Tokunoshima, es endémica de las islas Amami y vive en ríos de corriente lenta, en lugares donde las raíces de las plantas cuelgan desde la orilla hasta el agua. Figura como Vulnerable (VU) en la Lista Roja de insectos del Ministerio de Medio Ambiente.",
@@ -813,7 +855,7 @@
       5,
       8
     ],
-    "months_source": "notes",
+    "months_source": "photos",
     "activity": "",
     "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Zaitzevia. *Zaitzevia elongata* Nomura, 1962\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa. En Japón se conocen ocho especies del género Zaitzevia, cada una\ndistribuida en una zona distinta, desde Honshu hasta las islas Yaeyama. Los\nescarabajos de rabión viven principalmente en corrientes limpias, pero la\necología detallada de esta especie en concreto sigue siendo, en gran parte,\ndesconocida.",
@@ -831,10 +873,11 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      3,
-      4
+      12,
+      1,
+      2
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Familia de los escarabajos de rabión, género Stenelmis.\n*Stenelmis amami* Yoshitomi et Hayashi, 2021\n\nUn pequeño escarabajo acuático que se encuentra en los archipiélagos de Amami\ny Okinawa. Originalmente se consideraba la única especie de su propio género,\npero un estudio de filogenia molecular de 2021 (Kobayashi et al., 2021) la\nsituó en el género Stenelmis. El nombre del género (Nomuraelmis) y el nombre común japonés fueron acuñados\nen 1964 por el Dr. Masataka Satô, y se cree que honran al Dr. Nomura, quien\ncontribuyó a ser pionero en la investigación de los escarabajos de rabión en\nJapón durante esa misma época. La ecología\ndetallada de esta especie en concreto sigue siendo, en gran parte, desconocida.",
@@ -884,9 +927,20 @@
     "category": "aquatic-insects",
     "category_name": "Insectos acuáticos",
     "months": [
-      4
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Familia de los escarabajos acuáticos de dedos largos (Dryopidae), género\nElmomorphus. *Elmomorphus amamiensis* Nomura, 1959\n\nUn pequeño escarabajo acuático registrado en Amami Oshima y Okinoerabujima.\nAnteriormente se trataba como una subespecie de las islas Ryukyu de una\nespecie continental, pero en 2014 un estudio mediante secuenciación del gen\nCOI y comparación morfológica encontró una gran divergencia genética a nivel\nde especie entre ambas, por lo que fue elevada a especie plena. Actualmente\nse acepta de forma generalizada como una especie distinta. Los Dryopidae son\nuna familia emparentada con los escarabajos de rabión (Elmidae) y viven\nigualmente en corrientes limpias. La ecología detallada de esta especie en\nconcreto sigue siendo, en gran parte, desconocida.",
@@ -1030,9 +1084,11 @@
     "category": "beetles",
     "category_name": "Escarabajos",
     "months": [
-      4
+      4,
+      5,
+      6
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Scarabaeidae, subfamilia Aphodiinae, escarabajo peludo del estiércol de Amami *Gilletianus atsushii* (Ochi, 1986)\n\nUn raro escarabajo del estiércol que se encuentra en Amami Oshima, con muy pocos registros de recolección. Fue descrito en 1986 por Teruo Ochi como *Aphodius (Trichaphodius) atsushii*, pero revisiones taxonómicas posteriores lo situaron en el género Gilletianus. Se cree que vive de los excrementos del conejo de Amami, pero aún se desconoce mucho sobre su ecología, y los registros son limitados.",
@@ -1173,10 +1229,20 @@
     "category": "beetles",
     "category_name": "Escarabajos",
     "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
       10,
-      11
+      11,
+      12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "Scarabaeidae, subfamilia Coprinae, escarabajo redondo del estiércol de Amami *Copris brachypterus* Nomura, 1964\n\nLongitud corporal de 13 a 20mm. Especie endémica que solo se encuentra en Amami Oshima y Tokunoshima (en Tokunoshima habita una subespecie diferente); sus alas posteriores están reducidas, por lo que no puede volar. Por la noche recorre los bosques de montaña buscando los excrementos del conejo de Amami, y tiene el hábito de cavar un agujero bajo la bola de estiércol y arrastrarla hacia atrás con las patas delanteras. Debido a que su área de distribución es extremadamente limitada, tiene poca movilidad, y la presión de recolección del pasado ha reducido considerablemente su número, está incluida como Vulnerable (VU) en la Lista Roja del Ministerio de Medio Ambiente.",
@@ -1311,9 +1377,10 @@
     "category": "beetles",
     "category_name": "Escarabajos",
     "months": [
-      4
+      4,
+      5
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Scarabaeidae, subfamilia Dynastinae, escarabajo rinoceronte del cocotero *Oryctes rhinoceros* (Linnaeus, 1758)\n\nEspecie invasora originaria de la región de la península de Indochina. Se cree que el primer registro en Japón fue su introducción en la isla de Ishigaki a través de materiales importados de Taiwán a principios del siglo XX; posteriormente se extendió hacia el norte, y fue confirmada en Amami Oshima y Tokunoshima en 1991. Actualmente está establecida y se reproduce de forma natural en casi todo el archipiélago Nansei. Es conocida como una plaga agrícola que perfora los tallos y el corazón de palmeras, piña y caña de azúcar, y existe preocupación por la competencia con las especies nativas de escarabajos rinoceronte.",
@@ -1329,9 +1396,16 @@
     "category": "beetles",
     "category_name": "Escarabajos",
     "months": [
-      4
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "",
     "night_observable": null,
     "description": "Ceratocanthidae, subfamilia Ceratocanthinae, escarabajo píldora de Tokara *Madrasostes kazumai* Ochi, Johki et Nakata, 1990\n\nUn pequeño escarabajo de unos 5.0 a 5.8mm de longitud, que se encuentra en las islas Tokara (la localidad tipo es Nakanoshima) y en Amami Oshima. Se distingue por su área de distribución del escarabajo píldora de Sakishima, estrechamente emparentado (*M. kazumai hisamatsui* Ochi, 1990), que se encuentra en las islas Yaeyama. Se considera una especie mirmecófila, hallada en ambientes cercanos a nidos de hormigas, como el interior de madera podrida o la capa de hojarasca a su alrededor, y el propio título del artículo de la descripción original utiliza la palabra \"mirmecófilo\". Cuando es perturbado, retrae las antenas y las patas dentro de su cuerpo y se enrolla formando una esfera perfecta, como una cochinilla, para protegerse.",
@@ -1773,10 +1847,14 @@
     "category": "lizards",
     "category_name": "Lagartos",
     "months": [
-      4,
-      9
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "diurnal",
     "night_observable": null,
     "description": "Familia de los eslizones (Scincidae), género Plestiodon. *Plestiodon barbouri*\n\nLongitud total 15.5-20 cm (longitud hocico-cloaca 5.2-7.3 cm). Una especie\nendémica de Japón distribuida en Amami Oshima, Kakeromajima, Uke-jima,\nYoro-jima, Tokunoshima y las islas Okinawa. Los juveniles son de color\npardo negruzco con cinco franjas longitudinales brillantes, y una cola de\nun azul intenso que ocupa más de dos tercios de su longitud total. Al\ncrecer, el azul se desvanece; los machos se vuelven de un pardo oscuro a\npardo en general, mientras que muchas hembras conservan una coloración más\ncercana a la de los juveniles. Prefiere el suelo y los bordes de bosque\nnatural de hoja perenne o de bosque secundario bien recuperado, tomando el\nsol para regular su temperatura corporal mientras se alimenta de arañas y\ncaracoles terrestres. Se vuelve lento en invierno pero no hiberna. Su\nnúmero ha disminuido por la desecación del hábitat debida a la tala y el\ndesbroce del sotobosque, y por la depredación de gatos asilvestrados y la\nmangosta pequeña introducida. Figura como Vulnerable en la Lista Roja del\nMinisterio de Medio Ambiente, y en 2019 fue también designada Especie\nSilvestre Rara de la Prefectura de Kagoshima, por lo que su captura o\nrecolección sin autorización está sujeta a sanciones.",
@@ -1852,12 +1930,20 @@
     "category": "mammals",
     "category_name": "Mamíferos",
     "months": [
+      1,
       2,
       3,
       4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "Familia de las ratas (Muridae), género Diplothrix. *Diplothrix legata*\n\nLongitud del cuerpo 22-33 cm, cola 25-35 cm. La rata más grande de Japón, que\nsolo se encuentra en Amami Oshima, Tokunoshima y el norte de la isla de\nOkinawa, con largos pelos rígidos de 5-6 cm mezclados en su pelaje. Fue\ndeclarada Monumento Natural en 1972 y Especie Silvestre Nacional Rara en\n2016. Es nocturna y marcadamente arborícola, y descansa de día en nidos de\nhuecos de árboles forrados con hojas secas. Es omnívora, y se alimenta entre\notras cosas de bellotas de castaño de Japón e insectos. Se reproduce desde\notoño hasta principios de invierno, con 2 a 5 crías por parto. No es muy\nasustadiza, y como apenas huye aunque se le enfoque con una linterna, a veces\nse la puede observar con calma a lo largo de los caminos forestales.",
@@ -1879,9 +1965,20 @@
     "category": "mammals",
     "category_name": "Mamíferos",
     "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
       12
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": false,
     "description": "Familia de las musarañas (Soricidae), género Crocidura. *Crocidura watasei*\n\nUno de los mamíferos más pequeños del mundo, de unos 5.5 cm de longitud y\napenas 5-8 g de peso. Una especie endémica de Japón que solo se encuentra en\nel archipiélago de Amami (Amami Oshima, Kakeromajima, Tokunoshima y otras) y\nlas islas Okinawa. Prefiere ambientes abiertos como praderas y campos de\ncultivo, y se alimenta de pequeños insectos y arañas. Es nocturna, y a veces\nse la puede ver moviéndose rápidamente entre la hierba junto a los caminos\nforestales. Difiere en hábitat de una especie emparentada del mismo género\nque vive en el bosque, con la que a veces se la confunde. No tiene una\nrestricción legal de captura como la de un Monumento Natural, pero está\ncatalogada como Casi Amenazada por el Ministerio de Medio Ambiente.",
@@ -2328,9 +2425,10 @@
     "category": "snakes",
     "category_name": "Serpientes",
     "months": [
-      4
+      5,
+      6
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
     "description": "Familia de las culebras Takachiho, tribu Takachiho. *Achalinus werneri*\n\nAlcanza hasta unos 55 cm. El dorso es de color pardo negruzco o pardo oscuro, con una\nfranja negra a lo largo de la línea media; el vientre es amarillo. En Amami es una\nserpiente legendaria que solo se encuentra en condiciones muy concretas. A veces sale a la\nsuperficie en días de lluvia intensa. Es nocturna y de hábitos subterráneos, y vive en\nbosques, praderas cerca del agua y tierras de cultivo. Se alimenta de lombrices. Es más\nescasa y difícil de encontrar aquí que en otras islas donde también habita esta especie.\nEs muy delgada y pequeña, así que puede que no la notes ni pasando en coche a su lado.",
@@ -2620,8 +2718,6 @@
     "category": "snakes",
     "category_name": "Serpientes",
     "months": [
-      3,
-      4,
       5,
       6,
       7,
@@ -2629,7 +2725,7 @@
       9,
       10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "diurnal",
     "night_observable": true,
     "description": "Familia de culebras, género Cycophuops. *Cycophuops semicarinatus*\n\nAlcanza hasta unos 100 cm. Se observa con más facilidad entre mayo y noviembre. Es\nprincipalmente diurna, aunque muchos ejemplares también están activos de noche. Tiene la\ncabeza pequeña y se alimenta sobre todo de lombrices, además de ranas. Es la serpiente más\nnumerosa de Amami Oshima y puede verse en los bosques durante el día y en los caminos\nforestales por la noche. Los ejemplares más grandes a veces amenazan, pero huyen muy\nrápido, deslizándose por las pendientes.",
