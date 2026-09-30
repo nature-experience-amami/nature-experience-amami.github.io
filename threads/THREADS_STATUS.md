@@ -442,13 +442,13 @@
 
 - `overrides.yml` の月（オーナーの現場の感覚）を、サイト側の `content/creatures/` の45種の `months` 行に反映（commit `eb9b456`、日本語版45・翻訳版84ファイル）。本文は変更なし
 - `make_draft.py`・`overrides.yml` は今回は変更なし。反映後も `overrides.yml` の月は残っているため、Threadsの動作は変わらない（3段階目で、Markdownと同じ値になった月の上書きを整理する予定）
-- サイト側の記録は `PROJECT_STATUS_updated.md` に追記
+- サイト側の記録は `docs/history/2026-09.md`（旧 `PROJECT_STATUS_updated.md`）にある
 
 （担当: Claude Code）
 
 ### 2026-09-24 昼行性の判定をサイト側Markdownの activity に移行
 
-- サイト側の日本語版Markdownに `activity`（nocturnal / diurnal / crepuscular）と `night_observable: true`（昼行性でも夜に観察できる）を追加（commit `7da3285`）。詳細は `PROJECT_STATUS_updated.md`
+- サイト側の日本語版Markdownに `activity`（nocturnal / diurnal / crepuscular）と `night_observable: true`（昼行性でも夜に観察できる）を追加（commit `7da3285`）。詳細は `docs/history/2026-09.md`（旧 `PROJECT_STATUS_updated.md`）
 - `make_draft.py`（commit `fa18f1b`）：昼行性の判定を「Markdownの `activity: diurnal` で、`night_observable` でない種」に変更。`overrides.yml` に種ごとの `diurnal` を書けばそれを優先、`activity` がない種だけ `_categories` の既定値が効く。YAMLとして読めないMarkdown用の読み取りにも2項目を追加
 - `overrides.yml`：昼行性の印（20種）とトカゲのカテゴリー既定値を削除。月の上書き（46種）と `tour_exclude`（4種）は残した
 - 確認：昼行性と判定される種は変更前と同じ20種、月・`tour_exclude` も変化なし。2月・9月のツアー案内で昼行性の混入なし、`night_observable` の種（ルリカケス・アカハラダカ・オオトラツグミ・リュウキュウアサギマダラ・リュウキュウアオヘビ）は出る
