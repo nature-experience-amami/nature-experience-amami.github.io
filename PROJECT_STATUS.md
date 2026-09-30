@@ -69,6 +69,8 @@
 - claude.ai の設定画面から、アカウント側のスキルを2026-09-30に渡した `.skill` ファイルで差し替える: `amami-creature-md`・`amami-project-status-log`・`amami-new-category-page`（中身はこのリポジトリの `.claude/skills/` と同じ）
 - 上の「2026-10-01に確認すること」（AIチャット）
 - 株式レポートのLINE（別リポジトリ `tetsu-ai-secretar`）: 区切りの罫線が青くならないか、スパムのようなタイトルが消えているか、予定がそろっているか、長いURLが外れているか
+- Claude Code のクラウド環境のネットワーク設定で、生き物の調べ物に使うサイトを許可する（環境の編集 → Network access）。2026-09-30、`ja.wikipedia.org`・`www.sci.hokudai.ac.jp`・`jpnrdb.com` のページを開こうとして止められた（Web検索はできる）。監修役 `creature-reviewer` も同じ制限を受ける。追加候補: 上の3つ、`en.wikipedia.org`・`www.gbif.org`・`www.env.go.jp`・`www.pref.kagoshima.jp`
+- 上の設定のあと、アマミサソリモドキ（`other-arthropods/amami-sasorimodoki`）とオオゲジ（`other-arthropods/oo-geji`）のmdを作り、`creature-reviewer` で監修する（`amami-creature-md` スキル）。9/30は検索結果の要約だけで調べたところで止めた（下書きファイルはまだ無い）
 
 ## やることリスト
 
