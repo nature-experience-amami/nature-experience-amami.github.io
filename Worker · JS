@@ -121,7 +121,8 @@ ${JSON.stringify(creaturesForAI)}
 [Customer's question]
 ${message}`;
 
-  const rawText = await callGemini(prompt, env.GEMINI_API_KEY);
+  // チャットはデータにあることを2〜3文で答えるだけなので、考える量を少なくして速く返す
+  const rawText = await callGemini(prompt, env.GEMINI_API_KEY, undefined, "LOW");
   const parsed = safeParseAsk(rawText, creatures, config);
   return json(parsed, cors);
 }
@@ -236,11 +237,15 @@ Write the reply now, in Japanese, as plain text only.`;
   return json({ reply: rawText.trim() }, cors);
 }
 
-async function callGemini(prompt, apiKey, temperature) {
+// thinkingLevel を渡したときだけ「考える量」を指定する(省くとモデルの初期設定 medium)
+async function callGemini(prompt, apiKey, temperature, thinkingLevel) {
   const body = { contents: [{ parts: [{ text: prompt }] }] };
+  const generationConfig = {};
   // temperatureを低くするほど、モデルが「それっぽい別の言葉」に勝手に
   // 置き換えにくくなる(事実の書き写しが必要なparseInquiryなどで重要)。
-  if (temperature !== undefined) body.generationConfig = { temperature };
+  if (temperature !== undefined) generationConfig.temperature = temperature;
+  if (thinkingLevel) generationConfig.thinkingConfig = { thinkingLevel };
+  if (Object.keys(generationConfig).length) body.generationConfig = generationConfig;
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
     {
