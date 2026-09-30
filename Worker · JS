@@ -96,6 +96,7 @@ async function handleAsk(body, env, cors) {
     name: c.name,
     category_name: c.category_name,
     months: c.months,
+    months_source: c.months_source,
     description: c.description,
   }));
 
@@ -103,9 +104,12 @@ async function handleAsk(body, env, cors) {
   // 写真パスそのものは作らせない(捏造防止)。パスは必ずcreatures.jsonから実データを引く。
   const prompt = `You are a night-tour guide on Amami Oshima, Japan.
 Answer the customer's question using ONLY the [Creature data] below as your source.
-Base your answer only on each creature's description, months, name, and category_name fields.
+Base your answer only on each creature's description, months, months_source, name, and category_name fields.
 Never invent information that isn't in the data; if the data doesn't cover the question, say so (in ${config.name}) rather than guessing.
-Do not infer a "best season to see it" from photo dates — use only the months field for observation timing.
+Use only the months field for timing, and describe it according to months_source:
+- "notes": months when the creature is usually observed (in Japanese, e.g. 「5月から11月に観察しやすい」).
+- "photos": months when our own photos were taken — do not present these as a season; say there are photo records (in Japanese, e.g. 「2月と11月に撮影記録があります」).
+- "" or empty months: say the observation timing is not in the data.
 In your answer, use each creature's name and category_name exactly as given in the data (they are already the display names for this language).
 The internal id and category fields are for backend use only — never show them in your answer.
 creature_ids should list the internal id(s) of any matching creatures (e.g. "akamata").
@@ -241,7 +245,6 @@ Write the reply now, in Japanese, as plain text only.`;
   return json({ reply: rawText.trim() }, cors);
 }
 
-// thinkingLevel を渡したときだけ「考える量」を指定する(省くとモデルの初期設定 medium)
 // チャットで1つ目のモデルがだめなとき(混雑503・回数切れ429・時間切れ・JSONでない返事など)に、順番に答え直すモデル
 const ASK_MODELS = [MODEL, "gemini-3.1-flash-lite"];
 // チャットでこれ以上待っても返事が来ないときは打ち切って次のモデルへ(Cloudflareの時間切れ524より前に)。
