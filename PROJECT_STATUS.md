@@ -64,6 +64,12 @@
   - ログの `seconds` を数日分見て、打ち切りの25秒（`ASK_TIMEOUT_MS`）を決め直す
   - 予備モデル `gemini-3.1-flash-lite` に切り替わったとき、チャット用のキーで使えるか
 
+### 2026-10-01にオーナーがやること
+
+- claude.ai の設定画面から、アカウント側のスキルを2026-09-30に渡した `.skill` ファイルで差し替える: `amami-creature-md`・`amami-project-status-log`・`amami-new-category-page`（中身はこのリポジトリの `.claude/skills/` と同じ）
+- 上の「2026-10-01に確認すること」（AIチャット）
+- 株式レポートのLINE（別リポジトリ `tetsu-ai-secretar`）: 区切りの罫線が青くならないか、スパムのようなタイトルが消えているか、予定がそろっているか、長いURLが外れているか
+
 ## やることリスト
 
 ### AIチャット・Worker
