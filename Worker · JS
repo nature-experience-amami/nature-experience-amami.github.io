@@ -122,7 +122,11 @@ ${JSON.stringify(creaturesForAI)}
 ${message}`;
 
   // チャットはデータにあることを2〜3文で答えるだけなので、考える量を少なくして速く返す
-  const rawText = await callGemini(prompt, env.GEMINI_API_KEY, undefined, "LOW");
+  const rawText = await callGemini(prompt, env.GEMINI_API_KEY, {
+    thinkingLevel: "LOW",
+    models: ASK_MODELS,
+    timeoutMs: ASK_TIMEOUT_MS,
+  });
   const parsed = safeParseAsk(rawText, creatures, config);
   return json(parsed, cors);
 }
@@ -164,7 +168,7 @@ Correct output (note that 田中一郎, 田中花恵, and オリエントホテ�
 [Email text to extract from]
 ${text}`;
 
-  const rawText = await callGemini(prompt, env.GEMINI_API_KEY_3, 0);
+  const rawText = await callGemini(prompt, env.GEMINI_API_KEY_3, { temperature: 0 });
   const parsed = safeParseJSON(rawText);
   if (!parsed) return json({ error: "failed to parse AI response" }, cors, 502);
 
@@ -231,38 +235,76 @@ ${JSON.stringify(context)}
 
 Write the reply now, in Japanese, as plain text only.`;
 
-  const rawText = await callGemini(prompt, env.GEMINI_API_KEY_3, 0.2);
+  const rawText = await callGemini(prompt, env.GEMINI_API_KEY_3, { temperature: 0.2 });
   if (!rawText || !rawText.trim()) return json({ error: "empty AI response" }, cors, 502);
 
   return json({ reply: rawText.trim() }, cors);
 }
 
 // thinkingLevel を渡したときだけ「考える量」を指定する(省くとモデルの初期設定 medium)
-async function callGemini(prompt, apiKey, temperature, thinkingLevel) {
-  const body = { contents: [{ parts: [{ text: prompt }] }] };
-  const generationConfig = {};
-  // temperatureを低くするほど、モデルが「それっぽい別の言葉」に勝手に
-  // 置き換えにくくなる(事実の書き写しが必要なparseInquiryなどで重要)。
-  if (temperature !== undefined) generationConfig.temperature = temperature;
-  if (thinkingLevel) generationConfig.thinkingConfig = { thinkingLevel };
-  if (Object.keys(generationConfig).length) body.generationConfig = generationConfig;
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
-      body: JSON.stringify(body),
+// チャットで1つ目のモデルがだめなとき(混雑503・回数切れ429・時間切れ・JSONでない返事など)に、順番に答え直すモデル
+const ASK_MODELS = [MODEL, "gemini-3.1-flash-lite"];
+// チャットでこれ以上待っても返事が来ないときは打ち切って次のモデルへ(Cloudflareの時間切れ524より前に)。
+// 成功したときの秒数をログに残しているので、数日分を見てから見直す
+const ASK_TIMEOUT_MS = 25000;
+
+// options:
+//   temperature   … 低いほど「それっぽい別の言葉」に置き換えにくい(事実の書き写しが必要なparseInquiryなどで重要)
+//   thinkingLevel … 考える量。1つ目のモデルにだけ付ける(予備のモデルが対応していないとエラーになるおそれがあるため)。省くと初期設定(medium)
+//   models        … 順番に試すモデル。省くとMODELだけ(予備なし)
+//   timeoutMs     … 1回あたりの待ち時間の上限。省くと打ち切らない
+async function callGemini(prompt, apiKey, options = {}) {
+  const { temperature, thinkingLevel, models = [MODEL], timeoutMs } = options;
+
+  let lastError;
+  for (const [index, model] of models.entries()) {
+    const generationConfig = {};
+    if (temperature !== undefined) generationConfig.temperature = temperature;
+    if (thinkingLevel && index === 0) generationConfig.thinkingConfig = { thinkingLevel };
+    const body = { contents: [{ parts: [{ text: prompt }] }] };
+    if (Object.keys(generationConfig).length) body.generationConfig = generationConfig;
+
+    const started = Date.now();
+    try {
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
+          body: JSON.stringify(body),
+          ...(timeoutMs ? { signal: AbortSignal.timeout(timeoutMs) } : {}),
+        }
+      );
+      // 途中で打ち切られると「error code: 524」のようなJSONでない文字が返るので、先に文字として受け取る
+      const raw = await res.text();
+      let data;
+      try {
+        data = JSON.parse(raw);
+      } catch {
+        throw new Error(`Gemini(${model})の返事がJSONではない (HTTP ${res.status}): ${raw.slice(0, 100)}`);
+      }
+      const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (text === undefined) {
+        // GeminiがエラーやブロックでcandidatesもしくはPartsを返さなかった場合、
+        // 空文字で握りつぶさず、理由がわかる形で例外にする。
+        const reason = data?.error?.message || data?.promptFeedback?.blockReason || raw.slice(0, 300);
+        throw new Error(`Gemini(${model}) API did not return text (HTTP ${res.status}): ${reason}`);
+      }
+      // 成功したときも、モデル名とかかった秒数を残す(打ち切りの秒数を決めるため)
+      console.log(JSON.stringify({ at: new Date().toISOString(), model, ok: true, seconds: (Date.now() - started) / 1000 }));
+      return text;
+    } catch (err) {
+      lastError = err;
+      console.error(JSON.stringify({
+        at: new Date().toISOString(),
+        model,
+        ok: false,
+        seconds: (Date.now() - started) / 1000,
+        error: String((err && err.message) || err),
+      }));
     }
-  );
-  const data = await res.json();
-  const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (text === undefined) {
-    // GeminiがエラーやブロックでcandidatesもしくはPartsを返さなかった場合、
-    // 空文字で握りつぶさず、理由がわかる形で例外にする。
-    const reason = data?.error?.message || data?.promptFeedback?.blockReason || JSON.stringify(data).slice(0, 300);
-    throw new Error(`Gemini API did not return text (HTTP ${res.status}): ${reason}`);
   }
-  return text;
+  throw lastError;
 }
 
 // Geminiがコードブロック(```json ... ```)を付けてしまった場合も剥がしてから解析する。
