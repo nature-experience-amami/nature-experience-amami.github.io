@@ -163,7 +163,7 @@ python scripts/check_translations.py
 
 - 新しい種が増えると、ほかの生き物ページの関連カードも入れ替わるので、変更ファイルが数百になるのは正常(1ファイル1行程度の差分か確認する)
 - `scripts/__pycache__/` の `*.cpython-311.pyc` はコミットしない(リポジトリに入っている `cpython-314` の方は消さない)
-- `check_translations.py` の「日本語の残存」で `en/es/zh/index.html` の15箇所が出るのは以前からある分
+- `check_translations.py` は要確認0件になるのが正常(2026-09-30にHTMLコメントを数えないように直した)
 
 ## 報告に含めること(目安。形式は自由、中身は落とさない)
 
