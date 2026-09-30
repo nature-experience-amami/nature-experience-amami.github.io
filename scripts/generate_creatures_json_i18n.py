@@ -14,7 +14,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from generate_creatures_json import (  # noqa: E402
     IMAGES_DIR, CONTENT_DIR, DATE_RE, IMAGE_EXTS, IGNORED_SPECIES_DIRS,
-    MARKDOWN_ID_ALIASES, read_creature_content, species_dirs,
+    MARKDOWN_ID_ALIASES, read_creature_content, species_dirs, months_source,
 )
 from generate_creature_pages_i18n import load_lang, LANGS  # noqa: E402
 
@@ -66,6 +66,7 @@ def scan(lang):
                 "category": category_dir.name,
                 "category_name": category_name,
                 "months": frontmatter.get("months") or sorted(months),
+                "months_source": months_source(frontmatter, months),
                 "activity": ja_frontmatter.get("activity", ""),
                 "night_observable": ja_frontmatter.get("night_observable"),
                 "description": description,

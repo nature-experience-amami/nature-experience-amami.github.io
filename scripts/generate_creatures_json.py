@@ -72,6 +72,13 @@ def load_category_names():
     return {}
 
 
+def months_source(frontmatter, photo_months):
+    """観察月の出どころ("notes" / "photos" / "")を返す。months の決め方と同じ順番で判定する。"""
+    if frontmatter.get("months"):
+        return "notes"
+    return "photos" if photo_months else ""
+
+
 def species_dirs(category_dir):
     """生き物の写真フォルダを列挙する。
     通常は images/creatures/カテゴリ/生き物ID/ だが、水生昆虫のように
@@ -126,6 +133,9 @@ def scan():
                     # 観察月は「mdのmonths:」か「写真の撮影日」の2つだけから決める。
                     # (以前は本文の「〇月から〇月」も拾っていたが、繁殖期や本州の時期まで観察月にしてしまうためやめた)
                     "months": frontmatter.get("months") or sorted(months),
+                    # 観察月の出どころ。"notes" = mdのmonths:、"photos" = 写真の撮影日から数えた月、"" = 分からない。
+                    # AIチャットが「観察しやすい」と「撮影記録がある」を言い分けるのに使う
+                    "months_source": months_source(frontmatter, months),
                     # 活動時間帯(nocturnal / diurnal / crepuscular、空欄は不明)と、ナイトツアーでの観察可否
                     # (true=昼行性でも夜に観察できる / false=ナイトツアーでは出会えない / null=未記入)。
                     # トップページの写真選びに使う
