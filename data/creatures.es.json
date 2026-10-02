@@ -1996,16 +1996,17 @@
     "category": "other-arthropods",
     "category_name": "Otros artrópodos",
     "months": [
-      1,
-      4,
       5,
+      6,
+      7,
       8,
-      11
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Familia de los escorpiones látigo (Thelyphonidae), género Typopeltis. *Typopeltis stimpsonii* (Wood, 1862)\n\nLongitud corporal de unos 40mm. Se distribuye de forma natural desde el sur de Kyushu hasta las islas Amami (las poblaciones de las islas Izu y otros lugares se consideran introducidas por el ser humano). Se parece mucho al escorpión látigo de Taiwán, que vive desde la isla de Okinawa hasta las islas Yaeyama, y antes se consideraban la misma especie. Es nocturno: de día se esconde bajo piedras y troncos caídos, y de noche atrapa insectos, arañas y otras presas. No tiene glándulas de veneno, pero cuando se siente amenazado se defiende rociando desde el extremo posterior del abdomen (glándulas anales) un líquido compuesto principalmente de ácido acético (80% de ácido acético, 5% de ácido caprílico y 15% de agua), que según se indica alcanza unos 20cm. Su nombre en inglés, vinegaroon, proviene de este olor a vinagre. La hembra cuida los huevos, y las crías recién nacidas permanecen sujetas al dorso de la madre.",
+    "description": "Familia de los escorpiones látigo (Thelyphonidae), género Typopeltis. *Typopeltis stimpsonii* (Wood, 1862)\n\nLongitud corporal de unos 40mm. Se distribuye de forma natural desde el sur de Kyushu hasta las islas Amami (las poblaciones de las islas Izu y otros lugares se consideran introducidas por el ser humano). Se parece mucho al escorpión látigo de Taiwán, que vive desde la isla de Okinawa hasta las islas Yaeyama, y antes se consideraban la misma especie. Es nocturno: de día se esconde bajo piedras y troncos caídos, y de noche atrapa insectos, arañas y otras presas. No tiene glándulas de veneno, pero cuando se siente amenazado se defiende rociando desde el extremo posterior del abdomen (glándulas anales) un líquido compuesto principalmente de ácido acético (80% de ácido acético, 5% de ácido caprílico y 15% de agua), que según se indica alcanza unos 20cm. Su nombre en inglés, vinegaroon, proviene de este olor a vinagre. La hembra cuida los huevos, y las crías recién nacidas permanecen sujetas al dorso de la madre. En Amami se puede ver durante todo el año, pero está más activo aproximadamente de mayo a octubre.",
     "photos": [
       "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
       "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
@@ -2067,15 +2068,15 @@
     "category": "other-arthropods",
     "category_name": "Otros artrópodos",
     "months": [
-      4,
-      5,
+      6,
       7,
+      8,
       9
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Familia de los ciempiés domésticos (Scutigeridae), género Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)\n\nLongitud corporal de 45-60mm. Se distribuye desde Honshu (región de Kanto hacia el sur) hasta las islas Nansei; en Japón se conocen dos especies de ciempiés domésticos: el Geji y esta. El dorso es negruzco y la zona alrededor de los espiráculos es anaranjada. Tiene 15 pares (30) de patas, todas largas y delgadas. Los ciempiés domésticos son nocturnos y prefieren ambientes húmedos; esperan al acecho, persiguen rápidamente a sus presas y atrapan insectos y otros pequeños artrópodos envolviéndolos con sus largas patas. A veces se reúnen en cuevas para pasar el invierno. Aunque es un ciempiés, no muerde activamente a las personas y huye rápidamente cuando alguien se acerca.",
+    "description": "Familia de los ciempiés domésticos (Scutigeridae), género Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)\n\nLongitud corporal de 45-60mm. Se distribuye desde Honshu (región de Kanto hacia el sur) hasta las islas Nansei; en Japón se conocen dos especies de ciempiés domésticos: el Geji y esta. El dorso es negruzco y la zona alrededor de los espiráculos es anaranjada. Tiene 15 pares (30) de patas, todas largas y delgadas. Los ciempiés domésticos son nocturnos y prefieren ambientes húmedos; esperan al acecho, persiguen rápidamente a sus presas y atrapan insectos y otros pequeños artrópodos envolviéndolos con sus largas patas. A veces se reúnen en cuevas para pasar el invierno. Aunque es un ciempiés, no muerde activamente a las personas y huye rápidamente cuando alguien se acerca. En Amami se puede ver aproximadamente de marzo a diciembre, y es más fácil de observar de junio a septiembre.",
     "photos": [
       "../images/creatures/other-arthropods/oo-geji/oo-geji_000001_20250427_20.jpg",
       "../images/creatures/other-arthropods/oo-geji/oo-geji_000002_20250525_22.jpg",

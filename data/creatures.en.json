@@ -1996,16 +1996,17 @@
     "category": "other-arthropods",
     "category_name": "Other Arthropods",
     "months": [
-      1,
-      4,
       5,
+      6,
+      7,
       8,
-      11
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Whip scorpion family (Thelyphonidae), genus Typopeltis. *Typopeltis stimpsonii* (Wood, 1862)\n\nBody length about 40mm. Naturally distributed from southern Kyushu to the Amami Islands (populations on the Izu Islands and elsewhere are considered to have been introduced by people). It closely resembles the Taiwan whip scorpion found from Okinawa Island to the Yaeyama Islands, and the two were once considered the same species. It is nocturnal, hiding under stones and fallen logs during the day and catching insects, spiders and other prey at night. It has no venom glands, but when threatened it defends itself by spraying a liquid made mainly of acetic acid (80% acetic acid, 5% caprylic acid, 15% water) from the rear end of its abdomen (anal glands), reportedly reaching about 20cm. Its English name, vinegaroon, comes from this vinegar-like smell. The female guards her eggs, and the hatched young stay attached to their mother's back.",
+    "description": "Whip scorpion family (Thelyphonidae), genus Typopeltis. *Typopeltis stimpsonii* (Wood, 1862)\n\nBody length about 40mm. Naturally distributed from southern Kyushu to the Amami Islands (populations on the Izu Islands and elsewhere are considered to have been introduced by people). It closely resembles the Taiwan whip scorpion found from Okinawa Island to the Yaeyama Islands, and the two were once considered the same species. It is nocturnal, hiding under stones and fallen logs during the day and catching insects, spiders and other prey at night. It has no venom glands, but when threatened it defends itself by spraying a liquid made mainly of acetic acid (80% acetic acid, 5% caprylic acid, 15% water) from the rear end of its abdomen (anal glands), reportedly reaching about 20cm. Its English name, vinegaroon, comes from this vinegar-like smell. The female guards her eggs, and the hatched young stay attached to their mother's back. On Amami it can be seen year-round, but it is most active from around May to October.",
     "photos": [
       "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
       "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
@@ -2067,15 +2068,15 @@
     "category": "other-arthropods",
     "category_name": "Other Arthropods",
     "months": [
-      4,
-      5,
+      6,
       7,
+      8,
       9
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "House centipede family (Scutigeridae), genus Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)\n\nBody length 45-60mm. Distributed from Honshu (Kanto region and southward) to the Nansei Islands; two species of house centipedes are known from Japan: the Geji and this species. The back is blackish, and the areas around the spiracles are orange. It has 15 pairs (30) of walking legs, all long and slender. House centipedes are nocturnal and prefer humid environments; they wait in ambush, chase prey down quickly, and catch insects and other small arthropods by wrapping them in their long legs. They sometimes gather in caves to overwinter. Although it is a centipede, it does not actively bite people and runs away quickly when approached.",
+    "description": "House centipede family (Scutigeridae), genus Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)\n\nBody length 45-60mm. Distributed from Honshu (Kanto region and southward) to the Nansei Islands; two species of house centipedes are known from Japan: the Geji and this species. The back is blackish, and the areas around the spiracles are orange. It has 15 pairs (30) of walking legs, all long and slender. House centipedes are nocturnal and prefer humid environments; they wait in ambush, chase prey down quickly, and catch insects and other small arthropods by wrapping them in their long legs. They sometimes gather in caves to overwinter. Although it is a centipede, it does not actively bite people and runs away quickly when approached. On Amami it can be seen from around March to December, and is easiest to observe from around June to September.",
     "photos": [
       "../images/creatures/other-arthropods/oo-geji/oo-geji_000001_20250427_20.jpg",
       "../images/creatures/other-arthropods/oo-geji/oo-geji_000002_20250525_22.jpg",
