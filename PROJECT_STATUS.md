@@ -137,3 +137,11 @@
 - Push: 済み
 
 （担当: Claude Code）
+
+### 2026-10-02 オオゲジのスペイン語名を変更
+
+- オーナーの指示で、英語名に合わせてスペイン語名を Ciempiés Doméstico Gigante から Ciempiés Gigante に変えた（`oo-geji.es.md`）。中国語の名前（大蚰蜒）はそのまま
+- Commit SHA: 6a7f604（md）、ページの再生成と記録はこの次のcommit
+- Push: 済み
+
+（担当: Claude Code）
