@@ -6,4 +6,4 @@ source: Jeong, K.-H., Harms, D. & Yoo, J.-S. (2024) The pseudoscorpion genus Nip
 ---
 Olpiid pseudoscorpion family (Olpiidae), Small Seashore Pseudoscorpion relatives *Nipponogarypus* sp.
 
-A small pseudoscorpion that lives on the seashore. *Nipponogarypus enoshimaensis* is about 2.5mm long, black and glossy, and was considered to be distributed on coasts from Enoshima in Kanagawa Prefecture southward, but a 2024 paper separated the populations of the Satsunan and Ryukyu Islands as a distinct species, *N. okinoerabensis* (originally described as a subspecies from Okinoerabu-jima).
+A small pseudoscorpion that lives on the seashore. *Nipponogarypus enoshimaensis* is about 2.5mm long, black and glossy, and was considered to be distributed on coasts from Enoshima in Kanagawa Prefecture southward, but a 2024 paper separated the populations of the Satsunan and Ryukyu Islands as a distinct species, *N. okinoerabensis* (originally described as a subspecies from Okinoerabu-jima). On Amami it has been photographed in March and October, but it is not yet known whether it can be seen at other times of the year.
