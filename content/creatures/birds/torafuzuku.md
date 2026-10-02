@@ -5,6 +5,8 @@ category: birds
 group: fukurou
 danger: 観察できる生き物
 months: [11, 12, 1, 2, 3]
+activity: nocturnal
+night_observable: false
 ---
 フクロウ目フクロウ科トラフズク属トラフズク *Asio otus*
 

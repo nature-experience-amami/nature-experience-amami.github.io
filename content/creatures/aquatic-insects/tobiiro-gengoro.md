@@ -4,6 +4,7 @@ name: トビイロゲンゴロウ
 category: aquatic-insects
 group: gengoro
 months: [4, 5, 6, 7, 8, 9]
+activity: nocturnal
 source: くろむし屋「日本の水生昆虫リスト」http://kuromushiya.com/mlist/dytiscidae/tobiiro.html(2020年7月6日更新)
 ---
 ゲンゴロウ科ゲンゴロウ属トビイロゲンゴロウ *Cybister sugillatus* Erichson, 1834

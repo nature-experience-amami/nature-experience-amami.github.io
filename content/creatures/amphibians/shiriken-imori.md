@@ -5,6 +5,7 @@ category: amphibians
 danger: 無毒
 group: newt
 months: [12, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+activity: nocturnal
 ---
 イモリ科イモリ属 *Cynops ensicauda ensicauda*
 

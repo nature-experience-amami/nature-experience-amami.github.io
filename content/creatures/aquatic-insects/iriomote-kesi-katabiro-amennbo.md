@@ -5,6 +5,7 @@ category: aquatic-insects
 group: amenbo
 source: くろむし屋「日本の水生昆虫リスト」http://kuromushiya.com/mlist/veliidae/iriomotekeshikatabiro.html(2020年12月26日更新)
 months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+night_observable: false
 ---
 カタビロアメンボ科ケシカタビロアメンボ属イリオモテケシカタビロアメンボ *Microvelia iriomotensis* Miyamoto, 1964
 

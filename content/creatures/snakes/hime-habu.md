@@ -4,6 +4,7 @@ name: ヒメハブ
 category: snakes
 danger: 毒あり
 months: [1, 2, 3, 4, 5, 6, 12]
+activity: nocturnal
 ---
 クサリヘビ科ヤマハブ属 *Ovophis okinavensis*
 

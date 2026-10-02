@@ -4,6 +4,7 @@ name: スジブトヒラタクワガタ
 category: stag-beetles
 danger: 採集可
 months: [7, 9, 10, 11]
+activity: nocturnal
 ---
 クワガタムシ科オオクワガタ属ヒラタクワガタ亜属 *Dorcus metacostatus*
 

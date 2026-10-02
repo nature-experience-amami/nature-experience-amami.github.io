@@ -5,6 +5,7 @@ category: amphibians
 danger: 捕獲・譲渡原則禁止
 group: newt
 months: [12, 1, 2, 3, 4]
+activity: nocturnal
 ---
 イモリ科イボイモリ属 *Echinotriton raffaellii*
 

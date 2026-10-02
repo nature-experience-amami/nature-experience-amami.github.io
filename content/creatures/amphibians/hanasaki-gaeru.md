@@ -5,6 +5,7 @@ category: amphibians
 danger: 捕獲・譲渡禁止(天然記念物)
 group: frog
 months: [11, 12, 1, 2]
+activity: nocturnal
 ---
 アカガエル科ニオイガエル属 *Odorrana amamiensis*
 

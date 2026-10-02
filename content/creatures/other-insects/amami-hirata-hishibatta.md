@@ -3,6 +3,7 @@ id: amami-hirata-hishibatta
 name: アマミヒラタヒシバッタ
 category: other-insects
 group: tyokushi
+activity: nocturnal
 ---
 ヒシバッタ科 アマミヒラタヒシバッタ *Austrohancockia amamiensis* Yamasaki, 1994
 

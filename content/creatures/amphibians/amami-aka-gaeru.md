@@ -5,6 +5,7 @@ category: amphibians
 danger: 無毒
 group: frog
 months: [11, 12, 1, 2]
+activity: nocturnal
 ---
 アカガエル科アカガエル属 *Rana kobai*
 

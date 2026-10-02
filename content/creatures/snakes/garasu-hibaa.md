@@ -4,6 +4,7 @@ name: ガラスヒバァ
 category: snakes
 danger: 毒あり
 months: [1, 2, 3, 4, 5, 6]
+activity: nocturnal
 ---
 ナミヘビ科ヒバカリ属 *Hebius pryeri*
 

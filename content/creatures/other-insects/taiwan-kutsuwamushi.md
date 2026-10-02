@@ -4,6 +4,7 @@ name: タイワンクツワムシ
 category: other-insects
 group: tyokushi
 months: [9, 10, 11, 12]
+activity: nocturnal
 ---
 キリギリス科 タイワンクツワムシ *Mecopoda elongata* (Linnaeus, 1758)
 
