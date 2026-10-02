@@ -4,6 +4,7 @@ name: アマミコクワガタ
 category: stag-beetles
 danger: 採集可
 months: [7, 8]
+activity: nocturnal
 ---
 クワガタムシ科オオクワガタ属コクワガタ亜属 *Dorcus amamianus*
 

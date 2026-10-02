@@ -4,6 +4,7 @@ name: アマミネブトクワガタ
 category: stag-beetles
 danger: 採集可
 months: [6, 7, 8, 9, 10]
+activity: nocturnal
 ---
 クワガタムシ科ネブトクワガタ属 *Aegus laevicolis subnitidus*
 

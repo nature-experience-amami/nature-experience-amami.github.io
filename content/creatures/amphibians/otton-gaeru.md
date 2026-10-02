@@ -5,6 +5,7 @@ category: amphibians
 danger: 捕獲・譲渡禁止(天然記念物)
 group: frog
 months: [6, 7, 8, 9]
+activity: nocturnal
 ---
 アカガエル科バビナ属 *Babina subaspera*
 

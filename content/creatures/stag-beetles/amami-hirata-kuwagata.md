@@ -4,6 +4,7 @@ name: アマミヒラタクワガタ
 category: stag-beetles
 danger: 採集可
 months: [7, 8]
+activity: nocturnal
 ---
 クワガタムシ科オオクワガタ属ヒラタクワガタ亜種 *Dorcus titanusu elegans*
 

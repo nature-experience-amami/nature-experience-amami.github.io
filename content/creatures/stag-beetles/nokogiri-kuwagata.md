@@ -4,6 +4,7 @@ name: アマミノコギリクワガタ
 category: stag-beetles
 danger: 採集可
 months: [7, 8]
+activity: nocturnal
 ---
 クワガタムシ科ノコギリクワガタ属の奄美亜種 *Prosopocoilus dissimilis*
 

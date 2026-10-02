@@ -5,6 +5,7 @@ category: amphibians
 danger: 無毒
 group: frog
 months: [12, 1, 2, 3, 4]
+activity: nocturnal
 ---
 アオガエル科アオガエル属 *Zhangixalus amamiensis*
 

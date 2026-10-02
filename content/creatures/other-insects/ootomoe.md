@@ -4,6 +4,7 @@ name: オオトモエ
 category: other-insects
 group: ga
 months: [6, 7, 8]
+activity: nocturnal
 ---
 ヤガ科(近年の分類ではエレビダエ科) オオトモエ *Erebus ephesperis* (Hübner, [1823])
 

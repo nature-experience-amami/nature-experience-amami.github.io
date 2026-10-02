@@ -4,6 +4,7 @@ name: アマミシカクワガタ
 category: stag-beetles
 danger: 採集禁止(条例)
 months: [7, 8]
+activity: nocturnal
 ---
 クワガタムシ科シカクワガタ属 *Rhaetulus recticrnis*
 
