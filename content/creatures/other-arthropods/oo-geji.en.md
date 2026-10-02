@@ -1,6 +1,6 @@
 ---
 id: oo-geji
-name: Giant House Centipede
+name: Giant Centipede
 category: other-arthropods
 ---
 House centipede family (Scutigeridae), genus Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)
