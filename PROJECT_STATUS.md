@@ -129,3 +129,11 @@
 - Push: 済み
 
 （担当: Claude Code）
+
+### 2026-10-02 オオゲジの英語名を変更
+
+- オーナーの指示で、オオゲジの英語名を Giant House Centipede から Giant Centipede に変えた（`oo-geji.en.md`）。スペイン語・中国語の名前はそのまま
+- Commit SHA: a97f2bf（md）、ページの再生成と記録はこの次のcommit
+- Push: 済み
+
+（担当: Claude Code）
