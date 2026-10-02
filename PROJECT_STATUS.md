@@ -1,6 +1,6 @@
 # Nature Experience Amami - Project Status
 
-最終更新: 2026-09-30（日本時間）
+最終更新: 2026-10-02（日本時間）
 
 今の状況とやることだけを書くファイルです。作業前に `AGENTS.md`（共通ルール）を先に読んでください。
 2026年9月までの経緯は `docs/history/2026-09.md` にあります（2026-09-30まで使っていた `PROJECT_STATUS_updated.md` を、そのまま名前を変えて移したもの）。
@@ -50,8 +50,8 @@
 └─ Worker · JS                    Cloudflare Workerの控え（自動では反映されない）
 ```
 
-- カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects`（写真だけ `crustaceans`（カニ） `other-arthropods` もある）。
-- 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` は図鑑ページ（`scripts/generate_zukan_page.py`）。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
+- カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects` `other-arthropods`（写真だけ `crustaceans`（カニ）もある）。
+- 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` `other-arthropods` は図鑑ページ（`scripts/generate_zukan_page.py`）。`other-arthropods` の図鑑ページは日本語版だけで、英語・スペイン語・中国語の一覧ページはまだない（生き物ごとのページは4言語ある）。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
 - `categories/hebi.html` `kaeru.html` `kuwagata.html` `honyuurui.html` `tori.html` `suisei-konntyuu.html` `koucyu.html` などは、英語名に変える前の古いURLから新しいページへ移動させるための転送ページ。
 
 ## 進行中の作業
@@ -69,8 +69,6 @@
 - claude.ai の設定画面から、アカウント側のスキルを2026-09-30に渡した `.skill` ファイルで差し替える: `amami-creature-md`・`amami-project-status-log`・`amami-new-category-page`（中身はこのリポジトリの `.claude/skills/` と同じ）
 - 上の「2026-10-01に確認すること」（AIチャット）
 - 株式レポートのLINE（別リポジトリ `tetsu-ai-secretar`）: 区切りの罫線が青くならないか、スパムのようなタイトルが消えているか、予定がそろっているか、長いURLが外れているか
-- Claude Code のクラウド環境のネットワーク設定で、生き物の調べ物に使うサイトを許可する（環境の編集 → Network access）。2026-09-30、`ja.wikipedia.org`・`www.sci.hokudai.ac.jp`・`jpnrdb.com` のページを開こうとして止められた（Web検索はできる）。監修役 `creature-reviewer` も同じ制限を受ける。追加候補: 上の3つ、`en.wikipedia.org`・`www.gbif.org`・`www.env.go.jp`・`www.pref.kagoshima.jp`
-- 上の設定のあと、アマミサソリモドキ（`other-arthropods/amami-sasorimodoki`）とオオゲジ（`other-arthropods/oo-geji`）のmdを作り、`creature-reviewer` で監修する（`amami-creature-md` スキル）。9/30は検索結果の要約だけで調べたところで止めた（下書きファイルはまだ無い）
 
 ## やることリスト
 
@@ -82,9 +80,11 @@
 ### 生き物データ・ページ
 
 - 生き物ページで、写真の撮影日だけで決まった月（`months_source` が `photos`、日本語版18種）も「観察しやすい時期」として表示されている。オーナーが `months:` を書くか、ページでも「撮影記録」と表示を分けるか決める。
-  - トップページの「FIELD NOTE（今月に観察しやすい生き物）」も同じで、`index.html` は `months_source` を見ずに月だけで選んでいる（2026-10-01確認。10月はアマミヒラタヒシバッタと、mdが無くフォルダ名で出る ko-iso-kanimushi が対象）。説明文は「ガイドが入力した観察時期をもとに」なので合わない。
+  - トップページの「FIELD NOTE（今月に観察しやすい生き物）」も同じで、`index.html` は `months_source` を見ずに月だけで選んでいる（2026-10-01確認。10月はアマミヒラタヒシバッタと ko-iso-kanimushi が対象。ko-iso-kanimushi は2026-10-02にmdができ「コイソカニムシの仲間」と出るが、months は写真の撮影日から）。説明文は「ガイドが入力した観察時期をもとに」なので合わない。
   - 2026-10-01に18種の時期をWeb検索したが、ページを開けず要約だけだった。小さい水生昆虫とアマミヒラタヒシバッタは情報が見つからなかった。ネットワーク設定のあとに調べ直し、オーナーと1種ずつ `months:` を決める（資料の繁殖期などは本文へ）。決めきれない種は `months:` を書かず、フィールドノートには出さないようにする案。
-- カニ（`crustaceans`）とその他の節足動物（`other-arthropods`）の7種類は、Markdownもカテゴリーページもまだない。そのためAIチャットで和名ではなく写真フォルダ名（例: okayadokari）が出る。
+- カニ（`crustaceans`）の2種類と、オオヒラタザトウムシ（`other-arthropods/oohirata-zatoumushi`）は、Markdownがまだない。そのためAIチャットで和名ではなく写真フォルダ名（例: okayadokari）が出る。
+  - ザトウムシは、奄美のものは「アマミオオヒラタザトウムシ」と呼ばれるが、和名と学名（*Leiobunum maximum distinctum*、2025年に *Pseudoliobunum* 属へ）の対応を確かめられず保留（2026-10-02）。Suzuki (1973) や『タクサ』49号の総説が読めれば調べ直せる。オーナーの写真は奄美で撮影したもの。
+- その他の節足動物の英語・スペイン語・中国語の図鑑ページを作るか決める（`amami-new-category-page` スキル）。
 - トビイロゲンゴロウの写真がない（Markdownはある）。
 - 確かめきれていない内容: コバネコロギスの奄美大島での分布（写真の種の確認が必要）、アマミマダラカマドウマの体長、オキナワキノボリトカゲの条例による捕獲禁止の有無、チンメルマンセスジゲンゴロウの奄美の個体の亜種の扱い・環境省と鹿児島県のランク。
 - Markdownのidを正式名称に合わせて「amami-」付きに統一する（影響が広いので専用の作業として）。
@@ -111,6 +111,37 @@
 - 監修役 `creature-reviewer` で監修。要修正なし。日本爬虫両棲類学会の標準和名リストは *Cyclophiops semicarinatus* のまま（海外のデータベースは *Ptyas semicarinata*）。どちらも検索結果の要約でのみ確認
 - 未完了事項: 学会リストの本文の確認、条例で捕獲禁止の種でないことの公式一覧での確認、id（`ryukyu-ao-hebi`）と写真フォルダ名（`ryuukyuu-aohebi`）の違い（対応表で動いている）。本文の「5月から11月頃」と `months:`（5〜10月）のずれはオーナー判断
 - Commit SHA: 77037e3（md）、ページの再生成と記録はこの次のcommit
+- Push: 済み
+
+（担当: Claude Code）
+
+### 2026-10-02 その他の節足動物4種のMarkdownを追加
+
+- クラウド環境のネットワーク設定に、生き物の調べ物に使うサイトをオーナーが登録した。開けるのは ja/en.wikipedia・コトバンク・api.gbif.org・環境省・鹿児島県など。J-STAGE・GBIFの通常ページ・IUCN・生物多様性遺産図書館はサイト側で断られる（登録では直らない）。WebFetch では止められるサイトもあり、curl の方が開ける
+- 写真はあるがmdが無かった `other-arthropods` の5種を調べ、4種のmdを作った（4言語）: アマミサソリモドキ（*Typopeltis stimpsonii*）、オオゲジ（*Thereuopoda clunifera*）、イソカニムシ（*Anchigarypus japonicus*。2020年に *Garypus* から移った）、コイソカニムシの仲間（*Nipponogarypus* sp.。2024年の論文で薩南・琉球のものが *N. okinoerabensis* に分けられたが、写真の種を決めきれないため「仲間」とした）
+- 監修役 `creature-reviewer` で監修し、分布の書き方などを直した。論文3本（Harvey ほか 2020、Jeong ほか 2024、Tan ほか 2025）は検索結果の要約でのみ確認
+- オーナーの回答: コイソカニムシの仲間以外の3種は夜行性でナイトツアーで観察できる（`activity: nocturnal`）。コイソカニムシの仲間は昼に石の下から出てくるが夜行性かは確証がない（`activity` は書かず `night_observable: false`）
+- danger は4種とも書いていない（奄美市の指定希少種ではない。鹿児島県レッドリストはクモ類・多足類を対象にしていない。環境省レッドリストは名簿の本体を未確認）
+- months は4種とも書いていない（写真の撮影日から自動集計）
+- 英語・スペイン語・中国語の名前は、定まった通称を確かめられなかったので付けたもの（Amami Whip Scorpion、Giant House Centipede、Japanese Seashore Pseudoscorpion など）
+- 未完了事項: オオヒラタザトウムシのmd（保留。リポジトリに下書きは無い。やることリストに記載）、その他の節足動物の翻訳版図鑑ページ
+- Commit SHA: fe1f684（md）、ページの再生成と記録はこの次のcommit
+- Push: 済み
+
+（担当: Claude Code）
+
+### 2026-10-02 オオゲジの英語名を変更
+
+- オーナーの指示で、オオゲジの英語名を Giant House Centipede から Giant Centipede に変えた（`oo-geji.en.md`）。スペイン語・中国語の名前はそのまま
+- Commit SHA: a97f2bf（md）、ページの再生成と記録はこの次のcommit
+- Push: 済み
+
+（担当: Claude Code）
+
+### 2026-10-02 オオゲジのスペイン語名を変更
+
+- オーナーの指示で、英語名に合わせてスペイン語名を Ciempiés Doméstico Gigante から Ciempiés Gigante に変えた（`oo-geji.es.md`）。中国語の名前（大蚰蜒）はそのまま
+- Commit SHA: 6a7f604（md）、ページの再生成と記録はこの次のcommit
 - Push: 済み
 
 （担当: Claude Code）

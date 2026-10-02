@@ -1991,6 +1991,102 @@
     "page_path": "creatures/mammals/watase-jinezumi.html"
   },
   {
+    "id": "amami-sasorimodoki",
+    "name": "奄美鞭蝎",
+    "category": "other-arthropods",
+    "category_name": "其他节肢动物",
+    "months": [
+      1,
+      4,
+      5,
+      8,
+      11
+    ],
+    "months_source": "photos",
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "鞭蝎科 Typopeltis 属 *Typopeltis stimpsonii* (Wood, 1862)\n\n体长约40毫米。自然分布于九州南部至奄美群岛（伊豆诸岛等地的个体被认为是人为引入的）。与分布于冲绳岛至八重山群岛的台湾鞭蝎外形非常相似，以前曾被认为是同一种。夜行性，白天躲在石头或倒木下，夜间捕食昆虫和蜘蛛等。没有毒腺，但感到危险时会从腹部末端（肛门腺）喷射以醋酸为主要成分的液体（醋酸80%、辛酸5%、水15%）来保护自己，据称喷射距离可达约20厘米。英文名 vinegaroon 即来源于这种类似醋的气味。雌性会守护卵，孵化的幼体附着在母亲背上生活。",
+    "photos": [
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000003_20260502_21.jpg",
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000004_20250812_21.jpg",
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000005_20251101_22.jpg"
+    ],
+    "page_path": "creatures/other-arthropods/amami-sasorimodoki.html"
+  },
+  {
+    "id": "iso-kanimushi",
+    "name": "日本滨伪蝎",
+    "category": "other-arthropods",
+    "category_name": "其他节肢动物",
+    "months": [
+      2,
+      3
+    ],
+    "months_source": "photos",
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "伪蝎目 Garypidae 科 日本滨伪蝎 *Anchigarypus japonicus* (Beier, 1952)\n\n体长3.5～5毫米，雌性略大。全身灰褐色，带螯的触肢和背甲为红褐色。有4只眼。分布于北海道利尻岛、本州、四国、九州至琉球群岛。栖息于海岸高潮线至浪花飞溅的地带，藏身于被冲上岸的海藻中、石头下和岩缝里。在琉球群岛曾在海螺壳下被发现。夜行性。长期被归入 *Garypus* 属，但2020年的论文将其移入新设立的 *Anchigarypus* 属。",
+    "photos": [
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000001_20260204_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000002_20260204_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000003_20260204_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000004_20260204_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000005_20260313_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000006_20260313_20.jpg"
+    ],
+    "page_path": "creatures/other-arthropods/iso-kanimushi.html"
+  },
+  {
+    "id": "ko-iso-kanimushi",
+    "name": "小型滨伪蝎类",
+    "category": "other-arthropods",
+    "category_name": "其他节肢动物",
+    "months": [
+      3,
+      10
+    ],
+    "months_source": "photos",
+    "activity": "",
+    "night_observable": false,
+    "description": "伪蝎目 Olpiidae 科 小型滨伪蝎类 *Nipponogarypus* sp.\n\n栖息于海岸的小型伪蝎。*Nipponogarypus enoshimaensis* 体长约2.5毫米，黑色有光泽，过去被认为分布于神奈川县江之岛以南的海岸，但2024年的论文将萨南诸岛和琉球群岛的个体分为另一个种 *N. okinoerabensis*（原本是以冲永良部岛为模式产地记载的亚种）。",
+    "photos": [
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000001_20260301_15.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000002_20260301_15.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000003_20260301_15.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000004_20260301_15.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000005_20251012_16.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000006_20251012_16.jpg"
+    ],
+    "page_path": "creatures/other-arthropods/ko-iso-kanimushi.html"
+  },
+  {
+    "id": "oo-geji",
+    "name": "大蚰蜒",
+    "category": "other-arthropods",
+    "category_name": "其他节肢动物",
+    "months": [
+      4,
+      5,
+      7,
+      9
+    ],
+    "months_source": "photos",
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "蚰蜒科 Thereuopoda 属 *Thereuopoda clunifera* (Wood, 1862)\n\n体长45～60毫米。分布于本州（关东地区以南）至南西诸岛，日本已知的蚰蜒类有蚰蜒（Geji）和本种两种。背部偏黑，气门周围呈橙色。步足15对共30只，均细长。蚰蜒类为夜行性，喜欢湿度高的环境，从埋伏中迅速追赶猎物，用长足像缠绕一样捕捉昆虫等小型节肢动物。有时会聚集在洞穴中越冬。虽然属于蜈蚣类，但不会主动咬人，有人靠近时会迅速逃走。",
+    "photos": [
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000001_20250427_20.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000002_20250525_22.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000003_20250704_22.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000004_20250720_22.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000005_20250720_22.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000006_20250910_21.jpg"
+    ],
+    "page_path": "creatures/other-arthropods/oo-geji.html"
+  },
+  {
     "id": "amami-hirata-hishibatta",
     "name": "奄美扁蚱",
     "category": "other-insects",

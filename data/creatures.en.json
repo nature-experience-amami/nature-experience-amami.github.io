@@ -1991,6 +1991,102 @@
     "page_path": "creatures/mammals/watase-jinezumi.html"
   },
   {
+    "id": "amami-sasorimodoki",
+    "name": "Amami Whip Scorpion",
+    "category": "other-arthropods",
+    "category_name": "Other Arthropods",
+    "months": [
+      1,
+      4,
+      5,
+      8,
+      11
+    ],
+    "months_source": "photos",
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Whip scorpion family (Thelyphonidae), genus Typopeltis. *Typopeltis stimpsonii* (Wood, 1862)\n\nBody length about 40mm. Naturally distributed from southern Kyushu to the Amami Islands (populations on the Izu Islands and elsewhere are considered to have been introduced by people). It closely resembles the Taiwan whip scorpion found from Okinawa Island to the Yaeyama Islands, and the two were once considered the same species. It is nocturnal, hiding under stones and fallen logs during the day and catching insects, spiders and other prey at night. It has no venom glands, but when threatened it defends itself by spraying a liquid made mainly of acetic acid (80% acetic acid, 5% caprylic acid, 15% water) from the rear end of its abdomen (anal glands), reportedly reaching about 20cm. Its English name, vinegaroon, comes from this vinegar-like smell. The female guards her eggs, and the hatched young stay attached to their mother's back.",
+    "photos": [
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000003_20260502_21.jpg",
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000004_20250812_21.jpg",
+      "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000005_20251101_22.jpg"
+    ],
+    "page_path": "creatures/other-arthropods/amami-sasorimodoki.html"
+  },
+  {
+    "id": "iso-kanimushi",
+    "name": "Japanese Seashore Pseudoscorpion",
+    "category": "other-arthropods",
+    "category_name": "Other Arthropods",
+    "months": [
+      2,
+      3
+    ],
+    "months_source": "photos",
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "Garypid pseudoscorpion family (Garypidae), Japanese Seashore Pseudoscorpion *Anchigarypus japonicus* (Beier, 1952)\n\nBody length 3.5-5mm, with females slightly larger. The body is greyish brown overall, while the pincer-bearing pedipalps and the carapace are reddish brown. It has four eyes. Distributed from Rishiri Island in Hokkaido, Honshu, Shikoku and Kyushu to the Ryukyu Islands. It lives on the shore from the high-tide line to the splash zone, hiding in washed-up seaweed, under stones and in rock crevices. In the Ryukyu Islands it has been found under sea snail shells. Nocturnal. It was long placed in the genus *Garypus*, but a 2020 paper moved it to the newly established genus *Anchigarypus*.",
+    "photos": [
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000001_20260204_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000002_20260204_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000003_20260204_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000004_20260204_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000005_20260313_20.jpg",
+      "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000006_20260313_20.jpg"
+    ],
+    "page_path": "creatures/other-arthropods/iso-kanimushi.html"
+  },
+  {
+    "id": "ko-iso-kanimushi",
+    "name": "Small Seashore Pseudoscorpion relatives",
+    "category": "other-arthropods",
+    "category_name": "Other Arthropods",
+    "months": [
+      3,
+      10
+    ],
+    "months_source": "photos",
+    "activity": "",
+    "night_observable": false,
+    "description": "Olpiid pseudoscorpion family (Olpiidae), Small Seashore Pseudoscorpion relatives *Nipponogarypus* sp.\n\nA small pseudoscorpion that lives on the seashore. *Nipponogarypus enoshimaensis* is about 2.5mm long, black and glossy, and was considered to be distributed on coasts from Enoshima in Kanagawa Prefecture southward, but a 2024 paper separated the populations of the Satsunan and Ryukyu Islands as a distinct species, *N. okinoerabensis* (originally described as a subspecies from Okinoerabu-jima).",
+    "photos": [
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000001_20260301_15.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000002_20260301_15.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000003_20260301_15.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000004_20260301_15.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000005_20251012_16.jpg",
+      "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000006_20251012_16.jpg"
+    ],
+    "page_path": "creatures/other-arthropods/ko-iso-kanimushi.html"
+  },
+  {
+    "id": "oo-geji",
+    "name": "Giant Centipede",
+    "category": "other-arthropods",
+    "category_name": "Other Arthropods",
+    "months": [
+      4,
+      5,
+      7,
+      9
+    ],
+    "months_source": "photos",
+    "activity": "nocturnal",
+    "night_observable": null,
+    "description": "House centipede family (Scutigeridae), genus Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)\n\nBody length 45-60mm. Distributed from Honshu (Kanto region and southward) to the Nansei Islands; two species of house centipedes are known from Japan: the Geji and this species. The back is blackish, and the areas around the spiracles are orange. It has 15 pairs (30) of walking legs, all long and slender. House centipedes are nocturnal and prefer humid environments; they wait in ambush, chase prey down quickly, and catch insects and other small arthropods by wrapping them in their long legs. They sometimes gather in caves to overwinter. Although it is a centipede, it does not actively bite people and runs away quickly when approached.",
+    "photos": [
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000001_20250427_20.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000002_20250525_22.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000003_20250704_22.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000004_20250720_22.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000005_20250720_22.jpg",
+      "../images/creatures/other-arthropods/oo-geji/oo-geji_000006_20250910_21.jpg"
+    ],
+    "page_path": "creatures/other-arthropods/oo-geji.html"
+  },
+  {
     "id": "amami-hirata-hishibatta",
     "name": "Amami Flat Pygmy Grasshopper",
     "category": "other-insects",
