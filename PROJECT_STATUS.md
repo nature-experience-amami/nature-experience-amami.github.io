@@ -162,3 +162,13 @@
 - Push: 済み
 
 （担当: Claude Code）
+
+### 2026-10-02 アマミタカチホヘビをナイトツアーで出会える生き物から外した
+
+- オーナーの指示: 夜行性だが、とても珍しく見せられる自信がないため。`takachiho-hebi.md` に `night_observable: false` を追加し、`data/creatures*.json` を作り直した
+- 結果: ナイトツアーで見られる58種、見られない54種。トップの大きな写真の候補は56種
+- 「珍しくて見せられる自信がない種は外す」を `amami-creature-md` スキルに書き足した
+- Commit SHA: このエントリと同じブランチの4つのcommit（md・データ・スキル・記録）
+- Push: 済み
+
+（担当: Claude Code）
