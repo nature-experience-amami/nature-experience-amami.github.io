@@ -5,7 +5,6 @@ category: aquatic-insects
 group: gengoro
 danger: 環境省レッドリスト:絶滅危惧II類
 months: [4, 5, 6, 7, 8, 9]
-night_observable: false
 source: 環境省 レッドデータブック(第4次)昆虫類 コガタノゲンゴロウ(https://ikilog.biodic.go.jp/rdbdata/files/envpdf/昆虫類_249.pdf)
 ---
 ゲンゴロウ科ゲンゴロウ属コガタノゲンゴロウ *Cybister tripunctatus lateralis*

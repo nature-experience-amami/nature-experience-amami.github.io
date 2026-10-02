@@ -5,7 +5,6 @@ category: aquatic-insects
 group: gengoro
 danger: 販売・頒布目的の捕獲等禁止(特定第二種国内希少野生動植物種)
 months: [4, 5, 6, 7, 8, 9]
-night_observable: false
 source: 環境省「令和4年度の国内希少野生動植物種の指定について」(2023年1月11日施行、Prodaticus vittatusを特定第二種国内希少野生動植物種に指定)https://www.env.go.jp/council/content/12nature05/000105811.pdf
 ---
 ゲンゴロウ科シマゲンゴロウ属オキナワスジゲンゴロウ *Hydaticus vittatus* (Fabricius, 1775)
