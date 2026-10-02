@@ -1,6 +1,6 @@
 ---
 id: oo-geji
-name: Ciempiés Doméstico Gigante
+name: Ciempiés Gigante
 category: other-arthropods
 ---
 Familia de los ciempiés domésticos (Scutigeridae), género Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)
