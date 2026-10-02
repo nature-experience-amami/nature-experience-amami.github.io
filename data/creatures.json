@@ -2033,7 +2033,7 @@
   },
   {
     "id": "amami-sasorimodoki",
-    "name": "amami-sasorimodoki",
+    "name": "アマミサソリモドキ",
     "category": "other-arthropods",
     "category_name": "その他の節足動物",
     "months": [
@@ -2044,9 +2044,9 @@
       11
     ],
     "months_source": "photos",
-    "activity": "",
+    "activity": "nocturnal",
     "night_observable": null,
-    "description": "",
+    "description": "サソリモドキ科サソリモドキ属 アマミサソリモドキ *Typopeltis stimpsonii* (Wood, 1862)\n\n体長約40mm。九州南部から奄美群島にかけて自然分布する(伊豆諸島などのものは人が持ち込んだ移入とされる)。沖縄島から八重山諸島にいるタイワンサソリモドキとは外見がよく似ており、以前は同じ種と考えられていた。夜行性で、昼間は石や倒木の下に隠れ、夜に昆虫やクモなどを捕まえて食べる。毒腺は持たないが、危険を感じると腹部の後端(肛門腺)から酢酸を主成分とする液(酢酸80%、カプリル酸5%、水15%)を噴射して身を守り、その距離は20cmほどになるとされる。英名のビネガロン(vinegaroon)は、この酢のようなにおいに由来する。雌は卵を守り、ふ化した子は母親の背中に付いて過ごす。",
     "photos": [
       "images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
       "images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
@@ -2054,11 +2054,11 @@
       "images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000004_20250812_21.jpg",
       "images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000005_20251101_22.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-arthropods/amami-sasorimodoki.html"
   },
   {
     "id": "iso-kanimushi",
-    "name": "iso-kanimushi",
+    "name": "イソカニムシ",
     "category": "other-arthropods",
     "category_name": "その他の節足動物",
     "months": [
@@ -2066,9 +2066,9 @@
       3
     ],
     "months_source": "photos",
-    "activity": "",
+    "activity": "nocturnal",
     "night_observable": null,
-    "description": "",
+    "description": "イソカニムシ科 イソカニムシ *Anchigarypus japonicus* (Beier, 1952)\n\n体長3.5〜5mmで、雌の方がやや大きい。全体に灰褐色で、はさみのある触肢と背甲は赤褐色。眼は4つ。北海道の利尻島・本州・四国・九州から琉球列島まで分布する。海岸の高潮線から波しぶきのかかる場所にすみ、打ち上げられた海藻の中や石の下、岩の裂け目に潜む。琉球列島では巻き貝の下から見つかっている。夜行性。長く *Garypus* 属とされてきたが、2020年の論文で新しく作られた *Anchigarypus* 属に移された。",
     "photos": [
       "images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000001_20260204_20.jpg",
       "images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000002_20260204_20.jpg",
@@ -2077,11 +2077,11 @@
       "images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000005_20260313_20.jpg",
       "images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000006_20260313_20.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-arthropods/iso-kanimushi.html"
   },
   {
     "id": "ko-iso-kanimushi",
-    "name": "ko-iso-kanimushi",
+    "name": "コイソカニムシの仲間",
     "category": "other-arthropods",
     "category_name": "その他の節足動物",
     "months": [
@@ -2090,8 +2090,8 @@
     ],
     "months_source": "photos",
     "activity": "",
-    "night_observable": null,
-    "description": "",
+    "night_observable": false,
+    "description": "サバクカニムシ科 コイソカニムシの仲間 *Nipponogarypus* sp.\n\n海岸にすむ小さなカニムシ。コイソカニムシ(*Nipponogarypus enoshimaensis*)は体長2.5mm前後で黒く光沢があり、神奈川県の江ノ島以南の海岸に分布するとされてきたが、2024年の論文で、薩南諸島と琉球列島のものは別の種 *N. okinoerabensis* として分けられた(もとは沖永良部島から記載された亜種)。",
     "photos": [
       "images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000001_20260301_15.jpg",
       "images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000002_20260301_15.jpg",
@@ -2100,11 +2100,11 @@
       "images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000005_20251012_16.jpg",
       "images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000006_20251012_16.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-arthropods/ko-iso-kanimushi.html"
   },
   {
     "id": "oo-geji",
-    "name": "oo-geji",
+    "name": "オオゲジ",
     "category": "other-arthropods",
     "category_name": "その他の節足動物",
     "months": [
@@ -2114,9 +2114,9 @@
       9
     ],
     "months_source": "photos",
-    "activity": "",
+    "activity": "nocturnal",
     "night_observable": null,
-    "description": "",
+    "description": "ゲジ科オオゲジ属 オオゲジ *Thereuopoda clunifera* (Wood, 1862)\n\n体長45〜60mm。本州(関東地方以南)から南西諸島に分布し、日本のゲジの仲間はゲジとオオゲジの2種が知られる。背は黒っぽく、気門のまわりがオレンジ色になる。歩肢は15対30本で、どれも細長い。ゲジの仲間は夜行性で、湿度の高い環境を好み、待ち伏せからすばやく追いかけて、長い脚で昆虫などの小さな節足動物を巻きつけるように捕らえる。洞窟に集まって冬を越すことがある。ムカデの仲間だが、人を積極的にかむことはなく、近づくとすばやく逃げる。",
     "photos": [
       "images/creatures/other-arthropods/oo-geji/oo-geji_000001_20250427_20.jpg",
       "images/creatures/other-arthropods/oo-geji/oo-geji_000002_20250525_22.jpg",
@@ -2125,7 +2125,7 @@
       "images/creatures/other-arthropods/oo-geji/oo-geji_000005_20250720_22.jpg",
       "images/creatures/other-arthropods/oo-geji/oo-geji_000006_20250910_21.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-arthropods/oo-geji.html"
   },
   {
     "id": "oohirata-zatoumushi",
