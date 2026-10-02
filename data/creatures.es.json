@@ -2526,7 +2526,7 @@
     ],
     "months_source": "notes",
     "activity": "nocturnal",
-    "night_observable": null,
+    "night_observable": false,
     "description": "Familia de las culebras Takachiho, tribu Takachiho. *Achalinus werneri*\n\nAlcanza hasta unos 55 cm. El dorso es de color pardo negruzco o pardo oscuro, con una\nfranja negra a lo largo de la línea media; el vientre es amarillo. En Amami es una\nserpiente legendaria que solo se encuentra en condiciones muy concretas. A veces sale a la\nsuperficie en días de lluvia intensa. Es nocturna y de hábitos subterráneos, y vive en\nbosques, praderas cerca del agua y tierras de cultivo. Se alimenta de lombrices. Es más\nescasa y difícil de encontrar aquí que en otras islas donde también habita esta especie.\nEs muy delgada y pequeña, así que puede que no la notes ni pasando en coche a su lado.",
     "photos": [
       "../images/creatures/snakes/amami-takachiho-hebi/amami-takachiho-hebi_000001_20260401_08.jpg",
