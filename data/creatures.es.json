@@ -1996,16 +1996,17 @@
     "category": "other-arthropods",
     "category_name": "Otros artrópodos",
     "months": [
-      1,
-      4,
       5,
+      6,
+      7,
       8,
-      11
+      9,
+      10
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Familia de los escorpiones látigo (Thelyphonidae), género Typopeltis. *Typopeltis stimpsonii* (Wood, 1862)\n\nLongitud corporal de unos 40mm. Se distribuye de forma natural desde el sur de Kyushu hasta las islas Amami (las poblaciones de las islas Izu y otros lugares se consideran introducidas por el ser humano). Se parece mucho al escorpión látigo de Taiwán, que vive desde la isla de Okinawa hasta las islas Yaeyama, y antes se consideraban la misma especie. Es nocturno: de día se esconde bajo piedras y troncos caídos, y de noche atrapa insectos, arañas y otras presas. No tiene glándulas de veneno, pero cuando se siente amenazado se defiende rociando desde el extremo posterior del abdomen (glándulas anales) un líquido compuesto principalmente de ácido acético (80% de ácido acético, 5% de ácido caprílico y 15% de agua), que según se indica alcanza unos 20cm. Su nombre en inglés, vinegaroon, proviene de este olor a vinagre. La hembra cuida los huevos, y las crías recién nacidas permanecen sujetas al dorso de la madre.",
+    "description": "Familia de los escorpiones látigo (Thelyphonidae), género Typopeltis. *Typopeltis stimpsonii* (Wood, 1862)\n\nLongitud corporal de unos 40mm. Se distribuye de forma natural desde el sur de Kyushu hasta las islas Amami (las poblaciones de las islas Izu y otros lugares se consideran introducidas por el ser humano). Se parece mucho al escorpión látigo de Taiwán, que vive desde la isla de Okinawa hasta las islas Yaeyama, y antes se consideraban la misma especie. Es nocturno: de día se esconde bajo piedras y troncos caídos, y de noche atrapa insectos, arañas y otras presas. No tiene glándulas de veneno, pero cuando se siente amenazado se defiende rociando desde el extremo posterior del abdomen (glándulas anales) un líquido compuesto principalmente de ácido acético (80% de ácido acético, 5% de ácido caprílico y 15% de agua), que según se indica alcanza unos 20cm. Su nombre en inglés, vinegaroon, proviene de este olor a vinagre. La hembra cuida los huevos, y las crías recién nacidas permanecen sujetas al dorso de la madre. En Amami se puede ver durante todo el año, pero está más activo aproximadamente de mayo a octubre.",
     "photos": [
       "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000001_20260119_22.jpg",
       "../images/creatures/other-arthropods/amami-sasorimodoki/amami-sasorimodoki_000002_20260416_22.jpg",
@@ -2027,7 +2028,7 @@
     "months_source": "photos",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Familia de los pseudoescorpiones garípidos (Garypidae), Pseudoescorpión Costero Japonés *Anchigarypus japonicus* (Beier, 1952)\n\nLongitud corporal de 3,5-5mm; las hembras son algo más grandes. El cuerpo es de color pardo grisáceo en general, mientras que los pedipalpos con pinzas y el caparazón son pardo rojizos. Tiene cuatro ojos. Se distribuye desde la isla Rishiri en Hokkaido, Honshu, Shikoku y Kyushu hasta las islas Ryukyu. Vive en la costa, desde la línea de pleamar hasta la zona de salpicaduras, escondido entre algas arrastradas por el mar, bajo piedras y en grietas de las rocas. En las islas Ryukyu se ha encontrado bajo conchas de caracoles marinos. Nocturno. Durante mucho tiempo se incluyó en el género *Garypus*, pero un artículo de 2020 lo trasladó al recién creado género *Anchigarypus*.",
+    "description": "Familia de los pseudoescorpiones garípidos (Garypidae), Pseudoescorpión Costero Japonés *Anchigarypus japonicus* (Beier, 1952)\n\nLongitud corporal de 3,5-5mm; las hembras son algo más grandes. El cuerpo es de color pardo grisáceo en general, mientras que los pedipalpos con pinzas y el caparazón son pardo rojizos. Tiene cuatro ojos. Se distribuye desde la isla Rishiri en Hokkaido, Honshu, Shikoku y Kyushu hasta las islas Ryukyu. Vive en la costa, desde la línea de pleamar hasta la zona de salpicaduras, escondido entre algas arrastradas por el mar, bajo piedras y en grietas de las rocas. En las islas Ryukyu se ha encontrado bajo conchas de caracoles marinos. Nocturno. Durante mucho tiempo se incluyó en el género *Garypus*, pero un artículo de 2020 lo trasladó al recién creado género *Anchigarypus*. En Amami hay registros fotográficos de febrero y marzo, pero aún no se sabe si se puede ver en otras épocas del año.",
     "photos": [
       "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000001_20260204_20.jpg",
       "../images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000002_20260204_20.jpg",
@@ -2050,7 +2051,7 @@
     "months_source": "photos",
     "activity": "",
     "night_observable": false,
-    "description": "Familia de los pseudoescorpiones olpíidos (Olpiidae), Pseudoescorpiones Costeros Pequeños *Nipponogarypus* sp.\n\nUn pequeño pseudoescorpión que vive en la costa. *Nipponogarypus enoshimaensis* mide unos 2,5mm, es negro y brillante, y se consideraba distribuido en las costas desde Enoshima (prefectura de Kanagawa) hacia el sur, pero un artículo de 2024 separó las poblaciones de las islas Satsunan y Ryukyu como una especie distinta, *N. okinoerabensis* (descrita originalmente como subespecie de Okinoerabu-jima).",
+    "description": "Familia de los pseudoescorpiones olpíidos (Olpiidae), Pseudoescorpiones Costeros Pequeños *Nipponogarypus* sp.\n\nUn pequeño pseudoescorpión que vive en la costa. *Nipponogarypus enoshimaensis* mide unos 2,5mm, es negro y brillante, y se consideraba distribuido en las costas desde Enoshima (prefectura de Kanagawa) hacia el sur, pero un artículo de 2024 separó las poblaciones de las islas Satsunan y Ryukyu como una especie distinta, *N. okinoerabensis* (descrita originalmente como subespecie de Okinoerabu-jima). En Amami hay registros fotográficos de marzo y octubre, pero aún no se sabe si se puede ver en otras épocas del año.",
     "photos": [
       "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000001_20260301_15.jpg",
       "../images/creatures/other-arthropods/ko-iso-kanimushi/ko-iso-kanimushi_000002_20260301_15.jpg",
@@ -2067,15 +2068,15 @@
     "category": "other-arthropods",
     "category_name": "Otros artrópodos",
     "months": [
-      4,
-      5,
+      6,
       7,
+      8,
       9
     ],
-    "months_source": "photos",
+    "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Familia de los ciempiés domésticos (Scutigeridae), género Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)\n\nLongitud corporal de 45-60mm. Se distribuye desde Honshu (región de Kanto hacia el sur) hasta las islas Nansei; en Japón se conocen dos especies de ciempiés domésticos: el Geji y esta. El dorso es negruzco y la zona alrededor de los espiráculos es anaranjada. Tiene 15 pares (30) de patas, todas largas y delgadas. Los ciempiés domésticos son nocturnos y prefieren ambientes húmedos; esperan al acecho, persiguen rápidamente a sus presas y atrapan insectos y otros pequeños artrópodos envolviéndolos con sus largas patas. A veces se reúnen en cuevas para pasar el invierno. Aunque es un ciempiés, no muerde activamente a las personas y huye rápidamente cuando alguien se acerca.",
+    "description": "Familia de los ciempiés domésticos (Scutigeridae), género Thereuopoda. *Thereuopoda clunifera* (Wood, 1862)\n\nLongitud corporal de 45-60mm. Se distribuye desde Honshu (región de Kanto hacia el sur) hasta las islas Nansei; en Japón se conocen dos especies de ciempiés domésticos: el Geji y esta. El dorso es negruzco y la zona alrededor de los espiráculos es anaranjada. Tiene 15 pares (30) de patas, todas largas y delgadas. Los ciempiés domésticos son nocturnos y prefieren ambientes húmedos; esperan al acecho, persiguen rápidamente a sus presas y atrapan insectos y otros pequeños artrópodos envolviéndolos con sus largas patas. A veces se reúnen en cuevas para pasar el invierno. Aunque es un ciempiés, no muerde activamente a las personas y huye rápidamente cuando alguien se acerca. En Amami se puede ver aproximadamente de marzo a diciembre, y es más fácil de observar de junio a septiembre.",
     "photos": [
       "../images/creatures/other-arthropods/oo-geji/oo-geji_000001_20250427_20.jpg",
       "../images/creatures/other-arthropods/oo-geji/oo-geji_000002_20250525_22.jpg",

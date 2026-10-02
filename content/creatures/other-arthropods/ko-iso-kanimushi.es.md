@@ -6,4 +6,4 @@ source: Jeong, K.-H., Harms, D. & Yoo, J.-S. (2024) The pseudoscorpion genus Nip
 ---
 Familia de los pseudoescorpiones olpíidos (Olpiidae), Pseudoescorpiones Costeros Pequeños *Nipponogarypus* sp.
 
-Un pequeño pseudoescorpión que vive en la costa. *Nipponogarypus enoshimaensis* mide unos 2,5mm, es negro y brillante, y se consideraba distribuido en las costas desde Enoshima (prefectura de Kanagawa) hacia el sur, pero un artículo de 2024 separó las poblaciones de las islas Satsunan y Ryukyu como una especie distinta, *N. okinoerabensis* (descrita originalmente como subespecie de Okinoerabu-jima).
+Un pequeño pseudoescorpión que vive en la costa. *Nipponogarypus enoshimaensis* mide unos 2,5mm, es negro y brillante, y se consideraba distribuido en las costas desde Enoshima (prefectura de Kanagawa) hacia el sur, pero un artículo de 2024 separó las poblaciones de las islas Satsunan y Ryukyu como una especie distinta, *N. okinoerabensis* (descrita originalmente como subespecie de Okinoerabu-jima). En Amami hay registros fotográficos de marzo y octubre, pero aún no se sabe si se puede ver en otras épocas del año.
