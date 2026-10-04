@@ -14,6 +14,7 @@ import random
 import re
 import sys
 import time
+import uuid
 from collections import Counter
 from pathlib import Path
 from urllib.parse import quote
@@ -221,14 +222,43 @@ def gh_headers():
             "Accept": "application/vnd.github+json"}
 
 
+SEND_RETRY_WAITS = [300, 900, 1800] # GitHub・LINEへの送信が失敗したとき、5分後・15分後・30分後にもう一度送る(秒、最大で約50分)
+
+
+def send_with_retry(send, what, before_retry=None):
+    # GitHubやLINEが一時的に応答できない(通信エラー・5xx・429)とき、時間をおいて送り直す。
+    # それ以外のエラー(400番台)は送り直しても直らないので、そのまま返す。
+    # before_retry: 送り直す前の確認。前回の送信が実は届いていたときの応答を返す(二重に送らないため)
+    for attempt in range(len(SEND_RETRY_WAITS) + 1):
+        try:
+            r = send()
+            if r.status_code < 500 and r.status_code != 429:
+                return r
+            reason = f"{r.status_code}"
+        except requests.RequestException as e:
+            r, reason = None, f"{type(e).__name__}"
+        if attempt == len(SEND_RETRY_WAITS):
+            if r is None:
+                raise RuntimeError(f"{what}: 送り直しても通信できなかった({reason})")
+            return r
+        wait = SEND_RETRY_WAITS[attempt]
+        print(f"{what}に失敗({reason})。{wait // 60}分後にもう一度送る {attempt + 1}/{len(SEND_RETRY_WAITS)}")
+        time.sleep(wait)
+        if before_retry:
+            done = before_retry()
+            if done is not None:
+                print(f"{what}: 前回の送信は届いていたので、送り直さない")
+                return done
+
+
 def recent_history(n=365):
     # 新しい順。種・コツの重複チェックは直近30件、写真の使い回しチェックは直近365件(約1年)を見る
     hist = []
     for page in range(1, (n + 99) // 100 + 1):
-        r = requests.get(
+        r = send_with_retry(lambda: requests.get(
             f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/issues",
             params={"labels": DRAFT_LABEL, "state": "all", "per_page": 100, "page": page},
-            headers=gh_headers(), timeout=30)
+            headers=gh_headers(), timeout=30), "投稿履歴の読み込み")
         r.raise_for_status()
         issues = r.json()
         for issue in issues:
@@ -553,12 +583,27 @@ def create_issue(ptype, c, out, tip_index, hist, variant=""):
     lines += ["", f"<!-- meta: {json.dumps(meta, ensure_ascii=False)} -->"]
 
     title = f"{NOW:%m/%d} {TYPE_LABEL[ptype]}{variant}：{c.get('name')}"
-    r = requests.post(
-        f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/issues",
-        json={"title": title, "body": "\n".join(lines), "labels": [DRAFT_LABEL]},
-        headers=gh_headers(), timeout=30)
-    r.raise_for_status()
-    issue_url = r.json()["html_url"]
+    issues_url = f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/issues"
+
+    def already_created():
+        # 503などが返っても、Issueは作られていることがある。同じタイトルのIssueが今日できていれば、それを使う
+        try:
+            r = requests.get(issues_url, params={"labels": DRAFT_LABEL, "state": "all", "per_page": 30},
+                             headers=gh_headers(), timeout=30)
+            r.raise_for_status()
+            return next((i for i in r.json() if i.get("title") == title), None)
+        except requests.RequestException as e:
+            print("作成済みIssueの確認に失敗(そのまま送り直す):", e)
+            return None
+
+    r = send_with_retry(lambda: requests.post(
+        issues_url, json={"title": title, "body": "\n".join(lines), "labels": [DRAFT_LABEL]},
+        headers=gh_headers(), timeout=30), "Issue作成", before_retry=already_created)
+    if isinstance(r, dict):
+        issue_url = r["html_url"]
+    else:
+        r.raise_for_status()
+        issue_url = r.json()["html_url"]
     print("下書き作成:", issue_url)
     # LINEへは、全部の案のIssueを作り終えてからまとめて送る(send_line)
     return meta, {"title": title, "text": text, "answer": answer, "photos": photos, "issue_url": issue_url}
@@ -574,12 +619,18 @@ def line_push(messages, what):
     if not token or not to:
         print(f"LINE送信({what}): トークンか宛先が未設定のためスキップ")
         return False
+    # 送り直すときは同じ再送キーを付ける。前回の送信が実は届いていたら、LINEが409を返して二重には届かない
+    headers = {"Authorization": f"Bearer {token}", "X-Line-Retry-Key": str(uuid.uuid4())}
     try:
-        r = requests.post(LINE_PUSH_URL, headers={"Authorization": f"Bearer {token}"},
-                          json={"to": to, "messages": messages}, timeout=30)
+        r = send_with_retry(lambda: requests.post(LINE_PUSH_URL, headers=headers,
+                                                  json={"to": to, "messages": messages}, timeout=30),
+                            f"LINE送信({what})")
     except Exception as e:
         print(f"LINE送信({what})に失敗:", e)
         return False
+    if r.status_code == 409 and r.headers.get("x-line-accepted-request-id"):
+        print(f"LINE送信({what}): OK(前回の送信が届いていた)")
+        return True
     if not r.ok:
         print(f"LINE送信({what})に失敗({r.status_code}): {r.text[:300]}")
         return False
