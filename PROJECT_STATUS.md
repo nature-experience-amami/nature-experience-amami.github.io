@@ -233,3 +233,12 @@
 - Push: 作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` にpush。`main` へのマージはオーナーがGitHub Desktopで行う
 
 （担当: Claude Code）
+
+### 2026-10-05 スキルの作り直し手順をワークフローに合わせ、作業用ブランチを main にマージ
+
+- `amami-new-category-page` と `amami-photo-fix` のスキルにある作り直しのコマンド一覧に、`generate_highlights_page_i18n.py` と `generate_sitemap.py` を足し、ワークフロー `process-creature-photos.yml` と同じ順番にした（上の記録の「未修正」の分）
+- オーナーの指示（「マージして」）で、作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` を `main` にマージしてpushした（その他の節足動物のトップページ・翻訳版図鑑ページ、カード説明文の修正、ワークフロー、ドキュメント、スキル）
+- Commit SHA: スキルの修正と、この記録の2つ
+- Push: 済み（作業用ブランチと `main`）
+
+（担当: Claude Code）
