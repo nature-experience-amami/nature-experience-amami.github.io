@@ -51,7 +51,7 @@
 ```
 
 - カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects` `other-arthropods`（写真だけ `crustaceans`（カニ）もある）。
-- 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` `other-arthropods` は図鑑ページ（`scripts/generate_zukan_page.py`）。`other-arthropods` の図鑑ページは日本語版だけで、英語・スペイン語・中国語の一覧ページはまだない（生き物ごとのページは4言語ある）。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
+- 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` `other-arthropods` は図鑑ページ（`scripts/generate_zukan_page.py`）。図鑑ページは5カテゴリーとも4言語ある。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
 - `categories/hebi.html` `kaeru.html` `kuwagata.html` `honyuurui.html` `tori.html` `suisei-konntyuu.html` `koucyu.html` などは、英語名に変える前の古いURLから新しいページへ移動させるための転送ページ。
 
 ## 進行中の作業
@@ -85,7 +85,6 @@
   - 2026-10-01に18種の時期をWeb検索したが、ページを開けず要約だけだった。小さい水生昆虫とアマミヒラタヒシバッタは情報が見つからなかった。ネットワーク設定のあとに調べ直し、オーナーと1種ずつ `months:` を決める（資料の繁殖期などは本文へ）。決めきれない種は `months:` を書かず、フィールドノートには出さないようにする案。
 - カニ（`crustaceans`）の2種類と、オオヒラタザトウムシ（`other-arthropods/oohirata-zatoumushi`）は、Markdownがまだない。そのためAIチャットで和名ではなく写真フォルダ名（例: okayadokari）が出る。
   - ザトウムシは、奄美のものは「アマミオオヒラタザトウムシ」と呼ばれるが、和名と学名（*Leiobunum maximum distinctum*、2025年に *Pseudoliobunum* 属へ）の対応を確かめられず保留（2026-10-02）。Suzuki (1973) や『タクサ』49号の総説が読めれば調べ直せる。オーナーの写真は奄美で撮影したもの。
-- その他の節足動物の英語・スペイン語・中国語の図鑑ページを作るか決める（`amami-new-category-page` スキル）。
 - トビイロゲンゴロウの写真がない（Markdownはある）。
 - 確かめきれていない内容: コバネコロギスの奄美大島での分布（写真の種の確認が必要）、アマミマダラカマドウマの体長、オキナワキノボリトカゲの条例による捕獲禁止の有無、チンメルマンセスジゲンゴロウの奄美の個体の亜種の扱い・環境省と鹿児島県のランク。
 - Markdownのidを正式名称に合わせて「amami-」付きに統一する（影響が広いので専用の作業として）。
@@ -205,5 +204,19 @@
 - 「進行中の作業」の「写真追加ツールの段階表示」の項目を消した
 - Commit SHA: 212de4c3・1bab64e6 が `main` に入った。この記録は未commit
 - Push: 未実施（この記録）
+
+（担当: Claude Code）
+
+### 2026-10-05 その他の節足動物をトップページに足し、翻訳版の図鑑ページを作った
+
+- トップページ（`index.html`、`en/` `es/` `zh/index.html`）の上部のカテゴリーの並びと、下部の「他の生き物を見る」に、その他の節足動物を足した（「その他の昆虫」の後ろ）
+- 英語・スペイン語・中国語の図鑑ページ（`en/` `es/` `zh/categories/other-arthropods.html`）を作った。`TRANSLATED_ZUKAN_CATEGORIES`（`generate_zukan_page.py`）と、翻訳版でカテゴリー帯・ボタンにリンクを出すかを決める `AVAILABLE_CATEGORY_PAGES`（`generate_creature_pages_i18n.py`）に `other-arthropods` を足した
+- 図鑑ページの紹介文を4言語で書いた（オーナー承認済み）。一言紹介の「サソリモドキ・ゲジ・カニムシ」は、このカテゴリーのmd4種（アマミサソリモドキ・オオゲジ・イソカニムシ・コイソカニムシの仲間）で確かめた。注意書きはアマミサソリモドキのmdにある酢のようなにおいの液のこと。翻訳の生き物名は各種の翻訳版mdの名前に合わせた
+- ページを作り直した。翻訳版のカテゴリー帯に「Other Arthropods」などが入ったため、翻訳版の生き物ページ・カテゴリーページがほぼすべて変わった。`en/` `es/` `zh/highlights.html` も作り直し、カテゴリー帯と、写真が増えた種の写真の並びが新しくなった
+- `sitemap.xml` を作り直した（388件 → 500件。その他の節足動物のページのほか、載っていなかった生き物ページも入った。消えたURLは無い）
+- `other-insects` でリポジトリ全体を検索して、カテゴリー一覧を手で書いている場所を確かめた。ページやスクリプトの漏れは上で直した分だけ。ドキュメントでは、`.claude/agents/creature-reviewer.md` と `.claude/skills/amami-creature-translation/SKILL.md` の図鑑形式カテゴリーの一覧に `other-arthropods` が無い（未修正）
+- 気づいたこと（未修正）: ワークフロー `process-creature-photos.yml` は `generate_highlights_page_i18n.py` を動かしていないため、翻訳版の代表的な生き物ページは写真が増えても古いままになる。英語版の代表的な生き物ページに「found only .」「Kakeromajima,.」のような途中で切れた文がある（今回の作り直しの前からある）
+- Commit SHA: このあとのcommit（トップページ／翻訳版図鑑ページ／sitemap／この記録の4つに分ける）
+- Push: 作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` にpush予定。`main` へのマージはオーナーがGitHub Desktopで行う
 
 （担当: Claude Code）
