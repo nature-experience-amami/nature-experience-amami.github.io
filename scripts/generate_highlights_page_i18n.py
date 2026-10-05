@@ -171,7 +171,7 @@ def highlight_card_html(creature, generated_keys, lang, strings):
         f'<div class="creature-meta"><span>{escape(category.upper())}</span>'
         f'<span class="{danger_class.strip()}">{escape(status)}</span></div>'
         f'<span class="creature-name">{name}</span>'
-        f'<p class="creature-description">{escape(card_description(creature["body"], strings))}</p></div>'
+        f'<p class="creature-description">{escape(card_description(creature["body"], strings, lang))}</p></div>'
         f'{image}<span class="creature-link">{link}</span>{closing}</article>'
     )
 

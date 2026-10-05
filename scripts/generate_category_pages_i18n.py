@@ -13,7 +13,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from generate_category_pages import (  # noqa: E402
     ROOT, CREATURE_CONTENT_DIR, PHOTO_DIR_ALIASES,
-    parse_markdown, paragraphs, photo_files,
+    parse_markdown, paragraphs, photo_files, shorten_description,
 )
 from generate_creature_pages_i18n import (  # noqa: E402
     load_lang, LANGS, AVAILABLE_CATEGORY_PAGES,
@@ -33,11 +33,13 @@ def escape(value):
     return html.escape(str(value), quote=True)
 
 
-def card_description(body, strings):
+def card_description(body, strings, lang):
     source = " ".join(paragraphs(body)[1:] or paragraphs(body))
     if not source:
         return strings["strings"]["info_prep"]
-    return source[:86].rstrip("。.") + "."
+    if lang == "zh":
+        return shorten_description(source, 86, cjk=True)
+    return shorten_description(source, 170, cjk=False)
 
 
 def card_status(category, ja_danger, display_danger, strings):
@@ -124,7 +126,7 @@ def card_html(category, creature, generated_keys, lang, strings):
         f'<div class="creature-meta"><span>{escape(category.upper())}</span>'
         f'<span class="{danger_class.strip()}">{escape(status)}</span></div>'
         f'<span class="creature-name">{name}</span>'
-        f'<p class="creature-description">{escape(card_description(creature["body"], strings))}</p></div>'
+        f'<p class="creature-description">{escape(card_description(creature["body"], strings, lang))}</p></div>'
         f'{image}<span class="creature-link">{link}</span>{closing}</article>'
     )
 

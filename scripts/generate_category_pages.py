@@ -74,9 +74,70 @@ def photo_files(category, creature_id):
     )
 
 
+# 文の終わりと見なさない略語(英語・スペイン語)。1文字の大文字(学名の属名の頭文字など)も文の終わりにしない
+ABBREVIATIONS = {
+    "dr", "mr", "mrs", "ms", "st", "mt", "no", "fig", "vs", "etc", "ca", "cf",
+    "approx", "aprox", "sp", "spp", "ssp", "subsp", "var", "e.g", "i.e",
+}
+
+
+def split_sentences(text, cjk):
+    """括弧の外にある文の終わりで区切る。英語・スペイン語は略語や小文字の続きでは区切らない。"""
+    sentences, start, depth = [], 0, 0
+    for i, ch in enumerate(text):
+        if ch in "(（[":
+            depth += 1
+        elif ch in ")）]":
+            depth = max(0, depth - 1)
+        elif depth == 0 and ch in ("。！？" if cjk else ".!?"):
+            if not cjk:
+                rest = text[i + 1:]
+                if rest and not rest[0].isspace():
+                    continue
+                following = rest.lstrip()
+                if following and not (following[0].isupper() or following[0] in "¿¡"):
+                    continue
+                words = text[start:i].split()
+                word = words[-1] if words else ""
+                if word.lower() in ABBREVIATIONS or (len(word) == 1 and word.isupper()):
+                    continue
+            sentences.append(text[start:i + 1].strip())
+            start = i + 1
+    return sentences
+
+
+def cut_with_ellipsis(text, limit, cjk):
+    """制限で切って「…」を付ける。日本語・中国語は最後の読点で、英語・スペイン語は単語の切れ目で切り、閉じていない括弧があればその手前で切る。"""
+    cut = text[:limit]
+    if cjk:
+        comma = max(cut.rfind("、"), cut.rfind("，"))
+        if comma > 0:
+            cut = cut[:comma]
+    elif " " in cut:
+        cut = cut.rsplit(" ", 1)[0]
+    opened = max(cut.rfind("("), cut.rfind("（"))
+    if opened > max(cut.rfind(")"), cut.rfind("）")):
+        cut = cut[:opened]
+    return cut.rstrip("、，,;: ") + "…"
+
+
+def shorten_description(source, limit, cjk):
+    """制限内に収まるところまで文を足す。足せた文が制限の半分に満たないときは、次の文を途中まで足して「…」を付ける。"""
+    text = "".join(source.split()) if cjk else " ".join(source.split())
+    result = ""
+    for sentence in split_sentences(text, cjk):
+        joined = result + sentence if cjk or not result else result + " " + sentence
+        if len(joined) > limit:
+            if len(result) < limit // 2:
+                result = cut_with_ellipsis(joined, limit, cjk)
+            break
+        result = joined
+    return result or cut_with_ellipsis(text, limit, cjk)
+
+
 def card_description(body):
     source = " ".join(paragraphs(body)[1:] or paragraphs(body))
-    return source[:86].rstrip("。") + ("。" if source else "情報を準備中です。")
+    return shorten_description(source, 86, cjk=True) if source else "情報を準備中です。"
 
 
 def card_status(category, danger):
