@@ -59,7 +59,7 @@ source: その言語に訳したもの(日本語版にあるときだけ)
 | es | `Familia de los eslizones (Scincidae), género Plestiodon. *Plestiodon barbouri*` |
 | zh | `石龙子科石龙子属 *Plestiodon barbouri*` / `蟋螽科 短翅蟋螽 *Metriogryllacris magna*` |
 
-図鑑形式のカテゴリー(beetles・aquatic-insects・other-insects・birds)は、日本語版が「科名 和名 *学名*」なら翻訳も「科名, 名前 *学名*」にする。
+図鑑形式のカテゴリー(beetles・aquatic-insects・other-insects・birds・other-arthropods)は、日本語版が「科名 和名 *学名*」なら翻訳も「科名, 名前 *学名*」にする。
 
 ## 名前の付け方(目安)
 
