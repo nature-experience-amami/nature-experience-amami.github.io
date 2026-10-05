@@ -64,11 +64,6 @@
   - ログの `seconds` を数日分見て、打ち切りの25秒（`ASK_TIMEOUT_MS`）を決め直す
   - 予備モデル `gemini-3.1-flash-lite` に切り替わったとき、チャット用のキーで使えるか
 
-### 写真追加ツールの段階表示（2026-10-05）
-
-- `amami-tool.html` の生き物IDのチップを「グループ→生き物」の段階表示にした。作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` にあり、`main` にはまだ入っていない。
-- オーナーがやること: GitHub Desktop で中身を確かめて `main` に取り込む。公開後に実機で、ヘビ（今まで通りタップで確定）と水生昆虫（`katabiro-amennbo` の中に進んで生き物を選べる）を1回ずつ試す。本物のGitHub APIでの動作はまだ確かめていない。
-
 ### 2026-10-01にオーナーがやること
 
 - claude.ai の設定画面から、アカウント側のスキルを2026-09-30に渡した `.skill` ファイルで差し替える: `amami-creature-md`・`amami-project-status-log`・`amami-new-category-page`（中身はこのリポジトリの `.claude/skills/` と同じ）
@@ -200,5 +195,15 @@
 - 未完了事項: `main` への取り込みと、公開後の実機確認（「進行中の作業」に記載）
 - Commit SHA: 212de4c3（ツール）、記録は未commit
 - Push: 済み（作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg`。`main` には未反映）
+
+（担当: Claude Code）
+
+### 2026-10-05 写真追加ツールの段階表示を公開し、実機で動作を確認
+
+- オーナーが作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` を GitHub Desktop で `main` に取り込んでpushし、公開された
+- オーナーがスマホの実機で、水生昆虫の `katabiro-amennbo` の中に進んで生き物を選べることを確認した（「うごいたよ」）
+- 「進行中の作業」の「写真追加ツールの段階表示」の項目を消した
+- Commit SHA: 212de4c3・1bab64e6 が `main` に入った。この記録は未commit
+- Push: 未実施（この記録）
 
 （担当: Claude Code）
