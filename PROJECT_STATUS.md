@@ -220,3 +220,16 @@
 - Push: 作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` にpush予定。`main` へのマージはオーナーがGitHub Desktopで行う
 
 （担当: Claude Code）
+
+### 2026-10-05 生き物カードの説明文が途中で切れるのを直し、ワークフローとドキュメントの漏れを直した
+
+- 原因: カテゴリーページ方式（ヘビ・両生類・クワガタ・哺乳類）と代表的な生き物ページのカードの説明文を、本文を86文字で機械的に切って「.」「。」を付けて作っていた（`card_description()`）。そのため、英語・スペイン語は単語の途中（例: 「found only .」「Slender-bodi.」）、中国語は文の途中で「.」、日本語も文の途中（例: 「食性は哺乳類、鳥類、。」）で切れていた。各言語38枚。図鑑ページのカードは別の作りで、切れていなかった
+- 直し方: `scripts/generate_category_pages.py` に、括弧の外の文の終わりで区切る `split_sentences()` と `shorten_description()` を作り、4言語で使うようにした。制限は日本語・中国語86文字、英語・スペイン語170文字（オーナー承認）。制限内に入る文だけ足し、足せた文が制限の半分に満たないときは次の文を途中まで足して「…」を付ける（英語・スペイン語は単語の切れ目、日本語・中国語は最後の読点で切り、閉じていない括弧の手前で切る）
+- 英語・スペイン語の略語（Dr.、approx./aprox.、sp. など）と学名の属名の頭文字（O. a. okinawana など）では文を区切らない。「18 g.」のような小文字1文字の単位は文の終わりとして扱う。全カードで、括弧の閉じ忘れ・改行・「 .」が0件、スマホ幅（390px）で横はみ出しなしを確かめた
+- ワークフロー `process-creature-photos.yml` に、翻訳版の代表的な生き物ページ（`generate_highlights_page_i18n.py`）と `sitemap.xml`（`generate_sitemap.py`）の作り直しを足し、`git add` の対象にも入れた
+- `.claude/agents/creature-reviewer.md` と `.claude/skills/amami-creature-translation/SKILL.md` の図鑑形式カテゴリーの一覧に `other-arthropods` を足した
+- 未修正: `amami-new-category-page` と `amami-photo-fix` のスキルにある作り直しのコマンド一覧には、`generate_highlights_page_i18n.py` と `generate_sitemap.py` が入っていない（ワークフローと順番が違う）
+- Commit SHA: このあとのcommit（説明文／ワークフロー／ドキュメント／この記録の4つ）
+- Push: 作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` にpush。`main` へのマージはオーナーがGitHub Desktopで行う
+
+（担当: Claude Code）
