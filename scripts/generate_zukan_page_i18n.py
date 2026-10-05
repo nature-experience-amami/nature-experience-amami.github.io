@@ -25,6 +25,48 @@ TEMPLATE = ROOT / "templates" / "zukan.i18n.html"
 OUTPUT_DIR_NAME = "categories"
 
 CATEGORY_CONTENT_I18N = {
+    "other-arthropods": {
+        "en": {
+            "hero_lead": (
+                "Whip scorpions, giant centipedes, pseudoscorpions and more — the arthropods "
+                "of Amami Oshima that are not insects."
+            ),
+            "about_paragraphs": [
+                "This page adds species gradually, in field-guide format, as photos and "
+                "information come together.",
+            ],
+            "note": (
+                "When it feels threatened, the Amami whip scorpion defends itself by spraying "
+                "a liquid that smells like vinegar. If you find one, please don't touch it, and "
+                "observe gently without disturbing the animals or their habitat."
+            ),
+        },
+        "es": {
+            "hero_lead": (
+                "Escorpiones látigo, ciempiés gigantes, pseudoescorpiones y más: los artrópodos de "
+                "Amami Oshima que no son insectos."
+            ),
+            "about_paragraphs": [
+                "Esta página se va completando poco a poco, especie por especie, en formato de "
+                "guía de campo, conforme reunimos fotos e información.",
+            ],
+            "note": (
+                "Cuando se siente amenazado, el escorpión látigo de Amami se defiende rociando un "
+                "líquido con olor a vinagre. Si encuentra uno, no lo toque y obsérvelo con "
+                "cuidado, sin perturbar a los animales ni su hábitat."
+            ),
+        },
+        "zh": {
+            "hero_lead": "鞭蝎、蚰蜒、伪蝎等——奄美大岛上昆虫以外的节肢动物。",
+            "about_paragraphs": [
+                "本页面会随着照片与资料的积累，逐步以图鉴形式增加物种。",
+            ],
+            "note": (
+                "奄美鞭蝎在感到危险时，会喷出带有醋味的液体保护自己。发现时请不要用手触碰，"
+                "并轻声观察，避免打扰生物及其栖息环境。"
+            ),
+        },
+    },
     "other-insects": {
         "en": {
             "hero_lead": (

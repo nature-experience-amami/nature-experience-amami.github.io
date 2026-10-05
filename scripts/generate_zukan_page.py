@@ -33,7 +33,7 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 ZUKAN_CATEGORIES = ["aquatic-insects", "beetles", "other-insects", "crustaceans", "birds", "other-arthropods"]
 
 # 翻訳版(generate_zukan_page_i18n.py)が実際に生成しているカテゴリー
-TRANSLATED_ZUKAN_CATEGORIES = {"aquatic-insects", "birds", "beetles", "other-insects"}
+TRANSLATED_ZUKAN_CATEGORIES = {"aquatic-insects", "birds", "beetles", "other-insects", "other-arthropods"}
 
 # 写真フォルダ名がMarkdownのidと違う場合の対応表。(カテゴリ, Markdownのid): 実際の写真フォルダ名
 PHOTO_DIR_ALIASES = {
@@ -62,6 +62,16 @@ ENGLISH_LABELS = {
 
 # カテゴリーごとの紹介文・注意書き。無ければ汎用の文章を使う。
 CATEGORY_CONTENT = {
+    "other-arthropods": {
+        "hero_lead": "サソリモドキやゲジ、カニムシなど、昆虫以外の節足動物を紹介します。",
+        "about_paragraphs": [
+            "このページは、写真や情報が集まった種類から少しずつ追加していく図鑑形式のページです。"
+        ],
+        "note": (
+            "アマミサソリモドキは、危険を感じると酢のようなにおいの液を出して身を守ります。"
+            "見つけても手でさわらず、生き物にも環境にも負担をかけないよう、そっと観察しましょう。"
+        ),
+    },
     "beetles": {
         "hero_lead": (
             "夜の森で出会う、姿も暮らしぶりもさまざまな甲虫たち。"
