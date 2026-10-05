@@ -81,6 +81,8 @@ python scripts/generate_creature_pages_i18n.py
 python scripts/generate_creatures_json_i18n.py
 python scripts/generate_category_pages_i18n.py
 python scripts/generate_zukan_page_i18n.py
+python scripts/generate_highlights_page_i18n.py
+python scripts/generate_sitemap.py
 ```
 
 `scripts/__pycache__/` の `*.cpython-311.pyc` はコミットしない。
