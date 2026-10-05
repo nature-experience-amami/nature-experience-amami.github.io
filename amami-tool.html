@@ -106,6 +106,7 @@ select{ -webkit-appearance:none; appearance:none; }
   background:rgba(234,242,233,.05); color:rgba(234,242,233,.75); font-size:.78rem; font-family:inherit;
 }
 .chip-list .chip.selected{ border-color:var(--amber); color:var(--amber); background:rgba(232,163,61,.08); }
+.chip-list .chip-back{ flex-basis:100%; text-align:left; }
 .chip-list .chip-empty{ font-size:.75rem; color:rgba(234,242,233,.35); }
 .screen{ display:none; }
 .screen.active{ display:block; }
@@ -254,51 +255,64 @@ select{ -webkit-appearance:none; appearance:none; }
   var speciesInput = document.getElementById("species-id");
   var speciesSuggestions = document.getElementById("species-suggestions");
 
-  function loadSpeciesOptions() {
-    var settings = getSettings();
-    if (!settings) return;
-    var category = categorySelect.value;
-    var url = "https://api.github.com/repos/" + FIXED_REPO + "/contents/images/creatures/" + category;
+  // フォルダ名 → その中のサブフォルダ名一覧(failed は除く)。サブフォルダがあればグループ扱い
+  var speciesTree = {};
 
-    speciesSuggestions.innerHTML = '<span class="chip-empty">候補を読み込み中…</span>';
-
-    fetch(url, {
+  function githubGetJson(url, settings, allowFail) {
+    return fetch(url, {
       headers: {
         "Authorization": "Bearer " + settings.pat,
         "Accept": "application/vnd.github+json"
       }
-    })
-      .then(function (res) {
-        if (res.status === 404) return [];
-        if (res.status === 401 || res.status === 403) {
-          throw new Error("トークンが無効か期限切れの可能性があります(設定画面で確認してください)");
-        }
-        if (!res.ok) {
-          return res.text().then(function (text) {
-            throw new Error("HTTP " + res.status + ": " + text.slice(0, 200));
-          });
-        }
-        return res.json();
-      })
-      .then(function (items) {
-        var dirs = items.filter(function (item) { return item.type === "dir"; });
-        speciesSuggestions.innerHTML = "";
-        if (dirs.length === 0) {
-          speciesSuggestions.innerHTML = '<span class="chip-empty">まだフォルダがありません(新規入力してください)</span>';
-          return;
-        }
-        dirs.forEach(function (item) {
-          var chip = document.createElement("button");
-          chip.type = "button";
-          chip.className = "chip";
-          chip.textContent = item.name;
-          chip.addEventListener("click", function () {
-            speciesInput.value = item.name;
-            speciesSuggestions.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("selected"); });
-            chip.classList.add("selected");
-          });
-          speciesSuggestions.appendChild(chip);
+    }).then(function (res) {
+      if (res.status === 401 || res.status === 403) {
+        throw new Error("トークンが無効か期限切れの可能性があります(設定画面で確認してください)");
+      }
+      if (allowFail && !res.ok) return null;
+      if (res.status === 404) return [];
+      if (!res.ok) {
+        return res.text().then(function (text) {
+          throw new Error("HTTP " + res.status + ": " + text.slice(0, 200));
         });
+      }
+      return res.json();
+    });
+  }
+
+  function buildFolderTree(entries) {
+    var tree = {};
+    entries.forEach(function (entry) {
+      if (entry.type !== "tree") return;
+      var parts = entry.path.split("/");
+      if (parts[0] === "failed" || parts.length > 2) return;
+      tree[parts[0]] = tree[parts[0]] || [];
+      if (parts.length === 2 && parts[1] !== "failed") tree[parts[0]].push(parts[1]);
+    });
+    return tree;
+  }
+
+  function loadSpeciesOptions() {
+    var settings = getSettings();
+    if (!settings) return;
+    var category = categorySelect.value;
+    var api = "https://api.github.com/repos/" + FIXED_REPO;
+
+    speciesSuggestions.innerHTML = '<span class="chip-empty">候補を読み込み中…</span>';
+
+    // カテゴリーフォルダ単位でフォルダ構成をまとめて取得し、取得しきれない(truncated)・
+    // 取得できない場合は従来の方法(直下のフォルダのみ、グループ判定なし)に切り替える
+    githubGetJson(api + "/git/trees/main:images/creatures/" + category + "?recursive=1", settings, true)
+      .then(function (data) {
+        if (data && !data.truncated) return buildFolderTree(data.tree);
+        return githubGetJson(api + "/contents/images/creatures/" + category, settings).then(function (items) {
+          var tree = {};
+          items.forEach(function (item) { if (item.type === "dir") tree[item.name] = []; });
+          return tree;
+        });
+      })
+      .then(function (tree) {
+        speciesTree = tree;
+        renderSpeciesChips(null);
       })
       .catch(function (err) {
         var detail = (err && err.message) ? err.message : "ネットワークエラー(fetch自体が失敗)";
@@ -307,6 +321,48 @@ select{ -webkit-appearance:none; appearance:none; }
           detail.replace(/</g, "&lt;").replace(/>/g, "&gt;") +
           '(新規入力はできます)</span>';
       });
+  }
+
+  // group が null ならカテゴリー直下、グループ名ならそのグループ内の生き物フォルダを並べる
+  function renderSpeciesChips(group) {
+    speciesSuggestions.innerHTML = "";
+    var names = group ? speciesTree[group] : Object.keys(speciesTree);
+    var prefix = group ? group + "/" : "";
+
+    if (group) {
+      var back = document.createElement("button");
+      back.type = "button";
+      back.className = "chip chip-back";
+      back.textContent = "← " + categorySelect.options[categorySelect.selectedIndex].text + " / " + group;
+      back.addEventListener("click", function () {
+        if (speciesInput.value.indexOf(prefix) === 0) speciesInput.value = "";
+        renderSpeciesChips(null);
+      });
+      speciesSuggestions.appendChild(back);
+    } else if (names.length === 0) {
+      speciesSuggestions.innerHTML = '<span class="chip-empty">まだフォルダがありません(新規入力してください)</span>';
+      return;
+    }
+
+    names.forEach(function (name) {
+      var isGroup = !group && speciesTree[name].length > 0;
+      var chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "chip";
+      chip.textContent = isGroup ? name + " ›" : name;
+      if (!isGroup && speciesInput.value === prefix + name) chip.classList.add("selected");
+      chip.addEventListener("click", function () {
+        if (isGroup) {
+          speciesInput.value = name + "/";
+          renderSpeciesChips(name);
+          return;
+        }
+        speciesInput.value = prefix + name;
+        speciesSuggestions.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("selected"); });
+        chip.classList.add("selected");
+      });
+      speciesSuggestions.appendChild(chip);
+    });
   }
 
   categorySelect.addEventListener("change", loadSpeciesOptions);
@@ -580,6 +636,18 @@ select{ -webkit-appearance:none; appearance:none; }
 
     if (!speciesId) {
       alert("生き物ID(写真フォルダ名)を入力してください。");
+      return;
+    }
+    if (/\/$/.test(speciesId)) {
+      alert("生き物IDが入っていません。「/」のあとに生き物IDを入力するか、下の候補から選んでください。");
+      return;
+    }
+    if ((speciesId.match(/\//g) || []).length >= 2) {
+      alert("「/」が2つ以上あります。フォルダは「グループ/生き物ID」の2段までにしてください。");
+      return;
+    }
+    if (speciesTree[speciesId] && speciesTree[speciesId].length > 0) {
+      alert("「" + speciesId + "」はグループのフォルダです。「" + speciesId + "/生き物ID」の形で入力するか、候補から選んでください。");
       return;
     }
     if (files.length === 0) return;
