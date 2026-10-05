@@ -2,6 +2,8 @@ name: process-creature-photos
 
 on:
   push:
+    branches:
+      - main
     paths:
       - "images/creatures/**"
   workflow_dispatch:
