@@ -28,6 +28,9 @@
     <loc>https://nature-experience-amami.github.io/categories/mammals.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/categories/other-arthropods.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/categories/other-insects.html</loc>
   </url>
   <url>
@@ -58,6 +61,9 @@
     <loc>https://nature-experience-amami.github.io/creatures/amphibians/ishikawa-gaeru.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/amphibians/numa-gaeru.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/amphibians/otton-gaeru.html</loc>
   </url>
   <url>
@@ -73,13 +79,37 @@
     <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/amami-hababiro-doromusshi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/amami-kochibi-mizumusi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/amami-mizo-doromushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/amami-oyogi-katabiro-amennbo.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/amami-sesuji-daruma-gamushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/amami-shijimi-gamushi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/amami-yokomizo-doromushi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/ashibutome-mizumushi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/chinmeruman-sesuji-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/eguri-tamamizumushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/hutakiboshi-keshi-gengoro.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/iriomote-kesi-katabiro-amennbo.html</loc>
@@ -89,6 +119,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/kogata-no-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/koseaka-amennbo.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/naga-tsuya-doromushi.html</loc>
@@ -116,6 +149,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/aquatic-insects/usuiro-shima-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/beetles/amami-aojyoukai.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/beetles/amami-himekebuka-magusokogane.html</loc>
@@ -160,13 +196,22 @@
     <loc>https://nature-experience-amami.github.io/creatures/beetles/tokara-mannmaru-kogane.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/birds/akaharadaka.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/birds/akahige.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/birds/amami-yamashigi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/birds/iso-hiyodori.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/birds/kawasemi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/birds/kurotusraherasagi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/birds/oo-tora-tsugumi.html</loc>
@@ -193,10 +238,22 @@
     <loc>https://nature-experience-amami.github.io/creatures/birds/sasiba.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/birds/seitakashigi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/birds/tageri.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/birds/torafuzuku.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/lizards/amami-hime-tokage.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/lizards/ba-ba-tokage.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/lizards/okinawa-kinobori-tokage.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/mammals/amami-kuro-usagi.html</loc>
@@ -211,7 +268,22 @@
     <loc>https://nature-experience-amami.github.io/creatures/mammals/watase-jinezumi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/other-arthropods/amami-sasorimodoki.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/other-arthropods/iso-kanimushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/other-arthropods/ko-iso-kanimushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/other-arthropods/oo-geji.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/other-insects/amami-hirata-hishibatta.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/other-insects/amami-madara-kamadouma.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/other-insects/aosuji-ageha.html</loc>
@@ -223,7 +295,13 @@
     <loc>https://nature-experience-amami.github.io/creatures/other-insects/ishigake-tyou.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/creatures/other-insects/kobane-korogisu.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/creatures/other-insects/kuchiki-koorogi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/other-insects/kuromadara-sotetsu-shijimi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/other-insects/madara-kourogi.html</loc>
@@ -239,6 +317,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/other-insects/ryuukyuu-asagi-madara.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/other-insects/ryuukyuu-haguro-tombo.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/other-insects/taiwan-kutsuwamushi.html</loc>
@@ -257,6 +338,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/snakes/hyan.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/creatures/snakes/mekura-hebi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/creatures/snakes/ryukyu-ao-hebi.html</loc>
@@ -319,6 +403,9 @@
     <loc>https://nature-experience-amami.github.io/en/categories/mammals.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/categories/other-arthropods.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/categories/other-insects.html</loc>
   </url>
   <url>
@@ -349,6 +436,9 @@
     <loc>https://nature-experience-amami.github.io/en/creatures/amphibians/ishikawa-gaeru.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/amphibians/numa-gaeru.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/amphibians/otton-gaeru.html</loc>
   </url>
   <url>
@@ -364,13 +454,37 @@
     <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/amami-hababiro-doromusshi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/amami-kochibi-mizumusi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/amami-mizo-doromushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/amami-oyogi-katabiro-amennbo.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/amami-sesuji-daruma-gamushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/amami-shijimi-gamushi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/amami-yokomizo-doromushi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/ashibutome-mizumushi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/chinmeruman-sesuji-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/eguri-tamamizumushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/hutakiboshi-keshi-gengoro.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/iriomote-kesi-katabiro-amennbo.html</loc>
@@ -380,6 +494,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/kogata-no-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/koseaka-amennbo.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/naga-tsuya-doromushi.html</loc>
@@ -407,6 +524,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/aquatic-insects/usuiro-shima-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/beetles/amami-aojyoukai.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/beetles/amami-himekebuka-magusokogane.html</loc>
@@ -451,13 +571,22 @@
     <loc>https://nature-experience-amami.github.io/en/creatures/beetles/tokara-mannmaru-kogane.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/birds/akaharadaka.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/birds/akahige.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/birds/amami-yamashigi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/birds/iso-hiyodori.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/birds/kawasemi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/birds/kurotusraherasagi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/birds/oo-tora-tsugumi.html</loc>
@@ -484,10 +613,22 @@
     <loc>https://nature-experience-amami.github.io/en/creatures/birds/sasiba.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/birds/seitakashigi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/birds/tageri.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/birds/torafuzuku.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/lizards/amami-hime-tokage.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/lizards/ba-ba-tokage.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/lizards/okinawa-kinobori-tokage.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/mammals/amami-kuro-usagi.html</loc>
@@ -502,7 +643,22 @@
     <loc>https://nature-experience-amami.github.io/en/creatures/mammals/watase-jinezumi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/other-arthropods/amami-sasorimodoki.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/other-arthropods/iso-kanimushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/other-arthropods/ko-iso-kanimushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/other-arthropods/oo-geji.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/amami-hirata-hishibatta.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/amami-madara-kamadouma.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/aosuji-ageha.html</loc>
@@ -514,7 +670,13 @@
     <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/ishigake-tyou.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/kobane-korogisu.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/kuchiki-koorogi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/kuromadara-sotetsu-shijimi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/madara-kourogi.html</loc>
@@ -530,6 +692,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/ryuukyuu-asagi-madara.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/ryuukyuu-haguro-tombo.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/other-insects/taiwan-kutsuwamushi.html</loc>
@@ -548,6 +713,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/snakes/hyan.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/en/creatures/snakes/mekura-hebi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/en/creatures/snakes/ryukyu-ao-hebi.html</loc>
@@ -610,6 +778,9 @@
     <loc>https://nature-experience-amami.github.io/es/categories/mammals.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/categories/other-arthropods.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/categories/other-insects.html</loc>
   </url>
   <url>
@@ -640,6 +811,9 @@
     <loc>https://nature-experience-amami.github.io/es/creatures/amphibians/ishikawa-gaeru.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/amphibians/numa-gaeru.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/amphibians/otton-gaeru.html</loc>
   </url>
   <url>
@@ -655,13 +829,37 @@
     <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/amami-hababiro-doromusshi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/amami-kochibi-mizumusi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/amami-mizo-doromushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/amami-oyogi-katabiro-amennbo.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/amami-sesuji-daruma-gamushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/amami-shijimi-gamushi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/amami-yokomizo-doromushi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/ashibutome-mizumushi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/chinmeruman-sesuji-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/eguri-tamamizumushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/hutakiboshi-keshi-gengoro.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/iriomote-kesi-katabiro-amennbo.html</loc>
@@ -671,6 +869,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/kogata-no-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/koseaka-amennbo.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/naga-tsuya-doromushi.html</loc>
@@ -698,6 +899,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/aquatic-insects/usuiro-shima-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/beetles/amami-aojyoukai.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/beetles/amami-himekebuka-magusokogane.html</loc>
@@ -742,13 +946,22 @@
     <loc>https://nature-experience-amami.github.io/es/creatures/beetles/tokara-mannmaru-kogane.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/birds/akaharadaka.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/birds/akahige.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/birds/amami-yamashigi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/birds/iso-hiyodori.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/birds/kawasemi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/birds/kurotusraherasagi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/birds/oo-tora-tsugumi.html</loc>
@@ -775,10 +988,22 @@
     <loc>https://nature-experience-amami.github.io/es/creatures/birds/sasiba.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/birds/seitakashigi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/birds/tageri.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/birds/torafuzuku.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/lizards/amami-hime-tokage.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/lizards/ba-ba-tokage.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/lizards/okinawa-kinobori-tokage.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/mammals/amami-kuro-usagi.html</loc>
@@ -793,7 +1018,22 @@
     <loc>https://nature-experience-amami.github.io/es/creatures/mammals/watase-jinezumi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/other-arthropods/amami-sasorimodoki.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/other-arthropods/iso-kanimushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/other-arthropods/ko-iso-kanimushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/other-arthropods/oo-geji.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/amami-hirata-hishibatta.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/amami-madara-kamadouma.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/aosuji-ageha.html</loc>
@@ -805,7 +1045,13 @@
     <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/ishigake-tyou.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/kobane-korogisu.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/kuchiki-koorogi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/kuromadara-sotetsu-shijimi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/madara-kourogi.html</loc>
@@ -821,6 +1067,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/ryuukyuu-asagi-madara.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/ryuukyuu-haguro-tombo.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/other-insects/taiwan-kutsuwamushi.html</loc>
@@ -839,6 +1088,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/snakes/hyan.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/es/creatures/snakes/mekura-hebi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/es/creatures/snakes/ryukyu-ao-hebi.html</loc>
@@ -901,6 +1153,9 @@
     <loc>https://nature-experience-amami.github.io/zh/categories/mammals.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/categories/other-arthropods.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/categories/other-insects.html</loc>
   </url>
   <url>
@@ -931,6 +1186,9 @@
     <loc>https://nature-experience-amami.github.io/zh/creatures/amphibians/ishikawa-gaeru.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/amphibians/numa-gaeru.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/amphibians/otton-gaeru.html</loc>
   </url>
   <url>
@@ -946,13 +1204,37 @@
     <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/amami-hababiro-doromusshi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/amami-kochibi-mizumusi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/amami-mizo-doromushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/amami-oyogi-katabiro-amennbo.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/amami-sesuji-daruma-gamushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/amami-shijimi-gamushi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/amami-yokomizo-doromushi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/ashibutome-mizumushi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/chairo-kesi-katabiro-amennbo.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/chinmeruman-sesuji-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/eguri-tamamizumushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/hutakiboshi-keshi-gengoro.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/iriomote-kesi-katabiro-amennbo.html</loc>
@@ -962,6 +1244,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/kogata-no-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/koseaka-amennbo.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/naga-tsuya-doromushi.html</loc>
@@ -989,6 +1274,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/aquatic-insects/usuiro-shima-gengoro.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/beetles/amami-aojyoukai.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/beetles/amami-himekebuka-magusokogane.html</loc>
@@ -1033,13 +1321,22 @@
     <loc>https://nature-experience-amami.github.io/zh/creatures/beetles/tokara-mannmaru-kogane.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/birds/akaharadaka.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/birds/akahige.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/birds/amami-yamashigi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/birds/iso-hiyodori.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/birds/kawasemi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/birds/kurotusraherasagi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/birds/oo-tora-tsugumi.html</loc>
@@ -1066,10 +1363,22 @@
     <loc>https://nature-experience-amami.github.io/zh/creatures/birds/sasiba.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/birds/seitakashigi.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/birds/tageri.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/birds/torafuzuku.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/lizards/amami-hime-tokage.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/lizards/ba-ba-tokage.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/lizards/okinawa-kinobori-tokage.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/mammals/amami-kuro-usagi.html</loc>
@@ -1084,7 +1393,22 @@
     <loc>https://nature-experience-amami.github.io/zh/creatures/mammals/watase-jinezumi.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/other-arthropods/amami-sasorimodoki.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/other-arthropods/iso-kanimushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/other-arthropods/ko-iso-kanimushi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/other-arthropods/oo-geji.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/amami-hirata-hishibatta.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/amami-madara-kamadouma.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/aosuji-ageha.html</loc>
@@ -1096,7 +1420,13 @@
     <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/ishigake-tyou.html</loc>
   </url>
   <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/kobane-korogisu.html</loc>
+  </url>
+  <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/kuchiki-koorogi.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/kuromadara-sotetsu-shijimi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/madara-kourogi.html</loc>
@@ -1112,6 +1442,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/ryuukyuu-asagi-madara.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/ryuukyuu-haguro-tombo.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/other-insects/taiwan-kutsuwamushi.html</loc>
@@ -1130,6 +1463,9 @@
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/snakes/hyan.html</loc>
+  </url>
+  <url>
+    <loc>https://nature-experience-amami.github.io/zh/creatures/snakes/mekura-hebi.html</loc>
   </url>
   <url>
     <loc>https://nature-experience-amami.github.io/zh/creatures/snakes/ryukyu-ao-hebi.html</loc>
