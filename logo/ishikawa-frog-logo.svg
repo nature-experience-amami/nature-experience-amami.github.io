@@ -1,0 +1,139 @@
+<svg viewBox="0 0 800 800" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="イシカワガエルのロゴ">
+<defs>
+<clipPath id="scene"><circle cx="400" cy="400" r="272"></circle></clipPath>
+<clipPath id="frogBody"><path d="M300 520 C270 470 280 400 330 360 C370 330 420 300 470 285 C510 275 545 290 565 315 C580 335 575 350 555 360 C520 375 490 385 470 410 C455 435 450 470 440 500 C420 540 360 545 300 520 Z"></path></clipPath>
+<clipPath id="thighClip"><path d="M298 518 C292 455 375 425 425 465 C450 492 425 532 380 538 C345 542 315 535 298 518 Z"></path></clipPath>
+<path id="topArc" d="M88 400 A312 312 0 0 1 712 400"></path>
+<path id="bottomArc" d="M52 400 A348 348 0 0 0 748 400"></path>
+<g id="leaf">
+<path d="M0 0 C35 -46 115 -48 170 0 C115 48 35 46 0 0 Z" fill="#2f7a45" stroke="{{ink}}" stroke-width="5"></path>
+<path d="M4 0 L162 0" stroke="{{ink}}" stroke-width="6" stroke-linecap="round"></path>
+<path d="M40 0 L58 -26 M70 0 L90 -30 M100 0 L118 -28 M130 0 L144 -18 M40 0 L58 26 M70 0 L90 30 M100 0 L118 28 M130 0 L144 18" stroke="{{ink}}" stroke-width="7" stroke-linecap="round"></path>
+</g>
+<g id="star">
+<path d="M0 -14 L3.5 -3.5 L14 0 L3.5 3.5 L0 14 L-3.5 3.5 L-14 0 L-3.5 -3.5 Z" fill="#f2c14e"></path>
+</g>
+</defs>
+
+<!-- 外側のリング -->
+<circle cx="400" cy="400" r="393" fill="{{ink}}"></circle>
+<circle cx="400" cy="400" r="388" fill="none" stroke="{{paper}}" stroke-width="9"></circle>
+<circle cx="400" cy="400" r="372" fill="none" stroke="{{paper}}" stroke-width="3"></circle>
+<circle cx="400" cy="400" r="290" fill="none" stroke="{{paper}}" stroke-width="3"></circle>
+<circle cx="400" cy="400" r="280" fill="none" stroke="{{paper}}" stroke-width="8"></circle>
+
+<!-- 文字 -->
+<g fill="{{paper}}" font-family="Montserrat, sans-serif" font-weight="800" font-size="42" text-anchor="middle">
+<text font-size="48" transform="translate(156.0 664.7) rotate(42.7)">N</text>
+<text font-size="48" transform="translate(187.1 690.3) rotate(36.3)">a</text>
+<text font-size="48" transform="translate(214.3 708.4) rotate(31.1)">t</text>
+<text font-size="48" transform="translate(243.1 724.0) rotate(25.8)">u</text>
+<text font-size="48" transform="translate(273.1 736.9) rotate(20.6)">r</text>
+<text font-size="48" transform="translate(304.2 747.0) rotate(15.4)">e</text>
+<text font-size="48" transform="translate(361.5 757.9) rotate(6.1)">E</text>
+<text font-size="48" transform="translate(398.5 760.0) rotate(0.2)">x</text>
+<text font-size="48" transform="translate(434.9 758.3) rotate(-5.6)">p</text>
+<text font-size="48" transform="translate(472.0 752.7) rotate(-11.5)">e</text>
+<text font-size="48" transform="translate(503.8 744.7) rotate(-16.8)">r</text>
+<text font-size="48" transform="translate(526.6 737.0) rotate(-20.6)">i</text>
+<text font-size="48" transform="translate(553.3 725.7) rotate(-25.2)">e</text>
+<text font-size="48" transform="translate(586.4 708.0) rotate(-31.2)">n</text>
+<text font-size="48" transform="translate(617.4 687.0) rotate(-37.1)">c</text>
+<text font-size="48" transform="translate(646.1 662.8) rotate(-43.1)">e</text>
+<text font-size="56" transform="translate(296.7 117.3) rotate(-20.1)">A</text>
+<text font-size="56" transform="translate(352.4 102.8) rotate(-9.1)">M</text>
+<text font-size="56" transform="translate(410.0 99.2) rotate(1.9)">A</text>
+<text font-size="56" transform="translate(467.1 106.6) rotate(12.9)">M</text>
+<text font-size="56" transform="translate(512.7 120.9) rotate(22.0)">I</text>
+</g>
+
+<!-- 左右の飾り -->
+<use href="#star" x="62" y="356"></use>
+<use href="#star" x="738" y="356"></use>
+<use href="#star" x="62" y="444"></use>
+<use href="#star" x="738" y="444"></use>
+<path d="M78 384 A20 20 0 1 0 78 416 A15 15 0 1 1 78 384 Z" fill="#f2c14e" transform="translate(-14 0)"></path>
+<path d="M722 384 A20 20 0 1 1 722 416 A15 15 0 1 0 722 384 Z" fill="#f2c14e" transform="translate(14 0)"></path>
+<path d="M50 470 L74 470 M726 470 L750 470 M50 330 L74 330 M726 330 L750 330" stroke="{{paper}}" stroke-width="4" stroke-linecap="round"></path>
+
+<!-- 内側の情景 -->
+<g clip-path="url(#scene)">
+<!-- 背景の葉 -->
+<use href="#leaf" transform="translate(120 300) rotate(-35) scale(1.25)"></use>
+<use href="#leaf" opacity="0.85" transform="translate(110 420) rotate(-5) scale(1.15)"></use>
+<use href="#leaf" transform="translate(150 520) rotate(25) scale(1.0)"></use>
+<use href="#leaf" transform="translate(240 130) rotate(40) scale(1.2)"></use>
+<use href="#leaf" opacity="0.85" transform="translate(360 115) rotate(70) scale(1.0)"></use>
+<use href="#leaf" transform="translate(690 210) rotate(160) scale(1.15)"></use>
+<use href="#leaf" opacity="0.85" transform="translate(705 330) rotate(185) scale(1.0)"></use>
+<use href="#leaf" transform="translate(220 250) rotate(-60) scale(0.85)"></use>
+
+<!-- 渓流 -->
+<path d="M560 470 C600 460 640 475 690 465 M540 495 C590 485 630 505 690 492 M600 518 C630 512 655 522 690 515" stroke="#7cc6dc" stroke-width="6" fill="none" stroke-linecap="round"></path>
+
+<!-- 岩 -->
+<path d="M120 575 C210 530 330 528 420 540 C510 552 600 548 690 575 L690 720 L120 720 Z" fill="#3b433f" stroke="{{paper}}" stroke-width="7"></path>
+<path d="M190 585 C230 570 270 568 300 572 M340 590 C380 580 420 584 450 592 M500 588 C540 580 580 586 610 596 M230 625 C270 612 320 612 350 620 M420 630 C470 620 520 624 560 636 M280 665 C330 655 380 656 420 664 M480 672 C520 664 560 668 600 678" stroke="#7d8a83" stroke-width="5" fill="none" stroke-linecap="round"></path>
+<!-- 苔 -->
+<path d="M150 562 q8 -14 16 0 q8 -14 16 0 q8 -14 16 0 M560 556 q8 -14 16 0 q8 -14 16 0 q8 -14 16 0 q8 -14 16 0" stroke="#8cc063" stroke-width="5" fill="none" stroke-linecap="round"></path>
+
+<!-- カエル:後ろ足(足先) -->
+<path d="M370 528 C420 548 470 552 520 544 L522 558 C470 566 410 562 362 545 Z" fill="#5cc23e" stroke="{{paper}}" stroke-width="5" stroke-linejoin="round"></path>
+<path d="M515 548 L575 536 M515 552 L572 556 M512 556 L560 572" stroke="#5cc23e" stroke-width="6" stroke-linecap="round"></path>
+<circle cx="578" cy="535" r="7" fill="#d9f27a"></circle>
+<circle cx="576" cy="557" r="7" fill="#d9f27a"></circle>
+<circle cx="563" cy="575" r="7" fill="#d9f27a"></circle>
+
+<!-- カエル:胴体 -->
+<path d="M300 520 C270 470 280 400 330 360 C370 330 420 300 470 285 C510 275 545 290 565 315 C580 335 575 350 555 360 C520 375 490 385 470 410 C455 435 450 470 440 500 C420 540 360 545 300 520 Z" fill="#5cc23e" stroke="{{paper}}" stroke-width="7" stroke-linejoin="round"></path>
+<!-- 胴体の斑紋 -->
+<g clip-path="url(#frogBody)" fill="#183515">
+<ellipse cx="350" cy="380" rx="20" ry="13" transform="rotate(-30 350 380)"></ellipse>
+<ellipse cx="392" cy="350" rx="16" ry="10" transform="rotate(-25 392 350)"></ellipse>
+<ellipse cx="430" cy="322" rx="14" ry="9" transform="rotate(-20 430 322)"></ellipse>
+<ellipse cx="320" cy="430" rx="13" ry="18"></ellipse>
+<ellipse cx="365" cy="420" rx="17" ry="12" transform="rotate(20 365 420)"></ellipse>
+<ellipse cx="405" cy="395" rx="12" ry="16" transform="rotate(30 405 395)"></ellipse>
+<ellipse cx="445" cy="368" rx="10" ry="7"></ellipse>
+<ellipse cx="420" cy="440" rx="9" ry="13" transform="rotate(-15 420 440)"></ellipse>
+<ellipse cx="388" cy="465" rx="12" ry="8"></ellipse>
+<ellipse cx="540" cy="335" rx="7" ry="5"></ellipse>
+<ellipse cx="548" cy="300" rx="6" ry="4"></ellipse>
+<ellipse cx="480" cy="300" rx="8" ry="5" transform="rotate(-20 480 300)"></ellipse>
+<circle cx="452" cy="405" r="5"></circle>
+<circle cx="340" cy="470" r="5"></circle>
+<circle cx="378" cy="385" r="4"></circle>
+<circle cx="510" cy="356" r="4"></circle>
+<circle cx="295" cy="465" r="6"></circle>
+</g>
+<!-- 背側線 -->
+<path d="M492 300 C455 310 400 335 345 375 C320 395 305 420 298 450" stroke="#d9f27a" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="14 9"></path>
+<!-- 口元 -->
+<path d="M560 355 C530 360 505 358 485 350" stroke="#183515" stroke-width="4" fill="none" stroke-linecap="round"></path>
+<!-- 鼻孔 -->
+<circle cx="558" cy="318" r="4" fill="#183515"></circle>
+
+<!-- カエル:後ろ足(もも) -->
+<path d="M298 518 C292 455 375 425 425 465 C450 492 425 532 380 538 C345 542 315 535 298 518 Z" fill="#5cc23e" stroke="{{paper}}" stroke-width="6" stroke-linejoin="round"></path>
+<g clip-path="url(#thighClip)" stroke="#183515" stroke-width="9" stroke-linecap="round">
+<path d="M330 460 L350 525"></path>
+<path d="M365 448 L382 520"></path>
+<path d="M400 455 L410 512"></path>
+</g>
+
+<!-- カエル:前足 -->
+<path d="M448 420 C478 448 492 488 490 524 L472 526 C468 496 458 470 432 452 Z" fill="#5cc23e" stroke="{{paper}}" stroke-width="5" stroke-linejoin="round"></path>
+<path d="M480 524 L462 546 M482 526 L482 552 M484 524 L504 545" stroke="#5cc23e" stroke-width="5" stroke-linecap="round"></path>
+<circle cx="460" cy="549" r="6" fill="#d9f27a"></circle>
+<circle cx="482" cy="556" r="6" fill="#d9f27a"></circle>
+<circle cx="507" cy="548" r="6" fill="#d9f27a"></circle>
+
+<!-- 鼓膜 -->
+<circle cx="468" cy="340" r="13" fill="#5cc23e" stroke="#183515" stroke-width="4"></circle>
+<!-- 目 -->
+<circle cx="508" cy="306" r="30" fill="#5cc23e" stroke="#183515" stroke-width="7"></circle>
+<circle cx="508" cy="306" r="20" fill="#e7b43a"></circle>
+<ellipse cx="508" cy="306" rx="15" ry="8" fill="#0b0f0d"></ellipse>
+<circle cx="514" cy="300" r="4" fill="#ffffff"></circle>
+</g>
+</svg>
