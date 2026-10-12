@@ -1,6 +1,6 @@
 # Nature Experience Amami - Project Status
 
-最終更新: 2026-10-02（日本時間）
+最終更新: 2026-10-12（日本時間）
 
 今の状況とやることだけを書くファイルです。作業前に `AGENTS.md`（共通ルール）を先に読んでください。
 2026年9月までの経緯は `docs/history/2026-09.md` にあります（2026-09-30まで使っていた `PROJECT_STATUS_updated.md` を、そのまま名前を変えて移したもの）。
@@ -53,8 +53,16 @@
 - カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects` `other-arthropods`（写真だけ `crustaceans`（カニ）もある）。
 - 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` `other-arthropods` は図鑑ページ（`scripts/generate_zukan_page.py`）。図鑑ページは5カテゴリーとも4言語ある。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
 - `categories/hebi.html` `kaeru.html` `kuwagata.html` `honyuurui.html` `tori.html` `suisei-konntyuu.html` `koucyu.html` などは、英語名に変える前の古いURLから新しいページへ移動させるための転送ページ。
+- 全ページの head に OGP（SNSでシェアしたときの写真・説明）がある。生成ページは、テンプレートの目印 `<!-- OGP -->` を `scripts/seo_head.py` が `<title>` と meta description から作ったタグに置き換える（文言を変えるときはテンプレートを直す）。og:image は生き物ページがメイン写真、それ以外は代表写真（アマミノクロウサギ `amami-kuro-usagi_000002_20250301_20.jpg`、`seo_head.py` の `DEFAULT_IMAGE`）。手書きの `index` `tour` `contact`（4言語）には直接書いてある。管理ツール・`customer-app/`・`instagram-campaign/`・転送ページには入れていない。
+- `index.html` に LocalBusiness、`tour.html` に TouristTrip の構造化データ（JSON-LD）がある（4言語、手書き）。料金・電話番号を変えたら、ページの表示と一緒に JSON-LD も直す。住所・営業時間・口コミ評価はサイトに書いていないので入れていない。
+- トップの URL は index.html なし（`/` `/en/` `/es/` `/zh/`）に統一（og:url と `sitemap.xml`）。
 
 ## 進行中の作業
+
+### SEO改善（OGP・JSON-LD・ツアーページの追記）（2026-10-12）
+
+- 作業用ブランチ `claude/adoring-keller-bttzvt` にpushし、`main` へのプルリクエストを作った。マージはオーナーが確認してから行う
+- マージして公開されたら確かめること: Googleのリッチリザルトテスト（LocalBusiness は住所がないと警告が出やすく、TouristTrip はリッチリザルトの対象外なので「検出なし」になる可能性がある。validator.schema.org でも確認）、ThreadsやLINEにリンクを貼って写真が出るか（前に貼ったリンクは、しばらく古い表示が残ることがある）、スマホ実機での tour.html の表示
 
 ### AIチャットの安定化（2026-09-30）
 
@@ -96,7 +104,7 @@
 
 ### 集客・公開の準備
 
-- Google Search Consoleへの登録、`sitemap.xml`・`robots.txt`・構造化データ・プライバシー案内の整備。隠しキーワードやキーワードの詰め込みはしない。
+- Google Search Consoleへの登録、`sitemap.xml`・`robots.txt`・プライバシー案内の整備（OGPと構造化データは2026-10-12に追加。`main` への反映は「進行中の作業」を参照）。隠しキーワードやキーワードの詰め込みはしない。
 - 内容が整ったら、旧サイトに新サイトへの案内を置き、XとInstagramに新サイトのURLを載せる（旧サイトは当面並行運用）。
 - アクセス解析（GA4またはCloudflare）の導入。
 
@@ -240,5 +248,18 @@
 - オーナーの指示（「マージして」）で、作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` を `main` にマージしてpushした（その他の節足動物のトップページ・翻訳版図鑑ページ、カード説明文の修正、ワークフロー、ドキュメント、スキル）
 - Commit SHA: スキルの修正と、この記録の2つ
 - Push: 済み（作業用ブランチと `main`）
+
+（担当: Claude Code）
+
+### 2026-10-12 SEO改善: 全ページにOGP、トップとツアーページにJSON-LD、ツアーページに予約方法・雨の日を追記
+
+- 作業1 OGP: `scripts/seo_head.py` を新しく作り、テンプレート8つに目印 `<!-- OGP -->` を足し、生成スクリプト8本（生き物・カテゴリー・図鑑・代表的な生き物の各4言語分）で目印をタグに置き換えるようにした。og:title・og:description は各ページの既存の `<title>` と meta description から入れる。og:image は生き物ページがメイン写真（写真のないトビイロゲンゴロウ・トゲネズミは代表写真）、それ以外はオーナーが3案から選んだ代表写真（アマミノクロウサギ）。twitter:card は summary_large_image。手書きの index・tour・contact（4言語）には直接書いた
+- 生成ページ488件を作り直した。作り直す前に、今のスクリプトで作り直しても差分が出ないことを確かめてから修正した。差分は各ページ head 内の8行の追加だけ。og:image の写真488件がすべて実在することを確かめた
+- サイトマップ: オーナーの指示で、トップを index.html なしのURLにした（`generate_sitemap.py`。og:url と同じ。4言語の4行が変わった）
+- 作業2 `tour.html`（日本語版のみ）: 冒頭の説明文に「アマミノクロウサギや奄美固有のカエルたち、ハブなど」を足した（ハブは奄美固有ではないので「固有」はカエルだけ。「必ず見られる」とは書かない）。「ご予約方法」（電話・公式LINE・フォームを contact.html の記載から写し、お問い合わせページへのボタン）と「雨の日について」（オーナーの文面をそのまま）のセクションを足した。既存のクラスを使い、追加したCSSは背景色と余白だけ
+- 作業3 JSON-LD: `index.html` に LocalBusiness（名前・URL・電話 +81-80-4058-4466・対応エリア奄美大島・名瀬・龍郷近辺のホテル送迎・Instagram/X）、`tour.html` に TouristTrip（大人6,000円・小学生以下3,000円 JPY、所要約2時間は description に書いた。schema.org の TouristTrip に所要時間の項目がないため）。4言語。翻訳版の料金の名前には「1名あたり」の言葉を補った（オーナー了承）
+- 未完了事項: `main` へのマージと公開後の確認（「進行中の作業」に記載）
+- Commit SHA: dd6b9b5（作業1）、48ecef0（作業2）、a4a1545（作業3）、この記録はこの次のcommit
+- Push: 作業用ブランチ `claude/adoring-keller-bttzvt` にpush（この記録と同時）。`main` には未反映
 
 （担当: Claude Code）
