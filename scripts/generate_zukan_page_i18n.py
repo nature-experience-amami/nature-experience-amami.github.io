@@ -20,6 +20,7 @@ from generate_zukan_page import (  # noqa: E402
 )
 from generate_creature_pages_i18n import load_lang, LANGS, AVAILABLE_CATEGORY_PAGES  # noqa: E402
 from category_header import render_category_strip  # noqa: E402
+from seo_head import insert_ogp  # noqa: E402
 
 TEMPLATE = ROOT / "templates" / "zukan.i18n.html"
 OUTPUT_DIR_NAME = "categories"
@@ -506,6 +507,7 @@ def render_category(category, lang):
     output_dir = ROOT / lang / OUTPUT_DIR_NAME
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / f"{category}.html"
+    page = insert_ogp(page, f"{lang}/{OUTPUT_DIR_NAME}/{category}.html", lang)
     output_path.write_text(page, encoding="utf-8")
     print(output_path.relative_to(ROOT))
 

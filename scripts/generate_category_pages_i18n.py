@@ -19,6 +19,7 @@ from generate_creature_pages_i18n import (  # noqa: E402
     load_lang, LANGS, AVAILABLE_CATEGORY_PAGES,
 )
 from category_header import render_category_strip  # noqa: E402
+from seo_head import insert_ogp  # noqa: E402
 
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
 TEMPLATE = ROOT / "templates" / "category.i18n.html"
@@ -216,6 +217,7 @@ def main():
             output_dir = ROOT / lang / OUTPUT_DIR_NAME
             output_dir.mkdir(parents=True, exist_ok=True)
             output_path = output_dir / f"{category}.html"
+            page = insert_ogp(page, f"{lang}/{OUTPUT_DIR_NAME}/{category}.html", lang)
             output_path.write_text(page, encoding="utf-8")
             print(output_path.relative_to(ROOT))
 
