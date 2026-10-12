@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from generate_zukan_page import ZUKAN_CATEGORIES, load_creatures  # noqa: E402
 from category_header import render_category_strip  # noqa: E402
+from seo_head import insert_ogp  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
@@ -315,6 +316,7 @@ def main():
         )
         OUTPUT_DIR.mkdir(exist_ok=True)
         output_path = OUTPUT_DIR / f"{category}.html"
+        page = insert_ogp(page, f"categories/{category}.html", "ja")
         output_path.write_text(page, encoding="utf-8")
         print(output_path.relative_to(ROOT))
 

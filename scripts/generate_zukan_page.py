@@ -19,6 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from category_header import render_category_strip  # noqa: E402
+from seo_head import insert_ogp  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "creatures"
@@ -431,6 +432,7 @@ def render_category(category, categories, available_categories):
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     output = OUTPUT_DIR / f"{category}.html"
+    html_out = insert_ogp(html_out, f"categories/{category}.html", "ja")
     output.write_text(html_out, encoding="utf-8")
     print(output.relative_to(ROOT))
 

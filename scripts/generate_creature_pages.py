@@ -7,6 +7,7 @@ from string import Template
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from category_header import render_category_strip  # noqa: E402
+from seo_head import insert_ogp  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "creatures"
@@ -481,7 +482,12 @@ def main():
             continue
         output = OUTPUT_DIR / category / f"{creature_id}.html"
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(render(item, creatures, generated_keys, categories, available_categories), encoding="utf-8")
+        page = render(item, creatures, generated_keys, categories, available_categories)
+        page = insert_ogp(
+            page, f"creatures/{category}/{creature_id}.html", "ja",
+            image=item["photos"][0] if item["photos"] else None,
+        )
+        output.write_text(page, encoding="utf-8")
         print(output.relative_to(ROOT))
 
 

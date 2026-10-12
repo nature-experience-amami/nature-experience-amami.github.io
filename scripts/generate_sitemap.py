@@ -54,6 +54,9 @@ def collect_urls():
 
 
 def url_for(lang, rel_path):
+    # トップ(index.html)は、OGPのog:urlと同じく index.html なしのURLにする
+    if rel_path == "index.html":
+        return f"{BASE_URL}/{lang}/" if lang else f"{BASE_URL}/"
     parts = [lang, rel_path] if lang else [rel_path]
     joined = "/".join(p for p in parts if p)
     return f"{BASE_URL}/{quote(joined)}"

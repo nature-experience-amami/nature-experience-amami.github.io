@@ -26,6 +26,7 @@ from generate_category_pages import (
     card_status,
 )
 from category_header import render_category_strip
+from seo_head import insert_ogp
 
 TEMPLATE = ROOT / "templates" / "highlights.html"
 OUTPUT = ROOT / "highlights.html"
@@ -179,6 +180,7 @@ def main():
         ),
         lang_links=render_lang_bar(),
     )
+    page = insert_ogp(page, "highlights.html", "ja")
     OUTPUT.write_text(page, encoding="utf-8")
     print(OUTPUT.relative_to(ROOT))
 
