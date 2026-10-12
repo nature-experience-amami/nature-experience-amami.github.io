@@ -26,6 +26,7 @@ from generate_creature_pages import (  # noqa: E402
     related_cards, all_creatures, load_categories,
 )
 from category_header import render_category_strip  # noqa: E402
+from seo_head import insert_ogp  # noqa: E402
 
 # 日本語版の生成ロジック(mdのmonths:、無ければ写真の撮影日)による、
 # 確定済みの月情報を流用する。
@@ -290,10 +291,12 @@ def main():
         for creature in creatures:
             output = ROOT / lang / "creatures" / creature["category"] / f'{creature["id"]}.html'
             output.parent.mkdir(parents=True, exist_ok=True)
-            output.write_text(
-                render(creature, lang, strings, creatures, translated_langs_by_key),
-                encoding="utf-8",
+            page = render(creature, lang, strings, creatures, translated_langs_by_key)
+            page = insert_ogp(
+                page, f'{lang}/creatures/{creature["category"]}/{creature["id"]}.html', lang,
+                image=creature["photos"][0] if creature["photos"] else None,
             )
+            output.write_text(page, encoding="utf-8")
             print(output.relative_to(ROOT))
 
 

@@ -21,6 +21,7 @@ from generate_category_pages_i18n import card_description, card_status  # noqa: 
 from generate_highlights_page import HIGHLIGHT_CREATURES  # noqa: E402
 from generate_creature_pages_i18n import load_lang, LANGS, AVAILABLE_CATEGORY_PAGES  # noqa: E402
 from category_header import render_category_strip  # noqa: E402
+from seo_head import insert_ogp  # noqa: E402
 
 TEMPLATE = ROOT / "templates" / "highlights.i18n.html"
 OUTPUT_NAME = "highlights.html"
@@ -256,6 +257,7 @@ def main():
         )
 
         output_path = ROOT / lang / OUTPUT_NAME
+        page = insert_ogp(page, f"{lang}/{OUTPUT_NAME}", lang)
         output_path.write_text(page, encoding="utf-8")
         print(output_path.relative_to(ROOT))
 
