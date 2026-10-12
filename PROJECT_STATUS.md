@@ -41,7 +41,8 @@
 ├─ creatures/ categories/         日本語版のページ（生成物）
 ├─ en/ es/ zh/                    翻訳版（index・contact・tour・highlights・categories・creatures）
 ├─ index.html highlights.html tour.html contact.html amami-tool.html
-├─ css/ js/ logo/
+├─ css/ js/
+├─ logo/                         ロゴの元データ（ishikawa-frog-logo.svg＝カエル版。色は {{ink}} {{paper}} の目印のまま）
 ├─ customer-app/                  予約管理アプリ（使い方と注意は customer-app/README.md）
 ├─ threads/                       Threads投稿（詳細は threads/THREADS_STATUS.md）
 ├─ instagram-campaign/
@@ -92,6 +93,8 @@
 
 ### 表示
 
+- ホーム画面・タブ用アイコンをハブのロゴに差し替えた（2026-10-12、作業用ブランチ `claude/stoic-bardeen-uhi9ey`）。main に入れたあと、iPhoneのホーム画面（〇の外側の見え方）、パソコンのタブ、Androidで見え方を確かめる。
+- ロゴのサイトでの使い方（トップの見出しの横・SNS共有用画像・フッター）はまだ決めていない。
 - トップの大きな写真の名前ラベル: 幅761〜900pxの縦向きで左上に出る、スマホ横向きで最初の画面の下にはみ出す（2026-09-24時点）。9/28の修正は幅901px以上（`@media (min-width:901px)`）だけに効くもので、この2つは直していない。【要確認】今の見え方（実機で確認）。
 
 ### 集客・公開の準備
@@ -240,5 +243,19 @@
 - オーナーの指示（「マージして」）で、作業用ブランチ `claude/amami-creature-hierarchical-display-auz5sg` を `main` にマージしてpushした（その他の節足動物のトップページ・翻訳版図鑑ページ、カード説明文の修正、ワークフロー、ドキュメント、スキル）
 - Commit SHA: スキルの修正と、この記録の2つ
 - Push: 済み（作業用ブランチと `main`）
+
+（担当: Claude Code）
+
+### 2026-10-12 ホーム画面・タブ用アイコンをハブのロゴに差し替え、カエルのロゴを保存
+
+- オーナーから、イシカワガエルのロゴ（SVG）をもらい、`logo/ishikawa-frog-logo.svg` にそのまま保存した。色は `{{ink}}`（地の色）と `{{paper}}`（線・文字の色）の目印のままで、サイトで使うときに色を入れる。文字は `Montserrat` の文字データのままなので、画像にするときは文字を図形にするかPNGに書き出す必要がある
+- オーナーから、ハブのロゴ（PNG相当の画像 1600×1600）をもらい、スマホのホーム画面・ブラウザのタブ用アイコンに使った。それまでのアイコンはハブの写真だった
+  - `images/icons/apple-touch-icon.png`（iPhone用 180×180）: 〇の外側をロゴの外側と同じ暗い茶色（#1C120A）で塗った。iPhoneはアイコンの透明な部分を透かさないと一般に言われているため（実機では未確認）
+  - `images/icons/icon-192.png`（タブ・Android用 192×192）: 〇の外側を透明にした。Androidでの見え方は機種やブラウザによって違い、未確認
+  - HTMLは変えていない（4言語のトップページはどれもこの2つの画像を使っている）。予約管理アプリ（`customer-app/`）のアイコンは変えていない
+- ホーム画面にすでに追加してあるサイトのアイコンは自動では変わらない。追加し直すときは、サイトのアイコンだけを消す（予約管理アプリのアイコンは消すと中のデータが消える）
+- 未完了事項: 作業用ブランチを main に入れる。入れたあと実機で見え方を確かめる。ロゴのほかの使い方（トップの見出しの横、SNS共有用画像、フッター）は未決定。ハブのロゴの元画像はリポジトリに保存していない
+- Commit SHA: e056756（カエルのロゴ）、80ac183（アイコン）、この記録
+- Push: 作業用ブランチ `claude/stoic-bardeen-uhi9ey` に済み。main へは未実施
 
 （担当: Claude Code）
