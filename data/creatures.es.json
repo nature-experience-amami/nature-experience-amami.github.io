@@ -2362,7 +2362,7 @@
   },
   {
     "id": "ryuukyuu-asagi-madara",
-    "name": "Tigre Azul",
+    "name": "Tigre Azul Vítreo",
     "category": "other-insects",
     "category_name": "Insectos",
     "months": [
@@ -2382,7 +2382,7 @@
     "months_source": "notes",
     "activity": "diurnal",
     "night_observable": true,
-    "description": "Familia Nymphalidae, Tigre Azul *Ideopsis similis* (Linnaeus, 1758)\n\nUna mariposa de la familia de las danaidas con manchas de un azul pálido, que se desliza por el aire con gracia y calma. Se distribuye desde Amami Oshima hacia el sur, y sus larvas se alimentan de Marsdenia tinctoria. En los días de invierno en que la temperatura baja de 15°C, se pueden ver cientos de ejemplares agrupándose para pasar el invierno en los bosques de los valles de la isla, una escena invernal muy conocida en Amami Oshima.",
+    "description": "Familia Nymphalidae, Tigre Azul Vítreo *Ideopsis similis* (Linnaeus, 1758)\n\nUna mariposa de la familia de las danaidas con manchas de un azul pálido, que se desliza por el aire con gracia y calma. Se distribuye desde Amami Oshima hacia el sur, y sus larvas se alimentan de Marsdenia tinctoria. En los días de invierno en que la temperatura baja de 15°C, se pueden ver cientos de ejemplares agrupándose para pasar el invierno en los bosques de los valles de la isla, una escena invernal muy conocida en Amami Oshima.",
     "photos": [
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000002_20260106_13.jpg",
@@ -2465,7 +2465,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Familia de culebras, género Dinodon. *Dinodon semicarinatum*\n\nAlcanza hasta unos 200 cm. Se observa con más facilidad entre mayo y noviembre. Tiene el\ncuerpo pardo amarillento con bandas ovaladas rojas y negras. No es venenosa, pero es\nagresiva: si entras en su territorio, amenaza y ataca. Se alimenta de mamíferos, aves,\nreptiles, anfibios y peces, e incluso come huevos de tortuga marina; a veces se alimenta\nde su enemigo natural, la víbora Habu. Es nocturna y puede verse a lo largo de caminos\nforestales y zonas de agua, hasta cerca de la costa. Los ejemplares pequeños tienen un\ntono rojizo más intenso y son muy hermosos, pero aunque sean pequeños, su mordedura\nduele, así que hay que tener cuidado.",
+    "description": "Familia de culebras, género Lycodon. *Lycodon semicarinatus*\n\nAlcanza hasta unos 200 cm. Se observa con más facilidad entre mayo y noviembre. Tiene el\ncuerpo pardo amarillento con bandas ovaladas rojas y negras. No es venenosa, pero es\nagresiva: si entras en su territorio, amenaza y ataca. Se alimenta de mamíferos, aves,\nreptiles, anfibios y peces, e incluso come huevos de tortuga marina; a veces se alimenta\nde su enemigo natural, la víbora Habu. Es nocturna y puede verse a lo largo de caminos\nforestales y zonas de agua, hasta cerca de la costa. Los ejemplares pequeños tienen un\ntono rojizo más intenso y son muy hermosos, pero aunque sean pequeños, su mordedura\nduele, así que hay que tener cuidado. En inglés también se la conoce como Ryukyu Odd-tooth Snake.",
     "photos": [
       "../images/creatures/snakes/akamata/akamata_000001_20250921_22.jpg",
       "../images/creatures/snakes/akamata/akamata_000002_20250829_23.jpg",

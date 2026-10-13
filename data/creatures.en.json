@@ -138,7 +138,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Newt family (Salamandridae), genus Echinotriton. *Echinotriton raffaellii*\n\nGrows to about 14-20 cm in total length. Breeds from around January through\nApril. Endemic to Amami Oshima, Uke-jima, and Tokunoshima, it lives around\nforests and farmland. It becomes active on warm winter days, and during the\nbreeding season lays eggs under fallen leaves near water. It has a rugged,\nblackish-brown body, with orange tints on its rib-tip projections and the ends\nof its limbs.",
+    "description": "Newt family (Salamandridae), genus Echinotriton. *Echinotriton raffaellii*\n\nGrows to about 14-20 cm in total length. Breeds from around January through\nApril. Endemic to Amami Oshima, Uke-jima, and Tokunoshima, it lives around\nforests and farmland. It becomes active on warm winter days, and during the\nbreeding season lays eggs under fallen leaves near water. It has a rugged,\nblackish-brown body, with orange tints on its rib-tip projections and the ends\nof its limbs. Also known in English as Raffaelli's Spiny Crocodile Newt.",
     "photos": [
       "../images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000001_20250119_20.jpg",
       "../images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000002_20250123_22.jpg",
@@ -2362,7 +2362,7 @@
   },
   {
     "id": "ryuukyuu-asagi-madara",
-    "name": "Blue Tiger",
+    "name": "Blue Glassy Tiger",
     "category": "other-insects",
     "category_name": "Insects",
     "months": [
@@ -2382,7 +2382,7 @@
     "months_source": "notes",
     "activity": "diurnal",
     "night_observable": true,
-    "description": "Brush-footed butterfly family, Blue Tiger *Ideopsis similis* (Linnaeus, 1758)\n\nA milkweed butterfly with pale blue markings, gliding gracefully and unhurriedly through the air. Found from Amami Oshima southward, its larvae feed on Marsdenia tinctoria. On winter days when the temperature drops below 15°C, hundreds can be seen clustering together to overwinter in the forests of the island's valleys — a well-known winter scene on Amami Oshima.",
+    "description": "Brush-footed butterfly family, Blue Glassy Tiger *Ideopsis similis* (Linnaeus, 1758)\n\nA milkweed butterfly with pale blue markings, gliding gracefully and unhurriedly through the air. Found from Amami Oshima southward, its larvae feed on Marsdenia tinctoria. On winter days when the temperature drops below 15°C, hundreds can be seen clustering together to overwinter in the forests of the island's valleys — a well-known winter scene on Amami Oshima.",
     "photos": [
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000002_20260106_13.jpg",
@@ -2465,7 +2465,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Colubrid snake family, genus Dinodon. *Dinodon semicarinatum*\n\nGrows up to about 200 cm. Most easily observed from May through November. The body is\nyellowish brown with red-and-black oval crossbands. It has no venom but is aggressive,\nhissing and striking if you enter its territory. It feeds on mammals, birds, reptiles,\namphibians, and fish, and even eats sea turtle eggs; it sometimes preys on its natural\nenemy, the Habu pit viper. Nocturnal, it can be seen along forest roads and around water,\nall the way to the coast. Smaller individuals show stronger red coloring and are very\nbeautiful, but even a small one gives a painful bite, so take care.",
+    "description": "Colubrid snake family, genus Lycodon. *Lycodon semicarinatus*\n\nGrows up to about 200 cm. Most easily observed from May through November. The body is\nyellowish brown with red-and-black oval crossbands. It has no venom but is aggressive,\nhissing and striking if you enter its territory. It feeds on mammals, birds, reptiles,\namphibians, and fish, and even eats sea turtle eggs; it sometimes preys on its natural\nenemy, the Habu pit viper. Nocturnal, it can be seen along forest roads and around water,\nall the way to the coast. Smaller individuals show stronger red coloring and are very\nbeautiful, but even a small one gives a painful bite, so take care. Also known in English as the Ryukyu Odd-tooth Snake.",
     "photos": [
       "../images/creatures/snakes/akamata/akamata_000001_20250921_22.jpg",
       "../images/creatures/snakes/akamata/akamata_000002_20250829_23.jpg",

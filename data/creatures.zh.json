@@ -2362,7 +2362,7 @@
   },
   {
     "id": "ryuukyuu-asagi-madara",
-    "name": "青斑蝶",
+    "name": "拟旖斑蝶",
     "category": "other-insects",
     "category_name": "昆虫",
     "months": [
@@ -2382,7 +2382,7 @@
     "months_source": "notes",
     "activity": "diurnal",
     "night_observable": true,
-    "description": "蛱蝶科青斑蝶 *Ideopsis similis* (Linnaeus, 1758)\n\n具有浅蓝色斑纹的斑蝶类，飞行姿态轻盈优雅。分布于奄美大岛以南，幼虫以娃儿藤为食草。气温降至15度以下的冬日，会有数百只个体聚集在山谷林间集体越冬，是奄美大岛冬季的知名景象。",
+    "description": "蛱蝶科拟旖斑蝶 *Ideopsis similis* (Linnaeus, 1758)\n\n具有浅蓝色斑纹的斑蝶类，飞行姿态轻盈优雅。分布于奄美大岛以南，幼虫以娃儿藤为食草。气温降至15度以下的冬日，会有数百只个体聚集在山谷林间集体越冬，是奄美大岛冬季的知名景象。",
     "photos": [
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000001_20260106_13.jpg",
       "../images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000002_20260106_13.jpg",
@@ -2450,7 +2450,7 @@
   },
   {
     "id": "akamata",
-    "name": "赤楝蛇",
+    "name": "琉球红斑蛇",
     "category": "snakes",
     "category_name": "蛇类",
     "months": [
@@ -2465,7 +2465,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "游蛇科赤楝蛇属 *Dinodon semicarinatum*\n\n体长可达约200厘米。5月至11月是最容易观察到它的时期。体色为黄褐色，身上带有红黑相间的椭\n圆形横纹。虽然无毒，但性情好斗，一旦进入其领地就会发出威吓并主动攻击。食性广泛，捕食哺乳\n类、鸟类、爬行类、两栖类和鱼类，也会吃海龟蛋，甚至会捕食天敌波布蛇。夜行性，从林道、水边\n到海岸附近都能观察到它的踪迹。体型较小的个体红色更为鲜艳、十分美丽，但即使体型小，被咬到\n也会很疼，需多加注意。",
+    "description": "游蛇科白环蛇属 *Lycodon semicarinatus*\n\n体长可达约200厘米。5月至11月是最容易观察到它的时期。体色为黄褐色，身上带有红黑相间的椭\n圆形横纹。虽然无毒，但性情好斗，一旦进入其领地就会发出威吓并主动攻击。食性广泛，捕食哺乳\n类、鸟类、爬行类、两栖类和鱼类，也会吃海龟蛋，甚至会捕食天敌波布蛇。夜行性，从林道、水边\n到海岸附近都能观察到它的踪迹。体型较小的个体红色更为鲜艳、十分美丽，但即使体型小，被咬到\n也会很疼，需多加注意。",
     "photos": [
       "../images/creatures/snakes/akamata/akamata_000001_20250921_22.jpg",
       "../images/creatures/snakes/akamata/akamata_000002_20250829_23.jpg",
@@ -2544,7 +2544,7 @@
   },
   {
     "id": "garasu-hibaa",
-    "name": "普氏渔游蛇",
+    "name": "普氏腹链蛇",
     "category": "snakes",
     "category_name": "蛇类",
     "months": [
@@ -2558,7 +2558,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "游蛇科渔游蛇属 *Hebius pryeri*\n\n体长可达约110厘米。5月至11月是最容易观察到它的时期。体形细长，体色为黑色或黑褐色，身体\n上带有黄色或褐色的条纹。喜欢栖息在水边，常见于水田等青蛙较多的场所。虽然有毒，但注入毒液\n的毒牙较小，据说仅被咬一下毒液难以渗入体内，不过其毒性本身较强，仍需注意。食性以青蛙、鱼\n类、壁虎和小型蜥蜴为主。动作敏捷，一旦察觉危险便会做出威吓姿态。",
+    "description": "游蛇科东亚腹链蛇属 *Hebius pryeri*\n\n体长可达约110厘米。5月至11月是最容易观察到它的时期。体形细长，体色为黑色或黑褐色，身体\n上带有黄色或褐色的条纹。喜欢栖息在水边，常见于水田等青蛙较多的场所。虽然有毒，但注入毒液\n的毒牙较小，据说仅被咬一下毒液难以渗入体内，不过其毒性本身较强，仍需注意。食性以青蛙、鱼\n类、壁虎和小型蜥蜴为主。动作敏捷，一旦察觉危险便会做出威吓姿态。",
     "photos": [
       "../images/creatures/snakes/garasu-hibaa/garasu-hibaa_000001_20250522_21.jpg",
       "../images/creatures/snakes/garasu-hibaa/garasu-hibaa_000002_20250522_21.jpg",
@@ -2599,7 +2599,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "蝮蛇科奄美烙铁头属 *Protobothrops flavoviridis*\n\n体长可达约226厘米，是岛上体型最大的蛇类之一。5月至11月是最容易观察到它的时期(即使在冬天，\n气温较高的日子里它也可能活动)。夜行性，白天多藏身于洞穴等处休息。栖息范围从低地森林到山地\n森林、草地、水边、农田乃至树上都有，有时会为了捕食老鼠而进入民宅周边。主要以老鼠为食，也捕\n食爬行类、青蛙、哺乳类和鸟类。天敌包括赤楝蛇以及猎捕波布蛇的人。有毒且性情相当好斗。观察或\n拍摄时务必保持2〜3米以上的距离。一旦靠近，它不会逃跑，而是立刻摆出攻击姿势，扑咬距离可达体\n长的三分之二左右。如果在手机没有信号的深山中被咬伤，后果会非常严重。它的花纹与周围环境融为\n一体，很难被发现，即使看不到，也可能就潜伏在附近。无论怎样小心都不为过。",
+    "description": "蝮蛇科奄美烙铁头属 *Protobothrops flavoviridis*\n\n体长可达约226厘米，是岛上体型最大的蛇类之一。5月至11月是最容易观察到它的时期(即使在冬天，\n气温较高的日子里它也可能活动)。夜行性，白天多藏身于洞穴等处休息。栖息范围从低地森林到山地\n森林、草地、水边、农田乃至树上都有，有时会为了捕食老鼠而进入民宅周边。主要以老鼠为食，也捕\n食爬行类、青蛙、哺乳类和鸟类。天敌包括琉球红斑蛇以及猎捕波布蛇的人。有毒且性情相当好斗。观察或\n拍摄时务必保持2〜3米以上的距离。一旦靠近，它不会逃跑，而是立刻摆出攻击姿势，扑咬距离可达体\n长的三分之二左右。如果在手机没有信号的深山中被咬伤，后果会非常严重。它的花纹与周围环境融为\n一体，很难被发现，即使看不到，也可能就潜伏在附近。无论怎样小心都不为过。",
     "photos": [
       "../images/creatures/snakes/habu/habu_000002_20250228_00.jpg",
       "../images/creatures/snakes/habu/habu_000003_20250228_00.jpg",

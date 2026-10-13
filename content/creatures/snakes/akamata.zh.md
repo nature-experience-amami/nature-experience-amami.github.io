@@ -1,12 +1,12 @@
 ---
 id: akamata
-name: 赤楝蛇
+name: 琉球红斑蛇
 category: snakes
 danger: 无毒但具攻击性
 danger_level: 50
 months: [3, 4, 5, 6, 7, 9, 10]
 ---
-游蛇科赤楝蛇属 *Dinodon semicarinatum*
+游蛇科白环蛇属 *Lycodon semicarinatus*
 
 体长可达约200厘米。5月至11月是最容易观察到它的时期。体色为黄褐色，身上带有红黑相间的椭
 圆形横纹。虽然无毒，但性情好斗，一旦进入其领地就会发出威吓并主动攻击。食性广泛，捕食哺乳
