@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>冬の奄美大島ナイトツアー | イボイモリ・カエルの繁殖期 | Nature Experience Amami</title>
+<meta name="description" content="奄美の生き物は冬眠しません。12月〜5月初旬は、イボイモリやカエルの繁殖期。暖かい夜はカエルとそれを狙うヘビ、寒い夜はリュウキュウアサギマダラの集団越冬。冬だから出会える夜の森へご案内します。">
+<meta property="og:title" content="冬の奄美大島ナイトツアー | イボイモリ・カエルの繁殖期 | Nature Experience Amami">
+<meta property="og:description" content="奄美の生き物は冬眠しません。12月〜5月初旬は、イボイモリやカエルの繁殖期。暖かい夜はカエルとそれを狙うヘビ、寒い夜はリュウキュウアサギマダラの集団越冬。冬だから出会える夜の森へご案内します。">
+<meta property="og:url" content="https://nature-experience-amami.github.io/winter.html">
+<meta property="og:image" content="https://nature-experience-amami.github.io/images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nature Experience Amami">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --night:#0A1613;
+    --canopy:#16302A;
+    --moonlight:#EAF2E9;
+    --amber:#E8A33D;
+    --moss:#6B8F71;
+    --bark:#2A211A;
+  }
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
+
+  body{
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    background:var(--night);
+    color:var(--moonlight);
+    line-height:1.8;
+  }
+
+  a{
+    color:inherit;
+  }
+
+  /* LANG BAR */
+
+  .lang-bar{
+    background:#050907;
+    border-bottom:1px solid rgba(234,242,233,.12);
+  }
+
+  .lang-bar-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:.5rem 6vw;
+    display:flex;
+    justify-content:flex-end;
+    gap:1rem;
+    font-family:'Space Mono',monospace;
+    font-size:.7rem;
+    letter-spacing:.06em;
+  }
+
+  .lang-bar a, .lang-bar span{
+    text-decoration:none;
+    color:rgba(234,242,233,.5);
+  }
+
+  .lang-bar a:hover{
+    color:var(--moonlight);
+  }
+
+  .lang-bar span.current{
+    color:var(--amber);
+  }
+
+  /* HEADER */
+
+  header{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:rgba(10,22,19,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+
+  .header-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:1.2rem 6vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:2rem;
+  }
+
+  .logo{
+    text-decoration:none;
+    font-family:'Shippori Mincho',serif;
+    font-weight:700;
+    font-size:1.25rem;
+    letter-spacing:.14em;
+    display:flex;
+    align-items:center;
+    gap:.55rem;
+    white-space:nowrap;
+  }
+
+  .logo::before{
+    content:"";
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--amber);
+    box-shadow:0 0 10px 2px rgba(232,163,61,.7);
+  }
+
+  nav{
+    display:flex;
+    align-items:center;
+    gap:1.4rem;
+    font-size:.9rem;
+  }
+
+  nav a{
+    text-decoration:none;
+    color:rgba(234,242,233,.75);
+  }
+
+  nav a:hover{
+    color:var(--amber);
+  }
+
+  /* HERO */
+
+  .hero{
+    max-width:1200px;
+    margin:0 auto;
+    padding:7rem 6vw 5rem;
+  }
+
+  .label{
+    font-family:'Space Mono',monospace;
+    font-size:.78rem;
+    letter-spacing:.15em;
+    color:var(--amber);
+    margin-bottom:1rem;
+  }
+
+  h1{
+    font-family:'Shippori Mincho',serif;
+    font-size:clamp(2.2rem,5vw,4rem);
+    line-height:1.3;
+    letter-spacing:.04em;
+    margin-bottom:1.5rem;
+  }
+
+  .hero-lead{
+    max-width:680px;
+    color:rgba(234,242,233,.78);
+    font-size:1.05rem;
+    line-height:2;
+  }
+
+  /* COMMON */
+
+  section{
+    padding:5.5rem 6vw;
+  }
+
+  .inner{
+    max-width:1000px;
+    margin:0 auto;
+  }
+
+  .section-label{
+    font-family:'Space Mono',monospace;
+    font-size:.78rem;
+    letter-spacing:.12em;
+    color:var(--moss);
+    margin-bottom:.7rem;
+  }
+
+  h2{
+    font-family:'Shippori Mincho',serif;
+    font-size:clamp(1.6rem,3vw,2.3rem);
+    line-height:1.4;
+    margin-bottom:1.2rem;
+  }
+
+  /* PRICE */
+
+  .price-section{
+    background:var(--canopy);
+  }
+
+  .price-card{
+    margin-top:2.5rem;
+    background:var(--night);
+    border:1px solid rgba(234,242,233,.12);
+    border-radius:4px;
+    padding:2.5rem;
+  }
+
+  .price-main{
+    display:flex;
+    align-items:baseline;
+    gap:.7rem;
+    flex-wrap:wrap;
+    margin-bottom:1.5rem;
+  }
+
+  .price-main .number{
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-size:clamp(2.2rem,5vw,3.5rem);
+    color:var(--amber);
+    font-weight:700;
+  }
+
+  .price-main .unit{
+    font-size:1rem;
+  }
+
+  .price-main .per{
+    color:rgba(234,242,233,.6);
+    font-size:.9rem;
+  }
+
+  .price-note{
+    color:rgba(234,242,233,.75);
+    line-height:1.8;
+    margin-bottom:2rem;
+  }
+
+  /* PRICE OPTIONS */
+
+  .price-options{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+    padding:1.5rem 0;
+    border-top:1px solid rgba(234,242,233,.12);
+    border-bottom:1px solid rgba(234,242,233,.12);
+  }
+
+  .price-option{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    padding:1rem;
+    background:rgba(234,242,233,.035);
+    border:1px solid rgba(234,242,233,.08);
+  }
+
+  .option-label{
+    color:rgba(234,242,233,.75);
+  }
+
+  .price-option strong{
+    color:var(--amber);
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-weight:700;
+    white-space:nowrap;
+  }
+
+  /* EXTENSION */
+
+  .extension{
+    padding-top:1.6rem;
+  }
+
+  .extension-title{
+    color:var(--moss);
+    font-family:'Space Mono',monospace;
+    font-size:.75rem;
+    letter-spacing:.1em;
+    margin-bottom:.4rem;
+  }
+
+  .extension-price{
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-size:1.4rem;
+    font-weight:700;
+    margin-bottom:.5rem;
+  }
+
+  .extension p{
+    color:rgba(234,242,233,.72);
+    font-size:.92rem;
+  }
+
+  /* TIME */
+
+  .time-section{
+    background:var(--night);
+  }
+
+  .time-text{
+    max-width:720px;
+    color:rgba(234,242,233,.8);
+    margin-bottom:2rem;
+  }
+
+  .time-message{
+    border-left:2px solid var(--amber);
+    padding:1.2rem 1.5rem;
+    background:rgba(234,242,233,.035);
+    margin-top:2rem;
+  }
+
+  .time-message p{
+    color:rgba(234,242,233,.85);
+    line-height:1.9;
+  }
+
+  .recommend{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1rem;
+    margin-top:2rem;
+  }
+
+  .recommend-card{
+    border:1px solid rgba(234,242,233,.1);
+    padding:1.4rem;
+    border-radius:4px;
+  }
+
+  .recommend-card .hours{
+    font-family:'Space Mono',monospace;
+    color:var(--amber);
+    font-size:1.15rem;
+    margin-bottom:.4rem;
+  }
+
+  .recommend-card h3{
+    font-family:'Shippori Mincho',serif;
+    font-size:1.1rem;
+    margin-bottom:.4rem;
+  }
+
+  .recommend-card p{
+    color:rgba(234,242,233,.68);
+    font-size:.88rem;
+    line-height:1.7;
+  }
+
+  /* FLOW */
+
+  .flow-section{
+    background:var(--canopy);
+  }
+
+  .flow-list{
+    margin-top:2.5rem;
+  }
+
+  .flow-item{
+    display:grid;
+    grid-template-columns:70px 1fr;
+    gap:1.5rem;
+    padding:1.5rem 0;
+    border-bottom:1px solid rgba(234,242,233,.1);
+  }
+
+  .flow-item:first-child{
+    border-top:1px solid rgba(234,242,233,.1);
+  }
+
+  .flow-number{
+    font-family:'Space Mono',monospace;
+    color:var(--amber);
+    font-size:1.3rem;
+  }
+
+  .flow-item h3{
+    font-family:'Shippori Mincho',serif;
+    font-size:1.15rem;
+    margin-bottom:.35rem;
+  }
+
+  .flow-item p{
+    color:rgba(234,242,233,.72);
+    font-size:.92rem;
+    line-height:1.7;
+  }
+
+  /* MEETING PLACE */
+
+  .meeting-section{
+    background:var(--night);
+  }
+
+  .meeting-card{
+    max-width:760px;
+    margin-top:2rem;
+    padding:2rem;
+    border:1px solid rgba(234,242,233,.12);
+    border-radius:4px;
+    background:rgba(234,242,233,.035);
+  }
+
+  .meeting-card h3{
+    font-family:'Shippori Mincho',serif;
+    font-size:1.2rem;
+    margin-bottom:.8rem;
+  }
+
+  .meeting-card p{
+    color:rgba(234,242,233,.78);
+    line-height:1.9;
+  }
+
+  .meeting-card p + p{
+    margin-top:1rem;
+  }
+
+  /* RESERVATION */
+
+  .reservation-section{
+    background:var(--canopy);
+  }
+
+  .reservation-action{
+    margin-top:2.5rem;
+  }
+
+  /* RAIN */
+
+  .rain-section{
+    background:var(--night);
+  }
+
+  /* WHAT TO BRING */
+
+  .bring-section{
+    background:var(--canopy);
+  }
+
+  /* OUR POLICY */
+
+  .policy-section{
+    background:var(--night);
+  }
+
+  /* NOTE */
+
+  .note-section{
+    background:var(--canopy);
+  }
+
+  .note{
+    max-width:760px;
+    color:rgba(234,242,233,.72);
+    line-height:1.9;
+  }
+
+  /* CTA */
+
+  .cta-section{
+    background:var(--night);
+    text-align:center;
+  }
+
+  .cta-section p{
+    color:rgba(234,242,233,.75);
+    margin-bottom:1.8rem;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:.95rem 2rem;
+    background:var(--amber);
+    color:var(--bark);
+    text-decoration:none;
+    font-weight:700;
+    border-radius:2px;
+    letter-spacing:.04em;
+  }
+
+  .btn:hover{
+    background:#f4b95a;
+  }
+
+  /* FOOTER */
+
+  footer{
+    text-align:center;
+    padding:3rem 6vw;
+    color:rgba(234,242,233,.5);
+    font-size:.8rem;
+    border-top:1px solid rgba(234,242,233,.1);
+  }
+
+  .footer-logo{
+    font-family:'Shippori Mincho',serif;
+    color:rgba(234,242,233,.8);
+    margin-bottom:.5rem;
+  }
+
+  .footer-social{ display:flex; justify-content:center; gap:1.6rem; margin-bottom:1rem; }
+  .footer-social a{ display:inline-flex; color:rgba(234,242,233,.55); }
+  .footer-social a:hover{ color:var(--amber); }
+  .footer-social svg{ width:19px; height:19px; }
+  .footer-social .icon-mask{
+    display:block; width:19px; height:19px; background-color:currentColor;
+    -webkit-mask:url('images/icons/x-logo-black.png') no-repeat center / contain;
+    mask:url('images/icons/x-logo-black.png') no-repeat center / contain;
+  }
+
+  /* MOBILE */
+
+  @media(max-width:700px){
+
+    .header-inner{
+      padding:1rem 5vw;
+    }
+
+    .logo{
+      font-size:.95rem;
+      letter-spacing:.08em;
+    }
+
+    nav a{
+      white-space:nowrap;
+    }
+
+    nav{
+      gap:.8rem;
+      font-size:.78rem;
+    }
+
+    nav a:not(:last-child){
+      display:none;
+    }
+
+    .hero{
+      padding:5rem 6vw 4rem;
+    }
+
+    section{
+      padding:4rem 6vw;
+    }
+
+    .price-card{
+      padding:1.6rem;
+    }
+
+    .meeting-card{
+      padding:1.5rem;
+    }
+
+    .price-options{
+      grid-template-columns:1fr;
+    }
+
+    .recommend{
+      grid-template-columns:1fr;
+    }
+
+    .flow-item{
+      grid-template-columns:48px 1fr;
+      gap:1rem;
+    }
+
+    .btn{
+      width:100%;
+    }
+  }
+
+  @media(max-width:360px){
+
+    .logo{
+      font-size:.85rem;
+      letter-spacing:.04em;
+    }
+
+  }
+  /* WINTER PAGE */
+
+  .w-canopy{
+    background:var(--canopy);
+  }
+
+  .w-night{
+    background:var(--night);
+  }
+
+  .hero-lead + .hero-lead{
+    margin-top:1rem;
+  }
+
+  .note + .note{
+    margin-top:1rem;
+  }
+
+  .photo-grid{
+    max-width:760px;
+    margin-top:1.5rem;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    gap:1rem;
+  }
+
+  .photo-grid figure{
+    margin:0;
+  }
+
+  .photo-grid img{
+    display:block;
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    border-radius:4px;
+  }
+
+  @media(min-width:701px){
+
+    .photo-grid.single{
+      grid-template-columns:minmax(0,480px);
+    }
+
+  }
+
+  .photo-grid figcaption{
+    margin-top:.45rem;
+    font-size:.82rem;
+    color:rgba(234,242,233,.65);
+  }
+
+  .winter-list{
+    padding-left:1.2rem;
+    color:rgba(234,242,233,.78);
+    line-height:1.9;
+  }
+
+  .winter-list li + li{
+    margin-top:.8rem;
+  }
+
+  .winter-action{
+    margin-top:2.5rem;
+  }
+
+</style>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cd646696c93a43ff8824b509062481e2"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+
+<body>
+
+<div class="lang-bar"><div class="lang-bar-inner"><span class="current">JA</span></div></div>
+
+<header>
+  <div class="header-inner">
+
+    <a class="logo" href="index.html">
+      Nature Experience Amami
+    </a>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="label">WINTER</div>
+
+    <h1>冬の奄美は、夜の森が動き出す季節</h1>
+
+    <p class="hero-lead">
+      奄美の生き物は冬眠しません。
+    </p>
+
+    <p class="hero-lead">
+      本土では生き物が眠りにつく冬、奄美の夜の森では、カエルやイモリの繁殖の季節が始まります。カエルは種類ごとに少しずつ時期をずらしながら、水たまり・池・沢と、それぞれの水場に集まってきます。そして、それを狙ってヘビもやってくる。冬だからこそ見られる夜の森の姿があります。
+    </p>
+
+  </section>
+
+  <!-- WARM & COLD -->
+
+  <section class="w-canopy">
+
+    <div class="inner">
+
+      <div class="section-label">WARM &amp; COLD NIGHTS</div>
+
+      <h2>暖かい夜も、寒い夜も</h2>
+
+      <p class="note">
+        暖かい夜は、カエルやイモリが活発に動き回り、それを狙うヘビにも出会えるチャンスです。
+      </p>
+
+      <p class="note">
+        寒い夜は、<a href="creatures/other-insects/ryuukyuu-asagi-madara.html">リュウキュウアサギマダラ</a>が集まって冬を越す姿を観察できます。チョウの集団越冬はかなり見ごたえがあります。
+      </p>
+
+      <p class="note">
+        その日の気温に合わせて、見どころの多い場所へご案内します。
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- WATER -->
+
+  <section class="w-night">
+
+    <div class="inner">
+
+      <div class="section-label">WATER</div>
+
+      <h2>水場ごとの見どころ</h2>
+
+      <div class="meeting-card">
+
+        <h3>水たまり（12月ごろから）</h3>
+
+        <p>
+          <a href="creatures/amphibians/amami-aka-gaeru.html">アマミアカガエル</a>が繁殖のために集まりはじめます。<a href="creatures/amphibians/shiriken-imori.html">アマミシリケンイモリ</a>も集まりだし、カエルを狙って<a href="creatures/snakes/hime-habu.html">ヒメハブ</a>も姿を見せます。
+        </p>
+
+        <div class="photo-grid">
+
+          <figure>
+            <a href="creatures/amphibians/amami-aka-gaeru.html"><img src="images/creatures/amphibians/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg" alt="アマミアカガエル" loading="lazy"></a>
+            <figcaption>アマミアカガエル</figcaption>
+          </figure>
+
+          <figure>
+            <a href="creatures/amphibians/shiriken-imori.html"><img src="images/creatures/amphibians/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg" alt="アマミシリケンイモリ" loading="lazy"></a>
+            <figcaption>アマミシリケンイモリ</figcaption>
+          </figure>
+
+          <figure>
+            <a href="creatures/snakes/hime-habu.html"><img src="images/creatures/snakes/hime-habu/hime-habu_000008_20260223_20.jpg" alt="ヒメハブ" loading="lazy"></a>
+            <figcaption>ヒメハブ</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+
+      <div class="meeting-card">
+
+        <h3>池（1月中旬ごろから、暖かい日）</h3>
+
+        <p>
+          <a href="creatures/amphibians/amami-ao-gaeru.html">アマミアオガエル</a>が集まりはじめます。それを狙って、<a href="creatures/snakes/hime-habu.html">ヒメハブ</a>・<a href="creatures/snakes/garasu-hibaa.html">ガラスヒバァ</a>・<a href="creatures/snakes/akamata.html">アカマタ</a>がやってきます。
+        </p>
+
+        <div class="photo-grid">
+
+          <figure>
+            <a href="creatures/amphibians/amami-ao-gaeru.html"><img src="images/creatures/amphibians/amami-ao-gaeru/amami-ao-gaeru_000004_20250221_22.jpg" alt="アマミアオガエル" loading="lazy"></a>
+            <figcaption>アマミアオガエル</figcaption>
+          </figure>
+
+          <figure>
+            <a href="creatures/snakes/garasu-hibaa.html"><img src="images/creatures/snakes/garasu-hibaa/garasu-hibaa_000006_20250227_19.jpg" alt="ガラスヒバァ" loading="lazy"></a>
+            <figcaption>ガラスヒバァ</figcaption>
+          </figure>
+
+          <figure>
+            <a href="creatures/snakes/akamata.html"><img src="images/creatures/snakes/akamata/akamata_000013_20250326_20.jpg" alt="アカマタ" loading="lazy"></a>
+            <figcaption>アカマタ</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+
+      <div class="meeting-card">
+
+        <h3>沢（12月ごろから）</h3>
+
+        <p>
+          <a href="creatures/amphibians/ishikawa-gaeru.html">アマミイシカワガエル</a>の鳴き声が聞こえはじめます。
+        </p>
+
+        <div class="photo-grid single">
+
+          <figure>
+            <a href="creatures/amphibians/ishikawa-gaeru.html"><img src="images/creatures/amphibians/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg" alt="アマミイシカワガエル" loading="lazy"></a>
+            <figcaption>アマミイシカワガエル</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- NEWT -->
+
+  <section class="w-canopy">
+
+    <div class="inner">
+
+      <div class="section-label">NEWT</div>
+
+      <h2>アマミイボイモリ（12月中旬〜5月初旬）</h2>
+
+      <p class="note">
+        暖かい日には、<a href="creatures/amphibians/iboimori.html">アマミイボイモリ</a>が繁殖のために歩き回ります。イボイモリを目当てに来られる方も多い、冬の人気の生き物です。
+      </p>
+
+      <div class="photo-grid single">
+
+        <figure>
+          <a href="creatures/amphibians/iboimori.html"><img src="images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg" alt="アマミイボイモリ" loading="lazy"></a>
+          <figcaption>アマミイボイモリ</figcaption>
+        </figure>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BUTTERFLY -->
+
+  <section class="w-night">
+
+    <div class="inner">
+
+      <div class="section-label">BUTTERFLY</div>
+
+      <h2>リュウキュウアサギマダラの集団越冬（2月、15℃を下回る日）</h2>
+
+      <p class="note">
+        冷え込んだ夜には、<a href="creatures/other-insects/ryuukyuu-asagi-madara.html">リュウキュウアサギマダラ</a>が集まって冬を越す姿が見られます。
+      </p>
+
+      <div class="photo-grid single">
+
+        <figure>
+          <a href="creatures/other-insects/ryuukyuu-asagi-madara.html"><img src="images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000007_20260210_22.jpg" alt="リュウキュウアサギマダラ" loading="lazy"></a>
+          <figcaption>リュウキュウアサギマダラ</figcaption>
+        </figure>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- AND MORE -->
+
+  <section class="w-canopy">
+
+    <div class="inner">
+
+      <div class="section-label">AND MORE</div>
+
+      <h2>そのほか</h2>
+
+      <p class="note">
+        冬は<a href="creatures/other-arthropods/iso-kanimushi.html">イソカニムシ</a>の観察にもご案内できます。
+      </p>
+
+      <div class="photo-grid single">
+
+        <figure>
+          <a href="creatures/other-arthropods/iso-kanimushi.html"><img src="images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000001_20260204_20.jpg" alt="イソカニムシ" loading="lazy"></a>
+          <figcaption>イソカニムシ</figcaption>
+        </figure>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WINTER TOUR -->
+
+  <section class="w-night">
+
+    <div class="inner">
+
+      <div class="section-label">WINTER TOUR</div>
+
+      <h2>冬のツアーについて</h2>
+
+      <div class="meeting-card">
+
+        <ul class="winter-list">
+          <li>集合は19時ごろです。正確な時間はご予約のときにお知らせします。</li>
+          <li>冬の夜は冷えます。雨具など、風を通さない暖かい服装でお越しください。</li>
+          <li>長靴をご用意しますので、ご予約のときに靴のサイズを教えてください。小さいサイズはご用意できない場合があります。その場合は、歩きやすいスニーカーでお越しください。</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PHOTOGRAPHY -->
+
+  <section class="w-canopy">
+
+    <div class="inner">
+
+      <div class="section-label">PHOTOGRAPHY</div>
+
+      <h2>写真で楽しむ冬の生き物</h2>
+
+      <p class="note">
+        奄美の生き物は、写真におさめて楽しみましょう。イボイモリをはじめ、法律や条例で捕獲・採集が禁止されている生き物もいます。当ツアーでは採集を目的としたご案内は行っていません。
+      </p>
+
+      <div class="winter-action">
+        <a class="btn" href="contact.html">
+          ご予約・お問い合わせはこちら
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="footer-social">
+    <a href="https://x.com/shiikumemo" target="_blank" rel="noopener" aria-label="X (Twitter)">
+      <span class="icon-mask" aria-hidden="true"></span>
+    </a>
+    <a href="https://www.instagram.com/nature_experience_amami/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 1000 1000" fill="currentColor" aria-hidden="true"><path d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34" transform="translate(-2.5 -2.5)"/></svg>
+    </a>
+  </div>
+
+  <div class="footer-logo">
+    Nature Experience Amami
+  </div>
+
+  <div>
+    奄美大島の夜の森を、自然のままに。
+  </div>
+
+</footer>
+
+</body>
+</html>

@@ -120,6 +120,27 @@
   .brand-bar .fade-right{ background:linear-gradient(to right, transparent, var(--night) 85%); }
 
   section{ padding:5.5rem 6vw; }
+  /* 冬のページへの案内カード（10月〜5月10日だけ表示。下のスクリプトで日本時間で判定） */
+  section.winter-card{ background:var(--night); padding:2rem 6vw; }
+  .winter-card[hidden]{ display:none; }
+  .winter-card-inner{
+    max-width:720px; margin:0 auto; display:flex; align-items:center; gap:1.4rem;
+    padding:1rem; border:1px solid rgba(234,242,233,.14); border-radius:4px; background:rgba(234,242,233,.035);
+  }
+  .winter-card img{ display:block; width:180px; aspect-ratio:4/3; object-fit:cover; border-radius:3px; flex-shrink:0; }
+  .winter-card-text{ color:rgba(234,242,233,.88); line-height:1.8; margin-bottom:.9rem; }
+  .winter-card-btn{
+    display:inline-block; padding:.6rem 1.2rem; background:var(--amber); color:var(--bark);
+    font-weight:700; font-size:.9rem; text-decoration:none; border-radius:2px;
+  }
+  .winter-card-btn:hover{ background:#f4b95a; }
+  @media (max-width:600px){
+    section.winter-card{ padding:1.2rem 5vw; }
+    .winter-card-inner{ gap:.9rem; padding:.8rem; }
+    .winter-card img{ width:96px; aspect-ratio:1/1; }
+    .winter-card-text{ font-size:.85rem; line-height:1.7; margin-bottom:.6rem; }
+    .winter-card-btn{ padding:.5rem .9rem; font-size:.8rem; }
+  }
   .field-note{ background:var(--canopy); }
   .field-note .label{ font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.12em; color:var(--moss); margin-bottom:.8rem; }
   .field-note h2{ font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem; }
@@ -476,6 +497,26 @@
     <a href="tour.html" class="btn">🔦 ナイトツアーを見る</a>
   </div>
 </header>
+
+<section class="winter-card" id="winter-card" aria-label="冬のナイトツアーの案内" hidden>
+  <div class="winter-card-inner">
+    <img src="images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg" alt="アマミイボイモリ" loading="lazy">
+    <div>
+      <p class="winter-card-text">奄美の生き物は冬眠しません。イボイモリやカエルの繁殖期が始まります。</p>
+      <a class="winter-card-btn" href="winter.html">冬のナイトツアーを見る →</a>
+    </div>
+  </div>
+</section>
+<script>
+  // 日本時間で10月1日〜5月10日のあいだだけ、冬のページへの案内カードを表示する
+  (function(){
+    var card = document.getElementById('winter-card');
+    if(!card) return;
+    var jst = new Date(Date.now() + 9 * 60 * 60 * 1000);
+    var m = jst.getUTCMonth() + 1, d = jst.getUTCDate();
+    if(m >= 10 || m <= 4 || (m === 5 && d <= 10)) card.hidden = false;
+  })();
+</script>
 
 <section class="field-note">
   <p class="label">FIELD NOTE — <span id="field-note-month">今月</span>に観察しやすい生き物</p>
