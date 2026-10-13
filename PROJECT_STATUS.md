@@ -501,3 +501,28 @@
 - Push: 作業用ブランチ `claude/adoring-keller-bttzvt` に済み。プルリクエスト #105 で2026-10-14に `main` にマージ（マージcommit 4bf5c78）
 
 （担当: Claude Code）
+
+### 2026-10-14 翻訳版の生き物の名前を学名で確かめ、3種の名前を直した
+
+- 冬のページの翻訳を作る前に、オーナーの指摘で、冬のページに出る10種の英・西・中の名前を学名で確かめた。資料は英語版ウィキペディア（記事の英語名と、中国語版・スペイン語版の記事名）と GBIF（species/match と vernacularNames）。どちらも中身を直接取り寄せて確かめた（検索結果の要約ではない）。中国語版・スペイン語版のウィキペディアはこの環境から開けなかった
+- 間違っていた名前: リュウキュウアサギマダラ（*Ideopsis similis*）の「Blue Tiger／Tigre Azul／青斑蝶」は別種 *Tirumala limniace* の名前。アカマタの中国語「赤楝蛇」はアカマダラ（*Lycodon rufozonatus*、赤链蛇）の名前。ガラスヒバァ（*Hebius pryeri*）の中国語「普氏渔游蛇」の渔游蛇属は *Xenochrophis* 属の名前（*Hebius* は东亚腹链蛇属）
+- 直した名前（オーナー決定）: リュウキュウアサギマダラ → Blue Glassy Tiger／Tigre Azul Vítreo（英語名の訳。定まった名前は見つからない）／拟旖斑蝶。アカマタの中国語 → 琉球红斑蛇（GBIF）。英語・スペイン語は Akamata のまま、本文の最初に Ryukyu Odd-tooth Snake の名も書いた。ガラスヒバァの中国語 → 普氏腹链蛇（GBIF）、1行目 → 游蛇科东亚腹链蛇属。アマミイボイモリは名前を変えず、英語版の本文の最初に Raffaelli's Spiny Crocodile Newt の名を書いた。ハブの中国語版の本文の「赤楝蛇」（日本語版はアカマタ）も琉球红斑蛇に直した
+- 合っていた名前: ヒメハブ（Okinawa Pit Viper／冲绳烙铁头蛇）、アマミアカガエル（Amami Brown Frog／奄美赤蛙）、アマミアオガエル（Amami Green Tree Frog／奄美树蛙）、アマミイシカワガエル（Amami Ishikawa's Frog／奄美石川蛙）、アマミイボイモリの中国語（奄美棘螈）。アマミシリケンイモリ（亜種名として付けた名前）とイソカニムシは資料に呼び名がなく、付けた名前のまま。スペイン語の名前は10種とも資料に定まった呼び名が見つからず、英語名を訳して付けた名前
+- アカマタの学名（*Dinodon* → *Lycodon*）と中国語の1行目は、この時点では学会のリストを確かめられなかったので直していなかった（次の記録で直した）
+- オーナーの指示で、`CLAUDE.md` と `AGENTS.md` に「翻訳版の md を作るときは、生き物の名前を学名で確かめる」ルールを足した
+- 翻訳版の md 9ファイルを直し、ページを作り直した。変わったのは翻訳版のページ（生き物ページ・カテゴリーページ）と `data/creatures.en/es/zh.json` だけで、日本語版のページは変わっていない。差分は名前と追記した文だけ（カテゴリーページのカードの説明文にも、追記した文が出る）。`check_translations.py` は0件
+- Commit SHA: 7158594e（md）、3aa8a9df（ページの作り直し）、この記録はこの次のcommit（3つの記録とも同じcommitの組）
+- Push: 作業用ブランチ `claude/adoring-keller-bttzvt` にpushし、プルリクエストを作る
+
+（担当: Claude Code）
+
+### 2026-10-14 アカマタの学名を Lycodon semicarinatus に直し、英語名の追記文を1段落目の最後に移した
+
+- アカマタの学名: オーナーが日本爬虫両棲類学会の標準和名リスト（2026年7月2日版）で、オオカミヘビ属 *Lycodon semicarinatus* (Cope, 1860) であることを確かめた（この環境からは herpetology.jp に接続できなかったため、オーナーが確認）。日本語版 md の1行目を「ナミヘビ科マダラヘビ属 *Dinodon semicarinatum*」→「ナミヘビ科オオカミヘビ属 *Lycodon semicarinatus*」、英語版・スペイン語版の属名と学名を Lycodon・*Lycodon semicarinatus* に、中国語版の1行目を「游蛇科白环蛇属 *Lycodon semicarinatus*」に直した。GBIF でも *Dinodon semicarinatum* はシノニム、正名は *Lycodon semicarinatus*
+- ガラスヒバァ: 同じリストではヒバカリ属 *Hebius pryeri*。日本語版 md は「ナミヘビ科ヒバカリ属 *Hebius pryeri*」で合っていたので直していない
+- 「Also known in English as〜」（アカマタの英語版・スペイン語版、アマミイボイモリの英語版）を、本文の最初から1段落目の最後に移した（オーナーの指示。カテゴリーページのカードの説明文が本文の最初から作られるため、カードの最初に出ないようにする）
+- オーナーの指示で、`CLAUDE.md` に足した「翻訳版の名前を学名で確かめる」ルールを `AGENTS.md` の「生き物データの決まり」にも足した。「やることリスト」のアカマタの学名の項目を消した
+- Commit SHA: 7158594e（md）、3aa8a9df（ページの作り直し）、この記録はこの次のcommit（3つの記録とも同じcommitの組）
+- Push: 作業用ブランチ `claude/adoring-keller-bttzvt` にpushし、プルリクエストを作る
+
+（担当: Claude Code）
