@@ -216,6 +216,10 @@
     font-size:1.15rem;
   }
 
+  .method-card p:not(.method-note){
+    margin-bottom:.6rem;
+  }
+
   .method-card p{
     color:rgba(234,242,233,.68);
     font-size:.85rem;
@@ -223,14 +227,29 @@
   }
 
   .method-card .method-value{
-    margin-top:.2rem;
-    font-family:'Space Mono',monospace;
-    font-size:.85rem;
-    color:var(--amber);
+    margin-top:auto;
+    align-self:flex-start;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:.75rem 1.6rem;
+    background:var(--amber);
+    color:var(--bark);
+    border-radius:2px;
+    font-family:'Zen Kaku Gothic New',sans-serif;
+    font-size:.95rem;
+    font-weight:700;
+    letter-spacing:.04em;
+    transition:background .2s ease;
+  }
+
+  .method-card:hover .method-value{
+    background:#f4b95a;
   }
 
   .method-note{
-    margin-top:.3rem;
+    margin-top:-.2rem;
+    margin-bottom:.6rem;
     color:rgba(234,242,233,.55);
     font-size:.78rem;
     line-height:1.6;
@@ -523,6 +542,10 @@
     .btn{
       width:100%;
     }
+
+    .method-card .method-value{
+      align-self:stretch;
+    }
   }
 </style>
 
@@ -572,11 +595,11 @@
         <span class="method-icon">📞</span>
         <h3>电话咨询</h3>
         <p>如需紧急联系，电话是最可靠的方式。</p>
-        <span class="method-value">080-4058-4466</span>
         <p class="method-note">
           由于我们经常身处山中信号不佳的地方，可能无法及时接听。
           此时请通过官方LINE或咨询表单与我们联系。
         </p>
+        <span class="method-value">080-4058-4466</span>
       </a>
 
       <a class="method-card" href="https://lin.ee/5SFJGNt" target="_blank" rel="noopener">
