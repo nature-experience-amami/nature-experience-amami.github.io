@@ -52,6 +52,55 @@ def is_processed(photo, creature_id):
     return bool(match and match.group("id") == creature_id)
 
 
+def fix_mismatched_prefix(species_dir, creature_id, photos):
+    """処理済みの形(名前_連番6桁_日付8桁_時2桁.jpg)なのに、頭の名前だけがフォルダ名と違う写真の
+    頭をフォルダ名に付け替える(写真の中身・日付・時は変えない)。
+
+    フォルダ名を変えたのにファイル名の頭を揃え忘れると、処理済みの写真が「未処理」と判断される。
+    処理済みの写真にはEXIFが無いので、そのままだと failed/ に移され、ページから写真が消えてしまう
+    (2026-09-07 には、当時のスクリプトがファイルの更新日時を撮影日にしたため、アマミイボイモリの
+    写真24枚の撮影日が処理した日時に変わった)。それを防ぐため、処理の前に頭だけを揃える。
+    連番はそのまま使い、フォルダの中ですでに使われていれば空いている番号(最大+1)にする。
+    付け替えた写真の一覧を [(元の名前, 新しい名前), ...] で返す。"""
+    used = {
+        int(match.group("number"))
+        for photo in photos
+        if (match := PROCESSED_RE.fullmatch(photo.stem)) and match.group("id") == creature_id
+    }
+    mismatched = [
+        (photo, match)
+        for photo in photos
+        if (match := PROCESSED_RE.fullmatch(photo.stem))
+        and match.group("id") != creature_id
+        and photo.suffix.lower() == ".jpg"
+    ]
+    # 先に、連番がぶつからない写真の番号を確保してから、ぶつかる写真に空いている番号を割り当てる
+    # (ぶつかった写真に先に番号を渡して、ほかの写真の番号までずれないようにするため)
+    plan = []
+    later = []
+    for photo, match in mismatched:
+        number = int(match.group("number"))
+        if number in used:
+            later.append((photo, match))
+        else:
+            used.add(number)
+            plan.append((photo, match, number))
+    for photo, match in later:
+        number = max(used, default=0) + 1
+        used.add(number)
+        plan.append((photo, match, number))
+
+    renamed = []
+    for photo, match, number in plan:
+        target = species_dir / f"{creature_id}_{number:06d}_{match.group('date')}_{match.group('hour')}.jpg"
+        if target.exists():
+            print(f"頭の付け替えをやめました(同じ名前の写真があります): {photo} -> {target.name}")
+            continue
+        photo.rename(target)
+        renamed.append((photo.name, target.name))
+    return renamed
+
+
 def get_next_number(photos, creature_id):
     numbers = [
         int(match.group("number"))
@@ -169,6 +218,7 @@ def scan():
     error_count = 0
     errors = []
     missing_exif = []
+    renamed_prefix = []
 
     if not IMAGES_DIR.is_dir():
         print(f"対象フォルダーがありません: {IMAGES_DIR}")
@@ -181,6 +231,14 @@ def scan():
                 for path in species_dir.iterdir()
                 if path.is_file() and path.suffix.lower() in IMAGE_EXTS
             )
+            renamed = fix_mismatched_prefix(species_dir, creature_id, photos)
+            if renamed:
+                renamed_prefix.extend(f"{species_dir}/{old} -> {new}" for old, new in renamed)
+                photos = sorted(
+                    path
+                    for path in species_dir.iterdir()
+                    if path.is_file() and path.suffix.lower() in IMAGE_EXTS
+                )
             next_number = get_next_number(photos, creature_id)
 
             for source in photos:
@@ -216,6 +274,9 @@ def scan():
                     errors.append(f"{source}: {detail}")
                     move_to_failed(source, species_dir)
 
+    print(f"ファイル名の頭をフォルダ名に付け替えた写真: {len(renamed_prefix)}枚")
+    for line in renamed_prefix:
+        print(f"- {line}")
     print(f"処理した写真: {processed_count}枚")
     print(f"処理済みとしてスキップ: {skipped_count}枚")
     print(f"EXIF日時なしでスキップ: {missing_exif_count}枚")
