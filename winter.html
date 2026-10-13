@@ -618,12 +618,33 @@
     margin:0;
   }
 
+  .photo-grid figure > a{
+    display:block;
+    aspect-ratio:4/3;
+    overflow:hidden;
+    border-radius:4px;
+    background:rgba(234,242,233,.06);
+  }
+
   .photo-grid img{
     display:block;
     width:100%;
-    aspect-ratio:4/3;
+    height:100%;
     object-fit:cover;
-    border-radius:4px;
+    opacity:0;
+    transition:opacity .4s ease;
+  }
+
+  .photo-grid img.is-loaded{
+    opacity:1;
+  }
+
+  @media(prefers-reduced-motion:reduce){
+
+    .photo-grid img{
+      transition:none;
+    }
+
   }
 
   @media(min-width:701px){
@@ -757,17 +778,17 @@
         <div class="photo-grid">
 
           <figure>
-            <a href="creatures/amphibians/amami-aka-gaeru.html"><img src="images/creatures/amphibians/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg" alt="アマミアカガエル" loading="lazy"></a>
+            <a href="creatures/amphibians/amami-aka-gaeru.html"><img alt="" data-creature="amami-aka-gaeru" data-name="アマミアカガエル" data-fallback="images/creatures/amphibians/amami-aka-gaeru/amami-aka-gaeru_000004_20250221_22.jpg" loading="lazy"></a>
             <figcaption>アマミアカガエル</figcaption>
           </figure>
 
           <figure>
-            <a href="creatures/amphibians/shiriken-imori.html"><img src="images/creatures/amphibians/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg" alt="アマミシリケンイモリ" loading="lazy"></a>
+            <a href="creatures/amphibians/shiriken-imori.html"><img alt="" data-creature="shiriken-imori" data-name="アマミシリケンイモリ" data-fallback="images/creatures/amphibians/amami-shiriken-imori/amami-shiriken-imori_000001_20250123_22.jpg" loading="lazy"></a>
             <figcaption>アマミシリケンイモリ</figcaption>
           </figure>
 
           <figure>
-            <a href="creatures/snakes/hime-habu.html"><img src="images/creatures/snakes/hime-habu/hime-habu_000008_20260223_20.jpg" alt="ヒメハブ" loading="lazy"></a>
+            <a href="creatures/snakes/hime-habu.html"><img alt="" data-creature="hime-habu" data-name="ヒメハブ" data-fallback="images/creatures/snakes/hime-habu/hime-habu_000008_20260223_20.jpg" loading="lazy"></a>
             <figcaption>ヒメハブ</figcaption>
           </figure>
 
@@ -786,17 +807,17 @@
         <div class="photo-grid">
 
           <figure>
-            <a href="creatures/amphibians/amami-ao-gaeru.html"><img src="images/creatures/amphibians/amami-ao-gaeru/amami-ao-gaeru_000004_20250221_22.jpg" alt="アマミアオガエル" loading="lazy"></a>
+            <a href="creatures/amphibians/amami-ao-gaeru.html"><img alt="" data-creature="amami-ao-gaeru" data-name="アマミアオガエル" data-fallback="images/creatures/amphibians/amami-ao-gaeru/amami-ao-gaeru_000004_20250221_22.jpg" loading="lazy"></a>
             <figcaption>アマミアオガエル</figcaption>
           </figure>
 
           <figure>
-            <a href="creatures/snakes/garasu-hibaa.html"><img src="images/creatures/snakes/garasu-hibaa/garasu-hibaa_000006_20250227_19.jpg" alt="ガラスヒバァ" loading="lazy"></a>
+            <a href="creatures/snakes/garasu-hibaa.html"><img alt="" data-creature="garasu-hibaa" data-name="ガラスヒバァ" data-fallback="images/creatures/snakes/garasu-hibaa/garasu-hibaa_000006_20250227_19.jpg" loading="lazy"></a>
             <figcaption>ガラスヒバァ</figcaption>
           </figure>
 
           <figure>
-            <a href="creatures/snakes/akamata.html"><img src="images/creatures/snakes/akamata/akamata_000013_20250326_20.jpg" alt="アカマタ" loading="lazy"></a>
+            <a href="creatures/snakes/akamata.html"><img alt="" data-creature="akamata" data-name="アカマタ" data-fallback="images/creatures/snakes/akamata/akamata_000013_20250326_20.jpg" loading="lazy"></a>
             <figcaption>アカマタ</figcaption>
           </figure>
 
@@ -815,7 +836,7 @@
         <div class="photo-grid single">
 
           <figure>
-            <a href="creatures/amphibians/ishikawa-gaeru.html"><img src="images/creatures/amphibians/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg" alt="アマミイシカワガエル" loading="lazy"></a>
+            <a href="creatures/amphibians/ishikawa-gaeru.html"><img alt="" data-creature="ishikawa-gaeru" data-name="アマミイシカワガエル" data-fallback="images/creatures/amphibians/amami-ishikawa-gaeru/amami-ishikawa-gaeru_000003_20250123_21.jpg" loading="lazy"></a>
             <figcaption>アマミイシカワガエル</figcaption>
           </figure>
 
@@ -844,7 +865,7 @@
       <div class="photo-grid single">
 
         <figure>
-          <a href="creatures/amphibians/iboimori.html"><img src="images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg" alt="アマミイボイモリ" loading="lazy"></a>
+          <a href="creatures/amphibians/iboimori.html"><img alt="" data-creature="iboimori" data-name="アマミイボイモリ" data-fallback="images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg" loading="lazy"></a>
           <figcaption>アマミイボイモリ</figcaption>
         </figure>
 
@@ -871,7 +892,7 @@
       <div class="photo-grid single">
 
         <figure>
-          <a href="creatures/other-insects/ryuukyuu-asagi-madara.html"><img src="images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000007_20260210_22.jpg" alt="リュウキュウアサギマダラ" loading="lazy"></a>
+          <a href="creatures/other-insects/ryuukyuu-asagi-madara.html"><img alt="" data-creature="ryuukyuu-asagi-madara" data-name="リュウキュウアサギマダラ" data-fallback="images/creatures/other-insects/tyou/ryuukyuu-asagi-madara/ryuukyuu-asagi-madara_000007_20260210_22.jpg" loading="lazy"></a>
           <figcaption>リュウキュウアサギマダラ</figcaption>
         </figure>
 
@@ -898,7 +919,7 @@
       <div class="photo-grid single">
 
         <figure>
-          <a href="creatures/other-arthropods/iso-kanimushi.html"><img src="images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000001_20260204_20.jpg" alt="イソカニムシ" loading="lazy"></a>
+          <a href="creatures/other-arthropods/iso-kanimushi.html"><img alt="" data-creature="iso-kanimushi" data-name="イソカニムシ" data-fallback="images/creatures/other-arthropods/iso-kanimushi/iso-kanimushi_000001_20260204_20.jpg" loading="lazy"></a>
           <figcaption>イソカニムシ</figcaption>
         </figure>
 
@@ -978,6 +999,42 @@
   </div>
 
 </footer>
+
+<script>
+  // 写真は、それぞれの生き物の写真フォルダの写真(data/creatures.json)から、開くたびに1枚を選ぶ。
+  // 最初は写真の枠だけを見せ、写真を読み込み終えてから表示する。
+  // データや選んだ写真を読み込めないときは、data-fallback の写真を出す。
+  (function () {
+    var imgs = Array.prototype.slice.call(document.querySelectorAll('.photo-grid img[data-creature]'));
+    function show(img, src, alt) {
+      img.onload = function () { img.classList.add('is-loaded'); };
+      img.onerror = function () {
+        if (src !== img.dataset.fallback) show(img, img.dataset.fallback, img.dataset.name);
+      };
+      img.alt = alt;
+      img.src = src;
+    }
+    function showFallbacks() {
+      imgs.forEach(function (img) { show(img, img.dataset.fallback, img.dataset.name); });
+    }
+    fetch('data/creatures.json?v=20260904')
+      .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+      .then(function (creatures) {
+        var byId = {};
+        creatures.forEach(function (c) { byId[c.id] = c; });
+        imgs.forEach(function (img) {
+          var c = byId[img.dataset.creature];
+          var photos = c && Array.isArray(c.photos) ? c.photos : [];
+          if (!photos.length) { show(img, img.dataset.fallback, img.dataset.name); return; }
+          show(img, photos[Math.floor(Math.random() * photos.length)], img.dataset.name);
+        });
+      })
+      .catch(function (err) {
+        console.error('creatures.json の読み込みに失敗しました:', err);
+        showFallbacks();
+      });
+  })();
+</script>
 
 </body>
 </html>
