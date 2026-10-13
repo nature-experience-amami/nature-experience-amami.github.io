@@ -121,25 +121,25 @@
 
   section{ padding:5.5rem 6vw; }
   /* 冬のページへの案内カード（10月〜5月10日だけ表示。下のスクリプトで日本時間で判定） */
-  section.winter-card{ background:var(--night); padding:2rem 6vw; }
+  section.winter-card{ background:var(--night); padding:2.5rem 6vw; }
   .winter-card[hidden]{ display:none; }
   .winter-card-inner{
-    max-width:720px; margin:0 auto; display:flex; align-items:center; gap:1.4rem;
-    padding:1rem; border:1px solid rgba(234,242,233,.14); border-radius:4px; background:rgba(234,242,233,.035);
+    max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:2.4rem;
+    padding:1.4rem; border:1px solid rgba(234,242,233,.14); border-radius:4px; background:rgba(234,242,233,.035);
   }
-  .winter-card img{ display:block; width:180px; aspect-ratio:4/3; object-fit:cover; border-radius:3px; flex-shrink:0; }
-  .winter-card-text{ color:rgba(234,242,233,.88); line-height:1.8; margin-bottom:.9rem; }
+  .winter-card img{ display:block; width:min(45%, 540px); aspect-ratio:16/10; object-fit:cover; border-radius:3px; flex-shrink:0; }
+  .winter-card-text{ color:rgba(234,242,233,.9); font-size:clamp(1.05rem, 1.7vw, 1.4rem); line-height:1.8; margin-bottom:1.4rem; }
   .winter-card-btn{
-    display:inline-block; padding:.6rem 1.2rem; background:var(--amber); color:var(--bark);
-    font-weight:700; font-size:.9rem; text-decoration:none; border-radius:2px;
+    display:inline-block; padding:.9rem 1.7rem; background:var(--amber); color:var(--bark);
+    font-weight:700; font-size:1rem; text-decoration:none; border-radius:2px;
   }
   .winter-card-btn:hover{ background:#f4b95a; }
   @media (max-width:600px){
-    section.winter-card{ padding:1.2rem 5vw; }
-    .winter-card-inner{ gap:.9rem; padding:.8rem; }
-    .winter-card img{ width:96px; aspect-ratio:1/1; }
-    .winter-card-text{ font-size:.85rem; line-height:1.7; margin-bottom:.6rem; }
-    .winter-card-btn{ padding:.5rem .9rem; font-size:.8rem; }
+    section.winter-card{ padding:1.6rem 5vw; }
+    .winter-card-inner{ flex-direction:column; align-items:stretch; gap:1rem; padding:1rem; }
+    .winter-card img{ width:100%; aspect-ratio:16/10; }
+    .winter-card-text{ font-size:1rem; line-height:1.8; margin-bottom:1rem; }
+    .winter-card-btn{ display:block; text-align:center; padding:.95rem 1rem; font-size:1rem; }
   }
   .field-note{ background:var(--canopy); }
   .field-note .label{ font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.12em; color:var(--moss); margin-bottom:.8rem; }
@@ -627,10 +627,31 @@
       creaturesData = await response.json();
       initHeroSlideshow(creaturesData);
       renderFieldNote(creaturesData);
+      initWinterCardPhoto(creaturesData);
     } catch (err) {
       console.error('creatures.json の読み込みに失敗しました:', err);
     }
   })();
+
+  // 冬のページへの案内カードの写真: 4種から1種を同じ確率で選び、その種の写真から1枚を選ぶ(訪れるたびに変わる)。
+  // 写真は creatures.json から取るので、写真を足せば自動で候補に入る。読み込めないときは HTML に書いた写真のまま。
+  const WINTER_CARD_CREATURES = ['amami-aka-gaeru', 'ishikawa-gaeru', 'iboimori', 'amami-ao-gaeru'];
+  function initWinterCardPhoto(creatures) {
+    const img = document.querySelector('#winter-card img');
+    if (!img) return;
+    const candidates = creatures.filter(function (creature) {
+      return WINTER_CARD_CREATURES.indexOf(creature.id) !== -1 && Array.isArray(creature.photos) && creature.photos.length;
+    });
+    if (!candidates.length) return;
+    const creature = candidates[Math.floor(Math.random() * candidates.length)];
+    const photo = creature.photos[Math.floor(Math.random() * creature.photos.length)];
+    const preload = new Image();
+    preload.onload = function () {
+      img.src = photo;
+      img.alt = creature.name;
+    };
+    preload.src = photo;
+  }
 
   function initHeroSlideshow(creatures) {
     const heroPhoto = document.getElementById('hero-photo');
