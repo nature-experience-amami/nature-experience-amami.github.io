@@ -72,21 +72,50 @@ WEATHER_WISDOM = {
 }
 
 # 0=月 … 6=日
-ROTATION = {0: "creature", 1: "tip", 2: "quiz", 3: "creature", 4: "tip", 5: "creature", 6: "tour"}
+# 水曜は「自分の写真の日」(self)：下書きは作らず、LINEにお知らせだけ送る(2026-10-13、クイズの日をやめた)。
+# クイズは手動実行(POST_TYPE=quiz)ではまだ作れる
+ROTATION = {0: "creature", 1: "tip", 2: "self", 3: "creature", 4: "tip", 5: "creature", 6: "tour"}
+SELF_DAY_MESSAGE = ("今日は自動の下書きはお休み。自分で撮った写真と一言を投稿する日です📷\n"
+                    "名前と一言だけで十分。「さっき」「今夜」など、その場の感じを出すのがコツ。"
+                    "場所はぼかして（林道名・集落名は出さない）")
 TYPE_LABEL = {"creature": "生き物紹介", "tip": "観察のコツ", "quiz": "クイズ", "tour": "ツアー案内"}
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 NOW = datetime.datetime.now(JST)
 
+# 書き出しの型。毎回1つを選んでプロンプトで指定する(直近で使った型は避ける)
+OPENING_STYLES = [
+    "ガイドが現場で見た場面を思い浮かべるように、その生き物の姿や様子の描写から始める(資料にある特徴の範囲で)",
+    "読む人への短い問いかけから始める(例の型: 「〇〇って知っていますか？」はそのまま使わず、毎回言い回しを変える)",
+    "資料の中でいちばん意外な豆知識・数字を、最初の一文にする",
+    "名前の由来や、名前と実際の姿のギャップから始める(資料に書いてあるときだけ。なければ別の型にする)",
+    "短い一言(10字前後)だけで始め、改行してから説明を続ける",
+    "季節や今の時期の話から始める(資料に時期が書いてあるときだけ。なければ別の型にする)",
+]
+# 毎回出がちで飽きられる言い回し。プロンプトで使用を禁止する
+BANNED_PHRASES = [
+    "ご紹介します", "紹介します", "〜してくださいね", "くださいね", "穏やかな夜", "夜の散策日和",
+    "楽しんでみてください", "見守りましょう", "魅力", "神秘的",
+]
+RECENT_TEXTS = 6       # 「言い回しをかぶらせない」ためにGeminiに見せる、直近の下書きの本数
+ENGLISH_RATE = 0.3     # 英語の一文を付ける割合(毎回だとくどいので、ときどきに)
+# 天気の一言を付けるのは、この判定に当てはまる日だけ(晴れて暖かいだけの日は付けない)
+WEATHER_LINE_CONDS = {"大雨", "強風", "小雨", "雨上がり", "寒い"}
+LINK_LABELS = ["詳しくはこちら→", "写真と解説はこちら→", "図鑑ページ→", "もっと知りたい方はこちら→"]
+
 RULES = """
 - 奄美大島のナイトツアーガイド「Nature Experience Amami」の公式アカウントとして書く
+- 図鑑の解説文ではなく、ガイドが身近な人に話すような短い文にする。資料を全部説明しようとしない
 - 親しみやすく、でも誇張しない。事実は与えた資料の範囲だけで書き、資料にないことを付け足さない
 - 「夜に見られる」「ツアーで会える」など、資料にない活動時間帯・出会いやすさ・見られる場所は書かない
-- 学名は資料に書いてあるときだけ使う
+- 学名は資料に書いてあるときだけ使う。ただし毎回は入れない(本文を短くするため、基本は省く)
 - 具体的な観察場所(地名・林道名・集落名など)は絶対に書かない。「奄美大島」までにとどめる
 - 採集や持ち帰り、生き物に触る・追い回すことを勧める表現は使わない
-- 本文(post)は日本語で250字以内。絵文字は2つまで。ハッシュタグとURLは付けない
-- weather_line: 天気情報があれば、今夜の天気についての一言(40字以内)。天気情報がなければ空文字
+- 本文(post)は日本語で150字前後(長くても200字)。絵文字は0〜2つ(毎回入れなくてよい)。ハッシュタグとURLは付けない
+- 本文(post)には天気のことを書かない(天気は weather_line だけに書く)
+- 次の言い回しは使わない: {banned}
+- 【最近の投稿】が渡されたときは、それらと書き出し・締めの言葉・文の組み立てがかぶらないようにする
+- weather_line: 天気情報があれば、今夜の天気についての一言(40字以内)。天気情報が「なし」なら空文字
   - 天気は渡したデータ(今夜の気温・湿度・降水確率・1時間雨量・風速、昨日の降水量)と天気の判定にあることだけを書く。
     「雨の降らない日が続いている」「週末は晴れ」など、データにないことを推測で補わない
   - 資料に天気との関係が書いてある場合だけ、今夜の天気がその生き物の見つけやすさにどう関係するかを書く
@@ -99,7 +128,7 @@ RULES = """
     (例: 「雨上がりで道がぬかるみやすいので、歩きやすい靴で」)。「足元にお気をつけて」のような曖昧な注意は書かない
   - 上の例文は書き方の参考。そのまま使わず、今夜の実際の天気に合わせて毎回言い回しを変える
 - english: 本文の要点を短い英語1文で
-"""
+""".replace("{banned}", "「" + "」「".join(BANNED_PHRASES) + "」")
 
 
 # ===== データ読み込み =====
@@ -262,9 +291,14 @@ def recent_history(n=365):
         r.raise_for_status()
         issues = r.json()
         for issue in issues:
-            m = re.search(r"<!-- meta: (.*?) -->", issue.get("body") or "")
+            body = issue.get("body") or ""
+            m = re.search(r"<!-- meta: (.*?) -->", body)
             if m:
-                hist.append(json.loads(m.group(1)))
+                h = json.loads(m.group(1))
+                # 投稿文(Issueの最初の ```text ブロック)も読む。言い回しの重複を避けるためにGeminiへ見せる
+                t = re.search(r"```text\n(.*?)\n```", body, re.S)
+                h["text"] = t.group(1) if t else ""
+                hist.append(h)
         if len(issues) < 100:
             break
     return hist[:n]
@@ -317,10 +351,13 @@ def weather_conditions(w):
 
 
 def weather_block(w):
-    # プロンプトに渡す【今夜の天気】の中身
+    # プロンプトに渡す【今夜の天気】の中身。
+    # 雨・強風・寒いなど、観察に関係する日だけ渡す(晴れて暖かいだけの日は「なし」にして、天気の一言を付けない)
     if not w:
         return "なし"
     conds = weather_conditions(w)
+    if not conds & WEATHER_LINE_CONDS:
+        return "なし"
     order = ["大雨", "強風", "小雨", "雨上がり", "晴れ", "暖かい", "寒い"]
     lines = [json.dumps(w, ensure_ascii=False),
              "天気の判定: " + ("、".join(c for c in order if c in conds) or "特になし")]
@@ -371,6 +408,29 @@ def gemini(prompt):
     raise last_error or RuntimeError("使えるGeminiモデルがありません")
 
 
+def recent_block(hist):
+    # 直近の下書きの投稿文(URL・タグ・英語の行は除く)。言い回しをかぶらせないための参考としてGeminiに渡す
+    texts = []
+    for h in hist:
+        lines = [ln for ln in (h.get("text") or "").splitlines()
+                 if ln.strip() and "http" not in ln and not ln.startswith("#")
+                 and not re.fullmatch(r"[\x00-\x7F’“”—–…]+", ln.strip())]
+        if lines:
+            texts.append("・" + " ".join(lines)[:160])
+        if len(texts) >= RECENT_TEXTS:
+            break
+    if not texts:
+        return ""
+    return "【最近の投稿】(この書き出し・締め・言い回しとかぶらせない。内容の参考にはしない)\n" + "\n".join(texts)
+
+
+def pick_opening(hist):
+    # 直近3件で使った型は避けて、書き出しの型を1つ選ぶ
+    used = {h.get("opening") for h in hist[:3]}
+    choices = [i for i in range(len(OPENING_STYLES)) if i not in used] or list(range(len(OPENING_STYLES)))
+    return random.choice(choices)
+
+
 def creature_info(c):
     return f"名前: {c.get('name')}\n英名: {c.get('name_en') or '(資料になし)'}\n危険度・保護: {c.get('danger', '')}\n資料:\n{c['body']}"
 
@@ -406,15 +466,20 @@ def pick(pool, hist):
 def draft_creature(creatures, hist, weather):
     pool = [c for c in creatures if c["photos"] and is_season(c)] or [c for c in creatures if c["photos"]]
     c = pick(pool, hist)
-    out = gemini(f"""以下の生き物を紹介するThreads投稿を作ってください。
+    opening = pick_opening(hist)
+    out = gemini(f"""以下の生き物を取り上げたThreads投稿を作ってください。
 {RULES}
+- 今日の書き出し: {OPENING_STYLES[opening]}
 出力はJSON: {{"post": "...", "weather_line": "...", "english": "..."}}
 
 【生き物】
 {creature_info(c)}
 
+{recent_block(hist)}
+
 【今夜の天気】
 {weather_block(weather)}""")
+    out["_opening"] = opening
     return c, out, None
 
 
@@ -430,6 +495,8 @@ def draft_quiz(creatures, hist, weather):
 
 【生き物】
 {creature_info(c)}
+
+{recent_block(hist)}
 
 【今夜の天気】
 {weather_block(weather)}""")
@@ -493,7 +560,8 @@ def draft_tip(creatures, hist, weather):
                       "- コツと結びつけて紹介してよい。ただし資料の範囲で")
     else:
         pool = [c for c in by_id.values() if is_season(c)] or list(by_id.values())
-        c = weighted_choice([c for c in pool if c["id"] not in week] or pool)
+        # 写真のためだけの生き物も、生き物紹介と同じく直近の投稿に出た種を避ける(7日は必ずあける)
+        c = pick(pool, hist)
         photo_note = ("【添える写真の生き物】(コツとは関係なく、写真のためにランダムに選んだ生き物)\n"
                       "- コツと写真の生き物を結びつけない。コツの説明にこの生き物を使わない\n"
                       "- 本文の最後に「写真は○○」のように名前を簡単に紹介するだけにする")
@@ -507,6 +575,8 @@ def draft_tip(creatures, hist, weather):
 
 {photo_note}
 {creature_info(c)}
+
+{recent_block(hist)}
 
 【今夜の天気】
 {weather_block(weather)}""")
@@ -550,7 +620,10 @@ def build_text(ptype, c, out):
     if out.get("weather_line"):
         parts.append(out["weather_line"].strip())
     if ptype in ("creature", "tip"):
-        parts.append(f"詳しくはこちら→ {page_url(c)}")
+        parts.append(f"{random.choice(LINK_LABELS)} {page_url(c)}")
+    # 英語の一文は毎回だとくどいので、ときどきだけ付ける
+    if out.get("english") and random.random() >= ENGLISH_RATE:
+        out = {**out, "english": ""}
     if out.get("english"):
         parts.append(out["english"].strip())
     parts.append(TOPIC_TAG)
@@ -579,7 +652,7 @@ def create_issue(ptype, c, out, tip_index, hist, variant=""):
     lines += ["", "## 写真（長押しで保存 → Threadsに添付）"]
     lines += [f"![{c.get('name')}]({to_url(p)})" for p in photos]
     meta = {"type": ptype, "creature": c["id"], "tip": tip_index, "date": NOW.date().isoformat(),
-            "photos": [p.name for p in photos]}
+            "photos": [p.name for p in photos], "opening": out.get("_opening")}
     lines += ["", f"<!-- meta: {json.dumps(meta, ensure_ascii=False)} -->"]
 
     title = f"{NOW:%m/%d} {TYPE_LABEL[ptype]}{variant}：{c.get('name')}"
@@ -647,22 +720,27 @@ def send_line(drafts):
     # 文章が届かなかったときは写真は送らない。写真の失敗はログに出すだけ
     if not drafts:
         return
+    # 各案は「案内の吹き出し」→「投稿文だけの吹き出し」(→クイズの日は「答えだけの吹き出し」)に分ける。
+    # 投稿文の吹き出しをそのままコピーすれば、案内文(写真の枚数・IssueのURL)が混ざらない
     texts, images = [], []
     for d in drafts:
         ok = [p for p in d["photos"] if p.stat().st_size <= LINE_PREVIEW_MAX]
         skipped = len(d["photos"]) - len(ok)
-        body = f"【{d['title']}】\n\n{d['text']}"
+        head = f"【{d['title']}】\n次の吹き出しが投稿文です（長押しでコピー）"
         if d["answer"]:
-            body += f"\n\n―― クイズの答え（数時間後にコメント） ――\n{d['answer']}"
+            head += "\nその次がクイズの答え（数時間後にコメント）"
         if ok:
             first, last = len(images) + 1, len(images) + len(ok)
-            body += f"\n\n写真：このあと届く{first}枚目" + (f"〜{last}枚目" if last > first else "")
+            head += f"\n\n写真：このあと届く{first}枚目" + (f"〜{last}枚目" if last > first else "")
             if skipped:
-                body += f"（ほか{skipped}枚は1MBを超えるためIssueで）"
+                head += f"（ほか{skipped}枚は1MBを超えるためIssueで）"
         elif skipped:
-            body += f"\n\n写真：{skipped}枚とも1MBを超えるため、Issueで見てください"
-        body += f"\n下書きIssue: {d['issue_url']}"
-        texts.append({"type": "text", "text": body[:5000]})
+            head += f"\n\n写真：{skipped}枚とも1MBを超えるため、Issueで見てください"
+        head += f"\n下書きIssue: {d['issue_url']}"
+        texts.append({"type": "text", "text": head[:5000]})
+        texts.append({"type": "text", "text": d["text"][:5000]})
+        if d["answer"]:
+            texts.append({"type": "text", "text": d["answer"][:5000]})
         images += [{"type": "image", "originalContentUrl": to_url(p), "previewImageUrl": to_url(p)} for p in ok]
 
     chunks = lambda ms: [ms[i:i + LINE_MAX_MESSAGES] for i in range(0, len(ms), LINE_MAX_MESSAGES)]
@@ -693,6 +771,10 @@ def make_with_retry(maker, creatures, hist, weather):
 
 def main():
     ptype = os.environ.get("POST_TYPE") or ROTATION[NOW.weekday()]
+    if ptype == "self":
+        # 自分の写真の日：Gemini・Issue・投稿履歴は使わず、LINEにお知らせを1通だけ送る
+        line_push([{"type": "text", "text": SELF_DAY_MESSAGE}], "自分の写真の日")
+        return
     creatures = load_creatures()
     if not any(c["photos"] for c in creatures):
         sys.exit(f"写真付きの生き物が見つかりません。PHOTO_ROOT({PHOTO_ROOT})を確認してください")
@@ -706,8 +788,10 @@ def main():
     try:
         for i in range(count):
             c, out, tip_index = make_with_retry(maker, creatures, hist[:30], weather)
+            if weather_block(weather) == "なし":
+                out["weather_line"] = ""   # 天気を渡していない日は、Geminiが書いてきても付けない
             meta, draft = create_issue(ptype, c, out, tip_index, hist, f"（案{i + 1}）" if count > 1 else "")
-            hist.insert(0, meta)
+            hist.insert(0, {**meta, "text": draft["text"]})   # 2案目が1案目と言い回しをかぶらせないように
             drafts.append(draft)
     finally:
         # 途中の案で失敗しても、作れた分のIssueはLINEに送る。LINE側の失敗でワークフローは失敗させない
