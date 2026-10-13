@@ -127,7 +127,12 @@
     max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:2.4rem;
     padding:1.4rem; border:1px solid rgba(234,242,233,.14); border-radius:4px; background:rgba(234,242,233,.035);
   }
-  .winter-card img{ display:block; width:min(45%, 540px); aspect-ratio:16/10; object-fit:cover; border-radius:3px; flex-shrink:0; }
+  .winter-card-photo{
+    width:min(45%, 540px); aspect-ratio:16/10; flex-shrink:0; overflow:hidden;
+    border-radius:3px; background:rgba(234,242,233,.06);
+  }
+  .winter-card-photo img{ display:block; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .4s ease; }
+  .winter-card-photo img.is-loaded{ opacity:1; }
   .winter-card-text{ color:rgba(234,242,233,.9); font-size:clamp(1.05rem, 1.7vw, 1.4rem); line-height:1.8; margin-bottom:1.4rem; }
   .winter-card-btn{
     display:inline-block; padding:.9rem 1.7rem; background:var(--amber); color:var(--bark);
@@ -137,7 +142,7 @@
   @media (max-width:600px){
     section.winter-card{ padding:1.6rem 5vw; }
     .winter-card-inner{ flex-direction:column; align-items:stretch; gap:1rem; padding:1rem; }
-    .winter-card img{ width:100%; aspect-ratio:16/10; }
+    .winter-card-photo{ width:100%; }
     .winter-card-text{ font-size:1rem; line-height:1.8; margin-bottom:1rem; }
     .winter-card-btn{ display:block; text-align:center; padding:.95rem 1rem; font-size:1rem; }
   }
@@ -432,7 +437,7 @@
   }
 
   @media (prefers-reduced-motion:reduce){
-    .hero-photo, .hero-photo-name{ transition:none; }
+    .hero-photo, .hero-photo-name, .winter-card-photo img{ transition:none; }
     .eyebrow, .hero h1, .hero p, .btn{ animation:none; opacity:1; transform:none; }
   }
 </style>
@@ -500,7 +505,7 @@
 
 <section class="winter-card" id="winter-card" aria-label="冬のナイトツアーの案内" hidden>
   <div class="winter-card-inner">
-    <img src="images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg" alt="アマミイボイモリ" loading="lazy">
+    <div class="winter-card-photo"><img alt=""></div>
     <div>
       <p class="winter-card-text">奄美の生き物は冬眠しません。イボイモリやカエルの繁殖期が始まります。</p>
       <a class="winter-card-btn" href="winter.html">冬のナイトツアーを見る →</a>
@@ -625,32 +630,49 @@
       const response = await fetch(CREATURES_JSON + '?v=20260904', { cache: 'no-store' });
       if (!response.ok) throw new Error('HTTP ' + response.status);
       creaturesData = await response.json();
+      initWinterCardPhoto(creaturesData);
       initHeroSlideshow(creaturesData);
       renderFieldNote(creaturesData);
-      initWinterCardPhoto(creaturesData);
     } catch (err) {
       console.error('creatures.json の読み込みに失敗しました:', err);
+      showWinterCardPhoto(WINTER_CARD_FALLBACK.src, WINTER_CARD_FALLBACK.alt);
     }
   })();
 
   // 冬のページへの案内カードの写真: 4種から1種を同じ確率で選び、その種の写真から1枚を選ぶ(訪れるたびに変わる)。
-  // 写真は creatures.json から取るので、写真を足せば自動で候補に入る。読み込めないときは HTML に書いた写真のまま。
+  // 写真は creatures.json から取るので、写真を足せば自動で候補に入る。
+  // 最初は写真の枠(背景色)だけを見せ、選んだ写真を読み込み終えてからフェードインする。
+  // creatures.json や選んだ写真を読み込めないときだけ、WINTER_CARD_FALLBACK の写真を出す。
   const WINTER_CARD_CREATURES = ['amami-aka-gaeru', 'ishikawa-gaeru', 'iboimori', 'amami-ao-gaeru'];
-  function initWinterCardPhoto(creatures) {
+  const WINTER_CARD_FALLBACK = {
+    src: 'images/creatures/amphibians/amami-ibo-imori/amami-ibo-imori_000003_20260907_19.jpg',
+    alt: 'アマミイボイモリ'
+  };
+  function showWinterCardPhoto(src, alt, onError) {
     const img = document.querySelector('#winter-card img');
     if (!img) return;
+    const preload = new Image();
+    preload.onload = function () {
+      img.src = src;
+      img.alt = alt;
+      img.classList.add('is-loaded');
+    };
+    if (onError) preload.onerror = onError;
+    preload.src = src;
+  }
+  function initWinterCardPhoto(creatures) {
     const candidates = creatures.filter(function (creature) {
       return WINTER_CARD_CREATURES.indexOf(creature.id) !== -1 && Array.isArray(creature.photos) && creature.photos.length;
     });
-    if (!candidates.length) return;
+    if (!candidates.length) {
+      showWinterCardPhoto(WINTER_CARD_FALLBACK.src, WINTER_CARD_FALLBACK.alt);
+      return;
+    }
     const creature = candidates[Math.floor(Math.random() * candidates.length)];
     const photo = creature.photos[Math.floor(Math.random() * creature.photos.length)];
-    const preload = new Image();
-    preload.onload = function () {
-      img.src = photo;
-      img.alt = creature.name;
-    };
-    preload.src = photo;
+    showWinterCardPhoto(photo, creature.name, function () {
+      showWinterCardPhoto(WINTER_CARD_FALLBACK.src, WINTER_CARD_FALLBACK.alt);
+    });
   }
 
   function initHeroSlideshow(creatures) {
