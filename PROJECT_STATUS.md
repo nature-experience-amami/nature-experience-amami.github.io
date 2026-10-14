@@ -20,6 +20,7 @@
 
 ```text
 .
+├─ .gitignore                     commit しないファイル（鍵・Python の自動作成ファイル・予約管理アプリのバックアップ・Windows のファイル）
 ├─ AGENTS.md                      共通ルール
 ├─ CLAUDE.md                      Claude Code の入口（AGENTS.md の読み込みと、Claude Code だけのルール）
 ├─ PROJECT_STATUS.md              このファイル
@@ -140,7 +141,7 @@
 
 ### 作業の仕組み
 
-- 最初のセキュリティ点検（`security-reviewer`）をまだしていない。点検したら `.claude/security-log.md` の最終点検日を更新する。
+- セキュリティ点検で見つかった項目を1つずつ直す。残りは `.claude/security-log.md` の「まだ解決していない項目」。次の定期点検は2026-11-14ごろ。
 
 ### 集客・公開の準備
 
@@ -557,5 +558,16 @@
 - 未完了事項: 最初のセキュリティ点検、作業用ブランチを `main` に取り込む
 - Commit SHA: 778bf4c（5ファイルを1回にまとめた。オーナー決定）、この記録はこの次のcommit
 - Push: 作業用ブランチ `claude/new-session-bls9lz` に済み。`main` には未反映
+
+（担当: Claude Code）
+
+### 2026-10-14 最初のセキュリティ点検をし、.gitignore を追加した
+
+- `security-reviewer` の手順で最初の定期点検をした（読み取りだけ）。見つかった項目の中身は、公開リポジトリなのでここには書かない。残りは `.claude/security-log.md` に「何をするか」だけを書いた
+- `.gitignore` を追加した（鍵のファイル・`__pycache__`・予約管理アプリのバックアップ・`Thumbs.db`・`desktop.ini`）。`scripts/__pycache__/` の14ファイルをリポジトリから外し、スキル2つ（`amami-creature-md`・`amami-photo-fix`）の `__pycache__` の記述を合わせて直した
+- 「現在の構成」に `.gitignore` を足し、「やることリスト」の最初の点検の項目を、点検で見つかった項目の対応に書き換えた
+- 未完了事項: 点検で見つかった項目の対応（次は写真アップロードツール）、画面での確認
+- Commit SHA: c2f2d89（.gitignore）、a494af0（__pycache__）、689887b（スキル）、0500437（security-log.md）、この記録はこの次のcommit
+- Push: 作業用ブランチ `claude/new-session-bls9lz` に済み。プルリクエスト #109（前の記録の改善ノートとセキュリティ点検役の追加も含む）。`main` には未反映
 
 （担当: Claude Code）
