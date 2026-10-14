@@ -1,0 +1,11 @@
+# 鍵を書いたファイル
+.env
+*.env
+# Python が自動で作るファイル
+__pycache__/
+*.pyc
+# 予約管理アプリのバックアップ（お客さんの情報）
+nea-customer-backup-*.json
+# Windows が自動で作るファイル
+Thumbs.db
+desktop.ini

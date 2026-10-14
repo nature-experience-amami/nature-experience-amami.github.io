@@ -96,7 +96,7 @@ python scripts/generate_highlights_page_i18n.py
 python scripts/generate_sitemap.py
 ```
 
-`scripts/__pycache__/` の `*.cpython-311.pyc` はコミットしない。
+`scripts/__pycache__/` は `.gitignore` で除外済み（2026-10-14）。コミットしない。
 
 ## 報告(目安。形式は自由、中身は落とさない)
 
