@@ -1,10 +1,10 @@
 ---
 id: amami-semadara-magusokogane
-name: 奄美斑纹粪金龟
+name: 奄美斑紋糞金龜
 category: beetles
 group: funchu
 months: [10, 11, 12, 1, 2, 3, 4]
 ---
-金龟科粪金龟亚科奄美斑纹粪金龟 *Chilothorax ohishii* (Masumoto, 1975)
+金龜科糞金龜亞科奄美斑紋糞金龜 *Chilothorax ohishii* (Masumoto, 1975)
 
-仅分布于奄美大岛、德之岛的固有种。1975年由桝元敏也以 *Aphodius ohishii* 之名记载，现归入Chilothorax属。主要以奄美黑兔的粪便为食，秋季至春季常可见到，夏季则几乎难觅踪影。
+僅分布於奄美大島、德之島的固有種。1975年由桝元敏也以 *Aphodius ohishii* 之名記載，現歸入Chilothorax屬。主要以奄美黑兔的糞便為食，秋季至春季常可見到，夏季則幾乎難覓蹤影。

@@ -1,12 +1,12 @@
 ---
 id: naga-tsuya-doromushi
-name: 长形泽泥甲
+name: 長形澤泥甲
 category: aquatic-insects
 group: doromushi
 months: [2, 5, 8]
 ---
-长角泥甲科泽泥甲属 *Zaitzevia elongata* Nomura, 1962
+長角泥甲科澤泥甲屬 *Zaitzevia elongata* Nomura, 1962
 
-分布于奄美群岛及冲绳诸岛的小型水生甲虫。泽泥甲属在日本已知有8种，各种分布范围从本州
-到八重山诸岛不等。长角泥甲科主要栖息于清澈溪流，但本种自身的详细生态目前仍有许多未解
-之谜。
+分布於奄美群島及沖繩諸島的小型水生甲蟲。澤泥甲屬在日本已知有8種，各種分布範圍從本州
+到八重山諸島不等。長角泥甲科主要棲息於清澈溪流，但本種自身的詳細生態目前仍有許多未解
+之謎。

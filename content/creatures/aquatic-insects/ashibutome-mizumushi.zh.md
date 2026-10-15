@@ -3,8 +3,8 @@ id: ashibutome-mizumushi
 name: 蟾蝽
 category: aquatic-insects
 group: mizumushi
-source: 日语版维基百科「Ashibuto-memizumushi」词条 https://ja.wikipedia.org/wiki/アシブトメミズムシ、日本分类学会联合 https://www.ujssb.org/biospnum/search.php、J-STAGE小笠原诸岛半翅目名录(2023) https://www.jstage.jst.go.jp/article/kontyu/26/2/26_23-012/_pdf
+source: 日語版維基百科「Ashibuto-memizumushi」詞條 https://ja.wikipedia.org/wiki/アシブトメミズムシ、日本分類學會聯合 https://www.ujssb.org/biospnum/search.php、J-STAGE小笠原諸島半翅目名錄(2023) https://www.jstage.jst.go.jp/article/kontyu/26/2/26_23-012/_pdf
 ---
-蟾蝽科蟾蝽属蟾蝽 *Nerthra macrothorax* (Montrouzier, 1855)
+蟾蝽科蟾蝽屬蟾蝽 *Nerthra macrothorax* (Montrouzier, 1855)
 
-日本产蟾蝽科唯一的一种，体长约1厘米，体形宽扁。无单眼，前足粗壮呈镰刀状是其特征。其日文名称Ashibuto-memizumushi，字面意思是"粗腿水生蝽"，但尽管如此，它并不生活在池沼水中，而是一种半陆生的伏击型捕食者，夜间活动于海岸沙滩(从水边到海岸林之间)，捕食潮虫和鼠妇，以成虫形态越冬。分布范围广，从南九州经南西诸岛一直到小笠原诸岛，并非奄美大岛的固有种。
+日本產蟾蝽科唯一的一種，體長約1厘米，體形寬扁。無單眼，前足粗壯呈鐮刀狀是其特徵。其日文名稱Ashibuto-memizumushi，字面意思是"粗腿水生蝽"，但儘管如此，它並不生活在池沼水中，而是一種半陸生的伏擊型捕食者，夜間活動於海岸沙灘(從水邊到海岸林之間)，捕食潮蟲和鼠婦，以成蟲形態越冬。分布範圍廣，從南九州經南西諸島一直到小笠原諸島，並非奄美大島的固有種。

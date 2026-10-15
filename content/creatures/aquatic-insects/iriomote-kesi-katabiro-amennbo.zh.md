@@ -1,11 +1,11 @@
 ---
 id: iriomote-kesi-katabiro-amennbo
-name: 西表小宽肩蝽
+name: 西表小寬肩蝽
 category: aquatic-insects
 group: amenbo
 months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
-宽肩蝽科宽肩蝽属 *Microvelia iriomotensis* Miyamoto, 1964
+寬肩蝽科寬肩蝽屬 *Microvelia iriomotensis* Miyamoto, 1964
 
-体长约1.7〜1.9毫米的小型水生昆虫。分布于南西诸岛(奄美群岛至八重山诸岛)及台湾。常见
-于山间林道旁渗水形成的小水洼，学术研究曾报道其雄性长时间守护雌性的配偶行为。
+體長約1.7〜1.9毫米的小型水生昆蟲。分布於南西諸島(奄美群島至八重山諸島)及台灣。常見
+於山間林道旁滲水形成的小水窪，學術研究曾報道其雄性長時間守護雌性的配偶行為。

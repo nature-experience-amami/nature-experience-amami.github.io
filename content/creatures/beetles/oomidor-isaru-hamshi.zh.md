@@ -1,10 +1,10 @@
 ---
 id: oomidor-isaru-hamshi
-name: 大绿猿叶甲
+name: 大綠猿葉甲
 category: beetles
 group: hamushi
 months: [4, 5, 6, 7, 8, 9, 10]
 ---
-叶甲科大绿猿叶甲 *Platycorynus japonicus*
+葉甲科大綠猿葉甲 *Platycorynus japonicus*
 
-体长约10毫米。体具金属光泽的绿色小型叶甲，分布于南西诸岛(奄美大岛以南)。以络石类植物为食草，大致在4月至10月间可见。
+體長約10毫米。體具金屬光澤的綠色小型葉甲，分布於南西諸島(奄美大島以南)。以絡石類植物為食草，大致在4月至10月間可見。

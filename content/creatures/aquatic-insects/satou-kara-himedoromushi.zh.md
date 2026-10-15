@@ -1,11 +1,11 @@
 ---
 id: satou-kara-himedoromushi
-name: 佐藤华爪泥甲
+name: 佐藤華爪泥甲
 category: aquatic-insects
 group: doromushi
 months: [4]
 ---
-长角泥甲科华爪泥甲属 *Sinonychus satoi* Yoshitomi & Nakajima, 2007
+長角泥甲科華爪泥甲屬 *Sinonychus satoi* Yoshitomi & Nakajima, 2007
 
-分布于奄美群岛、冲绳诸岛(冲绳岛本身无记录)的小型水生甲虫，2007年被记载。华爪泥甲属
-在日本仅知2种，另一种分布于九州。本种自身的详细生态目前仍有许多未解之谜。
+分布於奄美群島、沖繩諸島(沖繩島本身無記錄)的小型水生甲蟲，2007年被記載。華爪泥甲屬
+在日本僅知2種，另一種分布於九州。本種自身的詳細生態目前仍有許多未解之謎。

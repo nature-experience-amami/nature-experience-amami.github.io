@@ -1,9 +1,9 @@
 ---
 id: amami-himekebuka-magusokogane
-name: 奄美毛粪金龟
+name: 奄美毛糞金龜
 category: beetles
 group: funchu
 ---
-金龟科粪金龟亚科奄美毛粪金龟 *Gilletianus atsushii* (Ochi, 1986)
+金龜科糞金龜亞科奄美毛糞金龜 *Gilletianus atsushii* (Ochi, 1986)
 
-分布于奄美大岛的稀有粪金龟，采集记录非常稀少。1986年由越智辉夫以 *Aphodius (Trichaphodius) atsushii* 之名记载，后经分类修订，现归入Gilletianus属。据推测以奄美黑兔的粪便为食，但其生态尚有许多未知之处，采集实例也十分有限。
+分布於奄美大島的稀有糞金龜，採集記錄非常稀少。1986年由越智輝夫以 *Aphodius (Trichaphodius) atsushii* 之名記載，後經分類修訂，現歸入Gilletianus屬。據推測以奄美黑兔的糞便為食，但其生態尚有許多未知之處，採集實例也十分有限。

@@ -1,9 +1,9 @@
 ---
 id: iso-kanimushi
-name: 日本滨伪蝎
+name: 日本濱偽蠍
 category: other-arthropods
 source: Harvey, M.S., Hillyer, M.J., Carvajal, J.I. & Huey, J.A. (2020) Supralittoral pseudoscorpions of the genus Garypus (Pseudoscorpiones: Garypidae) from the Indo-West Pacific region, with a review of the subfamily classification of Garypidae. Invertebrate Systematics 34(1): 34–87.
 ---
-伪蝎目 Garypidae 科 日本滨伪蝎 *Anchigarypus japonicus* (Beier, 1952)
+偽蠍目 Garypidae 科 日本濱偽蠍 *Anchigarypus japonicus* (Beier, 1952)
 
-体长3.5～5毫米，雌性略大。全身灰褐色，带螯的触肢和背甲为红褐色。有4只眼。分布于北海道利尻岛、本州、四国、九州至琉球群岛。栖息于海岸高潮线至浪花飞溅的地带，藏身于被冲上岸的海藻中、石头下和岩缝里。在琉球群岛曾在海螺壳下被发现。夜行性。长期被归入 *Garypus* 属，但2020年的论文将其移入新设立的 *Anchigarypus* 属。在奄美于2月和3月有拍摄记录，但其他时期能否见到尚不清楚。
+體長3.5～5毫米，雌性略大。全身灰褐色，帶螯的觸肢和背甲為紅褐色。有4隻眼。分布於北海道利尻島、本州、四國、九州至琉球群島。棲息於海岸高潮線至浪花飛濺的地帶，藏身於被沖上岸的海藻中、石頭下和岩縫裡。在琉球群島曾在海螺殼下被發現。夜行性。長期被歸入 *Garypus* 屬，但2020年的論文將其移入新設立的 *Anchigarypus* 屬。在奄美於2月和3月有拍攝記錄，但其他時期能否見到尚不清楚。

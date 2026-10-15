@@ -120,15 +120,20 @@
   .brand-bar .fade-right{ background:linear-gradient(to right, transparent, var(--night) 85%); }
 
   section{ padding:5.5rem 6vw; }
-  /* 冬のページへの案内カード（10月〜5月10日だけ表示。下のスクリプトで日本時間で判定） */
+  /* 冬のページへの案内カード（10月〜3月だけ表示。下のスクリプトで日本時間で判定） */
   section.winter-card{ background:var(--night); padding:2.5rem 6vw; }
   .winter-card[hidden]{ display:none; }
   .winter-card-inner{
-    max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:2.4rem;
+    max-width:1200px; margin:0 auto; display:grid; grid-template-columns:min(45%, 540px) 1fr;
+    grid-template-areas:"photo head" "photo body"; column-gap:2.4rem;
     padding:1.4rem; border:1px solid rgba(234,242,233,.14); border-radius:4px; background:rgba(234,242,233,.035);
   }
+  .winter-card-head{ grid-area:head; align-self:end; }
+  .winter-card-body{ grid-area:body; align-self:start; }
+  .winter-card-label{ font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.12em; color:var(--moss); margin-bottom:.8rem; }
+  .winter-card-title{ font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); line-height:1.4; margin-bottom:1rem; }
   .winter-card-photo{
-    width:min(45%, 540px); aspect-ratio:16/10; flex-shrink:0; overflow:hidden;
+    grid-area:photo; width:100%; aspect-ratio:16/10; overflow:hidden;
     border-radius:3px; background:rgba(234,242,233,.06);
   }
   .winter-card-photo img{ display:block; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .4s ease; }
@@ -139,12 +144,19 @@
     font-weight:700; font-size:1rem; text-decoration:none; border-radius:2px;
   }
   .winter-card-btn:hover{ background:#f4b95a; }
+  .winter-card-cta{ display:flex; align-items:center; flex-wrap:wrap; gap:1rem; }
+  .winter-card-status{ display:inline-flex; align-items:center; gap:.45rem; font-size:.9rem; color:var(--amber); }
+  .winter-card-status::before{ content:""; width:.5rem; height:.5rem; border-radius:50%; background:var(--amber); }
   @media (max-width:600px){
     section.winter-card{ padding:1.6rem 5vw; }
-    .winter-card-inner{ flex-direction:column; align-items:stretch; gap:1rem; padding:1rem; }
-    .winter-card-photo{ width:100%; }
+    /* スマホは 見出し → 写真 → 文・ボタン の順に縦に並べる */
+    .winter-card-inner{ display:flex; flex-direction:column; gap:1rem; padding:1rem; }
+    .winter-card-head, .winter-card-body{ align-self:stretch; }
+    .winter-card-title{ font-size:1.5rem; margin-bottom:0; }
     .winter-card-text{ font-size:1rem; line-height:1.8; margin-bottom:1rem; }
     .winter-card-btn{ display:block; text-align:center; padding:.95rem 1rem; font-size:1rem; }
+    .winter-card-cta{ flex-direction:column; align-items:stretch; gap:.6rem; }
+    .winter-card-status{ justify-content:center; }
   }
   .field-note{ background:var(--canopy); }
   .field-note .label{ font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.12em; color:var(--moss); margin-bottom:.8rem; }
@@ -505,21 +517,28 @@
 
 <section class="winter-card" id="winter-card" aria-label="冬のナイトツアーの案内" hidden>
   <div class="winter-card-inner">
+    <div class="winter-card-head">
+      <p class="winter-card-label">WINTER NIGHT TOUR — 12月〜3月</p>
+      <h2 class="winter-card-title">冬の森は、眠らない。</h2>
+    </div>
     <div class="winter-card-photo"><img alt=""></div>
-    <div>
+    <div class="winter-card-body">
       <p class="winter-card-text">奄美の生き物は冬眠しません。イボイモリやカエルの繁殖期が始まります。</p>
-      <a class="winter-card-btn" href="winter.html">冬のナイトツアーを見る →</a>
+      <div class="winter-card-cta">
+        <a class="winter-card-btn" href="winter.html">冬のナイトツアーを見る →</a>
+        <span class="winter-card-status">予約受付中</span>
+      </div>
     </div>
   </div>
 </section>
 <script>
-  // 日本時間で10月1日〜5月10日のあいだだけ、冬のページへの案内カードを表示する
+  // 日本時間で10月1日〜3月31日のあいだだけ、冬のページへの案内カードを表示する
   (function(){
     var card = document.getElementById('winter-card');
     if(!card) return;
     var jst = new Date(Date.now() + 9 * 60 * 60 * 1000);
-    var m = jst.getUTCMonth() + 1, d = jst.getUTCDate();
-    if(m >= 10 || m <= 4 || (m === 5 && d <= 10)) card.hidden = false;
+    var m = jst.getUTCMonth() + 1;
+    if(m >= 10 || m <= 3) card.hidden = false;
   })();
 </script>
 

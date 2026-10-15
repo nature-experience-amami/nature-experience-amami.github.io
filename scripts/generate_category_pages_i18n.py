@@ -19,7 +19,7 @@ from generate_creature_pages_i18n import (  # noqa: E402
     load_lang, LANGS, AVAILABLE_CATEGORY_PAGES,
 )
 from category_header import render_category_strip  # noqa: E402
-from seo_head import insert_ogp  # noqa: E402
+from seo_head import HTML_LANGS, insert_ogp  # noqa: E402
 
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
 TEMPLATE = ROOT / "templates" / "category.i18n.html"
@@ -184,7 +184,7 @@ def main():
             creatures = creatures_in_category_lang(category, lang)
 
             page = template.format(
-                html_lang=lang,
+                html_lang=HTML_LANGS.get(lang, lang),
                 name=escape(strings["categories"].get(category, category)),
                 meta_description=escape(f'{strings["categories"].get(category, category)} of Amami Oshima — Nature Experience Amami.'),
                 eyebrow=escape(ja_meta["eyebrow"]),

@@ -1,7 +1,7 @@
 {
   "name": "Nature-Experience",
   "short_name": "Nature-Experience",
-  "lang": "zh",
+  "lang": "zh-Hant",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

@@ -31,10 +31,10 @@ const LANG_CONFIG = {
     fallback: "No he podido dar una buena respuesta. Inténtalo de nuevo.",
   },
   zh: {
-    name: "Simplified Chinese",
+    name: "Traditional Chinese as used in Taiwan",
     creaturesUrl: "https://nature-experience-amami.github.io/data/creatures.zh.json",
-    tooLong: "请将问题控制在200字以内。",
-    fallback: "抱歉，未能给出合适的回答，请再试一次。",
+    tooLong: "請將問題控制在200字以內。",
+    fallback: "抱歉，未能給出合適的回答，請再試一次。",
   },
 };
 
