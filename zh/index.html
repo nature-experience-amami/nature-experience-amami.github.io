@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>奄美大岛夜间之旅 | 奄美黑兔与蛙类 | Nature Experience Amami</title>
+<title>奄美大島夜間之旅 | 奄美黑兔與蛙類 | Nature Experience Amami</title>
 <!-- iPhoneのホーム画面に追加したときのアイコンと名前 -->
 <link rel="apple-touch-icon" href="../images/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../images/icons/icon-192.png">
 <link rel="manifest" href="manifest.json">
 <meta name="apple-mobile-web-app-title" content="Nature-Experience">
-<meta name="description" content="在奄美大岛的夜间森林中观察奄美黑兔、波布蛇及奄美特有蛙类的夜间之旅。提供名濑附近酒店接送，欢迎单人参加。">
-<meta property="og:title" content="奄美大岛夜间之旅 | 奄美黑兔与蛙类 | Nature Experience Amami">
-<meta property="og:description" content="在奄美大岛的夜间森林中观察奄美黑兔、波布蛇及奄美特有蛙类的夜间之旅。提供名濑附近酒店接送，欢迎单人参加。">
+<meta name="description" content="在奄美大島的夜間森林中觀察奄美黑兔、波布蛇及奄美特有蛙類的夜間之旅。提供名瀨附近酒店接送，歡迎單人參加。">
+<meta property="og:title" content="奄美大島夜間之旅 | 奄美黑兔與蛙類 | Nature Experience Amami">
+<meta property="og:description" content="在奄美大島的夜間森林中觀察奄美黑兔、波布蛇及奄美特有蛙類的夜間之旅。提供名瀨附近酒店接送，歡迎單人參加。">
 <meta property="og:url" content="https://nature-experience-amami.github.io/zh/">
 <meta property="og:image" content="https://nature-experience-amami.github.io/images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Nature Experience Amami">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:locale" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,15 +120,20 @@
   .brand-bar .fade-right{ background:linear-gradient(to right, transparent, var(--night) 85%); }
 
   section{ padding:5.5rem 6vw; }
-  /* 冬のページへの案内カード（10月〜5月10日だけ表示。下のスクリプトで日本時間で判定） */
+  /* 冬のページへの案内カード（10月〜3月だけ表示。下のスクリプトで日本時間で判定） */
   section.winter-card{ background:var(--night); padding:2.5rem 6vw; }
   .winter-card[hidden]{ display:none; }
   .winter-card-inner{
-    max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:2.4rem;
+    max-width:1200px; margin:0 auto; display:grid; grid-template-columns:min(45%, 540px) 1fr;
+    grid-template-areas:"photo head" "photo body"; column-gap:2.4rem;
     padding:1.4rem; border:1px solid rgba(234,242,233,.14); border-radius:4px; background:rgba(234,242,233,.035);
   }
+  .winter-card-head{ grid-area:head; align-self:end; }
+  .winter-card-body{ grid-area:body; align-self:start; }
+  .winter-card-label{ font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.12em; color:var(--moss); margin-bottom:.8rem; }
+  .winter-card-title{ font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); line-height:1.4; margin-bottom:1rem; }
   .winter-card-photo{
-    width:min(45%, 540px); aspect-ratio:16/10; flex-shrink:0; overflow:hidden;
+    grid-area:photo; width:100%; aspect-ratio:16/10; overflow:hidden;
     border-radius:3px; background:rgba(234,242,233,.06);
   }
   .winter-card-photo img{ display:block; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .4s ease; }
@@ -139,12 +144,19 @@
     font-weight:700; font-size:1rem; text-decoration:none; border-radius:2px;
   }
   .winter-card-btn:hover{ background:#f4b95a; }
+  .winter-card-cta{ display:flex; align-items:center; flex-wrap:wrap; gap:1rem; }
+  .winter-card-status{ display:inline-flex; align-items:center; gap:.45rem; font-size:.9rem; color:var(--amber); }
+  .winter-card-status::before{ content:""; width:.5rem; height:.5rem; border-radius:50%; background:var(--amber); }
   @media (max-width:600px){
     section.winter-card{ padding:1.6rem 5vw; }
-    .winter-card-inner{ flex-direction:column; align-items:stretch; gap:1rem; padding:1rem; }
-    .winter-card-photo{ width:100%; }
+    /* スマホは 見出し → 写真 → 文・ボタン の順に縦に並べる */
+    .winter-card-inner{ display:flex; flex-direction:column; gap:1rem; padding:1rem; }
+    .winter-card-head, .winter-card-body{ align-self:stretch; }
+    .winter-card-title{ font-size:1.5rem; margin-bottom:0; }
     .winter-card-text{ font-size:1rem; line-height:1.8; margin-bottom:1rem; }
     .winter-card-btn{ display:block; text-align:center; padding:.95rem 1rem; font-size:1rem; }
+    .winter-card-cta{ flex-direction:column; align-items:stretch; gap:.6rem; }
+    .winter-card-status{ justify-content:center; }
   }
   .field-note{ background:var(--canopy); }
   .field-note .label{ font-family:'Space Mono', monospace; font-size:.8rem; letter-spacing:.12em; color:var(--moss); margin-bottom:.8rem; }
@@ -321,10 +333,10 @@
   "url": "https://nature-experience-amami.github.io/",
   "telephone": "+81-80-4058-4466",
   "image": "https://nature-experience-amami.github.io/images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg",
-  "description": "在奄美大岛的夜间森林中观察奄美黑兔、波布蛇及奄美特有蛙类的夜间之旅。名濑・龙乡附近的酒店可提供接送服务。",
+  "description": "在奄美大島的夜間森林中觀察奄美黑兔、波布蛇及奄美特有蛙類的夜間之旅。名瀨・龍鄉附近的酒店可提供接送服務。",
   "areaServed": {
     "@type": "Place",
-    "name": "奄美大岛"
+    "name": "奄美大島"
   },
   "sameAs": [
     "https://www.instagram.com/nature_experience_amami/",
@@ -340,25 +352,25 @@
 </div></div>
 
 <header class="hero">
-  <a id="hero-photo-link" class="hero-photo-link" href="#tour" aria-label="查看夜间旅行团详情">
-    <img id="hero-photo" class="hero-photo" alt="奄美大岛的夜间森林">
+  <a id="hero-photo-link" class="hero-photo-link" href="#tour" aria-label="查看夜間旅行團詳情">
+    <img id="hero-photo" class="hero-photo" alt="奄美大島的夜間森林">
     <span id="hero-photo-name" class="hero-photo-name" aria-live="polite"></span>
   </a>
 
   <div class="brand-bar">
     <span class="mark">Nature <span class="dash">–</span> Experience</span>
     <div class="cat-strip-wrap">
-      <nav class="cat-strip" id="catStrip" aria-label="生物分类">
+      <nav class="cat-strip" id="catStrip" aria-label="生物分類">
         <a href="highlights.html" class="cat-item">代表性生物</a>
-        <a href="categories/snakes.html" class="cat-item">蛇类</a>
-        <a href="categories/amphibians.html" class="cat-item">两栖类</a>
-        <a href="categories/stag-beetles.html" class="cat-item">锹甲</a>
-        <a href="categories/aquatic-insects.html" class="cat-item">水生昆虫</a>
-        <a href="categories/mammals.html" class="cat-item">哺乳类</a>
-        <a href="categories/birds.html" class="cat-item">鸟类</a>
-        <a href="categories/beetles.html" class="cat-item">甲虫</a>
-        <a href="categories/other-insects.html" class="cat-item">昆虫</a>
-        <a href="categories/other-arthropods.html" class="cat-item">其他节肢动物</a>
+        <a href="categories/snakes.html" class="cat-item">蛇類</a>
+        <a href="categories/amphibians.html" class="cat-item">兩棲類</a>
+        <a href="categories/stag-beetles.html" class="cat-item">鍬甲</a>
+        <a href="categories/aquatic-insects.html" class="cat-item">水生昆蟲</a>
+        <a href="categories/mammals.html" class="cat-item">哺乳類</a>
+        <a href="categories/birds.html" class="cat-item">鳥類</a>
+        <a href="categories/beetles.html" class="cat-item">甲蟲</a>
+        <a href="categories/other-insects.html" class="cat-item">昆蟲</a>
+        <a href="categories/other-arthropods.html" class="cat-item">其他節肢動物</a>
       </nav>
       <div class="fade-right" id="fadeRight"></div>
       <div class="scroll-hint" id="scrollHint" aria-hidden="true">→</div>
@@ -367,108 +379,115 @@
 
   <div class="hero-content">
     <span class="eyebrow">AMAMI OSHIMA / NIGHT FIELD TOUR</span>
-    <h1>与向导一起，<br><em>走进奄美的夜之森。</em></h1>
-    <p>奄美黑兔、波布蛇、奄美特有的蛙类——由专属向导带领，走进天然纪念物的宝库奄美大岛森林的夜间之旅。</p>
-    <a href="tour.html" class="btn">🔦 查看夜间旅行团</a>
+    <h1>與向導一起，<br><em>走進奄美的夜之森。</em></h1>
+    <p>奄美黑兔、波布蛇、奄美特有的蛙類——由專屬向導帶領，走進天然紀念物的寶庫奄美大島森林的夜間之旅。</p>
+    <a href="tour.html" class="btn">🔦 查看夜間旅行團</a>
   </div>
 </header>
 
-<section class="winter-card" id="winter-card" aria-label="冬季夜间之旅" hidden>
+<section class="winter-card" id="winter-card" aria-label="冬季夜間之旅" hidden>
   <div class="winter-card-inner">
+    <div class="winter-card-head">
+      <p class="winter-card-label">WINTER NIGHT TOUR — 12月至3月</p>
+      <h2 class="winter-card-title">冬天的森林，從不沉睡。</h2>
+    </div>
     <div class="winter-card-photo"><img alt=""></div>
-    <div>
-      <p class="winter-card-text">奄美的生物不冬眠。冬季是棘螈和蛙类的繁殖期。</p>
-      <a class="winter-card-btn" href="winter.html">查看冬季夜间之旅 →</a>
+    <div class="winter-card-body">
+      <p class="winter-card-text">奄美的生物不冬眠。冬季是棘螈和蛙類的繁殖期。</p>
+      <div class="winter-card-cta">
+        <a class="winter-card-btn" href="winter.html">查看冬季夜間之旅 →</a>
+        <span class="winter-card-status">接受預訂中</span>
+      </div>
     </div>
   </div>
 </section>
 <script>
-  // Show the winter tour card only from October 1 to May 10, Japan time
+  // Show the winter tour card only from October 1 to March 31, Japan time
   (function(){
     var card = document.getElementById('winter-card');
     if(!card) return;
     var jst = new Date(Date.now() + 9 * 60 * 60 * 1000);
-    var m = jst.getUTCMonth() + 1, d = jst.getUTCDate();
-    if(m >= 10 || m <= 4 || (m === 5 && d <= 10)) card.hidden = false;
+    var m = jst.getUTCMonth() + 1;
+    if(m >= 10 || m <= 3) card.hidden = false;
   })();
 </script>
 
 <section class="field-note">
-  <p class="label">FIELD NOTE — <span id="field-note-month">本月</span>容易观察到的生物</p>
-  <h2 id="field-note-title">本月的森林是这样的</h2>
-  <p>能遇见的生物会随季节而变化。根据向导实际记录的观察时期，为您介绍本月的生物。</p>
+  <p class="label">FIELD NOTE — <span id="field-note-month">本月</span>容易觀察到的生物</p>
+  <h2 id="field-note-title">本月的森林是這樣的</h2>
+  <p>能遇見的生物會隨季節而變化。根據向導實際記錄的觀察時期，為您介紹本月的生物。</p>
   <div id="field-note-creatures" class="creature-grid"></div>
 </section>
 
-<section class="ai-ask" aria-label="向AI询问关于生物的问题">
+<section class="ai-ask" aria-label="向AI詢問關於生物的問題">
   <p class="field-note label" style="color:var(--moss);">ASK THE GUIDE / AI</p>
-  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">问问这个季节能看到的生物</h2>
+  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">問問這個季節能看到的生物</h2>
   <p style="max-width:60ch; color:rgba(234,242,233,0.8); line-height:1.9; margin-bottom:1.5rem;">
-    请随意提问，例如"9月能看到什么生物？"。回答将基于实际拍摄的记录。
+    請隨意提問，例如"9月能看到什麼生物？"。回答將基於實際拍攝的記錄。
   </p>
   <p class="ask-disclaimer">
-    观察时期仅为根据过往记录得出的大致参考。由于天气、气温、季节进展及年份不同，能遇见的生物也会有所变化，因此并不保证一定能看到。回答显示可能需要一些时间。
+    觀察時期僅為根據過往記錄得出的大致參考。由於天氣、氣溫、季節進展及年份不同，能遇見的生物也會有所變化，因此並不保證一定能看到。回答顯示可能需要一些時間。
   </p>
   <div class="ask-box">
-    <input id="ask-input" type="text" placeholder="例：9月能看到什么生物？" maxlength="200">
-    <button id="ask-btn" class="btn" type="button" style="position:static; opacity:1; animation:none;">🔦 提问</button>
+    <input id="ask-input" type="text" placeholder="例：9月能看到什麼生物？" maxlength="200">
+    <button id="ask-btn" class="btn" type="button" style="position:static; opacity:1; animation:none;">🔦 提問</button>
   </div>
   <div id="ask-reply" class="ask-reply" aria-live="polite"></div>
 </section>
 
 <section id="tour" class="flow">
   <p class="field-note label" style="color:var(--moss);">HOW IT WORKS</p>
-  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">夜间旅行团的流程</h2>
+  <h2 style="font-family:'Shippori Mincho', serif; font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:1rem;">夜間旅行團的流程</h2>
   <div class="flow-list">
     <div class="flow-item">
       <div class="flow-num">01</div>
       <div>
-        <h3>夏季晚上19点半左右、冬季19点左右在指定地点集合</h3>
-        <p>Big 2停车场、朝户隧道停车场、黑潮之森红树林公园停车场等。名濑附近的住宿可协商接送。</p>
+        <h3>夏季晚上19點半左右、冬季19點左右在指定地點集合</h3>
+        <p>Big 2停車場、朝戶隧道停車場、黑潮之森紅樹林公園停車場等。名瀨附近的住宿可協商接送。</p>
       </div>
     </div>
     <div class="flow-item">
       <div class="flow-num">02</div>
       <div>
-        <h3>乘向导的车前往夜间森林</h3>
-        <p>与专属向导一起边走边寻找固有种。</p>
+        <h3>乘向導的車前往夜間森林</h3>
+        <p>與專屬向導一起邊走邊尋找固有種。</p>
       </div>
     </div>
     <div class="flow-item">
       <div class="flow-num">03</div>
       <div>
-        <h3>在集合地点解散</h3>
-        <p>本团谢绝以采集为目的的向导需求，请尽情享受观察与拍摄。</p>
+        <h3>在集合地點解散</h3>
+        <p>本團謝絕以採集為目的的向導需求，請盡情享受觀察與拍攝。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="tour-teaser" aria-label="夜间旅行团介绍">
+<section class="tour-teaser" aria-label="夜間旅行團介紹">
   <div class="inner">
     <p class="label">NIGHT FIELD TOUR</p>
-    <h2>走进奄美的夜间森林</h2>
-    <p>跟着向导一起在夜间森林中寻找生物。</p>
-    <a class="btn" href="tour.html">查看夜间旅行团详情及费用 →</a>
+    <h2>走進奄美的夜間森林</h2>
+    <p>跟著向導一起在夜間森林中尋找生物。</p>
+    <a class="btn" href="tour.html">查看夜間旅行團詳情及費用 →</a>
   </div>
 </section>
 
-<section class="creature-guide" aria-label="生物图鉴介绍">
+<section class="creature-guide" aria-label="生物圖鑑介紹">
   <div class="inner">
     <p class="label">EXPLORE MORE</p>
     <h2>探索更多生物</h2>
-    <p>选择一个分类，了解更多奄美大岛的生物。</p>
+    <p>選擇一個分類，了解更多奄美大島的生物。</p>
     <div class="guide-links">
       <a class="guide-link" href="highlights.html">代表性生物 →</a>
-      <a class="guide-link" href="categories/snakes.html">蛇类 →</a>
-      <a class="guide-link" href="categories/amphibians.html">两栖类 →</a>
-      <a class="guide-link" href="categories/stag-beetles.html">锹甲 →</a>
-      <a class="guide-link" href="categories/aquatic-insects.html">水生昆虫 →</a>
-      <a class="guide-link" href="categories/mammals.html">哺乳类 →</a>
-      <a class="guide-link" href="categories/birds.html">鸟类 →</a>
-      <a class="guide-link" href="categories/beetles.html">甲虫 →</a>
-      <a class="guide-link" href="categories/other-insects.html">昆虫 →</a>
-      <a class="guide-link" href="categories/other-arthropods.html">其他节肢动物 →</a>
+      <a class="guide-link" href="categories/snakes.html">蛇類 →</a>
+      <a class="guide-link" href="categories/amphibians.html">兩棲類 →</a>
+      <a class="guide-link" href="categories/stag-beetles.html">鍬甲 →</a>
+      <a class="guide-link" href="categories/aquatic-insects.html">水生昆蟲 →</a>
+      <a class="guide-link" href="categories/mammals.html">哺乳類 →</a>
+      <a class="guide-link" href="categories/birds.html">鳥類 →</a>
+      <a class="guide-link" href="categories/beetles.html">甲蟲 →</a>
+      <a class="guide-link" href="categories/other-insects.html">昆蟲 →</a>
+      <a class="guide-link" href="categories/other-arthropods.html">其他節肢動物 →</a>
     </div>
   </div>
 </section>
@@ -482,7 +501,7 @@
       <svg viewBox="0 0 1000 1000" fill="currentColor" aria-hidden="true"><path d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34" transform="translate(-2.5 -2.5)"/></svg>
     </a>
   </div>
-  <p>&copy; 2026 Nature-Experience Amami。所有照片均受保护，未经许可禁止转载、复制或修改。</p>
+  <p>&copy; 2026 Nature-Experience Amami。所有照片均受保護，未經許可禁止轉載、複製或修改。</p>
 </footer>
 
 <script>
@@ -505,7 +524,7 @@
       initHeroSlideshow(creaturesData);
       renderFieldNote(creaturesData);
     } catch (err) {
-      console.error('creatures.json 加载失败:', err);
+      console.error('creatures.json 加載失敗:', err);
       showWinterCardPhoto(WINTER_CARD_FALLBACK.src, WINTER_CARD_FALLBACK.alt);
     }
   })();
@@ -561,9 +580,9 @@
       const image = new Image();
       image.onload = function () {
         heroPhoto.src = photoData.photo;
-        heroPhoto.alt = '奄美大岛的' + photoData.creature.name;
+        heroPhoto.alt = '奄美大島的' + photoData.creature.name;
         heroPhotoName.replaceChildren();
-        heroPhotoName.append(Object.assign(document.createElement('span'), { className: 'hero-photo-label', textContent: '夜间导览中可遇见的生物' }));
+        heroPhotoName.append(Object.assign(document.createElement('span'), { className: 'hero-photo-label', textContent: '夜間導覽中可遇見的生物' }));
         const commonName = document.createElement('span');
         commonName.textContent = photoData.creature.name;
         heroPhotoName.append(commonName);
@@ -579,15 +598,15 @@
         if (onLoaded) onLoaded();
       };
       image.onerror = function () {
-        console.error('主图加载失败:', photoData.photo);
+        console.error('主圖加載失敗:', photoData.photo);
       };
       image.src = photoData.photo;
       heroLink.href = photoData.creature.page_path || '#tour';
       heroLink.setAttribute(
         'aria-label',
         photoData.creature.page_path
-          ? '查看' + photoData.creature.name + '的介绍页面'
-          : '查看夜间旅行团详情'
+          ? '查看' + photoData.creature.name + '的介紹頁面'
+          : '查看夜間旅行團詳情'
       );
     }
 
@@ -633,7 +652,7 @@
         }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1000);
       };
       nextImage.onerror = function () {
-        console.error('主图加载失败:', next.photo);
+        console.error('主圖加載失敗:', next.photo);
       };
       nextImage.src = next.photo;
     }
@@ -657,12 +676,12 @@
     const titleEl = document.getElementById('field-note-title');
     const gridEl = document.getElementById('field-note-creatures');
     monthEl.textContent = monthName;
-    titleEl.textContent = monthName + '的森林是这样的';
+    titleEl.textContent = monthName + '的森林是這樣的';
     const matches = creatures.filter(function (creature) {
       return Array.isArray(creature.months) && creature.months.includes(month);
     });
     if (!matches.length) {
-      gridEl.innerHTML = '<p>本月的观察数据正在准备中。</p>';
+      gridEl.innerHTML = '<p>本月的觀察數據正在準備中。</p>';
       return;
     }
     gridEl.innerHTML = shuffleArray(matches).slice(0, 6).map(function (creature) {
@@ -672,7 +691,7 @@
         : '';
       return '<a class="creature-card" href="' + href + '">' + photo +
         '<div class="name">' + creature.name + '</div>' +
-        '<div class="months">' + monthName + '容易观察到</div></a>';
+        '<div class="months">' + monthName + '容易觀察到</div></a>';
     }).join('');
   }
 
@@ -695,13 +714,13 @@
         })
       });
       const data = await res.json();
-      replyEl.textContent = data.reply || '暂时无法给出满意的回答。';
+      replyEl.textContent = data.reply || '暫時無法給出滿意的回答。';
 
       if (Array.isArray(data.creature_ids) && data.creature_ids.length) {
         await showPhotos(data.creature_ids, replyEl);
       }
     } catch (err) {
-      replyEl.textContent = '发生通信错误，请稍后再试。';
+      replyEl.textContent = '發生通信錯誤，請稍後再試。';
     }
   }
 
@@ -718,7 +737,7 @@
             const card = document.createElement('a');
             card.className = 'ask-photo-card';
             card.href = creature.page_path || '#tour';
-            card.setAttribute('aria-label', '查看' + creature.name + '的介绍页面');
+            card.setAttribute('aria-label', '查看' + creature.name + '的介紹頁面');
             const img = document.createElement('img');
             img.src = photo;
             img.alt = creature.name;

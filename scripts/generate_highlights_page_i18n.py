@@ -21,7 +21,7 @@ from generate_category_pages_i18n import card_description, card_status  # noqa: 
 from generate_highlights_page import HIGHLIGHT_CREATURES  # noqa: E402
 from generate_creature_pages_i18n import load_lang, LANGS, AVAILABLE_CATEGORY_PAGES  # noqa: E402
 from category_header import render_category_strip  # noqa: E402
-from seo_head import insert_ogp  # noqa: E402
+from seo_head import HTML_LANGS, insert_ogp  # noqa: E402
 
 TEMPLATE = ROOT / "templates" / "highlights.i18n.html"
 OUTPUT_NAME = "highlights.html"
@@ -87,27 +87,27 @@ HIGHLIGHTS_CONTENT_I18N = {
         "list_lead": "Haga clic en una foto o un nombre para ver la página completa de esa especie.",
     },
     "zh": {
-        "hero_title": "奄美大岛的代表性生物",
+        "hero_title": "奄美大島的代表性生物",
         "hero_lead": (
-            "从奄美黑兔到许多只有这座岛屿才有的个性生物——奄美大岛的夜间森林中，"
-            "蕴藏着一个远比这里所能展示的更为丰富的生态系统。"
+            "從奄美黑兔到許多只有這座島嶼才有的個性生物——奄美大島的夜間森林中，"
+            "蘊藏著一個遠比這裡所能展示的更為豐富的生態系統。"
         ),
-        "intro_title": "奄美大岛的代表性固有种",
+        "intro_title": "奄美大島的代表性固有種",
         "intro_paragraphs": [
-            "奄美大岛自与大陆分离以来经过了漫长的岁月，孕育出许多在世界其他地方都看不到的生物。"
-            "其中，奄美黑兔和琉球松鸦作为岛屿的象征而广为人知。",
-            "在奄美市的生物多样性地区战略中，也将奄美黑兔、奄美石川蛙、琉球松鸦等列为该岛具有"
-            "代表性的固有种。",
-            "这里介绍的只是其中很小的一部分。奄美大岛的夜间森林中，还栖息着蛇类、蛙类、"
-            "锹形虫等更多种类的生物。",
+            "奄美大島自與大陸分離以來經過了漫長的歲月，孕育出許多在世界其他地方都看不到的生物。"
+            "其中，奄美黑兔和琉球松鴉作為島嶼的象徵而廣為人知。",
+            "在奄美市的生物多樣性地區戰略中，也將奄美黑兔、奄美石川蛙、琉球松鴉等列為該島具有"
+            "代表性的固有種。",
+            "這裡介紹的只是其中很小的一部分。奄美大島的夜間森林中，還棲息著蛇類、蛙類、"
+            "鍬形蟲等更多種類的生物。",
         ],
-        "safety_title": "观察时的注意事项",
+        "safety_title": "觀察時的注意事項",
         "safety_text": (
-            "奄美的许多生物被指定为国家天然纪念物或国内稀有野生动植物种，法律禁止捕获、采集。"
-            "请通过拍照留念，静静地享受观察的乐趣。"
+            "奄美的許多生物被指定為國家天然紀念物或國內稀有野生動植物種，法律禁止捕獲、採集。"
+            "請通過拍照留念，靜靜地享受觀察的樂趣。"
         ),
-        "list_title": "认识奄美的代表性生物",
-        "list_lead": "点击照片或名称即可查看该物种的详细页面。",
+        "list_title": "認識奄美的代表性生物",
+        "list_lead": "點擊照片或名稱即可查看該物種的詳細頁面。",
     },
 }
 
@@ -224,7 +224,7 @@ def main():
         )
 
         page = template.format(
-            html_lang=lang,
+            html_lang=HTML_LANGS.get(lang, lang),
             name=escape(s["highlights_nav"]),
             meta_description=escape(f'{content["hero_title"]} — Nature Experience Amami.'),
             eyebrow=escape(EYEBROW),

@@ -1,11 +1,11 @@
 ---
 id: tsutsui-nagare-katabiro-amennbo
-name: 筒井溪宽肩蝽
+name: 筒井溪寬肩蝽
 category: aquatic-insects
 group: amenbo
 months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
-宽肩蝽科溪宽肩蝽属 *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955
+寬肩蝽科溪寬肩蝽屬 *Pseudovelia tsutsuii* Esaki & Miyamoto, 1955
 
-分布于南西诸岛(宝岛至冲绳岛)。溪宽肩蝽属在日本已知有数种，是栖息于河流及池塘岸边的
-类群。本种自身的详细生态目前尚未获得充分的资料确认。
+分布於南西諸島(寶島至沖繩島)。溪寬肩蝽屬在日本已知有數種，是棲息於河流及池塘岸邊的
+類群。本種自身的詳細生態目前尚未獲得充分的資料確認。

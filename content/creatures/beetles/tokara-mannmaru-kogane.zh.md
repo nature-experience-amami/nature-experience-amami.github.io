@@ -1,9 +1,9 @@
 ---
 id: tokara-mannmaru-kogane
-name: 吐噶喇球金龟
+name: 吐噶喇球金龜
 category: beetles
 group: manmaru
 ---
-厚甲金龟科球金龟亚科吐噶喇球金龟 *Madrasostes kazumai* Ochi, Johki et Nakata, 1990
+厚甲金龜科球金龜亞科吐噶喇球金龜 *Madrasostes kazumai* Ochi, Johki et Nakata, 1990
 
-体长约5.0〜5.8毫米的小型甲虫，分布于吐噶喇列岛(模式产地为中之岛)及奄美大岛。与分布于八重山诸岛的近缘种先岛球金龟(*M. kazumai hisamatsui* Ochi, 1990)以分布区域区分。被认为是一种好蚁性昆虫，多见于朽木内部及其周围落叶层等靠近蚁巢的环境中，原始记载论文的题名中也使用了"myrmecophilous(好蚁性)"一词。受到刺激时会将触角与足收入体内，蜷缩成完整的球状，如同鼠妇一般保护自己。
+體長約5.0〜5.8毫米的小型甲蟲，分布於吐噶喇列島(模式產地為中之島)及奄美大島。與分布於八重山諸島的近緣種先島球金龜(*M. kazumai hisamatsui* Ochi, 1990)以分布區域區分。被認為是一種好蟻性昆蟲，多見於朽木內部及其周圍落葉層等靠近蟻巢的環境中，原始記載論文的題名中也使用了"myrmecophilous(好蟻性)"一詞。受到刺激時會將觸角與足收入體內，蜷縮成完整的球狀，如同鼠婦一般保護自己。

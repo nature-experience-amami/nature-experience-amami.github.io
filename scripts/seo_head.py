@@ -14,7 +14,9 @@ BASE_URL = "https://nature-experience-amami.github.io"
 SITE_NAME = "Nature Experience Amami"
 # サイトの代表写真(2026-10-12 オーナーが選定)
 DEFAULT_IMAGE = "images/creatures/mammals/amami-kuro-usagi/amami-kuro-usagi_000002_20250301_20.jpg"
-OG_LOCALES = {"ja": "ja_JP", "en": "en_US", "es": "es_ES", "zh": "zh_CN"}
+OG_LOCALES = {"ja": "ja_JP", "en": "en_US", "es": "es_ES", "zh": "zh_TW"}
+# <html lang> に書く言語コード。中国語版は台湾・香港向けの繁体字(2026-10-15 オーナー決定)
+HTML_LANGS = {"zh": "zh-Hant"}
 MARKER = "<!-- OGP -->"
 
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)

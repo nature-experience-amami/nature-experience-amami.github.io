@@ -26,7 +26,7 @@ from generate_creature_pages import (  # noqa: E402
     related_cards, all_creatures, load_categories,
 )
 from category_header import render_category_strip  # noqa: E402
-from seo_head import insert_ogp  # noqa: E402
+from seo_head import HTML_LANGS, insert_ogp  # noqa: E402
 
 # 日本語版の生成ロジック(mdのmonths:、無ければ写真の撮影日)による、
 # 確定済みの月情報を流用する。
@@ -238,7 +238,7 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
     )
 
     return TEMPLATE.read_text(encoding="utf-8").format(
-        html_lang=lang,
+        html_lang=HTML_LANGS.get(lang, lang),
         title=escape(creature["name"]),
         meta_description=escape(f'{creature["name"]} — Amami Oshima, Japan. Nature Experience Amami.'),
         category=escape(strings["categories"].get(creature["category"], creature["category"])),
