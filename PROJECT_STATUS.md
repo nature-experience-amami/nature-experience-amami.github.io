@@ -98,7 +98,7 @@
 
 ### トップの冬カードの見出しと、中国語版の繁体字化（2026-10-15）
 
-- 作業用ブランチ `claude/winter-night-tour-qf8gg4`。日本語版トップの冬カードはpush済み。翻訳版の冬カード・中国語版の繁体字化・この記録は、オーナーに直した箇所の一覧を見せてからcommit・pushする
+- 作業用ブランチ `claude/winter-night-tour-qf8gg4`。4言語の冬カードと中国語版の繁体字化はpush済み（6d9edd2・14fb84c・b381b91）。main へのマージはまだ
 - 公開後に確かめること: スマホ実機で4言語のトップの冬カード、中国語版の文字（繁体字のフォントで表示されるか）
 
 ### AIチャットの安定化（2026-09-30）
@@ -601,8 +601,8 @@
 - 翻訳版 `en/` `es/` `zh/index.html` にも同じ変更を入れた。訳文: EN「WINTER NIGHT TOUR — DEC–MAR」「The winter forest never sleeps.」「Now booking」、ES「WINTER NIGHT TOUR — DIC.–MAR.」「El bosque en invierno no duerme.」「Reservas abiertas」、ZH「WINTER NIGHT TOUR — 12月至3月」「冬天的森林，從不沉睡。」「接受預訂中」
 - 確認（Playwright）: 幅1400px・390pxの表示、3月31日23時は表示・4月1日0時半は非表示・10月1日0時半は表示（4言語）
 - 気づいたこと: ラベルは「12月〜3月」だが、`winter.html` の説明文は「12月〜5月初旬は、イボイモリやカエルの繁殖期」（オーナー確認待ち）
-- Commit SHA: 6d9edd2（日本語版）。翻訳版はこのあとのcommit
-- Push: 日本語版は `claude/winter-night-tour-qf8gg4` にpush済み。翻訳版は未実施
+- Commit SHA: 6d9edd2（日本語版）、14fb84c（英語・スペイン語）、b381b91（中国語。繁体字化と一緒）
+- Push: `claude/winter-night-tour-qf8gg4` にpush済み
 
 （担当: Claude Code）
 
@@ -615,7 +615,7 @@
 - 言語の指定: `<html lang="zh">` を `zh-Hant`、`og:locale` を `zh_CN` から `zh_TW` にした（`scripts/seo_head.py` に `HTML_LANGS` を足し、生成スクリプト4つで使う）
 - 確認: 残った簡体字が0（虫屋を除く）、`check_translations.py` で要確認0件、中国語のトップ・ハブのページ・冬のページをPlaywrightで表示してエラーなし
 - 未完了事項: AIチャット（Worker）が簡体字で答える設定のまま（やることリスト）。言葉づかい（「數據」→台湾では「資料」など）は字だけ直し、言い回しは変えていない。生き物の中国語名は字を直しただけで、台湾での通称かは確かめていない
-- Commit SHA: なし（未commit。オーナーに一覧を見せてから）
-- Push: 未実施
+- Commit SHA: b381b91（直した箇所の一覧をオーナーに見せてからcommit）
+- Push: `claude/winter-night-tour-qf8gg4` にpush済み
 
 （担当: Claude Code）
