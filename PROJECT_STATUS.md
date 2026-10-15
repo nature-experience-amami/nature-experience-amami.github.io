@@ -635,3 +635,14 @@
 - Push: `claude/winter-night-tour-qf8gg4` にpushし、プルリクエストを作る（マージはオーナー）
 
 （担当: Claude Code）
+
+### 2026-10-15 中国語版の「奥美」「锅甲」の打ち間違いを直した
+
+- オーナーが実機で中国語の生き物ページを見たときに気づいた。繁体字化の前からある打ち間違いで、`content/i18n/zh.json` の6か所の「奥美」（正しくは「奄美」）と、クワガタのカテゴリー名「锅甲」（正しくは「锹甲」。トップのメニューは锹甲）
+- 「奄美」に直したのは、生き物ページの写真の見出し（`gallery_heading`）、ツアーの案内（`tour_heading`・`tour_text`）、注意書き（`safety_common`）、カテゴリーへの案内（`explore_more_lead`）、`night_tour_title`。カテゴリー名は「鍬甲」にした。翻訳版の生成スクリプトで作り直し（中国語の生き物ページ・カテゴリーページ・代表的な生き物ページ・`data/creatures.zh.json`）
+- `safety_common` は確定済みのSAFETY文言の中国語訳。地名の打ち間違いだけを直し、文は変えていない
+- Commit SHA: このあとのcommit
+- Push: `claude/winter-night-tour-qf8gg4`（プルリクエスト #113）
+
+（担当: Claude Code）
+
