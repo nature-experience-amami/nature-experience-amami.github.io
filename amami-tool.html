@@ -146,12 +146,13 @@ select{ -webkit-appearance:none; appearance:none; }
     </select>
     <input type="date" id="pat-expiry" style="margin-top:.5rem; display:none;">
     <p class="hint" id="pat-expiry-preview">GitHubでトークンを作った時に選んだ期限(7日/30日/60日/90日など)を選ぶと、期限日が自動計算されます。空欄でもツールは使えます。</p>
-    <p class="hint">接続先: <strong>nature-experience-amami/nature-experience-amami.github.io</strong>(固定)</p>
+    <p class="hint">写真の送り先: <strong>nature-experience-amami/amami-photo-inbox</strong>(固定)。処理された写真がサイトへ自動で送られます。</p>
     <button class="btn" id="save-setup">保存する</button>
     <p class="hint">
       トークンはこの端末のブラウザにだけ保存され、どこにも送信されません(GitHubへ写真をアップロードする通信でのみ使われます)。<br>
-      GitHubの Settings → Developer settings → Fine-grained tokens で、このリポジトリだけに
-      「Contents: Read and write」権限を与えたトークンを作るのがおすすめです。
+      GitHubの Settings → Developer settings → Fine-grained tokens で、<strong>amami-photo-inbox</strong> と
+      <strong>nature-experience-amami.github.io</strong> の2つだけに「Contents: Read and write」権限を与えたトークンを作るのがおすすめです
+      (写真は amami-photo-inbox へ送り、生き物フォルダの一覧はサイトから読みます)。
     </p>
     <button class="btn secondary" id="clear-setup" style="margin-top:.6rem;">保存済みの設定を消す</button>
   </div>
@@ -215,6 +216,9 @@ select{ -webkit-appearance:none; appearance:none; }
 (function () {
   var LS_KEY = "amami_tool_settings";
   var FIXED_REPO = "nature-experience-amami/nature-experience-amami.github.io";
+  // 写真の送り先は受け口(amami-photo-inbox)。処理後の写真だけがサイトへ送られる。
+  // 生き物フォルダの一覧や creatures.json は、これまでどおりサイト(FIXED_REPO)から読む。
+  var UPLOAD_REPO = "nature-experience-amami/amami-photo-inbox";
 
   function getSettings() {
     try { return JSON.parse(localStorage.getItem(LS_KEY) || "null"); }
@@ -678,7 +682,7 @@ select{ -webkit-appearance:none; appearance:none; }
   // 自動コミット(写真の自動処理)と衝突した場合も409になり得るため、
   // その場合は間隔を空けながら根気強く再試行する。
   function apiContentsUrl(path) {
-    return "https://api.github.com/repos/" + FIXED_REPO + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/");
+    return "https://api.github.com/repos/" + UPLOAD_REPO + "/contents/" + encodeURIComponent(path).replace(/%2F/g, "/");
   }
   function getExistingSha(path, settings) {
     return fetch(apiContentsUrl(path), {
