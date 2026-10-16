@@ -30,7 +30,7 @@
 ├─ .claude/lessons.md             改善ノート（Claude Code の様子見の1行メモ。固まった決まりはスキルか AGENTS.md へ）
 ├─ .claude/security-log.md        セキュリティ点検の記録（公開リポジトリなので、何をするかだけを書く）
 ├─ .github/workflows/
-│  ├─ process-creature-photos.yml  写真のpushで写真処理とページの作り直し
+│  ├─ process-creature-photos.yml  写真のpushで写真処理とページの作り直し（2026-10-17からは、受け口 amami-photo-inbox から処理済みの写真が届いた時に動く）
 │  └─ threads-draft.yml            Threads下書き
 ├─ content/
 │  ├─ categories.json             カテゴリーIDと表示名
@@ -56,6 +56,7 @@
 ```
 
 - カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects` `other-arthropods`（写真だけ `crustaceans`（カニ）もある）。
+- 写真の受け口（2026-10-17から）: amami-tool の写真は非公開リポジトリ `nature-experience-amami/amami-photo-inbox` に届き、そこで `process_creature_photos.py`（サイトと同じもの）が処理して、できた写真だけをサイトの `images/creatures/` へ送る。処理前の写真はサイトの履歴に残らない。受け口の Secret `SITE_REPO_TOKEN`（サイトの Contents 書き込みだけ、期限2027-10-01）を使う。amami-tool 用の携帯のトークンは、受け口とサイトの2つに Contents: Read and write。EXIF の撮影日が読めない写真は受け口の `生き物フォルダ/failed/` に残る（サイトには届かない）。写真処理の仕様を変えるときは、受け口とサイトの両方のスクリプトを直す
 - 公開する写真は長辺1600px・画質85（`scripts/process_creature_photos.py` の `MAX_LONG_SIDE`・`JPEG_QUALITY`、2026-10-16から）。GitHub Pages の公開サイトは1GBまでなので、写真が増えたら `images/creatures` の大きさを見る（2026-10-16時点で約316MB）。リポジトリは過去にアップしたカメラの元写真が履歴に残っていて全体が約7GBある（GitHubの目安は5GB以下）。カメラの元写真（1枚10〜15MB）をそのままアップすると履歴が大きく増える。
 - 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` `other-arthropods` は図鑑ページ（`scripts/generate_zukan_page.py`）。図鑑ページは5カテゴリーとも4言語ある。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
 - `categories/hebi.html` `kaeru.html` `kuwagata.html` `honyuurui.html` `tori.html` `suisei-konntyuu.html` `koucyu.html` などは、英語名に変える前の古いURLから新しいページへ移動させるための転送ページ。
@@ -149,6 +150,9 @@
 
 ### 作業の仕組み
 
+- サイトの履歴に溜まった元写真の掃除（履歴の書き換えで元に戻せない作業。受け口がしばらく安定して動いてから相談する）
+- 受け口 amami-photo-inbox の履歴を定期的にリセットする方法を決める（受け口の中身は使い捨て。リセット前に `failed/` の写真を確認する）
+- 受け口のワークフロー（`process-and-send.yml`）を security-reviewer で点検する
 - セキュリティ点検で見つかった項目を1つずつ直す。残りは `.claude/security-log.md` の「まだ解決していない項目」。次の定期点検は2026-11-14ごろ。
 
 ### 季節の特集
@@ -683,5 +687,19 @@
 - 前の記録(#117)のあと、写真処理とサイト公開のワークフローは成功、記録のプルリクエスト #118 もマージ済み
 - Commit SHA: このプルリクエストのcommit(スキル、この記録、CLAUDE.md)
 - Push: 済み(このプルリクエスト)
+
+（担当: Claude）
+
+### 2026-10-17 写真の受け口 amami-photo-inbox を作り、amami-tool の送り先を切り替えた
+
+- オーナーの相談(サイトの中で写真を処理すると、処理前の写真が履歴に残って容量を圧迫する)から、写真を受け取って処理する非公開リポジトリ `amami-photo-inbox` を新しく作った。受け口では `process_creature_photos.py`(サイトのものを変更なしでコピー)で処理し、できた写真だけをサイトへ送り、送れたあと処理前の写真を消す
+- 連番の続きは、サイトの写真のファイル名だけを読んで(写真本体はダウンロードしない)空の目印ファイルを置き、今のスクリプトにそのまま判断させる(`scripts/send_to_site.py`)
+- サイトへ書き込むトークンを受け口の Secret `SITE_REPO_TOKEN` に登録(サイトの Contents 書き込みだけ、期限2027-10-01)。amami-tool 用のトークンには受け口を追加した
+- テスト: GitHubの画面から受け口にマルバネクワガタ1枚 → サイトに `amami-marubane-kuwagata_000009_20240905_21.jpg` で届き、ページの作り直しまで成功。最初の手動実行は、送る写真がない時に git がエラーで止まる書き方の誤りで失敗したので直した
+- amami-tool の送り先を受け口へ変更(`amami-tool.html`。生き物フォルダの一覧と `creatures.json` はサイトから読むまま)。プルリクエスト #120 を main にマージ。携帯からアカマタ1枚を送り、受け口経由で `akamata_000047_20260607_21.jpg` が届き、ページの作り直しも成功
+- この記録は #120 に入れるべきだったが入れ忘れたため、記録だけのプルリクエストになった(決まりと違う)
+- 未完了事項: サイトの過去の履歴の掃除、受け口の履歴リセットの方法、受け口のワークフローのセキュリティ点検(写真処理・Actionsの変更は push 前に点検を提案する決まりだったが、提案していなかった)
+- Commit SHA: c6bc2ee(amami-tool)、マージcommit 776b99d。この記録はこの次のcommit
+- Push: 済み(この記録はプルリクエスト)
 
 （担当: Claude）
