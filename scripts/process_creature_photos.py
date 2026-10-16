@@ -21,7 +21,8 @@ PROCESSED_RE = re.compile(
     r"(?P<date>\d{8})_(?P<hour>\d{2})$"
 )
 WATERMARK = "Photo by Nature Experience"
-MAX_LONG_SIDE = 2000
+MAX_LONG_SIDE = 1600
+JPEG_QUALITY = 85
 WATERMARK_OPACITY = 190
 
 
@@ -178,7 +179,7 @@ def process_photo(source, target):
             dir=source.parent, prefix=".processing-", suffix=".jpg", delete=False
         ) as temporary:
             temp_name = Path(temporary.name)
-        image.save(temp_name, format="JPEG", quality=92, optimize=True)
+        image.save(temp_name, format="JPEG", quality=JPEG_QUALITY, optimize=True)
 
         if target.exists():
             temp_name.unlink()
