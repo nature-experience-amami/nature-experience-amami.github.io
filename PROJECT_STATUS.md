@@ -56,6 +56,7 @@
 ```
 
 - カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects` `other-arthropods`（写真だけ `crustaceans`（カニ）もある）。
+- 公開する写真は長辺1600px・画質85（`scripts/process_creature_photos.py` の `MAX_LONG_SIDE`・`JPEG_QUALITY`、2026-10-16から）。GitHub Pages の公開サイトは1GBまでなので、写真が増えたら `images/creatures` の大きさを見る（2026-10-16時点で約316MB）。リポジトリは過去にアップしたカメラの元写真が履歴に残っていて全体が約7GBある（GitHubの目安は5GB以下）。カメラの元写真（1枚10〜15MB）をそのままアップすると履歴が大きく増える。
 - 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` `other-arthropods` は図鑑ページ（`scripts/generate_zukan_page.py`）。図鑑ページは5カテゴリーとも4言語ある。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
 - `categories/hebi.html` `kaeru.html` `kuwagata.html` `honyuurui.html` `tori.html` `suisei-konntyuu.html` `koucyu.html` などは、英語名に変える前の古いURLから新しいページへ移動させるための転送ページ。
 - 全ページの head に OGP（SNSでシェアしたときの写真・説明）がある。生成ページは、テンプレートの目印 `<!-- OGP -->` を `scripts/seo_head.py` が `<title>` と meta description から作ったタグに置き換える（文言を変えるときはテンプレートを直す）。og:image は生き物ページがメイン写真、それ以外は代表写真（アマミノクロウサギ `amami-kuro-usagi_000002_20250301_20.jpg`、`seo_head.py` の `DEFAULT_IMAGE`）。手書きの `index` `tour` `contact`（4言語）には直接書いてある。管理ツール・`customer-app/`・`instagram-campaign/`・転送ページには入れていない。
@@ -659,3 +660,18 @@
 - Push: 作業用ブランチ `claude/winter-night-tour-qf8gg4` を main から作り直してpushし、プルリクエストを作る
 
 （担当: Claude Code）
+
+### 2026-10-16 生き物写真を長辺1600px・画質85に作り直し、重複写真13枚を消した（#117）
+
+- サイトの容量を調べた: 公開サイトは約611MB（GitHub Pages は1GBまで）。リポジトリ全体は約7.2GBで、ほぼ全部が9月にアップしたカメラの元写真（約640枚・1枚10〜15MB、処理後に消えたが履歴に残る）。履歴の書き換えは、過去のプルリクエストの控えが残り効果が確実でないことと作業用ブランチへの影響から、やらないことにした（オーナー了承）
+- `scripts/process_creature_photos.py` の設定を長辺2000px→1600px、画質92→85にした（`JPEG_QUALITY` を追加）。オーナーが比較画像で見た目がほぼ変わらないことを確認
+- 写真623枚を、Gitの履歴に残っていた元写真から作り直した（縮小した画像どうしの比較と撮影日時で対応づけ、全枚数で同じ絵か照合）。元写真が履歴にない237枚（最初から処理済みの形で入っていた分）は今の写真から縮小した（透かしは重ねていない）。ファイル名（撮影日・連番）は変えていない
+- 同じ写真が2枚ずつ入っていた13組（アマミイボイモリ10・アマミイシカワガエル2・ハブ1）の、連番の大きい方を消してページを作り直した（オーナー了承。画像どうしを比べて同じ写真と確認）
+- 結果: `images/creatures` は約577MB→約316MB。履歴は新しい写真の分（約0.3GB）増えた
+- security-reviewer で点検し、問題なし（公開中の写真860枚に撮影情報・位置情報なし）
+- マージ後、写真処理（追加の変更なし）とサイトの公開のワークフローが成功した
+- 未完了事項: スマホでの表示の確認（オーナー）
+- Commit SHA: b9c8d78（設定）、2bf5e10（623枚）、8e342a1（237枚）、1aabc9f（重複の削除）、マージcommit a527b97。この記録はこの次のcommit
+- Push: 済み（プルリクエスト #117 を main にマージ）
+
+（担当: Claude）
