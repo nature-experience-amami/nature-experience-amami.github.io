@@ -3,7 +3,6 @@ id: amami-hababiro-doromusshi
 name: Amami Broadbody Riffle Beetle
 category: aquatic-insects
 group: doromushi
-months: [7, 8]
 ---
 Riffle beetle family, genus Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005
 

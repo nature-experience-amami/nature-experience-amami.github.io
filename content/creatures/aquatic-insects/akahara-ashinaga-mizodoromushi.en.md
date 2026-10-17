@@ -3,7 +3,6 @@ id: akahara-ashinaga-mizodoromushi
 name: Red-bellied Long-legged Riffle Beetle
 category: aquatic-insects
 group: doromushi
-months: [2, 5, 7]
 ---
 Riffle beetle family, genus Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960
 

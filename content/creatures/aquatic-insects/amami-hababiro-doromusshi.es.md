@@ -3,7 +3,6 @@ id: amami-hababiro-doromusshi
 name: Escarabajo de Rabión Ancho de Amami
 category: aquatic-insects
 group: doromushi
-months: [7, 8]
 ---
 Familia de los escarabajos de rabión, género Dryopomorphus. *Dryopomorphus amami* Yoshitomi & M. Satô, 2005
 

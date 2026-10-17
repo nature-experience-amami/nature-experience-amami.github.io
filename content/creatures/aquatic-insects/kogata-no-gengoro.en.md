@@ -7,8 +7,8 @@ danger: Ministry of the Environment Red List: Vulnerable (VU)
 months: [4, 5, 6, 7, 8, 9]
 source: Ministry of the Environment Red Data Book (4th edition), Insects — Lesser Diving Beetle (https://ikilog.biodic.go.jp/rdbdata/files/envpdf/昆虫類_249.pdf)
 ---
-Diving beetle family, genus Cybister. *Cybister tripunctatus orientalis*
-Gschwendtner, 1931
+Diving beetle family, genus Cybister. *Cybister tripunctatus lateralis*
+(Fabricius, 1798) (the name *orientalis* Gschwendtner, 1931 has also long been used for the Japanese population)
 
 Grows to about 24-29mm. Found on Honshu, Shikoku, Kyushu, the Ryukyu Islands,
 and the Ogasawara Islands, and abroad in China, the Korean Peninsula, and
@@ -20,5 +20,4 @@ puddles, fallow fields, and slow-moving channels. Since the 1960s it has
 declined sharply on Honshu and further south due to pesticide use and field
 consolidation, and is listed as Vulnerable on the Ministry of the
 Environment's Red List, but it is still relatively commonly seen in the
-Ryukyu Islands. It closely resembles the tawny diving beetle in shape and
-coloring, making the two difficult to tell apart from photographs alone.
+Ryukyu Islands.

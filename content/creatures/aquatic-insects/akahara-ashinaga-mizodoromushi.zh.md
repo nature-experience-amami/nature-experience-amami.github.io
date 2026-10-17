@@ -3,7 +3,6 @@ id: akahara-ashinaga-mizodoromushi
 name: 紅腹長足溝泥甲
 category: aquatic-insects
 group: doromushi
-months: [2, 5, 7]
 ---
 長角泥甲科長足溝泥甲屬 *Stenelmis hisamatsui* M. Satô, 1960
 

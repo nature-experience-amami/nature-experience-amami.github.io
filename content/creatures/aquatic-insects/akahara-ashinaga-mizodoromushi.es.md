@@ -3,7 +3,6 @@ id: akahara-ashinaga-mizodoromushi
 name: Escarabajo de Rabión Patilargo de Vientre Rojo
 category: aquatic-insects
 group: doromushi
-months: [2, 5, 7]
 ---
 Familia de los escarabajos de rabión, género Stenelmis. *Stenelmis hisamatsui* M. Satô, 1960
 

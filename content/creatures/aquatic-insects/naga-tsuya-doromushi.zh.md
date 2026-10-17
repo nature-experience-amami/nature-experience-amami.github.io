@@ -3,7 +3,6 @@ id: naga-tsuya-doromushi
 name: 長形澤泥甲
 category: aquatic-insects
 group: doromushi
-months: [2, 5, 8]
 ---
 長角泥甲科澤泥甲屬 *Zaitzevia elongata* Nomura, 1962
 
