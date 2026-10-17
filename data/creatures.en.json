@@ -1947,7 +1947,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Rat family (Muridae), genus Diplothrix. *Diplothrix legata*\n\nBody length 22-33 cm, tail length 25-35 cm. Japan's largest rat, found only\non Amami Oshima, Tokunoshima, and the northern part of Okinawa Island, with\nlong bristle-like hairs of 5-6 cm mixed into its coat. Designated a Natural\nMonument in 1972 and a Nationally Rare Wild Species in 2016. Nocturnal and\nstrongly arboreal, it rests during the day in tree-hollow nests lined with\ndead leaves. Omnivorous, feeding on chinquapin nuts and insects among other\nthings. Breeds from autumn into early winter, giving birth to 2-5 young per\nlitter. It is not very wary, and since it does not flee much even when a\nflashlight is shone on it, it can sometimes be observed at leisure along\nforest roads.",
+    "description": "Rat family (Muridae), genus Diplothrix. *Diplothrix legata*\n\nBody length 22-33 cm, tail length 25-35 cm. Japan's largest rat, found only\non Amami Oshima, Tokunoshima, and the northern part of Okinawa Island, with long bristle-like hairs of 5-6 cm mixed into the fur\non its back. Designated a Natural\nMonument in 1972 and a Nationally Rare Wild Species in 2016. Nocturnal and\nstrongly arboreal, it rests during the day in tree-hollow nests lined with\ndead leaves. Omnivorous, feeding on chinquapin nuts and insects among other\nthings. Breeds from autumn into early winter, giving birth to 2-5 young per\nlitter. It is not very wary, and since it does not flee much even when a\nflashlight is shone on it, it can sometimes be observed at leisure along\nforest roads.",
     "photos": [
       "../images/creatures/mammals/kenaga-nezumi/kenaga-nezumi_000001_20260206_20.jpg",
       "../images/creatures/mammals/kenaga-nezumi/kenaga-nezumi_000002_20260206_20.jpg",
@@ -2977,7 +2977,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Stag beetle family, genus Aegus (root stag beetles). *Aegus laevicollis taurulus*\nDidier, 1928 (other classifications also exist)\n\nA subspecies of the root stag beetle found in the Amami Islands, and the\nlargest-growing of Japan's root stag beetle subspecies. Active from around May\nthrough October. It sometimes comes to the sap of machilus, chinquapin,\nmallotus, and Albizia trees. In the wild most individuals are around 20mm, and\n28mm is considered large. Aim for 30mm+.",
+    "description": "Stag beetle family, genus Aegus (root stag beetles). *Aegus laevicollis taurulus*\nDidier, 1928 (other classifications also exist)\n\nA subspecies of the root stag beetle found in the Amami Islands, and the\nlargest-growing of Japan's root stag beetle subspecies. Active from around May\nthrough October. It sometimes comes to the sap of machilus, chinquapin,\nmallotus, and Taiwan acacia (*Acacia confusa*) trees. In the wild most individuals are around 20mm, and\n28mm is considered large. Aim for 30mm+.",
     "photos": [
       "../images/creatures/stag-beetles/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
       "../images/creatures/stag-beetles/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000002_20250521_22.jpg",
@@ -3074,7 +3074,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Stag beetle family, subfamily Aesalinae (minute stag beetles), genus Nigidius\n(horned gourd stag beetles). *Nigidius lewisi*\n\nGlossy all over the body, with distinctively shaped mandibles, it spends the\nwhole year inside rotten wood. It can be found year-round in fallen oak and\nchinquapin logs and under leaf litter. Telling males and females apart is\ndifficult. On Amami it has a very localized distribution and rarely comes to\ntree sap, making it hard to find.",
+    "description": "Stag beetle family, genus Nigidius\n(horned gourd stag beetles). *Nigidius lewisi*\n\nGlossy all over the body, with distinctively shaped mandibles, it spends the\nwhole year inside rotten wood. It can be found year-round in fallen oak and\nchinquapin logs and under leaf litter. Telling males and females apart is\ndifficult. On Amami it has a very localized distribution and rarely comes to\ntree sap, making it hard to find.",
     "photos": [
       "../images/creatures/stag-beetles/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250906_22.jpg",
       "../images/creatures/stag-beetles/ruisu-tsuno-hyotan-kuwagata/ruisu-tsuno-hyotan-kuwagata_000001_20250907_03.jpg",
@@ -3096,7 +3096,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "Stag beetle family, subgenus Dorcus (flat stag beetles). *Dorcus metacostatus*\n\nActive from late April through around October, peaking in July. A rare species\nendemic to Japan, found only in the Amami Islands, with eight distinct ridges\non its elytra. It frequently flies to citrus trees, machilus, mallotus,\nchinquapin, banana traps, and streetlights. Anything over 60mm is large — aim\nfor 70mm+.",
+    "description": "Stag beetle family, genus Dorcus, flat stag beetle subgenus. *Dorcus metacostatus*\n\nActive from late April through around October, peaking in July. A rare species\nendemic to Japan, found only in the Amami Islands, with eight distinct ridges\non its elytra. It frequently flies to citrus trees, machilus, mallotus,\nchinquapin, banana traps, and streetlights. Anything over 60mm is large — aim\nfor 70mm+.",
     "photos": [
       "../images/creatures/stag-beetles/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000001_20251201_23.jpg",
       "../images/creatures/stag-beetles/sujibuto-hirata-kuwagata/sujibuto-hirata-kuwagata_000002_20250624_23.jpg",
