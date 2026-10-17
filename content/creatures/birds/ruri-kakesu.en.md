@@ -3,7 +3,7 @@ id: ruri-kakesu
 name: Lidth's Jay
 category: birds
 danger: Capture and transfer prohibited (Natural Monument)
-months: [2, 3, 4, 5]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Crow family (Corvidae), genus Garrulus. *Garrulus lidthi*
 

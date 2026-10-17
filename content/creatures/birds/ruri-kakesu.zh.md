@@ -3,7 +3,7 @@ id: ruri-kakesu
 name: 琉璃松鴉
 category: birds
 danger: 禁止捕獲、轉讓(天然紀念物)
-months: [2, 3, 4, 5]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 鴉科松鴉屬 *Garrulus lidthi*
 

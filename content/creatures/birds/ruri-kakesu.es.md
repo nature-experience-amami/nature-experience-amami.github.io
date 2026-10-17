@@ -3,7 +3,7 @@ id: ruri-kakesu
 name: Arrendajo de Lidth
 category: birds
 danger: Captura y traslado prohibidos (Monumento Natural)
-months: [2, 3, 4, 5]
+months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Familia de los córvidos (Corvidae), género Garrulus. *Garrulus lidthi*
 
