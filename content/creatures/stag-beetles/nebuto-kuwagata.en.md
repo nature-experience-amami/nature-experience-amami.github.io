@@ -5,7 +5,9 @@ category: stag-beetles
 danger: Collecting permitted
 months: [6, 7, 8, 9, 10]
 ---
-Stag beetle family, genus Aegus (root stag beetles). *Aegus laevicollis subnitidus*
+Stag beetle family, genus Aegus (root stag beetles). *Aegus subnitidus taurulus*
+Didier, 1928 (long also treated as a subspecies of *Aegus laevicollis*,
+*A. laevicollis taurulus*)
 
 A subspecies of the root stag beetle found in the Amami Islands, and the
 largest-growing of Japan's root stag beetle subspecies. Active from around May
