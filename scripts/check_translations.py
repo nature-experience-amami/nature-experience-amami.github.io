@@ -14,7 +14,7 @@
      使い方をされるため)が出てきていないか
   4. danger: 日本語版の danger が content/i18n/translation_rules.json の対応表に
      あるか、翻訳mdの danger が対応表の訳と同じか
-  5. 中国語で使わない言葉(translation_rules.json の zh_avoid)
+  5. 使わない言葉(translation_rules.json の zh_avoid・es_avoid)。es は .es.md・content/i18n/es.json・es/ のHTML
   6. 簡体字の簡易チェック(translation_rules.json の zh_simplified_chars。よく出る字だけ)
      5・6は .zh.md・content/i18n/zh.json・zh/ のHTML(<style>/<script>/コメントの外側)を見る
   7. frontmatter: id・category が日本語版と同じか。months・group は翻訳に書いてあれば
@@ -152,15 +152,15 @@ def check_danger():
     return errors
 
 
-def zh_texts():
-    """中国語の文(画面に出る部分)を (パス, 本文) で返す。"""
-    files = sorted(CONTENT_DIR.glob("*/*.zh.md")) + sorted((ROOT / "content").glob("category-pages/*.zh.md"))
+def lang_texts(lang):
+    """その言語の文(画面に出る部分)を (パス, 本文) で返す。"""
+    files = sorted(CONTENT_DIR.glob(f"*/*.{lang}.md")) + sorted((ROOT / "content").glob(f"category-pages/*.{lang}.md"))
     for f in files:
         yield f, f.read_text(encoding="utf-8")
-    zh_json = ROOT / "content" / "i18n" / "zh.json"
+    lang_json = ROOT / "content" / "i18n" / f"{lang}.json"
     # \uXXXX で書かれているので、読み込んでから文字列に戻す
-    yield zh_json, json.dumps(json.loads(zh_json.read_text(encoding="utf-8")), ensure_ascii=False)
-    for f in sorted((ROOT / "zh").rglob("*.html")):
+    yield lang_json, json.dumps(json.loads(lang_json.read_text(encoding="utf-8")), ensure_ascii=False)
+    for f in sorted((ROOT / lang).rglob("*.html")):
         text = f.read_text(encoding="utf-8", errors="ignore")
         text = STYLE_RE.sub("", text)
         text = SCRIPT_RE.sub("", text)
@@ -172,10 +172,21 @@ def snippet(text, start, end):
     return text[max(0, start - 12):end + 8].replace("\n", " ")
 
 
-def check_zh_words():
+def zh_texts():
+    return lang_texts("zh")
+
+
+def check_avoided_words():
     errors = []
-    for path, text in zh_texts():
-        for rule in RULES["zh_avoid"]:
+    for lang in ("zh", "es"):
+        errors += check_words(lang_texts(lang), RULES.get(f"{lang}_avoid", []))
+    return errors
+
+
+def check_words(texts, rules):
+    errors = []
+    for path, text in texts:
+        for rule in rules:
             word = rule["word"]
             for m in re.finditer(re.escape(word), text):
                 if any(text.startswith(exc, m.start()) for exc in rule.get("except", [])):
@@ -289,7 +300,7 @@ def main():
         ("2. 翻訳ファイル抜け", missing),
         ("3. 日本語(かな)の残存(EN/ES/ZHページ)", leaks),
         ("4. danger が対応表と違う", check_danger()),
-        ("5. 中国語で使わない言葉", check_zh_words()),
+        ("5. 使わない言葉(中国語・スペイン語)", check_avoided_words()),
         ("6. 簡体字(簡易チェック)", check_zh_simplified()),
         ("7. frontmatter が日本語版と違う", check_frontmatter()),
         ("8. 1行目の学名が日本語版と違う", check_scientific_name()),
