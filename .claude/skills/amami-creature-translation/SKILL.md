@@ -64,8 +64,8 @@ source: その言語に訳したもの(日本語版にあるときだけ)
   - 干 → 乾(乾燥)・幹(幹)/干潟の「干」はそのまま
   - 里 → 裡(中)、着 → 著(〜している)、系 → 係・繫・系(意味で選ぶ)
   - 松鴉・游蛇・划蝽・台灣の「游」「划」「台」はそのまま
-- 言葉は台湾の言い方にする: 長さは「公分」(「厘米」は使わない。「毫米」はそのままでよい)、データは「資料」(データベースは「資料庫」)、情報は「資訊」、レッドデータブックは「紅皮書」(2026-10-17 オーナー決定)
-- 例外: レッドリストのランク名は台湾の紅皮書の言い方に合わせ、情報不足(DD)は「數據缺乏(DD)」のまま(「數據→資料」にしない。2026-10-17 オーナー決定)
+- 言葉は台湾の言い方にする(2026-10-17 オーナー決定)。使わない言葉と言い換えの一覧は `content/i18n/translation_rules.json` の `zh_avoid` にまとめてあり、`check_translations.py` がエラーとして見つける。言葉を足すときは、このファイルに足す(スキルに一覧を書き写さない)
+- 「毫米」は台湾でも使うのでそのままでよい。情報不足(DD)の「數據缺乏(DD)」は、ランク名を台湾の紅皮書の言い方に合わせるための例外(`zh_avoid` の `except`)
 - 日本の固有名詞・サイト名で日本の漢字のまま残すもの(例: 「虫屋(kuromushiya)」)は、簡体字に見えても変えない
 
 ## 1行目(科名・属名)の書き方(目安)
@@ -97,20 +97,9 @@ source: その言語に訳したもの(日本語版にあるときだけ)
 
 日本語版の書き方: レッドリストは「〇〇レッドリスト:ランク(略号)」(コロンあり・略号あり)。中国語は「日本環境省紅色名錄」(台湾の「環境部」と紛れないよう「日本」を付ける)、英語・スペイン語は「of Japan」「de Japón」を付けない(2026-10-17 オーナー決定)。
 
-| 日本語 | en | es | zh |
-|---|---|---|---|
-| 無毒 | Non-venomous | No venenosa | 無毒 |
-| 無毒・希少 | Non-venomous · Rare | No venenosa · Rara | 無毒・稀有 |
-| 観察できる生き物 | Wildlife you can observe | Fauna que se puede observar | 可觀察的生物 |
-| 捕獲禁止(鹿児島県希少野生動植物) | Collecting prohibited (Kagoshima Prefecture Rare Wildlife) | Recolección prohibida (Vida Silvestre Rara de la Prefectura de Kagoshima) | 禁止捕獲(鹿兒島縣稀有野生動植物) |
-| 捕獲・譲渡禁止(天然記念物) | Capture and transfer prohibited (Natural Monument) | Captura y traslado prohibidos (Monumento Natural) | 禁止捕獲、轉讓(天然紀念物) |
-| 環境省レッドリスト:絶滅危惧IB類(EN) | Ministry of the Environment Red List: Endangered (EN) | Lista Roja del Ministerio de Medio Ambiente: En Peligro (EN) | 日本環境省紅色名錄:瀕危(EN) |
-| 環境省レッドリスト:絶滅危惧II類(VU) | Ministry of the Environment Red List: Vulnerable (VU) | Lista Roja del Ministerio de Medio Ambiente: Vulnerable (VU) | 日本環境省紅色名錄:易危(VU) |
-| 環境省レッドリスト:準絶滅危惧(NT) | Ministry of the Environment Red List: Near Threatened (NT) | Lista Roja del Ministerio de Medio Ambiente: Casi Amenazada (NT) | 日本環境省紅色名錄:近危(NT) |
-| 環境省レッドリスト:情報不足(DD) | Ministry of the Environment Red List: Data Deficient (DD) | Lista Roja del Ministerio de Medio Ambiente: Datos Insuficientes (DD) | 日本環境省紅色名錄:數據缺乏(DD) |
-| 鹿児島県レッドリスト:準絶滅危惧(NT) | Kagoshima Prefecture Red List: Near Threatened (NT) | Lista Roja de la Prefectura de Kagoshima: Casi Amenazada (NT) | 鹿兒島縣紅色名錄:近危(NT) |
-| IUCNレッドリスト:準絶滅危惧(NT) | IUCN Red List: Near Threatened (NT) | Lista Roja de la UICN: Casi Amenazada (NT) | IUCN紅色名錄:近危(NT) |
+訳の対応表は `content/i18n/translation_rules.json` の `danger` にある(日本語版の danger の文字そのまま → en・es・zh の訳)。翻訳mdの danger は、この表の訳をそのまま使う。`check_translations.py` が、表と違う訳と、表に無い日本語の danger をエラーとして見つける。
 
+- 日本語版に新しい danger が出てきたら、表に4言語を足してから翻訳mdを書く。新しい訳はオーナーに見せて決める(表は1か所だけ。スキルに表を書き写さない)
 - ランクは略号と同じ意味の語にする(VU＝易危、EN＝瀕危、NT＝近危)。「絶滅危惧II類」を「瀕危II類」と直訳しない(2026-10-17 に誤訳があった)
 - 中国語の中黒は「・」に揃える(「·」を使わない)
 
@@ -142,12 +131,6 @@ python scripts/check_translations.py
 ```
 
 - `check_translations.py` の前までは `.github/workflows/process-creature-photos.yml` の生成スクリプトと同じ順番。ワークフローに生成スクリプトが増えたら、ここも揃える(2026-10-17、代表的な生き物ページとサイトマップの2つが抜けていた)
-- 中国語mdに簡体字が残っていないかも確かめる(`check_translations.py` は簡体字を調べない)。よく出る簡体字だけの簡易チェックで、0件なら次へ(引っかかったら前後を見て直す):
-
-```bash
-python -c "import re,glob;p=re.compile('[们这种属岛龙鸟类与发东区点长时产无关应问样态体会过还经对观历现见间头车门马鱼语认识进动开实给请让读写听说红录县]');[print(f,i,l.strip()) for f in glob.glob('content/creatures/*/*.zh.md') for i,l in enumerate(open(f,encoding='utf-8'),1) if p.search(l)]"
-```
-
-  この字のリストにない簡体字もあるので、0件でも新しく書いた文は目で見直す
-- 「リンク切れ」「翻訳ファイル抜け」が0件であること。`en/es/zh/index.html` の日本語残存15箇所は以前からある分
+- `check_translations.py` の結果は「エラー(必ず直す)」と「要確認(人が見る)」に分かれる。エラーは0件にする(リンク切れ・翻訳ファイル抜け・かなの残存・danger・中国語で使わない言葉・簡体字・frontmatter・1行目の学名)。要確認(本文の単位つきの数・年の食い違い)は、日本語版と読み比べる。書き方の違いだけなら、オーナーに確認してから `translation_rules.json` の `number_check_exceptions` にファイル名と該当の文で1件ずつ登録する(例: kurotusraherasagi.zh.md の「20世紀90年代初」)。比べ方そのものは緩めない
+- 簡体字のチェックは、よく出る字(`translation_rules.json` の `zh_simplified_chars`)だけを見る。0件でも新しく書いた文は目で見直す
 - コミットは「翻訳mdの追加」と「ページの再生成と記録」の2つに分け、`PROJECT_STATUS.md` の変更履歴に記録してプルリクエストを作る。マージはオーナーの「マージして」を待つ
