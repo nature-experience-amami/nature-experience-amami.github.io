@@ -11,6 +11,6 @@ Familia de los ciervos volantes, subgénero Dorcus (ciervos volantes planos).
 Activo desde finales de abril hasta alrededor de octubre, con un pico en julio.
 Una especie rara endémica de Japón, que solo se encuentra en las islas Amami,
 con ocho surcos bien marcados en los élitros. Acude con frecuencia a los
-cítricos, el machilus, el mallotus, el castaño de Japón, trampas de plátano y
+cítricos, el machilus, el mallotus, el shii (*Castanopsis*), trampas de plátano y
 las farolas. A partir de 60 mm ya se considera grande: el objetivo es superar
 los 70 mm.

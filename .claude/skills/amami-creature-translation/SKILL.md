@@ -105,6 +105,8 @@ months: 日本語版と同じ(あるときだけ)
 
 ## 気をつけること(決まり)
 
+- **植物などの言葉は、`content/i18n/translation_rules.json` の `glossary`(用語集)の訳を使う。** 例: シイ → chinquapin / shii (*Castanopsis*) / 椎樹。用語集に無い言葉で訳が決まったら、オーナーに確認して用語集に足す(2026-10-17、スペイン語でシイを「castaño de Japón」(クリ)と訳していた)
+- スペイン語で使わない言葉は `es_avoid`、中国語は `zh_avoid` にあり、`check_translations.py` がエラーとして見つける
 - **中国語・英語・スペイン語の文中に、ひらがな・カタカナを残さない。** `scripts/check_translations.py` が「日本語の残存」として引っかける。日本語の旧名などを書くときはローマ字にする(例: 「以前的日文名為“Heriguro-hime-tokage”」)
 - 地名はローマ字(Amami Oshima、Tokunoshima、Minamidaito-jima など)。中国語は繁体字の漢字(奄美大島、德之島、鹿兒島縣)
 - 数値・単位は日本語版と同じ値(mm/cm、〜 は en/es では "-")

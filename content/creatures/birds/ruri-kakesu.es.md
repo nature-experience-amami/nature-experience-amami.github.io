@@ -11,7 +11,7 @@ Mide unos 38 cm. Una especie endémica de Japón que solo se encuentra en
 Amami Oshima, Kakeromajima y Uke-jima, hermosa por su cuerpo azul intenso,
 alas de color pardo rojizo, y pico y puntas de las alas blancos. Fue
 declarada Monumento Natural en 1921. Prefiere el bosque de hoja perenne y
-es omnívora, alimentándose de bellotas de castaño de Japón y de roble.
+es omnívora, alimentándose de frutos de shii (*Castanopsis*) y bellotas de roble de hoja perenne (kashi).
 Empieza a construir el nido hacia diciembre y, durante la época de cría,
 de febrero a mayo aproximadamente, pone de 3 a 7 huevos en un hueco de
 árbol o lugar similar; de finales de febrero a principios de abril, cuando
