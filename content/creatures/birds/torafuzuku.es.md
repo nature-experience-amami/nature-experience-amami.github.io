@@ -2,7 +2,7 @@
 id: torafuzuku
 name: Búho Chico
 category: birds
-danger: Sin estatus de protección especial
+danger: Fauna que se puede observar
 months: [11, 12, 1, 2, 3]
 ---
 Familia de los búhos (Strigidae), género Asio. *Asio otus*

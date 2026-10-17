@@ -3,7 +3,7 @@ id: oshima-senchi-kogane
 name: 大島黑蜣
 category: beetles
 group: funchu
-danger: 鹿兒島縣紅色名錄 準瀕危
+danger: 鹿兒島縣紅色名錄:近危(NT)
 months: [9, 10, 11, 12, 1]
 ---
 黑蜣科大島黑蜣 *Phelotrupes oshimanus* Fairmaire, 1895

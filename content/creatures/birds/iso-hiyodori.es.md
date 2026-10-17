@@ -2,7 +2,7 @@
 id: iso-hiyodori
 name: Roquero Solitario
 category: birds
-danger: Sin estatus de protección especial
+danger: Fauna que se puede observar
 months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Familia de los papamoscas del Viejo Mundo (Muscicapidae), género Monticola.

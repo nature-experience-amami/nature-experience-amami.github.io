@@ -2,7 +2,7 @@
 id: torafuzuku
 name: Long-eared Owl
 category: birds
-danger: No special protected status
+danger: Wildlife you can observe
 months: [11, 12, 1, 2, 3]
 ---
 Owl family (Strigidae), genus Asio. *Asio otus*

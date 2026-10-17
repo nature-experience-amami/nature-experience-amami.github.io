@@ -3,7 +3,7 @@ id: kogata-no-gengoro
 name: コガタノゲンゴロウ
 category: aquatic-insects
 group: gengoro
-danger: 環境省レッドリスト:絶滅危惧II類
+danger: 環境省レッドリスト:絶滅危惧II類(VU)
 months: [4, 5, 6, 7, 8, 9]
 activity: nocturnal
 source: 環境省 レッドデータブック(第4次)昆虫類 コガタノゲンゴロウ(https://ikilog.biodic.go.jp/rdbdata/files/envpdf/昆虫類_249.pdf)

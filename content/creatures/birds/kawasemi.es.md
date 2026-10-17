@@ -2,7 +2,7 @@
 id: kawasemi
 name: Martín Pescador Común
 category: birds
-danger: Sin estatus de protección especial
+danger: Fauna que se puede observar
 months: [3, 4, 5, 6, 7, 8]
 ---
 Familia de los martines pescadores (Alcedinidae), género Alcedo.

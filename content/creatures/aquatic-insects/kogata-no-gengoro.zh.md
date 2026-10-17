@@ -3,9 +3,9 @@ id: kogata-no-gengoro
 name: 小龍蝨
 category: aquatic-insects
 group: gengoro
-danger: 環境省紅色名錄:易危(VU)
+danger: 日本環境省紅色名錄:易危(VU)
 months: [4, 5, 6, 7, 8, 9]
-source: 環境省 紅色數據書(第4次)昆蟲類 小龍蝨(https://ikilog.biodic.go.jp/rdbdata/files/envpdf/昆虫類_249.pdf)
+source: 環境省 紅皮書(第4次)昆蟲類 小龍蝨(https://ikilog.biodic.go.jp/rdbdata/files/envpdf/昆虫類_249.pdf)
 ---
 龍蝨科真龍蝨屬 *Cybister tripunctatus orientalis* Gschwendtner, 1931
 

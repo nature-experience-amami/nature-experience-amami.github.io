@@ -2,7 +2,7 @@
 id: akaharadaka
 name: Gavilán Chino
 category: birds
-danger: Sin estatus de protección especial
+danger: Fauna que se puede observar
 months: [9, 10]
 ---
 Familia de los accipítridos (Accipitridae), género Tachyspiza. *Tachyspiza

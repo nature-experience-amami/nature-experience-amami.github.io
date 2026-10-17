@@ -2,7 +2,7 @@
 id: ryukyu-akashobin
 name: Martín Pescador Rojizo de Ryukyu
 category: birds
-danger: Sin estatus de protección especial
+danger: Fauna que se puede observar
 months: [4, 5, 6, 7, 8, 9]
 ---
 Familia de los martines pescadores (Alcedinidae), género Halcyon.

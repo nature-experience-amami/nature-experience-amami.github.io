@@ -2,7 +2,7 @@
 id: okinawa-kinobori-tokage
 name: オキナワキノボリトカゲ
 category: lizards
-danger: 環境省レッドリスト絶滅危惧II類(VU)
+danger: 環境省レッドリスト:絶滅危惧II類(VU)
 activity: diurnal
 night_observable: true
 ---

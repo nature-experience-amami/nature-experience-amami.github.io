@@ -2,7 +2,7 @@
 id: iso-hiyodori
 name: Blue Rock Thrush
 category: birds
-danger: No special protected status
+danger: Wildlife you can observe
 months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ---
 Old World flycatcher family (Muscicapidae), genus Monticola. *Monticola

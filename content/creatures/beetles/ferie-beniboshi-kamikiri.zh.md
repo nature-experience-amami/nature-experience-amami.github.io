@@ -3,7 +3,7 @@ id: ferie-beniboshi-kamikiri
 name: 費氏紅星天牛
 category: beetles
 group: kamikiri
-danger: 禁止採集(鹿兒島縣稀有野生動植物保護條例·指定稀有野生動植物)
+danger: 禁止採集(鹿兒島縣稀有野生動植物保護條例・指定稀有野生動植物)
 months: [7]
 ---
 天牛科費氏紅星天牛 *Rosalia (Eurybatus) ferriei* Vuillet, 1911

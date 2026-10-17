@@ -3,7 +3,7 @@ id: oshima-senchi-kogane
 name: Oshima Earth-boring Dung Beetle
 category: beetles
 group: funchu
-danger: Kagoshima Prefecture Red List: Near Threatened
+danger: Kagoshima Prefecture Red List: Near Threatened (NT)
 months: [9, 10, 11, 12, 1]
 ---
 Geotrupidae, Oshima Earth-boring Dung Beetle *Phelotrupes oshimanus* Fairmaire, 1895
