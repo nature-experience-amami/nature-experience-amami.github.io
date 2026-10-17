@@ -6,7 +6,8 @@ danger: Recolección permitida
 months: [6, 7, 8, 9, 10]
 ---
 Familia de los ciervos volantes, género Aegus (ciervos volantes de raíz).
-*Aegus laevicolis subnitidus*
+*Aegus laevicollis taurulus* Didier, 1928 (existen también otras
+clasificaciones)
 
 Una subespecie del ciervo volante de raíz que se encuentra en las islas Amami,
 y la de mayor tamaño entre las subespecies japonesas de este ciervo volante.
