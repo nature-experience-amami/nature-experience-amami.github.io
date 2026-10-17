@@ -3,7 +3,7 @@ id: amami-sesuji-daruma-gamushi
 name: 奄美脊紋微甲
 category: aquatic-insects
 group: gamushi
-danger: 環境省紅色名錄:近危(NT)
+danger: 日本環境省紅色名錄:近危(NT)
 source: 虫屋(kuromushiya)「日本產水生昆蟲名錄」ダルマガムシ科(Hydraenidae) http://kuromushiya.com/mlist/mlist.html#hydraenidae，確認學名(Yoshitomi & M.Satô, 2001)及分布(南西諸島:奄美大島、沖繩島)、吉富博之等(2000)《日本產脊紋微甲屬概說》甲蟲新聞(130):5-11
 ---
 脊紋微甲屬奄美脊紋微甲 *Ochthebius amami* Yoshitomi & M.Satô, 2001(中文科名尚無統一譯法，與所謂"牙甲"並非同一科)

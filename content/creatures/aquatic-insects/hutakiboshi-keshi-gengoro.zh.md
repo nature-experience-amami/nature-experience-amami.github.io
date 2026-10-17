@@ -3,8 +3,8 @@ id: hutakiboshi-keshi-gengoro
 name: 二點小龍蝨
 category: aquatic-insects
 group: gengoro
-danger: 環境省紅色名錄:近危(NT)
-source: 虫屋(kuromushiya)「日本產水生昆蟲名錄」龍蝨科(Dytiscidae) http://kuromushiya.com/mlist/mlist.html#dytiscidae，確認學名及分布(南西諸島:吐噶喇群島、奄美群島、沖繩島)、gengology.com《日本產龍蝨科名錄》https://gengology.com/dyt_jpn.html、經全國紅色數據檢索系統(jpnrdb.com)確認為近危(NT)
+danger: 日本環境省紅色名錄:近危(NT)
+source: 虫屋(kuromushiya)「日本產水生昆蟲名錄」龍蝨科(Dytiscidae) http://kuromushiya.com/mlist/mlist.html#dytiscidae，確認學名及分布(南西諸島:吐噶喇群島、奄美群島、沖繩島)、gengology.com《日本產龍蝨科名錄》https://gengology.com/dyt_jpn.html、經全國紅皮書資料檢索系統(jpnrdb.com)確認為近危(NT)
 ---
 龍蝨科小黃星龍蝨屬二點小龍蝨 *Allopachria bimaculata* (M.Satô, 1972)
 

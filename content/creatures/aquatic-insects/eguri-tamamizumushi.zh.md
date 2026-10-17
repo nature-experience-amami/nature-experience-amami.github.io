@@ -3,7 +3,7 @@ id: eguri-tamamizumushi
 name: 凹緣小仰蝽
 category: aquatic-insects
 group: mizumushi
-danger: 環境省紅色名錄:易危(VU)
+danger: 日本環境省紅色名錄:易危(VU)
 source: 虫屋(kuromushiya)「日本產水生昆蟲名錄」タマミズムシ科(Helotrephidae) http://kuromushiya.com/mlist/mlist.html#helotrephidae，確認學名(Esaki & Miyamoto, 1959)及分布(南西諸島:奄美群島)、環境省昆蟲類紅色名錄 https://www.env.go.jp/content/900527442.pdf 確認列為易危(VU)、萬事通(日本大百科全書)「Eguri-tamamizumushi」詞條 https://kotobank.jp/word/エグリタマミズムシ-1276527
 ---
 仰蝽科(暫譯)凹緣小仰蝽屬凹緣小仰蝽 *Heterotrephes admorsus* Esaki & Miyamoto, 1959

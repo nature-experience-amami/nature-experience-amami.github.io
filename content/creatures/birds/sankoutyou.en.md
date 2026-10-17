@@ -2,7 +2,7 @@
 id: sankoutyou
 name: Ryukyu Paradise Flycatcher
 category: birds
-danger: No special protected status
+danger: Wildlife you can observe
 months: [4, 5, 6, 7, 8, 9]
 ---
 Monarch flycatcher family (Monarchidae), genus Terpsiphone.

@@ -63,8 +63,9 @@ source: その言語に訳したもの(日本語版にあるときだけ)
   - 复 → 復(回復)・覆(覆う)・複(複数)
   - 干 → 乾(乾燥)・幹(幹)/干潟の「干」はそのまま
   - 里 → 裡(中)、着 → 著(〜している)、系 → 係・繫・系(意味で選ぶ)
-  - 松鴉・游蛇・划蝽・厘米・台灣の「游」「划」「厘」「台」はそのまま
-- 言い回しは、2026-10-15 の繁体字化では字だけ直し、台湾の言葉づかい(例: 「數據」→「資料」、「厘米」→「公分」)には変えていない。新しく書くときも今は既存に合わせる(長さは「厘米」)。変えるときはオーナーの承認を得て、全ファイルまとめて変える
+  - 松鴉・游蛇・划蝽・台灣の「游」「划」「台」はそのまま
+- 言葉は台湾の言い方にする: 長さは「公分」(「厘米」は使わない。「毫米」はそのままでよい)、データは「資料」(データベースは「資料庫」)、情報は「資訊」、レッドデータブックは「紅皮書」(2026-10-17 オーナー決定)
+- 例外: レッドリストのランク名は台湾の紅皮書の言い方に合わせ、情報不足(DD)は「數據缺乏(DD)」のまま(「數據→資料」にしない。2026-10-17 オーナー決定)
 - 日本の固有名詞・サイト名で日本の漢字のまま残すもの(例: 「虫屋(kuromushiya)」)は、簡体字に見えても変えない
 
 ## 1行目(科名・属名)の書き方(目安)
@@ -87,20 +88,31 @@ source: その言語に訳したもの(日本語版にあるときだけ)
 - 通称が無い奄美の固有種・亜種は、既存に合わせて「Amami + 特徴 + 仲間の名前」(例: Amami Blue Soldier Beetle、Amami Spotted Camel Cricket)
 - 人名由来は所有格(例: Kawamura's Rice Frog、Zimmermann's Diving Beetle)
 - スペイン語は英語名を自然に訳す(例: Rana de Arroz de Kawamura、Escarabajo Buceador de Zimmermann)
-- 中国語は、台湾で使われている名前があればそれを最優先する(台湾の生き物の名前は TaiCOL 臺灣物種名錄 `taicol.tw` で学名から引ける)。台湾にいない種で、中国などで使われている名前があれば、それを繁体字に直して使う(例: 澤蛙、鉤盲蛇、蘇鐵綺灰蝶)。無ければ属の中国名 + 特徴(例: 奄美斑灶馬)
-- GBIF の vernacularNames や中国語版ウィキペディアの記事名は簡体字のことが多い。繁体字に直して使い、台湾の名前と違うときは台湾の名前を優先する(どちらも学名で同じ種かを確かめる。AGENTS.md の決まり)
-- 2026-10-15 より前に付けた中国語名は、簡体字の名前を字だけ繁体字に直したもので、台湾での通称かは確かめていない。翻訳を直すついでに台湾の名前が見つかったら、変える前にオーナーに伝える
+- 中国語は、台湾・香港で使われている名前を優先する(台湾の生き物の名前は TaiCOL 臺灣物種名錄 `taicol.tw` で学名から引ける)。台湾にいない種で、中国などで使われている名前があれば、それを繁体字に直して使う(例: 澤蛙、鉤盲蛇、蘇鐵綺灰蝶)。無ければ属の中国名 + 特徴(例: 奄美斑灶馬)
+- GBIF の vernacularNames や中国語版ウィキペディアの記事名は簡体字のことが多い。繁体字に直して使い、台湾・香港の名前と違うときは台湾・香港の名前を優先する(どちらも学名で同じ種かを確かめる。AGENTS.md の決まり)
+- 2026-10-15 より前に付けた中国語名は、簡体字の名前を字だけ繁体字に直したもので、台湾での通称かは確かめていない。翻訳を直すついでに台湾・香港の名前が見つかったら、変える前にオーナーに伝える
 - 付けた名前は報告で一覧にする(定まった名前が無く付けたものはそう伝える)
 
 ## danger の訳し方(決まり。同じ日本語には同じ訳を使い、ページ間で表記を揃える)
+
+日本語版の書き方: レッドリストは「〇〇レッドリスト:ランク(略号)」(コロンあり・略号あり)。中国語は「日本環境省紅色名錄」(台湾の「環境部」と紛れないよう「日本」を付ける)、英語・スペイン語は「of Japan」「de Japón」を付けない(2026-10-17 オーナー決定)。
 
 | 日本語 | en | es | zh |
 |---|---|---|---|
 | 無毒 | Non-venomous | No venenosa | 無毒 |
 | 無毒・希少 | Non-venomous · Rare | No venenosa · Rara | 無毒・稀有 |
+| 観察できる生き物 | Wildlife you can observe | Fauna que se puede observar | 可觀察的生物 |
 | 捕獲禁止(鹿児島県希少野生動植物) | Collecting prohibited (Kagoshima Prefecture Rare Wildlife) | Recolección prohibida (Vida Silvestre Rara de la Prefectura de Kagoshima) | 禁止捕獲(鹿兒島縣稀有野生動植物) |
-| 環境省レッドリスト絶滅危惧II類(VU) | Ministry of the Environment Red List: Vulnerable (VU) | Lista Roja del Ministerio de Medio Ambiente: Vulnerable (VU) | 環境省紅色名錄 易危(VU) |
-| 環境省レッドリスト:準絶滅危惧(NT) | Ministry of the Environment Red List: Near Threatened (NT) | Lista Roja del Ministerio de Medio Ambiente: Casi Amenazada (NT) | 環境省紅色名錄:近危(NT) |
+| 捕獲・譲渡禁止(天然記念物) | Capture and transfer prohibited (Natural Monument) | Captura y traslado prohibidos (Monumento Natural) | 禁止捕獲、轉讓(天然紀念物) |
+| 環境省レッドリスト:絶滅危惧IB類(EN) | Ministry of the Environment Red List: Endangered (EN) | Lista Roja del Ministerio de Medio Ambiente: En Peligro (EN) | 日本環境省紅色名錄:瀕危(EN) |
+| 環境省レッドリスト:絶滅危惧II類(VU) | Ministry of the Environment Red List: Vulnerable (VU) | Lista Roja del Ministerio de Medio Ambiente: Vulnerable (VU) | 日本環境省紅色名錄:易危(VU) |
+| 環境省レッドリスト:準絶滅危惧(NT) | Ministry of the Environment Red List: Near Threatened (NT) | Lista Roja del Ministerio de Medio Ambiente: Casi Amenazada (NT) | 日本環境省紅色名錄:近危(NT) |
+| 環境省レッドリスト:情報不足(DD) | Ministry of the Environment Red List: Data Deficient (DD) | Lista Roja del Ministerio de Medio Ambiente: Datos Insuficientes (DD) | 日本環境省紅色名錄:數據缺乏(DD) |
+| 鹿児島県レッドリスト:準絶滅危惧(NT) | Kagoshima Prefecture Red List: Near Threatened (NT) | Lista Roja de la Prefectura de Kagoshima: Casi Amenazada (NT) | 鹿兒島縣紅色名錄:近危(NT) |
+| IUCNレッドリスト:準絶滅危惧(NT) | IUCN Red List: Near Threatened (NT) | Lista Roja de la UICN: Casi Amenazada (NT) | IUCN紅色名錄:近危(NT) |
+
+- ランクは略号と同じ意味の語にする(VU＝易危、EN＝瀕危、NT＝近危)。「絶滅危惧II類」を「瀕危II類」と直訳しない(2026-10-17 に誤訳があった)
+- 中国語の中黒は「・」に揃える(「·」を使わない)
 
 ## 気をつけること(決まり)
 
@@ -124,9 +136,12 @@ python scripts/generate_creature_pages_i18n.py
 python scripts/generate_creatures_json_i18n.py
 python scripts/generate_category_pages_i18n.py
 python scripts/generate_zukan_page_i18n.py
+python scripts/generate_highlights_page_i18n.py
+python scripts/generate_sitemap.py
 python scripts/check_translations.py
 ```
 
+- `check_translations.py` の前までは `.github/workflows/process-creature-photos.yml` の生成スクリプトと同じ順番。ワークフローに生成スクリプトが増えたら、ここも揃える(2026-10-17、代表的な生き物ページとサイトマップの2つが抜けていた)
 - 中国語mdに簡体字が残っていないかも確かめる(`check_translations.py` は簡体字を調べない)。よく出る簡体字だけの簡易チェックで、0件なら次へ(引っかかったら前後を見て直す):
 
 ```bash

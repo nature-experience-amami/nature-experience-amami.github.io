@@ -2,7 +2,7 @@
 id: akaharadaka
 name: Chinese Sparrowhawk
 category: birds
-danger: No special protected status
+danger: Wildlife you can observe
 months: [9, 10]
 ---
 Hawk family (Accipitridae), genus Tachyspiza. *Tachyspiza soloensis* (until a

@@ -3,7 +3,7 @@ id: kogata-no-gengoro
 name: Escarabajo Buceador Menor
 category: aquatic-insects
 group: gengoro
-danger: Lista Roja del Ministerio de Medio Ambiente de Japón: Vulnerable (VU)
+danger: Lista Roja del Ministerio de Medio Ambiente: Vulnerable (VU)
 months: [4, 5, 6, 7, 8, 9]
 source: Libro Rojo de Datos del Ministerio de Medio Ambiente de Japón (4ª edición), Insectos — Escarabajo Buceador Menor (https://ikilog.biodic.go.jp/rdbdata/files/envpdf/昆虫類_249.pdf)
 ---

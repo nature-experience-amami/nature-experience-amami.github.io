@@ -3,7 +3,7 @@ id: hanenaga-tyou-tombo
 name: 長翅蝶蜻
 category: other-insects
 group: tombo
-danger: 禁止採集(《瀕危物種保護法》・國內稀有野生動植物種指定)，環境省紅色名錄 瀕危(EN)
+danger: 禁止採集(《瀕危物種保護法》・國內稀有野生動植物種指定)，日本環境省紅色名錄:瀕危(EN)
 months: [6, 7]
 ---
 蜻科長翅蝶蜻 *Rhyothemis severini* Ris, 1913

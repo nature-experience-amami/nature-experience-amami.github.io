@@ -3,7 +3,7 @@ id: oshima-senchi-kogane
 name: Escarabajo Cavador de Estiércol de Oshima
 category: beetles
 group: funchu
-danger: Lista Roja de la Prefectura de Kagoshima: Casi Amenazada
+danger: Lista Roja de la Prefectura de Kagoshima: Casi Amenazada (NT)
 months: [9, 10, 11, 12, 1]
 ---
 Geotrupidae, escarabajo cavador de estiércol de Oshima *Phelotrupes oshimanus* Fairmaire, 1895

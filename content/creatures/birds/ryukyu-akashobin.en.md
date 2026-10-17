@@ -2,7 +2,7 @@
 id: ryukyu-akashobin
 name: Ryukyu Ruddy Kingfisher
 category: birds
-danger: No special protected status
+danger: Wildlife you can observe
 months: [4, 5, 6, 7, 8, 9]
 ---
 Kingfisher family (Alcedinidae), genus Halcyon. *Halcyon coromanda bangsi*

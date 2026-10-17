@@ -681,7 +681,7 @@
       return Array.isArray(creature.months) && creature.months.includes(month);
     });
     if (!matches.length) {
-      gridEl.innerHTML = '<p>本月的觀察數據正在準備中。</p>';
+      gridEl.innerHTML = '<p>本月的觀察資料正在準備中。</p>';
       return;
     }
     gridEl.innerHTML = shuffleArray(matches).slice(0, 6).map(function (creature) {

@@ -2,7 +2,7 @@
 id: tageri
 name: Northern Lapwing
 category: birds
-danger: No special protected status
+danger: Wildlife you can observe
 months: [10, 11, 12, 1, 2, 3]
 ---
 Plover family (Charadriidae), genus Vanellus. *Vanellus vanellus*

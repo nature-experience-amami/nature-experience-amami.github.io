@@ -2,7 +2,7 @@
 id: tageri
 name: Avefría Europea
 category: birds
-danger: Sin estatus de protección especial
+danger: Fauna que se puede observar
 months: [10, 11, 12, 1, 2, 3]
 ---
 Familia de los chorlitos (Charadriidae), género Vanellus.

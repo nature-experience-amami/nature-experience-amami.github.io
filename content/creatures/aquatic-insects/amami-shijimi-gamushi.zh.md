@@ -3,7 +3,7 @@ id: amami-shijimi-gamushi
 name: 奄美蜆牙甲
 category: aquatic-insects
 group: gamushi
-source: 虫屋(kuromushiya)「日本產水生昆蟲名錄」牙甲科(Hydrophilidae) http://kuromushiya.com/mlist/mlist.html#hydrophilidae，確認學名及分布(南西諸島:奄美大島、德之島)、Water Beetles of Japan數據庫(蜆牙甲屬列表) https://sites.google.com/site/waterbeetlesofjapan/home/database/polyphaga/hydrophilidlist
+source: 虫屋(kuromushiya)「日本產水生昆蟲名錄」牙甲科(Hydrophilidae) http://kuromushiya.com/mlist/mlist.html#hydrophilidae，確認學名及分布(南西諸島:奄美大島、德之島)、Water Beetles of Japan資料庫(蜆牙甲屬列表) https://sites.google.com/site/waterbeetlesofjapan/home/database/polyphaga/hydrophilidlist
 ---
 牙甲科蜆牙甲屬奄美蜆牙甲 *Laccobius satoi* Gentili, 1989
 

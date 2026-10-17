@@ -2,7 +2,7 @@
 id: kawasemi
 name: Common Kingfisher
 category: birds
-danger: No special protected status
+danger: Wildlife you can observe
 months: [3, 4, 5, 6, 7, 8]
 ---
 Kingfisher family (Alcedinidae), genus Alcedo. *Alcedo atthis bengalensis*

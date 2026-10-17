@@ -3,7 +3,7 @@ id: amami-oyogi-katabiro-amennbo
 name: 奄美游寬肩蝽
 category: aquatic-insects
 group: amenbo
-source: 虫屋(kuromushiya)「日本產水生昆蟲名錄」寬肩蝽科(Veliidae) http://kuromushiya.com/mlist/mlist.html#veliidae，確認學名(Esaki & Miyamoto, 1959)及分布(南西諸島:奄美大島、德之島、沖繩島)、京都府紅色數據手冊(近緣種游寬肩蝽) https://www.pref.kyoto.jp/kankyo/rdb/bio/db/ins0453.html
+source: 虫屋(kuromushiya)「日本產水生昆蟲名錄」寬肩蝽科(Veliidae) http://kuromushiya.com/mlist/mlist.html#veliidae，確認學名(Esaki & Miyamoto, 1959)及分布(南西諸島:奄美大島、德之島、沖繩島)、京都府紅皮書(近緣種游寬肩蝽) https://www.pref.kyoto.jp/kankyo/rdb/bio/db/ins0453.html
 ---
 寬肩蝽科游寬肩蝽屬奄美游寬肩蝽 *Xiphovelia curvifemur* Esaki & Miyamoto, 1959
 
