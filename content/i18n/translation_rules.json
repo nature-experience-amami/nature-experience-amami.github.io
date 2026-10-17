@@ -1,0 +1,170 @@
+{
+  "_説明": "翻訳の決まりのデータ。scripts/check_translations.py が読む。danger は日本語版の danger → 英・西・中の訳。zh_avoid は中国語(繁体字・台湾香港向け)で使わない言葉。zh_simplified_chars は簡体字の簡易チェックに使う字(よく出る字だけ)。number_check_exceptions は、本文の数値のチェック(要確認)で、書き方の違いだけと確認済みの箇所(ファイル名と該当の文で1件ずつ。text が翻訳にあれば ja_number を照合済みとして扱う)",
+  "danger": {
+    "IUCNレッドリスト:準絶滅危惧(NT)": {
+      "en": "IUCN Red List: Near Threatened (NT)",
+      "es": "Lista Roja de la UICN: Casi Amenazada (NT)",
+      "zh": "IUCN紅色名錄:近危(NT)"
+    },
+    "外来種(1991年奄美大島・徳之島で初確認、ヤシ・パイナップル・サトウキビの害虫)": {
+      "en": "Invasive species (first confirmed on Amami Oshima and Tokunoshima in 1991; a pest of palms, pineapple, and sugarcane)",
+      "es": "Especie invasora (confirmada por primera vez en Amami Oshima y Tokunoshima en 1991; plaga de palmeras, piña y caña de azúcar)",
+      "zh": "外來種(1991年首次在奄美大島、德之島確認，為椰子、鳳梨、甘蔗的害蟲)"
+    },
+    "天然記念物": {
+      "en": "Natural Monument",
+      "es": "Monumento Natural",
+      "zh": "天然紀念物"
+    },
+    "捕獲・譲渡原則禁止": {
+      "en": "Capture and transfer prohibited in principle",
+      "es": "Captura y traslado prohibidos, en principio",
+      "zh": "原則上禁止捕獲、轉讓"
+    },
+    "捕獲・譲渡禁止(国内希少野生動植物種)": {
+      "en": "Capture and transfer prohibited (Nationally Rare Wild Species)",
+      "es": "Captura y traslado prohibidos (Especie Silvestre Nacional Rara)",
+      "zh": "禁止捕獲、轉讓(國內稀有野生動植物種)"
+    },
+    "捕獲・譲渡禁止(天然記念物)": {
+      "en": "Capture and transfer prohibited (Natural Monument)",
+      "es": "Captura y traslado prohibidos (Monumento Natural)",
+      "zh": "禁止捕獲、轉讓(天然紀念物)"
+    },
+    "捕獲・譲渡禁止(天然記念物・国内希少野生動植物種)": {
+      "en": "Capture and transfer prohibited (Natural Monument / Nationally Rare Wild Species)",
+      "es": "Captura y traslado prohibidos (Monumento Natural / Especie Silvestre Nacional Rara)",
+      "zh": "禁止捕獲、轉讓(天然紀念物・國內稀有野生動植物種)"
+    },
+    "捕獲・譲渡禁止(特別天然記念物)": {
+      "en": "Capture and transfer prohibited (Special Natural Monument)",
+      "es": "Captura y traslado prohibidos (Monumento Natural Especial)",
+      "zh": "禁止捕獲、轉讓(特別天然紀念物)"
+    },
+    "捕獲禁止(鹿児島県希少野生動植物)": {
+      "en": "Collecting prohibited (Kagoshima Prefecture Rare Wildlife)",
+      "es": "Recolección prohibida (Vida Silvestre Rara de la Prefectura de Kagoshima)",
+      "zh": "禁止捕獲(鹿兒島縣稀有野生動植物)"
+    },
+    "採集可": {
+      "en": "Collecting permitted",
+      "es": "Recolección permitida",
+      "zh": "允許採集"
+    },
+    "採集可(稀少)": {
+      "en": "Collecting permitted (rare)",
+      "es": "Recolección permitida (especie rara)",
+      "zh": "允許採集(稀有種)"
+    },
+    "採集禁止(国立公園指定動物・条例指定希少野生動植物)、環境省レッドリスト:絶滅危惧II類(VU)": {
+      "en": "Collecting prohibited (National Park Designated Animal, Ordinance-designated Rare Wild Species), Ministry of the Environment Red List: Vulnerable (VU)",
+      "es": "Recolección prohibida (Animal Designado del Parque Nacional, Especie Silvestre Rara Designada por Ordenanza), Lista Roja del Ministerio de Medio Ambiente: Vulnerable (VU)",
+      "zh": "禁止採集(國立公園指定動物・條例指定稀有野生動植物)，日本環境省紅色名錄:易危(VU)"
+    },
+    "採集禁止(条例)": {
+      "en": "Collecting prohibited (by ordinance)",
+      "es": "Recolección prohibida (por ordenanza)",
+      "zh": "禁止採集(條例規定)"
+    },
+    "採集禁止(種の保存法・国内希少野生動植物種指定)、環境省レッドリスト:絶滅危惧IB類(EN)": {
+      "en": "Collecting prohibited (Act on Conservation of Endangered Species, Nationally Rare Species of Wild Fauna and Flora), Ministry of the Environment Red List: Endangered (EN)",
+      "es": "Recolección prohibida (Ley de Conservación de Especies en Peligro, Especie Silvestre Rara Nacional), Lista Roja del Ministerio de Medio Ambiente: En Peligro (EN)",
+      "zh": "禁止採集(《瀕危物種保護法》・國內稀有野生動植物種指定)，日本環境省紅色名錄:瀕危(EN)"
+    },
+    "採集禁止(鹿児島県希少野生動植物保護条例・指定希少野生動植物)": {
+      "en": "Collecting prohibited (Kagoshima Prefecture Rare Wildlife Protection Ordinance, Designated Rare Wild Species)",
+      "es": "Recolección prohibida (Ordenanza de Protección de Fauna y Flora Silvestre Rara de la Prefectura de Kagoshima, Especie Silvestre Rara Designada)",
+      "zh": "禁止採集(鹿兒島縣稀有野生動植物保護條例・指定稀有野生動植物)"
+    },
+    "毒あり": {
+      "en": "Venomous",
+      "es": "Venenosa",
+      "zh": "有毒"
+    },
+    "毒あり・特定動物": {
+      "en": "Venomous · Specified Dangerous Animal",
+      "es": "Venenosa · Animal Peligroso Designado",
+      "zh": "有毒・特定動物"
+    },
+    "無毒": {
+      "en": "Non-venomous",
+      "es": "No venenosa",
+      "zh": "無毒"
+    },
+    "無毒だが攻撃的": {
+      "en": "Non-venomous but aggressive",
+      "es": "No venenosa pero agresiva",
+      "zh": "無毒但具攻擊性"
+    },
+    "無毒・希少": {
+      "en": "Non-venomous · Rare",
+      "es": "No venenosa · Rara",
+      "zh": "無毒・稀有"
+    },
+    "猛毒・要最大限の注意": {
+      "en": "Highly venomous, very aggressive",
+      "es": "Muy venenosa y muy agresiva",
+      "zh": "劇毒且極具攻擊性"
+    },
+    "環境省レッドリスト:情報不足(DD)": {
+      "en": "Ministry of the Environment Red List: Data Deficient (DD)",
+      "es": "Lista Roja del Ministerio de Medio Ambiente: Datos Insuficientes (DD)",
+      "zh": "日本環境省紅色名錄:數據缺乏(DD)"
+    },
+    "環境省レッドリスト:準絶滅危惧(NT)": {
+      "en": "Ministry of the Environment Red List: Near Threatened (NT)",
+      "es": "Lista Roja del Ministerio de Medio Ambiente: Casi Amenazada (NT)",
+      "zh": "日本環境省紅色名錄:近危(NT)"
+    },
+    "環境省レッドリスト:絶滅危惧II類(VU)": {
+      "en": "Ministry of the Environment Red List: Vulnerable (VU)",
+      "es": "Lista Roja del Ministerio de Medio Ambiente: Vulnerable (VU)",
+      "zh": "日本環境省紅色名錄:易危(VU)"
+    },
+    "観察できる生き物": {
+      "en": "Wildlife you can observe",
+      "es": "Fauna que se puede observar",
+      "zh": "可觀察的生物"
+    },
+    "販売・頒布目的の捕獲等禁止(特定第二種国内希少野生動植物種)": {
+      "en": "Capture for sale or distribution prohibited (Specified Second-Class Nationally Rare Wild Species)",
+      "es": "Prohibida su captura con fines de venta o distribución (Especie Silvestre Nacional Rara de Segunda Clase Especificada)",
+      "zh": "禁止以販賣、分發為目的的捕獲(特定第二種國內稀有野生動植物種)"
+    },
+    "鹿児島県レッドリスト:準絶滅危惧(NT)": {
+      "en": "Kagoshima Prefecture Red List: Near Threatened (NT)",
+      "es": "Lista Roja de la Prefectura de Kagoshima: Casi Amenazada (NT)",
+      "zh": "鹿兒島縣紅色名錄:近危(NT)"
+    }
+  },
+  "zh_avoid": [
+    {
+      "word": "厘米",
+      "use": "公分"
+    },
+    {
+      "word": "信息",
+      "use": "資訊"
+    },
+    {
+      "word": "數據",
+      "use": "資料(データベースは資料庫)",
+      "except": [
+        "數據缺乏"
+      ]
+    },
+    {
+      "word": "紅色數據",
+      "use": "紅皮書"
+    }
+  ],
+  "zh_simplified_chars": "们这种属岛龙鸟类与发东区点长时产无关应问样态体会过还经对观历现见间头车门马鱼语认识进动开实给请让读写听说红录县",
+  "number_check_exceptions": [
+    {
+      "file": "content/creatures/birds/kurotusraherasagi.zh.md",
+      "text": "20世紀90年代初",
+      "ja_number": "1990",
+      "reason": "日本語版の「1990年代初頭」の書き方の違い(2026-10-17 オーナー確認)"
+    }
+  ]
+}

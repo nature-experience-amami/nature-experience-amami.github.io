@@ -3,7 +3,6 @@ id: amami-hababiro-doromusshi
 name: 奄美寬體長角泥甲
 category: aquatic-insects
 group: doromushi
-months: [7, 8]
 ---
 長角泥甲科寬體泥甲屬 *Dryopomorphus amami* Yoshitomi & M. Satô, 2005
 

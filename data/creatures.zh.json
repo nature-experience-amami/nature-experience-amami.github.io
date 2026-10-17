@@ -800,7 +800,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "龍蝨科真龍蝨屬 *Cybister tripunctatus orientalis* Gschwendtner, 1931\n\n體長約24〜29毫米。分布於本州、四國、九州、南西諸島及小笠原諸島，國外見於中國、朝鮮\n半島及台灣。體形呈長卵形、略扁平，背面光澤強烈，呈綠色至帶褐色的黑色，鞘翅邊緣有一圈\n黃色鑲邊，是與褐色龍蝨區分的要點。棲息於水生植物豐富的池沼、濕地，以及水田及其周邊水\n窪、休耕田、水流平緩的水渠。自1960年代以來，由於農藥使用及圃場整備，本州以南地區數\n量急劇減少，已被列入環境省紅色名錄的易危(VU)等級，但在南西諸島仍相對常見。其體形和\n色調與褐色龍蝨非常相似，僅憑照片很難區分。",
+    "description": "龍蝨科真龍蝨屬 *Cybister tripunctatus lateralis* (Fabricius, 1798)(日本產的族群也長期使用*orientalis* Gschwendtner, 1931這個名稱)\n\n體長約24〜29毫米。分布於本州、四國、九州、南西諸島及小笠原諸島，國外見於中國、朝鮮\n半島及台灣。體形呈長卵形、略扁平，背面光澤強烈，呈綠色至帶褐色的黑色，鞘翅邊緣有一圈\n黃色鑲邊，是與褐色龍蝨區分的要點。棲息於水生植物豐富的池沼、濕地，以及水田及其周邊水\n窪、休耕田、水流平緩的水渠。自1960年代以來，由於農藥使用及圃場整備，本州以南地區數\n量急劇減少，已被列入環境省紅色名錄的易危(VU)等級，但在南西諸島仍相對常見。",
     "photos": [
       "../images/creatures/aquatic-insects/gengoro/kogata-no-gengoro/kogata-no-gengoro_000001_20250403_23.jpg",
       "../images/creatures/aquatic-insects/gengoro/kogata-no-gengoro/kogata-no-gengoro_000002_20250403_23.jpg",
@@ -1376,7 +1376,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": false,
-    "description": "金龜科犀金龜亞科椰子犀金龜(台灣犀角金龜) *Oryctes rhinoceros* (Linnaeus, 1758)\n\n原產於中南半島周邊的外來種。據信20世紀初隨從台灣進口的資材混入侵入石垣島，為日本國內最早記錄，此後分布逐漸北擴，1991年在奄美大島、德之島也被確認。目前已在南西諸島幾乎全境定著並自然繁殖。作為在椰子類、菠蘿、甘蔗等植物的莖部及芯部鑽孔為害的農業害蟲而為人所知，也有人擔憂其與本地犀金龜類之間的競爭關係。",
+    "description": "金龜科犀金龜亞科椰子犀金龜(台灣犀角金龜) *Oryctes rhinoceros* (Linnaeus, 1758)\n\n原產於中南半島周邊的外來種。據信20世紀初隨從台灣進口的資材混入侵入石垣島，為日本國內最早記錄，此後分布逐漸北擴，1991年在奄美大島、德之島也被確認。目前已在南西諸島幾乎全境定著並自然繁殖。作為在椰子類、鳳梨、甘蔗等植物的莖部及芯部鑽孔為害的農業害蟲而為人所知，也有人擔憂其與本地犀金龜類之間的競爭關係。",
     "photos": [
       "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000001_20250417_20.jpg",
       "../images/creatures/beetles/taiwan-saikabuto/taiwan-saikabuto_000002_20250417_20.jpg"

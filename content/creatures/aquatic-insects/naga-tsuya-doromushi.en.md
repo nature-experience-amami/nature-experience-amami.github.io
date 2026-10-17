@@ -3,7 +3,6 @@ id: naga-tsuya-doromushi
 name: Elongate Glossy Riffle Beetle
 category: aquatic-insects
 group: doromushi
-months: [2, 5, 8]
 ---
 Riffle beetle family, genus Zaitzevia. *Zaitzevia elongata* Nomura, 1962
 

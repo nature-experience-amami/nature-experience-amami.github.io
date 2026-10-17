@@ -3,7 +3,6 @@ id: naga-tsuya-doromushi
 name: Escarabajo de Rabión Brillante Alargado
 category: aquatic-insects
 group: doromushi
-months: [2, 5, 8]
 ---
 Familia de los escarabajos de rabión, género Zaitzevia. *Zaitzevia elongata* Nomura, 1962
 
