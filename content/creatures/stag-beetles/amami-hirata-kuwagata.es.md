@@ -6,7 +6,7 @@ danger: Recolección permitida
 months: [7, 8]
 ---
 Familia de los ciervos volantes, género Dorcus (subespecie del ciervo volante
-plano). *Dorcus titanusu elegans*
+plano). *Dorcus titanus elegans*
 
 Una subespecie del ciervo volante plano que se encuentra en las islas Amami. Es
 el ciervo volante más numeroso de Amami Oshima. Una especie popular que alcanza

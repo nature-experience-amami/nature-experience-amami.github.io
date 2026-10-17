@@ -6,7 +6,7 @@ danger: Collecting permitted
 months: [7, 8]
 ---
 Stag beetle family, genus Dorcus (a subspecies of the flat stag beetle).
-*Dorcus titanusu elegans*
+*Dorcus titanus elegans*
 
 A subspecies of the flat stag beetle found in the Amami Islands. It is the most
 numerous stag beetle on Amami Oshima. A popular species that grows quite large
