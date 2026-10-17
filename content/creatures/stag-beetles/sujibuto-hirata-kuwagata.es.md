@@ -5,7 +5,7 @@ category: stag-beetles
 danger: Recolección permitida
 months: [7, 9, 10, 11]
 ---
-Familia de los ciervos volantes, subgénero Dorcus (ciervos volantes planos).
+Familia de los ciervos volantes, género Dorcus, subgénero de los ciervos volantes planos.
 *Dorcus metacostatus*
 
 Activo desde finales de abril hasta alrededor de octubre, con un pico en julio.
