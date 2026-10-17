@@ -5,8 +5,7 @@ category: stag-beetles
 danger: Recolección permitida (especie rara)
 months: [6, 7, 8, 9, 10]
 ---
-Familia de los ciervos volantes, subfamilia Aesalinae (ciervos volantes
-diminutos), género Nigidius (ciervos volantes cornudos). *Nigidius lewisi*
+Familia de los ciervos volantes, subfamilia Figulinae, género *Nigidius* (ciervos volantes cornudos). *Nigidius lewisi*
 
 Con el cuerpo brillante por completo y unas mandíbulas de forma peculiar, pasa
 todo el año dentro de madera podrida. Puede encontrarse durante todo el año en

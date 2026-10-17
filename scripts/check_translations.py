@@ -20,7 +20,7 @@
   7. frontmatter: id・category が日本語版と同じか。months・group は翻訳に書いてあれば
      日本語版と同じか(生成スクリプトは日本語版の値を使うので、無くてもよい)。
      activity・night_observable を翻訳に書いていないか
-  8. 1行目の学名(最初の *…*)が日本語版と同じか
+  8. 1行目の学名(1段落目の最後の *…*)が日本語版と同じか
   9. 本文の数値: 単位つきの数(mm・cm・kg など)と年(1500〜2099)が日本語版と同じか。
      書き方の違いで誤検知しやすいので「要確認」として知らせるだけ。
      書き方の違いだけと確認済みの箇所は translation_rules.json の
@@ -221,9 +221,10 @@ def check_frontmatter():
 
 
 def first_scientific_name(body):
+    # 1行目(最初の段落)の最後の *…* を学名として読む。属名を斜体にしても(例: *Diplothrix* 屬)学名と取り違えないため
     first_paragraph = re.split(r"\n\s*\n", body.strip())[0]
-    m = re.search(r"\*([^*]+)\*", first_paragraph)
-    return " ".join(m.group(1).split()) if m else None
+    names = re.findall(r"\*([^*]+)\*", first_paragraph)
+    return " ".join(names[-1].split()) if names else None
 
 
 def check_scientific_name():

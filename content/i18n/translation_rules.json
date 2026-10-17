@@ -175,6 +175,11 @@
       "en": "oak",
       "es": "roble de hoja perenne (kashi)",
       "zh": "常綠櫟樹(青剛櫟類)"
+    },
+    "ソウシジュ": {
+      "en": "Taiwan acacia (*Acacia confusa*)",
+      "es": "acacia de Taiwán (*Acacia confusa*)",
+      "zh": "相思樹"
     }
   },
   "number_check_exceptions": [

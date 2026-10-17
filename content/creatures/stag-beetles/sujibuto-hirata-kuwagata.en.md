@@ -5,7 +5,7 @@ category: stag-beetles
 danger: Collecting permitted
 months: [7, 9, 10, 11]
 ---
-Stag beetle family, subgenus Dorcus (flat stag beetles). *Dorcus metacostatus*
+Stag beetle family, genus *Dorcus*, subgenus *Serrognathus* (flat stag beetles). *Dorcus metacostatus*
 
 Active from late April through around October, peaking in July. A rare species
 endemic to Japan, found only in the Amami Islands, with eight distinct ridges
