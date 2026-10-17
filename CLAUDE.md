@@ -29,6 +29,7 @@
 
 - 生き物mdを作成・修正したら、`amami-creature-md` スキルの手順どおり `creature-reviewer` で監修し、指摘を反映してから見せる
 - 反映しなかった指摘があれば理由と一緒に伝える
+- 翻訳md（`.en.md`・`.es.md`・`.zh.md`）を新しく作った・本文や名前を直したときは、`amami-creature-translation` スキルの手順どおり、機械のチェックのあと `creature-reviewer` で翻訳の監修をする（表記を揃えるだけの変更では呼ばない）
 
 ## セキュリティ点検（security-reviewer）
 
