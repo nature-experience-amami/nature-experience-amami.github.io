@@ -1614,7 +1614,7 @@
     "months_source": "notes",
     "activity": "diurnal",
     "night_observable": true,
-    "description": "スズメ目カラス科カケス属ルリカケス *Garrulus lidthi*\n\n全長約38cm。奄美大島・加計呂麻島・請島にのみ生息する日本固有種で、瑠璃色の体に赤褐色の翼、白いくちばしと羽先が美しい。1921年に天然記念物に指定。常緑広葉樹林を好み、シイやカシの実を食べる雑食性。12月頃から巣作りの準備を始め、繁殖期の2月から5月頃には樹洞などに3〜7個の卵を産む。特に2月後半から4月上旬は親鳥が巣の周辺で活発に動き回るため観察のチャンスが増える。かつてはノネコやフイリマングースの捕食で数を減らしたが、2024年にマングースの根絶が宣言されるなど保護の成果が実り、近年は生息数が回復している。日中は活発に飛び回るが、夜は林道沿いの電線や枝先で休む姿を観察できる。",
+    "description": "スズメ目カラス科カケス属ルリカケス *Garrulus lidthi*\n\n全長約38cm。奄美大島・加計呂麻島・請島にのみ生息する日本固有種で、頭部と翼・尾は瑠璃色、背と胸から腹は赤褐色で、白いくちばしと羽先が美しい。1921年に天然記念物に指定。常緑広葉樹林を好み、シイやカシの実を食べる雑食性。12月頃から巣作りの準備を始め、繁殖期の2月から5月頃には樹洞などに3〜5個の卵を産む。特に2月後半から4月上旬は親鳥が巣の周辺で活発に動き回るため観察のチャンスが増える。かつてはノネコやフイリマングースの捕食で数を減らしたが、2024年にマングースの根絶が宣言されるなど保護の成果が実り、近年は生息数が回復している。日中は活発に飛び回るが、夜は林道沿いの電線や枝先で休む姿を観察できる。",
     "photos": [
       "images/creatures/birds/ruri-kakesu/ruri-kakesu_000001_20250321_12.jpg",
       "images/creatures/birds/ruri-kakesu/ruri-kakesu_000002_20250726_08.jpg",
@@ -3030,7 +3030,7 @@
     "months_source": "notes",
     "activity": "nocturnal",
     "night_observable": null,
-    "description": "クワガタムシ科ネブトクワガタ属 *Aegus laevicollis subnitidus*\n\nネブトクワガタの奄美諸島亜種で、国内産ネブトクワガタの亜種では最も大型になる。発生時期5月から10月頃。タブ、シイ、アカメガシワ、ソウシジュの樹液に来ることがある。野外では20mm程が多く、28mmあると大きい。目指せ30mm up。",
+    "description": "クワガタムシ科ネブトクワガタ属 *Aegus subnitidus taurulus* Didier, 1928\n（*Aegus laevicollis* の亜種 *A. laevicollis taurulus* とする扱いも長く使われてきた）\n\nネブトクワガタの奄美諸島亜種で、国内産ネブトクワガタの亜種では最も大型になる。発生時期5月から10月頃。タブ、シイ、アカメガシワ、ソウシジュの樹液に来ることがある。野外では20mm程が多く、28mmあると大きい。目指せ30mm up。",
     "photos": [
       "images/creatures/stag-beetles/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000001_20250521_22.jpg",
       "images/creatures/stag-beetles/amami-nebuto-kuwagata/amami-nebuto-kuwagata_000002_20250521_22.jpg",
