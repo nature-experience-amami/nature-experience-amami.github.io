@@ -4,7 +4,7 @@ name: 琉球長毛鼠
 category: mammals
 danger: 禁止捕獲、轉讓(天然紀念物)
 ---
-鼠科 Diplothrix 屬 *Diplothrix legata*
+鼠科 *Diplothrix* 屬 *Diplothrix legata*
 
 體長22〜33公分，尾長25〜35公分。是日本體型最大的老鼠，僅分布於奄美大島、德之島及
 沖繩島北部，背部的毛中混有5〜6公分的長剛毛。1972年被指定為天然紀念物，2016年被指定為
