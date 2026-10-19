@@ -50,7 +50,7 @@ CATEGORY_WEIGHT = {
 AVOID_RECENT = 30
 AVOID_RECENT_MAIN = 14
 # 同じ種は、最後に出た日から最低この日数をあける(投稿タイプを問わず。候補が足りなくても破らない)
-MIN_GAP_DAYS = 7
+MIN_GAP_DAYS = 16   # 2026-10-19 7→16(ケナガネズミが10/3と10/18、15日あけて再登場したため)
 
 # 天気の判定の目安(仮の数値。現場の感覚に合わせて変えてよい)。「今夜」は19〜23時
 HEAVY_RAIN_MM = 5      # 大雨: 今夜の1時間雨量の最大がこれ以上(mm)
@@ -545,7 +545,7 @@ def draft_tip(creatures, hist, weather):
                 and (not t.get("creature_season") or is_season(by_id[cid]))]
 
     def blocked(i):
-        # 関係する生き物が全部1週間以内に出ている(同じ種の写真が続いてしまう)コツ
+        # 関係する生き物が全部 MIN_GAP_DAYS 日以内に出ている(同じ種の写真が続いてしまう)コツ
         rel = related_of(tips[i])
         return bool(rel) and all(c["id"] in week for c in rel)
 
@@ -560,7 +560,7 @@ def draft_tip(creatures, hist, weather):
                       "- コツと結びつけて紹介してよい。ただし資料の範囲で")
     else:
         pool = [c for c in by_id.values() if is_season(c)] or list(by_id.values())
-        # 写真のためだけの生き物も、生き物紹介と同じく直近の投稿に出た種を避ける(7日は必ずあける)
+        # 写真のためだけの生き物も、生き物紹介と同じく直近の投稿に出た種を避ける(MIN_GAP_DAYS 日は必ずあける)
         c = pick(pool, hist)
         photo_note = ("【添える写真の生き物】(コツとは関係なく、写真のためにランダムに選んだ生き物)\n"
                       "- コツと写真の生き物を結びつけない。コツの説明にこの生き物を使わない\n"
@@ -601,7 +601,7 @@ def draft_tour(creatures, hist, weather):
     season = [c for c in night if c.get("months") and NOW.month in c["months"]]
     picked = pick_tour_names(season)
     names = "・".join(c["name"] for c in picked)
-    # 写真は名前に出した種から(1週間以内に出た種は避ける)。無理なら同じ重みで季節の生き物から
+    # 写真は名前に出した種から(MIN_GAP_DAYS 日以内に出た種は避ける)。無理なら同じ重みで季節の生き物から
     week = shown_this_week(hist)
     fresh = [c for c in picked if c["id"] not in week]
     pool = season or night
@@ -782,7 +782,7 @@ def main():
     weather = tonight_weather() if ptype != "tour" else None
     maker = {"creature": draft_creature, "quiz": draft_quiz, "tip": draft_tip, "tour": draft_tour}[ptype]
     # 1回の実行で count 個の下書きを作る。作った下書きはすぐ履歴の先頭に加えるので、
-    # 2つ目以降は1つ目と別の生き物・別のコツになる(同じ種は7日あける等のルールがそのまま効く)
+    # 2つ目以降は1つ目と別の生き物・別のコツになる(同じ種は MIN_GAP_DAYS 日あける等のルールがそのまま効く)
     count = max(1, int(os.environ.get("DRAFT_COUNT") or 1))
     drafts = []
     try:
