@@ -839,8 +839,7 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: message,
-          lang: 'ja',
-          creatures: creaturesData || []
+          lang: 'ja'
         })
       });
       const data = await res.json();
