@@ -4,7 +4,7 @@ name: Culebra Amami de Escamas Impares
 category: snakes
 danger: No venenosa · Rara
 ---
-Familia de las culebras Takachiho, tribu Takachiho. *Achalinus werneri*
+Familia de las culebras Takachiho, género Achalinus. *Achalinus werneri*
 
 Alcanza hasta unos 55 cm. El dorso es de color pardo negruzco o pardo oscuro, con una
 franja negra a lo largo de la línea media; el vientre es amarillo. En Amami es una

@@ -4,7 +4,7 @@ name: Amami Odd-scaled Snake
 category: snakes
 danger: Non-venomous · Rare
 ---
-Takachiho snake family, Takachiho tribe. *Achalinus werneri*
+Takachiho snake family, genus Achalinus. *Achalinus werneri*
 
 Grows up to about 55 cm. The back is blackish brown or dark brown with a black stripe
 running along the midline; the belly is yellow. On Amami it is a legendary snake that you
