@@ -20,6 +20,7 @@ from generate_zukan_page import (  # noqa: E402
 )
 from generate_creature_pages_i18n import load_lang, LANGS, AVAILABLE_CATEGORY_PAGES  # noqa: E402
 from category_header import render_category_strip  # noqa: E402
+from goods import footer_html, css_link  # noqa: E402
 from seo_head import HTML_LANGS, insert_ogp  # noqa: E402
 
 TEMPLATE = ROOT / "templates" / "zukan.i18n.html"
@@ -502,6 +503,8 @@ def render_category(category, lang):
         t_contact=escape(s["contact"]),
         t_category_nav_aria=escape(s["creature_category_nav_aria"]),
         lang_links=render_lang_bar(lang, category),
+        goods_footer=footer_html(lang, "../../"),
+        goods_css=css_link(lang, "../../"),
     )
 
     output_dir = ROOT / lang / OUTPUT_DIR_NAME

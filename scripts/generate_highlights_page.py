@@ -26,6 +26,7 @@ from generate_category_pages import (
     card_status,
 )
 from category_header import render_category_strip
+from goods import footer_html, css_link
 from seo_head import insert_ogp
 
 TEMPLATE = ROOT / "templates" / "highlights.html"
@@ -179,6 +180,8 @@ def main():
             href_prefix="categories/",
         ),
         lang_links=render_lang_bar(),
+        goods_footer=footer_html("ja", ""),
+        goods_css=css_link("ja", ""),
     )
     page = insert_ogp(page, "highlights.html", "ja")
     OUTPUT.write_text(page, encoding="utf-8")

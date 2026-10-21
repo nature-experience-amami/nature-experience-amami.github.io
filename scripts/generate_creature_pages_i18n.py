@@ -26,6 +26,7 @@ from generate_creature_pages import (  # noqa: E402
     related_cards, all_creatures, load_categories,
 )
 from category_header import render_category_strip  # noqa: E402
+from goods import banner_html, note_html, footer_html, css_link  # noqa: E402
 from seo_head import HTML_LANGS, insert_ogp  # noqa: E402
 
 # 日本語版の生成ロジック(mdのmonths:、無ければ写真の撮影日)による、
@@ -268,6 +269,9 @@ def render(creature, lang, strings, same_lang_creatures, translated_langs_by_key
         tour_text=escape(s["tour_text"]),
         tour_cta=escape(s["tour_cta"]),
         footer_text=escape(s["footer_text"]),
+        goods_note=note_html(lang, creature["category"], creature["id"], creature["name"], "../../../"),
+        goods_footer=footer_html(lang, "../../../"),
+        goods_css=css_link(lang, "../../../"),
     )
 
 

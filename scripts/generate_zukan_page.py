@@ -19,6 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from category_header import render_category_strip  # noqa: E402
+from goods import footer_html, css_link  # noqa: E402
 from seo_head import insert_ogp  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -428,6 +429,8 @@ def render_category(category, categories, available_categories):
         groups_html=render_groups(category, creatures),
         other_buttons=render_other_buttons(categories, category, available_categories),
         lang_links=render_lang_bar(category),
+        goods_footer=footer_html("ja", "../"),
+        goods_css=css_link("ja", "../"),
     )
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

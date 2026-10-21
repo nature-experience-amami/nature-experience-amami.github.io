@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from generate_zukan_page import ZUKAN_CATEGORIES, load_creatures  # noqa: E402
 from category_header import render_category_strip  # noqa: E402
+from goods import banner_html, note_html, footer_html, css_link  # noqa: E402
 from seo_head import insert_ogp  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -313,6 +314,9 @@ def main():
             category_buttons=category_buttons(category, available_categories),
             category_strip=render_category_strip(category_names, category, strip_available),
             lang_links=render_lang_bar(category),
+            goods_banner=banner_html("ja", category, "../"),
+            goods_footer=footer_html("ja", "../"),
+            goods_css=css_link("ja", "../"),
         )
         OUTPUT_DIR.mkdir(exist_ok=True)
         output_path = OUTPUT_DIR / f"{category}.html"

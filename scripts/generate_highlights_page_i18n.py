@@ -21,6 +21,7 @@ from generate_category_pages_i18n import card_description, card_status  # noqa: 
 from generate_highlights_page import HIGHLIGHT_CREATURES  # noqa: E402
 from generate_creature_pages_i18n import load_lang, LANGS, AVAILABLE_CATEGORY_PAGES  # noqa: E402
 from category_header import render_category_strip  # noqa: E402
+from goods import footer_html, css_link  # noqa: E402
 from seo_head import HTML_LANGS, insert_ogp  # noqa: E402
 
 TEMPLATE = ROOT / "templates" / "highlights.i18n.html"
@@ -254,6 +255,8 @@ def main():
             t_contact=escape(s["contact"]),
             t_category_nav_aria=escape(s["creature_category_nav_aria"]),
             lang_links=render_lang_bar(lang),
+            goods_footer=footer_html(lang, "../"),
+            goods_css=css_link(lang, "../"),
         )
 
         output_path = ROOT / lang / OUTPUT_NAME

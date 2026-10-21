@@ -7,6 +7,7 @@ from string import Template
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from category_header import render_category_strip  # noqa: E402
+from goods import banner_html, note_html, footer_html, css_link  # noqa: E402
 from seo_head import insert_ogp  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -438,6 +439,9 @@ def render(item, creatures, generated_keys, categories, available_categories):
         .replace("{category_strip}", "$category_strip")
         .replace("{photo_script}", "$photo_script")
         .replace("{lang_links}", "$lang_links")
+        .replace("{goods_note}", "$goods_note")
+        .replace("{goods_footer}", "$goods_footer")
+        .replace("{goods_css}", "$goods_css")
     )
 
     category_strip = render_category_strip(
@@ -462,6 +466,9 @@ def render(item, creatures, generated_keys, categories, available_categories):
         category_strip=category_strip,
         photo_script=photo_script,
         lang_links=render_lang_bar(item["category"], item["id"]),
+        goods_note=note_html("ja", item["category"], item["id"], item["name"], "../../"),
+        goods_footer=footer_html("ja", "../../"),
+        goods_css=css_link("ja", "../../"),
     )
 
 

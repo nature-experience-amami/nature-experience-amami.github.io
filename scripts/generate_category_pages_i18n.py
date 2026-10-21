@@ -19,6 +19,7 @@ from generate_creature_pages_i18n import (  # noqa: E402
     load_lang, LANGS, AVAILABLE_CATEGORY_PAGES,
 )
 from category_header import render_category_strip  # noqa: E402
+from goods import banner_html, note_html, footer_html, css_link  # noqa: E402
 from seo_head import HTML_LANGS, insert_ogp  # noqa: E402
 
 CATEGORY_CONTENT_DIR = ROOT / "content" / "category-pages"
@@ -212,6 +213,9 @@ def main():
                 t_tour=escape(strings["strings"]["tour"]),
                 t_category_nav_aria=escape(strings["strings"]["creature_category_nav_aria"]),
                 lang_links=render_lang_bar(lang, category),
+                goods_banner=banner_html(lang, category, "../../"),
+                goods_footer=footer_html(lang, "../../"),
+                goods_css=css_link(lang, "../../"),
             )
 
             output_dir = ROOT / lang / OUTPUT_DIR_NAME
