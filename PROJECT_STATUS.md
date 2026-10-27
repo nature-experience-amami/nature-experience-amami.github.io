@@ -56,7 +56,7 @@
 ```
 
 - カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects` `other-arthropods`（写真だけ `crustaceans`（カニ）もある）。
-- 写真の受け口（2026-10-17から）: amami-tool の写真は非公開リポジトリ `nature-experience-amami/amami-photo-inbox` に届き、そこで `process_creature_photos.py`（サイトと同じもの）が処理して、できた写真だけをサイトの `images/creatures/` へ送る。処理前の写真はサイトの履歴に残らない。受け口の Secret `SITE_REPO_TOKEN`（サイトの Contents 書き込みだけ、期限2027-10-01）を使う。amami-tool 用の携帯のトークンは、受け口とサイトの2つに Contents: Read and write。EXIF の撮影日が読めない写真は受け口の `生き物フォルダ/failed/` に残る（サイトには届かない）。写真処理の仕様を変えるときは、受け口とサイトの両方のスクリプトを直す
+- 写真の受け口（2026-10-17から）: amami-tool の写真は非公開リポジトリ `nature-experience-amami/amami-photo-inbox` に届き、そこで `process_creature_photos.py`（サイトと同じもの）が処理して、できた写真だけをサイトの `images/creatures/` へ送る。処理前の写真はサイトの履歴に残らない。受け口の Secret `SITE_REPO_TOKEN`（サイトの Contents 書き込みだけ、期限2027-10-01）を使う。amami-tool 用の携帯のトークンは、受け口とサイトの2つに Contents: Read and write。EXIF の撮影日が読めない写真は受け口の `生き物フォルダ/failed/` に残る（サイトには届かない）。写真処理の仕様を変えるときは、受け口とサイトの両方のスクリプトを直す。受け口にはサイトと同じ生き物フォルダが `.keep` 付きで残るので（2026-10-27から）、PCのGitHub Desktop（`Documents\GitHub\amami-photo-inbox`）からフォルダに写真を入れてpushしても送れる（手順は受け口のREADME）
 - 公開する写真は長辺1600px・画質85（`scripts/process_creature_photos.py` の `MAX_LONG_SIDE`・`JPEG_QUALITY`、2026-10-16から）。GitHub Pages の公開サイトは1GBまでなので、写真が増えたら `images/creatures` の大きさを見る（2026-10-16時点で約316MB）。リポジトリは過去にアップしたカメラの元写真が履歴に残っていて全体が約7GBある（GitHubの目安は5GB以下）。カメラの元写真（1枚10〜15MB）をそのままアップすると履歴が大きく増える。
 - 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` `other-arthropods` は図鑑ページ（`scripts/generate_zukan_page.py`）。図鑑ページは5カテゴリーとも4言語ある。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
 - `categories/hebi.html` `kaeru.html` `kuwagata.html` `honyuurui.html` `tori.html` `suisei-konntyuu.html` `koucyu.html` などは、英語名に変える前の古いURLから新しいページへ移動させるための転送ページ。
@@ -936,5 +936,17 @@
 - 未完了事項: 商品URLと画像をもらってからHTMLを作り直して push する（「進行中の作業」に手順）
 - Commit SHA: 2d9ab52（仕組み）、この記録はこの次のcommit
 - Push: 未実施（商品URLと画像がそろうまで push しない。オーナー指示）
+
+（担当: Claude）
+
+### 2026-10-27 受け口 amami-photo-inbox にフォルダを残し、PCから写真を送れるようにした
+
+- 受け口は送信後に写真を消すため、空になった生き物フォルダもGitから消えていた。PCから入れるとフォルダ名を手で打つことになり、名前ズレの危険があった
+- 受け口の `process-and-send.yml` に、サイトの `images/creatures/` のフォルダ一覧（名前だけ）を読み、いちばん下の生き物フォルダごとに `.keep` を置くステップを追加（`failed/` は対象外、既にあるものは作らない）。サイトでフォルダ名を変えた場合、受け口の古いフォルダは自動では消さない（写真を誤って消さないため）
+- 手動実行で113フォルダがそろった。その後オーナーがPCから19枚（カエル類）をpushし、全部が1600×1200・右下に透かし・連番の続きで処理されてサイトに届き、failed は0枚だった
+- 受け口のREADMEにPCから送る手順を追記
+- 気づいた点: 水生昆虫の `chinmeruman-sesuji-gengoro` だけがグループ `gengoro/` に入らずカテゴリー直下にある（サイトの構成どおり。整理するならサイトと受け口の両方をそろえる）。PCからのpushの名義が旧ユーザー名 `tetsu5686` になっている（動作に影響なし）
+- Commit SHA（受け口）: 367d402（ワークフロー）、da33d80（README）
+- Push: 済み（受け口）
 
 （担当: Claude）
