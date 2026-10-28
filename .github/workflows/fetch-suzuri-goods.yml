@@ -28,10 +28,15 @@ jobs:
 
     steps:
       # 書き込みできるトークンを .git/config に残さない（APIキーを使う手順と分けるため）
+      # 写真（images/）は使わないので、要るフォルダだけを取ってくる（ルート直下のファイルも入る）
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+          sparse-checkout: |
+            scripts
+            data
+          filter: blob:none
 
       - name: Setup Python
         uses: actions/setup-python@v5
