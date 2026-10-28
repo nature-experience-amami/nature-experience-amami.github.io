@@ -5,7 +5,7 @@ category: stag-beetles
 danger: 禁止採集(條例規定)
 months: [7, 8]
 ---
-鍬甲科鹿角鍬甲屬 *Rhaetulus recticrnis*
+鍬甲科鹿角鍬甲屬 *Rhaetulus recticornis*
 
 5月至9月左右活動，8月前後最容易見到。根據條例禁止採集。海拔相對較高的地區發現幾率更
 高。多附著在椎樹或橘樹的細枝上。大型個體的大顎會像鹿角一樣強烈彎曲。請注意不要將其誤認

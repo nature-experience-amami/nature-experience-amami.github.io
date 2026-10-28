@@ -6,7 +6,7 @@ danger: Recolección prohibida (por ordenanza)
 months: [7, 8]
 ---
 Familia de los ciervos volantes, género Rhaetulus (ciervos volantes cérvidos).
-*Rhaetulus recticrnis*
+*Rhaetulus recticornis*
 
 Activo desde alrededor de mayo hasta septiembre, y se observa con más facilidad
 hacia agosto. Su recolección está prohibida por ordenanza. Las zonas de

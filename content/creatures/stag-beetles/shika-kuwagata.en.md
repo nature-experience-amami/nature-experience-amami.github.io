@@ -5,7 +5,7 @@ category: stag-beetles
 danger: Collecting prohibited (by ordinance)
 months: [7, 8]
 ---
-Stag beetle family, genus Rhaetulus (deer stag beetles). *Rhaetulus recticrnis*
+Stag beetle family, genus Rhaetulus (deer stag beetles). *Rhaetulus recticornis*
 
 Active from around May through September, most easily seen around August.
 Collecting is prohibited by ordinance. Areas of relatively higher elevation
