@@ -16,7 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from category_header import render_category_strip, MASTER_CATEGORY_ORDER  # noqa: E402
-from fetch_suzuri_goods import https_url, IMAGE_HOST  # noqa: E402
+from fetch_suzuri_goods import https_url, IMAGE_HOST, PAGE_HOST  # noqa: E402
 from seo_head import insert_ogp  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -70,7 +70,7 @@ def load_products():
     clean = []
     for p in products:
         # 念のため、ページに出す前にもう一度URLを確かめる
-        url = https_url(p.get("url"), "suzuri.jp", subdomains=True)
+        url = https_url(p.get("url"), PAGE_HOST)
         image = https_url(p.get("image"), IMAGE_HOST)
         if isinstance(p.get("id"), int) and url and image:
             clean.append({**p, "url": url, "image": image})
