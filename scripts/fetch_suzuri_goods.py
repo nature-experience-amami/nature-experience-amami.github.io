@@ -36,6 +36,8 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 
 OPENER = urllib.request.build_opener(NoRedirect)
+# 商品画像の置き場所（2026-10-28 の試し運転で、45件すべてがこのホストだった）
+IMAGE_HOST = "lens.suzuri.jp"
 
 
 def is_tshirt(item):
@@ -70,15 +72,16 @@ def api_get(path, key, params=None):
             raise SystemExit(f"SUZURI API に接続できませんでした: {path}（{error.reason}）")
 
 
-def https_url(value, host_suffix=None):
-    """https のURLだけを通す（ページに出すときの安全のため）。"""
+def https_url(value, allowed_host, subdomains=False):
+    """https で、決まったホストのURLだけを通す（ページに出すときの安全のため）。
+    subdomains が True なら、そのホストの下のホスト（例: xxx.suzuri.jp）も通す。"""
     if not isinstance(value, str) or BAD_URL_CHARS.search(value):
         return ""
     parsed = urllib.parse.urlparse(value)
     host = parsed.hostname or ""
     if parsed.scheme != "https" or not host or parsed.username or parsed.password or parsed.port:
         return ""
-    if host_suffix and not (host == host_suffix or host.endswith("." + host_suffix)):
+    if host != allowed_host and not (subdomains and host.endswith("." + allowed_host)):
         return ""
     return value
 
@@ -117,8 +120,8 @@ def main():
         if not is_tshirt(item):
             other_items[f'{item.get("humanizeName")}（{item.get("name")}）'] += 1
             continue
-        sample_url = https_url(product.get("sampleUrl"), "suzuri.jp")
-        image_url = https_url(product.get("sampleImageUrl"))
+        sample_url = https_url(product.get("sampleUrl"), "suzuri.jp", subdomains=True)
+        image_url = https_url(product.get("sampleImageUrl"), IMAGE_HOST)
         if not sample_url or not image_url:
             print(f"※ URLがおかしいので外しました: 商品ID {product.get('id')}")
             continue
@@ -144,7 +147,6 @@ def main():
         print(f"  Tシャツの種類 {label}: {count} 件")
     for label, count in other_items.most_common():
         print(f"  Tシャツ以外（保存しない） {label}: {count} 件")
-    # 画像のホストは、実物を見てから SUZURI の画像置き場だけに絞る
     for host, count in image_hosts.most_common():
         print(f"  画像のホスト {host}: {count} 件")
     print("--- 公開中のTシャツの一覧（id / 素材名 / 商品名 / アイテム / 税込価格 / 公開日）---")
