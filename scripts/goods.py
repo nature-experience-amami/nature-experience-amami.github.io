@@ -2,7 +2,8 @@
 グッズ（SUZURI のヘビTシャツ）の案内を作る。設定は content/goods.json。
 
 - 対象の言語は goods.json の text にある言語だけ（今は日本語と中国語）。それ以外の言語では何も出さない
-- url が空のあいだ、または url_is_placeholder が true のあいだは何も出さない（仮のURLのまま公開しないため）
+- リンク先はグッズページ（goods.html。scripts/generate_goods_page.py が作る日本語のページ）の、その生き物の欄
+- goods.html がまだ無いあいだは何も出さない（飛び先が無いリンクを出さないため）
 - css/goods.css も、案内を出すページだけで読み込む
 - 画像ファイルがまだ無いときは、画像の枠を出さずに文字だけにする
 - root は「そのページからサイトのルートへの相対パス」（例: categories/snakes.html なら "../"）
@@ -15,18 +16,15 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "content" / "goods.json"
 CREATURE_CONTENT_DIR = ROOT / "content" / "creatures"
 
+GOODS_PAGE = "goods.html"
+
 _config = None
-_warned = False
 
 
 def config():
-    global _config, _warned
+    global _config
     if _config is None:
         _config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
-        if _config.get("url_is_placeholder") and not _warned:
-            print("※ content/goods.json の url が仮のURLなので、グッズの案内は出していません。"
-                  "本物のURLに差し替えて url_is_placeholder を false にすると出ます。")
-            _warned = True
     return _config
 
 
@@ -35,10 +33,9 @@ def _escape(value):
 
 
 def _text(lang):
-    data = config()
-    if not data.get("url") or data.get("url_is_placeholder"):
+    if not (ROOT / GOODS_PAGE).exists():
         return None
-    return data["text"].get(lang)
+    return config()["text"].get(lang)
 
 
 def _lang_root(lang, root):
@@ -69,8 +66,9 @@ def _image_html(t, root, css_class):
     )
 
 
-def _external_attrs():
-    return f'href="{_escape(config()["url"])}" target="_blank" rel="noopener"'
+def _goods_attrs(root, anchor):
+    """グッズページ（日本語版はサイトのルートにある）の、その欄へのリンク。"""
+    return f'href="{_escape(f"{root}{GOODS_PAGE}#{anchor}")}"'
 
 
 def _notice_html(t):
@@ -97,7 +95,7 @@ def banner_html(lang, category, root):
         f'<h2 class="goods-title">{_escape(t["banner_title"])}</h2>'
         f'<p class="goods-lead">{_escape(t["banner_lead"])}</p>'
         f'<div class="goods-chips">{"".join(chips)}</div>'
-        f'<a class="goods-button" {_external_attrs()}>{_escape(t["button"])}</a>'
+        f'<a class="goods-button" {_goods_attrs(root, category)}>{_escape(t["button"])}</a>'
         f"{_notice_html(t)}</div></div></section>"
     )
 
@@ -112,7 +110,7 @@ def note_html(lang, category, creature_id, name, root):
         f'<aside class="goods-note">{image}<div class="goods-note-text">'
         f'<strong>{_escape(t["note_title"].format(name=name))}</strong>'
         f'<span>{_escape(t["note_sub"])}</span>{_notice_html(t)}</div>'
-        f'<a class="goods-note-link" {_external_attrs()}>{_escape(t["note_link"])}</a></aside>'
+        f'<a class="goods-note-link" {_goods_attrs(root, creature_id)}>{_escape(t["note_link"])}</a></aside>'
     )
 
 
@@ -125,7 +123,7 @@ def footer_html(lang, root):
         href = _escape(f'{_lang_root(lang, root)}categories/{config()["category"]}.html#goods')
         attrs = f'href="{href}"'
     else:
-        attrs = _external_attrs()
+        attrs = f'href="{_escape(root + GOODS_PAGE)}"'
     return f'<p class="footer-goods"><a {attrs}>{_escape(t["footer_link"])}</a></p>'
 
 
