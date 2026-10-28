@@ -1,7 +1,8 @@
 name: fetch-suzuri-goods
 
-# SUZURI の公開中のTシャツを取得して data/suzuri-products.json に保存する
-# 中身は scripts/fetch_suzuri_goods.py。APIキーは Secrets の SUZURI_API_KEY
+# SUZURI の公開中のTシャツを取得して data/suzuri-products.json に保存し、
+# グッズページ goods.html とトップページのおすすめ欄（index.html の目印のあいだ）を作り直す
+# 中身は scripts/fetch_suzuri_goods.py と scripts/generate_goods_page.py。APIキーは Secrets の SUZURI_API_KEY
 on:
   schedule:
     - cron: "17 19 * * *" # 毎日 日本時間 4:17（GitHub の cron は UTC）
@@ -13,6 +14,7 @@ on:
     paths:
       - ".github/workflows/fetch-suzuri-goods.yml"
       - "scripts/fetch_suzuri_goods.py"
+      - "scripts/generate_goods_page.py"
 
 permissions:
   contents: write
@@ -36,6 +38,9 @@ jobs:
           sparse-checkout: |
             scripts
             data
+            content
+            templates
+            categories
           filter: blob:none
 
       - name: Setup Python
@@ -48,6 +53,9 @@ jobs:
           SUZURI_API_KEY: ${{ secrets.SUZURI_API_KEY }}
         run: python scripts/fetch_suzuri_goods.py
 
+      - name: Generate goods page
+        run: python scripts/generate_goods_page.py
+
       # 保存は main で動いたときだけ。内容が変わった日だけ commit する
       - name: Commit and push
         if: github.ref == 'refs/heads/main'
@@ -56,12 +64,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/suzuri-products.json
+          git add data/suzuri-products.json index.html
+          if [ -f goods.html ]; then git add goods.html; fi
           if git diff --cached --quiet; then
             echo "変更なし"
             exit 0
           fi
-          git commit -m "SUZURIのTシャツ一覧を更新"
+          git commit -m "SUZURIのTシャツ一覧とグッズページを更新"
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           # 写真処理の workflow と同時に push したときは、取り込み直して3回までやり直す
           for i in 1 2 3; do

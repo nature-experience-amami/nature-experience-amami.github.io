@@ -113,6 +113,7 @@ def main():
     tshirts = []
     other_items = Counter()
     image_hosts = Counter()
+    url_hosts = Counter()
     for product in published:
         if not isinstance(product.get("id"), int):
             continue
@@ -126,6 +127,7 @@ def main():
             print(f"※ URLがおかしいので外しました: 商品ID {product.get('id')}")
             continue
         image_hosts[urllib.parse.urlparse(image_url).hostname] += 1
+        url_hosts[urllib.parse.urlparse(sample_url).hostname] += 1
         material = product.get("material") or {}
         tshirts.append({
             "id": product.get("id"),
@@ -149,6 +151,8 @@ def main():
         print(f"  Tシャツ以外（保存しない） {label}: {count} 件")
     for host, count in image_hosts.most_common():
         print(f"  画像のホスト {host}: {count} 件")
+    for host, count in url_hosts.most_common():
+        print(f"  商品ページのホスト {host}: {count} 件")
     print("--- 公開中のTシャツの一覧（id / 素材名 / 商品名 / アイテム / 税込価格 / 公開日）---")
     for t in sorted(tshirts, key=lambda t: t["id"]):
         print(f'{t["id"]} / {t["material_title"]} / {t["title"]} / {t["item_label"]} / {t["price_with_tax"]} / {t["published_at"][:10]}')

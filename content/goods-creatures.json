@@ -1,0 +1,15 @@
+{
+  "_memo": "グッズページ（goods.html）とトップのおすすめの設定。SUZURIの素材名（material_title）をひらがな→カタカナにして、生き物mdの name と同じなら自動でその生き物にひも付く。名前が違うものは aliases、セット柄は sets に書く。どれにも当てはまらない商品は「その他」に入り、取得のログに出る。",
+  "logo_product_ids": [91853589],
+  "featured_product_ids": [92089592, 92062623, 91877140, 92012965],
+  "sets": {
+    "奄美のへび": "snakes",
+    "奄美のカエルたち": "amphibians",
+    "あまみのくわがた": "stag-beetles"
+  },
+  "aliases": {
+    "あまみたかちほ": "snakes/takachiho-hebi",
+    "あかしょうびん": "birds/ryukyu-akashobin"
+  },
+  "hidden_product_ids": []
+}
