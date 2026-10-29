@@ -434,6 +434,12 @@
     margin-top:1rem;
   }
 
+  /* ご予約方法の3枚のカードは、押すとそのまま連絡できる（電話・公式LINE・お問い合わせページのフォームへ）。2026-10-29 */
+  a.resv-card{ display:block; color:inherit; text-decoration:none; transition:border-color .2s ease, background .2s ease; }
+  a.resv-card:hover{ border-color:var(--amber); background:rgba(234,242,233,.06); }
+  a.resv-card:focus-visible{ outline:2px solid var(--amber); outline-offset:3px; }
+  .resv-go{ display:inline-block; margin-top:1rem; color:var(--amber); font-weight:700; }
+
   /* RESERVATION */
 
   .reservation-section{
@@ -937,7 +943,7 @@
         可通過電話、官方LINE或諮詢表單預約行程。請選擇您方便的方式與我們聯繫。
       </p>
 
-      <div class="meeting-card">
+      <a class="meeting-card resv-card" href="tel:+818040584466">
 
         <h3>電話</h3>
 
@@ -953,9 +959,11 @@
           如需緊急聯繫，電話是最可靠的方式。由於我們經常身處山中信號不佳的地方，可能無法及時接聽。此時請通過官方LINE或諮詢表單與我們聯繫。
         </p>
 
-      </div>
+        <span class="resv-go">撥打電話 →</span>
 
-      <div class="meeting-card">
+      </a>
+
+      <a class="meeting-card resv-card" href="https://lin.ee/5SFJGNt" target="_blank" rel="noopener">
 
         <h3>官方LINE</h3>
 
@@ -963,9 +971,11 @@
           適合想輕鬆提問的您。
         </p>
 
-      </div>
+        <span class="resv-go">打開官方LINE →</span>
 
-      <div class="meeting-card">
+      </a>
+
+      <a class="meeting-card resv-card" href="contact.html#form">
 
         <h3>諮詢表單</h3>
 
@@ -977,13 +987,10 @@
           提交表單並不代表預約已確定。我們確認空位情況後會再與您聯繫。
         </p>
 
-      </div>
+        <span class="resv-go">前往表單 →</span>
 
-      <div class="reservation-action">
-        <a class="btn" href="contact.html">
-          前往諮詢頁面
-        </a>
-      </div>
+      </a>
+
 
     </div>
 

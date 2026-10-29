@@ -434,6 +434,12 @@
     margin-top:1rem;
   }
 
+  /* ご予約方法の3枚のカードは、押すとそのまま連絡できる（電話・公式LINE・お問い合わせページのフォームへ）。2026-10-29 */
+  a.resv-card{ display:block; color:inherit; text-decoration:none; transition:border-color .2s ease, background .2s ease; }
+  a.resv-card:hover{ border-color:var(--amber); background:rgba(234,242,233,.06); }
+  a.resv-card:focus-visible{ outline:2px solid var(--amber); outline-offset:3px; }
+  .resv-go{ display:inline-block; margin-top:1rem; color:var(--amber); font-weight:700; }
+
   /* RESERVATION */
 
   .reservation-section{
@@ -938,7 +944,7 @@
         ご都合のよい方法で、お気軽にご連絡ください。
       </p>
 
-      <div class="meeting-card">
+      <a class="meeting-card resv-card" href="tel:+818040584466">
 
         <h3>お電話</h3>
 
@@ -952,9 +958,11 @@
           その際は公式LINE、またはお問い合わせフォームからご連絡ください。
         </p>
 
-      </div>
+        <span class="resv-go">電話をかける →</span>
 
-      <div class="meeting-card">
+      </a>
+
+      <a class="meeting-card resv-card" href="https://lin.ee/5SFJGNt" target="_blank" rel="noopener">
 
         <h3>公式LINE</h3>
 
@@ -962,9 +970,11 @@
           気軽に質問したい方はこちら。
         </p>
 
-      </div>
+        <span class="resv-go">公式LINEを開く →</span>
 
-      <div class="meeting-card">
+      </a>
+
+      <a class="meeting-card resv-card" href="contact.html#form">
 
         <h3>お問い合わせフォーム</h3>
 
@@ -978,13 +988,10 @@
           空き状況を確認したうえで、折り返しご連絡します。
         </p>
 
-      </div>
+        <span class="resv-go">フォームへ移動 →</span>
 
-      <div class="reservation-action">
-        <a class="btn" href="contact.html">
-          お問い合わせページへ
-        </a>
-      </div>
+      </a>
+
 
     </div>
 
