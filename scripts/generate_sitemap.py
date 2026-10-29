@@ -20,7 +20,7 @@ BASE_URL = "https://nature-experience-amami.github.io"
 OUTPUT = ROOT / "sitemap.xml"
 
 LANG_DIRS = ["", "en", "es", "zh"]
-TOP_LEVEL_PAGES = ["index.html", "tour.html", "winter.html", "contact.html", "highlights.html"]
+TOP_LEVEL_PAGES = ["index.html", "tour.html", "winter.html", "contact.html", "highlights.html", "goods.html"]
 
 NOINDEX_RE = re.compile(r'<meta\s+name="robots"[^>]*noindex', re.IGNORECASE)
 
