@@ -7,14 +7,6 @@ on:
   schedule:
     - cron: "17 19 * * *" # 毎日 日本時間 4:17（GitHub の cron は UTC）
   workflow_dispatch:
-  # 作業用ブランチで取得の仕組みを直したときの試し運転（保存・commit はしない）。main に入れる前に消す
-  push:
-    branches:
-      - claude/loving-pasteur-8eui3f
-    paths:
-      - ".github/workflows/fetch-suzuri-goods.yml"
-      - "scripts/fetch_suzuri_goods.py"
-      - "scripts/generate_goods_page.py"
 
 permissions:
   contents: write
