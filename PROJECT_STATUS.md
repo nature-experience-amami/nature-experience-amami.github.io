@@ -1,6 +1,6 @@
 # Nature Experience Amami - Project Status
 
-最終更新: 2026-10-20（日本時間）
+最終更新: 2026-10-29（日本時間）
 
 今の状況とやることだけを書くファイルです。作業前に `AGENTS.md`（共通ルール）を先に読んでください。
 2026年9月までの経緯は `docs/history/2026-09.md` にあります（2026-09-30まで使っていた `PROJECT_STATUS_updated.md` を、そのまま名前を変えて移したもの）。
@@ -31,6 +31,7 @@
 ├─ .claude/security-log.md        セキュリティ点検の記録（公開リポジトリなので、何をするかだけを書く）
 ├─ .github/workflows/
 │  ├─ process-creature-photos.yml  写真のpushで写真処理とページの作り直し（2026-10-17からは、受け口 amami-photo-inbox から処理済みの写真が届いた時に動く）
+│  ├─ fetch-suzuri-goods.yml       毎日（日本時間4:17）SUZURIのTシャツを取得し、グッズページとトップのおすすめ欄を作り直す（2026-10-28から）
 │  └─ threads-draft.yml            Threads下書き
 ├─ content/
 │  ├─ categories.json             カテゴリーIDと表示名
@@ -39,12 +40,14 @@
 │  ├─ i18n/                       翻訳版ページの文言
 │  └─ notes-hebi-anzen.md notes-kuwagata-saishu.md
 ├─ data/creatures*.json           AIチャット用のデータ（4言語、生成物）
+├─ data/suzuri-products.json      SUZURIの公開中のTシャツ（毎日の取得で作られる生成物）
 ├─ images/creatures/カテゴリー/(グループ/)生き物ID/
 ├─ scripts/                       写真処理・生成スクリプト・翻訳チェック
 ├─ templates/                     ページのひな形（category・creature・highlights・zukan と各 i18n 版）
 ├─ creatures/ categories/         日本語版のページ（生成物）
 ├─ en/ es/ zh/                    翻訳版（index・contact・tour・highlights・categories・creatures）
 ├─ index.html highlights.html tour.html contact.html amami-tool.html
+├─ goods.html                     グッズ（Tシャツ）のページ（日本語だけ。毎日の取得で作られる生成物）
 ├─ css/ js/
 ├─ logo/                         ロゴの元データ（ishikawa-frog-logo.svg＝カエル版。色は {{ink}} {{paper}} の目印のまま）
 ├─ customer-app/                  予約管理アプリ（使い方と注意は customer-app/README.md）
@@ -65,15 +68,22 @@
 - トップの URL は index.html なし（`/` `/en/` `/es/` `/zh/`）に統一（og:url と `sitemap.xml`）。
 - 集合場所・集合時間は、`tour.html` の「集合場所について」と `index.html` の「ナイトツアーの流れ」01 の2か所に書いてある（4言語）。変えるときは両方そろえる。
 - `winter.html`（冬のナイトツアーのページ、2026-10-13。翻訳版 `en/` `es/` `zh/winter.html` は2026-10-14）は手書きのページで、`tour.html` のヘッダー・CSS・フッターを写して作った。生き物の名前は個別ページにリンクし、写真10か所は、それぞれの生き物の写真フォルダの写真（`data/creatures.json`）から開くたびに1枚を選ぶ（撮影月では絞らない。オーナー決定）。データや写真を読み込めないときは、各 `img` の `data-fallback` の写真を出す。`index.html` の大きな写真のすぐ下に冬のページへの案内カードがあり（写真はアマミアカガエル・アマミイシカワガエル・アマミイボイモリ・アマミアオガエルの4種から訪れるたびに選ぶ。`index.html` の `WINTER_CARD_CREATURES`。最初は写真の枠だけを見せ、選んだ写真を読み込み終えてから表示する。データや写真を読み込めないときだけ `WINTER_CARD_FALLBACK` のイボイモリの写真（000003）を出す）、カードには「WINTER NIGHT TOUR — 12月〜3月」・見出し「冬の森は、眠らない。」・「予約受付中」があり（スマホでは見出しが写真の上）、ページ内のスクリプトが日本時間で10月1日〜3月31日のあいだだけ表示する（それ以外は隠れたまま。JavaScriptが動かない環境でも隠れたまま）。`tour.html` の冒頭にも冬のページへの1行のリンクがある。冬のツアーの集合時間（19時ごろ）は `winter.html` にも書いてある。翻訳版の `winter.html` は翻訳版の `tour.html` のヘッダー・フッターと日本語版の冬のページのCSSを使い、写真は `data/creatures.{en,es,zh}.json` から選ぶ（写真の説明・代わりの写真の説明は各言語の名前）。翻訳版の `index.html` にも同じ案内カード（同じ4種・同じ表示期間）、翻訳版の `tour.html` にも1行のリンクがある
-- ヘビTシャツ（SUZURI）の案内（2026-10-21）は `content/goods.json`（商品URL・画像・対象7種・日本語と中国語の文言）と `scripts/goods.py` で作る。出すのはヘビ一覧ページのバナー（一覧の後ろ）、Tシャツに載っている7種の個別ページの小さな案内（関連する生き物の後ろ）、生成ページのフッターのリンク（手書きの index・tour・contact・winter には入れていない。オーナー決定）。日本語版と中国語版だけで、中国語版は購入代行の注意書きを添え、フッターのリンクはヘビ一覧のバナーへ飛ぶ。`url` が空か `url_is_placeholder` が true のあいだは、案内も `css/goods.css` の読み込みも出さない（仮のURLのまま公開しないため）
+- グッズページ（2026-10-28）: `.github/workflows/fetch-suzuri-goods.yml` が毎日（日本時間4:17）と手動で動き、`scripts/fetch_suzuri_goods.py` が SUZURI API（キーは GitHub Secrets の `SUZURI_API_KEY`）から公開中のTシャツだけを `data/suzuri-products.json` に保存し、`scripts/generate_goods_page.py` が `goods.html`（テンプレート `templates/goods.html`）と、`index.html` の目印 `<!-- GOODS-PICKS:START -->` と `<!-- GOODS-PICKS:END -->` のあいだのおすすめ欄を作り直す。変わった日だけ github-actions[bot] が main に commit する。写真は使わないので、必要なフォルダ（scripts・data・content・templates・categories）だけを取ってくる。商品画像は `lens.suzuri.jp`、商品ページは `suzuri.jp` のURLだけを通す（それ以外は外す）
+  - 生き物とのひも付け・セット柄・ロゴ・トップのおすすめは `content/goods-creatures.json`。SUZURIの素材名をひらがな→カタカナにして生き物mdの `name` と同じなら自動でひも付き、名前が違うもの（あまみたかちほ・あかしょうびん）は `aliases`、セット柄（奄美のへび・奄美のカエルたち・あまみのくわがた）は `sets`。どれにも当たらない商品は「その他」に入り、取得のログに出る。おすすめはロゴと `featured_product_ids`（アマミノクロウサギ・リュウキュウコノハズク・奄美のへび・奄美のカエルたち。オーナー選定）、印が無ければ新しい順
+  - 見た目は `css/goods.css`。スマホは種類ごとの横スクロール（右端に次の商品が半分ほど見える）、PCは5列。各生き物の最初の商品に飛び先（例: `goods.html#habu`）がある。トップのおすすめ欄は「他の生き物を見る」の前
+  - **`index.html` の目印のあいだは毎日自動で書き換わる。`index.html` を直すときは先に main を pull し、目印は消さない・動かさない**（目印が1回ずつ無いと毎日の取得がエラーで止まる）
+  - 取得のログ（Actions）は公開リポジトリなので誰でも見られる。公開中の商品名と件数、SUZURIのユーザー名、非公開の件数（名前は出さない）が出る
+- ヘビTシャツの案内（2026-10-21、リンク先は2026-10-28にグッズページへ変更）は `content/goods.json`（対象7種・日本語と中国語の文言）と `scripts/goods.py` で作る。出すのはヘビ一覧ページのバナー（一覧の後ろ）、Tシャツに載っている7種の個別ページの小さな案内（関連する生き物の後ろ）、生成ページのフッターのリンク（手書きの index・tour・contact・winter には入れていない。オーナー決定）。リンク先はグッズページのその生き物の欄（日本語のページ。中国語版は「頁面為日文」と添え、購入代行の注意書きも出す。中国語版のフッターはヘビ一覧のバナーへ飛ぶ）。`goods.html` が無いあいだは案内も `css/goods.css` の読み込みも出さない。英語・スペイン語版には出さない
 
 ## 進行中の作業
 
-### ヘビTシャツ（SUZURI）の案内（2026-10-21）
+### グッズページ（SUZURIのTシャツ）（2026-10-28）
 
-- 仕組みは commit 2d9ab52（作業用ブランチ `claude/gallant-edison-mw7dge`、未push）。商品URLと画像がそろうまで push しない（オーナー指示）
-- そろったらやること: 画像を `images/goods/snake-tshirt.jpg` に置く → `content/goods.json` の `url` を商品ページのURLにして `url_is_placeholder` を false にする → 生成スクリプト8つ（generate_creature_pages・generate_category_pages・generate_zukan_page・generate_highlights_page と、それぞれの _i18n）を動かす → 作り直したHTMLを別のcommitにして push
-- 公開後に確かめること: スマホ実機でヘビ一覧のバナーと個別ページの案内、中国語版のフッターからバナーへ飛ぶか
+- 作業用ブランチ `claude/loving-pasteur-8eui3f` のプルリクエスト（この記録と同じもの）を main にマージしてから、次の順にやる
+  1. Actions の「fetch-suzuri-goods」を手動で1回動かす → `goods.html` とトップのおすすめ欄ができて main に commit される
+  2. Actions の「process-creature-photos」を手動で1回動かす → ヘビ一覧のバナー・ヘビ7種の案内・生成ページのフッターのリンクが出る（`goods.html` ができてからでないと出ない）
+- 公開後に確かめること: スマホ実機でグッズページの横スクロールと商品画像、トップのおすすめ欄、ヘビの個別ページの案内から `goods.html#habu` などに飛ぶか、中国語版のフッターからヘビ一覧のバナーへ飛ぶか
+- 同じ生き物のTシャツが2〜3枚ある（ハブ3・ヒャン2・ヒメハブ2・アマミヤマシギ2）。重複かどうかはオーナーがSUZURIで確かめる。隠すときは `content/goods-creatures.json` の `hidden_product_ids` に商品IDを書く
 
 ### SEO改善（OGP・JSON-LD・ツアーページの追記）（2026-10-12）
 
@@ -183,7 +193,7 @@
 
 - Google Search Consoleへの登録、`sitemap.xml`・`robots.txt`・プライバシー案内の整備（OGPと構造化データは2026-10-12に追加し、`main` に反映済み）。隠しキーワードやキーワードの詰め込みはしない。
 - 内容が整ったら、旧サイトに新サイトへの案内を置き、XとInstagramに新サイトのURLを載せる（旧サイトは当面並行運用）。
-- ヘビTシャツ（SUZURI）の案内を公開する。商品URLと画像をオーナーからもらってから（手順は「進行中の作業」）
+- グッズページを公開する（手順は「進行中の作業」）。英語・スペイン語・中国語のグッズページはまだ無い（まず日本語版だけ。オーナー決定）
 - アクセス解析（GA4またはCloudflare）の導入。
 
 ## 今月の変更履歴
@@ -948,5 +958,22 @@
 - 気づいた点: 水生昆虫の `chinmeruman-sesuji-gengoro` だけがグループ `gengoro/` に入らずカテゴリー直下にある（サイトの構成どおり。整理するならサイトと受け口の両方をそろえる）。PCからのpushの名義が旧ユーザー名 `tetsu5686` になっている（動作に影響なし）
 - Commit SHA（受け口）: 367d402（ワークフロー）、da33d80（README）
 - Push: 済み（受け口）
+
+（担当: Claude）
+
+### 2026-10-28 SUZURI APIスキルを入れ、グッズページ（Tシャツ45点）とトップのおすすめ欄を作った
+
+- `pepabo/pepabo-marketplace`（MIT License）の suzuri-api スキルを `.claude/skills/suzuri-api/`（SKILL.md と参照先の references/api-reference.md）に変更なしで入れた
+- オーナーの直しで、APIキーの置き場所は使う処理に合わせる（GitHub Actions なら GitHub Secrets）と改善ノートに1行足した。オーナーが Secrets に `SUZURI_API_KEY` を登録
+- 毎日の取得: `.github/workflows/fetch-suzuri-goods.yml` と `scripts/fetch_suzuri_goods.py`。作業用ブランチへの push で試し運転（保存・commit なし）をして、ログで実データを確かめた: 公開中の商品113点のうちTシャツ45点（スタンダードTシャツ44・TRUSS 1）、非公開0、画像はすべて `lens.suzuri.jp`、商品ページはすべて `suzuri.jp` → そのホストだけを通すように絞った。checkout を必要なフォルダだけにして、取得は17秒→2秒
+- 商品と生き物のひも付け: 45点のうち37点は名前で自動、2点は名前が違う（あまみたかちほ→アマミタカチホヘビ、あかしょうびん→リュウキュウアカショウビン）、セット柄3点・ロゴ1点。試し運転で、ひも付かない商品は0点
+- 見た目は試作（スマホ版・PC版の3案）を見せ、オーナーが「種類ごとの横スクロール」の案を選んだ。右端に次の商品が少し見えるように、ロゴはトップのおすすめとグッズページの先頭の両方に（オーナー指示）。セット柄は各種類の先頭、同じ生き物が複数あるものは全部出す（オーナー指示）
+- `generate_goods_page.py` が `goods.html` とトップのおすすめ欄を作る。`sitemap.xml` の対象に `goods.html` を足した（`generate_sitemap.py`）
+- 既存のヘビTシャツの案内（2026-10-21、仮のURLで出していなかった）は残し、リンク先をSUZURIからグッズページのその生き物の欄に変えた（オーナー指示）。対象7種はTシャツのある7種とそのまま同じ
+- security-reviewer で2回点検し、指摘を反映: URLのホストの確認（`\` の抜け道・サブドメイン）、リダイレクトでAPIキーが他のホストに送られないように、書き込みトークンを取得の手順に残さない、push のやり直し、index.html の目印が1回ずつかの確認、goods.css のスマホ用の指定がほかのページのヘッダーまで変えていたのをグッズページだけに、goods.html が無いときの commit の失敗、商品画像のリファラーを送らない。高の指摘はなし
+- 作業用ブランチへの push で動く試し運転の設定は、main に入れる前に消した
+- 未完了事項: マージ後に「fetch-suzuri-goods」→「process-creature-photos」を手動で動かす（「進行中の作業」）。スマホ実機での確認（オーナー）
+- Commit SHA: aa9feb4（スキル）、b21527a（改善ノート）、e37f692・5804c7d・4df0dfa（取得の仕組み）、9869b64（グッズページ）、c7cecc5（ヘビの案内のリンク先）、591a41f（ホストを絞る）、f651cf5（試し運転を外す）、この記録はこの次のcommit
+- Push: 済み（このプルリクエスト）
 
 （担当: Claude）
