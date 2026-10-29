@@ -60,7 +60,7 @@
 
 - カテゴリーのフォルダ名は英語名: `snakes` `amphibians` `stag-beetles` `mammals` `birds` `lizards` `aquatic-insects` `beetles` `other-insects` `other-arthropods`（写真だけ `crustaceans`（カニ）もある）。
 - 写真の受け口（2026-10-17から）: amami-tool の写真は非公開リポジトリ `nature-experience-amami/amami-photo-inbox` に届き、そこで `process_creature_photos.py`（サイトと同じもの）が処理して、できた写真だけをサイトの `images/creatures/` へ送る。処理前の写真はサイトの履歴に残らない。受け口の Secret `SITE_REPO_TOKEN`（サイトの Contents 書き込みだけ、期限2027-10-01）を使う。amami-tool 用の携帯のトークンは、受け口とサイトの2つに Contents: Read and write。EXIF の撮影日が読めない写真は受け口の `生き物フォルダ/failed/` に残る（サイトには届かない）。写真処理の仕様を変えるときは、受け口とサイトの両方のスクリプトを直す。受け口にはサイトと同じ生き物フォルダが `.keep` 付きで残るので（2026-10-27から）、PCのGitHub Desktop（`Documents\GitHub\amami-photo-inbox`）からフォルダに写真を入れてpushしても送れる（手順は受け口のREADME）
-- 公開する写真は長辺1600px・画質85（`scripts/process_creature_photos.py` の `MAX_LONG_SIDE`・`JPEG_QUALITY`、2026-10-16から）。GitHub Pages の公開サイトは1GBまでなので、写真が増えたら `images/creatures` の大きさを見る（2026-10-16時点で約316MB）。リポジトリは過去にアップしたカメラの元写真が履歴に残っていて全体が約7GBある（GitHubの目安は5GB以下）。カメラの元写真（1枚10〜15MB）をそのままアップすると履歴が大きく増える。
+- 公開する写真は長辺1600px・画質85（`scripts/process_creature_photos.py` の `MAX_LONG_SIDE`・`JPEG_QUALITY`、2026-10-16から）。GitHub Pages の公開サイトは1GBまでなので、写真が増えたら `images/creatures` の大きさを見る（2026-10-16時点で約316MB）。リポジトリは過去にアップしたカメラの元写真が履歴に残っていて全体が約7GBある（GitHubの目安は5GB以下）。カメラの元写真（1枚10〜15MB）をそのままアップすると履歴が大きく増える。履歴は書き換えないことにした（2026-10-29、オーナー決定。同じリポジトリで書き換えてもプルリクエストの控えに古い写真が残り、GitHub 側の容量は減らない見込みのため）。PCの clone（`Documents\GitHub\nature-experience-amami`）は、必要な分だけ取る形（`git clone --filter=blob:none`）で取り直し、7.2GB→0.3GB になった。カメラの元写真はオーナーの外付けディスクにある
 - 一覧ページの形式: `snakes` `amphibians` `stag-beetles` `mammals` はカテゴリーページ、`birds` `aquatic-insects` `beetles` `other-insects` `other-arthropods` は図鑑ページ（`scripts/generate_zukan_page.py`）。図鑑ページは5カテゴリーとも4言語ある。`lizards` は生き物ごとのページだけで、一覧ページはまだない。
 - `categories/hebi.html` `kaeru.html` `kuwagata.html` `honyuurui.html` `tori.html` `suisei-konntyuu.html` `koucyu.html` などは、英語名に変える前の古いURLから新しいページへ移動させるための転送ページ。
 - 全ページの head に OGP（SNSでシェアしたときの写真・説明）がある。生成ページは、テンプレートの目印 `<!-- OGP -->` を `scripts/seo_head.py` が `<title>` と meta description から作ったタグに置き換える（文言を変えるときはテンプレートを直す）。og:image は生き物ページがメイン写真、それ以外は代表写真（アマミノクロウサギ `amami-kuro-usagi_000002_20250301_20.jpg`、`seo_head.py` の `DEFAULT_IMAGE`）。手書きの `index` `tour` `contact`（4言語）には直接書いてある。管理ツール・`customer-app/`・`instagram-campaign/`・転送ページには入れていない。
@@ -168,7 +168,7 @@
 
 ### 作業の仕組み
 
-- サイトの履歴に溜まった元写真の掃除（履歴の書き換えで元に戻せない作業。受け口がしばらく安定して動いてから相談する）
+- PCの古い clone（`Documents\GitHub\nature-experience-amami-old`）を、数日使って問題が無ければ消す（オーナー）。こぱの作業フォルダが同じ PC の全部入りの clone なら、同じ手順で取り直す
 - 受け口 amami-photo-inbox の履歴を定期的にリセットする方法を決める（受け口の中身は使い捨て。リセット前に `failed/` の写真を確認する）
 - 受け口のワークフロー（`process-and-send.yml`）を security-reviewer で点検する
 - セキュリティ点検で見つかった項目を1つずつ直す。残りは `.claude/security-log.md` の「まだ解決していない項目」。次の定期点検は2026-11-14ごろ。
@@ -979,6 +979,19 @@
 - 「進行中の作業」のグッズページの項目は、公開が済んだので消した
 - 未完了事項: スマホでヘビのページの案内からグッズページへ飛べるかの確認（オーナー）。同じ生き物のTシャツが複数ある件の確認（オーナーがSUZURIで）。英・西・中のグッズページは未作成
 - Commit SHA: この記録と同じプルリクエストのcommit（AGENTS.md、改善ノート、この記録）
+- Push: 済み（このプルリクエスト）
+
+（担当: Claude）
+
+### 2026-10-29 リポジトリの容量: 履歴は書き換えず、PCの clone を軽くし、ブランチを片付けた
+
+- 履歴に入っている写真を、写真の中身は落とさずに一覧だけ調べた: 2,469個のうち、今の main で使っているのが883個、履歴にしか無いのが1,586個（1,545個は9月に入れたカメラの元写真）
+- 案を3つ出した（A: 同じリポジトリで書き換え、B: 書き換えた履歴で新しいリポジトリに移る、C: 書き換えない）。A は、プルリクエストの控え（80件）に古い写真が残り、GitHub Support も機密でないデータの削除は手伝わない（公式ドキュメントの検索結果で確認。docs.github.com はこの作業環境から開けなかった）ため、GitHub 側の容量が減らない見込み。オーナーの目的は「PCが重いのを解消」だったので C に決めた
+- オーナーがPCの clone を、必要な分だけ取る形で取り直した（PowerShell。古いフォルダは `-old` を付けて残してある）。`.git` は 7.2GB→0.3GB。フォルダの場所と名前は前と同じ `Documents\GitHub\nature-experience-amami`
+- ブランチの片付け: #152 をマージ（170d742）。中身が全部 main に入っている26本と、捨てる `claude/nifty-hopper-m5ixka`（9月の未マージ3件、最後の commit 23f8a5b）の27本を、オーナーがPCから消した（この作業環境からはブランチの削除が 403 で断られた）。こぱの `fix/replace-haroweru-amagaeru-photo` は、オーナーが #153 でマージ済み
+- 気づいたこと: 最初はコマンドプロンプトに貼ってしまい動かなかった（何も変わらず）。フォルダ名が `.github.io` の付かない `nature-experience-amami` だった。フォルダを使っているアプリがあると名前を変えられなかった。PowerShell の手順を渡すときは、行の頭が `PS` になっているかの確かめ方と、フォルダを使うアプリを閉じることを先に書く
+- 未完了事項: 古い clone（`-old`）を消す（オーナー）。`fix/replace-haroweru-amagaeru-photo` ブランチは main に入っているので消してよい
+- Commit SHA: この記録はこのプルリクエストのcommit
 - Push: 済み（このプルリクエスト）
 
 （担当: Claude）
