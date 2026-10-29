@@ -434,6 +434,15 @@
     margin-top:1rem;
   }
 
+  /* 預約方法の官方LINEのカードのリンク（日本語版・中國語版） */
+  .meeting-link{
+    display:inline-flex; align-items:center; min-height:44px;
+    color:var(--amber); text-decoration:none; font-weight:700;
+    border-bottom:1px solid rgba(232,163,61,.45);
+  }
+  .meeting-link:hover{ color:#f4b95a; border-bottom-color:#f4b95a; }
+  .meeting-link:focus-visible{ outline:2px solid var(--moonlight); outline-offset:3px; }
+
   /* RESERVATION */
 
   .reservation-section{
@@ -961,6 +970,10 @@
 
         <p>
           適合想輕鬆提問的您。
+        </p>
+
+        <p>
+          <a class="meeting-link" href="https://lin.ee/5SFJGNt" target="_blank" rel="noopener">打開官方LINE →</a>
         </p>
 
       </div>
