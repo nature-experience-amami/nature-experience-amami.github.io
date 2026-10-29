@@ -285,6 +285,9 @@
       bottom:max(2rem, calc(100svh - var(--desktop-photo-top) - var(--desktop-photo-height) + 2rem));
       padding:0 6vw 2rem;
     }
+    /* 英語・スペイン語は見出しが長く3〜5行になり、写真の上の帯（ロゴ・カテゴリー）に重なっていた。
+       画面の幅と高さの両方に合わせて小さくする（2026-10-29） */
+    .hero h1{ font-size:clamp(1.9rem, min(4.2vw, 6.5svh), 3.4rem); }
     .hero-photo-link, .hero::after{
       top:var(--desktop-photo-top); bottom:auto; left:50%; transform:translateX(-50%);
       height:var(--desktop-photo-height); aspect-ratio:16/9; width:var(--desktop-photo-width);
