@@ -593,19 +593,98 @@ select{ -webkit-appearance:none; appearance:none; }
     });
   }
 
-  function readOriginalDateExif(file) {
-    return blobToDataURL(file).then(function (dataUrl) {
-      try {
-        var exifObj = piexif.load(dataUrl);
-        return (
-          (exifObj["Exif"] && exifObj["Exif"][piexif.ExifIFD.DateTimeOriginal]) ||
-          (exifObj["0th"] && exifObj["0th"][piexif.ImageIFD.DateTime]) ||
-          null
-        );
-      } catch (e) {
-        return null;
+  // 撮影日時は「2026:11:05 15:30:00」の形のものだけを正しい日時として扱う。
+  // (2026-11-06) 未編集のOM SYSTEMの写真で、piexifが日時の欄にメーカー名
+  // ("OM SYSTEM...")を拾ってしまい、受け口の処理で failed/ に回された。
+  // そのため日時は自前の読み取り(EXIFの規格どおりに日時の欄だけを読む)を先に使い、
+  // 読めなければpiexifを試し、どちらも形が正しくなければ「日時なし」とする。
+  var EXIF_DATE_RE = /^\d{4}:\d{2}:\d{2} \d{2}:\d{2}:\d{2}$/;
+  function cleanExifDate(value) {
+    if (typeof value !== "string") return null;
+    var s = value.replace(/\0+$/, "").trim();
+    return EXIF_DATE_RE.test(s) ? s : null;
+  }
+
+  function readExifDateFromBytes(buf) {
+    var v = new DataView(buf);
+    if (v.byteLength < 4 || v.getUint16(0) !== 0xFFD8) return null;
+    var pos = 2;
+    while (pos + 4 <= v.byteLength) {
+      if (v.getUint8(pos) !== 0xFF) return null;
+      var marker = v.getUint8(pos + 1);
+      if (marker === 0xDA || marker === 0xD9) return null; // 画像データ本体に入ったら終わり
+      var segLen = v.getUint16(pos + 2);
+      var start = pos + 4;
+      if (marker === 0xE1 && segLen >= 8 &&
+          v.getUint32(start) === 0x45786966 && v.getUint16(start + 4) === 0) { // "Exif\0\0"
+        var date = readTiffDate(v, start + 6, pos + 2 + segLen);
+        if (date) return date;
       }
-    }).catch(function () { return null; });
+      pos += 2 + segLen;
+    }
+    return null;
+  }
+
+  function readTiffDate(v, tiff, end) {
+    if (tiff + 8 > end) return null;
+    var order = v.getUint16(tiff);
+    var le = order === 0x4949; // "II"=リトルエンディアン、"MM"=ビッグエンディアン
+    if (!le && order !== 0x4D4D) return null;
+    function u16(p) { return v.getUint16(p, le); }
+    function u32(p) { return v.getUint32(p, le); }
+    function findAscii(ifdOffset, tag) {
+      var ifd = tiff + ifdOffset;
+      if (ifd + 2 > end) return null;
+      var n = u16(ifd);
+      for (var i = 0; i < n; i++) {
+        var e = ifd + 2 + i * 12;
+        if (e + 12 > end) return null;
+        if (u16(e) !== tag) continue;
+        var count = u32(e + 4);
+        var p = count > 4 ? tiff + u32(e + 8) : e + 8;
+        if (p + count > end) return null;
+        var s = "";
+        for (var j = 0; j < count; j++) s += String.fromCharCode(v.getUint8(p + j));
+        return s;
+      }
+      return null;
+    }
+    function findLong(ifdOffset, tag) {
+      var ifd = tiff + ifdOffset;
+      if (ifd + 2 > end) return null;
+      var n = u16(ifd);
+      for (var i = 0; i < n; i++) {
+        var e = ifd + 2 + i * 12;
+        if (e + 12 > end) return null;
+        if (u16(e) === tag) return u32(e + 8);
+      }
+      return null;
+    }
+    var ifd0 = u32(tiff + 4);
+    var exifIfd = findLong(ifd0, 0x8769);
+    var date = null;
+    if (exifIfd) date = cleanExifDate(findAscii(exifIfd, 0x9003)) || cleanExifDate(findAscii(exifIfd, 0x9004));
+    return date || cleanExifDate(findAscii(ifd0, 0x0132));
+  }
+
+  function readOriginalDateExif(file) {
+    return file.arrayBuffer().then(function (buf) {
+      try { return readExifDateFromBytes(buf); } catch (e) { return null; }
+    }).catch(function () { return null; }).then(function (date) {
+      if (date) return date;
+      return blobToDataURL(file).then(function (dataUrl) {
+        try {
+          var exifObj = piexif.load(dataUrl);
+          return (
+            cleanExifDate(exifObj["Exif"] && exifObj["Exif"][piexif.ExifIFD.DateTimeOriginal]) ||
+            cleanExifDate(exifObj["0th"] && exifObj["0th"][piexif.ImageIFD.DateTime]) ||
+            null
+          );
+        } catch (e) {
+          return null;
+        }
+      }).catch(function () { return null; });
+    });
   }
 
   function injectExifDateAndBase64(blob, dateStr) {
@@ -666,7 +745,13 @@ select{ -webkit-appearance:none; appearance:none; }
       return row;
     });
 
+    noDateFiles = [];
     uploadFilesSequentially(files, category, speciesId, settings, rows, 0).then(function () {
+      if (noDateFiles.length > 0) {
+        alert("撮影日時が読めない写真がありました。サイトに載らないので送っていません。\n\n" +
+          noDateFiles.join("\n") +
+          "\n\n編集アプリやLINEを通すと日時が消えることがあります。撮ったままの写真を選び直してください。");
+      }
       uploadBtn.disabled = false;
       fileInput.value = "";
       fileDrop.classList.remove("has-files");
@@ -696,6 +781,7 @@ select{ -webkit-appearance:none; appearance:none; }
     }).catch(function () { return null; });
   }
   var MAX_PUT_ATTEMPTS = 8;
+  var noDateFiles = []; // 撮影日時が読めず送らなかった写真の名前(送信のたびにリセット)
   function putFileWithRetry(path, jpgName, base64, settings, speciesId, row, attempt) {
     attempt = attempt || 1;
     return getExistingSha(path, settings).then(function (sha) {
@@ -730,6 +816,12 @@ select{ -webkit-appearance:none; appearance:none; }
     var path = "images/creatures/" + category + "/" + speciesId + "/" + jpgName;
 
     return readOriginalDateExif(file).then(function (dateStr) {
+      if (!dateStr) {
+        // 日時なしで送っても受け口で failed/ に回されサイトに載らないので、送らずに知らせる
+        var e = new Error("no-date");
+        e.noDate = true;
+        throw e;
+      }
       return resizeAndCompress(file).then(function (blob) {
         return injectExifDateAndBase64(blob, dateStr);
       });
@@ -744,7 +836,13 @@ select{ -webkit-appearance:none; appearance:none; }
       }
       rows[index].querySelector("span:last-child").textContent = label;
       rows[index].querySelector("span:last-child").className = res.ok ? "status-ok" : "status-fail";
-    }).catch(function () {
+    }).catch(function (err) {
+      if (err && err.noDate) {
+        noDateFiles.push(file.name);
+        rows[index].querySelector("span:last-child").textContent = "撮影日時なし(送らず)";
+        rows[index].querySelector("span:last-child").className = "status-fail";
+        return;
+      }
       rows[index].querySelector("span:last-child").textContent = "失敗";
       rows[index].querySelector("span:last-child").className = "status-fail";
     }).then(function () {
