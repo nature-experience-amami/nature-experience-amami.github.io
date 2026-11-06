@@ -2438,20 +2438,22 @@
   },
   {
     "id": "ryukyu-sawa-matsumushi",
-    "name": "ryukyu-sawa-matsumushi",
+    "name": "リュウキュウサワマツムシ",
     "category": "other-insects",
     "category_name": "昆虫その他",
     "months": [
-      10
+      9,
+      10,
+      11
     ],
-    "months_source": "photos",
-    "activity": "",
-    "night_observable": null,
-    "description": "",
+    "months_source": "notes",
+    "activity": "nocturnal",
+    "night_observable": false,
+    "description": "スズムシ科 リュウキュウサワマツムシ *Vescelia pieli ryukyuensis* (Oshiro, 1985)\n\n翅の先までの長さはオス18mm前後、メス26mm前後。奄美大島・徳之島から沖縄島・久米島・石垣島・西表島にかけての南西諸島に分布する。山地の沢沿いにすみ、昼間は岩のすき間などに隠れていて、夜になるとシダの葉の上などに出てきて鳴く。姿はスズムシとマツムシの中間のよう。鳴くのはオスだけで、澄んだよく通る声で鳴く。鳴きながら体の向きを変えるため、声の出どころを見つけにくい。成虫は春から冬にかけて見られるが、年や時期によって数が大きく増減する。1985年に *Phaloria* 属の新種として記載され、現在は *Vescelia pieli* の亜種とされている。",
     "photos": [
       "images/creatures/other-insects/tyokushi/ryukyu-sawa-matsumushi/ryukyu-sawa-matsumushi_000001_20261031_22.jpg"
     ],
-    "page_path": null
+    "page_path": "creatures/other-insects/ryukyu-sawa-matsumushi.html"
   },
   {
     "id": "ryuukyuu-asagi-madara",
