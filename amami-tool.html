@@ -746,11 +746,13 @@ select{ -webkit-appearance:none; appearance:none; }
     });
 
     noDateFiles = [];
+    noDateFileObjs = [];
     uploadFilesSequentially(files, category, speciesId, settings, rows, 0).then(function () {
       if (noDateFiles.length > 0) {
         alert("撮影日時が読めない写真がありました。サイトに載らないので送っていません。\n\n" +
           noDateFiles.join("\n") +
           "\n\n編集アプリやLINEを通すと日時が消えることがあります。撮ったままの写真を選び直してください。");
+        addDebugSendButton(statusList, noDateFileObjs.slice(), settings);
       }
       uploadBtn.disabled = false;
       fileInput.value = "";
@@ -780,8 +782,47 @@ select{ -webkit-appearance:none; appearance:none; }
       return res.json().then(function (data) { return data.sha || null; });
     }).catch(function () { return null; });
   }
+  // 【一時的な機能 2026-11-06】撮影日時が読めなかった写真を、原因調査のため
+  // 縮小も変換もせず元のまま受け口の debug-originals/ に送る。
+  // 受け口の自動処理は images/creatures/ だけを見るので、サイトには載らない。
+  // 原因が分かったら、このボタンごと消す。
+  function addDebugSendButton(statusList, fileObjs, settings) {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "btn";
+    btn.style.marginTop = ".8rem";
+    btn.textContent = "調べる用に元の写真を送る(サイトには載りません)";
+    statusList.appendChild(btn);
+    btn.addEventListener("click", function () {
+      btn.disabled = true;
+      var stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15);
+      var chain = Promise.resolve();
+      fileObjs.forEach(function (file) {
+        chain = chain.then(function () {
+          var row = statusRow("調べる用: " + file.name);
+          statusList.appendChild(row);
+          var path = "debug-originals/" + stamp + "_" + file.name;
+          return blobToDataURL(file).then(function (dataUrl) {
+            return fetch(apiContentsUrl(path), {
+              method: "PUT",
+              headers: { "Authorization": "Bearer " + settings.pat, "Accept": "application/vnd.github+json" },
+              body: JSON.stringify({ message: "調べる用の元写真 (" + file.name + ")", content: dataUrl.split(",")[1] })
+            });
+          }).then(function (res) {
+            row.querySelector("span:last-child").textContent = res.ok ? "送りました" : "失敗 (" + res.status + ")";
+            row.querySelector("span:last-child").className = res.ok ? "status-ok" : "status-fail";
+          }).catch(function () {
+            row.querySelector("span:last-child").textContent = "失敗";
+            row.querySelector("span:last-child").className = "status-fail";
+          });
+        });
+      });
+    });
+  }
+
   var MAX_PUT_ATTEMPTS = 8;
   var noDateFiles = []; // 撮影日時が読めず送らなかった写真の名前(送信のたびにリセット)
+  var noDateFileObjs = []; // 同じ写真のファイル本体(調べる用に送るとき使う)
   function putFileWithRetry(path, jpgName, base64, settings, speciesId, row, attempt) {
     attempt = attempt || 1;
     return getExistingSha(path, settings).then(function (sha) {
@@ -839,6 +880,7 @@ select{ -webkit-appearance:none; appearance:none; }
     }).catch(function (err) {
       if (err && err.noDate) {
         noDateFiles.push(file.name);
+        noDateFileObjs.push(file);
         rows[index].querySelector("span:last-child").textContent = "撮影日時なし(送らず)";
         rows[index].querySelector("span:last-child").className = "status-fail";
         return;
