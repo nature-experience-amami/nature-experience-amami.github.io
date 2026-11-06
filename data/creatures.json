@@ -2437,6 +2437,23 @@
     "page_path": "creatures/other-insects/ootomoe.html"
   },
   {
+    "id": "ryukyu-sawa-matsumushi",
+    "name": "ryukyu-sawa-matsumushi",
+    "category": "other-insects",
+    "category_name": "昆虫その他",
+    "months": [
+      10
+    ],
+    "months_source": "photos",
+    "activity": "",
+    "night_observable": null,
+    "description": "",
+    "photos": [
+      "images/creatures/other-insects/tyokushi/ryukyu-sawa-matsumushi/ryukyu-sawa-matsumushi_000001_20261031_22.jpg"
+    ],
+    "page_path": null
+  },
+  {
     "id": "ryuukyuu-asagi-madara",
     "name": "リュウキュウアサギマダラ",
     "category": "other-insects",
