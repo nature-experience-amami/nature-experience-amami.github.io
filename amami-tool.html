@@ -609,18 +609,41 @@ select{ -webkit-appearance:none; appearance:none; }
     var v = new DataView(buf);
     if (v.byteLength < 4 || v.getUint16(0) !== 0xFFD8) return null;
     var pos = 2;
+    var xmpDate = null;
     while (pos + 4 <= v.byteLength) {
-      if (v.getUint8(pos) !== 0xFF) return null;
+      if (v.getUint8(pos) !== 0xFF) break;
       var marker = v.getUint8(pos + 1);
-      if (marker === 0xDA || marker === 0xD9) return null; // 画像データ本体に入ったら終わり
+      if (marker === 0xDA || marker === 0xD9) break; // 画像データ本体に入ったら終わり
       var segLen = v.getUint16(pos + 2);
       var start = pos + 4;
       if (marker === 0xE1 && segLen >= 8 &&
           v.getUint32(start) === 0x45786966 && v.getUint16(start + 4) === 0) { // "Exif\0\0"
         var date = readTiffDate(v, start + 6, pos + 2 + segLen);
         if (date) return date;
+      } else if (marker === 0xE1 && !xmpDate) {
+        xmpDate = readXmpDate(v, start, pos + 2 + segLen);
       }
       pos += 2 + segLen;
+    }
+    // EXIFで読めなければ、XMPの日時を使う
+    // (2026-11-06 OI.Shareで携帯に移したOMの写真で、EXIFの日時は壊れていたが
+    //  XMPの xmp:CreateDate などには撮影日時が残っていた)
+    return xmpDate;
+  }
+
+  function readXmpDate(v, start, end) {
+    var head = "http://ns.adobe.com/xap/1.0/";
+    if (end - start < head.length + 1) return null;
+    for (var i = 0; i < head.length; i++) {
+      if (v.getUint8(start + i) !== head.charCodeAt(i)) return null;
+    }
+    var s = "";
+    for (var j = start + head.length + 1; j < end; j++) s += String.fromCharCode(v.getUint8(j));
+    var names = ["exif:DateTimeOriginal", "xmp:CreateDate", "photoshop:DateCreated"];
+    for (var k = 0; k < names.length; k++) {
+      var re = new RegExp(names[k] + "\\s*(?:=\\s*\"|>)\\s*(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2})(?::(\\d{2}))?");
+      var m = re.exec(s);
+      if (m) return m[1] + ":" + m[2] + ":" + m[3] + " " + m[4] + ":" + m[5] + ":" + (m[6] || "00");
     }
     return null;
   }
