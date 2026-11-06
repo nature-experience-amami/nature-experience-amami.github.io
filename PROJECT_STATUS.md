@@ -1044,3 +1044,15 @@
 
 （担当: Claude）
 
+
+### 2026-11-06 amami-toolの撮影日時の読み取りを修正、リュウキュウサワマツムシを追加
+
+- 未編集のOM SYSTEMの写真をamami-toolで送ると、撮影日時の欄にメーカー名("OM SYSTEM...")が入り、受け口(amami-photo-inbox)で `failed/` に回されていた(画面は「完了」のまま)。Lightroomで書き出した写真は通っていた
+- `amami-tool.html` の撮影日時の読み取りを自前の読み取り(EXIFの規格どおり)に替え、だめならpiexifを使う。「YYYY:MM:DD HH:MM:SS」の形でなければ日時なしとして送らず、「撮影日時なし(送らず)」と知らせるようにした(Commit 95d9699、main)
+- 直翅に写真フォルダ `images/creatures/other-insects/tyokushi/ryukyu-sawa-matsumushi/` を追加(`.gitkeep` のみ。Commit 93cf9a8、main)
+- リュウキュウサワマツムシ(`ryukyu-sawa-matsumushi`)の日本語md・翻訳(英西中)を追加し、ページを作り直した。夜行性・観察月9〜11月・ナイトツアーには向かない(`night_observable: false`)はオーナーの判断。creature-reviewerで監修済み
+- 未完了事項: 写真(IMG_1483・IMG_1484)はinboxの `failed/` に入ったまま。直した版のamami-toolで送り直してサイトに届くかの確認待ち。届いたら `failed/` の2枚を消す
+- Commit SHA: このプルリクエストのcommit
+- Push: 済み(このプルリクエスト)
+
+(担当: Claude)
