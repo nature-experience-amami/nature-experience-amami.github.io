@@ -895,10 +895,20 @@
     status.className = "form-status";
     status.textContent = "";
 
+    // メールの件名に、名前・第1希望日・人数を入れる（受信トレイの一覧で分かるように）
+    var data = new FormData(form);
+    var d = String(data.get("date_1") || "").trim();
+    var m = d.match(/^\d{4}-(\d{1,2})-(\d{1,2})$/);
+    var day = m ? Number(m[1]) + "/" + Number(m[2]) : d;
+    var kids = Number(data.get("children")) || 0;
+    var subject = "【問い合わせ・中国語】" + String(data.get("name") || "").trim() + "様 " + day +
+      " 大人" + (data.get("adults") || "?") + "名" + (kids > 0 ? " 子供" + kids + "名" : "");
+    data.append("_subject", subject);
+
     fetch("https://formspree.io/f/xbgjawew", {
       method: "POST",
       headers: { "Accept": "application/json" },
-      body: new FormData(form)
+      body: data
     })
       .then(function (response) {
         if (response.ok) {
